@@ -1,0 +1,24 @@
+name: 'AWS Lambda Update Action'
+description: 'Updates the specified lambda'
+inputs:
+  zip-file:
+    required: true
+    description: 'The zip file location'
+  lambda-name:
+    required: false
+    description: 'Optional, if not specified, it uses the file base as function name'
+  publish:
+    description: 'Optional, default is false'
+    required: false
+  AWS_REGION:
+    description: 'Optional if not specified fallbacks to environment variable'
+    required: false
+  AWS_ACCESS_KEY_ID:
+    description: 'Optional if not specified fallbacks to environment variable'
+    required: false
+  AWS_SECRET_ACCESS_KEY:
+    description: 'Optional if not specified fallbacks to environment variable'
+    required: false
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
