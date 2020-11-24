@@ -1,4 +1,8 @@
 name: 'AWS Lambda Update Action'
+author: 'Kazi Manzur Rashid <kazimanzurrashid@gmail.com>'
+branding:
+  color: 'orange'
+  icon: 'upload'
 description: 'Updates the specified lambda'
 inputs:
   zip-file:
