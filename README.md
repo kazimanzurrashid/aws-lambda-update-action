@@ -17,6 +17,7 @@ if not specified then it fallbacks to `env` section.
 
 _Optional_ The default is `false`
 .
+
 ### `AWS_REGION`
 
 _Optional_ if not specified fallbacks to environment variable.
@@ -30,11 +31,13 @@ _Optional_ if not specified fallbacks to environment variable.
 _Optional_ if not specified fallbacks to environment variable.
 
 ## Outputs
+
 N/A
 
 ## Example usage
 
 ### minimum
+
 ```yaml
 uses: kazimanzurrashid/lambda-update-action
 with:
@@ -42,6 +45,7 @@ with:
 ```
 
 ### complete
+
 ```yaml
 uses: kazimanzurrashid/lambda-update-action
 with:
@@ -50,5 +54,5 @@ with:
   publish: true
   AWS_REGION: ${{ secrets.AWS_REGION }}
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }} 
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 ```
