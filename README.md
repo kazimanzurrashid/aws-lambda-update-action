@@ -1,15 +1,13 @@
 # Lambda update action
 
-This action updates a given lambda. It 
-
+This action updates a given lambda. It is very lightweight comparing to others, it uses the upcoming AWS Node SDK 3 which only pulls lambda client to update the lambda code.
+ 
 ## Inputs
 
 ### `zip-file`
 
 **Required** The zip location, this is the only required argument of this action. It reads the AWS configuration from parameters,
 if not specified then it fallbacks to `env` section.
-
-It is very lightweight comparing to others, it uses the upcoming AWS Node SDK 3 which only pulls lambda client to update.
 
 ### `lambda-name`
 
