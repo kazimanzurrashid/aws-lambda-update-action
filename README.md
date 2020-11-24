@@ -44,7 +44,7 @@ with:
   zip-file: './dist/my_lambda.zip'
 ```
 
-### complete
+### all
 
 ```yaml
 uses: kazimanzurrashid/lambda-update-action
@@ -55,4 +55,42 @@ with:
   AWS_REGION: ${{ secrets.AWS_REGION }}
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+```
+
+### complete
+
+```yaml
+name: API
+on:
+  push:
+    branches:
+      - main
+env:
+  AWS_REGION: ${{ secrets.AWS_REGION }}
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: .NET setup
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 3.1.x
+
+      - name: Lambda.Tools install
+        run: dotnet tool install -g Amazon.Lambda.Tools
+
+      - name: Build
+        run: |
+          cd src/Api
+          dotnet lambda package -o api.zip
+
+      - name: Update
+        uses: kazimanzurrashid/lambda-update-action@main
+        with:
+          zip-file: src/Api/api.zip
 ```
