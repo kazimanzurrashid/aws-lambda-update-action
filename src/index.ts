@@ -6,22 +6,12 @@ import { getInput, setFailed } from '@actions/core';
 
 import { Runner } from './runner';
 
-const zipFileLocation = getInput('zip-file');
-
-const lambdaName = (() => {
-  let name = getInput('lambda-name');
-
-  if (!name) {
-    name = basename(zipFileLocation, '.zip');
-  }
-
-  return name;
-})();
-
-const publish = Boolean(getInput('publish'));
-
 const getValue = (key: string): string =>
   (getInput(key) || process.env[key]) as string;
+
+const zipFileLocation = getInput('zip-file');
+const lambdaName = getInput('lambda-name') || basename(zipFileLocation, '.zip');
+const publish = Boolean(getInput('publish'));
 
 const awsRegion = getValue('AWS_REGION');
 const awsAccessKeyId = getValue('AWS_ACCESS_KEY_ID');
