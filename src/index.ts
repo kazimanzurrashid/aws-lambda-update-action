@@ -9,7 +9,7 @@ import { Runner } from './runner';
 const getValue = (key: string): string =>
   (getInput(key) || process.env[key]) as string;
 
-const zipFileLocation = getInput('zip-file');
+const zipFileLocation = getInput('zip-file', { required: true });
 const lambdaName = getInput('lambda-name') || basename(zipFileLocation, '.zip');
 const publish = Boolean(getInput('publish'));
 
