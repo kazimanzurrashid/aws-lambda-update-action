@@ -39,7 +39,7 @@ N/A
 ### minimum
 
 ```yaml
-uses: kazimanzurrashid/lambda-update-action
+uses: kazimanzurrashid/lambda-update-action@v1
 with:
   zip-file: './dist/my_lambda.zip'
 ```
@@ -47,7 +47,7 @@ with:
 ### all
 
 ```yaml
-uses: kazimanzurrashid/lambda-update-action
+uses: kazimanzurrashid/lambda-update-action@v1
 with:
   zip-file: './dist/my_lambda.zip'
   lambda-name: 'your_lambda'
@@ -90,7 +90,7 @@ jobs:
           dotnet lambda package -o api.zip
 
       - name: Update
-        uses: kazimanzurrashid/lambda-update-action@main
+        uses: kazimanzurrashid/lambda-update-action@v1
         with:
           zip-file: src/Api/api.zip
 ```
