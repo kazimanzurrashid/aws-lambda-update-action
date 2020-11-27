@@ -11,7 +11,7 @@ const getValue = (key: string): string =>
 
 const zipFileLocation = getInput('zip-file', { required: true });
 const lambdaName = getInput('lambda-name') || basename(zipFileLocation, '.zip');
-const publish = Boolean(getInput('publish'));
+const publish = (getInput('publish') || '').toLowerCase() === 'true';
 
 const awsRegion = getValue('AWS_REGION');
 const awsAccessKeyId = getValue('AWS_ACCESS_KEY_ID');
