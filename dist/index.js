@@ -21,16 +21,10 @@ const fs_1 = __webpack_require__(5747);
 const client_lambda_1 = __webpack_require__(8390);
 const core_1 = __webpack_require__(2186);
 const runner_1 = __webpack_require__(9617);
-const zipFileLocation = core_1.getInput('zip-file');
-const lambdaName = (() => {
-    let name = core_1.getInput('lambda-name');
-    if (!name) {
-        name = path_1.basename(zipFileLocation, '.zip');
-    }
-    return name;
-})();
-const publish = Boolean(core_1.getInput('publish'));
 const getValue = (key) => (core_1.getInput(key) || process.env[key]);
+const zipFileLocation = core_1.getInput('zip-file', { required: true });
+const lambdaName = core_1.getInput('lambda-name') || path_1.basename(zipFileLocation, '.zip');
+const publish = (core_1.getInput('publish') || '').toLowerCase() === 'true';
 const awsRegion = getValue('AWS_REGION');
 const awsAccessKeyId = getValue('AWS_ACCESS_KEY_ID');
 const awsSecretAccessKey = getValue('AWS_SECRET_ACCESS_KEY');
