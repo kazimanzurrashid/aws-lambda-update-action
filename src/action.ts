@@ -34,6 +34,8 @@ class Action {
       };
 
       await this.lambda.updateFunctionCode(params);
+
+      this.log(`Updated ${input.lambdaName}`);
     } catch (error) {
       this.setFailed(error);
     }
