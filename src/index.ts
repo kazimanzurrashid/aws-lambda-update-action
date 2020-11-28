@@ -1,10 +1,11 @@
 import { basename } from 'path';
 import { readFile } from 'fs';
+import { promisify } from 'util';
 
 import { Lambda } from '@aws-sdk/client-lambda';
-import { getInput, setFailed } from '@actions/core';
+import { getInput, info, setFailed } from '@actions/core';
 
-import { Runner } from './runner';
+import { Action } from './action';
 
 const getValue = (key: string): string =>
   (getInput(key) || process.env[key]) as string;
@@ -25,8 +26,10 @@ const lambda = new Lambda({
   }
 });
 
-new Runner(readFile, lambda, setFailed).run({
-  zipFileLocation,
-  lambdaName,
-  publish
-});
+(async () => {
+  await new Action(promisify(readFile), lambda, info, setFailed).run({
+    zipFileLocation,
+    lambdaName,
+    publish
+  });
+})();

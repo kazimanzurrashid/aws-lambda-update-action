@@ -10,6 +10,41 @@ module.exports = JSON.parse("{\"name\":\"@aws-sdk/client-lambda\",\"description\
 
 /***/ }),
 
+/***/ 5834:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.Action = void 0;
+class Action {
+    constructor(readFile, lambda, log, setFailed) {
+        this.readFile = readFile;
+        this.lambda = lambda;
+        this.log = log;
+        this.setFailed = setFailed;
+    }
+    async run(input) {
+        this.log(`Updating ${input.lambdaName}`);
+        try {
+            const zipFile = await this.readFile(input.zipFileLocation);
+            const params = {
+                FunctionName: input.lambdaName,
+                Publish: input.publish,
+                ZipFile: zipFile
+            };
+            await this.lambda.updateFunctionCode(params);
+        }
+        catch (error) {
+            this.setFailed(error);
+        }
+    }
+}
+exports.Action = Action;
+
+
+/***/ }),
+
 /***/ 1667:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
@@ -18,9 +53,10 @@ module.exports = JSON.parse("{\"name\":\"@aws-sdk/client-lambda\",\"description\
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const path_1 = __webpack_require__(5622);
 const fs_1 = __webpack_require__(5747);
+const util_1 = __webpack_require__(1669);
 const client_lambda_1 = __webpack_require__(8390);
 const core_1 = __webpack_require__(2186);
-const runner_1 = __webpack_require__(9617);
+const action_1 = __webpack_require__(5834);
 const getValue = (key) => (core_1.getInput(key) || process.env[key]);
 const zipFileLocation = core_1.getInput('zip-file', { required: true });
 const lambdaName = core_1.getInput('lambda-name') || path_1.basename(zipFileLocation, '.zip');
@@ -35,47 +71,13 @@ const lambda = new client_lambda_1.Lambda({
         secretAccessKey: awsSecretAccessKey
     }
 });
-new runner_1.Runner(fs_1.readFile, lambda, core_1.setFailed).run({
-    zipFileLocation,
-    lambdaName,
-    publish
-});
-
-
-/***/ }),
-
-/***/ 9617:
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.Runner = void 0;
-class Runner {
-    constructor(readFile, lambda, setFailed) {
-        this.readFile = readFile;
-        this.lambda = lambda;
-        this.setFailed = setFailed;
-    }
-    run(input) {
-        this.readFile(input.zipFileLocation, (readError, zipFile) => {
-            if (readError) {
-                return this.setFailed(readError.message);
-            }
-            const params = {
-                FunctionName: input.lambdaName,
-                ZipFile: zipFile,
-                Publish: input.publish
-            };
-            this.lambda.updateFunctionCode(params, (updateError) => {
-                if (updateError) {
-                    this.setFailed(updateError.message);
-                }
-            });
-        });
-    }
-}
-exports.Runner = Runner;
+(async () => {
+    await new action_1.Action(util_1.promisify(fs_1.readFile), lambda, core_1.info, core_1.setFailed).run({
+        zipFileLocation,
+        lambdaName,
+        publish
+    });
+})();
 
 
 /***/ }),
@@ -21715,6 +21717,14 @@ module.exports = require("stream");;
 
 "use strict";
 module.exports = require("url");;
+
+/***/ }),
+
+/***/ 1669:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("util");;
 
 /***/ })
 
