@@ -2,6 +2,8 @@
 
 This action updates a given lambda. It is very lightweight comparing to others, it uses the upcoming AWS Node SDK 3 which only pulls lambda client to update the lambda code.
  
+ The AWS Account needs to have the `"lambda:UpdateFunctionCode"` permission.
+ 
 ## Inputs
 
 ### `zip-file`
