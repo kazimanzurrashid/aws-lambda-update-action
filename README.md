@@ -2,18 +2,17 @@
 
 This action updates a given lambda. It is very lightweight comparing to others, it uses the upcoming AWS Node SDK 3 which only pulls lambda client to update the lambda code.
  
- The AWS Account needs to have the `"lambda:UpdateFunctionCode"` permission.
+The AWS Account needs to have the `"lambda:UpdateFunctionCode"` permission.
  
 ## Inputs
 
 ### `zip-file`
 
-**Required** The zip location, this is the only required argument of this action. It reads the AWS configuration from parameters,
-if not specified then it fallbacks to `env` section.
+**Required**. The zip location, this is the only required argument of this action.
 
 ### `lambda-name`
 
-**Optional** if not specified. it takes the zip file base name as lambda name. (e.g. if the zip file is `my_lambda.zip` it would update `my_lambda`)
+_Optional_. If not specified. it takes the zip file base name as lambda name. (e.g. if the zip file is `my_lambda.zip` it would update `my_lambda` lambda)
 
 ### `publish`
 
@@ -22,15 +21,15 @@ _Optional_ The default is `false`
 
 ### `AWS_REGION`
 
-_Optional_ if not specified fallbacks to environment variable.
+_Optional_. If not specified fallbacks to environment variable.
 
 ### `AWS_ACCESS_KEY_ID`
 
-_Optional_ if not specified fallbacks to environment variable.
+_Optional_. If not specified fallbacks to environment variable.
 
 ### `AWS_SECRET_ACCESS_KEY`
 
-_Optional_ if not specified fallbacks to environment variable.
+_Optional_. If not specified fallbacks to environment variable.
 
 ## Outputs
 
