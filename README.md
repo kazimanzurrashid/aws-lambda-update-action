@@ -1,4 +1,4 @@
-# Lambda update action
+# AWS Lambda update action
 
 This action updates a given lambda. It is very lightweight comparing to others, it uses the upcoming AWS Node SDK 3 which only pulls lambda client to update the lambda code.
  
@@ -16,8 +16,7 @@ _Optional_. If not specified. it takes the zip file base name as lambda name. (e
 
 ### `publish`
 
-_Optional_ The default is `false`
-.
+_Optional_ The default is `false`.
 
 ### `AWS_REGION`
 
@@ -66,10 +65,6 @@ on:
   push:
     branches:
       - main
-env:
-  AWS_REGION: ${{ secrets.AWS_REGION }}
-  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -94,4 +89,8 @@ jobs:
         uses: kazimanzurrashid/lambda-update-action@v1
         with:
           zip-file: src/Api/api.zip
+        env:
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 ```
