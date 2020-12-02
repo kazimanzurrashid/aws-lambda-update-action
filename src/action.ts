@@ -1,7 +1,4 @@
-import {
-  FunctionConfiguration,
-  UpdateFunctionCodeRequest
-} from '@aws-sdk/client-lambda/types/models';
+import { UpdateFunctionCodeRequest } from '@aws-sdk/client-lambda/types/models';
 
 interface RunInput {
   zipFileLocation: string;
@@ -12,11 +9,9 @@ interface RunInput {
 class Action {
   constructor(
     private readonly readFile: (path: string) => Promise<Buffer>,
-    private readonly lambda: {
-      updateFunctionCode: (
-        args: UpdateFunctionCodeRequest
-      ) => Promise<FunctionConfiguration>;
-    },
+    private readonly updateFunctionCode: (
+      args: UpdateFunctionCodeRequest
+    ) => Promise<void>,
     private readonly log: (message: string) => void,
     private readonly setFailed: (message: Error) => void
   ) {}
@@ -33,7 +28,7 @@ class Action {
         ZipFile: zipFile
       };
 
-      await this.lambda.updateFunctionCode(params);
+      await this.updateFunctionCode(params);
 
       this.log(`Updated ${input.lambdaName}`);
     } catch (error) {

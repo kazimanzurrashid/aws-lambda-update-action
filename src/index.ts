@@ -27,7 +27,14 @@ const lambda = new Lambda({
 });
 
 (async () => {
-  await new Action(promisify(readFile), lambda, info, setFailed).run({
+  await new Action(
+    promisify(readFile),
+    async (args) => {
+      await lambda.updateFunctionCode(args);
+    },
+    info,
+    setFailed
+  ).run({
     zipFileLocation,
     lambdaName,
     publish
