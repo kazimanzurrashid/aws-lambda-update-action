@@ -18,9 +18,9 @@ module.exports = JSON.parse("{\"name\":\"@aws-sdk/client-lambda\",\"description\
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Action = void 0;
 class Action {
-    constructor(readFile, lambda, log, setFailed) {
+    constructor(readFile, updateFunctionCode, log, setFailed) {
         this.readFile = readFile;
-        this.lambda = lambda;
+        this.updateFunctionCode = updateFunctionCode;
         this.log = log;
         this.setFailed = setFailed;
     }
@@ -33,7 +33,7 @@ class Action {
                 Publish: input.publish,
                 ZipFile: zipFile
             };
-            await this.lambda.updateFunctionCode(params);
+            await this.updateFunctionCode(params);
             this.log(`Updated ${input.lambdaName}`);
         }
         catch (error) {
@@ -73,7 +73,9 @@ const lambda = new client_lambda_1.Lambda({
     }
 });
 (async () => {
-    await new action_1.Action(util_1.promisify(fs_1.readFile), lambda, core_1.info, core_1.setFailed).run({
+    await new action_1.Action(util_1.promisify(fs_1.readFile), async (args) => {
+        await lambda.updateFunctionCode(args);
+    }, core_1.info, core_1.setFailed).run({
         zipFileLocation,
         lambdaName,
         publish
