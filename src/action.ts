@@ -12,28 +12,23 @@ class Action {
     private readonly updateFunctionCode: (
       args: UpdateFunctionCodeRequest
     ) => Promise<void>,
-    private readonly log: (message: string) => void,
-    private readonly setFailed: (message: Error) => void
+    private readonly log: (message: string) => void
   ) {}
 
   async run(input: RunInput): Promise<void> {
     this.log(`Updating ${input.lambdaName}`);
 
-    try {
-      const zipFile = await this.readFile(input.zipFileLocation);
+    const zipFile = await this.readFile(input.zipFileLocation);
 
-      const params = {
-        FunctionName: input.lambdaName,
-        Publish: input.publish,
-        ZipFile: zipFile
-      };
+    const params = {
+      FunctionName: input.lambdaName,
+      Publish: input.publish,
+      ZipFile: zipFile
+    };
 
-      await this.updateFunctionCode(params);
+    await this.updateFunctionCode(params);
 
-      this.log(`Updated ${input.lambdaName}`);
-    } catch (error) {
-      this.setFailed(error);
-    }
+    this.log(`Updated ${input.lambdaName}`);
   }
 }
 

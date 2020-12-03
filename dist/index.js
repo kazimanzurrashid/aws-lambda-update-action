@@ -18,27 +18,21 @@ module.exports = JSON.parse("{\"name\":\"@aws-sdk/client-lambda\",\"description\
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Action = void 0;
 class Action {
-    constructor(readFile, updateFunctionCode, log, setFailed) {
+    constructor(readFile, updateFunctionCode, log) {
         this.readFile = readFile;
         this.updateFunctionCode = updateFunctionCode;
         this.log = log;
-        this.setFailed = setFailed;
     }
     async run(input) {
         this.log(`Updating ${input.lambdaName}`);
-        try {
-            const zipFile = await this.readFile(input.zipFileLocation);
-            const params = {
-                FunctionName: input.lambdaName,
-                Publish: input.publish,
-                ZipFile: zipFile
-            };
-            await this.updateFunctionCode(params);
-            this.log(`Updated ${input.lambdaName}`);
-        }
-        catch (error) {
-            this.setFailed(error);
-        }
+        const zipFile = await this.readFile(input.zipFileLocation);
+        const params = {
+            FunctionName: input.lambdaName,
+            Publish: input.publish,
+            ZipFile: zipFile
+        };
+        await this.updateFunctionCode(params);
+        this.log(`Updated ${input.lambdaName}`);
     }
 }
 exports.Action = Action;
@@ -73,13 +67,18 @@ const lambda = new client_lambda_1.Lambda({
     }
 });
 (async () => {
-    await new action_1.Action(util_1.promisify(fs_1.readFile), async (args) => {
-        await lambda.updateFunctionCode(args);
-    }, core_1.info, core_1.setFailed).run({
-        zipFileLocation,
-        lambdaName,
-        publish
-    });
+    try {
+        await new action_1.Action(util_1.promisify(fs_1.readFile), async (args) => {
+            await lambda.updateFunctionCode(args);
+        }, core_1.info).run({
+            zipFileLocation,
+            lambdaName,
+            publish
+        });
+    }
+    catch (error) {
+        core_1.setFailed(error);
+    }
 })();
 
 

@@ -27,16 +27,19 @@ const lambda = new Lambda({
 });
 
 (async () => {
-  await new Action(
-    promisify(readFile),
-    async (args) => {
-      await lambda.updateFunctionCode(args);
-    },
-    info,
-    setFailed
-  ).run({
-    zipFileLocation,
-    lambdaName,
-    publish
-  });
+  try {
+    await new Action(
+      promisify(readFile),
+      async (args) => {
+        await lambda.updateFunctionCode(args);
+      },
+      info
+    ).run({
+      zipFileLocation,
+      lambdaName,
+      publish
+    });
+  } catch (error) {
+    setFailed(error);
+  }
 })();
