@@ -6,7 +6,7 @@ require('./sourcemap-register.js');module.exports =
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse("{\"name\":\"@aws-sdk/client-lambda\",\"description\":\"AWS SDK for JavaScript Lambda Client for Node.js, Browser and React Native\",\"version\":\"1.0.0-rc.7\",\"scripts\":{\"clean\":\"npm run remove-definitions && npm run remove-dist\",\"build-documentation\":\"npm run clean && typedoc ./\",\"prepublishOnly\":\"yarn build\",\"pretest\":\"yarn build:cjs\",\"remove-definitions\":\"rimraf ./types\",\"remove-dist\":\"rimraf ./dist\",\"remove-documentation\":\"rimraf ./docs\",\"test\":\"exit 0\",\"build:cjs\":\"tsc -p tsconfig.json\",\"build:es\":\"tsc -p tsconfig.es.json\",\"build\":\"yarn build:cjs && yarn build:es\"},\"main\":\"./dist/cjs/index.js\",\"types\":\"./types/index.d.ts\",\"module\":\"./dist/es/index.js\",\"browser\":{\"./runtimeConfig\":\"./runtimeConfig.browser\"},\"react-native\":{\"./runtimeConfig\":\"./runtimeConfig.native\"},\"sideEffects\":false,\"dependencies\":{\"@aws-crypto/sha256-browser\":\"^1.0.0\",\"@aws-crypto/sha256-js\":\"^1.0.0\",\"@aws-sdk/config-resolver\":\"1.0.0-rc.7\",\"@aws-sdk/credential-provider-node\":\"1.0.0-rc.7\",\"@aws-sdk/fetch-http-handler\":\"1.0.0-rc.7\",\"@aws-sdk/hash-node\":\"1.0.0-rc.7\",\"@aws-sdk/invalid-dependency\":\"1.0.0-rc.3\",\"@aws-sdk/middleware-content-length\":\"1.0.0-rc.7\",\"@aws-sdk/middleware-host-header\":\"1.0.0-rc.7\",\"@aws-sdk/middleware-logger\":\"1.0.0-rc.7\",\"@aws-sdk/middleware-retry\":\"1.0.0-rc.7\",\"@aws-sdk/middleware-serde\":\"1.0.0-rc.7\",\"@aws-sdk/middleware-signing\":\"1.0.0-rc.7\",\"@aws-sdk/middleware-stack\":\"1.0.0-rc.7\",\"@aws-sdk/middleware-user-agent\":\"1.0.0-rc.7\",\"@aws-sdk/node-config-provider\":\"1.0.0-rc.7\",\"@aws-sdk/node-http-handler\":\"1.0.0-rc.7\",\"@aws-sdk/protocol-http\":\"1.0.0-rc.7\",\"@aws-sdk/smithy-client\":\"1.0.0-rc.7\",\"@aws-sdk/url-parser-browser\":\"1.0.0-rc.7\",\"@aws-sdk/url-parser-node\":\"1.0.0-rc.7\",\"@aws-sdk/util-base64-browser\":\"1.0.0-rc.3\",\"@aws-sdk/util-base64-node\":\"1.0.0-rc.3\",\"@aws-sdk/util-body-length-browser\":\"1.0.0-rc.3\",\"@aws-sdk/util-body-length-node\":\"1.0.0-rc.3\",\"@aws-sdk/util-user-agent-browser\":\"1.0.0-rc.7\",\"@aws-sdk/util-user-agent-node\":\"1.0.0-rc.7\",\"@aws-sdk/util-utf8-browser\":\"1.0.0-rc.3\",\"@aws-sdk/util-utf8-node\":\"1.0.0-rc.3\",\"tslib\":\"^2.0.0\"},\"devDependencies\":{\"@aws-sdk/client-documentation-generator\":\"1.0.0-rc.7\",\"@aws-sdk/types\":\"1.0.0-rc.7\",\"@types/node\":\"^12.7.5\",\"jest\":\"^26.1.0\",\"rimraf\":\"^3.0.0\",\"typedoc\":\"^0.17.8\",\"typescript\":\"~4.0.2\"},\"engines\":{\"node\":\">=10.0.0\"},\"author\":{\"name\":\"AWS SDK for JavaScript Team\",\"url\":\"https://aws.amazon.com/javascript/\"},\"license\":\"Apache-2.0\",\"homepage\":\"https://github.com/aws/aws-sdk-js-v3/tree/master/clients/client-lambda\",\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/aws/aws-sdk-js-v3.git\",\"directory\":\"clients/client-lambda\"}}");
+module.exports = JSON.parse("{\"name\":\"@aws-sdk/client-lambda\",\"description\":\"AWS SDK for JavaScript Lambda Client for Node.js, Browser and React Native\",\"version\":\"1.0.0-rc.8\",\"scripts\":{\"clean\":\"yarn remove-definitions && yarn remove-dist && yarn remove-documentation\",\"build-documentation\":\"yarn remove-documentation && typedoc ./\",\"prepublishOnly\":\"yarn build\",\"pretest\":\"yarn build:cjs\",\"remove-definitions\":\"rimraf ./types\",\"remove-dist\":\"rimraf ./dist\",\"remove-documentation\":\"rimraf ./docs\",\"test\":\"exit 0\",\"build:cjs\":\"tsc -p tsconfig.json\",\"build:es\":\"tsc -p tsconfig.es.json\",\"build\":\"yarn build:cjs && yarn build:es\"},\"main\":\"./dist/cjs/index.js\",\"types\":\"./types/index.d.ts\",\"module\":\"./dist/es/index.js\",\"browser\":{\"./runtimeConfig\":\"./runtimeConfig.browser\"},\"react-native\":{\"./runtimeConfig\":\"./runtimeConfig.native\"},\"sideEffects\":false,\"dependencies\":{\"@aws-crypto/sha256-browser\":\"^1.0.0\",\"@aws-crypto/sha256-js\":\"^1.0.0\",\"@aws-sdk/config-resolver\":\"1.0.0-rc.8\",\"@aws-sdk/credential-provider-node\":\"1.0.0-rc.8\",\"@aws-sdk/fetch-http-handler\":\"1.0.0-rc.8\",\"@aws-sdk/hash-node\":\"1.0.0-rc.8\",\"@aws-sdk/invalid-dependency\":\"1.0.0-rc.8\",\"@aws-sdk/middleware-content-length\":\"1.0.0-rc.8\",\"@aws-sdk/middleware-host-header\":\"1.0.0-rc.8\",\"@aws-sdk/middleware-logger\":\"1.0.0-rc.8\",\"@aws-sdk/middleware-retry\":\"1.0.0-rc.8\",\"@aws-sdk/middleware-serde\":\"1.0.0-rc.8\",\"@aws-sdk/middleware-signing\":\"1.0.0-rc.8\",\"@aws-sdk/middleware-stack\":\"1.0.0-rc.8\",\"@aws-sdk/middleware-user-agent\":\"1.0.0-rc.8\",\"@aws-sdk/node-config-provider\":\"1.0.0-rc.8\",\"@aws-sdk/node-http-handler\":\"1.0.0-rc.8\",\"@aws-sdk/protocol-http\":\"1.0.0-rc.8\",\"@aws-sdk/smithy-client\":\"1.0.0-rc.8\",\"@aws-sdk/url-parser-browser\":\"1.0.0-rc.8\",\"@aws-sdk/url-parser-node\":\"1.0.0-rc.8\",\"@aws-sdk/util-base64-browser\":\"1.0.0-rc.8\",\"@aws-sdk/util-base64-node\":\"1.0.0-rc.8\",\"@aws-sdk/util-body-length-browser\":\"1.0.0-rc.8\",\"@aws-sdk/util-body-length-node\":\"1.0.0-rc.8\",\"@aws-sdk/util-user-agent-browser\":\"1.0.0-rc.8\",\"@aws-sdk/util-user-agent-node\":\"1.0.0-rc.8\",\"@aws-sdk/util-utf8-browser\":\"1.0.0-rc.8\",\"@aws-sdk/util-utf8-node\":\"1.0.0-rc.8\",\"tslib\":\"^2.0.0\"},\"devDependencies\":{\"@aws-sdk/client-documentation-generator\":\"1.0.0-rc.8\",\"@aws-sdk/types\":\"1.0.0-rc.8\",\"@types/node\":\"^12.7.5\",\"jest\":\"^26.1.0\",\"rimraf\":\"^3.0.0\",\"typedoc\":\"^0.19.2\",\"typescript\":\"~4.1.2\"},\"engines\":{\"node\":\">=10.0.0\"},\"author\":{\"name\":\"AWS SDK for JavaScript Team\",\"url\":\"https://aws.amazon.com/javascript/\"},\"license\":\"Apache-2.0\",\"homepage\":\"https://github.com/aws/aws-sdk-js-v3/tree/master/clients/client-lambda\",\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/aws/aws-sdk-js-v3.git\",\"directory\":\"clients/client-lambda\"}}");
 
 /***/ }),
 
@@ -488,10 +488,13 @@ const LambdaClient_1 = __webpack_require__(8746);
 const AddLayerVersionPermissionCommand_1 = __webpack_require__(775);
 const AddPermissionCommand_1 = __webpack_require__(7451);
 const CreateAliasCommand_1 = __webpack_require__(6860);
+const CreateCodeSigningConfigCommand_1 = __webpack_require__(3781);
 const CreateEventSourceMappingCommand_1 = __webpack_require__(2819);
 const CreateFunctionCommand_1 = __webpack_require__(5731);
 const DeleteAliasCommand_1 = __webpack_require__(2470);
+const DeleteCodeSigningConfigCommand_1 = __webpack_require__(7573);
 const DeleteEventSourceMappingCommand_1 = __webpack_require__(454);
+const DeleteFunctionCodeSigningConfigCommand_1 = __webpack_require__(4402);
 const DeleteFunctionCommand_1 = __webpack_require__(9978);
 const DeleteFunctionConcurrencyCommand_1 = __webpack_require__(8111);
 const DeleteFunctionEventInvokeConfigCommand_1 = __webpack_require__(2980);
@@ -499,7 +502,9 @@ const DeleteLayerVersionCommand_1 = __webpack_require__(6780);
 const DeleteProvisionedConcurrencyConfigCommand_1 = __webpack_require__(9106);
 const GetAccountSettingsCommand_1 = __webpack_require__(1899);
 const GetAliasCommand_1 = __webpack_require__(36);
+const GetCodeSigningConfigCommand_1 = __webpack_require__(7171);
 const GetEventSourceMappingCommand_1 = __webpack_require__(3635);
+const GetFunctionCodeSigningConfigCommand_1 = __webpack_require__(6136);
 const GetFunctionCommand_1 = __webpack_require__(5296);
 const GetFunctionConcurrencyCommand_1 = __webpack_require__(1452);
 const GetFunctionConfigurationCommand_1 = __webpack_require__(9459);
@@ -512,8 +517,10 @@ const GetProvisionedConcurrencyConfigCommand_1 = __webpack_require__(3994);
 const InvokeAsyncCommand_1 = __webpack_require__(6815);
 const InvokeCommand_1 = __webpack_require__(9677);
 const ListAliasesCommand_1 = __webpack_require__(5938);
+const ListCodeSigningConfigsCommand_1 = __webpack_require__(446);
 const ListEventSourceMappingsCommand_1 = __webpack_require__(5228);
 const ListFunctionEventInvokeConfigsCommand_1 = __webpack_require__(7926);
+const ListFunctionsByCodeSigningConfigCommand_1 = __webpack_require__(3813);
 const ListFunctionsCommand_1 = __webpack_require__(1862);
 const ListLayerVersionsCommand_1 = __webpack_require__(1426);
 const ListLayersCommand_1 = __webpack_require__(8319);
@@ -522,6 +529,7 @@ const ListTagsCommand_1 = __webpack_require__(8431);
 const ListVersionsByFunctionCommand_1 = __webpack_require__(2197);
 const PublishLayerVersionCommand_1 = __webpack_require__(4848);
 const PublishVersionCommand_1 = __webpack_require__(1901);
+const PutFunctionCodeSigningConfigCommand_1 = __webpack_require__(5397);
 const PutFunctionConcurrencyCommand_1 = __webpack_require__(3260);
 const PutFunctionEventInvokeConfigCommand_1 = __webpack_require__(9893);
 const PutProvisionedConcurrencyConfigCommand_1 = __webpack_require__(789);
@@ -530,6 +538,7 @@ const RemovePermissionCommand_1 = __webpack_require__(2144);
 const TagResourceCommand_1 = __webpack_require__(1925);
 const UntagResourceCommand_1 = __webpack_require__(9330);
 const UpdateAliasCommand_1 = __webpack_require__(807);
+const UpdateCodeSigningConfigCommand_1 = __webpack_require__(3551);
 const UpdateEventSourceMappingCommand_1 = __webpack_require__(7201);
 const UpdateFunctionCodeCommand_1 = __webpack_require__(5365);
 const UpdateFunctionConfigurationCommand_1 = __webpack_require__(908);
@@ -586,6 +595,20 @@ class Lambda extends LambdaClient_1.LambdaClient {
             return this.send(command, optionsOrCb);
         }
     }
+    createCodeSigningConfig(args, optionsOrCb, cb) {
+        const command = new CreateCodeSigningConfigCommand_1.CreateCodeSigningConfigCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
     createEventSourceMapping(args, optionsOrCb, cb) {
         const command = new CreateEventSourceMappingCommand_1.CreateEventSourceMappingCommand(args);
         if (typeof optionsOrCb === "function") {
@@ -628,6 +651,20 @@ class Lambda extends LambdaClient_1.LambdaClient {
             return this.send(command, optionsOrCb);
         }
     }
+    deleteCodeSigningConfig(args, optionsOrCb, cb) {
+        const command = new DeleteCodeSigningConfigCommand_1.DeleteCodeSigningConfigCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
     deleteEventSourceMapping(args, optionsOrCb, cb) {
         const command = new DeleteEventSourceMappingCommand_1.DeleteEventSourceMappingCommand(args);
         if (typeof optionsOrCb === "function") {
@@ -644,6 +681,20 @@ class Lambda extends LambdaClient_1.LambdaClient {
     }
     deleteFunction(args, optionsOrCb, cb) {
         const command = new DeleteFunctionCommand_1.DeleteFunctionCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    deleteFunctionCodeSigningConfig(args, optionsOrCb, cb) {
+        const command = new DeleteFunctionCodeSigningConfigCommand_1.DeleteFunctionCodeSigningConfigCommand(args);
         if (typeof optionsOrCb === "function") {
             this.send(command, optionsOrCb);
         }
@@ -740,6 +791,20 @@ class Lambda extends LambdaClient_1.LambdaClient {
             return this.send(command, optionsOrCb);
         }
     }
+    getCodeSigningConfig(args, optionsOrCb, cb) {
+        const command = new GetCodeSigningConfigCommand_1.GetCodeSigningConfigCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
     getEventSourceMapping(args, optionsOrCb, cb) {
         const command = new GetEventSourceMappingCommand_1.GetEventSourceMappingCommand(args);
         if (typeof optionsOrCb === "function") {
@@ -756,6 +821,20 @@ class Lambda extends LambdaClient_1.LambdaClient {
     }
     getFunction(args, optionsOrCb, cb) {
         const command = new GetFunctionCommand_1.GetFunctionCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    getFunctionCodeSigningConfig(args, optionsOrCb, cb) {
+        const command = new GetFunctionCodeSigningConfigCommand_1.GetFunctionCodeSigningConfigCommand(args);
         if (typeof optionsOrCb === "function") {
             this.send(command, optionsOrCb);
         }
@@ -922,6 +1001,20 @@ class Lambda extends LambdaClient_1.LambdaClient {
             return this.send(command, optionsOrCb);
         }
     }
+    listCodeSigningConfigs(args, optionsOrCb, cb) {
+        const command = new ListCodeSigningConfigsCommand_1.ListCodeSigningConfigsCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
     listEventSourceMappings(args, optionsOrCb, cb) {
         const command = new ListEventSourceMappingsCommand_1.ListEventSourceMappingsCommand(args);
         if (typeof optionsOrCb === "function") {
@@ -952,6 +1045,20 @@ class Lambda extends LambdaClient_1.LambdaClient {
     }
     listFunctions(args, optionsOrCb, cb) {
         const command = new ListFunctionsCommand_1.ListFunctionsCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    listFunctionsByCodeSigningConfig(args, optionsOrCb, cb) {
+        const command = new ListFunctionsByCodeSigningConfigCommand_1.ListFunctionsByCodeSigningConfigCommand(args);
         if (typeof optionsOrCb === "function") {
             this.send(command, optionsOrCb);
         }
@@ -1050,6 +1157,20 @@ class Lambda extends LambdaClient_1.LambdaClient {
     }
     publishVersion(args, optionsOrCb, cb) {
         const command = new PublishVersionCommand_1.PublishVersionCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    putFunctionCodeSigningConfig(args, optionsOrCb, cb) {
+        const command = new PutFunctionCodeSigningConfigCommand_1.PutFunctionCodeSigningConfigCommand(args);
         if (typeof optionsOrCb === "function") {
             this.send(command, optionsOrCb);
         }
@@ -1162,6 +1283,20 @@ class Lambda extends LambdaClient_1.LambdaClient {
     }
     updateAlias(args, optionsOrCb, cb) {
         const command = new UpdateAliasCommand_1.UpdateAliasCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    updateCodeSigningConfig(args, optionsOrCb, cb) {
+        const command = new UpdateCodeSigningConfigCommand_1.UpdateCodeSigningConfigCommand(args);
         if (typeof optionsOrCb === "function") {
             this.send(command, optionsOrCb);
         }
@@ -1302,6 +1437,14 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Adds permissions to the resource-based policy of a version of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
+ *         layer</a>. Use this action to grant layer
+ *       usage permission to other accounts. You can grant permission to a single account, all AWS accounts, or all
+ *       accounts in an organization.</p>
+ *          <p>To revoke permission, call <a>RemoveLayerVersionPermission</a> with the statement ID that you
+ *       specified when you added it.</p>
+ */
 class AddLayerVersionPermissionCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -1311,6 +1454,9 @@ class AddLayerVersionPermissionCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -1356,6 +1502,20 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Grants an AWS service or another account permission to use a function. You can apply the policy at the
+ *       function level, or specify a qualifier to restrict access to a single version or alias. If you use a qualifier,
+ *       the invoker must use the full Amazon Resource Name (ARN) of that version or alias to invoke the function.</p>
+ *
+ *          <p>To grant permission to another account, specify the account ID as the <code>Principal</code>. For AWS
+ *       services, the principal is a domain-style identifier defined by the service, like <code>s3.amazonaws.com</code> or
+ *         <code>sns.amazonaws.com</code>. For AWS services, you can also specify the ARN of the associated resource as the
+ *         <code>SourceArn</code>. If you grant permission to a service principal without specifying the source, other
+ *       accounts could potentially configure resources in their account to invoke your Lambda function.</p>
+ *
+ *          <p>This action adds a statement to a resource-based permissions policy for the function. For more information
+ *       about function policies, see <a href="https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html">Lambda Function Policies</a>. </p>
+ */
 class AddPermissionCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -1365,6 +1525,9 @@ class AddPermissionCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -1410,6 +1573,14 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Creates an <a href="https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html">alias</a> for a
+ *       Lambda function version. Use aliases to provide clients with a function identifier that you can update to invoke a
+ *       different version.</p>
+ *          <p>You can also map an alias to split invocation requests between two versions. Use the
+ *         <code>RoutingConfig</code> parameter to specify a second version and the percentage of invocation requests that
+ *       it receives.</p>
+ */
 class CreateAliasCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -1419,6 +1590,9 @@ class CreateAliasCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -1453,6 +1627,68 @@ exports.CreateAliasCommand = CreateAliasCommand;
 
 /***/ }),
 
+/***/ 3781:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.CreateCodeSigningConfigCommand = void 0;
+const models_0_1 = __webpack_require__(8850);
+const Aws_restJson1_1 = __webpack_require__(758);
+const middleware_serde_1 = __webpack_require__(6142);
+const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Creates a code signing configuration. A <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-trustedcode.html">code signing configuration</a> defines a list of
+ *       allowed signing profiles and defines the code-signing validation policy (action to be taken if deployment
+ *       validation checks fail). </p>
+ */
+class CreateCodeSigningConfigCommand extends smithy_client_1.Command {
+    // Start section: command_properties
+    // End section: command_properties
+    constructor(input) {
+        // Start section: command_constructor
+        super();
+        this.input = input;
+        // End section: command_constructor
+    }
+    /**
+     * @internal
+     */
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "LambdaClient";
+        const commandName = "CreateCodeSigningConfigCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.CreateCodeSigningConfigRequest.filterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.CreateCodeSigningConfigResponse.filterSensitiveLog,
+        };
+        if (typeof logger.info === "function") {
+            logger.info({
+                clientName,
+                commandName,
+            });
+        }
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return Aws_restJson1_1.serializeAws_restJson1CreateCodeSigningConfigCommand(input, context);
+    }
+    deserialize(output, context) {
+        return Aws_restJson1_1.deserializeAws_restJson1CreateCodeSigningConfigCommand(output, context);
+    }
+}
+exports.CreateCodeSigningConfigCommand = CreateCodeSigningConfigCommand;
+//# sourceMappingURL=CreateCodeSigningConfigCommand.js.map
+
+/***/ }),
+
 /***/ 2819:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
@@ -1464,6 +1700,66 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Creates a mapping between an event source and an AWS Lambda function. Lambda reads items from the event source
+ *       and triggers the function.</p>
+ *          <p>For details about each event source type, see the following topics.</p>
+ *          <ul>
+ *             <li>
+ *                <p>
+ *                   <a href="https://docs.aws.amazon.com/lambda/latest/dg/with-ddb.html">Using AWS Lambda with Amazon
+ *           DynamoDB</a>
+ *                </p>
+ *             </li>
+ *             <li>
+ *                <p>
+ *                   <a href="https://docs.aws.amazon.com/lambda/latest/dg/with-kinesis.html">Using AWS Lambda with Amazon
+ *           Kinesis</a>
+ *                </p>
+ *             </li>
+ *             <li>
+ *                <p>
+ *                   <a href="https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html">Using AWS Lambda with Amazon
+ *           SQS</a>
+ *                </p>
+ *             </li>
+ *             <li>
+ *                <p>
+ *                   <a href="https://docs.aws.amazon.com/lambda/latest/dg/with-mq.html">Using AWS Lambda with Amazon
+ *           MQ</a>
+ *                </p>
+ *             </li>
+ *             <li>
+ *                <p>
+ *                   <a href="https://docs.aws.amazon.com/lambda/latest/dg/with-msk.html">Using AWS Lambda with Amazon
+ *           MSK</a>
+ *                </p>
+ *             </li>
+ *          </ul>
+ *          <p>The following error handling options are only available for stream sources (DynamoDB and Kinesis):</p>
+ *          <ul>
+ *             <li>
+ *                <p>
+ *                   <code>BisectBatchOnFunctionError</code> - If the function returns an error, split the batch in two and retry.</p>
+ *             </li>
+ *             <li>
+ *                <p>
+ *                   <code>DestinationConfig</code> - Send discarded records to an Amazon SQS queue or Amazon SNS topic.</p>
+ *             </li>
+ *             <li>
+ *                <p>
+ *                   <code>MaximumRecordAgeInSeconds</code> - Discard records older than the specified age. The default value is infinite (-1). When set to infinite (-1), failed records are retried until the record expires</p>
+ *             </li>
+ *             <li>
+ *                <p>
+ *                   <code>MaximumRetryAttempts</code> - Discard records after the specified number of retries. The default value is infinite (-1). When set to infinite (-1), failed records are retried until the record expires.</p>
+ *             </li>
+ *             <li>
+ *                <p>
+ *                   <code>ParallelizationFactor</code> - Process multiple batches from each shard concurrently.</p>
+ *             </li>
+ *          </ul>
+ */
 class CreateEventSourceMappingCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -1473,6 +1769,9 @@ class CreateEventSourceMappingCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -1518,6 +1817,43 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Creates a Lambda function. To create a function, you need a <a href="https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html">deployment package</a> and an <a href="https://docs.aws.amazon.com/lambda/latest/dg/intro-permission-model.html#lambda-intro-execution-role">execution role</a>. The
+ *       deployment package is a ZIP archive or image container that contains your function code. The execution role grants the function permission to use AWS
+ *       services, such as Amazon CloudWatch Logs for log streaming and AWS X-Ray for request tracing.</p>
+ *
+ *          <p>When you create a function, Lambda provisions an instance of the function and its supporting resources. If
+ *       your function connects to a VPC, this process can take a minute or so. During this time, you can't invoke or
+ *       modify the function. The <code>State</code>, <code>StateReason</code>, and <code>StateReasonCode</code> fields in
+ *       the response from <a>GetFunctionConfiguration</a> indicate when the function is ready to invoke. For
+ *       more information, see <a href="https://docs.aws.amazon.com/lambda/latest/dg/functions-states.html">Function
+ *         States</a>.</p>
+ *
+ *          <p>A function has an unpublished version, and can have published versions and aliases. The unpublished version
+ *       changes when you update your function's code and configuration. A published version is a snapshot of your function
+ *       code and configuration that can't be changed. An alias is a named resource that maps to a version, and can be
+ *       changed to map to a different version. Use the <code>Publish</code> parameter to create version <code>1</code> of
+ *       your function from its initial configuration.</p>
+ *
+ *          <p>The other parameters let you configure version-specific and function-level settings. You can modify
+ *       version-specific settings later with <a>UpdateFunctionConfiguration</a>. Function-level settings apply
+ *       to both the unpublished and published versions of the function, and include tags (<a>TagResource</a>)
+ *       and per-function concurrency limits (<a>PutFunctionConcurrency</a>).</p>
+ *
+ *          <p>You can use code signing if your deployment package is a ZIP archive. To enable code signing for this function,
+ *       specify the ARN of a code-signing configuration. When a user
+ *       attempts to deploy a code package with <a>UpdateFunctionCode</a>, Lambda checks that the code
+ *       package has a valid signature from a trusted publisher. The code-signing configuration
+ *       includes set set of signing profiles, which define the trusted publishers for this function.</p>
+ *
+ *          <p>If another account or an AWS service invokes your function, use <a>AddPermission</a> to grant
+ *       permission by creating a resource-based IAM policy. You can grant permissions at the function level, on a version,
+ *       or on an alias.</p>
+ *
+ *          <p>To invoke your function directly, use <a>Invoke</a>. To invoke your function in response to events
+ *       in other AWS services, create an event source mapping (<a>CreateEventSourceMapping</a>), or configure a
+ *       function trigger in the other service. For more information, see <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html">Invoking Functions</a>.</p>
+ */
 class CreateFunctionCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -1527,6 +1863,9 @@ class CreateFunctionCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -1572,6 +1911,9 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Deletes a Lambda function <a href="https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html">alias</a>.</p>
+ */
 class DeleteAliasCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -1581,6 +1923,9 @@ class DeleteAliasCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -1615,6 +1960,67 @@ exports.DeleteAliasCommand = DeleteAliasCommand;
 
 /***/ }),
 
+/***/ 7573:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.DeleteCodeSigningConfigCommand = void 0;
+const models_0_1 = __webpack_require__(8850);
+const Aws_restJson1_1 = __webpack_require__(758);
+const middleware_serde_1 = __webpack_require__(6142);
+const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Deletes the code signing configuration. You can delete the code signing configuration only if no function is
+ *       using it. </p>
+ */
+class DeleteCodeSigningConfigCommand extends smithy_client_1.Command {
+    // Start section: command_properties
+    // End section: command_properties
+    constructor(input) {
+        // Start section: command_constructor
+        super();
+        this.input = input;
+        // End section: command_constructor
+    }
+    /**
+     * @internal
+     */
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "LambdaClient";
+        const commandName = "DeleteCodeSigningConfigCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.DeleteCodeSigningConfigRequest.filterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.DeleteCodeSigningConfigResponse.filterSensitiveLog,
+        };
+        if (typeof logger.info === "function") {
+            logger.info({
+                clientName,
+                commandName,
+            });
+        }
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return Aws_restJson1_1.serializeAws_restJson1DeleteCodeSigningConfigCommand(input, context);
+    }
+    deserialize(output, context) {
+        return Aws_restJson1_1.deserializeAws_restJson1DeleteCodeSigningConfigCommand(output, context);
+    }
+}
+exports.DeleteCodeSigningConfigCommand = DeleteCodeSigningConfigCommand;
+//# sourceMappingURL=DeleteCodeSigningConfigCommand.js.map
+
+/***/ }),
+
 /***/ 454:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
@@ -1626,6 +2032,12 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Deletes an <a href="https://docs.aws.amazon.com/lambda/latest/dg/intro-invocation-modes.html">event source
+ *       mapping</a>. You can get the identifier of a mapping from the output of <a>ListEventSourceMappings</a>.</p>
+ *          <p>When you delete an event source mapping, it enters a <code>Deleting</code> state and might not be completely
+ *       deleted for several seconds.</p>
+ */
 class DeleteEventSourceMappingCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -1635,6 +2047,9 @@ class DeleteEventSourceMappingCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -1669,6 +2084,66 @@ exports.DeleteEventSourceMappingCommand = DeleteEventSourceMappingCommand;
 
 /***/ }),
 
+/***/ 4402:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.DeleteFunctionCodeSigningConfigCommand = void 0;
+const models_0_1 = __webpack_require__(8850);
+const Aws_restJson1_1 = __webpack_require__(758);
+const middleware_serde_1 = __webpack_require__(6142);
+const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Removes the code signing configuration from the function.</p>
+ */
+class DeleteFunctionCodeSigningConfigCommand extends smithy_client_1.Command {
+    // Start section: command_properties
+    // End section: command_properties
+    constructor(input) {
+        // Start section: command_constructor
+        super();
+        this.input = input;
+        // End section: command_constructor
+    }
+    /**
+     * @internal
+     */
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "LambdaClient";
+        const commandName = "DeleteFunctionCodeSigningConfigCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.DeleteFunctionCodeSigningConfigRequest.filterSensitiveLog,
+            outputFilterSensitiveLog: (output) => output,
+        };
+        if (typeof logger.info === "function") {
+            logger.info({
+                clientName,
+                commandName,
+            });
+        }
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return Aws_restJson1_1.serializeAws_restJson1DeleteFunctionCodeSigningConfigCommand(input, context);
+    }
+    deserialize(output, context) {
+        return Aws_restJson1_1.deserializeAws_restJson1DeleteFunctionCodeSigningConfigCommand(output, context);
+    }
+}
+exports.DeleteFunctionCodeSigningConfigCommand = DeleteFunctionCodeSigningConfigCommand;
+//# sourceMappingURL=DeleteFunctionCodeSigningConfigCommand.js.map
+
+/***/ }),
+
 /***/ 9978:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
@@ -1680,6 +2155,14 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Deletes a Lambda function. To delete a specific function version, use the <code>Qualifier</code> parameter.
+ *       Otherwise, all versions and aliases are deleted.</p>
+ *
+ *          <p>To delete Lambda event source mappings that invoke a function, use <a>DeleteEventSourceMapping</a>.
+ *       For AWS services and resources that invoke your function directly, delete the trigger in the service where you
+ *       originally configured it.</p>
+ */
 class DeleteFunctionCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -1689,6 +2172,9 @@ class DeleteFunctionCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -1734,6 +2220,9 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Removes a concurrent execution limit from a function.</p>
+ */
 class DeleteFunctionConcurrencyCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -1743,6 +2232,9 @@ class DeleteFunctionConcurrencyCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -1788,6 +2280,10 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Deletes the configuration for asynchronous invocation for a function, version, or alias.</p>
+ *          <p>To configure options for asynchronous invocation, use <a>PutFunctionEventInvokeConfig</a>.</p>
+ */
 class DeleteFunctionEventInvokeConfigCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -1797,6 +2293,9 @@ class DeleteFunctionEventInvokeConfigCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -1842,6 +2341,11 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Deletes a version of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
+ *         layer</a>. Deleted versions can no longer be viewed or added to functions. To avoid
+ *       breaking functions, a copy of the version remains in Lambda until no functions refer to it.</p>
+ */
 class DeleteLayerVersionCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -1851,6 +2355,9 @@ class DeleteLayerVersionCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -1896,6 +2403,9 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Deletes the provisioned concurrency configuration for a function.</p>
+ */
 class DeleteProvisionedConcurrencyConfigCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -1905,6 +2415,9 @@ class DeleteProvisionedConcurrencyConfigCommand extends smithy_client_1.Command 
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -1950,6 +2463,9 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Retrieves details about your account's <a href="https://docs.aws.amazon.com/lambda/latest/dg/limits.html">limits</a> and usage in an AWS Region.</p>
+ */
 class GetAccountSettingsCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -1959,6 +2475,9 @@ class GetAccountSettingsCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2004,6 +2523,9 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Returns details about a Lambda function <a href="https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html">alias</a>.</p>
+ */
 class GetAliasCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -2013,6 +2535,9 @@ class GetAliasCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2047,6 +2572,66 @@ exports.GetAliasCommand = GetAliasCommand;
 
 /***/ }),
 
+/***/ 7171:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.GetCodeSigningConfigCommand = void 0;
+const models_0_1 = __webpack_require__(8850);
+const Aws_restJson1_1 = __webpack_require__(758);
+const middleware_serde_1 = __webpack_require__(6142);
+const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Returns information about the specified code signing configuration.</p>
+ */
+class GetCodeSigningConfigCommand extends smithy_client_1.Command {
+    // Start section: command_properties
+    // End section: command_properties
+    constructor(input) {
+        // Start section: command_constructor
+        super();
+        this.input = input;
+        // End section: command_constructor
+    }
+    /**
+     * @internal
+     */
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "LambdaClient";
+        const commandName = "GetCodeSigningConfigCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.GetCodeSigningConfigRequest.filterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.GetCodeSigningConfigResponse.filterSensitiveLog,
+        };
+        if (typeof logger.info === "function") {
+            logger.info({
+                clientName,
+                commandName,
+            });
+        }
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return Aws_restJson1_1.serializeAws_restJson1GetCodeSigningConfigCommand(input, context);
+    }
+    deserialize(output, context) {
+        return Aws_restJson1_1.deserializeAws_restJson1GetCodeSigningConfigCommand(output, context);
+    }
+}
+exports.GetCodeSigningConfigCommand = GetCodeSigningConfigCommand;
+//# sourceMappingURL=GetCodeSigningConfigCommand.js.map
+
+/***/ }),
+
 /***/ 3635:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
@@ -2058,6 +2643,10 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Returns details about an event source mapping. You can get the identifier of a mapping from the output of
+ *       <a>ListEventSourceMappings</a>.</p>
+ */
 class GetEventSourceMappingCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -2067,6 +2656,9 @@ class GetEventSourceMappingCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2101,6 +2693,66 @@ exports.GetEventSourceMappingCommand = GetEventSourceMappingCommand;
 
 /***/ }),
 
+/***/ 6136:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.GetFunctionCodeSigningConfigCommand = void 0;
+const models_0_1 = __webpack_require__(8850);
+const Aws_restJson1_1 = __webpack_require__(758);
+const middleware_serde_1 = __webpack_require__(6142);
+const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Returns the code signing configuration for the specified function.</p>
+ */
+class GetFunctionCodeSigningConfigCommand extends smithy_client_1.Command {
+    // Start section: command_properties
+    // End section: command_properties
+    constructor(input) {
+        // Start section: command_constructor
+        super();
+        this.input = input;
+        // End section: command_constructor
+    }
+    /**
+     * @internal
+     */
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "LambdaClient";
+        const commandName = "GetFunctionCodeSigningConfigCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.GetFunctionCodeSigningConfigRequest.filterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.GetFunctionCodeSigningConfigResponse.filterSensitiveLog,
+        };
+        if (typeof logger.info === "function") {
+            logger.info({
+                clientName,
+                commandName,
+            });
+        }
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return Aws_restJson1_1.serializeAws_restJson1GetFunctionCodeSigningConfigCommand(input, context);
+    }
+    deserialize(output, context) {
+        return Aws_restJson1_1.deserializeAws_restJson1GetFunctionCodeSigningConfigCommand(output, context);
+    }
+}
+exports.GetFunctionCodeSigningConfigCommand = GetFunctionCodeSigningConfigCommand;
+//# sourceMappingURL=GetFunctionCodeSigningConfigCommand.js.map
+
+/***/ }),
+
 /***/ 5296:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
@@ -2112,6 +2764,11 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Returns information about the function or function version, with a link to download the deployment package
+ *       that's valid for 10 minutes. If you specify a function version, only details that are specific to that version are
+ *       returned.</p>
+ */
 class GetFunctionCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -2121,6 +2778,9 @@ class GetFunctionCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2166,6 +2826,10 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Returns details about the reserved concurrency configuration for a function. To set a concurrency limit for a
+ *       function, use <a>PutFunctionConcurrency</a>.</p>
+ */
 class GetFunctionConcurrencyCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -2175,6 +2839,9 @@ class GetFunctionConcurrencyCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2220,6 +2887,11 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Returns the version-specific settings of a Lambda function or version. The output includes only options that
+ *       can vary between versions of a function. To modify these settings, use <a>UpdateFunctionConfiguration</a>.</p>
+ *          <p>To get all of a function's details, including function-level settings, use <a>GetFunction</a>.</p>
+ */
 class GetFunctionConfigurationCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -2229,6 +2901,9 @@ class GetFunctionConfigurationCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2274,6 +2949,10 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Retrieves the configuration for asynchronous invocation for a function, version, or alias.</p>
+ *          <p>To configure options for asynchronous invocation, use <a>PutFunctionEventInvokeConfig</a>.</p>
+ */
 class GetFunctionEventInvokeConfigCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -2283,6 +2962,9 @@ class GetFunctionEventInvokeConfigCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2328,6 +3010,11 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Returns information about a version of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
+ *         layer</a>, with a link to download the layer archive
+ *         that's valid for 10 minutes.</p>
+ */
 class GetLayerVersionByArnCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -2337,6 +3024,9 @@ class GetLayerVersionByArnCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2382,6 +3072,11 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Returns information about a version of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
+ *         layer</a>, with a link to download the layer archive
+ *         that's valid for 10 minutes.</p>
+ */
 class GetLayerVersionCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -2391,6 +3086,9 @@ class GetLayerVersionCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2436,6 +3134,10 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Returns the permission policy for a version of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
+ *         layer</a>. For more information, see <a>AddLayerVersionPermission</a>.</p>
+ */
 class GetLayerVersionPolicyCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -2445,6 +3147,9 @@ class GetLayerVersionPolicyCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2490,6 +3195,9 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Returns the <a href="https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html">resource-based IAM policy</a> for a function, version, or alias.</p>
+ */
 class GetPolicyCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -2499,6 +3207,9 @@ class GetPolicyCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2544,6 +3255,9 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Retrieves the provisioned concurrency configuration for a function's alias or version.</p>
+ */
 class GetProvisionedConcurrencyConfigCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -2553,6 +3267,9 @@ class GetProvisionedConcurrencyConfigCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2598,6 +3315,12 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <important>
+ *             <p>For asynchronous function invocation, use <a>Invoke</a>.</p>
+ *          </important>
+ *          <p>Invokes a function asynchronously.</p>
+ */
 class InvokeAsyncCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -2607,6 +3330,9 @@ class InvokeAsyncCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2652,6 +3378,35 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Invokes a Lambda function. You can invoke a function synchronously (and wait for the response), or
+ *       asynchronously. To invoke a function asynchronously, set <code>InvocationType</code> to <code>Event</code>.</p>
+ *
+ *          <p>For <a href="https://docs.aws.amazon.com/lambda/latest/dg/invocation-sync.html">synchronous invocation</a>,
+ *       details about the function response, including errors, are included in the response body and headers. For either
+ *       invocation type, you can find more information in the <a href="https://docs.aws.amazon.com/lambda/latest/dg/monitoring-functions.html">execution log</a> and <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-x-ray.html">trace</a>.</p>
+ *
+ *          <p>When an error occurs, your function may be invoked multiple times. Retry behavior varies by error type,
+ *       client, event source, and invocation type. For example, if you invoke a function asynchronously and it returns an
+ *       error, Lambda executes the function up to two more times. For more information, see <a href="https://docs.aws.amazon.com/lambda/latest/dg/retries-on-errors.html">Retry Behavior</a>.</p>
+ *
+ *          <p>For <a href="https://docs.aws.amazon.com/lambda/latest/dg/invocation-async.html">asynchronous invocation</a>,
+ *       Lambda adds events to a queue before sending them to your function. If your function does not have enough capacity
+ *       to keep up with the queue, events may be lost. Occasionally, your function may receive the same event multiple
+ *       times, even if no error occurs. To retain events that were not processed, configure your function with a <a href="https://docs.aws.amazon.com/lambda/latest/dg/invocation-async.html#dlq">dead-letter queue</a>.</p>
+ *
+ *          <p>The status code in the API response doesn't reflect function errors. Error codes are reserved for errors that
+ *       prevent your function from executing, such as permissions errors, <a href="https://docs.aws.amazon.com/lambda/latest/dg/limits.html">limit errors</a>, or issues with your function's code and configuration.
+ *       For example, Lambda returns <code>TooManyRequestsException</code> if executing the function would cause you to
+ *       exceed a concurrency limit at either the account level (<code>ConcurrentInvocationLimitExceeded</code>) or
+ *       function level (<code>ReservedFunctionConcurrentInvocationLimitExceeded</code>).</p>
+ *
+ *          <p>For functions with a long timeout, your client might be disconnected during synchronous invocation while it
+ *       waits for a response. Configure your HTTP client, SDK, firewall, proxy, or operating system to allow for long
+ *       connections with timeout or keep-alive settings.</p>
+ *
+ *          <p>This operation requires permission for the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awslambda.html">lambda:InvokeFunction</a> action.</p>
+ */
 class InvokeCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -2661,6 +3416,9 @@ class InvokeCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2706,6 +3464,10 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Returns a list of <a href="https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html">aliases</a>
+ *       for a Lambda function.</p>
+ */
 class ListAliasesCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -2715,6 +3477,9 @@ class ListAliasesCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2749,6 +3514,68 @@ exports.ListAliasesCommand = ListAliasesCommand;
 
 /***/ }),
 
+/***/ 446:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ListCodeSigningConfigsCommand = void 0;
+const models_0_1 = __webpack_require__(8850);
+const Aws_restJson1_1 = __webpack_require__(758);
+const middleware_serde_1 = __webpack_require__(6142);
+const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Returns a list of <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuring-codesigning.html">code
+ *         signing configurations</a>. A request returns up to 10,000 configurations per
+ *       call. You can use the <code>MaxItems</code> parameter to return fewer configurations per call. </p>
+ */
+class ListCodeSigningConfigsCommand extends smithy_client_1.Command {
+    // Start section: command_properties
+    // End section: command_properties
+    constructor(input) {
+        // Start section: command_constructor
+        super();
+        this.input = input;
+        // End section: command_constructor
+    }
+    /**
+     * @internal
+     */
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "LambdaClient";
+        const commandName = "ListCodeSigningConfigsCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.ListCodeSigningConfigsRequest.filterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.ListCodeSigningConfigsResponse.filterSensitiveLog,
+        };
+        if (typeof logger.info === "function") {
+            logger.info({
+                clientName,
+                commandName,
+            });
+        }
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return Aws_restJson1_1.serializeAws_restJson1ListCodeSigningConfigsCommand(input, context);
+    }
+    deserialize(output, context) {
+        return Aws_restJson1_1.deserializeAws_restJson1ListCodeSigningConfigsCommand(output, context);
+    }
+}
+exports.ListCodeSigningConfigsCommand = ListCodeSigningConfigsCommand;
+//# sourceMappingURL=ListCodeSigningConfigsCommand.js.map
+
+/***/ }),
+
 /***/ 5228:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
@@ -2760,6 +3587,10 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Lists event source mappings. Specify an <code>EventSourceArn</code> to only show event source mappings for a
+ *       single event source.</p>
+ */
 class ListEventSourceMappingsCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -2769,6 +3600,9 @@ class ListEventSourceMappingsCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2814,6 +3648,10 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Retrieves a list of configurations for asynchronous invocation for a function.</p>
+ *          <p>To configure options for asynchronous invocation, use <a>PutFunctionEventInvokeConfig</a>.</p>
+ */
 class ListFunctionEventInvokeConfigsCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -2823,6 +3661,9 @@ class ListFunctionEventInvokeConfigsCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2857,6 +3698,67 @@ exports.ListFunctionEventInvokeConfigsCommand = ListFunctionEventInvokeConfigsCo
 
 /***/ }),
 
+/***/ 3813:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ListFunctionsByCodeSigningConfigCommand = void 0;
+const models_0_1 = __webpack_require__(8850);
+const Aws_restJson1_1 = __webpack_require__(758);
+const middleware_serde_1 = __webpack_require__(6142);
+const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>List the functions that use the specified code signing configuration. You can use this method prior to deleting a
+ *       code signing configuration, to verify that no functions are using it.</p>
+ */
+class ListFunctionsByCodeSigningConfigCommand extends smithy_client_1.Command {
+    // Start section: command_properties
+    // End section: command_properties
+    constructor(input) {
+        // Start section: command_constructor
+        super();
+        this.input = input;
+        // End section: command_constructor
+    }
+    /**
+     * @internal
+     */
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "LambdaClient";
+        const commandName = "ListFunctionsByCodeSigningConfigCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.ListFunctionsByCodeSigningConfigRequest.filterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.ListFunctionsByCodeSigningConfigResponse.filterSensitiveLog,
+        };
+        if (typeof logger.info === "function") {
+            logger.info({
+                clientName,
+                commandName,
+            });
+        }
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return Aws_restJson1_1.serializeAws_restJson1ListFunctionsByCodeSigningConfigCommand(input, context);
+    }
+    deserialize(output, context) {
+        return Aws_restJson1_1.deserializeAws_restJson1ListFunctionsByCodeSigningConfigCommand(output, context);
+    }
+}
+exports.ListFunctionsByCodeSigningConfigCommand = ListFunctionsByCodeSigningConfigCommand;
+//# sourceMappingURL=ListFunctionsByCodeSigningConfigCommand.js.map
+
+/***/ }),
+
 /***/ 1862:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
@@ -2868,6 +3770,12 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Returns a list of Lambda functions, with the version-specific configuration of each. Lambda returns up to 50
+ *       functions per call.</p>
+ *          <p>Set <code>FunctionVersion</code> to <code>ALL</code> to include all published versions of each function in
+ *       addition to the unpublished version. To get more information about a function or version, use <a>GetFunction</a>.</p>
+ */
 class ListFunctionsCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -2877,6 +3785,9 @@ class ListFunctionsCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2922,6 +3833,11 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Lists the versions of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
+ *         layer</a>. Versions that have been deleted aren't listed. Specify a <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html">runtime identifier</a> to list only
+ *       versions that indicate that they're compatible with that runtime.</p>
+ */
 class ListLayerVersionsCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -2931,6 +3847,9 @@ class ListLayerVersionsCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2976,6 +3895,11 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Lists <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
+ *         layers</a> and shows information about the latest version of each. Specify a <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html">runtime identifier</a> to list only layers
+ *       that indicate that they're compatible with that runtime.</p>
+ */
 class ListLayersCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -2985,6 +3909,9 @@ class ListLayersCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3030,6 +3957,9 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Retrieves a list of provisioned concurrency configurations for a function.</p>
+ */
 class ListProvisionedConcurrencyConfigsCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -3039,6 +3969,9 @@ class ListProvisionedConcurrencyConfigsCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3084,6 +4017,10 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Returns a function's <a href="https://docs.aws.amazon.com/lambda/latest/dg/tagging.html">tags</a>. You can
+ *       also view tags with <a>GetFunction</a>.</p>
+ */
 class ListTagsCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -3093,6 +4030,9 @@ class ListTagsCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3138,6 +4078,10 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Returns a list of <a href="https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html">versions</a>,
+ *       with the version-specific configuration of each. Lambda returns up to 50 versions per call.</p>
+ */
 class ListVersionsByFunctionCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -3147,6 +4091,9 @@ class ListVersionsByFunctionCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3192,6 +4139,12 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Creates an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
+ *         layer</a> from a ZIP archive. Each time you call <code>PublishLayerVersion</code> with the same
+ *       layer name, a new version is created.</p>
+ *          <p>Add layers to your function with <a>CreateFunction</a> or <a>UpdateFunctionConfiguration</a>.</p>
+ */
 class PublishLayerVersionCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -3201,6 +4154,9 @@ class PublishLayerVersionCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3246,6 +4202,17 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Creates a <a href="https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html">version</a> from the
+ *       current code and configuration of a function. Use versions to create a snapshot of your function code and
+ *       configuration that doesn't change.</p>
+ *
+ *          <p>AWS Lambda doesn't publish a version if the function's configuration and code haven't changed since the last
+ *       version. Use <a>UpdateFunctionCode</a> or <a>UpdateFunctionConfiguration</a> to update the
+ *       function before publishing a version.</p>
+ *
+ *          <p>Clients can invoke versions directly or with an alias. To create an alias, use <a>CreateAlias</a>.</p>
+ */
 class PublishVersionCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -3255,6 +4222,9 @@ class PublishVersionCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3289,6 +4259,67 @@ exports.PublishVersionCommand = PublishVersionCommand;
 
 /***/ }),
 
+/***/ 5397:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.PutFunctionCodeSigningConfigCommand = void 0;
+const models_0_1 = __webpack_require__(8850);
+const Aws_restJson1_1 = __webpack_require__(758);
+const middleware_serde_1 = __webpack_require__(6142);
+const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Update the code signing configuration for the function. Changes to the code signing configuration take effect the
+ *       next time a user tries to deploy a code package to the function. </p>
+ */
+class PutFunctionCodeSigningConfigCommand extends smithy_client_1.Command {
+    // Start section: command_properties
+    // End section: command_properties
+    constructor(input) {
+        // Start section: command_constructor
+        super();
+        this.input = input;
+        // End section: command_constructor
+    }
+    /**
+     * @internal
+     */
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "LambdaClient";
+        const commandName = "PutFunctionCodeSigningConfigCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.PutFunctionCodeSigningConfigRequest.filterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.PutFunctionCodeSigningConfigResponse.filterSensitiveLog,
+        };
+        if (typeof logger.info === "function") {
+            logger.info({
+                clientName,
+                commandName,
+            });
+        }
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return Aws_restJson1_1.serializeAws_restJson1PutFunctionCodeSigningConfigCommand(input, context);
+    }
+    deserialize(output, context) {
+        return Aws_restJson1_1.deserializeAws_restJson1PutFunctionCodeSigningConfigCommand(output, context);
+    }
+}
+exports.PutFunctionCodeSigningConfigCommand = PutFunctionCodeSigningConfigCommand;
+//# sourceMappingURL=PutFunctionCodeSigningConfigCommand.js.map
+
+/***/ }),
+
 /***/ 3260:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
@@ -3300,6 +4331,17 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Sets the maximum number of simultaneous executions for a function, and reserves capacity for that concurrency
+ *       level.</p>
+ *          <p>Concurrency settings apply to the function as a whole, including all published versions and the unpublished
+ *       version. Reserving concurrency both ensures that your function has capacity to process the specified number of
+ *       events simultaneously, and prevents it from scaling beyond that level. Use <a>GetFunction</a> to see
+ *       the current setting for a function.</p>
+ *          <p>Use <a>GetAccountSettings</a> to see your Regional concurrency limit. You can reserve concurrency
+ *       for as many functions as you like, as long as you leave at least 100 simultaneous executions unreserved for
+ *       functions that aren't configured with a per-function limit. For more information, see <a href="https://docs.aws.amazon.com/lambda/latest/dg/concurrent-executions.html">Managing Concurrency</a>.</p>
+ */
 class PutFunctionConcurrencyCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -3309,6 +4351,9 @@ class PutFunctionConcurrencyCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3354,6 +4399,19 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Configures options for <a href="https://docs.aws.amazon.com/lambda/latest/dg/invocation-async.html">asynchronous
+ *         invocation</a> on a function, version, or alias. If a configuration already exists for a function, version,
+ *       or alias, this operation overwrites it. If you exclude any settings, they are removed. To set one option without
+ *       affecting existing settings for other options, use <a>UpdateFunctionEventInvokeConfig</a>.</p>
+ *          <p>By default, Lambda retries an asynchronous invocation twice if the function returns an error. It retains
+ *       events in a queue for up to six hours. When an event fails all processing attempts or stays in the asynchronous
+ *       invocation queue for too long, Lambda discards it. To retain discarded events, configure a dead-letter queue with
+ *         <a>UpdateFunctionConfiguration</a>.</p>
+ *          <p>To send an invocation record to a queue, topic, function, or event bus, specify a <a href="https://docs.aws.amazon.com/lambda/latest/dg/invocation-async.html#invocation-async-destinations">destination</a>. You can configure separate destinations for successful invocations (on-success) and events
+ *       that fail all processing attempts (on-failure). You can configure destinations in addition to or instead of a
+ *       dead-letter queue.</p>
+ */
 class PutFunctionEventInvokeConfigCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -3363,6 +4421,9 @@ class PutFunctionEventInvokeConfigCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3408,6 +4469,9 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Adds a provisioned concurrency configuration to a function's alias or version.</p>
+ */
 class PutProvisionedConcurrencyConfigCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -3417,6 +4481,9 @@ class PutProvisionedConcurrencyConfigCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3462,6 +4529,11 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Removes a statement from the permissions policy for a version of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
+ *         layer</a>. For more information, see
+ *         <a>AddLayerVersionPermission</a>.</p>
+ */
 class RemoveLayerVersionPermissionCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -3471,6 +4543,9 @@ class RemoveLayerVersionPermissionCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3516,6 +4591,10 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Revokes function-use permission from an AWS service or another account. You can get the ID of the statement
+ *       from the output of <a>GetPolicy</a>.</p>
+ */
 class RemovePermissionCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -3525,6 +4604,9 @@ class RemovePermissionCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3570,6 +4652,9 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Adds <a href="https://docs.aws.amazon.com/lambda/latest/dg/tagging.html">tags</a> to a function.</p>
+ */
 class TagResourceCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -3579,6 +4664,9 @@ class TagResourceCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3624,6 +4712,9 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Removes <a href="https://docs.aws.amazon.com/lambda/latest/dg/tagging.html">tags</a> from a function.</p>
+ */
 class UntagResourceCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -3633,6 +4724,9 @@ class UntagResourceCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3678,6 +4772,9 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Updates the configuration of a Lambda function <a href="https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html">alias</a>.</p>
+ */
 class UpdateAliasCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -3687,6 +4784,9 @@ class UpdateAliasCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3721,6 +4821,67 @@ exports.UpdateAliasCommand = UpdateAliasCommand;
 
 /***/ }),
 
+/***/ 3551:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.UpdateCodeSigningConfigCommand = void 0;
+const models_0_1 = __webpack_require__(8850);
+const Aws_restJson1_1 = __webpack_require__(758);
+const middleware_serde_1 = __webpack_require__(6142);
+const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Update the code signing configuration. Changes to the code signing configuration take effect the next time a
+ *       user tries to deploy a code package to the function. </p>
+ */
+class UpdateCodeSigningConfigCommand extends smithy_client_1.Command {
+    // Start section: command_properties
+    // End section: command_properties
+    constructor(input) {
+        // Start section: command_constructor
+        super();
+        this.input = input;
+        // End section: command_constructor
+    }
+    /**
+     * @internal
+     */
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "LambdaClient";
+        const commandName = "UpdateCodeSigningConfigCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.UpdateCodeSigningConfigRequest.filterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.UpdateCodeSigningConfigResponse.filterSensitiveLog,
+        };
+        if (typeof logger.info === "function") {
+            logger.info({
+                clientName,
+                commandName,
+            });
+        }
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return Aws_restJson1_1.serializeAws_restJson1UpdateCodeSigningConfigCommand(input, context);
+    }
+    deserialize(output, context) {
+        return Aws_restJson1_1.deserializeAws_restJson1UpdateCodeSigningConfigCommand(output, context);
+    }
+}
+exports.UpdateCodeSigningConfigCommand = UpdateCodeSigningConfigCommand;
+//# sourceMappingURL=UpdateCodeSigningConfigCommand.js.map
+
+/***/ }),
+
 /***/ 7201:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
@@ -3732,6 +4893,33 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Updates an event source mapping. You can change the function that AWS Lambda invokes, or pause invocation and
+ *       resume later from the same location.</p>
+ *          <p>The following error handling options are only available for stream sources (DynamoDB and Kinesis):</p>
+ *          <ul>
+ *             <li>
+ *                <p>
+ *                   <code>BisectBatchOnFunctionError</code> - If the function returns an error, split the batch in two and retry.</p>
+ *             </li>
+ *             <li>
+ *                <p>
+ *                   <code>DestinationConfig</code> - Send discarded records to an Amazon SQS queue or Amazon SNS topic.</p>
+ *             </li>
+ *             <li>
+ *                <p>
+ *                   <code>MaximumRecordAgeInSeconds</code> - Discard records older than the specified age. The default value is infinite (-1). When set to infinite (-1), failed records are retried until the record expires</p>
+ *             </li>
+ *             <li>
+ *                <p>
+ *                   <code>MaximumRetryAttempts</code> - Discard records after the specified number of retries. The default value is infinite (-1). When set to infinite (-1), failed records are retried until the record expires.</p>
+ *             </li>
+ *             <li>
+ *                <p>
+ *                   <code>ParallelizationFactor</code> - Process multiple batches from each shard concurrently.</p>
+ *             </li>
+ *          </ul>
+ */
 class UpdateEventSourceMappingCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -3741,6 +4929,9 @@ class UpdateEventSourceMappingCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3786,6 +4977,13 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Updates a Lambda function's code. If code signing is enabled for the function, the code package must be signed
+ *       by a trusted publisher. For more information, see <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-trustedcode.html">Configuring code signing</a>.</p>
+ *
+ *          <p>The function's code is locked when you publish a version. You can't modify the code of a published version,
+ *       only the unpublished version.</p>
+ */
 class UpdateFunctionCodeCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -3795,6 +4993,9 @@ class UpdateFunctionCodeCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3840,6 +5041,23 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Modify the version-specific settings of a Lambda function.</p>
+ *
+ *          <p>When you update a function, Lambda provisions an instance of the function and its supporting resources. If
+ *       your function connects to a VPC, this process can take a minute. During this time, you can't modify the function,
+ *       but you can still invoke it. The <code>LastUpdateStatus</code>, <code>LastUpdateStatusReason</code>, and
+ *         <code>LastUpdateStatusReasonCode</code> fields in the response from <a>GetFunctionConfiguration</a>
+ *       indicate when the update is complete and the function is processing events with the new configuration. For more
+ *       information, see <a href="https://docs.aws.amazon.com/lambda/latest/dg/functions-states.html">Function
+ *       States</a>.</p>
+ *
+ *          <p>These settings can vary between versions of a function and are locked when you publish a version. You can't
+ *       modify the configuration of a published version, only the unpublished version.</p>
+ *
+ *          <p>To configure function concurrency, use <a>PutFunctionConcurrency</a>. To grant invoke permissions
+ *       to an account or AWS service, use <a>AddPermission</a>.</p>
+ */
 class UpdateFunctionConfigurationCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -3849,6 +5067,9 @@ class UpdateFunctionConfigurationCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3894,6 +5115,10 @@ const models_0_1 = __webpack_require__(8850);
 const Aws_restJson1_1 = __webpack_require__(758);
 const middleware_serde_1 = __webpack_require__(6142);
 const smithy_client_1 = __webpack_require__(2223);
+/**
+ * <p>Updates the configuration for asynchronous invocation for a function, version, or alias.</p>
+ *          <p>To configure options for asynchronous invocation, use <a>PutFunctionEventInvokeConfig</a>.</p>
+ */
 class UpdateFunctionEventInvokeConfigCommand extends smithy_client_1.Command {
     // Start section: command_properties
     // End section: command_properties
@@ -3903,6 +5128,9 @@ class UpdateFunctionEventInvokeConfigCommand extends smithy_client_1.Command {
         this.input = input;
         // End section: command_constructor
     }
+    /**
+     * @internal
+     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3975,7 +5203,7 @@ const AWS_CN_REGIONS = new Set(["cn-north-1", "cn-northwest-1"]);
 const AWS_ISO_REGIONS = new Set(["us-iso-east-1"]);
 const AWS_ISO_B_REGIONS = new Set(["us-isob-east-1"]);
 const AWS_US_GOV_REGIONS = new Set(["us-gov-east-1", "us-gov-west-1"]);
-exports.defaultRegionInfoProvider = (region, options) => {
+const defaultRegionInfoProvider = (region, options) => {
     let regionInfo = undefined;
     switch (region) {
         // First, try to match exact region names.
@@ -4159,6 +5387,7 @@ exports.defaultRegionInfoProvider = (region, options) => {
     }
     return Promise.resolve(regionInfo);
 };
+exports.defaultRegionInfoProvider = defaultRegionInfoProvider;
 //# sourceMappingURL=endpoints.js.map
 
 /***/ }),
@@ -4175,19 +5404,24 @@ tslib_1.__exportStar(__webpack_require__(5432), exports);
 tslib_1.__exportStar(__webpack_require__(775), exports);
 tslib_1.__exportStar(__webpack_require__(7451), exports);
 tslib_1.__exportStar(__webpack_require__(6860), exports);
+tslib_1.__exportStar(__webpack_require__(3781), exports);
 tslib_1.__exportStar(__webpack_require__(2819), exports);
 tslib_1.__exportStar(__webpack_require__(5731), exports);
 tslib_1.__exportStar(__webpack_require__(2470), exports);
+tslib_1.__exportStar(__webpack_require__(7573), exports);
 tslib_1.__exportStar(__webpack_require__(454), exports);
 tslib_1.__exportStar(__webpack_require__(9978), exports);
+tslib_1.__exportStar(__webpack_require__(4402), exports);
 tslib_1.__exportStar(__webpack_require__(8111), exports);
 tslib_1.__exportStar(__webpack_require__(2980), exports);
 tslib_1.__exportStar(__webpack_require__(6780), exports);
 tslib_1.__exportStar(__webpack_require__(9106), exports);
 tslib_1.__exportStar(__webpack_require__(1899), exports);
 tslib_1.__exportStar(__webpack_require__(36), exports);
+tslib_1.__exportStar(__webpack_require__(7171), exports);
 tslib_1.__exportStar(__webpack_require__(3635), exports);
 tslib_1.__exportStar(__webpack_require__(5296), exports);
+tslib_1.__exportStar(__webpack_require__(6136), exports);
 tslib_1.__exportStar(__webpack_require__(1452), exports);
 tslib_1.__exportStar(__webpack_require__(9459), exports);
 tslib_1.__exportStar(__webpack_require__(9493), exports);
@@ -4200,12 +5434,16 @@ tslib_1.__exportStar(__webpack_require__(9677), exports);
 tslib_1.__exportStar(__webpack_require__(6815), exports);
 tslib_1.__exportStar(__webpack_require__(5938), exports);
 tslib_1.__exportStar(__webpack_require__(3760), exports);
+tslib_1.__exportStar(__webpack_require__(446), exports);
+tslib_1.__exportStar(__webpack_require__(4469), exports);
 tslib_1.__exportStar(__webpack_require__(5228), exports);
 tslib_1.__exportStar(__webpack_require__(5041), exports);
 tslib_1.__exportStar(__webpack_require__(7926), exports);
 tslib_1.__exportStar(__webpack_require__(9361), exports);
 tslib_1.__exportStar(__webpack_require__(1862), exports);
 tslib_1.__exportStar(__webpack_require__(1061), exports);
+tslib_1.__exportStar(__webpack_require__(3813), exports);
+tslib_1.__exportStar(__webpack_require__(2585), exports);
 tslib_1.__exportStar(__webpack_require__(8319), exports);
 tslib_1.__exportStar(__webpack_require__(5605), exports);
 tslib_1.__exportStar(__webpack_require__(1426), exports);
@@ -4217,6 +5455,7 @@ tslib_1.__exportStar(__webpack_require__(2197), exports);
 tslib_1.__exportStar(__webpack_require__(5943), exports);
 tslib_1.__exportStar(__webpack_require__(4848), exports);
 tslib_1.__exportStar(__webpack_require__(1901), exports);
+tslib_1.__exportStar(__webpack_require__(5397), exports);
 tslib_1.__exportStar(__webpack_require__(3260), exports);
 tslib_1.__exportStar(__webpack_require__(9893), exports);
 tslib_1.__exportStar(__webpack_require__(789), exports);
@@ -4225,6 +5464,7 @@ tslib_1.__exportStar(__webpack_require__(2144), exports);
 tslib_1.__exportStar(__webpack_require__(1925), exports);
 tslib_1.__exportStar(__webpack_require__(9330), exports);
 tslib_1.__exportStar(__webpack_require__(807), exports);
+tslib_1.__exportStar(__webpack_require__(3551), exports);
 tslib_1.__exportStar(__webpack_require__(7201), exports);
 tslib_1.__exportStar(__webpack_require__(5365), exports);
 tslib_1.__exportStar(__webpack_require__(908), exports);
@@ -4253,7 +5493,10 @@ tslib_1.__exportStar(__webpack_require__(8850), exports);
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.UpdateFunctionEventInvokeConfigRequest = exports.UpdateFunctionConfigurationRequest = exports.UpdateFunctionCodeRequest = exports.UpdateEventSourceMappingRequest = exports.UpdateAliasRequest = exports.UntagResourceRequest = exports.TagResourceRequest = exports.RemovePermissionRequest = exports.RemoveLayerVersionPermissionRequest = exports.PutProvisionedConcurrencyConfigResponse = exports.PutProvisionedConcurrencyConfigRequest = exports.PutFunctionEventInvokeConfigRequest = exports.PutFunctionConcurrencyRequest = exports.PublishVersionRequest = exports.PublishLayerVersionResponse = exports.PublishLayerVersionRequest = exports.LayerVersionContentInput = exports.ListVersionsByFunctionResponse = exports.ListVersionsByFunctionRequest = exports.ListTagsResponse = exports.ListTagsRequest = exports.ListProvisionedConcurrencyConfigsResponse = exports.ProvisionedConcurrencyConfigListItem = exports.ListProvisionedConcurrencyConfigsRequest = exports.ListLayerVersionsResponse = exports.ListLayerVersionsRequest = exports.ListLayersResponse = exports.LayersListItem = exports.LayerVersionsListItem = exports.ListLayersRequest = exports.ListFunctionsResponse = exports.ListFunctionsRequest = exports.FunctionVersion = exports.ListFunctionEventInvokeConfigsResponse = exports.ListFunctionEventInvokeConfigsRequest = exports.ListEventSourceMappingsResponse = exports.ListEventSourceMappingsRequest = exports.ListAliasesResponse = exports.ListAliasesRequest = exports.InvokeAsyncResponse = exports.InvokeAsyncRequest = exports.UnsupportedMediaTypeException = exports.SubnetIPAddressLimitReachedException = exports.ResourceNotReadyException = exports.RequestTooLargeException = exports.KMSNotFoundException = exports.KMSInvalidStateException = exports.KMSDisabledException = exports.KMSAccessDeniedException = exports.InvocationResponse = exports.InvocationRequest = exports.LogType = exports.InvocationType = exports.InvalidZipFileException = exports.InvalidSubnetIDException = exports.InvalidSecurityGroupIDException = exports.InvalidRuntimeException = exports.InvalidRequestContentException = exports.ENILimitReachedException = exports.EFSMountTimeoutException = exports.EFSMountFailureException = exports.EFSMountConnectivityException = exports.EFSIOException = exports.EC2UnexpectedException = exports.EC2ThrottledException = exports.EC2AccessDeniedException = exports.ProvisionedConcurrencyConfigNotFoundException = exports.GetProvisionedConcurrencyConfigResponse = exports.ProvisionedConcurrencyStatusEnum = exports.GetProvisionedConcurrencyConfigRequest = exports.GetPolicyResponse = exports.GetPolicyRequest = exports.GetLayerVersionPolicyResponse = exports.GetLayerVersionPolicyRequest = exports.GetLayerVersionByArnRequest = exports.GetLayerVersionResponse = exports.LayerVersionContentOutput = exports.GetLayerVersionRequest = exports.GetFunctionEventInvokeConfigRequest = exports.FunctionEventInvokeConfig = exports.GetFunctionConfigurationRequest = exports.GetFunctionConcurrencyResponse = exports.GetFunctionConcurrencyRequest = exports.GetFunctionResponse = exports.Concurrency = exports.FunctionCodeLocation = exports.GetFunctionRequest = exports.GetEventSourceMappingRequest = exports.GetAliasRequest = exports.GetAccountSettingsResponse = exports.GetAccountSettingsRequest = exports.DeleteProvisionedConcurrencyConfigRequest = exports.DeleteLayerVersionRequest = exports.DeleteFunctionEventInvokeConfigRequest = exports.DeleteFunctionConcurrencyRequest = exports.DeleteFunctionRequest = exports.ResourceInUseException = exports.DeleteEventSourceMappingRequest = exports.DeleteAliasRequest = exports.FunctionConfiguration = exports.VpcConfigResponse = exports.TracingConfigResponse = exports.StateReasonCode = exports.State = exports.Layer = exports.LastUpdateStatusReasonCode = exports.LastUpdateStatus = exports.EnvironmentResponse = exports.EnvironmentError = exports.CreateFunctionRequest = exports.VpcConfig = exports.TracingConfig = exports.TracingMode = exports.Runtime = exports.FileSystemConfig = exports.Environment = exports.DeadLetterConfig = exports.FunctionCode = exports.CodeStorageExceededException = exports.EventSourceMappingConfiguration = exports.CreateEventSourceMappingRequest = exports.EventSourcePosition = exports.SourceAccessConfiguration = exports.SourceAccessType = exports.DestinationConfig = exports.OnSuccess = exports.OnFailure = exports.CreateAliasRequest = exports.AliasConfiguration = exports.AliasRoutingConfiguration = exports.AddPermissionResponse = exports.AddPermissionRequest = exports.TooManyRequestsException = exports.ThrottleReason = exports.ServiceException = exports.ResourceNotFoundException = exports.ResourceConflictException = exports.PreconditionFailedException = exports.PolicyLengthExceededException = exports.InvalidParameterValueException = exports.AddLayerVersionPermissionResponse = exports.AddLayerVersionPermissionRequest = exports.AccountUsage = exports.AccountLimit = void 0;
+exports.LastUpdateStatus = exports.ImageConfigResponse = exports.ImageConfigError = exports.EnvironmentResponse = exports.EnvironmentError = exports.CreateFunctionRequest = exports.VpcConfig = exports.TracingConfig = exports.TracingMode = exports.Runtime = exports.PackageType = exports.ImageConfig = exports.FileSystemConfig = exports.Environment = exports.DeadLetterConfig = exports.FunctionCode = exports.CodeVerificationFailedException = exports.CodeStorageExceededException = exports.CodeSigningConfigNotFoundException = exports.EventSourceMappingConfiguration = exports.CreateEventSourceMappingRequest = exports.EventSourcePosition = exports.SourceAccessConfiguration = exports.SourceAccessType = exports.DestinationConfig = exports.OnSuccess = exports.OnFailure = exports.CreateCodeSigningConfigResponse = exports.CodeSigningConfig = exports.CreateCodeSigningConfigRequest = exports.CodeSigningPolicies = exports.CodeSigningPolicy = exports.CreateAliasRequest = exports.AllowedPublishers = exports.AliasConfiguration = exports.AliasRoutingConfiguration = exports.AddPermissionResponse = exports.AddPermissionRequest = exports.TooManyRequestsException = exports.ThrottleReason = exports.ServiceException = exports.ResourceNotFoundException = exports.ResourceConflictException = exports.PreconditionFailedException = exports.PolicyLengthExceededException = exports.InvalidParameterValueException = exports.AddLayerVersionPermissionResponse = exports.AddLayerVersionPermissionRequest = exports.AccountUsage = exports.AccountLimit = void 0;
+exports.EC2ThrottledException = exports.EC2AccessDeniedException = exports.ProvisionedConcurrencyConfigNotFoundException = exports.GetProvisionedConcurrencyConfigResponse = exports.ProvisionedConcurrencyStatusEnum = exports.GetProvisionedConcurrencyConfigRequest = exports.GetPolicyResponse = exports.GetPolicyRequest = exports.GetLayerVersionPolicyResponse = exports.GetLayerVersionPolicyRequest = exports.GetLayerVersionByArnRequest = exports.GetLayerVersionResponse = exports.LayerVersionContentOutput = exports.GetLayerVersionRequest = exports.GetFunctionEventInvokeConfigRequest = exports.FunctionEventInvokeConfig = exports.GetFunctionConfigurationRequest = exports.GetFunctionConcurrencyResponse = exports.GetFunctionConcurrencyRequest = exports.GetFunctionCodeSigningConfigResponse = exports.GetFunctionCodeSigningConfigRequest = exports.GetFunctionResponse = exports.Concurrency = exports.FunctionCodeLocation = exports.GetFunctionRequest = exports.GetEventSourceMappingRequest = exports.GetCodeSigningConfigResponse = exports.GetCodeSigningConfigRequest = exports.GetAliasRequest = exports.GetAccountSettingsResponse = exports.GetAccountSettingsRequest = exports.DeleteProvisionedConcurrencyConfigRequest = exports.DeleteLayerVersionRequest = exports.DeleteFunctionEventInvokeConfigRequest = exports.DeleteFunctionConcurrencyRequest = exports.DeleteFunctionCodeSigningConfigRequest = exports.DeleteFunctionRequest = exports.ResourceInUseException = exports.DeleteEventSourceMappingRequest = exports.DeleteCodeSigningConfigResponse = exports.DeleteCodeSigningConfigRequest = exports.DeleteAliasRequest = exports.InvalidCodeSignatureException = exports.FunctionConfiguration = exports.VpcConfigResponse = exports.TracingConfigResponse = exports.StateReasonCode = exports.State = exports.Layer = exports.LastUpdateStatusReasonCode = void 0;
+exports.ListVersionsByFunctionRequest = exports.ListTagsResponse = exports.ListTagsRequest = exports.ListProvisionedConcurrencyConfigsResponse = exports.ProvisionedConcurrencyConfigListItem = exports.ListProvisionedConcurrencyConfigsRequest = exports.ListLayerVersionsResponse = exports.ListLayerVersionsRequest = exports.ListLayersResponse = exports.LayersListItem = exports.LayerVersionsListItem = exports.ListLayersRequest = exports.ListFunctionsByCodeSigningConfigResponse = exports.ListFunctionsByCodeSigningConfigRequest = exports.ListFunctionsResponse = exports.ListFunctionsRequest = exports.FunctionVersion = exports.ListFunctionEventInvokeConfigsResponse = exports.ListFunctionEventInvokeConfigsRequest = exports.ListEventSourceMappingsResponse = exports.ListEventSourceMappingsRequest = exports.ListCodeSigningConfigsResponse = exports.ListCodeSigningConfigsRequest = exports.ListAliasesResponse = exports.ListAliasesRequest = exports.InvokeAsyncResponse = exports.InvokeAsyncRequest = exports.UnsupportedMediaTypeException = exports.SubnetIPAddressLimitReachedException = exports.ResourceNotReadyException = exports.RequestTooLargeException = exports.KMSNotFoundException = exports.KMSInvalidStateException = exports.KMSDisabledException = exports.KMSAccessDeniedException = exports.InvocationResponse = exports.InvocationRequest = exports.LogType = exports.InvocationType = exports.InvalidZipFileException = exports.InvalidSubnetIDException = exports.InvalidSecurityGroupIDException = exports.InvalidRuntimeException = exports.InvalidRequestContentException = exports.ENILimitReachedException = exports.EFSMountTimeoutException = exports.EFSMountFailureException = exports.EFSMountConnectivityException = exports.EFSIOException = exports.EC2UnexpectedException = void 0;
+exports.UpdateFunctionEventInvokeConfigRequest = exports.UpdateFunctionConfigurationRequest = exports.UpdateFunctionCodeRequest = exports.UpdateEventSourceMappingRequest = exports.UpdateCodeSigningConfigResponse = exports.UpdateCodeSigningConfigRequest = exports.UpdateAliasRequest = exports.UntagResourceRequest = exports.TagResourceRequest = exports.RemovePermissionRequest = exports.RemoveLayerVersionPermissionRequest = exports.PutProvisionedConcurrencyConfigResponse = exports.PutProvisionedConcurrencyConfigRequest = exports.PutFunctionEventInvokeConfigRequest = exports.PutFunctionConcurrencyRequest = exports.PutFunctionCodeSigningConfigResponse = exports.PutFunctionCodeSigningConfigRequest = exports.PublishVersionRequest = exports.PublishLayerVersionResponse = exports.PublishLayerVersionRequest = exports.LayerVersionContentInput = exports.ListVersionsByFunctionResponse = void 0;
 const smithy_client_1 = __webpack_require__(2223);
 var AccountLimit;
 (function (AccountLimit) {
@@ -4353,12 +5596,47 @@ var AliasConfiguration;
         ...obj,
     });
 })(AliasConfiguration = exports.AliasConfiguration || (exports.AliasConfiguration = {}));
+var AllowedPublishers;
+(function (AllowedPublishers) {
+    AllowedPublishers.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(AllowedPublishers = exports.AllowedPublishers || (exports.AllowedPublishers = {}));
 var CreateAliasRequest;
 (function (CreateAliasRequest) {
     CreateAliasRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CreateAliasRequest = exports.CreateAliasRequest || (exports.CreateAliasRequest = {}));
+var CodeSigningPolicy;
+(function (CodeSigningPolicy) {
+    CodeSigningPolicy["Enforce"] = "Enforce";
+    CodeSigningPolicy["Warn"] = "Warn";
+})(CodeSigningPolicy = exports.CodeSigningPolicy || (exports.CodeSigningPolicy = {}));
+var CodeSigningPolicies;
+(function (CodeSigningPolicies) {
+    CodeSigningPolicies.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(CodeSigningPolicies = exports.CodeSigningPolicies || (exports.CodeSigningPolicies = {}));
+var CreateCodeSigningConfigRequest;
+(function (CreateCodeSigningConfigRequest) {
+    CreateCodeSigningConfigRequest.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(CreateCodeSigningConfigRequest = exports.CreateCodeSigningConfigRequest || (exports.CreateCodeSigningConfigRequest = {}));
+var CodeSigningConfig;
+(function (CodeSigningConfig) {
+    CodeSigningConfig.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(CodeSigningConfig = exports.CodeSigningConfig || (exports.CodeSigningConfig = {}));
+var CreateCodeSigningConfigResponse;
+(function (CreateCodeSigningConfigResponse) {
+    CreateCodeSigningConfigResponse.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(CreateCodeSigningConfigResponse = exports.CreateCodeSigningConfigResponse || (exports.CreateCodeSigningConfigResponse = {}));
 var OnFailure;
 (function (OnFailure) {
     OnFailure.filterSensitiveLog = (obj) => ({
@@ -4405,12 +5683,24 @@ var EventSourceMappingConfiguration;
         ...obj,
     });
 })(EventSourceMappingConfiguration = exports.EventSourceMappingConfiguration || (exports.EventSourceMappingConfiguration = {}));
+var CodeSigningConfigNotFoundException;
+(function (CodeSigningConfigNotFoundException) {
+    CodeSigningConfigNotFoundException.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(CodeSigningConfigNotFoundException = exports.CodeSigningConfigNotFoundException || (exports.CodeSigningConfigNotFoundException = {}));
 var CodeStorageExceededException;
 (function (CodeStorageExceededException) {
     CodeStorageExceededException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CodeStorageExceededException = exports.CodeStorageExceededException || (exports.CodeStorageExceededException = {}));
+var CodeVerificationFailedException;
+(function (CodeVerificationFailedException) {
+    CodeVerificationFailedException.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(CodeVerificationFailedException = exports.CodeVerificationFailedException || (exports.CodeVerificationFailedException = {}));
 var FunctionCode;
 (function (FunctionCode) {
     FunctionCode.filterSensitiveLog = (obj) => ({
@@ -4437,6 +5727,17 @@ var FileSystemConfig;
         ...obj,
     });
 })(FileSystemConfig = exports.FileSystemConfig || (exports.FileSystemConfig = {}));
+var ImageConfig;
+(function (ImageConfig) {
+    ImageConfig.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(ImageConfig = exports.ImageConfig || (exports.ImageConfig = {}));
+var PackageType;
+(function (PackageType) {
+    PackageType["Image"] = "Image";
+    PackageType["Zip"] = "Zip";
+})(PackageType = exports.PackageType || (exports.PackageType = {}));
 var Runtime;
 (function (Runtime) {
     Runtime["dotnetcore10"] = "dotnetcore1.0";
@@ -4503,6 +5804,20 @@ var EnvironmentResponse;
         ...(obj.Error && { Error: EnvironmentError.filterSensitiveLog(obj.Error) }),
     });
 })(EnvironmentResponse = exports.EnvironmentResponse || (exports.EnvironmentResponse = {}));
+var ImageConfigError;
+(function (ImageConfigError) {
+    ImageConfigError.filterSensitiveLog = (obj) => ({
+        ...obj,
+        ...(obj.Message && { Message: smithy_client_1.SENSITIVE_STRING }),
+    });
+})(ImageConfigError = exports.ImageConfigError || (exports.ImageConfigError = {}));
+var ImageConfigResponse;
+(function (ImageConfigResponse) {
+    ImageConfigResponse.filterSensitiveLog = (obj) => ({
+        ...obj,
+        ...(obj.Error && { Error: ImageConfigError.filterSensitiveLog(obj.Error) }),
+    });
+})(ImageConfigResponse = exports.ImageConfigResponse || (exports.ImageConfigResponse = {}));
 var LastUpdateStatus;
 (function (LastUpdateStatus) {
     LastUpdateStatus["Failed"] = "Failed";
@@ -4512,6 +5827,8 @@ var LastUpdateStatus;
 var LastUpdateStatusReasonCode;
 (function (LastUpdateStatusReasonCode) {
     LastUpdateStatusReasonCode["EniLimitExceeded"] = "EniLimitExceeded";
+    LastUpdateStatusReasonCode["ImageAccessDenied"] = "ImageAccessDenied";
+    LastUpdateStatusReasonCode["ImageDeleted"] = "ImageDeleted";
     LastUpdateStatusReasonCode["InsufficientRolePermissions"] = "InsufficientRolePermissions";
     LastUpdateStatusReasonCode["InternalError"] = "InternalError";
     LastUpdateStatusReasonCode["InvalidConfiguration"] = "InvalidConfiguration";
@@ -4537,6 +5854,8 @@ var StateReasonCode;
     StateReasonCode["Creating"] = "Creating";
     StateReasonCode["EniLimitExceeded"] = "EniLimitExceeded";
     StateReasonCode["Idle"] = "Idle";
+    StateReasonCode["ImageAccessDenied"] = "ImageAccessDenied";
+    StateReasonCode["ImageDeleted"] = "ImageDeleted";
     StateReasonCode["InsufficientRolePermissions"] = "InsufficientRolePermissions";
     StateReasonCode["InternalError"] = "InternalError";
     StateReasonCode["InvalidConfiguration"] = "InvalidConfiguration";
@@ -4562,14 +5881,35 @@ var FunctionConfiguration;
     FunctionConfiguration.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Environment && { Environment: EnvironmentResponse.filterSensitiveLog(obj.Environment) }),
+        ...(obj.ImageConfigResponse && {
+            ImageConfigResponse: ImageConfigResponse.filterSensitiveLog(obj.ImageConfigResponse),
+        }),
     });
 })(FunctionConfiguration = exports.FunctionConfiguration || (exports.FunctionConfiguration = {}));
+var InvalidCodeSignatureException;
+(function (InvalidCodeSignatureException) {
+    InvalidCodeSignatureException.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(InvalidCodeSignatureException = exports.InvalidCodeSignatureException || (exports.InvalidCodeSignatureException = {}));
 var DeleteAliasRequest;
 (function (DeleteAliasRequest) {
     DeleteAliasRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeleteAliasRequest = exports.DeleteAliasRequest || (exports.DeleteAliasRequest = {}));
+var DeleteCodeSigningConfigRequest;
+(function (DeleteCodeSigningConfigRequest) {
+    DeleteCodeSigningConfigRequest.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(DeleteCodeSigningConfigRequest = exports.DeleteCodeSigningConfigRequest || (exports.DeleteCodeSigningConfigRequest = {}));
+var DeleteCodeSigningConfigResponse;
+(function (DeleteCodeSigningConfigResponse) {
+    DeleteCodeSigningConfigResponse.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(DeleteCodeSigningConfigResponse = exports.DeleteCodeSigningConfigResponse || (exports.DeleteCodeSigningConfigResponse = {}));
 var DeleteEventSourceMappingRequest;
 (function (DeleteEventSourceMappingRequest) {
     DeleteEventSourceMappingRequest.filterSensitiveLog = (obj) => ({
@@ -4588,6 +5928,12 @@ var DeleteFunctionRequest;
         ...obj,
     });
 })(DeleteFunctionRequest = exports.DeleteFunctionRequest || (exports.DeleteFunctionRequest = {}));
+var DeleteFunctionCodeSigningConfigRequest;
+(function (DeleteFunctionCodeSigningConfigRequest) {
+    DeleteFunctionCodeSigningConfigRequest.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(DeleteFunctionCodeSigningConfigRequest = exports.DeleteFunctionCodeSigningConfigRequest || (exports.DeleteFunctionCodeSigningConfigRequest = {}));
 var DeleteFunctionConcurrencyRequest;
 (function (DeleteFunctionConcurrencyRequest) {
     DeleteFunctionConcurrencyRequest.filterSensitiveLog = (obj) => ({
@@ -4630,6 +5976,18 @@ var GetAliasRequest;
         ...obj,
     });
 })(GetAliasRequest = exports.GetAliasRequest || (exports.GetAliasRequest = {}));
+var GetCodeSigningConfigRequest;
+(function (GetCodeSigningConfigRequest) {
+    GetCodeSigningConfigRequest.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(GetCodeSigningConfigRequest = exports.GetCodeSigningConfigRequest || (exports.GetCodeSigningConfigRequest = {}));
+var GetCodeSigningConfigResponse;
+(function (GetCodeSigningConfigResponse) {
+    GetCodeSigningConfigResponse.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(GetCodeSigningConfigResponse = exports.GetCodeSigningConfigResponse || (exports.GetCodeSigningConfigResponse = {}));
 var GetEventSourceMappingRequest;
 (function (GetEventSourceMappingRequest) {
     GetEventSourceMappingRequest.filterSensitiveLog = (obj) => ({
@@ -4661,6 +6019,18 @@ var GetFunctionResponse;
         ...(obj.Configuration && { Configuration: FunctionConfiguration.filterSensitiveLog(obj.Configuration) }),
     });
 })(GetFunctionResponse = exports.GetFunctionResponse || (exports.GetFunctionResponse = {}));
+var GetFunctionCodeSigningConfigRequest;
+(function (GetFunctionCodeSigningConfigRequest) {
+    GetFunctionCodeSigningConfigRequest.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(GetFunctionCodeSigningConfigRequest = exports.GetFunctionCodeSigningConfigRequest || (exports.GetFunctionCodeSigningConfigRequest = {}));
+var GetFunctionCodeSigningConfigResponse;
+(function (GetFunctionCodeSigningConfigResponse) {
+    GetFunctionCodeSigningConfigResponse.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(GetFunctionCodeSigningConfigResponse = exports.GetFunctionCodeSigningConfigResponse || (exports.GetFunctionCodeSigningConfigResponse = {}));
 var GetFunctionConcurrencyRequest;
 (function (GetFunctionConcurrencyRequest) {
     GetFunctionConcurrencyRequest.filterSensitiveLog = (obj) => ({
@@ -4938,6 +6308,18 @@ var ListAliasesResponse;
         ...obj,
     });
 })(ListAliasesResponse = exports.ListAliasesResponse || (exports.ListAliasesResponse = {}));
+var ListCodeSigningConfigsRequest;
+(function (ListCodeSigningConfigsRequest) {
+    ListCodeSigningConfigsRequest.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(ListCodeSigningConfigsRequest = exports.ListCodeSigningConfigsRequest || (exports.ListCodeSigningConfigsRequest = {}));
+var ListCodeSigningConfigsResponse;
+(function (ListCodeSigningConfigsResponse) {
+    ListCodeSigningConfigsResponse.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(ListCodeSigningConfigsResponse = exports.ListCodeSigningConfigsResponse || (exports.ListCodeSigningConfigsResponse = {}));
 var ListEventSourceMappingsRequest;
 (function (ListEventSourceMappingsRequest) {
     ListEventSourceMappingsRequest.filterSensitiveLog = (obj) => ({
@@ -4979,6 +6361,18 @@ var ListFunctionsResponse;
         ...(obj.Functions && { Functions: obj.Functions.map((item) => FunctionConfiguration.filterSensitiveLog(item)) }),
     });
 })(ListFunctionsResponse = exports.ListFunctionsResponse || (exports.ListFunctionsResponse = {}));
+var ListFunctionsByCodeSigningConfigRequest;
+(function (ListFunctionsByCodeSigningConfigRequest) {
+    ListFunctionsByCodeSigningConfigRequest.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(ListFunctionsByCodeSigningConfigRequest = exports.ListFunctionsByCodeSigningConfigRequest || (exports.ListFunctionsByCodeSigningConfigRequest = {}));
+var ListFunctionsByCodeSigningConfigResponse;
+(function (ListFunctionsByCodeSigningConfigResponse) {
+    ListFunctionsByCodeSigningConfigResponse.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(ListFunctionsByCodeSigningConfigResponse = exports.ListFunctionsByCodeSigningConfigResponse || (exports.ListFunctionsByCodeSigningConfigResponse = {}));
 var ListLayersRequest;
 (function (ListLayersRequest) {
     ListLayersRequest.filterSensitiveLog = (obj) => ({
@@ -5084,6 +6478,18 @@ var PublishVersionRequest;
         ...obj,
     });
 })(PublishVersionRequest = exports.PublishVersionRequest || (exports.PublishVersionRequest = {}));
+var PutFunctionCodeSigningConfigRequest;
+(function (PutFunctionCodeSigningConfigRequest) {
+    PutFunctionCodeSigningConfigRequest.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(PutFunctionCodeSigningConfigRequest = exports.PutFunctionCodeSigningConfigRequest || (exports.PutFunctionCodeSigningConfigRequest = {}));
+var PutFunctionCodeSigningConfigResponse;
+(function (PutFunctionCodeSigningConfigResponse) {
+    PutFunctionCodeSigningConfigResponse.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(PutFunctionCodeSigningConfigResponse = exports.PutFunctionCodeSigningConfigResponse || (exports.PutFunctionCodeSigningConfigResponse = {}));
 var PutFunctionConcurrencyRequest;
 (function (PutFunctionConcurrencyRequest) {
     PutFunctionConcurrencyRequest.filterSensitiveLog = (obj) => ({
@@ -5138,6 +6544,18 @@ var UpdateAliasRequest;
         ...obj,
     });
 })(UpdateAliasRequest = exports.UpdateAliasRequest || (exports.UpdateAliasRequest = {}));
+var UpdateCodeSigningConfigRequest;
+(function (UpdateCodeSigningConfigRequest) {
+    UpdateCodeSigningConfigRequest.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(UpdateCodeSigningConfigRequest = exports.UpdateCodeSigningConfigRequest || (exports.UpdateCodeSigningConfigRequest = {}));
+var UpdateCodeSigningConfigResponse;
+(function (UpdateCodeSigningConfigResponse) {
+    UpdateCodeSigningConfigResponse.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(UpdateCodeSigningConfigResponse = exports.UpdateCodeSigningConfigResponse || (exports.UpdateCodeSigningConfigResponse = {}));
 var UpdateEventSourceMappingRequest;
 (function (UpdateEventSourceMappingRequest) {
     UpdateEventSourceMappingRequest.filterSensitiveLog = (obj) => ({
@@ -5188,10 +6606,16 @@ exports.paginateListAliases = void 0;
 const Lambda_1 = __webpack_require__(5432);
 const LambdaClient_1 = __webpack_require__(8746);
 const ListAliasesCommand_1 = __webpack_require__(5938);
+/**
+ * @private
+ */
 const makePagedClientRequest = async (client, input, ...args) => {
     // @ts-ignore
     return await client.send(new ListAliasesCommand_1.ListAliasesCommand(input), ...args);
 };
+/**
+ * @private
+ */
 const makePagedRequest = async (client, input, ...args) => {
     // @ts-ignore
     return await client.listAliases(input, ...args);
@@ -5224,6 +6648,58 @@ exports.paginateListAliases = paginateListAliases;
 
 /***/ }),
 
+/***/ 4469:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.paginateListCodeSigningConfigs = void 0;
+const Lambda_1 = __webpack_require__(5432);
+const LambdaClient_1 = __webpack_require__(8746);
+const ListCodeSigningConfigsCommand_1 = __webpack_require__(446);
+/**
+ * @private
+ */
+const makePagedClientRequest = async (client, input, ...args) => {
+    // @ts-ignore
+    return await client.send(new ListCodeSigningConfigsCommand_1.ListCodeSigningConfigsCommand(input), ...args);
+};
+/**
+ * @private
+ */
+const makePagedRequest = async (client, input, ...args) => {
+    // @ts-ignore
+    return await client.listCodeSigningConfigs(input, ...args);
+};
+async function* paginateListCodeSigningConfigs(config, input, ...additionalArguments) {
+    let token = config.startingToken || undefined;
+    let hasNext = true;
+    let page;
+    while (hasNext) {
+        input.Marker = token;
+        input["MaxItems"] = config.pageSize;
+        if (config.client instanceof Lambda_1.Lambda) {
+            page = await makePagedRequest(config.client, input, ...additionalArguments);
+        }
+        else if (config.client instanceof LambdaClient_1.LambdaClient) {
+            page = await makePagedClientRequest(config.client, input, ...additionalArguments);
+        }
+        else {
+            throw new Error("Invalid client, expected Lambda | LambdaClient");
+        }
+        yield page;
+        token = page.NextMarker;
+        hasNext = !!token;
+    }
+    // @ts-ignore
+    return undefined;
+}
+exports.paginateListCodeSigningConfigs = paginateListCodeSigningConfigs;
+//# sourceMappingURL=ListCodeSigningConfigsPaginator.js.map
+
+/***/ }),
+
 /***/ 5041:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
@@ -5234,10 +6710,16 @@ exports.paginateListEventSourceMappings = void 0;
 const Lambda_1 = __webpack_require__(5432);
 const LambdaClient_1 = __webpack_require__(8746);
 const ListEventSourceMappingsCommand_1 = __webpack_require__(5228);
+/**
+ * @private
+ */
 const makePagedClientRequest = async (client, input, ...args) => {
     // @ts-ignore
     return await client.send(new ListEventSourceMappingsCommand_1.ListEventSourceMappingsCommand(input), ...args);
 };
+/**
+ * @private
+ */
 const makePagedRequest = async (client, input, ...args) => {
     // @ts-ignore
     return await client.listEventSourceMappings(input, ...args);
@@ -5280,10 +6762,16 @@ exports.paginateListFunctionEventInvokeConfigs = void 0;
 const Lambda_1 = __webpack_require__(5432);
 const LambdaClient_1 = __webpack_require__(8746);
 const ListFunctionEventInvokeConfigsCommand_1 = __webpack_require__(7926);
+/**
+ * @private
+ */
 const makePagedClientRequest = async (client, input, ...args) => {
     // @ts-ignore
     return await client.send(new ListFunctionEventInvokeConfigsCommand_1.ListFunctionEventInvokeConfigsCommand(input), ...args);
 };
+/**
+ * @private
+ */
 const makePagedRequest = async (client, input, ...args) => {
     // @ts-ignore
     return await client.listFunctionEventInvokeConfigs(input, ...args);
@@ -5316,6 +6804,58 @@ exports.paginateListFunctionEventInvokeConfigs = paginateListFunctionEventInvoke
 
 /***/ }),
 
+/***/ 2585:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.paginateListFunctionsByCodeSigningConfig = void 0;
+const Lambda_1 = __webpack_require__(5432);
+const LambdaClient_1 = __webpack_require__(8746);
+const ListFunctionsByCodeSigningConfigCommand_1 = __webpack_require__(3813);
+/**
+ * @private
+ */
+const makePagedClientRequest = async (client, input, ...args) => {
+    // @ts-ignore
+    return await client.send(new ListFunctionsByCodeSigningConfigCommand_1.ListFunctionsByCodeSigningConfigCommand(input), ...args);
+};
+/**
+ * @private
+ */
+const makePagedRequest = async (client, input, ...args) => {
+    // @ts-ignore
+    return await client.listFunctionsByCodeSigningConfig(input, ...args);
+};
+async function* paginateListFunctionsByCodeSigningConfig(config, input, ...additionalArguments) {
+    let token = config.startingToken || undefined;
+    let hasNext = true;
+    let page;
+    while (hasNext) {
+        input.Marker = token;
+        input["MaxItems"] = config.pageSize;
+        if (config.client instanceof Lambda_1.Lambda) {
+            page = await makePagedRequest(config.client, input, ...additionalArguments);
+        }
+        else if (config.client instanceof LambdaClient_1.LambdaClient) {
+            page = await makePagedClientRequest(config.client, input, ...additionalArguments);
+        }
+        else {
+            throw new Error("Invalid client, expected Lambda | LambdaClient");
+        }
+        yield page;
+        token = page.NextMarker;
+        hasNext = !!token;
+    }
+    // @ts-ignore
+    return undefined;
+}
+exports.paginateListFunctionsByCodeSigningConfig = paginateListFunctionsByCodeSigningConfig;
+//# sourceMappingURL=ListFunctionsByCodeSigningConfigPaginator.js.map
+
+/***/ }),
+
 /***/ 1061:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
@@ -5326,10 +6866,16 @@ exports.paginateListFunctions = void 0;
 const Lambda_1 = __webpack_require__(5432);
 const LambdaClient_1 = __webpack_require__(8746);
 const ListFunctionsCommand_1 = __webpack_require__(1862);
+/**
+ * @private
+ */
 const makePagedClientRequest = async (client, input, ...args) => {
     // @ts-ignore
     return await client.send(new ListFunctionsCommand_1.ListFunctionsCommand(input), ...args);
 };
+/**
+ * @private
+ */
 const makePagedRequest = async (client, input, ...args) => {
     // @ts-ignore
     return await client.listFunctions(input, ...args);
@@ -5372,10 +6918,16 @@ exports.paginateListLayerVersions = void 0;
 const Lambda_1 = __webpack_require__(5432);
 const LambdaClient_1 = __webpack_require__(8746);
 const ListLayerVersionsCommand_1 = __webpack_require__(1426);
+/**
+ * @private
+ */
 const makePagedClientRequest = async (client, input, ...args) => {
     // @ts-ignore
     return await client.send(new ListLayerVersionsCommand_1.ListLayerVersionsCommand(input), ...args);
 };
+/**
+ * @private
+ */
 const makePagedRequest = async (client, input, ...args) => {
     // @ts-ignore
     return await client.listLayerVersions(input, ...args);
@@ -5418,10 +6970,16 @@ exports.paginateListLayers = void 0;
 const Lambda_1 = __webpack_require__(5432);
 const LambdaClient_1 = __webpack_require__(8746);
 const ListLayersCommand_1 = __webpack_require__(8319);
+/**
+ * @private
+ */
 const makePagedClientRequest = async (client, input, ...args) => {
     // @ts-ignore
     return await client.send(new ListLayersCommand_1.ListLayersCommand(input), ...args);
 };
+/**
+ * @private
+ */
 const makePagedRequest = async (client, input, ...args) => {
     // @ts-ignore
     return await client.listLayers(input, ...args);
@@ -5464,10 +7022,16 @@ exports.paginateListProvisionedConcurrencyConfigs = void 0;
 const Lambda_1 = __webpack_require__(5432);
 const LambdaClient_1 = __webpack_require__(8746);
 const ListProvisionedConcurrencyConfigsCommand_1 = __webpack_require__(2154);
+/**
+ * @private
+ */
 const makePagedClientRequest = async (client, input, ...args) => {
     // @ts-ignore
     return await client.send(new ListProvisionedConcurrencyConfigsCommand_1.ListProvisionedConcurrencyConfigsCommand(input), ...args);
 };
+/**
+ * @private
+ */
 const makePagedRequest = async (client, input, ...args) => {
     // @ts-ignore
     return await client.listProvisionedConcurrencyConfigs(input, ...args);
@@ -5510,10 +7074,16 @@ exports.paginateListVersionsByFunction = void 0;
 const Lambda_1 = __webpack_require__(5432);
 const LambdaClient_1 = __webpack_require__(8746);
 const ListVersionsByFunctionCommand_1 = __webpack_require__(2197);
+/**
+ * @private
+ */
 const makePagedClientRequest = async (client, input, ...args) => {
     // @ts-ignore
     return await client.send(new ListVersionsByFunctionCommand_1.ListVersionsByFunctionCommand(input), ...args);
 };
+/**
+ * @private
+ */
 const makePagedRequest = async (client, input, ...args) => {
     // @ts-ignore
     return await client.listVersionsByFunction(input, ...args);
@@ -5552,10 +7122,12 @@ exports.paginateListVersionsByFunction = paginateListVersionsByFunction;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.deserializeAws_restJson1UpdateFunctionEventInvokeConfigCommand = exports.deserializeAws_restJson1UpdateFunctionConfigurationCommand = exports.deserializeAws_restJson1UpdateFunctionCodeCommand = exports.deserializeAws_restJson1UpdateEventSourceMappingCommand = exports.deserializeAws_restJson1UpdateAliasCommand = exports.deserializeAws_restJson1UntagResourceCommand = exports.deserializeAws_restJson1TagResourceCommand = exports.deserializeAws_restJson1RemovePermissionCommand = exports.deserializeAws_restJson1RemoveLayerVersionPermissionCommand = exports.deserializeAws_restJson1PutProvisionedConcurrencyConfigCommand = exports.deserializeAws_restJson1PutFunctionEventInvokeConfigCommand = exports.deserializeAws_restJson1PutFunctionConcurrencyCommand = exports.deserializeAws_restJson1PublishVersionCommand = exports.deserializeAws_restJson1PublishLayerVersionCommand = exports.deserializeAws_restJson1ListVersionsByFunctionCommand = exports.deserializeAws_restJson1ListTagsCommand = exports.deserializeAws_restJson1ListProvisionedConcurrencyConfigsCommand = exports.deserializeAws_restJson1ListLayerVersionsCommand = exports.deserializeAws_restJson1ListLayersCommand = exports.deserializeAws_restJson1ListFunctionsCommand = exports.deserializeAws_restJson1ListFunctionEventInvokeConfigsCommand = exports.deserializeAws_restJson1ListEventSourceMappingsCommand = exports.deserializeAws_restJson1ListAliasesCommand = exports.deserializeAws_restJson1InvokeAsyncCommand = exports.deserializeAws_restJson1InvokeCommand = exports.deserializeAws_restJson1GetProvisionedConcurrencyConfigCommand = exports.deserializeAws_restJson1GetPolicyCommand = exports.deserializeAws_restJson1GetLayerVersionPolicyCommand = exports.deserializeAws_restJson1GetLayerVersionByArnCommand = exports.deserializeAws_restJson1GetLayerVersionCommand = exports.deserializeAws_restJson1GetFunctionEventInvokeConfigCommand = exports.deserializeAws_restJson1GetFunctionConfigurationCommand = exports.deserializeAws_restJson1GetFunctionConcurrencyCommand = exports.deserializeAws_restJson1GetFunctionCommand = exports.deserializeAws_restJson1GetEventSourceMappingCommand = exports.deserializeAws_restJson1GetAliasCommand = exports.deserializeAws_restJson1GetAccountSettingsCommand = exports.deserializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand = exports.deserializeAws_restJson1DeleteLayerVersionCommand = exports.deserializeAws_restJson1DeleteFunctionEventInvokeConfigCommand = exports.deserializeAws_restJson1DeleteFunctionConcurrencyCommand = exports.deserializeAws_restJson1DeleteFunctionCommand = exports.deserializeAws_restJson1DeleteEventSourceMappingCommand = exports.deserializeAws_restJson1DeleteAliasCommand = exports.deserializeAws_restJson1CreateFunctionCommand = exports.deserializeAws_restJson1CreateEventSourceMappingCommand = exports.deserializeAws_restJson1CreateAliasCommand = exports.deserializeAws_restJson1AddPermissionCommand = exports.deserializeAws_restJson1AddLayerVersionPermissionCommand = exports.serializeAws_restJson1UpdateFunctionEventInvokeConfigCommand = exports.serializeAws_restJson1UpdateFunctionConfigurationCommand = exports.serializeAws_restJson1UpdateFunctionCodeCommand = exports.serializeAws_restJson1UpdateEventSourceMappingCommand = exports.serializeAws_restJson1UpdateAliasCommand = exports.serializeAws_restJson1UntagResourceCommand = exports.serializeAws_restJson1TagResourceCommand = exports.serializeAws_restJson1RemovePermissionCommand = exports.serializeAws_restJson1RemoveLayerVersionPermissionCommand = exports.serializeAws_restJson1PutProvisionedConcurrencyConfigCommand = exports.serializeAws_restJson1PutFunctionEventInvokeConfigCommand = exports.serializeAws_restJson1PutFunctionConcurrencyCommand = exports.serializeAws_restJson1PublishVersionCommand = exports.serializeAws_restJson1PublishLayerVersionCommand = exports.serializeAws_restJson1ListVersionsByFunctionCommand = exports.serializeAws_restJson1ListTagsCommand = exports.serializeAws_restJson1ListProvisionedConcurrencyConfigsCommand = exports.serializeAws_restJson1ListLayerVersionsCommand = exports.serializeAws_restJson1ListLayersCommand = exports.serializeAws_restJson1ListFunctionsCommand = exports.serializeAws_restJson1ListFunctionEventInvokeConfigsCommand = exports.serializeAws_restJson1ListEventSourceMappingsCommand = exports.serializeAws_restJson1ListAliasesCommand = exports.serializeAws_restJson1InvokeAsyncCommand = exports.serializeAws_restJson1InvokeCommand = exports.serializeAws_restJson1GetProvisionedConcurrencyConfigCommand = exports.serializeAws_restJson1GetPolicyCommand = exports.serializeAws_restJson1GetLayerVersionPolicyCommand = exports.serializeAws_restJson1GetLayerVersionByArnCommand = exports.serializeAws_restJson1GetLayerVersionCommand = exports.serializeAws_restJson1GetFunctionEventInvokeConfigCommand = exports.serializeAws_restJson1GetFunctionConfigurationCommand = exports.serializeAws_restJson1GetFunctionConcurrencyCommand = exports.serializeAws_restJson1GetFunctionCommand = exports.serializeAws_restJson1GetEventSourceMappingCommand = exports.serializeAws_restJson1GetAliasCommand = exports.serializeAws_restJson1GetAccountSettingsCommand = exports.serializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand = exports.serializeAws_restJson1DeleteLayerVersionCommand = exports.serializeAws_restJson1DeleteFunctionEventInvokeConfigCommand = exports.serializeAws_restJson1DeleteFunctionConcurrencyCommand = exports.serializeAws_restJson1DeleteFunctionCommand = exports.serializeAws_restJson1DeleteEventSourceMappingCommand = exports.serializeAws_restJson1DeleteAliasCommand = exports.serializeAws_restJson1CreateFunctionCommand = exports.serializeAws_restJson1CreateEventSourceMappingCommand = exports.serializeAws_restJson1CreateAliasCommand = exports.serializeAws_restJson1AddPermissionCommand = exports.serializeAws_restJson1AddLayerVersionPermissionCommand = void 0;
+exports.serializeAws_restJson1RemovePermissionCommand = exports.serializeAws_restJson1RemoveLayerVersionPermissionCommand = exports.serializeAws_restJson1PutProvisionedConcurrencyConfigCommand = exports.serializeAws_restJson1PutFunctionEventInvokeConfigCommand = exports.serializeAws_restJson1PutFunctionConcurrencyCommand = exports.serializeAws_restJson1PutFunctionCodeSigningConfigCommand = exports.serializeAws_restJson1PublishVersionCommand = exports.serializeAws_restJson1PublishLayerVersionCommand = exports.serializeAws_restJson1ListVersionsByFunctionCommand = exports.serializeAws_restJson1ListTagsCommand = exports.serializeAws_restJson1ListProvisionedConcurrencyConfigsCommand = exports.serializeAws_restJson1ListLayerVersionsCommand = exports.serializeAws_restJson1ListLayersCommand = exports.serializeAws_restJson1ListFunctionsByCodeSigningConfigCommand = exports.serializeAws_restJson1ListFunctionsCommand = exports.serializeAws_restJson1ListFunctionEventInvokeConfigsCommand = exports.serializeAws_restJson1ListEventSourceMappingsCommand = exports.serializeAws_restJson1ListCodeSigningConfigsCommand = exports.serializeAws_restJson1ListAliasesCommand = exports.serializeAws_restJson1InvokeAsyncCommand = exports.serializeAws_restJson1InvokeCommand = exports.serializeAws_restJson1GetProvisionedConcurrencyConfigCommand = exports.serializeAws_restJson1GetPolicyCommand = exports.serializeAws_restJson1GetLayerVersionPolicyCommand = exports.serializeAws_restJson1GetLayerVersionByArnCommand = exports.serializeAws_restJson1GetLayerVersionCommand = exports.serializeAws_restJson1GetFunctionEventInvokeConfigCommand = exports.serializeAws_restJson1GetFunctionConfigurationCommand = exports.serializeAws_restJson1GetFunctionConcurrencyCommand = exports.serializeAws_restJson1GetFunctionCodeSigningConfigCommand = exports.serializeAws_restJson1GetFunctionCommand = exports.serializeAws_restJson1GetEventSourceMappingCommand = exports.serializeAws_restJson1GetCodeSigningConfigCommand = exports.serializeAws_restJson1GetAliasCommand = exports.serializeAws_restJson1GetAccountSettingsCommand = exports.serializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand = exports.serializeAws_restJson1DeleteLayerVersionCommand = exports.serializeAws_restJson1DeleteFunctionEventInvokeConfigCommand = exports.serializeAws_restJson1DeleteFunctionConcurrencyCommand = exports.serializeAws_restJson1DeleteFunctionCodeSigningConfigCommand = exports.serializeAws_restJson1DeleteFunctionCommand = exports.serializeAws_restJson1DeleteEventSourceMappingCommand = exports.serializeAws_restJson1DeleteCodeSigningConfigCommand = exports.serializeAws_restJson1DeleteAliasCommand = exports.serializeAws_restJson1CreateFunctionCommand = exports.serializeAws_restJson1CreateEventSourceMappingCommand = exports.serializeAws_restJson1CreateCodeSigningConfigCommand = exports.serializeAws_restJson1CreateAliasCommand = exports.serializeAws_restJson1AddPermissionCommand = exports.serializeAws_restJson1AddLayerVersionPermissionCommand = void 0;
+exports.deserializeAws_restJson1ListVersionsByFunctionCommand = exports.deserializeAws_restJson1ListTagsCommand = exports.deserializeAws_restJson1ListProvisionedConcurrencyConfigsCommand = exports.deserializeAws_restJson1ListLayerVersionsCommand = exports.deserializeAws_restJson1ListLayersCommand = exports.deserializeAws_restJson1ListFunctionsByCodeSigningConfigCommand = exports.deserializeAws_restJson1ListFunctionsCommand = exports.deserializeAws_restJson1ListFunctionEventInvokeConfigsCommand = exports.deserializeAws_restJson1ListEventSourceMappingsCommand = exports.deserializeAws_restJson1ListCodeSigningConfigsCommand = exports.deserializeAws_restJson1ListAliasesCommand = exports.deserializeAws_restJson1InvokeAsyncCommand = exports.deserializeAws_restJson1InvokeCommand = exports.deserializeAws_restJson1GetProvisionedConcurrencyConfigCommand = exports.deserializeAws_restJson1GetPolicyCommand = exports.deserializeAws_restJson1GetLayerVersionPolicyCommand = exports.deserializeAws_restJson1GetLayerVersionByArnCommand = exports.deserializeAws_restJson1GetLayerVersionCommand = exports.deserializeAws_restJson1GetFunctionEventInvokeConfigCommand = exports.deserializeAws_restJson1GetFunctionConfigurationCommand = exports.deserializeAws_restJson1GetFunctionConcurrencyCommand = exports.deserializeAws_restJson1GetFunctionCodeSigningConfigCommand = exports.deserializeAws_restJson1GetFunctionCommand = exports.deserializeAws_restJson1GetEventSourceMappingCommand = exports.deserializeAws_restJson1GetCodeSigningConfigCommand = exports.deserializeAws_restJson1GetAliasCommand = exports.deserializeAws_restJson1GetAccountSettingsCommand = exports.deserializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand = exports.deserializeAws_restJson1DeleteLayerVersionCommand = exports.deserializeAws_restJson1DeleteFunctionEventInvokeConfigCommand = exports.deserializeAws_restJson1DeleteFunctionConcurrencyCommand = exports.deserializeAws_restJson1DeleteFunctionCodeSigningConfigCommand = exports.deserializeAws_restJson1DeleteFunctionCommand = exports.deserializeAws_restJson1DeleteEventSourceMappingCommand = exports.deserializeAws_restJson1DeleteCodeSigningConfigCommand = exports.deserializeAws_restJson1DeleteAliasCommand = exports.deserializeAws_restJson1CreateFunctionCommand = exports.deserializeAws_restJson1CreateEventSourceMappingCommand = exports.deserializeAws_restJson1CreateCodeSigningConfigCommand = exports.deserializeAws_restJson1CreateAliasCommand = exports.deserializeAws_restJson1AddPermissionCommand = exports.deserializeAws_restJson1AddLayerVersionPermissionCommand = exports.serializeAws_restJson1UpdateFunctionEventInvokeConfigCommand = exports.serializeAws_restJson1UpdateFunctionConfigurationCommand = exports.serializeAws_restJson1UpdateFunctionCodeCommand = exports.serializeAws_restJson1UpdateEventSourceMappingCommand = exports.serializeAws_restJson1UpdateCodeSigningConfigCommand = exports.serializeAws_restJson1UpdateAliasCommand = exports.serializeAws_restJson1UntagResourceCommand = exports.serializeAws_restJson1TagResourceCommand = void 0;
+exports.deserializeAws_restJson1UpdateFunctionEventInvokeConfigCommand = exports.deserializeAws_restJson1UpdateFunctionConfigurationCommand = exports.deserializeAws_restJson1UpdateFunctionCodeCommand = exports.deserializeAws_restJson1UpdateEventSourceMappingCommand = exports.deserializeAws_restJson1UpdateCodeSigningConfigCommand = exports.deserializeAws_restJson1UpdateAliasCommand = exports.deserializeAws_restJson1UntagResourceCommand = exports.deserializeAws_restJson1TagResourceCommand = exports.deserializeAws_restJson1RemovePermissionCommand = exports.deserializeAws_restJson1RemoveLayerVersionPermissionCommand = exports.deserializeAws_restJson1PutProvisionedConcurrencyConfigCommand = exports.deserializeAws_restJson1PutFunctionEventInvokeConfigCommand = exports.deserializeAws_restJson1PutFunctionConcurrencyCommand = exports.deserializeAws_restJson1PutFunctionCodeSigningConfigCommand = exports.deserializeAws_restJson1PublishVersionCommand = exports.deserializeAws_restJson1PublishLayerVersionCommand = void 0;
 const protocol_http_1 = __webpack_require__(7498);
 const smithy_client_1 = __webpack_require__(2223);
-exports.serializeAws_restJson1AddLayerVersionPermissionCommand = async (input, context) => {
+const serializeAws_restJson1AddLayerVersionPermissionCommand = async (input, context) => {
     const headers = {
         "Content-Type": "application/json",
     };
@@ -5602,7 +7174,8 @@ exports.serializeAws_restJson1AddLayerVersionPermissionCommand = async (input, c
         body,
     });
 };
-exports.serializeAws_restJson1AddPermissionCommand = async (input, context) => {
+exports.serializeAws_restJson1AddLayerVersionPermissionCommand = serializeAws_restJson1AddLayerVersionPermissionCommand;
+const serializeAws_restJson1AddPermissionCommand = async (input, context) => {
     const headers = {
         "Content-Type": "application/json",
     };
@@ -5642,7 +7215,8 @@ exports.serializeAws_restJson1AddPermissionCommand = async (input, context) => {
         body,
     });
 };
-exports.serializeAws_restJson1CreateAliasCommand = async (input, context) => {
+exports.serializeAws_restJson1AddPermissionCommand = serializeAws_restJson1AddPermissionCommand;
+const serializeAws_restJson1CreateAliasCommand = async (input, context) => {
     const headers = {
         "Content-Type": "application/json",
     };
@@ -5677,7 +7251,35 @@ exports.serializeAws_restJson1CreateAliasCommand = async (input, context) => {
         body,
     });
 };
-exports.serializeAws_restJson1CreateEventSourceMappingCommand = async (input, context) => {
+exports.serializeAws_restJson1CreateAliasCommand = serializeAws_restJson1CreateAliasCommand;
+const serializeAws_restJson1CreateCodeSigningConfigCommand = async (input, context) => {
+    const headers = {
+        "Content-Type": "application/json",
+    };
+    let resolvedPath = "/2020-04-22/code-signing-configs";
+    let body;
+    body = JSON.stringify({
+        ...(input.AllowedPublishers !== undefined && {
+            AllowedPublishers: serializeAws_restJson1AllowedPublishers(input.AllowedPublishers, context),
+        }),
+        ...(input.CodeSigningPolicies !== undefined && {
+            CodeSigningPolicies: serializeAws_restJson1CodeSigningPolicies(input.CodeSigningPolicies, context),
+        }),
+        ...(input.Description !== undefined && { Description: input.Description }),
+    });
+    const { hostname, protocol = "https", port } = await context.endpoint();
+    return new protocol_http_1.HttpRequest({
+        protocol,
+        hostname,
+        port,
+        method: "POST",
+        headers,
+        path: resolvedPath,
+        body,
+    });
+};
+exports.serializeAws_restJson1CreateCodeSigningConfigCommand = serializeAws_restJson1CreateCodeSigningConfigCommand;
+const serializeAws_restJson1CreateEventSourceMappingCommand = async (input, context) => {
     const headers = {
         "Content-Type": "application/json",
     };
@@ -5723,7 +7325,8 @@ exports.serializeAws_restJson1CreateEventSourceMappingCommand = async (input, co
         body,
     });
 };
-exports.serializeAws_restJson1CreateFunctionCommand = async (input, context) => {
+exports.serializeAws_restJson1CreateEventSourceMappingCommand = serializeAws_restJson1CreateEventSourceMappingCommand;
+const serializeAws_restJson1CreateFunctionCommand = async (input, context) => {
     const headers = {
         "Content-Type": "application/json",
     };
@@ -5731,6 +7334,7 @@ exports.serializeAws_restJson1CreateFunctionCommand = async (input, context) => 
     let body;
     body = JSON.stringify({
         ...(input.Code !== undefined && { Code: serializeAws_restJson1FunctionCode(input.Code, context) }),
+        ...(input.CodeSigningConfigArn !== undefined && { CodeSigningConfigArn: input.CodeSigningConfigArn }),
         ...(input.DeadLetterConfig !== undefined && {
             DeadLetterConfig: serializeAws_restJson1DeadLetterConfig(input.DeadLetterConfig, context),
         }),
@@ -5743,9 +7347,13 @@ exports.serializeAws_restJson1CreateFunctionCommand = async (input, context) => 
         }),
         ...(input.FunctionName !== undefined && { FunctionName: input.FunctionName }),
         ...(input.Handler !== undefined && { Handler: input.Handler }),
+        ...(input.ImageConfig !== undefined && {
+            ImageConfig: serializeAws_restJson1ImageConfig(input.ImageConfig, context),
+        }),
         ...(input.KMSKeyArn !== undefined && { KMSKeyArn: input.KMSKeyArn }),
         ...(input.Layers !== undefined && { Layers: serializeAws_restJson1LayerList(input.Layers, context) }),
         ...(input.MemorySize !== undefined && { MemorySize: input.MemorySize }),
+        ...(input.PackageType !== undefined && { PackageType: input.PackageType }),
         ...(input.Publish !== undefined && { Publish: input.Publish }),
         ...(input.Role !== undefined && { Role: input.Role }),
         ...(input.Runtime !== undefined && { Runtime: input.Runtime }),
@@ -5767,7 +7375,8 @@ exports.serializeAws_restJson1CreateFunctionCommand = async (input, context) => 
         body,
     });
 };
-exports.serializeAws_restJson1DeleteAliasCommand = async (input, context) => {
+exports.serializeAws_restJson1CreateFunctionCommand = serializeAws_restJson1CreateFunctionCommand;
+const serializeAws_restJson1DeleteAliasCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -5804,7 +7413,36 @@ exports.serializeAws_restJson1DeleteAliasCommand = async (input, context) => {
         body,
     });
 };
-exports.serializeAws_restJson1DeleteEventSourceMappingCommand = async (input, context) => {
+exports.serializeAws_restJson1DeleteAliasCommand = serializeAws_restJson1DeleteAliasCommand;
+const serializeAws_restJson1DeleteCodeSigningConfigCommand = async (input, context) => {
+    const headers = {
+        "Content-Type": "",
+    };
+    let resolvedPath = "/2020-04-22/code-signing-configs/{CodeSigningConfigArn}";
+    if (input.CodeSigningConfigArn !== undefined) {
+        const labelValue = input.CodeSigningConfigArn;
+        if (labelValue.length <= 0) {
+            throw new Error("Empty value provided for input HTTP label: CodeSigningConfigArn.");
+        }
+        resolvedPath = resolvedPath.replace("{CodeSigningConfigArn}", smithy_client_1.extendedEncodeURIComponent(labelValue));
+    }
+    else {
+        throw new Error("No value provided for input HTTP label: CodeSigningConfigArn.");
+    }
+    let body;
+    const { hostname, protocol = "https", port } = await context.endpoint();
+    return new protocol_http_1.HttpRequest({
+        protocol,
+        hostname,
+        port,
+        method: "DELETE",
+        headers,
+        path: resolvedPath,
+        body,
+    });
+};
+exports.serializeAws_restJson1DeleteCodeSigningConfigCommand = serializeAws_restJson1DeleteCodeSigningConfigCommand;
+const serializeAws_restJson1DeleteEventSourceMappingCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -5831,7 +7469,8 @@ exports.serializeAws_restJson1DeleteEventSourceMappingCommand = async (input, co
         body,
     });
 };
-exports.serializeAws_restJson1DeleteFunctionCommand = async (input, context) => {
+exports.serializeAws_restJson1DeleteEventSourceMappingCommand = serializeAws_restJson1DeleteEventSourceMappingCommand;
+const serializeAws_restJson1DeleteFunctionCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -5862,7 +7501,36 @@ exports.serializeAws_restJson1DeleteFunctionCommand = async (input, context) => 
         body,
     });
 };
-exports.serializeAws_restJson1DeleteFunctionConcurrencyCommand = async (input, context) => {
+exports.serializeAws_restJson1DeleteFunctionCommand = serializeAws_restJson1DeleteFunctionCommand;
+const serializeAws_restJson1DeleteFunctionCodeSigningConfigCommand = async (input, context) => {
+    const headers = {
+        "Content-Type": "",
+    };
+    let resolvedPath = "/2020-06-30/functions/{FunctionName}/code-signing-config";
+    if (input.FunctionName !== undefined) {
+        const labelValue = input.FunctionName;
+        if (labelValue.length <= 0) {
+            throw new Error("Empty value provided for input HTTP label: FunctionName.");
+        }
+        resolvedPath = resolvedPath.replace("{FunctionName}", smithy_client_1.extendedEncodeURIComponent(labelValue));
+    }
+    else {
+        throw new Error("No value provided for input HTTP label: FunctionName.");
+    }
+    let body;
+    const { hostname, protocol = "https", port } = await context.endpoint();
+    return new protocol_http_1.HttpRequest({
+        protocol,
+        hostname,
+        port,
+        method: "DELETE",
+        headers,
+        path: resolvedPath,
+        body,
+    });
+};
+exports.serializeAws_restJson1DeleteFunctionCodeSigningConfigCommand = serializeAws_restJson1DeleteFunctionCodeSigningConfigCommand;
+const serializeAws_restJson1DeleteFunctionConcurrencyCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -5889,7 +7557,8 @@ exports.serializeAws_restJson1DeleteFunctionConcurrencyCommand = async (input, c
         body,
     });
 };
-exports.serializeAws_restJson1DeleteFunctionEventInvokeConfigCommand = async (input, context) => {
+exports.serializeAws_restJson1DeleteFunctionConcurrencyCommand = serializeAws_restJson1DeleteFunctionConcurrencyCommand;
+const serializeAws_restJson1DeleteFunctionEventInvokeConfigCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -5920,7 +7589,8 @@ exports.serializeAws_restJson1DeleteFunctionEventInvokeConfigCommand = async (in
         body,
     });
 };
-exports.serializeAws_restJson1DeleteLayerVersionCommand = async (input, context) => {
+exports.serializeAws_restJson1DeleteFunctionEventInvokeConfigCommand = serializeAws_restJson1DeleteFunctionEventInvokeConfigCommand;
+const serializeAws_restJson1DeleteLayerVersionCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -5957,7 +7627,8 @@ exports.serializeAws_restJson1DeleteLayerVersionCommand = async (input, context)
         body,
     });
 };
-exports.serializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand = async (input, context) => {
+exports.serializeAws_restJson1DeleteLayerVersionCommand = serializeAws_restJson1DeleteLayerVersionCommand;
+const serializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -5988,7 +7659,8 @@ exports.serializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand = async 
         body,
     });
 };
-exports.serializeAws_restJson1GetAccountSettingsCommand = async (input, context) => {
+exports.serializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand = serializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand;
+const serializeAws_restJson1GetAccountSettingsCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -6006,7 +7678,8 @@ exports.serializeAws_restJson1GetAccountSettingsCommand = async (input, context)
         body,
     });
 };
-exports.serializeAws_restJson1GetAliasCommand = async (input, context) => {
+exports.serializeAws_restJson1GetAccountSettingsCommand = serializeAws_restJson1GetAccountSettingsCommand;
+const serializeAws_restJson1GetAliasCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -6043,7 +7716,36 @@ exports.serializeAws_restJson1GetAliasCommand = async (input, context) => {
         body,
     });
 };
-exports.serializeAws_restJson1GetEventSourceMappingCommand = async (input, context) => {
+exports.serializeAws_restJson1GetAliasCommand = serializeAws_restJson1GetAliasCommand;
+const serializeAws_restJson1GetCodeSigningConfigCommand = async (input, context) => {
+    const headers = {
+        "Content-Type": "",
+    };
+    let resolvedPath = "/2020-04-22/code-signing-configs/{CodeSigningConfigArn}";
+    if (input.CodeSigningConfigArn !== undefined) {
+        const labelValue = input.CodeSigningConfigArn;
+        if (labelValue.length <= 0) {
+            throw new Error("Empty value provided for input HTTP label: CodeSigningConfigArn.");
+        }
+        resolvedPath = resolvedPath.replace("{CodeSigningConfigArn}", smithy_client_1.extendedEncodeURIComponent(labelValue));
+    }
+    else {
+        throw new Error("No value provided for input HTTP label: CodeSigningConfigArn.");
+    }
+    let body;
+    const { hostname, protocol = "https", port } = await context.endpoint();
+    return new protocol_http_1.HttpRequest({
+        protocol,
+        hostname,
+        port,
+        method: "GET",
+        headers,
+        path: resolvedPath,
+        body,
+    });
+};
+exports.serializeAws_restJson1GetCodeSigningConfigCommand = serializeAws_restJson1GetCodeSigningConfigCommand;
+const serializeAws_restJson1GetEventSourceMappingCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -6070,7 +7772,8 @@ exports.serializeAws_restJson1GetEventSourceMappingCommand = async (input, conte
         body,
     });
 };
-exports.serializeAws_restJson1GetFunctionCommand = async (input, context) => {
+exports.serializeAws_restJson1GetEventSourceMappingCommand = serializeAws_restJson1GetEventSourceMappingCommand;
+const serializeAws_restJson1GetFunctionCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -6101,7 +7804,36 @@ exports.serializeAws_restJson1GetFunctionCommand = async (input, context) => {
         body,
     });
 };
-exports.serializeAws_restJson1GetFunctionConcurrencyCommand = async (input, context) => {
+exports.serializeAws_restJson1GetFunctionCommand = serializeAws_restJson1GetFunctionCommand;
+const serializeAws_restJson1GetFunctionCodeSigningConfigCommand = async (input, context) => {
+    const headers = {
+        "Content-Type": "",
+    };
+    let resolvedPath = "/2020-06-30/functions/{FunctionName}/code-signing-config";
+    if (input.FunctionName !== undefined) {
+        const labelValue = input.FunctionName;
+        if (labelValue.length <= 0) {
+            throw new Error("Empty value provided for input HTTP label: FunctionName.");
+        }
+        resolvedPath = resolvedPath.replace("{FunctionName}", smithy_client_1.extendedEncodeURIComponent(labelValue));
+    }
+    else {
+        throw new Error("No value provided for input HTTP label: FunctionName.");
+    }
+    let body;
+    const { hostname, protocol = "https", port } = await context.endpoint();
+    return new protocol_http_1.HttpRequest({
+        protocol,
+        hostname,
+        port,
+        method: "GET",
+        headers,
+        path: resolvedPath,
+        body,
+    });
+};
+exports.serializeAws_restJson1GetFunctionCodeSigningConfigCommand = serializeAws_restJson1GetFunctionCodeSigningConfigCommand;
+const serializeAws_restJson1GetFunctionConcurrencyCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -6128,7 +7860,8 @@ exports.serializeAws_restJson1GetFunctionConcurrencyCommand = async (input, cont
         body,
     });
 };
-exports.serializeAws_restJson1GetFunctionConfigurationCommand = async (input, context) => {
+exports.serializeAws_restJson1GetFunctionConcurrencyCommand = serializeAws_restJson1GetFunctionConcurrencyCommand;
+const serializeAws_restJson1GetFunctionConfigurationCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -6159,7 +7892,8 @@ exports.serializeAws_restJson1GetFunctionConfigurationCommand = async (input, co
         body,
     });
 };
-exports.serializeAws_restJson1GetFunctionEventInvokeConfigCommand = async (input, context) => {
+exports.serializeAws_restJson1GetFunctionConfigurationCommand = serializeAws_restJson1GetFunctionConfigurationCommand;
+const serializeAws_restJson1GetFunctionEventInvokeConfigCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -6190,7 +7924,8 @@ exports.serializeAws_restJson1GetFunctionEventInvokeConfigCommand = async (input
         body,
     });
 };
-exports.serializeAws_restJson1GetLayerVersionCommand = async (input, context) => {
+exports.serializeAws_restJson1GetFunctionEventInvokeConfigCommand = serializeAws_restJson1GetFunctionEventInvokeConfigCommand;
+const serializeAws_restJson1GetLayerVersionCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -6227,7 +7962,8 @@ exports.serializeAws_restJson1GetLayerVersionCommand = async (input, context) =>
         body,
     });
 };
-exports.serializeAws_restJson1GetLayerVersionByArnCommand = async (input, context) => {
+exports.serializeAws_restJson1GetLayerVersionCommand = serializeAws_restJson1GetLayerVersionCommand;
+const serializeAws_restJson1GetLayerVersionByArnCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -6249,7 +7985,8 @@ exports.serializeAws_restJson1GetLayerVersionByArnCommand = async (input, contex
         body,
     });
 };
-exports.serializeAws_restJson1GetLayerVersionPolicyCommand = async (input, context) => {
+exports.serializeAws_restJson1GetLayerVersionByArnCommand = serializeAws_restJson1GetLayerVersionByArnCommand;
+const serializeAws_restJson1GetLayerVersionPolicyCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -6286,7 +8023,8 @@ exports.serializeAws_restJson1GetLayerVersionPolicyCommand = async (input, conte
         body,
     });
 };
-exports.serializeAws_restJson1GetPolicyCommand = async (input, context) => {
+exports.serializeAws_restJson1GetLayerVersionPolicyCommand = serializeAws_restJson1GetLayerVersionPolicyCommand;
+const serializeAws_restJson1GetPolicyCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -6317,7 +8055,8 @@ exports.serializeAws_restJson1GetPolicyCommand = async (input, context) => {
         body,
     });
 };
-exports.serializeAws_restJson1GetProvisionedConcurrencyConfigCommand = async (input, context) => {
+exports.serializeAws_restJson1GetPolicyCommand = serializeAws_restJson1GetPolicyCommand;
+const serializeAws_restJson1GetProvisionedConcurrencyConfigCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -6348,7 +8087,8 @@ exports.serializeAws_restJson1GetProvisionedConcurrencyConfigCommand = async (in
         body,
     });
 };
-exports.serializeAws_restJson1InvokeCommand = async (input, context) => {
+exports.serializeAws_restJson1GetProvisionedConcurrencyConfigCommand = serializeAws_restJson1GetProvisionedConcurrencyConfigCommand;
+const serializeAws_restJson1InvokeCommand = async (input, context) => {
     const headers = {
         "Content-Type": "application/octet-stream",
         ...(isSerializableHeaderValue(input.InvocationType) && { "X-Amz-Invocation-Type": input.InvocationType }),
@@ -6385,7 +8125,8 @@ exports.serializeAws_restJson1InvokeCommand = async (input, context) => {
         body,
     });
 };
-exports.serializeAws_restJson1InvokeAsyncCommand = async (input, context) => {
+exports.serializeAws_restJson1InvokeCommand = serializeAws_restJson1InvokeCommand;
+const serializeAws_restJson1InvokeAsyncCommand = async (input, context) => {
     const headers = {
         "Content-Type": "application/octet-stream",
     };
@@ -6415,7 +8156,8 @@ exports.serializeAws_restJson1InvokeAsyncCommand = async (input, context) => {
         body,
     });
 };
-exports.serializeAws_restJson1ListAliasesCommand = async (input, context) => {
+exports.serializeAws_restJson1InvokeAsyncCommand = serializeAws_restJson1InvokeAsyncCommand;
+const serializeAws_restJson1ListAliasesCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -6448,7 +8190,31 @@ exports.serializeAws_restJson1ListAliasesCommand = async (input, context) => {
         body,
     });
 };
-exports.serializeAws_restJson1ListEventSourceMappingsCommand = async (input, context) => {
+exports.serializeAws_restJson1ListAliasesCommand = serializeAws_restJson1ListAliasesCommand;
+const serializeAws_restJson1ListCodeSigningConfigsCommand = async (input, context) => {
+    const headers = {
+        "Content-Type": "",
+    };
+    let resolvedPath = "/2020-04-22/code-signing-configs";
+    const query = {
+        ...(input.Marker !== undefined && { Marker: input.Marker }),
+        ...(input.MaxItems !== undefined && { MaxItems: input.MaxItems.toString() }),
+    };
+    let body;
+    const { hostname, protocol = "https", port } = await context.endpoint();
+    return new protocol_http_1.HttpRequest({
+        protocol,
+        hostname,
+        port,
+        method: "GET",
+        headers,
+        path: resolvedPath,
+        query,
+        body,
+    });
+};
+exports.serializeAws_restJson1ListCodeSigningConfigsCommand = serializeAws_restJson1ListCodeSigningConfigsCommand;
+const serializeAws_restJson1ListEventSourceMappingsCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -6472,7 +8238,8 @@ exports.serializeAws_restJson1ListEventSourceMappingsCommand = async (input, con
         body,
     });
 };
-exports.serializeAws_restJson1ListFunctionEventInvokeConfigsCommand = async (input, context) => {
+exports.serializeAws_restJson1ListEventSourceMappingsCommand = serializeAws_restJson1ListEventSourceMappingsCommand;
+const serializeAws_restJson1ListFunctionEventInvokeConfigsCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -6504,7 +8271,8 @@ exports.serializeAws_restJson1ListFunctionEventInvokeConfigsCommand = async (inp
         body,
     });
 };
-exports.serializeAws_restJson1ListFunctionsCommand = async (input, context) => {
+exports.serializeAws_restJson1ListFunctionEventInvokeConfigsCommand = serializeAws_restJson1ListFunctionEventInvokeConfigsCommand;
+const serializeAws_restJson1ListFunctionsCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -6528,7 +8296,41 @@ exports.serializeAws_restJson1ListFunctionsCommand = async (input, context) => {
         body,
     });
 };
-exports.serializeAws_restJson1ListLayersCommand = async (input, context) => {
+exports.serializeAws_restJson1ListFunctionsCommand = serializeAws_restJson1ListFunctionsCommand;
+const serializeAws_restJson1ListFunctionsByCodeSigningConfigCommand = async (input, context) => {
+    const headers = {
+        "Content-Type": "",
+    };
+    let resolvedPath = "/2020-04-22/code-signing-configs/{CodeSigningConfigArn}/functions";
+    if (input.CodeSigningConfigArn !== undefined) {
+        const labelValue = input.CodeSigningConfigArn;
+        if (labelValue.length <= 0) {
+            throw new Error("Empty value provided for input HTTP label: CodeSigningConfigArn.");
+        }
+        resolvedPath = resolvedPath.replace("{CodeSigningConfigArn}", smithy_client_1.extendedEncodeURIComponent(labelValue));
+    }
+    else {
+        throw new Error("No value provided for input HTTP label: CodeSigningConfigArn.");
+    }
+    const query = {
+        ...(input.Marker !== undefined && { Marker: input.Marker }),
+        ...(input.MaxItems !== undefined && { MaxItems: input.MaxItems.toString() }),
+    };
+    let body;
+    const { hostname, protocol = "https", port } = await context.endpoint();
+    return new protocol_http_1.HttpRequest({
+        protocol,
+        hostname,
+        port,
+        method: "GET",
+        headers,
+        path: resolvedPath,
+        query,
+        body,
+    });
+};
+exports.serializeAws_restJson1ListFunctionsByCodeSigningConfigCommand = serializeAws_restJson1ListFunctionsByCodeSigningConfigCommand;
+const serializeAws_restJson1ListLayersCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -6551,7 +8353,8 @@ exports.serializeAws_restJson1ListLayersCommand = async (input, context) => {
         body,
     });
 };
-exports.serializeAws_restJson1ListLayerVersionsCommand = async (input, context) => {
+exports.serializeAws_restJson1ListLayersCommand = serializeAws_restJson1ListLayersCommand;
+const serializeAws_restJson1ListLayerVersionsCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -6584,7 +8387,8 @@ exports.serializeAws_restJson1ListLayerVersionsCommand = async (input, context) 
         body,
     });
 };
-exports.serializeAws_restJson1ListProvisionedConcurrencyConfigsCommand = async (input, context) => {
+exports.serializeAws_restJson1ListLayerVersionsCommand = serializeAws_restJson1ListLayerVersionsCommand;
+const serializeAws_restJson1ListProvisionedConcurrencyConfigsCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -6617,7 +8421,8 @@ exports.serializeAws_restJson1ListProvisionedConcurrencyConfigsCommand = async (
         body,
     });
 };
-exports.serializeAws_restJson1ListTagsCommand = async (input, context) => {
+exports.serializeAws_restJson1ListProvisionedConcurrencyConfigsCommand = serializeAws_restJson1ListProvisionedConcurrencyConfigsCommand;
+const serializeAws_restJson1ListTagsCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -6644,7 +8449,8 @@ exports.serializeAws_restJson1ListTagsCommand = async (input, context) => {
         body,
     });
 };
-exports.serializeAws_restJson1ListVersionsByFunctionCommand = async (input, context) => {
+exports.serializeAws_restJson1ListTagsCommand = serializeAws_restJson1ListTagsCommand;
+const serializeAws_restJson1ListVersionsByFunctionCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -6676,7 +8482,8 @@ exports.serializeAws_restJson1ListVersionsByFunctionCommand = async (input, cont
         body,
     });
 };
-exports.serializeAws_restJson1PublishLayerVersionCommand = async (input, context) => {
+exports.serializeAws_restJson1ListVersionsByFunctionCommand = serializeAws_restJson1ListVersionsByFunctionCommand;
+const serializeAws_restJson1PublishLayerVersionCommand = async (input, context) => {
     const headers = {
         "Content-Type": "application/json",
     };
@@ -6713,7 +8520,8 @@ exports.serializeAws_restJson1PublishLayerVersionCommand = async (input, context
         body,
     });
 };
-exports.serializeAws_restJson1PublishVersionCommand = async (input, context) => {
+exports.serializeAws_restJson1PublishLayerVersionCommand = serializeAws_restJson1PublishLayerVersionCommand;
+const serializeAws_restJson1PublishVersionCommand = async (input, context) => {
     const headers = {
         "Content-Type": "application/json",
     };
@@ -6745,7 +8553,39 @@ exports.serializeAws_restJson1PublishVersionCommand = async (input, context) => 
         body,
     });
 };
-exports.serializeAws_restJson1PutFunctionConcurrencyCommand = async (input, context) => {
+exports.serializeAws_restJson1PublishVersionCommand = serializeAws_restJson1PublishVersionCommand;
+const serializeAws_restJson1PutFunctionCodeSigningConfigCommand = async (input, context) => {
+    const headers = {
+        "Content-Type": "application/json",
+    };
+    let resolvedPath = "/2020-06-30/functions/{FunctionName}/code-signing-config";
+    if (input.FunctionName !== undefined) {
+        const labelValue = input.FunctionName;
+        if (labelValue.length <= 0) {
+            throw new Error("Empty value provided for input HTTP label: FunctionName.");
+        }
+        resolvedPath = resolvedPath.replace("{FunctionName}", smithy_client_1.extendedEncodeURIComponent(labelValue));
+    }
+    else {
+        throw new Error("No value provided for input HTTP label: FunctionName.");
+    }
+    let body;
+    body = JSON.stringify({
+        ...(input.CodeSigningConfigArn !== undefined && { CodeSigningConfigArn: input.CodeSigningConfigArn }),
+    });
+    const { hostname, protocol = "https", port } = await context.endpoint();
+    return new protocol_http_1.HttpRequest({
+        protocol,
+        hostname,
+        port,
+        method: "PUT",
+        headers,
+        path: resolvedPath,
+        body,
+    });
+};
+exports.serializeAws_restJson1PutFunctionCodeSigningConfigCommand = serializeAws_restJson1PutFunctionCodeSigningConfigCommand;
+const serializeAws_restJson1PutFunctionConcurrencyCommand = async (input, context) => {
     const headers = {
         "Content-Type": "application/json",
     };
@@ -6777,7 +8617,8 @@ exports.serializeAws_restJson1PutFunctionConcurrencyCommand = async (input, cont
         body,
     });
 };
-exports.serializeAws_restJson1PutFunctionEventInvokeConfigCommand = async (input, context) => {
+exports.serializeAws_restJson1PutFunctionConcurrencyCommand = serializeAws_restJson1PutFunctionConcurrencyCommand;
+const serializeAws_restJson1PutFunctionEventInvokeConfigCommand = async (input, context) => {
     const headers = {
         "Content-Type": "application/json",
     };
@@ -6815,7 +8656,8 @@ exports.serializeAws_restJson1PutFunctionEventInvokeConfigCommand = async (input
         body,
     });
 };
-exports.serializeAws_restJson1PutProvisionedConcurrencyConfigCommand = async (input, context) => {
+exports.serializeAws_restJson1PutFunctionEventInvokeConfigCommand = serializeAws_restJson1PutFunctionEventInvokeConfigCommand;
+const serializeAws_restJson1PutProvisionedConcurrencyConfigCommand = async (input, context) => {
     const headers = {
         "Content-Type": "application/json",
     };
@@ -6851,7 +8693,8 @@ exports.serializeAws_restJson1PutProvisionedConcurrencyConfigCommand = async (in
         body,
     });
 };
-exports.serializeAws_restJson1RemoveLayerVersionPermissionCommand = async (input, context) => {
+exports.serializeAws_restJson1PutProvisionedConcurrencyConfigCommand = serializeAws_restJson1PutProvisionedConcurrencyConfigCommand;
+const serializeAws_restJson1RemoveLayerVersionPermissionCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -6902,7 +8745,8 @@ exports.serializeAws_restJson1RemoveLayerVersionPermissionCommand = async (input
         body,
     });
 };
-exports.serializeAws_restJson1RemovePermissionCommand = async (input, context) => {
+exports.serializeAws_restJson1RemoveLayerVersionPermissionCommand = serializeAws_restJson1RemoveLayerVersionPermissionCommand;
+const serializeAws_restJson1RemovePermissionCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -6944,7 +8788,8 @@ exports.serializeAws_restJson1RemovePermissionCommand = async (input, context) =
         body,
     });
 };
-exports.serializeAws_restJson1TagResourceCommand = async (input, context) => {
+exports.serializeAws_restJson1RemovePermissionCommand = serializeAws_restJson1RemovePermissionCommand;
+const serializeAws_restJson1TagResourceCommand = async (input, context) => {
     const headers = {
         "Content-Type": "application/json",
     };
@@ -6974,7 +8819,8 @@ exports.serializeAws_restJson1TagResourceCommand = async (input, context) => {
         body,
     });
 };
-exports.serializeAws_restJson1UntagResourceCommand = async (input, context) => {
+exports.serializeAws_restJson1TagResourceCommand = serializeAws_restJson1TagResourceCommand;
+const serializeAws_restJson1UntagResourceCommand = async (input, context) => {
     const headers = {
         "Content-Type": "",
     };
@@ -7005,7 +8851,8 @@ exports.serializeAws_restJson1UntagResourceCommand = async (input, context) => {
         body,
     });
 };
-exports.serializeAws_restJson1UpdateAliasCommand = async (input, context) => {
+exports.serializeAws_restJson1UntagResourceCommand = serializeAws_restJson1UntagResourceCommand;
+const serializeAws_restJson1UpdateAliasCommand = async (input, context) => {
     const headers = {
         "Content-Type": "application/json",
     };
@@ -7050,7 +8897,45 @@ exports.serializeAws_restJson1UpdateAliasCommand = async (input, context) => {
         body,
     });
 };
-exports.serializeAws_restJson1UpdateEventSourceMappingCommand = async (input, context) => {
+exports.serializeAws_restJson1UpdateAliasCommand = serializeAws_restJson1UpdateAliasCommand;
+const serializeAws_restJson1UpdateCodeSigningConfigCommand = async (input, context) => {
+    const headers = {
+        "Content-Type": "application/json",
+    };
+    let resolvedPath = "/2020-04-22/code-signing-configs/{CodeSigningConfigArn}";
+    if (input.CodeSigningConfigArn !== undefined) {
+        const labelValue = input.CodeSigningConfigArn;
+        if (labelValue.length <= 0) {
+            throw new Error("Empty value provided for input HTTP label: CodeSigningConfigArn.");
+        }
+        resolvedPath = resolvedPath.replace("{CodeSigningConfigArn}", smithy_client_1.extendedEncodeURIComponent(labelValue));
+    }
+    else {
+        throw new Error("No value provided for input HTTP label: CodeSigningConfigArn.");
+    }
+    let body;
+    body = JSON.stringify({
+        ...(input.AllowedPublishers !== undefined && {
+            AllowedPublishers: serializeAws_restJson1AllowedPublishers(input.AllowedPublishers, context),
+        }),
+        ...(input.CodeSigningPolicies !== undefined && {
+            CodeSigningPolicies: serializeAws_restJson1CodeSigningPolicies(input.CodeSigningPolicies, context),
+        }),
+        ...(input.Description !== undefined && { Description: input.Description }),
+    });
+    const { hostname, protocol = "https", port } = await context.endpoint();
+    return new protocol_http_1.HttpRequest({
+        protocol,
+        hostname,
+        port,
+        method: "PUT",
+        headers,
+        path: resolvedPath,
+        body,
+    });
+};
+exports.serializeAws_restJson1UpdateCodeSigningConfigCommand = serializeAws_restJson1UpdateCodeSigningConfigCommand;
+const serializeAws_restJson1UpdateEventSourceMappingCommand = async (input, context) => {
     const headers = {
         "Content-Type": "application/json",
     };
@@ -7099,7 +8984,8 @@ exports.serializeAws_restJson1UpdateEventSourceMappingCommand = async (input, co
         body,
     });
 };
-exports.serializeAws_restJson1UpdateFunctionCodeCommand = async (input, context) => {
+exports.serializeAws_restJson1UpdateEventSourceMappingCommand = serializeAws_restJson1UpdateEventSourceMappingCommand;
+const serializeAws_restJson1UpdateFunctionCodeCommand = async (input, context) => {
     const headers = {
         "Content-Type": "application/json",
     };
@@ -7117,6 +9003,7 @@ exports.serializeAws_restJson1UpdateFunctionCodeCommand = async (input, context)
     let body;
     body = JSON.stringify({
         ...(input.DryRun !== undefined && { DryRun: input.DryRun }),
+        ...(input.ImageUri !== undefined && { ImageUri: input.ImageUri }),
         ...(input.Publish !== undefined && { Publish: input.Publish }),
         ...(input.RevisionId !== undefined && { RevisionId: input.RevisionId }),
         ...(input.S3Bucket !== undefined && { S3Bucket: input.S3Bucket }),
@@ -7135,7 +9022,8 @@ exports.serializeAws_restJson1UpdateFunctionCodeCommand = async (input, context)
         body,
     });
 };
-exports.serializeAws_restJson1UpdateFunctionConfigurationCommand = async (input, context) => {
+exports.serializeAws_restJson1UpdateFunctionCodeCommand = serializeAws_restJson1UpdateFunctionCodeCommand;
+const serializeAws_restJson1UpdateFunctionConfigurationCommand = async (input, context) => {
     const headers = {
         "Content-Type": "application/json",
     };
@@ -7163,6 +9051,9 @@ exports.serializeAws_restJson1UpdateFunctionConfigurationCommand = async (input,
             FileSystemConfigs: serializeAws_restJson1FileSystemConfigList(input.FileSystemConfigs, context),
         }),
         ...(input.Handler !== undefined && { Handler: input.Handler }),
+        ...(input.ImageConfig !== undefined && {
+            ImageConfig: serializeAws_restJson1ImageConfig(input.ImageConfig, context),
+        }),
         ...(input.KMSKeyArn !== undefined && { KMSKeyArn: input.KMSKeyArn }),
         ...(input.Layers !== undefined && { Layers: serializeAws_restJson1LayerList(input.Layers, context) }),
         ...(input.MemorySize !== undefined && { MemorySize: input.MemorySize }),
@@ -7186,7 +9077,8 @@ exports.serializeAws_restJson1UpdateFunctionConfigurationCommand = async (input,
         body,
     });
 };
-exports.serializeAws_restJson1UpdateFunctionEventInvokeConfigCommand = async (input, context) => {
+exports.serializeAws_restJson1UpdateFunctionConfigurationCommand = serializeAws_restJson1UpdateFunctionConfigurationCommand;
+const serializeAws_restJson1UpdateFunctionEventInvokeConfigCommand = async (input, context) => {
     const headers = {
         "Content-Type": "application/json",
     };
@@ -7224,7 +9116,8 @@ exports.serializeAws_restJson1UpdateFunctionEventInvokeConfigCommand = async (in
         body,
     });
 };
-exports.deserializeAws_restJson1AddLayerVersionPermissionCommand = async (output, context) => {
+exports.serializeAws_restJson1UpdateFunctionEventInvokeConfigCommand = serializeAws_restJson1UpdateFunctionEventInvokeConfigCommand;
+const deserializeAws_restJson1AddLayerVersionPermissionCommand = async (output, context) => {
     if (output.statusCode !== 201 && output.statusCode >= 300) {
         return deserializeAws_restJson1AddLayerVersionPermissionCommandError(output, context);
     }
@@ -7242,6 +9135,7 @@ exports.deserializeAws_restJson1AddLayerVersionPermissionCommand = async (output
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1AddLayerVersionPermissionCommand = deserializeAws_restJson1AddLayerVersionPermissionCommand;
 const deserializeAws_restJson1AddLayerVersionPermissionCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -7323,7 +9217,7 @@ const deserializeAws_restJson1AddLayerVersionPermissionCommandError = async (out
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1AddPermissionCommand = async (output, context) => {
+const deserializeAws_restJson1AddPermissionCommand = async (output, context) => {
     if (output.statusCode !== 201 && output.statusCode >= 300) {
         return deserializeAws_restJson1AddPermissionCommandError(output, context);
     }
@@ -7337,6 +9231,7 @@ exports.deserializeAws_restJson1AddPermissionCommand = async (output, context) =
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1AddPermissionCommand = deserializeAws_restJson1AddPermissionCommand;
 const deserializeAws_restJson1AddPermissionCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -7418,7 +9313,7 @@ const deserializeAws_restJson1AddPermissionCommandError = async (output, context
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1CreateAliasCommand = async (output, context) => {
+const deserializeAws_restJson1CreateAliasCommand = async (output, context) => {
     if (output.statusCode !== 201 && output.statusCode >= 300) {
         return deserializeAws_restJson1CreateAliasCommandError(output, context);
     }
@@ -7452,6 +9347,7 @@ exports.deserializeAws_restJson1CreateAliasCommand = async (output, context) => 
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1CreateAliasCommand = deserializeAws_restJson1CreateAliasCommand;
 const deserializeAws_restJson1CreateAliasCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -7517,7 +9413,63 @@ const deserializeAws_restJson1CreateAliasCommandError = async (output, context) 
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1CreateEventSourceMappingCommand = async (output, context) => {
+const deserializeAws_restJson1CreateCodeSigningConfigCommand = async (output, context) => {
+    if (output.statusCode !== 201 && output.statusCode >= 300) {
+        return deserializeAws_restJson1CreateCodeSigningConfigCommandError(output, context);
+    }
+    const contents = {
+        $metadata: deserializeMetadata(output),
+        CodeSigningConfig: undefined,
+    };
+    const data = await parseBody(output.body, context);
+    if (data.CodeSigningConfig !== undefined && data.CodeSigningConfig !== null) {
+        contents.CodeSigningConfig = deserializeAws_restJson1CodeSigningConfig(data.CodeSigningConfig, context);
+    }
+    return Promise.resolve(contents);
+};
+exports.deserializeAws_restJson1CreateCodeSigningConfigCommand = deserializeAws_restJson1CreateCodeSigningConfigCommand;
+const deserializeAws_restJson1CreateCodeSigningConfigCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseBody(output.body, context),
+    };
+    let response;
+    let errorCode = "UnknownError";
+    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InvalidParameterValueException":
+        case "com.amazonaws.lambda#InvalidParameterValueException":
+            response = {
+                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "ServiceException":
+        case "com.amazonaws.lambda#ServiceException":
+            response = {
+                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        default:
+            const parsedBody = parsedOutput.body;
+            errorCode = parsedBody.code || parsedBody.Code || errorCode;
+            response = {
+                ...parsedBody,
+                name: `${errorCode}`,
+                message: parsedBody.message || parsedBody.Message || errorCode,
+                $fault: "client",
+                $metadata: deserializeMetadata(output),
+            };
+    }
+    const message = response.message || response.Message || errorCode;
+    response.message = message;
+    delete response.Message;
+    return Promise.reject(Object.assign(new Error(message), response));
+};
+const deserializeAws_restJson1CreateEventSourceMappingCommand = async (output, context) => {
     if (output.statusCode !== 202 && output.statusCode >= 300) {
         return deserializeAws_restJson1CreateEventSourceMappingCommandError(output, context);
     }
@@ -7536,6 +9488,8 @@ exports.deserializeAws_restJson1CreateEventSourceMappingCommand = async (output,
         ParallelizationFactor: undefined,
         Queues: undefined,
         SourceAccessConfigurations: undefined,
+        StartingPosition: undefined,
+        StartingPositionTimestamp: undefined,
         State: undefined,
         StateTransitionReason: undefined,
         Topics: undefined,
@@ -7581,6 +9535,12 @@ exports.deserializeAws_restJson1CreateEventSourceMappingCommand = async (output,
     if (data.SourceAccessConfigurations !== undefined && data.SourceAccessConfigurations !== null) {
         contents.SourceAccessConfigurations = deserializeAws_restJson1SourceAccessConfigurations(data.SourceAccessConfigurations, context);
     }
+    if (data.StartingPosition !== undefined && data.StartingPosition !== null) {
+        contents.StartingPosition = data.StartingPosition;
+    }
+    if (data.StartingPositionTimestamp !== undefined && data.StartingPositionTimestamp !== null) {
+        contents.StartingPositionTimestamp = new Date(Math.round(data.StartingPositionTimestamp * 1000));
+    }
     if (data.State !== undefined && data.State !== null) {
         contents.State = data.State;
     }
@@ -7595,6 +9555,7 @@ exports.deserializeAws_restJson1CreateEventSourceMappingCommand = async (output,
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1CreateEventSourceMappingCommand = deserializeAws_restJson1CreateEventSourceMappingCommand;
 const deserializeAws_restJson1CreateEventSourceMappingCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -7660,7 +9621,7 @@ const deserializeAws_restJson1CreateEventSourceMappingCommandError = async (outp
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1CreateFunctionCommand = async (output, context) => {
+const deserializeAws_restJson1CreateFunctionCommand = async (output, context) => {
     if (output.statusCode !== 201 && output.statusCode >= 300) {
         return deserializeAws_restJson1CreateFunctionCommandError(output, context);
     }
@@ -7675,6 +9636,7 @@ exports.deserializeAws_restJson1CreateFunctionCommand = async (output, context) 
         FunctionArn: undefined,
         FunctionName: undefined,
         Handler: undefined,
+        ImageConfigResponse: undefined,
         KMSKeyArn: undefined,
         LastModified: undefined,
         LastUpdateStatus: undefined,
@@ -7683,9 +9645,12 @@ exports.deserializeAws_restJson1CreateFunctionCommand = async (output, context) 
         Layers: undefined,
         MasterArn: undefined,
         MemorySize: undefined,
+        PackageType: undefined,
         RevisionId: undefined,
         Role: undefined,
         Runtime: undefined,
+        SigningJobArn: undefined,
+        SigningProfileVersionArn: undefined,
         State: undefined,
         StateReason: undefined,
         StateReasonCode: undefined,
@@ -7722,6 +9687,9 @@ exports.deserializeAws_restJson1CreateFunctionCommand = async (output, context) 
     if (data.Handler !== undefined && data.Handler !== null) {
         contents.Handler = data.Handler;
     }
+    if (data.ImageConfigResponse !== undefined && data.ImageConfigResponse !== null) {
+        contents.ImageConfigResponse = deserializeAws_restJson1ImageConfigResponse(data.ImageConfigResponse, context);
+    }
     if (data.KMSKeyArn !== undefined && data.KMSKeyArn !== null) {
         contents.KMSKeyArn = data.KMSKeyArn;
     }
@@ -7746,6 +9714,9 @@ exports.deserializeAws_restJson1CreateFunctionCommand = async (output, context) 
     if (data.MemorySize !== undefined && data.MemorySize !== null) {
         contents.MemorySize = data.MemorySize;
     }
+    if (data.PackageType !== undefined && data.PackageType !== null) {
+        contents.PackageType = data.PackageType;
+    }
     if (data.RevisionId !== undefined && data.RevisionId !== null) {
         contents.RevisionId = data.RevisionId;
     }
@@ -7754,6 +9725,12 @@ exports.deserializeAws_restJson1CreateFunctionCommand = async (output, context) 
     }
     if (data.Runtime !== undefined && data.Runtime !== null) {
         contents.Runtime = data.Runtime;
+    }
+    if (data.SigningJobArn !== undefined && data.SigningJobArn !== null) {
+        contents.SigningJobArn = data.SigningJobArn;
+    }
+    if (data.SigningProfileVersionArn !== undefined && data.SigningProfileVersionArn !== null) {
+        contents.SigningProfileVersionArn = data.SigningProfileVersionArn;
     }
     if (data.State !== undefined && data.State !== null) {
         contents.State = data.State;
@@ -7778,6 +9755,7 @@ exports.deserializeAws_restJson1CreateFunctionCommand = async (output, context) 
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1CreateFunctionCommand = deserializeAws_restJson1CreateFunctionCommand;
 const deserializeAws_restJson1CreateFunctionCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -7787,10 +9765,34 @@ const deserializeAws_restJson1CreateFunctionCommandError = async (output, contex
     let errorCode = "UnknownError";
     errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
+        case "CodeSigningConfigNotFoundException":
+        case "com.amazonaws.lambda#CodeSigningConfigNotFoundException":
+            response = {
+                ...(await deserializeAws_restJson1CodeSigningConfigNotFoundExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
         case "CodeStorageExceededException":
         case "com.amazonaws.lambda#CodeStorageExceededException":
             response = {
                 ...(await deserializeAws_restJson1CodeStorageExceededExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "CodeVerificationFailedException":
+        case "com.amazonaws.lambda#CodeVerificationFailedException":
+            response = {
+                ...(await deserializeAws_restJson1CodeVerificationFailedExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "InvalidCodeSignatureException":
+        case "com.amazonaws.lambda#InvalidCodeSignatureException":
+            response = {
+                ...(await deserializeAws_restJson1InvalidCodeSignatureExceptionResponse(parsedOutput, context)),
                 name: errorCode,
                 $metadata: deserializeMetadata(output),
             };
@@ -7851,7 +9853,7 @@ const deserializeAws_restJson1CreateFunctionCommandError = async (output, contex
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1DeleteAliasCommand = async (output, context) => {
+const deserializeAws_restJson1DeleteAliasCommand = async (output, context) => {
     if (output.statusCode !== 204 && output.statusCode >= 300) {
         return deserializeAws_restJson1DeleteAliasCommandError(output, context);
     }
@@ -7861,6 +9863,7 @@ exports.deserializeAws_restJson1DeleteAliasCommand = async (output, context) => 
     await collectBody(output.body, context);
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1DeleteAliasCommand = deserializeAws_restJson1DeleteAliasCommand;
 const deserializeAws_restJson1DeleteAliasCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -7918,7 +9921,75 @@ const deserializeAws_restJson1DeleteAliasCommandError = async (output, context) 
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1DeleteEventSourceMappingCommand = async (output, context) => {
+const deserializeAws_restJson1DeleteCodeSigningConfigCommand = async (output, context) => {
+    if (output.statusCode !== 204 && output.statusCode >= 300) {
+        return deserializeAws_restJson1DeleteCodeSigningConfigCommandError(output, context);
+    }
+    const contents = {
+        $metadata: deserializeMetadata(output),
+    };
+    await collectBody(output.body, context);
+    return Promise.resolve(contents);
+};
+exports.deserializeAws_restJson1DeleteCodeSigningConfigCommand = deserializeAws_restJson1DeleteCodeSigningConfigCommand;
+const deserializeAws_restJson1DeleteCodeSigningConfigCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseBody(output.body, context),
+    };
+    let response;
+    let errorCode = "UnknownError";
+    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InvalidParameterValueException":
+        case "com.amazonaws.lambda#InvalidParameterValueException":
+            response = {
+                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "ResourceConflictException":
+        case "com.amazonaws.lambda#ResourceConflictException":
+            response = {
+                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "ResourceNotFoundException":
+        case "com.amazonaws.lambda#ResourceNotFoundException":
+            response = {
+                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "ServiceException":
+        case "com.amazonaws.lambda#ServiceException":
+            response = {
+                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        default:
+            const parsedBody = parsedOutput.body;
+            errorCode = parsedBody.code || parsedBody.Code || errorCode;
+            response = {
+                ...parsedBody,
+                name: `${errorCode}`,
+                message: parsedBody.message || parsedBody.Message || errorCode,
+                $fault: "client",
+                $metadata: deserializeMetadata(output),
+            };
+    }
+    const message = response.message || response.Message || errorCode;
+    response.message = message;
+    delete response.Message;
+    return Promise.reject(Object.assign(new Error(message), response));
+};
+const deserializeAws_restJson1DeleteEventSourceMappingCommand = async (output, context) => {
     if (output.statusCode !== 202 && output.statusCode >= 300) {
         return deserializeAws_restJson1DeleteEventSourceMappingCommandError(output, context);
     }
@@ -7937,6 +10008,8 @@ exports.deserializeAws_restJson1DeleteEventSourceMappingCommand = async (output,
         ParallelizationFactor: undefined,
         Queues: undefined,
         SourceAccessConfigurations: undefined,
+        StartingPosition: undefined,
+        StartingPositionTimestamp: undefined,
         State: undefined,
         StateTransitionReason: undefined,
         Topics: undefined,
@@ -7982,6 +10055,12 @@ exports.deserializeAws_restJson1DeleteEventSourceMappingCommand = async (output,
     if (data.SourceAccessConfigurations !== undefined && data.SourceAccessConfigurations !== null) {
         contents.SourceAccessConfigurations = deserializeAws_restJson1SourceAccessConfigurations(data.SourceAccessConfigurations, context);
     }
+    if (data.StartingPosition !== undefined && data.StartingPosition !== null) {
+        contents.StartingPosition = data.StartingPosition;
+    }
+    if (data.StartingPositionTimestamp !== undefined && data.StartingPositionTimestamp !== null) {
+        contents.StartingPositionTimestamp = new Date(Math.round(data.StartingPositionTimestamp * 1000));
+    }
     if (data.State !== undefined && data.State !== null) {
         contents.State = data.State;
     }
@@ -7996,6 +10075,7 @@ exports.deserializeAws_restJson1DeleteEventSourceMappingCommand = async (output,
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1DeleteEventSourceMappingCommand = deserializeAws_restJson1DeleteEventSourceMappingCommand;
 const deserializeAws_restJson1DeleteEventSourceMappingCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -8061,7 +10141,7 @@ const deserializeAws_restJson1DeleteEventSourceMappingCommandError = async (outp
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1DeleteFunctionCommand = async (output, context) => {
+const deserializeAws_restJson1DeleteFunctionCommand = async (output, context) => {
     if (output.statusCode !== 204 && output.statusCode >= 300) {
         return deserializeAws_restJson1DeleteFunctionCommandError(output, context);
     }
@@ -8071,6 +10151,7 @@ exports.deserializeAws_restJson1DeleteFunctionCommand = async (output, context) 
     await collectBody(output.body, context);
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1DeleteFunctionCommand = deserializeAws_restJson1DeleteFunctionCommand;
 const deserializeAws_restJson1DeleteFunctionCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -8136,7 +10217,91 @@ const deserializeAws_restJson1DeleteFunctionCommandError = async (output, contex
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1DeleteFunctionConcurrencyCommand = async (output, context) => {
+const deserializeAws_restJson1DeleteFunctionCodeSigningConfigCommand = async (output, context) => {
+    if (output.statusCode !== 204 && output.statusCode >= 300) {
+        return deserializeAws_restJson1DeleteFunctionCodeSigningConfigCommandError(output, context);
+    }
+    const contents = {
+        $metadata: deserializeMetadata(output),
+    };
+    await collectBody(output.body, context);
+    return Promise.resolve(contents);
+};
+exports.deserializeAws_restJson1DeleteFunctionCodeSigningConfigCommand = deserializeAws_restJson1DeleteFunctionCodeSigningConfigCommand;
+const deserializeAws_restJson1DeleteFunctionCodeSigningConfigCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseBody(output.body, context),
+    };
+    let response;
+    let errorCode = "UnknownError";
+    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "CodeSigningConfigNotFoundException":
+        case "com.amazonaws.lambda#CodeSigningConfigNotFoundException":
+            response = {
+                ...(await deserializeAws_restJson1CodeSigningConfigNotFoundExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "InvalidParameterValueException":
+        case "com.amazonaws.lambda#InvalidParameterValueException":
+            response = {
+                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "ResourceConflictException":
+        case "com.amazonaws.lambda#ResourceConflictException":
+            response = {
+                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "ResourceNotFoundException":
+        case "com.amazonaws.lambda#ResourceNotFoundException":
+            response = {
+                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "ServiceException":
+        case "com.amazonaws.lambda#ServiceException":
+            response = {
+                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "TooManyRequestsException":
+        case "com.amazonaws.lambda#TooManyRequestsException":
+            response = {
+                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        default:
+            const parsedBody = parsedOutput.body;
+            errorCode = parsedBody.code || parsedBody.Code || errorCode;
+            response = {
+                ...parsedBody,
+                name: `${errorCode}`,
+                message: parsedBody.message || parsedBody.Message || errorCode,
+                $fault: "client",
+                $metadata: deserializeMetadata(output),
+            };
+    }
+    const message = response.message || response.Message || errorCode;
+    response.message = message;
+    delete response.Message;
+    return Promise.reject(Object.assign(new Error(message), response));
+};
+const deserializeAws_restJson1DeleteFunctionConcurrencyCommand = async (output, context) => {
     if (output.statusCode !== 204 && output.statusCode >= 300) {
         return deserializeAws_restJson1DeleteFunctionConcurrencyCommandError(output, context);
     }
@@ -8146,6 +10311,7 @@ exports.deserializeAws_restJson1DeleteFunctionConcurrencyCommand = async (output
     await collectBody(output.body, context);
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1DeleteFunctionConcurrencyCommand = deserializeAws_restJson1DeleteFunctionConcurrencyCommand;
 const deserializeAws_restJson1DeleteFunctionConcurrencyCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -8211,7 +10377,7 @@ const deserializeAws_restJson1DeleteFunctionConcurrencyCommandError = async (out
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1DeleteFunctionEventInvokeConfigCommand = async (output, context) => {
+const deserializeAws_restJson1DeleteFunctionEventInvokeConfigCommand = async (output, context) => {
     if (output.statusCode !== 204 && output.statusCode >= 300) {
         return deserializeAws_restJson1DeleteFunctionEventInvokeConfigCommandError(output, context);
     }
@@ -8221,6 +10387,7 @@ exports.deserializeAws_restJson1DeleteFunctionEventInvokeConfigCommand = async (
     await collectBody(output.body, context);
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1DeleteFunctionEventInvokeConfigCommand = deserializeAws_restJson1DeleteFunctionEventInvokeConfigCommand;
 const deserializeAws_restJson1DeleteFunctionEventInvokeConfigCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -8278,7 +10445,7 @@ const deserializeAws_restJson1DeleteFunctionEventInvokeConfigCommandError = asyn
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1DeleteLayerVersionCommand = async (output, context) => {
+const deserializeAws_restJson1DeleteLayerVersionCommand = async (output, context) => {
     if (output.statusCode !== 204 && output.statusCode >= 300) {
         return deserializeAws_restJson1DeleteLayerVersionCommandError(output, context);
     }
@@ -8288,6 +10455,7 @@ exports.deserializeAws_restJson1DeleteLayerVersionCommand = async (output, conte
     await collectBody(output.body, context);
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1DeleteLayerVersionCommand = deserializeAws_restJson1DeleteLayerVersionCommand;
 const deserializeAws_restJson1DeleteLayerVersionCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -8329,7 +10497,7 @@ const deserializeAws_restJson1DeleteLayerVersionCommandError = async (output, co
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand = async (output, context) => {
+const deserializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand = async (output, context) => {
     if (output.statusCode !== 204 && output.statusCode >= 300) {
         return deserializeAws_restJson1DeleteProvisionedConcurrencyConfigCommandError(output, context);
     }
@@ -8339,6 +10507,7 @@ exports.deserializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand = asyn
     await collectBody(output.body, context);
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand = deserializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand;
 const deserializeAws_restJson1DeleteProvisionedConcurrencyConfigCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -8404,7 +10573,7 @@ const deserializeAws_restJson1DeleteProvisionedConcurrencyConfigCommandError = a
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1GetAccountSettingsCommand = async (output, context) => {
+const deserializeAws_restJson1GetAccountSettingsCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1GetAccountSettingsCommandError(output, context);
     }
@@ -8422,6 +10591,7 @@ exports.deserializeAws_restJson1GetAccountSettingsCommand = async (output, conte
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1GetAccountSettingsCommand = deserializeAws_restJson1GetAccountSettingsCommand;
 const deserializeAws_restJson1GetAccountSettingsCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -8463,7 +10633,7 @@ const deserializeAws_restJson1GetAccountSettingsCommandError = async (output, co
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1GetAliasCommand = async (output, context) => {
+const deserializeAws_restJson1GetAliasCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1GetAliasCommandError(output, context);
     }
@@ -8497,6 +10667,7 @@ exports.deserializeAws_restJson1GetAliasCommand = async (output, context) => {
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1GetAliasCommand = deserializeAws_restJson1GetAliasCommand;
 const deserializeAws_restJson1GetAliasCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -8554,7 +10725,71 @@ const deserializeAws_restJson1GetAliasCommandError = async (output, context) => 
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1GetEventSourceMappingCommand = async (output, context) => {
+const deserializeAws_restJson1GetCodeSigningConfigCommand = async (output, context) => {
+    if (output.statusCode !== 200 && output.statusCode >= 300) {
+        return deserializeAws_restJson1GetCodeSigningConfigCommandError(output, context);
+    }
+    const contents = {
+        $metadata: deserializeMetadata(output),
+        CodeSigningConfig: undefined,
+    };
+    const data = await parseBody(output.body, context);
+    if (data.CodeSigningConfig !== undefined && data.CodeSigningConfig !== null) {
+        contents.CodeSigningConfig = deserializeAws_restJson1CodeSigningConfig(data.CodeSigningConfig, context);
+    }
+    return Promise.resolve(contents);
+};
+exports.deserializeAws_restJson1GetCodeSigningConfigCommand = deserializeAws_restJson1GetCodeSigningConfigCommand;
+const deserializeAws_restJson1GetCodeSigningConfigCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseBody(output.body, context),
+    };
+    let response;
+    let errorCode = "UnknownError";
+    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InvalidParameterValueException":
+        case "com.amazonaws.lambda#InvalidParameterValueException":
+            response = {
+                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "ResourceNotFoundException":
+        case "com.amazonaws.lambda#ResourceNotFoundException":
+            response = {
+                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "ServiceException":
+        case "com.amazonaws.lambda#ServiceException":
+            response = {
+                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        default:
+            const parsedBody = parsedOutput.body;
+            errorCode = parsedBody.code || parsedBody.Code || errorCode;
+            response = {
+                ...parsedBody,
+                name: `${errorCode}`,
+                message: parsedBody.message || parsedBody.Message || errorCode,
+                $fault: "client",
+                $metadata: deserializeMetadata(output),
+            };
+    }
+    const message = response.message || response.Message || errorCode;
+    response.message = message;
+    delete response.Message;
+    return Promise.reject(Object.assign(new Error(message), response));
+};
+const deserializeAws_restJson1GetEventSourceMappingCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1GetEventSourceMappingCommandError(output, context);
     }
@@ -8573,6 +10808,8 @@ exports.deserializeAws_restJson1GetEventSourceMappingCommand = async (output, co
         ParallelizationFactor: undefined,
         Queues: undefined,
         SourceAccessConfigurations: undefined,
+        StartingPosition: undefined,
+        StartingPositionTimestamp: undefined,
         State: undefined,
         StateTransitionReason: undefined,
         Topics: undefined,
@@ -8618,6 +10855,12 @@ exports.deserializeAws_restJson1GetEventSourceMappingCommand = async (output, co
     if (data.SourceAccessConfigurations !== undefined && data.SourceAccessConfigurations !== null) {
         contents.SourceAccessConfigurations = deserializeAws_restJson1SourceAccessConfigurations(data.SourceAccessConfigurations, context);
     }
+    if (data.StartingPosition !== undefined && data.StartingPosition !== null) {
+        contents.StartingPosition = data.StartingPosition;
+    }
+    if (data.StartingPositionTimestamp !== undefined && data.StartingPositionTimestamp !== null) {
+        contents.StartingPositionTimestamp = new Date(Math.round(data.StartingPositionTimestamp * 1000));
+    }
     if (data.State !== undefined && data.State !== null) {
         contents.State = data.State;
     }
@@ -8632,6 +10875,7 @@ exports.deserializeAws_restJson1GetEventSourceMappingCommand = async (output, co
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1GetEventSourceMappingCommand = deserializeAws_restJson1GetEventSourceMappingCommand;
 const deserializeAws_restJson1GetEventSourceMappingCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -8689,7 +10933,7 @@ const deserializeAws_restJson1GetEventSourceMappingCommandError = async (output,
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1GetFunctionCommand = async (output, context) => {
+const deserializeAws_restJson1GetFunctionCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1GetFunctionCommandError(output, context);
     }
@@ -8715,6 +10959,7 @@ exports.deserializeAws_restJson1GetFunctionCommand = async (output, context) => 
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1GetFunctionCommand = deserializeAws_restJson1GetFunctionCommand;
 const deserializeAws_restJson1GetFunctionCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -8772,7 +11017,83 @@ const deserializeAws_restJson1GetFunctionCommandError = async (output, context) 
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1GetFunctionConcurrencyCommand = async (output, context) => {
+const deserializeAws_restJson1GetFunctionCodeSigningConfigCommand = async (output, context) => {
+    if (output.statusCode !== 200 && output.statusCode >= 300) {
+        return deserializeAws_restJson1GetFunctionCodeSigningConfigCommandError(output, context);
+    }
+    const contents = {
+        $metadata: deserializeMetadata(output),
+        CodeSigningConfigArn: undefined,
+        FunctionName: undefined,
+    };
+    const data = await parseBody(output.body, context);
+    if (data.CodeSigningConfigArn !== undefined && data.CodeSigningConfigArn !== null) {
+        contents.CodeSigningConfigArn = data.CodeSigningConfigArn;
+    }
+    if (data.FunctionName !== undefined && data.FunctionName !== null) {
+        contents.FunctionName = data.FunctionName;
+    }
+    return Promise.resolve(contents);
+};
+exports.deserializeAws_restJson1GetFunctionCodeSigningConfigCommand = deserializeAws_restJson1GetFunctionCodeSigningConfigCommand;
+const deserializeAws_restJson1GetFunctionCodeSigningConfigCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseBody(output.body, context),
+    };
+    let response;
+    let errorCode = "UnknownError";
+    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InvalidParameterValueException":
+        case "com.amazonaws.lambda#InvalidParameterValueException":
+            response = {
+                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "ResourceNotFoundException":
+        case "com.amazonaws.lambda#ResourceNotFoundException":
+            response = {
+                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "ServiceException":
+        case "com.amazonaws.lambda#ServiceException":
+            response = {
+                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "TooManyRequestsException":
+        case "com.amazonaws.lambda#TooManyRequestsException":
+            response = {
+                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        default:
+            const parsedBody = parsedOutput.body;
+            errorCode = parsedBody.code || parsedBody.Code || errorCode;
+            response = {
+                ...parsedBody,
+                name: `${errorCode}`,
+                message: parsedBody.message || parsedBody.Message || errorCode,
+                $fault: "client",
+                $metadata: deserializeMetadata(output),
+            };
+    }
+    const message = response.message || response.Message || errorCode;
+    response.message = message;
+    delete response.Message;
+    return Promise.reject(Object.assign(new Error(message), response));
+};
+const deserializeAws_restJson1GetFunctionConcurrencyCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1GetFunctionConcurrencyCommandError(output, context);
     }
@@ -8786,6 +11107,7 @@ exports.deserializeAws_restJson1GetFunctionConcurrencyCommand = async (output, c
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1GetFunctionConcurrencyCommand = deserializeAws_restJson1GetFunctionConcurrencyCommand;
 const deserializeAws_restJson1GetFunctionConcurrencyCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -8843,7 +11165,7 @@ const deserializeAws_restJson1GetFunctionConcurrencyCommandError = async (output
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1GetFunctionConfigurationCommand = async (output, context) => {
+const deserializeAws_restJson1GetFunctionConfigurationCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1GetFunctionConfigurationCommandError(output, context);
     }
@@ -8858,6 +11180,7 @@ exports.deserializeAws_restJson1GetFunctionConfigurationCommand = async (output,
         FunctionArn: undefined,
         FunctionName: undefined,
         Handler: undefined,
+        ImageConfigResponse: undefined,
         KMSKeyArn: undefined,
         LastModified: undefined,
         LastUpdateStatus: undefined,
@@ -8866,9 +11189,12 @@ exports.deserializeAws_restJson1GetFunctionConfigurationCommand = async (output,
         Layers: undefined,
         MasterArn: undefined,
         MemorySize: undefined,
+        PackageType: undefined,
         RevisionId: undefined,
         Role: undefined,
         Runtime: undefined,
+        SigningJobArn: undefined,
+        SigningProfileVersionArn: undefined,
         State: undefined,
         StateReason: undefined,
         StateReasonCode: undefined,
@@ -8905,6 +11231,9 @@ exports.deserializeAws_restJson1GetFunctionConfigurationCommand = async (output,
     if (data.Handler !== undefined && data.Handler !== null) {
         contents.Handler = data.Handler;
     }
+    if (data.ImageConfigResponse !== undefined && data.ImageConfigResponse !== null) {
+        contents.ImageConfigResponse = deserializeAws_restJson1ImageConfigResponse(data.ImageConfigResponse, context);
+    }
     if (data.KMSKeyArn !== undefined && data.KMSKeyArn !== null) {
         contents.KMSKeyArn = data.KMSKeyArn;
     }
@@ -8929,6 +11258,9 @@ exports.deserializeAws_restJson1GetFunctionConfigurationCommand = async (output,
     if (data.MemorySize !== undefined && data.MemorySize !== null) {
         contents.MemorySize = data.MemorySize;
     }
+    if (data.PackageType !== undefined && data.PackageType !== null) {
+        contents.PackageType = data.PackageType;
+    }
     if (data.RevisionId !== undefined && data.RevisionId !== null) {
         contents.RevisionId = data.RevisionId;
     }
@@ -8937,6 +11269,12 @@ exports.deserializeAws_restJson1GetFunctionConfigurationCommand = async (output,
     }
     if (data.Runtime !== undefined && data.Runtime !== null) {
         contents.Runtime = data.Runtime;
+    }
+    if (data.SigningJobArn !== undefined && data.SigningJobArn !== null) {
+        contents.SigningJobArn = data.SigningJobArn;
+    }
+    if (data.SigningProfileVersionArn !== undefined && data.SigningProfileVersionArn !== null) {
+        contents.SigningProfileVersionArn = data.SigningProfileVersionArn;
     }
     if (data.State !== undefined && data.State !== null) {
         contents.State = data.State;
@@ -8961,6 +11299,7 @@ exports.deserializeAws_restJson1GetFunctionConfigurationCommand = async (output,
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1GetFunctionConfigurationCommand = deserializeAws_restJson1GetFunctionConfigurationCommand;
 const deserializeAws_restJson1GetFunctionConfigurationCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -9018,7 +11357,7 @@ const deserializeAws_restJson1GetFunctionConfigurationCommandError = async (outp
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1GetFunctionEventInvokeConfigCommand = async (output, context) => {
+const deserializeAws_restJson1GetFunctionEventInvokeConfigCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1GetFunctionEventInvokeConfigCommandError(output, context);
     }
@@ -9048,6 +11387,7 @@ exports.deserializeAws_restJson1GetFunctionEventInvokeConfigCommand = async (out
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1GetFunctionEventInvokeConfigCommand = deserializeAws_restJson1GetFunctionEventInvokeConfigCommand;
 const deserializeAws_restJson1GetFunctionEventInvokeConfigCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -9105,7 +11445,7 @@ const deserializeAws_restJson1GetFunctionEventInvokeConfigCommandError = async (
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1GetLayerVersionCommand = async (output, context) => {
+const deserializeAws_restJson1GetLayerVersionCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1GetLayerVersionCommandError(output, context);
     }
@@ -9147,6 +11487,7 @@ exports.deserializeAws_restJson1GetLayerVersionCommand = async (output, context)
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1GetLayerVersionCommand = deserializeAws_restJson1GetLayerVersionCommand;
 const deserializeAws_restJson1GetLayerVersionCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -9204,7 +11545,7 @@ const deserializeAws_restJson1GetLayerVersionCommandError = async (output, conte
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1GetLayerVersionByArnCommand = async (output, context) => {
+const deserializeAws_restJson1GetLayerVersionByArnCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1GetLayerVersionByArnCommandError(output, context);
     }
@@ -9246,6 +11587,7 @@ exports.deserializeAws_restJson1GetLayerVersionByArnCommand = async (output, con
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1GetLayerVersionByArnCommand = deserializeAws_restJson1GetLayerVersionByArnCommand;
 const deserializeAws_restJson1GetLayerVersionByArnCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -9303,7 +11645,7 @@ const deserializeAws_restJson1GetLayerVersionByArnCommandError = async (output, 
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1GetLayerVersionPolicyCommand = async (output, context) => {
+const deserializeAws_restJson1GetLayerVersionPolicyCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1GetLayerVersionPolicyCommandError(output, context);
     }
@@ -9321,6 +11663,7 @@ exports.deserializeAws_restJson1GetLayerVersionPolicyCommand = async (output, co
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1GetLayerVersionPolicyCommand = deserializeAws_restJson1GetLayerVersionPolicyCommand;
 const deserializeAws_restJson1GetLayerVersionPolicyCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -9378,7 +11721,7 @@ const deserializeAws_restJson1GetLayerVersionPolicyCommandError = async (output,
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1GetPolicyCommand = async (output, context) => {
+const deserializeAws_restJson1GetPolicyCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1GetPolicyCommandError(output, context);
     }
@@ -9396,6 +11739,7 @@ exports.deserializeAws_restJson1GetPolicyCommand = async (output, context) => {
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1GetPolicyCommand = deserializeAws_restJson1GetPolicyCommand;
 const deserializeAws_restJson1GetPolicyCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -9453,7 +11797,7 @@ const deserializeAws_restJson1GetPolicyCommandError = async (output, context) =>
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1GetProvisionedConcurrencyConfigCommand = async (output, context) => {
+const deserializeAws_restJson1GetProvisionedConcurrencyConfigCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1GetProvisionedConcurrencyConfigCommandError(output, context);
     }
@@ -9490,6 +11834,7 @@ exports.deserializeAws_restJson1GetProvisionedConcurrencyConfigCommand = async (
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1GetProvisionedConcurrencyConfigCommand = deserializeAws_restJson1GetProvisionedConcurrencyConfigCommand;
 const deserializeAws_restJson1GetProvisionedConcurrencyConfigCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -9555,7 +11900,7 @@ const deserializeAws_restJson1GetProvisionedConcurrencyConfigCommandError = asyn
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1InvokeCommand = async (output, context) => {
+const deserializeAws_restJson1InvokeCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1InvokeCommandError(output, context);
     }
@@ -9580,6 +11925,7 @@ exports.deserializeAws_restJson1InvokeCommand = async (output, context) => {
     contents.Payload = data;
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1InvokeCommand = deserializeAws_restJson1InvokeCommand;
 const deserializeAws_restJson1InvokeCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -9813,7 +12159,7 @@ const deserializeAws_restJson1InvokeCommandError = async (output, context) => {
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1InvokeAsyncCommand = async (output, context) => {
+const deserializeAws_restJson1InvokeAsyncCommand = async (output, context) => {
     if (output.statusCode !== 202 && output.statusCode >= 300) {
         return deserializeAws_restJson1InvokeAsyncCommandError(output, context);
     }
@@ -9824,6 +12170,7 @@ exports.deserializeAws_restJson1InvokeAsyncCommand = async (output, context) => 
     await collectBody(output.body, context);
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1InvokeAsyncCommand = deserializeAws_restJson1InvokeAsyncCommand;
 const deserializeAws_restJson1InvokeAsyncCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -9889,7 +12236,7 @@ const deserializeAws_restJson1InvokeAsyncCommandError = async (output, context) 
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1ListAliasesCommand = async (output, context) => {
+const deserializeAws_restJson1ListAliasesCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1ListAliasesCommandError(output, context);
     }
@@ -9907,6 +12254,7 @@ exports.deserializeAws_restJson1ListAliasesCommand = async (output, context) => 
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1ListAliasesCommand = deserializeAws_restJson1ListAliasesCommand;
 const deserializeAws_restJson1ListAliasesCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -9964,7 +12312,67 @@ const deserializeAws_restJson1ListAliasesCommandError = async (output, context) 
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1ListEventSourceMappingsCommand = async (output, context) => {
+const deserializeAws_restJson1ListCodeSigningConfigsCommand = async (output, context) => {
+    if (output.statusCode !== 200 && output.statusCode >= 300) {
+        return deserializeAws_restJson1ListCodeSigningConfigsCommandError(output, context);
+    }
+    const contents = {
+        $metadata: deserializeMetadata(output),
+        CodeSigningConfigs: undefined,
+        NextMarker: undefined,
+    };
+    const data = await parseBody(output.body, context);
+    if (data.CodeSigningConfigs !== undefined && data.CodeSigningConfigs !== null) {
+        contents.CodeSigningConfigs = deserializeAws_restJson1CodeSigningConfigList(data.CodeSigningConfigs, context);
+    }
+    if (data.NextMarker !== undefined && data.NextMarker !== null) {
+        contents.NextMarker = data.NextMarker;
+    }
+    return Promise.resolve(contents);
+};
+exports.deserializeAws_restJson1ListCodeSigningConfigsCommand = deserializeAws_restJson1ListCodeSigningConfigsCommand;
+const deserializeAws_restJson1ListCodeSigningConfigsCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseBody(output.body, context),
+    };
+    let response;
+    let errorCode = "UnknownError";
+    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InvalidParameterValueException":
+        case "com.amazonaws.lambda#InvalidParameterValueException":
+            response = {
+                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "ServiceException":
+        case "com.amazonaws.lambda#ServiceException":
+            response = {
+                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        default:
+            const parsedBody = parsedOutput.body;
+            errorCode = parsedBody.code || parsedBody.Code || errorCode;
+            response = {
+                ...parsedBody,
+                name: `${errorCode}`,
+                message: parsedBody.message || parsedBody.Message || errorCode,
+                $fault: "client",
+                $metadata: deserializeMetadata(output),
+            };
+    }
+    const message = response.message || response.Message || errorCode;
+    response.message = message;
+    delete response.Message;
+    return Promise.reject(Object.assign(new Error(message), response));
+};
+const deserializeAws_restJson1ListEventSourceMappingsCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1ListEventSourceMappingsCommandError(output, context);
     }
@@ -9982,6 +12390,7 @@ exports.deserializeAws_restJson1ListEventSourceMappingsCommand = async (output, 
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1ListEventSourceMappingsCommand = deserializeAws_restJson1ListEventSourceMappingsCommand;
 const deserializeAws_restJson1ListEventSourceMappingsCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -10039,7 +12448,7 @@ const deserializeAws_restJson1ListEventSourceMappingsCommandError = async (outpu
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1ListFunctionEventInvokeConfigsCommand = async (output, context) => {
+const deserializeAws_restJson1ListFunctionEventInvokeConfigsCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1ListFunctionEventInvokeConfigsCommandError(output, context);
     }
@@ -10057,6 +12466,7 @@ exports.deserializeAws_restJson1ListFunctionEventInvokeConfigsCommand = async (o
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1ListFunctionEventInvokeConfigsCommand = deserializeAws_restJson1ListFunctionEventInvokeConfigsCommand;
 const deserializeAws_restJson1ListFunctionEventInvokeConfigsCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -10114,7 +12524,7 @@ const deserializeAws_restJson1ListFunctionEventInvokeConfigsCommandError = async
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1ListFunctionsCommand = async (output, context) => {
+const deserializeAws_restJson1ListFunctionsCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1ListFunctionsCommandError(output, context);
     }
@@ -10132,6 +12542,7 @@ exports.deserializeAws_restJson1ListFunctionsCommand = async (output, context) =
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1ListFunctionsCommand = deserializeAws_restJson1ListFunctionsCommand;
 const deserializeAws_restJson1ListFunctionsCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -10181,7 +12592,75 @@ const deserializeAws_restJson1ListFunctionsCommandError = async (output, context
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1ListLayersCommand = async (output, context) => {
+const deserializeAws_restJson1ListFunctionsByCodeSigningConfigCommand = async (output, context) => {
+    if (output.statusCode !== 200 && output.statusCode >= 300) {
+        return deserializeAws_restJson1ListFunctionsByCodeSigningConfigCommandError(output, context);
+    }
+    const contents = {
+        $metadata: deserializeMetadata(output),
+        FunctionArns: undefined,
+        NextMarker: undefined,
+    };
+    const data = await parseBody(output.body, context);
+    if (data.FunctionArns !== undefined && data.FunctionArns !== null) {
+        contents.FunctionArns = deserializeAws_restJson1FunctionArnList(data.FunctionArns, context);
+    }
+    if (data.NextMarker !== undefined && data.NextMarker !== null) {
+        contents.NextMarker = data.NextMarker;
+    }
+    return Promise.resolve(contents);
+};
+exports.deserializeAws_restJson1ListFunctionsByCodeSigningConfigCommand = deserializeAws_restJson1ListFunctionsByCodeSigningConfigCommand;
+const deserializeAws_restJson1ListFunctionsByCodeSigningConfigCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseBody(output.body, context),
+    };
+    let response;
+    let errorCode = "UnknownError";
+    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InvalidParameterValueException":
+        case "com.amazonaws.lambda#InvalidParameterValueException":
+            response = {
+                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "ResourceNotFoundException":
+        case "com.amazonaws.lambda#ResourceNotFoundException":
+            response = {
+                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "ServiceException":
+        case "com.amazonaws.lambda#ServiceException":
+            response = {
+                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        default:
+            const parsedBody = parsedOutput.body;
+            errorCode = parsedBody.code || parsedBody.Code || errorCode;
+            response = {
+                ...parsedBody,
+                name: `${errorCode}`,
+                message: parsedBody.message || parsedBody.Message || errorCode,
+                $fault: "client",
+                $metadata: deserializeMetadata(output),
+            };
+    }
+    const message = response.message || response.Message || errorCode;
+    response.message = message;
+    delete response.Message;
+    return Promise.reject(Object.assign(new Error(message), response));
+};
+const deserializeAws_restJson1ListLayersCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1ListLayersCommandError(output, context);
     }
@@ -10199,6 +12678,7 @@ exports.deserializeAws_restJson1ListLayersCommand = async (output, context) => {
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1ListLayersCommand = deserializeAws_restJson1ListLayersCommand;
 const deserializeAws_restJson1ListLayersCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -10248,7 +12728,7 @@ const deserializeAws_restJson1ListLayersCommandError = async (output, context) =
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1ListLayerVersionsCommand = async (output, context) => {
+const deserializeAws_restJson1ListLayerVersionsCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1ListLayerVersionsCommandError(output, context);
     }
@@ -10266,6 +12746,7 @@ exports.deserializeAws_restJson1ListLayerVersionsCommand = async (output, contex
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1ListLayerVersionsCommand = deserializeAws_restJson1ListLayerVersionsCommand;
 const deserializeAws_restJson1ListLayerVersionsCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -10323,7 +12804,7 @@ const deserializeAws_restJson1ListLayerVersionsCommandError = async (output, con
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1ListProvisionedConcurrencyConfigsCommand = async (output, context) => {
+const deserializeAws_restJson1ListProvisionedConcurrencyConfigsCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1ListProvisionedConcurrencyConfigsCommandError(output, context);
     }
@@ -10341,6 +12822,7 @@ exports.deserializeAws_restJson1ListProvisionedConcurrencyConfigsCommand = async
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1ListProvisionedConcurrencyConfigsCommand = deserializeAws_restJson1ListProvisionedConcurrencyConfigsCommand;
 const deserializeAws_restJson1ListProvisionedConcurrencyConfigsCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -10398,7 +12880,7 @@ const deserializeAws_restJson1ListProvisionedConcurrencyConfigsCommandError = as
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1ListTagsCommand = async (output, context) => {
+const deserializeAws_restJson1ListTagsCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1ListTagsCommandError(output, context);
     }
@@ -10412,6 +12894,7 @@ exports.deserializeAws_restJson1ListTagsCommand = async (output, context) => {
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1ListTagsCommand = deserializeAws_restJson1ListTagsCommand;
 const deserializeAws_restJson1ListTagsCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -10469,7 +12952,7 @@ const deserializeAws_restJson1ListTagsCommandError = async (output, context) => 
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1ListVersionsByFunctionCommand = async (output, context) => {
+const deserializeAws_restJson1ListVersionsByFunctionCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1ListVersionsByFunctionCommandError(output, context);
     }
@@ -10487,6 +12970,7 @@ exports.deserializeAws_restJson1ListVersionsByFunctionCommand = async (output, c
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1ListVersionsByFunctionCommand = deserializeAws_restJson1ListVersionsByFunctionCommand;
 const deserializeAws_restJson1ListVersionsByFunctionCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -10544,7 +13028,7 @@ const deserializeAws_restJson1ListVersionsByFunctionCommandError = async (output
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1PublishLayerVersionCommand = async (output, context) => {
+const deserializeAws_restJson1PublishLayerVersionCommand = async (output, context) => {
     if (output.statusCode !== 201 && output.statusCode >= 300) {
         return deserializeAws_restJson1PublishLayerVersionCommandError(output, context);
     }
@@ -10586,6 +13070,7 @@ exports.deserializeAws_restJson1PublishLayerVersionCommand = async (output, cont
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1PublishLayerVersionCommand = deserializeAws_restJson1PublishLayerVersionCommand;
 const deserializeAws_restJson1PublishLayerVersionCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -10651,7 +13136,7 @@ const deserializeAws_restJson1PublishLayerVersionCommandError = async (output, c
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1PublishVersionCommand = async (output, context) => {
+const deserializeAws_restJson1PublishVersionCommand = async (output, context) => {
     if (output.statusCode !== 201 && output.statusCode >= 300) {
         return deserializeAws_restJson1PublishVersionCommandError(output, context);
     }
@@ -10666,6 +13151,7 @@ exports.deserializeAws_restJson1PublishVersionCommand = async (output, context) 
         FunctionArn: undefined,
         FunctionName: undefined,
         Handler: undefined,
+        ImageConfigResponse: undefined,
         KMSKeyArn: undefined,
         LastModified: undefined,
         LastUpdateStatus: undefined,
@@ -10674,9 +13160,12 @@ exports.deserializeAws_restJson1PublishVersionCommand = async (output, context) 
         Layers: undefined,
         MasterArn: undefined,
         MemorySize: undefined,
+        PackageType: undefined,
         RevisionId: undefined,
         Role: undefined,
         Runtime: undefined,
+        SigningJobArn: undefined,
+        SigningProfileVersionArn: undefined,
         State: undefined,
         StateReason: undefined,
         StateReasonCode: undefined,
@@ -10713,6 +13202,9 @@ exports.deserializeAws_restJson1PublishVersionCommand = async (output, context) 
     if (data.Handler !== undefined && data.Handler !== null) {
         contents.Handler = data.Handler;
     }
+    if (data.ImageConfigResponse !== undefined && data.ImageConfigResponse !== null) {
+        contents.ImageConfigResponse = deserializeAws_restJson1ImageConfigResponse(data.ImageConfigResponse, context);
+    }
     if (data.KMSKeyArn !== undefined && data.KMSKeyArn !== null) {
         contents.KMSKeyArn = data.KMSKeyArn;
     }
@@ -10737,6 +13229,9 @@ exports.deserializeAws_restJson1PublishVersionCommand = async (output, context) 
     if (data.MemorySize !== undefined && data.MemorySize !== null) {
         contents.MemorySize = data.MemorySize;
     }
+    if (data.PackageType !== undefined && data.PackageType !== null) {
+        contents.PackageType = data.PackageType;
+    }
     if (data.RevisionId !== undefined && data.RevisionId !== null) {
         contents.RevisionId = data.RevisionId;
     }
@@ -10745,6 +13240,12 @@ exports.deserializeAws_restJson1PublishVersionCommand = async (output, context) 
     }
     if (data.Runtime !== undefined && data.Runtime !== null) {
         contents.Runtime = data.Runtime;
+    }
+    if (data.SigningJobArn !== undefined && data.SigningJobArn !== null) {
+        contents.SigningJobArn = data.SigningJobArn;
+    }
+    if (data.SigningProfileVersionArn !== undefined && data.SigningProfileVersionArn !== null) {
+        contents.SigningProfileVersionArn = data.SigningProfileVersionArn;
     }
     if (data.State !== undefined && data.State !== null) {
         contents.State = data.State;
@@ -10769,6 +13270,7 @@ exports.deserializeAws_restJson1PublishVersionCommand = async (output, context) 
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1PublishVersionCommand = deserializeAws_restJson1PublishVersionCommand;
 const deserializeAws_restJson1PublishVersionCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -10850,7 +13352,99 @@ const deserializeAws_restJson1PublishVersionCommandError = async (output, contex
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1PutFunctionConcurrencyCommand = async (output, context) => {
+const deserializeAws_restJson1PutFunctionCodeSigningConfigCommand = async (output, context) => {
+    if (output.statusCode !== 200 && output.statusCode >= 300) {
+        return deserializeAws_restJson1PutFunctionCodeSigningConfigCommandError(output, context);
+    }
+    const contents = {
+        $metadata: deserializeMetadata(output),
+        CodeSigningConfigArn: undefined,
+        FunctionName: undefined,
+    };
+    const data = await parseBody(output.body, context);
+    if (data.CodeSigningConfigArn !== undefined && data.CodeSigningConfigArn !== null) {
+        contents.CodeSigningConfigArn = data.CodeSigningConfigArn;
+    }
+    if (data.FunctionName !== undefined && data.FunctionName !== null) {
+        contents.FunctionName = data.FunctionName;
+    }
+    return Promise.resolve(contents);
+};
+exports.deserializeAws_restJson1PutFunctionCodeSigningConfigCommand = deserializeAws_restJson1PutFunctionCodeSigningConfigCommand;
+const deserializeAws_restJson1PutFunctionCodeSigningConfigCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseBody(output.body, context),
+    };
+    let response;
+    let errorCode = "UnknownError";
+    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "CodeSigningConfigNotFoundException":
+        case "com.amazonaws.lambda#CodeSigningConfigNotFoundException":
+            response = {
+                ...(await deserializeAws_restJson1CodeSigningConfigNotFoundExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "InvalidParameterValueException":
+        case "com.amazonaws.lambda#InvalidParameterValueException":
+            response = {
+                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "ResourceConflictException":
+        case "com.amazonaws.lambda#ResourceConflictException":
+            response = {
+                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "ResourceNotFoundException":
+        case "com.amazonaws.lambda#ResourceNotFoundException":
+            response = {
+                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "ServiceException":
+        case "com.amazonaws.lambda#ServiceException":
+            response = {
+                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "TooManyRequestsException":
+        case "com.amazonaws.lambda#TooManyRequestsException":
+            response = {
+                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        default:
+            const parsedBody = parsedOutput.body;
+            errorCode = parsedBody.code || parsedBody.Code || errorCode;
+            response = {
+                ...parsedBody,
+                name: `${errorCode}`,
+                message: parsedBody.message || parsedBody.Message || errorCode,
+                $fault: "client",
+                $metadata: deserializeMetadata(output),
+            };
+    }
+    const message = response.message || response.Message || errorCode;
+    response.message = message;
+    delete response.Message;
+    return Promise.reject(Object.assign(new Error(message), response));
+};
+const deserializeAws_restJson1PutFunctionConcurrencyCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1PutFunctionConcurrencyCommandError(output, context);
     }
@@ -10864,6 +13458,7 @@ exports.deserializeAws_restJson1PutFunctionConcurrencyCommand = async (output, c
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1PutFunctionConcurrencyCommand = deserializeAws_restJson1PutFunctionConcurrencyCommand;
 const deserializeAws_restJson1PutFunctionConcurrencyCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -10929,7 +13524,7 @@ const deserializeAws_restJson1PutFunctionConcurrencyCommandError = async (output
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1PutFunctionEventInvokeConfigCommand = async (output, context) => {
+const deserializeAws_restJson1PutFunctionEventInvokeConfigCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1PutFunctionEventInvokeConfigCommandError(output, context);
     }
@@ -10959,6 +13554,7 @@ exports.deserializeAws_restJson1PutFunctionEventInvokeConfigCommand = async (out
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1PutFunctionEventInvokeConfigCommand = deserializeAws_restJson1PutFunctionEventInvokeConfigCommand;
 const deserializeAws_restJson1PutFunctionEventInvokeConfigCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -11016,7 +13612,7 @@ const deserializeAws_restJson1PutFunctionEventInvokeConfigCommandError = async (
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1PutProvisionedConcurrencyConfigCommand = async (output, context) => {
+const deserializeAws_restJson1PutProvisionedConcurrencyConfigCommand = async (output, context) => {
     if (output.statusCode !== 202 && output.statusCode >= 300) {
         return deserializeAws_restJson1PutProvisionedConcurrencyConfigCommandError(output, context);
     }
@@ -11053,6 +13649,7 @@ exports.deserializeAws_restJson1PutProvisionedConcurrencyConfigCommand = async (
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1PutProvisionedConcurrencyConfigCommand = deserializeAws_restJson1PutProvisionedConcurrencyConfigCommand;
 const deserializeAws_restJson1PutProvisionedConcurrencyConfigCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -11118,7 +13715,7 @@ const deserializeAws_restJson1PutProvisionedConcurrencyConfigCommandError = asyn
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1RemoveLayerVersionPermissionCommand = async (output, context) => {
+const deserializeAws_restJson1RemoveLayerVersionPermissionCommand = async (output, context) => {
     if (output.statusCode !== 204 && output.statusCode >= 300) {
         return deserializeAws_restJson1RemoveLayerVersionPermissionCommandError(output, context);
     }
@@ -11128,6 +13725,7 @@ exports.deserializeAws_restJson1RemoveLayerVersionPermissionCommand = async (out
     await collectBody(output.body, context);
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1RemoveLayerVersionPermissionCommand = deserializeAws_restJson1RemoveLayerVersionPermissionCommand;
 const deserializeAws_restJson1RemoveLayerVersionPermissionCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -11193,7 +13791,7 @@ const deserializeAws_restJson1RemoveLayerVersionPermissionCommandError = async (
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1RemovePermissionCommand = async (output, context) => {
+const deserializeAws_restJson1RemovePermissionCommand = async (output, context) => {
     if (output.statusCode !== 204 && output.statusCode >= 300) {
         return deserializeAws_restJson1RemovePermissionCommandError(output, context);
     }
@@ -11203,6 +13801,7 @@ exports.deserializeAws_restJson1RemovePermissionCommand = async (output, context
     await collectBody(output.body, context);
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1RemovePermissionCommand = deserializeAws_restJson1RemovePermissionCommand;
 const deserializeAws_restJson1RemovePermissionCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -11268,7 +13867,7 @@ const deserializeAws_restJson1RemovePermissionCommandError = async (output, cont
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1TagResourceCommand = async (output, context) => {
+const deserializeAws_restJson1TagResourceCommand = async (output, context) => {
     if (output.statusCode !== 204 && output.statusCode >= 300) {
         return deserializeAws_restJson1TagResourceCommandError(output, context);
     }
@@ -11278,6 +13877,7 @@ exports.deserializeAws_restJson1TagResourceCommand = async (output, context) => 
     await collectBody(output.body, context);
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1TagResourceCommand = deserializeAws_restJson1TagResourceCommand;
 const deserializeAws_restJson1TagResourceCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -11343,7 +13943,7 @@ const deserializeAws_restJson1TagResourceCommandError = async (output, context) 
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1UntagResourceCommand = async (output, context) => {
+const deserializeAws_restJson1UntagResourceCommand = async (output, context) => {
     if (output.statusCode !== 204 && output.statusCode >= 300) {
         return deserializeAws_restJson1UntagResourceCommandError(output, context);
     }
@@ -11353,6 +13953,7 @@ exports.deserializeAws_restJson1UntagResourceCommand = async (output, context) =
     await collectBody(output.body, context);
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1UntagResourceCommand = deserializeAws_restJson1UntagResourceCommand;
 const deserializeAws_restJson1UntagResourceCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -11418,7 +14019,7 @@ const deserializeAws_restJson1UntagResourceCommandError = async (output, context
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1UpdateAliasCommand = async (output, context) => {
+const deserializeAws_restJson1UpdateAliasCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1UpdateAliasCommandError(output, context);
     }
@@ -11452,6 +14053,7 @@ exports.deserializeAws_restJson1UpdateAliasCommand = async (output, context) => 
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1UpdateAliasCommand = deserializeAws_restJson1UpdateAliasCommand;
 const deserializeAws_restJson1UpdateAliasCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -11525,7 +14127,71 @@ const deserializeAws_restJson1UpdateAliasCommandError = async (output, context) 
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1UpdateEventSourceMappingCommand = async (output, context) => {
+const deserializeAws_restJson1UpdateCodeSigningConfigCommand = async (output, context) => {
+    if (output.statusCode !== 200 && output.statusCode >= 300) {
+        return deserializeAws_restJson1UpdateCodeSigningConfigCommandError(output, context);
+    }
+    const contents = {
+        $metadata: deserializeMetadata(output),
+        CodeSigningConfig: undefined,
+    };
+    const data = await parseBody(output.body, context);
+    if (data.CodeSigningConfig !== undefined && data.CodeSigningConfig !== null) {
+        contents.CodeSigningConfig = deserializeAws_restJson1CodeSigningConfig(data.CodeSigningConfig, context);
+    }
+    return Promise.resolve(contents);
+};
+exports.deserializeAws_restJson1UpdateCodeSigningConfigCommand = deserializeAws_restJson1UpdateCodeSigningConfigCommand;
+const deserializeAws_restJson1UpdateCodeSigningConfigCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseBody(output.body, context),
+    };
+    let response;
+    let errorCode = "UnknownError";
+    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InvalidParameterValueException":
+        case "com.amazonaws.lambda#InvalidParameterValueException":
+            response = {
+                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "ResourceNotFoundException":
+        case "com.amazonaws.lambda#ResourceNotFoundException":
+            response = {
+                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "ServiceException":
+        case "com.amazonaws.lambda#ServiceException":
+            response = {
+                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        default:
+            const parsedBody = parsedOutput.body;
+            errorCode = parsedBody.code || parsedBody.Code || errorCode;
+            response = {
+                ...parsedBody,
+                name: `${errorCode}`,
+                message: parsedBody.message || parsedBody.Message || errorCode,
+                $fault: "client",
+                $metadata: deserializeMetadata(output),
+            };
+    }
+    const message = response.message || response.Message || errorCode;
+    response.message = message;
+    delete response.Message;
+    return Promise.reject(Object.assign(new Error(message), response));
+};
+const deserializeAws_restJson1UpdateEventSourceMappingCommand = async (output, context) => {
     if (output.statusCode !== 202 && output.statusCode >= 300) {
         return deserializeAws_restJson1UpdateEventSourceMappingCommandError(output, context);
     }
@@ -11544,6 +14210,8 @@ exports.deserializeAws_restJson1UpdateEventSourceMappingCommand = async (output,
         ParallelizationFactor: undefined,
         Queues: undefined,
         SourceAccessConfigurations: undefined,
+        StartingPosition: undefined,
+        StartingPositionTimestamp: undefined,
         State: undefined,
         StateTransitionReason: undefined,
         Topics: undefined,
@@ -11589,6 +14257,12 @@ exports.deserializeAws_restJson1UpdateEventSourceMappingCommand = async (output,
     if (data.SourceAccessConfigurations !== undefined && data.SourceAccessConfigurations !== null) {
         contents.SourceAccessConfigurations = deserializeAws_restJson1SourceAccessConfigurations(data.SourceAccessConfigurations, context);
     }
+    if (data.StartingPosition !== undefined && data.StartingPosition !== null) {
+        contents.StartingPosition = data.StartingPosition;
+    }
+    if (data.StartingPositionTimestamp !== undefined && data.StartingPositionTimestamp !== null) {
+        contents.StartingPositionTimestamp = new Date(Math.round(data.StartingPositionTimestamp * 1000));
+    }
     if (data.State !== undefined && data.State !== null) {
         contents.State = data.State;
     }
@@ -11603,6 +14277,7 @@ exports.deserializeAws_restJson1UpdateEventSourceMappingCommand = async (output,
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1UpdateEventSourceMappingCommand = deserializeAws_restJson1UpdateEventSourceMappingCommand;
 const deserializeAws_restJson1UpdateEventSourceMappingCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -11676,7 +14351,7 @@ const deserializeAws_restJson1UpdateEventSourceMappingCommandError = async (outp
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1UpdateFunctionCodeCommand = async (output, context) => {
+const deserializeAws_restJson1UpdateFunctionCodeCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1UpdateFunctionCodeCommandError(output, context);
     }
@@ -11691,6 +14366,7 @@ exports.deserializeAws_restJson1UpdateFunctionCodeCommand = async (output, conte
         FunctionArn: undefined,
         FunctionName: undefined,
         Handler: undefined,
+        ImageConfigResponse: undefined,
         KMSKeyArn: undefined,
         LastModified: undefined,
         LastUpdateStatus: undefined,
@@ -11699,9 +14375,12 @@ exports.deserializeAws_restJson1UpdateFunctionCodeCommand = async (output, conte
         Layers: undefined,
         MasterArn: undefined,
         MemorySize: undefined,
+        PackageType: undefined,
         RevisionId: undefined,
         Role: undefined,
         Runtime: undefined,
+        SigningJobArn: undefined,
+        SigningProfileVersionArn: undefined,
         State: undefined,
         StateReason: undefined,
         StateReasonCode: undefined,
@@ -11738,6 +14417,9 @@ exports.deserializeAws_restJson1UpdateFunctionCodeCommand = async (output, conte
     if (data.Handler !== undefined && data.Handler !== null) {
         contents.Handler = data.Handler;
     }
+    if (data.ImageConfigResponse !== undefined && data.ImageConfigResponse !== null) {
+        contents.ImageConfigResponse = deserializeAws_restJson1ImageConfigResponse(data.ImageConfigResponse, context);
+    }
     if (data.KMSKeyArn !== undefined && data.KMSKeyArn !== null) {
         contents.KMSKeyArn = data.KMSKeyArn;
     }
@@ -11762,6 +14444,9 @@ exports.deserializeAws_restJson1UpdateFunctionCodeCommand = async (output, conte
     if (data.MemorySize !== undefined && data.MemorySize !== null) {
         contents.MemorySize = data.MemorySize;
     }
+    if (data.PackageType !== undefined && data.PackageType !== null) {
+        contents.PackageType = data.PackageType;
+    }
     if (data.RevisionId !== undefined && data.RevisionId !== null) {
         contents.RevisionId = data.RevisionId;
     }
@@ -11770,6 +14455,12 @@ exports.deserializeAws_restJson1UpdateFunctionCodeCommand = async (output, conte
     }
     if (data.Runtime !== undefined && data.Runtime !== null) {
         contents.Runtime = data.Runtime;
+    }
+    if (data.SigningJobArn !== undefined && data.SigningJobArn !== null) {
+        contents.SigningJobArn = data.SigningJobArn;
+    }
+    if (data.SigningProfileVersionArn !== undefined && data.SigningProfileVersionArn !== null) {
+        contents.SigningProfileVersionArn = data.SigningProfileVersionArn;
     }
     if (data.State !== undefined && data.State !== null) {
         contents.State = data.State;
@@ -11794,6 +14485,7 @@ exports.deserializeAws_restJson1UpdateFunctionCodeCommand = async (output, conte
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1UpdateFunctionCodeCommand = deserializeAws_restJson1UpdateFunctionCodeCommand;
 const deserializeAws_restJson1UpdateFunctionCodeCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -11803,10 +14495,34 @@ const deserializeAws_restJson1UpdateFunctionCodeCommandError = async (output, co
     let errorCode = "UnknownError";
     errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
+        case "CodeSigningConfigNotFoundException":
+        case "com.amazonaws.lambda#CodeSigningConfigNotFoundException":
+            response = {
+                ...(await deserializeAws_restJson1CodeSigningConfigNotFoundExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
         case "CodeStorageExceededException":
         case "com.amazonaws.lambda#CodeStorageExceededException":
             response = {
                 ...(await deserializeAws_restJson1CodeStorageExceededExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "CodeVerificationFailedException":
+        case "com.amazonaws.lambda#CodeVerificationFailedException":
+            response = {
+                ...(await deserializeAws_restJson1CodeVerificationFailedExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "InvalidCodeSignatureException":
+        case "com.amazonaws.lambda#InvalidCodeSignatureException":
+            response = {
+                ...(await deserializeAws_restJson1InvalidCodeSignatureExceptionResponse(parsedOutput, context)),
                 name: errorCode,
                 $metadata: deserializeMetadata(output),
             };
@@ -11875,7 +14591,7 @@ const deserializeAws_restJson1UpdateFunctionCodeCommandError = async (output, co
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1UpdateFunctionConfigurationCommand = async (output, context) => {
+const deserializeAws_restJson1UpdateFunctionConfigurationCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1UpdateFunctionConfigurationCommandError(output, context);
     }
@@ -11890,6 +14606,7 @@ exports.deserializeAws_restJson1UpdateFunctionConfigurationCommand = async (outp
         FunctionArn: undefined,
         FunctionName: undefined,
         Handler: undefined,
+        ImageConfigResponse: undefined,
         KMSKeyArn: undefined,
         LastModified: undefined,
         LastUpdateStatus: undefined,
@@ -11898,9 +14615,12 @@ exports.deserializeAws_restJson1UpdateFunctionConfigurationCommand = async (outp
         Layers: undefined,
         MasterArn: undefined,
         MemorySize: undefined,
+        PackageType: undefined,
         RevisionId: undefined,
         Role: undefined,
         Runtime: undefined,
+        SigningJobArn: undefined,
+        SigningProfileVersionArn: undefined,
         State: undefined,
         StateReason: undefined,
         StateReasonCode: undefined,
@@ -11937,6 +14657,9 @@ exports.deserializeAws_restJson1UpdateFunctionConfigurationCommand = async (outp
     if (data.Handler !== undefined && data.Handler !== null) {
         contents.Handler = data.Handler;
     }
+    if (data.ImageConfigResponse !== undefined && data.ImageConfigResponse !== null) {
+        contents.ImageConfigResponse = deserializeAws_restJson1ImageConfigResponse(data.ImageConfigResponse, context);
+    }
     if (data.KMSKeyArn !== undefined && data.KMSKeyArn !== null) {
         contents.KMSKeyArn = data.KMSKeyArn;
     }
@@ -11961,6 +14684,9 @@ exports.deserializeAws_restJson1UpdateFunctionConfigurationCommand = async (outp
     if (data.MemorySize !== undefined && data.MemorySize !== null) {
         contents.MemorySize = data.MemorySize;
     }
+    if (data.PackageType !== undefined && data.PackageType !== null) {
+        contents.PackageType = data.PackageType;
+    }
     if (data.RevisionId !== undefined && data.RevisionId !== null) {
         contents.RevisionId = data.RevisionId;
     }
@@ -11969,6 +14695,12 @@ exports.deserializeAws_restJson1UpdateFunctionConfigurationCommand = async (outp
     }
     if (data.Runtime !== undefined && data.Runtime !== null) {
         contents.Runtime = data.Runtime;
+    }
+    if (data.SigningJobArn !== undefined && data.SigningJobArn !== null) {
+        contents.SigningJobArn = data.SigningJobArn;
+    }
+    if (data.SigningProfileVersionArn !== undefined && data.SigningProfileVersionArn !== null) {
+        contents.SigningProfileVersionArn = data.SigningProfileVersionArn;
     }
     if (data.State !== undefined && data.State !== null) {
         contents.State = data.State;
@@ -11993,6 +14725,7 @@ exports.deserializeAws_restJson1UpdateFunctionConfigurationCommand = async (outp
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1UpdateFunctionConfigurationCommand = deserializeAws_restJson1UpdateFunctionConfigurationCommand;
 const deserializeAws_restJson1UpdateFunctionConfigurationCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -12002,6 +14735,30 @@ const deserializeAws_restJson1UpdateFunctionConfigurationCommandError = async (o
     let errorCode = "UnknownError";
     errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
+        case "CodeSigningConfigNotFoundException":
+        case "com.amazonaws.lambda#CodeSigningConfigNotFoundException":
+            response = {
+                ...(await deserializeAws_restJson1CodeSigningConfigNotFoundExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "CodeVerificationFailedException":
+        case "com.amazonaws.lambda#CodeVerificationFailedException":
+            response = {
+                ...(await deserializeAws_restJson1CodeVerificationFailedExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "InvalidCodeSignatureException":
+        case "com.amazonaws.lambda#InvalidCodeSignatureException":
+            response = {
+                ...(await deserializeAws_restJson1InvalidCodeSignatureExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
             response = {
@@ -12066,7 +14823,7 @@ const deserializeAws_restJson1UpdateFunctionConfigurationCommandError = async (o
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
-exports.deserializeAws_restJson1UpdateFunctionEventInvokeConfigCommand = async (output, context) => {
+const deserializeAws_restJson1UpdateFunctionEventInvokeConfigCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
         return deserializeAws_restJson1UpdateFunctionEventInvokeConfigCommandError(output, context);
     }
@@ -12096,6 +14853,7 @@ exports.deserializeAws_restJson1UpdateFunctionEventInvokeConfigCommand = async (
     }
     return Promise.resolve(contents);
 };
+exports.deserializeAws_restJson1UpdateFunctionEventInvokeConfigCommand = deserializeAws_restJson1UpdateFunctionEventInvokeConfigCommand;
 const deserializeAws_restJson1UpdateFunctionEventInvokeConfigCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
@@ -12153,6 +14911,23 @@ const deserializeAws_restJson1UpdateFunctionEventInvokeConfigCommandError = asyn
     delete response.Message;
     return Promise.reject(Object.assign(new Error(message), response));
 };
+const deserializeAws_restJson1CodeSigningConfigNotFoundExceptionResponse = async (parsedOutput, context) => {
+    const contents = {
+        name: "CodeSigningConfigNotFoundException",
+        $fault: "client",
+        $metadata: deserializeMetadata(parsedOutput),
+        Message: undefined,
+        Type: undefined,
+    };
+    const data = parsedOutput.body;
+    if (data.Message !== undefined && data.Message !== null) {
+        contents.Message = data.Message;
+    }
+    if (data.Type !== undefined && data.Type !== null) {
+        contents.Type = data.Type;
+    }
+    return contents;
+};
 const deserializeAws_restJson1CodeStorageExceededExceptionResponse = async (parsedOutput, context) => {
     const contents = {
         name: "CodeStorageExceededException",
@@ -12167,6 +14942,23 @@ const deserializeAws_restJson1CodeStorageExceededExceptionResponse = async (pars
     }
     if (data.message !== undefined && data.message !== null) {
         contents.message = data.message;
+    }
+    return contents;
+};
+const deserializeAws_restJson1CodeVerificationFailedExceptionResponse = async (parsedOutput, context) => {
+    const contents = {
+        name: "CodeVerificationFailedException",
+        $fault: "client",
+        $metadata: deserializeMetadata(parsedOutput),
+        Message: undefined,
+        Type: undefined,
+    };
+    const data = parsedOutput.body;
+    if (data.Message !== undefined && data.Message !== null) {
+        contents.Message = data.Message;
+    }
+    if (data.Type !== undefined && data.Type !== null) {
+        contents.Type = data.Type;
     }
     return contents;
 };
@@ -12297,6 +15089,23 @@ const deserializeAws_restJson1ENILimitReachedExceptionResponse = async (parsedOu
     const contents = {
         name: "ENILimitReachedException",
         $fault: "server",
+        $metadata: deserializeMetadata(parsedOutput),
+        Message: undefined,
+        Type: undefined,
+    };
+    const data = parsedOutput.body;
+    if (data.Message !== undefined && data.Message !== null) {
+        contents.Message = data.Message;
+    }
+    if (data.Type !== undefined && data.Type !== null) {
+        contents.Type = data.Type;
+    }
+    return contents;
+};
+const deserializeAws_restJson1InvalidCodeSignatureExceptionResponse = async (parsedOutput, context) => {
+    const contents = {
+        name: "InvalidCodeSignatureException",
+        $fault: "client",
         $metadata: deserializeMetadata(parsedOutput),
         Message: undefined,
         Type: undefined,
@@ -12705,6 +15514,20 @@ const serializeAws_restJson1AliasRoutingConfiguration = (input, context) => {
         }),
     };
 };
+const serializeAws_restJson1AllowedPublishers = (input, context) => {
+    return {
+        ...(input.SigningProfileVersionArns !== undefined && {
+            SigningProfileVersionArns: serializeAws_restJson1SigningProfileVersionArns(input.SigningProfileVersionArns, context),
+        }),
+    };
+};
+const serializeAws_restJson1CodeSigningPolicies = (input, context) => {
+    return {
+        ...(input.UntrustedArtifactOnDeployment !== undefined && {
+            UntrustedArtifactOnDeployment: input.UntrustedArtifactOnDeployment,
+        }),
+    };
+};
 const serializeAws_restJson1CompatibleRuntimes = (input, context) => {
     return input.map((entry) => entry);
 };
@@ -12743,10 +15566,18 @@ const serializeAws_restJson1FileSystemConfigList = (input, context) => {
 };
 const serializeAws_restJson1FunctionCode = (input, context) => {
     return {
+        ...(input.ImageUri !== undefined && { ImageUri: input.ImageUri }),
         ...(input.S3Bucket !== undefined && { S3Bucket: input.S3Bucket }),
         ...(input.S3Key !== undefined && { S3Key: input.S3Key }),
         ...(input.S3ObjectVersion !== undefined && { S3ObjectVersion: input.S3ObjectVersion }),
         ...(input.ZipFile !== undefined && { ZipFile: context.base64Encoder(input.ZipFile) }),
+    };
+};
+const serializeAws_restJson1ImageConfig = (input, context) => {
+    return {
+        ...(input.Command !== undefined && { Command: serializeAws_restJson1StringList(input.Command, context) }),
+        ...(input.EntryPoint !== undefined && { EntryPoint: serializeAws_restJson1StringList(input.EntryPoint, context) }),
+        ...(input.WorkingDirectory !== undefined && { WorkingDirectory: input.WorkingDirectory }),
     };
 };
 const serializeAws_restJson1LayerList = (input, context) => {
@@ -12776,6 +15607,9 @@ const serializeAws_restJson1Queues = (input, context) => {
 const serializeAws_restJson1SecurityGroupIds = (input, context) => {
     return input.map((entry) => entry);
 };
+const serializeAws_restJson1SigningProfileVersionArns = (input, context) => {
+    return input.map((entry) => entry);
+};
 const serializeAws_restJson1SourceAccessConfiguration = (input, context) => {
     return {
         ...(input.Type !== undefined && { Type: input.Type }),
@@ -12784,6 +15618,9 @@ const serializeAws_restJson1SourceAccessConfiguration = (input, context) => {
 };
 const serializeAws_restJson1SourceAccessConfigurations = (input, context) => {
     return input.map((entry) => serializeAws_restJson1SourceAccessConfiguration(entry, context));
+};
+const serializeAws_restJson1StringList = (input, context) => {
+    return input.map((entry) => entry);
 };
 const serializeAws_restJson1SubnetIds = (input, context) => {
     return input.map((entry) => entry);
@@ -12854,6 +15691,41 @@ const deserializeAws_restJson1AliasRoutingConfiguration = (output, context) => {
     return {
         AdditionalVersionWeights: output.AdditionalVersionWeights !== undefined && output.AdditionalVersionWeights !== null
             ? deserializeAws_restJson1AdditionalVersionWeights(output.AdditionalVersionWeights, context)
+            : undefined,
+    };
+};
+const deserializeAws_restJson1AllowedPublishers = (output, context) => {
+    return {
+        SigningProfileVersionArns: output.SigningProfileVersionArns !== undefined && output.SigningProfileVersionArns !== null
+            ? deserializeAws_restJson1SigningProfileVersionArns(output.SigningProfileVersionArns, context)
+            : undefined,
+    };
+};
+const deserializeAws_restJson1CodeSigningConfig = (output, context) => {
+    return {
+        AllowedPublishers: output.AllowedPublishers !== undefined && output.AllowedPublishers !== null
+            ? deserializeAws_restJson1AllowedPublishers(output.AllowedPublishers, context)
+            : undefined,
+        CodeSigningConfigArn: output.CodeSigningConfigArn !== undefined && output.CodeSigningConfigArn !== null
+            ? output.CodeSigningConfigArn
+            : undefined,
+        CodeSigningConfigId: output.CodeSigningConfigId !== undefined && output.CodeSigningConfigId !== null
+            ? output.CodeSigningConfigId
+            : undefined,
+        CodeSigningPolicies: output.CodeSigningPolicies !== undefined && output.CodeSigningPolicies !== null
+            ? deserializeAws_restJson1CodeSigningPolicies(output.CodeSigningPolicies, context)
+            : undefined,
+        Description: output.Description !== undefined && output.Description !== null ? output.Description : undefined,
+        LastModified: output.LastModified !== undefined && output.LastModified !== null ? output.LastModified : undefined,
+    };
+};
+const deserializeAws_restJson1CodeSigningConfigList = (output, context) => {
+    return (output || []).map((entry) => deserializeAws_restJson1CodeSigningConfig(entry, context));
+};
+const deserializeAws_restJson1CodeSigningPolicies = (output, context) => {
+    return {
+        UntrustedArtifactOnDeployment: output.UntrustedArtifactOnDeployment !== undefined && output.UntrustedArtifactOnDeployment !== null
+            ? output.UntrustedArtifactOnDeployment
             : undefined,
     };
 };
@@ -12939,6 +15811,10 @@ const deserializeAws_restJson1EventSourceMappingConfiguration = (output, context
         SourceAccessConfigurations: output.SourceAccessConfigurations !== undefined && output.SourceAccessConfigurations !== null
             ? deserializeAws_restJson1SourceAccessConfigurations(output.SourceAccessConfigurations, context)
             : undefined,
+        StartingPosition: output.StartingPosition !== undefined && output.StartingPosition !== null ? output.StartingPosition : undefined,
+        StartingPositionTimestamp: output.StartingPositionTimestamp !== undefined && output.StartingPositionTimestamp !== null
+            ? new Date(Math.round(output.StartingPositionTimestamp * 1000))
+            : undefined,
         State: output.State !== undefined && output.State !== null ? output.State : undefined,
         StateTransitionReason: output.StateTransitionReason !== undefined && output.StateTransitionReason !== null
             ? output.StateTransitionReason
@@ -12961,10 +15837,15 @@ const deserializeAws_restJson1FileSystemConfig = (output, context) => {
 const deserializeAws_restJson1FileSystemConfigList = (output, context) => {
     return (output || []).map((entry) => deserializeAws_restJson1FileSystemConfig(entry, context));
 };
+const deserializeAws_restJson1FunctionArnList = (output, context) => {
+    return (output || []).map((entry) => entry);
+};
 const deserializeAws_restJson1FunctionCodeLocation = (output, context) => {
     return {
+        ImageUri: output.ImageUri !== undefined && output.ImageUri !== null ? output.ImageUri : undefined,
         Location: output.Location !== undefined && output.Location !== null ? output.Location : undefined,
         RepositoryType: output.RepositoryType !== undefined && output.RepositoryType !== null ? output.RepositoryType : undefined,
+        ResolvedImageUri: output.ResolvedImageUri !== undefined && output.ResolvedImageUri !== null ? output.ResolvedImageUri : undefined,
     };
 };
 const deserializeAws_restJson1FunctionConfiguration = (output, context) => {
@@ -12984,6 +15865,9 @@ const deserializeAws_restJson1FunctionConfiguration = (output, context) => {
         FunctionArn: output.FunctionArn !== undefined && output.FunctionArn !== null ? output.FunctionArn : undefined,
         FunctionName: output.FunctionName !== undefined && output.FunctionName !== null ? output.FunctionName : undefined,
         Handler: output.Handler !== undefined && output.Handler !== null ? output.Handler : undefined,
+        ImageConfigResponse: output.ImageConfigResponse !== undefined && output.ImageConfigResponse !== null
+            ? deserializeAws_restJson1ImageConfigResponse(output.ImageConfigResponse, context)
+            : undefined,
         KMSKeyArn: output.KMSKeyArn !== undefined && output.KMSKeyArn !== null ? output.KMSKeyArn : undefined,
         LastModified: output.LastModified !== undefined && output.LastModified !== null ? output.LastModified : undefined,
         LastUpdateStatus: output.LastUpdateStatus !== undefined && output.LastUpdateStatus !== null ? output.LastUpdateStatus : undefined,
@@ -12998,9 +15882,14 @@ const deserializeAws_restJson1FunctionConfiguration = (output, context) => {
             : undefined,
         MasterArn: output.MasterArn !== undefined && output.MasterArn !== null ? output.MasterArn : undefined,
         MemorySize: output.MemorySize !== undefined && output.MemorySize !== null ? output.MemorySize : undefined,
+        PackageType: output.PackageType !== undefined && output.PackageType !== null ? output.PackageType : undefined,
         RevisionId: output.RevisionId !== undefined && output.RevisionId !== null ? output.RevisionId : undefined,
         Role: output.Role !== undefined && output.Role !== null ? output.Role : undefined,
         Runtime: output.Runtime !== undefined && output.Runtime !== null ? output.Runtime : undefined,
+        SigningJobArn: output.SigningJobArn !== undefined && output.SigningJobArn !== null ? output.SigningJobArn : undefined,
+        SigningProfileVersionArn: output.SigningProfileVersionArn !== undefined && output.SigningProfileVersionArn !== null
+            ? output.SigningProfileVersionArn
+            : undefined,
         State: output.State !== undefined && output.State !== null ? output.State : undefined,
         StateReason: output.StateReason !== undefined && output.StateReason !== null ? output.StateReason : undefined,
         StateReasonCode: output.StateReasonCode !== undefined && output.StateReasonCode !== null ? output.StateReasonCode : undefined,
@@ -13037,10 +15926,41 @@ const deserializeAws_restJson1FunctionEventInvokeConfigList = (output, context) 
 const deserializeAws_restJson1FunctionList = (output, context) => {
     return (output || []).map((entry) => deserializeAws_restJson1FunctionConfiguration(entry, context));
 };
+const deserializeAws_restJson1ImageConfig = (output, context) => {
+    return {
+        Command: output.Command !== undefined && output.Command !== null
+            ? deserializeAws_restJson1StringList(output.Command, context)
+            : undefined,
+        EntryPoint: output.EntryPoint !== undefined && output.EntryPoint !== null
+            ? deserializeAws_restJson1StringList(output.EntryPoint, context)
+            : undefined,
+        WorkingDirectory: output.WorkingDirectory !== undefined && output.WorkingDirectory !== null ? output.WorkingDirectory : undefined,
+    };
+};
+const deserializeAws_restJson1ImageConfigError = (output, context) => {
+    return {
+        ErrorCode: output.ErrorCode !== undefined && output.ErrorCode !== null ? output.ErrorCode : undefined,
+        Message: output.Message !== undefined && output.Message !== null ? output.Message : undefined,
+    };
+};
+const deserializeAws_restJson1ImageConfigResponse = (output, context) => {
+    return {
+        Error: output.Error !== undefined && output.Error !== null
+            ? deserializeAws_restJson1ImageConfigError(output.Error, context)
+            : undefined,
+        ImageConfig: output.ImageConfig !== undefined && output.ImageConfig !== null
+            ? deserializeAws_restJson1ImageConfig(output.ImageConfig, context)
+            : undefined,
+    };
+};
 const deserializeAws_restJson1Layer = (output, context) => {
     return {
         Arn: output.Arn !== undefined && output.Arn !== null ? output.Arn : undefined,
         CodeSize: output.CodeSize !== undefined && output.CodeSize !== null ? output.CodeSize : undefined,
+        SigningJobArn: output.SigningJobArn !== undefined && output.SigningJobArn !== null ? output.SigningJobArn : undefined,
+        SigningProfileVersionArn: output.SigningProfileVersionArn !== undefined && output.SigningProfileVersionArn !== null
+            ? output.SigningProfileVersionArn
+            : undefined,
     };
 };
 const deserializeAws_restJson1LayersList = (output, context) => {
@@ -13063,6 +15983,10 @@ const deserializeAws_restJson1LayerVersionContentOutput = (output, context) => {
         CodeSha256: output.CodeSha256 !== undefined && output.CodeSha256 !== null ? output.CodeSha256 : undefined,
         CodeSize: output.CodeSize !== undefined && output.CodeSize !== null ? output.CodeSize : undefined,
         Location: output.Location !== undefined && output.Location !== null ? output.Location : undefined,
+        SigningJobArn: output.SigningJobArn !== undefined && output.SigningJobArn !== null ? output.SigningJobArn : undefined,
+        SigningProfileVersionArn: output.SigningProfileVersionArn !== undefined && output.SigningProfileVersionArn !== null
+            ? output.SigningProfileVersionArn
+            : undefined,
     };
 };
 const deserializeAws_restJson1LayerVersionsList = (output, context) => {
@@ -13119,6 +16043,9 @@ const deserializeAws_restJson1Queues = (output, context) => {
 const deserializeAws_restJson1SecurityGroupIds = (output, context) => {
     return (output || []).map((entry) => entry);
 };
+const deserializeAws_restJson1SigningProfileVersionArns = (output, context) => {
+    return (output || []).map((entry) => entry);
+};
 const deserializeAws_restJson1SourceAccessConfiguration = (output, context) => {
     return {
         Type: output.Type !== undefined && output.Type !== null ? output.Type : undefined,
@@ -13127,6 +16054,9 @@ const deserializeAws_restJson1SourceAccessConfiguration = (output, context) => {
 };
 const deserializeAws_restJson1SourceAccessConfigurations = (output, context) => {
     return (output || []).map((entry) => deserializeAws_restJson1SourceAccessConfiguration(entry, context));
+};
+const deserializeAws_restJson1StringList = (output, context) => {
+    return (output || []).map((entry) => entry);
 };
 const deserializeAws_restJson1SubnetIds = (output, context) => {
     return (output || []).map((entry) => entry);
@@ -13232,6 +16162,9 @@ const util_body_length_node_1 = __webpack_require__(286);
 const util_user_agent_node_1 = __webpack_require__(4717);
 const util_utf8_node_1 = __webpack_require__(5227);
 const runtimeConfig_shared_1 = __webpack_require__(5322);
+/**
+ * @internal
+ */
 exports.ClientDefaultValues = {
     ...runtimeConfig_shared_1.ClientSharedValues,
     runtime: "node",
@@ -13261,6 +16194,9 @@ exports.ClientDefaultValues = {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ClientSharedValues = void 0;
 const endpoints_1 = __webpack_require__(4904);
+/**
+ * @internal
+ */
 exports.ClientSharedValues = {
     apiVersion: "2015-03-31",
     disableHostPrefix: false,
@@ -13279,7 +16215,7 @@ exports.ClientSharedValues = {
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.resolveEndpointsConfig = void 0;
-exports.resolveEndpointsConfig = (input) => {
+const resolveEndpointsConfig = (input) => {
     var _a;
     return ({
         ...input,
@@ -13288,6 +16224,7 @@ exports.resolveEndpointsConfig = (input) => {
         isCustomEndpoint: input.endpoint ? true : false,
     });
 };
+exports.resolveEndpointsConfig = resolveEndpointsConfig;
 const normalizeEndpoint = (input) => {
     const { endpoint, urlParser } = input;
     if (typeof endpoint === "string") {
@@ -13314,7 +16251,7 @@ const getEndPointFromRegion = async (input) => {
     }
     return input.urlParser(`${tls ? "https:" : "http:"}//${hostname}`);
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRW5kcG9pbnRzQ29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL0VuZHBvaW50c0NvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUF5QmEsUUFBQSxzQkFBc0IsR0FBRyxDQUNwQyxLQUFvRCxFQUN2QixFQUFFOztJQUFDLE9BQUEsQ0FBQztRQUNqQyxHQUFHLEtBQUs7UUFDUixHQUFHLFFBQUUsS0FBSyxDQUFDLEdBQUcsbUNBQUksSUFBSTtRQUN0QixRQUFRLEVBQUUsS0FBSyxDQUFDLFFBQVEsQ0FBQyxDQUFDLENBQUMsaUJBQWlCLENBQUMsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLEdBQUcsRUFBRSxDQUFDLHFCQUFxQixDQUFDLEtBQUssQ0FBQztRQUN4RixnQkFBZ0IsRUFBRSxLQUFLLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxDQUFDLEtBQUs7S0FDaEQsQ0FBQyxDQUFBO0NBQUEsQ0FBQztBQUVILE1BQU0saUJBQWlCLEdBQUcsQ0FBQyxLQUFnRCxFQUFzQixFQUFFO0lBQ2pHLE1BQU0sRUFBRSxRQUFRLEVBQUUsU0FBUyxFQUFFLEdBQUcsS0FBSyxDQUFDO0lBQ3RDLElBQUksT0FBTyxRQUFRLEtBQUssUUFBUSxFQUFFO1FBQ2hDLE1BQU0sV0FBVyxHQUFHLE9BQU8sQ0FBQyxPQUFPLENBQUMsU0FBUyxDQUFDLFFBQVEsQ0FBQyxDQUFDLENBQUM7UUFDekQsT0FBTyxHQUFHLEVBQUUsQ0FBQyxXQUFXLENBQUM7S0FDMUI7U0FBTSxJQUFJLE9BQU8sUUFBUSxLQUFLLFFBQVEsRUFBRTtRQUN2QyxNQUFNLFdBQVcsR0FBRyxPQUFPLENBQUMsT0FBTyxDQUFDLFFBQVEsQ0FBQyxDQUFDO1FBQzlDLE9BQU8sR0FBRyxFQUFFLENBQUMsV0FBVyxDQUFDO0tBQzFCO0lBQ0QsT0FBTyxRQUFTLENBQUM7QUFDbkIsQ0FBQyxDQUFDO0FBRUYsTUFBTSxxQkFBcUIsR0FBRyxLQUFLLEVBQUUsS0FBZ0QsRUFBRSxFQUFFOztJQUN2RixNQUFNLEVBQUUsR0FBRyxHQUFHLElBQUksRUFBRSxHQUFHLEtBQUssQ0FBQztJQUM3QixNQUFNLE1BQU0sR0FBRyxNQUFNLEtBQUssQ0FBQyxNQUFNLEVBQUUsQ0FBQztJQUVwQyxNQUFNLFlBQVksR0FBRyxJQUFJLE1BQU0sQ0FBQywwREFBMEQsQ0FBQyxDQUFDO0lBQzVGLElBQUksQ0FBQyxZQUFZLENBQUMsSUFBSSxDQUFDLE1BQU0sQ0FBQyxFQUFFO1FBQzlCLE1BQU0sSUFBSSxLQUFLLENBQUMsaUNBQWlDLENBQUMsQ0FBQztLQUNwRDtJQUVELE1BQU0sRUFBRSxRQUFRLEVBQUUsU0FBRyxDQUFDLE1BQU0sS0FBSyxDQUFDLGtCQUFrQixDQUFDLE1BQU0sQ0FBQyxDQUFDLG1DQUFJLEVBQUUsQ0FBQztJQUNwRSxJQUFJLENBQUMsUUFBUSxFQUFFO1FBQ2IsTUFBTSxJQUFJLEtBQUssQ0FBQyw0Q0FBNEMsQ0FBQyxDQUFDO0tBQy9EO0lBRUQsT0FBTyxLQUFLLENBQUMsU0FBUyxDQUFDLEdBQUcsR0FBRyxDQUFDLENBQUMsQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLE9BQU8sS0FBSyxRQUFRLEVBQUUsQ0FBQyxDQUFDO0FBQ3JFLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEVuZHBvaW50LCBQcm92aWRlciwgUmVnaW9uSW5mb1Byb3ZpZGVyLCBVcmxQYXJzZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IGludGVyZmFjZSBFbmRwb2ludHNJbnB1dENvbmZpZyB7XG4gIC8qKlxuICAgKiBUaGUgZnVsbHkgcXVhbGlmaWVkIGVuZHBvaW50IG9mIHRoZSB3ZWJzZXJ2aWNlLiBUaGlzIGlzIG9ubHkgcmVxdWlyZWQgd2hlbiB1c2luZyBhIGN1c3RvbSBlbmRwb2ludCAoZm9yIGV4YW1wbGUsIHdoZW4gdXNpbmcgYSBsb2NhbCB2ZXJzaW9uIG9mIFMzKS5cbiAgICovXG4gIGVuZHBvaW50Pzogc3RyaW5nIHwgRW5kcG9pbnQgfCBQcm92aWRlcjxFbmRwb2ludD47XG5cbiAgLyoqXG4gICAqIFdoZXRoZXIgVExTIGlzIGVuYWJsZWQgZm9yIHJlcXVlc3RzLlxuICAgKi9cbiAgdGxzPzogYm9vbGVhbjtcbn1cblxuaW50ZXJmYWNlIFByZXZpb3VzbHlSZXNvbHZlZCB7XG4gIHJlZ2lvbkluZm9Qcm92aWRlcjogUmVnaW9uSW5mb1Byb3ZpZGVyO1xuICB1cmxQYXJzZXI6IFVybFBhcnNlcjtcbiAgcmVnaW9uOiBQcm92aWRlcjxzdHJpbmc+O1xufVxuXG5leHBvcnQgaW50ZXJmYWNlIEVuZHBvaW50c1Jlc29sdmVkQ29uZmlnIGV4dGVuZHMgUmVxdWlyZWQ8RW5kcG9pbnRzSW5wdXRDb25maWc+IHtcbiAgZW5kcG9pbnQ6IFByb3ZpZGVyPEVuZHBvaW50PjtcbiAgaXNDdXN0b21FbmRwb2ludDogYm9vbGVhbjtcbn1cblxuZXhwb3J0IGNvbnN0IHJlc29sdmVFbmRwb2ludHNDb25maWcgPSA8VD4oXG4gIGlucHV0OiBUICYgRW5kcG9pbnRzSW5wdXRDb25maWcgJiBQcmV2aW91c2x5UmVzb2x2ZWRcbik6IFQgJiBFbmRwb2ludHNSZXNvbHZlZENvbmZpZyA9PiAoe1xuICAuLi5pbnB1dCxcbiAgdGxzOiBpbnB1dC50bHMgPz8gdHJ1ZSxcbiAgZW5kcG9pbnQ6IGlucHV0LmVuZHBvaW50ID8gbm9ybWFsaXplRW5kcG9pbnQoaW5wdXQpIDogKCkgPT4gZ2V0RW5kUG9pbnRGcm9tUmVnaW9uKGlucHV0KSxcbiAgaXNDdXN0b21FbmRwb2ludDogaW5wdXQuZW5kcG9pbnQgPyB0cnVlIDogZmFsc2UsXG59KTtcblxuY29uc3Qgbm9ybWFsaXplRW5kcG9pbnQgPSAoaW5wdXQ6IEVuZHBvaW50c0lucHV0Q29uZmlnICYgUHJldmlvdXNseVJlc29sdmVkKTogUHJvdmlkZXI8RW5kcG9pbnQ+ID0+IHtcbiAgY29uc3QgeyBlbmRwb2ludCwgdXJsUGFyc2VyIH0gPSBpbnB1dDtcbiAgaWYgKHR5cGVvZiBlbmRwb2ludCA9PT0gXCJzdHJpbmdcIikge1xuICAgIGNvbnN0IHByb21pc2lmaWVkID0gUHJvbWlzZS5yZXNvbHZlKHVybFBhcnNlcihlbmRwb2ludCkpO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfSBlbHNlIGlmICh0eXBlb2YgZW5kcG9pbnQgPT09IFwib2JqZWN0XCIpIHtcbiAgICBjb25zdCBwcm9taXNpZmllZCA9IFByb21pc2UucmVzb2x2ZShlbmRwb2ludCk7XG4gICAgcmV0dXJuICgpID0+IHByb21pc2lmaWVkO1xuICB9XG4gIHJldHVybiBlbmRwb2ludCE7XG59O1xuXG5jb25zdCBnZXRFbmRQb2ludEZyb21SZWdpb24gPSBhc3luYyAoaW5wdXQ6IEVuZHBvaW50c0lucHV0Q29uZmlnICYgUHJldmlvdXNseVJlc29sdmVkKSA9PiB7XG4gIGNvbnN0IHsgdGxzID0gdHJ1ZSB9ID0gaW5wdXQ7XG4gIGNvbnN0IHJlZ2lvbiA9IGF3YWl0IGlucHV0LnJlZ2lvbigpO1xuXG4gIGNvbnN0IGRuc0hvc3RSZWdleCA9IG5ldyBSZWdFeHAoL14oW2EtekEtWjAtOV18W2EtekEtWjAtOV1bYS16QS1aMC05LV17MCw2MX1bYS16QS1aMC05XSkkLyk7XG4gIGlmICghZG5zSG9zdFJlZ2V4LnRlc3QocmVnaW9uKSkge1xuICAgIHRocm93IG5ldyBFcnJvcihcIkludmFsaWQgcmVnaW9uIGluIGNsaWVudCBjb25maWdcIik7XG4gIH1cblxuICBjb25zdCB7IGhvc3RuYW1lIH0gPSAoYXdhaXQgaW5wdXQucmVnaW9uSW5mb1Byb3ZpZGVyKHJlZ2lvbikpID8/IHt9O1xuICBpZiAoIWhvc3RuYW1lKSB7XG4gICAgdGhyb3cgbmV3IEVycm9yKFwiQ2Fubm90IHJlc29sdmUgaG9zdG5hbWUgZnJvbSBjbGllbnQgY29uZmlnXCIpO1xuICB9XG5cbiAgcmV0dXJuIGlucHV0LnVybFBhcnNlcihgJHt0bHMgPyBcImh0dHBzOlwiIDogXCJodHRwOlwifS8vJHtob3N0bmFtZX1gKTtcbn07XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRW5kcG9pbnRzQ29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL0VuZHBvaW50c0NvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUF5Qk8sTUFBTSxzQkFBc0IsR0FBRyxDQUNwQyxLQUFvRCxFQUN2QixFQUFFOztJQUFDLE9BQUEsQ0FBQztRQUNqQyxHQUFHLEtBQUs7UUFDUixHQUFHLFFBQUUsS0FBSyxDQUFDLEdBQUcsbUNBQUksSUFBSTtRQUN0QixRQUFRLEVBQUUsS0FBSyxDQUFDLFFBQVEsQ0FBQyxDQUFDLENBQUMsaUJBQWlCLENBQUMsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLEdBQUcsRUFBRSxDQUFDLHFCQUFxQixDQUFDLEtBQUssQ0FBQztRQUN4RixnQkFBZ0IsRUFBRSxLQUFLLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxDQUFDLEtBQUs7S0FDaEQsQ0FBQyxDQUFBO0NBQUEsQ0FBQztBQVBVLFFBQUEsc0JBQXNCLDBCQU9oQztBQUVILE1BQU0saUJBQWlCLEdBQUcsQ0FBQyxLQUFnRCxFQUFzQixFQUFFO0lBQ2pHLE1BQU0sRUFBRSxRQUFRLEVBQUUsU0FBUyxFQUFFLEdBQUcsS0FBSyxDQUFDO0lBQ3RDLElBQUksT0FBTyxRQUFRLEtBQUssUUFBUSxFQUFFO1FBQ2hDLE1BQU0sV0FBVyxHQUFHLE9BQU8sQ0FBQyxPQUFPLENBQUMsU0FBUyxDQUFDLFFBQVEsQ0FBQyxDQUFDLENBQUM7UUFDekQsT0FBTyxHQUFHLEVBQUUsQ0FBQyxXQUFXLENBQUM7S0FDMUI7U0FBTSxJQUFJLE9BQU8sUUFBUSxLQUFLLFFBQVEsRUFBRTtRQUN2QyxNQUFNLFdBQVcsR0FBRyxPQUFPLENBQUMsT0FBTyxDQUFDLFFBQVEsQ0FBQyxDQUFDO1FBQzlDLE9BQU8sR0FBRyxFQUFFLENBQUMsV0FBVyxDQUFDO0tBQzFCO0lBQ0QsT0FBTyxRQUFTLENBQUM7QUFDbkIsQ0FBQyxDQUFDO0FBRUYsTUFBTSxxQkFBcUIsR0FBRyxLQUFLLEVBQUUsS0FBZ0QsRUFBRSxFQUFFOztJQUN2RixNQUFNLEVBQUUsR0FBRyxHQUFHLElBQUksRUFBRSxHQUFHLEtBQUssQ0FBQztJQUM3QixNQUFNLE1BQU0sR0FBRyxNQUFNLEtBQUssQ0FBQyxNQUFNLEVBQUUsQ0FBQztJQUVwQyxNQUFNLFlBQVksR0FBRyxJQUFJLE1BQU0sQ0FBQywwREFBMEQsQ0FBQyxDQUFDO0lBQzVGLElBQUksQ0FBQyxZQUFZLENBQUMsSUFBSSxDQUFDLE1BQU0sQ0FBQyxFQUFFO1FBQzlCLE1BQU0sSUFBSSxLQUFLLENBQUMsaUNBQWlDLENBQUMsQ0FBQztLQUNwRDtJQUVELE1BQU0sRUFBRSxRQUFRLEVBQUUsU0FBRyxDQUFDLE1BQU0sS0FBSyxDQUFDLGtCQUFrQixDQUFDLE1BQU0sQ0FBQyxDQUFDLG1DQUFJLEVBQUUsQ0FBQztJQUNwRSxJQUFJLENBQUMsUUFBUSxFQUFFO1FBQ2IsTUFBTSxJQUFJLEtBQUssQ0FBQyw0Q0FBNEMsQ0FBQyxDQUFDO0tBQy9EO0lBRUQsT0FBTyxLQUFLLENBQUMsU0FBUyxDQUFDLEdBQUcsR0FBRyxDQUFDLENBQUMsQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLE9BQU8sS0FBSyxRQUFRLEVBQUUsQ0FBQyxDQUFDO0FBQ3JFLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEVuZHBvaW50LCBQcm92aWRlciwgUmVnaW9uSW5mb1Byb3ZpZGVyLCBVcmxQYXJzZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IGludGVyZmFjZSBFbmRwb2ludHNJbnB1dENvbmZpZyB7XG4gIC8qKlxuICAgKiBUaGUgZnVsbHkgcXVhbGlmaWVkIGVuZHBvaW50IG9mIHRoZSB3ZWJzZXJ2aWNlLiBUaGlzIGlzIG9ubHkgcmVxdWlyZWQgd2hlbiB1c2luZyBhIGN1c3RvbSBlbmRwb2ludCAoZm9yIGV4YW1wbGUsIHdoZW4gdXNpbmcgYSBsb2NhbCB2ZXJzaW9uIG9mIFMzKS5cbiAgICovXG4gIGVuZHBvaW50Pzogc3RyaW5nIHwgRW5kcG9pbnQgfCBQcm92aWRlcjxFbmRwb2ludD47XG5cbiAgLyoqXG4gICAqIFdoZXRoZXIgVExTIGlzIGVuYWJsZWQgZm9yIHJlcXVlc3RzLlxuICAgKi9cbiAgdGxzPzogYm9vbGVhbjtcbn1cblxuaW50ZXJmYWNlIFByZXZpb3VzbHlSZXNvbHZlZCB7XG4gIHJlZ2lvbkluZm9Qcm92aWRlcjogUmVnaW9uSW5mb1Byb3ZpZGVyO1xuICB1cmxQYXJzZXI6IFVybFBhcnNlcjtcbiAgcmVnaW9uOiBQcm92aWRlcjxzdHJpbmc+O1xufVxuXG5leHBvcnQgaW50ZXJmYWNlIEVuZHBvaW50c1Jlc29sdmVkQ29uZmlnIGV4dGVuZHMgUmVxdWlyZWQ8RW5kcG9pbnRzSW5wdXRDb25maWc+IHtcbiAgZW5kcG9pbnQ6IFByb3ZpZGVyPEVuZHBvaW50PjtcbiAgaXNDdXN0b21FbmRwb2ludDogYm9vbGVhbjtcbn1cblxuZXhwb3J0IGNvbnN0IHJlc29sdmVFbmRwb2ludHNDb25maWcgPSA8VD4oXG4gIGlucHV0OiBUICYgRW5kcG9pbnRzSW5wdXRDb25maWcgJiBQcmV2aW91c2x5UmVzb2x2ZWRcbik6IFQgJiBFbmRwb2ludHNSZXNvbHZlZENvbmZpZyA9PiAoe1xuICAuLi5pbnB1dCxcbiAgdGxzOiBpbnB1dC50bHMgPz8gdHJ1ZSxcbiAgZW5kcG9pbnQ6IGlucHV0LmVuZHBvaW50ID8gbm9ybWFsaXplRW5kcG9pbnQoaW5wdXQpIDogKCkgPT4gZ2V0RW5kUG9pbnRGcm9tUmVnaW9uKGlucHV0KSxcbiAgaXNDdXN0b21FbmRwb2ludDogaW5wdXQuZW5kcG9pbnQgPyB0cnVlIDogZmFsc2UsXG59KTtcblxuY29uc3Qgbm9ybWFsaXplRW5kcG9pbnQgPSAoaW5wdXQ6IEVuZHBvaW50c0lucHV0Q29uZmlnICYgUHJldmlvdXNseVJlc29sdmVkKTogUHJvdmlkZXI8RW5kcG9pbnQ+ID0+IHtcbiAgY29uc3QgeyBlbmRwb2ludCwgdXJsUGFyc2VyIH0gPSBpbnB1dDtcbiAgaWYgKHR5cGVvZiBlbmRwb2ludCA9PT0gXCJzdHJpbmdcIikge1xuICAgIGNvbnN0IHByb21pc2lmaWVkID0gUHJvbWlzZS5yZXNvbHZlKHVybFBhcnNlcihlbmRwb2ludCkpO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfSBlbHNlIGlmICh0eXBlb2YgZW5kcG9pbnQgPT09IFwib2JqZWN0XCIpIHtcbiAgICBjb25zdCBwcm9taXNpZmllZCA9IFByb21pc2UucmVzb2x2ZShlbmRwb2ludCk7XG4gICAgcmV0dXJuICgpID0+IHByb21pc2lmaWVkO1xuICB9XG4gIHJldHVybiBlbmRwb2ludCE7XG59O1xuXG5jb25zdCBnZXRFbmRQb2ludEZyb21SZWdpb24gPSBhc3luYyAoaW5wdXQ6IEVuZHBvaW50c0lucHV0Q29uZmlnICYgUHJldmlvdXNseVJlc29sdmVkKSA9PiB7XG4gIGNvbnN0IHsgdGxzID0gdHJ1ZSB9ID0gaW5wdXQ7XG4gIGNvbnN0IHJlZ2lvbiA9IGF3YWl0IGlucHV0LnJlZ2lvbigpO1xuXG4gIGNvbnN0IGRuc0hvc3RSZWdleCA9IG5ldyBSZWdFeHAoL14oW2EtekEtWjAtOV18W2EtekEtWjAtOV1bYS16QS1aMC05LV17MCw2MX1bYS16QS1aMC05XSkkLyk7XG4gIGlmICghZG5zSG9zdFJlZ2V4LnRlc3QocmVnaW9uKSkge1xuICAgIHRocm93IG5ldyBFcnJvcihcIkludmFsaWQgcmVnaW9uIGluIGNsaWVudCBjb25maWdcIik7XG4gIH1cblxuICBjb25zdCB7IGhvc3RuYW1lIH0gPSAoYXdhaXQgaW5wdXQucmVnaW9uSW5mb1Byb3ZpZGVyKHJlZ2lvbikpID8/IHt9O1xuICBpZiAoIWhvc3RuYW1lKSB7XG4gICAgdGhyb3cgbmV3IEVycm9yKFwiQ2Fubm90IHJlc29sdmUgaG9zdG5hbWUgZnJvbSBjbGllbnQgY29uZmlnXCIpO1xuICB9XG5cbiAgcmV0dXJuIGlucHV0LnVybFBhcnNlcihgJHt0bHMgPyBcImh0dHBzOlwiIDogXCJodHRwOlwifS8vJHtob3N0bmFtZX1gKTtcbn07XG4iXX0=
 
 /***/ }),
 
@@ -13337,7 +16274,7 @@ exports.NODE_REGION_CONFIG_OPTIONS = {
 exports.NODE_REGION_CONFIG_FILE_OPTIONS = {
     preferredFile: "credentials",
 };
-exports.resolveRegionConfig = (input) => {
+const resolveRegionConfig = (input) => {
     if (!input.region) {
         throw new Error("Region is missing");
     }
@@ -13346,6 +16283,7 @@ exports.resolveRegionConfig = (input) => {
         region: normalizeRegion(input.region),
     };
 };
+exports.resolveRegionConfig = resolveRegionConfig;
 const normalizeRegion = (region) => {
     if (typeof region === "string") {
         const promisified = Promise.resolve(region);
@@ -13353,7 +16291,7 @@ const normalizeRegion = (region) => {
     }
     return region;
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmVnaW9uQ29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL1JlZ2lvbkNvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFHYSxRQUFBLGVBQWUsR0FBRyxZQUFZLENBQUM7QUFDL0IsUUFBQSxlQUFlLEdBQUcsUUFBUSxDQUFDO0FBRTNCLFFBQUEsMEJBQTBCLEdBQWtDO0lBQ3ZFLDJCQUEyQixFQUFFLENBQUMsR0FBRyxFQUFFLEVBQUUsQ0FBQyxHQUFHLENBQUMsdUJBQWUsQ0FBQztJQUMxRCxrQkFBa0IsRUFBRSxDQUFDLE9BQU8sRUFBRSxFQUFFLENBQUMsT0FBTyxDQUFDLHVCQUFlLENBQUM7SUFDekQsT0FBTyxFQUFFLEdBQUcsRUFBRTtRQUNaLE1BQU0sSUFBSSxLQUFLLENBQUMsbUJBQW1CLENBQUMsQ0FBQztJQUN2QyxDQUFDO0NBQ0YsQ0FBQztBQUVXLFFBQUEsK0JBQStCLEdBQXVCO0lBQ2pFLGFBQWEsRUFBRSxhQUFhO0NBQzdCLENBQUM7QUFlVyxRQUFBLG1CQUFtQixHQUFHLENBQUksS0FBaUQsRUFBNEIsRUFBRTtJQUNwSCxJQUFJLENBQUMsS0FBSyxDQUFDLE1BQU0sRUFBRTtRQUNqQixNQUFNLElBQUksS0FBSyxDQUFDLG1CQUFtQixDQUFDLENBQUM7S0FDdEM7SUFDRCxPQUFPO1FBQ0wsR0FBRyxLQUFLO1FBQ1IsTUFBTSxFQUFFLGVBQWUsQ0FBQyxLQUFLLENBQUMsTUFBTyxDQUFDO0tBQ3ZDLENBQUM7QUFDSixDQUFDLENBQUM7QUFFRixNQUFNLGVBQWUsR0FBRyxDQUFDLE1BQWlDLEVBQW9CLEVBQUU7SUFDOUUsSUFBSSxPQUFPLE1BQU0sS0FBSyxRQUFRLEVBQUU7UUFDOUIsTUFBTSxXQUFXLEdBQUcsT0FBTyxDQUFDLE9BQU8sQ0FBQyxNQUFNLENBQUMsQ0FBQztRQUM1QyxPQUFPLEdBQUcsRUFBRSxDQUFDLFdBQVcsQ0FBQztLQUMxQjtJQUNELE9BQU8sTUFBMEIsQ0FBQztBQUNwQyxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBMb2FkZWRDb25maWdTZWxlY3RvcnMsIExvY2FsQ29uZmlnT3B0aW9ucyB9IGZyb20gXCJAYXdzLXNkay9ub2RlLWNvbmZpZy1wcm92aWRlclwiO1xuaW1wb3J0IHsgUHJvdmlkZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IGNvbnN0IFJFR0lPTl9FTlZfTkFNRSA9IFwiQVdTX1JFR0lPTlwiO1xuZXhwb3J0IGNvbnN0IFJFR0lPTl9JTklfTkFNRSA9IFwicmVnaW9uXCI7XG5cbmV4cG9ydCBjb25zdCBOT0RFX1JFR0lPTl9DT05GSUdfT1BUSU9OUzogTG9hZGVkQ29uZmlnU2VsZWN0b3JzPHN0cmluZz4gPSB7XG4gIGVudmlyb25tZW50VmFyaWFibGVTZWxlY3RvcjogKGVudikgPT4gZW52W1JFR0lPTl9FTlZfTkFNRV0sXG4gIGNvbmZpZ0ZpbGVTZWxlY3RvcjogKHByb2ZpbGUpID0+IHByb2ZpbGVbUkVHSU9OX0lOSV9OQU1FXSxcbiAgZGVmYXVsdDogKCkgPT4ge1xuICAgIHRocm93IG5ldyBFcnJvcihcIlJlZ2lvbiBpcyBtaXNzaW5nXCIpO1xuICB9LFxufTtcblxuZXhwb3J0IGNvbnN0IE5PREVfUkVHSU9OX0NPTkZJR19GSUxFX09QVElPTlM6IExvY2FsQ29uZmlnT3B0aW9ucyA9IHtcbiAgcHJlZmVycmVkRmlsZTogXCJjcmVkZW50aWFsc1wiLFxufTtcblxuZXhwb3J0IGludGVyZmFjZSBSZWdpb25JbnB1dENvbmZpZyB7XG4gIC8qKlxuICAgKiBUaGUgQVdTIHJlZ2lvbiB0byB3aGljaCB0aGlzIGNsaWVudCB3aWxsIHNlbmQgcmVxdWVzdHNcbiAgICovXG4gIHJlZ2lvbj86IHN0cmluZyB8IFByb3ZpZGVyPHN0cmluZz47XG59XG5cbmludGVyZmFjZSBQcmV2aW91c2x5UmVzb2x2ZWQge31cblxuZXhwb3J0IGludGVyZmFjZSBSZWdpb25SZXNvbHZlZENvbmZpZyB7XG4gIHJlZ2lvbjogUHJvdmlkZXI8c3RyaW5nPjtcbn1cblxuZXhwb3J0IGNvbnN0IHJlc29sdmVSZWdpb25Db25maWcgPSA8VD4oaW5wdXQ6IFQgJiBSZWdpb25JbnB1dENvbmZpZyAmIFByZXZpb3VzbHlSZXNvbHZlZCk6IFQgJiBSZWdpb25SZXNvbHZlZENvbmZpZyA9PiB7XG4gIGlmICghaW5wdXQucmVnaW9uKSB7XG4gICAgdGhyb3cgbmV3IEVycm9yKFwiUmVnaW9uIGlzIG1pc3NpbmdcIik7XG4gIH1cbiAgcmV0dXJuIHtcbiAgICAuLi5pbnB1dCxcbiAgICByZWdpb246IG5vcm1hbGl6ZVJlZ2lvbihpbnB1dC5yZWdpb24hKSxcbiAgfTtcbn07XG5cbmNvbnN0IG5vcm1hbGl6ZVJlZ2lvbiA9IChyZWdpb246IHN0cmluZyB8IFByb3ZpZGVyPHN0cmluZz4pOiBQcm92aWRlcjxzdHJpbmc+ID0+IHtcbiAgaWYgKHR5cGVvZiByZWdpb24gPT09IFwic3RyaW5nXCIpIHtcbiAgICBjb25zdCBwcm9taXNpZmllZCA9IFByb21pc2UucmVzb2x2ZShyZWdpb24pO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfVxuICByZXR1cm4gcmVnaW9uIGFzIFByb3ZpZGVyPHN0cmluZz47XG59O1xuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmVnaW9uQ29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL1JlZ2lvbkNvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFHYSxRQUFBLGVBQWUsR0FBRyxZQUFZLENBQUM7QUFDL0IsUUFBQSxlQUFlLEdBQUcsUUFBUSxDQUFDO0FBRTNCLFFBQUEsMEJBQTBCLEdBQWtDO0lBQ3ZFLDJCQUEyQixFQUFFLENBQUMsR0FBRyxFQUFFLEVBQUUsQ0FBQyxHQUFHLENBQUMsdUJBQWUsQ0FBQztJQUMxRCxrQkFBa0IsRUFBRSxDQUFDLE9BQU8sRUFBRSxFQUFFLENBQUMsT0FBTyxDQUFDLHVCQUFlLENBQUM7SUFDekQsT0FBTyxFQUFFLEdBQUcsRUFBRTtRQUNaLE1BQU0sSUFBSSxLQUFLLENBQUMsbUJBQW1CLENBQUMsQ0FBQztJQUN2QyxDQUFDO0NBQ0YsQ0FBQztBQUVXLFFBQUEsK0JBQStCLEdBQXVCO0lBQ2pFLGFBQWEsRUFBRSxhQUFhO0NBQzdCLENBQUM7QUFlSyxNQUFNLG1CQUFtQixHQUFHLENBQUksS0FBaUQsRUFBNEIsRUFBRTtJQUNwSCxJQUFJLENBQUMsS0FBSyxDQUFDLE1BQU0sRUFBRTtRQUNqQixNQUFNLElBQUksS0FBSyxDQUFDLG1CQUFtQixDQUFDLENBQUM7S0FDdEM7SUFDRCxPQUFPO1FBQ0wsR0FBRyxLQUFLO1FBQ1IsTUFBTSxFQUFFLGVBQWUsQ0FBQyxLQUFLLENBQUMsTUFBTyxDQUFDO0tBQ3ZDLENBQUM7QUFDSixDQUFDLENBQUM7QUFSVyxRQUFBLG1CQUFtQix1QkFROUI7QUFFRixNQUFNLGVBQWUsR0FBRyxDQUFDLE1BQWlDLEVBQW9CLEVBQUU7SUFDOUUsSUFBSSxPQUFPLE1BQU0sS0FBSyxRQUFRLEVBQUU7UUFDOUIsTUFBTSxXQUFXLEdBQUcsT0FBTyxDQUFDLE9BQU8sQ0FBQyxNQUFNLENBQUMsQ0FBQztRQUM1QyxPQUFPLEdBQUcsRUFBRSxDQUFDLFdBQVcsQ0FBQztLQUMxQjtJQUNELE9BQU8sTUFBMEIsQ0FBQztBQUNwQyxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBMb2FkZWRDb25maWdTZWxlY3RvcnMsIExvY2FsQ29uZmlnT3B0aW9ucyB9IGZyb20gXCJAYXdzLXNkay9ub2RlLWNvbmZpZy1wcm92aWRlclwiO1xuaW1wb3J0IHsgUHJvdmlkZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IGNvbnN0IFJFR0lPTl9FTlZfTkFNRSA9IFwiQVdTX1JFR0lPTlwiO1xuZXhwb3J0IGNvbnN0IFJFR0lPTl9JTklfTkFNRSA9IFwicmVnaW9uXCI7XG5cbmV4cG9ydCBjb25zdCBOT0RFX1JFR0lPTl9DT05GSUdfT1BUSU9OUzogTG9hZGVkQ29uZmlnU2VsZWN0b3JzPHN0cmluZz4gPSB7XG4gIGVudmlyb25tZW50VmFyaWFibGVTZWxlY3RvcjogKGVudikgPT4gZW52W1JFR0lPTl9FTlZfTkFNRV0sXG4gIGNvbmZpZ0ZpbGVTZWxlY3RvcjogKHByb2ZpbGUpID0+IHByb2ZpbGVbUkVHSU9OX0lOSV9OQU1FXSxcbiAgZGVmYXVsdDogKCkgPT4ge1xuICAgIHRocm93IG5ldyBFcnJvcihcIlJlZ2lvbiBpcyBtaXNzaW5nXCIpO1xuICB9LFxufTtcblxuZXhwb3J0IGNvbnN0IE5PREVfUkVHSU9OX0NPTkZJR19GSUxFX09QVElPTlM6IExvY2FsQ29uZmlnT3B0aW9ucyA9IHtcbiAgcHJlZmVycmVkRmlsZTogXCJjcmVkZW50aWFsc1wiLFxufTtcblxuZXhwb3J0IGludGVyZmFjZSBSZWdpb25JbnB1dENvbmZpZyB7XG4gIC8qKlxuICAgKiBUaGUgQVdTIHJlZ2lvbiB0byB3aGljaCB0aGlzIGNsaWVudCB3aWxsIHNlbmQgcmVxdWVzdHNcbiAgICovXG4gIHJlZ2lvbj86IHN0cmluZyB8IFByb3ZpZGVyPHN0cmluZz47XG59XG5cbmludGVyZmFjZSBQcmV2aW91c2x5UmVzb2x2ZWQge31cblxuZXhwb3J0IGludGVyZmFjZSBSZWdpb25SZXNvbHZlZENvbmZpZyB7XG4gIHJlZ2lvbjogUHJvdmlkZXI8c3RyaW5nPjtcbn1cblxuZXhwb3J0IGNvbnN0IHJlc29sdmVSZWdpb25Db25maWcgPSA8VD4oaW5wdXQ6IFQgJiBSZWdpb25JbnB1dENvbmZpZyAmIFByZXZpb3VzbHlSZXNvbHZlZCk6IFQgJiBSZWdpb25SZXNvbHZlZENvbmZpZyA9PiB7XG4gIGlmICghaW5wdXQucmVnaW9uKSB7XG4gICAgdGhyb3cgbmV3IEVycm9yKFwiUmVnaW9uIGlzIG1pc3NpbmdcIik7XG4gIH1cbiAgcmV0dXJuIHtcbiAgICAuLi5pbnB1dCxcbiAgICByZWdpb246IG5vcm1hbGl6ZVJlZ2lvbihpbnB1dC5yZWdpb24hKSxcbiAgfTtcbn07XG5cbmNvbnN0IG5vcm1hbGl6ZVJlZ2lvbiA9IChyZWdpb246IHN0cmluZyB8IFByb3ZpZGVyPHN0cmluZz4pOiBQcm92aWRlcjxzdHJpbmc+ID0+IHtcbiAgaWYgKHR5cGVvZiByZWdpb24gPT09IFwic3RyaW5nXCIpIHtcbiAgICBjb25zdCBwcm9taXNpZmllZCA9IFByb21pc2UucmVzb2x2ZShyZWdpb24pO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfVxuICByZXR1cm4gcmVnaW9uIGFzIFByb3ZpZGVyPHN0cmluZz47XG59O1xuIl19
 
 /***/ }),
 
@@ -13760,7 +16698,7 @@ const IMDS_TOKEN_PATH = "/latest/api/token";
  * Creates a credential provider that will source credentials from the EC2
  * Instance Metadata Service
  */
-exports.fromInstanceMetadata = (init = {}) => {
+const fromInstanceMetadata = (init = {}) => {
     // when set to true, metadata service will not fetch token
     let disableFetchToken = false;
     const { timeout, maxRetries } = RemoteProviderInit_1.providerConfigFromInit(init);
@@ -13821,6 +16759,7 @@ exports.fromInstanceMetadata = (init = {}) => {
         }
     };
 };
+exports.fromInstanceMetadata = fromInstanceMetadata;
 const getMetadataToken = async (options) => httpRequest_1.httpRequest({
     ...options,
     host: IMDS_IP,
@@ -13842,7 +16781,7 @@ const getCredentialsFromProfile = async (profile, options) => {
     }
     return ImdsCredentials_1.fromImdsCredentials(credsResponse);
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbUluc3RhbmNlTWV0YWRhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvZnJvbUluc3RhbmNlTWV0YWRhdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsa0VBQTJEO0FBSTNELDhEQUEyRDtBQUMzRCxzRUFBMEY7QUFDMUYsNEVBQWlHO0FBQ2pHLGtEQUErQztBQUUvQyxNQUFNLE9BQU8sR0FBRyxpQkFBaUIsQ0FBQztBQUNsQyxNQUFNLFNBQVMsR0FBRyw2Q0FBNkMsQ0FBQztBQUNoRSxNQUFNLGVBQWUsR0FBRyxtQkFBbUIsQ0FBQztBQUU1Qzs7O0dBR0c7QUFDVSxRQUFBLG9CQUFvQixHQUFHLENBQUMsT0FBMkIsRUFBRSxFQUFzQixFQUFFO0lBQ3hGLDBEQUEwRDtJQUMxRCxJQUFJLGlCQUFpQixHQUFHLEtBQUssQ0FBQztJQUM5QixNQUFNLEVBQUUsT0FBTyxFQUFFLFVBQVUsRUFBRSxHQUFHLDJDQUFzQixDQUFDLElBQUksQ0FBQyxDQUFDO0lBRTdELE1BQU0sY0FBYyxHQUFHLEtBQUssRUFBRSxVQUFrQixFQUFFLE9BQXVCLEVBQUUsRUFBRTtRQUMzRSxNQUFNLE9BQU8sR0FBRyxDQUNkLE1BQU0sYUFBSyxDQUFTLEtBQUssSUFBSSxFQUFFO1lBQzdCLElBQUksT0FBZSxDQUFDO1lBQ3BCLElBQUk7Z0JBQ0YsT0FBTyxHQUFHLE1BQU0sVUFBVSxDQUFDLE9BQU8sQ0FBQyxDQUFDO2FBQ3JDO1lBQUMsT0FBTyxHQUFHLEVBQUU7Z0JBQ1osSUFBSSxHQUFHLENBQUMsVUFBVSxLQUFLLEdBQUcsRUFBRTtvQkFDMUIsaUJBQWlCLEdBQUcsS0FBSyxDQUFDO2lCQUMzQjtnQkFDRCxNQUFNLEdBQUcsQ0FBQzthQUNYO1lBQ0QsT0FBTyxPQUFPLENBQUM7UUFDakIsQ0FBQyxFQUFFLFVBQVUsQ0FBQyxDQUNmLENBQUMsSUFBSSxFQUFFLENBQUM7UUFFVCxPQUFPLGFBQUssQ0FBQyxLQUFLLElBQUksRUFB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ZW50IjpbImltcG9ydCB7IFByb3ZpZGVyRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvcHJvcGVydHktcHJvdmlkZXJcIjtcbmltcG9ydCB7IENyZWRlbnRpYWxQcm92aWRlciwgQ3JlZGVudGlhbHMgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcbmltcG9ydCB7IFJlcXVlc3RPcHRpb25zIH0gZnJvbSBcImh0dHBcIjtcblxuaW1wb3J0IHsgaHR0cFJlcXVlc3QgfSBmcm9tIFwiLi9yZW1vdGVQcm92aWRlci9odHRwUmVxdWVzdFwiO1xuaW1wb3J0IHsgZnJvbUltZHNDcmVkZW50aWFscywgaXNJbWRzQ3JlZGVudGlhbHMgfSBmcm9tIFwiLi9yZW1vdGVQcm92aWRlci9JbWRzQ3JlZGVudGlhbHNcIjtcbmltcG9ydCB7IHByb3ZpZGVyQ29uZmlnRnJvbUluaXQsIFJlbW90ZVByb3ZpZGVySW5pdCB9IGZyb20gXCIuL3JlbW90ZVByb3ZpZGVyL1JlbW90ZVByb3ZpZGVySW5pdFwiO1xuaW1wb3J0IHsgcmV0cnkgfSBmcm9tIFwiLi9yZW1vdGVQcm92aWRlci9yZXRyeVwiO1xuXG5jb25zdCBJTURTX0lQID0gXCIxNjkuMjU0LjE2OS4yNTRcIjtcbmNvbnN0IElNRFNfUEFUSCA9IFwiL2xhdGVzdC9tZXRhLWRhdGEvaWFtL3NlY3VyaXR5LWNyZWRlbnRpYWxzL1wiO1xuY29uc3QgSU1EU19UT0tFTl9QQVRIID0gXCIvbGF0ZXN0L2FwaS90b2tlblwiO1xuXG4vKipcbiAqIENyZWF0ZXMgYSBjcmVkZW50aWFsIHByb3ZpZGVyIHRoYXQgd2lsbCBzb3VyY2UgY3JlZGVudGlhbHMgZnJvbSB0aGUgRUMyXG4gKiBJbnN0YW5jZSBNZXRhZGF0YSBTZXJ2aWNlXG4gKi9cbmV4cG9ydCBjb25zdCBmcm9tSW5zdGFuY2VNZXRhZGF0YSA9IChpbml0OiBSZW1vdGVQcm92aWRlckluaXQgPSB7fSk6IENyZWRlbnRpYWxQcm92aWRlciA9PiB7XG4gIC8vIHdoZW4gc2V0IHRvIHRydWUsIG1ldGFkYXRhIHNlcnZpY2Ugd2lsbCBub3QgZmV0Y2ggdG9rZW5cbiAgbGV0IGRpc2FibGVGZXRjaFRva2VuID0gZmFsc2U7XG4gIGNvbnN0IHsgdGltZW91dCwgbWF4UmV0cmllcyB9ID0gcHJvdmlkZXJDb25maWdGcm9tSW5pdChpbml0KTtcblxuICBjb25zdCBnZXRDcmVkZW50aWFscyA9IGFzeW5jIChtYXhSZXRyaWVzOiBudW1iZXIsIG9wdGlvbnM6IFJlcXVlc3RPcHRpb25zKSA9PiB7XG4gICAgY29uc3QgcHJvZmlsZSA9IChcbiAgICAgIGF3YWl0IHJldHJ5PHN0cmluZz4oYXN5bmMgKCkgPT4ge1xuICAgICAgICBsZXQgcHJvZmlsZTogc3RyaW5nO1xuICAgICAgICB0cnkge1xuICAgICAgICAgIHByb2ZpbGUgPSBhd2FpdCBnZXRQcm9maWxlKG9wdGlvbnMpO1xuICAgICAgICB9IGNhdGNoIChlcnIpIHtcbiAgICAgICAgICBpZiAoZXJyLnN0YXR1c0NvZGUgPT09IDQwMSkge1xuICAgICAgICAgICAgZGlzYWJsZUZldGNoVG9rZW4gPSBmYWxzZTtcbiAgICAgICAgICB9XG4gICAgICAgICAgdGhyb3cgZXJyO1xuICAgICAgICB9XG4gICAgICAgIHJldHVybiBwcm9maWxlO1xuICAgICAgfSwgbWF4UmV0cmllcylcbiAgICApLnRyaW0oKTtcblxuICAgIHJldHVybiByZXRyeShhc3luYyAoKSA9PiB7XG4gICAgICBsZXQgY3JlZHM6IENyZWRlbnRpYWxzO1xuICAgICAgdHJ5IHtcbiAgICAgICAgY3JlZHMgPSBhd2FpdCBnZXRDcmVkZW50aWFsc0Zyb21Qcm9maWxlKHByb2ZpbGUsIG9wdGlvbnMpO1xuICAgICAgfSBjYXRjaCAoZXJyKSB7XG4gICAgICAgIGlmIChlcnIuc3RhdHVzQ29kZSA9PT0gNDAxKSB7XG4gICAgICAgICAgZGlzYWJsZUZldGNoVG9rZW4gPSBmYWxzZTtcbiAgICAgICAgfVxuICAgICAgICB0aHJvdyBlcnI7XG4gICAgICB9XG4gICAgICByZXR1cm4gY3JlZHM7XG4gICAgfSwgbWF4UmV0cmllcyk7XG4gIH07XG5cbiAgcmV0dXJuIGFzeW5jICgpID0+IHtcbiAgICBpZiAoZGlzYWJsZUZldGNoVG9rZW4pIHtcbiAgICAgIHJldHVybiBnZXRDcmVkZW50aWFscyhtYXhSZXRyaWVzLCB7IHRpbWVvdXQgfSk7XG4gICAgfSBlbHNlIHtcbiAgICAgIGxldCB0b2tlbjogc3RyaW5nO1xuICAgICAgdHJ5IHtcbiAgICAgICAgdG9rZW4gPSAoYXdhaXQgZ2V0TWV0YWRhdGFUb2tlbih7IHRpbWVvdXQgfSkpLnRvU3RyaW5nKCk7XG4gICAgICB9IGNhdGNoIChlcnJvcikge1xuICAgICAgICBpZiAoZXJyb3I/LnN0YXR1c0NvZGUgPT09IDQwMCkge1xuICAgICAgICAgIHRocm93IE9iamVjdC5hc3NpZ24oZXJyb3IsIHtcbiAgICAgICAgICAgIG1lc3NhZ2U6IFwiRUMyIE1ldGFkYXRhIHRva2VuIHJlcXVlc3QgcmV0dXJuZWQgZXJyb3JcIixcbiAgICAgICAgICB9KTtcbiAgICAgICAgfSBlbHNlIGlmIChlcnJvci5tZXNzYWdlID09PSBcIlRpbWVvdXRFcnJvclwiIHx8IFs0MDMsIDQwNCwgNDA1XS5pbmNsdWRlcyhlcnJvci5zdGF0dXNDb2RlKSkge1xuICAgICAgICAgIGRpc2FibGVGZXRjaFRva2VuID0gdHJ1ZTtcbiAgICAgICAgfVxuICAgICAgICByZXR1cm4gZ2V0Q3JlZGVudGlhbHMobWF4UmV0cmllcywgeyB0aW1lb3V0IH0pO1xuICAgICAgfVxuICAgICAgcmV0dXJuIGdldENyZWRlbnRpYWxzKG1heFJldHJpZXMsIHtcbiAgICAgICAgdGltZW91dCxcbiAgICAgICAgaGVhZGVyczoge1xuICAgICAgICAgIFwieC1hd3MtZWMyLW1ldGFkYXRhLXRva2VuXCI6IHRva2VuLFxuICAgICAgICB9LFxuICAgICAgfSk7XG4gICAgfVxuICB9O1xufTtcblxuY29uc3QgZ2V0TWV0YWRhdGFUb2tlbiA9IGFzeW5jIChvcHRpb25zOiBSZXF1ZXN0T3B0aW9ucykgPT5cbiAgaHR0cFJlcXVlc3Qoe1xuICAgIC4uLm9wdGlvbnMsXG4gICAgaG9zdDogSU1EU19JUCxcbiAgICBwYXRoOiBJTURTX1RPS0VOX1BBVEgsXG4gICAgbWV0aG9kOiBcIlBVVFwiLFxuICAgIGhlYWRlcnM6IHtcbiAgICAgIFwieC1hd3MtZWMyLW1ldGFkYXRhLXRva2VuLXR0bC1zZWNvbmRzXCI6IFwiMjE2MDBcIixcbiAgICB9LFxuICB9KTtcblxuY29uc3QgZ2V0UHJvZmlsZSA9IGFzeW5jIChvcHRpb25zOiBSZXF1ZXN0T3B0aW9ucykgPT5cbiAgKGF3YWl0IGh0dHBSZXF1ZXN0KHsgLi4ub3B0aW9ucywgaG9zdDogSU1EU19JUCwgcGF0aDogSU1EU19QQVRIIH0pKS50b1N0cmluZygpO1xuXG5jb25zdCBnZXRDcmVkZW50aWFsc0Zyb21Qcm9maWxlID0gYXN5bmMgKHByb2ZpbGU6IHN0cmluZywgb3B0aW9uczogUmVxdWVzdE9wdGlvbnMpID0+IHtcbiAgY29uc3QgY3JlZHNSZXNwb25zZSA9IEpTT04ucGFyc2UoXG4gICAgKFxuICAgICAgYXdhaXQgaHR0cFJlcXVlc3Qoe1xuICAgICAgICAuLi5vcHRpb25zLFxuICAgICAgICBob3N0OiBJTURTX0lQLFxuICAgICAgICBwYXRoOiBJTURTX1BBVEggKyBwcm9maWxlLFxuICAgICAgfSlcbiAgICApLnRvU3RyaW5nKClcbiAgKTtcblxuICBpZiAoIWlzSW1kc0NyZWRlbnRpYWxzKGNyZWRzUmVzcG9uc2UpKSB7XG4gICAgdGhyb3cgbmV3IFByb3ZpZGVyRXJyb3IoXCJJbnZhbGlkIHJlc3BvbnNlIHJlY2VpdmVkIGZyb20gaW5zdGFuY2UgbWV0YWRhdGEgc2VydmljZS5cIik7XG4gIH1cblxuICByZXR1cm4gZnJvbUltZHNDcmVkZW50aWFscyhjcmVkc1Jlc3BvbnNlKTtcbn07XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbUluc3RhbmNlTWV0YWRhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvZnJvbUluc3RhbmNlTWV0YWRhdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsa0VBQTJEO0FBSTNELDhEQUEyRDtBQUMzRCxzRUFBMEY7QUFDMUYsNEVBQWlHO0FBQ2pHLGtEQUErQztBQUUvQyxNQUFNLE9BQU8sR0FBRyxpQkFBaUIsQ0FBQztBQUNsQyxNQUFNLFNBQVMsR0FBRyw2Q0FBNkMsQ0FBQztBQUNoRSxNQUFNLGVBQWUsR0FBRyxtQkFBbUIsQ0FBQztBQUU1Qzs7O0dBR0c7QUFDSSxNQUFNLG9CQUFvQixHQUFHLENBQUMsT0FBMkIsRUFBRSxFQUFzQixFQUFFO0lBQ3hGLDBEQUEwRDtJQUMxRCxJQUFJLGlCQUFpQixHQUFHLEtBQUssQ0FBQztJQUM5QixNQUFNLEVBQUUsT0FBTyxFQUFFLFVBQVUsRUFBRSxHQUFHLDJDQUFzQixDQUFDLElBQUksQ0FBQyxDQUFDO0lBRTdELE1BQU0sY0FBYyxHQUFHLEtBQUssRUFBRSxVQUFrQixFQUFFLE9BQXVCLEVBQUUsRUFBRTtRQUMzRSxNQUFNLE9BQU8sR0FBRyxDQUNkLE1BQU0sYUFBSyxDQUFTLEtBQUssSUFBSSxFQUFFO1lBQzdCLElBQUksT0FBZSxDQUFDO1lBQ3BCLElBQUk7Z0JBQ0YsT0FBTyxHQUFHLE1BQU0sVUFBVSxDQUFDLE9BQU8sQ0FBQyxDQUFDO2FBQ3JDO1lBQUMsT0FBTyxHQUFHLEVBQUU7Z0JBQ1osSUFBSSxHQUFHLENBQUMsVUFBVSxLQUFLLEdBQUcsRUFBRTtvQkFDMUIsaUJBQWlCLEdBQUcsS0FBSyxDQUFDO2lCQUMzQjtnQkFDRCxNQUFNLEdBQUcsQ0FBQzthQUNYO1lBQ0QsT0FBTyxPQUFPLENBQUM7UUFDakIsQ0FBQyxFQUFFLFVBQVUsQ0FBQyxDQUNmLENBQUMsSUFBSSxFQUFFLENBQUM7UUFFVCxPQUFPLGFBQUssQ0FBQyxLQUFLLElBQUksRUFB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NUMsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgUHJvdmlkZXJFcnJvciB9IGZyb20gXCJAYXdzLXNkay9wcm9wZXJ0eS1wcm92aWRlclwiO1xuaW1wb3J0IHsgQ3JlZGVudGlhbFByb3ZpZGVyLCBDcmVkZW50aWFscyB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuaW1wb3J0IHsgUmVxdWVzdE9wdGlvbnMgfSBmcm9tIFwiaHR0cFwiO1xuXG5pbXBvcnQgeyBodHRwUmVxdWVzdCB9IGZyb20gXCIuL3JlbW90ZVByb3ZpZGVyL2h0dHBSZXF1ZXN0XCI7XG5pbXBvcnQgeyBmcm9tSW1kc0NyZWRlbnRpYWxzLCBpc0ltZHNDcmVkZW50aWFscyB9IGZyb20gXCIuL3JlbW90ZVByb3ZpZGVyL0ltZHNDcmVkZW50aWFsc1wiO1xuaW1wb3J0IHsgcHJvdmlkZXJDb25maWdGcm9tSW5pdCwgUmVtb3RlUHJvdmlkZXJJbml0IH0gZnJvbSBcIi4vcmVtb3RlUHJvdmlkZXIvUmVtb3RlUHJvdmlkZXJJbml0XCI7XG5pbXBvcnQgeyByZXRyeSB9IGZyb20gXCIuL3JlbW90ZVByb3ZpZGVyL3JldHJ5XCI7XG5cbmNvbnN0IElNRFNfSVAgPSBcIjE2OS4yNTQuMTY5LjI1NFwiO1xuY29uc3QgSU1EU19QQVRIID0gXCIvbGF0ZXN0L21ldGEtZGF0YS9pYW0vc2VjdXJpdHktY3JlZGVudGlhbHMvXCI7XG5jb25zdCBJTURTX1RPS0VOX1BBVEggPSBcIi9sYXRlc3QvYXBpL3Rva2VuXCI7XG5cbi8qKlxuICogQ3JlYXRlcyBhIGNyZWRlbnRpYWwgcHJvdmlkZXIgdGhhdCB3aWxsIHNvdXJjZSBjcmVkZW50aWFscyBmcm9tIHRoZSBFQzJcbiAqIEluc3RhbmNlIE1ldGFkYXRhIFNlcnZpY2VcbiAqL1xuZXhwb3J0IGNvbnN0IGZyb21JbnN0YW5jZU1ldGFkYXRhID0gKGluaXQ6IFJlbW90ZVByb3ZpZGVySW5pdCA9IHt9KTogQ3JlZGVudGlhbFByb3ZpZGVyID0+IHtcbiAgLy8gd2hlbiBzZXQgdG8gdHJ1ZSwgbWV0YWRhdGEgc2VydmljZSB3aWxsIG5vdCBmZXRjaCB0b2tlblxuICBsZXQgZGlzYWJsZUZldGNoVG9rZW4gPSBmYWxzZTtcbiAgY29uc3QgeyB0aW1lb3V0LCBtYXhSZXRyaWVzIH0gPSBwcm92aWRlckNvbmZpZ0Zyb21Jbml0KGluaXQpO1xuXG4gIGNvbnN0IGdldENyZWRlbnRpYWxzID0gYXN5bmMgKG1heFJldHJpZXM6IG51bWJlciwgb3B0aW9uczogUmVxdWVzdE9wdGlvbnMpID0+IHtcbiAgICBjb25zdCBwcm9maWxlID0gKFxuICAgICAgYXdhaXQgcmV0cnk8c3RyaW5nPihhc3luYyAoKSA9PiB7XG4gICAgICAgIGxldCBwcm9maWxlOiBzdHJpbmc7XG4gICAgICAgIHRyeSB7XG4gICAgICAgICAgcHJvZmlsZSA9IGF3YWl0IGdldFByb2ZpbGUob3B0aW9ucyk7XG4gICAgICAgIH0gY2F0Y2ggKGVycikge1xuICAgICAgICAgIGlmIChlcnIuc3RhdHVzQ29kZSA9PT0gNDAxKSB7XG4gICAgICAgICAgICBkaXNhYmxlRmV0Y2hUb2tlbiA9IGZhbHNlO1xuICAgICAgICAgIH1cbiAgICAgICAgICB0aHJvdyBlcnI7XG4gICAgICAgIH1cbiAgICAgICAgcmV0dXJuIHByb2ZpbGU7XG4gICAgICB9LCBtYXhSZXRyaWVzKVxuICAgICkudHJpbSgpO1xuXG4gICAgcmV0dXJuIHJldHJ5KGFzeW5jICgpID0+IHtcbiAgICAgIGxldCBjcmVkczogQ3JlZGVudGlhbHM7XG4gICAgICB0cnkge1xuICAgICAgICBjcmVkcyA9IGF3YWl0IGdldENyZWRlbnRpYWxzRnJvbVByb2ZpbGUocHJvZmlsZSwgb3B0aW9ucyk7XG4gICAgICB9IGNhdGNoIChlcnIpIHtcbiAgICAgICAgaWYgKGVyci5zdGF0dXNDb2RlID09PSA0MDEpIHtcbiAgICAgICAgICBkaXNhYmxlRmV0Y2hUb2tlbiA9IGZhbHNlO1xuICAgICAgICB9XG4gICAgICAgIHRocm93IGVycjtcbiAgICAgIH1cbiAgICAgIHJldHVybiBjcmVkcztcbiAgICB9LCBtYXhSZXRyaWVzKTtcbiAgfTtcblxuICByZXR1cm4gYXN5bmMgKCkgPT4ge1xuICAgIGlmIChkaXNhYmxlRmV0Y2hUb2tlbikge1xuICAgICAgcmV0dXJuIGdldENyZWRlbnRpYWxzKG1heFJldHJpZXMsIHsgdGltZW91dCB9KTtcbiAgICB9IGVsc2Uge1xuICAgICAgbGV0IHRva2VuOiBzdHJpbmc7XG4gICAgICB0cnkge1xuICAgICAgICB0b2tlbiA9IChhd2FpdCBnZXRNZXRhZGF0YVRva2VuKHsgdGltZW91dCB9KSkudG9TdHJpbmcoKTtcbiAgICAgIH0gY2F0Y2ggKGVycm9yKSB7XG4gICAgICAgIGlmIChlcnJvcj8uc3RhdHVzQ29kZSA9PT0gNDAwKSB7XG4gICAgICAgICAgdGhyb3cgT2JqZWN0LmFzc2lnbihlcnJvciwge1xuICAgICAgICAgICAgbWVzc2FnZTogXCJFQzIgTWV0YWRhdGEgdG9rZW4gcmVxdWVzdCByZXR1cm5lZCBlcnJvclwiLFxuICAgICAgICAgIH0pO1xuICAgICAgICB9IGVsc2UgaWYgKGVycm9yLm1lc3NhZ2UgPT09IFwiVGltZW91dEVycm9yXCIgfHwgWzQwMywgNDA0LCA0MDVdLmluY2x1ZGVzKGVycm9yLnN0YXR1c0NvZGUpKSB7XG4gICAgICAgICAgZGlzYWJsZUZldGNoVG9rZW4gPSB0cnVlO1xuICAgICAgICB9XG4gICAgICAgIHJldHVybiBnZXRDcmVkZW50aWFscyhtYXhSZXRyaWVzLCB7IHRpbWVvdXQgfSk7XG4gICAgICB9XG4gICAgICByZXR1cm4gZ2V0Q3JlZGVudGlhbHMobWF4UmV0cmllcywge1xuICAgICAgICB0aW1lb3V0LFxuICAgICAgICBoZWFkZXJzOiB7XG4gICAgICAgICAgXCJ4LWF3cy1lYzItbWV0YWRhdGEtdG9rZW5cIjogdG9rZW4sXG4gICAgICAgIH0sXG4gICAgICB9KTtcbiAgICB9XG4gIH07XG59O1xuXG5jb25zdCBnZXRNZXRhZGF0YVRva2VuID0gYXN5bmMgKG9wdGlvbnM6IFJlcXVlc3RPcHRpb25zKSA9PlxuICBodHRwUmVxdWVzdCh7XG4gICAgLi4ub3B0aW9ucyxcbiAgICBob3N0OiBJTURTX0lQLFxuICAgIHBhdGg6IElNRFNfVE9LRU5fUEFUSCxcbiAgICBtZXRob2Q6IFwiUFVUXCIsXG4gICAgaGVhZGVyczoge1xuICAgICAgXCJ4LWF3cy1lYzItbWV0YWRhdGEtdG9rZW4tdHRsLXNlY29uZHNcIjogXCIyMTYwMFwiLFxuICAgIH0sXG4gIH0pO1xuXG5jb25zdCBnZXRQcm9maWxlID0gYXN5bmMgKG9wdGlvbnM6IFJlcXVlc3RPcHRpb25zKSA9PlxuICAoYXdhaXQgaHR0cFJlcXVlc3QoeyAuLi5vcHRpb25zLCBob3N0OiBJTURTX0lQLCBwYXRoOiBJTURTX1BBVEggfSkpLnRvU3RyaW5nKCk7XG5cbmNvbnN0IGdldENyZWRlbnRpYWxzRnJvbVByb2ZpbGUgPSBhc3luYyAocHJvZmlsZTogc3RyaW5nLCBvcHRpb25zOiBSZXF1ZXN0T3B0aW9ucykgPT4ge1xuICBjb25zdCBjcmVkc1Jlc3BvbnNlID0gSlNPTi5wYXJzZShcbiAgICAoXG4gICAgICBhd2FpdCBodHRwUmVxdWVzdCh7XG4gICAgICAgIC4uLm9wdGlvbnMsXG4gICAgICAgIGhvc3Q6IElNRFNfSVAsXG4gICAgICAgIHBhdGg6IElNRFNfUEFUSCArIHByb2ZpbGUsXG4gICAgICB9KVxuICAgICkudG9TdHJpbmcoKVxuICApO1xuXG4gIGlmICghaXNJbWRzQ3JlZGVudGlhbHMoY3JlZHNSZXNwb25zZSkpIHtcbiAgICB0aHJvdyBuZXcgUHJvdmlkZXJFcnJvcihcIkludmFsaWQgcmVzcG9uc2UgcmVjZWl2ZWQgZnJvbSBpbnN0YW5jZSBtZXRhZGF0YSBzZXJ2aWNlLlwiKTtcbiAgfVxuXG4gIHJldHVybiBmcm9tSW1kc0NyZWRlbnRpYWxzKGNyZWRzUmVzcG9uc2UpO1xufTtcbiJdfQ==
 
 /***/ }),
 
@@ -13867,19 +16806,21 @@ tslib_1.__exportStar(__webpack_require__(9856), exports);
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.fromImdsCredentials = exports.isImdsCredentials = void 0;
-exports.isImdsCredentials = (arg) => Boolean(arg) &&
+const isImdsCredentials = (arg) => Boolean(arg) &&
     typeof arg === "object" &&
     typeof arg.AccessKeyId === "string" &&
     typeof arg.SecretAccessKey === "string" &&
     typeof arg.Token === "string" &&
     typeof arg.Expiration === "string";
-exports.fromImdsCredentials = (creds) => ({
+exports.isImdsCredentials = isImdsCredentials;
+const fromImdsCredentials = (creds) => ({
     accessKeyId: creds.AccessKeyId,
     secretAccessKey: creds.SecretAccessKey,
     sessionToken: creds.Token,
     expiration: new Date(creds.Expiration),
 });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW1kc0NyZWRlbnRpYWxzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vc3JjL3JlbW90ZVByb3ZpZGVyL0ltZHNDcmVkZW50aWFscy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFTYSxRQUFBLGlCQUFpQixHQUFHLENBQUMsR0FBUSxFQUEwQixFQUFFLENBQ3BFLE9BQU8sQ0FBQyxHQUFHLENBQUM7SUFDWixPQUFPLEdBQUcsS0FBSyxRQUFRO0lBQ3ZCLE9BQU8sR0FBRyxDQUFDLFdBQVcsS0FBSyxRQUFRO0lBQ25DLE9BQU8sR0FBRyxDQUFDLGVBQWUsS0FBSyxRQUFRO0lBQ3ZDLE9BQU8sR0FBRyxDQUFDLEtBQUssS0FBSyxRQUFRO0lBQzdCLE9BQU8sR0FBRyxDQUFDLFVBQVUsS0FBSyxRQUFRLENBQUM7QUFFeEIsUUFBQSxtQkFBbUIsR0FBRyxDQUFDLEtBQXNCLEVBQWUsRUFBRSxDQUFDLENBQUM7SUFDM0UsV0FBVyxFQUFFLEtBQUssQ0FBQyxXQUFXO0lBQzlCLGVBQWUsRUFBRSxLQUFLLENBQUMsZUFBZTtJQUN0QyxZQUFZLEVBQUUsS0FBSyxDQUFDLEtBQUs7SUFDekIsVUFBVSxFQUFFLElBQUksSUFBSSxDQUFDLEtBQUssQ0FBQyxVQUFVLENBQUM7Q0FDdkMsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ3JlZGVudGlhbHMgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IGludGVyZmFjZSBJbWRzQ3JlZGVudGlhbHMge1xuICBBY2Nlc3NLZXlJZDogc3RyaW5nO1xuICBTZWNyZXRBY2Nlc3NLZXk6IHN0cmluZztcbiAgVG9rZW46IHN0cmluZztcbiAgRXhwaXJhdGlvbjogc3RyaW5nO1xufVxuXG5leHBvcnQgY29uc3QgaXNJbWRzQ3JlZGVudGlhbHMgPSAoYXJnOiBhbnkpOiBhcmcgaXMgSW1kc0NyZWRlbnRpYWxzID0+XG4gIEJvb2xlYW4oYXJnKSAmJlxuICB0eXBlb2YgYXJnID09PSBcIm9iamVjdFwiICYmXG4gIHR5cGVvZiBhcmcuQWNjZXNzS2V5SWQgPT09IFwic3RyaW5nXCIgJiZcbiAgdHlwZW9mIGFyZy5TZWNyZXRBY2Nlc3NLZXkgPT09IFwic3RyaW5nXCIgJiZcbiAgdHlwZW9mIGFyZy5Ub2tlbiA9PT0gXCJzdHJpbmdcIiAmJlxuICB0eXBlb2YgYXJnLkV4cGlyYXRpb24gPT09IFwic3RyaW5nXCI7XG5cbmV4cG9ydCBjb25zdCBmcm9tSW1kc0NyZWRlbnRpYWxzID0gKGNyZWRzOiBJbWRzQ3JlZGVudGlhbHMpOiBDcmVkZW50aWFscyA9PiAoe1xuICBhY2Nlc3NLZXlJZDogY3JlZHMuQWNjZXNzS2V5SWQsXG4gIHNlY3JldEFjY2Vzc0tleTogY3JlZHMuU2VjcmV0QWNjZXNzS2V5LFxuICBzZXNzaW9uVG9rZW46IGNyZWRzLlRva2VuLFxuICBleHBpcmF0aW9uOiBuZXcgRGF0ZShjcmVkcy5FeHBpcmF0aW9uKSxcbn0pO1xuIl19
+exports.fromImdsCredentials = fromImdsCredentials;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW1kc0NyZWRlbnRpYWxzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vc3JjL3JlbW90ZVByb3ZpZGVyL0ltZHNDcmVkZW50aWFscy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFTTyxNQUFNLGlCQUFpQixHQUFHLENBQUMsR0FBUSxFQUEwQixFQUFFLENBQ3BFLE9BQU8sQ0FBQyxHQUFHLENBQUM7SUFDWixPQUFPLEdBQUcsS0FBSyxRQUFRO0lBQ3ZCLE9BQU8sR0FBRyxDQUFDLFdBQVcsS0FBSyxRQUFRO0lBQ25DLE9BQU8sR0FBRyxDQUFDLGVBQWUsS0FBSyxRQUFRO0lBQ3ZDLE9BQU8sR0FBRyxDQUFDLEtBQUssS0FBSyxRQUFRO0lBQzdCLE9BQU8sR0FBRyxDQUFDLFVBQVUsS0FBSyxRQUFRLENBQUM7QUFOeEIsUUFBQSxpQkFBaUIscUJBTU87QUFFOUIsTUFBTSxtQkFBbUIsR0FBRyxDQUFDLEtBQXNCLEVBQWUsRUFBRSxDQUFDLENBQUM7SUFDM0UsV0FBVyxFQUFFLEtBQUssQ0FBQyxXQUFXO0lBQzlCLGVBQWUsRUFBRSxLQUFLLENBQUMsZUFBZTtJQUN0QyxZQUFZLEVBQUUsS0FBSyxDQUFDLEtBQUs7SUFDekIsVUFBVSxFQUFFLElBQUksSUFBSSxDQUFDLEtBQUssQ0FBQyxVQUFVLENBQUM7Q0FDdkMsQ0FBQyxDQUFDO0FBTFUsUUFBQSxtQkFBbUIsdUJBSzdCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ3JlZGVudGlhbHMgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IGludGVyZmFjZSBJbWRzQ3JlZGVudGlhbHMge1xuICBBY2Nlc3NLZXlJZDogc3RyaW5nO1xuICBTZWNyZXRBY2Nlc3NLZXk6IHN0cmluZztcbiAgVG9rZW46IHN0cmluZztcbiAgRXhwaXJhdGlvbjogc3RyaW5nO1xufVxuXG5leHBvcnQgY29uc3QgaXNJbWRzQ3JlZGVudGlhbHMgPSAoYXJnOiBhbnkpOiBhcmcgaXMgSW1kc0NyZWRlbnRpYWxzID0+XG4gIEJvb2xlYW4oYXJnKSAmJlxuICB0eXBlb2YgYXJnID09PSBcIm9iamVjdFwiICYmXG4gIHR5cGVvZiBhcmcuQWNjZXNzS2V5SWQgPT09IFwic3RyaW5nXCIgJiZcbiAgdHlwZW9mIGFyZy5TZWNyZXRBY2Nlc3NLZXkgPT09IFwic3RyaW5nXCIgJiZcbiAgdHlwZW9mIGFyZy5Ub2tlbiA9PT0gXCJzdHJpbmdcIiAmJlxuICB0eXBlb2YgYXJnLkV4cGlyYXRpb24gPT09IFwic3RyaW5nXCI7XG5cbmV4cG9ydCBjb25zdCBmcm9tSW1kc0NyZWRlbnRpYWxzID0gKGNyZWRzOiBJbWRzQ3JlZGVudGlhbHMpOiBDcmVkZW50aWFscyA9PiAoe1xuICBhY2Nlc3NLZXlJZDogY3JlZHMuQWNjZXNzS2V5SWQsXG4gIHNlY3JldEFjY2Vzc0tleTogY3JlZHMuU2VjcmV0QWNjZXNzS2V5LFxuICBzZXNzaW9uVG9rZW46IGNyZWRzLlRva2VuLFxuICBleHBpcmF0aW9uOiBuZXcgRGF0ZShjcmVkcy5FeHBpcmF0aW9uKSxcbn0pO1xuIl19
 
 /***/ }),
 
@@ -13894,8 +16835,9 @@ exports.DEFAULT_TIMEOUT = 1000;
 // The default in AWS SDK for Python and CLI (botocore) is no retry or one attempt
 // https://github.com/boto/botocore/blob/646c61a7065933e75bab545b785e6098bc94c081/botocore/utils.py#L273
 exports.DEFAULT_MAX_RETRIES = 0;
-exports.providerConfigFromInit = ({ maxRetries = exports.DEFAULT_MAX_RETRIES, timeout = exports.DEFAULT_TIMEOUT, }) => ({ maxRetries, timeout });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmVtb3RlUHJvdmlkZXJJbml0LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vc3JjL3JlbW90ZVByb3ZpZGVyL1JlbW90ZVByb3ZpZGVySW5pdC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBYSxRQUFBLGVBQWUsR0FBRyxJQUFJLENBQUM7QUFFcEMsa0ZBQWtGO0FBQ2xGLHdHQUF3RztBQUMzRixRQUFBLG1CQUFtQixHQUFHLENBQUMsQ0FBQztBQWdCeEIsUUFBQSxzQkFBc0IsR0FBRyxDQUFDLEVBQ3JDLFVBQVUsR0FBRywyQkFBbUIsRUFDaEMsT0FBTyxHQUFHLHVCQUFlLEdBQ04sRUFBd0IsRUFBRSxDQUFDLENBQUMsRUFBRSxVQUFVLEVBQUUsT0FBTyxFQUFFLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjb25zdCBERUZBVUxUX1RJTUVPVVQgPSAxMDAwO1xuXG4vLyBUaGUgZGVmYXVsdCBpbiBBV1MgU0RLIGZvciBQeXRob24gYW5kIENMSSAoYm90b2NvcmUpIGlzIG5vIHJldHJ5IG9yIG9uZSBhdHRlbXB0XG4vLyBodHRwczovL2dpdGh1Yi5jb20vYm90by9ib3RvY29yZS9ibG9iLzY0NmM2MWE3MDY1OTMzZTc1YmFiNTQ1Yjc4NWU2MDk4YmM5NGMwODEvYm90b2NvcmUvdXRpbHMucHkjTDI3M1xuZXhwb3J0IGNvbnN0IERFRkFVTFRfTUFYX1JFVFJJRVMgPSAwO1xuXG5leHBvcnQgaW50ZXJmYWNlIFJlbW90ZVByb3ZpZGVyQ29uZmlnIHtcbiAgLyoqXG4gICAqIFRoZSBjb25uZWN0aW9uIHRpbWVvdXQgKGluIG1pbGxpc2Vjb25kcylcbiAgICovXG4gIHRpbWVvdXQ6IG51bWJlcjtcblxuICAvKipcbiAgICogVGhlIG1heGltdW0gbnVtYmVyIG9mIHRpbWVzIHRoZSBIVFRQIGNvbm5lY3Rpb24gc2hvdWxkIGJlIHJldHJpZWRcbiAgICovXG4gIG1heFJldHJpZXM6IG51bWJlcjtcbn1cblxuZXhwb3J0IHR5cGUgUmVtb3RlUHJvdmlkZXJJbml0ID0gUGFydGlhbDxSZW1vdGVQcm92aWRlckNvbmZpZz47XG5cbmV4cG9ydCBjb25zdCBwcm92aWRlckNvbmZpZ0Zyb21Jbml0ID0gKHtcbiAgbWF4UmV0cmllcyA9IERFRkFVTFRfTUFYX1JFVFJJRVMsXG4gIHRpbWVvdXQgPSBERUZBVUxUX1RJTUVPVVQsXG59OiBSZW1vdGVQcm92aWRlckluaXQpOiBSZW1vdGVQcm92aWRlckNvbmZpZyA9PiAoeyBtYXhSZXRyaWVzLCB0aW1lb3V0IH0pO1xuIl19
+const providerConfigFromInit = ({ maxRetries = exports.DEFAULT_MAX_RETRIES, timeout = exports.DEFAULT_TIMEOUT, }) => ({ maxRetries, timeout });
+exports.providerConfigFromInit = providerConfigFromInit;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmVtb3RlUHJvdmlkZXJJbml0LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vc3JjL3JlbW90ZVByb3ZpZGVyL1JlbW90ZVByb3ZpZGVySW5pdC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBYSxRQUFBLGVBQWUsR0FBRyxJQUFJLENBQUM7QUFFcEMsa0ZBQWtGO0FBQ2xGLHdHQUF3RztBQUMzRixRQUFBLG1CQUFtQixHQUFHLENBQUMsQ0FBQztBQWdCOUIsTUFBTSxzQkFBc0IsR0FBRyxDQUFDLEVBQ3JDLFVBQVUsR0FBRywyQkFBbUIsRUFDaEMsT0FBTyxHQUFHLHVCQUFlLEdBQ04sRUFBd0IsRUFBRSxDQUFDLENBQUMsRUFBRSxVQUFVLEVBQUUsT0FBTyxFQUFFLENBQUMsQ0FBQztBQUg3RCxRQUFBLHNCQUFzQiwwQkFHdUMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgY29uc3QgREVGQVVMVF9USU1FT1VUID0gMTAwMDtcblxuLy8gVGhlIGRlZmF1bHQgaW4gQVdTIFNESyBmb3IgUHl0aG9uIGFuZCBDTEkgKGJvdG9jb3JlKSBpcyBubyByZXRyeSBvciBvbmUgYXR0ZW1wdFxuLy8gaHR0cHM6Ly9naXRodWIuY29tL2JvdG8vYm90b2NvcmUvYmxvYi82NDZjNjFhNzA2NTkzM2U3NWJhYjU0NWI3ODVlNjA5OGJjOTRjMDgxL2JvdG9jb3JlL3V0aWxzLnB5I0wyNzNcbmV4cG9ydCBjb25zdCBERUZBVUxUX01BWF9SRVRSSUVTID0gMDtcblxuZXhwb3J0IGludGVyZmFjZSBSZW1vdGVQcm92aWRlckNvbmZpZyB7XG4gIC8qKlxuICAgKiBUaGUgY29ubmVjdGlvbiB0aW1lb3V0IChpbiBtaWxsaXNlY29uZHMpXG4gICAqL1xuICB0aW1lb3V0OiBudW1iZXI7XG5cbiAgLyoqXG4gICAqIFRoZSBtYXhpbXVtIG51bWJlciBvZiB0aW1lcyB0aGUgSFRUUCBjb25uZWN0aW9uIHNob3VsZCBiZSByZXRyaWVkXG4gICAqL1xuICBtYXhSZXRyaWVzOiBudW1iZXI7XG59XG5cbmV4cG9ydCB0eXBlIFJlbW90ZVByb3ZpZGVySW5pdCA9IFBhcnRpYWw8UmVtb3RlUHJvdmlkZXJDb25maWc+O1xuXG5leHBvcnQgY29uc3QgcHJvdmlkZXJDb25maWdGcm9tSW5pdCA9ICh7XG4gIG1heFJldHJpZXMgPSBERUZBVUxUX01BWF9SRVRSSUVTLFxuICB0aW1lb3V0ID0gREVGQVVMVF9USU1FT1VULFxufTogUmVtb3RlUHJvdmlkZXJJbml0KTogUmVtb3RlUHJvdmlkZXJDb25maWcgPT4gKHsgbWF4UmV0cmllcywgdGltZW91dCB9KTtcbiJdfQ==
 
 /***/ }),
 
@@ -13952,14 +16894,15 @@ exports.retry = void 0;
 /**
  * @internal
  */
-exports.retry = (toRetry, maxRetries) => {
+const retry = (toRetry, maxRetries) => {
     let promise = toRetry();
     for (let i = 0; i < maxRetries; i++) {
         promise = promise.catch(toRetry);
     }
     return promise;
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmV0cnkuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvcmVtb3RlUHJvdmlkZXIvcmV0cnkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBSUE7O0dBRUc7QUFDVSxRQUFBLEtBQUssR0FBRyxDQUFJLE9BQTZCLEVBQUUsVUFBa0IsRUFBYyxFQUFFO0lBQ3hGLElBQUksT0FBTyxHQUFHLE9BQU8sRUFBRSxDQUFDO0lBQ3hCLEtBQUssSUFBSSxDQUFDLEdBQUcsQ0FBQyxFQUFFLENBQUMsR0FBRyxVQUFVLEVBQUUsQ0FBQyxFQUFFLEVBQUU7UUFDbkMsT0FBTyxHQUFHLE9BQU8sQ0FBQyxLQUFLLENBQUMsT0FBTyxDQUFDLENBQUM7S0FDbEM7SUFFRCxPQUFPLE9BQU8sQ0FBQztBQUNqQixDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgaW50ZXJmYWNlIFJldHJ5YWJsZVByb3ZpZGVyPFQ+IHtcbiAgKCk6IFByb21pc2U8VD47XG59XG5cbi8qKlxuICogQGludGVybmFsXG4gKi9cbmV4cG9ydCBjb25zdCByZXRyeSA9IDxUPih0b1JldHJ5OiBSZXRyeWFibGVQcm92aWRlcjxUPiwgbWF4UmV0cmllczogbnVtYmVyKTogUHJvbWlzZTxUPiA9PiB7XG4gIGxldCBwcm9taXNlID0gdG9SZXRyeSgpO1xuICBmb3IgKGxldCBpID0gMDsgaSA8IG1heFJldHJpZXM7IGkrKykge1xuICAgIHByb21pc2UgPSBwcm9taXNlLmNhdGNoKHRvUmV0cnkpO1xuICB9XG5cbiAgcmV0dXJuIHByb21pc2U7XG59O1xuIl19
+exports.retry = retry;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmV0cnkuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvcmVtb3RlUHJvdmlkZXIvcmV0cnkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBSUE7O0dBRUc7QUFDSSxNQUFNLEtBQUssR0FBRyxDQUFJLE9BQTZCLEVBQUUsVUFBa0IsRUFBYyxFQUFFO0lBQ3hGLElBQUksT0FBTyxHQUFHLE9BQU8sRUFBRSxDQUFDO0lBQ3hCLEtBQUssSUFBSSxDQUFDLEdBQUcsQ0FBQyxFQUFFLENBQUMsR0FBRyxVQUFVLEVBQUUsQ0FBQyxFQUFFLEVBQUU7UUFDbkMsT0FBTyxHQUFHLE9BQU8sQ0FBQyxLQUFLLENBQUMsT0FBTyxDQUFDLENBQUM7S0FDbEM7SUFFRCxPQUFPLE9BQU8sQ0FBQztBQUNqQixDQUFDLENBQUM7QUFQVyxRQUFBLEtBQUssU0FPaEIiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgaW50ZXJmYWNlIFJldHJ5YWJsZVByb3ZpZGVyPFQ+IHtcbiAgKCk6IFByb21pc2U8VD47XG59XG5cbi8qKlxuICogQGludGVybmFsXG4gKi9cbmV4cG9ydCBjb25zdCByZXRyeSA9IDxUPih0b1JldHJ5OiBSZXRyeWFibGVQcm92aWRlcjxUPiwgbWF4UmV0cmllczogbnVtYmVyKTogUHJvbWlzZTxUPiA9PiB7XG4gIGxldCBwcm9taXNlID0gdG9SZXRyeSgpO1xuICBmb3IgKGxldCBpID0gMDsgaSA8IG1heFJldHJpZXM7IGkrKykge1xuICAgIHByb21pc2UgPSBwcm9taXNlLmNhdGNoKHRvUmV0cnkpO1xuICB9XG5cbiAgcmV0dXJuIHByb21pc2U7XG59O1xuIl19
 
 /***/ }),
 
@@ -14518,9 +17461,10 @@ function castSourceData(toCast, encoding) {
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.isArrayBuffer = void 0;
-exports.isArrayBuffer = (arg) => (typeof ArrayBuffer === "function" && arg instanceof ArrayBuffer) ||
+const isArrayBuffer = (arg) => (typeof ArrayBuffer === "function" && arg instanceof ArrayBuffer) ||
     Object.prototype.toString.call(arg) === "[object ArrayBuffer]";
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQWEsUUFBQSxhQUFhLEdBQUcsQ0FBQyxHQUFRLEVBQXNCLEVBQUUsQ0FDNUQsQ0FBQyxPQUFPLFdBQVcsS0FBSyxVQUFVLElBQUksR0FBRyxZQUFZLFdBQVcsQ0FBQztJQUNqRSxNQUFNLENBQUMsU0FBUyxDQUFDLFFBQVEsQ0FBQyxJQUFJLENBQUMsR0FBRyxDQUFDLEtBQUssc0JBQXNCLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgY29uc3QgaXNBcnJheUJ1ZmZlciA9IChhcmc6IGFueSk6IGFyZyBpcyBBcnJheUJ1ZmZlciA9PlxuICAodHlwZW9mIEFycmF5QnVmZmVyID09PSBcImZ1bmN0aW9uXCIgJiYgYXJnIGluc3RhbmNlb2YgQXJyYXlCdWZmZXIpIHx8XG4gIE9iamVjdC5wcm90b3R5cGUudG9TdHJpbmcuY2FsbChhcmcpID09PSBcIltvYmplY3QgQXJyYXlCdWZmZXJdXCI7XG4iXX0=
+exports.isArrayBuffer = isArrayBuffer;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQU8sTUFBTSxhQUFhLEdBQUcsQ0FBQyxHQUFRLEVBQXNCLEVBQUUsQ0FDNUQsQ0FBQyxPQUFPLFdBQVcsS0FBSyxVQUFVLElBQUksR0FBRyxZQUFZLFdBQVcsQ0FBQztJQUNqRSxNQUFNLENBQUMsU0FBUyxDQUFDLFFBQVEsQ0FBQyxJQUFJLENBQUMsR0FBRyxDQUFDLEtBQUssc0JBQXNCLENBQUM7QUFGcEQsUUFBQSxhQUFhLGlCQUV1QyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjb25zdCBpc0FycmF5QnVmZmVyID0gKGFyZzogYW55KTogYXJnIGlzIEFycmF5QnVmZmVyID0+XG4gICh0eXBlb2YgQXJyYXlCdWZmZXIgPT09IFwiZnVuY3Rpb25cIiAmJiBhcmcgaW5zdGFuY2VvZiBBcnJheUJ1ZmZlcikgfHxcbiAgT2JqZWN0LnByb3RvdHlwZS50b1N0cmluZy5jYWxsKGFyZykgPT09IFwiW29iamVjdCBBcnJheUJ1ZmZlcl1cIjtcbiJdfQ==
 
 /***/ }),
 
@@ -14563,12 +17507,13 @@ exports.contentLengthMiddlewareOptions = {
     tags: ["SET_CONTENT_LENGTH", "CONTENT_LENGTH"],
     name: "contentLengthMiddleware",
 };
-exports.getContentLengthPlugin = (options) => ({
+const getContentLengthPlugin = (options) => ({
     applyToStack: (clientStack) => {
         clientStack.add(contentLengthMiddleware(options.bodyLengthChecker), exports.contentLengthMiddlewareOptions);
     },
 });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsMERBQXFEO0FBWXJELE1BQU0scUJBQXFCLEdBQUcsZ0JBQWdCLENBQUM7QUFFL0MsU0FBZ0IsdUJBQXVCLENBQUMsaUJBQXVDO0lBQzdFLE9BQU8sQ0FBZ0MsSUFBK0IsRUFBNkIsRUFBRSxDQUFDLEtBQUssRUFDekcsSUFBZ0MsRUFDSyxFQUFFO1FBQ3ZDLE1BQU0sT0FBTyxHQUFHLElBQUksQ0FBQyxPQUFPLENBQUM7UUFDN0IsSUFBSSwyQkFBVyxDQUFDLFVBQVUsQ0FBQyxPQUFPLENBQUMsRUFBRTtZQUNuQyxNQUFNLEVBQUUsSUFBSSxFQUFFLE9BQU8sRUFBRSxHQUFHLE9BQU8sQ0FBQztZQUNsQyxJQUNFLElBQUk7Z0JBQ0osTUFBTSxDQUFDLElBQUksQ0FBQyxPQUFPLENBQUM7cUJBQ2pCLEdBQUcsQ0FBQyxDQUFDLEdBQUcsRUFBRSxFQUFFLENBQUMsR0FBRyxDQUFDLFdBQVcsRUFBRSxDQUFDO3FCQUMvQixPQUFPLENBQUMscUJBQXFCLENBQUMsS0FBSyxDQUFDLENBQUMsRUFDeEM7Z0JBQ0EsTUFBTSxNQUFNLEdBQUcsaUJBQWlCLENBQUMsSUFBSSxDQUFDLENBQUM7Z0JBQ3ZDLElBQUksTUFBTSxLQUFLLFNBQVMsRUFBRTtvQkFDeEIsT0FBTyxDQUFDLE9BQU8sR0FBRzt3QkFDaEIsR0FBRyxPQUFPLENBQUMsT0FBTzt3QkFDbEIsQ0FBQyxxQkFBcUIsQ0FBQyxFQUFFLE1BQU0sQ0FBQyxNQUFNLENBQUM7cUJBQ3hDLENBQUM7aUJBQ0g7YUFDRjtTQUNGO1FBRUQsT0FBTyxJQUFJLENBQUM7WUFDVixHQUFHLElBQUk7WUFDUCxPQUFPO1NBQ1IsQ0FBQyxDQUFDO0lBQ0wsQ0FBQyxDQUFDO0FBQ0osQ0FBQztBQTVCRCwwREE0QkM7QUFFWSxRQUFBLDhCQUE4QixHQUF3QjtJQUNqRSxJQUFJLEVBQUUsT0FBTztJQUNiLElBQUksRUFBRSxDQUFDLG9CQUFvQixFQUFFLGdCQUFnQixDQUFDO0lBQzlDLElBQUksRUFBRSx5QkFBeUI7Q0FDaEMsQ0FBQztBQUVXLFFBQUEsc0JBQXNCLEdBQUcsQ0FBQyxPQUFvRCxFQUF1QixFQUFFLENBQUMsQ0FBQztJQUNwSCxZQUFZLEVBQUUsQ0FBQyxXQUFXLEVBQUUsRUFBRTtRQUM1QixXQUFXLENBQUMsR0FBRyxDQUFDLHVCQUF1QixDQUFDLE9BQU8sQ0FBQyxpQkFBaUIsQ0FBQyxFQUFFLHNDQUE4QixDQUFDLENBQUM7SUFDdEcsQ0FBQztDQUNGLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEh0dHBSZXF1ZXN0IH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3RvY29sLWh0dHBcIjtcbmltcG9ydCB7XG4gIEJvZHlMZW5ndGhDYWxjdWxhdG9yLFxuICBCdWlsZEhhbmRsZXIsXG4gIEJ1aWxkSGFuZGxlckFyZ3VtZW50cyxcbiAgQnVpbGRIYW5kbGVyT3B0aW9ucyxcbiAgQnVpbGRIYW5kbGVyT3V0cHV0LFxuICBCdWlsZE1pZGRsZXdhcmUsXG4gIE1ldGFkYXRhQmVhcmVyLFxuICBQbHVnZ2FibGUsXG59IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5jb25zdCBDT05URU5UX0xFTkdUSF9IRUFERVIgPSBcImNvbnRlbnQtbGVuZ3RoXCI7XG5cbmV4cG9ydCBmdW5jdGlvbiBjb250ZW50TGVuZ3RoTWlkZGxld2FyZShib2R5TGVuZ3RoQ2hlY2tlcjogQm9keUxlbmd0aENhbGN1bGF0b3IpOiBCdWlsZE1pZGRsZXdhcmU8YW55LCBhbnk+IHtcbiAgcmV0dXJuIDxPdXRwdXQgZXh0ZW5kcyBNZXRhZGF0YUJlYXJlcj4obmV4dDogQnVpbGRIYW5kbGVyPGFueSwgT3V0cHV0Pik6IEJ1aWxkSGFuZGxlcjxhbnksIE91dHB1dD4gPT4gYXN5bmMgKFxuICAgIGFyZ3M6IEJ1aWxkSGFuZGxlckFyZ3VtZW50czxhbnk+XG4gICk6IFByb21pc2U8QnVpbGRIYW5kbGVyT3V0cHV0PE91dHB1dD4+ID0+IHtcbiAgICBjb25zdCByZXF1ZXN0ID0gYXJncy5yZXF1ZXN0O1xuICAgIGlmIChIdHRwUmVxdWVzdC5pc0luc3RhbmNlKHJlcXVlc3QpKSB7XG4gICAgICBjb25zdCB7IGJvZHksIGhlYWRlcnMgfSA9IHJlcXVlc3Q7XG4gICAgICBpZiAoXG4gICAgICAgIGJvZHkgJiZcbiAgICAgICAgT2JqZWN0LmtleXMoaGVhZGVycylcbiAgICAgICAgICAubWFwKChzdHIpID0+IHN0ci50b0xvd2VyQ2FzZSgpKVxuICAgICAgICAgIC5pbmRleE9mKENPTlRFTlRfTEVOR1RIX0hFQURFUikgPT09IC0xXG4gICAgICApIHtcbiAgICAgICAgY29uc3QgbGVuZ3RoID0gYm9keUxlbmd0aENoZWNrZXIoYm9keSk7XG4gICAgICAgIGlmIChsZW5ndGggIT09IHVuZGVmaW5lZCkge1xuICAgICAgICAgIHJlcXVlc3QuaGVhZGVycyA9IHtcbiAgICAgICAgICAgIC4uLnJlcXVlc3QuaGVhZGVycyxcbiAgICAgICAgICAgIFtDT05URU5UX0xFTkdUSF9IRUFERVJdOiBTdHJpbmcobGVuZ3RoKSxcbiAgICAgICAgICB9O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuXG4gICAgcmV0dXJuIG5leHQoe1xuICAgICAgLi4uYXJncyxcbiAgICAgIHJlcXVlc3QsXG4gICAgfSk7XG4gIH07XG59XG5cbmV4cG9ydCBjb25zdCBjb250ZW50TGVuZ3RoTWlkZGxld2FyZU9wdGlvbnM6IEJ1aWxkSGFuZGxlck9wdGlvbnMgPSB7XG4gIHN0ZXA6IFwiYnVpbGRcIixcbiAgdGFnczogW1wiU0VUX0NPTlRFTlRfTEVOR1RIXCIsIFwiQ09OVEVOVF9MRU5HVEhcIl0sXG4gIG5hbWU6IFwiY29udGVudExlbmd0aE1pZGRsZXdhcmVcIixcbn07XG5cbmV4cG9ydCBjb25zdCBnZXRDb250ZW50TGVuZ3RoUGx1Z2luID0gKG9wdGlvbnM6IHsgYm9keUxlbmd0aENoZWNrZXI6IEJvZHlMZW5ndGhDYWxjdWxhdG9yIH0pOiBQbHVnZ2FibGU8YW55LCBhbnk+ID0+ICh7XG4gIGFwcGx5VG9TdGFjazogKGNsaWVudFN0YWNrKSA9PiB7XG4gICAgY2xpZW50U3RhY2suYWRkKGNvbnRlbnRMZW5ndGhNaWRkbGV3YXJlKG9wdGlvbnMuYm9keUxlbmd0aENoZWNrZXIpLCBjb250ZW50TGVuZ3RoTWlkZGxld2FyZU9wdGlvbnMpO1xuICB9LFxufSk7XG4iXX0=
+exports.getContentLengthPlugin = getContentLengthPlugin;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsMERBQXFEO0FBWXJELE1BQU0scUJBQXFCLEdBQUcsZ0JBQWdCLENBQUM7QUFFL0MsU0FBZ0IsdUJBQXVCLENBQUMsaUJBQXVDO0lBQzdFLE9BQU8sQ0FBZ0MsSUFBK0IsRUFBNkIsRUFBRSxDQUFDLEtBQUssRUFDekcsSUFBZ0MsRUFDSyxFQUFFO1FBQ3ZDLE1BQU0sT0FBTyxHQUFHLElBQUksQ0FBQyxPQUFPLENBQUM7UUFDN0IsSUFBSSwyQkFBVyxDQUFDLFVBQVUsQ0FBQyxPQUFPLENBQUMsRUFBRTtZQUNuQyxNQUFNLEVBQUUsSUFBSSxFQUFFLE9BQU8sRUFBRSxHQUFHLE9BQU8sQ0FBQztZQUNsQyxJQUNFLElBQUk7Z0JBQ0osTUFBTSxDQUFDLElBQUksQ0FBQyxPQUFPLENBQUM7cUJBQ2pCLEdBQUcsQ0FBQyxDQUFDLEdBQUcsRUFBRSxFQUFFLENBQUMsR0FBRyxDQUFDLFdBQVcsRUFBRSxDQUFDO3FCQUMvQixPQUFPLENBQUMscUJBQXFCLENBQUMsS0FBSyxDQUFDLENBQUMsRUFDeEM7Z0JBQ0EsTUFBTSxNQUFNLEdBQUcsaUJBQWlCLENBQUMsSUFBSSxDQUFDLENBQUM7Z0JBQ3ZDLElBQUksTUFBTSxLQUFLLFNBQVMsRUFBRTtvQkFDeEIsT0FBTyxDQUFDLE9BQU8sR0FBRzt3QkFDaEIsR0FBRyxPQUFPLENBQUMsT0FBTzt3QkFDbEIsQ0FBQyxxQkFBcUIsQ0FBQyxFQUFFLE1BQU0sQ0FBQyxNQUFNLENBQUM7cUJBQ3hDLENBQUM7aUJBQ0g7YUFDRjtTQUNGO1FBRUQsT0FBTyxJQUFJLENBQUM7WUFDVixHQUFHLElBQUk7WUFDUCxPQUFPO1NBQ1IsQ0FBQyxDQUFDO0lBQ0wsQ0FBQyxDQUFDO0FBQ0osQ0FBQztBQTVCRCwwREE0QkM7QUFFWSxRQUFBLDhCQUE4QixHQUF3QjtJQUNqRSxJQUFJLEVBQUUsT0FBTztJQUNiLElBQUksRUFBRSxDQUFDLG9CQUFvQixFQUFFLGdCQUFnQixDQUFDO0lBQzlDLElBQUksRUFBRSx5QkFBeUI7Q0FDaEMsQ0FBQztBQUVLLE1BQU0sc0JBQXNCLEdBQUcsQ0FBQyxPQUFvRCxFQUF1QixFQUFFLENBQUMsQ0FBQztJQUNwSCxZQUFZLEVBQUUsQ0FBQyxXQUFXLEVBQUUsRUFBRTtRQUM1QixXQUFXLENBQUMsR0FBRyxDQUFDLHVCQUF1QixDQUFDLE9BQU8sQ0FBQyxpQkFBaUIsQ0FBQyxFQUFFLHNDQUE4QixDQUFDLENBQUM7SUFDdEcsQ0FBQztDQUNGLENBQUMsQ0FBQztBQUpVLFFBQUEsc0JBQXNCLDBCQUloQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEh0dHBSZXF1ZXN0IH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3RvY29sLWh0dHBcIjtcbmltcG9ydCB7XG4gIEJvZHlMZW5ndGhDYWxjdWxhdG9yLFxuICBCdWlsZEhhbmRsZXIsXG4gIEJ1aWxkSGFuZGxlckFyZ3VtZW50cyxcbiAgQnVpbGRIYW5kbGVyT3B0aW9ucyxcbiAgQnVpbGRIYW5kbGVyT3V0cHV0LFxuICBCdWlsZE1pZGRsZXdhcmUsXG4gIE1ldGFkYXRhQmVhcmVyLFxuICBQbHVnZ2FibGUsXG59IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5jb25zdCBDT05URU5UX0xFTkdUSF9IRUFERVIgPSBcImNvbnRlbnQtbGVuZ3RoXCI7XG5cbmV4cG9ydCBmdW5jdGlvbiBjb250ZW50TGVuZ3RoTWlkZGxld2FyZShib2R5TGVuZ3RoQ2hlY2tlcjogQm9keUxlbmd0aENhbGN1bGF0b3IpOiBCdWlsZE1pZGRsZXdhcmU8YW55LCBhbnk+IHtcbiAgcmV0dXJuIDxPdXRwdXQgZXh0ZW5kcyBNZXRhZGF0YUJlYXJlcj4obmV4dDogQnVpbGRIYW5kbGVyPGFueSwgT3V0cHV0Pik6IEJ1aWxkSGFuZGxlcjxhbnksIE91dHB1dD4gPT4gYXN5bmMgKFxuICAgIGFyZ3M6IEJ1aWxkSGFuZGxlckFyZ3VtZW50czxhbnk+XG4gICk6IFByb21pc2U8QnVpbGRIYW5kbGVyT3V0cHV0PE91dHB1dD4+ID0+IHtcbiAgICBjb25zdCByZXF1ZXN0ID0gYXJncy5yZXF1ZXN0O1xuICAgIGlmIChIdHRwUmVxdWVzdC5pc0luc3RhbmNlKHJlcXVlc3QpKSB7XG4gICAgICBjb25zdCB7IGJvZHksIGhlYWRlcnMgfSA9IHJlcXVlc3Q7XG4gICAgICBpZiAoXG4gICAgICAgIGJvZHkgJiZcbiAgICAgICAgT2JqZWN0LmtleXMoaGVhZGVycylcbiAgICAgICAgICAubWFwKChzdHIpID0+IHN0ci50b0xvd2VyQ2FzZSgpKVxuICAgICAgICAgIC5pbmRleE9mKENPTlRFTlRfTEVOR1RIX0hFQURFUikgPT09IC0xXG4gICAgICApIHtcbiAgICAgICAgY29uc3QgbGVuZ3RoID0gYm9keUxlbmd0aENoZWNrZXIoYm9keSk7XG4gICAgICAgIGlmIChsZW5ndGggIT09IHVuZGVmaW5lZCkge1xuICAgICAgICAgIHJlcXVlc3QuaGVhZGVycyA9IHtcbiAgICAgICAgICAgIC4uLnJlcXVlc3QuaGVhZGVycyxcbiAgICAgICAgICAgIFtDT05URU5UX0xFTkdUSF9IRUFERVJdOiBTdHJpbmcobGVuZ3RoKSxcbiAgICAgICAgICB9O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuXG4gICAgcmV0dXJuIG5leHQoe1xuICAgICAgLi4uYXJncyxcbiAgICAgIHJlcXVlc3QsXG4gICAgfSk7XG4gIH07XG59XG5cbmV4cG9ydCBjb25zdCBjb250ZW50TGVuZ3RoTWlkZGxld2FyZU9wdGlvbnM6IEJ1aWxkSGFuZGxlck9wdGlvbnMgPSB7XG4gIHN0ZXA6IFwiYnVpbGRcIixcbiAgdGFnczogW1wiU0VUX0NPTlRFTlRfTEVOR1RIXCIsIFwiQ09OVEVOVF9MRU5HVEhcIl0sXG4gIG5hbWU6IFwiY29udGVudExlbmd0aE1pZGRsZXdhcmVcIixcbn07XG5cbmV4cG9ydCBjb25zdCBnZXRDb250ZW50TGVuZ3RoUGx1Z2luID0gKG9wdGlvbnM6IHsgYm9keUxlbmd0aENoZWNrZXI6IEJvZHlMZW5ndGhDYWxjdWxhdG9yIH0pOiBQbHVnZ2FibGU8YW55LCBhbnk+ID0+ICh7XG4gIGFwcGx5VG9TdGFjazogKGNsaWVudFN0YWNrKSA9PiB7XG4gICAgY2xpZW50U3RhY2suYWRkKGNvbnRlbnRMZW5ndGhNaWRkbGV3YXJlKG9wdGlvbnMuYm9keUxlbmd0aENoZWNrZXIpLCBjb250ZW50TGVuZ3RoTWlkZGxld2FyZU9wdGlvbnMpO1xuICB9LFxufSk7XG4iXX0=
 
 /***/ }),
 
@@ -14584,7 +17529,7 @@ function resolveHostHeaderConfig(input) {
     return input;
 }
 exports.resolveHostHeaderConfig = resolveHostHeaderConfig;
-exports.hostHeaderMiddleware = (options) => (next) => async (args) => {
+const hostHeaderMiddleware = (options) => (next) => async (args) => {
     if (!protocol_http_1.HttpRequest.isInstance(args.request))
         return next(args);
     const { request } = args;
@@ -14601,18 +17546,20 @@ exports.hostHeaderMiddleware = (options) => (next) => async (args) => {
     }
     return next(args);
 };
+exports.hostHeaderMiddleware = hostHeaderMiddleware;
 exports.hostHeaderMiddlewareOptions = {
     name: "hostHeaderMiddleware",
     step: "build",
     priority: "low",
     tags: ["HOST"],
 };
-exports.getHostHeaderPlugin = (options) => ({
+const getHostHeaderPlugin = (options) => ({
     applyToStack: (clientStack) => {
         clientStack.add(exports.hostHeaderMiddleware(options), exports.hostHeaderMiddlewareOptions);
     },
 });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsMERBQXFEO0FBVXJELFNBQWdCLHVCQUF1QixDQUNyQyxLQUFxRDtJQUVyRCxPQUFPLEtBQUssQ0FBQztBQUNmLENBQUM7QUFKRCwwREFJQztBQUVZLFFBQUEsb0JBQW9CLEdBQUcsQ0FDbEMsT0FBaUMsRUFDRCxFQUFFLENBQUMsQ0FBQyxJQUFJLEVBQUUsRUFBRSxDQUFDLEtBQUssRUFBRSxJQUFJLEVBQUUsRUFBRTtJQUM1RCxJQUFJLENBQUMsMkJBQVcsQ0FBQyxVQUFVLENBQUMsSUFBSSxDQUFDLE9BQU8sQ0FBQztRQUFFLE9BQU8sSUFBSSxDQUFDLElBQUksQ0FBQyxDQUFDO0lBQzdELE1BQU0sRUFBRSxPQUFPLEVBQUUsR0FBRyxJQUFJLENBQUM7SUFDekIsTUFBTSxFQUFFLGVBQWUsR0FBRyxFQUFFLEVBQUUsR0FBRyxPQUFPLENBQUMsY0FBYyxDQUFDLFFBQVEsSUFBSSxFQUFFLENBQUM7SUFDdkUsMEVBQTBFO0lBQzFFLDJHQUEyRztJQUMzRyxJQUFJLGVBQWUsQ0FBQyxPQUFPLENBQUMsSUFBSSxDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsT0FBTyxDQUFDLE9BQU8sQ0FBQyxZQUFZLENBQUMsRUFBRTtRQUN4RSxPQUFPLE9BQU8sQ0FBQyxPQUFPLENBQUMsTUFBTSxDQUFDLENBQUM7UUFDL0IsT0FBTyxDQUFDLE9BQU8sQ0FBQyxZQUFZLENBQUMsR0FBRyxFQUFFLENBQUM7UUFDbkMsMkZBQTJGO0tBQzVGO1NBQU0sSUFBSSxDQUFDLE9BQU8sQ0FBQyxPQUFPLENBQUMsTUFBTSxDQUFDLEVBQUU7UUFDbkMsT0FBTyxDQUFDLE9BQU8sQ0FBQyxNQUFNLENBQUMsR0FBRyxPQUFPLENBQUMsUUFBUSxDQUFDO0tBQzVDO0lBQ0QsT0FBTyxJQUFJLENBQUMsSUFBSSxDQUFDLENBQUM7QUFDcEIsQ0FBQyxDQUFDO0FBRVcsUUFBQSwyQkFBMkIsR0FBMkM7SUFDakYsSUFBSSxFQUFFLHNCQUFzQjtJQUM1QixJQUFJLEVBQUUsT0FBTztJQUNiLFFBQVEsRUFBRSxLQUFLO0lBQ2YsSUFBSSxFQUFFLENBQUMsTUFBTSxDQUFDO0NBQ2YsQ0FBQztBQUVXLFFBQUEsbUJBQW1CLEdBQUcsQ0FBQyxPQUFpQyxFQUF1QixFQUFFLENBQUMsQ0FBQztJQUM5RixZQUFZLEVBQUUsQ0FBQyxXQUFXLEVBQUUsRUFBRTtRQUM1QixXQUFXLENBQUMsR0FBRyxDQUFDLDRCQUFvQixDQUFDLE9BQU8sQ0FBQyxFQUFFLG1DQUEyQixDQUFDLENBQUM7SUFDOUUsQ0FBQztDQUNGLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEh0dHBSZXF1ZXN0IH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3RvY29sLWh0dHBcIjtcbmltcG9ydCB7IEFic29sdXRlTG9jYXRpb24sIEJ1aWxkSGFuZGxlck9wdGlvbnMsIEJ1aWxkTWlkZGxld2FyZSwgUGx1Z2dhYmxlLCBSZXF1ZXN0SGFuZGxlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5leHBvcnQgaW50ZXJmYWNlIEhvc3RIZWFkZXJJbnB1dENvbmZpZyB7fVxuaW50ZXJmYWNlIFByZXZpb3VzbHlSZXNvbHZlZCB7XG4gIHJlcXVlc3RIYW5kbGVyOiBSZXF1ZXN0SGFuZGxlcjxhbnksIGFueT47XG59XG5leHBvcnQgaW50ZXJmYWNlIEhvc3RIZWFkZXJSZXNvbHZlZENvbmZpZyB7XG4gIHJlcXVlc3RIYW5kbGVyOiBSZXF1ZXN0SGFuZGxlcjxhbnksIGFueT47XG59XG5leHBvcnQgZnVuY3Rpb24gcmVzb2x2ZUhvc3RIZWFkZXJDb25maWc8VD4oXG4gIGlucHV0OiBUICYgUHJldmlvdXNseVJlc29sdmVkICYgSG9zdEhlYWRlcklucHV0Q29uZmlnXG4pOiBUICYgSG9zdEhlYWRlclJlc29sdmVkQ29uZmlnIHtcbiAgcmV0dXJuIGlucHV0O1xufVxuXG5leHBvcnQgY29uc3QgaG9zdEhlYWRlck1pZGRsZXdhcmUgPSA8SW5wdXQgZXh0ZW5kcyBvYmplY3QsIE91dHB1dCBleHRlbmRzIG9iamVjdD4oXG4gIG9wdGlvbnM6IEhvc3RIZWFkZXJSZXNvbHZlZENvbmZpZ1xuKTogQnVpbGRNaWRkbGV3YXJlPElucHV0LCBPdXRwdXQ+ID0+IChuZXh0KSA9PiBhc3luYyAoYXJncykgPT4ge1xuICBpZiAoIUh0dHBSZXF1ZXN0LmlzSW5zdGFuY2UoYXJncy5yZXF1ZXN0KSkgcmV0dXJuIG5leHQoYXJncyk7XG4gIGNvbnN0IHsgcmVxdWVzdCB9ID0gYXJncztcbiAgY29uc3QgeyBoYW5kbGVyUHJvdG9jb2wgPSBcIlwiIH0gPSBvcHRpb25zLnJlcXVlc3RIYW5kbGVyLm1ldGFkYXRhIHx8IHt9O1xuICAvL0ZvciBIMiByZXF1ZXN0LCByZW1vdmUgJ2hvc3QnIGhlYWRlciBhbmQgdXNlICc6YXV0aG9yaXR5JyBoZWFkZXIgaW5zdGVhZFxuICAvL3JlZmVyZW5jZTogaHR0cHM6Ly9ub2RlanMub3JnL2Rpc3QvbGF0ZXN0LXYxMy54L2RvY3MvYXBpL2Vycm9ycy5odG1sI0VSUl9IVFRQMl9JTlZBTElEX0NPTk5FQ1RJT05fSEVBREVSU1xuICBpZiAoaGFuZGxlclByb3RvY29sLmluZGV4T2YoXCJoMlwiKSA+PSAwICYmICFyZXF1ZXN0LmhlYWRlcnNbXCI6YXV0aG9yaXR5XCJdKSB7XG4gICAgZGVsZXRlIHJlcXVlc3QuaGVhZGVyc1tcImhvc3RcIl07XG4gICAgcmVxdWVzdC5oZWFkZXJzW1wiOmF1dGhvcml0eVwiXSA9IFwiXCI7XG4gICAgLy9ub24tSDIgcmVxdWVzdCBhbmQgJ2hvc3QnIGhlYWRlciBpcyBub3Qgc2V0LCBzZXQgdGhlICdob3N0JyBoZWFkZXIgdG8gcmVxdWVzdCdzIGhvc3RuYW1lLlxuICB9IGVsc2UgaWYgKCFyZXF1ZXN0LmhlYWRlcnNbXCJob3N0XCJdKSB7XG4gICAgcmVxdWVzdC5oZWFkZXJzW1wiaG9zdFwiXSA9IHJlcXVlc3QuaG9zdG5hbWU7XG4gIH1cbiAgcmV0dXJuIG5leHQoYXJncyk7XG59O1xuXG5leHBvcnQgY29uc3QgaG9zdEhlYWRlck1pZGRsZXdhcmVPcHRpb25zOiBCdWlsZEhhbmRsZXJPcHRpb25zICYgQWJzb2x1dGVMb2NhdGlvbiA9IHtcbiAgbmFtZTogXCJob3N0SGVhZGVyTWlkZGxld2FyZVwiLFxuICBzdGVwOiBcImJ1aWxkXCIsXG4gIHByaW9yaXR5OiBcImxvd1wiLFxuICB0YWdzOiBbXCJIT1NUXCJdLFxufTtcblxuZXhwb3J0IGNvbnN0IGdldEhvc3RIZWFkZXJQbHVnaW4gPSAob3B0aW9uczogSG9zdEhlYWRlclJlc29sdmVkQ29uZmlnKTogUGx1Z2dhYmxlPGFueSwgYW55PiA9PiAoe1xuICBhcHBseVRvU3RhY2s6IChjbGllbnRTdGFjaykgPT4ge1xuICAgIGNsaWVudFN0YWNrLmFkZChob3N0SGVhZGVyTWlkZGxld2FyZShvcHRpb25zKSwgaG9zdEhlYWRlck1pZGRsZXdhcmVPcHRpb25zKTtcbiAgfSxcbn0pO1xuIl19
+exports.getHostHeaderPlugin = getHostHeaderPlugin;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsMERBQXFEO0FBVXJELFNBQWdCLHVCQUF1QixDQUNyQyxLQUFxRDtJQUVyRCxPQUFPLEtBQUssQ0FBQztBQUNmLENBQUM7QUFKRCwwREFJQztBQUVNLE1BQU0sb0JBQW9CLEdBQUcsQ0FDbEMsT0FBaUMsRUFDRCxFQUFFLENBQUMsQ0FBQyxJQUFJLEVBQUUsRUFBRSxDQUFDLEtBQUssRUFBRSxJQUFJLEVBQUUsRUFBRTtJQUM1RCxJQUFJLENBQUMsMkJBQVcsQ0FBQyxVQUFVLENBQUMsSUFBSSxDQUFDLE9BQU8sQ0FBQztRQUFFLE9BQU8sSUFBSSxDQUFDLElBQUksQ0FBQyxDQUFDO0lBQzdELE1BQU0sRUFBRSxPQUFPLEVBQUUsR0FBRyxJQUFJLENBQUM7SUFDekIsTUFBTSxFQUFFLGVBQWUsR0FBRyxFQUFFLEVBQUUsR0FBRyxPQUFPLENBQUMsY0FBYyxDQUFDLFFBQVEsSUFBSSxFQUFFLENBQUM7SUFDdkUsMEVBQTBFO0lBQzFFLDJHQUEyRztJQUMzRyxJQUFJLGVBQWUsQ0FBQyxPQUFPLENBQUMsSUFBSSxDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsT0FBTyxDQUFDLE9BQU8sQ0FBQyxZQUFZLENBQUMsRUFBRTtRQUN4RSxPQUFPLE9BQU8sQ0FBQyxPQUFPLENBQUMsTUFBTSxDQUFDLENBQUM7UUFDL0IsT0FBTyxDQUFDLE9BQU8sQ0FBQyxZQUFZLENBQUMsR0FBRyxFQUFFLENBQUM7UUFDbkMsMkZBQTJGO0tBQzVGO1NBQU0sSUFBSSxDQUFDLE9BQU8sQ0FBQyxPQUFPLENBQUMsTUFBTSxDQUFDLEVBQUU7UUFDbkMsT0FBTyxDQUFDLE9BQU8sQ0FBQyxNQUFNLENBQUMsR0FBRyxPQUFPLENBQUMsUUFBUSxDQUFDO0tBQzVDO0lBQ0QsT0FBTyxJQUFJLENBQUMsSUFBSSxDQUFDLENBQUM7QUFDcEIsQ0FBQyxDQUFDO0FBaEJXLFFBQUEsb0JBQW9CLHdCQWdCL0I7QUFFVyxRQUFBLDJCQUEyQixHQUEyQztJQUNqRixJQUFJLEVBQUUsc0JBQXNCO0lBQzVCLElBQUksRUFBRSxPQUFPO0lBQ2IsUUFBUSxFQUFFLEtBQUs7SUFDZixJQUFJLEVBQUUsQ0FBQyxNQUFNLENBQUM7Q0FDZixDQUFDO0FBRUssTUFBTSxtQkFBbUIsR0FBRyxDQUFDLE9BQWlDLEVBQXVCLEVBQUUsQ0FBQyxDQUFDO0lBQzlGLFlBQVksRUFBRSxDQUFDLFdBQVcsRUFBRSxFQUFFO1FBQzVCLFdBQVcsQ0FBQyxHQUFHLENBQUMsNEJBQW9CLENBQUMsT0FBTyxDQUFDLEVBQUUsbUNBQTJCLENBQUMsQ0FBQztJQUM5RSxDQUFDO0NBQ0YsQ0FBQyxDQUFDO0FBSlUsUUFBQSxtQkFBbUIsdUJBSTdCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgSHR0cFJlcXVlc3QgfSBmcm9tIFwiQGF3cy1zZGsvcHJvdG9jb2wtaHR0cFwiO1xuaW1wb3J0IHsgQWJzb2x1dGVMb2NhdGlvbiwgQnVpbGRIYW5kbGVyT3B0aW9ucywgQnVpbGRNaWRkbGV3YXJlLCBQbHVnZ2FibGUsIFJlcXVlc3RIYW5kbGVyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmV4cG9ydCBpbnRlcmZhY2UgSG9zdEhlYWRlcklucHV0Q29uZmlnIHt9XG5pbnRlcmZhY2UgUHJldmlvdXNseVJlc29sdmVkIHtcbiAgcmVxdWVzdEhhbmRsZXI6IFJlcXVlc3RIYW5kbGVyPGFueSwgYW55Pjtcbn1cbmV4cG9ydCBpbnRlcmZhY2UgSG9zdEhlYWRlclJlc29sdmVkQ29uZmlnIHtcbiAgcmVxdWVzdEhhbmRsZXI6IFJlcXVlc3RIYW5kbGVyPGFueSwgYW55Pjtcbn1cbmV4cG9ydCBmdW5jdGlvbiByZXNvbHZlSG9zdEhlYWRlckNvbmZpZzxUPihcbiAgaW5wdXQ6IFQgJiBQcmV2aW91c2x5UmVzb2x2ZWQgJiBIb3N0SGVhZGVySW5wdXRDb25maWdcbik6IFQgJiBIb3N0SGVhZGVyUmVzb2x2ZWRDb25maWcge1xuICByZXR1cm4gaW5wdXQ7XG59XG5cbmV4cG9ydCBjb25zdCBob3N0SGVhZGVyTWlkZGxld2FyZSA9IDxJbnB1dCBleHRlbmRzIG9iamVjdCwgT3V0cHV0IGV4dGVuZHMgb2JqZWN0PihcbiAgb3B0aW9uczogSG9zdEhlYWRlclJlc29sdmVkQ29uZmlnXG4pOiBCdWlsZE1pZGRsZXdhcmU8SW5wdXQsIE91dHB1dD4gPT4gKG5leHQpID0+IGFzeW5jIChhcmdzKSA9PiB7XG4gIGlmICghSHR0cFJlcXVlc3QuaXNJbnN0YW5jZShhcmdzLnJlcXVlc3QpKSByZXR1cm4gbmV4dChhcmdzKTtcbiAgY29uc3QgeyByZXF1ZXN0IH0gPSBhcmdzO1xuICBjb25zdCB7IGhhbmRsZXJQcm90b2NvbCA9IFwiXCIgfSA9IG9wdGlvbnMucmVxdWVzdEhhbmRsZXIubWV0YWRhdGEgfHwge307XG4gIC8vRm9yIEgyIHJlcXVlc3QsIHJlbW92ZSAnaG9zdCcgaGVhZGVyIGFuZCB1c2UgJzphdXRob3JpdHknIGhlYWRlciBpbnN0ZWFkXG4gIC8vcmVmZXJlbmNlOiBodHRwczovL25vZGVqcy5vcmcvZGlzdC9sYXRlc3QtdjEzLngvZG9jcy9hcGkvZXJyb3JzLmh0bWwjRVJSX0hUVFAyX0lOVkFMSURfQ09OTkVDVElPTl9IRUFERVJTXG4gIGlmIChoYW5kbGVyUHJvdG9jb2wuaW5kZXhPZihcImgyXCIpID49IDAgJiYgIXJlcXVlc3QuaGVhZGVyc1tcIjphdXRob3JpdHlcIl0pIHtcbiAgICBkZWxldGUgcmVxdWVzdC5oZWFkZXJzW1wiaG9zdFwiXTtcbiAgICByZXF1ZXN0LmhlYWRlcnNbXCI6YXV0aG9yaXR5XCJdID0gXCJcIjtcbiAgICAvL25vbi1IMiByZXF1ZXN0IGFuZCAnaG9zdCcgaGVhZGVyIGlzIG5vdCBzZXQsIHNldCB0aGUgJ2hvc3QnIGhlYWRlciB0byByZXF1ZXN0J3MgaG9zdG5hbWUuXG4gIH0gZWxzZSBpZiAoIXJlcXVlc3QuaGVhZGVyc1tcImhvc3RcIl0pIHtcbiAgICByZXF1ZXN0LmhlYWRlcnNbXCJob3N0XCJdID0gcmVxdWVzdC5ob3N0bmFtZTtcbiAgfVxuICByZXR1cm4gbmV4dChhcmdzKTtcbn07XG5cbmV4cG9ydCBjb25zdCBob3N0SGVhZGVyTWlkZGxld2FyZU9wdGlvbnM6IEJ1aWxkSGFuZGxlck9wdGlvbnMgJiBBYnNvbHV0ZUxvY2F0aW9uID0ge1xuICBuYW1lOiBcImhvc3RIZWFkZXJNaWRkbGV3YXJlXCIsXG4gIHN0ZXA6IFwiYnVpbGRcIixcbiAgcHJpb3JpdHk6IFwibG93XCIsXG4gIHRhZ3M6IFtcIkhPU1RcIl0sXG59O1xuXG5leHBvcnQgY29uc3QgZ2V0SG9zdEhlYWRlclBsdWdpbiA9IChvcHRpb25zOiBIb3N0SGVhZGVyUmVzb2x2ZWRDb25maWcpOiBQbHVnZ2FibGU8YW55LCBhbnk+ID0+ICh7XG4gIGFwcGx5VG9TdGFjazogKGNsaWVudFN0YWNrKSA9PiB7XG4gICAgY2xpZW50U3RhY2suYWRkKGhvc3RIZWFkZXJNaWRkbGV3YXJlKG9wdGlvbnMpLCBob3N0SGVhZGVyTWlkZGxld2FyZU9wdGlvbnMpO1xuICB9LFxufSk7XG4iXX0=
 
 /***/ }),
 
@@ -14635,7 +17582,7 @@ tslib_1.__exportStar(__webpack_require__(3712), exports);
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getLoggerPlugin = exports.loggerMiddlewareOptions = exports.loggerMiddleware = void 0;
-exports.loggerMiddleware = () => (next, context) => async (args) => {
+const loggerMiddleware = () => (next, context) => async (args) => {
     var _a;
     const { logger } = context;
     const response = await next(args);
@@ -14655,18 +17602,20 @@ exports.loggerMiddleware = () => (next, context) => async (args) => {
     }
     return response;
 };
+exports.loggerMiddleware = loggerMiddleware;
 exports.loggerMiddlewareOptions = {
     name: "loggerMiddleware",
     tags: ["LOGGER"],
     step: "initialize",
 };
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-exports.getLoggerPlugin = (options) => ({
+const getLoggerPlugin = (options) => ({
     applyToStack: (clientStack) => {
         clientStack.add(exports.loggerMiddleware(), exports.loggerMiddlewareOptions);
     },
 });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibG9nZ2VyTWlkZGxld2FyZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9sb2dnZXJNaWRkbGV3YXJlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQVlhLFFBQUEsZ0JBQWdCLEdBQUcsR0FBRyxFQUFFLENBQUMsQ0FDcEMsSUFBb0MsRUFDcEMsT0FBZ0MsRUFDQSxFQUFFLENBQUMsS0FBSyxFQUN4QyxJQUFxQyxFQUNLLEVBQUU7O0lBQzVDLE1BQU0sRUFBRSxNQUFNLEVBQUUsR0FBRyxPQUFPLENBQUM7SUFFM0IsTUFBTSxRQUFRLEdBQUcsTUFBTSxJQUFJLENBQUMsSUFBSSxDQUFDLENBQUM7SUFFbEMsSUFBSSxDQUFDLE1BQU0sRUFBRTtRQUNYLE9BQU8sUUFBUSxDQUFDO0tBQ2pCO0lBRUQsTUFBTSxZQUFZLEdBQUcsUUFBUSxDQUFDLFFBQXdCLENBQUM7SUFFdkQsSUFBSSxPQUFPLE1BQU0sQ0FBQyxJQUFJLEtBQUssVUFBVSxFQUFFO1FBQ3JDLE1BQU0sQ0FBQyxJQUFJLENBQUM7WUFDVixRQUFRLEVBQUU7Z0JBQ1IsVUFBVSxFQUFFLFlBQVksQ0FBQyxVQUFVO2dCQUNuQyxTQUFTLFFBQUUsWUFBWSxDQUFDLE9BQU8sQ0FBQyxrQkFBa0IsQ0FBQyxtQ0FBSSxZQUFZLENBQUMsT0FBTyxDQUFDLG1CQUFtQixDQUFDO2dCQUNoRyxpQkFBaUIsRUFBRSxZQUFZLENBQUMsT0FBTyxDQUFDLFlBQVksQ0FBQztnQkFDckQsSUFBSSxFQUFFLFlBQVksQ0FBQyxPQUFPLENBQUMsYUFBYSxDQUFDO2FBQzFDO1NBQ0YsQ0FBQyxDQUFDO0tBQ0o7SUFFRCxPQUFPLFFBQVEsQ0FBQztBQUNsQixDQUFDLENBQUM7QUFFVyxRQUFBLHVCQUF1QixHQUFnRDtJQUNsRixJQUFJLEVBQUUsa0JBQWtCO0lBQ3hCLElBQUksRUFBRSxDQUFDLFFBQVEsQ0FBQztJQUNoQixJQUFJLEVBQUUsWUFBWTtDQUNuQixDQUFDO0FBRUYsNkRBQTZEO0FBQ2hELFFBQUEsZUFBZSxHQUFHLENBQUMsT0FBWSxFQUF1QixFQUFFLENBQUMsQ0FBQztJQUNyRSxZQUFZLEVBQUUsQ0FBQyxXQUFXLEVBQUUsRUFBRTtRQUM1QixXQUFXLENBQUMsR0FBRyxDQUFDLHdCQUFnQixFQUFFLEVBQUUsK0JBQXVCLENBQUMsQ0FBQztJQUMvRCxDQUFDO0NBQ0YsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgSHR0cFJlc3BvbnNlIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3RvY29sLWh0dHBcIjtcbmltcG9ydCB7XG4gIEFic29sdXRlTG9jYXRpb24sXG4gIEhhbmRsZXJFeGVjdXRpb25Db250ZXh0LFxuICBJbml0aWFsaXplSGFuZGxlcixcbiAgSW5pdGlhbGl6ZUhhbmRsZXJBcmd1bWVudHMsXG4gIEluaXRpYWxpemVIYW5kbGVyT3B0aW9ucyxcbiAgSW5pdGlhbGl6ZUhhbmRsZXJPdXRwdXQsXG4gIE1ldGFkYXRhQmVhcmVyLFxuICBQbHVnZ2FibGUsXG59IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5leHBvcnQgY29uc3QgbG9nZ2VyTWlkZGxld2FyZSA9ICgpID0+IDxPdXRwdXQgZXh0ZW5kcyBNZXRhZGF0YUJlYXJlciA9IE1ldGFkYXRhQmVhcmVyPihcbiAgbmV4dDogSW5pdGlhbGl6ZUhhbmRsZXI8YW55LCBPdXRwdXQ+LFxuICBjb250ZXh0OiBIYW5kbGVyRXhlY3V0aW9uQ29udGV4dFxuKTogSW5pdGlhbGl6ZUhhbmRsZXI8YW55LCBPdXRwdXQ+ID0+IGFzeW5jIChcbiAgYXJnczogSW5pdGlhbGl6ZUhhbmRsZXJBcmd1bWVudHM8YW55PlxuKTogUHJvbWlzZTxJbml0aWFsaXplSGFuZGxlck91dHB1dDxPdXRwdXQ+PiA9PiB7XG4gIGNvbnN0IHsgbG9nZ2VyIH0gPSBjb250ZXh0O1xuXG4gIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgbmV4dChhcmdzKTtcblxuICBpZiAoIWxvZ2dlcikge1xuICAgIHJldHVybiByZXNwb25zZTtcbiAgfVxuXG4gIGNvbnN0IGh0dHBSZXNwb25zZSA9IHJlc3BvbnNlLnJlc3BvbnNlIGFzIEh0dHBSZXNwb25zZTtcblxuICBpZiAodHlwZW9mIGxvZ2dlci5pbmZvID09PSBcImZ1bmN0aW9uXCIpIHtcbiAgICBsb2dnZXIuaW5mbyh7XG4gICAgICBtZXRhZGF0YToge1xuICAgICAgICBzdGF0dXNDb2RlOiBodHRwUmVzcG9uc2Uuc3RhdHVzQ29kZSxcbiAgICAgICAgcmVxdWVzdElkOiBodHRwUmVzcG9uc2UuaGVhZGVyc1tcIngtYW16bi1yZXF1ZXN0aWRcIl0gPz8gaHR0cFJlc3BvbnNlLmhlYWRlcnNbXCJ4LWFtem4tcmVxdWVzdC1pZFwiXSxcbiAgICAgICAgZXh0ZW5kZWRSZXF1ZXN0SWQ6IGh0dHBSZXNwb25zZS5oZWFkZXJzW1wieC1hbXotaWQtMlwiXSxcbiAgICAgICAgY2ZJZDogaHR0cFJlc3BvbnNlLmhlYWRlcnNbXCJ4LWFtei1jZi1pZFwiXSxcbiAgICAgIH0sXG4gICAgfSk7XG4gIH1cblxuICByZXR1cm4gcmVzcG9uc2U7XG59O1xuXG5leHBvcnQgY29uc3QgbG9nZ2VyTWlkZGxld2FyZU9wdGlvbnM6IEluaXRpYWxpemVIYW5kbGVyT3B0aW9ucyAmIEFic29sdXRlTG9jYXRpb24gPSB7XG4gIG5hbWU6IFwibG9nZ2VyTWlkZGxld2FyZVwiLFxuICB0YWdzOiBbXCJMT0dHRVJcIl0sXG4gIHN0ZXA6IFwiaW5pdGlhbGl6ZVwiLFxufTtcblxuLy8gZXNsaW50LWRpc2FibGUtbmV4dC1saW5lIEB0eXBlc2NyaXB0LWVzbGludC9uby11bnVzZWQtdmFyc1xuZXhwb3J0IGNvbnN0IGdldExvZ2dlclBsdWdpbiA9IChvcHRpb25zOiBhbnkpOiBQbHVnZ2FibGU8YW55LCBhbnk+ID0+ICh7XG4gIGFwcGx5VG9TdGFjazogKGNsaWVudFN0YWNrKSA9PiB7XG4gICAgY2xpZW50U3RhY2suYWRkKGxvZ2dlck1pZGRsZXdhcmUoKSwgbG9nZ2VyTWlkZGxld2FyZU9wdGlvbnMpO1xuICB9LFxufSk7XG4iXX0=
+exports.getLoggerPlugin = getLoggerPlugin;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibG9nZ2VyTWlkZGxld2FyZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9sb2dnZXJNaWRkbGV3YXJlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQVlPLE1BQU0sZ0JBQWdCLEdBQUcsR0FBRyxFQUFFLENBQUMsQ0FDcEMsSUFBb0MsRUFDcEMsT0FBZ0MsRUFDQSxFQUFFLENBQUMsS0FBSyxFQUN4QyxJQUFxQyxFQUNLLEVBQUU7O0lBQzVDLE1BQU0sRUFBRSxNQUFNLEVBQUUsR0FBRyxPQUFPLENBQUM7SUFFM0IsTUFBTSxRQUFRLEdBQUcsTUFBTSxJQUFJLENBQUMsSUFBSSxDQUFDLENBQUM7SUFFbEMsSUFBSSxDQUFDLE1BQU0sRUFBRTtRQUNYLE9BQU8sUUFBUSxDQUFDO0tBQ2pCO0lBRUQsTUFBTSxZQUFZLEdBQUcsUUFBUSxDQUFDLFFBQXdCLENBQUM7SUFFdkQsSUFBSSxPQUFPLE1BQU0sQ0FBQyxJQUFJLEtBQUssVUFBVSxFQUFFO1FBQ3JDLE1BQU0sQ0FBQyxJQUFJLENBQUM7WUFDVixRQUFRLEVBQUU7Z0JBQ1IsVUFBVSxFQUFFLFlBQVksQ0FBQyxVQUFVO2dCQUNuQyxTQUFTLFFBQUUsWUFBWSxDQUFDLE9BQU8sQ0FBQyxrQkFBa0IsQ0FBQyxtQ0FBSSxZQUFZLENBQUMsT0FBTyxDQUFDLG1CQUFtQixDQUFDO2dCQUNoRyxpQkFBaUIsRUFBRSxZQUFZLENBQUMsT0FBTyxDQUFDLFlBQVksQ0FBQztnQkFDckQsSUFBSSxFQUFFLFlBQVksQ0FBQyxPQUFPLENBQUMsYUFBYSxDQUFDO2FBQzFDO1NBQ0YsQ0FBQyxDQUFDO0tBQ0o7SUFFRCxPQUFPLFFBQVEsQ0FBQztBQUNsQixDQUFDLENBQUM7QUE1QlcsUUFBQSxnQkFBZ0Isb0JBNEIzQjtBQUVXLFFBQUEsdUJBQXVCLEdBQWdEO0lBQ2xGLElBQUksRUFBRSxrQkFBa0I7SUFDeEIsSUFBSSxFQUFFLENBQUMsUUFBUSxDQUFDO0lBQ2hCLElBQUksRUFBRSxZQUFZO0NBQ25CLENBQUM7QUFFRiw2REFBNkQ7QUFDdEQsTUFBTSxlQUFlLEdBQUcsQ0FBQyxPQUFZLEVBQXVCLEVBQUUsQ0FBQyxDQUFDO0lBQ3JFLFlBQVksRUFBRSxDQUFDLFdBQVcsRUFBRSxFQUFFO1FBQzVCLFdBQVcsQ0FBQyxHQUFHLENBQUMsd0JBQWdCLEVBQUUsRUFBRSwrQkFBdUIsQ0FBQyxDQUFDO0lBQy9ELENBQUM7Q0FDRixDQUFDLENBQUM7QUFKVSxRQUFBLGVBQWUsbUJBSXpCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgSHR0cFJlc3BvbnNlIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3RvY29sLWh0dHBcIjtcbmltcG9ydCB7XG4gIEFic29sdXRlTG9jYXRpb24sXG4gIEhhbmRsZXJFeGVjdXRpb25Db250ZXh0LFxuICBJbml0aWFsaXplSGFuZGxlcixcbiAgSW5pdGlhbGl6ZUhhbmRsZXJBcmd1bWVudHMsXG4gIEluaXRpYWxpemVIYW5kbGVyT3B0aW9ucyxcbiAgSW5pdGlhbGl6ZUhhbmRsZXJPdXRwdXQsXG4gIE1ldGFkYXRhQmVhcmVyLFxuICBQbHVnZ2FibGUsXG59IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5leHBvcnQgY29uc3QgbG9nZ2VyTWlkZGxld2FyZSA9ICgpID0+IDxPdXRwdXQgZXh0ZW5kcyBNZXRhZGF0YUJlYXJlciA9IE1ldGFkYXRhQmVhcmVyPihcbiAgbmV4dDogSW5pdGlhbGl6ZUhhbmRsZXI8YW55LCBPdXRwdXQ+LFxuICBjb250ZXh0OiBIYW5kbGVyRXhlY3V0aW9uQ29udGV4dFxuKTogSW5pdGlhbGl6ZUhhbmRsZXI8YW55LCBPdXRwdXQ+ID0+IGFzeW5jIChcbiAgYXJnczogSW5pdGlhbGl6ZUhhbmRsZXJBcmd1bWVudHM8YW55PlxuKTogUHJvbWlzZTxJbml0aWFsaXplSGFuZGxlck91dHB1dDxPdXRwdXQ+PiA9PiB7XG4gIGNvbnN0IHsgbG9nZ2VyIH0gPSBjb250ZXh0O1xuXG4gIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgbmV4dChhcmdzKTtcblxuICBpZiAoIWxvZ2dlcikge1xuICAgIHJldHVybiByZXNwb25zZTtcbiAgfVxuXG4gIGNvbnN0IGh0dHBSZXNwb25zZSA9IHJlc3BvbnNlLnJlc3BvbnNlIGFzIEh0dHBSZXNwb25zZTtcblxuICBpZiAodHlwZW9mIGxvZ2dlci5pbmZvID09PSBcImZ1bmN0aW9uXCIpIHtcbiAgICBsb2dnZXIuaW5mbyh7XG4gICAgICBtZXRhZGF0YToge1xuICAgICAgICBzdGF0dXNDb2RlOiBodHRwUmVzcG9uc2Uuc3RhdHVzQ29kZSxcbiAgICAgICAgcmVxdWVzdElkOiBodHRwUmVzcG9uc2UuaGVhZGVyc1tcIngtYW16bi1yZXF1ZXN0aWRcIl0gPz8gaHR0cFJlc3BvbnNlLmhlYWRlcnNbXCJ4LWFtem4tcmVxdWVzdC1pZFwiXSxcbiAgICAgICAgZXh0ZW5kZWRSZXF1ZXN0SWQ6IGh0dHBSZXNwb25zZS5oZWFkZXJzW1wieC1hbXotaWQtMlwiXSxcbiAgICAgICAgY2ZJZDogaHR0cFJlc3BvbnNlLmhlYWRlcnNbXCJ4LWFtei1jZi1pZFwiXSxcbiAgICAgIH0sXG4gICAgfSk7XG4gIH1cblxuICByZXR1cm4gcmVzcG9uc2U7XG59O1xuXG5leHBvcnQgY29uc3QgbG9nZ2VyTWlkZGxld2FyZU9wdGlvbnM6IEluaXRpYWxpemVIYW5kbGVyT3B0aW9ucyAmIEFic29sdXRlTG9jYXRpb24gPSB7XG4gIG5hbWU6IFwibG9nZ2VyTWlkZGxld2FyZVwiLFxuICB0YWdzOiBbXCJMT0dHRVJcIl0sXG4gIHN0ZXA6IFwiaW5pdGlhbGl6ZVwiLFxufTtcblxuLy8gZXNsaW50LWRpc2FibGUtbmV4dC1saW5lIEB0eXBlc2NyaXB0LWVzbGludC9uby11bnVzZWQtdmFyc1xuZXhwb3J0IGNvbnN0IGdldExvZ2dlclBsdWdpbiA9IChvcHRpb25zOiBhbnkpOiBQbHVnZ2FibGU8YW55LCBhbnk+ID0+ICh7XG4gIGFwcGx5VG9TdGFjazogKGNsaWVudFN0YWNrKSA9PiB7XG4gICAgY2xpZW50U3RhY2suYWRkKGxvZ2dlck1pZGRsZXdhcmUoKSwgbG9nZ2VyTWlkZGxld2FyZU9wdGlvbnMpO1xuICB9LFxufSk7XG4iXX0=
 
 /***/ }),
 
@@ -14955,7 +17904,7 @@ exports.NODE_MAX_ATTEMPT_CONFIG_OPTIONS = {
     },
     default: defaultStrategy_1.DEFAULT_MAX_ATTEMPTS,
 };
-exports.resolveRetryConfig = (input) => {
+const resolveRetryConfig = (input) => {
     const maxAttempts = normalizeMaxAttempts(input.maxAttempts);
     return {
         ...input,
@@ -14963,6 +17912,7 @@ exports.resolveRetryConfig = (input) => {
         retryStrategy: input.retryStrategy || new defaultStrategy_1.StandardRetryStrategy(maxAttempts),
     };
 };
+exports.resolveRetryConfig = resolveRetryConfig;
 const normalizeMaxAttempts = (maxAttempts = defaultStrategy_1.DEFAULT_MAX_ATTEMPTS) => {
     if (typeof maxAttempts === "number") {
         const promisified = Promise.resolve(maxAttempts);
@@ -14977,7 +17927,7 @@ exports.NODE_RETRY_MODE_CONFIG_OPTIONS = {
     configFileSelector: (profile) => profile[exports.CONFIG_RETRY_MODE],
     default: defaultStrategy_1.DEFAULT_RETRY_MODE,
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlndXJhdGlvbnMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvY29uZmlndXJhdGlvbnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBR0EsdURBQW9HO0FBRXZGLFFBQUEsZ0JBQWdCLEdBQUcsa0JBQWtCLENBQUM7QUFDdEMsUUFBQSxtQkFBbUIsR0FBRyxjQUFjLENBQUM7QUFFckMsUUFBQSwrQkFBK0IsR0FBa0M7SUFDNUUsMkJBQTJCLEVBQUUsQ0FBQyxHQUFHLEVBQUUsRUFBRTtRQUNuQyxNQUFNLEtBQUssR0FBRyxHQUFHLENBQUMsd0JBQWdCLENBQUMsQ0FBQztRQUNwQyxJQUFJLENBQUMsS0FBSztZQUFFLE9BQU8sU0FBUyxDQUFDO1FBQzdCLE1BQU0sVUFBVSxHQUFHLFFBQVEsQ0FBQyxLQUFLLENBQUMsQ0FBQztRQUNuQyxJQUFJLE1BQU0sQ0FBQyxLQUFLLENBQUMsVUFBVSxDQUFDLEVBQUU7WUFDNUIsTUFBTSxJQUFJLEtBQUssQ0FBQyx3QkFBd0Isd0JBQWdCLDJCQUEyQixLQUFLLEdBQUcsQ0FBQyxDQUFDO1NBQzlGO1FBQ0QsT0FBTyxVQUFVLENBQUM7SUFDcEIsQ0FBQztJQUNELGtCQUFrQixFQUFFLENBQUMsT0FBTyxFQUFFLEVBQUU7UUFDOUIsTUFBTSxLQUFLLEdBQUcsT0FBTyxDQUFDLDJCQUFtQixDQUFDLENBQUM7UUFDM0MsSUFBSSxDQUFDLEtBQUs7WUFBRSxPQUFPLFNBQVMsQ0FBQztRQUM3QixNQUFNLFVBQVUsR0FBRyxRQUFRLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDbkMsSUFBSSxNQUFNLENBQUMsS0FBSyxDQUFDLFVBQVUsQ0FBQyxFQUFFO1lBQzVCLE1BQU0sSUFBSSxLQUFLLENBQUMsNEJBQTRCLDJCQUFtQiwyQkFBMkIsS0FBSyxHQUFHLENBQUMsQ0FBQztTQUNyRztRQUNELE9BQU8sVUFBVSxDQUFDO0lBQ3BCLENBQUM7SUFDRCxPQUFPLEVBQUUsc0NBQW9CO0NBQzlCLENBQUM7QUFtQlcsUUFBQSxrQkFBa0IsR0FBRyxDQUFJLEtBQWdELEVBQTJCLEVBQUU7SUFDakgsTUFBTSxXQUFXLEdBQUcsb0JBQW9CLENBQUMsS0FBSyxDQUFDLFdBQVcsQ0FBQyxDQUFDO0lBQzVELE9BQU87UUFDTCxHQUFHLEtBQUs7UUFDUixXQUFXO1FBQ1gsYUFBYSxFQUFFLEtBQUssQ0FBQyxhQUFhLElBQUksSUFBSSx1Q0FBcUIsQ0FBQyxXQUFXLENBQUM7S0FDN0UsQ0FBQztBQUNKLENBQUMsQ0FBQztBQUVGLE1BQU0sb0JBQW9CLEdBQUcsQ0FBQyxjQUF5QyxzQ0FBb0IsRUFBb0IsRUFBRTtJQUMvRyxJQUFJLE9BQU8sV0FBVyxLQUFLLFFBQVEsRUFBRTtRQUNuQyxNQUFNLFdBQVcsR0FBRyxPQUFPLENBQUMsT0FBTyxDQUFDLFdBQVcsQ0FBQyxDQUFDO1FBQ2pELE9BQU8sR0FBRyxFQUFFLENBQUMsV0FBVyxDQUFDO0tBQzFCO0lBQ0QsT0FBTyxXQUFXLENBQUM7QUFDckIsQ0FBQyxDQUFDO0FBRVcsUUFBQSxjQUFjLEdBQUcsZ0JBQWdCLENBQUM7QUFDbEMsUUFBQSxpQkFBaUIsR0FBRyxZQUFZLENBQUM7QUFFakMsUUFBQSw4QkFBOEIsR0FBa0M7SUFDM0UsMkJBQTJCLEVBQUUsQ0FBQyxHQUFHLEVBQUUsRUFBRSxDQUFDLEdBQUcsQ0FBQyxzQkFBYyxDQUFDO0lBQ3pELGtCQUFrQixFQUFFLENBQUMsT0FBTyxFQUFFLEVBQUUsQ0FBQyxPQUFPLENBQUMseUJBQWlCLENBQUM7SUFDM0QsT0FBTyxFQUFFLG9DQUFrQjtDQUM1QixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTG9hZGVkQ29uZmlnU2VsZWN0b3JzIH0gZnJvbSBcIkBhd3Mtc2RrL25vZGUtY29uZmlnLXByb3ZpZGVyXCI7XG5pbXBvcnQgeyBQcm92aWRlciwgUmV0cnlTdHJhdGVneSB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5pbXBvcnQgeyBERUZBVUxUX01BWF9BVFRFTVBUUywgREVGQVVMVF9SRVRSWV9NT0RFLCBTdGFuZGFyZFJldHJ5U3RyYXRlZ3kgfSBmcm9tIFwiLi9kZWZhdWx0U3RyYXRlZ3lcIjtcblxuZXhwb3J0IGNvbnN0IEVOVl9NQVhfQVRURU1QVFMgPSBcIkFXU19NQVhfQVRURU1QVFNcIjtcbmV4cG9ydCBjb25zdCBDT05GSUdfTUFYX0FUVEVNUFRTID0gXCJtYXhfYXR0ZW1wdHNcIjtcblxuZXhwb3J0IGNvbnN0IE5PREVfTUFYX0FUVEVNUFRfQ09ORklHX09QVElPTlM6IExvYWRlZENvbmZpZ1NlbGVjdG9yczxudW1iZXI+ID0ge1xuICBlbnZpcm9ubWVudFZhcmlhYmxlU2VsZWN0b3I6IChlbnYpID0+IHtcbiAgICBjb25zdCB2YWx1ZSA9IGVudltFTlZfTUFYX0FUVEVNUFRTXTtcbiAgICBpZiAoIXZhbHVlKSByZXR1cm4gdW5kZWZpbmVkO1xuICAgIGNvbnN0IG1heEF0dGVtcHQgPSBwYXJzZUludCh2YWx1ZSk7XG4gICAgaWYgKE51bWJlci5pc05hTihtYXhBdHRlbXB0KSkge1xuICAgICAgdGhyb3cgbmV3IEVycm9yKGBFbnZpcm9ubWVudCB2YXJpYWJsZSAke0VOVl9NQVhfQVRURU1QVFN9IG1hc3QgYmUgYSBudW1iZXIsIGdvdCBcIiR7dmFsdWV9XCJgKTtcbiAgICB9XG4gICAgcmV0dXJuIG1heEF0dGVtcHQ7XG4gIH0sXG4gIGNvbmZpZ0ZpbGVTZWxlY3RvcjogKHByb2ZpbGUpID0+IHtcbiAgICBjb25zdCB2YWx1ZSA9IHByb2ZpbGVbQ09ORklHX01BWF9BVFRFTVBUU107XG4gICAgaWYgKCF2YWx1ZSkgcmV0dXJuIHVuZGVmaW5lZDtcbiAgICBjb25zdCBtYXhBdHRlbXB0ID0gcGFyc2VJbnQodmFsdWUpO1xuICAgIGlmIChOdW1iZXIuaXNOYU4obWF4QXR0ZW1wdCkpIHtcbiAgICAgIHRocm93IG5ldyBFcnJvcihgU2hhcmVkIGNvbmZpZyBmaWxlIGVudHJ5ICR7Q09ORklHX01BWF9BVFRFTVBUU30gbWFzdCBiZSBhIG51bWJlciwgZ290IFwiJHt2YWx1ZX1cImApO1xuICAgIH1cbiAgICByZXR1cm4gbWF4QXR0ZW1wdDtcbiAgfSxcbiAgZGVmYXVsdDogREVGQVVMVF9NQVhfQVRURU1QVFMsXG59O1xuXG5leHBvcnQgaW50ZXJmYWNlIFJldHJ5SW5wdXRDb25maWcge1xuICAvKipcbiAgICogVGhlIG1heGltdW0gbnVtYmVyIG9mIHRpbWVzIHJlcXVlc3RzIHRoYXQgZW5jb3VudGVyIHJldHJ5YWJsZSBmYWlsdXJlcyBzaG91bGQgYmUgYXR0ZW1wdGVkLlxuICAgKi9cbiAgbWF4QXR0ZW1wdHM/OiBudW1iZXIgfCBQcm92aWRlcjxudW1iZXI+O1xuICAvKipcbiAgICogVGhlIHN0cmF0ZWd5IHRvIHJldHJ5IHRoZSByZXF1ZXN0LiBVc2luZyBidWlsdC1pbiBleHBvbmVudGlhbCBiYWNrb2ZmIHN0cmF0ZWd5IGJ5IGRlZmF1bHQuXG4gICAqL1xuICByZXRyeVN0cmF0ZWd5PzogUmV0cnlTdHJhdGVneTtcbn1cblxuaW50ZXJmYWNlIFByZXZpb3VzbHlSZXNvbHZlZCB7fVxuZXhwb3J0IGludGVyZmFjZSBSZXRyeVJlc29sdmVkQ29uZmlnIHtcbiAgbWF4QXR0ZW1wdHM6IFByb3ZpZGVyPG51bWJlcj47XG4gIHJldHJ5U3RyYXRlZ3k6IFJldHJ5U3RyYXRlZ3k7XG59XG5cbmV4cG9ydCBjb25zdCByZXNvbHZlUmV0cnlDb25maWcgPSA8VD4oaW5wdXQ6IFQgJiBQcmV2aW91c2x5UmVzb2x2ZWQgJiBSZXRyeUlucHV0Q29uZmlnKTogVCAmIFJldHJ5UmVzb2x2ZWRDb25maWcgPT4ge1xuICBjb25zdCBtYXhBdHRlbXB0cyA9IG5vcm1hbGl6ZU1heEF0dGVtcHRzKGlucHV0Lm1heEF0dGVtcHRzKTtcbiAgcmV0dXJuIHtcbiAgICAuLi5pbnB1dCxcbiAgICBtYXhBdHRlbXB0cyxcbiAgICByZXRyeVN0cmF0ZWd5OiBpbnB1dC5yZXRyeVN0cmF0ZWd5IHx8IG5ldyBTdGFuZGFyZFJldHJ5U3RyYXRlZ3kobWF4QXR0ZW1wdHMpLFxuICB9O1xufTtcblxuY29uc3Qgbm9ybWFsaXplTWF4QXR0ZW1wdHMgPSAobWF4QXR0ZW1wdHM6IG51bWJlciB8IFByb3ZpZGVyPG51bWJlcj4gPSBERUZBVUxUX01BWF9BVFRFTVBUUyk6IFByb3ZpZGVyPG51bWJlcj4gPT4ge1xuICBpZiAodHlwZW9mIG1heEF0dGVtcHRzID09PSBcIm51bWJlclwiKSB7XG4gICAgY29uc3QgcHJvbWlzaWZpZWQgPSBQcm9taXNlLnJlc29sdmUobWF4QXR0ZW1wdHMpO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfVxuICByZXR1cm4gbWF4QXR0ZW1wdHM7XG59O1xuXG5leHBvcnQgY29uc3QgRU5WX1JFVFJZX01PREUgPSBcIkFXU19SRVRSWV9NT0RFXCI7XG5leHBvcnQgY29uc3QgQ09ORklHX1JFVFJZX01PREUgPSBcInJldHJ5X21vZGVcIjtcblxuZXhwb3J0IGNvbnN0IE5PREVfUkVUUllfTU9ERV9DT05GSUdfT1BUSU9OUzogTG9hZGVkQ29uZmlnU2VsZWN0b3JzPHN0cmluZz4gPSB7XG4gIGVudmlyb25tZW50VmFyaWFibGVTZWxlY3RvcjogKGVudikgPT4gZW52W0VOVl9SRVRSWV9NT0RFXSxcbiAgY29uZmlnRmlsZVNlbGVjdG9yOiAocHJvZmlsZSkgPT4gcHJvZmlsZVtDT05GSUdfUkVUUllfTU9ERV0sXG4gIGRlZmF1bHQ6IERFRkFVTFRfUkVUUllfTU9ERSxcbn07XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlndXJhdGlvbnMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvY29uZmlndXJhdGlvbnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBR0EsdURBQW9HO0FBRXZGLFFBQUEsZ0JBQWdCLEdBQUcsa0JBQWtCLENBQUM7QUFDdEMsUUFBQSxtQkFBbUIsR0FBRyxjQUFjLENBQUM7QUFFckMsUUFBQSwrQkFBK0IsR0FBa0M7SUFDNUUsMkJBQTJCLEVBQUUsQ0FBQyxHQUFHLEVBQUUsRUFBRTtRQUNuQyxNQUFNLEtBQUssR0FBRyxHQUFHLENBQUMsd0JBQWdCLENBQUMsQ0FBQztRQUNwQyxJQUFJLENBQUMsS0FBSztZQUFFLE9BQU8sU0FBUyxDQUFDO1FBQzdCLE1BQU0sVUFBVSxHQUFHLFFBQVEsQ0FBQyxLQUFLLENBQUMsQ0FBQztRQUNuQyxJQUFJLE1BQU0sQ0FBQyxLQUFLLENBQUMsVUFBVSxDQUFDLEVBQUU7WUFDNUIsTUFBTSxJQUFJLEtBQUssQ0FBQyx3QkFBd0Isd0JBQWdCLDJCQUEyQixLQUFLLEdBQUcsQ0FBQyxDQUFDO1NBQzlGO1FBQ0QsT0FBTyxVQUFVLENBQUM7SUFDcEIsQ0FBQztJQUNELGtCQUFrQixFQUFFLENBQUMsT0FBTyxFQUFFLEVBQUU7UUFDOUIsTUFBTSxLQUFLLEdBQUcsT0FBTyxDQUFDLDJCQUFtQixDQUFDLENBQUM7UUFDM0MsSUFBSSxDQUFDLEtBQUs7WUFBRSxPQUFPLFNBQVMsQ0FBQztRQUM3QixNQUFNLFVBQVUsR0FBRyxRQUFRLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDbkMsSUFBSSxNQUFNLENBQUMsS0FBSyxDQUFDLFVBQVUsQ0FBQyxFQUFFO1lBQzVCLE1BQU0sSUFBSSxLQUFLLENBQUMsNEJBQTRCLDJCQUFtQiwyQkFBMkIsS0FBSyxHQUFHLENBQUMsQ0FBQztTQUNyRztRQUNELE9BQU8sVUFBVSxDQUFDO0lBQ3BCLENBQUM7SUFDRCxPQUFPLEVBQUUsc0NBQW9CO0NBQzlCLENBQUM7QUFtQkssTUFBTSxrQkFBa0IsR0FBRyxDQUFJLEtBQWdELEVBQTJCLEVBQUU7SUFDakgsTUFBTSxXQUFXLEdBQUcsb0JBQW9CLENBQUMsS0FBSyxDQUFDLFdBQVcsQ0FBQyxDQUFDO0lBQzVELE9BQU87UUFDTCxHQUFHLEtBQUs7UUFDUixXQUFXO1FBQ1gsYUFBYSxFQUFFLEtBQUssQ0FBQyxhQUFhLElBQUksSUFBSSx1Q0FBcUIsQ0FBQyxXQUFXLENBQUM7S0FDN0UsQ0FBQztBQUNKLENBQUMsQ0FBQztBQVBXLFFBQUEsa0JBQWtCLHNCQU83QjtBQUVGLE1BQU0sb0JBQW9CLEdBQUcsQ0FBQyxjQUF5QyxzQ0FBb0IsRUFBb0IsRUFBRTtJQUMvRyxJQUFJLE9BQU8sV0FBVyxLQUFLLFFBQVEsRUFBRTtRQUNuQyxNQUFNLFdBQVcsR0FBRyxPQUFPLENBQUMsT0FBTyxDQUFDLFdBQVcsQ0FBQyxDQUFDO1FBQ2pELE9BQU8sR0FBRyxFQUFFLENBQUMsV0FBVyxDQUFDO0tBQzFCO0lBQ0QsT0FBTyxXQUFXLENBQUM7QUFDckIsQ0FBQyxDQUFDO0FBRVcsUUFBQSxjQUFjLEdBQUcsZ0JBQWdCLENBQUM7QUFDbEMsUUFBQSxpQkFBaUIsR0FBRyxZQUFZLENBQUM7QUFFakMsUUFBQSw4QkFBOEIsR0FBa0M7SUFDM0UsMkJBQTJCLEVBQUUsQ0FBQyxHQUFHLEVBQUUsRUFBRSxDQUFDLEdBQUcsQ0FBQyxzQkFBYyxDQUFDO0lBQ3pELGtCQUFrQixFQUFFLENBQUMsT0FBTyxFQUFFLEVBQUUsQ0FBQyxPQUFPLENBQUMseUJBQWlCLENBQUM7SUFDM0QsT0FBTyxFQUFFLG9DQUFrQjtDQUM1QixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTG9hZGVkQ29uZmlnU2VsZWN0b3JzIH0gZnJvbSBcIkBhd3Mtc2RrL25vZGUtY29uZmlnLXByb3ZpZGVyXCI7XG5pbXBvcnQgeyBQcm92aWRlciwgUmV0cnlTdHJhdGVneSB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5pbXBvcnQgeyBERUZBVUxUX01BWF9BVFRFTVBUUywgREVGQVVMVF9SRVRSWV9NT0RFLCBTdGFuZGFyZFJldHJ5U3RyYXRlZ3kgfSBmcm9tIFwiLi9kZWZhdWx0U3RyYXRlZ3lcIjtcblxuZXhwb3J0IGNvbnN0IEVOVl9NQVhfQVRURU1QVFMgPSBcIkFXU19NQVhfQVRURU1QVFNcIjtcbmV4cG9ydCBjb25zdCBDT05GSUdfTUFYX0FUVEVNUFRTID0gXCJtYXhfYXR0ZW1wdHNcIjtcblxuZXhwb3J0IGNvbnN0IE5PREVfTUFYX0FUVEVNUFRfQ09ORklHX09QVElPTlM6IExvYWRlZENvbmZpZ1NlbGVjdG9yczxudW1iZXI+ID0ge1xuICBlbnZpcm9ubWVudFZhcmlhYmxlU2VsZWN0b3I6IChlbnYpID0+IHtcbiAgICBjb25zdCB2YWx1ZSA9IGVudltFTlZfTUFYX0FUVEVNUFRTXTtcbiAgICBpZiAoIXZhbHVlKSByZXR1cm4gdW5kZWZpbmVkO1xuICAgIGNvbnN0IG1heEF0dGVtcHQgPSBwYXJzZUludCh2YWx1ZSk7XG4gICAgaWYgKE51bWJlci5pc05hTihtYXhBdHRlbXB0KSkge1xuICAgICAgdGhyb3cgbmV3IEVycm9yKGBFbnZpcm9ubWVudCB2YXJpYWJsZSAke0VOVl9NQVhfQVRURU1QVFN9IG1hc3QgYmUgYSBudW1iZXIsIGdvdCBcIiR7dmFsdWV9XCJgKTtcbiAgICB9XG4gICAgcmV0dXJuIG1heEF0dGVtcHQ7XG4gIH0sXG4gIGNvbmZpZ0ZpbGVTZWxlY3RvcjogKHByb2ZpbGUpID0+IHtcbiAgICBjb25zdCB2YWx1ZSA9IHByb2ZpbGVbQ09ORklHX01BWF9BVFRFTVBUU107XG4gICAgaWYgKCF2YWx1ZSkgcmV0dXJuIHVuZGVmaW5lZDtcbiAgICBjb25zdCBtYXhBdHRlbXB0ID0gcGFyc2VJbnQodmFsdWUpO1xuICAgIGlmIChOdW1iZXIuaXNOYU4obWF4QXR0ZW1wdCkpIHtcbiAgICAgIHRocm93IG5ldyBFcnJvcihgU2hhcmVkIGNvbmZpZyBmaWxlIGVudHJ5ICR7Q09ORklHX01BWF9BVFRFTVBUU30gbWFzdCBiZSBhIG51bWJlciwgZ290IFwiJHt2YWx1ZX1cImApO1xuICAgIH1cbiAgICByZXR1cm4gbWF4QXR0ZW1wdDtcbiAgfSxcbiAgZGVmYXVsdDogREVGQVVMVF9NQVhfQVRURU1QVFMsXG59O1xuXG5leHBvcnQgaW50ZXJmYWNlIFJldHJ5SW5wdXRDb25maWcge1xuICAvKipcbiAgICogVGhlIG1heGltdW0gbnVtYmVyIG9mIHRpbWVzIHJlcXVlc3RzIHRoYXQgZW5jb3VudGVyIHJldHJ5YWJsZSBmYWlsdXJlcyBzaG91bGQgYmUgYXR0ZW1wdGVkLlxuICAgKi9cbiAgbWF4QXR0ZW1wdHM/OiBudW1iZXIgfCBQcm92aWRlcjxudW1iZXI+O1xuICAvKipcbiAgICogVGhlIHN0cmF0ZWd5IHRvIHJldHJ5IHRoZSByZXF1ZXN0LiBVc2luZyBidWlsdC1pbiBleHBvbmVudGlhbCBiYWNrb2ZmIHN0cmF0ZWd5IGJ5IGRlZmF1bHQuXG4gICAqL1xuICByZXRyeVN0cmF0ZWd5PzogUmV0cnlTdHJhdGVneTtcbn1cblxuaW50ZXJmYWNlIFByZXZpb3VzbHlSZXNvbHZlZCB7fVxuZXhwb3J0IGludGVyZmFjZSBSZXRyeVJlc29sdmVkQ29uZmlnIHtcbiAgbWF4QXR0ZW1wdHM6IFByb3ZpZGVyPG51bWJlcj47XG4gIHJldHJ5U3RyYXRlZ3k6IFJldHJ5U3RyYXRlZ3k7XG59XG5cbmV4cG9ydCBjb25zdCByZXNvbHZlUmV0cnlDb25maWcgPSA8VD4oaW5wdXQ6IFQgJiBQcmV2aW91c2x5UmVzb2x2ZWQgJiBSZXRyeUlucHV0Q29uZmlnKTogVCAmIFJldHJ5UmVzb2x2ZWRDb25maWcgPT4ge1xuICBjb25zdCBtYXhBdHRlbXB0cyA9IG5vcm1hbGl6ZU1heEF0dGVtcHRzKGlucHV0Lm1heEF0dGVtcHRzKTtcbiAgcmV0dXJuIHtcbiAgICAuLi5pbnB1dCxcbiAgICBtYXhBdHRlbXB0cyxcbiAgICByZXRyeVN0cmF0ZWd5OiBpbnB1dC5yZXRyeVN0cmF0ZWd5IHx8IG5ldyBTdGFuZGFyZFJldHJ5U3RyYXRlZ3kobWF4QXR0ZW1wdHMpLFxuICB9O1xufTtcblxuY29uc3Qgbm9ybWFsaXplTWF4QXR0ZW1wdHMgPSAobWF4QXR0ZW1wdHM6IG51bWJlciB8IFByb3ZpZGVyPG51bWJlcj4gPSBERUZBVUxUX01BWF9BVFRFTVBUUyk6IFByb3ZpZGVyPG51bWJlcj4gPT4ge1xuICBpZiAodHlwZW9mIG1heEF0dGVtcHRzID09PSBcIm51bWJlclwiKSB7XG4gICAgY29uc3QgcHJvbWlzaWZpZWQgPSBQcm9taXNlLnJlc29sdmUobWF4QXR0ZW1wdHMpO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfVxuICByZXR1cm4gbWF4QXR0ZW1wdHM7XG59O1xuXG5leHBvcnQgY29uc3QgRU5WX1JFVFJZX01PREUgPSBcIkFXU19SRVRSWV9NT0RFXCI7XG5leHBvcnQgY29uc3QgQ09ORklHX1JFVFJZX01PREUgPSBcInJldHJ5X21vZGVcIjtcblxuZXhwb3J0IGNvbnN0IE5PREVfUkVUUllfTU9ERV9DT05GSUdfT1BUSU9OUzogTG9hZGVkQ29uZmlnU2VsZWN0b3JzPHN0cmluZz4gPSB7XG4gIGVudmlyb25tZW50VmFyaWFibGVTZWxlY3RvcjogKGVudikgPT4gZW52W0VOVl9SRVRSWV9NT0RFXSxcbiAgY29uZmlnRmlsZVNlbGVjdG9yOiAocHJvZmlsZSkgPT4gcHJvZmlsZVtDT05GSUdfUkVUUllfTU9ERV0sXG4gIGRlZmF1bHQ6IERFRkFVTFRfUkVUUllfTU9ERSxcbn07XG4iXX0=
 
 /***/ }),
 
@@ -15033,7 +17983,7 @@ exports.NO_RETRY_INCREMENT = 1;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getDefaultRetryQuota = void 0;
 const constants_1 = __webpack_require__(1285);
-exports.getDefaultRetryQuota = (initialRetryTokens) => {
+const getDefaultRetryQuota = (initialRetryTokens) => {
     const MAX_CAPACITY = initialRetryTokens;
     let availableCapacity = initialRetryTokens;
     const getCapacityAmount = (error) => (error.name === "TimeoutError" ? constants_1.TIMEOUT_RETRY_COST : constants_1.RETRY_COST);
@@ -15057,7 +18007,8 @@ exports.getDefaultRetryQuota = (initialRetryTokens) => {
         releaseRetryTokens,
     });
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGVmYXVsdFJldHJ5UXVvdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvZGVmYXVsdFJldHJ5UXVvdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBRUEsMkNBQWlGO0FBR3BFLFFBQUEsb0JBQW9CLEdBQUcsQ0FBQyxrQkFBMEIsRUFBYyxFQUFFO0lBQzdFLE1BQU0sWUFBWSxHQUFHLGtCQUFrQixDQUFDO0lBQ3hDLElBQUksaUJBQWlCLEdBQUcsa0JBQWtCLENBQUM7SUFFM0MsTUFBTSxpQkFBaUIsR0FBRyxDQUFDLEtBQWUsRUFBRSxFQUFFLENBQUMsQ0FBQyxLQUFLLENBQUMsSUFBSSxLQUFLLGNBQWMsQ0FBQyxDQUFDLENBQUMsOEJBQWtCLENBQUMsQ0FBQyxDQUFDLHNCQUFVLENBQUMsQ0FBQztJQUVqSCxNQUFNLGNBQWMsR0FBRyxDQUFDLEtBQWUsRUFBRSxFQUFFLENBQUMsaUJBQWlCLENBQUMsS0FBSyxDQUFDLElBQUksaUJBQWlCLENBQUM7SUFFMUYsTUFBTSxtQkFBbUIsR0FBRyxDQUFDLEtBQWUsRUFBRSxFQUFFO1FBQzlDLElBQUksQ0FBQyxjQUFjLENBQUMsS0FBSyxDQUFDLEVBQUU7WUFDMUIsNERBQTREO1lBQzVELE1BQU0sSUFBSSxLQUFLLENBQUMsMEJBQTBCLENBQUMsQ0FBQztTQUM3QztRQUNELE1BQU0sY0FBYyxHQUFHLGlCQUFpQixDQUFDLEtBQUssQ0FBQyxDQUFDO1FBQ2hELGlCQUFpQixJQUFJLGNBQWMsQ0FBQztRQUNwQyxPQUFPLGNBQWMsQ0FBQztJQUN4QixDQUFDLENBQUM7SUFFRixNQUFNLGtCQUFrQixHQUFHLENBQUMscUJBQThCLEVBQUUsRUFBRTtRQUM1RCxpQkFBaUIsSUFBSSxxQkFBcUIsYUFBckIscUJBQXFCLGNBQXJCLHFCQUFxQixHQUFJLDhCQUFrQixDQUFDO1FBQ2pFLGlCQUFpQixHQUFHLElBQUksQ0FBQyxHQUFHLENBQUMsaUJBQWlCLEVBQUUsWUFBWSxDQUFDLENBQUM7SUFDaEUsQ0FBQyxDQUFDO0lBRUYsT0FBTyxNQUFNLENBQUMsTUFBTSxDQUFDO1FBQ25CLGNBQWM7UUFDZCxtQkFBbUI7UUFDbkIsa0JBQWtCO0tBQ25CLENBQUMsQ0FBQztBQUNMLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFNka0Vycm9yIH0gZnJvbSBcIkBhd3Mtc2RrL3NtaXRoeS1jbGllbnRcIjtcblxuaW1wb3J0IHsgTk9fUkVUUllfSU5DUkVNRU5ULCBSRVRSWV9DT1NULCBUSU1FT1VUX1JFVFJZX0NPU1QgfSBmcm9tIFwiLi9jb25zdGFudHNcIjtcbmltcG9ydCB7IFJldHJ5UXVvdGEgfSBmcm9tIFwiLi9kZWZhdWx0U3RyYXRlZ3lcIjtcblxuZXhwb3J0IGNvbnN0IGdldERlZmF1bHRSZXRyeVF1b3RhID0gKGluaXRpYWxSZXRyeVRva2VuczogbnVtYmVyKTogUmV0cnlRdW90YSA9PiB7XG4gIGNvbnN0IE1BWF9DQVBBQ0lUWSA9IGluaXRpYWxSZXRyeVRva2VucztcbiAgbGV0IGF2YWlsYWJsZUNhcGFjaXR5ID0gaW5pdGlhbFJldHJ5VG9rZW5zO1xuXG4gIGNvbnN0IGdldENhcGFjaXR5QW1vdW50ID0gKGVycm9yOiBTZGtFcnJvcikgPT4gKGVycm9yLm5hbWUgPT09IFwiVGltZW91dEVycm9yXCIgPyBUSU1FT1VUX1JFVFJZX0NPU1QgOiBSRVRSWV9DT1NUKTtcblxuICBjb25zdCBoYXNSZXRyeVRva2VucyA9IChlcnJvcjogU2RrRXJyb3IpID0+IGdldENhcGFjaXR5QW1vdW50KGVycm9yKSA8PSBhdmFpbGFibGVDYXBhY2l0eTtcblxuICBjb25zdCByZXRyaWV2ZVJldHJ5VG9rZW5zID0gKGVycm9yOiBTZGtFcnJvcikgPT4ge1xuICAgIGlmICghaGFzUmV0cnlUb2tlbnMoZXJyb3IpKSB7XG4gICAgICAvLyByZXRyeVN0cmF0ZWd5IHNob3VsZCBzdG9wIHJldHJ5aW5nLCBhbmQgcmV0dXJuIGxhc3QgZXJyb3JcbiAgICAgIHRocm93IG5ldyBFcnJvcihcIk5vIHJldHJ5IHRva2VuIGF2YWlsYWJsZVwiKTtcbiAgICB9XG4gICAgY29uc3QgY2FwYWNpdHlBbW91bnQgPSBnZXRDYXBhY2l0eUFtb3VudChlcnJvcik7XG4gICAgYXZhaWxhYmxlQ2FwYWNpdHkgLT0gY2FwYWNpdHlBbW91bnQ7XG4gICAgcmV0dXJuIGNhcGFjaXR5QW1vdW50O1xuICB9O1xuXG4gIGNvbnN0IHJlbGVhc2VSZXRyeVRva2VucyA9IChjYXBhY2l0eVJlbGVhc2VBbW91bnQ/OiBudW1iZXIpID0+IHtcbiAgICBhdmFpbGFibGVDYXBhY2l0eSArPSBjYXBhY2l0eVJlbGVhc2VBbW91bnQgPz8gTk9fUkVUUllfSU5DUkVNRU5UO1xuICAgIGF2YWlsYWJsZUNhcGFjaXR5ID0gTWF0aC5taW4oYXZhaWxhYmxlQ2FwYWNpdHksIE1BWF9DQVBBQ0lUWSk7XG4gIH07XG5cbiAgcmV0dXJuIE9iamVjdC5mcmVlemUoe1xuICAgIGhhc1JldHJ5VG9rZW5zLFxuICAgIHJldHJpZXZlUmV0cnlUb2tlbnMsXG4gICAgcmVsZWFzZVJldHJ5VG9rZW5zLFxuICB9KTtcbn07XG4iXX0=
+exports.getDefaultRetryQuota = getDefaultRetryQuota;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGVmYXVsdFJldHJ5UXVvdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvZGVmYXVsdFJldHJ5UXVvdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBRUEsMkNBQWlGO0FBRzFFLE1BQU0sb0JBQW9CLEdBQUcsQ0FBQyxrQkFBMEIsRUFBYyxFQUFFO0lBQzdFLE1BQU0sWUFBWSxHQUFHLGtCQUFrQixDQUFDO0lBQ3hDLElBQUksaUJBQWlCLEdBQUcsa0JBQWtCLENBQUM7SUFFM0MsTUFBTSxpQkFBaUIsR0FBRyxDQUFDLEtBQWUsRUFBRSxFQUFFLENBQUMsQ0FBQyxLQUFLLENBQUMsSUFBSSxLQUFLLGNBQWMsQ0FBQyxDQUFDLENBQUMsOEJBQWtCLENBQUMsQ0FBQyxDQUFDLHNCQUFVLENBQUMsQ0FBQztJQUVqSCxNQUFNLGNBQWMsR0FBRyxDQUFDLEtBQWUsRUFBRSxFQUFFLENBQUMsaUJBQWlCLENBQUMsS0FBSyxDQUFDLElBQUksaUJBQWlCLENBQUM7SUFFMUYsTUFBTSxtQkFBbUIsR0FBRyxDQUFDLEtBQWUsRUFBRSxFQUFFO1FBQzlDLElBQUksQ0FBQyxjQUFjLENBQUMsS0FBSyxDQUFDLEVBQUU7WUFDMUIsNERBQTREO1lBQzVELE1BQU0sSUFBSSxLQUFLLENBQUMsMEJBQTBCLENBQUMsQ0FBQztTQUM3QztRQUNELE1BQU0sY0FBYyxHQUFHLGlCQUFpQixDQUFDLEtBQUssQ0FBQyxDQUFDO1FBQ2hELGlCQUFpQixJQUFJLGNBQWMsQ0FBQztRQUNwQyxPQUFPLGNBQWMsQ0FBQztJQUN4QixDQUFDLENBQUM7SUFFRixNQUFNLGtCQUFrQixHQUFHLENBQUMscUJBQThCLEVBQUUsRUFBRTtRQUM1RCxpQkFBaUIsSUFBSSxxQkFBcUIsYUFBckIscUJBQXFCLGNBQXJCLHFCQUFxQixHQUFJLDhCQUFrQixDQUFDO1FBQ2pFLGlCQUFpQixHQUFHLElBQUksQ0FBQyxHQUFHLENBQUMsaUJBQWlCLEVBQUUsWUFBWSxDQUFDLENBQUM7SUFDaEUsQ0FBQyxDQUFDO0lBRUYsT0FBTyxNQUFNLENBQUMsTUFBTSxDQUFDO1FBQ25CLGNBQWM7UUFDZCxtQkFBbUI7UUFDbkIsa0JBQWtCO0tBQ25CLENBQUMsQ0FBQztBQUNMLENBQUMsQ0FBQztBQTVCVyxRQUFBLG9CQUFvQix3QkE0Qi9CIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgU2RrRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvc21pdGh5LWNsaWVudFwiO1xuXG5pbXBvcnQgeyBOT19SRVRSWV9JTkNSRU1FTlQsIFJFVFJZX0NPU1QsIFRJTUVPVVRfUkVUUllfQ09TVCB9IGZyb20gXCIuL2NvbnN0YW50c1wiO1xuaW1wb3J0IHsgUmV0cnlRdW90YSB9IGZyb20gXCIuL2RlZmF1bHRTdHJhdGVneVwiO1xuXG5leHBvcnQgY29uc3QgZ2V0RGVmYXVsdFJldHJ5UXVvdGEgPSAoaW5pdGlhbFJldHJ5VG9rZW5zOiBudW1iZXIpOiBSZXRyeVF1b3RhID0+IHtcbiAgY29uc3QgTUFYX0NBUEFDSVRZID0gaW5pdGlhbFJldHJ5VG9rZW5zO1xuICBsZXQgYXZhaWxhYmxlQ2FwYWNpdHkgPSBpbml0aWFsUmV0cnlUb2tlbnM7XG5cbiAgY29uc3QgZ2V0Q2FwYWNpdHlBbW91bnQgPSAoZXJyb3I6IFNka0Vycm9yKSA9PiAoZXJyb3IubmFtZSA9PT0gXCJUaW1lb3V0RXJyb3JcIiA/IFRJTUVPVVRfUkVUUllfQ09TVCA6IFJFVFJZX0NPU1QpO1xuXG4gIGNvbnN0IGhhc1JldHJ5VG9rZW5zID0gKGVycm9yOiBTZGtFcnJvcikgPT4gZ2V0Q2FwYWNpdHlBbW91bnQoZXJyb3IpIDw9IGF2YWlsYWJsZUNhcGFjaXR5O1xuXG4gIGNvbnN0IHJldHJpZXZlUmV0cnlUb2tlbnMgPSAoZXJyb3I6IFNka0Vycm9yKSA9PiB7XG4gICAgaWYgKCFoYXNSZXRyeVRva2VucyhlcnJvcikpIHtcbiAgICAgIC8vIHJldHJ5U3RyYXRlZ3kgc2hvdWxkIHN0b3AgcmV0cnlpbmcsIGFuZCByZXR1cm4gbGFzdCBlcnJvclxuICAgICAgdGhyb3cgbmV3IEVycm9yKFwiTm8gcmV0cnkgdG9rZW4gYXZhaWxhYmxlXCIpO1xuICAgIH1cbiAgICBjb25zdCBjYXBhY2l0eUFtb3VudCA9IGdldENhcGFjaXR5QW1vdW50KGVycm9yKTtcbiAgICBhdmFpbGFibGVDYXBhY2l0eSAtPSBjYXBhY2l0eUFtb3VudDtcbiAgICByZXR1cm4gY2FwYWNpdHlBbW91bnQ7XG4gIH07XG5cbiAgY29uc3QgcmVsZWFzZVJldHJ5VG9rZW5zID0gKGNhcGFjaXR5UmVsZWFzZUFtb3VudD86IG51bWJlcikgPT4ge1xuICAgIGF2YWlsYWJsZUNhcGFjaXR5ICs9IGNhcGFjaXR5UmVsZWFzZUFtb3VudCA/PyBOT19SRVRSWV9JTkNSRU1FTlQ7XG4gICAgYXZhaWxhYmxlQ2FwYWNpdHkgPSBNYXRoLm1pbihhdmFpbGFibGVDYXBhY2l0eSwgTUFYX0NBUEFDSVRZKTtcbiAgfTtcblxuICByZXR1cm4gT2JqZWN0LmZyZWV6ZSh7XG4gICAgaGFzUmV0cnlUb2tlbnMsXG4gICAgcmV0cmlldmVSZXRyeVRva2VucyxcbiAgICByZWxlYXNlUmV0cnlUb2tlbnMsXG4gIH0pO1xufTtcbiJdfQ==
 
 /***/ }),
 
@@ -15160,8 +18111,9 @@ const constants_1 = __webpack_require__(1285);
 /**
  * Calculate a capped, fully-jittered exponential backoff time.
  */
-exports.defaultDelayDecider = (delayBase, attempts) => Math.floor(Math.min(constants_1.MAXIMUM_RETRY_DELAY, Math.random() * 2 ** attempts * delayBase));
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGVsYXlEZWNpZGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2RlbGF5RGVjaWRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwyQ0FBa0Q7QUFFbEQ7O0dBRUc7QUFDVSxRQUFBLG1CQUFtQixHQUFHLENBQUMsU0FBaUIsRUFBRSxRQUFnQixFQUFFLEVBQUUsQ0FDekUsSUFBSSxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQUMsR0FBRyxDQUFDLCtCQUFtQixFQUFFLElBQUksQ0FBQyxNQUFNLEVBQUUsR0FBRyxDQUFDLElBQUksUUFBUSxHQUFHLFNBQVMsQ0FBQyxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBNQVhJTVVNX1JFVFJZX0RFTEFZIH0gZnJvbSBcIi4vY29uc3RhbnRzXCI7XG5cbi8qKlxuICogQ2FsY3VsYXRlIGEgY2FwcGVkLCBmdWxseS1qaXR0ZXJlZCBleHBvbmVudGlhbCBiYWNrb2ZmIHRpbWUuXG4gKi9cbmV4cG9ydCBjb25zdCBkZWZhdWx0RGVsYXlEZWNpZGVyID0gKGRlbGF5QmFzZTogbnVtYmVyLCBhdHRlbXB0czogbnVtYmVyKSA9PlxuICBNYXRoLmZsb29yKE1hdGgubWluKE1BWElNVU1fUkVUUllfREVMQVksIE1hdGgucmFuZG9tKCkgKiAyICoqIGF0dGVtcHRzICogZGVsYXlCYXNlKSk7XG4iXX0=
+const defaultDelayDecider = (delayBase, attempts) => Math.floor(Math.min(constants_1.MAXIMUM_RETRY_DELAY, Math.random() * 2 ** attempts * delayBase));
+exports.defaultDelayDecider = defaultDelayDecider;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGVsYXlEZWNpZGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2RlbGF5RGVjaWRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwyQ0FBa0Q7QUFFbEQ7O0dBRUc7QUFDSSxNQUFNLG1CQUFtQixHQUFHLENBQUMsU0FBaUIsRUFBRSxRQUFnQixFQUFFLEVBQUUsQ0FDekUsSUFBSSxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQUMsR0FBRyxDQUFDLCtCQUFtQixFQUFFLElBQUksQ0FBQyxNQUFNLEVBQUUsR0FBRyxDQUFDLElBQUksUUFBUSxHQUFHLFNBQVMsQ0FBQyxDQUFDLENBQUM7QUFEMUUsUUFBQSxtQkFBbUIsdUJBQ3VEIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTUFYSU1VTV9SRVRSWV9ERUxBWSB9IGZyb20gXCIuL2NvbnN0YW50c1wiO1xuXG4vKipcbiAqIENhbGN1bGF0ZSBhIGNhcHBlZCwgZnVsbHktaml0dGVyZWQgZXhwb25lbnRpYWwgYmFja29mZiB0aW1lLlxuICovXG5leHBvcnQgY29uc3QgZGVmYXVsdERlbGF5RGVjaWRlciA9IChkZWxheUJhc2U6IG51bWJlciwgYXR0ZW1wdHM6IG51bWJlcikgPT5cbiAgTWF0aC5mbG9vcihNYXRoLm1pbihNQVhJTVVNX1JFVFJZX0RFTEFZLCBNYXRoLnJhbmRvbSgpICogMiAqKiBhdHRlbXB0cyAqIGRlbGF5QmFzZSkpO1xuIl19
 
 /***/ }),
 
@@ -15189,13 +18141,14 @@ tslib_1.__exportStar(__webpack_require__(6553), exports);
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.defaultRetryDecider = void 0;
 const service_error_classification_1 = __webpack_require__(4011);
-exports.defaultRetryDecider = (error) => {
+const defaultRetryDecider = (error) => {
     if (!error) {
         return false;
     }
     return service_error_classification_1.isRetryableByTrait(error) || service_error_classification_1.isClockSkewError(error) || service_error_classification_1.isThrottlingError(error) || service_error_classification_1.isTransientError(error);
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmV0cnlEZWNpZGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3JldHJ5RGVjaWRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSx3RkFLK0M7QUFHbEMsUUFBQSxtQkFBbUIsR0FBRyxDQUFDLEtBQWUsRUFBRSxFQUFFO0lBQ3JELElBQUksQ0FBQyxLQUFLLEVBQUU7UUFDVixPQUFPLEtBQUssQ0FBQztLQUNkO0lBRUQsT0FBTyxpREFBa0IsQ0FBQyxLQUFLLENBQUMsSUFBSSwrQ0FBZ0IsQ0FBQyxLQUFLLENBQUMsSUFBSSxnREFBaUIsQ0FBQyxLQUFLLENBQUMsSUFBSSwrQ0FBZ0IsQ0FBQyxLQUFLLENBQUMsQ0FBQztBQUNySCxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge1xuICBpc0Nsb2NrU2tld0Vycm9yLFxuICBpc1JldHJ5YWJsZUJ5VHJhaXQsXG4gIGlzVGhyb3R0bGluZ0Vycm9yLFxuICBpc1RyYW5zaWVudEVycm9yLFxufSBmcm9tIFwiQGF3cy1zZGsvc2VydmljZS1lcnJvci1jbGFzc2lmaWNhdGlvblwiO1xuaW1wb3J0IHsgU2RrRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvc21pdGh5LWNsaWVudFwiO1xuXG5leHBvcnQgY29uc3QgZGVmYXVsdFJldHJ5RGVjaWRlciA9IChlcnJvcjogU2RrRXJyb3IpID0+IHtcbiAgaWYgKCFlcnJvcikge1xuICAgIHJldHVybiBmYWxzZTtcbiAgfVxuXG4gIHJldHVybiBpc1JldHJ5YWJsZUJ5VHJhaXQoZXJyb3IpIHx8IGlzQ2xvY2tTa2V3RXJyb3IoZXJyb3IpIHx8IGlzVGhyb3R0bGluZ0Vycm9yKGVycm9yKSB8fCBpc1RyYW5zaWVudEVycm9yKGVycm9yKTtcbn07XG4iXX0=
+exports.defaultRetryDecider = defaultRetryDecider;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmV0cnlEZWNpZGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3JldHJ5RGVjaWRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSx3RkFLK0M7QUFHeEMsTUFBTSxtQkFBbUIsR0FBRyxDQUFDLEtBQWUsRUFBRSxFQUFFO0lBQ3JELElBQUksQ0FBQyxLQUFLLEVBQUU7UUFDVixPQUFPLEtBQUssQ0FBQztLQUNkO0lBRUQsT0FBTyxpREFBa0IsQ0FBQyxLQUFLLENBQUMsSUFBSSwrQ0FBZ0IsQ0FBQyxLQUFLLENBQUMsSUFBSSxnREFBaUIsQ0FBQyxLQUFLLENBQUMsSUFBSSwrQ0FBZ0IsQ0FBQyxLQUFLLENBQUMsQ0FBQztBQUNySCxDQUFDLENBQUM7QUFOVyxRQUFBLG1CQUFtQix1QkFNOUIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge1xuICBpc0Nsb2NrU2tld0Vycm9yLFxuICBpc1JldHJ5YWJsZUJ5VHJhaXQsXG4gIGlzVGhyb3R0bGluZ0Vycm9yLFxuICBpc1RyYW5zaWVudEVycm9yLFxufSBmcm9tIFwiQGF3cy1zZGsvc2VydmljZS1lcnJvci1jbGFzc2lmaWNhdGlvblwiO1xuaW1wb3J0IHsgU2RrRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvc21pdGh5LWNsaWVudFwiO1xuXG5leHBvcnQgY29uc3QgZGVmYXVsdFJldHJ5RGVjaWRlciA9IChlcnJvcjogU2RrRXJyb3IpID0+IHtcbiAgaWYgKCFlcnJvcikge1xuICAgIHJldHVybiBmYWxzZTtcbiAgfVxuXG4gIHJldHVybiBpc1JldHJ5YWJsZUJ5VHJhaXQoZXJyb3IpIHx8IGlzQ2xvY2tTa2V3RXJyb3IoZXJyb3IpIHx8IGlzVGhyb3R0bGluZ0Vycm9yKGVycm9yKSB8fCBpc1RyYW5zaWVudEVycm9yKGVycm9yKTtcbn07XG4iXX0=
 
 /***/ }),
 
@@ -15206,19 +18159,21 @@ exports.defaultRetryDecider = (error) => {
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getRetryPlugin = exports.retryMiddlewareOptions = exports.retryMiddleware = void 0;
-exports.retryMiddleware = (options) => (next) => async (args) => options.retryStrategy.retry(next, args);
+const retryMiddleware = (options) => (next) => async (args) => options.retryStrategy.retry(next, args);
+exports.retryMiddleware = retryMiddleware;
 exports.retryMiddlewareOptions = {
     name: "retryMiddleware",
     tags: ["RETRY"],
     step: "finalizeRequest",
     priority: "high",
 };
-exports.getRetryPlugin = (options) => ({
+const getRetryPlugin = (options) => ({
     applyToStack: (clientStack) => {
         clientStack.add(exports.retryMiddleware(options), exports.retryMiddlewareOptions);
     },
 });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmV0cnlNaWRkbGV3YXJlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3JldHJ5TWlkZGxld2FyZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFZYSxRQUFBLGVBQWUsR0FBRyxDQUFDLE9BQTRCLEVBQUUsRUFBRSxDQUFDLENBQy9ELElBQWtDLEVBQ0osRUFBRSxDQUFDLEtBQUssRUFDdEMsSUFBbUMsRUFDSyxFQUFFLENBQUMsT0FBTyxDQUFDLGFBQWEsQ0FBQyxLQUFLLENBQUMsSUFBSSxFQUFFLElBQUksQ0FBQyxDQUFDO0FBRXhFLFFBQUEsc0JBQXNCLEdBQXFEO0lBQ3RGLElBQUksRUFBRSxpQkFBaUI7SUFDdkIsSUFBSSxFQUFFLENBQUMsT0FBTyxDQUFDO0lBQ2YsSUFBSSxFQUFFLGlCQUFpQjtJQUN2QixRQUFRLEVBQUUsTUFBTTtDQUNqQixDQUFDO0FBRVcsUUFBQSxjQUFjLEdBQUcsQ0FBQyxPQUE0QixFQUF1QixFQUFFLENBQUMsQ0FBQztJQUNwRixZQUFZLEVBQUUsQ0FBQyxXQUFXLEVBQUUsRUFBRTtRQUM1QixXQUFXLENBQUMsR0FBRyxDQUFDLHVCQUFlLENBQUMsT0FBTyxDQUFDLEVBQUUsOEJBQXNCLENBQUMsQ0FBQztJQUNwRSxDQUFDO0NBQ0YsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtcbiAgQWJzb2x1dGVMb2NhdGlvbixcbiAgRmluYWxpemVIYW5kbGVyLFxuICBGaW5hbGl6ZUhhbmRsZXJBcmd1bWVudHMsXG4gIEZpbmFsaXplSGFuZGxlck91dHB1dCxcbiAgRmluYWxpemVSZXF1ZXN0SGFuZGxlck9wdGlvbnMsXG4gIE1ldGFkYXRhQmVhcmVyLFxuICBQbHVnZ2FibGUsXG59IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5pbXBvcnQgeyBSZXRyeVJlc29sdmVkQ29uZmlnIH0gZnJvbSBcIi4vY29uZmlndXJhdGlvbnNcIjtcblxuZXhwb3J0IGNvbnN0IHJldHJ5TWlkZGxld2FyZSA9IChvcHRpb25zOiBSZXRyeVJlc29sdmVkQ29uZmlnKSA9PiA8T3V0cHV0IGV4dGVuZHMgTWV0YWRhdGFCZWFyZXIgPSBNZXRhZGF0YUJlYXJlcj4oXG4gIG5leHQ6IEZpbmFsaXplSGFuZGxlcjxhbnksIE91dHB1dD5cbik6IEZpbmFsaXplSGFuZGxlcjxhbnksIE91dHB1dD4gPT4gYXN5bmMgKFxuICBhcmdzOiBGaW5hbGl6ZUhhbmRsZXJBcmd1bWVudHM8YW55PlxuKTogUHJvbWlzZTxGaW5hbGl6ZUhhbmRsZXJPdXRwdXQ8T3V0cHV0Pj4gPT4gb3B0aW9ucy5yZXRyeVN0cmF0ZWd5LnJldHJ5KG5leHQsIGFyZ3MpO1xuXG5leHBvcnQgY29uc3QgcmV0cnlNaWRkbGV3YXJlT3B0aW9uczogRmluYWxpemVSZXF1ZXN0SGFuZGxlck9wdGlvbnMgJiBBYnNvbHV0ZUxvY2F0aW9uID0ge1xuICBuYW1lOiBcInJldHJ5TWlkZGxld2FyZVwiLFxuICB0YWdzOiBbXCJSRVRSWVwiXSxcbiAgc3RlcDogXCJmaW5hbGl6ZVJlcXVlc3RcIixcbiAgcHJpb3JpdHk6IFwiaGlnaFwiLFxufTtcblxuZXhwb3J0IGNvbnN0IGdldFJldHJ5UGx1Z2luID0gKG9wdGlvbnM6IFJldHJ5UmVzb2x2ZWRDb25maWcpOiBQbHVnZ2FibGU8YW55LCBhbnk+ID0+ICh7XG4gIGFwcGx5VG9TdGFjazogKGNsaWVudFN0YWNrKSA9PiB7XG4gICAgY2xpZW50U3RhY2suYWRkKHJldHJ5TWlkZGxld2FyZShvcHRpb25zKSwgcmV0cnlNaWRkbGV3YXJlT3B0aW9ucyk7XG4gIH0sXG59KTtcbiJdfQ==
+exports.getRetryPlugin = getRetryPlugin;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmV0cnlNaWRkbGV3YXJlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3JldHJ5TWlkZGxld2FyZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFZTyxNQUFNLGVBQWUsR0FBRyxDQUFDLE9BQTRCLEVBQUUsRUFBRSxDQUFDLENBQy9ELElBQWtDLEVBQ0osRUFBRSxDQUFDLEtBQUssRUFDdEMsSUFBbUMsRUFDSyxFQUFFLENBQUMsT0FBTyxDQUFDLGFBQWEsQ0FBQyxLQUFLLENBQUMsSUFBSSxFQUFFLElBQUksQ0FBQyxDQUFDO0FBSnhFLFFBQUEsZUFBZSxtQkFJeUQ7QUFFeEUsUUFBQSxzQkFBc0IsR0FBcUQ7SUFDdEYsSUFBSSxFQUFFLGlCQUFpQjtJQUN2QixJQUFJLEVBQUUsQ0FBQyxPQUFPLENBQUM7SUFDZixJQUFJLEVBQUUsaUJBQWlCO0lBQ3ZCLFFBQVEsRUFBRSxNQUFNO0NBQ2pCLENBQUM7QUFFSyxNQUFNLGNBQWMsR0FBRyxDQUFDLE9BQTRCLEVBQXVCLEVBQUUsQ0FBQyxDQUFDO0lBQ3BGLFlBQVksRUFBRSxDQUFDLFdBQVcsRUFBRSxFQUFFO1FBQzVCLFdBQVcsQ0FBQyxHQUFHLENBQUMsdUJBQWUsQ0FBQyxPQUFPLENBQUMsRUFBRSw4QkFBc0IsQ0FBQyxDQUFDO0lBQ3BFLENBQUM7Q0FDRixDQUFDLENBQUM7QUFKVSxRQUFBLGNBQWMsa0JBSXhCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtcbiAgQWJzb2x1dGVMb2NhdGlvbixcbiAgRmluYWxpemVIYW5kbGVyLFxuICBGaW5hbGl6ZUhhbmRsZXJBcmd1bWVudHMsXG4gIEZpbmFsaXplSGFuZGxlck91dHB1dCxcbiAgRmluYWxpemVSZXF1ZXN0SGFuZGxlck9wdGlvbnMsXG4gIE1ldGFkYXRhQmVhcmVyLFxuICBQbHVnZ2FibGUsXG59IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5pbXBvcnQgeyBSZXRyeVJlc29sdmVkQ29uZmlnIH0gZnJvbSBcIi4vY29uZmlndXJhdGlvbnNcIjtcblxuZXhwb3J0IGNvbnN0IHJldHJ5TWlkZGxld2FyZSA9IChvcHRpb25zOiBSZXRyeVJlc29sdmVkQ29uZmlnKSA9PiA8T3V0cHV0IGV4dGVuZHMgTWV0YWRhdGFCZWFyZXIgPSBNZXRhZGF0YUJlYXJlcj4oXG4gIG5leHQ6IEZpbmFsaXplSGFuZGxlcjxhbnksIE91dHB1dD5cbik6IEZpbmFsaXplSGFuZGxlcjxhbnksIE91dHB1dD4gPT4gYXN5bmMgKFxuICBhcmdzOiBGaW5hbGl6ZUhhbmRsZXJBcmd1bWVudHM8YW55PlxuKTogUHJvbWlzZTxGaW5hbGl6ZUhhbmRsZXJPdXRwdXQ8T3V0cHV0Pj4gPT4gb3B0aW9ucy5yZXRyeVN0cmF0ZWd5LnJldHJ5KG5leHQsIGFyZ3MpO1xuXG5leHBvcnQgY29uc3QgcmV0cnlNaWRkbGV3YXJlT3B0aW9uczogRmluYWxpemVSZXF1ZXN0SGFuZGxlck9wdGlvbnMgJiBBYnNvbHV0ZUxvY2F0aW9uID0ge1xuICBuYW1lOiBcInJldHJ5TWlkZGxld2FyZVwiLFxuICB0YWdzOiBbXCJSRVRSWVwiXSxcbiAgc3RlcDogXCJmaW5hbGl6ZVJlcXVlc3RcIixcbiAgcHJpb3JpdHk6IFwiaGlnaFwiLFxufTtcblxuZXhwb3J0IGNvbnN0IGdldFJldHJ5UGx1Z2luID0gKG9wdGlvbnM6IFJldHJ5UmVzb2x2ZWRDb25maWcpOiBQbHVnZ2FibGU8YW55LCBhbnk+ID0+ICh7XG4gIGFwcGx5VG9TdGFjazogKGNsaWVudFN0YWNrKSA9PiB7XG4gICAgY2xpZW50U3RhY2suYWRkKHJldHJ5TWlkZGxld2FyZShvcHRpb25zKSwgcmV0cnlNaWRkbGV3YXJlT3B0aW9ucyk7XG4gIH0sXG59KTtcbiJdfQ==
 
 /***/ }),
 
@@ -15481,7 +18436,7 @@ function __classPrivateFieldSet(receiver, privateMap, value) {
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.deserializerMiddleware = void 0;
-exports.deserializerMiddleware = (options, deserializer) => (next, context) => async (args) => {
+const deserializerMiddleware = (options, deserializer) => (next, context) => async (args) => {
     const { logger, outputFilterSensitiveLog } = context;
     const { response } = await next(args);
     const parsed = await deserializer(response, options);
@@ -15497,7 +18452,8 @@ exports.deserializerMiddleware = (options, deserializer) => (next, context) => a
         output: parsed,
     };
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGVzZXJpYWxpemVyTWlkZGxld2FyZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9kZXNlcmlhbGl6ZXJNaWRkbGV3YXJlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQVNhLFFBQUEsc0JBQXNCLEdBQUcsQ0FDcEMsT0FBcUIsRUFDckIsWUFBMEQsRUFDcEIsRUFBRSxDQUFDLENBQ3pDLElBQXVDLEVBQ3ZDLE9BQWdDLEVBQ0csRUFBRSxDQUFDLEtBQUssRUFDM0MsSUFBd0MsRUFDRyxFQUFFO0lBQzdDLE1BQU0sRUFBRSxNQUFNLEVBQUUsd0JBQXdCLEVBQUUsR0FBRyxPQUFPLENBQUM7SUFFckQsTUFBTSxFQUFFLFFBQVEsRUFBRSxHQUFHLE1BQU0sSUFBSSxDQUFDLElBQUksQ0FBQyxDQUFDO0lBRXRDLE1BQU0sTUFBTSxHQUFHLE1BQU0sWUFBWSxDQUFDLFFBQVEsRUFBRSxPQUFPLENBQUMsQ0FBQztJQUVyRCw0RkFBNEY7SUFDNUYsTUFBTSxFQUFFLFNBQVMsRUFBRSxHQUFHLHFCQUFxQixFQUFFLEdBQUcsTUFBTSxDQUFDO0lBRXZELElBQUksUUFBTyxNQUFNLGFBQU4sTUFBTSx1QkFBTixNQUFNLENBQUUsSUFBSSxDQUFBLEtBQUssVUFBVSxFQUFFO1FBQ3RDLE1BQU0sQ0FBQyxJQUFJLENBQUM7WUFDVixNQUFNLEVBQUUsd0JBQXdCLENBQUMscUJBQXFCLENBQUM7U0FDeEQsQ0FBQyxDQUFDO0tBQ0o7SUFFRCxPQUFPO1FBQ0wsUUFBUTtRQUNSLE1BQU0sRUFBRSxNQUFnQjtLQUN6QixDQUFDO0FBQ0osQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtcbiAgRGVzZXJpYWxpemVIYW5kbGVyLFxuICBEZXNlcmlhbGl6ZUhhbmRsZXJBcmd1bWVudHMsXG4gIERlc2VyaWFsaXplSGFuZGxlck91dHB1dCxcbiAgRGVzZXJpYWxpemVNaWRkbGV3YXJlLFxuICBIYW5kbGVyRXhlY3V0aW9uQ29udGV4dCxcbiAgUmVzcG9uc2VEZXNlcmlhbGl6ZXIsXG59IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5leHBvcnQgY29uc3QgZGVzZXJpYWxpemVyTWlkZGxld2FyZSA9IDxJbnB1dCBleHRlbmRzIG9iamVjdCwgT3V0cHV0IGV4dGVuZHMgb2JqZWN0LCBSdW50aW1lVXRpbHMgPSBhbnk+KFxuICBvcHRpb25zOiBSdW50aW1lVXRpbHMsXG4gIGRlc2VyaWFsaXplcjogUmVzcG9uc2VEZXNlcmlhbGl6ZXI8YW55LCBhbnksIFJ1bnRpbWVVdGlscz5cbik6IERlc2VyaWFsaXplTWlkZGxld2FyZTxJbnB1dCwgT3V0cHV0PiA9PiAoXG4gIG5leHQ6IERlc2VyaWFsaXplSGFuZGxlcjxJbnB1dCwgT3V0cHV0PixcbiAgY29udGV4dDogSGFuZGxlckV4ZWN1dGlvbkNvbnRleHRcbik6IERlc2VyaWFsaXplSGFuZGxlcjxJbnB1dCwgT3V0cHV0PiA9PiBhc3luYyAoXG4gIGFyZ3M6IERlc2VyaWFsaXplSGFuZGxlckFyZ3VtZW50czxJbnB1dD5cbik6IFByb21pc2U8RGVzZXJpYWxpemVIYW5kbGVyT3V0cHV0PE91dHB1dD4+ID0+IHtcbiAgY29uc3QgeyBsb2dnZXIsIG91dHB1dEZpbHRlclNlbnNpdGl2ZUxvZyB9ID0gY29udGV4dDtcblxuICBjb25zdCB7IHJlc3BvbnNlIH0gPSBhd2FpdCBuZXh0KGFyZ3MpO1xuXG4gIGNvbnN0IHBhcnNlZCA9IGF3YWl0IGRlc2VyaWFsaXplcihyZXNwb25zZSwgb3B0aW9ucyk7XG5cbiAgLy8gTG9nIHBhcnNlZCBhZnRlciAkbWV0YWRhdGEgaXMgcmVtb3ZlZCBpbiBodHRwczovL2dpdGh1Yi5jb20vYXdzL2F3cy1zZGstanMtdjMvaXNzdWVzLzE0OTBcbiAgY29uc3QgeyAkbWV0YWRhdGEsIC4uLm91dHB1dFdpdGhvdXRNZXRhZGF0YSB9ID0gcGFyc2VkO1xuXG4gIGlmICh0eXBlb2YgbG9nZ2VyPy5pbmZvID09PSBcImZ1bmN0aW9uXCIpIHtcbiAgICBsb2dnZXIuaW5mbyh7XG4gICAgICBvdXRwdXQ6IG91dHB1dEZpbHRlclNlbnNpdGl2ZUxvZyhvdXRwdXRXaXRob3V0TWV0YWRhdGEpLFxuICAgIH0pO1xuICB9XG5cbiAgcmV0dXJuIHtcbiAgICByZXNwb25zZSxcbiAgICBvdXRwdXQ6IHBhcnNlZCBhcyBPdXRwdXQsXG4gIH07XG59O1xuIl19
+exports.deserializerMiddleware = deserializerMiddleware;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGVzZXJpYWxpemVyTWlkZGxld2FyZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9kZXNlcmlhbGl6ZXJNaWRkbGV3YXJlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQVNPLE1BQU0sc0JBQXNCLEdBQUcsQ0FDcEMsT0FBcUIsRUFDckIsWUFBMEQsRUFDcEIsRUFBRSxDQUFDLENBQ3pDLElBQXVDLEVBQ3ZDLE9BQWdDLEVBQ0csRUFBRSxDQUFDLEtBQUssRUFDM0MsSUFBd0MsRUFDRyxFQUFFO0lBQzdDLE1BQU0sRUFBRSxNQUFNLEVBQUUsd0JBQXdCLEVBQUUsR0FBRyxPQUFPLENBQUM7SUFFckQsTUFBTSxFQUFFLFFBQVEsRUFBRSxHQUFHLE1BQU0sSUFBSSxDQUFDLElBQUksQ0FBQyxDQUFDO0lBRXRDLE1BQU0sTUFBTSxHQUFHLE1BQU0sWUFBWSxDQUFDLFFBQVEsRUFBRSxPQUFPLENBQUMsQ0FBQztJQUVyRCw0RkFBNEY7SUFDNUYsTUFBTSxFQUFFLFNBQVMsRUFBRSxHQUFHLHFCQUFxQixFQUFFLEdBQUcsTUFBTSxDQUFDO0lBRXZELElBQUksUUFBTyxNQUFNLGFBQU4sTUFBTSx1QkFBTixNQUFNLENBQUUsSUFBSSxDQUFBLEtBQUssVUFBVSxFQUFFO1FBQ3RDLE1BQU0sQ0FBQyxJQUFJLENBQUM7WUFDVixNQUFNLEVBQUUsd0JBQXdCLENBQUMscUJBQXFCLENBQUM7U0FDeEQsQ0FBQyxDQUFDO0tBQ0o7SUFFRCxPQUFPO1FBQ0wsUUFBUTtRQUNSLE1BQU0sRUFBRSxNQUFnQjtLQUN6QixDQUFDO0FBQ0osQ0FBQyxDQUFDO0FBNUJXLFFBQUEsc0JBQXNCLDBCQTRCakMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge1xuICBEZXNlcmlhbGl6ZUhhbmRsZXIsXG4gIERlc2VyaWFsaXplSGFuZGxlckFyZ3VtZW50cyxcbiAgRGVzZXJpYWxpemVIYW5kbGVyT3V0cHV0LFxuICBEZXNlcmlhbGl6ZU1pZGRsZXdhcmUsXG4gIEhhbmRsZXJFeGVjdXRpb25Db250ZXh0LFxuICBSZXNwb25zZURlc2VyaWFsaXplcixcbn0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmV4cG9ydCBjb25zdCBkZXNlcmlhbGl6ZXJNaWRkbGV3YXJlID0gPElucHV0IGV4dGVuZHMgb2JqZWN0LCBPdXRwdXQgZXh0ZW5kcyBvYmplY3QsIFJ1bnRpbWVVdGlscyA9IGFueT4oXG4gIG9wdGlvbnM6IFJ1bnRpbWVVdGlscyxcbiAgZGVzZXJpYWxpemVyOiBSZXNwb25zZURlc2VyaWFsaXplcjxhbnksIGFueSwgUnVudGltZVV0aWxzPlxuKTogRGVzZXJpYWxpemVNaWRkbGV3YXJlPElucHV0LCBPdXRwdXQ+ID0+IChcbiAgbmV4dDogRGVzZXJpYWxpemVIYW5kbGVyPElucHV0LCBPdXRwdXQ+LFxuICBjb250ZXh0OiBIYW5kbGVyRXhlY3V0aW9uQ29udGV4dFxuKTogRGVzZXJpYWxpemVIYW5kbGVyPElucHV0LCBPdXRwdXQ+ID0+IGFzeW5jIChcbiAgYXJnczogRGVzZXJpYWxpemVIYW5kbGVyQXJndW1lbnRzPElucHV0PlxuKTogUHJvbWlzZTxEZXNlcmlhbGl6ZUhhbmRsZXJPdXRwdXQ8T3V0cHV0Pj4gPT4ge1xuICBjb25zdCB7IGxvZ2dlciwgb3V0cHV0RmlsdGVyU2Vuc2l0aXZlTG9nIH0gPSBjb250ZXh0O1xuXG4gIGNvbnN0IHsgcmVzcG9uc2UgfSA9IGF3YWl0IG5leHQoYXJncyk7XG5cbiAgY29uc3QgcGFyc2VkID0gYXdhaXQgZGVzZXJpYWxpemVyKHJlc3BvbnNlLCBvcHRpb25zKTtcblxuICAvLyBMb2cgcGFyc2VkIGFmdGVyICRtZXRhZGF0YSBpcyByZW1vdmVkIGluIGh0dHBzOi8vZ2l0aHViLmNvbS9hd3MvYXdzLXNkay1qcy12My9pc3N1ZXMvMTQ5MFxuICBjb25zdCB7ICRtZXRhZGF0YSwgLi4ub3V0cHV0V2l0aG91dE1ldGFkYXRhIH0gPSBwYXJzZWQ7XG5cbiAgaWYgKHR5cGVvZiBsb2dnZXI/LmluZm8gPT09IFwiZnVuY3Rpb25cIikge1xuICAgIGxvZ2dlci5pbmZvKHtcbiAgICAgIG91dHB1dDogb3V0cHV0RmlsdGVyU2Vuc2l0aXZlTG9nKG91dHB1dFdpdGhvdXRNZXRhZGF0YSksXG4gICAgfSk7XG4gIH1cblxuICByZXR1cm4ge1xuICAgIHJlc3BvbnNlLFxuICAgIG91dHB1dDogcGFyc2VkIGFzIE91dHB1dCxcbiAgfTtcbn07XG4iXX0=
 
 /***/ }),
 
@@ -15554,7 +18510,7 @@ exports.getSerdePlugin = getSerdePlugin;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.serializerMiddleware = void 0;
-exports.serializerMiddleware = (options, serializer) => (next, context) => async (args) => {
+const serializerMiddleware = (options, serializer) => (next, context) => async (args) => {
     const { logger, inputFilterSensitiveLog } = context;
     if (typeof (logger === null || logger === void 0 ? void 0 : logger.info) === "function") {
         logger.info({
@@ -15567,7 +18523,8 @@ exports.serializerMiddleware = (options, serializer) => (next, context) => async
         request,
     });
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2VyaWFsaXplck1pZGRsZXdhcmUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvc2VyaWFsaXplck1pZGRsZXdhcmUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBVWEsUUFBQSxvQkFBb0IsR0FBRyxDQUNsQyxPQUFxQixFQUNyQixVQUFnRCxFQUNaLEVBQUUsQ0FBQyxDQUN2QyxJQUFxQyxFQUNyQyxPQUFnQyxFQUNDLEVBQUUsQ0FBQyxLQUFLLEVBQ3pDLElBQXNDLEVBQ0csRUFBRTtJQUMzQyxNQUFNLEVBQUUsTUFBTSxFQUFFLHVCQUF1QixFQUFFLEdBQUcsT0FBTyxDQUFDO0lBRXBELElBQUksUUFBTyxNQUFNLGFBQU4sTUFBTSx1QkFBTixNQUFNLENBQUUsSUFBSSxDQUFBLEtBQUssVUFBVSxFQUFFO1FBQ3RDLE1BQU0sQ0FBQyxJQUFJLENBQUM7WUFDVixLQUFLLEVBQUUsdUJBQXVCLENBQUMsSUFBSSxDQUFDLEtBQUssQ0FBQztTQUMzQyxDQUFDLENBQUM7S0FDSjtJQUVELE1BQU0sT0FBTyxHQUFHLE1BQU0sVUFBVSxDQUFDLElBQUksQ0FBQyxLQUFLLEVBQUUsT0FBTyxDQUFDLENBQUM7SUFFdEQsT0FBTyxJQUFJLENBQUM7UUFDVixHQUFHLElBQUk7UUFDUCxPQUFPO0tBQ1IsQ0FBQyxDQUFDO0FBQ0wsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtcbiAgRW5kcG9pbnRCZWFyZXIsXG4gIEhhbmRsZXJFeGVjdXRpb25Db250ZXh0LFxuICBSZXF1ZXN0U2VyaWFsaXplcixcbiAgU2VyaWFsaXplSGFuZGxlcixcbiAgU2VyaWFsaXplSGFuZGxlckFyZ3VtZW50cyxcbiAgU2VyaWFsaXplSGFuZGxlck91dHB1dCxcbiAgU2VyaWFsaXplTWlkZGxld2FyZSxcbn0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmV4cG9ydCBjb25zdCBzZXJpYWxpemVyTWlkZGxld2FyZSA9IDxJbnB1dCBleHRlbmRzIG9iamVjdCwgT3V0cHV0IGV4dGVuZHMgb2JqZWN0LCBSdW50aW1lVXRpbHMgZXh0ZW5kcyBFbmRwb2ludEJlYXJlcj4oXG4gIG9wdGlvbnM6IFJ1bnRpbWVVdGlscyxcbiAgc2VyaWFsaXplcjogUmVxdWVzdFNlcmlhbGl6ZXI8YW55LCBSdW50aW1lVXRpbHM+XG4pOiBTZXJpYWxpemVNaWRkbGV3YXJlPElucHV0LCBPdXRwdXQ+ID0+IChcbiAgbmV4dDogU2VyaWFsaXplSGFuZGxlcjxJbnB1dCwgT3V0cHV0PixcbiAgY29udGV4dDogSGFuZGxlckV4ZWN1dGlvbkNvbnRleHRcbik6IFNlcmlhbGl6ZUhhbmRsZXI8SW5wdXQsIE91dHB1dD4gPT4gYXN5bmMgKFxuICBhcmdzOiBTZXJpYWxpemVIYW5kbGVyQXJndW1lbnRzPElucHV0PlxuKTogUHJvbWlzZTxTZXJpYWxpemVIYW5kbGVyT3V0cHV0PE91dHB1dD4+ID0+IHtcbiAgY29uc3QgeyBsb2dnZXIsIGlucHV0RmlsdGVyU2Vuc2l0aXZlTG9nIH0gPSBjb250ZXh0O1xuXG4gIGlmICh0eXBlb2YgbG9nZ2VyPy5pbmZvID09PSBcImZ1bmN0aW9uXCIpIHtcbiAgICBsb2dnZXIuaW5mbyh7XG4gICAgICBpbnB1dDogaW5wdXRGaWx0ZXJTZW5zaXRpdmVMb2coYXJncy5pbnB1dCksXG4gICAgfSk7XG4gIH1cblxuICBjb25zdCByZXF1ZXN0ID0gYXdhaXQgc2VyaWFsaXplcihhcmdzLmlucHV0LCBvcHRpb25zKTtcblxuICByZXR1cm4gbmV4dCh7XG4gICAgLi4uYXJncyxcbiAgICByZXF1ZXN0LFxuICB9KTtcbn07XG4iXX0=
+exports.serializerMiddleware = serializerMiddleware;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2VyaWFsaXplck1pZGRsZXdhcmUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvc2VyaWFsaXplck1pZGRsZXdhcmUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBVU8sTUFBTSxvQkFBb0IsR0FBRyxDQUNsQyxPQUFxQixFQUNyQixVQUFnRCxFQUNaLEVBQUUsQ0FBQyxDQUN2QyxJQUFxQyxFQUNyQyxPQUFnQyxFQUNDLEVBQUUsQ0FBQyxLQUFLLEVBQ3pDLElBQXNDLEVBQ0csRUFBRTtJQUMzQyxNQUFNLEVBQUUsTUFBTSxFQUFFLHVCQUF1QixFQUFFLEdBQUcsT0FBTyxDQUFDO0lBRXBELElBQUksUUFBTyxNQUFNLGFBQU4sTUFBTSx1QkFBTixNQUFNLENBQUUsSUFBSSxDQUFBLEtBQUssVUFBVSxFQUFFO1FBQ3RDLE1BQU0sQ0FBQyxJQUFJLENBQUM7WUFDVixLQUFLLEVBQUUsdUJBQXVCLENBQUMsSUFBSSxDQUFDLEtBQUssQ0FBQztTQUMzQyxDQUFDLENBQUM7S0FDSjtJQUVELE1BQU0sT0FBTyxHQUFHLE1BQU0sVUFBVSxDQUFDLElBQUksQ0FBQyxLQUFLLEVBQUUsT0FBTyxDQUFDLENBQUM7SUFFdEQsT0FBTyxJQUFJLENBQUM7UUFDVixHQUFHLElBQUk7UUFDUCxPQUFPO0tBQ1IsQ0FBQyxDQUFDO0FBQ0wsQ0FBQyxDQUFDO0FBdkJXLFFBQUEsb0JBQW9CLHdCQXVCL0IiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge1xuICBFbmRwb2ludEJlYXJlcixcbiAgSGFuZGxlckV4ZWN1dGlvbkNvbnRleHQsXG4gIFJlcXVlc3RTZXJpYWxpemVyLFxuICBTZXJpYWxpemVIYW5kbGVyLFxuICBTZXJpYWxpemVIYW5kbGVyQXJndW1lbnRzLFxuICBTZXJpYWxpemVIYW5kbGVyT3V0cHV0LFxuICBTZXJpYWxpemVNaWRkbGV3YXJlLFxufSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IGNvbnN0IHNlcmlhbGl6ZXJNaWRkbGV3YXJlID0gPElucHV0IGV4dGVuZHMgb2JqZWN0LCBPdXRwdXQgZXh0ZW5kcyBvYmplY3QsIFJ1bnRpbWVVdGlscyBleHRlbmRzIEVuZHBvaW50QmVhcmVyPihcbiAgb3B0aW9uczogUnVudGltZVV0aWxzLFxuICBzZXJpYWxpemVyOiBSZXF1ZXN0U2VyaWFsaXplcjxhbnksIFJ1bnRpbWVVdGlscz5cbik6IFNlcmlhbGl6ZU1pZGRsZXdhcmU8SW5wdXQsIE91dHB1dD4gPT4gKFxuICBuZXh0OiBTZXJpYWxpemVIYW5kbGVyPElucHV0LCBPdXRwdXQ+LFxuICBjb250ZXh0OiBIYW5kbGVyRXhlY3V0aW9uQ29udGV4dFxuKTogU2VyaWFsaXplSGFuZGxlcjxJbnB1dCwgT3V0cHV0PiA9PiBhc3luYyAoXG4gIGFyZ3M6IFNlcmlhbGl6ZUhhbmRsZXJBcmd1bWVudHM8SW5wdXQ+XG4pOiBQcm9taXNlPFNlcmlhbGl6ZUhhbmRsZXJPdXRwdXQ8T3V0cHV0Pj4gPT4ge1xuICBjb25zdCB7IGxvZ2dlciwgaW5wdXRGaWx0ZXJTZW5zaXRpdmVMb2cgfSA9IGNvbnRleHQ7XG5cbiAgaWYgKHR5cGVvZiBsb2dnZXI/LmluZm8gPT09IFwiZnVuY3Rpb25cIikge1xuICAgIGxvZ2dlci5pbmZvKHtcbiAgICAgIGlucHV0OiBpbnB1dEZpbHRlclNlbnNpdGl2ZUxvZyhhcmdzLmlucHV0KSxcbiAgICB9KTtcbiAgfVxuXG4gIGNvbnN0IHJlcXVlc3QgPSBhd2FpdCBzZXJpYWxpemVyKGFyZ3MuaW5wdXQsIG9wdGlvbnMpO1xuXG4gIHJldHVybiBuZXh0KHtcbiAgICAuLi5hcmdzLFxuICAgIHJlcXVlc3QsXG4gIH0pO1xufTtcbiJdfQ==
 
 /***/ }),
 
@@ -15933,12 +18890,13 @@ exports.awsAuthMiddlewareOptions = {
     relation: "after",
     toMiddleware: "retryMiddleware",
 };
-exports.getAwsAuthPlugin = (options) => ({
+const getAwsAuthPlugin = (options) => ({
     applyToStack: (clientStack) => {
         clientStack.addRelativeTo(awsAuthMiddleware(options), exports.awsAuthMiddlewareOptions);
     },
 });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWlkZGxld2FyZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9taWRkbGV3YXJlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLDBEQUFxRDtBQWFyRCxNQUFNLGFBQWEsR0FBRyxDQUFDLGFBQXFCLEVBQUUsaUJBQXlCLEVBQUUsRUFBRSxDQUN6RSxJQUFJLENBQUMsR0FBRyxDQUFDLG9CQUFvQixDQUFDLGlCQUFpQixDQUFDLENBQUMsT0FBTyxFQUFFLEdBQUcsYUFBYSxDQUFDLElBQUksTUFBTSxDQUFDO0FBRXhGLE1BQU0sb0JBQW9CLEdBQUcsQ0FBQyxpQkFBeUIsRUFBRSxFQUFFLENBQUMsSUFBSSxJQUFJLENBQUMsSUFBSSxDQUFDLEdBQUcsRUFBRSxHQUFHLGlCQUFpQixDQUFDLENBQUM7QUFFckcsU0FBZ0IsaUJBQWlCLENBQy9CLE9BQThCO0lBRTlCLE9BQU8sQ0FBQyxJQUFvQyxFQUFFLE9BQWdDLEVBQWtDLEVBQUUsQ0FDaEgsS0FBSyxXQUFXLElBQXFDO1FBQ25ELElBQUksQ0FBQywyQkFBVyxDQUFDLFVBQVUsQ0FBQyxJQUFJLENBQUMsT0FBTyxDQUFDO1lBQUUsT0FBTyxJQUFJLENBQUMsSUFBSSxDQUFDLENBQUM7UUFDN0QsTUFBTSxNQUFNLEdBQUcsT0FBTyxPQUFPLENBQUMsTUFBTSxLQUFLLFVBQVUsQ0FBQyxDQUFDLENBQUMsTUFBTSxPQUFPLENBQUMsTUFBTSxFQUFFLENBQUMsQ0FBQyxDQUFDLE9BQU8sQ0FBQyxNQUFNLENBQUM7UUFDOUYsTUFBTSxNQUFNLEdBQUcsTUFBTSxJQUFJLENBQUM7WUFDeEIsR0FBRyxJQUFJO1lBQ1AsT0FBTyxFQUFFLE1BQU0sTUFBTSxDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsT0FBTyxFQUFFO2dCQUN2QyxXQUFXLEVBQUUsSUFBSSxJQUFJLENBQUMsSUFBSSxDQUFDLEdBQUcsRUFBRSxHQUFHLE9BQU8sQ0FBQyxpQkFBaUIsQ0FBQztnQkFDN0QsYUFBYSxFQUFFLE9BQU8sQ0FBQyxnQkFBZ0IsQ0FBQztnQkFDeEMsY0FBYyxFQUFFLE9BQU8sQ0FBQyxpQkFBaUIsQ0FBQzthQUMzQyxDQUFDO1NBQ0gsQ0FBQyxDQUFDO1FBRUgsTUFBTSxFQUFFLE9BQU8sRUFBRSxHQUFHLE1BQU0sQ0FBQyxRQUFlLENBQUM7UUFDM0MsTUFBTSxVQUFVLEdBQUcsT0FBTyxJQUFJLENBQUMsT0FBTyxDQUFDLElBQUksSUFBSSxPQUFPLENBQUMsSUFBSSxDQUFDLENBQUM7UUFDN0QsSUFBSSxVQUFVLEVBQUU7WUFDZCxNQUFNLFVBQVUsR0FBRyxJQUFJLENBQUMsS0FBSyxDQUFDLFVBQVUsQ0FBQyxDQUFDO1lBQzFDLElBQUksYUFBYSxDQUFDLFVBQVUsRUFBRSxPQUFPLENBQUMsaUJBQWlCLENBQUMsRUFBRTtnQkFDeEQsT0FBTyxDQUFDLGlCQUFpQixHQUFHLFVBQVUsR0FBRyxJQUFJLENBQUMsR0FBRyxFQUFFLENBQUM7YUFDckQ7U0FDRjtRQUVELE9BQU8sTUFBTSxDQUFDO0lBQ2hCLENBQUMsQ0FBQztBQUNOLENBQUM7QUEzQkQsOENBMkJDO0FBRVksUUFBQSx3QkFBd0IsR0FBOEI7SUFDakUsSUFBSSxFQUFFLG1CQUFtQjtJQUN6QixJQUFJLEVBQUUsQ0FBQyxXQUFXLEVBQUUsU0FBUyxDQUFDO0lBQzlCLFFBQVEsRUFBRSxPQUFPO0lBQ2pCLFlBQVksRUFBRSxpQkFBaUI7Q0FDaEMsQ0FBQztBQUVXLFFBQUEsZ0JBQWdCLEdBQUcsQ0FBQyxPQUE4QixFQUF1QixFQUFFLENBQUMsQ0FBQztJQUN4RixZQUFZLEVBQUUsQ0FBQyxXQUFXLEVBQUUsRUFBRTtRQUM1QixXQUFXLENBQUMsYUFBYSxDQUFDLGlCQUFpQixDQUFDLE9BQU8sQ0FBQyxFQUFFLGdDQUF3QixDQUFDLENBQUM7SUFDbEYsQ0FBQztDQUNGLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEh0dHBSZXF1ZXN0IH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3RvY29sLWh0dHBcIjtcbmltcG9ydCB7XG4gIEZpbmFsaXplSGFuZGxlcixcbiAgRmluYWxpemVIYW5kbGVyQXJndW1lbnRzLFxuICBGaW5hbGl6ZUhhbmRsZXJPdXRwdXQsXG4gIEZpbmFsaXplUmVxdWVzdE1pZGRsZXdhcmUsXG4gIEhhbmRsZXJFeGVjdXRpb25Db250ZXh0LFxuICBQbHVnZ2FibGUsXG4gIFJlbGF0aXZlTWlkZGxld2FyZU9wdGlvbnMsXG59IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5pbXBvcnQgeyBBd3NBdXRoUmVzb2x2ZWRDb25maWcgfSBmcm9tIFwiLi9jb25maWd1cmF0aW9uc1wiO1xuXG5jb25zdCBpc0Nsb2NrU2tld2VkID0gKG5ld1NlcnZlclRpbWU6IG51bWJlciwgc3lzdGVtQ2xvY2tPZmZzZXQ6IG51bWJlcikgPT5cbiAgTWF0aC5hYnMoZ2V0U2tld0NvcnJlY3RlZERhdGUoc3lzdGVtQ2xvY2tPZmZzZXQpLmdldFRpbWUoKSAtIG5ld1NlcnZlclRpbWUpID49IDMwMDAwMDtcblxuY29uc3QgZ2V0U2tld0NvcnJlY3RlZERhdGUgPSAoc3lzdGVtQ2xvY2tPZmZzZXQ6IG51bWJlcikgPT4gbmV3IERhdGUoRGF0ZS5ub3coKSArIHN5c3RlbUNsb2NrT2Zmc2V0KTtcblxuZXhwb3J0IGZ1bmN0aW9uIGF3c0F1dGhNaWRkbGV3YXJlPElucHV0IGV4dGVuZHMgb2JqZWN0LCBPdXRwdXQgZXh0ZW5kcyBvYmplY3Q+KFxuICBvcHRpb25zOiBBd3NBdXRoUmVzb2x2ZWRDb25maWdcbik6IEZpbmFsaXplUmVxdWVzdE1pZGRsZXdhcmU8SW5wdXQsIE91dHB1dD4ge1xuICByZXR1cm4gKG5leHQ6IEZpbmFsaXplSGFuZGxlcjxJbnB1dCwgT3V0cHV0PiwgY29udGV4dDogSGFuZGxlckV4ZWN1dGlvbkNvbnRleHQpOiBGaW5hbGl6ZUhhbmRsZXI8SW5wdXQsIE91dHB1dD4gPT5cbiAgICBhc3luYyBmdW5jdGlvbiAoYXJnczogRmluYWxpemVIYW5kbGVyQXJndW1lbnRzPElucHV0Pik6IFByb21pc2U8RmluYWxpemVIYW5kbGVyT3V0cHV0PE91dHB1dD4+IHtcbiAgICAgIGlmICghSHR0cFJlcXVlc3QuaXNJbnN0YW5jZShhcmdzLnJlcXVlc3QpKSByZXR1cm4gbmV4dChhcmdzKTtcbiAgICAgIGNvbnN0IHNpZ25lciA9IHR5cGVvZiBvcHRpb25zLnNpZ25lciA9PT0gXCJmdW5jdGlvblwiID8gYXdhaXQgb3B0aW9ucy5zaWduZXIoKSA6IG9wdGlvbnMuc2lnbmVyO1xuICAgICAgY29uc3Qgb3V0cHV0ID0gYXdhaXQgbmV4dCh7XG4gICAgICAgIC4uLmFyZ3MsXG4gICAgICAgIHJlcXVlc3Q6IGF3YWl0IHNpZ25lci5zaWduKGFyZ3MucmVxdWVzdCwge1xuICAgICAgICAgIHNpZ25pbmdEYXRlOiBuZXcgRGF0ZShEYXRlLm5vdygpICsgb3B0aW9ucy5zeXN0ZW1DbG9ja09mZnNldCksXG4gICAgICAgICAgc2lnbmluZ1JlZ2lvbjogY29udGV4dFtcInNpZ25pbmdfcmVnaW9uXCJdLFxuICAgICAgICAgIHNpZ25pbmdTZXJ2aWNlOiBjb250ZXh0W1wic2lnbmluZ19zZXJ2aWNlXCJdLFxuICAgICAgICB9KSxcbiAgICAgIH0pO1xuXG4gICAgICBjb25zdCB7IGhlYWRlcnMgfSA9IG91dHB1dC5yZXNwb25zZSBhcyBhbnk7XG4gICAgICBjb25zdCBkYXRlSGVhZGVyID0gaGVhZGVycyAmJiAoaGVhZGVycy5kYXRlIHx8IGhlYWRlcnMuRGF0ZSk7XG4gICAgICBpZiAoZGF0ZUhlYWRlcikge1xuICAgICAgICBjb25zdCBzZXJ2ZXJUaW1lID0gRGF0ZS5wYXJzZShkYXRlSGVhZGVyKTtcbiAgICAgICAgaWYgKGlzQ2xvY2tTa2V3ZWQoc2VydmVyVGltZSwgb3B0aW9ucy5zeXN0ZW1DbG9ja09mZnNldCkpIHtcbiAgICAgICAgICBvcHRpb25zLnN5c3RlbUNsb2NrT2Zmc2V0ID0gc2VydmVyVGltZSAtIERhdGUubm93KCk7XG4gICAgICAgIH1cbiAgICAgIH1cblxuICAgICAgcmV0dXJuIG91dHB1dDtcbiAgICB9O1xufVxuXG5leHBvcnQgY29uc3QgYXdzQXV0aE1pZGRsZXdhcmVPcHRpb25zOiBSZWxhdGl2ZU1pZGRsZXdhcmVPcHRpb25zID0ge1xuICBuYW1lOiBcImF3c0F1dGhNaWRkbGV3YXJlXCIsXG4gIHRhZ3M6IFtcIlNJR05BVFVSRVwiLCBcIkFXU0FVVEhcIl0sXG4gIHJlbGF0aW9uOiBcImFmdGVyXCIsXG4gIHRvTWlkZGxld2FyZTogXCJyZXRyeU1pZGRsZXdhcmVcIixcbn07XG5cbmV4cG9ydCBjb25zdCBnZXRBd3NBdXRoUGx1Z2luID0gKG9wdGlvbnM6IEF3c0F1dGhSZXNvbHZlZENvbmZpZyk6IFBsdWdnYWJsZTxhbnksIGFueT4gPT4gKHtcbiAgYXBwbHlUb1N0YWNrOiAoY2xpZW50U3RhY2spID0+IHtcbiAgICBjbGllbnRTdGFjay5hZGRSZWxhdGl2ZVRvKGF3c0F1dGhNaWRkbGV3YXJlKG9wdGlvbnMpLCBhd3NBdXRoTWlkZGxld2FyZU9wdGlvbnMpO1xuICB9LFxufSk7XG4iXX0=
+exports.getAwsAuthPlugin = getAwsAuthPlugin;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWlkZGxld2FyZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9taWRkbGV3YXJlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLDBEQUFxRDtBQWFyRCxNQUFNLGFBQWEsR0FBRyxDQUFDLGFBQXFCLEVBQUUsaUJBQXlCLEVBQUUsRUFBRSxDQUN6RSxJQUFJLENBQUMsR0FBRyxDQUFDLG9CQUFvQixDQUFDLGlCQUFpQixDQUFDLENBQUMsT0FBTyxFQUFFLEdBQUcsYUFBYSxDQUFDLElBQUksTUFBTSxDQUFDO0FBRXhGLE1BQU0sb0JBQW9CLEdBQUcsQ0FBQyxpQkFBeUIsRUFBRSxFQUFFLENBQUMsSUFBSSxJQUFJLENBQUMsSUFBSSxDQUFDLEdBQUcsRUFBRSxHQUFHLGlCQUFpQixDQUFDLENBQUM7QUFFckcsU0FBZ0IsaUJBQWlCLENBQy9CLE9BQThCO0lBRTlCLE9BQU8sQ0FBQyxJQUFvQyxFQUFFLE9BQWdDLEVBQWtDLEVBQUUsQ0FDaEgsS0FBSyxXQUFXLElBQXFDO1FBQ25ELElBQUksQ0FBQywyQkFBVyxDQUFDLFVBQVUsQ0FBQyxJQUFJLENBQUMsT0FBTyxDQUFDO1lBQUUsT0FBTyxJQUFJLENBQUMsSUFBSSxDQUFDLENBQUM7UUFDN0QsTUFBTSxNQUFNLEdBQUcsT0FBTyxPQUFPLENBQUMsTUFBTSxLQUFLLFVBQVUsQ0FBQyxDQUFDLENBQUMsTUFBTSxPQUFPLENBQUMsTUFBTSxFQUFFLENBQUMsQ0FBQyxDQUFDLE9BQU8sQ0FBQyxNQUFNLENBQUM7UUFDOUYsTUFBTSxNQUFNLEdBQUcsTUFBTSxJQUFJLENBQUM7WUFDeEIsR0FBRyxJQUFJO1lBQ1AsT0FBTyxFQUFFLE1BQU0sTUFBTSxDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsT0FBTyxFQUFFO2dCQUN2QyxXQUFXLEVBQUUsSUFBSSxJQUFJLENBQUMsSUFBSSxDQUFDLEdBQUcsRUFBRSxHQUFHLE9BQU8sQ0FBQyxpQkFBaUIsQ0FBQztnQkFDN0QsYUFBYSxFQUFFLE9BQU8sQ0FBQyxnQkFBZ0IsQ0FBQztnQkFDeEMsY0FBYyxFQUFFLE9BQU8sQ0FBQyxpQkFBaUIsQ0FBQzthQUMzQyxDQUFDO1NBQ0gsQ0FBQyxDQUFDO1FBRUgsTUFBTSxFQUFFLE9BQU8sRUFBRSxHQUFHLE1BQU0sQ0FBQyxRQUFlLENBQUM7UUFDM0MsTUFBTSxVQUFVLEdBQUcsT0FBTyxJQUFJLENBQUMsT0FBTyxDQUFDLElBQUksSUFBSSxPQUFPLENBQUMsSUFBSSxDQUFDLENBQUM7UUFDN0QsSUFBSSxVQUFVLEVBQUU7WUFDZCxNQUFNLFVBQVUsR0FBRyxJQUFJLENBQUMsS0FBSyxDQUFDLFVBQVUsQ0FBQyxDQUFDO1lBQzFDLElBQUksYUFBYSxDQUFDLFVBQVUsRUFBRSxPQUFPLENBQUMsaUJBQWlCLENBQUMsRUFBRTtnQkFDeEQsT0FBTyxDQUFDLGlCQUFpQixHQUFHLFVBQVUsR0FBRyxJQUFJLENBQUMsR0FBRyxFQUFFLENBQUM7YUFDckQ7U0FDRjtRQUVELE9BQU8sTUFBTSxDQUFDO0lBQ2hCLENBQUMsQ0FBQztBQUNOLENBQUM7QUEzQkQsOENBMkJDO0FBRVksUUFBQSx3QkFBd0IsR0FBOEI7SUFDakUsSUFBSSxFQUFFLG1CQUFtQjtJQUN6QixJQUFJLEVBQUUsQ0FBQyxXQUFXLEVBQUUsU0FBUyxDQUFDO0lBQzlCLFFBQVEsRUFBRSxPQUFPO0lBQ2pCLFlBQVksRUFBRSxpQkFBaUI7Q0FDaEMsQ0FBQztBQUVLLE1BQU0sZ0JBQWdCLEdBQUcsQ0FBQyxPQUE4QixFQUF1QixFQUFFLENBQUMsQ0FBQztJQUN4RixZQUFZLEVBQUUsQ0FBQyxXQUFXLEVBQUUsRUFBRTtRQUM1QixXQUFXLENBQUMsYUFBYSxDQUFDLGlCQUFpQixDQUFDLE9BQU8sQ0FBQyxFQUFFLGdDQUF3QixDQUFDLENBQUM7SUFDbEYsQ0FBQztDQUNGLENBQUMsQ0FBQztBQUpVLFFBQUEsZ0JBQWdCLG9CQUkxQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEh0dHBSZXF1ZXN0IH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3RvY29sLWh0dHBcIjtcbmltcG9ydCB7XG4gIEZpbmFsaXplSGFuZGxlcixcbiAgRmluYWxpemVIYW5kbGVyQXJndW1lbnRzLFxuICBGaW5hbGl6ZUhhbmRsZXJPdXRwdXQsXG4gIEZpbmFsaXplUmVxdWVzdE1pZGRsZXdhcmUsXG4gIEhhbmRsZXJFeGVjdXRpb25Db250ZXh0LFxuICBQbHVnZ2FibGUsXG4gIFJlbGF0aXZlTWlkZGxld2FyZU9wdGlvbnMsXG59IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5pbXBvcnQgeyBBd3NBdXRoUmVzb2x2ZWRDb25maWcgfSBmcm9tIFwiLi9jb25maWd1cmF0aW9uc1wiO1xuXG5jb25zdCBpc0Nsb2NrU2tld2VkID0gKG5ld1NlcnZlclRpbWU6IG51bWJlciwgc3lzdGVtQ2xvY2tPZmZzZXQ6IG51bWJlcikgPT5cbiAgTWF0aC5hYnMoZ2V0U2tld0NvcnJlY3RlZERhdGUoc3lzdGVtQ2xvY2tPZmZzZXQpLmdldFRpbWUoKSAtIG5ld1NlcnZlclRpbWUpID49IDMwMDAwMDtcblxuY29uc3QgZ2V0U2tld0NvcnJlY3RlZERhdGUgPSAoc3lzdGVtQ2xvY2tPZmZzZXQ6IG51bWJlcikgPT4gbmV3IERhdGUoRGF0ZS5ub3coKSArIHN5c3RlbUNsb2NrT2Zmc2V0KTtcblxuZXhwb3J0IGZ1bmN0aW9uIGF3c0F1dGhNaWRkbGV3YXJlPElucHV0IGV4dGVuZHMgb2JqZWN0LCBPdXRwdXQgZXh0ZW5kcyBvYmplY3Q+KFxuICBvcHRpb25zOiBBd3NBdXRoUmVzb2x2ZWRDb25maWdcbik6IEZpbmFsaXplUmVxdWVzdE1pZGRsZXdhcmU8SW5wdXQsIE91dHB1dD4ge1xuICByZXR1cm4gKG5leHQ6IEZpbmFsaXplSGFuZGxlcjxJbnB1dCwgT3V0cHV0PiwgY29udGV4dDogSGFuZGxlckV4ZWN1dGlvbkNvbnRleHQpOiBGaW5hbGl6ZUhhbmRsZXI8SW5wdXQsIE91dHB1dD4gPT5cbiAgICBhc3luYyBmdW5jdGlvbiAoYXJnczogRmluYWxpemVIYW5kbGVyQXJndW1lbnRzPElucHV0Pik6IFByb21pc2U8RmluYWxpemVIYW5kbGVyT3V0cHV0PE91dHB1dD4+IHtcbiAgICAgIGlmICghSHR0cFJlcXVlc3QuaXNJbnN0YW5jZShhcmdzLnJlcXVlc3QpKSByZXR1cm4gbmV4dChhcmdzKTtcbiAgICAgIGNvbnN0IHNpZ25lciA9IHR5cGVvZiBvcHRpb25zLnNpZ25lciA9PT0gXCJmdW5jdGlvblwiID8gYXdhaXQgb3B0aW9ucy5zaWduZXIoKSA6IG9wdGlvbnMuc2lnbmVyO1xuICAgICAgY29uc3Qgb3V0cHV0ID0gYXdhaXQgbmV4dCh7XG4gICAgICAgIC4uLmFyZ3MsXG4gICAgICAgIHJlcXVlc3Q6IGF3YWl0IHNpZ25lci5zaWduKGFyZ3MucmVxdWVzdCwge1xuICAgICAgICAgIHNpZ25pbmdEYXRlOiBuZXcgRGF0ZShEYXRlLm5vdygpICsgb3B0aW9ucy5zeXN0ZW1DbG9ja09mZnNldCksXG4gICAgICAgICAgc2lnbmluZ1JlZ2lvbjogY29udGV4dFtcInNpZ25pbmdfcmVnaW9uXCJdLFxuICAgICAgICAgIHNpZ25pbmdTZXJ2aWNlOiBjb250ZXh0W1wic2lnbmluZ19zZXJ2aWNlXCJdLFxuICAgICAgICB9KSxcbiAgICAgIH0pO1xuXG4gICAgICBjb25zdCB7IGhlYWRlcnMgfSA9IG91dHB1dC5yZXNwb25zZSBhcyBhbnk7XG4gICAgICBjb25zdCBkYXRlSGVhZGVyID0gaGVhZGVycyAmJiAoaGVhZGVycy5kYXRlIHx8IGhlYWRlcnMuRGF0ZSk7XG4gICAgICBpZiAoZGF0ZUhlYWRlcikge1xuICAgICAgICBjb25zdCBzZXJ2ZXJUaW1lID0gRGF0ZS5wYXJzZShkYXRlSGVhZGVyKTtcbiAgICAgICAgaWYgKGlzQ2xvY2tTa2V3ZWQoc2VydmVyVGltZSwgb3B0aW9ucy5zeXN0ZW1DbG9ja09mZnNldCkpIHtcbiAgICAgICAgICBvcHRpb25zLnN5c3RlbUNsb2NrT2Zmc2V0ID0gc2VydmVyVGltZSAtIERhdGUubm93KCk7XG4gICAgICAgIH1cbiAgICAgIH1cblxuICAgICAgcmV0dXJuIG91dHB1dDtcbiAgICB9O1xufVxuXG5leHBvcnQgY29uc3QgYXdzQXV0aE1pZGRsZXdhcmVPcHRpb25zOiBSZWxhdGl2ZU1pZGRsZXdhcmVPcHRpb25zID0ge1xuICBuYW1lOiBcImF3c0F1dGhNaWRkbGV3YXJlXCIsXG4gIHRhZ3M6IFtcIlNJR05BVFVSRVwiLCBcIkFXU0FVVEhcIl0sXG4gIHJlbGF0aW9uOiBcImFmdGVyXCIsXG4gIHRvTWlkZGxld2FyZTogXCJyZXRyeU1pZGRsZXdhcmVcIixcbn07XG5cbmV4cG9ydCBjb25zdCBnZXRBd3NBdXRoUGx1Z2luID0gKG9wdGlvbnM6IEF3c0F1dGhSZXNvbHZlZENvbmZpZyk6IFBsdWdnYWJsZTxhbnksIGFueT4gPT4gKHtcbiAgYXBwbHlUb1N0YWNrOiAoY2xpZW50U3RhY2spID0+IHtcbiAgICBjbGllbnRTdGFjay5hZGRSZWxhdGl2ZVRvKGF3c0F1dGhNaWRkbGV3YXJlKG9wdGlvbnMpLCBhd3NBdXRoTWlkZGxld2FyZU9wdGlvbnMpO1xuICB9LFxufSk7XG4iXX0=
 
 /***/ }),
 
@@ -16201,7 +19159,7 @@ function __classPrivateFieldSet(receiver, privateMap, value) {
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.constructStack = void 0;
-exports.constructStack = () => {
+const constructStack = () => {
     let absoluteEntries = [];
     let relativeEntries = [];
     const entriesNameSet = new Set();
@@ -16390,6 +19348,7 @@ exports.constructStack = () => {
     };
     return stack;
 };
+exports.constructStack = constructStack;
 const stepWeights = {
     initialize: 5,
     serialize: 4,
@@ -16402,7 +19361,7 @@ const priorityWeights = {
     normal: 2,
     low: 1,
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTWlkZGxld2FyZVN0YWNrLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL01pZGRsZXdhcmVTdGFjay50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFnQmEsUUFBQSxjQUFjLEdBQUcsR0FBZ0YsRUFBRTtJQUM5RyxJQUFJLGVBQWUsR0FBNkMsRUFBRSxDQUFDO0lBQ25FLElBQUksZUFBZSxHQUE2QyxFQUFFLENBQUM7SUFDbkUsTUFBTSxjQUFjLEdBQWdCLElBQUksR0FBRyxFQUFFLENBQUM7SUFFOUMsTUFBTSxJQUFJLEdBQUcsQ0FBbUQsT0FBWSxFQUFPLEVBQUUsQ0FDbkYsT0FBTyxDQUFDLElBQUksQ0FDVixDQUFDLENBQUMsRUFBRSxDQUFDLEVBQUUsRUFBRSxDQUNQLFdBQVcsQ0FBQyxDQUFDLENBQUMsSUFBSSxDQUFDLEdBQUcsV0FBVyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUM7UUFDekMsZUFBZSxDQUFDLENBQUMsQ0FBQyxRQUFRLElBQUksUUFBUSxDQUFDLEdBQUcsZUFBZSxDQUFDLENBQUMsQ0FBQyxRQUFRLElBQUksUUFBUSxDQUFDLENBQ3BGLENBQUM7SUFFSixNQUFNLFlBQVksR0FBRyxDQUFDLFFBQWdCLEVBQVcsRUFBRTtRQUNqRCxJQUFJLFNBQVMsR0FBRyxLQUFLLENBQUM7UUFDdEIsTUFBTSxRQUFRLEdBQUcsQ0FBQyxLQUFxQyxFQUFXLEVBQUU7WUFDbEUsSUFBSSxLQUFLLENBQUMsSUFBSSxJQUFJLEtBQUssQ0FBQyxJQUFJLEtBQUssUUFBUSxFQUFFO2dCQUN6QyxTQUFTLEdBQUcsSUFBSSxDQUFDO2dCQUNqQixjQUFjLENBQUMsTUFBTSxDQUFDLFFBQVEsQ0FBQyxDQUFDO2dCQUNoQyxPQUFPLEtBQUssQ0FBQzthQUNkO1lBQ0QsT0FBTyxJQUFJLENBQUM7UUFDZCxDQUFDLENBQUM7UUFDRixlQUFlLEdBQUcsZUFBZSxDQUFDLE1BQU0sQ0FBQyxRQUFRLENBQUMsQ0FBQztRQUNuRCxlQUFl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LEVBQUUsQ0FBQztDQUNmLENBQUM7QUFFRixNQUFNLGVBQWUsR0FBa0M7SUFDckQsSUFBSSxFQUFFLENBQUM7SUFDUCxNQUFNLEVBQUUsQ0FBQztJQUNULEdBQUcsRUFBRSxDQUFDO0NBQ1AsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7XG4gIEFic29sdXRlTG9jYXRpb24sXG4gIERlc2VyaWFsaXplSGFuZGxlcixcbiAgSGFuZGxlcixcbiAgSGFuZGxlckV4ZWN1dGlvbkNvbnRleHQsXG4gIEhhbmRsZXJPcHRpb25zLFxuICBNaWRkbGV3YXJlU3RhY2ssXG4gIE1pZGRsZXdhcmVUeXBlLFxuICBQbHVnZ2FibGUsXG4gIFByaW9yaXR5LFxuICBSZWxhdGl2ZUxvY2F0aW9uLFxuICBTdGVwLFxufSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuaW1wb3J0IHsgQWJzb2x1dGVNaWRkbGV3YXJlRW50cnksIE1pZGRsZXdhcmVFbnRyeSwgTm9ybWFsaXplZCwgUmVsYXRpdmVNaWRkbGV3YXJlRW50cnkgfSBmcm9tIFwiLi90eXBlc1wiO1xuXG5leHBvcnQgY29uc3QgY29uc3RydWN0U3RhY2sgPSA8SW5wdXQgZXh0ZW5kcyBvYmplY3QsIE91dHB1dCBleHRlbmRzIG9iamVjdD4oKTogTWlkZGxld2FyZVN0YWNrPElucHV0LCBPdXRwdXQ+ID0+IHtcbiAgbGV0IGFic29sdXRlRW50cmllczogQWJzb2x1dGVNaWRkbGV3YXJlRW50cnk8SW5wdXQsIE91dHB1dD5bXSA9IFtdO1xuICBsZXQgcmVsYXRpdmVFbnRyaWVzOiBSZWxhdGl2ZU1pZGRsZXdhcmVFbnRyeTxJbnB1dCwgT3V0cHV0PltdID0gW107XG4gIGNvbnN0IGVudHJpZXNOYW1lU2V0OiBTZXQ8c3RyaW5nPiA9IG5ldyBTZXQoKTtcblxuICBjb25zdCBzb3J0ID0gPFQgZXh0ZW5kcyBBYnNvbHV0ZU1pZGRsZXdhcmVFbnRyeTxJbnB1dCwgT3V0cHV0Pj4oZW50cmllczogVFtdKTogVFtdID0+XG4gICAgZW50cmllcy5zb3J0KFxuICAgICAgKGEsIGIpID0+XG4gICAgICAgIHN0ZXBXZWlnaHRzW2Iuc3RlcF0gLSBzdGVwV2VpZ2h0c1thLnN0ZXBdIHx8XG4gICAgICAgIHByaW9yaXR5V2VpZ2h0c1tiLnByaW9yaXR5IHx8IFwibm9ybWFsXCJdIC0gcHJpb3JpdHlXZWlnaHRzW2EucHJpb3JpdHkgfHwgXCJub3JtYWxcIl1cbiAgICApO1xuXG4gIGNvbnN0IHJlbW92ZUJ5TmFtZSA9ICh0b1JlbW92ZTogc3RyaW5nKTogYm9vbGVhbiA9PiB7XG4gICAgbGV0IGlzUmVtb3ZlZCA9IGZhbHNlO1xuICAgIGNvbnN0IGZpbHRlckNiID0gKGVudHJ5OiBNaWRkbGV3YXJlRW50cnk8SW5wdXQsIE91dHB1dD4pOiBib29sZWFuID0+IHtcbiAgICAgIGlmIChlbnRyeS5uYW1lICYmIGVudHJ5Lm5hbWUgPT09IHRvUmVtb3ZlKSB7XG4gICAgICAgIGlzUmVtb3ZlZCA9IHRydWU7XG4gICAgICAgIGVudHJpZXNOYW1lU2V0LmRlbGV0ZSh0b1JlbW92ZSk7XG4gICAgICAgIHJldHVybiBmYWxzZTtcbiAgICAgIH1cbiAgICAgIHJldHVybiB0cnVlO1xuICAgIH07XG4gICAgYWJzb2x1dGVFbnRyaWVzID0gYWJzb2x1dGVFbnRyaWVzLmZpbHRlcihmaWx0ZXJDYik7XG4gICAgcmVsYXRpdmVFbnRyaWVzID0gcmVsYXRpdmVFbnRyaWVzLmZpbHRlcihmaWx0ZXJDYik7XG4gICAgcmV0dXJuIGlzUmVtb3ZlZDtcbiAgfTtcblxuICBjb25zdCByZW1vdmVCeVJlZmVyZW5jZSA9ICh0b1JlbW92ZTogTWlkZGxld2FyZVR5cGU8SW5wdXQsIE91dHB1dD4pOiBib29sZWFuID0+IHtcbiAgICBsZXQgaXNSZW1vdmVkID0gZmFsc2U7XG4gICAgY29uc3QgZmlsdGVyQ2IgPSAoZW50cnk6IE1pZGRsZXdhcmVFbnRyeTxJbnB1dCwgT3V0cHV0Pik6IGJvb2xlYW4gPT4ge1xuICAgICAgaWYgKGVudHJ5Lm1pZGRsZXdhcmUgPT09IHRvUmVtb3ZlKSB7XG4gICAgICAgIGlzUmVtb3ZlZCA9IHRydWU7XG4gICAgICAgIGlmIChlbnRyeS5uYW1lKSBlbnRyaWVzTmFtZVNldC5kZWxldGUoZW50cnkubmFtZSk7XG4gICAgICAgIHJldHVybiBmYWxzZTtcbiAgICAgIH1cbiAgICAgIHJldHVybiB0cnVlO1xuICAgIH07XG4gICAgYWJzb2x1dGVFbnRyaWVzID0gYWJzb2x1dGVFbnRyaWVzLmZpbHRlcihmaWx0ZXJDYik7XG4gICAgcmVsYXRpdmVFbnRyaWVzID0gcmVsYXRpdmVFbnRyaWVzLmZpbHRlcihmaWx0ZXJDYik7XG4gICAgcmV0dXJuIGlzUmVtb3ZlZDtcbiAgfTtcblxuICBjb25zdCBjbG9uZVRvID0gPElucHV0VHlwZSBleHRlbmRzIElucHV0LCBPdXRwdXRUeXBlIGV4dGVuZHMgT3V0cHV0PihcbiAgICB0b1N0YWNrOiBNaWRkbGV3YXJlU3RhY2s8SW5wdXRUeXBlLCBPdXRwdXRUeXBlPlxuICApOiBNaWRkbGV3YXJlU3RhY2s8SW5wdXRUeXBlLCBPdXRwdXRUeXBlPiA9PiB7XG4gICAgYWJzb2x1dGVFbnRyaWVzLmZvckVhY2goKGVudHJ5KSA9PiB7XG4gICAgICAvL0B0cy1pZ25vcmVcbiAgICAgIHRvU3RhY2suYWRkKGVudHJ5Lm1pZGRsZXdhcmUsIHsgLi4uZW50cnkgfSk7XG4gICAgfSk7XG4gICAgcmVsYXRpdmVFbnRyaWVzLmZvckVhY2goKGVudHJ5KSA9PiB7XG4gICAgICAvL0B0cy1pZ25vcmVcbiAgICAgIHRvU3RhY2suYWRkUmVsYXRpdmVUbyhlbnRyeS5taWRkbGV3YXJlLCB7IC4uLmVudHJ5IH0pO1xuICAgIH0pO1xuICAgIHJldHVybiB0b1N0YWNrO1xuICB9O1xuXG4gIGNvbnN0IGV4cGFuZFJlbGF0aXZlTWlkZGxld2FyZUxpc3QgPSAoXG4gICAgZnJvbTogTm9ybWFsaXplZDxNaWRkbGV3YXJlRW50cnk8SW5wdXQsIE91dHB1dD4sIElucHV0LCBPdXRwdXQ+XG4gICk6IE1pZGRsZXdhcmVFbnRyeTxJbnB1dCwgT3V0cHV0PltdID0+IHtcbiAgICBjb25zdCBleHBhbmRlZE1pZGRsZXdhcmVMaXN0OiBNaWRkbGV3YXJlRW50cnk8SW5wdXQsIE91dHB1dD5bXSA9IFtdO1xuICAgIGZyb20uYmVmb3JlLmZvckVhY2goKGVudHJ5KSA9PiB7XG4gICAgICBpZiAoZW50cnkuYmVmb3JlLmxlbmd0aCA9PT0gMCAmJiBlbnRyeS5hZnRlci5sZW5ndGggPT09IDApIHtcbiAgICAgICAgZXhwYW5kZWRNaWRkbGV3YXJlTGlzdC5wdXNoKGVudHJ5KTtcbiAgICAgIH0gZWxzZSB7XG4gICAgICAgIGV4cGFuZGVkTWlkZGxld2FyZUxpc3QucHVzaCguLi5leHBhbmRSZWxhdGl2ZU1pZGRsZXdhcmVMaXN0KGVudHJ5KSk7XG4gICAgICB9XG4gICAgfSk7XG4gICAgZXhwYW5kZWRNaWRkbGV3YXJlTGlzdC5wdXNoKGZyb20pO1xuICAgIGZyb20uYWZ0ZXIucmV2ZXJzZSgpLmZvckVhY2goKGVudHJ5KSA9PiB7XG4gICAgICBpZiAoZW50cnkuYmVmb3JlLmxlbmd0aCA9PT0gMCAmJiBlbnRyeS5hZnRlci5sZW5ndGggPT09IDApIHtcbiAgICAgICAgZXhwYW5kZWRNaWRkbGV3YXJlTGlzdC5wdXNoKGVudHJ5KTtcbiAgICAgIH0gZWxzZSB7XG4gICAgICAgIGV4cGFuZGVkTWlkZGxld2FyZUxpc3QucHVzaCguLi5leHBhbmRSZWxhdGl2ZU1pZGRsZXdhcmVMaXN0KGVudHJ5KSk7XG4gICAgICB9XG4gICAgfSk7XG4gICAgcmV0dXJuIGV4cGFuZGVkTWlkZGxld2FyZUxpc3Q7XG4gIH07XG5cbiAgLyoqXG4gICAqIEdldCBhIGZpbmFsIGxpc3Qgb2YgbWlkZGxld2FyZSBpbiB0aGUgb3JkZXIgb2YgYmVpbmcgZXhlY3V0ZWQgaW4gdGhlIHJlc29sdmVkIGhhbmRsZXIuXG4gICAqL1xuICBjb25zdCBnZXRNaWRkbGV3YXJlTGlzdCA9ICgpOiBBcnJheTxNaWRkbGV3YXJlVHlwZTxJbnB1dCwgT3V0cHV0Pj4gPT4ge1xuICAgIGNvbnN0IG5vcm1hbGl6ZWRBYnNvbHV0ZUVudHJpZXM6IE5vcm1hbGl6ZWQ8QWJzb2x1dGVNaWRkbGV3YXJlRW50cnk8SW5wdXQsIE91dHB1dD4sIElucHV0LCBPdXRwdXQ+W10gPSBbXTtcbiAgICBjb25zdCBub3JtYWxpemVkUmVsYXRpdmVFbnRyaWVzOiBOb3JtYWxpemVkPFJlbGF0aXZlTWlkZGxld2FyZUVudHJ5PElucHV0LCBPdXRwdXQ+LCBJbnB1dCwgT3V0cHV0PltdID0gW107XG4gICAgY29uc3Qgbm9ybWFsaXplZEVudHJpZXNOYW1lTWFwOiB7XG4gICAgICBbbWlkZGxld2FyZU5hbWU6IHN0cmluZ106IE5vcm1hbGl6ZWQ8TWlkZGxld2FyZUVudHJ5PElucHV0LCBPdXRwdXQ+LCBJbnB1dCwgT3V0cHV0PjtcbiAgICB9ID0ge307XG5cbiAgICBhYnNvbHV0ZUVudHJpZXMuZm9yRWFjaCgoZW50cnkpID0+IHtcbiAgICAgIGNvbnN0IG5vcm1hbGl6ZWRFbnRyeSA9IHtcbiAgICAgICAgLi4uZW50cnksXG4gICAgICAgIGJlZm9yZTogW10sXG4gICAgICAgIGFmdGVyOiBbXSxcbiAgICAgIH07XG4gICAgICBpZiAobm9ybWFsaXplZEVudHJ5Lm5hbWUpIG5vcm1hbGl6ZWRFbnRyaWVzTmFtZU1hcFtub3JtYWxpemVkRW50cnkubmFtZV0gPSBub3JtYWxpemVkRW50cnk7XG4gICAgICBub3JtYWxpemVkQWJzb2x1dGVFbnRyaWVzLnB1c2gobm9ybWFsaXplZEVudHJ5KTtcbiAgICB9KTtcblxuICAgIHJlbGF0aXZlRW50cmllcy5mb3JFYWNoKChlbnRyeSkgPT4ge1xuICAgICAgY29uc3Qgbm9ybWFsaXplZEVudHJ5ID0ge1xuICAgICAgICAuLi5lbnRyeSxcbiAgICAgICAgYmVmb3JlOiBbXSxcbiAgICAgICAgYWZ0ZXI6IFtdLFxuICAgICAgfTtcbiAgICAgIGlmIChub3JtYWxpemVkRW50cnkubmFtZSkgbm9ybWFsaXplZEVudHJpZXNOYW1lTWFwW25vcm1hbGl6ZWRFbnRyeS5uYW1lXSA9IG5vcm1hbGl6ZWRFbnRyeTtcbiAgICAgIG5vcm1hbGl6ZWRSZWxhdGl2ZUVudHJpZXMucHVzaChub3JtYWxpemVkRW50cnkpO1xuICAgIH0pO1xuXG4gICAgbm9ybWFsaXplZFJlbGF0aXZlRW50cmllcy5mb3JFYWNoKChlbnRyeSkgPT4ge1xuICAgICAgaWYgKGVudHJ5LnRvTWlkZGxld2FyZSkge1xuICAgICAgICBjb25zdCB0b01pZGRsZXdhcmUgPSBub3JtYWxpemVkRW50cmllc05hbWVNYXBbZW50cnkudG9NaWRkbGV3YXJlXTtcbiAgICAgICAgaWYgKHRvTWlkZGxld2FyZSA9PT0gdW5kZWZpbmVkKSB7XG4gICAgICAgICAgdGhyb3cgbmV3IEVycm9yKFxuICAgICAgICAgICAgYCR7ZW50cnkudG9NaWRkbGV3YXJlfSBpcyBub3QgZm91bmQgd2hlbiBhZGRpbmcgJHtlbnRyeS5uYW1lIHx8IFwiYW5vbnltb3VzXCJ9IG1pZGRsZXdhcmUgJHtlbnRyeS5yZWxhdGlvbn0gJHtcbiAgICAgICAgICAgICAgZW50cnkudG9NaWRkbGV3YXJlXG4gICAgICAgICAgICB9YFxuICAgICAgICAgICk7XG4gICAgICAgIH1cbiAgICAgICAgaWYgKGVudHJ5LnJlbGF0aW9uID09PSBcImFmdGVyXCIpIHtcbiAgICAgICAgICB0b01pZGRsZXdhcmUuYWZ0ZXIucHVzaChlbnRyeSk7XG4gICAgICAgIH1cbiAgICAgICAgaWYgKGVudHJ5LnJlbGF0aW9uID09PSBcImJlZm9yZVwiKSB7XG4gICAgICAgICAgdG9NaWRkbGV3YXJlLmJlZm9yZS5wdXNoKGVudHJ5KTtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH0pO1xuXG4gICAgY29uc3QgbWFpbkNoYWluID0gc29ydChub3JtYWxpemVkQWJzb2x1dGVFbnRyaWVzKVxuICAgICAgLm1hcChleHBhbmRSZWxhdGl2ZU1pZGRsZXdhcmVMaXN0KVxuICAgICAgLnJlZHVjZSgod2hvbGVMaXN0LCBleHBlbmRlZE1pZGRsZXdhcmVMaXN0KSA9PiB7XG4gICAgICAgIC8vIFRPRE86IFJlcGxhY2UgaXQgd2l0aCBBcnJheS5mbGF0KCk7XG4gICAgICAgIHdob2xlTGlzdC5wdXNoKC4uLmV4cGVuZGVkTWlkZGxld2FyZUxpc3QpO1xuICAgICAgICByZXR1cm4gd2hvbGVMaXN0O1xuICAgICAgfSwgW10gYXMgTWlkZGxld2FyZUVudHJ5PElucHV0LCBPdXRwdXQ+W10pO1xuICAgIHJldHVybiBtYWluQ2hhaW4ubWFwKChlbnRyeSkgPT4gZW50cnkubWlkZGxld2FyZSk7XG4gIH07XG5cbiAgY29uc3Qgc3RhY2sgPSB7XG4gICAgYWRkOiAobWlkZGxld2FyZTogTWlkZGxld2FyZVR5cGU8SW5wdXQsIE91dHB1dD4sIG9wdGlvbnM6IEhhbmRsZXJPcHRpb25zICYgQWJzb2x1dGVMb2NhdGlvbiA9IHt9KSA9PiB7XG4gICAgICBjb25zdCB7IG5hbWUgfSA9IG9wdGlvbnM7XG4gICAgICBjb25zdCBlbnRyeTogQWJzb2x1dGVNaWRkbGV3YXJlRW50cnk8SW5wdXQsIE91dHB1dD4gPSB7XG4gICAgICAgIHN0ZXA6IFwiaW5pdGlhbGl6ZVwiLFxuICAgICAgICBwcmlvcml0eTogXCJub3JtYWxcIixcbiAgICAgICAgbWlkZGxld2FyZSxcbiAgICAgICAgLi4ub3B0aW9ucyxcbiAgICAgIH07XG4gICAgICBpZiAobmFtZSkge1xuICAgICAgICBpZiAoZW50cmllc05hbWVTZXQuaGFzKG5hbWUpKSB7XG4gICAgICAgICAgdGhyb3cgbmV3IEVycm9yKGBEdXBsaWNhdGUgbWlkZGxld2FyZSBuYW1lICcke25hbWV9J2ApO1xuICAgICAgICB9XG4gICAgICAgIGVudHJpZXNOYW1lU2V0LmFkZChuYW1lKTtcbiAgICAgIH1cbiAgICAgIGFic29sdXRlRW50cmllcy5wdXNoKGVudHJ5KTtcbiAgICB9LFxuXG4gICAgYWRkUmVsYXRpdmVUbzogKG1pZGRsZXdhcmU6IE1pZGRsZXdhcmVUeXBlPElucHV0LCBPdXRwdXQ+LCBvcHRpb25zOiBIYW5kbGVyT3B0aW9ucyAmIFJlbGF0aXZlTG9jYXRpb24pID0+IHtcbiAgICAgIGNvbnN0IHsgbmFtZSB9ID0gb3B0aW9ucztcbiAgICAgIGNvbnN0IGVudHJ5OiBSZWxhdGl2ZU1pZGRsZXdhcmVFbnRyeTxJbnB1dCwgT3V0cHV0PiA9IHtcbiAgICAgICAgbWlkZGxld2FyZSxcbiAgICAgICAgLi4ub3B0aW9ucyxcbiAgICAgIH07XG4gICAgICBpZiAobmFtZSkge1xuICAgICAgICBpZiAoZW50cmllc05hbWVTZXQuaGFzKG5hbWUpKSB7XG4gICAgICAgICAgdGhyb3cgbmV3IEVycm9yKGBEdXBsaWNhdGVkIG1pZGRsZXdhcmUgbmFtZSAnJHtuYW1lfSdgKTtcbiAgICAgICAgfVxuICAgICAgICBlbnRyaWVzTmFtZVNldC5hZGQobmFtZSk7XG4gICAgICB9XG4gICAgICByZWxhdGl2ZUVudHJpZXMucHVzaChlbnRyeSk7XG4gICAgfSxcblxuICAgIGNsb25lOiAoKSA9PiBjbG9uZVRvKGNvbnN0cnVjdFN0YWNrPElucHV0LCBPdXRwdXQ+KCkpLFxuXG4gICAgdXNlOiAocGx1Z2luOiBQbHVnZ2FibGU8SW5wdXQsIE91dHB1dD4pID0+IHtcbiAgICAgIHBsdWdpbi5hcHBseVRvU3RhY2soc3RhY2spO1xuICAgIH0sXG5cbiAgICByZW1vdmU6ICh0b1JlbW92ZTogTWlkZGxld2FyZVR5cGU8SW5wdXQsIE91dHB1dD4gfCBzdHJpbmcpOiBib29sZWFuID0+IHtcbiAgICAgIGlmICh0eXBlb2YgdG9SZW1vdmUgPT09IFwic3RyaW5nXCIpIHJldHVybiByZW1vdmVCeU5hbWUodG9SZW1vdmUpO1xuICAgICAgZWxzZSByZXR1cm4gcmVtb3ZlQnlSZWZlcmVuY2UodG9SZW1vdmUpO1xuICAgIH0sXG5cbiAgICByZW1vdmVCeVRhZzogKHRvUmVtb3ZlOiBzdHJpbmcpOiBib29sZWFuID0+IHtcbiAgICAgIGxldCBpc1JlbW92ZWQgPSBmYWxzZTtcbiAgICAgIGNvbnN0IGZpbHRlckNiID0gKGVudHJ5OiBNaWRkbGV3YXJlRW50cnk8SW5wdXQsIE91dHB1dD4pOiBib29sZWFuID0+IHtcbiAgICAgICAgY29uc3QgeyB0YWdzLCBuYW1lIH0gPSBlbnRyeTtcbiAgICAgICAgaWYgKHRhZ3MgJiYgdGFncy5pbmNsdWRlcyh0b1JlbW92ZSkpIHtcbiAgICAgICAgICBpZiAobmFtZSkgZW50cmllc05hbWVTZXQuZGVsZXRlKG5hbWUpO1xuICAgICAgICAgIGlzUmVtb3ZlZCA9IHRydWU7XG4gICAgICAgICAgcmV0dXJuIGZhbHNlO1xuICAgICAgICB9XG4gICAgICAgIHJldHVybiB0cnVlO1xuICAgICAgfTtcbiAgICAgIGFic29sdXRlRW50cmllcyA9IGFic29sdXRlRW50cmllcy5maWx0ZXIoZmlsdGVyQ2IpO1xuICAgICAgcmVsYXRpdmVFbnRyaWVzID0gcmVsYXRpdmVFbnRyaWVzLmZpbHRlcihmaWx0ZXJDYik7XG4gICAgICByZXR1cm4gaXNSZW1vdmVkO1xuICAgIH0sXG5cbiAgICBjb25jYXQ6IDxJbnB1dFR5cGUgZXh0ZW5kcyBJbnB1dCwgT3V0cHV0VHlwZSBleHRlbmRzIE91dHB1dD4oXG4gICAgICBmcm9tOiBNaWRkbGV3YXJlU3RhY2s8SW5wdXRUeXBlLCBPdXRwdXRUeXBlPlxuICAgICk6IE1pZGRsZXdhcmVTdGFjazxJbnB1dFR5cGUsIE91dHB1dFR5cGU+ID0+IHtcbiAgICAgIGNvbnN0IGNsb25lZCA9IGNsb25lVG8oY29uc3RydWN0U3RhY2s8SW5wdXRUeXBlLCBPdXRwdXRUeXBlPigpKTtcbiAgICAgIGNsb25lZC51c2UoZnJvbSk7XG4gICAgICByZXR1cm4gY2xvbmVkO1xuICAgIH0sXG5cbiAgICBhcHBseVRvU3RhY2s6IGNsb25lVG8sXG5cbiAgICByZXNvbHZlOiA8SW5wdXRUeXBlIGV4dGVuZHMgSW5wdXQsIE91dHB1dFR5cGUgZXh0ZW5kcyBPdXRwdXQ+KFxuICAgICAgaGFuZGxlcjogRGVzZXJpYWxpemVIYW5kbGVyPElucHV0VHlwZSwgT3V0cHV0VHlwZT4sXG4gICAgICBjb250ZXh0OiBIYW5kbGVyRXhlY3V0aW9uQ29udGV4dFxuICAgICk6IEhhbmRsZXI8SW5wdXRUeXBlLCBPdXRwdXRUeXBlPiA9PiB7XG4gICAgICBmb3IgKGNvbnN0IG1pZGRsZXdhcmUgb2YgZ2V0TWlkZGxld2FyZUxpc3QoKS5yZXZlcnNlKCkpIHtcbiAgICAgICAgaGFuZGxlciA9IG1pZGRsZXdhcmUoaGFuZGxlciBhcyBIYW5kbGVyPElucHV0LCBPdXRwdXRUeXBlPiwgY29udGV4dCkgYXMgYW55O1xuICAgICAgfVxuICAgICAgcmV0dXJuIGhhbmRsZXIgYXMgSGFuZGxlcjxJbnB1dFR5cGUsIE91dHB1dFR5cGU+O1xuICAgIH0sXG4gIH07XG4gIHJldHVybiBzdGFjaztcbn07XG5cbmNvbnN0IHN0ZXBXZWlnaHRzOiB7IFtrZXkgaW4gU3RlcF06IG51bWJlciB9ID0ge1xuICBpbml0aWFsaXplOiA1LFxuICBzZXJpYWxpemU6IDQsXG4gIGJ1aWxkOiAzLFxuICBmaW5hbGl6ZVJlcXVlc3Q6IDIsXG4gIGRlc2VyaWFsaXplOiAxLFxufTtcblxuY29uc3QgcHJpb3JpdHlXZWlnaHRzOiB7IFtrZXkgaW4gUHJpb3JpdHldOiBudW1iZXIgfSA9IHtcbiAgaGlnaDogMyxcbiAgbm9ybWFsOiAyLFxuICBsb3c6IDEsXG59O1xuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTWlkZGxld2FyZVN0YWNrLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL01pZGRsZXdhcmVTdGFjay50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFnQk8sTUFBTSxjQUFjLEdBQUcsR0FBZ0YsRUFBRTtJQUM5RyxJQUFJLGVBQWUsR0FBNkMsRUFBRSxDQUFDO0lBQ25FLElBQUksZUFBZSxHQUE2QyxFQUFFLENBQUM7SUFDbkUsTUFBTSxjQUFjLEdBQWdCLElBQUksR0FBRyxFQUFFLENBQUM7SUFFOUMsTUFBTSxJQUFJLEdBQUcsQ0FBbUQsT0FBWSxFQUFPLEVBQUUsQ0FDbkYsT0FBTyxDQUFDLElBQUksQ0FDVixDQUFDLENBQUMsRUFBRSxDQUFDLEVBQUUsRUFBRSxDQUNQLFdBQVcsQ0FBQyxDQUFDLENBQUMsSUFBSSxDQUFDLEdBQUcsV0FBVyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUM7UUFDekMsZUFBZSxDQUFDLENBQUMsQ0FBQyxRQUFRLElBQUksUUFBUSxDQUFDLEdBQUcsZUFBZSxDQUFDLENBQUMsQ0FBQyxRQUFRLElBQUksUUFBUSxDQUFDLENBQ3BGLENBQUM7SUFFSixNQUFNLFlBQVksR0FBRyxDQUFDLFFBQWdCLEVBQVcsRUFBRTtRQUNqRCxJQUFJLFNBQVMsR0FBRyxLQUFLLENBQUM7UUFDdEIsTUFBTSxRQUFRLEdBQUcsQ0FBQyxLQUFxQyxFQUFXLEVBQUU7WUFDbEUsSUFBSSxLQUFLLENBQUMsSUFBSSxJQUFJLEtBQUssQ0FBQyxJQUFJLEtBQUssUUFBUSxFQUFFO2dCQUN6QyxTQUFTLEdBQUcsSUFBSSxDQUFDO2dCQUNqQixjQUFjLENBQUMsTUFBTSxDQUFDLFFBQVEsQ0FBQyxDQUFDO2dCQUNoQyxPQUFPLEtBQUssQ0FBQzthQUNkO1lBQ0QsT0FBTyxJQUFJLENBQUM7UUFDZCxDQUFDLENBQUM7UUFDRixlQUFlLEdBQUcsZUFBZSxDQUFDLE1BQU0sQ0FBQyxRQUFRLENBQUMsQ0FBQztRQUNuRCxlQUFl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QUFlLEVBQUUsQ0FBQztJQUNsQixXQUFXLEVBQUUsQ0FBQztDQUNmLENBQUM7QUFFRixNQUFNLGVBQWUsR0FBa0M7SUFDckQsSUFBSSxFQUFFLENBQUM7SUFDUCxNQUFNLEVBQUUsQ0FBQztJQUNULEdBQUcsRUFBRSxDQUFDO0NBQ1AsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7XG4gIEFic29sdXRlTG9jYXRpb24sXG4gIERlc2VyaWFsaXplSGFuZGxlcixcbiAgSGFuZGxlcixcbiAgSGFuZGxlckV4ZWN1dGlvbkNvbnRleHQsXG4gIEhhbmRsZXJPcHRpb25zLFxuICBNaWRkbGV3YXJlU3RhY2ssXG4gIE1pZGRsZXdhcmVUeXBlLFxuICBQbHVnZ2FibGUsXG4gIFByaW9yaXR5LFxuICBSZWxhdGl2ZUxvY2F0aW9uLFxuICBTdGVwLFxufSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuaW1wb3J0IHsgQWJzb2x1dGVNaWRkbGV3YXJlRW50cnksIE1pZGRsZXdhcmVFbnRyeSwgTm9ybWFsaXplZCwgUmVsYXRpdmVNaWRkbGV3YXJlRW50cnkgfSBmcm9tIFwiLi90eXBlc1wiO1xuXG5leHBvcnQgY29uc3QgY29uc3RydWN0U3RhY2sgPSA8SW5wdXQgZXh0ZW5kcyBvYmplY3QsIE91dHB1dCBleHRlbmRzIG9iamVjdD4oKTogTWlkZGxld2FyZVN0YWNrPElucHV0LCBPdXRwdXQ+ID0+IHtcbiAgbGV0IGFic29sdXRlRW50cmllczogQWJzb2x1dGVNaWRkbGV3YXJlRW50cnk8SW5wdXQsIE91dHB1dD5bXSA9IFtdO1xuICBsZXQgcmVsYXRpdmVFbnRyaWVzOiBSZWxhdGl2ZU1pZGRsZXdhcmVFbnRyeTxJbnB1dCwgT3V0cHV0PltdID0gW107XG4gIGNvbnN0IGVudHJpZXNOYW1lU2V0OiBTZXQ8c3RyaW5nPiA9IG5ldyBTZXQoKTtcblxuICBjb25zdCBzb3J0ID0gPFQgZXh0ZW5kcyBBYnNvbHV0ZU1pZGRsZXdhcmVFbnRyeTxJbnB1dCwgT3V0cHV0Pj4oZW50cmllczogVFtdKTogVFtdID0+XG4gICAgZW50cmllcy5zb3J0KFxuICAgICAgKGEsIGIpID0+XG4gICAgICAgIHN0ZXBXZWlnaHRzW2Iuc3RlcF0gLSBzdGVwV2VpZ2h0c1thLnN0ZXBdIHx8XG4gICAgICAgIHByaW9yaXR5V2VpZ2h0c1tiLnByaW9yaXR5IHx8IFwibm9ybWFsXCJdIC0gcHJpb3JpdHlXZWlnaHRzW2EucHJpb3JpdHkgfHwgXCJub3JtYWxcIl1cbiAgICApO1xuXG4gIGNvbnN0IHJlbW92ZUJ5TmFtZSA9ICh0b1JlbW92ZTogc3RyaW5nKTogYm9vbGVhbiA9PiB7XG4gICAgbGV0IGlzUmVtb3ZlZCA9IGZhbHNlO1xuICAgIGNvbnN0IGZpbHRlckNiID0gKGVudHJ5OiBNaWRkbGV3YXJlRW50cnk8SW5wdXQsIE91dHB1dD4pOiBib29sZWFuID0+IHtcbiAgICAgIGlmIChlbnRyeS5uYW1lICYmIGVudHJ5Lm5hbWUgPT09IHRvUmVtb3ZlKSB7XG4gICAgICAgIGlzUmVtb3ZlZCA9IHRydWU7XG4gICAgICAgIGVudHJpZXNOYW1lU2V0LmRlbGV0ZSh0b1JlbW92ZSk7XG4gICAgICAgIHJldHVybiBmYWxzZTtcbiAgICAgIH1cbiAgICAgIHJldHVybiB0cnVlO1xuICAgIH07XG4gICAgYWJzb2x1dGVFbnRyaWVzID0gYWJzb2x1dGVFbnRyaWVzLmZpbHRlcihmaWx0ZXJDYik7XG4gICAgcmVsYXRpdmVFbnRyaWVzID0gcmVsYXRpdmVFbnRyaWVzLmZpbHRlcihmaWx0ZXJDYik7XG4gICAgcmV0dXJuIGlzUmVtb3ZlZDtcbiAgfTtcblxuICBjb25zdCByZW1vdmVCeVJlZmVyZW5jZSA9ICh0b1JlbW92ZTogTWlkZGxld2FyZVR5cGU8SW5wdXQsIE91dHB1dD4pOiBib29sZWFuID0+IHtcbiAgICBsZXQgaXNSZW1vdmVkID0gZmFsc2U7XG4gICAgY29uc3QgZmlsdGVyQ2IgPSAoZW50cnk6IE1pZGRsZXdhcmVFbnRyeTxJbnB1dCwgT3V0cHV0Pik6IGJvb2xlYW4gPT4ge1xuICAgICAgaWYgKGVudHJ5Lm1pZGRsZXdhcmUgPT09IHRvUmVtb3ZlKSB7XG4gICAgICAgIGlzUmVtb3ZlZCA9IHRydWU7XG4gICAgICAgIGlmIChlbnRyeS5uYW1lKSBlbnRyaWVzTmFtZVNldC5kZWxldGUoZW50cnkubmFtZSk7XG4gICAgICAgIHJldHVybiBmYWxzZTtcbiAgICAgIH1cbiAgICAgIHJldHVybiB0cnVlO1xuICAgIH07XG4gICAgYWJzb2x1dGVFbnRyaWVzID0gYWJzb2x1dGVFbnRyaWVzLmZpbHRlcihmaWx0ZXJDYik7XG4gICAgcmVsYXRpdmVFbnRyaWVzID0gcmVsYXRpdmVFbnRyaWVzLmZpbHRlcihmaWx0ZXJDYik7XG4gICAgcmV0dXJuIGlzUmVtb3ZlZDtcbiAgfTtcblxuICBjb25zdCBjbG9uZVRvID0gPElucHV0VHlwZSBleHRlbmRzIElucHV0LCBPdXRwdXRUeXBlIGV4dGVuZHMgT3V0cHV0PihcbiAgICB0b1N0YWNrOiBNaWRkbGV3YXJlU3RhY2s8SW5wdXRUeXBlLCBPdXRwdXRUeXBlPlxuICApOiBNaWRkbGV3YXJlU3RhY2s8SW5wdXRUeXBlLCBPdXRwdXRUeXBlPiA9PiB7XG4gICAgYWJzb2x1dGVFbnRyaWVzLmZvckVhY2goKGVudHJ5KSA9PiB7XG4gICAgICAvL0B0cy1pZ25vcmVcbiAgICAgIHRvU3RhY2suYWRkKGVudHJ5Lm1pZGRsZXdhcmUsIHsgLi4uZW50cnkgfSk7XG4gICAgfSk7XG4gICAgcmVsYXRpdmVFbnRyaWVzLmZvckVhY2goKGVudHJ5KSA9PiB7XG4gICAgICAvL0B0cy1pZ25vcmVcbiAgICAgIHRvU3RhY2suYWRkUmVsYXRpdmVUbyhlbnRyeS5taWRkbGV3YXJlLCB7IC4uLmVudHJ5IH0pO1xuICAgIH0pO1xuICAgIHJldHVybiB0b1N0YWNrO1xuICB9O1xuXG4gIGNvbnN0IGV4cGFuZFJlbGF0aXZlTWlkZGxld2FyZUxpc3QgPSAoXG4gICAgZnJvbTogTm9ybWFsaXplZDxNaWRkbGV3YXJlRW50cnk8SW5wdXQsIE91dHB1dD4sIElucHV0LCBPdXRwdXQ+XG4gICk6IE1pZGRsZXdhcmVFbnRyeTxJbnB1dCwgT3V0cHV0PltdID0+IHtcbiAgICBjb25zdCBleHBhbmRlZE1pZGRsZXdhcmVMaXN0OiBNaWRkbGV3YXJlRW50cnk8SW5wdXQsIE91dHB1dD5bXSA9IFtdO1xuICAgIGZyb20uYmVmb3JlLmZvckVhY2goKGVudHJ5KSA9PiB7XG4gICAgICBpZiAoZW50cnkuYmVmb3JlLmxlbmd0aCA9PT0gMCAmJiBlbnRyeS5hZnRlci5sZW5ndGggPT09IDApIHtcbiAgICAgICAgZXhwYW5kZWRNaWRkbGV3YXJlTGlzdC5wdXNoKGVudHJ5KTtcbiAgICAgIH0gZWxzZSB7XG4gICAgICAgIGV4cGFuZGVkTWlkZGxld2FyZUxpc3QucHVzaCguLi5leHBhbmRSZWxhdGl2ZU1pZGRsZXdhcmVMaXN0KGVudHJ5KSk7XG4gICAgICB9XG4gICAgfSk7XG4gICAgZXhwYW5kZWRNaWRkbGV3YXJlTGlzdC5wdXNoKGZyb20pO1xuICAgIGZyb20uYWZ0ZXIucmV2ZXJzZSgpLmZvckVhY2goKGVudHJ5KSA9PiB7XG4gICAgICBpZiAoZW50cnkuYmVmb3JlLmxlbmd0aCA9PT0gMCAmJiBlbnRyeS5hZnRlci5sZW5ndGggPT09IDApIHtcbiAgICAgICAgZXhwYW5kZWRNaWRkbGV3YXJlTGlzdC5wdXNoKGVudHJ5KTtcbiAgICAgIH0gZWxzZSB7XG4gICAgICAgIGV4cGFuZGVkTWlkZGxld2FyZUxpc3QucHVzaCguLi5leHBhbmRSZWxhdGl2ZU1pZGRsZXdhcmVMaXN0KGVudHJ5KSk7XG4gICAgICB9XG4gICAgfSk7XG4gICAgcmV0dXJuIGV4cGFuZGVkTWlkZGxld2FyZUxpc3Q7XG4gIH07XG5cbiAgLyoqXG4gICAqIEdldCBhIGZpbmFsIGxpc3Qgb2YgbWlkZGxld2FyZSBpbiB0aGUgb3JkZXIgb2YgYmVpbmcgZXhlY3V0ZWQgaW4gdGhlIHJlc29sdmVkIGhhbmRsZXIuXG4gICAqL1xuICBjb25zdCBnZXRNaWRkbGV3YXJlTGlzdCA9ICgpOiBBcnJheTxNaWRkbGV3YXJlVHlwZTxJbnB1dCwgT3V0cHV0Pj4gPT4ge1xuICAgIGNvbnN0IG5vcm1hbGl6ZWRBYnNvbHV0ZUVudHJpZXM6IE5vcm1hbGl6ZWQ8QWJzb2x1dGVNaWRkbGV3YXJlRW50cnk8SW5wdXQsIE91dHB1dD4sIElucHV0LCBPdXRwdXQ+W10gPSBbXTtcbiAgICBjb25zdCBub3JtYWxpemVkUmVsYXRpdmVFbnRyaWVzOiBOb3JtYWxpemVkPFJlbGF0aXZlTWlkZGxld2FyZUVudHJ5PElucHV0LCBPdXRwdXQ+LCBJbnB1dCwgT3V0cHV0PltdID0gW107XG4gICAgY29uc3Qgbm9ybWFsaXplZEVudHJpZXNOYW1lTWFwOiB7XG4gICAgICBbbWlkZGxld2FyZU5hbWU6IHN0cmluZ106IE5vcm1hbGl6ZWQ8TWlkZGxld2FyZUVudHJ5PElucHV0LCBPdXRwdXQ+LCBJbnB1dCwgT3V0cHV0PjtcbiAgICB9ID0ge307XG5cbiAgICBhYnNvbHV0ZUVudHJpZXMuZm9yRWFjaCgoZW50cnkpID0+IHtcbiAgICAgIGNvbnN0IG5vcm1hbGl6ZWRFbnRyeSA9IHtcbiAgICAgICAgLi4uZW50cnksXG4gICAgICAgIGJlZm9yZTogW10sXG4gICAgICAgIGFmdGVyOiBbXSxcbiAgICAgIH07XG4gICAgICBpZiAobm9ybWFsaXplZEVudHJ5Lm5hbWUpIG5vcm1hbGl6ZWRFbnRyaWVzTmFtZU1hcFtub3JtYWxpemVkRW50cnkubmFtZV0gPSBub3JtYWxpemVkRW50cnk7XG4gICAgICBub3JtYWxpemVkQWJzb2x1dGVFbnRyaWVzLnB1c2gobm9ybWFsaXplZEVudHJ5KTtcbiAgICB9KTtcblxuICAgIHJlbGF0aXZlRW50cmllcy5mb3JFYWNoKChlbnRyeSkgPT4ge1xuICAgICAgY29uc3Qgbm9ybWFsaXplZEVudHJ5ID0ge1xuICAgICAgICAuLi5lbnRyeSxcbiAgICAgICAgYmVmb3JlOiBbXSxcbiAgICAgICAgYWZ0ZXI6IFtdLFxuICAgICAgfTtcbiAgICAgIGlmIChub3JtYWxpemVkRW50cnkubmFtZSkgbm9ybWFsaXplZEVudHJpZXNOYW1lTWFwW25vcm1hbGl6ZWRFbnRyeS5uYW1lXSA9IG5vcm1hbGl6ZWRFbnRyeTtcbiAgICAgIG5vcm1hbGl6ZWRSZWxhdGl2ZUVudHJpZXMucHVzaChub3JtYWxpemVkRW50cnkpO1xuICAgIH0pO1xuXG4gICAgbm9ybWFsaXplZFJlbGF0aXZlRW50cmllcy5mb3JFYWNoKChlbnRyeSkgPT4ge1xuICAgICAgaWYgKGVudHJ5LnRvTWlkZGxld2FyZSkge1xuICAgICAgICBjb25zdCB0b01pZGRsZXdhcmUgPSBub3JtYWxpemVkRW50cmllc05hbWVNYXBbZW50cnkudG9NaWRkbGV3YXJlXTtcbiAgICAgICAgaWYgKHRvTWlkZGxld2FyZSA9PT0gdW5kZWZpbmVkKSB7XG4gICAgICAgICAgdGhyb3cgbmV3IEVycm9yKFxuICAgICAgICAgICAgYCR7ZW50cnkudG9NaWRkbGV3YXJlfSBpcyBub3QgZm91bmQgd2hlbiBhZGRpbmcgJHtlbnRyeS5uYW1lIHx8IFwiYW5vbnltb3VzXCJ9IG1pZGRsZXdhcmUgJHtlbnRyeS5yZWxhdGlvbn0gJHtcbiAgICAgICAgICAgICAgZW50cnkudG9NaWRkbGV3YXJlXG4gICAgICAgICAgICB9YFxuICAgICAgICAgICk7XG4gICAgICAgIH1cbiAgICAgICAgaWYgKGVudHJ5LnJlbGF0aW9uID09PSBcImFmdGVyXCIpIHtcbiAgICAgICAgICB0b01pZGRsZXdhcmUuYWZ0ZXIucHVzaChlbnRyeSk7XG4gICAgICAgIH1cbiAgICAgICAgaWYgKGVudHJ5LnJlbGF0aW9uID09PSBcImJlZm9yZVwiKSB7XG4gICAgICAgICAgdG9NaWRkbGV3YXJlLmJlZm9yZS5wdXNoKGVudHJ5KTtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH0pO1xuXG4gICAgY29uc3QgbWFpbkNoYWluID0gc29ydChub3JtYWxpemVkQWJzb2x1dGVFbnRyaWVzKVxuICAgICAgLm1hcChleHBhbmRSZWxhdGl2ZU1pZGRsZXdhcmVMaXN0KVxuICAgICAgLnJlZHVjZSgod2hvbGVMaXN0LCBleHBlbmRlZE1pZGRsZXdhcmVMaXN0KSA9PiB7XG4gICAgICAgIC8vIFRPRE86IFJlcGxhY2UgaXQgd2l0aCBBcnJheS5mbGF0KCk7XG4gICAgICAgIHdob2xlTGlzdC5wdXNoKC4uLmV4cGVuZGVkTWlkZGxld2FyZUxpc3QpO1xuICAgICAgICByZXR1cm4gd2hvbGVMaXN0O1xuICAgICAgfSwgW10gYXMgTWlkZGxld2FyZUVudHJ5PElucHV0LCBPdXRwdXQ+W10pO1xuICAgIHJldHVybiBtYWluQ2hhaW4ubWFwKChlbnRyeSkgPT4gZW50cnkubWlkZGxld2FyZSk7XG4gIH07XG5cbiAgY29uc3Qgc3RhY2sgPSB7XG4gICAgYWRkOiAobWlkZGxld2FyZTogTWlkZGxld2FyZVR5cGU8SW5wdXQsIE91dHB1dD4sIG9wdGlvbnM6IEhhbmRsZXJPcHRpb25zICYgQWJzb2x1dGVMb2NhdGlvbiA9IHt9KSA9PiB7XG4gICAgICBjb25zdCB7IG5hbWUgfSA9IG9wdGlvbnM7XG4gICAgICBjb25zdCBlbnRyeTogQWJzb2x1dGVNaWRkbGV3YXJlRW50cnk8SW5wdXQsIE91dHB1dD4gPSB7XG4gICAgICAgIHN0ZXA6IFwiaW5pdGlhbGl6ZVwiLFxuICAgICAgICBwcmlvcml0eTogXCJub3JtYWxcIixcbiAgICAgICAgbWlkZGxld2FyZSxcbiAgICAgICAgLi4ub3B0aW9ucyxcbiAgICAgIH07XG4gICAgICBpZiAobmFtZSkge1xuICAgICAgICBpZiAoZW50cmllc05hbWVTZXQuaGFzKG5hbWUpKSB7XG4gICAgICAgICAgdGhyb3cgbmV3IEVycm9yKGBEdXBsaWNhdGUgbWlkZGxld2FyZSBuYW1lICcke25hbWV9J2ApO1xuICAgICAgICB9XG4gICAgICAgIGVudHJpZXNOYW1lU2V0LmFkZChuYW1lKTtcbiAgICAgIH1cbiAgICAgIGFic29sdXRlRW50cmllcy5wdXNoKGVudHJ5KTtcbiAgICB9LFxuXG4gICAgYWRkUmVsYXRpdmVUbzogKG1pZGRsZXdhcmU6IE1pZGRsZXdhcmVUeXBlPElucHV0LCBPdXRwdXQ+LCBvcHRpb25zOiBIYW5kbGVyT3B0aW9ucyAmIFJlbGF0aXZlTG9jYXRpb24pID0+IHtcbiAgICAgIGNvbnN0IHsgbmFtZSB9ID0gb3B0aW9ucztcbiAgICAgIGNvbnN0IGVudHJ5OiBSZWxhdGl2ZU1pZGRsZXdhcmVFbnRyeTxJbnB1dCwgT3V0cHV0PiA9IHtcbiAgICAgICAgbWlkZGxld2FyZSxcbiAgICAgICAgLi4ub3B0aW9ucyxcbiAgICAgIH07XG4gICAgICBpZiAobmFtZSkge1xuICAgICAgICBpZiAoZW50cmllc05hbWVTZXQuaGFzKG5hbWUpKSB7XG4gICAgICAgICAgdGhyb3cgbmV3IEVycm9yKGBEdXBsaWNhdGVkIG1pZGRsZXdhcmUgbmFtZSAnJHtuYW1lfSdgKTtcbiAgICAgICAgfVxuICAgICAgICBlbnRyaWVzTmFtZVNldC5hZGQobmFtZSk7XG4gICAgICB9XG4gICAgICByZWxhdGl2ZUVudHJpZXMucHVzaChlbnRyeSk7XG4gICAgfSxcblxuICAgIGNsb25lOiAoKSA9PiBjbG9uZVRvKGNvbnN0cnVjdFN0YWNrPElucHV0LCBPdXRwdXQ+KCkpLFxuXG4gICAgdXNlOiAocGx1Z2luOiBQbHVnZ2FibGU8SW5wdXQsIE91dHB1dD4pID0+IHtcbiAgICAgIHBsdWdpbi5hcHBseVRvU3RhY2soc3RhY2spO1xuICAgIH0sXG5cbiAgICByZW1vdmU6ICh0b1JlbW92ZTogTWlkZGxld2FyZVR5cGU8SW5wdXQsIE91dHB1dD4gfCBzdHJpbmcpOiBib29sZWFuID0+IHtcbiAgICAgIGlmICh0eXBlb2YgdG9SZW1vdmUgPT09IFwic3RyaW5nXCIpIHJldHVybiByZW1vdmVCeU5hbWUodG9SZW1vdmUpO1xuICAgICAgZWxzZSByZXR1cm4gcmVtb3ZlQnlSZWZlcmVuY2UodG9SZW1vdmUpO1xuICAgIH0sXG5cbiAgICByZW1vdmVCeVRhZzogKHRvUmVtb3ZlOiBzdHJpbmcpOiBib29sZWFuID0+IHtcbiAgICAgIGxldCBpc1JlbW92ZWQgPSBmYWxzZTtcbiAgICAgIGNvbnN0IGZpbHRlckNiID0gKGVudHJ5OiBNaWRkbGV3YXJlRW50cnk8SW5wdXQsIE91dHB1dD4pOiBib29sZWFuID0+IHtcbiAgICAgICAgY29uc3QgeyB0YWdzLCBuYW1lIH0gPSBlbnRyeTtcbiAgICAgICAgaWYgKHRhZ3MgJiYgdGFncy5pbmNsdWRlcyh0b1JlbW92ZSkpIHtcbiAgICAgICAgICBpZiAobmFtZSkgZW50cmllc05hbWVTZXQuZGVsZXRlKG5hbWUpO1xuICAgICAgICAgIGlzUmVtb3ZlZCA9IHRydWU7XG4gICAgICAgICAgcmV0dXJuIGZhbHNlO1xuICAgICAgICB9XG4gICAgICAgIHJldHVybiB0cnVlO1xuICAgICAgfTtcbiAgICAgIGFic29sdXRlRW50cmllcyA9IGFic29sdXRlRW50cmllcy5maWx0ZXIoZmlsdGVyQ2IpO1xuICAgICAgcmVsYXRpdmVFbnRyaWVzID0gcmVsYXRpdmVFbnRyaWVzLmZpbHRlcihmaWx0ZXJDYik7XG4gICAgICByZXR1cm4gaXNSZW1vdmVkO1xuICAgIH0sXG5cbiAgICBjb25jYXQ6IDxJbnB1dFR5cGUgZXh0ZW5kcyBJbnB1dCwgT3V0cHV0VHlwZSBleHRlbmRzIE91dHB1dD4oXG4gICAgICBmcm9tOiBNaWRkbGV3YXJlU3RhY2s8SW5wdXRUeXBlLCBPdXRwdXRUeXBlPlxuICAgICk6IE1pZGRsZXdhcmVTdGFjazxJbnB1dFR5cGUsIE91dHB1dFR5cGU+ID0+IHtcbiAgICAgIGNvbnN0IGNsb25lZCA9IGNsb25lVG8oY29uc3RydWN0U3RhY2s8SW5wdXRUeXBlLCBPdXRwdXRUeXBlPigpKTtcbiAgICAgIGNsb25lZC51c2UoZnJvbSk7XG4gICAgICByZXR1cm4gY2xvbmVkO1xuICAgIH0sXG5cbiAgICBhcHBseVRvU3RhY2s6IGNsb25lVG8sXG5cbiAgICByZXNvbHZlOiA8SW5wdXRUeXBlIGV4dGVuZHMgSW5wdXQsIE91dHB1dFR5cGUgZXh0ZW5kcyBPdXRwdXQ+KFxuICAgICAgaGFuZGxlcjogRGVzZXJpYWxpemVIYW5kbGVyPElucHV0VHlwZSwgT3V0cHV0VHlwZT4sXG4gICAgICBjb250ZXh0OiBIYW5kbGVyRXhlY3V0aW9uQ29udGV4dFxuICAgICk6IEhhbmRsZXI8SW5wdXRUeXBlLCBPdXRwdXRUeXBlPiA9PiB7XG4gICAgICBmb3IgKGNvbnN0IG1pZGRsZXdhcmUgb2YgZ2V0TWlkZGxld2FyZUxpc3QoKS5yZXZlcnNlKCkpIHtcbiAgICAgICAgaGFuZGxlciA9IG1pZGRsZXdhcmUoaGFuZGxlciBhcyBIYW5kbGVyPElucHV0LCBPdXRwdXRUeXBlPiwgY29udGV4dCkgYXMgYW55O1xuICAgICAgfVxuICAgICAgcmV0dXJuIGhhbmRsZXIgYXMgSGFuZGxlcjxJbnB1dFR5cGUsIE91dHB1dFR5cGU+O1xuICAgIH0sXG4gIH07XG4gIHJldHVybiBzdGFjaztcbn07XG5cbmNvbnN0IHN0ZXBXZWlnaHRzOiB7IFtrZXkgaW4gU3RlcF06IG51bWJlciB9ID0ge1xuICBpbml0aWFsaXplOiA1LFxuICBzZXJpYWxpemU6IDQsXG4gIGJ1aWxkOiAzLFxuICBmaW5hbGl6ZVJlcXVlc3Q6IDIsXG4gIGRlc2VyaWFsaXplOiAxLFxufTtcblxuY29uc3QgcHJpb3JpdHlXZWlnaHRzOiB7IFtrZXkgaW4gUHJpb3JpdHldOiBudW1iZXIgfSA9IHtcbiAgaGlnaDogMyxcbiAgbm9ybWFsOiAyLFxuICBsb3c6IDEsXG59O1xuIl19
 
 /***/ }),
 
@@ -16734,12 +19693,13 @@ exports.getUserAgentMiddlewareOptions = {
     step: "build",
     tags: ["SET_USER_AGENT", "USER_AGENT"],
 };
-exports.getUserAgentPlugin = (config) => ({
+const getUserAgentPlugin = (config) => ({
     applyToStack: (clientStack) => {
         clientStack.add(userAgentMiddleware(config), exports.getUserAgentMiddlewareOptions);
     },
 });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWlkZGxld2FyZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9taWRkbGV3YXJlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLDBEQUFxRDtBQVlyRCxTQUFnQixtQkFBbUIsQ0FBQyxPQUFnQztJQUNsRSxPQUFPLENBQWdDLElBQTRCLEVBQTBCLEVBQUUsQ0FBQyxDQUM5RixJQUFnQyxFQUNLLEVBQUU7UUFDdkMsTUFBTSxFQUFFLE9BQU8sRUFBRSxHQUFHLElBQUksQ0FBQztRQUN6QixJQUFJLENBQUMsMkJBQVcsQ0FBQyxVQUFVLENBQUMsT0FBTyxDQUFDO1lBQUUsT0FBTyxJQUFJLENBQUMsSUFBSSxDQUFDLENBQUM7UUFDeEQsTUFBTSxFQUFFLE9BQU8sRUFBRSxHQUFHLE9BQU8sQ0FBQztRQUM1QixNQUFNLGVBQWUsR0FBRyxPQUFPLENBQUMsT0FBTyxLQUFLLE1BQU0sQ0FBQyxDQUFDLENBQUMsWUFBWSxDQUFDLENBQUMsQ0FBQyxrQkFBa0IsQ0FBQztRQUN2RixJQUFJLENBQUMsT0FBTyxDQUFDLGVBQWUsQ0FBQyxFQUFFO1lBQzdCLE9BQU8sQ0FBQyxlQUFlLENBQUMsR0FBRyxHQUFHLE9BQU8sQ0FBQyxnQkFBZ0IsRUFBRSxDQUFDO1NBQzFEO2FBQU07WUFDTCxPQUFPLENBQUMsZUFBZSxDQUFDLElBQUksSUFBSSxPQUFPLENBQUMsZ0JBQWdCLEVBQUUsQ0FBQztTQUM1RDtRQUNELElBQUksT0FBTyxDQUFDLGVBQWUsRUFBRTtZQUMzQixPQUFPLENBQUMsZUFBZSxDQUFDLElBQUksSUFBSSxPQUFPLENBQUMsZUFBZSxFQUFFLENBQUM7U0FDM0Q7UUFDRCxPQUFPLElBQUksQ0FBQztZQUNWLEdBQUcsSUFBSTtZQUNQLE9BQU87U0FDUixDQUFDLENBQUM7SUFDTCxDQUFDLENBQUM7QUFDSixDQUFDO0FBckJELGtEQXFCQztBQUVZLFFBQUEsNkJBQTZCLEdBQXdCO0lBQ2hFLElBQUksRUFBRSx3QkFBd0I7SUFDOUIsSUFBSSxFQUFFLE9BQU87SUFDYixJQUFJLEVBQUUsQ0FBQyxnQkFBZ0IsRUFBRSxZQUFZLENBQUM7Q0FDdkMsQ0FBQztBQUVXLFFBQUEsa0JBQWtCLEdBQUcsQ0FBQyxNQUErQixFQUF1QixFQUFFLENBQUMsQ0FBQztJQUMzRixZQUFZLEVBQUUsQ0FBQyxXQUFXLEVBQUUsRUFBRTtRQUM1QixXQUFXLENBQUMsR0FBRyxDQUFDLG1CQUFtQixDQUFDLE1BQU0sQ0FBQyxFQUFFLHFDQUE2QixDQUFDLENBQUM7SUFDOUUsQ0FBQztDQUNGLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEh0dHBSZXF1ZXN0IH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3RvY29sLWh0dHBcIjtcbmltcG9ydCB7XG4gIEJ1aWxkSGFuZGxlcixcbiAgQnVpbGRIYW5kbGVyQXJndW1lbnRzLFxuICBCdWlsZEhhbmRsZXJPcHRpb25zLFxuICBCdWlsZEhhbmRsZXJPdXRwdXQsXG4gIE1ldGFkYXRhQmVhcmVyLFxuICBQbHVnZ2FibGUsXG59IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5pbXBvcnQgeyBVc2VyQWdlbnRSZXNvbHZlZENvbmZpZyB9IGZyb20gXCIuL2NvbmZpZ3VyYXRpb25zXCI7XG5cbmV4cG9ydCBmdW5jdGlvbiB1c2VyQWdlbnRNaWRkbGV3YXJlKG9wdGlvbnM6IFVzZXJBZ2VudFJlc29sdmVkQ29uZmlnKSB7XG4gIHJldHVybiA8T3V0cHV0IGV4dGVuZHMgTWV0YWRhdGFCZWFyZXI+KG5leHQ6IEJ1aWxkSGFuZGxlcjxhbnksIGFueT4pOiBCdWlsZEhhbmRsZXI8YW55LCBhbnk+ID0+IChcbiAgICBhcmdzOiBCdWlsZEhhbmRsZXJBcmd1bWVudHM8YW55PlxuICApOiBQcm9taXNlPEJ1aWxkSGFuZGxlck91dHB1dDxPdXRwdXQ+PiA9PiB7XG4gICAgY29uc3QgeyByZXF1ZXN0IH0gPSBhcmdzO1xuICAgIGlmICghSHR0cFJlcXVlc3QuaXNJbnN0YW5jZShyZXF1ZXN0KSkgcmV0dXJuIG5leHQoYXJncyk7XG4gICAgY29uc3QgeyBoZWFkZXJzIH0gPSByZXF1ZXN0O1xuICAgIGNvbnN0IHVzZXJBZ2VudEhlYWRlciA9IG9wdGlvbnMucnVudGltZSA9PT0gXCJub2RlXCIgPyBcInVzZXItYWdlbnRcIiA6IFwieC1hbXotdXNlci1hZ2VudFwiO1xuICAgIGlmICghaGVhZGVyc1t1c2VyQWdlbnRIZWFkZXJdKSB7XG4gICAgICBoZWFkZXJzW3VzZXJBZ2VudEhlYWRlcl0gPSBgJHtvcHRpb25zLmRlZmF1bHRVc2VyQWdlbnR9YDtcbiAgICB9IGVsc2Uge1xuICAgICAgaGVhZGVyc1t1c2VyQWdlbnRIZWFkZXJdICs9IGAgJHtvcHRpb25zLmRlZmF1bHRVc2VyQWdlbnR9YDtcbiAgICB9XG4gICAgaWYgKG9wdGlvbnMuY3VzdG9tVXNlckFnZW50KSB7XG4gICAgICBoZWFkZXJzW3VzZXJBZ2VudEhlYWRlcl0gKz0gYCAke29wdGlvbnMuY3VzdG9tVXNlckFnZW50fWA7XG4gICAgfVxuICAgIHJldHVybiBuZXh0KHtcbiAgICAgIC4uLmFyZ3MsXG4gICAgICByZXF1ZXN0LFxuICAgIH0pO1xuICB9O1xufVxuXG5leHBvcnQgY29uc3QgZ2V0VXNlckFnZW50TWlkZGxld2FyZU9wdGlvbnM6IEJ1aWxkSGFuZGxlck9wdGlvbnMgPSB7XG4gIG5hbWU6IFwiZ2V0VXNlckFnZW50TWlkZGxld2FyZVwiLFxuICBzdGVwOiBcImJ1aWxkXCIsXG4gIHRhZ3M6IFtcIlNFVF9VU0VSX0FHRU5UXCIsIFwiVVNFUl9BR0VOVFwiXSxcbn07XG5cbmV4cG9ydCBjb25zdCBnZXRVc2VyQWdlbnRQbHVnaW4gPSAoY29uZmlnOiBVc2VyQWdlbnRSZXNvbHZlZENvbmZpZyk6IFBsdWdnYWJsZTxhbnksIGFueT4gPT4gKHtcbiAgYXBwbHlUb1N0YWNrOiAoY2xpZW50U3RhY2spID0+IHtcbiAgICBjbGllbnRTdGFjay5hZGQodXNlckFnZW50TWlkZGxld2FyZShjb25maWcpLCBnZXRVc2VyQWdlbnRNaWRkbGV3YXJlT3B0aW9ucyk7XG4gIH0sXG59KTtcbiJdfQ==
+exports.getUserAgentPlugin = getUserAgentPlugin;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWlkZGxld2FyZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9taWRkbGV3YXJlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLDBEQUFxRDtBQVlyRCxTQUFnQixtQkFBbUIsQ0FBQyxPQUFnQztJQUNsRSxPQUFPLENBQWdDLElBQTRCLEVBQTBCLEVBQUUsQ0FBQyxDQUM5RixJQUFnQyxFQUNLLEVBQUU7UUFDdkMsTUFBTSxFQUFFLE9BQU8sRUFBRSxHQUFHLElBQUksQ0FBQztRQUN6QixJQUFJLENBQUMsMkJBQVcsQ0FBQyxVQUFVLENBQUMsT0FBTyxDQUFDO1lBQUUsT0FBTyxJQUFJLENBQUMsSUFBSSxDQUFDLENBQUM7UUFDeEQsTUFBTSxFQUFFLE9BQU8sRUFBRSxHQUFHLE9BQU8sQ0FBQztRQUM1QixNQUFNLGVBQWUsR0FBRyxPQUFPLENBQUMsT0FBTyxLQUFLLE1BQU0sQ0FBQyxDQUFDLENBQUMsWUFBWSxDQUFDLENBQUMsQ0FBQyxrQkFBa0IsQ0FBQztRQUN2RixJQUFJLENBQUMsT0FBTyxDQUFDLGVBQWUsQ0FBQyxFQUFFO1lBQzdCLE9BQU8sQ0FBQyxlQUFlLENBQUMsR0FBRyxHQUFHLE9BQU8sQ0FBQyxnQkFBZ0IsRUFBRSxDQUFDO1NBQzFEO2FBQU07WUFDTCxPQUFPLENBQUMsZUFBZSxDQUFDLElBQUksSUFBSSxPQUFPLENBQUMsZ0JBQWdCLEVBQUUsQ0FBQztTQUM1RDtRQUNELElBQUksT0FBTyxDQUFDLGVBQWUsRUFBRTtZQUMzQixPQUFPLENBQUMsZUFBZSxDQUFDLElBQUksSUFBSSxPQUFPLENBQUMsZUFBZSxFQUFFLENBQUM7U0FDM0Q7UUFDRCxPQUFPLElBQUksQ0FBQztZQUNWLEdBQUcsSUFBSTtZQUNQLE9BQU87U0FDUixDQUFDLENBQUM7SUFDTCxDQUFDLENBQUM7QUFDSixDQUFDO0FBckJELGtEQXFCQztBQUVZLFFBQUEsNkJBQTZCLEdBQXdCO0lBQ2hFLElBQUksRUFBRSx3QkFBd0I7SUFDOUIsSUFBSSxFQUFFLE9BQU87SUFDYixJQUFJLEVBQUUsQ0FBQyxnQkFBZ0IsRUFBRSxZQUFZLENBQUM7Q0FDdkMsQ0FBQztBQUVLLE1BQU0sa0JBQWtCLEdBQUcsQ0FBQyxNQUErQixFQUF1QixFQUFFLENBQUMsQ0FBQztJQUMzRixZQUFZLEVBQUUsQ0FBQyxXQUFXLEVBQUUsRUFBRTtRQUM1QixXQUFXLENBQUMsR0FBRyxDQUFDLG1CQUFtQixDQUFDLE1BQU0sQ0FBQyxFQUFFLHFDQUE2QixDQUFDLENBQUM7SUFDOUUsQ0FBQztDQUNGLENBQUMsQ0FBQztBQUpVLFFBQUEsa0JBQWtCLHNCQUk1QiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEh0dHBSZXF1ZXN0IH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3RvY29sLWh0dHBcIjtcbmltcG9ydCB7XG4gIEJ1aWxkSGFuZGxlcixcbiAgQnVpbGRIYW5kbGVyQXJndW1lbnRzLFxuICBCdWlsZEhhbmRsZXJPcHRpb25zLFxuICBCdWlsZEhhbmRsZXJPdXRwdXQsXG4gIE1ldGFkYXRhQmVhcmVyLFxuICBQbHVnZ2FibGUsXG59IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5pbXBvcnQgeyBVc2VyQWdlbnRSZXNvbHZlZENvbmZpZyB9IGZyb20gXCIuL2NvbmZpZ3VyYXRpb25zXCI7XG5cbmV4cG9ydCBmdW5jdGlvbiB1c2VyQWdlbnRNaWRkbGV3YXJlKG9wdGlvbnM6IFVzZXJBZ2VudFJlc29sdmVkQ29uZmlnKSB7XG4gIHJldHVybiA8T3V0cHV0IGV4dGVuZHMgTWV0YWRhdGFCZWFyZXI+KG5leHQ6IEJ1aWxkSGFuZGxlcjxhbnksIGFueT4pOiBCdWlsZEhhbmRsZXI8YW55LCBhbnk+ID0+IChcbiAgICBhcmdzOiBCdWlsZEhhbmRsZXJBcmd1bWVudHM8YW55PlxuICApOiBQcm9taXNlPEJ1aWxkSGFuZGxlck91dHB1dDxPdXRwdXQ+PiA9PiB7XG4gICAgY29uc3QgeyByZXF1ZXN0IH0gPSBhcmdzO1xuICAgIGlmICghSHR0cFJlcXVlc3QuaXNJbnN0YW5jZShyZXF1ZXN0KSkgcmV0dXJuIG5leHQoYXJncyk7XG4gICAgY29uc3QgeyBoZWFkZXJzIH0gPSByZXF1ZXN0O1xuICAgIGNvbnN0IHVzZXJBZ2VudEhlYWRlciA9IG9wdGlvbnMucnVudGltZSA9PT0gXCJub2RlXCIgPyBcInVzZXItYWdlbnRcIiA6IFwieC1hbXotdXNlci1hZ2VudFwiO1xuICAgIGlmICghaGVhZGVyc1t1c2VyQWdlbnRIZWFkZXJdKSB7XG4gICAgICBoZWFkZXJzW3VzZXJBZ2VudEhlYWRlcl0gPSBgJHtvcHRpb25zLmRlZmF1bHRVc2VyQWdlbnR9YDtcbiAgICB9IGVsc2Uge1xuICAgICAgaGVhZGVyc1t1c2VyQWdlbnRIZWFkZXJdICs9IGAgJHtvcHRpb25zLmRlZmF1bHRVc2VyQWdlbnR9YDtcbiAgICB9XG4gICAgaWYgKG9wdGlvbnMuY3VzdG9tVXNlckFnZW50KSB7XG4gICAgICBoZWFkZXJzW3VzZXJBZ2VudEhlYWRlcl0gKz0gYCAke29wdGlvbnMuY3VzdG9tVXNlckFnZW50fWA7XG4gICAgfVxuICAgIHJldHVybiBuZXh0KHtcbiAgICAgIC4uLmFyZ3MsXG4gICAgICByZXF1ZXN0LFxuICAgIH0pO1xuICB9O1xufVxuXG5leHBvcnQgY29uc3QgZ2V0VXNlckFnZW50TWlkZGxld2FyZU9wdGlvbnM6IEJ1aWxkSGFuZGxlck9wdGlvbnMgPSB7XG4gIG5hbWU6IFwiZ2V0VXNlckFnZW50TWlkZGxld2FyZVwiLFxuICBzdGVwOiBcImJ1aWxkXCIsXG4gIHRhZ3M6IFtcIlNFVF9VU0VSX0FHRU5UXCIsIFwiVVNFUl9BR0VOVFwiXSxcbn07XG5cbmV4cG9ydCBjb25zdCBnZXRVc2VyQWdlbnRQbHVnaW4gPSAoY29uZmlnOiBVc2VyQWdlbnRSZXNvbHZlZENvbmZpZyk6IFBsdWdnYWJsZTxhbnksIGFueT4gPT4gKHtcbiAgYXBwbHlUb1N0YWNrOiAoY2xpZW50U3RhY2spID0+IHtcbiAgICBjbGllbnRTdGFjay5hZGQodXNlckFnZW50TWlkZGxld2FyZShjb25maWcpLCBnZXRVc2VyQWdlbnRNaWRkbGV3YXJlT3B0aW9ucyk7XG4gIH0sXG59KTtcbiJdfQ==
 
 /***/ }),
 
@@ -17006,8 +19966,9 @@ const property_provider_1 = __webpack_require__(1014);
 const fromEnv_1 = __webpack_require__(8302);
 const fromSharedConfigFiles_1 = __webpack_require__(5945);
 const fromStatic_1 = __webpack_require__(5254);
-exports.loadConfig = ({ environmentVariableSelector, configFileSelector, default: defaultValue }, configuration = {}) => property_provider_1.memoize(property_provider_1.chain(fromEnv_1.fromEnv(environmentVariableSelector), fromSharedConfigFiles_1.fromSharedConfigFiles(configFileSelector, configuration), fromStatic_1.fromStatic(defaultValue)));
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlnTG9hZGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2NvbmZpZ0xvYWRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSxrRUFBNEQ7QUFHNUQsdUNBQW1EO0FBQ25ELG1FQUFvRztBQUNwRyw2Q0FBNEQ7QUFxQi9DLFFBQUEsVUFBVSxHQUFHLENBQ3hCLEVBQUUsMkJBQTJCLEVBQUUsa0JBQWtCLEVBQUUsT0FBTyxFQUFFLFlBQVksRUFBNEIsRUFDcEcsZ0JBQW9DLEVBQUUsRUFDekIsRUFBRSxDQUNmLDJCQUFPLENBQ0wseUJBQUssQ0FDSCxpQkFBTyxDQUFDLDJCQUEyQixDQUFDLEVBQ3BDLDZDQUFxQixDQUFDLGtCQUFrQixFQUFFLGFBQWEsQ0FBQyxFQUN4RCx1QkFBVSxDQUFDLFlBQVksQ0FBQyxDQUN6QixDQUNGLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBjaGFpbiwgbWVtb2l6ZSB9IGZyb20gXCJAYXdzLXNkay9wcm9wZXJ0eS1wcm92aWRlclwiO1xuaW1wb3J0IHsgUHJvdmlkZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuaW1wb3J0IHsgZnJvbUVudiwgR2V0dGVyRnJvbUVudiB9IGZyb20gXCIuL2Zyb21FbnZcIjtcbmltcG9ydCB7IGZyb21TaGFyZWRDb25maWdGaWxlcywgR2V0dGVyRnJvbUNvbmZpZywgU2hhcmVkQ29uZmlnSW5pdCB9IGZyb20gXCIuL2Zyb21TaGFyZWRDb25maWdGaWxlc1wiO1xuaW1wb3J0IHsgZnJvbVN0YXRpYywgRnJvbVN0YXRpY0NvbmZpZyB9IGZyb20gXCIuL2Zyb21TdGF0aWNcIjtcblxuZXhwb3J0IHR5cGUgTG9jYWxDb25maWdPcHRpb25zID0gU2hhcmVkQ29uZmlnSW5pdDtcblxuZXhwb3J0IGludGVyZmFjZSBMb2FkZWRDb25maWdTZWxlY3RvcnM8VD4ge1xuICAvKipcbiAgICogQSBnZXR0ZXIgZnVuY3Rpb24gZ2V0dGluZyB0aGUgY29uZmlnIHZhbHVlcyBmcm9tIGFsbCB0aGUgZW52aXJvbm1lbnRcbiAgICogdmFyaWFibGVzLlxuICAgKi9cbiAgZW52aXJvbm1lbnRWYXJpYWJsZVNlbGVjdG9yOiBHZXR0ZXJGcm9tRW52PFQ+O1xuICAvKipcbiAgICogQSBnZXR0ZXIgZnVuY3Rpb24gZ2V0dGluZyBjb25maWcgdmFsdWVzIGFzc29jaWF0ZWQgd2l0aCB0aGUgaW5mZXJyZWRcbiAgICogcHJvZmlsZSBmcm9tIHNoYXJlZCBJTkkgZmlsZXNcbiAgICovXG4gIGNvbmZpZ0ZpbGVTZWxlY3RvcjogR2V0dGVyRnJvbUNvbmZpZzxUPjtcbiAgLyoqXG4gICAqIERlZmF1bHQgdmFsdWUgb3IgZ2V0dGVyXG4gICAqL1xuICBkZWZhdWx0OiBGcm9tU3RhdGljQ29uZmlnPFQ+O1xufVxuXG5leHBvcnQgY29uc3QgbG9hZENvbmZpZyA9IDxUID0gc3RyaW5nPihcbiAgeyBlbnZpcm9ubWVudFZhcmlhYmxlU2VsZWN0b3IsIGNvbmZpZ0ZpbGVTZWxlY3RvciwgZGVmYXVsdDogZGVmYXVsdFZhbHVlIH06IExvYWRlZENvbmZpZ1NlbGVjdG9yczxUPixcbiAgY29uZmlndXJhdGlvbjogTG9jYWxDb25maWdPcHRpb25zID0ge31cbik6IFByb3ZpZGVyPFQ+ID0+XG4gIG1lbW9pemUoXG4gICAgY2hhaW4oXG4gICAgICBmcm9tRW52KGVudmlyb25tZW50VmFyaWFibGVTZWxlY3RvciksXG4gICAgICBmcm9tU2hhcmVkQ29uZmlnRmlsZXMoY29uZmlnRmlsZVNlbGVjdG9yLCBjb25maWd1cmF0aW9uKSxcbiAgICAgIGZyb21TdGF0aWMoZGVmYXVsdFZhbHVlKVxuICAgIClcbiAgKTtcbiJdfQ==
+const loadConfig = ({ environmentVariableSelector, configFileSelector, default: defaultValue }, configuration = {}) => property_provider_1.memoize(property_provider_1.chain(fromEnv_1.fromEnv(environmentVariableSelector), fromSharedConfigFiles_1.fromSharedConfigFiles(configFileSelector, configuration), fromStatic_1.fromStatic(defaultValue)));
+exports.loadConfig = loadConfig;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlnTG9hZGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2NvbmZpZ0xvYWRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSxrRUFBNEQ7QUFHNUQsdUNBQW1EO0FBQ25ELG1FQUFvRztBQUNwRyw2Q0FBNEQ7QUFxQnJELE1BQU0sVUFBVSxHQUFHLENBQ3hCLEVBQUUsMkJBQTJCLEVBQUUsa0JBQWtCLEVBQUUsT0FBTyxFQUFFLFlBQVksRUFBNEIsRUFDcEcsZ0JBQW9DLEVBQUUsRUFDekIsRUFBRSxDQUNmLDJCQUFPLENBQ0wseUJBQUssQ0FDSCxpQkFBTyxDQUFDLDJCQUEyQixDQUFDLEVBQ3BDLDZDQUFxQixDQUFDLGtCQUFrQixFQUFFLGFBQWEsQ0FBQyxFQUN4RCx1QkFBVSxDQUFDLFlBQVksQ0FBQyxDQUN6QixDQUNGLENBQUM7QUFWUyxRQUFBLFVBQVUsY0FVbkIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBjaGFpbiwgbWVtb2l6ZSB9IGZyb20gXCJAYXdzLXNkay9wcm9wZXJ0eS1wcm92aWRlclwiO1xuaW1wb3J0IHsgUHJvdmlkZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuaW1wb3J0IHsgZnJvbUVudiwgR2V0dGVyRnJvbUVudiB9IGZyb20gXCIuL2Zyb21FbnZcIjtcbmltcG9ydCB7IGZyb21TaGFyZWRDb25maWdGaWxlcywgR2V0dGVyRnJvbUNvbmZpZywgU2hhcmVkQ29uZmlnSW5pdCB9IGZyb20gXCIuL2Zyb21TaGFyZWRDb25maWdGaWxlc1wiO1xuaW1wb3J0IHsgZnJvbVN0YXRpYywgRnJvbVN0YXRpY0NvbmZpZyB9IGZyb20gXCIuL2Zyb21TdGF0aWNcIjtcblxuZXhwb3J0IHR5cGUgTG9jYWxDb25maWdPcHRpb25zID0gU2hhcmVkQ29uZmlnSW5pdDtcblxuZXhwb3J0IGludGVyZmFjZSBMb2FkZWRDb25maWdTZWxlY3RvcnM8VD4ge1xuICAvKipcbiAgICogQSBnZXR0ZXIgZnVuY3Rpb24gZ2V0dGluZyB0aGUgY29uZmlnIHZhbHVlcyBmcm9tIGFsbCB0aGUgZW52aXJvbm1lbnRcbiAgICogdmFyaWFibGVzLlxuICAgKi9cbiAgZW52aXJvbm1lbnRWYXJpYWJsZVNlbGVjdG9yOiBHZXR0ZXJGcm9tRW52PFQ+O1xuICAvKipcbiAgICogQSBnZXR0ZXIgZnVuY3Rpb24gZ2V0dGluZyBjb25maWcgdmFsdWVzIGFzc29jaWF0ZWQgd2l0aCB0aGUgaW5mZXJyZWRcbiAgICogcHJvZmlsZSBmcm9tIHNoYXJlZCBJTkkgZmlsZXNcbiAgICovXG4gIGNvbmZpZ0ZpbGVTZWxlY3RvcjogR2V0dGVyRnJvbUNvbmZpZzxUPjtcbiAgLyoqXG4gICAqIERlZmF1bHQgdmFsdWUgb3IgZ2V0dGVyXG4gICAqL1xuICBkZWZhdWx0OiBGcm9tU3RhdGljQ29uZmlnPFQ+O1xufVxuXG5leHBvcnQgY29uc3QgbG9hZENvbmZpZyA9IDxUID0gc3RyaW5nPihcbiAgeyBlbnZpcm9ubWVudFZhcmlhYmxlU2VsZWN0b3IsIGNvbmZpZ0ZpbGVTZWxlY3RvciwgZGVmYXVsdDogZGVmYXVsdFZhbHVlIH06IExvYWRlZENvbmZpZ1NlbGVjdG9yczxUPixcbiAgY29uZmlndXJhdGlvbjogTG9jYWxDb25maWdPcHRpb25zID0ge31cbik6IFByb3ZpZGVyPFQ+ID0+XG4gIG1lbW9pemUoXG4gICAgY2hhaW4oXG4gICAgICBmcm9tRW52KGVudmlyb25tZW50VmFyaWFibGVTZWxlY3RvciksXG4gICAgICBmcm9tU2hhcmVkQ29uZmlnRmlsZXMoY29uZmlnRmlsZVNlbGVjdG9yLCBjb25maWd1cmF0aW9uKSxcbiAgICAgIGZyb21TdGF0aWMoZGVmYXVsdFZhbHVlKVxuICAgIClcbiAgKTtcbiJdfQ==
 
 /***/ }),
 
@@ -17023,7 +19984,7 @@ const property_provider_1 = __webpack_require__(1014);
  * Get config value given the environment variable name or getter from
  * environment variable.
  */
-exports.fromEnv = (envVarSelector) => async () => {
+const fromEnv = (envVarSelector) => async () => {
     try {
         const config = envVarSelector(process.env);
         if (config === undefined) {
@@ -17035,7 +19996,8 @@ exports.fromEnv = (envVarSelector) => async () => {
         throw new property_provider_1.ProviderError(e.message || `Cannot load config from environment variables with getter: ${envVarSelector}`);
     }
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbUVudi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9mcm9tRW52LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLGtFQUEyRDtBQUszRDs7O0dBR0c7QUFDVSxRQUFBLE9BQU8sR0FBRyxDQUFhLGNBQWdDLEVBQWUsRUFBRSxDQUFDLEtBQUssSUFBSSxFQUFFO0lBQy9GLElBQUk7UUFDRixNQUFNLE1BQU0sR0FBRyxjQUFjLENBQUMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxDQUFDO1FBQzNDLElBQUksTUFBTSxLQUFLLFNBQVMsRUFBRTtZQUN4QixNQUFNLElBQUksS0FBSyxFQUFFLENBQUM7U0FDbkI7UUFDRCxPQUFPLE1BQVcsQ0FBQztLQUNwQjtJQUFDLE9BQU8sQ0FBQyxFQUFFO1FBQ1YsTUFBTSxJQUFJLGlDQUFhLENBQ3JCLENBQUMsQ0FBQyxPQUFPLElBQUksOERBQThELGNBQWMsRUFBRSxDQUM1RixDQUFDO0tBQ0g7QUFDSCxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBQcm92aWRlckVycm9yIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3BlcnR5LXByb3ZpZGVyXCI7XG5pbXBvcnQgeyBQcm92aWRlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5leHBvcnQgdHlwZSBHZXR0ZXJGcm9tRW52PFQ+ID0gKGVudjogTm9kZUpTLlByb2Nlc3NFbnYpID0+IFQgfCB1bmRlZmluZWQ7XG5cbi8qKlxuICogR2V0IGNvbmZpZyB2YWx1ZSBnaXZlbiB0aGUgZW52aXJvbm1lbnQgdmFyaWFibGUgbmFtZSBvciBnZXR0ZXIgZnJvbVxuICogZW52aXJvbm1lbnQgdmFyaWFibGUuXG4gKi9cbmV4cG9ydCBjb25zdCBmcm9tRW52ID0gPFQgPSBzdHJpbmc+KGVudlZhclNlbGVjdG9yOiBHZXR0ZXJGcm9tRW52PFQ+KTogUHJvdmlkZXI8VD4gPT4gYXN5bmMgKCkgPT4ge1xuICB0cnkge1xuICAgIGNvbnN0IGNvbmZpZyA9IGVudlZhclNlbGVjdG9yKHByb2Nlc3MuZW52KTtcbiAgICBpZiAoY29uZmlnID09PSB1bmRlZmluZWQpIHtcbiAgICAgIHRocm93IG5ldyBFcnJvcigpO1xuICAgIH1cbiAgICByZXR1cm4gY29uZmlnIGFzIFQ7XG4gIH0gY2F0Y2ggKGUpIHtcbiAgICB0aHJvdyBuZXcgUHJvdmlkZXJFcnJvcihcbiAgICAgIGUubWVzc2FnZSB8fCBgQ2Fubm90IGxvYWQgY29uZmlnIGZyb20gZW52aXJvbm1lbnQgdmFyaWFibGVzIHdpdGggZ2V0dGVyOiAke2VudlZhclNlbGVjdG9yfWBcbiAgICApO1xuICB9XG59O1xuIl19
+exports.fromEnv = fromEnv;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbUVudi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9mcm9tRW52LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLGtFQUEyRDtBQUszRDs7O0dBR0c7QUFDSSxNQUFNLE9BQU8sR0FBRyxDQUFhLGNBQWdDLEVBQWUsRUFBRSxDQUFDLEtBQUssSUFBSSxFQUFFO0lBQy9GLElBQUk7UUFDRixNQUFNLE1BQU0sR0FBRyxjQUFjLENBQUMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxDQUFDO1FBQzNDLElBQUksTUFBTSxLQUFLLFNBQVMsRUFBRTtZQUN4QixNQUFNLElBQUksS0FBSyxFQUFFLENBQUM7U0FDbkI7UUFDRCxPQUFPLE1BQVcsQ0FBQztLQUNwQjtJQUFDLE9BQU8sQ0FBQyxFQUFFO1FBQ1YsTUFBTSxJQUFJLGlDQUFhLENBQ3JCLENBQUMsQ0FBQyxPQUFPLElBQUksOERBQThELGNBQWMsRUFBRSxDQUM1RixDQUFDO0tBQ0g7QUFDSCxDQUFDLENBQUM7QUFaVyxRQUFBLE9BQU8sV0FZbEIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBQcm92aWRlckVycm9yIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3BlcnR5LXByb3ZpZGVyXCI7XG5pbXBvcnQgeyBQcm92aWRlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5leHBvcnQgdHlwZSBHZXR0ZXJGcm9tRW52PFQ+ID0gKGVudjogTm9kZUpTLlByb2Nlc3NFbnYpID0+IFQgfCB1bmRlZmluZWQ7XG5cbi8qKlxuICogR2V0IGNvbmZpZyB2YWx1ZSBnaXZlbiB0aGUgZW52aXJvbm1lbnQgdmFyaWFibGUgbmFtZSBvciBnZXR0ZXIgZnJvbVxuICogZW52aXJvbm1lbnQgdmFyaWFibGUuXG4gKi9cbmV4cG9ydCBjb25zdCBmcm9tRW52ID0gPFQgPSBzdHJpbmc+KGVudlZhclNlbGVjdG9yOiBHZXR0ZXJGcm9tRW52PFQ+KTogUHJvdmlkZXI8VD4gPT4gYXN5bmMgKCkgPT4ge1xuICB0cnkge1xuICAgIGNvbnN0IGNvbmZpZyA9IGVudlZhclNlbGVjdG9yKHByb2Nlc3MuZW52KTtcbiAgICBpZiAoY29uZmlnID09PSB1bmRlZmluZWQpIHtcbiAgICAgIHRocm93IG5ldyBFcnJvcigpO1xuICAgIH1cbiAgICByZXR1cm4gY29uZmlnIGFzIFQ7XG4gIH0gY2F0Y2ggKGUpIHtcbiAgICB0aHJvdyBuZXcgUHJvdmlkZXJFcnJvcihcbiAgICAgIGUubWVzc2FnZSB8fCBgQ2Fubm90IGxvYWQgY29uZmlnIGZyb20gZW52aXJvbm1lbnQgdmFyaWFibGVzIHdpdGggZ2V0dGVyOiAke2VudlZhclNlbGVjdG9yfWBcbiAgICApO1xuICB9XG59O1xuIl19
 
 /***/ }),
 
@@ -17053,7 +20015,7 @@ exports.ENV_PROFILE = "AWS_PROFILE";
 /**
  * Get config value from the shared config files with inferred profile name.
  */
-exports.fromSharedConfigFiles = (configSelector, { preferredFile = "config", ...init } = {}) => async () => {
+const fromSharedConfigFiles = (configSelector, { preferredFile = "config", ...init } = {}) => async () => {
     const { loadedConfig = shared_ini_file_loader_1.loadSharedConfigFiles(init), profile = process.env[exports.ENV_PROFILE] || DEFAULT_PROFILE } = init;
     const { configFile, credentialsFile } = await loadedConfig;
     const profileFromCredentials = credentialsFile[profile] || {};
@@ -17072,7 +20034,8 @@ exports.fromSharedConfigFiles = (configSelector, { preferredFile = "config", ...
         throw new property_provider_1.ProviderError(e.message || `Cannot load config for profile ${profile} in SDK configuration files with getter: ${configSelector}`);
     }
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbVNoYXJlZENvbmZpZ0ZpbGVzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2Zyb21TaGFyZWRDb25maWdGaWxlcy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSxrRUFBMkQ7QUFDM0QsNEVBS3lDO0FBR3pDLE1BQU0sZUFBZSxHQUFHLFNBQVMsQ0FBQztBQUNyQixRQUFBLFdBQVcsR0FBRyxhQUFhLENBQUM7QUF3QnpDOztHQUVHO0FBQ1UsUUFBQSxxQkFBcUIsR0FBRyxDQUNuQyxjQUFtQyxFQUNuQyxFQUFFLGFBQWEsR0FBRyxRQUFRLEVBQUUsR0FBRyxJQUFJLEtBQXVCLEVBQUUsRUFDL0MsRUFBRSxDQUFDLEtBQUssSUFBSSxFQUFFO0lBQzNCLE1BQU0sRUFBRSxZQUFZLEdBQUcsOENBQXFCLENBQUMsSUFBSSxDQUFDLEVBQUUsT0FBTyxHQUFHLE9BQU8sQ0FBQyxHQUFHLENBQUMsbUJBQVcsQ0FBQyxJQUFJLGVBQWUsRUFBRSxHQUFHLElBQUksQ0FBQztJQUVuSCxNQUFNLEVBQUUsVUFBVSxFQUFFLGVBQWUsRUFBRSxHQUFHLE1BQU0sWUFBWSxDQUFDO0lBRTNELE1BQU0sc0JBQXNCLEdBQUcsZUFBZSxDQUFDLE9BQU8sQ0FBQyxJQUFJLEVBQUUsQ0FBQztJQUM5RCxNQUFNLGlCQUFpQixHQUFHLFVBQVUsQ0FBQyxPQUFPLENBQUMsSUFBSSxFQUFFLENBQUM7SUFDcEQsTUFBTSxhQUFhLEdBQ2pCLGFBQWEsS0FBSyxRQUFRO1FBQ3hCLENBQUMsQ0FBQyxFQUFFLEdBQUcsc0JBQXNCLEVBQUUsR0FBRyxpQkFBaUIsRUFBRTtRQUNyRCxDQUFDLENBQUMsRUFBRSxHQUFHLGlCQUFpQixFQUFFLEdBQUcsc0JBQXNCLEVBQUUsQ0FBQztJQUUxRCxJQUFJO1FBQ0YsTUFBTSxXQUFXLEdBQUcsY0FBYyxDQUFDLGFBQWEsQ0FBQyxDQUFDO1FBQ2xELElBQUksV0FBVyxLQUFLLFNBQVMsRUFBRTtZQUM3QixNQUFNLElBQUksS0FBSyxFQUFFLENBQUM7U0FDbkI7UUFDRCxPQUFPLFdBQVcsQ0FBQztLQUNwQjtJQUFDLE9BQU8sQ0FBQyxFQUFFO1FBQ1YsTUFBTSxJQUFJLGlDQUFhLENBQ3JCLENBQUMsQ0FBQyxPQUFPLElBQUksa0NBQWtDLE9BQU8sNENBQTRDLGNBQWMsRUFBRSxDQUNuSCxDQUFDO0tBQ0g7QUFDSCxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBQcm92aWRlckVycm9yIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3BlcnR5LXByb3ZpZGVyXCI7XG5pbXBvcnQge1xuICBsb2FkU2hhcmVkQ29uZmlnRmlsZXMsXG4gIFByb2ZpbGUsXG4gIFNoYXJlZENvbmZpZ0ZpbGVzLFxuICBTaGFyZWRDb25maWdJbml0IGFzIEJhc2VTaGFyZWRDb25maWdJbml0LFxufSBmcm9tIFwiQGF3cy1zZGsvc2hhcmVkLWluaS1maWxlLWxvYWRlclwiO1xuaW1wb3J0IHsgUHJvdmlkZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuY29uc3QgREVGQVVMVF9QUk9GSUxFID0gXCJkZWZhdWx0XCI7XG5leHBvcnQgY29uc3QgRU5WX1BST0ZJTEUgPSBcIkFXU19QUk9GSUxFXCI7XG5cbmV4cG9ydCBpbnRlcmZhY2UgU2hhcmVkQ29uZmlnSW5pdCBleHRlbmRzIEJhc2VTaGFyZWRDb25maWdJbml0IHtcbiAgLyoqXG4gICAqIFRoZSBjb25maWd1cmF0aW9uIHByb2ZpbGUgdG8gdXNlLlxuICAgKi9cbiAgcHJvZmlsZT86IHN0cmluZztcblxuICAvKipcbiAgICogVGhlIHByZWZlcnJlZCBzaGFyZWQgaW5pIGZpbGUgdG8gbG9hZCB0aGUgY29uZmlnLiBcImNvbmZpZ1wiIG9wdGlvbiByZWZlcnMgdG9cbiAgICogdGhlIHNoYXJlZCBjb25maWcgZmlsZShkZWZhdWx0cyB0byBgfi8uYXdzL2NvbmZpZ2ApLiBcImNyZWRlbnRpYWxzXCIgb3B0aW9uXG4gICAqIHJlZmVycyB0byB0aGUgc2hhcmVkIGNyZWRlbnRpYWxzIGZpbGUoZGVmYXVsdHMgdG8gYH4vLmF3cy9jcmVkZW50aWFsc2ApXG4gICAqL1xuICBwcmVmZXJyZWRGaWxlPzogXCJjb25maWdcIiB8IFwiY3JlZGVudGlhbHNcIjtcblxuICAvKipcbiAgICogQSBwcm9taXNlIHRoYXQgd2lsbCBiZSByZXNvbHZlZCB3aXRoIGxvYWRlZCBhbmQgcGFyc2VkIGNyZWRlbnRpYWxzIGZpbGVzLlxuICAgKiBVc2VkIHRvIGF2b2lkIGxvYWRpbmcgc2hhcmVkIGNvbmZpZyBmaWxlcyBtdWx0aXBsZSB0aW1lcy5cbiAgICovXG4gIGxvYWRlZENvbmZpZz86IFByb21pc2U8U2hhcmVkQ29uZmlnRmlsZXM+O1xufVxuXG5leHBvcnQgdHlwZSBHZXR0ZXJGcm9tQ29uZmlnPFQ+ID0gKHByb2ZpbGU6IFByb2ZpbGUpID0+IFQgfCB1bmRlZmluZWQ7XG5cbi8qKlxuICogR2V0IGNvbmZpZyB2YWx1ZSBmcm9tIHRoZSBzaGFyZWQgY29uZmlnIGZpbGVzIHdpdGggaW5mZXJyZWQgcHJvZmlsZSBuYW1lLlxuICovXG5leHBvcnQgY29uc3QgZnJvbVNoYXJlZENvbmZpZ0ZpbGVzID0gPFQgPSBzdHJpbmc+KFxuICBjb25maWdTZWxlY3RvcjogR2V0dGVyRnJvbUNvbmZpZzxUPixcbiAgeyBwcmVmZXJyZWRGaWxlID0gXCJjb25maWdcIiwgLi4uaW5pdCB9OiBTaGFyZWRDb25maWdJbml0ID0ge31cbik6IFByb3ZpZGVyPFQ+ID0+IGFzeW5jICgpID0+IHtcbiAgY29uc3QgeyBsb2FkZWRDb25maWcgPSBsb2FkU2hhcmVkQ29uZmlnRmlsZXMoaW5pdCksIHByb2ZpbGUgPSBwcm9jZXNzLmVudltFTlZfUFJPRklMRV0gfHwgREVGQVVMVF9QUk9GSUxFIH0gPSBpbml0O1xuXG4gIGNvbnN0IHsgY29uZmlnRmlsZSwgY3JlZGVudGlhbHNGaWxlIH0gPSBhd2FpdCBsb2FkZWRDb25maWc7XG5cbiAgY29uc3QgcHJvZmlsZUZyb21DcmVkZW50aWFscyA9IGNyZWRlbnRpYWxzRmlsZVtwcm9maWxlXSB8fCB7fTtcbiAgY29uc3QgcHJvZmlsZUZyb21Db25maWcgPSBjb25maWdGaWxlW3Byb2ZpbGVdIHx8IHt9O1xuICBjb25zdCBtZXJnZWRQcm9maWxlID1cbiAgICBwcmVmZXJyZWRGaWxlID09PSBcImNvbmZpZ1wiXG4gICAgICA/IHsgLi4ucHJvZmlsZUZyb21DcmVkZW50aWFscywgLi4ucHJvZmlsZUZyb21Db25maWcgfVxuICAgICAgOiB7IC4uLnByb2ZpbGVGcm9tQ29uZmlnLCAuLi5wcm9maWxlRnJvbUNyZWRlbnRpYWxzIH07XG5cbiAgdHJ5IHtcbiAgICBjb25zdCBjb25maWdWYWx1ZSA9IGNvbmZpZ1NlbGVjdG9yKG1lcmdlZFByb2ZpbGUpO1xuICAgIGlmIChjb25maWdWYWx1ZSA9PT0gdW5kZWZpbmVkKSB7XG4gICAgICB0aHJvdyBuZXcgRXJyb3IoKTtcbiAgICB9XG4gICAgcmV0dXJuIGNvbmZpZ1ZhbHVlO1xuICB9IGNhdGNoIChlKSB7XG4gICAgdGhyb3cgbmV3IFByb3ZpZGVyRXJyb3IoXG4gICAgICBlLm1lc3NhZ2UgfHwgYENhbm5vdCBsb2FkIGNvbmZpZyBmb3IgcHJvZmlsZSAke3Byb2ZpbGV9IGluIFNESyBjb25maWd1cmF0aW9uIGZpbGVzIHdpdGggZ2V0dGVyOiAke2NvbmZpZ1NlbGVjdG9yfWBcbiAgICApO1xuICB9XG59O1xuIl19
+exports.fromSharedConfigFiles = fromSharedConfigFiles;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbVNoYXJlZENvbmZpZ0ZpbGVzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2Zyb21TaGFyZWRDb25maWdGaWxlcy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSxrRUFBMkQ7QUFDM0QsNEVBS3lDO0FBR3pDLE1BQU0sZUFBZSxHQUFHLFNBQVMsQ0FBQztBQUNyQixRQUFBLFdBQVcsR0FBRyxhQUFhLENBQUM7QUF3QnpDOztHQUVHO0FBQ0ksTUFBTSxxQkFBcUIsR0FBRyxDQUNuQyxjQUFtQyxFQUNuQyxFQUFFLGFBQWEsR0FBRyxRQUFRLEVBQUUsR0FBRyxJQUFJLEtBQXVCLEVBQUUsRUFDL0MsRUFBRSxDQUFDLEtBQUssSUFBSSxFQUFFO0lBQzNCLE1BQU0sRUFBRSxZQUFZLEdBQUcsOENBQXFCLENBQUMsSUFBSSxDQUFDLEVBQUUsT0FBTyxHQUFHLE9BQU8sQ0FBQyxHQUFHLENBQUMsbUJBQVcsQ0FBQyxJQUFJLGVBQWUsRUFBRSxHQUFHLElBQUksQ0FBQztJQUVuSCxNQUFNLEVBQUUsVUFBVSxFQUFFLGVBQWUsRUFBRSxHQUFHLE1BQU0sWUFBWSxDQUFDO0lBRTNELE1BQU0sc0JBQXNCLEdBQUcsZUFBZSxDQUFDLE9BQU8sQ0FBQyxJQUFJLEVBQUUsQ0FBQztJQUM5RCxNQUFNLGlCQUFpQixHQUFHLFVBQVUsQ0FBQyxPQUFPLENBQUMsSUFBSSxFQUFFLENBQUM7SUFDcEQsTUFBTSxhQUFhLEdBQ2pCLGFBQWEsS0FBSyxRQUFRO1FBQ3hCLENBQUMsQ0FBQyxFQUFFLEdBQUcsc0JBQXNCLEVBQUUsR0FBRyxpQkFBaUIsRUFBRTtRQUNyRCxDQUFDLENBQUMsRUFBRSxHQUFHLGlCQUFpQixFQUFFLEdBQUcsc0JBQXNCLEVBQUUsQ0FBQztJQUUxRCxJQUFJO1FBQ0YsTUFBTSxXQUFXLEdBQUcsY0FBYyxDQUFDLGFBQWEsQ0FBQyxDQUFDO1FBQ2xELElBQUksV0FBVyxLQUFLLFNBQVMsRUFBRTtZQUM3QixNQUFNLElBQUksS0FBSyxFQUFFLENBQUM7U0FDbkI7UUFDRCxPQUFPLFdBQVcsQ0FBQztLQUNwQjtJQUFDLE9BQU8sQ0FBQyxFQUFFO1FBQ1YsTUFBTSxJQUFJLGlDQUFhLENBQ3JCLENBQUMsQ0FBQyxPQUFPLElBQUksa0NBQWtDLE9BQU8sNENBQTRDLGNBQWMsRUFBRSxDQUNuSCxDQUFDO0tBQ0g7QUFDSCxDQUFDLENBQUM7QUExQlcsUUFBQSxxQkFBcUIseUJBMEJoQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFByb3ZpZGVyRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvcHJvcGVydHktcHJvdmlkZXJcIjtcbmltcG9ydCB7XG4gIGxvYWRTaGFyZWRDb25maWdGaWxlcyxcbiAgUHJvZmlsZSxcbiAgU2hhcmVkQ29uZmlnRmlsZXMsXG4gIFNoYXJlZENvbmZpZ0luaXQgYXMgQmFzZVNoYXJlZENvbmZpZ0luaXQsXG59IGZyb20gXCJAYXdzLXNkay9zaGFyZWQtaW5pLWZpbGUtbG9hZGVyXCI7XG5pbXBvcnQgeyBQcm92aWRlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5jb25zdCBERUZBVUxUX1BST0ZJTEUgPSBcImRlZmF1bHRcIjtcbmV4cG9ydCBjb25zdCBFTlZfUFJPRklMRSA9IFwiQVdTX1BST0ZJTEVcIjtcblxuZXhwb3J0IGludGVyZmFjZSBTaGFyZWRDb25maWdJbml0IGV4dGVuZHMgQmFzZVNoYXJlZENvbmZpZ0luaXQge1xuICAvKipcbiAgICogVGhlIGNvbmZpZ3VyYXRpb24gcHJvZmlsZSB0byB1c2UuXG4gICAqL1xuICBwcm9maWxlPzogc3RyaW5nO1xuXG4gIC8qKlxuICAgKiBUaGUgcHJlZmVycmVkIHNoYXJlZCBpbmkgZmlsZSB0byBsb2FkIHRoZSBjb25maWcuIFwiY29uZmlnXCIgb3B0aW9uIHJlZmVycyB0b1xuICAgKiB0aGUgc2hhcmVkIGNvbmZpZyBmaWxlKGRlZmF1bHRzIHRvIGB+Ly5hd3MvY29uZmlnYCkuIFwiY3JlZGVudGlhbHNcIiBvcHRpb25cbiAgICogcmVmZXJzIHRvIHRoZSBzaGFyZWQgY3JlZGVudGlhbHMgZmlsZShkZWZhdWx0cyB0byBgfi8uYXdzL2NyZWRlbnRpYWxzYClcbiAgICovXG4gIHByZWZlcnJlZEZpbGU/OiBcImNvbmZpZ1wiIHwgXCJjcmVkZW50aWFsc1wiO1xuXG4gIC8qKlxuICAgKiBBIHByb21pc2UgdGhhdCB3aWxsIGJlIHJlc29sdmVkIHdpdGggbG9hZGVkIGFuZCBwYXJzZWQgY3JlZGVudGlhbHMgZmlsZXMuXG4gICAqIFVzZWQgdG8gYXZvaWQgbG9hZGluZyBzaGFyZWQgY29uZmlnIGZpbGVzIG11bHRpcGxlIHRpbWVzLlxuICAgKi9cbiAgbG9hZGVkQ29uZmlnPzogUHJvbWlzZTxTaGFyZWRDb25maWdGaWxlcz47XG59XG5cbmV4cG9ydCB0eXBlIEdldHRlckZyb21Db25maWc8VD4gPSAocHJvZmlsZTogUHJvZmlsZSkgPT4gVCB8IHVuZGVmaW5lZDtcblxuLyoqXG4gKiBHZXQgY29uZmlnIHZhbHVlIGZyb20gdGhlIHNoYXJlZCBjb25maWcgZmlsZXMgd2l0aCBpbmZlcnJlZCBwcm9maWxlIG5hbWUuXG4gKi9cbmV4cG9ydCBjb25zdCBmcm9tU2hhcmVkQ29uZmlnRmlsZXMgPSA8VCA9IHN0cmluZz4oXG4gIGNvbmZpZ1NlbGVjdG9yOiBHZXR0ZXJGcm9tQ29uZmlnPFQ+LFxuICB7IHByZWZlcnJlZEZpbGUgPSBcImNvbmZpZ1wiLCAuLi5pbml0IH06IFNoYXJlZENvbmZpZ0luaXQgPSB7fVxuKTogUHJvdmlkZXI8VD4gPT4gYXN5bmMgKCkgPT4ge1xuICBjb25zdCB7IGxvYWRlZENvbmZpZyA9IGxvYWRTaGFyZWRDb25maWdGaWxlcyhpbml0KSwgcHJvZmlsZSA9IHByb2Nlc3MuZW52W0VOVl9QUk9GSUxFXSB8fCBERUZBVUxUX1BST0ZJTEUgfSA9IGluaXQ7XG5cbiAgY29uc3QgeyBjb25maWdGaWxlLCBjcmVkZW50aWFsc0ZpbGUgfSA9IGF3YWl0IGxvYWRlZENvbmZpZztcblxuICBjb25zdCBwcm9maWxlRnJvbUNyZWRlbnRpYWxzID0gY3JlZGVudGlhbHNGaWxlW3Byb2ZpbGVdIHx8IHt9O1xuICBjb25zdCBwcm9maWxlRnJvbUNvbmZpZyA9IGNvbmZpZ0ZpbGVbcHJvZmlsZV0gfHwge307XG4gIGNvbnN0IG1lcmdlZFByb2ZpbGUgPVxuICAgIHByZWZlcnJlZEZpbGUgPT09IFwiY29uZmlnXCJcbiAgICAgID8geyAuLi5wcm9maWxlRnJvbUNyZWRlbnRpYWxzLCAuLi5wcm9maWxlRnJvbUNvbmZpZyB9XG4gICAgICA6IHsgLi4ucHJvZmlsZUZyb21Db25maWcsIC4uLnByb2ZpbGVGcm9tQ3JlZGVudGlhbHMgfTtcblxuICB0cnkge1xuICAgIGNvbnN0IGNvbmZpZ1ZhbHVlID0gY29uZmlnU2VsZWN0b3IobWVyZ2VkUHJvZmlsZSk7XG4gICAgaWYgKGNvbmZpZ1ZhbHVlID09PSB1bmRlZmluZWQpIHtcbiAgICAgIHRocm93IG5ldyBFcnJvcigpO1xuICAgIH1cbiAgICByZXR1cm4gY29uZmlnVmFsdWU7XG4gIH0gY2F0Y2ggKGUpIHtcbiAgICB0aHJvdyBuZXcgUHJvdmlkZXJFcnJvcihcbiAgICAgIGUubWVzc2FnZSB8fCBgQ2Fubm90IGxvYWQgY29uZmlnIGZvciBwcm9maWxlICR7cHJvZmlsZX0gaW4gU0RLIGNvbmZpZ3VyYXRpb24gZmlsZXMgd2l0aCBnZXR0ZXI6ICR7Y29uZmlnU2VsZWN0b3J9YFxuICAgICk7XG4gIH1cbn07XG4iXX0=
 
 /***/ }),
 
@@ -17085,8 +20048,9 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.fromStatic = void 0;
 const property_provider_1 = __webpack_require__(1014);
 const isFunction = (func) => typeof func === "function";
-exports.fromStatic = (defaultValue) => isFunction(defaultValue) ? async () => defaultValue() : property_provider_1.fromStatic(defaultValue);
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbVN0YXRpYy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9mcm9tU3RhdGljLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLGtFQUE2RTtBQUs3RSxNQUFNLFVBQVUsR0FBRyxDQUFJLElBQXlCLEVBQXFCLEVBQUUsQ0FBQyxPQUFPLElBQUksS0FBSyxVQUFVLENBQUM7QUFFdEYsUUFBQSxVQUFVLEdBQUcsQ0FBSSxZQUFpQyxFQUFlLEVBQUUsQ0FDOUUsVUFBVSxDQUFDLFlBQVksQ0FBQyxDQUFDLENBQUMsQ0FBQyxLQUFLLElBQUksRUFBRSxDQUFDLFlBQVksRUFBRSxDQUFDLENBQUMsQ0FBQyw4QkFBaUIsQ0FBQyxZQUFZLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGZyb21TdGF0aWMgYXMgY29udmVydFRvUHJvdmlkZXIgfSBmcm9tIFwiQGF3cy1zZGsvcHJvcGVydHktcHJvdmlkZXJcIjtcbmltcG9ydCB7IFByb3ZpZGVyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmV4cG9ydCB0eXBlIEZyb21TdGF0aWNDb25maWc8VD4gPSBUIHwgKCgpID0+IFQpO1xudHlwZSBHZXR0ZXI8VD4gPSAoKSA9PiBUO1xuY29uc3QgaXNGdW5jdGlvbiA9IDxUPihmdW5jOiBGcm9tU3RhdGljQ29uZmlnPFQ+KTogZnVuYyBpcyBHZXR0ZXI8VD4gPT4gdHlwZW9mIGZ1bmMgPT09IFwiZnVuY3Rpb25cIjtcblxuZXhwb3J0IGNvbnN0IGZyb21TdGF0aWMgPSA8VD4oZGVmYXVsdFZhbHVlOiBGcm9tU3RhdGljQ29uZmlnPFQ+KTogUHJvdmlkZXI8VD4gPT5cbiAgaXNGdW5jdGlvbihkZWZhdWx0VmFsdWUpID8gYXN5bmMgKCkgPT4gZGVmYXVsdFZhbHVlKCkgOiBjb252ZXJ0VG9Qcm92aWRlcihkZWZhdWx0VmFsdWUpO1xuIl19
+const fromStatic = (defaultValue) => isFunction(defaultValue) ? async () => defaultValue() : property_provider_1.fromStatic(defaultValue);
+exports.fromStatic = fromStatic;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbVN0YXRpYy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9mcm9tU3RhdGljLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLGtFQUE2RTtBQUs3RSxNQUFNLFVBQVUsR0FBRyxDQUFJLElBQXlCLEVBQXFCLEVBQUUsQ0FBQyxPQUFPLElBQUksS0FBSyxVQUFVLENBQUM7QUFFNUYsTUFBTSxVQUFVLEdBQUcsQ0FBSSxZQUFpQyxFQUFlLEVBQUUsQ0FDOUUsVUFBVSxDQUFDLFlBQVksQ0FBQyxDQUFDLENBQUMsQ0FBQyxLQUFLLElBQUksRUFBRSxDQUFDLFlBQVksRUFBRSxDQUFDLENBQUMsQ0FBQyw4QkFBaUIsQ0FBQyxZQUFZLENBQUMsQ0FBQztBQUQ3RSxRQUFBLFVBQVUsY0FDbUUiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBmcm9tU3RhdGljIGFzIGNvbnZlcnRUb1Byb3ZpZGVyIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3BlcnR5LXByb3ZpZGVyXCI7XG5pbXBvcnQgeyBQcm92aWRlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5leHBvcnQgdHlwZSBGcm9tU3RhdGljQ29uZmlnPFQ+ID0gVCB8ICgoKSA9PiBUKTtcbnR5cGUgR2V0dGVyPFQ+ID0gKCkgPT4gVDtcbmNvbnN0IGlzRnVuY3Rpb24gPSA8VD4oZnVuYzogRnJvbVN0YXRpY0NvbmZpZzxUPik6IGZ1bmMgaXMgR2V0dGVyPFQ+ID0+IHR5cGVvZiBmdW5jID09PSBcImZ1bmN0aW9uXCI7XG5cbmV4cG9ydCBjb25zdCBmcm9tU3RhdGljID0gPFQ+KGRlZmF1bHRWYWx1ZTogRnJvbVN0YXRpY0NvbmZpZzxUPik6IFByb3ZpZGVyPFQ+ID0+XG4gIGlzRnVuY3Rpb24oZGVmYXVsdFZhbHVlKSA/IGFzeW5jICgpID0+IGRlZmF1bHRWYWx1ZSgpIDogY29udmVydFRvUHJvdmlkZXIoZGVmYXVsdFZhbHVlKTtcbiJdfQ==
 
 /***/ }),
 
@@ -17433,7 +20397,7 @@ class NodeHttpHandler {
         this.httpAgent.destroy();
         this.httpsAgent.destroy();
     }
-    handle(request, { abortSignal }) {
+    handle(request, { abortSignal } = {}) {
         return new Promise((resolve, reject) => {
             // if the request was already aborted, prevent doing extra work
             if (abortSignal === null || abortSignal === void 0 ? void 0 : abortSignal.aborted) {
@@ -17489,7 +20453,7 @@ class NodeHttpHandler {
     }
 }
 exports.NodeHttpHandler = NodeHttpHandler;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibm9kZS1odHRwLWhhbmRsZXIuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvbm9kZS1odHRwLWhhbmRsZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsMERBQWdGO0FBQ2hGLHNFQUFnRTtBQUVoRSwrQkFBNEQ7QUFDNUQsaUNBQStFO0FBRS9FLDJDQUF5RDtBQUN6RCx1RUFBa0U7QUFDbEUscUVBQWdFO0FBQ2hFLDZEQUF3RDtBQUN4RCw2REFBd0Q7QUFzQnhELE1BQWEsZUFBZTtJQVExQixZQUFZLEVBQUUsaUJBQWlCLEVBQUUsYUFBYSxFQUFFLFNBQVMsRUFBRSxVQUFVLEtBQXNCLEVBQUU7UUFIN0YscUpBQXFKO1FBQ3JJLGFBQVEsR0FBRyxFQUFFLGVBQWUsRUFBRSxVQUFVLEVBQUUsQ0FBQztRQUd6RCxJQUFJLENBQUMsaUJBQWlCLEdBQUcsaUJBQWlCLENBQUM7UUFDM0MsSUFBSSxDQUFDLGFBQWEsR0FBRyxhQUFhLENBQUM7UUFDbkMsTUFBTSxTQUFTLEdBQUcsSUFBSSxDQUFDO1FBQ3ZCLElBQUksQ0FBQyxTQUFTLEdBQUcsU0FBUyxJQUFJLElBQUksWUFBTSxDQUFDLEVBQUUsU0FBUyxFQUFFLENBQUMsQ0FBQztRQUN4RCxJQUFJLENBQUMsVUFBVSxHQUFHLFVBQVUsSUFBSSxJQUFJLGFBQU8sQ0FBQyxFQUFFLFNBQVMsRUFBRSxDQUFDLENBQUM7SUFDN0QsQ0FBQztJQUVELE9BQU87UUFDTCxJQUFJLENBQUMsU0FBUyxDQUFDLE9BQU8sRUFBRSxDQUFDO1FBQ3pCLElBQUksQ0FBQyxVQUFVLENBQUMsT0FBTyxFQUFFLENBQUM7SUFDNUIsQ0FBQztJQUVELE1BQU0sQ0FBQyxPQUFvQixFQUFFLEVBQUUsV0FBVyxFQUFzQjtRQUM5RCxPQUFPLElBQUksT0FBTyxDQUFDLENBQUMsT0FBTyxFQUFFLE1BQU0sRUFBRSxFQUFFO1lBQ3JDLCtEQUErRDtZQUMvRCxJQUFJLFdBQVcsYUFBWCxXQUFXLHVCQUFY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Q29udGVudCI6WyJpbXBvcnQgeyBIdHRwSGFuZGxlciwgSHR0cFJlcXVlc3QsIEh0dHBSZXNwb25zZSB9IGZyb20gXCJAYXdzLXNkay9wcm90b2NvbC1odHRwXCI7XG5pbXBvcnQgeyBidWlsZFF1ZXJ5U3RyaW5nIH0gZnJvbSBcIkBhd3Mtc2RrL3F1ZXJ5c3RyaW5nLWJ1aWxkZXJcIjtcbmltcG9ydCB7IEh0dHBIYW5kbGVyT3B0aW9ucyB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuaW1wb3J0IHsgQWdlbnQgYXMgaEFnZW50LCByZXF1ZXN0IGFzIGhSZXF1ZXN0IH0gZnJvbSBcImh0dHBcIjtcbmltcG9ydCB7IEFnZW50IGFzIGhzQWdlbnQsIHJlcXVlc3QgYXMgaHNSZXF1ZXN0LCBSZXF1ZXN0T3B0aW9ucyB9IGZyb20gXCJodHRwc1wiO1xuXG5pbXBvcnQgeyBOT0RFSlNfVElNRU9VVF9FUlJPUl9DT0RFUyB9IGZyb20gXCIuL2NvbnN0YW50c1wiO1xuaW1wb3J0IHsgZ2V0VHJhbnNmb3JtZWRIZWFkZXJzIH0gZnJvbSBcIi4vZ2V0LXRyYW5zZm9ybWVkLWhlYWRlcnNcIjtcbmltcG9ydCB7IHNldENvbm5lY3Rpb25UaW1lb3V0IH0gZnJvbSBcIi4vc2V0LWNvbm5lY3Rpb24tdGltZW91dFwiO1xuaW1wb3J0IHsgc2V0U29ja2V0VGltZW91dCB9IGZyb20gXCIuL3NldC1zb2NrZXQtdGltZW91dFwiO1xuaW1wb3J0IHsgd3JpdGVSZXF1ZXN0Qm9keSB9IGZyb20gXCIuL3dyaXRlLXJlcXVlc3QtYm9keVwiO1xuXG4vKipcbiAqIFJlcHJlc2VudHMgdGhlIGh0dHAgb3B0aW9ucyB0aGF0IGNhbiBiZSBwYXNzZWQgdG8gYSBub2RlIGh0dHAgY2xpZW50LlxuICovXG5leHBvcnQgaW50ZXJmYWNlIE5vZGVIdHRwT3B0aW9ucyB7XG4gIC8qKlxuICAgKiBUaGUgbWF4aW11bSB0aW1lIGluIG1pbGxpc2Vjb25kcyB0aGF0IHRoZSBjb25uZWN0aW9uIHBoYXNlIG9mIGEgcmVxdWVzdFxuICAgKiBtYXkgdGFrZSBiZWZvcmUgdGhlIGNvbm5lY3Rpb24gYXR0ZW1wdCBpcyBhYmFuZG9uZWQuXG4gICAqL1xuICBjb25uZWN0aW9uVGltZW91dD86IG51bWJlcjtcblxuICAvKipcbiAgICogVGhlIG1heGltdW0gdGltZSBpbiBtaWxsaXNlY29uZHMgdGhhdCBhIHNvY2tldCBtYXkgcmVtYWluIGlkbGUgYmVmb3JlIGl0XG4gICAqIGlzIGNsb3NlZC5cbiAgICovXG4gIHNvY2tldFRpbWVvdXQ/OiBudW1iZXI7XG5cbiAgaHR0cEFnZW50PzogaEFnZW50O1xuICBodHRwc0FnZW50PzogaHNBZ2VudDtcbn1cblxuZXhwb3J0IGNsYXNzIE5vZGVIdHRwSGFuZGxlciBpbXBsZW1lbnRzIEh0dHBIYW5kbGVyIHtcbiAgcHJpdmF0ZSByZWFkb25seSBodHRwQWdlbnQ6IGhBZ2VudDtcbiAgcHJpdmF0ZSByZWFkb25seSBodHRwc0FnZW50OiBoc0FnZW50O1xuICBwcml2YXRlIHJlYWRvbmx5IGNvbm5lY3Rpb25UaW1lb3V0PzogbnVtYmVyO1xuICBwcml2YXRlIHJlYWRvbmx5IHNvY2tldFRpbWVvdXQ/OiBudW1iZXI7XG4gIC8vIE5vZGUgaHR0cCBoYW5kbGVyIGlzIGhhcmQtY29kZWQgdG8gaHR0cC8xLjE6IGh0dHBzOi8vZ2l0aHViLmNvbS9ub2RlanMvbm9kZS9ibG9iL2ZmNTY2NGI4M2I4OWM1NWU0YWI1ZDVmNjAwNjhmYjQ1N2YxZjU4NzIvbGliL19odHRwX3NlcnZlci5qcyNMMjg2XG4gIHB1YmxpYyByZWFkb25seSBtZXRhZGF0YSA9IHsgaGFuZGxlclByb3RvY29sOiBcImh0dHAvMS4xXCIgfTtcblxuICBjb25zdHJ1Y3Rvcih7IGNvbm5lY3Rpb25UaW1lb3V0LCBzb2NrZXRUaW1lb3V0LCBodHRwQWdlbnQsIGh0dHBzQWdlbnQgfTogTm9kZUh0dHBPcHRpb25zID0ge30pIHtcbiAgICB0aGlzLmNvbm5lY3Rpb25UaW1lb3V0ID0gY29ubmVjdGlvblRpbWVvdXQ7XG4gICAgdGhpcy5zb2NrZXRUaW1lb3V0ID0gc29ja2V0VGltZW91dDtcbiAgICBjb25zdCBrZWVwQWxpdmUgPSB0cnVlO1xuICAgIHRoaXMuaHR0cEFnZW50ID0gaHR0cEFnZW50IHx8IG5ldyBoQWdlbnQoeyBrZWVwQWxpdmUgfSk7XG4gICAgdGhpcy5odHRwc0FnZW50ID0gaHR0cHNBZ2VudCB8fCBuZXcgaHNBZ2VudCh7IGtlZXBBbGl2ZSB9KTtcbiAgfVxuXG4gIGRlc3Ryb3koKTogdm9pZCB7XG4gICAgdGhpcy5odHRwQWdlbnQuZGVzdHJveSgpO1xuICAgIHRoaXMuaHR0cHNBZ2VudC5kZXN0cm95KCk7XG4gIH1cblxuICBoYW5kbGUocmVxdWVzdDogSHR0cFJlcXVlc3QsIHsgYWJvcnRTaWduYWwgfTogSHR0cEhhbmRsZXJPcHRpb25zKTogUHJvbWlzZTx7IHJlc3BvbnNlOiBIdHRwUmVzcG9uc2UgfT4ge1xuICAgIHJldHVybiBuZXcgUHJvbWlzZSgocmVzb2x2ZSwgcmVqZWN0KSA9PiB7XG4gICAgICAvLyBpZiB0aGUgcmVxdWVzdCB3YXMgYWxyZWFkeSBhYm9ydGVkLCBwcmV2ZW50IGRvaW5nIGV4dHJhIHdvcmtcbiAgICAgIGlmIChhYm9ydFNpZ25hbD8uYWJvcnRlZCkge1xuICAgICAgICBjb25zdCBhYm9ydEVycm9yID0gbmV3IEVycm9yKFwiUmVxdWVzdCBhYm9ydGVkXCIpO1xuICAgICAgICBhYm9ydEVycm9yLm5hbWUgPSBcIkFib3J0RXJyb3JcIjtcbiAgICAgICAgcmVqZWN0KGFib3J0RXJyb3IpO1xuICAgICAgICByZXR1cm47XG4gICAgICB9XG5cbiAgICAgIC8vIGRldGVybWluZSB3aGljaCBodHRwKHMpIGNsaWVudCB0byB1c2VcbiAgICAgIGNvbnN0IGlzU1NMID0gcmVxdWVzdC5wcm90b2NvbCA9PT0gXCJodHRwczpcIjtcbiAgICAgIGNvbnN0IHF1ZXJ5U3RyaW5nID0gYnVpbGRRdWVyeVN0cmluZyhyZXF1ZXN0LnF1ZXJ5IHx8IHt9KTtcbiAgICAgIGNvbnN0IG5vZGVIdHRwc09wdGlvbnM6IFJlcXVlc3RPcHRpb25zID0ge1xuICAgICAgICBoZWFkZXJzOiByZXF1ZXN0LmhlYWRlcnMsXG4gICAgICAgIGhvc3Q6IHJlcXVlc3QuaG9zdG5hbWUsXG4gICAgICAgIG1ldGhvZDogcmVxdWVzdC5tZXRob2QsXG4gICAgICAgIHBhdGg6IHF1ZXJ5U3RyaW5nID8gYCR7cmVxdWVzdC5wYXRofT8ke3F1ZXJ5U3RyaW5nfWAgOiByZXF1ZXN0LnBhdGgsXG4gICAgICAgIHBvcnQ6IHJlcXVlc3QucG9ydCxcbiAgICAgICAgYWdlbnQ6IGlzU1NMID8gdGhpcy5odHRwc0FnZW50IDogdGhpcy5odHRwQWdlbnQsXG4gICAgICB9O1xuXG4gICAgICAvLyBjcmVhdGUgdGhlIGh0dHAgcmVxdWVzdFxuICAgICAgY29uc3QgcmVxdWVzdEZ1bmMgPSBpc1NTTCA/IGhzUmVxdWVzdCA6IGhSZXF1ZXN0O1xuICAgICAgY29uc3QgcmVxID0gcmVxdWVzdEZ1bmMobm9kZUh0dHBzT3B0aW9ucywgKHJlcykgPT4ge1xuICAgICAgICBjb25zdCBodHRwUmVzcG9uc2UgPSBuZXcgSHR0cFJlc3BvbnNlKHtcbiAgICAgICAgICBzdGF0dXNDb2RlOiByZXMuc3RhdHVzQ29kZSB8fCAtMSxcbiAgICAgICAgICBoZWFkZXJzOiBnZXRUcmFuc2Zvcm1lZEhlYWRlcnMocmVzLmhlYWRlcnMpLFxuICAgICAgICAgIGJvZHk6IHJlcyxcbiAgICAgICAgfSk7XG4gICAgICAgIHJlc29sdmUoeyByZXNwb25zZTogaHR0cFJlc3BvbnNlIH0pO1xuICAgICAgfSk7XG5cbiAgICAgIHJlcS5vbihcImVycm9yXCIsIChlcnI6IEVycm9yKSA9PiB7XG4gICAgICAgIGlmIChOT0RFSlNfVElNRU9VVF9FUlJPUl9DT0RFUy5pbmNsdWRlcygoZXJyIGFzIGFueSkuY29kZSkpIHtcbiAgICAgICAgICByZWplY3QoT2JqZWN0LmFzc2lnbihlcnIsIHsgbmFtZTogXCJUaW1lb3V0RXJyb3JcIiB9KSk7XG4gICAgICAgIH0gZWxzZSB7XG4gICAgICAgICAgcmVqZWN0KGVycik7XG4gICAgICAgIH1cbiAgICAgIH0pO1xuXG4gICAgICAvLyB3aXJlLXVwIGFueSB0aW1lb3V0IGxvZ2ljXG4gICAgICBzZXRDb25uZWN0aW9uVGltZW91dChyZXEsIHJlamVjdCwgdGhpcy5jb25uZWN0aW9uVGltZW91dCk7XG4gICAgICBzZXRTb2NrZXRUaW1lb3V0KHJlcSwgcmVqZWN0LCB0aGlzLnNvY2tldFRpbWVvdXQpO1xuXG4gICAgICAvLyB3aXJlLXVwIGFib3J0IGxvZ2ljXG4gICAgICBpZiAoYWJvcnRTaWduYWwpIHtcbiAgICAgICAgYWJvcnRTaWduYWwub25hYm9ydCA9ICgpID0+IHtcbiAgICAgICAgICAvLyBlbnN1cmUgcmVxdWVzdCBpcyBkZXN0cm95ZWRcbiAgICAgICAgICByZXEuYWJvcnQoKTtcbiAgICAgICAgICBjb25zdCBhYm9ydEVycm9yID0gbmV3IEVycm9yKFwiUmVxdWVzdCBhYm9ydGVkXCIpO1xuICAgICAgICAgIGFib3J0RXJyb3IubmFtZSA9IFwiQWJvcnRFcnJvclwiO1xuICAgICAgICAgIHJlamVjdChhYm9ydEVycm9yKTtcbiAgICAgICAgfTtcbiAgICAgIH1cblxuICAgICAgd3JpdGVSZXF1ZXN0Qm9keShyZXEsIHJlcXVlc3QpO1xuICAgIH0pO1xuICB9XG59XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibm9kZS1odHRwLWhhbmRsZXIuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvbm9kZS1odHRwLWhhbmRsZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsMERBQWdGO0FBQ2hGLHNFQUFnRTtBQUVoRSwrQkFBNEQ7QUFDNUQsaUNBQStFO0FBRS9FLDJDQUF5RDtBQUN6RCx1RUFBa0U7QUFDbEUscUVBQWdFO0FBQ2hFLDZEQUF3RDtBQUN4RCw2REFBd0Q7QUFzQnhELE1BQWEsZUFBZTtJQVExQixZQUFZLEVBQUUsaUJBQWlCLEVBQUUsYUFBYSxFQUFFLFNBQVMsRUFBRSxVQUFVLEtBQTZCLEVBQUU7UUFIcEcscUpBQXFKO1FBQ3JJLGFBQVEsR0FBRyxFQUFFLGVBQWUsRUFBRSxVQUFVLEVBQUUsQ0FBQztRQUd6RCxJQUFJLENBQUMsaUJBQWlCLEdBQUcsaUJBQWlCLENBQUM7UUFDM0MsSUFBSSxDQUFDLGFBQWEsR0FBRyxhQUFhLENBQUM7UUFDbkMsTUFBTSxTQUFTLEdBQUcsSUFBSSxDQUFDO1FBQ3ZCLElBQUksQ0FBQyxTQUFTLEdBQUcsU0FBUyxJQUFJLElBQUksWUFBTSxDQUFDLEVBQUUsU0FBUyxFQUFFLENBQUMsQ0FBQztRQUN4RCxJQUFJLENBQUMsVUFBVSxHQUFHLFVBQVUsSUFBSSxJQUFJLGFBQU8sQ0FBQyxFQUFFLFNBQVMsRUFBRSxDQUFDLENBQUM7SUFDN0QsQ0FBQztJQUVELE9BQU87UUFDTCxJQUFJLENBQUMsU0FBUyxDQUFDLE9BQU8sRUFBRSxDQUFDO1FBQ3pCLElBQUksQ0FBQyxVQUFVLENBQUMsT0FBTyxFQUFFLENBQUM7SUFDNUIsQ0FBQztJQUVELE1BQU0sQ0FBQyxPQUFvQixFQUFFLEVBQUUsV0FBVyxLQUF5QixFQUFFO1FBQ25FLE9BQU8sSUFBSSxPQUFPLENBQUMsQ0FBQyxPQUFPLEVBQUUsTUFBTSxFQUFFLEVBQUU7WUFDckMsK0RBQStEO1lBQy9ELElBQUksV0FBVyxhQUFYLFdBQVcs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dXJjZXNDb250ZW50IjpbImltcG9ydCB7IEh0dHBIYW5kbGVyLCBIdHRwUmVxdWVzdCwgSHR0cFJlc3BvbnNlIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3RvY29sLWh0dHBcIjtcbmltcG9ydCB7IGJ1aWxkUXVlcnlTdHJpbmcgfSBmcm9tIFwiQGF3cy1zZGsvcXVlcnlzdHJpbmctYnVpbGRlclwiO1xuaW1wb3J0IHsgSHR0cEhhbmRsZXJPcHRpb25zIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5pbXBvcnQgeyBBZ2VudCBhcyBoQWdlbnQsIHJlcXVlc3QgYXMgaFJlcXVlc3QgfSBmcm9tIFwiaHR0cFwiO1xuaW1wb3J0IHsgQWdlbnQgYXMgaHNBZ2VudCwgcmVxdWVzdCBhcyBoc1JlcXVlc3QsIFJlcXVlc3RPcHRpb25zIH0gZnJvbSBcImh0dHBzXCI7XG5cbmltcG9ydCB7IE5PREVKU19USU1FT1VUX0VSUk9SX0NPREVTIH0gZnJvbSBcIi4vY29uc3RhbnRzXCI7XG5pbXBvcnQgeyBnZXRUcmFuc2Zvcm1lZEhlYWRlcnMgfSBmcm9tIFwiLi9nZXQtdHJhbnNmb3JtZWQtaGVhZGVyc1wiO1xuaW1wb3J0IHsgc2V0Q29ubmVjdGlvblRpbWVvdXQgfSBmcm9tIFwiLi9zZXQtY29ubmVjdGlvbi10aW1lb3V0XCI7XG5pbXBvcnQgeyBzZXRTb2NrZXRUaW1lb3V0IH0gZnJvbSBcIi4vc2V0LXNvY2tldC10aW1lb3V0XCI7XG5pbXBvcnQgeyB3cml0ZVJlcXVlc3RCb2R5IH0gZnJvbSBcIi4vd3JpdGUtcmVxdWVzdC1ib2R5XCI7XG5cbi8qKlxuICogUmVwcmVzZW50cyB0aGUgaHR0cCBvcHRpb25zIHRoYXQgY2FuIGJlIHBhc3NlZCB0byBhIG5vZGUgaHR0cCBjbGllbnQuXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgTm9kZUh0dHBIYW5kbGVyT3B0aW9ucyB7XG4gIC8qKlxuICAgKiBUaGUgbWF4aW11bSB0aW1lIGluIG1pbGxpc2Vjb25kcyB0aGF0IHRoZSBjb25uZWN0aW9uIHBoYXNlIG9mIGEgcmVxdWVzdFxuICAgKiBtYXkgdGFrZSBiZWZvcmUgdGhlIGNvbm5lY3Rpb24gYXR0ZW1wdCBpcyBhYmFuZG9uZWQuXG4gICAqL1xuICBjb25uZWN0aW9uVGltZW91dD86IG51bWJlcjtcblxuICAvKipcbiAgICogVGhlIG1heGltdW0gdGltZSBpbiBtaWxsaXNlY29uZHMgdGhhdCBhIHNvY2tldCBtYXkgcmVtYWluIGlkbGUgYmVmb3JlIGl0XG4gICAqIGlzIGNsb3NlZC5cbiAgICovXG4gIHNvY2tldFRpbWVvdXQ/OiBudW1iZXI7XG5cbiAgaHR0cEFnZW50PzogaEFnZW50O1xuICBodHRwc0FnZW50PzogaHNBZ2VudDtcbn1cblxuZXhwb3J0IGNsYXNzIE5vZGVIdHRwSGFuZGxlciBpbXBsZW1lbnRzIEh0dHBIYW5kbGVyIHtcbiAgcHJpdmF0ZSByZWFkb25seSBodHRwQWdlbnQ6IGhBZ2VudDtcbiAgcHJpdmF0ZSByZWFkb25seSBodHRwc0FnZW50OiBoc0FnZW50O1xuICBwcml2YXRlIHJlYWRvbmx5IGNvbm5lY3Rpb25UaW1lb3V0PzogbnVtYmVyO1xuICBwcml2YXRlIHJlYWRvbmx5IHNvY2tldFRpbWVvdXQ/OiBudW1iZXI7XG4gIC8vIE5vZGUgaHR0cCBoYW5kbGVyIGlzIGhhcmQtY29kZWQgdG8gaHR0cC8xLjE6IGh0dHBzOi8vZ2l0aHViLmNvbS9ub2RlanMvbm9kZS9ibG9iL2ZmNTY2NGI4M2I4OWM1NWU0YWI1ZDVmNjAwNjhmYjQ1N2YxZjU4NzIvbGliL19odHRwX3NlcnZlci5qcyNMMjg2XG4gIHB1YmxpYyByZWFkb25seSBtZXRhZGF0YSA9IHsgaGFuZGxlclByb3RvY29sOiBcImh0dHAvMS4xXCIgfTtcblxuICBjb25zdHJ1Y3Rvcih7IGNvbm5lY3Rpb25UaW1lb3V0LCBzb2NrZXRUaW1lb3V0LCBodHRwQWdlbnQsIGh0dHBzQWdlbnQgfTogTm9kZUh0dHBIYW5kbGVyT3B0aW9ucyA9IHt9KSB7XG4gICAgdGhpcy5jb25uZWN0aW9uVGltZW91dCA9IGNvbm5lY3Rpb25UaW1lb3V0O1xuICAgIHRoaXMuc29ja2V0VGltZW91dCA9IHNvY2tldFRpbWVvdXQ7XG4gICAgY29uc3Qga2VlcEFsaXZlID0gdHJ1ZTtcbiAgICB0aGlzLmh0dHBBZ2VudCA9IGh0dHBBZ2VudCB8fCBuZXcgaEFnZW50KHsga2VlcEFsaXZlIH0pO1xuICAgIHRoaXMuaHR0cHNBZ2VudCA9IGh0dHBzQWdlbnQgfHwgbmV3IGhzQWdlbnQoeyBrZWVwQWxpdmUgfSk7XG4gIH1cblxuICBkZXN0cm95KCk6IHZvaWQge1xuICAgIHRoaXMuaHR0cEFnZW50LmRlc3Ryb3koKTtcbiAgICB0aGlzLmh0dHBzQWdlbnQuZGVzdHJveSgpO1xuICB9XG5cbiAgaGFuZGxlKHJlcXVlc3Q6IEh0dHBSZXF1ZXN0LCB7IGFib3J0U2lnbmFsIH06IEh0dHBIYW5kbGVyT3B0aW9ucyA9IHt9KTogUHJvbWlzZTx7IHJlc3BvbnNlOiBIdHRwUmVzcG9uc2UgfT4ge1xuICAgIHJldHVybiBuZXcgUHJvbWlzZSgocmVzb2x2ZSwgcmVqZWN0KSA9PiB7XG4gICAgICAvLyBpZiB0aGUgcmVxdWVzdCB3YXMgYWxyZWFkeSBhYm9ydGVkLCBwcmV2ZW50IGRvaW5nIGV4dHJhIHdvcmtcbiAgICAgIGlmIChhYm9ydFNpZ25hbD8uYWJvcnRlZCkge1xuICAgICAgICBjb25zdCBhYm9ydEVycm9yID0gbmV3IEVycm9yKFwiUmVxdWVzdCBhYm9ydGVkXCIpO1xuICAgICAgICBhYm9ydEVycm9yLm5hbWUgPSBcIkFib3J0RXJyb3JcIjtcbiAgICAgICAgcmVqZWN0KGFib3J0RXJyb3IpO1xuICAgICAgICByZXR1cm47XG4gICAgICB9XG5cbiAgICAgIC8vIGRldGVybWluZSB3aGljaCBodHRwKHMpIGNsaWVudCB0byB1c2VcbiAgICAgIGNvbnN0IGlzU1NMID0gcmVxdWVzdC5wcm90b2NvbCA9PT0gXCJodHRwczpcIjtcbiAgICAgIGNvbnN0IHF1ZXJ5U3RyaW5nID0gYnVpbGRRdWVyeVN0cmluZyhyZXF1ZXN0LnF1ZXJ5IHx8IHt9KTtcbiAgICAgIGNvbnN0IG5vZGVIdHRwc09wdGlvbnM6IFJlcXVlc3RPcHRpb25zID0ge1xuICAgICAgICBoZWFkZXJzOiByZXF1ZXN0LmhlYWRlcnMsXG4gICAgICAgIGhvc3Q6IHJlcXVlc3QuaG9zdG5hbWUsXG4gICAgICAgIG1ldGhvZDogcmVxdWVzdC5tZXRob2QsXG4gICAgICAgIHBhdGg6IHF1ZXJ5U3RyaW5nID8gYCR7cmVxdWVzdC5wYXRofT8ke3F1ZXJ5U3RyaW5nfWAgOiByZXF1ZXN0LnBhdGgsXG4gICAgICAgIHBvcnQ6IHJlcXVlc3QucG9ydCxcbiAgICAgICAgYWdlbnQ6IGlzU1NMID8gdGhpcy5odHRwc0FnZW50IDogdGhpcy5odHRwQWdlbnQsXG4gICAgICB9O1xuXG4gICAgICAvLyBjcmVhdGUgdGhlIGh0dHAgcmVxdWVzdFxuICAgICAgY29uc3QgcmVxdWVzdEZ1bmMgPSBpc1NTTCA/IGhzUmVxdWVzdCA6IGhSZXF1ZXN0O1xuICAgICAgY29uc3QgcmVxID0gcmVxdWVzdEZ1bmMobm9kZUh0dHBzT3B0aW9ucywgKHJlcykgPT4ge1xuICAgICAgICBjb25zdCBodHRwUmVzcG9uc2UgPSBuZXcgSHR0cFJlc3BvbnNlKHtcbiAgICAgICAgICBzdGF0dXNDb2RlOiByZXMuc3RhdHVzQ29kZSB8fCAtMSxcbiAgICAgICAgICBoZWFkZXJzOiBnZXRUcmFuc2Zvcm1lZEhlYWRlcnMocmVzLmhlYWRlcnMpLFxuICAgICAgICAgIGJvZHk6IHJlcyxcbiAgICAgICAgfSk7XG4gICAgICAgIHJlc29sdmUoeyByZXNwb25zZTogaHR0cFJlc3BvbnNlIH0pO1xuICAgICAgfSk7XG5cbiAgICAgIHJlcS5vbihcImVycm9yXCIsIChlcnI6IEVycm9yKSA9PiB7XG4gICAgICAgIGlmIChOT0RFSlNfVElNRU9VVF9FUlJPUl9DT0RFUy5pbmNsdWRlcygoZXJyIGFzIGFueSkuY29kZSkpIHtcbiAgICAgICAgICByZWplY3QoT2JqZWN0LmFzc2lnbihlcnIsIHsgbmFtZTogXCJUaW1lb3V0RXJyb3JcIiB9KSk7XG4gICAgICAgIH0gZWxzZSB7XG4gICAgICAgICAgcmVqZWN0KGVycik7XG4gICAgICAgIH1cbiAgICAgIH0pO1xuXG4gICAgICAvLyB3aXJlLXVwIGFueSB0aW1lb3V0IGxvZ2ljXG4gICAgICBzZXRDb25uZWN0aW9uVGltZW91dChyZXEsIHJlamVjdCwgdGhpcy5jb25uZWN0aW9uVGltZW91dCk7XG4gICAgICBzZXRTb2NrZXRUaW1lb3V0KHJlcSwgcmVqZWN0LCB0aGlzLnNvY2tldFRpbWVvdXQpO1xuXG4gICAgICAvLyB3aXJlLXVwIGFib3J0IGxvZ2ljXG4gICAgICBpZiAoYWJvcnRTaWduYWwpIHtcbiAgICAgICAgYWJvcnRTaWduYWwub25hYm9ydCA9ICgpID0+IHtcbiAgICAgICAgICAvLyBlbnN1cmUgcmVxdWVzdCBpcyBkZXN0cm95ZWRcbiAgICAgICAgICByZXEuYWJvcnQoKTtcbiAgICAgICAgICBjb25zdCBhYm9ydEVycm9yID0gbmV3IEVycm9yKFwiUmVxdWVzdCBhYm9ydGVkXCIpO1xuICAgICAgICAgIGFib3J0RXJyb3IubmFtZSA9IFwiQWJvcnRFcnJvclwiO1xuICAgICAgICAgIHJlamVjdChhYm9ydEVycm9yKTtcbiAgICAgICAgfTtcbiAgICAgIH1cblxuICAgICAgd3JpdGVSZXF1ZXN0Qm9keShyZXEsIHJlcXVlc3QpO1xuICAgIH0pO1xuICB9XG59XG4iXX0=
 
 /***/ }),
 
@@ -17506,9 +20470,10 @@ const http2_1 = __webpack_require__(7565);
 const get_transformed_headers_1 = __webpack_require__(2269);
 const write_request_body_1 = __webpack_require__(3306);
 class NodeHttp2Handler {
-    constructor(http2Options = {}) {
-        this.http2Options = http2Options;
+    constructor({ requestTimeout, sessionTimeout } = {}) {
         this.metadata = { handlerProtocol: "h2" };
+        this.requestTimeout = requestTimeout;
+        this.sessionTimeout = sessionTimeout;
         this.connectionPool = new Map();
     }
     destroy() {
@@ -17518,7 +20483,7 @@ class NodeHttp2Handler {
         }
         this.connectionPool.clear();
     }
-    handle(request, { abortSignal }) {
+    handle(request, { abortSignal } = {}) {
         return new Promise((resolve, reject) => {
             // if the request was already aborted, prevent doing extra work
             if (abortSignal === null || abortSignal === void 0 ? void 0 : abortSignal.aborted) {
@@ -17546,7 +20511,7 @@ class NodeHttp2Handler {
             req.on("error", reject);
             req.on("frameError", reject);
             req.on("aborted", reject);
-            const { requestTimeout } = this.http2Options;
+            const requestTimeout = this.requestTimeout;
             if (requestTimeout) {
                 req.setTimeout(requestTimeout, () => {
                     req.close();
@@ -17573,7 +20538,7 @@ class NodeHttp2Handler {
             return existingSession;
         const newSession = http2_1.connect(authority);
         connectionPool.set(authority, newSession);
-        const { sessionTimeout } = this.http2Options;
+        const sessionTimeout = this.sessionTimeout;
         if (sessionTimeout) {
             newSession.setTimeout(sessionTimeout, () => {
                 newSession.close();
@@ -17584,7 +20549,7 @@ class NodeHttp2Handler {
     }
 }
 exports.NodeHttp2Handler = NodeHttp2Handler;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibm9kZS1odHRwMi1oYW5kbGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL25vZGUtaHR0cDItaGFuZGxlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwwREFBZ0Y7QUFDaEYsc0VBQWdFO0FBRWhFLGlDQUErRDtBQUUvRCx1RUFBa0U7QUFDbEUsNkRBQXdEO0FBb0J4RCxNQUFhLGdCQUFnQjtJQUkzQixZQUE2QixlQUFpQyxFQUFFO1FBQW5DLGlCQUFZLEdBQVosWUFBWSxDQUF1QjtRQUZoRCxhQUFRLEdBQUcsRUFBRSxlQUFlLEVBQUUsSUFBSSxFQUFFLENBQUM7UUFHbkQsSUFBSSxDQUFDLGNBQWMsR0FBRyxJQUFJLEdBQUcsRUFBOEIsQ0FBQztJQUM5RCxDQUFDO0lBRUQsT0FBTztRQUNMLDZEQUE2RDtRQUM3RCxLQUFLLE1BQU0sQ0FBQyxDQUFDLEVBQUUsWUFBWSxDQUFDLElBQUksSUFBSSxDQUFDLGNBQWMsRUFBRTtZQUNuRCxZQUFZLENBQUMsT0FBTyxFQUFFLENBQUM7U0FDeEI7UUFDRCxJQUFJLENBQUMsY0FBYyxDQUFDLEtBQUssRUFBRSxDQUFDO0lBQzlCLENBQUM7SUFFRCxNQUFNLENBQUMsT0FBb0IsRUFBRSxFQUFFLFdBQVcsRUFBc0I7UUFDOUQsT0FBTyxJQUFJLE9BQU8sQ0FBQyxDQUFDLE9BQU8sRUFBRSxNQUFNLEVBQUUsRUFBRTtZQUNyQywrREFBK0Q7WUFDL0QsSUFBSSxXQUFXLGFBQVgsV0FBVyx1QkFBWCxXQUFXLENBQUUsT0FBTyxFQUFFO2dCQUN4QixNQUFNLFVBQVUsR0FBRyxJQUFJLEtBQUssQ0FBQyxpQkFBaUIsQ0FBQyxDQUFDO2dCQUNoRCxVQUFVLENBQUMsSUFBSSxHQUFHLFlBQVksQ0FBQztnQkFDL0IsTUFBTSxDQUFDLFVBQVUsQ0FBQyxDQUFDO2dCQUNuQixPQUFPO2FBQ1I7WUFFRCxNQUFNLEVBQUUsUUFBUSxFQUFFLE1BQU0sRUFBRSxJQUFJLEVBQUUsUUFBUSxF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QyxZQUFZLENBQUM7UUFDN0MsSUFBSSxjQUFjLEVBQUU7WUFDbEIsVUFBVSxDQUFDLFVBQVUsQ0FBQyxjQUFjLEVBQUUsR0FBRyxFQUFFO2dCQUN6QyxVQUFVLENBQUMsS0FBSyxFQUFFLENBQUM7Z0JBQ25CLGNBQWMsQ0FBQyxNQUFNLENBQUMsU0FBUyxDQUFDLENBQUM7WUFDbkMsQ0FBQyxDQUFDLENBQUM7U0FDSjtRQUNELE9BQU8sVUFBVSxDQUFDO0lBQ3BCLENBQUM7Q0FDRjtBQXpGRCw0Q0F5RkMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBIdHRwSGFuZGxlciwgSHR0cFJlcXVlc3QsIEh0dHBSZXNwb25zZSB9IGZyb20gXCJAYXdzLXNkay9wcm90b2NvbC1odHRwXCI7XG5pbXBvcnQgeyBidWlsZFF1ZXJ5U3RyaW5nIH0gZnJvbSBcIkBhd3Mtc2RrL3F1ZXJ5c3RyaW5nLWJ1aWxkZXJcIjtcbmltcG9ydCB7IEh0dHBIYW5kbGVyT3B0aW9ucyB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuaW1wb3J0IHsgQ2xpZW50SHR0cDJTZXNzaW9uLCBjb25uZWN0LCBjb25zdGFudHMgfSBmcm9tIFwiaHR0cDJcIjtcblxuaW1wb3J0IHsgZ2V0VHJhbnNmb3JtZWRIZWFkZXJzIH0gZnJvbSBcIi4vZ2V0LXRyYW5zZm9ybWVkLWhlYWRlcnNcIjtcbmltcG9ydCB7IHdyaXRlUmVxdWVzdEJvZHkgfSBmcm9tIFwiLi93cml0ZS1yZXF1ZXN0LWJvZHlcIjtcblxuLyoqXG4gKiBSZXByZXNlbnRzIHRoZSBodHRwMiBvcHRpb25zIHRoYXQgY2FuIGJlIHBhc3NlZCB0byBhIG5vZGUgaHR0cDIgY2xpZW50LlxuICovXG5leHBvcnQgaW50ZXJmYWNlIE5vZGVIdHRwMk9wdGlvbnMge1xuICAvKipcbiAgICogVGhlIG1heGltdW0gdGltZSBpbiBtaWxsaXNlY29uZHMgdGhhdCBhIHN0cmVhbSBtYXkgcmVtYWluIGlkbGUgYmVmb3JlIGl0XG4gICAqIGlzIGNsb3NlZC5cbiAgICovXG4gIHJlcXVlc3RUaW1lb3V0PzogbnVtYmVyO1xuXG4gIC8qKlxuICAgKiBUaGUgbWF4aW11bSB0aW1lIGluIG1pbGxpc2Vjb25kcyB0aGF0IGEgc2Vzc2lvbiBvciBzb2NrZXQgbWF5IHJlbWFpbiBpZGxlXG4gICAqIGJlZm9yZSBpdCBpcyBjbG9zZWQuXG4gICAqIGh0dHBzOi8vbm9kZWpzLm9yZy9kb2NzL2xhdGVzdC12MTIueC9hcGkvaHR0cDIuaHRtbCNodHRwMl9odHRwMnNlc3Npb25fYW5kX3NvY2tldHNcbiAgICovXG4gIHNlc3Npb25UaW1lb3V0PzogbnVtYmVyO1xufVxuXG5leHBvcnQgY2xhc3MgTm9kZUh0dHAySGFuZGxlciBpbXBsZW1lbnRzIEh0dHBIYW5kbGVyIHtcbiAgcHJpdmF0ZSByZWFkb25seSBjb25uZWN0aW9uUG9vbDogTWFwPHN0cmluZywgQ2xpZW50SHR0cDJTZXNzaW9uPjtcbiAgcHVibGljIHJlYWRvbmx5IG1ldGFkYXRhID0geyBoYW5kbGVyUHJvdG9jb2w6IFwiaDJcIiB9O1xuXG4gIGNvbnN0cnVjdG9yKHByaXZhdGUgcmVhZG9ubHkgaHR0cDJPcHRpb25zOiBOb2RlSHR0cDJPcHRpb25zID0ge30pIHtcbiAgICB0aGlzLmNvbm5lY3Rpb25Qb29sID0gbmV3IE1hcDxzdHJpbmcsIENsaWVudEh0dHAyU2Vzc2lvbj4oKTtcbiAgfVxuXG4gIGRlc3Ryb3koKTogdm9pZCB7XG4gICAgLy8gZXNsaW50LWRpc2FibGUtbmV4dC1saW5lIEB0eXBlc2NyaXB0LWVzbGludC9uby11bnVzZWQtdmFyc1xuICAgIGZvciAoY29uc3QgW18sIGh0dHAyU2Vzc2lvbl0gb2YgdGhpcy5jb25uZWN0aW9uUG9vbCkge1xuICAgICAgaHR0cDJTZXNzaW9uLmRlc3Ryb3koKTtcbiAgICB9XG4gICAgdGhpcy5jb25uZWN0aW9uUG9vbC5jbGVhcigpO1xuICB9XG5cbiAgaGFuZGxlKHJlcXVlc3Q6IEh0dHBSZXF1ZXN0LCB7IGFib3J0U2lnbmFsIH06IEh0dHBIYW5kbGVyT3B0aW9ucyk6IFByb21pc2U8eyByZXNwb25zZTogSHR0cFJlc3BvbnNlIH0+IHtcbiAgICByZXR1cm4gbmV3IFByb21pc2UoKHJlc29sdmUsIHJlamVjdCkgPT4ge1xuICAgICAgLy8gaWYgdGhlIHJlcXVlc3Qgd2FzIGFscmVhZHkgYWJvcnRlZCwgcHJldmVudCBkb2luZyBleHRyYSB3b3JrXG4gICAgICBpZiAoYWJvcnRTaWduYWw/LmFib3J0ZWQpIHtcbiAgICAgICAgY29uc3QgYWJvcnRFcnJvciA9IG5ldyBFcnJvcihcIlJlcXVlc3QgYWJvcnRlZFwiKTtcbiAgICAgICAgYWJvcnRFcnJvci5uYW1lID0gXCJBYm9ydEVycm9yXCI7XG4gICAgICAgIHJlamVjdChhYm9ydEVycm9yKTtcbiAgICAgICAgcmV0dXJuO1xuICAgICAgfVxuXG4gICAgICBjb25zdCB7IGhvc3RuYW1lLCBtZXRob2QsIHBvcnQsIHByb3RvY29sLCBwYXRoLCBxdWVyeSB9ID0gcmVxdWVzdDtcbiAgICAgIGNvbnN0IHF1ZXJ5U3RyaW5nID0gYnVpbGRRdWVyeVN0cmluZyhxdWVyeSB8fCB7fSk7XG5cbiAgICAgIC8vIGNyZWF0ZSB0aGUgaHR0cDIgcmVxdWVzdFxuICAgICAgY29uc3QgcmVxID0gdGhpcy5nZXRTZXNzaW9uKGAke3Byb3RvY29sfS8vJHtob3N0bmFtZX0ke3BvcnQgPyBgOiR7cG9ydH1gIDogXCJcIn1gKS5yZXF1ZXN0KHtcbiAgICAgICAgLi4ucmVxdWVzdC5oZWFkZXJzLFxuICAgICAgICBbY29uc3RhbnRzLkhUVFAyX0hFQURFUl9QQVRIXTogcXVlcnlTdHJpbmcgPyBgJHtwYXRofT8ke3F1ZXJ5U3RyaW5nfWAgOiBwYXRoLFxuICAgICAgICBbY29uc3RhbnRzLkhUVFAyX0hFQURFUl9NRVRIT0RdOiBtZXRob2QsXG4gICAgICB9KTtcblxuICAgICAgcmVxLm9uKFwicmVzcG9uc2VcIiwgKGhlYWRlcnMpID0+IHtcbiAgICAgICAgY29uc3QgaHR0cFJlc3BvbnNlID0gbmV3IEh0dHBSZXNwb25zZSh7XG4gICAgICAgICAgc3RhdHVzQ29kZTogaGVhZGVyc1tcIjpzdGF0dXNcIl0gfHwgLTEsXG4gICAgICAgICAgaGVhZGVyczogZ2V0VHJhbnNmb3JtZWRIZWFkZXJzKGhlYWRlcnMpLFxuICAgICAgICAgIGJvZHk6IHJlcSxcbiAgICAgICAgfSk7XG4gICAgICAgIHJlc29sdmUoeyByZXNwb25zZTogaHR0cFJlc3BvbnNlIH0pO1xuICAgICAgfSk7XG5cbiAgICAgIHJlcS5vbihcImVycm9yXCIsIHJlamVjdCk7XG4gICAgICByZXEub24oXCJmcmFtZUVycm9yXCIsIHJlamVjdCk7XG4gICAgICByZXEub24oXCJhYm9ydGVkXCIsIHJlamVjdCk7XG5cbiAgICAgIGNvbnN0IHsgcmVxdWVzdFRpbWVvdXQgfSA9IHRoaXMuaHR0cDJPcHRpb25zO1xuICAgICAgaWYgKHJlcXVlc3RUaW1lb3V0KSB7XG4gICAgICAgIHJlcS5zZXRUaW1lb3V0KHJlcXVlc3RUaW1lb3V0LCAoKSA9PiB7XG4gICAgICAgICAgcmVxLmNsb3NlKCk7XG4gICAgICAgICAgY29uc3QgdGltZW91dEVycm9yID0gbmV3IEVycm9yKGBTdHJlYW0gdGltZWQgb3V0IGJlY2F1c2Ugb2Ygbm8gYWN0aXZpdHkgZm9yICR7cmVxdWVzdFRpbWVvdXR9IG1zYCk7XG4gICAgICAgICAgdGltZW91dEVycm9yLm5hbWUgPSBcIlRpbWVvdXRFcnJvclwiO1xuICAgICAgICAgIHJlamVjdCh0aW1lb3V0RXJyb3IpO1xuICAgICAgICB9KTtcbiAgICAgIH1cblxuICAgICAgaWYgKGFib3J0U2lnbmFsKSB7XG4gICAgICAgIGFib3J0U2lnbmFsLm9uYWJvcnQgPSAoKSA9PiB7XG4gICAgICAgICAgcmVxLmNsb3NlKCk7XG4gICAgICAgICAgY29uc3QgYWJvcnRFcnJvciA9IG5ldyBFcnJvcihcIlJlcXVlc3QgYWJvcnRlZFwiKTtcbiAgICAgICAgICBhYm9ydEVycm9yLm5hbWUgPSBcIkFib3J0RXJyb3JcIjtcbiAgICAgICAgICByZWplY3QoYWJvcnRFcnJvcik7XG4gICAgICAgIH07XG4gICAgICB9XG5cbiAgICAgIHdyaXRlUmVxdWVzdEJvZHkocmVxLCByZXF1ZXN0KTtcbiAgICB9KTtcbiAgfVxuXG4gIHByaXZhdGUgZ2V0U2Vzc2lvbihhdXRob3JpdHk6IHN0cmluZyk6IENsaWVudEh0dHAyU2Vzc2lvbiB7XG4gICAgY29uc3QgY29ubmVjdGlvblBvb2wgPSB0aGlzLmNvbm5lY3Rpb25Qb29sO1xuICAgIGNvbnN0IGV4aXN0aW5nU2Vzc2lvbiA9IGNvbm5lY3Rpb25Qb29sLmdldChhdXRob3JpdHkpO1xuICAgIGlmIChleGlzdGluZ1Nlc3Npb24pIHJldHVybiBleGlzdGluZ1Nlc3Npb247XG5cbiAgICBjb25zdCBuZXdTZXNzaW9uID0gY29ubmVjdChhdXRob3JpdHkpO1xuICAgIGNvbm5lY3Rpb25Qb29sLnNldChhdXRob3JpdHksIG5ld1Nlc3Npb24pO1xuXG4gICAgY29uc3QgeyBzZXNzaW9uVGltZW91dCB9ID0gdGhpcy5odHRwMk9wdGlvbnM7XG4gICAgaWYgKHNlc3Npb25UaW1lb3V0KSB7XG4gICAgICBuZXdTZXNzaW9uLnNldFRpbWVvdXQoc2Vzc2lvblRpbWVvdXQsICgpID0+IHtcbiAgICAgICAgbmV3U2Vzc2lvbi5jbG9zZSgpO1xuICAgICAgICBjb25uZWN0aW9uUG9vbC5kZWxldGUoYXV0aG9yaXR5KTtcbiAgICAgIH0pO1xuICAgIH1cbiAgICByZXR1cm4gbmV3U2Vzc2lvbjtcbiAgfVxufVxuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibm9kZS1odHRwMi1oYW5kbGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL25vZGUtaHR0cDItaGFuZGxlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwwREFBZ0Y7QUFDaEYsc0VBQWdFO0FBRWhFLGlDQUErRDtBQUUvRCx1RUFBa0U7QUFDbEUsNkRBQXdEO0FBb0J4RCxNQUFhLGdCQUFnQjtJQU0zQixZQUFZLEVBQUUsY0FBYyxFQUFFLGNBQWMsS0FBOEIsRUFBRTtRQUY1RCxhQUFRLEdBQUcsRUFBRSxlQUFlLEVBQUUsSUFBSSxFQUFFLENBQUM7UUFHbkQsSUFBSSxDQUFDLGNBQWMsR0FBRyxjQUFjLENBQUM7UUFDckMsSUFBSSxDQUFDLGNBQWMsR0FBRyxjQUFjLENBQUM7UUFDckMsSUFBSSxDQUFDLGNBQWMsR0FBRyxJQUFJLEdBQUcsRUFBOEIsQ0FBQztJQUM5RCxDQUFDO0lBRUQsT0FBTztRQUNMLDZEQUE2RDtRQUM3RCxLQUFLLE1BQU0sQ0FBQyxDQUFDLEVBQUUsWUFBWSxDQUFDLElBQUksSUFBSSxDQUFDLGNBQWMsRUFBRTtZQUNuRCxZQUFZLENBQUMsT0FBTyxFQUFFLENBQUM7U0FDeEI7UUFDRCxJQUFJLENBQUMsY0FBYyxDQUFDLEtBQUssRUFBRSxDQUFDO0lBQzlCLENBQUM7SUFFRCxNQUFNLENBQUMsT0FBb0IsRUFBRSxFQUFFLFdBQVcsS0FBeUIsRUFBRTtRQUNuRSxPQUFPLElBQUksT0FBTyxDQUFDLENBQUMsT0FBTyxFQUFFLE1BQU0sRUFBRSxFQUFFO1lBQ3JDLCtEQUErRDtZQUMvRCxJQUFJLFdBQVcsYUFBWCxXQUFXLHVCQUFYLFdBQVcsQ0FBRSxPQUFPLEVBQUU7Z0JBQ3hCLE1BQU0sVUFBVSxHQUFHLElBQUksS0FBSyxDQUFDLGlCQUFpQixDQUFDLENBQUM7Z0JBQ2hELFVBQVUsQ0FBQyxJQUFJLEdBQUcsWUFBWSxDQUFDO2dCQUMvQixNQUFNLENBQUMsVUFBVSxDQUFDLENBQUM7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QUFFLFVBQVUsQ0FBQyxDQUFDO1FBRTFDLE1BQU0sY0FBYyxHQUFHLElBQUksQ0FBQyxjQUFjLENBQUM7UUFDM0MsSUFBSSxjQUFjLEVBQUU7WUFDbEIsVUFBVSxDQUFDLFVBQVUsQ0FBQyxjQUFjLEVBQUUsR0FBRyxFQUFFO2dCQUN6QyxVQUFVLENBQUMsS0FBSyxFQUFFLENBQUM7Z0JBQ25CLGNBQWMsQ0FBQyxNQUFNLENBQUMsU0FBUyxDQUFDLENBQUM7WUFDbkMsQ0FBQyxDQUFDLENBQUM7U0FDSjtRQUNELE9BQU8sVUFBVSxDQUFDO0lBQ3BCLENBQUM7Q0FDRjtBQTdGRCw0Q0E2RkMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBIdHRwSGFuZGxlciwgSHR0cFJlcXVlc3QsIEh0dHBSZXNwb25zZSB9IGZyb20gXCJAYXdzLXNkay9wcm90b2NvbC1odHRwXCI7XG5pbXBvcnQgeyBidWlsZFF1ZXJ5U3RyaW5nIH0gZnJvbSBcIkBhd3Mtc2RrL3F1ZXJ5c3RyaW5nLWJ1aWxkZXJcIjtcbmltcG9ydCB7IEh0dHBIYW5kbGVyT3B0aW9ucyB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuaW1wb3J0IHsgQ2xpZW50SHR0cDJTZXNzaW9uLCBjb25uZWN0LCBjb25zdGFudHMgfSBmcm9tIFwiaHR0cDJcIjtcblxuaW1wb3J0IHsgZ2V0VHJhbnNmb3JtZWRIZWFkZXJzIH0gZnJvbSBcIi4vZ2V0LXRyYW5zZm9ybWVkLWhlYWRlcnNcIjtcbmltcG9ydCB7IHdyaXRlUmVxdWVzdEJvZHkgfSBmcm9tIFwiLi93cml0ZS1yZXF1ZXN0LWJvZHlcIjtcblxuLyoqXG4gKiBSZXByZXNlbnRzIHRoZSBodHRwMiBvcHRpb25zIHRoYXQgY2FuIGJlIHBhc3NlZCB0byBhIG5vZGUgaHR0cDIgY2xpZW50LlxuICovXG5leHBvcnQgaW50ZXJmYWNlIE5vZGVIdHRwMkhhbmRsZXJPcHRpb25zIHtcbiAgLyoqXG4gICAqIFRoZSBtYXhpbXVtIHRpbWUgaW4gbWlsbGlzZWNvbmRzIHRoYXQgYSBzdHJlYW0gbWF5IHJlbWFpbiBpZGxlIGJlZm9yZSBpdFxuICAgKiBpcyBjbG9zZWQuXG4gICAqL1xuICByZXF1ZXN0VGltZW91dD86IG51bWJlcjtcblxuICAvKipcbiAgICogVGhlIG1heGltdW0gdGltZSBpbiBtaWxsaXNlY29uZHMgdGhhdCBhIHNlc3Npb24gb3Igc29ja2V0IG1heSByZW1haW4gaWRsZVxuICAgKiBiZWZvcmUgaXQgaXMgY2xvc2VkLlxuICAgKiBodHRwczovL25vZGVqcy5vcmcvZG9jcy9sYXRlc3QtdjEyLngvYXBpL2h0dHAyLmh0bWwjaHR0cDJfaHR0cDJzZXNzaW9uX2FuZF9zb2NrZXRzXG4gICAqL1xuICBzZXNzaW9uVGltZW91dD86IG51bWJlcjtcbn1cblxuZXhwb3J0IGNsYXNzIE5vZGVIdHRwMkhhbmRsZXIgaW1wbGVtZW50cyBIdHRwSGFuZGxlciB7XG4gIHByaXZhdGUgcmVhZG9ubHkgcmVxdWVzdFRpbWVvdXQ/OiBudW1iZXI7XG4gIHByaXZhdGUgcmVhZG9ubHkgc2Vzc2lvblRpbWVvdXQ/OiBudW1iZXI7XG4gIHByaXZhdGUgcmVhZG9ubHkgY29ubmVjdGlvblBvb2w6IE1hcDxzdHJpbmcsIENsaWVudEh0dHAyU2Vzc2lvbj47XG4gIHB1YmxpYyByZWFkb25seSBtZXRhZGF0YSA9IHsgaGFuZGxlclByb3RvY29sOiBcImgyXCIgfTtcblxuICBjb25zdHJ1Y3Rvcih7IHJlcXVlc3RUaW1lb3V0LCBzZXNzaW9uVGltZW91dCB9OiBOb2RlSHR0cDJIYW5kbGVyT3B0aW9ucyA9IHt9KSB7XG4gICAgdGhpcy5yZXF1ZXN0VGltZW91dCA9IHJlcXVlc3RUaW1lb3V0O1xuICAgIHRoaXMuc2Vzc2lvblRpbWVvdXQgPSBzZXNzaW9uVGltZW91dDtcbiAgICB0aGlzLmNvbm5lY3Rpb25Qb29sID0gbmV3IE1hcDxzdHJpbmcsIENsaWVudEh0dHAyU2Vzc2lvbj4oKTtcbiAgfVxuXG4gIGRlc3Ryb3koKTogdm9pZCB7XG4gICAgLy8gZXNsaW50LWRpc2FibGUtbmV4dC1saW5lIEB0eXBlc2NyaXB0LWVzbGludC9uby11bnVzZWQtdmFyc1xuICAgIGZvciAoY29uc3QgW18sIGh0dHAyU2Vzc2lvbl0gb2YgdGhpcy5jb25uZWN0aW9uUG9vbCkge1xuICAgICAgaHR0cDJTZXNzaW9uLmRlc3Ryb3koKTtcbiAgICB9XG4gICAgdGhpcy5jb25uZWN0aW9uUG9vbC5jbGVhcigpO1xuICB9XG5cbiAgaGFuZGxlKHJlcXVlc3Q6IEh0dHBSZXF1ZXN0LCB7IGFib3J0U2lnbmFsIH06IEh0dHBIYW5kbGVyT3B0aW9ucyA9IHt9KTogUHJvbWlzZTx7IHJlc3BvbnNlOiBIdHRwUmVzcG9uc2UgfT4ge1xuICAgIHJldHVybiBuZXcgUHJvbWlzZSgocmVzb2x2ZSwgcmVqZWN0KSA9PiB7XG4gICAgICAvLyBpZiB0aGUgcmVxdWVzdCB3YXMgYWxyZWFkeSBhYm9ydGVkLCBwcmV2ZW50IGRvaW5nIGV4dHJhIHdvcmtcbiAgICAgIGlmIChhYm9ydFNpZ25hbD8uYWJvcnRlZCkge1xuICAgICAgICBjb25zdCBhYm9ydEVycm9yID0gbmV3IEVycm9yKFwiUmVxdWVzdCBhYm9ydGVkXCIpO1xuICAgICAgICBhYm9ydEVycm9yLm5hbWUgPSBcIkFib3J0RXJyb3JcIjtcbiAgICAgICAgcmVqZWN0KGFib3J0RXJyb3IpO1xuICAgICAgICByZXR1cm47XG4gICAgICB9XG5cbiAgICAgIGNvbnN0IHsgaG9zdG5hbWUsIG1ldGhvZCwgcG9ydCwgcHJvdG9jb2wsIHBhdGgsIHF1ZXJ5IH0gPSByZXF1ZXN0O1xuICAgICAgY29uc3QgcXVlcnlTdHJpbmcgPSBidWlsZFF1ZXJ5U3RyaW5nKHF1ZXJ5IHx8IHt9KTtcblxuICAgICAgLy8gY3JlYXRlIHRoZSBodHRwMiByZXF1ZXN0XG4gICAgICBjb25zdCByZXEgPSB0aGlzLmdldFNlc3Npb24oYCR7cHJvdG9jb2x9Ly8ke2hvc3RuYW1lfSR7cG9ydCA/IGA6JHtwb3J0fWAgOiBcIlwifWApLnJlcXVlc3Qoe1xuICAgICAgICAuLi5yZXF1ZXN0LmhlYWRlcnMsXG4gICAgICAgIFtjb25zdGFudHMuSFRUUDJfSEVBREVSX1BBVEhdOiBxdWVyeVN0cmluZyA/IGAke3BhdGh9PyR7cXVlcnlTdHJpbmd9YCA6IHBhdGgsXG4gICAgICAgIFtjb25zdGFudHMuSFRUUDJfSEVBREVSX01FVEhPRF06IG1ldGhvZCxcbiAgICAgIH0pO1xuXG4gICAgICByZXEub24oXCJyZXNwb25zZVwiLCAoaGVhZGVycykgPT4ge1xuICAgICAgICBjb25zdCBodHRwUmVzcG9uc2UgPSBuZXcgSHR0cFJlc3BvbnNlKHtcbiAgICAgICAgICBzdGF0dXNDb2RlOiBoZWFkZXJzW1wiOnN0YXR1c1wiXSB8fCAtMSxcbiAgICAgICAgICBoZWFkZXJzOiBnZXRUcmFuc2Zvcm1lZEhlYWRlcnMoaGVhZGVycyksXG4gICAgICAgICAgYm9keTogcmVxLFxuICAgICAgICB9KTtcbiAgICAgICAgcmVzb2x2ZSh7IHJlc3BvbnNlOiBodHRwUmVzcG9uc2UgfSk7XG4gICAgICB9KTtcblxuICAgICAgcmVxLm9uKFwiZXJyb3JcIiwgcmVqZWN0KTtcbiAgICAgIHJlcS5vbihcImZyYW1lRXJyb3JcIiwgcmVqZWN0KTtcbiAgICAgIHJlcS5vbihcImFib3J0ZWRcIiwgcmVqZWN0KTtcblxuICAgICAgY29uc3QgcmVxdWVzdFRpbWVvdXQgPSB0aGlzLnJlcXVlc3RUaW1lb3V0O1xuICAgICAgaWYgKHJlcXVlc3RUaW1lb3V0KSB7XG4gICAgICAgIHJlcS5zZXRUaW1lb3V0KHJlcXVlc3RUaW1lb3V0LCAoKSA9PiB7XG4gICAgICAgICAgcmVxLmNsb3NlKCk7XG4gICAgICAgICAgY29uc3QgdGltZW91dEVycm9yID0gbmV3IEVycm9yKGBTdHJlYW0gdGltZWQgb3V0IGJlY2F1c2Ugb2Ygbm8gYWN0aXZpdHkgZm9yICR7cmVxdWVzdFRpbWVvdXR9IG1zYCk7XG4gICAgICAgICAgdGltZW91dEVycm9yLm5hbWUgPSBcIlRpbWVvdXRFcnJvclwiO1xuICAgICAgICAgIHJlamVjdCh0aW1lb3V0RXJyb3IpO1xuICAgICAgICB9KTtcbiAgICAgIH1cblxuICAgICAgaWYgKGFib3J0U2lnbmFsKSB7XG4gICAgICAgIGFib3J0U2lnbmFsLm9uYWJvcnQgPSAoKSA9PiB7XG4gICAgICAgICAgcmVxLmNsb3NlKCk7XG4gICAgICAgICAgY29uc3QgYWJvcnRFcnJvciA9IG5ldyBFcnJvcihcIlJlcXVlc3QgYWJvcnRlZFwiKTtcbiAgICAgICAgICBhYm9ydEVycm9yLm5hbWUgPSBcIkFib3J0RXJyb3JcIjtcbiAgICAgICAgICByZWplY3QoYWJvcnRFcnJvcik7XG4gICAgICAgIH07XG4gICAgICB9XG5cbiAgICAgIHdyaXRlUmVxdWVzdEJvZHkocmVxLCByZXF1ZXN0KTtcbiAgICB9KTtcbiAgfVxuXG4gIHByaXZhdGUgZ2V0U2Vzc2lvbihhdXRob3JpdHk6IHN0cmluZyk6IENsaWVudEh0dHAyU2Vzc2lvbiB7XG4gICAgY29uc3QgY29ubmVjdGlvblBvb2wgPSB0aGlzLmNvbm5lY3Rpb25Qb29sO1xuICAgIGNvbnN0IGV4aXN0aW5nU2Vzc2lvbiA9IGNvbm5lY3Rpb25Qb29sLmdldChhdXRob3JpdHkpO1xuICAgIGlmIChleGlzdGluZ1Nlc3Npb24pIHJldHVybiBleGlzdGluZ1Nlc3Npb247XG5cbiAgICBjb25zdCBuZXdTZXNzaW9uID0gY29ubmVjdChhdXRob3JpdHkpO1xuICAgIGNvbm5lY3Rpb25Qb29sLnNldChhdXRob3JpdHksIG5ld1Nlc3Npb24pO1xuXG4gICAgY29uc3Qgc2Vzc2lvblRpbWVvdXQgPSB0aGlzLnNlc3Npb25UaW1lb3V0O1xuICAgIGlmIChzZXNzaW9uVGltZW91dCkge1xuICAgICAgbmV3U2Vzc2lvbi5zZXRUaW1lb3V0KHNlc3Npb25UaW1lb3V0LCAoKSA9PiB7XG4gICAgICAgIG5ld1Nlc3Npb24uY2xvc2UoKTtcbiAgICAgICAgY29ubmVjdGlvblBvb2wuZGVsZXRlKGF1dGhvcml0eSk7XG4gICAgICB9KTtcbiAgICB9XG4gICAgcmV0dXJuIG5ld1Nlc3Npb247XG4gIH1cbn1cbiJdfQ==
 
 /***/ }),
 
@@ -17595,7 +20560,7 @@ exports.NodeHttp2Handler = NodeHttp2Handler;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.setConnectionTimeout = void 0;
-exports.setConnectionTimeout = (request, reject, timeoutInMs = 0) => {
+const setConnectionTimeout = (request, reject, timeoutInMs = 0) => {
     if (!timeoutInMs) {
         return;
     }
@@ -17616,7 +20581,8 @@ exports.setConnectionTimeout = (request, reject, timeoutInMs = 0) => {
         }
     });
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2V0LWNvbm5lY3Rpb24tdGltZW91dC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9zZXQtY29ubmVjdGlvbi10aW1lb3V0LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUdhLFFBQUEsb0JBQW9CLEdBQUcsQ0FBQyxPQUFzQixFQUFFLE1BQTRCLEVBQUUsV0FBVyxHQUFHLENBQUMsRUFBRSxFQUFFO0lBQzVHLElBQUksQ0FBQyxXQUFXLEVBQUU7UUFDaEIsT0FBTztLQUNSO0lBRUQsT0FBTyxDQUFDLEVBQUUsQ0FBQyxRQUFRLEVBQUUsQ0FBQyxNQUFjLEVBQUUsRUFBRTtRQUN0QyxJQUFJLE1BQU0sQ0FBQyxVQUFVLEVBQUU7WUFDckIsOEVBQThFO1lBQzlFLE1BQU0sU0FBUyxHQUFHLFVBQVUsQ0FBQyxHQUFHLEVBQUU7Z0JBQ2hDLHVCQUF1QjtnQkFDdkIsT0FBTyxDQUFDLE9BQU8sRUFBRSxDQUFDO2dCQUNsQixNQUFNLENBQ0osTUFBTSxDQUFDLE1BQU0sQ0FBQyxJQUFJLEtBQUssQ0FBQyw2REFBNkQsV0FBVyxLQUFLLENBQUMsRUFBRTtvQkFDdEcsSUFBSSxFQUFFLGNBQWM7aUJBQ3JCLENBQUMsQ0FDSCxDQUFDO1lBQ0osQ0FBQyxFQUFFLFdBQVcsQ0FBQyxDQUFDO1lBRWhCLHlEQUF5RDtZQUN6RCxNQUFNLENBQUMsRUFBRSxDQUFDLFNBQVMsRUFBRSxHQUFHLEVBQUU7Z0JBQ3hCLFlBQVksQ0FBQyxTQUFTLENBQUMsQ0FBQztZQUMxQixDQUFDLENBQUMsQ0FBQztTQUNKO0lBQ0gsQ0FBQyxDQUFDLENBQUM7QUFDTCxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDbGllbnRSZXF1ZXN0IH0gZnJvbSBcImh0dHBcIjtcbmltcG9ydCB7IFNvY2tldCB9IGZyb20gXCJuZXRcIjtcblxuZXhwb3J0IGNvbnN0IHNldENvbm5lY3Rpb25UaW1lb3V0ID0gKHJlcXVlc3Q6IENsaWVudFJlcXVlc3QsIHJlamVjdDogKGVycjogRXJyb3IpID0+IHZvaWQsIHRpbWVvdXRJbk1zID0gMCkgPT4ge1xuICBpZiAoIXRpbWVvdXRJbk1zKSB7XG4gICAgcmV0dXJuO1xuICB9XG5cbiAgcmVxdWVzdC5vbihcInNvY2tldFwiLCAoc29ja2V0OiBTb2NrZXQpID0+IHtcbiAgICBpZiAoc29ja2V0LmNvbm5lY3RpbmcpIHtcbiAgICAgIC8vIFRocm93IGEgY29ubmVjdGluZyB0aW1lb3V0IGVycm9yIHVubGVzcyBhIGNvbm5lY3Rpb24gaXMgbWFkZSB3aXRoaW4geCB0aW1lLlxuICAgICAgY29uc3QgdGltZW91dElkID0gc2V0VGltZW91dCgoKSA9PiB7XG4gICAgICAgIC8vIGRlc3Ryb3kgdGhlIHJlcXVlc3QuXG4gICAgICAgIHJlcXVlc3QuZGVzdHJveSgpO1xuICAgICAgICByZWplY3QoXG4gICAgICAgICAgT2JqZWN0LmFzc2lnbihuZXcgRXJyb3IoYFNvY2tldCB0aW1lZCBvdXQgd2l0aG91dCBlc3RhYmxpc2hpbmcgYSBjb25uZWN0aW9uIHdpdGhpbiAke3RpbWVvdXRJbk1zfSBtc2ApLCB7XG4gICAgICAgICAgICBuYW1lOiBcIlRpbWVvdXRFcnJvclwiLFxuICAgICAgICAgIH0pXG4gICAgICAgICk7XG4gICAgICB9LCB0aW1lb3V0SW5Ncyk7XG5cbiAgICAgIC8vIGlmIHRoZSBjb25uZWN0aW9uIHdhcyBlc3RhYmxpc2hlZCwgY2FuY2VsIHRoZSB0aW1lb3V0LlxuICAgICAgc29ja2V0Lm9uKFwiY29ubmVjdFwiLCAoKSA9PiB7XG4gICAgICAgIGNsZWFyVGltZW91dCh0aW1lb3V0SWQpO1xuICAgICAgfSk7XG4gICAgfVxuICB9KTtcbn07XG4iXX0=
+exports.setConnectionTimeout = setConnectionTimeout;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2V0LWNvbm5lY3Rpb24tdGltZW91dC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9zZXQtY29ubmVjdGlvbi10aW1lb3V0LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUdPLE1BQU0sb0JBQW9CLEdBQUcsQ0FBQyxPQUFzQixFQUFFLE1BQTRCLEVBQUUsV0FBVyxHQUFHLENBQUMsRUFBRSxFQUFFO0lBQzVHLElBQUksQ0FBQyxXQUFXLEVBQUU7UUFDaEIsT0FBTztLQUNSO0lBRUQsT0FBTyxDQUFDLEVBQUUsQ0FBQyxRQUFRLEVBQUUsQ0FBQyxNQUFjLEVBQUUsRUFBRTtRQUN0QyxJQUFJLE1BQU0sQ0FBQyxVQUFVLEVBQUU7WUFDckIsOEVBQThFO1lBQzlFLE1BQU0sU0FBUyxHQUFHLFVBQVUsQ0FBQyxHQUFHLEVBQUU7Z0JBQ2hDLHVCQUF1QjtnQkFDdkIsT0FBTyxDQUFDLE9BQU8sRUFBRSxDQUFDO2dCQUNsQixNQUFNLENBQ0osTUFBTSxDQUFDLE1BQU0sQ0FBQyxJQUFJLEtBQUssQ0FBQyw2REFBNkQsV0FBVyxLQUFLLENBQUMsRUFBRTtvQkFDdEcsSUFBSSxFQUFFLGNBQWM7aUJBQ3JCLENBQUMsQ0FDSCxDQUFDO1lBQ0osQ0FBQyxFQUFFLFdBQVcsQ0FBQyxDQUFDO1lBRWhCLHlEQUF5RDtZQUN6RCxNQUFNLENBQUMsRUFBRSxDQUFDLFNBQVMsRUFBRSxHQUFHLEVBQUU7Z0JBQ3hCLFlBQVksQ0FBQyxTQUFTLENBQUMsQ0FBQztZQUMxQixDQUFDLENBQUMsQ0FBQztTQUNKO0lBQ0gsQ0FBQyxDQUFDLENBQUM7QUFDTCxDQUFDLENBQUM7QUF4QlcsUUFBQSxvQkFBb0Isd0JBd0IvQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENsaWVudFJlcXVlc3QgfSBmcm9tIFwiaHR0cFwiO1xuaW1wb3J0IHsgU29ja2V0IH0gZnJvbSBcIm5ldFwiO1xuXG5leHBvcnQgY29uc3Qgc2V0Q29ubmVjdGlvblRpbWVvdXQgPSAocmVxdWVzdDogQ2xpZW50UmVxdWVzdCwgcmVqZWN0OiAoZXJyOiBFcnJvcikgPT4gdm9pZCwgdGltZW91dEluTXMgPSAwKSA9PiB7XG4gIGlmICghdGltZW91dEluTXMpIHtcbiAgICByZXR1cm47XG4gIH1cblxuICByZXF1ZXN0Lm9uKFwic29ja2V0XCIsIChzb2NrZXQ6IFNvY2tldCkgPT4ge1xuICAgIGlmIChzb2NrZXQuY29ubmVjdGluZykge1xuICAgICAgLy8gVGhyb3cgYSBjb25uZWN0aW5nIHRpbWVvdXQgZXJyb3IgdW5sZXNzIGEgY29ubmVjdGlvbiBpcyBtYWRlIHdpdGhpbiB4IHRpbWUuXG4gICAgICBjb25zdCB0aW1lb3V0SWQgPSBzZXRUaW1lb3V0KCgpID0+IHtcbiAgICAgICAgLy8gZGVzdHJveSB0aGUgcmVxdWVzdC5cbiAgICAgICAgcmVxdWVzdC5kZXN0cm95KCk7XG4gICAgICAgIHJlamVjdChcbiAgICAgICAgICBPYmplY3QuYXNzaWduKG5ldyBFcnJvcihgU29ja2V0IHRpbWVkIG91dCB3aXRob3V0IGVzdGFibGlzaGluZyBhIGNvbm5lY3Rpb24gd2l0aGluICR7dGltZW91dEluTXN9IG1zYCksIHtcbiAgICAgICAgICAgIG5hbWU6IFwiVGltZW91dEVycm9yXCIsXG4gICAgICAgICAgfSlcbiAgICAgICAgKTtcbiAgICAgIH0sIHRpbWVvdXRJbk1zKTtcblxuICAgICAgLy8gaWYgdGhlIGNvbm5lY3Rpb24gd2FzIGVzdGFibGlzaGVkLCBjYW5jZWwgdGhlIHRpbWVvdXQuXG4gICAgICBzb2NrZXQub24oXCJjb25uZWN0XCIsICgpID0+IHtcbiAgICAgICAgY2xlYXJUaW1lb3V0KHRpbWVvdXRJZCk7XG4gICAgICB9KTtcbiAgICB9XG4gIH0pO1xufTtcbiJdfQ==
 
 /***/ }),
 
@@ -17627,14 +20593,15 @@ exports.setConnectionTimeout = (request, reject, timeoutInMs = 0) => {
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.setSocketTimeout = void 0;
-exports.setSocketTimeout = (request, reject, timeoutInMs = 0) => {
+const setSocketTimeout = (request, reject, timeoutInMs = 0) => {
     request.setTimeout(timeoutInMs, () => {
         // destroy the request
         request.destroy();
         reject(Object.assign(new Error(`Connection timed out after ${timeoutInMs} ms`), { name: "TimeoutError" }));
     });
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2V0LXNvY2tldC10aW1lb3V0LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3NldC1zb2NrZXQtdGltZW91dC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFFYSxRQUFBLGdCQUFnQixHQUFHLENBQUMsT0FBc0IsRUFBRSxNQUE0QixFQUFFLFdBQVcsR0FBRyxDQUFDLEVBQUUsRUFBRTtJQUN4RyxPQUFPLENBQUMsVUFBVSxDQUFDLFdBQVcsRUFBRSxHQUFHLEVBQUU7UUFDbkMsc0JBQXNCO1FBQ3RCLE9BQU8sQ0FBQyxPQUFPLEVBQUUsQ0FBQztRQUNsQixNQUFNLENBQUMsTUFBTSxDQUFDLE1BQU0sQ0FBQyxJQUFJLEtBQUssQ0FBQyw4QkFBOEIsV0FBVyxLQUFLLENBQUMsRUFBRSxFQUFFLElBQUksRUFBRSxjQUFjLEVBQUUsQ0FBQyxDQUFDLENBQUM7SUFDN0csQ0FBQyxDQUFDLENBQUM7QUFDTCxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDbGllbnRSZXF1ZXN0IH0gZnJvbSBcImh0dHBcIjtcblxuZXhwb3J0IGNvbnN0IHNldFNvY2tldFRpbWVvdXQgPSAocmVxdWVzdDogQ2xpZW50UmVxdWVzdCwgcmVqZWN0OiAoZXJyOiBFcnJvcikgPT4gdm9pZCwgdGltZW91dEluTXMgPSAwKSA9PiB7XG4gIHJlcXVlc3Quc2V0VGltZW91dCh0aW1lb3V0SW5NcywgKCkgPT4ge1xuICAgIC8vIGRlc3Ryb3kgdGhlIHJlcXVlc3RcbiAgICByZXF1ZXN0LmRlc3Ryb3koKTtcbiAgICByZWplY3QoT2JqZWN0LmFzc2lnbihuZXcgRXJyb3IoYENvbm5lY3Rpb24gdGltZWQgb3V0IGFmdGVyICR7dGltZW91dEluTXN9IG1zYCksIHsgbmFtZTogXCJUaW1lb3V0RXJyb3JcIiB9KSk7XG4gIH0pO1xufTtcbiJdfQ==
+exports.setSocketTimeout = setSocketTimeout;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2V0LXNvY2tldC10aW1lb3V0LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3NldC1zb2NrZXQtdGltZW91dC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFFTyxNQUFNLGdCQUFnQixHQUFHLENBQUMsT0FBc0IsRUFBRSxNQUE0QixFQUFFLFdBQVcsR0FBRyxDQUFDLEVBQUUsRUFBRTtJQUN4RyxPQUFPLENBQUMsVUFBVSxDQUFDLFdBQVcsRUFBRSxHQUFHLEVBQUU7UUFDbkMsc0JBQXNCO1FBQ3RCLE9BQU8sQ0FBQyxPQUFPLEVBQUUsQ0FBQztRQUNsQixNQUFNLENBQUMsTUFBTSxDQUFDLE1BQU0sQ0FBQyxJQUFJLEtBQUssQ0FBQyw4QkFBOEIsV0FBVyxLQUFLLENBQUMsRUFBRSxFQUFFLElBQUksRUFBRSxjQUFjLEVBQUUsQ0FBQyxDQUFDLENBQUM7SUFDN0csQ0FBQyxDQUFDLENBQUM7QUFDTCxDQUFDLENBQUM7QUFOVyxRQUFBLGdCQUFnQixvQkFNM0IiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDbGllbnRSZXF1ZXN0IH0gZnJvbSBcImh0dHBcIjtcblxuZXhwb3J0IGNvbnN0IHNldFNvY2tldFRpbWVvdXQgPSAocmVxdWVzdDogQ2xpZW50UmVxdWVzdCwgcmVqZWN0OiAoZXJyOiBFcnJvcikgPT4gdm9pZCwgdGltZW91dEluTXMgPSAwKSA9PiB7XG4gIHJlcXVlc3Quc2V0VGltZW91dCh0aW1lb3V0SW5NcywgKCkgPT4ge1xuICAgIC8vIGRlc3Ryb3kgdGhlIHJlcXVlc3RcbiAgICByZXF1ZXN0LmRlc3Ryb3koKTtcbiAgICByZWplY3QoT2JqZWN0LmFzc2lnbihuZXcgRXJyb3IoYENvbm5lY3Rpb24gdGltZWQgb3V0IGFmdGVyICR7dGltZW91dEluTXN9IG1zYCksIHsgbmFtZTogXCJUaW1lb3V0RXJyb3JcIiB9KSk7XG4gIH0pO1xufTtcbiJdfQ==
 
 /***/ }),
 
@@ -17669,7 +20636,7 @@ exports.Collector = Collector;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.streamCollector = void 0;
 const collector_1 = __webpack_require__(701);
-exports.streamCollector = (stream) => new Promise((resolve, reject) => {
+const streamCollector = (stream) => new Promise((resolve, reject) => {
     const collector = new collector_1.Collector();
     stream.pipe(collector);
     stream.on("error", (err) => {
@@ -17683,7 +20650,8 @@ exports.streamCollector = (stream) => new Promise((resolve, reject) => {
         resolve(bytes);
     });
 });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvc3RyZWFtLWNvbGxlY3Rvci9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFHQSwyQ0FBd0M7QUFFM0IsUUFBQSxlQUFlLEdBQW9CLENBQUMsTUFBZ0IsRUFBdUIsRUFBRSxDQUN4RixJQUFJLE9BQU8sQ0FBQyxDQUFDLE9BQU8sRUFBRSxNQUFNLEVBQUUsRUFBRTtJQUM5QixNQUFNLFNBQVMsR0FBRyxJQUFJLHFCQUFTLEVBQUUsQ0FBQztJQUNsQyxNQUFNLENBQUMsSUFBSSxDQUFDLFNBQVMsQ0FBQyxDQUFDO0lBQ3ZCLE1BQU0sQ0FBQyxFQUFFLENBQUMsT0FBTyxFQUFFLENBQUMsR0FBRyxFQUFFLEVBQUU7UUFDekIscUVBQXFFO1FBQ3JFLFNBQVMsQ0FBQyxHQUFHLEVBQUUsQ0FBQztRQUNoQixNQUFNLENBQUMsR0FBRyxDQUFDLENBQUM7SUFDZCxDQUFDLENBQUMsQ0FBQztJQUNILFNBQVMsQ0FBQyxFQUFFLENBQUMsT0FBTyxFQUFFLE1BQU0sQ0FBQyxDQUFDO0lBQzlCLFNBQVMsQ0FBQyxFQUFFLENBQUMsUUFBUSxFQUFFO1FBQ3JCLE1BQU0sS0FBSyxHQUFHLElBQUksVUFBVSxDQUFDLE1BQU0sQ0FBQyxNQUFNLENBQUMsSUFBSSxDQUFDLGFBQWEsQ0FBQyxDQUFDLENBQUM7UUFDaEUsT0FBTyxDQUFDLEtBQUssQ0FBQyxDQUFDO0lBQ2pCLENBQUMsQ0FBQyxDQUFDO0FBQ0wsQ0FBQyxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBTdHJlYW1Db2xsZWN0b3IgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcbmltcG9ydCB7IFJlYWRhYmxlIH0gZnJvbSBcInN0cmVhbVwiO1xuXG5pbXBvcnQgeyBDb2xsZWN0b3IgfSBmcm9tIFwiLi9jb2xsZWN0b3JcIjtcblxuZXhwb3J0IGNvbnN0IHN0cmVhbUNvbGxlY3RvcjogU3RyZWFtQ29sbGVjdG9yID0gKHN0cmVhbTogUmVhZGFibGUpOiBQcm9taXNlPFVpbnQ4QXJyYXk+ID0+XG4gIG5ldyBQcm9taXNlKChyZXNvbHZlLCByZWplY3QpID0+IHtcbiAgICBjb25zdCBjb2xsZWN0b3IgPSBuZXcgQ29sbGVjdG9yKCk7XG4gICAgc3RyZWFtLnBpcGUoY29sbGVjdG9yKTtcbiAgICBzdHJlYW0ub24oXCJlcnJvclwiLCAoZXJyKSA9PiB7XG4gICAgICAvLyBpZiB0aGUgc291cmNlIGVycm9ycywgdGhlIGRlc3RpbmF0aW9uIHN0cmVhbSBuZWVkcyB0byBtYW51YWxseSBlbmRcbiAgICAgIGNvbGxlY3Rvci5lbmQoKTtcbiAgICAgIHJlamVjdChlcnIpO1xuICAgIH0pO1xuICAgIGNvbGxlY3Rvci5vbihcImVycm9yXCIsIHJlamVjdCk7XG4gICAgY29sbGVjdG9yLm9uKFwiZmluaXNoXCIsIGZ1bmN0aW9uICh0aGlzOiBDb2xsZWN0b3IpIHtcbiAgICAgIGNvbnN0IGJ5dGVzID0gbmV3IFVpbnQ4QXJyYXkoQnVmZmVyLmNvbmNhdCh0aGlzLmJ1ZmZlcmVkQnl0ZXMpKTtcbiAgICAgIHJlc29sdmUoYnl0ZXMpO1xuICAgIH0pO1xuICB9KTtcbiJdfQ==
+exports.streamCollector = streamCollector;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvc3RyZWFtLWNvbGxlY3Rvci9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFHQSwyQ0FBd0M7QUFFakMsTUFBTSxlQUFlLEdBQW9CLENBQUMsTUFBZ0IsRUFBdUIsRUFBRSxDQUN4RixJQUFJLE9BQU8sQ0FBQyxDQUFDLE9BQU8sRUFBRSxNQUFNLEVBQUUsRUFBRTtJQUM5QixNQUFNLFNBQVMsR0FBRyxJQUFJLHFCQUFTLEVBQUUsQ0FBQztJQUNsQyxNQUFNLENBQUMsSUFBSSxDQUFDLFNBQVMsQ0FBQyxDQUFDO0lBQ3ZCLE1BQU0sQ0FBQyxFQUFFLENBQUMsT0FBTyxFQUFFLENBQUMsR0FBRyxFQUFFLEVBQUU7UUFDekIscUVBQXFFO1FBQ3JFLFNBQVMsQ0FBQyxHQUFHLEVBQUUsQ0FBQztRQUNoQixNQUFNLENBQUMsR0FBRyxDQUFDLENBQUM7SUFDZCxDQUFDLENBQUMsQ0FBQztJQUNILFNBQVMsQ0FBQyxFQUFFLENBQUMsT0FBTyxFQUFFLE1BQU0sQ0FBQyxDQUFDO0lBQzlCLFNBQVMsQ0FBQyxFQUFFLENBQUMsUUFBUSxFQUFFO1FBQ3JCLE1BQU0sS0FBSyxHQUFHLElBQUksVUFBVSxDQUFDLE1BQU0sQ0FBQyxNQUFNLENBQUMsSUFBSSxDQUFDLGFBQWEsQ0FBQyxDQUFDLENBQUM7UUFDaEUsT0FBTyxDQUFDLEtBQUssQ0FBQyxDQUFDO0lBQ2pCLENBQUMsQ0FBQyxDQUFDO0FBQ0wsQ0FBQyxDQUFDLENBQUM7QUFkUSxRQUFBLGVBQWUsbUJBY3ZCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgU3RyZWFtQ29sbGVjdG9yIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5pbXBvcnQgeyBSZWFkYWJsZSB9IGZyb20gXCJzdHJlYW1cIjtcblxuaW1wb3J0IHsgQ29sbGVjdG9yIH0gZnJvbSBcIi4vY29sbGVjdG9yXCI7XG5cbmV4cG9ydCBjb25zdCBzdHJlYW1Db2xsZWN0b3I6IFN0cmVhbUNvbGxlY3RvciA9IChzdHJlYW06IFJlYWRhYmxlKTogUHJvbWlzZTxVaW50OEFycmF5PiA9PlxuICBuZXcgUHJvbWlzZSgocmVzb2x2ZSwgcmVqZWN0KSA9PiB7XG4gICAgY29uc3QgY29sbGVjdG9yID0gbmV3IENvbGxlY3RvcigpO1xuICAgIHN0cmVhbS5waXBlKGNvbGxlY3Rvcik7XG4gICAgc3RyZWFtLm9uKFwiZXJyb3JcIiwgKGVycikgPT4ge1xuICAgICAgLy8gaWYgdGhlIHNvdXJjZSBlcnJvcnMsIHRoZSBkZXN0aW5hdGlvbiBzdHJlYW0gbmVlZHMgdG8gbWFudWFsbHkgZW5kXG4gICAgICBjb2xsZWN0b3IuZW5kKCk7XG4gICAgICByZWplY3QoZXJyKTtcbiAgICB9KTtcbiAgICBjb2xsZWN0b3Iub24oXCJlcnJvclwiLCByZWplY3QpO1xuICAgIGNvbGxlY3Rvci5vbihcImZpbmlzaFwiLCBmdW5jdGlvbiAodGhpczogQ29sbGVjdG9yKSB7XG4gICAgICBjb25zdCBieXRlcyA9IG5ldyBVaW50OEFycmF5KEJ1ZmZlci5jb25jYXQodGhpcy5idWZmZXJlZEJ5dGVzKSk7XG4gICAgICByZXNvbHZlKGJ5dGVzKTtcbiAgICB9KTtcbiAgfSk7XG4iXX0=
 
 /***/ }),
 
@@ -18045,8 +21013,9 @@ exports.chain = chain;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.fromStatic = void 0;
-exports.fromStatic = (staticValue) => () => Promise.resolve(staticValue);
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbVN0YXRpYy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9mcm9tU3RhdGljLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUVhLFFBQUEsVUFBVSxHQUFHLENBQUksV0FBYyxFQUFlLEVBQUUsQ0FBQyxHQUFHLEVBQUUsQ0FBQyxPQUFPLENBQUMsT0FBTyxDQUFDLFdBQVcsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgUHJvdmlkZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IGNvbnN0IGZyb21TdGF0aWMgPSA8VD4oc3RhdGljVmFsdWU6IFQpOiBQcm92aWRlcjxUPiA9PiAoKSA9PiBQcm9taXNlLnJlc29sdmUoc3RhdGljVmFsdWUpO1xuIl19
+const fromStatic = (staticValue) => () => Promise.resolve(staticValue);
+exports.fromStatic = fromStatic;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbVN0YXRpYy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9mcm9tU3RhdGljLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUVPLE1BQU0sVUFBVSxHQUFHLENBQUksV0FBYyxFQUFlLEVBQUUsQ0FBQyxHQUFHLEVBQUUsQ0FBQyxPQUFPLENBQUMsT0FBTyxDQUFDLFdBQVcsQ0FBQyxDQUFDO0FBQXBGLFFBQUEsVUFBVSxjQUEwRSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFByb3ZpZGVyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmV4cG9ydCBjb25zdCBmcm9tU3RhdGljID0gPFQ+KHN0YXRpY1ZhbHVlOiBUKTogUHJvdmlkZXI8VD4gPT4gKCkgPT4gUHJvbWlzZS5yZXNvbHZlKHN0YXRpY1ZhbHVlKTtcbiJdfQ==
 
 /***/ }),
 
@@ -18072,7 +21041,7 @@ tslib_1.__exportStar(__webpack_require__(791), exports);
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.memoize = void 0;
-exports.memoize = (provider, isExpired, requiresRefresh) => {
+const memoize = (provider, isExpired, requiresRefresh) => {
     let result;
     let hasResult;
     if (isExpired === undefined) {
@@ -18105,7 +21074,8 @@ exports.memoize = (provider, isExpired, requiresRefresh) => {
         return resolved;
     };
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWVtb2l6ZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9tZW1vaXplLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQXdDYSxRQUFBLE9BQU8sR0FBb0IsQ0FDdEMsUUFBcUIsRUFDckIsU0FBb0MsRUFDcEMsZUFBMEMsRUFDN0IsRUFBRTtJQUNmLElBQUksTUFBVyxDQUFDO0lBQ2hCLElBQUksU0FBa0IsQ0FBQztJQUN2QixJQUFJLFNBQVMsS0FBSyxTQUFTLEVBQUU7UUFDM0Isa0VBQWtFO1FBQ2xFLE9BQU8sR0FBRyxFQUFFO1lBQ1YsSUFBSSxDQUFDLFNBQVMsRUFBRTtnQkFDZCxNQUFNLEdBQUcsUUFBUSxFQUFFLENBQUM7Z0JBQ3BCLFNBQVMsR0FBRyxJQUFJLENBQUM7YUFDbEI7WUFDRCxPQUFPLE1BQU0sQ0FBQztRQUNoQixDQUFDLENBQUM7S0FDSDtJQUVELElBQUksVUFBVSxHQUFHLEtBQUssQ0FBQztJQUV2QixPQUFPLEtBQUssSUFBSSxFQUFFO1FBQ2hCLElBQUksQ0FBQyxTQUFTLEVBQUU7WUFDZCxNQUFNLEdBQUcsUUFBUSxFQUFFLENBQUM7WUFDcEIsU0FBUyxHQUFHLElBQUksQ0FBQztTQUNsQjtRQUNELElBQUksVUFBVSxFQUFFO1lBQ2QsT0FBTyxNQUFNLENBQUM7U0FDZjtRQUVELE1BQU0sUUFBUSxHQUFHLE1BQU0sTUFBTSxDQUFDO1FBQzlCLElBQUksZUFBZSxJQUFJLENBQUMsZUFBZSxDQUFDLFFBQVEsQ0FBQyxFQUFFO1lBQ2pELFVBQVUsR0FBRyxJQUFJLENBQUM7WUFDbEIsT0FBTyxRQUFRLENBQUM7U0FDakI7UUFDRCxJQUFJLFNBQVMsQ0FBQyxRQUFRLENBQUMsRUFBRTtZQUN2QixPQUFPLENBQUMsTUFBTSxHQUFHLFFBQVEsRUFBRSxDQUFDLENBQUM7U0FDOUI7UUFDRCxPQUFPLFFBQVEsQ0FBQztJQUNsQixDQUFDLENBQUM7QUFDSixDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBQcm92aWRlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5pbnRlcmZhY2UgTWVtb2l6ZU92ZXJsb2FkIHtcbiAgLyoqXG4gICAqXG4gICAqIERlY29yYXRlcyBhIHByb3ZpZGVyIGZ1bmN0aW9uIHdpdGggZWl0aGVyIHN0YXRpYyBtZW1vaXphdGlvbi5cbiAgICpcbiAgICogVG8gY3JlYXRlIGEgc3RhdGljYWxseSBtZW1vaXplZCBwcm92aWRlciwgc3VwcGx5IGEgcHJvdmlkZXIgYXMgdGhlIG9ubHlcbiAgICogYXJndW1lbnQgdG8gdGhpcyBmdW5jdGlvbi4gVGhlIHByb3ZpZGVyIHdpbGwgYmUgaW52b2tlZCBvbmNlLCBhbmQgYWxsXG4gICAqIGludm9jYXRpb25zIG9mIHRoZSBwcm92aWRlciByZXR1cm5lZCBieSBgbWVtb2l6ZWAgd2lsbCByZXR1cm4gdGhlIHNhbWVcbiAgICogcHJvbWlzZSBvYmplY3QuXG4gICAqXG4gICAqIEBwYXJhbSBwcm92aWRlciBUaGUgcHJvdmlkZXIgd2hvc2UgcmVzdWx0IHNob3VsZCBiZSBjYWNoZWQgaW5kZWZpbml0ZWx5LlxuICAgKi9cbiAgPFQ+KHByb3ZpZGVyOiBQcm92aWRlcjxUPik6IFByb3ZpZGVyPFQ+O1xuXG4gIC8qKlxuICAgKiBEZWNvcmF0ZXMgYSBwcm92aWRlciBmdW5jdGlvbiB3aXRoIHJlZnJlc2hpbmcgbWVtb2l6YXRpb24uXG4gICAqXG4gICAqIEBwYXJhbSBwcm92aWRlciAgICAgICAgICBUaGUgcHJvdmlkZXIgd2hvc2UgcmVzdWx0IHNob3VsZCBiZSBjYWNoZWQuXG4gICAqIEBwYXJhbSBpc0V4cGlyZWQgICAgICAgICBBIGZ1bmN0aW9uIHRoYXQgd2lsbCBldmFsdWF0ZSB0aGUgcmVzb2x2ZWQgdmFsdWUgYW5kXG4gICAqICAgICAgICAgICAgICAgICAgICAgICAgICBkZXRlcm1pbmUgaWYgaXQgaXMgZXhwaXJlZC4gRm9yIGV4YW1wbGUsIHdoZW5cbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIG1lbW9pemluZyBBV1MgY3JlZGVudGlhbCBwcm92aWRlcnMsIHRoaXMgZnVuY3Rpb25cbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIHNob3VsZCByZXR1cm4gYHRydWVgIHdoZW4gdGhlIGNyZWRlbnRpYWwnc1xuICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgZXhwaXJhdGlvbiBpcyBpbiB0aGUgcGFzdCAob3IgdmVyeSBuZWFyIGZ1dHVyZSkgYW5kXG4gICAqICAgICAgICAgICAgICAgICAgICAgICAgICBgZmFsc2VgIG90aGVyd2lzZS5cbiAgICogQHBhcmFtIHJlcXVpcmVzUmVmcmVzaCAgIEEgZnVuY3Rpb24gdGhhdCB3aWxsIGV2YWx1YXRlIHRoZSByZXNvbHZlZCB2YWx1ZSBhbmRcbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIGRldGVybWluZSBpZiBpdCByZXByZXNlbnRzIHN0YXRpYyB2YWx1ZSBvciBvbmUgdGhhdFxuICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgd2lsbCBldmVudHVhbGx5IG5lZWQgdG8gYmUgcmVmcmVzaGVkLiBGb3IgZXhhbXBsZSxcbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIEFXUyBjcmVkZW50aWFscyB0aGF0IGhhdmUgbm8gZGVmaW5lZCBleHBpcmF0aW9uIHdpbGxcbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIG5ldmVyIG5lZWQgdG8gYmUgcmVmcmVzaGVkLCBzbyB0aGlzIGZ1bmN0aW9uIHdvdWxkXG4gICAqICAgICAgICAgICAgICAgICAgICAgICAgICByZXR1cm4gYHRydWVgIGlmIHRoZSBjcmVkZW50aWFscyByZXNvbHZlZCBieSB0aGVcbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIHVuZGVybHlpbmcgcHJvdmlkZXIgaGFkIGFuIGV4cGlyYXRpb24gYW5kIGBmYWxzZWBcbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIG90aGVyd2lzZS5cbiAgICovXG4gIDxUPihwcm92aWRlcjogUHJvdmlkZXI8VD4sIGlzRXhwaXJlZDogKHJlc29sdmVkOiBUKSA9PiBib29sZWFuLCByZXF1aXJlc1JlZnJlc2g/OiAocmVzb2x2ZWQ6IFQpID0+IGJvb2xlYW4pOiBQcm92aWRlcjxcbiAgICBUXG4gID47XG59XG5cbmV4cG9ydCBjb25zdCBtZW1vaXplOiBNZW1vaXplT3ZlcmxvYWQgPSA8VD4oXG4gIHByb3ZpZGVyOiBQcm92aWRlcjxUPixcbiAgaXNFeHBpcmVkPzogKHJlc29sdmVkOiBUKSA9PiBib29sZWFuLFxuICByZXF1aXJlc1JlZnJlc2g/OiAocmVzb2x2ZWQ6IFQpID0+IGJvb2xlYW5cbik6IFByb3ZpZGVyPFQ+ID0+IHtcbiAgbGV0IHJlc3VsdDogYW55O1xuICBsZXQgaGFzUmVzdWx0OiBib29sZWFuO1xuICBpZiAoaXNFeHBpcmVkID09PSB1bmRlZmluZWQpIHtcbiAgICAvLyBUaGlzIGlzIGEgc3RhdGljIG1lbW9pemF0aW9uOyBubyBuZWVkIHRvIGluY29ycG9yYXRlIHJlZnJlc2hpbmdcbiAgICByZXR1cm4gKCkgPT4ge1xuICAgICAgaWYgKCFoYXNSZXN1bHQpIHtcbiAgICAgICAgcmVzdWx0ID0gcHJvdmlkZXIoKTtcbiAgICAgICAgaGFzUmVzdWx0ID0gdHJ1ZTtcbiAgICAgIH1cbiAgICAgIHJldHVybiByZXN1bHQ7XG4gICAgfTtcbiAgfVxuXG4gIGxldCBpc0NvbnN0YW50ID0gZmFsc2U7XG5cbiAgcmV0dXJuIGFzeW5jICgpID0+IHtcbiAgICBpZiAoIWhhc1Jlc3VsdCkge1xuICAgICAgcmVzdWx0ID0gcHJvdmlkZXIoKTtcbiAgICAgIGhhc1Jlc3VsdCA9IHRydWU7XG4gICAgfVxuICAgIGlmIChpc0NvbnN0YW50KSB7XG4gICAgICByZXR1cm4gcmVzdWx0O1xuICAgIH1cblxuICAgIGNvbnN0IHJlc29sdmVkID0gYXdhaXQgcmVzdWx0O1xuICAgIGlmIChyZXF1aXJlc1JlZnJlc2ggJiYgIXJlcXVpcmVzUmVmcmVzaChyZXNvbHZlZCkpIHtcbiAgICAgIGlzQ29uc3RhbnQgPSB0cnVlO1xuICAgICAgcmV0dXJuIHJlc29sdmVkO1xuICAgIH1cbiAgICBpZiAoaXNFeHBpcmVkKHJlc29sdmVkKSkge1xuICAgICAgcmV0dXJuIChyZXN1bHQgPSBwcm92aWRlcigpKTtcbiAgICB9XG4gICAgcmV0dXJuIHJlc29sdmVkO1xuICB9O1xufTtcbiJdfQ==
+exports.memoize = memoize;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWVtb2l6ZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9tZW1vaXplLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQTBDTyxNQUFNLE9BQU8sR0FBb0IsQ0FDdEMsUUFBcUIsRUFDckIsU0FBb0MsRUFDcEMsZUFBMEMsRUFDN0IsRUFBRTtJQUNmLElBQUksTUFBVyxDQUFDO0lBQ2hCLElBQUksU0FBa0IsQ0FBQztJQUN2QixJQUFJLFNBQVMsS0FBSyxTQUFTLEVBQUU7UUFDM0Isa0VBQWtFO1FBQ2xFLE9BQU8sR0FBRyxFQUFFO1lBQ1YsSUFBSSxDQUFDLFNBQVMsRUFBRTtnQkFDZCxNQUFNLEdBQUcsUUFBUSxFQUFFLENBQUM7Z0JBQ3BCLFNBQVMsR0FBRyxJQUFJLENBQUM7YUFDbEI7WUFDRCxPQUFPLE1BQU0sQ0FBQztRQUNoQixDQUFDLENBQUM7S0FDSDtJQUVELElBQUksVUFBVSxHQUFHLEtBQUssQ0FBQztJQUV2QixPQUFPLEtBQUssSUFBSSxFQUFFO1FBQ2hCLElBQUksQ0FBQyxTQUFTLEVBQUU7WUFDZCxNQUFNLEdBQUcsUUFBUSxFQUFFLENBQUM7WUFDcEIsU0FBUyxHQUFHLElBQUksQ0FBQztTQUNsQjtRQUNELElBQUksVUFBVSxFQUFFO1lBQ2QsT0FBTyxNQUFNLENBQUM7U0FDZjtRQUVELE1BQU0sUUFBUSxHQUFHLE1BQU0sTUFBTSxDQUFDO1FBQzlCLElBQUksZUFBZSxJQUFJLENBQUMsZUFBZSxDQUFDLFFBQVEsQ0FBQyxFQUFFO1lBQ2pELFVBQVUsR0FBRyxJQUFJLENBQUM7WUFDbEIsT0FBTyxRQUFRLENBQUM7U0FDakI7UUFDRCxJQUFJLFNBQVMsQ0FBQyxRQUFRLENBQUMsRUFBRTtZQUN2QixPQUFPLENBQUMsTUFBTSxHQUFHLFFBQVEsRUFBRSxDQUFDLENBQUM7U0FDOUI7UUFDRCxPQUFPLFFBQVEsQ0FBQztJQUNsQixDQUFDLENBQUM7QUFDSixDQUFDLENBQUM7QUF2Q1csUUFBQSxPQUFPLFdBdUNsQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFByb3ZpZGVyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmludGVyZmFjZSBNZW1vaXplT3ZlcmxvYWQge1xuICAvKipcbiAgICpcbiAgICogRGVjb3JhdGVzIGEgcHJvdmlkZXIgZnVuY3Rpb24gd2l0aCBlaXRoZXIgc3RhdGljIG1lbW9pemF0aW9uLlxuICAgKlxuICAgKiBUbyBjcmVhdGUgYSBzdGF0aWNhbGx5IG1lbW9pemVkIHByb3ZpZGVyLCBzdXBwbHkgYSBwcm92aWRlciBhcyB0aGUgb25seVxuICAgKiBhcmd1bWVudCB0byB0aGlzIGZ1bmN0aW9uLiBUaGUgcHJvdmlkZXIgd2lsbCBiZSBpbnZva2VkIG9uY2UsIGFuZCBhbGxcbiAgICogaW52b2NhdGlvbnMgb2YgdGhlIHByb3ZpZGVyIHJldHVybmVkIGJ5IGBtZW1vaXplYCB3aWxsIHJldHVybiB0aGUgc2FtZVxuICAgKiBwcm9taXNlIG9iamVjdC5cbiAgICpcbiAgICogQHBhcmFtIHByb3ZpZGVyIFRoZSBwcm92aWRlciB3aG9zZSByZXN1bHQgc2hvdWxkIGJlIGNhY2hlZCBpbmRlZmluaXRlbHkuXG4gICAqL1xuICA8VD4ocHJvdmlkZXI6IFByb3ZpZGVyPFQ+KTogUHJvdmlkZXI8VD47XG5cbiAgLyoqXG4gICAqIERlY29yYXRlcyBhIHByb3ZpZGVyIGZ1bmN0aW9uIHdpdGggcmVmcmVzaGluZyBtZW1vaXphdGlvbi5cbiAgICpcbiAgICogQHBhcmFtIHByb3ZpZGVyICAgICAgICAgIFRoZSBwcm92aWRlciB3aG9zZSByZXN1bHQgc2hvdWxkIGJlIGNhY2hlZC5cbiAgICogQHBhcmFtIGlzRXhwaXJlZCAgICAgICAgIEEgZnVuY3Rpb24gdGhhdCB3aWxsIGV2YWx1YXRlIHRoZSByZXNvbHZlZCB2YWx1ZSBhbmRcbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIGRldGVybWluZSBpZiBpdCBpcyBleHBpcmVkLiBGb3IgZXhhbXBsZSwgd2hlblxuICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgbWVtb2l6aW5nIEFXUyBjcmVkZW50aWFsIHByb3ZpZGVycywgdGhpcyBmdW5jdGlvblxuICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgc2hvdWxkIHJldHVybiBgdHJ1ZWAgd2hlbiB0aGUgY3JlZGVudGlhbCdzXG4gICAqICAgICAgICAgICAgICAgICAgICAgICAgICBleHBpcmF0aW9uIGlzIGluIHRoZSBwYXN0IChvciB2ZXJ5IG5lYXIgZnV0dXJlKSBhbmRcbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIGBmYWxzZWAgb3RoZXJ3aXNlLlxuICAgKiBAcGFyYW0gcmVxdWlyZXNSZWZyZXNoICAgQSBmdW5jdGlvbiB0aGF0IHdpbGwgZXZhbHVhdGUgdGhlIHJlc29sdmVkIHZhbHVlIGFuZFxuICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgZGV0ZXJtaW5lIGlmIGl0IHJlcHJlc2VudHMgc3RhdGljIHZhbHVlIG9yIG9uZSB0aGF0XG4gICAqICAgICAgICAgICAgICAgICAgICAgICAgICB3aWxsIGV2ZW50dWFsbHkgbmVlZCB0byBiZSByZWZyZXNoZWQuIEZvciBleGFtcGxlLFxuICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgQVdTIGNyZWRlbnRpYWxzIHRoYXQgaGF2ZSBubyBkZWZpbmVkIGV4cGlyYXRpb24gd2lsbFxuICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgbmV2ZXIgbmVlZCB0byBiZSByZWZyZXNoZWQsIHNvIHRoaXMgZnVuY3Rpb24gd291bGRcbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIHJldHVybiBgdHJ1ZWAgaWYgdGhlIGNyZWRlbnRpYWxzIHJlc29sdmVkIGJ5IHRoZVxuICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgdW5kZXJseWluZyBwcm92aWRlciBoYWQgYW4gZXhwaXJhdGlvbiBhbmQgYGZhbHNlYFxuICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgb3RoZXJ3aXNlLlxuICAgKi9cbiAgPFQ+KFxuICAgIHByb3ZpZGVyOiBQcm92aWRlcjxUPixcbiAgICBpc0V4cGlyZWQ6IChyZXNvbHZlZDogVCkgPT4gYm9vbGVhbixcbiAgICByZXF1aXJlc1JlZnJlc2g/OiAocmVzb2x2ZWQ6IFQpID0+IGJvb2xlYW5cbiAgKTogUHJvdmlkZXI8VD47XG59XG5cbmV4cG9ydCBjb25zdCBtZW1vaXplOiBNZW1vaXplT3ZlcmxvYWQgPSA8VD4oXG4gIHByb3ZpZGVyOiBQcm92aWRlcjxUPixcbiAgaXNFeHBpcmVkPzogKHJlc29sdmVkOiBUKSA9PiBib29sZWFuLFxuICByZXF1aXJlc1JlZnJlc2g/OiAocmVzb2x2ZWQ6IFQpID0+IGJvb2xlYW5cbik6IFByb3ZpZGVyPFQ+ID0+IHtcbiAgbGV0IHJlc3VsdDogYW55O1xuICBsZXQgaGFzUmVzdWx0OiBib29sZWFuO1xuICBpZiAoaXNFeHBpcmVkID09PSB1bmRlZmluZWQpIHtcbiAgICAvLyBUaGlzIGlzIGEgc3RhdGljIG1lbW9pemF0aW9uOyBubyBuZWVkIHRvIGluY29ycG9yYXRlIHJlZnJlc2hpbmdcbiAgICByZXR1cm4gKCkgPT4ge1xuICAgICAgaWYgKCFoYXNSZXN1bHQpIHtcbiAgICAgICAgcmVzdWx0ID0gcHJvdmlkZXIoKTtcbiAgICAgICAgaGFzUmVzdWx0ID0gdHJ1ZTtcbiAgICAgIH1cbiAgICAgIHJldHVybiByZXN1bHQ7XG4gICAgfTtcbiAgfVxuXG4gIGxldCBpc0NvbnN0YW50ID0gZmFsc2U7XG5cbiAgcmV0dXJuIGFzeW5jICgpID0+IHtcbiAgICBpZiAoIWhhc1Jlc3VsdCkge1xuICAgICAgcmVzdWx0ID0gcHJvdmlkZXIoKTtcbiAgICAgIGhhc1Jlc3VsdCA9IHRydWU7XG4gICAgfVxuICAgIGlmIChpc0NvbnN0YW50KSB7XG4gICAgICByZXR1cm4gcmVzdWx0O1xuICAgIH1cblxuICAgIGNvbnN0IHJlc29sdmVkID0gYXdhaXQgcmVzdWx0O1xuICAgIGlmIChyZXF1aXJlc1JlZnJlc2ggJiYgIXJlcXVpcmVzUmVmcmVzaChyZXNvbHZlZCkpIHtcbiAgICAgIGlzQ29uc3RhbnQgPSB0cnVlO1xuICAgICAgcmV0dXJuIHJlc29sdmVkO1xuICAgIH1cbiAgICBpZiAoaXNFeHBpcmVkKHJlc29sdmVkKSkge1xuICAgICAgcmV0dXJuIChyZXN1bHQgPSBwcm92aWRlcigpKTtcbiAgICB9XG4gICAgcmV0dXJuIHJlc29sdmVkO1xuICB9O1xufTtcbiJdfQ==
 
 /***/ }),
 
@@ -18869,20 +21839,24 @@ exports.TRANSIENT_ERROR_STATUS_CODES = [500, 502, 503, 504];
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.isTransientError = exports.isThrottlingError = exports.isClockSkewError = exports.isRetryableByTrait = void 0;
 const constants_1 = __webpack_require__(3584);
-exports.isRetryableByTrait = (error) => error.$retryable !== undefined;
-exports.isClockSkewError = (error) => constants_1.CLOCK_SKEW_ERROR_CODES.includes(error.name);
-exports.isThrottlingError = (error) => {
+const isRetryableByTrait = (error) => error.$retryable !== undefined;
+exports.isRetryableByTrait = isRetryableByTrait;
+const isClockSkewError = (error) => constants_1.CLOCK_SKEW_ERROR_CODES.includes(error.name);
+exports.isClockSkewError = isClockSkewError;
+const isThrottlingError = (error) => {
     var _a, _b;
     return ((_a = error.$metadata) === null || _a === void 0 ? void 0 : _a.httpStatusCode) === 429 ||
         constants_1.THROTTLING_ERROR_CODES.includes(error.name) ||
         ((_b = error.$retryable) === null || _b === void 0 ? void 0 : _b.throttling) == true;
 };
-exports.isTransientError = (error) => {
+exports.isThrottlingError = isThrottlingError;
+const isTransientError = (error) => {
     var _a;
     return constants_1.TRANSIENT_ERROR_CODES.includes(error.name) ||
         constants_1.TRANSIENT_ERROR_STATUS_CODES.includes(((_a = error.$metadata) === null || _a === void 0 ? void 0 : _a.httpStatusCode) || 0);
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBRUEsMkNBS3FCO0FBRVIsUUFBQSxrQkFBa0IsR0FBRyxDQUFDLEtBQWUsRUFBRSxFQUFFLENBQUMsS0FBSyxDQUFDLFVBQVUsS0FBSyxTQUFTLENBQUM7QUFFekUsUUFBQSxnQkFBZ0IsR0FBRyxDQUFDLEtBQWUsRUFBRSxFQUFFLENBQUMsa0NBQXNCLENBQUMsUUFBUSxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQUMsQ0FBQztBQUVwRixRQUFBLGlCQUFpQixHQUFHLENBQUMsS0FBZSxFQUFFLEVBQUU7O0lBQ25ELE9BQUEsT0FBQSxLQUFLLENBQUMsU0FBUywwQ0FBRSxjQUFjLE1BQUssR0FBRztRQUN2QyxrQ0FBc0IsQ0FBQyxRQUFRLENBQUMsS0FBSyxDQUFDLElBQUksQ0FBQztRQUMzQyxPQUFBLEtBQUssQ0FBQyxVQUFVLDBDQUFFLFVBQVUsS0FBSSxJQUFJLENBQUE7Q0FBQSxDQUFDO0FBRTFCLFFBQUEsZ0JBQWdCLEdBQUcsQ0FBQyxLQUFlLEVBQUUsRUFBRTs7SUFDbEQsT0FBQSxpQ0FBcUIsQ0FBQyxRQUFRLENBQUMsS0FBSyxDQUFDLElBQUksQ0FBQztRQUMxQyx3Q0FBNEIsQ0FBQyxRQUFRLENBQUMsT0FBQSxLQUFLLENBQUMsU0FBUywwQ0FBRSxjQUFjLEtBQUksQ0FBQyxDQUFDLENBQUE7Q0FBQSxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgU2RrRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvc21pdGh5LWNsaWVudFwiO1xuXG5pbXBvcnQge1xuICBDTE9DS19TS0VXX0VSUk9SX0NPREVTLFxuICBUSFJPVFRMSU5HX0VSUk9SX0NPREVTLFxuICBUUkFOU0lFTlRfRVJST1JfQ09ERVMsXG4gIFRSQU5TSUVOVF9FUlJPUl9TVEFUVVNfQ09ERVMsXG59IGZyb20gXCIuL2NvbnN0YW50c1wiO1xuXG5leHBvcnQgY29uc3QgaXNSZXRyeWFibGVCeVRyYWl0ID0gKGVycm9yOiBTZGtFcnJvcikgPT4gZXJyb3IuJHJldHJ5YWJsZSAhPT0gdW5kZWZpbmVkO1xuXG5leHBvcnQgY29uc3QgaXNDbG9ja1NrZXdFcnJvciA9IChlcnJvcjogU2RrRXJyb3IpID0+IENMT0NLX1NLRVdfRVJST1JfQ09ERVMuaW5jbHVkZXMoZXJyb3IubmFtZSk7XG5cbmV4cG9ydCBjb25zdCBpc1Rocm90dGxpbmdFcnJvciA9IChlcnJvcjogU2RrRXJyb3IpID0+XG4gIGVycm9yLiRtZXRhZGF0YT8uaHR0cFN0YXR1c0NvZGUgPT09IDQyOSB8fFxuICBUSFJPVFRMSU5HX0VSUk9SX0NPREVTLmluY2x1ZGVzKGVycm9yLm5hbWUpIHx8XG4gIGVycm9yLiRyZXRyeWFibGU/LnRocm90dGxpbmcgPT0gdHJ1ZTtcblxuZXhwb3J0IGNvbnN0IGlzVHJhbnNpZW50RXJyb3IgPSAoZXJyb3I6IFNka0Vycm9yKSA9PlxuICBUUkFOU0lFTlRfRVJST1JfQ09ERVMuaW5jbHVkZXMoZXJyb3IubmFtZSkgfHxcbiAgVFJBTlNJRU5UX0VSUk9SX1NUQVRVU19DT0RFUy5pbmNsdWRlcyhlcnJvci4kbWV0YWRhdGE/Lmh0dHBTdGF0dXNDb2RlIHx8IDApO1xuIl19
+exports.isTransientError = isTransientError;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBRUEsMkNBS3FCO0FBRWQsTUFBTSxrQkFBa0IsR0FBRyxDQUFDLEtBQWUsRUFBRSxFQUFFLENBQUMsS0FBSyxDQUFDLFVBQVUsS0FBSyxTQUFTLENBQUM7QUFBekUsUUFBQSxrQkFBa0Isc0JBQXVEO0FBRS9FLE1BQU0sZ0JBQWdCLEdBQUcsQ0FBQyxLQUFlLEVBQUUsRUFBRSxDQUFDLGtDQUFzQixDQUFDLFFBQVEsQ0FBQyxLQUFLLENBQUMsSUFBSSxDQUFDLENBQUM7QUFBcEYsUUFBQSxnQkFBZ0Isb0JBQW9FO0FBRTFGLE1BQU0saUJBQWlCLEdBQUcsQ0FBQyxLQUFlLEVBQUUsRUFBRTs7SUFDbkQsT0FBQSxPQUFBLEtBQUssQ0FBQyxTQUFTLDBDQUFFLGNBQWMsTUFBSyxHQUFHO1FBQ3ZDLGtDQUFzQixDQUFDLFFBQVEsQ0FBQyxLQUFLLENBQUMsSUFBSSxDQUFDO1FBQzNDLE9BQUEsS0FBSyxDQUFDLFVBQVUsMENBQUUsVUFBVSxLQUFJLElBQUksQ0FBQTtDQUFBLENBQUM7QUFIMUIsUUFBQSxpQkFBaUIscUJBR1M7QUFFaEMsTUFBTSxnQkFBZ0IsR0FBRyxDQUFDLEtBQWUsRUFBRSxFQUFFOztJQUNsRCxPQUFBLGlDQUFxQixDQUFDLFFBQVEsQ0FBQyxLQUFLLENBQUMsSUFBSSxDQUFDO1FBQzFDLHdDQUE0QixDQUFDLFFBQVEsQ0FBQyxPQUFBLEtBQUssQ0FBQyxTQUFTLDBDQUFFLGNBQWMsS0FBSSxDQUFDLENBQUMsQ0FBQTtDQUFBLENBQUM7QUFGakUsUUFBQSxnQkFBZ0Isb0JBRWlEIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgU2RrRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvc21pdGh5LWNsaWVudFwiO1xuXG5pbXBvcnQge1xuICBDTE9DS19TS0VXX0VSUk9SX0NPREVTLFxuICBUSFJPVFRMSU5HX0VSUk9SX0NPREVTLFxuICBUUkFOU0lFTlRfRVJST1JfQ09ERVMsXG4gIFRSQU5TSUVOVF9FUlJPUl9TVEFUVVNfQ09ERVMsXG59IGZyb20gXCIuL2NvbnN0YW50c1wiO1xuXG5leHBvcnQgY29uc3QgaXNSZXRyeWFibGVCeVRyYWl0ID0gKGVycm9yOiBTZGtFcnJvcikgPT4gZXJyb3IuJHJldHJ5YWJsZSAhPT0gdW5kZWZpbmVkO1xuXG5leHBvcnQgY29uc3QgaXNDbG9ja1NrZXdFcnJvciA9IChlcnJvcjogU2RrRXJyb3IpID0+IENMT0NLX1NLRVdfRVJST1JfQ09ERVMuaW5jbHVkZXMoZXJyb3IubmFtZSk7XG5cbmV4cG9ydCBjb25zdCBpc1Rocm90dGxpbmdFcnJvciA9IChlcnJvcjogU2RrRXJyb3IpID0+XG4gIGVycm9yLiRtZXRhZGF0YT8uaHR0cFN0YXR1c0NvZGUgPT09IDQyOSB8fFxuICBUSFJPVFRMSU5HX0VSUk9SX0NPREVTLmluY2x1ZGVzKGVycm9yLm5hbWUpIHx8XG4gIGVycm9yLiRyZXRyeWFibGU/LnRocm90dGxpbmcgPT0gdHJ1ZTtcblxuZXhwb3J0IGNvbnN0IGlzVHJhbnNpZW50RXJyb3IgPSAoZXJyb3I6IFNka0Vycm9yKSA9PlxuICBUUkFOU0lFTlRfRVJST1JfQ09ERVMuaW5jbHVkZXMoZXJyb3IubmFtZSkgfHxcbiAgVFJBTlNJRU5UX0VSUk9SX1NUQVRVU19DT0RFUy5pbmNsdWRlcyhlcnJvci4kbWV0YWRhdGE/Lmh0dHBTdGF0dXNDb2RlIHx8IDApO1xuIl19
 
 /***/ }),
 
@@ -19004,7 +21978,7 @@ class SignatureV4 {
         this.credentialProvider = normalizeCredentialsProvider(credentials);
     }
     async presign(originalRequest, options = {}) {
-        const { signingDate = new Date(), expiresIn = 3600, unsignableHeaders, signableHeaders, signingRegion, signingService, } = options;
+        const { signingDate = new Date(), expiresIn = 3600, unsignableHeaders, unhoistableHeaders, signableHeaders, signingRegion, signingService, } = options;
         const credentials = await this.credentialProvider();
         const region = signingRegion !== null && signingRegion !== void 0 ? signingRegion : (await this.regionProvider());
         const { longDate, shortDate } = formatDate(signingDate);
@@ -19012,7 +21986,7 @@ class SignatureV4 {
             return Promise.reject("Signature version 4 presigned URLs" + " must have an expiration date less than one week in" + " the future");
         }
         const scope = credentialDerivation_1.createScope(shortDate, region, signingService !== null && signingService !== void 0 ? signingService : this.service);
-        const request = moveHeadersToQuery_1.moveHeadersToQuery(prepareRequest_1.prepareRequest(originalRequest));
+        const request = moveHeadersToQuery_1.moveHeadersToQuery(prepareRequest_1.prepareRequest(originalRequest), { unhoistableHeaders });
         if (credentials.sessionToken) {
             request.query[constants_1.TOKEN_QUERY_PARAM] = credentials.sessionToken;
         }
@@ -19148,7 +22122,7 @@ const normalizeCredentialsProvider = (credentials) => {
         return credentials;
     }
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2lnbmF0dXJlVjQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvU2lnbmF0dXJlVjQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBaUJBLGtFQUFtRDtBQUVuRCwyQ0FlcUI7QUFDckIsaUVBQW9FO0FBQ3BFLCtEQUE0RDtBQUM1RCwyREFBd0Q7QUFDeEQscURBQWtEO0FBQ2xELDJDQUF3QztBQUN4Qyw2REFBMEQ7QUFDMUQscURBQWtEO0FBQ2xELHlDQUFxQztBQWtEckMsTUFBYSxXQUFXO0lBUXRCLFlBQVksRUFDVixhQUFhLEVBQ2IsV0FBVyxFQUNYLE1BQU0sRUFDTixPQUFPLEVBQ1AsTUFBTSxFQUNOLGFBQWEsR0FBRyxJQUFJLEdBQ29CO1FBQ3hDLElBQUksQ0FBQyxPQUFPLEdBQUcsT0FBTyxDQUFDO1FBQ3ZCLElBQUksQ0FBQyxNQUFNLEdBQUcsTUFBTSxDQUFDO1FBQ3JCLElBQUksQ0FBQyxhQUFhLEdBQUcsYUFBYSxDQUFDO1FBQ25DLDZDQUE2QztRQUM3QyxJQUFJLENBQUMsYUFBYSxHQUFHLE9BQU8sYUFBYSxLQUFLLFNBQVMsQ0FBQyxDQUFDLENBQUMsYUFBYSxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUM7UUFDL0UsSUFBSSxDQUFDLGNBQWMsR0FBRyx1QkFBdUIsQ0FBQyxNQUFNLENBQUMsQ0FBQztRQUN0RCxJQUFJLENBQUMsa0JBQWtCLEdBQUcsNEJBQTRCLENBQUMsV0FBVyxDQUFDLENBQUM7SUFDdEUsQ0FBQztJQUVNLEtBQUssQ0FBQyxPQUFPLENBQUMsZUFBNEIsRUFBRSxVQUFzQyxFQUFFO1FBQ3pGLE1BQU0sRUFDSixXQUFXLEdBQUcsSUFBSSxJQUFJLEVBQUUsRUFDeEIsU0FBUyxHQUFHLElBQUksRUFDaEIsaUJBQWlCLEVBQ2pCLGVBQWUsRUFDZixhQUFhLEVBQ2IsY0FBYyxHQUNmLEdBQUcsT0FBTyxDQUFDO1FBQ1osTUFBTSxXQUFXLEdBQUcsTUFBTSxJQUFJLENBQUMsa0JBQWtCLEVB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O0tBQzFCO1NBQU07UUFDTCxPQUFPLE1BQU0sQ0FBQztLQUNmO0FBQ0gsQ0FBQyxDQUFDO0FBRUYsTUFBTSw0QkFBNEIsR0FBRyxDQUFDLFdBQWdELEVBQXlCLEVBQUU7SUFDL0csSUFBSSxPQUFPLFdBQVcsS0FBSyxRQUFRLEVBQUU7UUFDbkMsTUFBTSxXQUFXLEdBQUcsT0FBTyxDQUFDLE9BQU8sQ0FBQyxXQUFXLENBQUMsQ0FBQztRQUNqRCxPQUFPLEdBQUcsRUFBRSxDQUFDLFdBQVcsQ0FBQztLQUMxQjtTQUFNO1FBQ0wsT0FBTyxXQUFXLENBQUM7S0FDcEI7QUFDSCxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge1xuICBDcmVkZW50aWFscyxcbiAgRGF0ZUlucHV0LFxuICBFdmVudFNpZ25lcixcbiAgRXZlbnRTaWduaW5nQXJndW1lbnRzLFxuICBGb3JtYXR0ZWRFdmVudCxcbiAgSGFzaENvbnN0cnVjdG9yLFxuICBIZWFkZXJCYWcsXG4gIEh0dHBSZXF1ZXN0LFxuICBQcm92aWRlcixcbiAgUmVxdWVzdFByZXNpZ25lcixcbiAgUmVxdWVzdFByZXNpZ25pbmdBcmd1bWVudHMsXG4gIFJlcXVlc3RTaWduZXIsXG4gIFJlcXVlc3RTaWduaW5nQXJndW1lbnRzLFxuICBTaWduaW5nQXJndW1lbnRzLFxuICBTdHJpbmdTaWduZXIsXG59IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuaW1wb3J0IHsgdG9IZXggfSBmcm9tIFwiQGF3cy1zZGsvdXRpbC1oZXgtZW5jb2RpbmdcIjtcblxuaW1wb3J0IHtcbiAgQUxHT1JJVEhNX0lERU5USUZJRVIsXG4gIEFMR09SSVRITV9RVUVSWV9QQVJBTSxcbiAgQU1aX0RBVEVfSEVBREVSLFxuICBBTVpfREFURV9RVUVSWV9QQVJBTSxcbiAgQVVUSF9IRUFERVIsXG4gIENSRURFTlRJQUxfUVVFUllfUEFSQU0sXG4gIEVWRU5UX0FMR09SSVRITV9JREVOVElGSUVSLFxuICBFWFBJUkVTX1FVRVJZX1BBUkFNLFxuICBNQVhfUFJFU0lHTkVEX1RUTCxcbiAgU0hBMjU2X0hFQURFUixcbiAgU0lHTkFUVVJFX1FVRVJZX1BBUkFNLFxuICBTSUdORURfSEVBREVSU19RVUVSWV9QQVJBTSxcbiAgVE9LRU5fSEVBREVSLFxuICBUT0tFTl9RVUVSWV9QQVJBTSxcbn0gZnJvbSBcIi4vY29uc3RhbnRzXCI7XG5pbXBvcnQgeyBjcmVhdGVTY29wZSwgZ2V0U2lnbmluZ0tleSB9IGZyb20gXCIuL2NyZWRlbnRpYWxEZXJpdmF0aW9uXCI7XG5pbXBvcnQgeyBnZXRDYW5vbmljYWxIZWFkZXJzIH0gZnJvbSBcIi4vZ2V0Q2Fub25pY2FsSGVhZGVyc1wiO1xuaW1wb3J0IHsgZ2V0Q2Fub25pY2FsUXVlcnkgfSBmcm9tIFwiLi9nZXRDYW5vbmljYWxRdWVyeVwiO1xuaW1wb3J0IHsgZ2V0UGF5bG9hZEhhc2ggfSBmcm9tIFwiLi9nZXRQYXlsb2FkSGFzaFwiO1xuaW1wb3J0IHsgaGFzSGVhZGVyIH0gZnJvbSBcIi4vaGFzSGVhZGVyXCI7XG5pbXBvcnQgeyBtb3ZlSGVhZGVyc1RvUXVlcnkgfSBmcm9tIFwiLi9tb3ZlSGVhZGVyc1RvUXVlcnlcIjtcbmltcG9ydCB7IHByZXBhcmVSZXF1ZXN0IH0gZnJvbSBcIi4vcHJlcGFyZVJlcXVlc3RcIjtcbmltcG9ydCB7IGlzbzg2MDEgfSBmcm9tIFwiLi91dGlsRGF0ZVwiO1xuXG5leHBvcnQgaW50ZXJmYWNlIFNpZ25hdHVyZVY0SW5pdCB7XG4gIC8qKlxuICAgKiBUaGUgc2VydmljZSBzaWduaW5nIG5hbWUuXG4gICAqL1xuICBzZXJ2aWNlOiBzdHJpbmc7XG5cbiAgLyoqXG4gICAqIFRoZSByZWdpb24gbmFtZSBvciBhIGZ1bmN0aW9uIHRoYXQgcmV0dXJucyBhIHByb21pc2UgdGhhdCB3aWxsIGJlXG4gICAqIHJlc29sdmVkIHdpdGggdGhlIHJlZ2lvbiBuYW1lLlxuICAgKi9cbiAgcmVnaW9uOiBzdHJpbmcgfCBQcm92aWRlcjxzdHJpbmc+O1xuXG4gIC8qKlxuICAgKiBUaGUgY3JlZGVudGlhbHMgd2l0aCB3aGljaCB0aGUgcmVxdWVzdCBzaG91bGQgYmUgc2lnbmVkIG9yIGEgZnVuY3Rpb25cbiAgICogdGhhdCByZXR1cm5zIGEgcHJvbWlzZSB0aGF0IHdpbGwgYmUgcmVzb2x2ZWQgd2l0aCBjcmVkZW50aWFscy5cbiAgICovXG4gIGNyZWRlbnRpYWxzOiBDcmVkZW50aWFscyB8IFByb3ZpZGVyPENyZWRlbnRpYWxzPjtcblxuICAvKipcbiAgICogQSBjb25zdHJ1Y3RvciBmdW5jdGlvbiBmb3IgYSBoYXNoIG9iamVjdCB0aGF0IHdpbGwgY2FsY3VsYXRlIFNIQS0yNTYgSE1BQ1xuICAgKiBjaGVja3N1bXMuXG4gICAqL1xuICBzaGEyNTY/OiBIYXNoQ29uc3RydWN0b3I7XG5cbiAgLyoqXG4gICAqIFdoZXRoZXIgdG8gdXJpLWVzY2FwZSB0aGUgcmVxdWVzdCBVUkkgcGF0aCBhcyBwYXJ0IG9mIGNvbXB1dGluZyB0aGVcbiAgICogY2Fub25pY2FsIHJlcXVlc3Qgc3RyaW5nLiBUaGlzIGlzIHJlcXVpcmVkIGZvciBldmVyeSBBV1Mgc2VydmljZSwgZXhjZXB0XG4gICAqIEFtYXpvbiBTMywgYXMgb2YgbGF0ZSAyMDE3LlxuICAgKlxuICAgKiBAZGVmYXVsdCBbdHJ1ZV1cbiAgICovXG4gIHVyaUVzY2FwZVBhdGg/OiBib29sZWFuO1xuXG4gIC8qKlxuICAgKiBXaGV0aGVyIHRvIGNhbGN1bGF0ZSBhIGNoZWNrc3VtIG9mIHRoZSByZXF1ZXN0IGJvZHkgYW5kIGluY2x1ZGUgaXQgYXNcbiAgICogZWl0aGVyIGEgcmVxdWVzdCBoZWFkZXIgKHdoZW4gc2lnbmluZykgb3IgYXMgYSBxdWVyeSBzdHJpbmcgcGFyYW1ldGVyXG4gICAqICh3aGVuIHByZXNpZ25pbmcpLiBUaGlzIGlzIHJlcXVpcmVkIGZvciBBV1MgR2xhY2llciBhbmQgQW1hem9uIFMzIGFuZCBvcHRpb25hbCBmb3JcbiAgICogZXZlcnkgb3RoZXIgQVdTIHNlcnZpY2UgYXMgb2YgbGF0ZSAyMDE3LlxuICAgKlxuICAgKiBAZGVmYXVsdCBbdHJ1ZV1cbiAgICovXG4gIGFwcGx5Q2hlY2tzdW0/OiBib29sZWFuO1xufVxuXG5leHBvcnQgaW50ZXJmYWNlIFNpZ25hdHVyZVY0Q3J5cHRvSW5pdCB7XG4gIHNoYTI1NjogSGFzaENvbnN0cnVjdG9yO1xufVxuXG5leHBvcnQgY2xhc3MgU2lnbmF0dXJlVjQgaW1wbGVtZW50cyBSZXF1ZXN0UHJlc2lnbmVyLCBSZXF1ZXN0U2lnbmVyLCBTdHJpbmdTaWduZXIsIEV2ZW50U2lnbmVyIHtcbiAgcHJpdmF0ZSByZWFkb25seSBzZXJ2aWNlOiBzdHJpbmc7XG4gIHByaXZhdGUgcmVhZG9ubHkgcmVnaW9uUHJvdmlkZXI6IFByb3ZpZGVyPHN0cmluZz47XG4gIHByaXZhdGUgcmVhZG9ubHkgY3JlZGVudGlhbFByb3ZpZGVyOiBQcm92aWRlcjxDcmVkZW50aWFscz47XG4gIHByaXZhdGUgcmVhZG9ubHkgc2hhMjU2OiBIYXNoQ29uc3RydWN0b3I7XG4gIHByaXZhdGUgcmVhZG9ubHkgdXJpRXNjYXBlUGF0aDogYm9vbGVhbjtcbiAgcHJpdmF0ZSByZWFkb25seSBhcHBseUNoZWNrc3VtOiBib29sZWFuO1xuXG4gIGNvbnN0cnVjdG9yKHtcbiAgICBhcHBseUNoZWNrc3VtLFxuICAgIGNyZWRlbnRpYWxzLFxuICAgIHJlZ2lvbixcbiAgICBzZXJ2aWNlLFxuICAgIHNoYTI1NixcbiAgICB1cmlFc2NhcGVQYXRoID0gdHJ1ZSxcbiAgfTogU2lnbmF0dXJlVjRJbml0ICYgU2lnbmF0dXJlVjRDcnlwdG9Jbml0KSB7XG4gICAgdGhpcy5zZXJ2aWNlID0gc2VydmljZTtcbiAgICB0aGlzLnNoYTI1NiA9IHNoYTI1NjtcbiAgICB0aGlzLnVyaUVzY2FwZVBhdGggPSB1cmlFc2NhcGVQYXRoO1xuICAgIC8vIGRlZmF1bHQgdG8gdHJ1ZSBpZiBhcHBseUNoZWNrc3VtIGlzbid0IHNldFxuICAgIHRoaXMuYXBwbHlDaGVja3N1bSA9IHR5cGVvZiBhcHBseUNoZWNrc3VtID09PSBcImJvb2xlYW5cIiA/IGFwcGx5Q2hlY2tzdW0gOiB0cnVlO1xuICAgIHRoaXMucmVnaW9uUHJvdmlkZXIgPSBub3JtYWxpemVSZWdpb25Qcm92aWRlcihyZWdpb24pO1xuICAgIHRoaXMuY3JlZGVudGlhbFByb3ZpZGVyID0gbm9ybWFsaXplQ3JlZGVudGlhbHNQcm92aWRlcihjcmVkZW50aWFscyk7XG4gIH1cblxuICBwdWJsaWMgYXN5bmMgcHJlc2lnbihvcmlnaW5hbFJlcXVlc3Q6IEh0dHBSZXF1ZXN0LCBvcHRpb25zOiBSZXF1ZXN0UHJlc2lnbmluZ0FyZ3VtZW50cyA9IHt9KTogUHJvbWlzZTxIdHRwUmVxdWVzdD4ge1xuICAgIGNvbnN0IHtcbiAgICAgIHNpZ25pbmdEYXRlID0gbmV3IERhdGUoKSxcbiAgICAgIGV4cGlyZXNJbiA9IDM2MDAsXG4gICAgICB1bnNpZ25hYmxlSGVhZGVycyxcbiAgICAgIHNpZ25hYmxlSGVhZGVycyxcbiAgICAgIHNpZ25pbmdSZWdpb24sXG4gICAgICBzaWduaW5nU2VydmljZSxcbiAgICB9ID0gb3B0aW9ucztcbiAgICBjb25zdCBjcmVkZW50aWFscyA9IGF3YWl0IHRoaXMuY3JlZGVudGlhbFByb3ZpZGVyKCk7XG4gICAgY29uc3QgcmVnaW9uID0gc2lnbmluZ1JlZ2lvbiA/PyAoYXdhaXQgdGhpcy5yZWdpb25Qcm92aWRlcigpKTtcblxuICAgIGNvbnN0IHsgbG9uZ0RhdGUsIHNob3J0RGF0ZSB9ID0gZm9ybWF0RGF0ZShzaWduaW5nRGF0ZSk7XG4gICAgaWYgKGV4cGlyZXNJbiA+IE1BWF9QUkVTSUdORURfVFRMKSB7XG4gICAgICByZXR1cm4gUHJvbWlzZS5yZWplY3QoXG4gICAgICAgIFwiU2lnbmF0dXJlIHZlcnNpb24gNCBwcmVzaWduZWQgVVJMc1wiICsgXCIgbXVzdCBoYXZlIGFuIGV4cGlyYXRpb24gZGF0ZSBsZXNzIHRoYW4gb25lIHdlZWsgaW5cIiArIFwiIHRoZSBmdXR1cmVcIlxuICAgICAgKTtcbiAgICB9XG5cbiAgICBjb25zdCBzY29wZSA9IGNyZWF0ZVNjb3BlKHNob3J0RGF0ZSwgcmVnaW9uLCBzaWduaW5nU2VydmljZSA/PyB0aGlzLnNlcnZpY2UpO1xuICAgIGNvbnN0IHJlcXVlc3QgPSBtb3ZlSGVhZGVyc1RvUXVlcnkocHJlcGFyZVJlcXVlc3Qob3JpZ2luYWxSZXF1ZXN0KSk7XG5cbiAgICBpZiAoY3JlZGVudGlhbHMuc2Vzc2lvblRva2VuKSB7XG4gICAgICByZXF1ZXN0LnF1ZXJ5W1RPS0VOX1FVRVJZX1BBUkFNXSA9IGNyZWRlbnRpYWxzLnNlc3Npb25Ub2tlbjtcbiAgICB9XG4gICAgcmVxdWVzdC5xdWVyeVtBTEdPUklUSE1fUVVFUllfUEFSQU1dID0gQUxHT1JJVEhNX0lERU5USUZJRVI7XG4gICAgcmVxdWVzdC5xdWVyeVtDUkVERU5USUFMX1FVRVJZX1BBUkFNXSA9IGAke2NyZWRlbnRpYWxzLmFjY2Vzc0tleUlkfS8ke3Njb3BlfWA7XG4gICAgcmVxdWVzdC5xdWVyeVtBTVpfREFURV9RVUVSWV9QQVJBTV0gPSBsb25nRGF0ZTtcbiAgICByZXF1ZXN0LnF1ZXJ5W0VYUElSRVNfUVVFUllfUEFSQU1dID0gZXhwaXJlc0luLnRvU3RyaW5nKDEwKTtcblxuICAgIGNvbnN0IGNhbm9uaWNhbEhlYWRlcnMgPSBnZXRDYW5vbmljYWxIZWFkZXJzKHJlcXVlc3QsIHVuc2lnbmFibGVIZWFkZXJzLCBzaWduYWJsZUhlYWRlcnMpO1xuICAgIHJlcXVlc3QucXVlcnlbU0lHTkVEX0hFQURFUlNfUVVFUllfUEFSQU1dID0gZ2V0Q2Fub25pY2FsSGVhZGVyTGlzdChjYW5vbmljYWxIZWFkZXJzKTtcblxuICAgIHJlcXVlc3QucXVlcnlbU0lHTkFUVVJFX1FVRVJZX1BBUkFNXSA9IGF3YWl0IHRoaXMuZ2V0U2lnbmF0dXJlKFxuICAgICAgbG9uZ0RhdGUsXG4gICAgICBzY29wZSxcbiAgICAgIHRoaXMuZ2V0U2lnbmluZ0tleShjcmVkZW50aWFscywgcmVnaW9uLCBzaG9ydERhdGUsIHNpZ25pbmdTZXJ2aWNlKSxcbiAgICAgIHRoaXMuY3JlYXRlQ2Fub25pY2FsUmVxdWVzdChyZXF1ZXN0LCBjYW5vbmljYWxIZWFkZXJzLCBhd2FpdCBnZXRQYXlsb2FkSGFzaChvcmlnaW5hbFJlcXVlc3QsIHRoaXMuc2hhMjU2KSlcbiAgICApO1xuXG4gICAgcmV0dXJuIHJlcXVlc3Q7XG4gIH1cblxuICBwdWJsaWMgYXN5bmMgc2lnbihzdHJpbmdUb1NpZ246IHN0cmluZywgb3B0aW9ucz86IFNpZ25pbmdBcmd1bWVudHMpOiBQcm9taXNlPHN0cmluZz47XG4gIHB1YmxpYyBhc3luYyBzaWduKGV2ZW50OiBGb3JtYXR0ZWRFdmVudCwgb3B0aW9uczogRXZlbnRTaWduaW5nQXJndW1lbnRzKTogUHJvbWlzZTxzdHJpbmc+O1xuICBwdWJsaWMgYXN5bmMgc2lnbihyZXF1ZXN0VG9TaWduOiBIdHRwUmVxdWVzdCwgb3B0aW9ucz86IFJlcXVlc3RTaWduaW5nQXJndW1lbnRzKTogUHJvbWlzZTxIdHRwUmVxdWVzdD47XG4gIHB1YmxpYyBhc3luYyBzaWduKHRvU2lnbjogYW55LCBvcHRpb25zOiBhbnkpOiBQcm9taXNlPGFueT4ge1xuICAgIGlmICh0eXBlb2YgdG9TaWduID09PSBcInN0cmluZ1wiKSB7XG4gICAgICByZXR1cm4gdGhpcy5zaWduU3RyaW5nKHRvU2lnbiwgb3B0aW9ucyk7XG4gICAgfSBlbHNlIGlmICh0b1NpZ24uaGVhZGVycyAmJiB0b1NpZ24ucGF5bG9hZCkge1xuICAgICAgcmV0dXJuIHRoaXMuc2lnbkV2ZW50KHRvU2lnbiwgb3B0aW9ucyk7XG4gICAgfSBlbHNlIHtcbiAgICAgIHJldHVybiB0aGlzLnNpZ25SZXF1ZXN0KHRvU2lnbiwgb3B0aW9ucyk7XG4gICAgfVxuICB9XG5cbiAgcHJpdmF0ZSBhc3luYyBzaWduRXZlbnQoXG4gICAgeyBoZWFkZXJzLCBwYXlsb2FkIH06IEZvcm1hdHRlZEV2ZW50LFxuICAgIHsgc2lnbmluZ0RhdGUgPSBuZXcgRGF0ZSgpLCBwcmlvclNpZ25hdHVyZSwgc2lnbmluZ1JlZ2lvbiwgc2lnbmluZ1NlcnZpY2UgfTogRXZlbnRTaWduaW5nQXJndW1lbnRzXG4gICk6IFByb21pc2U8c3RyaW5nPiB7XG4gICAgY29uc3QgcmVnaW9uID0gc2lnbmluZ1JlZ2lvbiA/PyAoYXdhaXQgdGhpcy5yZWdpb25Qcm92aWRlcigpKTtcbiAgICBjb25zdCB7IHNob3J0RGF0ZSwgbG9uZ0RhdGUgfSA9IGZvcm1hdERhdGUoc2lnbmluZ0RhdGUpO1xuICAgIGNvbnN0IHNjb3BlID0gY3JlYXRlU2NvcGUoc2hvcnREYXRlLCByZWdpb24sIHNpZ25pbmdTZXJ2aWNlID8/IHRoaXMuc2VydmljZSk7XG4gICAgY29uc3QgaGFzaGVkUGF5bG9hZCA9IGF3YWl0IGdldFBheWxvYWRIYXNoKHsgaGVhZGVyczoge30sIGJvZHk6IHBheWxvYWQgfSBhcyBhbnksIHRoaXMuc2hhMjU2KTtcbiAgICBjb25zdCBoYXNoID0gbmV3IHRoaXMuc2hhMjU2KCk7XG4gICAgaGFzaC51cGRhdGUoaGVhZGVycyk7XG4gICAgY29uc3QgaGFzaGVkSGVhZGVycyA9IHRvSGV4KGF3YWl0IGhhc2guZGlnZXN0KCkpO1xuICAgIGNvbnN0IHN0cmluZ1RvU2lnbiA9IFtcbiAgICAgIEVWRU5UX0FMR09SSVRITV9JREVOVElGSUVSLFxuICAgICAgbG9uZ0RhdGUsXG4gICAgICBzY29wZSxcbiAgICAgIHByaW9yU2lnbmF0dXJlLFxuICAgICAgaGFzaGVkSGVhZGVycyxcbiAgICAgIGhhc2hlZFBheWxvYWQsXG4gICAgXS5qb2luKFwiXFxuXCIpO1xuICAgIHJldHVybiB0aGlzLnNpZ25TdHJpbmcoc3RyaW5nVG9TaWduLCB7IHNpZ25pbmdEYXRlLCBzaWduaW5nUmVnaW9uOiByZWdpb24sIHNpZ25pbmdTZXJ2aWNlIH0pO1xuICB9XG5cbiAgcHJpdmF0ZSBhc3luYyBzaWduU3RyaW5nKFxuICAgIHN0cmluZ1RvU2lnbjogc3RyaW5nLFxuICAgIHsgc2lnbmluZ0RhdGUgPSBuZXcgRGF0ZSgpLCBzaWduaW5nUmVnaW9uLCBzaWduaW5nU2VydmljZSB9OiBTaWduaW5nQXJndW1lbnRzID0ge31cbiAgKTogUHJvbWlzZTxzdHJpbmc+IHtcbiAgICBjb25zdCBjcmVkZW50aWFscyA9IGF3YWl0IHRoaXMuY3JlZGVudGlhbFByb3ZpZGVyKCk7XG4gICAgY29uc3QgcmVnaW9uID0gc2lnbmluZ1JlZ2lvbiA/PyAoYXdhaXQgdGhpcy5yZWdpb25Qcm92aWRlcigpKTtcbiAgICBjb25zdCB7IHNob3J0RGF0ZSB9ID0gZm9ybWF0RGF0ZShzaWduaW5nRGF0ZSk7XG5cbiAgICBjb25zdCBoYXNoID0gbmV3IHRoaXMuc2hhMjU2KGF3YWl0IHRoaXMuZ2V0U2lnbmluZ0tleShjcmVkZW50aWFscywgcmVnaW9uLCBzaG9ydERhdGUsIHNpZ25pbmdTZXJ2aWNlKSk7XG4gICAgaGFzaC51cGRhdGUoc3RyaW5nVG9TaWduKTtcbiAgICByZXR1cm4gdG9IZXgoYXdhaXQgaGFzaC5kaWdlc3QoKSk7XG4gIH1cblxuICBwcml2YXRlIGFzeW5jIHNpZ25SZXF1ZXN0KFxuICAgIHJlcXVlc3RUb1NpZ246IEh0dHBSZXF1ZXN0LFxuICAgIHtcbiAgICAgIHNpZ25pbmdEYXRlID0gbmV3IERhdGUoKSxcbiAgICAgIHNpZ25hYmxlSGVhZGVycyxcbiAgICAgIHVuc2lnbmFibGVIZWFkZXJzLFxuICAgICAgc2lnbmluZ1JlZ2lvbixcbiAgICAgIHNpZ25pbmdTZXJ2aWNlLFxuICAgIH06IFJlcXVlc3RTaWduaW5nQXJndW1lbnRzID0ge31cbiAgKTogUHJvbWlzZTxIdHRwUmVxdWVzdD4ge1xuICAgIGNvbnN0IGNyZWRlbnRpYWxzID0gYXdhaXQgdGhpcy5jcmVkZW50aWFsUHJvdmlkZXIoKTtcbiAgICBjb25zdCByZWdpb24gPSBzaWduaW5nUmVnaW9uID8/IChhd2FpdCB0aGlzLnJlZ2lvblByb3ZpZGVyKCkpO1xuICAgIGNvbnN0IHJlcXVlc3QgPSBwcmVwYXJlUmVxdWVzdChyZXF1ZXN0VG9TaWduKTtcbiAgICBjb25zdCB7IGxvbmdEYXRlLCBzaG9ydERhdGUgfSA9IGZvcm1hdERhdGUoc2lnbmluZ0RhdGUpO1xuICAgIGNvbnN0IHNjb3BlID0gY3JlYXRlU2NvcGUoc2hvcnREYXRlLCByZWdpb24sIHNpZ25pbmdTZXJ2aWNlID8/IHRoaXMuc2VydmljZSk7XG5cbiAgICByZXF1ZXN0LmhlYWRlcnNbQU1aX0RBVEVfSEVBREVSXSA9IGxvbmdEYXRlO1xuICAgIGlmIChjcmVkZW50aWFscy5zZXNzaW9uVG9rZW4pIHtcbiAgICAgIHJlcXVlc3QuaGVhZGVyc1tUT0tFTl9IRUFERVJdID0gY3JlZGVudGlhbHMuc2Vzc2lvblRva2VuO1xuICAgIH1cblxuICAgIGNvbnN0IHBheWxvYWRIYXNoID0gYXdhaXQgZ2V0UGF5bG9hZEhhc2gocmVxdWVzdCwgdGhpcy5zaGEyNTYpO1xuICAgIGlmICghaGFzSGVhZGVyKFNIQTI1Nl9IRUFERVIsIHJlcXVlc3QuaGVhZGVycykgJiYgdGhpcy5hcHBseUNoZWNrc3VtKSB7XG4gICAgICByZXF1ZXN0LmhlYWRlcnNbU0hBMjU2X0hFQURFUl0gPSBwYXlsb2FkSGFzaDtcbiAgICB9XG5cbiAgICBjb25zdCBjYW5vbmljYWxIZWFkZXJzID0gZ2V0Q2Fub25pY2FsSGVhZGVycyhyZXF1ZXN0LCB1bnNpZ25hYmxlSGVhZGVycywgc2lnbmFibGVIZWFkZXJzKTtcbiAgICBjb25zdCBzaWduYXR1cmUgPSBhd2FpdCB0aGlzLmdldFNpZ25hdHVyZShcbiAgICAgIGxvbmdEYXRlLFxuICAgICAgc2NvcGUsXG4gICAgICB0aGlzLmdldFNpZ25pbmdLZXkoY3JlZGVudGlhbHMsIHJlZ2lvbiwgc2hvcnREYXRlLCBzaWduaW5nU2VydmljZSksXG4gICAgICB0aGlzLmNyZWF0ZUNhbm9uaWNhbFJlcXVlc3QocmVxdWVzdCwgY2Fub25pY2FsSGVhZGVycywgcGF5bG9hZEhhc2gpXG4gICAgKTtcblxuICAgIHJlcXVlc3QuaGVhZGVyc1tBVVRIX0hFQURFUl0gPVxuICAgICAgYCR7QUxHT1JJVEhNX0lERU5USUZJRVJ9IGAgK1xuICAgICAgYENyZWRlbnRpYWw9JHtjcmVkZW50aWFscy5hY2Nlc3NLZXlJZH0vJHtzY29wZX0sIGAgK1xuICAgICAgYFNpZ25lZEhlYWRlcnM9JHtnZXRDYW5vbmljYWxIZWFkZXJMaXN0KGNhbm9uaWNhbEhlYWRlcnMpfSwgYCArXG4gICAgICBgU2lnbmF0dXJlPSR7c2lnbmF0dXJlfWA7XG5cbiAgICByZXR1cm4gcmVxdWVzdDtcbiAgfVxuXG4gIHByaXZhdGUgY3JlYXRlQ2Fub25pY2FsUmVxdWVzdChyZXF1ZXN0OiBIdHRwUmVxdWVzdCwgY2Fub25pY2FsSGVhZGVyczogSGVhZGVyQmFnLCBwYXlsb2FkSGFzaDogc3RyaW5nKTogc3RyaW5nIHtcbiAgICBjb25zdCBzb3J0ZWRIZWFkZXJzID0gT2JqZWN0LmtleXMoY2Fub25pY2FsSGVhZGVycykuc29ydCgpO1xuICAgIHJldHVybiBgJHtyZXF1ZXN0Lm1ldGhvZH1cbiR7dGhpcy5nZXRDYW5vbmljYWxQYXRoKHJlcXVlc3QpfVxuJHtnZXRDYW5vbmljYWxRdWVyeShyZXF1ZXN0KX1cbiR7c29ydGVkSGVhZGVycy5tYXAoKG5hbWUpID0+IGAke25hbWV9OiR7Y2Fub25pY2FsSGVhZGVyc1tuYW1lXX1gKS5qb2luKFwiXFxuXCIpfVxuXG4ke3NvcnRlZEhlYWRlcnMuam9pbihcIjtcIil9XG4ke3BheWxvYWRIYXNofWA7XG4gIH1cblxuICBwcml2YXRlIGFzeW5jIGNyZWF0ZVN0cmluZ1RvU2lnbihcbiAgICBsb25nRGF0ZTogc3RyaW5nLFxuICAgIGNyZWRlbnRpYWxTY29wZTogc3RyaW5nLFxuICAgIGNhbm9uaWNhbFJlcXVlc3Q6IHN0cmluZ1xuICApOiBQcm9taXNlPHN0cmluZz4ge1xuICAgIGNvbnN0IGhhc2ggPSBuZXcgdGhpcy5zaGEyNTYoKTtcbiAgICBoYXNoLnVwZGF0ZShjYW5vbmljYWxSZXF1ZXN0KTtcbiAgICBjb25zdCBoYXNoZWRSZXF1ZXN0ID0gYXdhaXQgaGFzaC5kaWdlc3QoKTtcblxuICAgIHJldHVybiBgJHtBTEdPUklUSE1fSURFTlRJRklFUn1cbiR7bG9uZ0RhdGV9XG4ke2NyZWRlbnRpYWxTY29wZX1cbiR7dG9IZXgoaGFzaGVkUmVxdWVzdCl9YDtcbiAgfVxuXG4gIHByaXZhdGUgZ2V0Q2Fub25pY2FsUGF0aCh7IHBhdGggfTogSHR0cFJlcXVlc3QpOiBzdHJpbmcge1xuICAgIGlmICh0aGlzLnVyaUVzY2FwZVBhdGgpIHtcbiAgICAgIGNvbnN0IGRvdWJsZUVuY29kZWQgPSBlbmNvZGVVUklDb21wb25lbnQocGF0aC5yZXBsYWNlKC9eXFwvLywgXCJcIikpO1xuICAgICAgcmV0dXJuIGAvJHtkb3VibGVFbmNvZGVkLnJlcGxhY2UoLyUyRi9nLCBcIi9cIil9YDtcbiAgICB9XG5cbiAgICByZXR1cm4gcGF0aDtcbiAgfVxuXG4gIHByaXZhdGUgYXN5bmMgZ2V0U2lnbmF0dXJlKFxuICAgIGxvbmdEYXRlOiBzdHJpbmcsXG4gICAgY3JlZGVudGlhbFNjb3BlOiBzdHJpbmcsXG4gICAga2V5UHJvbWlzZTogUHJvbWlzZTxVaW50OEFycmF5PixcbiAgICBjYW5vbmljYWxSZXF1ZXN0OiBzdHJpbmdcbiAgKTogUHJvbWlzZTxzdHJpbmc+IHtcbiAgICBjb25zdCBzdHJpbmdUb1NpZ24gPSBhd2FpdCB0aGlzLmNyZWF0ZVN0cmluZ1RvU2lnbihsb25nRGF0ZSwgY3JlZGVudGlhbFNjb3BlLCBjYW5vbmljYWxSZXF1ZXN0KTtcblxuICAgIGNvbnN0IGhhc2ggPSBuZXcgdGhpcy5zaGEyNTYoYXdhaXQga2V5UHJvbWlzZSk7XG4gICAgaGFzaC51cGRhdGUoc3RyaW5nVG9TaWduKTtcbiAgICByZXR1cm4gdG9IZXgoYXdhaXQgaGFzaC5kaWdlc3QoKSk7XG4gIH1cblxuICBwcml2YXRlIGdldFNpZ25pbmdLZXkoXG4gICAgY3JlZGVudGlhbHM6IENyZWRlbnRpYWxzLFxuICAgIHJlZ2lvbjogc3RyaW5nLFxuICAgIHNob3J0RGF0ZTogc3RyaW5nLFxuICAgIHNlcnZpY2U/OiBzdHJpbmdcbiAgKTogUHJvbWlzZTxVaW50OEFycmF5PiB7XG4gICAgcmV0dXJuIGdldFNpZ25pbmdLZXkodGhpcy5zaGEyNTYsIGNyZWRlbnRpYWxzLCBzaG9ydERhdGUsIHJlZ2lvbiwgc2VydmljZSB8fCB0aGlzLnNlcnZpY2UpO1xuICB9XG59XG5cbmNvbnN0IGZvcm1hdERhdGUgPSAobm93OiBEYXRlSW5wdXQpOiB7IGxvbmdEYXRlOiBzdHJpbmc7IHNob3J0RGF0ZTogc3RyaW5nIH0gPT4ge1xuICBjb25zdCBsb25nRGF0ZSA9IGlzbzg2MDEobm93KS5yZXBsYWNlKC9bXFwtOl0vZywgXCJcIik7XG4gIHJldHVybiB7XG4gICAgbG9uZ0RhdGUsXG4gICAgc2hvcnREYXRlOiBsb25nRGF0ZS5zdWJzdHIoMCwgOCksXG4gIH07XG59O1xuXG5jb25zdCBnZXRDYW5vbmljYWxIZWFkZXJMaXN0ID0gKGhlYWRlcnM6IG9iamVjdCk6IHN0cmluZyA9PiBPYmplY3Qua2V5cyhoZWFkZXJzKS5zb3J0KCkuam9pbihcIjtcIik7XG5cbmNvbnN0IG5vcm1hbGl6ZVJlZ2lvblByb3ZpZGVyID0gKHJlZ2lvbjogc3RyaW5nIHwgUHJvdmlkZXI8c3RyaW5nPik6IFByb3ZpZGVyPHN0cmluZz4gPT4ge1xuICBpZiAodHlwZW9mIHJlZ2lvbiA9PT0gXCJzdHJpbmdcIikge1xuICAgIGNvbnN0IHByb21pc2lmaWVkID0gUHJvbWlzZS5yZXNvbHZlKHJlZ2lvbik7XG4gICAgcmV0dXJuICgpID0+IHByb21pc2lmaWVkO1xuICB9IGVsc2Uge1xuICAgIHJldHVybiByZWdpb247XG4gIH1cbn07XG5cbmNvbnN0IG5vcm1hbGl6ZUNyZWRlbnRpYWxzUHJvdmlkZXIgPSAoY3JlZGVudGlhbHM6IENyZWRlbnRpYWxzIHwgUHJvdmlkZXI8Q3JlZGVudGlhbHM+KTogUHJvdmlkZXI8Q3JlZGVudGlhbHM+ID0+IHtcbiAgaWYgKHR5cGVvZiBjcmVkZW50aWFscyA9PT0gXCJvYmplY3RcIikge1xuICAgIGNvbnN0IHByb21pc2lmaWVkID0gUHJvbWlzZS5yZXNvbHZlKGNyZWRlbnRpYWxzKTtcbiAgICByZXR1cm4gKCkgPT4gcHJvbWlzaWZpZWQ7XG4gIH0gZWxzZSB7XG4gICAgcmV0dXJuIGNyZWRlbnRpYWxzO1xuICB9XG59O1xuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2lnbmF0dXJlVjQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvU2lnbmF0dXJlVjQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBaUJBLGtFQUFtRDtBQUVuRCwyQ0FlcUI7QUFDckIsaUVBQW9FO0FBQ3BFLCtEQUE0RDtBQUM1RCwyREFBd0Q7QUFDeEQscURBQWtEO0FBQ2xELDJDQUF3QztBQUN4Qyw2REFBMEQ7QUFDMUQscURBQWtEO0FBQ2xELHlDQUFxQztBQWtEckMsTUFBYSxXQUFXO0lBUXRCLFlBQVksRUFDVixhQUFhLEVBQ2IsV0FBVyxFQUNYLE1BQU0sRUFDTixPQUFPLEVBQ1AsTUFBTSxFQUNOLGFBQWEsR0FBRyxJQUFJLEdBQ29CO1FBQ3hDLElBQUksQ0FBQyxPQUFPLEdBQUcsT0FBTyxDQUFDO1FBQ3ZCLElBQUksQ0FBQyxNQUFNLEdBQUcsTUFBTSxDQUFDO1FBQ3JCLElBQUksQ0FBQyxhQUFhLEdBQUcsYUFBYSxDQUFDO1FBQ25DLDZDQUE2QztRQUM3QyxJQUFJLENBQUMsYUFBYSxHQUFHLE9BQU8sYUFBYSxLQUFLLFNBQVMsQ0FBQyxDQUFDLENBQUMsYUFBYSxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUM7UUFDL0UsSUFBSSxDQUFDLGNBQWMsR0FBRyx1QkFBdUIsQ0FBQyxNQUFNLENBQUMsQ0FBQztRQUN0RCxJQUFJLENBQUMsa0JBQWtCLEdBQUcsNEJBQTRCLENBQUMsV0FBVyxDQUFDLENBQUM7SUFDdEUsQ0FBQztJQUVNLEtBQUssQ0FBQyxPQUFPLENBQUMsZUFBNEIsRUFBRSxVQUFzQyxFQUFFO1FBQ3pGLE1BQU0sRUFDSixXQUFXLEdBQUcsSUFBSSxJQUFJLEVBQUUsRUFDeEIsU0FBUyxHQUFHLElBQUksRUFDaEIsaUJBQWlCLEVBQ2pCLGtCQUFrQixFQUNsQixlQUFlLEVBQ2YsYUFBYSxFQUNiLGNBQWMsR0FDZixHQUFHLE9BQU8sQ0FBQztRQUNaLE1BQU0sV0FBVyxHQUFHLE1BQU0sSUFBSSxD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UUFDNUMsT0FBTyxHQUFHLEVBQUUsQ0FBQyxXQUFXLENBQUM7S0FDMUI7U0FBTTtRQUNMLE9BQU8sTUFBTSxDQUFDO0tBQ2Y7QUFDSCxDQUFDLENBQUM7QUFFRixNQUFNLDRCQUE0QixHQUFHLENBQUMsV0FBZ0QsRUFBeUIsRUFBRTtJQUMvRyxJQUFJLE9BQU8sV0FBVyxLQUFLLFFBQVEsRUFBRTtRQUNuQyxNQUFNLFdBQVcsR0FBRyxPQUFPLENBQUMsT0FBTyxDQUFDLFdBQVcsQ0FBQyxDQUFDO1FBQ2pELE9BQU8sR0FBRyxFQUFFLENBQUMsV0FBVyxDQUFDO0tBQzFCO1NBQU07UUFDTCxPQUFPLFdBQVcsQ0FBQztLQUNwQjtBQUNILENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7XG4gIENyZWRlbnRpYWxzLFxuICBEYXRlSW5wdXQsXG4gIEV2ZW50U2lnbmVyLFxuICBFdmVudFNpZ25pbmdBcmd1bWVudHMsXG4gIEZvcm1hdHRlZEV2ZW50LFxuICBIYXNoQ29uc3RydWN0b3IsXG4gIEhlYWRlckJhZyxcbiAgSHR0cFJlcXVlc3QsXG4gIFByb3ZpZGVyLFxuICBSZXF1ZXN0UHJlc2lnbmVyLFxuICBSZXF1ZXN0UHJlc2lnbmluZ0FyZ3VtZW50cyxcbiAgUmVxdWVzdFNpZ25lcixcbiAgUmVxdWVzdFNpZ25pbmdBcmd1bWVudHMsXG4gIFNpZ25pbmdBcmd1bWVudHMsXG4gIFN0cmluZ1NpZ25lcixcbn0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5pbXBvcnQgeyB0b0hleCB9IGZyb20gXCJAYXdzLXNkay91dGlsLWhleC1lbmNvZGluZ1wiO1xuXG5pbXBvcnQge1xuICBBTEdPUklUSE1fSURFTlRJRklFUixcbiAgQUxHT1JJVEhNX1FVRVJZX1BBUkFNLFxuICBBTVpfREFURV9IRUFERVIsXG4gIEFNWl9EQVRFX1FVRVJZX1BBUkFNLFxuICBBVVRIX0hFQURFUixcbiAgQ1JFREVOVElBTF9RVUVSWV9QQVJBTSxcbiAgRVZFTlRfQUxHT1JJVEhNX0lERU5USUZJRVIsXG4gIEVYUElSRVNfUVVFUllfUEFSQU0sXG4gIE1BWF9QUkVTSUdORURfVFRMLFxuICBTSEEyNTZfSEVBREVSLFxuICBTSUdOQVRVUkVfUVVFUllfUEFSQU0sXG4gIFNJR05FRF9IRUFERVJTX1FVRVJZX1BBUkFNLFxuICBUT0tFTl9IRUFERVIsXG4gIFRPS0VOX1FVRVJZX1BBUkFNLFxufSBmcm9tIFwiLi9jb25zdGFudHNcIjtcbmltcG9ydCB7IGNyZWF0ZVNjb3BlLCBnZXRTaWduaW5nS2V5IH0gZnJvbSBcIi4vY3JlZGVudGlhbERlcml2YXRpb25cIjtcbmltcG9ydCB7IGdldENhbm9uaWNhbEhlYWRlcnMgfSBmcm9tIFwiLi9nZXRDYW5vbmljYWxIZWFkZXJzXCI7XG5pbXBvcnQgeyBnZXRDYW5vbmljYWxRdWVyeSB9IGZyb20gXCIuL2dldENhbm9uaWNhbFF1ZXJ5XCI7XG5pbXBvcnQgeyBnZXRQYXlsb2FkSGFzaCB9IGZyb20gXCIuL2dldFBheWxvYWRIYXNoXCI7XG5pbXBvcnQgeyBoYXNIZWFkZXIgfSBmcm9tIFwiLi9oYXNIZWFkZXJcIjtcbmltcG9ydCB7IG1vdmVIZWFkZXJzVG9RdWVyeSB9IGZyb20gXCIuL21vdmVIZWFkZXJzVG9RdWVyeVwiO1xuaW1wb3J0IHsgcHJlcGFyZVJlcXVlc3QgfSBmcm9tIFwiLi9wcmVwYXJlUmVxdWVzdFwiO1xuaW1wb3J0IHsgaXNvODYwMSB9IGZyb20gXCIuL3V0aWxEYXRlXCI7XG5cbmV4cG9ydCBpbnRlcmZhY2UgU2lnbmF0dXJlVjRJbml0IHtcbiAgLyoqXG4gICAqIFRoZSBzZXJ2aWNlIHNpZ25pbmcgbmFtZS5cbiAgICovXG4gIHNlcnZpY2U6IHN0cmluZztcblxuICAvKipcbiAgICogVGhlIHJlZ2lvbiBuYW1lIG9yIGEgZnVuY3Rpb24gdGhhdCByZXR1cm5zIGEgcHJvbWlzZSB0aGF0IHdpbGwgYmVcbiAgICogcmVzb2x2ZWQgd2l0aCB0aGUgcmVnaW9uIG5hbWUuXG4gICAqL1xuICByZWdpb246IHN0cmluZyB8IFByb3ZpZGVyPHN0cmluZz47XG5cbiAgLyoqXG4gICAqIFRoZSBjcmVkZW50aWFscyB3aXRoIHdoaWNoIHRoZSByZXF1ZXN0IHNob3VsZCBiZSBzaWduZWQgb3IgYSBmdW5jdGlvblxuICAgKiB0aGF0IHJldHVybnMgYSBwcm9taXNlIHRoYXQgd2lsbCBiZSByZXNvbHZlZCB3aXRoIGNyZWRlbnRpYWxzLlxuICAgKi9cbiAgY3JlZGVudGlhbHM6IENyZWRlbnRpYWxzIHwgUHJvdmlkZXI8Q3JlZGVudGlhbHM+O1xuXG4gIC8qKlxuICAgKiBBIGNvbnN0cnVjdG9yIGZ1bmN0aW9uIGZvciBhIGhhc2ggb2JqZWN0IHRoYXQgd2lsbCBjYWxjdWxhdGUgU0hBLTI1NiBITUFDXG4gICAqIGNoZWNrc3Vtcy5cbiAgICovXG4gIHNoYTI1Nj86IEhhc2hDb25zdHJ1Y3RvcjtcblxuICAvKipcbiAgICogV2hldGhlciB0byB1cmktZXNjYXBlIHRoZSByZXF1ZXN0IFVSSSBwYXRoIGFzIHBhcnQgb2YgY29tcHV0aW5nIHRoZVxuICAgKiBjYW5vbmljYWwgcmVxdWVzdCBzdHJpbmcuIFRoaXMgaXMgcmVxdWlyZWQgZm9yIGV2ZXJ5IEFXUyBzZXJ2aWNlLCBleGNlcHRcbiAgICogQW1hem9uIFMzLCBhcyBvZiBsYXRlIDIwMTcuXG4gICAqXG4gICAqIEBkZWZhdWx0IFt0cnVlXVxuICAgKi9cbiAgdXJpRXNjYXBlUGF0aD86IGJvb2xlYW47XG5cbiAgLyoqXG4gICAqIFdoZXRoZXIgdG8gY2FsY3VsYXRlIGEgY2hlY2tzdW0gb2YgdGhlIHJlcXVlc3QgYm9keSBhbmQgaW5jbHVkZSBpdCBhc1xuICAgKiBlaXRoZXIgYSByZXF1ZXN0IGhlYWRlciAod2hlbiBzaWduaW5nKSBvciBhcyBhIHF1ZXJ5IHN0cmluZyBwYXJhbWV0ZXJcbiAgICogKHdoZW4gcHJlc2lnbmluZykuIFRoaXMgaXMgcmVxdWlyZWQgZm9yIEFXUyBHbGFjaWVyIGFuZCBBbWF6b24gUzMgYW5kIG9wdGlvbmFsIGZvclxuICAgKiBldmVyeSBvdGhlciBBV1Mgc2VydmljZSBhcyBvZiBsYXRlIDIwMTcuXG4gICAqXG4gICAqIEBkZWZhdWx0IFt0cnVlXVxuICAgKi9cbiAgYXBwbHlDaGVja3N1bT86IGJvb2xlYW47XG59XG5cbmV4cG9ydCBpbnRlcmZhY2UgU2lnbmF0dXJlVjRDcnlwdG9Jbml0IHtcbiAgc2hhMjU2OiBIYXNoQ29uc3RydWN0b3I7XG59XG5cbmV4cG9ydCBjbGFzcyBTaWduYXR1cmVWNCBpbXBsZW1lbnRzIFJlcXVlc3RQcmVzaWduZXIsIFJlcXVlc3RTaWduZXIsIFN0cmluZ1NpZ25lciwgRXZlbnRTaWduZXIge1xuICBwcml2YXRlIHJlYWRvbmx5IHNlcnZpY2U6IHN0cmluZztcbiAgcHJpdmF0ZSByZWFkb25seSByZWdpb25Qcm92aWRlcjogUHJvdmlkZXI8c3RyaW5nPjtcbiAgcHJpdmF0ZSByZWFkb25seSBjcmVkZW50aWFsUHJvdmlkZXI6IFByb3ZpZGVyPENyZWRlbnRpYWxzPjtcbiAgcHJpdmF0ZSByZWFkb25seSBzaGEyNTY6IEhhc2hDb25zdHJ1Y3RvcjtcbiAgcHJpdmF0ZSByZWFkb25seSB1cmlFc2NhcGVQYXRoOiBib29sZWFuO1xuICBwcml2YXRlIHJlYWRvbmx5IGFwcGx5Q2hlY2tzdW06IGJvb2xlYW47XG5cbiAgY29uc3RydWN0b3Ioe1xuICAgIGFwcGx5Q2hlY2tzdW0sXG4gICAgY3JlZGVudGlhbHMsXG4gICAgcmVnaW9uLFxuICAgIHNlcnZpY2UsXG4gICAgc2hhMjU2LFxuICAgIHVyaUVzY2FwZVBhdGggPSB0cnVlLFxuICB9OiBTaWduYXR1cmVWNEluaXQgJiBTaWduYXR1cmVWNENyeXB0b0luaXQpIHtcbiAgICB0aGlzLnNlcnZpY2UgPSBzZXJ2aWNlO1xuICAgIHRoaXMuc2hhMjU2ID0gc2hhMjU2O1xuICAgIHRoaXMudXJpRXNjYXBlUGF0aCA9IHVyaUVzY2FwZVBhdGg7XG4gICAgLy8gZGVmYXVsdCB0byB0cnVlIGlmIGFwcGx5Q2hlY2tzdW0gaXNuJ3Qgc2V0XG4gICAgdGhpcy5hcHBseUNoZWNrc3VtID0gdHlwZW9mIGFwcGx5Q2hlY2tzdW0gPT09IFwiYm9vbGVhblwiID8gYXBwbHlDaGVja3N1bSA6IHRydWU7XG4gICAgdGhpcy5yZWdpb25Qcm92aWRlciA9IG5vcm1hbGl6ZVJlZ2lvblByb3ZpZGVyKHJlZ2lvbik7XG4gICAgdGhpcy5jcmVkZW50aWFsUHJvdmlkZXIgPSBub3JtYWxpemVDcmVkZW50aWFsc1Byb3ZpZGVyKGNyZWRlbnRpYWxzKTtcbiAgfVxuXG4gIHB1YmxpYyBhc3luYyBwcmVzaWduKG9yaWdpbmFsUmVxdWVzdDogSHR0cFJlcXVlc3QsIG9wdGlvbnM6IFJlcXVlc3RQcmVzaWduaW5nQXJndW1lbnRzID0ge30pOiBQcm9taXNlPEh0dHBSZXF1ZXN0PiB7XG4gICAgY29uc3Qge1xuICAgICAgc2lnbmluZ0RhdGUgPSBuZXcgRGF0ZSgpLFxuICAgICAgZXhwaXJlc0luID0gMzYwMCxcbiAgICAgIHVuc2lnbmFibGVIZWFkZXJzLFxuICAgICAgdW5ob2lzdGFibGVIZWFkZXJzLFxuICAgICAgc2lnbmFibGVIZWFkZXJzLFxuICAgICAgc2lnbmluZ1JlZ2lvbixcbiAgICAgIHNpZ25pbmdTZXJ2aWNlLFxuICAgIH0gPSBvcHRpb25zO1xuICAgIGNvbnN0IGNyZWRlbnRpYWxzID0gYXdhaXQgdGhpcy5jcmVkZW50aWFsUHJvdmlkZXIoKTtcbiAgICBjb25zdCByZWdpb24gPSBzaWduaW5nUmVnaW9uID8/IChhd2FpdCB0aGlzLnJlZ2lvblByb3ZpZGVyKCkpO1xuXG4gICAgY29uc3QgeyBsb25nRGF0ZSwgc2hvcnREYXRlIH0gPSBmb3JtYXREYXRlKHNpZ25pbmdEYXRlKTtcbiAgICBpZiAoZXhwaXJlc0luID4gTUFYX1BSRVNJR05FRF9UVEwpIHtcbiAgICAgIHJldHVybiBQcm9taXNlLnJlamVjdChcbiAgICAgICAgXCJTaWduYXR1cmUgdmVyc2lvbiA0IHByZXNpZ25lZCBVUkxzXCIgKyBcIiBtdXN0IGhhdmUgYW4gZXhwaXJhdGlvbiBkYXRlIGxlc3MgdGhhbiBvbmUgd2VlayBpblwiICsgXCIgdGhlIGZ1dHVyZVwiXG4gICAgICApO1xuICAgIH1cblxuICAgIGNvbnN0IHNjb3BlID0gY3JlYXRlU2NvcGUoc2hvcnREYXRlLCByZWdpb24sIHNpZ25pbmdTZXJ2aWNlID8/IHRoaXMuc2VydmljZSk7XG4gICAgY29uc3QgcmVxdWVzdCA9IG1vdmVIZWFkZXJzVG9RdWVyeShwcmVwYXJlUmVxdWVzdChvcmlnaW5hbFJlcXVlc3QpLCB7IHVuaG9pc3RhYmxlSGVhZGVycyB9KTtcblxuICAgIGlmIChjcmVkZW50aWFscy5zZXNzaW9uVG9rZW4pIHtcbiAgICAgIHJlcXVlc3QucXVlcnlbVE9LRU5fUVVFUllfUEFSQU1dID0gY3JlZGVudGlhbHMuc2Vzc2lvblRva2VuO1xuICAgIH1cbiAgICByZXF1ZXN0LnF1ZXJ5W0FMR09SSVRITV9RVUVSWV9QQVJBTV0gPSBBTEdPUklUSE1fSURFTlRJRklFUjtcbiAgICByZXF1ZXN0LnF1ZXJ5W0NSRURFTlRJQUxfUVVFUllfUEFSQU1dID0gYCR7Y3JlZGVudGlhbHMuYWNjZXNzS2V5SWR9LyR7c2NvcGV9YDtcbiAgICByZXF1ZXN0LnF1ZXJ5W0FNWl9EQVRFX1FVRVJZX1BBUkFNXSA9IGxvbmdEYXRlO1xuICAgIHJlcXVlc3QucXVlcnlbRVhQSVJFU19RVUVSWV9QQVJBTV0gPSBleHBpcmVzSW4udG9TdHJpbmcoMTApO1xuXG4gICAgY29uc3QgY2Fub25pY2FsSGVhZGVycyA9IGdldENhbm9uaWNhbEhlYWRlcnMocmVxdWVzdCwgdW5zaWduYWJsZUhlYWRlcnMsIHNpZ25hYmxlSGVhZGVycyk7XG4gICAgcmVxdWVzdC5xdWVyeVtTSUdORURfSEVBREVSU19RVUVSWV9QQVJBTV0gPSBnZXRDYW5vbmljYWxIZWFkZXJMaXN0KGNhbm9uaWNhbEhlYWRlcnMpO1xuXG4gICAgcmVxdWVzdC5xdWVyeVtTSUdOQVRVUkVfUVVFUllfUEFSQU1dID0gYXdhaXQgdGhpcy5nZXRTaWduYXR1cmUoXG4gICAgICBsb25nRGF0ZSxcbiAgICAgIHNjb3BlLFxuICAgICAgdGhpcy5nZXRTaWduaW5nS2V5KGNyZWRlbnRpYWxzLCByZWdpb24sIHNob3J0RGF0ZSwgc2lnbmluZ1NlcnZpY2UpLFxuICAgICAgdGhpcy5jcmVhdGVDYW5vbmljYWxSZXF1ZXN0KHJlcXVlc3QsIGNhbm9uaWNhbEhlYWRlcnMsIGF3YWl0IGdldFBheWxvYWRIYXNoKG9yaWdpbmFsUmVxdWVzdCwgdGhpcy5zaGEyNTYpKVxuICAgICk7XG5cbiAgICByZXR1cm4gcmVxdWVzdDtcbiAgfVxuXG4gIHB1YmxpYyBhc3luYyBzaWduKHN0cmluZ1RvU2lnbjogc3RyaW5nLCBvcHRpb25zPzogU2lnbmluZ0FyZ3VtZW50cyk6IFByb21pc2U8c3RyaW5nPjtcbiAgcHVibGljIGFzeW5jIHNpZ24oZXZlbnQ6IEZvcm1hdHRlZEV2ZW50LCBvcHRpb25zOiBFdmVudFNpZ25pbmdBcmd1bWVudHMpOiBQcm9taXNlPHN0cmluZz47XG4gIHB1YmxpYyBhc3luYyBzaWduKHJlcXVlc3RUb1NpZ246IEh0dHBSZXF1ZXN0LCBvcHRpb25zPzogUmVxdWVzdFNpZ25pbmdBcmd1bWVudHMpOiBQcm9taXNlPEh0dHBSZXF1ZXN0PjtcbiAgcHVibGljIGFzeW5jIHNpZ24odG9TaWduOiBhbnksIG9wdGlvbnM6IGFueSk6IFByb21pc2U8YW55PiB7XG4gICAgaWYgKHR5cGVvZiB0b1NpZ24gPT09IFwic3RyaW5nXCIpIHtcbiAgICAgIHJldHVybiB0aGlzLnNpZ25TdHJpbmcodG9TaWduLCBvcHRpb25zKTtcbiAgICB9IGVsc2UgaWYgKHRvU2lnbi5oZWFkZXJzICYmIHRvU2lnbi5wYXlsb2FkKSB7XG4gICAgICByZXR1cm4gdGhpcy5zaWduRXZlbnQodG9TaWduLCBvcHRpb25zKTtcbiAgICB9IGVsc2Uge1xuICAgICAgcmV0dXJuIHRoaXMuc2lnblJlcXVlc3QodG9TaWduLCBvcHRpb25zKTtcbiAgICB9XG4gIH1cblxuICBwcml2YXRlIGFzeW5jIHNpZ25FdmVudChcbiAgICB7IGhlYWRlcnMsIHBheWxvYWQgfTogRm9ybWF0dGVkRXZlbnQsXG4gICAgeyBzaWduaW5nRGF0ZSA9IG5ldyBEYXRlKCksIHByaW9yU2lnbmF0dXJlLCBzaWduaW5nUmVnaW9uLCBzaWduaW5nU2VydmljZSB9OiBFdmVudFNpZ25pbmdBcmd1bWVudHNcbiAgKTogUHJvbWlzZTxzdHJpbmc+IHtcbiAgICBjb25zdCByZWdpb24gPSBzaWduaW5nUmVnaW9uID8/IChhd2FpdCB0aGlzLnJlZ2lvblByb3ZpZGVyKCkpO1xuICAgIGNvbnN0IHsgc2hvcnREYXRlLCBsb25nRGF0ZSB9ID0gZm9ybWF0RGF0ZShzaWduaW5nRGF0ZSk7XG4gICAgY29uc3Qgc2NvcGUgPSBjcmVhdGVTY29wZShzaG9ydERhdGUsIHJlZ2lvbiwgc2lnbmluZ1NlcnZpY2UgPz8gdGhpcy5zZXJ2aWNlKTtcbiAgICBjb25zdCBoYXNoZWRQYXlsb2FkID0gYXdhaXQgZ2V0UGF5bG9hZEhhc2goeyBoZWFkZXJzOiB7fSwgYm9keTogcGF5bG9hZCB9IGFzIGFueSwgdGhpcy5zaGEyNTYpO1xuICAgIGNvbnN0IGhhc2ggPSBuZXcgdGhpcy5zaGEyNTYoKTtcbiAgICBoYXNoLnVwZGF0ZShoZWFkZXJzKTtcbiAgICBjb25zdCBoYXNoZWRIZWFkZXJzID0gdG9IZXgoYXdhaXQgaGFzaC5kaWdlc3QoKSk7XG4gICAgY29uc3Qgc3RyaW5nVG9TaWduID0gW1xuICAgICAgRVZFTlRfQUxHT1JJVEhNX0lERU5USUZJRVIsXG4gICAgICBsb25nRGF0ZSxcbiAgICAgIHNjb3BlLFxuICAgICAgcHJpb3JTaWduYXR1cmUsXG4gICAgICBoYXNoZWRIZWFkZXJzLFxuICAgICAgaGFzaGVkUGF5bG9hZCxcbiAgICBdLmpvaW4oXCJcXG5cIik7XG4gICAgcmV0dXJuIHRoaXMuc2lnblN0cmluZyhzdHJpbmdUb1NpZ24sIHsgc2lnbmluZ0RhdGUsIHNpZ25pbmdSZWdpb246IHJlZ2lvbiwgc2lnbmluZ1NlcnZpY2UgfSk7XG4gIH1cblxuICBwcml2YXRlIGFzeW5jIHNpZ25TdHJpbmcoXG4gICAgc3RyaW5nVG9TaWduOiBzdHJpbmcsXG4gICAgeyBzaWduaW5nRGF0ZSA9IG5ldyBEYXRlKCksIHNpZ25pbmdSZWdpb24sIHNpZ25pbmdTZXJ2aWNlIH06IFNpZ25pbmdBcmd1bWVudHMgPSB7fVxuICApOiBQcm9taXNlPHN0cmluZz4ge1xuICAgIGNvbnN0IGNyZWRlbnRpYWxzID0gYXdhaXQgdGhpcy5jcmVkZW50aWFsUHJvdmlkZXIoKTtcbiAgICBjb25zdCByZWdpb24gPSBzaWduaW5nUmVnaW9uID8/IChhd2FpdCB0aGlzLnJlZ2lvblByb3ZpZGVyKCkpO1xuICAgIGNvbnN0IHsgc2hvcnREYXRlIH0gPSBmb3JtYXREYXRlKHNpZ25pbmdEYXRlKTtcblxuICAgIGNvbnN0IGhhc2ggPSBuZXcgdGhpcy5zaGEyNTYoYXdhaXQgdGhpcy5nZXRTaWduaW5nS2V5KGNyZWRlbnRpYWxzLCByZWdpb24sIHNob3J0RGF0ZSwgc2lnbmluZ1NlcnZpY2UpKTtcbiAgICBoYXNoLnVwZGF0ZShzdHJpbmdUb1NpZ24pO1xuICAgIHJldHVybiB0b0hleChhd2FpdCBoYXNoLmRpZ2VzdCgpKTtcbiAgfVxuXG4gIHByaXZhdGUgYXN5bmMgc2lnblJlcXVlc3QoXG4gICAgcmVxdWVzdFRvU2lnbjogSHR0cFJlcXVlc3QsXG4gICAge1xuICAgICAgc2lnbmluZ0RhdGUgPSBuZXcgRGF0ZSgpLFxuICAgICAgc2lnbmFibGVIZWFkZXJzLFxuICAgICAgdW5zaWduYWJsZUhlYWRlcnMsXG4gICAgICBzaWduaW5nUmVnaW9uLFxuICAgICAgc2lnbmluZ1NlcnZpY2UsXG4gICAgfTogUmVxdWVzdFNpZ25pbmdBcmd1bWVudHMgPSB7fVxuICApOiBQcm9taXNlPEh0dHBSZXF1ZXN0PiB7XG4gICAgY29uc3QgY3JlZGVudGlhbHMgPSBhd2FpdCB0aGlzLmNyZWRlbnRpYWxQcm92aWRlcigpO1xuICAgIGNvbnN0IHJlZ2lvbiA9IHNpZ25pbmdSZWdpb24gPz8gKGF3YWl0IHRoaXMucmVnaW9uUHJvdmlkZXIoKSk7XG4gICAgY29uc3QgcmVxdWVzdCA9IHByZXBhcmVSZXF1ZXN0KHJlcXVlc3RUb1NpZ24pO1xuICAgIGNvbnN0IHsgbG9uZ0RhdGUsIHNob3J0RGF0ZSB9ID0gZm9ybWF0RGF0ZShzaWduaW5nRGF0ZSk7XG4gICAgY29uc3Qgc2NvcGUgPSBjcmVhdGVTY29wZShzaG9ydERhdGUsIHJlZ2lvbiwgc2lnbmluZ1NlcnZpY2UgPz8gdGhpcy5zZXJ2aWNlKTtcblxuICAgIHJlcXVlc3QuaGVhZGVyc1tBTVpfREFURV9IRUFERVJdID0gbG9uZ0RhdGU7XG4gICAgaWYgKGNyZWRlbnRpYWxzLnNlc3Npb25Ub2tlbikge1xuICAgICAgcmVxdWVzdC5oZWFkZXJzW1RPS0VOX0hFQURFUl0gPSBjcmVkZW50aWFscy5zZXNzaW9uVG9rZW47XG4gICAgfVxuXG4gICAgY29uc3QgcGF5bG9hZEhhc2ggPSBhd2FpdCBnZXRQYXlsb2FkSGFzaChyZXF1ZXN0LCB0aGlzLnNoYTI1Nik7XG4gICAgaWYgKCFoYXNIZWFkZXIoU0hBMjU2X0hFQURFUiwgcmVxdWVzdC5oZWFkZXJzKSAmJiB0aGlzLmFwcGx5Q2hlY2tzdW0pIHtcbiAgICAgIHJlcXVlc3QuaGVhZGVyc1tTSEEyNTZfSEVBREVSXSA9IHBheWxvYWRIYXNoO1xuICAgIH1cblxuICAgIGNvbnN0IGNhbm9uaWNhbEhlYWRlcnMgPSBnZXRDYW5vbmljYWxIZWFkZXJzKHJlcXVlc3QsIHVuc2lnbmFibGVIZWFkZXJzLCBzaWduYWJsZUhlYWRlcnMpO1xuICAgIGNvbnN0IHNpZ25hdHVyZSA9IGF3YWl0IHRoaXMuZ2V0U2lnbmF0dXJlKFxuICAgICAgbG9uZ0RhdGUsXG4gICAgICBzY29wZSxcbiAgICAgIHRoaXMuZ2V0U2lnbmluZ0tleShjcmVkZW50aWFscywgcmVnaW9uLCBzaG9ydERhdGUsIHNpZ25pbmdTZXJ2aWNlKSxcbiAgICAgIHRoaXMuY3JlYXRlQ2Fub25pY2FsUmVxdWVzdChyZXF1ZXN0LCBjYW5vbmljYWxIZWFkZXJzLCBwYXlsb2FkSGFzaClcbiAgICApO1xuXG4gICAgcmVxdWVzdC5oZWFkZXJzW0FVVEhfSEVBREVSXSA9XG4gICAgICBgJHtBTEdPUklUSE1fSURFTlRJRklFUn0gYCArXG4gICAgICBgQ3JlZGVudGlhbD0ke2NyZWRlbnRpYWxzLmFjY2Vzc0tleUlkfS8ke3Njb3BlfSwgYCArXG4gICAgICBgU2lnbmVkSGVhZGVycz0ke2dldENhbm9uaWNhbEhlYWRlckxpc3QoY2Fub25pY2FsSGVhZGVycyl9LCBgICtcbiAgICAgIGBTaWduYXR1cmU9JHtzaWduYXR1cmV9YDtcblxuICAgIHJldHVybiByZXF1ZXN0O1xuICB9XG5cbiAgcHJpdmF0ZSBjcmVhdGVDYW5vbmljYWxSZXF1ZXN0KHJlcXVlc3Q6IEh0dHBSZXF1ZXN0LCBjYW5vbmljYWxIZWFkZXJzOiBIZWFkZXJCYWcsIHBheWxvYWRIYXNoOiBzdHJpbmcpOiBzdHJpbmcge1xuICAgIGNvbnN0IHNvcnRlZEhlYWRlcnMgPSBPYmplY3Qua2V5cyhjYW5vbmljYWxIZWFkZXJzKS5zb3J0KCk7XG4gICAgcmV0dXJuIGAke3JlcXVlc3QubWV0aG9kfVxuJHt0aGlzLmdldENhbm9uaWNhbFBhdGgocmVxdWVzdCl9XG4ke2dldENhbm9uaWNhbFF1ZXJ5KHJlcXVlc3QpfVxuJHtzb3J0ZWRIZWFkZXJzLm1hcCgobmFtZSkgPT4gYCR7bmFtZX06JHtjYW5vbmljYWxIZWFkZXJzW25hbWVdfWApLmpvaW4oXCJcXG5cIil9XG5cbiR7c29ydGVkSGVhZGVycy5qb2luKFwiO1wiKX1cbiR7cGF5bG9hZEhhc2h9YDtcbiAgfVxuXG4gIHByaXZhdGUgYXN5bmMgY3JlYXRlU3RyaW5nVG9TaWduKFxuICAgIGxvbmdEYXRlOiBzdHJpbmcsXG4gICAgY3JlZGVudGlhbFNjb3BlOiBzdHJpbmcsXG4gICAgY2Fub25pY2FsUmVxdWVzdDogc3RyaW5nXG4gICk6IFByb21pc2U8c3RyaW5nPiB7XG4gICAgY29uc3QgaGFzaCA9IG5ldyB0aGlzLnNoYTI1NigpO1xuICAgIGhhc2gudXBkYXRlKGNhbm9uaWNhbFJlcXVlc3QpO1xuICAgIGNvbnN0IGhhc2hlZFJlcXVlc3QgPSBhd2FpdCBoYXNoLmRpZ2VzdCgpO1xuXG4gICAgcmV0dXJuIGAke0FMR09SSVRITV9JREVOVElGSUVSfVxuJHtsb25nRGF0ZX1cbiR7Y3JlZGVudGlhbFNjb3BlfVxuJHt0b0hleChoYXNoZWRSZXF1ZXN0KX1gO1xuICB9XG5cbiAgcHJpdmF0ZSBnZXRDYW5vbmljYWxQYXRoKHsgcGF0aCB9OiBIdHRwUmVxdWVzdCk6IHN0cmluZyB7XG4gICAgaWYgKHRoaXMudXJpRXNjYXBlUGF0aCkge1xuICAgICAgY29uc3QgZG91YmxlRW5jb2RlZCA9IGVuY29kZVVSSUNvbXBvbmVudChwYXRoLnJlcGxhY2UoL15cXC8vLCBcIlwiKSk7XG4gICAgICByZXR1cm4gYC8ke2RvdWJsZUVuY29kZWQucmVwbGFjZSgvJTJGL2csIFwiL1wiKX1gO1xuICAgIH1cblxuICAgIHJldHVybiBwYXRoO1xuICB9XG5cbiAgcHJpdmF0ZSBhc3luYyBnZXRTaWduYXR1cmUoXG4gICAgbG9uZ0RhdGU6IHN0cmluZyxcbiAgICBjcmVkZW50aWFsU2NvcGU6IHN0cmluZyxcbiAgICBrZXlQcm9taXNlOiBQcm9taXNlPFVpbnQ4QXJyYXk+LFxuICAgIGNhbm9uaWNhbFJlcXVlc3Q6IHN0cmluZ1xuICApOiBQcm9taXNlPHN0cmluZz4ge1xuICAgIGNvbnN0IHN0cmluZ1RvU2lnbiA9IGF3YWl0IHRoaXMuY3JlYXRlU3RyaW5nVG9TaWduKGxvbmdEYXRlLCBjcmVkZW50aWFsU2NvcGUsIGNhbm9uaWNhbFJlcXVlc3QpO1xuXG4gICAgY29uc3QgaGFzaCA9IG5ldyB0aGlzLnNoYTI1Nihhd2FpdCBrZXlQcm9taXNlKTtcbiAgICBoYXNoLnVwZGF0ZShzdHJpbmdUb1NpZ24pO1xuICAgIHJldHVybiB0b0hleChhd2FpdCBoYXNoLmRpZ2VzdCgpKTtcbiAgfVxuXG4gIHByaXZhdGUgZ2V0U2lnbmluZ0tleShcbiAgICBjcmVkZW50aWFsczogQ3JlZGVudGlhbHMsXG4gICAgcmVnaW9uOiBzdHJpbmcsXG4gICAgc2hvcnREYXRlOiBzdHJpbmcsXG4gICAgc2VydmljZT86IHN0cmluZ1xuICApOiBQcm9taXNlPFVpbnQ4QXJyYXk+IHtcbiAgICByZXR1cm4gZ2V0U2lnbmluZ0tleSh0aGlzLnNoYTI1NiwgY3JlZGVudGlhbHMsIHNob3J0RGF0ZSwgcmVnaW9uLCBzZXJ2aWNlIHx8IHRoaXMuc2VydmljZSk7XG4gIH1cbn1cblxuY29uc3QgZm9ybWF0RGF0ZSA9IChub3c6IERhdGVJbnB1dCk6IHsgbG9uZ0RhdGU6IHN0cmluZzsgc2hvcnREYXRlOiBzdHJpbmcgfSA9PiB7XG4gIGNvbnN0IGxvbmdEYXRlID0gaXNvODYwMShub3cpLnJlcGxhY2UoL1tcXC06XS9nLCBcIlwiKTtcbiAgcmV0dXJuIHtcbiAgICBsb25nRGF0ZSxcbiAgICBzaG9ydERhdGU6IGxvbmdEYXRlLnN1YnN0cigwLCA4KSxcbiAgfTtcbn07XG5cbmNvbnN0IGdldENhbm9uaWNhbEhlYWRlckxpc3QgPSAoaGVhZGVyczogb2JqZWN0KTogc3RyaW5nID0+IE9iamVjdC5rZXlzKGhlYWRlcnMpLnNvcnQoKS5qb2luKFwiO1wiKTtcblxuY29uc3Qgbm9ybWFsaXplUmVnaW9uUHJvdmlkZXIgPSAocmVnaW9uOiBzdHJpbmcgfCBQcm92aWRlcjxzdHJpbmc+KTogUHJvdmlkZXI8c3RyaW5nPiA9PiB7XG4gIGlmICh0eXBlb2YgcmVnaW9uID09PSBcInN0cmluZ1wiKSB7XG4gICAgY29uc3QgcHJvbWlzaWZpZWQgPSBQcm9taXNlLnJlc29sdmUocmVnaW9uKTtcbiAgICByZXR1cm4gKCkgPT4gcHJvbWlzaWZpZWQ7XG4gIH0gZWxzZSB7XG4gICAgcmV0dXJuIHJlZ2lvbjtcbiAgfVxufTtcblxuY29uc3Qgbm9ybWFsaXplQ3JlZGVudGlhbHNQcm92aWRlciA9IChjcmVkZW50aWFsczogQ3JlZGVudGlhbHMgfCBQcm92aWRlcjxDcmVkZW50aWFscz4pOiBQcm92aWRlcjxDcmVkZW50aWFscz4gPT4ge1xuICBpZiAodHlwZW9mIGNyZWRlbnRpYWxzID09PSBcIm9iamVjdFwiKSB7XG4gICAgY29uc3QgcHJvbWlzaWZpZWQgPSBQcm9taXNlLnJlc29sdmUoY3JlZGVudGlhbHMpO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfSBlbHNlIHtcbiAgICByZXR1cm4gY3JlZGVudGlhbHM7XG4gIH1cbn07XG4iXX0=
 
 /***/ }),
 
@@ -19464,11 +22438,12 @@ const cloneRequest_1 = __webpack_require__(4566);
 /**
  * @internal
  */
-function moveHeadersToQuery(request) {
+function moveHeadersToQuery(request, options = {}) {
+    var _a;
     const { headers, query = {} } = typeof request.clone === "function" ? request.clone() : cloneRequest_1.cloneRequest(request);
     for (const name of Object.keys(headers)) {
         const lname = name.toLowerCase();
-        if (lname.substr(0, 6) === "x-amz-") {
+        if (lname.substr(0, 6) === "x-amz-" && !((_a = options.unhoistableHeaders) === null || _a === void 0 ? void 0 : _a.has(lname))) {
             query[name] = headers[name];
             delete headers[name];
         }
@@ -19480,7 +22455,7 @@ function moveHeadersToQuery(request) {
     };
 }
 exports.moveHeadersToQuery = moveHeadersToQuery;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibW92ZUhlYWRlcnNUb1F1ZXJ5LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL21vdmVIZWFkZXJzVG9RdWVyeS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFFQSxpREFBOEM7QUFFOUM7O0dBRUc7QUFDSCxTQUFnQixrQkFBa0IsQ0FBQyxPQUFvQjtJQUNyRCxNQUFNLEVBQUUsT0FBTyxFQUFFLEtBQUssR0FBRyxFQUF1QixFQUFFLEdBQ2hELE9BQVEsT0FBZSxDQUFDLEtBQUssS0FBSyxVQUFVLENBQUMsQ0FBQyxDQUFFLE9BQWUsQ0FBQyxLQUFLLEVBQUUsQ0FBQyxDQUFDLENBQUMsMkJBQVksQ0FBQyxPQUFPLENBQUMsQ0FBQztJQUNsRyxLQUFLLE1BQU0sSUFBSSxJQUFJLE1BQU0sQ0FBQyxJQUFJLENBQUMsT0FBTyxDQUFDLEVBQUU7UUFDdkMsTUFBTSxLQUFLLEdBQUcsSUFBSSxDQUFDLFdBQVcsRUFBRSxDQUFDO1FBQ2pDLElBQUksS0FBSyxDQUFDLE1BQU0sQ0FBQyxDQUFDLEVBQUUsQ0FBQyxDQUFDLEtBQUssUUFBUSxFQUFFO1lBQ25DLEtBQUssQ0FBQyxJQUFJLENBQUMsR0FBRyxPQUFPLENBQUMsSUFBSSxDQUFDLENBQUM7WUFDNUIsT0FBTyxPQUFPLENBQUMsSUFBSSxDQUFDLENBQUM7U0FDdEI7S0FDRjtJQUVELE9BQU87UUFDTCxHQUFHLE9BQU87UUFDVixPQUFPO1FBQ1AsS0FBSztLQUNOLENBQUM7QUFDSixDQUFDO0FBaEJELGdEQWdCQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEh0dHBSZXF1ZXN0LCBRdWVyeVBhcmFtZXRlckJhZyB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5pbXBvcnQgeyBjbG9uZVJlcXVlc3QgfSBmcm9tIFwiLi9jbG9uZVJlcXVlc3RcIjtcblxuLyoqXG4gKiBAaW50ZXJuYWxcbiAqL1xuZXhwb3J0IGZ1bmN0aW9uIG1vdmVIZWFkZXJzVG9RdWVyeShyZXF1ZXN0OiBIdHRwUmVxdWVzdCk6IEh0dHBSZXF1ZXN0ICYgeyBxdWVyeTogUXVlcnlQYXJhbWV0ZXJCYWcgfSB7XG4gIGNvbnN0IHsgaGVhZGVycywgcXVlcnkgPSB7fSBhcyBRdWVyeVBhcmFtZXRlckJhZyB9ID1cbiAgICB0eXBlb2YgKHJlcXVlc3QgYXMgYW55KS5jbG9uZSA9PT0gXCJmdW5jdGlvblwiID8gKHJlcXVlc3QgYXMgYW55KS5jbG9uZSgpIDogY2xvbmVSZXF1ZXN0KHJlcXVlc3QpO1xuICBmb3IgKGNvbnN0IG5hbWUgb2YgT2JqZWN0LmtleXMoaGVhZGVycykpIHtcbiAgICBjb25zdCBsbmFtZSA9IG5hbWUudG9Mb3dlckNhc2UoKTtcbiAgICBpZiAobG5hbWUuc3Vic3RyKDAsIDYpID09PSBcIngtYW16LVwiKSB7XG4gICAgICBxdWVyeVtuYW1lXSA9IGhlYWRlcnNbbmFtZV07XG4gICAgICBkZWxldGUgaGVhZGVyc1tuYW1lXTtcbiAgICB9XG4gIH1cblxuICByZXR1cm4ge1xuICAgIC4uLnJlcXVlc3QsXG4gICAgaGVhZGVycyxcbiAgICBxdWVyeSxcbiAgfTtcbn1cbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibW92ZUhlYWRlcnNUb1F1ZXJ5LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL21vdmVIZWFkZXJzVG9RdWVyeS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFFQSxpREFBOEM7QUFFOUM7O0dBRUc7QUFDSCxTQUFnQixrQkFBa0IsQ0FDaEMsT0FBb0IsRUFDcEIsVUFBZ0QsRUFBRTs7SUFFbEQsTUFBTSxFQUFFLE9BQU8sRUFBRSxLQUFLLEdBQUcsRUFBdUIsRUFBRSxHQUNoRCxPQUFRLE9BQWUsQ0FBQyxLQUFLLEtBQUssVUFBVSxDQUFDLENBQUMsQ0FBRSxPQUFlLENBQUMsS0FBSyxFQUFFLENBQUMsQ0FBQyxDQUFDLDJCQUFZLENBQUMsT0FBTyxDQUFDLENBQUM7SUFDbEcsS0FBSyxNQUFNLElBQUksSUFBSSxNQUFNLENBQUMsSUFBSSxDQUFDLE9BQU8sQ0FBQyxFQUFFO1FBQ3ZDLE1BQU0sS0FBSyxHQUFHLElBQUksQ0FBQyxXQUFXLEVBQUUsQ0FBQztRQUNqQyxJQUFJLEtBQUssQ0FBQyxNQUFNLENBQUMsQ0FBQyxFQUFFLENBQUMsQ0FBQyxLQUFLLFFBQVEsSUFBSSxRQUFDLE9BQU8sQ0FBQyxrQkFBa0IsMENBQUUsR0FBRyxDQUFDLEtBQUssRUFBQyxFQUFFO1lBQzlFLEtBQUssQ0FBQyxJQUFJLENBQUMsR0FBRyxPQUFPLENBQUMsSUFBSSxDQUFDLENBQUM7WUFDNUIsT0FBTyxPQUFPLENBQUMsSUFBSSxDQUFDLENBQUM7U0FDdEI7S0FDRjtJQUVELE9BQU87UUFDTCxHQUFHLE9BQU87UUFDVixPQUFPO1FBQ1AsS0FBSztLQUNOLENBQUM7QUFDSixDQUFDO0FBbkJELGdEQW1CQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEh0dHBSZXF1ZXN0LCBRdWVyeVBhcmFtZXRlckJhZyB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5pbXBvcnQgeyBjbG9uZVJlcXVlc3QgfSBmcm9tIFwiLi9jbG9uZVJlcXVlc3RcIjtcblxuLyoqXG4gKiBAaW50ZXJuYWxcbiAqL1xuZXhwb3J0IGZ1bmN0aW9uIG1vdmVIZWFkZXJzVG9RdWVyeShcbiAgcmVxdWVzdDogSHR0cFJlcXVlc3QsXG4gIG9wdGlvbnM6IHsgdW5ob2lzdGFibGVIZWFkZXJzPzogU2V0PHN0cmluZz4gfSA9IHt9XG4pOiBIdHRwUmVxdWVzdCAmIHsgcXVlcnk6IFF1ZXJ5UGFyYW1ldGVyQmFnIH0ge1xuICBjb25zdCB7IGhlYWRlcnMsIHF1ZXJ5ID0ge30gYXMgUXVlcnlQYXJhbWV0ZXJCYWcgfSA9XG4gICAgdHlwZW9mIChyZXF1ZXN0IGFzIGFueSkuY2xvbmUgPT09IFwiZnVuY3Rpb25cIiA/IChyZXF1ZXN0IGFzIGFueSkuY2xvbmUoKSA6IGNsb25lUmVxdWVzdChyZXF1ZXN0KTtcbiAgZm9yIChjb25zdCBuYW1lIG9mIE9iamVjdC5rZXlzKGhlYWRlcnMpKSB7XG4gICAgY29uc3QgbG5hbWUgPSBuYW1lLnRvTG93ZXJDYXNlKCk7XG4gICAgaWYgKGxuYW1lLnN1YnN0cigwLCA2KSA9PT0gXCJ4LWFtei1cIiAmJiAhb3B0aW9ucy51bmhvaXN0YWJsZUhlYWRlcnM/LmhhcyhsbmFtZSkpIHtcbiAgICAgIHF1ZXJ5W25hbWVdID0gaGVhZGVyc1tuYW1lXTtcbiAgICAgIGRlbGV0ZSBoZWFkZXJzW25hbWVdO1xuICAgIH1cbiAgfVxuXG4gIHJldHVybiB7XG4gICAgLi4ucmVxdWVzdCxcbiAgICBoZWFkZXJzLFxuICAgIHF1ZXJ5LFxuICB9O1xufVxuIl19
 
 /***/ }),
 
@@ -19957,8 +22932,9 @@ exports.getArrayIfSingleItem = void 0;
  * The XML parser will set one K:V for a member that could
  * return multiple entries but only has one.
  */
-exports.getArrayIfSingleItem = (mayBeArray) => Array.isArray(mayBeArray) ? mayBeArray : [mayBeArray];
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZ2V0LWFycmF5LWlmLXNpbmdsZS1pdGVtLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2dldC1hcnJheS1pZi1zaW5nbGUtaXRlbS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQTs7O0dBR0c7QUFDVSxRQUFBLG9CQUFvQixHQUFHLENBQUksVUFBYSxFQUFXLEVBQUUsQ0FDaEUsS0FBSyxDQUFDLE9BQU8sQ0FBQyxVQUFVLENBQUMsQ0FBQyxDQUFDLENBQUMsVUFBVSxDQUFDLENBQUMsQ0FBQyxDQUFDLFVBQVUsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBUaGUgWE1MIHBhcnNlciB3aWxsIHNldCBvbmUgSzpWIGZvciBhIG1lbWJlciB0aGF0IGNvdWxkXG4gKiByZXR1cm4gbXVsdGlwbGUgZW50cmllcyBidXQgb25seSBoYXMgb25lLlxuICovXG5leHBvcnQgY29uc3QgZ2V0QXJyYXlJZlNpbmdsZUl0ZW0gPSA8VD4obWF5QmVBcnJheTogVCk6IFQgfCBUW10gPT5cbiAgQXJyYXkuaXNBcnJheShtYXlCZUFycmF5KSA/IG1heUJlQXJyYXkgOiBbbWF5QmVBcnJheV07XG4iXX0=
+const getArrayIfSingleItem = (mayBeArray) => Array.isArray(mayBeArray) ? mayBeArray : [mayBeArray];
+exports.getArrayIfSingleItem = getArrayIfSingleItem;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZ2V0LWFycmF5LWlmLXNpbmdsZS1pdGVtLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2dldC1hcnJheS1pZi1zaW5nbGUtaXRlbS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQTs7O0dBR0c7QUFDSSxNQUFNLG9CQUFvQixHQUFHLENBQUksVUFBYSxFQUFXLEVBQUUsQ0FDaEUsS0FBSyxDQUFDLE9BQU8sQ0FBQyxVQUFVLENBQUMsQ0FBQyxDQUFDLENBQUMsVUFBVSxDQUFDLENBQUMsQ0FBQyxDQUFDLFVBQVUsQ0FBQyxDQUFDO0FBRDNDLFFBQUEsb0JBQW9CLHdCQUN1QiIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogVGhlIFhNTCBwYXJzZXIgd2lsbCBzZXQgb25lIEs6ViBmb3IgYSBtZW1iZXIgdGhhdCBjb3VsZFxuICogcmV0dXJuIG11bHRpcGxlIGVudHJpZXMgYnV0IG9ubHkgaGFzIG9uZS5cbiAqL1xuZXhwb3J0IGNvbnN0IGdldEFycmF5SWZTaW5nbGVJdGVtID0gPFQ+KG1heUJlQXJyYXk6IFQpOiBUIHwgVFtdID0+XG4gIEFycmF5LmlzQXJyYXkobWF5QmVBcnJheSkgPyBtYXlCZUFycmF5IDogW21heUJlQXJyYXldO1xuIl19
 
 /***/ }),
 
@@ -19973,7 +22949,7 @@ exports.getValueFromTextNode = void 0;
  * Recursively parses object and populates value is node from
  * "#text" key if it's available
  */
-exports.getValueFromTextNode = (obj) => {
+const getValueFromTextNode = (obj) => {
     const textNodeName = "#text";
     for (const key in obj) {
         if (obj.hasOwnProperty(key) && obj[key][textNodeName] !== undefined) {
@@ -19985,7 +22961,8 @@ exports.getValueFromTextNode = (obj) => {
     }
     return obj;
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZ2V0LXZhbHVlLWZyb20tdGV4dC1ub2RlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2dldC12YWx1ZS1mcm9tLXRleHQtbm9kZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQTs7O0dBR0c7QUFDVSxRQUFBLG9CQUFvQixHQUFHLENBQUMsR0FBUSxFQUFFLEVBQUU7SUFDL0MsTUFBTSxZQUFZLEdBQUcsT0FBTyxDQUFDO0lBQzdCLEtBQUssTUFBTSxHQUFHLElBQUksR0FBRyxFQUFFO1FBQ3JCLElBQUksR0FBRyxDQUFDLGNBQWMsQ0FBQyxHQUFHLENBQUMsSUFBSSxHQUFHLENBQUMsR0FBRyxDQUFDLENBQUMsWUFBWSxDQUFDLEtBQUssU0FBUyxFQUFFO1lBQ25FLEdBQUcsQ0FBQyxHQUFHLENBQUMsR0FBRyxHQUFHLENBQUMsR0FBRyxDQUFDLENBQUMsWUFBWSxDQUFDLENBQUM7U0FDbkM7YUFBTSxJQUFJLE9BQU8sR0FBRyxDQUFDLEdBQUcsQ0FBQyxLQUFLLFFBQVEsSUFBSSxHQUFHLENBQUMsR0FBRyxDQUFDLEtBQUssSUFBSSxFQUFFO1lBQzVELEdBQUcsQ0FBQyxHQUFHLENBQUMsR0FBRyw0QkFBb0IsQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQztTQUMzQztLQUNGO0lBQ0QsT0FBTyxHQUFHLENBQUM7QUFDYixDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIFJlY3Vyc2l2ZWx5IHBhcnNlcyBvYmplY3QgYW5kIHBvcHVsYXRlcyB2YWx1ZSBpcyBub2RlIGZyb21cbiAqIFwiI3RleHRcIiBrZXkgaWYgaXQncyBhdmFpbGFibGVcbiAqL1xuZXhwb3J0IGNvbnN0IGdldFZhbHVlRnJvbVRleHROb2RlID0gKG9iajogYW55KSA9PiB7XG4gIGNvbnN0IHRleHROb2RlTmFtZSA9IFwiI3RleHRcIjtcbiAgZm9yIChjb25zdCBrZXkgaW4gb2JqKSB7XG4gICAgaWYgKG9iai5oYXNPd25Qcm9wZXJ0eShrZXkpICYmIG9ialtrZXldW3RleHROb2RlTmFtZV0gIT09IHVuZGVmaW5lZCkge1xuICAgICAgb2JqW2tleV0gPSBvYmpba2V5XVt0ZXh0Tm9kZU5hbWVdO1xuICAgIH0gZWxzZSBpZiAodHlwZW9mIG9ialtrZXldID09PSBcIm9iamVjdFwiICYmIG9ialtrZXldICE9PSBudWxsKSB7XG4gICAgICBvYmpba2V5XSA9IGdldFZhbHVlRnJvbVRleHROb2RlKG9ialtrZXldKTtcbiAgICB9XG4gIH1cbiAgcmV0dXJuIG9iajtcbn07XG4iXX0=
+exports.getValueFromTextNode = getValueFromTextNode;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZ2V0LXZhbHVlLWZyb20tdGV4dC1ub2RlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2dldC12YWx1ZS1mcm9tLXRleHQtbm9kZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQTs7O0dBR0c7QUFDSSxNQUFNLG9CQUFvQixHQUFHLENBQUMsR0FBUSxFQUFFLEVBQUU7SUFDL0MsTUFBTSxZQUFZLEdBQUcsT0FBTyxDQUFDO0lBQzdCLEtBQUssTUFBTSxHQUFHLElBQUksR0FBRyxFQUFFO1FBQ3JCLElBQUksR0FBRyxDQUFDLGNBQWMsQ0FBQyxHQUFHLENBQUMsSUFBSSxHQUFHLENBQUMsR0FBRyxDQUFDLENBQUMsWUFBWSxDQUFDLEtBQUssU0FBUyxFQUFFO1lBQ25FLEdBQUcsQ0FBQyxHQUFHLENBQUMsR0FBRyxHQUFHLENBQUMsR0FBRyxDQUFDLENBQUMsWUFBWSxDQUFDLENBQUM7U0FDbkM7YUFBTSxJQUFJLE9BQU8sR0FBRyxDQUFDLEdBQUcsQ0FBQyxLQUFLLFFBQVEsSUFBSSxHQUFHLENBQUMsR0FBRyxDQUFDLEtBQUssSUFBSSxFQUFFO1lBQzVELEdBQUcsQ0FBQyxHQUFHLENBQUMsR0FBRyw0QkFBb0IsQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQztTQUMzQztLQUNGO0lBQ0QsT0FBTyxHQUFHLENBQUM7QUFDYixDQUFDLENBQUM7QUFWVyxRQUFBLG9CQUFvQix3QkFVL0IiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIFJlY3Vyc2l2ZWx5IHBhcnNlcyBvYmplY3QgYW5kIHBvcHVsYXRlcyB2YWx1ZSBpcyBub2RlIGZyb21cbiAqIFwiI3RleHRcIiBrZXkgaWYgaXQncyBhdmFpbGFibGVcbiAqL1xuZXhwb3J0IGNvbnN0IGdldFZhbHVlRnJvbVRleHROb2RlID0gKG9iajogYW55KSA9PiB7XG4gIGNvbnN0IHRleHROb2RlTmFtZSA9IFwiI3RleHRcIjtcbiAgZm9yIChjb25zdCBrZXkgaW4gb2JqKSB7XG4gICAgaWYgKG9iai5oYXNPd25Qcm9wZXJ0eShrZXkpICYmIG9ialtrZXldW3RleHROb2RlTmFtZV0gIT09IHVuZGVmaW5lZCkge1xuICAgICAgb2JqW2tleV0gPSBvYmpba2V5XVt0ZXh0Tm9kZU5hbWVdO1xuICAgIH0gZWxzZSBpZiAodHlwZW9mIG9ialtrZXldID09PSBcIm9iamVjdFwiICYmIG9ialtrZXldICE9PSBudWxsKSB7XG4gICAgICBvYmpba2V5XSA9IGdldFZhbHVlRnJvbVRleHROb2RlKG9ialtrZXldKTtcbiAgICB9XG4gIH1cbiAgcmV0dXJuIG9iajtcbn07XG4iXX0=
 
 /***/ }),
 
@@ -20030,7 +23007,7 @@ exports.LazyJsonString = exports.StringWrapper = void 0;
  * class including its prototype chain. So we can extend from here.
  */
 // @ts-ignore StringWrapper implementation is not a simple constructor
-exports.StringWrapper = function () {
+const StringWrapper = function () {
     //@ts-ignore 'this' cannot be assigned to any, but Object.getPrototypeOf accepts any
     const Class = Object.getPrototypeOf(this).constructor;
     const Constructor = Function.bind.apply(String, [null, ...arguments]);
@@ -20039,6 +23016,7 @@ exports.StringWrapper = function () {
     Object.setPrototypeOf(instance, Class.prototype);
     return instance;
 };
+exports.StringWrapper = StringWrapper;
 exports.StringWrapper.prototype = Object.create(String.prototype, {
     constructor: {
         value: exports.StringWrapper,
@@ -20066,7 +23044,7 @@ class LazyJsonString extends exports.StringWrapper {
     }
 }
 exports.LazyJsonString = LazyJsonString;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibGF6eS1qc29uLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2xhenktanNvbi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUE7O0dBRUc7OztBQU1IOzs7OztHQUtHO0FBQ0gsc0VBQXNFO0FBQ3pELFFBQUEsYUFBYSxHQUFrQjtJQUMxQyxvRkFBb0Y7SUFDcEYsTUFBTSxLQUFLLEdBQUcsTUFBTSxDQUFDLGNBQWMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxXQUFXLENBQUM7SUFDdEQsTUFBTSxXQUFXLEdBQUcsUUFBUSxDQUFDLElBQUksQ0FBQyxLQUFLLENBQUMsTUFBTSxFQUFFLENBQUMsSUFBVyxFQUFFLEdBQUcsU0FBUyxDQUFDLENBQUMsQ0FBQztJQUM3RSw4RUFBOEU7SUFDOUUsTUFBTSxRQUFRLEdBQUcsSUFBSSxXQUFXLEVBQUUsQ0FBQztJQUNuQyxNQUFNLENBQUMsY0FBYyxDQUFDLFFBQVEsRUFBRSxLQUFLLENBQUMsU0FBUyxDQUFDLENBQUM7SUFDakQsT0FBTyxRQUFrQixDQUFDO0FBQzVCLENBQUMsQ0FBQztBQUNGLHFCQUFhLENBQUMsU0FBUyxHQUFHLE1BQU0sQ0FBQyxNQUFNLENBQUMsTUFBTSxDQUFDLFNBQVMsRUFBRTtJQUN4RCxXQUFXLEVBQUU7UUFDWCxLQUFLLEVBQUUscUJBQWE7UUFDcEIsVUFBVSxFQUFFLEtBQUs7UUFDakIsUUFBUSxFQUFFLElBQUk7UUFDZCxZQUFZLEVBQUUsSUFBSTtLQUNuQjtDQUNGLENBQUMsQ0FBQztBQUNILE1BQU0sQ0FBQyxjQUFjLENBQUMscUJBQWEsRUFBRSxNQUFNLENBQUMsQ0FBQztBQUU3QyxNQUFhLGNBQWUsU0FBUSxxQkFBYTtJQUMvQyxlQUFlO1FBQ2IsT0FBTyxJQUFJLENBQUMsS0FBSyxDQUFDLEtBQUssQ0FBQyxRQUFRLEVBQUUsQ0FBQyxDQUFDO0lBQ3RDLENBQUM7SUFFRCxNQUFNO1FBQ0osT0FBTyxLQUFLLENBQUMsUUFBUSxFQUFFLENBQUM7SUFDMUIsQ0FBQztJQUVELE1BQU0sQ0FBQyxVQUFVLENBQUMsTUFBVztRQUMzQixJQUFJLE1BQU0sWUFBWSxjQUFjLEVBQUU7WUFDcEMsT0FBTyxNQUFNLENBQUM7U0FDZjthQUFNLElBQUksTUFBTSxZQUFZLE1BQU0sSUFBSSxPQUFPLE1BQU0sS0FBSyxRQUFRLEVBQUU7WUFDakUsT0FBTyxJQUFJLGNBQWMsQ0FBQyxNQUFNLENBQUMsQ0FBQztTQUNuQztRQUNELE9BQU8sSUFBSSxjQUFjLENBQUMsSUFBSSxDQUFDLFNBQVMsQ0FBQyxNQUFNLENBQUMsQ0FBQyxDQUFDO0lBQ3BELENBQUM7Q0FDRjtBQWpCRCx3Q0FpQkMiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIExhenkgU3RyaW5nIGhvbGRlciBmb3IgSlNPTiB0eXBlZCBjb250ZW50cy5cbiAqL1xuXG5pbnRlcmZhY2UgU3RyaW5nV3JhcHBlciB7XG4gIG5ldyAoYXJnOiBhbnkpOiBTdHJpbmc7XG59XG5cbi8qKlxuICogQmVjYXVzZSBvZiBodHRwczovL2dpdGh1Yi5jb20vbWljcm9zb2Z0L3RzbGliL2lzc3Vlcy85NSxcbiAqIFRTICdleHRlbmRzJyBzaGltIGRvZXNuJ3Qgc3VwcG9ydCBleHRlbmRpbmcgbmF0aXZlIHR5cGVzIGxpa2UgU3RyaW5nLlxuICogU28gaGVyZSB3ZSBjcmVhdGUgU3RyaW5nV3JhcHBlciB0aGF0IGR1cGxpY2F0ZSBldmVyeXRoaW5nIGZyb20gU3RyaW5nXG4gKiBjbGFzcyBpbmNsdWRpbmcgaXRzIHByb3RvdHlwZSBjaGFpbi4gU28gd2UgY2FuIGV4dGVuZCBmcm9tIGhlcmUuXG4gKi9cbi8vIEB0cy1pZ25vcmUgU3RyaW5nV3JhcHBlciBpbXBsZW1lbnRhdGlvbiBpcyBub3QgYSBzaW1wbGUgY29uc3RydWN0b3JcbmV4cG9ydCBjb25zdCBTdHJpbmdXcmFwcGVyOiBTdHJpbmdXcmFwcGVyID0gZnVuY3Rpb24gKCkge1xuICAvL0B0cy1pZ25vcmUgJ3RoaXMnIGNhbm5vdCBiZSBhc3NpZ25lZCB0byBhbnksIGJ1dCBPYmplY3QuZ2V0UHJvdG90eXBlT2YgYWNjZXB0cyBhbnlcbiAgY29uc3QgQ2xhc3MgPSBPYmplY3QuZ2V0UHJvdG90eXBlT2YodGhpcykuY29uc3RydWN0b3I7XG4gIGNvbnN0IENvbnN0cnVjdG9yID0gRnVuY3Rpb24uYmluZC5hcHBseShTdHJpbmcsIFtudWxsIGFzIGFueSwgLi4uYXJndW1lbnRzXSk7XG4gIC8vQHRzLWlnbm9yZSBDYWxsIHdyYXBwZWQgU3RyaW5nIGNvbnN0cnVjdG9yIGRpcmVjdGx5LCBkb24ndCBib3RoZXIgdHlwaW5nIGl0LlxuICBjb25zdCBpbnN0YW5jZSA9IG5ldyBDb25zdHJ1Y3RvcigpO1xuICBPYmplY3Quc2V0UHJvdG90eXBlT2YoaW5zdGFuY2UsIENsYXNzLnByb3RvdHlwZSk7XG4gIHJldHVybiBpbnN0YW5jZSBhcyBTdHJpbmc7XG59O1xuU3RyaW5nV3JhcHBlci5wcm90b3R5cGUgPSBPYmplY3QuY3JlYXRlKFN0cmluZy5wcm90b3R5cGUsIHtcbiAgY29uc3RydWN0b3I6IHtcbiAgICB2YWx1ZTogU3RyaW5nV3JhcHBlcixcbiAgICBlbnVtZXJhYmxlOiBmYWxzZSxcbiAgICB3cml0YWJsZTogdHJ1ZSxcbiAgICBjb25maWd1cmFibGU6IHRydWUsXG4gIH0sXG59KTtcbk9iamVjdC5zZXRQcm90b3R5cGVPZihTdHJpbmdXcmFwcGVyLCBTdHJpbmcpO1xuXG5leHBvcnQgY2xhc3MgTGF6eUpzb25TdHJpbmcgZXh0ZW5kcyBTdHJpbmdXcmFwcGVyIHtcbiAgZGVzZXJpYWxpemVKU09OKCk6IGFueSB7XG4gICAgcmV0dXJuIEpTT04ucGFyc2Uoc3VwZXIudG9TdHJpbmcoKSk7XG4gIH1cblxuICB0b0pTT04oKTogc3RyaW5nIHtcbiAgICByZXR1cm4gc3VwZXIudG9TdHJpbmcoKTtcbiAgfVxuXG4gIHN0YXRpYyBmcm9tT2JqZWN0KG9iamVjdDogYW55KTogTGF6eUpzb25TdHJpbmcge1xuICAgIGlmIChvYmplY3QgaW5zdGFuY2VvZiBMYXp5SnNvblN0cmluZykge1xuICAgICAgcmV0dXJuIG9iamVjdDtcbiAgICB9IGVsc2UgaWYgKG9iamVjdCBpbnN0YW5jZW9mIFN0cmluZyB8fCB0eXBlb2Ygb2JqZWN0ID09PSBcInN0cmluZ1wiKSB7XG4gICAgICByZXR1cm4gbmV3IExhenlKc29uU3RyaW5nKG9iamVjdCk7XG4gICAgfVxuICAgIHJldHVybiBuZXcgTGF6eUpzb25TdHJpbmcoSlNPTi5zdHJpbmdpZnkob2JqZWN0KSk7XG4gIH1cbn1cbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibGF6eS1qc29uLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2xhenktanNvbi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUE7O0dBRUc7OztBQU1IOzs7OztHQUtHO0FBQ0gsc0VBQXNFO0FBQy9ELE1BQU0sYUFBYSxHQUFrQjtJQUMxQyxvRkFBb0Y7SUFDcEYsTUFBTSxLQUFLLEdBQUcsTUFBTSxDQUFDLGNBQWMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxXQUFXLENBQUM7SUFDdEQsTUFBTSxXQUFXLEdBQUcsUUFBUSxDQUFDLElBQUksQ0FBQyxLQUFLLENBQUMsTUFBTSxFQUFFLENBQUMsSUFBVyxFQUFFLEdBQUcsU0FBUyxDQUFDLENBQUMsQ0FBQztJQUM3RSw4RUFBOEU7SUFDOUUsTUFBTSxRQUFRLEdBQUcsSUFBSSxXQUFXLEVBQUUsQ0FBQztJQUNuQyxNQUFNLENBQUMsY0FBYyxDQUFDLFFBQVEsRUFBRSxLQUFLLENBQUMsU0FBUyxDQUFDLENBQUM7SUFDakQsT0FBTyxRQUFrQixDQUFDO0FBQzVCLENBQUMsQ0FBQztBQVJXLFFBQUEsYUFBYSxpQkFReEI7QUFDRixxQkFBYSxDQUFDLFNBQVMsR0FBRyxNQUFNLENBQUMsTUFBTSxDQUFDLE1BQU0sQ0FBQyxTQUFTLEVBQUU7SUFDeEQsV0FBVyxFQUFFO1FBQ1gsS0FBSyxFQUFFLHFCQUFhO1FBQ3BCLFVBQVUsRUFBRSxLQUFLO1FBQ2pCLFFBQVEsRUFBRSxJQUFJO1FBQ2QsWUFBWSxFQUFFLElBQUk7S0FDbkI7Q0FDRixDQUFDLENBQUM7QUFDSCxNQUFNLENBQUMsY0FBYyxDQUFDLHFCQUFhLEVBQUUsTUFBTSxDQUFDLENBQUM7QUFFN0MsTUFBYSxjQUFlLFNBQVEscUJBQWE7SUFDL0MsZUFBZTtRQUNiLE9BQU8sSUFBSSxDQUFDLEtBQUssQ0FBQyxLQUFLLENBQUMsUUFBUSxFQUFFLENBQUMsQ0FBQztJQUN0QyxDQUFDO0lBRUQsTUFBTTtRQUNKLE9BQU8sS0FBSyxDQUFDLFFBQVEsRUFBRSxDQUFDO0lBQzFCLENBQUM7SUFFRCxNQUFNLENBQUMsVUFBVSxDQUFDLE1BQVc7UUFDM0IsSUFBSSxNQUFNLFlBQVksY0FBYyxFQUFFO1lBQ3BDLE9BQU8sTUFBTSxDQUFDO1NBQ2Y7YUFBTSxJQUFJLE1BQU0sWUFBWSxNQUFNLElBQUksT0FBTyxNQUFNLEtBQUssUUFBUSxFQUFFO1lBQ2pFLE9BQU8sSUFBSSxjQUFjLENBQUMsTUFBTSxDQUFDLENBQUM7U0FDbkM7UUFDRCxPQUFPLElBQUksY0FBYyxDQUFDLElBQUksQ0FBQyxTQUFTLENBQUMsTUFBTSxDQUFDLENBQUMsQ0FBQztJQUNwRCxDQUFDO0NBQ0Y7QUFqQkQsd0NBaUJDIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBMYXp5IFN0cmluZyBob2xkZXIgZm9yIEpTT04gdHlwZWQgY29udGVudHMuXG4gKi9cblxuaW50ZXJmYWNlIFN0cmluZ1dyYXBwZXIge1xuICBuZXcgKGFyZzogYW55KTogU3RyaW5nO1xufVxuXG4vKipcbiAqIEJlY2F1c2Ugb2YgaHR0cHM6Ly9naXRodWIuY29tL21pY3Jvc29mdC90c2xpYi9pc3N1ZXMvOTUsXG4gKiBUUyAnZXh0ZW5kcycgc2hpbSBkb2Vzbid0IHN1cHBvcnQgZXh0ZW5kaW5nIG5hdGl2ZSB0eXBlcyBsaWtlIFN0cmluZy5cbiAqIFNvIGhlcmUgd2UgY3JlYXRlIFN0cmluZ1dyYXBwZXIgdGhhdCBkdXBsaWNhdGUgZXZlcnl0aGluZyBmcm9tIFN0cmluZ1xuICogY2xhc3MgaW5jbHVkaW5nIGl0cyBwcm90b3R5cGUgY2hhaW4uIFNvIHdlIGNhbiBleHRlbmQgZnJvbSBoZXJlLlxuICovXG4vLyBAdHMtaWdub3JlIFN0cmluZ1dyYXBwZXIgaW1wbGVtZW50YXRpb24gaXMgbm90IGEgc2ltcGxlIGNvbnN0cnVjdG9yXG5leHBvcnQgY29uc3QgU3RyaW5nV3JhcHBlcjogU3RyaW5nV3JhcHBlciA9IGZ1bmN0aW9uICgpIHtcbiAgLy9AdHMtaWdub3JlICd0aGlzJyBjYW5ub3QgYmUgYXNzaWduZWQgdG8gYW55LCBidXQgT2JqZWN0LmdldFByb3RvdHlwZU9mIGFjY2VwdHMgYW55XG4gIGNvbnN0IENsYXNzID0gT2JqZWN0LmdldFByb3RvdHlwZU9mKHRoaXMpLmNvbnN0cnVjdG9yO1xuICBjb25zdCBDb25zdHJ1Y3RvciA9IEZ1bmN0aW9uLmJpbmQuYXBwbHkoU3RyaW5nLCBbbnVsbCBhcyBhbnksIC4uLmFyZ3VtZW50c10pO1xuICAvL0B0cy1pZ25vcmUgQ2FsbCB3cmFwcGVkIFN0cmluZyBjb25zdHJ1Y3RvciBkaXJlY3RseSwgZG9uJ3QgYm90aGVyIHR5cGluZyBpdC5cbiAgY29uc3QgaW5zdGFuY2UgPSBuZXcgQ29uc3RydWN0b3IoKTtcbiAgT2JqZWN0LnNldFByb3RvdHlwZU9mKGluc3RhbmNlLCBDbGFzcy5wcm90b3R5cGUpO1xuICByZXR1cm4gaW5zdGFuY2UgYXMgU3RyaW5nO1xufTtcblN0cmluZ1dyYXBwZXIucHJvdG90eXBlID0gT2JqZWN0LmNyZWF0ZShTdHJpbmcucHJvdG90eXBlLCB7XG4gIGNvbnN0cnVjdG9yOiB7XG4gICAgdmFsdWU6IFN0cmluZ1dyYXBwZXIsXG4gICAgZW51bWVyYWJsZTogZmFsc2UsXG4gICAgd3JpdGFibGU6IHRydWUsXG4gICAgY29uZmlndXJhYmxlOiB0cnVlLFxuICB9LFxufSk7XG5PYmplY3Quc2V0UHJvdG90eXBlT2YoU3RyaW5nV3JhcHBlciwgU3RyaW5nKTtcblxuZXhwb3J0IGNsYXNzIExhenlKc29uU3RyaW5nIGV4dGVuZHMgU3RyaW5nV3JhcHBlciB7XG4gIGRlc2VyaWFsaXplSlNPTigpOiBhbnkge1xuICAgIHJldHVybiBKU09OLnBhcnNlKHN1cGVyLnRvU3RyaW5nKCkpO1xuICB9XG5cbiAgdG9KU09OKCk6IHN0cmluZyB7XG4gICAgcmV0dXJuIHN1cGVyLnRvU3RyaW5nKCk7XG4gIH1cblxuICBzdGF0aWMgZnJvbU9iamVjdChvYmplY3Q6IGFueSk6IExhenlKc29uU3RyaW5nIHtcbiAgICBpZiAob2JqZWN0IGluc3RhbmNlb2YgTGF6eUpzb25TdHJpbmcpIHtcbiAgICAgIHJldHVybiBvYmplY3Q7XG4gICAgfSBlbHNlIGlmIChvYmplY3QgaW5zdGFuY2VvZiBTdHJpbmcgfHwgdHlwZW9mIG9iamVjdCA9PT0gXCJzdHJpbmdcIikge1xuICAgICAgcmV0dXJuIG5ldyBMYXp5SnNvblN0cmluZyhvYmplY3QpO1xuICAgIH1cbiAgICByZXR1cm4gbmV3IExhenlKc29uU3RyaW5nKEpTT04uc3RyaW5naWZ5KG9iamVjdCkpO1xuICB9XG59XG4iXX0=
 
 /***/ }),
 
@@ -20405,7 +23383,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.parseUrl = void 0;
 const querystring_parser_1 = __webpack_require__(2026);
 const url_1 = __webpack_require__(8835);
-exports.parseUrl = (url) => {
+const parseUrl = (url) => {
     const { hostname = "localhost", pathname = "/", port, protocol = "https:", search } = url_1.parse(url);
     let query;
     if (search) {
@@ -20419,7 +23397,8 @@ exports.parseUrl = (url) => {
         query,
     };
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsb0VBQStEO0FBRS9ELDZCQUE0QjtBQUVmLFFBQUEsUUFBUSxHQUFjLENBQUMsR0FBVyxFQUFZLEVBQUU7SUFDM0QsTUFBTSxFQUFFLFFBQVEsR0FBRyxXQUFXLEVBQUUsUUFBUSxHQUFHLEdBQUcsRUFBRSxJQUFJLEVBQUUsUUFBUSxHQUFHLFFBQVEsRUFBRSxNQUFNLEVBQUUsR0FBRyxXQUFLLENBQUMsR0FBRyxDQUFDLENBQUM7SUFFakcsSUFBSSxLQUFvQyxDQUFDO0lBQ3pDLElBQUksTUFBTSxFQUFFO1FBQ1YsS0FBSyxHQUFHLHFDQUFnQixDQUFDLE1BQU0sQ0FBQyxDQUFDO0tBQ2xDO0lBRUQsT0FBTztRQUNMLFFBQVE7UUFDUixJQUFJLEVBQUUsSUFBSSxDQUFDLENBQUMsQ0FBQyxRQUFRLENBQUMsSUFBSSxDQUFDLENBQUMsQ0FBQyxDQUFDLFNBQVM7UUFDdkMsUUFBUTtRQUNSLElBQUksRUFBRSxRQUFRO1FBQ2QsS0FBSztLQUNOLENBQUM7QUFDSixDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBwYXJzZVF1ZXJ5U3RyaW5nIH0gZnJvbSBcIkBhd3Mtc2RrL3F1ZXJ5c3RyaW5nLXBhcnNlclwiO1xuaW1wb3J0IHsgRW5kcG9pbnQsIFF1ZXJ5UGFyYW1ldGVyQmFnLCBVcmxQYXJzZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcbmltcG9ydCB7IHBhcnNlIH0gZnJvbSBcInVybFwiO1xuXG5leHBvcnQgY29uc3QgcGFyc2VVcmw6IFVybFBhcnNlciA9ICh1cmw6IHN0cmluZyk6IEVuZHBvaW50ID0+IHtcbiAgY29uc3QgeyBob3N0bmFtZSA9IFwibG9jYWxob3N0XCIsIHBhdGhuYW1lID0gXCIvXCIsIHBvcnQsIHByb3RvY29sID0gXCJodHRwczpcIiwgc2VhcmNoIH0gPSBwYXJzZSh1cmwpO1xuXG4gIGxldCBxdWVyeTogUXVlcnlQYXJhbWV0ZXJCYWcgfCB1bmRlZmluZWQ7XG4gIGlmIChzZWFyY2gpIHtcbiAgICBxdWVyeSA9IHBhcnNlUXVlcnlTdHJpbmcoc2VhcmNoKTtcbiAgfVxuXG4gIHJldHVybiB7XG4gICAgaG9zdG5hbWUsXG4gICAgcG9ydDogcG9ydCA/IHBhcnNlSW50KHBvcnQpIDogdW5kZWZpbmVkLFxuICAgIHByb3RvY29sLFxuICAgIHBhdGg6IHBhdGhuYW1lLFxuICAgIHF1ZXJ5LFxuICB9O1xufTtcbiJdfQ==
+exports.parseUrl = parseUrl;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsb0VBQStEO0FBRS9ELDZCQUE0QjtBQUVyQixNQUFNLFFBQVEsR0FBYyxDQUFDLEdBQVcsRUFBWSxFQUFFO0lBQzNELE1BQU0sRUFBRSxRQUFRLEdBQUcsV0FBVyxFQUFFLFFBQVEsR0FBRyxHQUFHLEVBQUUsSUFBSSxFQUFFLFFBQVEsR0FBRyxRQUFRLEVBQUUsTUFBTSxFQUFFLEdBQUcsV0FBSyxDQUFDLEdBQUcsQ0FBQyxDQUFDO0lBRWpHLElBQUksS0FBb0MsQ0FBQztJQUN6QyxJQUFJLE1BQU0sRUFBRTtRQUNWLEtBQUssR0FBRyxxQ0FBZ0IsQ0FBQyxNQUFNLENBQUMsQ0FBQztLQUNsQztJQUVELE9BQU87UUFDTCxRQUFRO1FBQ1IsSUFBSSxFQUFFLElBQUksQ0FBQyxDQUFDLENBQUMsUUFBUSxDQUFDLElBQUksQ0FBQyxDQUFDLENBQUMsQ0FBQyxTQUFTO1FBQ3ZDLFFBQVE7UUFDUixJQUFJLEVBQUUsUUFBUTtRQUNkLEtBQUs7S0FDTixDQUFDO0FBQ0osQ0FBQyxDQUFDO0FBZlcsUUFBQSxRQUFRLFlBZW5CIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgcGFyc2VRdWVyeVN0cmluZyB9IGZyb20gXCJAYXdzLXNkay9xdWVyeXN0cmluZy1wYXJzZXJcIjtcbmltcG9ydCB7IEVuZHBvaW50LCBRdWVyeVBhcmFtZXRlckJhZywgVXJsUGFyc2VyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5pbXBvcnQgeyBwYXJzZSB9IGZyb20gXCJ1cmxcIjtcblxuZXhwb3J0IGNvbnN0IHBhcnNlVXJsOiBVcmxQYXJzZXIgPSAodXJsOiBzdHJpbmcpOiBFbmRwb2ludCA9PiB7XG4gIGNvbnN0IHsgaG9zdG5hbWUgPSBcImxvY2FsaG9zdFwiLCBwYXRobmFtZSA9IFwiL1wiLCBwb3J0LCBwcm90b2NvbCA9IFwiaHR0cHM6XCIsIHNlYXJjaCB9ID0gcGFyc2UodXJsKTtcblxuICBsZXQgcXVlcnk6IFF1ZXJ5UGFyYW1ldGVyQmFnIHwgdW5kZWZpbmVkO1xuICBpZiAoc2VhcmNoKSB7XG4gICAgcXVlcnkgPSBwYXJzZVF1ZXJ5U3RyaW5nKHNlYXJjaCk7XG4gIH1cblxuICByZXR1cm4ge1xuICAgIGhvc3RuYW1lLFxuICAgIHBvcnQ6IHBvcnQgPyBwYXJzZUludChwb3J0KSA6IHVuZGVmaW5lZCxcbiAgICBwcm90b2NvbCxcbiAgICBwYXRoOiBwYXRobmFtZSxcbiAgICBxdWVyeSxcbiAgfTtcbn07XG4iXX0=
 
 /***/ }),
 
@@ -20497,19 +23476,21 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.fromString = exports.fromArrayBuffer = void 0;
 const is_array_buffer_1 = __webpack_require__(694);
 const buffer_1 = __webpack_require__(4293);
-exports.fromArrayBuffer = (input, offset = 0, length = input.byteLength - offset) => {
+const fromArrayBuffer = (input, offset = 0, length = input.byteLength - offset) => {
     if (!is_array_buffer_1.isArrayBuffer(input)) {
         throw new TypeError(`The "input" argument must be ArrayBuffer. Received type ${typeof input} (${input})`);
     }
     return buffer_1.Buffer.from(input, offset, length);
 };
-exports.fromString = (input, encoding) => {
+exports.fromArrayBuffer = fromArrayBuffer;
+const fromString = (input, encoding) => {
     if (typeof input !== "string") {
         throw new TypeError(`The "input" argument must be of type string. Received type ${typeof input} (${input})`);
     }
     return encoding ? buffer_1.Buffer.from(input, encoding) : buffer_1.Buffer.from(input);
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsOERBQXlEO0FBQ3pELG1DQUFnQztBQUVuQixRQUFBLGVBQWUsR0FBRyxDQUFDLEtBQWtCLEVBQUUsTUFBTSxHQUFHLENBQUMsRUFBRSxTQUFpQixLQUFLLENBQUMsVUFBVSxHQUFHLE1BQU0sRUFBVSxFQUFFO0lBQ3BILElBQUksQ0FBQywrQkFBYSxDQUFDLEtBQUssQ0FBQyxFQUFFO1FBQ3pCLE1BQU0sSUFBSSxTQUFTLENBQUMsMkRBQTJELE9BQU8sS0FBSyxLQUFLLEtBQUssR0FBRyxDQUFDLENBQUM7S0FDM0c7SUFFRCxPQUFPLGVBQU0sQ0FBQyxJQUFJLENBQUMsS0FBSyxFQUFFLE1BQU0sRUFBRSxNQUFNLENBQUMsQ0FBQztBQUM1QyxDQUFDLENBQUM7QUFJVyxRQUFBLFVBQVUsR0FBRyxDQUFDLEtBQWEsRUFBRSxRQUF5QixFQUFVLEVBQUU7SUFDN0UsSUFBSSxPQUFPLEtBQUssS0FBSyxRQUFRLEVBQUU7UUFDN0IsTUFBTSxJQUFJLFNBQVMsQ0FBQyw4REFBOEQsT0FBTyxLQUFLLEtBQUssS0FBSyxHQUFHLENBQUMsQ0FBQztLQUM5RztJQUVELE9BQU8sUUFBUSxDQUFDLENBQUMsQ0FBQyxlQUFNLENBQUMsSUFBSSxDQUFDLEtBQUssRUFBRSxRQUFRLENBQUMsQ0FBQyxDQUFDLENBQUMsZUFBTSxDQUFDLElBQUksQ0FBQyxLQUFLLENBQUMsQ0FBQztBQUN0RSxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBpc0FycmF5QnVmZmVyIH0gZnJvbSBcIkBhd3Mtc2RrL2lzLWFycmF5LWJ1ZmZlclwiO1xuaW1wb3J0IHsgQnVmZmVyIH0gZnJvbSBcImJ1ZmZlclwiO1xuXG5leHBvcnQgY29uc3QgZnJvbUFycmF5QnVmZmVyID0gKGlucHV0OiBBcnJheUJ1ZmZlciwgb2Zmc2V0ID0gMCwgbGVuZ3RoOiBudW1iZXIgPSBpbnB1dC5ieXRlTGVuZ3RoIC0gb2Zmc2V0KTogQnVmZmVyID0+IHtcbiAgaWYgKCFpc0FycmF5QnVmZmVyKGlucHV0KSkge1xuICAgIHRocm93IG5ldyBUeXBlRXJyb3IoYFRoZSBcImlucHV0XCIgYXJndW1lbnQgbXVzdCBiZSBBcnJheUJ1ZmZlci4gUmVjZWl2ZWQgdHlwZSAke3R5cGVvZiBpbnB1dH0gKCR7aW5wdXR9KWApO1xuICB9XG5cbiAgcmV0dXJuIEJ1ZmZlci5mcm9tKGlucHV0LCBvZmZzZXQsIGxlbmd0aCk7XG59O1xuXG5leHBvcnQgdHlwZSBTdHJpbmdFbmNvZGluZyA9IFwiYXNjaWlcIiB8IFwidXRmOFwiIHwgXCJ1dGYxNmxlXCIgfCBcInVjczJcIiB8IFwiYmFzZTY0XCIgfCBcImxhdGluMVwiIHwgXCJiaW5hcnlcIiB8IFwiaGV4XCI7XG5cbmV4cG9ydCBjb25zdCBmcm9tU3RyaW5nID0gKGlucHV0OiBzdHJpbmcsIGVuY29kaW5nPzogU3RyaW5nRW5jb2RpbmcpOiBCdWZmZXIgPT4ge1xuICBpZiAodHlwZW9mIGlucHV0ICE9PSBcInN0cmluZ1wiKSB7XG4gICAgdGhyb3cgbmV3IFR5cGVFcnJvcihgVGhlIFwiaW5wdXRcIiBhcmd1bWVudCBtdXN0IGJlIG9mIHR5cGUgc3RyaW5nLiBSZWNlaXZlZCB0eXBlICR7dHlwZW9mIGlucHV0fSAoJHtpbnB1dH0pYCk7XG4gIH1cblxuICByZXR1cm4gZW5jb2RpbmcgPyBCdWZmZXIuZnJvbShpbnB1dCwgZW5jb2RpbmcpIDogQnVmZmVyLmZyb20oaW5wdXQpO1xufTtcbiJdfQ==
+exports.fromString = fromString;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsOERBQXlEO0FBQ3pELG1DQUFnQztBQUV6QixNQUFNLGVBQWUsR0FBRyxDQUFDLEtBQWtCLEVBQUUsTUFBTSxHQUFHLENBQUMsRUFBRSxTQUFpQixLQUFLLENBQUMsVUFBVSxHQUFHLE1BQU0sRUFBVSxFQUFFO0lBQ3BILElBQUksQ0FBQywrQkFBYSxDQUFDLEtBQUssQ0FBQyxFQUFFO1FBQ3pCLE1BQU0sSUFBSSxTQUFTLENBQUMsMkRBQTJELE9BQU8sS0FBSyxLQUFLLEtBQUssR0FBRyxDQUFDLENBQUM7S0FDM0c7SUFFRCxPQUFPLGVBQU0sQ0FBQyxJQUFJLENBQUMsS0FBSyxFQUFFLE1BQU0sRUFBRSxNQUFNLENBQUMsQ0FBQztBQUM1QyxDQUFDLENBQUM7QUFOVyxRQUFBLGVBQWUsbUJBTTFCO0FBSUssTUFBTSxVQUFVLEdBQUcsQ0FBQyxLQUFhLEVBQUUsUUFBeUIsRUFBVSxFQUFFO0lBQzdFLElBQUksT0FBTyxLQUFLLEtBQUssUUFBUSxFQUFFO1FBQzdCLE1BQU0sSUFBSSxTQUFTLENBQUMsOERBQThELE9BQU8sS0FBSyxLQUFLLEtBQUssR0FBRyxDQUFDLENBQUM7S0FDOUc7SUFFRCxPQUFPLFFBQVEsQ0FBQyxDQUFDLENBQUMsZUFBTSxDQUFDLElBQUksQ0FBQyxLQUFLLEVBQUUsUUFBUSxDQUFDLENBQUMsQ0FBQyxDQUFDLGVBQU0sQ0FBQyxJQUFJLENBQUMsS0FBSyxDQUFDLENBQUM7QUFDdEUsQ0FBQyxDQUFDO0FBTlcsUUFBQSxVQUFVLGNBTXJCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgaXNBcnJheUJ1ZmZlciB9IGZyb20gXCJAYXdzLXNkay9pcy1hcnJheS1idWZmZXJcIjtcbmltcG9ydCB7IEJ1ZmZlciB9IGZyb20gXCJidWZmZXJcIjtcblxuZXhwb3J0IGNvbnN0IGZyb21BcnJheUJ1ZmZlciA9IChpbnB1dDogQXJyYXlCdWZmZXIsIG9mZnNldCA9IDAsIGxlbmd0aDogbnVtYmVyID0gaW5wdXQuYnl0ZUxlbmd0aCAtIG9mZnNldCk6IEJ1ZmZlciA9PiB7XG4gIGlmICghaXNBcnJheUJ1ZmZlcihpbnB1dCkpIHtcbiAgICB0aHJvdyBuZXcgVHlwZUVycm9yKGBUaGUgXCJpbnB1dFwiIGFyZ3VtZW50IG11c3QgYmUgQXJyYXlCdWZmZXIuIFJlY2VpdmVkIHR5cGUgJHt0eXBlb2YgaW5wdXR9ICgke2lucHV0fSlgKTtcbiAgfVxuXG4gIHJldHVybiBCdWZmZXIuZnJvbShpbnB1dCwgb2Zmc2V0LCBsZW5ndGgpO1xufTtcblxuZXhwb3J0IHR5cGUgU3RyaW5nRW5jb2RpbmcgPSBcImFzY2lpXCIgfCBcInV0ZjhcIiB8IFwidXRmMTZsZVwiIHwgXCJ1Y3MyXCIgfCBcImJhc2U2NFwiIHwgXCJsYXRpbjFcIiB8IFwiYmluYXJ5XCIgfCBcImhleFwiO1xuXG5leHBvcnQgY29uc3QgZnJvbVN0cmluZyA9IChpbnB1dDogc3RyaW5nLCBlbmNvZGluZz86IFN0cmluZ0VuY29kaW5nKTogQnVmZmVyID0+IHtcbiAgaWYgKHR5cGVvZiBpbnB1dCAhPT0gXCJzdHJpbmdcIikge1xuICAgIHRocm93IG5ldyBUeXBlRXJyb3IoYFRoZSBcImlucHV0XCIgYXJndW1lbnQgbXVzdCBiZSBvZiB0eXBlIHN0cmluZy4gUmVjZWl2ZWQgdHlwZSAke3R5cGVvZiBpbnB1dH0gKCR7aW5wdXR9KWApO1xuICB9XG5cbiAgcmV0dXJuIGVuY29kaW5nID8gQnVmZmVyLmZyb20oaW5wdXQsIGVuY29kaW5nKSA6IEJ1ZmZlci5mcm9tKGlucHV0KTtcbn07XG4iXX0=
 
 /***/ }),
 
@@ -20577,8 +23558,9 @@ exports.toHex = toHex;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.escapeUriPath = void 0;
 const escape_uri_1 = __webpack_require__(4302);
-exports.escapeUriPath = (uri) => uri.split("/").map(escape_uri_1.escapeUri).join("/");
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZXNjYXBlLXVyaS1wYXRoLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2VzY2FwZS11cmktcGF0aC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSw2Q0FBeUM7QUFFNUIsUUFBQSxhQUFhLEdBQUcsQ0FBQyxHQUFXLEVBQVUsRUFBRSxDQUFDLEdBQUcsQ0FBQyxLQUFLLENBQUMsR0FBRyxDQUFDLENBQUMsR0FBRyxDQUFDLHNCQUFTLENBQUMsQ0FBQyxJQUFJLENBQUMsR0FBRyxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBlc2NhcGVVcmkgfSBmcm9tIFwiLi9lc2NhcGUtdXJpXCI7XG5cbmV4cG9ydCBjb25zdCBlc2NhcGVVcmlQYXRoID0gKHVyaTogc3RyaW5nKTogc3RyaW5nID0+IHVyaS5zcGxpdChcIi9cIikubWFwKGVzY2FwZVVyaSkuam9pbihcIi9cIik7XG4iXX0=
+const escapeUriPath = (uri) => uri.split("/").map(escape_uri_1.escapeUri).join("/");
+exports.escapeUriPath = escapeUriPath;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZXNjYXBlLXVyaS1wYXRoLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2VzY2FwZS11cmktcGF0aC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSw2Q0FBeUM7QUFFbEMsTUFBTSxhQUFhLEdBQUcsQ0FBQyxHQUFXLEVBQVUsRUFBRSxDQUFDLEdBQUcsQ0FBQyxLQUFLLENBQUMsR0FBRyxDQUFDLENBQUMsR0FBRyxDQUFDLHNCQUFTLENBQUMsQ0FBQyxJQUFJLENBQUMsR0FBRyxDQUFDLENBQUM7QUFBakYsUUFBQSxhQUFhLGlCQUFvRSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGVzY2FwZVVyaSB9IGZyb20gXCIuL2VzY2FwZS11cmlcIjtcblxuZXhwb3J0IGNvbnN0IGVzY2FwZVVyaVBhdGggPSAodXJpOiBzdHJpbmcpOiBzdHJpbmcgPT4gdXJpLnNwbGl0KFwiL1wiKS5tYXAoZXNjYXBlVXJpKS5qb2luKFwiL1wiKTtcbiJdfQ==
 
 /***/ }),
 
@@ -20589,11 +23571,12 @@ exports.escapeUriPath = (uri) => uri.split("/").map(escape_uri_1.escapeUri).join
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.escapeUri = void 0;
-exports.escapeUri = (uri) => 
+const escapeUri = (uri) => 
 // AWS percent-encodes some extra non-standard characters in a URI
 encodeURIComponent(uri).replace(/[!'()*]/g, hexEncode);
+exports.escapeUri = escapeUri;
 const hexEncode = (c) => `%${c.charCodeAt(0).toString(16).toUpperCase()}`;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZXNjYXBlLXVyaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9lc2NhcGUtdXJpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFhLFFBQUEsU0FBUyxHQUFHLENBQUMsR0FBVyxFQUFVLEVBQUU7QUFDL0Msa0VBQWtFO0FBQ2xFLGtCQUFrQixDQUFDLEdBQUcsQ0FBQyxDQUFDLE9BQU8sQ0FBQyxVQUFVLEVBQUUsU0FBUyxDQUFDLENBQUM7QUFFekQsTUFBTSxTQUFTLEdBQUcsQ0FBQyxDQUFTLEVBQUUsRUFBRSxDQUFDLElBQUksQ0FBQyxDQUFDLFVBQVUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxRQUFRLENBQUMsRUFBRSxDQUFDLENBQUMsV0FBVyxFQUFFLEVBQUUsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjb25zdCBlc2NhcGVVcmkgPSAodXJpOiBzdHJpbmcpOiBzdHJpbmcgPT5cbiAgLy8gQVdTIHBlcmNlbnQtZW5jb2RlcyBzb21lIGV4dHJhIG5vbi1zdGFuZGFyZCBjaGFyYWN0ZXJzIGluIGEgVVJJXG4gIGVuY29kZVVSSUNvbXBvbmVudCh1cmkpLnJlcGxhY2UoL1shJygpKl0vZywgaGV4RW5jb2RlKTtcblxuY29uc3QgaGV4RW5jb2RlID0gKGM6IHN0cmluZykgPT4gYCUke2MuY2hhckNvZGVBdCgwKS50b1N0cmluZygxNikudG9VcHBlckNhc2UoKX1gO1xuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZXNjYXBlLXVyaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9lc2NhcGUtdXJpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFPLE1BQU0sU0FBUyxHQUFHLENBQUMsR0FBVyxFQUFVLEVBQUU7QUFDL0Msa0VBQWtFO0FBQ2xFLGtCQUFrQixDQUFDLEdBQUcsQ0FBQyxDQUFDLE9BQU8sQ0FBQyxVQUFVLEVBQUUsU0FBUyxDQUFDLENBQUM7QUFGNUMsUUFBQSxTQUFTLGFBRW1DO0FBRXpELE1BQU0sU0FBUyxHQUFHLENBQUMsQ0FBUyxFQUFFLEVBQUUsQ0FBQyxJQUFJLENBQUMsQ0FBQyxVQUFVLENBQUMsQ0FBQyxDQUFDLENBQUMsUUFBUSxDQUFDLEVBQUUsQ0FBQyxDQUFDLFdBQVcsRUFBRSxFQUFFLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgY29uc3QgZXNjYXBlVXJpID0gKHVyaTogc3RyaW5nKTogc3RyaW5nID0+XG4gIC8vIEFXUyBwZXJjZW50LWVuY29kZXMgc29tZSBleHRyYSBub24tc3RhbmRhcmQgY2hhcmFjdGVycyBpbiBhIFVSSVxuICBlbmNvZGVVUklDb21wb25lbnQodXJpKS5yZXBsYWNlKC9bIScoKSpdL2csIGhleEVuY29kZSk7XG5cbmNvbnN0IGhleEVuY29kZSA9IChjOiBzdHJpbmcpID0+IGAlJHtjLmNoYXJDb2RlQXQoMCkudG9TdHJpbmcoMTYpLnRvVXBwZXJDYXNlKCl9YDtcbiJdfQ==
 
 /***/ }),
 
@@ -21143,12 +24126,14 @@ function __classPrivateFieldSet(receiver, privateMap, value) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.toUtf8 = exports.fromUtf8 = void 0;
 const util_buffer_from_1 = __webpack_require__(8577);
-exports.fromUtf8 = (input) => {
+const fromUtf8 = (input) => {
     const buf = util_buffer_from_1.fromString(input, "utf8");
     return new Uint8Array(buf.buffer, buf.byteOffset, buf.byteLength / Uint8Array.BYTES_PER_ELEMENT);
 };
-exports.toUtf8 = (input) => util_buffer_from_1.fromArrayBuffer(input.buffer, input.byteOffset, input.byteLength).toString("utf8");
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsZ0VBQXdFO0FBRTNELFFBQUEsUUFBUSxHQUFHLENBQUMsS0FBYSxFQUFjLEVBQUU7SUFDcEQsTUFBTSxHQUFHLEdBQUcsNkJBQVUsQ0FBQyxLQUFLLEVBQUUsTUFBTSxDQUFDLENBQUM7SUFDdEMsT0FBTyxJQUFJLFVBQVUsQ0FBQyxHQUFHLENBQUMsTUFBTSxFQUFFLEdBQUcsQ0FBQyxVQUFVLEVBQUUsR0FBRyxDQUFDLFVBQVUsR0FBRyxVQUFVLENBQUMsaUJBQWlCLENBQUMsQ0FBQztBQUNuRyxDQUFDLENBQUM7QUFFVyxRQUFBLE1BQU0sR0FBRyxDQUFDLEtBQWlCLEVBQVUsRUFBRSxDQUNsRCxrQ0FBZSxDQUFDLEtBQUssQ0FBQyxNQUFNLEVBQUUsS0FBSyxDQUFDLFVBQVUsRUFBRSxLQUFLLENBQUMsVUFBVSxDQUFDLENBQUMsUUFBUSxDQUFDLE1BQU0sQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgZnJvbUFycmF5QnVmZmVyLCBmcm9tU3RyaW5nIH0gZnJvbSBcIkBhd3Mtc2RrL3V0aWwtYnVmZmVyLWZyb21cIjtcblxuZXhwb3J0IGNvbnN0IGZyb21VdGY4ID0gKGlucHV0OiBzdHJpbmcpOiBVaW50OEFycmF5ID0+IHtcbiAgY29uc3QgYnVmID0gZnJvbVN0cmluZyhpbnB1dCwgXCJ1dGY4XCIpO1xuICByZXR1cm4gbmV3IFVpbnQ4QXJyYXkoYnVmLmJ1ZmZlciwgYnVmLmJ5dGVPZmZzZXQsIGJ1Zi5ieXRlTGVuZ3RoIC8gVWludDhBcnJheS5CWVRFU19QRVJfRUxFTUVOVCk7XG59O1xuXG5leHBvcnQgY29uc3QgdG9VdGY4ID0gKGlucHV0OiBVaW50OEFycmF5KTogc3RyaW5nID0+XG4gIGZyb21BcnJheUJ1ZmZlcihpbnB1dC5idWZmZXIsIGlucHV0LmJ5dGVPZmZzZXQsIGlucHV0LmJ5dGVMZW5ndGgpLnRvU3RyaW5nKFwidXRmOFwiKTtcbiJdfQ==
+exports.fromUtf8 = fromUtf8;
+const toUtf8 = (input) => util_buffer_from_1.fromArrayBuffer(input.buffer, input.byteOffset, input.byteLength).toString("utf8");
+exports.toUtf8 = toUtf8;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsZ0VBQXdFO0FBRWpFLE1BQU0sUUFBUSxHQUFHLENBQUMsS0FBYSxFQUFjLEVBQUU7SUFDcEQsTUFBTSxHQUFHLEdBQUcsNkJBQVUsQ0FBQyxLQUFLLEVBQUUsTUFBTSxDQUFDLENBQUM7SUFDdEMsT0FBTyxJQUFJLFVBQVUsQ0FBQyxHQUFHLENBQUMsTUFBTSxFQUFFLEdBQUcsQ0FBQyxVQUFVLEVBQUUsR0FBRyxDQUFDLFVBQVUsR0FBRyxVQUFVLENBQUMsaUJBQWlCLENBQUMsQ0FBQztBQUNuRyxDQUFDLENBQUM7QUFIVyxRQUFBLFFBQVEsWUFHbkI7QUFFSyxNQUFNLE1BQU0sR0FBRyxDQUFDLEtBQWlCLEVBQVUsRUFBRSxDQUNsRCxrQ0FBZSxDQUFDLEtBQUssQ0FBQyxNQUFNLEVBQUUsS0FBSyxDQUFDLFVBQVUsRUFBRSxLQUFLLENBQUMsVUFBVSxDQUFDLENBQUMsUUFBUSxDQUFDLE1BQU0sQ0FBQyxDQUFDO0FBRHhFLFFBQUEsTUFBTSxVQUNrRSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGZyb21BcnJheUJ1ZmZlciwgZnJvbVN0cmluZyB9IGZyb20gXCJAYXdzLXNkay91dGlsLWJ1ZmZlci1mcm9tXCI7XG5cbmV4cG9ydCBjb25zdCBmcm9tVXRmOCA9IChpbnB1dDogc3RyaW5nKTogVWludDhBcnJheSA9PiB7XG4gIGNvbnN0IGJ1ZiA9IGZyb21TdHJpbmcoaW5wdXQsIFwidXRmOFwiKTtcbiAgcmV0dXJuIG5ldyBVaW50OEFycmF5KGJ1Zi5idWZmZXIsIGJ1Zi5ieXRlT2Zmc2V0LCBidWYuYnl0ZUxlbmd0aCAvIFVpbnQ4QXJyYXkuQllURVNfUEVSX0VMRU1FTlQpO1xufTtcblxuZXhwb3J0IGNvbnN0IHRvVXRmOCA9IChpbnB1dDogVWludDhBcnJheSk6IHN0cmluZyA9PlxuICBmcm9tQXJyYXlCdWZmZXIoaW5wdXQuYnVmZmVyLCBpbnB1dC5ieXRlT2Zmc2V0LCBpbnB1dC5ieXRlTGVuZ3RoKS50b1N0cmluZyhcInV0ZjhcIik7XG4iXX0=
 
 /***/ }),
 
@@ -21444,14 +24429,16 @@ function bytesToUuid(buf, offset) {
   var i = offset || 0;
   var bth = byteToHex;
   // join used to fix memory issue caused by concatenation: https://bugs.chromium.org/p/v8/issues/detail?id=3175#c4
-  return ([bth[buf[i++]], bth[buf[i++]], 
-	bth[buf[i++]], bth[buf[i++]], '-',
-	bth[buf[i++]], bth[buf[i++]], '-',
-	bth[buf[i++]], bth[buf[i++]], '-',
-	bth[buf[i++]], bth[buf[i++]], '-',
-	bth[buf[i++]], bth[buf[i++]],
-	bth[buf[i++]], bth[buf[i++]],
-	bth[buf[i++]], bth[buf[i++]]]).join('');
+  return ([
+    bth[buf[i++]], bth[buf[i++]],
+    bth[buf[i++]], bth[buf[i++]], '-',
+    bth[buf[i++]], bth[buf[i++]], '-',
+    bth[buf[i++]], bth[buf[i++]], '-',
+    bth[buf[i++]], bth[buf[i++]], '-',
+    bth[buf[i++]], bth[buf[i++]],
+    bth[buf[i++]], bth[buf[i++]],
+    bth[buf[i++]], bth[buf[i++]]
+  ]).join('');
 }
 
 module.exports = bytesToUuid;
@@ -21492,7 +24479,7 @@ var _clockseq;
 var _lastMSecs = 0;
 var _lastNSecs = 0;
 
-// See https://github.com/broofa/node-uuid for API details
+// See https://github.com/uuidjs/uuid for API details
 function v1(options, buf, offset) {
   var i = buf && offset || 0;
   var b = buf || [];
