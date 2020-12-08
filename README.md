@@ -57,7 +57,80 @@ with:
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 ```
 
-### complete
+### Node.js Lambda
+
+```yaml
+name: API
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Node.js setup
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: 12.x
+
+      - name: Build
+        run: |
+          npm ci
+          npm run pack
+          cd dist && zip -r -9 api.zip *
+
+      - name: Update
+        uses: kazimanzurrashid/aws-lambda-update-action@v1
+        with:
+          zip-file: dist/api.zip
+        env:
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+```
+
+### Go Lambda
+
+```yaml
+name: API
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Go setup
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.15.x
+
+      - name: Build
+        run: |
+          go get -v -t -d ./...
+          mkdir dist
+          CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o dist/main
+          cd dist && zip -r -9 api.zip *
+
+      - name: Update
+        uses: kazimanzurrashid/aws-lambda-update-action@v1
+        with:
+          zip-file: dist/api.zip
+        env:
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+```
+
+### .NET Lambda
 
 ```yaml
 name: API
