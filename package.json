@@ -11,7 +11,7 @@
   "scripts": {
     "format": "prettier --write **/*.ts",
     "lint": "eslint src/**/*.ts",
-    "build": "rm -rf build && tsc",
+    "build": "rimraf build && tsc",
     "pack": "ncc build --source-map --license licenses.txt",
     "deploy": "npm run format && npm run lint && npm run build && npm run pack"
   },
@@ -26,6 +26,7 @@
     "eslint": "^7.15.0",
     "eslint-plugin-github": "^4.1.1",
     "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
     "typescript": "^4.1.3"
   }
 }
