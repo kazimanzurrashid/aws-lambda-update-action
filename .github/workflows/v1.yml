@@ -18,8 +18,7 @@ jobs:
         with:
           node-version: 12.x
 
-      - name: npm packages install
-        run: npm ci
-
-      - name: Deploy
-        run: npm run deploy
+      - name: Build
+        run: |
+          npm ci
+          npm run deploy
