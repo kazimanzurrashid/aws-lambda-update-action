@@ -1,8 +1,52 @@
 # AWS Lambda update action
 
-This action updates a given lambda. It is very lightweight comparing to others, it uses the upcoming AWS Node SDK 3 which only pulls lambda client to update the lambda code.
+[![GitHub](https://img.shields.io/github/license/kazimanzurrashid/aws-lambda-update-action)](https://opensource.org/licenses/MIT)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/kazimanzurrashid/aws-lambda-update-action)
+
+This action updates a given lambda. It is very lightweight comparing to others, it uses the upcoming AWS Node SDK 3 which 
+only pulls lambda client to update the lambda code.
+
+## Usage
+
+### minimum
+
+```yaml
+uses: kazimanzurrashid/aws-lambda-update-action@v1
+with:
+  zip-file: './dist/my_lambda.zip'
+```
+
+### complete
+
+```yaml
+uses: kazimanzurrashid/aws-lambda-update-action@v1
+with:
+  zip-file: './dist/my_lambda.zip'
+  lambda-name: 'your_lambda'
+  publish: true
+  AWS_REGION: ${{ secrets.AWS_REGION }}
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+```
+
+## AWS Permission
 
 The AWS Account needs to have the `"lambda:UpdateFunctionCode"` permission.
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "lambda:UpdateFunctionCode"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
 
 ## Inputs
 
@@ -20,42 +64,21 @@ _Optional_ The default is `false`.
 
 ### `AWS_REGION`
 
-_Optional_. If not specified fallbacks to environment variable.
+_Optional_, if not specified fallbacks to environment variable.
 
 ### `AWS_ACCESS_KEY_ID`
 
-_Optional_. If not specified fallbacks to environment variable.
+_Optional_, if not specified fallbacks to environment variable.
 
 ### `AWS_SECRET_ACCESS_KEY`
 
-_Optional_. If not specified fallbacks to environment variable.
+_Optional_, if not specified fallbacks to environment variable.
 
 ## Outputs
 
 N/A
 
-## Example usage
-
-### minimum
-
-```yaml
-uses: kazimanzurrashid/aws-lambda-update-action@v1
-with:
-  zip-file: './dist/my_lambda.zip'
-```
-
-### all
-
-```yaml
-uses: kazimanzurrashid/aws-lambda-update-action@v1
-with:
-  zip-file: './dist/my_lambda.zip'
-  lambda-name: 'your_lambda'
-  publish: true
-  AWS_REGION: ${{ secrets.AWS_REGION }}
-  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-```
+## Examples
 
 ### Node.js Lambda
 
@@ -117,7 +140,7 @@ jobs:
         run: |
           go get -v -t -d ./...
           mkdir dist
-          CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o dist/main
+          CGO_ENABLED=0 go build -o dist/main
           cd dist && zip -r -9 api.zip *
 
       - name: Update
