@@ -1,7 +1,7 @@
 # AWS Lambda update action
 
 [![GitHub](https://img.shields.io/github/license/kazimanzurrashid/aws-lambda-update-action)](https://opensource.org/licenses/MIT)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/kazimanzurrashid/aws-lambda-update-action)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/kazimanzurrashid/aws-lambda-update-action)](https://github.com/kazimanzurrashid/aws-lambda-update-action/releases)
 
 This action updates a given lambda. It is very lightweight comparing to others, it uses the upcoming AWS Node SDK 3 which 
 only pulls lambda client to update the lambda code.
