@@ -6,7 +6,7 @@ require('./sourcemap-register.js');module.exports =
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse("{\"name\":\"@aws-sdk/client-lambda\",\"description\":\"AWS SDK for JavaScript Lambda Client for Node.js, Browser and React Native\",\"version\":\"1.0.0-rc.9\",\"scripts\":{\"clean\":\"yarn remove-definitions && yarn remove-dist && yarn remove-documentation\",\"build-documentation\":\"yarn remove-documentation && typedoc ./\",\"prepublishOnly\":\"yarn build\",\"pretest\":\"yarn build:cjs\",\"remove-definitions\":\"rimraf ./types\",\"remove-dist\":\"rimraf ./dist\",\"remove-documentation\":\"rimraf ./docs\",\"test\":\"exit 0\",\"build:cjs\":\"tsc -p tsconfig.json\",\"build:es\":\"tsc -p tsconfig.es.json\",\"build\":\"yarn build:cjs && yarn build:es\"},\"main\":\"./dist/cjs/index.js\",\"types\":\"./types/index.d.ts\",\"module\":\"./dist/es/index.js\",\"browser\":{\"./runtimeConfig\":\"./runtimeConfig.browser\"},\"react-native\":{\"./runtimeConfig\":\"./runtimeConfig.native\"},\"sideEffects\":false,\"dependencies\":{\"@aws-crypto/sha256-browser\":\"^1.0.0\",\"@aws-crypto/sha256-js\":\"^1.0.0\",\"@aws-sdk/config-resolver\":\"1.0.0-rc.9\",\"@aws-sdk/credential-provider-node\":\"1.0.0-rc.9\",\"@aws-sdk/fetch-http-handler\":\"1.0.0-rc.8\",\"@aws-sdk/hash-node\":\"1.0.0-rc.8\",\"@aws-sdk/invalid-dependency\":\"1.0.0-rc.8\",\"@aws-sdk/middleware-content-length\":\"1.0.0-rc.8\",\"@aws-sdk/middleware-host-header\":\"1.0.0-rc.8\",\"@aws-sdk/middleware-logger\":\"1.0.0-rc.8\",\"@aws-sdk/middleware-retry\":\"1.0.0-rc.9\",\"@aws-sdk/middleware-serde\":\"1.0.0-rc.8\",\"@aws-sdk/middleware-signing\":\"1.0.0-rc.9\",\"@aws-sdk/middleware-stack\":\"1.0.0-rc.8\",\"@aws-sdk/middleware-user-agent\":\"1.0.0-rc.8\",\"@aws-sdk/node-config-provider\":\"1.0.0-rc.9\",\"@aws-sdk/node-http-handler\":\"1.0.0-rc.8\",\"@aws-sdk/protocol-http\":\"1.0.0-rc.8\",\"@aws-sdk/smithy-client\":\"1.0.0-rc.8\",\"@aws-sdk/url-parser-browser\":\"1.0.0-rc.8\",\"@aws-sdk/url-parser-node\":\"1.0.0-rc.9\",\"@aws-sdk/util-base64-browser\":\"1.0.0-rc.8\",\"@aws-sdk/util-base64-node\":\"1.0.0-rc.8\",\"@aws-sdk/util-body-length-browser\":\"1.0.0-rc.8\",\"@aws-sdk/util-body-length-node\":\"1.0.0-rc.8\",\"@aws-sdk/util-user-agent-browser\":\"1.0.0-rc.8\",\"@aws-sdk/util-user-agent-node\":\"1.0.0-rc.8\",\"@aws-sdk/util-utf8-browser\":\"1.0.0-rc.8\",\"@aws-sdk/util-utf8-node\":\"1.0.0-rc.8\",\"tslib\":\"^2.0.0\"},\"devDependencies\":{\"@aws-sdk/client-documentation-generator\":\"1.0.0-rc.8\",\"@aws-sdk/types\":\"1.0.0-rc.8\",\"@types/node\":\"^12.7.5\",\"jest\":\"^26.1.0\",\"rimraf\":\"^3.0.0\",\"typedoc\":\"^0.19.2\",\"typescript\":\"~4.1.2\"},\"engines\":{\"node\":\">=10.0.0\"},\"author\":{\"name\":\"AWS SDK for JavaScript Team\",\"url\":\"https://aws.amazon.com/javascript/\"},\"license\":\"Apache-2.0\",\"homepage\":\"https://github.com/aws/aws-sdk-js-v3/tree/master/clients/client-lambda\",\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/aws/aws-sdk-js-v3.git\",\"directory\":\"clients/client-lambda\"}}");
+module.exports = JSON.parse("{\"name\":\"@aws-sdk/client-lambda\",\"description\":\"AWS SDK for JavaScript Lambda Client for Node.js, Browser and React Native\",\"version\":\"3.0.0\",\"scripts\":{\"clean\":\"yarn remove-definitions && yarn remove-dist && yarn remove-documentation\",\"build-documentation\":\"yarn remove-documentation && typedoc ./\",\"prepublishOnly\":\"yarn build\",\"pretest\":\"yarn build:cjs\",\"remove-definitions\":\"rimraf ./types\",\"remove-dist\":\"rimraf ./dist\",\"remove-documentation\":\"rimraf ./docs\",\"test\":\"exit 0\",\"build:cjs\":\"tsc -p tsconfig.json\",\"build:es\":\"tsc -p tsconfig.es.json\",\"build\":\"yarn build:cjs && yarn build:es\"},\"main\":\"./dist/cjs/index.js\",\"types\":\"./types/index.d.ts\",\"module\":\"./dist/es/index.js\",\"browser\":{\"./runtimeConfig\":\"./runtimeConfig.browser\"},\"react-native\":{\"./runtimeConfig\":\"./runtimeConfig.native\"},\"sideEffects\":false,\"dependencies\":{\"@aws-crypto/sha256-browser\":\"^1.0.0\",\"@aws-crypto/sha256-js\":\"^1.0.0\",\"@aws-sdk/config-resolver\":\"3.0.0\",\"@aws-sdk/credential-provider-node\":\"3.0.0\",\"@aws-sdk/fetch-http-handler\":\"3.0.0\",\"@aws-sdk/hash-node\":\"3.0.0\",\"@aws-sdk/invalid-dependency\":\"3.0.0\",\"@aws-sdk/middleware-content-length\":\"3.0.0\",\"@aws-sdk/middleware-host-header\":\"3.0.0\",\"@aws-sdk/middleware-logger\":\"3.0.0\",\"@aws-sdk/middleware-retry\":\"3.0.0\",\"@aws-sdk/middleware-serde\":\"3.0.0\",\"@aws-sdk/middleware-signing\":\"3.0.0\",\"@aws-sdk/middleware-stack\":\"3.0.0\",\"@aws-sdk/middleware-user-agent\":\"3.0.0\",\"@aws-sdk/node-config-provider\":\"3.0.0\",\"@aws-sdk/node-http-handler\":\"3.0.0\",\"@aws-sdk/protocol-http\":\"3.0.0\",\"@aws-sdk/smithy-client\":\"3.0.0\",\"@aws-sdk/url-parser-browser\":\"3.0.0\",\"@aws-sdk/url-parser-node\":\"3.0.0\",\"@aws-sdk/util-base64-browser\":\"3.0.0\",\"@aws-sdk/util-base64-node\":\"3.0.0\",\"@aws-sdk/util-body-length-browser\":\"3.0.0\",\"@aws-sdk/util-body-length-node\":\"3.0.0\",\"@aws-sdk/util-user-agent-browser\":\"3.0.0\",\"@aws-sdk/util-user-agent-node\":\"3.0.0\",\"@aws-sdk/util-utf8-browser\":\"3.0.0\",\"@aws-sdk/util-utf8-node\":\"3.0.0\",\"@aws-sdk/util-waiter\":\"3.0.0\",\"tslib\":\"^2.0.0\"},\"devDependencies\":{\"@aws-sdk/client-documentation-generator\":\"3.0.0\",\"@aws-sdk/types\":\"3.0.0\",\"@types/node\":\"^12.7.5\",\"jest\":\"^26.1.0\",\"rimraf\":\"^3.0.0\",\"typedoc\":\"^0.19.2\",\"typescript\":\"~4.1.2\"},\"engines\":{\"node\":\">=10.0.0\"},\"author\":{\"name\":\"AWS SDK for JavaScript Team\",\"url\":\"https://aws.amazon.com/javascript/\"},\"license\":\"Apache-2.0\",\"homepage\":\"https://github.com/aws/aws-sdk-js-v3/tree/master/clients/client-lambda\",\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/aws/aws-sdk-js-v3.git\",\"directory\":\"clients/client-lambda\"}}");
 
 /***/ }),
 
@@ -52,7 +52,7 @@ const util_1 = __webpack_require__(1669);
 const client_lambda_1 = __webpack_require__(8390);
 const core_1 = __webpack_require__(2186);
 const action_1 = __webpack_require__(5834);
-const getValue = (key) => (core_1.getInput(key) || process.env[key]);
+const getValue = (key) => core_1.getInput(key) || process.env[key];
 const zipFileLocation = core_1.getInput('zip-file', { required: true });
 const lambdaName = core_1.getInput('lambda-name') || path_1.basename(zipFileLocation, '.zip');
 const publish = (core_1.getInput('publish') || '').toLowerCase() === 'true';
@@ -5425,9 +5425,12 @@ tslib_1.__exportStar(__webpack_require__(36), exports);
 tslib_1.__exportStar(__webpack_require__(7171), exports);
 tslib_1.__exportStar(__webpack_require__(3635), exports);
 tslib_1.__exportStar(__webpack_require__(5296), exports);
+tslib_1.__exportStar(__webpack_require__(1552), exports);
 tslib_1.__exportStar(__webpack_require__(6136), exports);
 tslib_1.__exportStar(__webpack_require__(1452), exports);
 tslib_1.__exportStar(__webpack_require__(9459), exports);
+tslib_1.__exportStar(__webpack_require__(2632), exports);
+tslib_1.__exportStar(__webpack_require__(1582), exports);
 tslib_1.__exportStar(__webpack_require__(9493), exports);
 tslib_1.__exportStar(__webpack_require__(8432), exports);
 tslib_1.__exportStar(__webpack_require__(4290), exports);
@@ -6627,6 +6630,7 @@ const makePagedRequest = async (client, input, ...args) => {
     return await client.listAliases(input, ...args);
 };
 async function* paginateListAliases(config, input, ...additionalArguments) {
+    // ToDo: replace with actual type instead of typeof input.Marker
     let token = config.startingToken || undefined;
     let hasNext = true;
     let page;
@@ -6679,6 +6683,7 @@ const makePagedRequest = async (client, input, ...args) => {
     return await client.listCodeSigningConfigs(input, ...args);
 };
 async function* paginateListCodeSigningConfigs(config, input, ...additionalArguments) {
+    // ToDo: replace with actual type instead of typeof input.Marker
     let token = config.startingToken || undefined;
     let hasNext = true;
     let page;
@@ -6731,6 +6736,7 @@ const makePagedRequest = async (client, input, ...args) => {
     return await client.listEventSourceMappings(input, ...args);
 };
 async function* paginateListEventSourceMappings(config, input, ...additionalArguments) {
+    // ToDo: replace with actual type instead of typeof input.Marker
     let token = config.startingToken || undefined;
     let hasNext = true;
     let page;
@@ -6783,6 +6789,7 @@ const makePagedRequest = async (client, input, ...args) => {
     return await client.listFunctionEventInvokeConfigs(input, ...args);
 };
 async function* paginateListFunctionEventInvokeConfigs(config, input, ...additionalArguments) {
+    // ToDo: replace with actual type instead of typeof input.Marker
     let token = config.startingToken || undefined;
     let hasNext = true;
     let page;
@@ -6835,6 +6842,7 @@ const makePagedRequest = async (client, input, ...args) => {
     return await client.listFunctionsByCodeSigningConfig(input, ...args);
 };
 async function* paginateListFunctionsByCodeSigningConfig(config, input, ...additionalArguments) {
+    // ToDo: replace with actual type instead of typeof input.Marker
     let token = config.startingToken || undefined;
     let hasNext = true;
     let page;
@@ -6887,6 +6895,7 @@ const makePagedRequest = async (client, input, ...args) => {
     return await client.listFunctions(input, ...args);
 };
 async function* paginateListFunctions(config, input, ...additionalArguments) {
+    // ToDo: replace with actual type instead of typeof input.Marker
     let token = config.startingToken || undefined;
     let hasNext = true;
     let page;
@@ -6939,6 +6948,7 @@ const makePagedRequest = async (client, input, ...args) => {
     return await client.listLayerVersions(input, ...args);
 };
 async function* paginateListLayerVersions(config, input, ...additionalArguments) {
+    // ToDo: replace with actual type instead of typeof input.Marker
     let token = config.startingToken || undefined;
     let hasNext = true;
     let page;
@@ -6991,6 +7001,7 @@ const makePagedRequest = async (client, input, ...args) => {
     return await client.listLayers(input, ...args);
 };
 async function* paginateListLayers(config, input, ...additionalArguments) {
+    // ToDo: replace with actual type instead of typeof input.Marker
     let token = config.startingToken || undefined;
     let hasNext = true;
     let page;
@@ -7043,6 +7054,7 @@ const makePagedRequest = async (client, input, ...args) => {
     return await client.listProvisionedConcurrencyConfigs(input, ...args);
 };
 async function* paginateListProvisionedConcurrencyConfigs(config, input, ...additionalArguments) {
+    // ToDo: replace with actual type instead of typeof input.Marker
     let token = config.startingToken || undefined;
     let hasNext = true;
     let page;
@@ -7095,6 +7107,7 @@ const makePagedRequest = async (client, input, ...args) => {
     return await client.listVersionsByFunction(input, ...args);
 };
 async function* paginateListVersionsByFunction(config, input, ...additionalArguments) {
+    // ToDo: replace with actual type instead of typeof input.Marker
     let token = config.startingToken || undefined;
     let hasNext = true;
     let page;
@@ -7135,7 +7148,7 @@ const protocol_http_1 = __webpack_require__(7498);
 const smithy_client_1 = __webpack_require__(2223);
 const serializeAws_restJson1AddLayerVersionPermissionCommand = async (input, context) => {
     const headers = {
-        "Content-Type": "application/json",
+        "content-type": "application/json",
     };
     let resolvedPath = "/2018-10-31/layers/{LayerName}/versions/{VersionNumber}/policy";
     if (input.LayerName !== undefined) {
@@ -7163,10 +7176,11 @@ const serializeAws_restJson1AddLayerVersionPermissionCommand = async (input, con
     };
     let body;
     body = JSON.stringify({
-        ...(input.Action !== undefined && { Action: input.Action }),
-        ...(input.OrganizationId !== undefined && { OrganizationId: input.OrganizationId }),
-        ...(input.Principal !== undefined && { Principal: input.Principal }),
-        ...(input.StatementId !== undefined && { StatementId: input.StatementId }),
+        ...(input.Action !== undefined && input.Action !== null && { Action: input.Action }),
+        ...(input.OrganizationId !== undefined &&
+            input.OrganizationId !== null && { OrganizationId: input.OrganizationId }),
+        ...(input.Principal !== undefined && input.Principal !== null && { Principal: input.Principal }),
+        ...(input.StatementId !== undefined && input.StatementId !== null && { StatementId: input.StatementId }),
     });
     const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
@@ -7183,7 +7197,7 @@ const serializeAws_restJson1AddLayerVersionPermissionCommand = async (input, con
 exports.serializeAws_restJson1AddLayerVersionPermissionCommand = serializeAws_restJson1AddLayerVersionPermissionCommand;
 const serializeAws_restJson1AddPermissionCommand = async (input, context) => {
     const headers = {
-        "Content-Type": "application/json",
+        "content-type": "application/json",
     };
     let resolvedPath = "/2015-03-31/functions/{FunctionName}/policy";
     if (input.FunctionName !== undefined) {
@@ -7201,13 +7215,14 @@ const serializeAws_restJson1AddPermissionCommand = async (input, context) => {
     };
     let body;
     body = JSON.stringify({
-        ...(input.Action !== undefined && { Action: input.Action }),
-        ...(input.EventSourceToken !== undefined && { EventSourceToken: input.EventSourceToken }),
-        ...(input.Principal !== undefined && { Principal: input.Principal }),
-        ...(input.RevisionId !== undefined && { RevisionId: input.RevisionId }),
-        ...(input.SourceAccount !== undefined && { SourceAccount: input.SourceAccount }),
-        ...(input.SourceArn !== undefined && { SourceArn: input.SourceArn }),
-        ...(input.StatementId !== undefined && { StatementId: input.StatementId }),
+        ...(input.Action !== undefined && input.Action !== null && { Action: input.Action }),
+        ...(input.EventSourceToken !== undefined &&
+            input.EventSourceToken !== null && { EventSourceToken: input.EventSourceToken }),
+        ...(input.Principal !== undefined && input.Principal !== null && { Principal: input.Principal }),
+        ...(input.RevisionId !== undefined && input.RevisionId !== null && { RevisionId: input.RevisionId }),
+        ...(input.SourceAccount !== undefined && input.SourceAccount !== null && { SourceAccount: input.SourceAccount }),
+        ...(input.SourceArn !== undefined && input.SourceArn !== null && { SourceArn: input.SourceArn }),
+        ...(input.StatementId !== undefined && input.StatementId !== null && { StatementId: input.StatementId }),
     });
     const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
@@ -7224,7 +7239,7 @@ const serializeAws_restJson1AddPermissionCommand = async (input, context) => {
 exports.serializeAws_restJson1AddPermissionCommand = serializeAws_restJson1AddPermissionCommand;
 const serializeAws_restJson1CreateAliasCommand = async (input, context) => {
     const headers = {
-        "Content-Type": "application/json",
+        "content-type": "application/json",
     };
     let resolvedPath = "/2015-03-31/functions/{FunctionName}/aliases";
     if (input.FunctionName !== undefined) {
@@ -7239,10 +7254,12 @@ const serializeAws_restJson1CreateAliasCommand = async (input, context) => {
     }
     let body;
     body = JSON.stringify({
-        ...(input.Description !== undefined && { Description: input.Description }),
-        ...(input.FunctionVersion !== undefined && { FunctionVersion: input.FunctionVersion }),
-        ...(input.Name !== undefined && { Name: input.Name }),
-        ...(input.RoutingConfig !== undefined && {
+        ...(input.Description !== undefined && input.Description !== null && { Description: input.Description }),
+        ...(input.FunctionVersion !== undefined &&
+            input.FunctionVersion !== null && { FunctionVersion: input.FunctionVersion }),
+        ...(input.Name !== undefined && input.Name !== null && { Name: input.Name }),
+        ...(input.RoutingConfig !== undefined &&
+            input.RoutingConfig !== null && {
             RoutingConfig: serializeAws_restJson1AliasRoutingConfiguration(input.RoutingConfig, context),
         }),
     });
@@ -7260,18 +7277,20 @@ const serializeAws_restJson1CreateAliasCommand = async (input, context) => {
 exports.serializeAws_restJson1CreateAliasCommand = serializeAws_restJson1CreateAliasCommand;
 const serializeAws_restJson1CreateCodeSigningConfigCommand = async (input, context) => {
     const headers = {
-        "Content-Type": "application/json",
+        "content-type": "application/json",
     };
     let resolvedPath = "/2020-04-22/code-signing-configs";
     let body;
     body = JSON.stringify({
-        ...(input.AllowedPublishers !== undefined && {
+        ...(input.AllowedPublishers !== undefined &&
+            input.AllowedPublishers !== null && {
             AllowedPublishers: serializeAws_restJson1AllowedPublishers(input.AllowedPublishers, context),
         }),
-        ...(input.CodeSigningPolicies !== undefined && {
+        ...(input.CodeSigningPolicies !== undefined &&
+            input.CodeSigningPolicies !== null && {
             CodeSigningPolicies: serializeAws_restJson1CodeSigningPolicies(input.CodeSigningPolicies, context),
         }),
-        ...(input.Description !== undefined && { Description: input.Description }),
+        ...(input.Description !== undefined && input.Description !== null && { Description: input.Description }),
     });
     const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
@@ -7287,38 +7306,46 @@ const serializeAws_restJson1CreateCodeSigningConfigCommand = async (input, conte
 exports.serializeAws_restJson1CreateCodeSigningConfigCommand = serializeAws_restJson1CreateCodeSigningConfigCommand;
 const serializeAws_restJson1CreateEventSourceMappingCommand = async (input, context) => {
     const headers = {
-        "Content-Type": "application/json",
+        "content-type": "application/json",
     };
     let resolvedPath = "/2015-03-31/event-source-mappings";
     let body;
     body = JSON.stringify({
-        ...(input.BatchSize !== undefined && { BatchSize: input.BatchSize }),
-        ...(input.BisectBatchOnFunctionError !== undefined && {
-            BisectBatchOnFunctionError: input.BisectBatchOnFunctionError,
-        }),
-        ...(input.DestinationConfig !== undefined && {
+        ...(input.BatchSize !== undefined && input.BatchSize !== null && { BatchSize: input.BatchSize }),
+        ...(input.BisectBatchOnFunctionError !== undefined &&
+            input.BisectBatchOnFunctionError !== null && { BisectBatchOnFunctionError: input.BisectBatchOnFunctionError }),
+        ...(input.DestinationConfig !== undefined &&
+            input.DestinationConfig !== null && {
             DestinationConfig: serializeAws_restJson1DestinationConfig(input.DestinationConfig, context),
         }),
-        ...(input.Enabled !== undefined && { Enabled: input.Enabled }),
-        ...(input.EventSourceArn !== undefined && { EventSourceArn: input.EventSourceArn }),
-        ...(input.FunctionName !== undefined && { FunctionName: input.FunctionName }),
-        ...(input.MaximumBatchingWindowInSeconds !== undefined && {
+        ...(input.Enabled !== undefined && input.Enabled !== null && { Enabled: input.Enabled }),
+        ...(input.EventSourceArn !== undefined &&
+            input.EventSourceArn !== null && { EventSourceArn: input.EventSourceArn }),
+        ...(input.FunctionName !== undefined && input.FunctionName !== null && { FunctionName: input.FunctionName }),
+        ...(input.MaximumBatchingWindowInSeconds !== undefined &&
+            input.MaximumBatchingWindowInSeconds !== null && {
             MaximumBatchingWindowInSeconds: input.MaximumBatchingWindowInSeconds,
         }),
-        ...(input.MaximumRecordAgeInSeconds !== undefined && {
-            MaximumRecordAgeInSeconds: input.MaximumRecordAgeInSeconds,
-        }),
-        ...(input.MaximumRetryAttempts !== undefined && { MaximumRetryAttempts: input.MaximumRetryAttempts }),
-        ...(input.ParallelizationFactor !== undefined && { ParallelizationFactor: input.ParallelizationFactor }),
-        ...(input.Queues !== undefined && { Queues: serializeAws_restJson1Queues(input.Queues, context) }),
-        ...(input.SourceAccessConfigurations !== undefined && {
+        ...(input.MaximumRecordAgeInSeconds !== undefined &&
+            input.MaximumRecordAgeInSeconds !== null && { MaximumRecordAgeInSeconds: input.MaximumRecordAgeInSeconds }),
+        ...(input.MaximumRetryAttempts !== undefined &&
+            input.MaximumRetryAttempts !== null && { MaximumRetryAttempts: input.MaximumRetryAttempts }),
+        ...(input.ParallelizationFactor !== undefined &&
+            input.ParallelizationFactor !== null && { ParallelizationFactor: input.ParallelizationFactor }),
+        ...(input.Queues !== undefined &&
+            input.Queues !== null && { Queues: serializeAws_restJson1Queues(input.Queues, context) }),
+        ...(input.SourceAccessConfigurations !== undefined &&
+            input.SourceAccessConfigurations !== null && {
             SourceAccessConfigurations: serializeAws_restJson1SourceAccessConfigurations(input.SourceAccessConfigurations, context),
         }),
-        ...(input.StartingPosition !== undefined && { StartingPosition: input.StartingPosition }),
-        ...(input.StartingPositionTimestamp !== undefined && {
+        ...(input.StartingPosition !== undefined &&
+            input.StartingPosition !== null && { StartingPosition: input.StartingPosition }),
+        ...(input.StartingPositionTimestamp !== undefined &&
+            input.StartingPositionTimestamp !== null && {
             StartingPositionTimestamp: Math.round(input.StartingPositionTimestamp.getTime() / 1000),
         }),
-        ...(input.Topics !== undefined && { Topics: serializeAws_restJson1Topics(input.Topics, context) }),
+        ...(input.Topics !== undefined &&
+            input.Topics !== null && { Topics: serializeAws_restJson1Topics(input.Topics, context) }),
     });
     const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
@@ -7334,41 +7361,46 @@ const serializeAws_restJson1CreateEventSourceMappingCommand = async (input, cont
 exports.serializeAws_restJson1CreateEventSourceMappingCommand = serializeAws_restJson1CreateEventSourceMappingCommand;
 const serializeAws_restJson1CreateFunctionCommand = async (input, context) => {
     const headers = {
-        "Content-Type": "application/json",
+        "content-type": "application/json",
     };
     let resolvedPath = "/2015-03-31/functions";
     let body;
     body = JSON.stringify({
-        ...(input.Code !== undefined && { Code: serializeAws_restJson1FunctionCode(input.Code, context) }),
-        ...(input.CodeSigningConfigArn !== undefined && { CodeSigningConfigArn: input.CodeSigningConfigArn }),
-        ...(input.DeadLetterConfig !== undefined && {
+        ...(input.Code !== undefined &&
+            input.Code !== null && { Code: serializeAws_restJson1FunctionCode(input.Code, context) }),
+        ...(input.CodeSigningConfigArn !== undefined &&
+            input.CodeSigningConfigArn !== null && { CodeSigningConfigArn: input.CodeSigningConfigArn }),
+        ...(input.DeadLetterConfig !== undefined &&
+            input.DeadLetterConfig !== null && {
             DeadLetterConfig: serializeAws_restJson1DeadLetterConfig(input.DeadLetterConfig, context),
         }),
-        ...(input.Description !== undefined && { Description: input.Description }),
-        ...(input.Environment !== undefined && {
-            Environment: serializeAws_restJson1Environment(input.Environment, context),
-        }),
-        ...(input.FileSystemConfigs !== undefined && {
+        ...(input.Description !== undefined && input.Description !== null && { Description: input.Description }),
+        ...(input.Environment !== undefined &&
+            input.Environment !== null && { Environment: serializeAws_restJson1Environment(input.Environment, context) }),
+        ...(input.FileSystemConfigs !== undefined &&
+            input.FileSystemConfigs !== null && {
             FileSystemConfigs: serializeAws_restJson1FileSystemConfigList(input.FileSystemConfigs, context),
         }),
-        ...(input.FunctionName !== undefined && { FunctionName: input.FunctionName }),
-        ...(input.Handler !== undefined && { Handler: input.Handler }),
-        ...(input.ImageConfig !== undefined && {
-            ImageConfig: serializeAws_restJson1ImageConfig(input.ImageConfig, context),
-        }),
-        ...(input.KMSKeyArn !== undefined && { KMSKeyArn: input.KMSKeyArn }),
-        ...(input.Layers !== undefined && { Layers: serializeAws_restJson1LayerList(input.Layers, context) }),
-        ...(input.MemorySize !== undefined && { MemorySize: input.MemorySize }),
-        ...(input.PackageType !== undefined && { PackageType: input.PackageType }),
-        ...(input.Publish !== undefined && { Publish: input.Publish }),
-        ...(input.Role !== undefined && { Role: input.Role }),
-        ...(input.Runtime !== undefined && { Runtime: input.Runtime }),
-        ...(input.Tags !== undefined && { Tags: serializeAws_restJson1Tags(input.Tags, context) }),
-        ...(input.Timeout !== undefined && { Timeout: input.Timeout }),
-        ...(input.TracingConfig !== undefined && {
+        ...(input.FunctionName !== undefined && input.FunctionName !== null && { FunctionName: input.FunctionName }),
+        ...(input.Handler !== undefined && input.Handler !== null && { Handler: input.Handler }),
+        ...(input.ImageConfig !== undefined &&
+            input.ImageConfig !== null && { ImageConfig: serializeAws_restJson1ImageConfig(input.ImageConfig, context) }),
+        ...(input.KMSKeyArn !== undefined && input.KMSKeyArn !== null && { KMSKeyArn: input.KMSKeyArn }),
+        ...(input.Layers !== undefined &&
+            input.Layers !== null && { Layers: serializeAws_restJson1LayerList(input.Layers, context) }),
+        ...(input.MemorySize !== undefined && input.MemorySize !== null && { MemorySize: input.MemorySize }),
+        ...(input.PackageType !== undefined && input.PackageType !== null && { PackageType: input.PackageType }),
+        ...(input.Publish !== undefined && input.Publish !== null && { Publish: input.Publish }),
+        ...(input.Role !== undefined && input.Role !== null && { Role: input.Role }),
+        ...(input.Runtime !== undefined && input.Runtime !== null && { Runtime: input.Runtime }),
+        ...(input.Tags !== undefined && input.Tags !== null && { Tags: serializeAws_restJson1Tags(input.Tags, context) }),
+        ...(input.Timeout !== undefined && input.Timeout !== null && { Timeout: input.Timeout }),
+        ...(input.TracingConfig !== undefined &&
+            input.TracingConfig !== null && {
             TracingConfig: serializeAws_restJson1TracingConfig(input.TracingConfig, context),
         }),
-        ...(input.VpcConfig !== undefined && { VpcConfig: serializeAws_restJson1VpcConfig(input.VpcConfig, context) }),
+        ...(input.VpcConfig !== undefined &&
+            input.VpcConfig !== null && { VpcConfig: serializeAws_restJson1VpcConfig(input.VpcConfig, context) }),
     });
     const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
@@ -7383,9 +7415,7 @@ const serializeAws_restJson1CreateFunctionCommand = async (input, context) => {
 };
 exports.serializeAws_restJson1CreateFunctionCommand = serializeAws_restJson1CreateFunctionCommand;
 const serializeAws_restJson1DeleteAliasCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2015-03-31/functions/{FunctionName}/aliases/{Name}";
     if (input.FunctionName !== undefined) {
         const labelValue = input.FunctionName;
@@ -7421,9 +7451,7 @@ const serializeAws_restJson1DeleteAliasCommand = async (input, context) => {
 };
 exports.serializeAws_restJson1DeleteAliasCommand = serializeAws_restJson1DeleteAliasCommand;
 const serializeAws_restJson1DeleteCodeSigningConfigCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2020-04-22/code-signing-configs/{CodeSigningConfigArn}";
     if (input.CodeSigningConfigArn !== undefined) {
         const labelValue = input.CodeSigningConfigArn;
@@ -7449,9 +7477,7 @@ const serializeAws_restJson1DeleteCodeSigningConfigCommand = async (input, conte
 };
 exports.serializeAws_restJson1DeleteCodeSigningConfigCommand = serializeAws_restJson1DeleteCodeSigningConfigCommand;
 const serializeAws_restJson1DeleteEventSourceMappingCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2015-03-31/event-source-mappings/{UUID}";
     if (input.UUID !== undefined) {
         const labelValue = input.UUID;
@@ -7477,9 +7503,7 @@ const serializeAws_restJson1DeleteEventSourceMappingCommand = async (input, cont
 };
 exports.serializeAws_restJson1DeleteEventSourceMappingCommand = serializeAws_restJson1DeleteEventSourceMappingCommand;
 const serializeAws_restJson1DeleteFunctionCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2015-03-31/functions/{FunctionName}";
     if (input.FunctionName !== undefined) {
         const labelValue = input.FunctionName;
@@ -7509,9 +7533,7 @@ const serializeAws_restJson1DeleteFunctionCommand = async (input, context) => {
 };
 exports.serializeAws_restJson1DeleteFunctionCommand = serializeAws_restJson1DeleteFunctionCommand;
 const serializeAws_restJson1DeleteFunctionCodeSigningConfigCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2020-06-30/functions/{FunctionName}/code-signing-config";
     if (input.FunctionName !== undefined) {
         const labelValue = input.FunctionName;
@@ -7537,9 +7559,7 @@ const serializeAws_restJson1DeleteFunctionCodeSigningConfigCommand = async (inpu
 };
 exports.serializeAws_restJson1DeleteFunctionCodeSigningConfigCommand = serializeAws_restJson1DeleteFunctionCodeSigningConfigCommand;
 const serializeAws_restJson1DeleteFunctionConcurrencyCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2017-10-31/functions/{FunctionName}/concurrency";
     if (input.FunctionName !== undefined) {
         const labelValue = input.FunctionName;
@@ -7565,9 +7585,7 @@ const serializeAws_restJson1DeleteFunctionConcurrencyCommand = async (input, con
 };
 exports.serializeAws_restJson1DeleteFunctionConcurrencyCommand = serializeAws_restJson1DeleteFunctionConcurrencyCommand;
 const serializeAws_restJson1DeleteFunctionEventInvokeConfigCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2019-09-25/functions/{FunctionName}/event-invoke-config";
     if (input.FunctionName !== undefined) {
         const labelValue = input.FunctionName;
@@ -7597,9 +7615,7 @@ const serializeAws_restJson1DeleteFunctionEventInvokeConfigCommand = async (inpu
 };
 exports.serializeAws_restJson1DeleteFunctionEventInvokeConfigCommand = serializeAws_restJson1DeleteFunctionEventInvokeConfigCommand;
 const serializeAws_restJson1DeleteLayerVersionCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2018-10-31/layers/{LayerName}/versions/{VersionNumber}";
     if (input.LayerName !== undefined) {
         const labelValue = input.LayerName;
@@ -7635,9 +7651,7 @@ const serializeAws_restJson1DeleteLayerVersionCommand = async (input, context) =
 };
 exports.serializeAws_restJson1DeleteLayerVersionCommand = serializeAws_restJson1DeleteLayerVersionCommand;
 const serializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2019-09-30/functions/{FunctionName}/provisioned-concurrency";
     if (input.FunctionName !== undefined) {
         const labelValue = input.FunctionName;
@@ -7667,12 +7681,10 @@ const serializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand = async (i
 };
 exports.serializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand = serializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand;
 const serializeAws_restJson1GetAccountSettingsCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2016-08-19/account-settings";
     let body;
-    body = "{}";
+    body = "";
     const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
@@ -7686,9 +7698,7 @@ const serializeAws_restJson1GetAccountSettingsCommand = async (input, context) =
 };
 exports.serializeAws_restJson1GetAccountSettingsCommand = serializeAws_restJson1GetAccountSettingsCommand;
 const serializeAws_restJson1GetAliasCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2015-03-31/functions/{FunctionName}/aliases/{Name}";
     if (input.FunctionName !== undefined) {
         const labelValue = input.FunctionName;
@@ -7724,9 +7734,7 @@ const serializeAws_restJson1GetAliasCommand = async (input, context) => {
 };
 exports.serializeAws_restJson1GetAliasCommand = serializeAws_restJson1GetAliasCommand;
 const serializeAws_restJson1GetCodeSigningConfigCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2020-04-22/code-signing-configs/{CodeSigningConfigArn}";
     if (input.CodeSigningConfigArn !== undefined) {
         const labelValue = input.CodeSigningConfigArn;
@@ -7752,9 +7760,7 @@ const serializeAws_restJson1GetCodeSigningConfigCommand = async (input, context)
 };
 exports.serializeAws_restJson1GetCodeSigningConfigCommand = serializeAws_restJson1GetCodeSigningConfigCommand;
 const serializeAws_restJson1GetEventSourceMappingCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2015-03-31/event-source-mappings/{UUID}";
     if (input.UUID !== undefined) {
         const labelValue = input.UUID;
@@ -7780,9 +7786,7 @@ const serializeAws_restJson1GetEventSourceMappingCommand = async (input, context
 };
 exports.serializeAws_restJson1GetEventSourceMappingCommand = serializeAws_restJson1GetEventSourceMappingCommand;
 const serializeAws_restJson1GetFunctionCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2015-03-31/functions/{FunctionName}";
     if (input.FunctionName !== undefined) {
         const labelValue = input.FunctionName;
@@ -7812,9 +7816,7 @@ const serializeAws_restJson1GetFunctionCommand = async (input, context) => {
 };
 exports.serializeAws_restJson1GetFunctionCommand = serializeAws_restJson1GetFunctionCommand;
 const serializeAws_restJson1GetFunctionCodeSigningConfigCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2020-06-30/functions/{FunctionName}/code-signing-config";
     if (input.FunctionName !== undefined) {
         const labelValue = input.FunctionName;
@@ -7840,9 +7842,7 @@ const serializeAws_restJson1GetFunctionCodeSigningConfigCommand = async (input, 
 };
 exports.serializeAws_restJson1GetFunctionCodeSigningConfigCommand = serializeAws_restJson1GetFunctionCodeSigningConfigCommand;
 const serializeAws_restJson1GetFunctionConcurrencyCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2019-09-30/functions/{FunctionName}/concurrency";
     if (input.FunctionName !== undefined) {
         const labelValue = input.FunctionName;
@@ -7868,9 +7868,7 @@ const serializeAws_restJson1GetFunctionConcurrencyCommand = async (input, contex
 };
 exports.serializeAws_restJson1GetFunctionConcurrencyCommand = serializeAws_restJson1GetFunctionConcurrencyCommand;
 const serializeAws_restJson1GetFunctionConfigurationCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2015-03-31/functions/{FunctionName}/configuration";
     if (input.FunctionName !== undefined) {
         const labelValue = input.FunctionName;
@@ -7900,9 +7898,7 @@ const serializeAws_restJson1GetFunctionConfigurationCommand = async (input, cont
 };
 exports.serializeAws_restJson1GetFunctionConfigurationCommand = serializeAws_restJson1GetFunctionConfigurationCommand;
 const serializeAws_restJson1GetFunctionEventInvokeConfigCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2019-09-25/functions/{FunctionName}/event-invoke-config";
     if (input.FunctionName !== undefined) {
         const labelValue = input.FunctionName;
@@ -7932,9 +7928,7 @@ const serializeAws_restJson1GetFunctionEventInvokeConfigCommand = async (input, 
 };
 exports.serializeAws_restJson1GetFunctionEventInvokeConfigCommand = serializeAws_restJson1GetFunctionEventInvokeConfigCommand;
 const serializeAws_restJson1GetLayerVersionCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2018-10-31/layers/{LayerName}/versions/{VersionNumber}";
     if (input.LayerName !== undefined) {
         const labelValue = input.LayerName;
@@ -7970,9 +7964,7 @@ const serializeAws_restJson1GetLayerVersionCommand = async (input, context) => {
 };
 exports.serializeAws_restJson1GetLayerVersionCommand = serializeAws_restJson1GetLayerVersionCommand;
 const serializeAws_restJson1GetLayerVersionByArnCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2018-10-31/layers";
     const query = {
         find: "LayerVersion",
@@ -7993,9 +7985,7 @@ const serializeAws_restJson1GetLayerVersionByArnCommand = async (input, context)
 };
 exports.serializeAws_restJson1GetLayerVersionByArnCommand = serializeAws_restJson1GetLayerVersionByArnCommand;
 const serializeAws_restJson1GetLayerVersionPolicyCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2018-10-31/layers/{LayerName}/versions/{VersionNumber}/policy";
     if (input.LayerName !== undefined) {
         const labelValue = input.LayerName;
@@ -8031,9 +8021,7 @@ const serializeAws_restJson1GetLayerVersionPolicyCommand = async (input, context
 };
 exports.serializeAws_restJson1GetLayerVersionPolicyCommand = serializeAws_restJson1GetLayerVersionPolicyCommand;
 const serializeAws_restJson1GetPolicyCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2015-03-31/functions/{FunctionName}/policy";
     if (input.FunctionName !== undefined) {
         const labelValue = input.FunctionName;
@@ -8063,9 +8051,7 @@ const serializeAws_restJson1GetPolicyCommand = async (input, context) => {
 };
 exports.serializeAws_restJson1GetPolicyCommand = serializeAws_restJson1GetPolicyCommand;
 const serializeAws_restJson1GetProvisionedConcurrencyConfigCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2019-09-30/functions/{FunctionName}/provisioned-concurrency";
     if (input.FunctionName !== undefined) {
         const labelValue = input.FunctionName;
@@ -8096,7 +8082,7 @@ const serializeAws_restJson1GetProvisionedConcurrencyConfigCommand = async (inpu
 exports.serializeAws_restJson1GetProvisionedConcurrencyConfigCommand = serializeAws_restJson1GetProvisionedConcurrencyConfigCommand;
 const serializeAws_restJson1InvokeCommand = async (input, context) => {
     const headers = {
-        "Content-Type": "application/octet-stream",
+        "content-type": "application/octet-stream",
         ...(isSerializableHeaderValue(input.InvocationType) && { "X-Amz-Invocation-Type": input.InvocationType }),
         ...(isSerializableHeaderValue(input.LogType) && { "X-Amz-Log-Type": input.LogType }),
         ...(isSerializableHeaderValue(input.ClientContext) && { "X-Amz-Client-Context": input.ClientContext }),
@@ -8134,7 +8120,7 @@ const serializeAws_restJson1InvokeCommand = async (input, context) => {
 exports.serializeAws_restJson1InvokeCommand = serializeAws_restJson1InvokeCommand;
 const serializeAws_restJson1InvokeAsyncCommand = async (input, context) => {
     const headers = {
-        "Content-Type": "application/octet-stream",
+        "content-type": "application/octet-stream",
     };
     let resolvedPath = "/2014-11-13/functions/{FunctionName}/invoke-async";
     if (input.FunctionName !== undefined) {
@@ -8164,9 +8150,7 @@ const serializeAws_restJson1InvokeAsyncCommand = async (input, context) => {
 };
 exports.serializeAws_restJson1InvokeAsyncCommand = serializeAws_restJson1InvokeAsyncCommand;
 const serializeAws_restJson1ListAliasesCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2015-03-31/functions/{FunctionName}/aliases";
     if (input.FunctionName !== undefined) {
         const labelValue = input.FunctionName;
@@ -8198,9 +8182,7 @@ const serializeAws_restJson1ListAliasesCommand = async (input, context) => {
 };
 exports.serializeAws_restJson1ListAliasesCommand = serializeAws_restJson1ListAliasesCommand;
 const serializeAws_restJson1ListCodeSigningConfigsCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2020-04-22/code-signing-configs";
     const query = {
         ...(input.Marker !== undefined && { Marker: input.Marker }),
@@ -8221,9 +8203,7 @@ const serializeAws_restJson1ListCodeSigningConfigsCommand = async (input, contex
 };
 exports.serializeAws_restJson1ListCodeSigningConfigsCommand = serializeAws_restJson1ListCodeSigningConfigsCommand;
 const serializeAws_restJson1ListEventSourceMappingsCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2015-03-31/event-source-mappings";
     const query = {
         ...(input.EventSourceArn !== undefined && { EventSourceArn: input.EventSourceArn }),
@@ -8246,9 +8226,7 @@ const serializeAws_restJson1ListEventSourceMappingsCommand = async (input, conte
 };
 exports.serializeAws_restJson1ListEventSourceMappingsCommand = serializeAws_restJson1ListEventSourceMappingsCommand;
 const serializeAws_restJson1ListFunctionEventInvokeConfigsCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2019-09-25/functions/{FunctionName}/event-invoke-config/list";
     if (input.FunctionName !== undefined) {
         const labelValue = input.FunctionName;
@@ -8279,9 +8257,7 @@ const serializeAws_restJson1ListFunctionEventInvokeConfigsCommand = async (input
 };
 exports.serializeAws_restJson1ListFunctionEventInvokeConfigsCommand = serializeAws_restJson1ListFunctionEventInvokeConfigsCommand;
 const serializeAws_restJson1ListFunctionsCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2015-03-31/functions";
     const query = {
         ...(input.MasterRegion !== undefined && { MasterRegion: input.MasterRegion }),
@@ -8304,9 +8280,7 @@ const serializeAws_restJson1ListFunctionsCommand = async (input, context) => {
 };
 exports.serializeAws_restJson1ListFunctionsCommand = serializeAws_restJson1ListFunctionsCommand;
 const serializeAws_restJson1ListFunctionsByCodeSigningConfigCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2020-04-22/code-signing-configs/{CodeSigningConfigArn}/functions";
     if (input.CodeSigningConfigArn !== undefined) {
         const labelValue = input.CodeSigningConfigArn;
@@ -8337,9 +8311,7 @@ const serializeAws_restJson1ListFunctionsByCodeSigningConfigCommand = async (inp
 };
 exports.serializeAws_restJson1ListFunctionsByCodeSigningConfigCommand = serializeAws_restJson1ListFunctionsByCodeSigningConfigCommand;
 const serializeAws_restJson1ListLayersCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2018-10-31/layers";
     const query = {
         ...(input.CompatibleRuntime !== undefined && { CompatibleRuntime: input.CompatibleRuntime }),
@@ -8361,9 +8333,7 @@ const serializeAws_restJson1ListLayersCommand = async (input, context) => {
 };
 exports.serializeAws_restJson1ListLayersCommand = serializeAws_restJson1ListLayersCommand;
 const serializeAws_restJson1ListLayerVersionsCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2018-10-31/layers/{LayerName}/versions";
     if (input.LayerName !== undefined) {
         const labelValue = input.LayerName;
@@ -8395,9 +8365,7 @@ const serializeAws_restJson1ListLayerVersionsCommand = async (input, context) =>
 };
 exports.serializeAws_restJson1ListLayerVersionsCommand = serializeAws_restJson1ListLayerVersionsCommand;
 const serializeAws_restJson1ListProvisionedConcurrencyConfigsCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2019-09-30/functions/{FunctionName}/provisioned-concurrency";
     if (input.FunctionName !== undefined) {
         const labelValue = input.FunctionName;
@@ -8429,9 +8397,7 @@ const serializeAws_restJson1ListProvisionedConcurrencyConfigsCommand = async (in
 };
 exports.serializeAws_restJson1ListProvisionedConcurrencyConfigsCommand = serializeAws_restJson1ListProvisionedConcurrencyConfigsCommand;
 const serializeAws_restJson1ListTagsCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2017-03-31/tags/{Resource}";
     if (input.Resource !== undefined) {
         const labelValue = input.Resource;
@@ -8457,9 +8423,7 @@ const serializeAws_restJson1ListTagsCommand = async (input, context) => {
 };
 exports.serializeAws_restJson1ListTagsCommand = serializeAws_restJson1ListTagsCommand;
 const serializeAws_restJson1ListVersionsByFunctionCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2015-03-31/functions/{FunctionName}/versions";
     if (input.FunctionName !== undefined) {
         const labelValue = input.FunctionName;
@@ -8491,7 +8455,7 @@ const serializeAws_restJson1ListVersionsByFunctionCommand = async (input, contex
 exports.serializeAws_restJson1ListVersionsByFunctionCommand = serializeAws_restJson1ListVersionsByFunctionCommand;
 const serializeAws_restJson1PublishLayerVersionCommand = async (input, context) => {
     const headers = {
-        "Content-Type": "application/json",
+        "content-type": "application/json",
     };
     let resolvedPath = "/2018-10-31/layers/{LayerName}/versions";
     if (input.LayerName !== undefined) {
@@ -8506,14 +8470,14 @@ const serializeAws_restJson1PublishLayerVersionCommand = async (input, context) 
     }
     let body;
     body = JSON.stringify({
-        ...(input.CompatibleRuntimes !== undefined && {
+        ...(input.CompatibleRuntimes !== undefined &&
+            input.CompatibleRuntimes !== null && {
             CompatibleRuntimes: serializeAws_restJson1CompatibleRuntimes(input.CompatibleRuntimes, context),
         }),
-        ...(input.Content !== undefined && {
-            Content: serializeAws_restJson1LayerVersionContentInput(input.Content, context),
-        }),
-        ...(input.Description !== undefined && { Description: input.Description }),
-        ...(input.LicenseInfo !== undefined && { LicenseInfo: input.LicenseInfo }),
+        ...(input.Content !== undefined &&
+            input.Content !== null && { Content: serializeAws_restJson1LayerVersionContentInput(input.Content, context) }),
+        ...(input.Description !== undefined && input.Description !== null && { Description: input.Description }),
+        ...(input.LicenseInfo !== undefined && input.LicenseInfo !== null && { LicenseInfo: input.LicenseInfo }),
     });
     const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
@@ -8529,7 +8493,7 @@ const serializeAws_restJson1PublishLayerVersionCommand = async (input, context) 
 exports.serializeAws_restJson1PublishLayerVersionCommand = serializeAws_restJson1PublishLayerVersionCommand;
 const serializeAws_restJson1PublishVersionCommand = async (input, context) => {
     const headers = {
-        "Content-Type": "application/json",
+        "content-type": "application/json",
     };
     let resolvedPath = "/2015-03-31/functions/{FunctionName}/versions";
     if (input.FunctionName !== undefined) {
@@ -8544,9 +8508,9 @@ const serializeAws_restJson1PublishVersionCommand = async (input, context) => {
     }
     let body;
     body = JSON.stringify({
-        ...(input.CodeSha256 !== undefined && { CodeSha256: input.CodeSha256 }),
-        ...(input.Description !== undefined && { Description: input.Description }),
-        ...(input.RevisionId !== undefined && { RevisionId: input.RevisionId }),
+        ...(input.CodeSha256 !== undefined && input.CodeSha256 !== null && { CodeSha256: input.CodeSha256 }),
+        ...(input.Description !== undefined && input.Description !== null && { Description: input.Description }),
+        ...(input.RevisionId !== undefined && input.RevisionId !== null && { RevisionId: input.RevisionId }),
     });
     const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
@@ -8562,7 +8526,7 @@ const serializeAws_restJson1PublishVersionCommand = async (input, context) => {
 exports.serializeAws_restJson1PublishVersionCommand = serializeAws_restJson1PublishVersionCommand;
 const serializeAws_restJson1PutFunctionCodeSigningConfigCommand = async (input, context) => {
     const headers = {
-        "Content-Type": "application/json",
+        "content-type": "application/json",
     };
     let resolvedPath = "/2020-06-30/functions/{FunctionName}/code-signing-config";
     if (input.FunctionName !== undefined) {
@@ -8577,7 +8541,8 @@ const serializeAws_restJson1PutFunctionCodeSigningConfigCommand = async (input, 
     }
     let body;
     body = JSON.stringify({
-        ...(input.CodeSigningConfigArn !== undefined && { CodeSigningConfigArn: input.CodeSigningConfigArn }),
+        ...(input.CodeSigningConfigArn !== undefined &&
+            input.CodeSigningConfigArn !== null && { CodeSigningConfigArn: input.CodeSigningConfigArn }),
     });
     const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
@@ -8593,7 +8558,7 @@ const serializeAws_restJson1PutFunctionCodeSigningConfigCommand = async (input, 
 exports.serializeAws_restJson1PutFunctionCodeSigningConfigCommand = serializeAws_restJson1PutFunctionCodeSigningConfigCommand;
 const serializeAws_restJson1PutFunctionConcurrencyCommand = async (input, context) => {
     const headers = {
-        "Content-Type": "application/json",
+        "content-type": "application/json",
     };
     let resolvedPath = "/2017-10-31/functions/{FunctionName}/concurrency";
     if (input.FunctionName !== undefined) {
@@ -8608,7 +8573,8 @@ const serializeAws_restJson1PutFunctionConcurrencyCommand = async (input, contex
     }
     let body;
     body = JSON.stringify({
-        ...(input.ReservedConcurrentExecutions !== undefined && {
+        ...(input.ReservedConcurrentExecutions !== undefined &&
+            input.ReservedConcurrentExecutions !== null && {
             ReservedConcurrentExecutions: input.ReservedConcurrentExecutions,
         }),
     });
@@ -8626,7 +8592,7 @@ const serializeAws_restJson1PutFunctionConcurrencyCommand = async (input, contex
 exports.serializeAws_restJson1PutFunctionConcurrencyCommand = serializeAws_restJson1PutFunctionConcurrencyCommand;
 const serializeAws_restJson1PutFunctionEventInvokeConfigCommand = async (input, context) => {
     const headers = {
-        "Content-Type": "application/json",
+        "content-type": "application/json",
     };
     let resolvedPath = "/2019-09-25/functions/{FunctionName}/event-invoke-config";
     if (input.FunctionName !== undefined) {
@@ -8644,11 +8610,14 @@ const serializeAws_restJson1PutFunctionEventInvokeConfigCommand = async (input, 
     };
     let body;
     body = JSON.stringify({
-        ...(input.DestinationConfig !== undefined && {
+        ...(input.DestinationConfig !== undefined &&
+            input.DestinationConfig !== null && {
             DestinationConfig: serializeAws_restJson1DestinationConfig(input.DestinationConfig, context),
         }),
-        ...(input.MaximumEventAgeInSeconds !== undefined && { MaximumEventAgeInSeconds: input.MaximumEventAgeInSeconds }),
-        ...(input.MaximumRetryAttempts !== undefined && { MaximumRetryAttempts: input.MaximumRetryAttempts }),
+        ...(input.MaximumEventAgeInSeconds !== undefined &&
+            input.MaximumEventAgeInSeconds !== null && { MaximumEventAgeInSeconds: input.MaximumEventAgeInSeconds }),
+        ...(input.MaximumRetryAttempts !== undefined &&
+            input.MaximumRetryAttempts !== null && { MaximumRetryAttempts: input.MaximumRetryAttempts }),
     });
     const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
@@ -8665,7 +8634,7 @@ const serializeAws_restJson1PutFunctionEventInvokeConfigCommand = async (input, 
 exports.serializeAws_restJson1PutFunctionEventInvokeConfigCommand = serializeAws_restJson1PutFunctionEventInvokeConfigCommand;
 const serializeAws_restJson1PutProvisionedConcurrencyConfigCommand = async (input, context) => {
     const headers = {
-        "Content-Type": "application/json",
+        "content-type": "application/json",
     };
     let resolvedPath = "/2019-09-30/functions/{FunctionName}/provisioned-concurrency";
     if (input.FunctionName !== undefined) {
@@ -8683,7 +8652,8 @@ const serializeAws_restJson1PutProvisionedConcurrencyConfigCommand = async (inpu
     };
     let body;
     body = JSON.stringify({
-        ...(input.ProvisionedConcurrentExecutions !== undefined && {
+        ...(input.ProvisionedConcurrentExecutions !== undefined &&
+            input.ProvisionedConcurrentExecutions !== null && {
             ProvisionedConcurrentExecutions: input.ProvisionedConcurrentExecutions,
         }),
     });
@@ -8701,9 +8671,7 @@ const serializeAws_restJson1PutProvisionedConcurrencyConfigCommand = async (inpu
 };
 exports.serializeAws_restJson1PutProvisionedConcurrencyConfigCommand = serializeAws_restJson1PutProvisionedConcurrencyConfigCommand;
 const serializeAws_restJson1RemoveLayerVersionPermissionCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2018-10-31/layers/{LayerName}/versions/{VersionNumber}/policy/{StatementId}";
     if (input.LayerName !== undefined) {
         const labelValue = input.LayerName;
@@ -8753,9 +8721,7 @@ const serializeAws_restJson1RemoveLayerVersionPermissionCommand = async (input, 
 };
 exports.serializeAws_restJson1RemoveLayerVersionPermissionCommand = serializeAws_restJson1RemoveLayerVersionPermissionCommand;
 const serializeAws_restJson1RemovePermissionCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2015-03-31/functions/{FunctionName}/policy/{StatementId}";
     if (input.FunctionName !== undefined) {
         const labelValue = input.FunctionName;
@@ -8797,7 +8763,7 @@ const serializeAws_restJson1RemovePermissionCommand = async (input, context) => 
 exports.serializeAws_restJson1RemovePermissionCommand = serializeAws_restJson1RemovePermissionCommand;
 const serializeAws_restJson1TagResourceCommand = async (input, context) => {
     const headers = {
-        "Content-Type": "application/json",
+        "content-type": "application/json",
     };
     let resolvedPath = "/2017-03-31/tags/{Resource}";
     if (input.Resource !== undefined) {
@@ -8812,7 +8778,7 @@ const serializeAws_restJson1TagResourceCommand = async (input, context) => {
     }
     let body;
     body = JSON.stringify({
-        ...(input.Tags !== undefined && { Tags: serializeAws_restJson1Tags(input.Tags, context) }),
+        ...(input.Tags !== undefined && input.Tags !== null && { Tags: serializeAws_restJson1Tags(input.Tags, context) }),
     });
     const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
@@ -8827,9 +8793,7 @@ const serializeAws_restJson1TagResourceCommand = async (input, context) => {
 };
 exports.serializeAws_restJson1TagResourceCommand = serializeAws_restJson1TagResourceCommand;
 const serializeAws_restJson1UntagResourceCommand = async (input, context) => {
-    const headers = {
-        "Content-Type": "",
-    };
+    const headers = {};
     let resolvedPath = "/2017-03-31/tags/{Resource}";
     if (input.Resource !== undefined) {
         const labelValue = input.Resource;
@@ -8860,7 +8824,7 @@ const serializeAws_restJson1UntagResourceCommand = async (input, context) => {
 exports.serializeAws_restJson1UntagResourceCommand = serializeAws_restJson1UntagResourceCommand;
 const serializeAws_restJson1UpdateAliasCommand = async (input, context) => {
     const headers = {
-        "Content-Type": "application/json",
+        "content-type": "application/json",
     };
     let resolvedPath = "/2015-03-31/functions/{FunctionName}/aliases/{Name}";
     if (input.FunctionName !== undefined) {
@@ -8885,10 +8849,12 @@ const serializeAws_restJson1UpdateAliasCommand = async (input, context) => {
     }
     let body;
     body = JSON.stringify({
-        ...(input.Description !== undefined && { Description: input.Description }),
-        ...(input.FunctionVersion !== undefined && { FunctionVersion: input.FunctionVersion }),
-        ...(input.RevisionId !== undefined && { RevisionId: input.RevisionId }),
-        ...(input.RoutingConfig !== undefined && {
+        ...(input.Description !== undefined && input.Description !== null && { Description: input.Description }),
+        ...(input.FunctionVersion !== undefined &&
+            input.FunctionVersion !== null && { FunctionVersion: input.FunctionVersion }),
+        ...(input.RevisionId !== undefined && input.RevisionId !== null && { RevisionId: input.RevisionId }),
+        ...(input.RoutingConfig !== undefined &&
+            input.RoutingConfig !== null && {
             RoutingConfig: serializeAws_restJson1AliasRoutingConfiguration(input.RoutingConfig, context),
         }),
     });
@@ -8906,7 +8872,7 @@ const serializeAws_restJson1UpdateAliasCommand = async (input, context) => {
 exports.serializeAws_restJson1UpdateAliasCommand = serializeAws_restJson1UpdateAliasCommand;
 const serializeAws_restJson1UpdateCodeSigningConfigCommand = async (input, context) => {
     const headers = {
-        "Content-Type": "application/json",
+        "content-type": "application/json",
     };
     let resolvedPath = "/2020-04-22/code-signing-configs/{CodeSigningConfigArn}";
     if (input.CodeSigningConfigArn !== undefined) {
@@ -8921,13 +8887,15 @@ const serializeAws_restJson1UpdateCodeSigningConfigCommand = async (input, conte
     }
     let body;
     body = JSON.stringify({
-        ...(input.AllowedPublishers !== undefined && {
+        ...(input.AllowedPublishers !== undefined &&
+            input.AllowedPublishers !== null && {
             AllowedPublishers: serializeAws_restJson1AllowedPublishers(input.AllowedPublishers, context),
         }),
-        ...(input.CodeSigningPolicies !== undefined && {
+        ...(input.CodeSigningPolicies !== undefined &&
+            input.CodeSigningPolicies !== null && {
             CodeSigningPolicies: serializeAws_restJson1CodeSigningPolicies(input.CodeSigningPolicies, context),
         }),
-        ...(input.Description !== undefined && { Description: input.Description }),
+        ...(input.Description !== undefined && input.Description !== null && { Description: input.Description }),
     });
     const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
@@ -8943,7 +8911,7 @@ const serializeAws_restJson1UpdateCodeSigningConfigCommand = async (input, conte
 exports.serializeAws_restJson1UpdateCodeSigningConfigCommand = serializeAws_restJson1UpdateCodeSigningConfigCommand;
 const serializeAws_restJson1UpdateEventSourceMappingCommand = async (input, context) => {
     const headers = {
-        "Content-Type": "application/json",
+        "content-type": "application/json",
     };
     let resolvedPath = "/2015-03-31/event-source-mappings/{UUID}";
     if (input.UUID !== undefined) {
@@ -8958,24 +8926,27 @@ const serializeAws_restJson1UpdateEventSourceMappingCommand = async (input, cont
     }
     let body;
     body = JSON.stringify({
-        ...(input.BatchSize !== undefined && { BatchSize: input.BatchSize }),
-        ...(input.BisectBatchOnFunctionError !== undefined && {
-            BisectBatchOnFunctionError: input.BisectBatchOnFunctionError,
-        }),
-        ...(input.DestinationConfig !== undefined && {
+        ...(input.BatchSize !== undefined && input.BatchSize !== null && { BatchSize: input.BatchSize }),
+        ...(input.BisectBatchOnFunctionError !== undefined &&
+            input.BisectBatchOnFunctionError !== null && { BisectBatchOnFunctionError: input.BisectBatchOnFunctionError }),
+        ...(input.DestinationConfig !== undefined &&
+            input.DestinationConfig !== null && {
             DestinationConfig: serializeAws_restJson1DestinationConfig(input.DestinationConfig, context),
         }),
-        ...(input.Enabled !== undefined && { Enabled: input.Enabled }),
-        ...(input.FunctionName !== undefined && { FunctionName: input.FunctionName }),
-        ...(input.MaximumBatchingWindowInSeconds !== undefined && {
+        ...(input.Enabled !== undefined && input.Enabled !== null && { Enabled: input.Enabled }),
+        ...(input.FunctionName !== undefined && input.FunctionName !== null && { FunctionName: input.FunctionName }),
+        ...(input.MaximumBatchingWindowInSeconds !== undefined &&
+            input.MaximumBatchingWindowInSeconds !== null && {
             MaximumBatchingWindowInSeconds: input.MaximumBatchingWindowInSeconds,
         }),
-        ...(input.MaximumRecordAgeInSeconds !== undefined && {
-            MaximumRecordAgeInSeconds: input.MaximumRecordAgeInSeconds,
-        }),
-        ...(input.MaximumRetryAttempts !== undefined && { MaximumRetryAttempts: input.MaximumRetryAttempts }),
-        ...(input.ParallelizationFactor !== undefined && { ParallelizationFactor: input.ParallelizationFactor }),
-        ...(input.SourceAccessConfigurations !== undefined && {
+        ...(input.MaximumRecordAgeInSeconds !== undefined &&
+            input.MaximumRecordAgeInSeconds !== null && { MaximumRecordAgeInSeconds: input.MaximumRecordAgeInSeconds }),
+        ...(input.MaximumRetryAttempts !== undefined &&
+            input.MaximumRetryAttempts !== null && { MaximumRetryAttempts: input.MaximumRetryAttempts }),
+        ...(input.ParallelizationFactor !== undefined &&
+            input.ParallelizationFactor !== null && { ParallelizationFactor: input.ParallelizationFactor }),
+        ...(input.SourceAccessConfigurations !== undefined &&
+            input.SourceAccessConfigurations !== null && {
             SourceAccessConfigurations: serializeAws_restJson1SourceAccessConfigurations(input.SourceAccessConfigurations, context),
         }),
     });
@@ -8993,7 +8964,7 @@ const serializeAws_restJson1UpdateEventSourceMappingCommand = async (input, cont
 exports.serializeAws_restJson1UpdateEventSourceMappingCommand = serializeAws_restJson1UpdateEventSourceMappingCommand;
 const serializeAws_restJson1UpdateFunctionCodeCommand = async (input, context) => {
     const headers = {
-        "Content-Type": "application/json",
+        "content-type": "application/json",
     };
     let resolvedPath = "/2015-03-31/functions/{FunctionName}/code";
     if (input.FunctionName !== undefined) {
@@ -9008,14 +8979,15 @@ const serializeAws_restJson1UpdateFunctionCodeCommand = async (input, context) =
     }
     let body;
     body = JSON.stringify({
-        ...(input.DryRun !== undefined && { DryRun: input.DryRun }),
-        ...(input.ImageUri !== undefined && { ImageUri: input.ImageUri }),
-        ...(input.Publish !== undefined && { Publish: input.Publish }),
-        ...(input.RevisionId !== undefined && { RevisionId: input.RevisionId }),
-        ...(input.S3Bucket !== undefined && { S3Bucket: input.S3Bucket }),
-        ...(input.S3Key !== undefined && { S3Key: input.S3Key }),
-        ...(input.S3ObjectVersion !== undefined && { S3ObjectVersion: input.S3ObjectVersion }),
-        ...(input.ZipFile !== undefined && { ZipFile: context.base64Encoder(input.ZipFile) }),
+        ...(input.DryRun !== undefined && input.DryRun !== null && { DryRun: input.DryRun }),
+        ...(input.ImageUri !== undefined && input.ImageUri !== null && { ImageUri: input.ImageUri }),
+        ...(input.Publish !== undefined && input.Publish !== null && { Publish: input.Publish }),
+        ...(input.RevisionId !== undefined && input.RevisionId !== null && { RevisionId: input.RevisionId }),
+        ...(input.S3Bucket !== undefined && input.S3Bucket !== null && { S3Bucket: input.S3Bucket }),
+        ...(input.S3Key !== undefined && input.S3Key !== null && { S3Key: input.S3Key }),
+        ...(input.S3ObjectVersion !== undefined &&
+            input.S3ObjectVersion !== null && { S3ObjectVersion: input.S3ObjectVersion }),
+        ...(input.ZipFile !== undefined && input.ZipFile !== null && { ZipFile: context.base64Encoder(input.ZipFile) }),
     });
     const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
@@ -9031,7 +9003,7 @@ const serializeAws_restJson1UpdateFunctionCodeCommand = async (input, context) =
 exports.serializeAws_restJson1UpdateFunctionCodeCommand = serializeAws_restJson1UpdateFunctionCodeCommand;
 const serializeAws_restJson1UpdateFunctionConfigurationCommand = async (input, context) => {
     const headers = {
-        "Content-Type": "application/json",
+        "content-type": "application/json",
     };
     let resolvedPath = "/2015-03-31/functions/{FunctionName}/configuration";
     if (input.FunctionName !== undefined) {
@@ -9046,31 +9018,34 @@ const serializeAws_restJson1UpdateFunctionConfigurationCommand = async (input, c
     }
     let body;
     body = JSON.stringify({
-        ...(input.DeadLetterConfig !== undefined && {
+        ...(input.DeadLetterConfig !== undefined &&
+            input.DeadLetterConfig !== null && {
             DeadLetterConfig: serializeAws_restJson1DeadLetterConfig(input.DeadLetterConfig, context),
         }),
-        ...(input.Description !== undefined && { Description: input.Description }),
-        ...(input.Environment !== undefined && {
-            Environment: serializeAws_restJson1Environment(input.Environment, context),
-        }),
-        ...(input.FileSystemConfigs !== undefined && {
+        ...(input.Description !== undefined && input.Description !== null && { Description: input.Description }),
+        ...(input.Environment !== undefined &&
+            input.Environment !== null && { Environment: serializeAws_restJson1Environment(input.Environment, context) }),
+        ...(input.FileSystemConfigs !== undefined &&
+            input.FileSystemConfigs !== null && {
             FileSystemConfigs: serializeAws_restJson1FileSystemConfigList(input.FileSystemConfigs, context),
         }),
-        ...(input.Handler !== undefined && { Handler: input.Handler }),
-        ...(input.ImageConfig !== undefined && {
-            ImageConfig: serializeAws_restJson1ImageConfig(input.ImageConfig, context),
-        }),
-        ...(input.KMSKeyArn !== undefined && { KMSKeyArn: input.KMSKeyArn }),
-        ...(input.Layers !== undefined && { Layers: serializeAws_restJson1LayerList(input.Layers, context) }),
-        ...(input.MemorySize !== undefined && { MemorySize: input.MemorySize }),
-        ...(input.RevisionId !== undefined && { RevisionId: input.RevisionId }),
-        ...(input.Role !== undefined && { Role: input.Role }),
-        ...(input.Runtime !== undefined && { Runtime: input.Runtime }),
-        ...(input.Timeout !== undefined && { Timeout: input.Timeout }),
-        ...(input.TracingConfig !== undefined && {
+        ...(input.Handler !== undefined && input.Handler !== null && { Handler: input.Handler }),
+        ...(input.ImageConfig !== undefined &&
+            input.ImageConfig !== null && { ImageConfig: serializeAws_restJson1ImageConfig(input.ImageConfig, context) }),
+        ...(input.KMSKeyArn !== undefined && input.KMSKeyArn !== null && { KMSKeyArn: input.KMSKeyArn }),
+        ...(input.Layers !== undefined &&
+            input.Layers !== null && { Layers: serializeAws_restJson1LayerList(input.Layers, context) }),
+        ...(input.MemorySize !== undefined && input.MemorySize !== null && { MemorySize: input.MemorySize }),
+        ...(input.RevisionId !== undefined && input.RevisionId !== null && { RevisionId: input.RevisionId }),
+        ...(input.Role !== undefined && input.Role !== null && { Role: input.Role }),
+        ...(input.Runtime !== undefined && input.Runtime !== null && { Runtime: input.Runtime }),
+        ...(input.Timeout !== undefined && input.Timeout !== null && { Timeout: input.Timeout }),
+        ...(input.TracingConfig !== undefined &&
+            input.TracingConfig !== null && {
             TracingConfig: serializeAws_restJson1TracingConfig(input.TracingConfig, context),
         }),
-        ...(input.VpcConfig !== undefined && { VpcConfig: serializeAws_restJson1VpcConfig(input.VpcConfig, context) }),
+        ...(input.VpcConfig !== undefined &&
+            input.VpcConfig !== null && { VpcConfig: serializeAws_restJson1VpcConfig(input.VpcConfig, context) }),
     });
     const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
@@ -9086,7 +9061,7 @@ const serializeAws_restJson1UpdateFunctionConfigurationCommand = async (input, c
 exports.serializeAws_restJson1UpdateFunctionConfigurationCommand = serializeAws_restJson1UpdateFunctionConfigurationCommand;
 const serializeAws_restJson1UpdateFunctionEventInvokeConfigCommand = async (input, context) => {
     const headers = {
-        "Content-Type": "application/json",
+        "content-type": "application/json",
     };
     let resolvedPath = "/2019-09-25/functions/{FunctionName}/event-invoke-config";
     if (input.FunctionName !== undefined) {
@@ -9104,11 +9079,14 @@ const serializeAws_restJson1UpdateFunctionEventInvokeConfigCommand = async (inpu
     };
     let body;
     body = JSON.stringify({
-        ...(input.DestinationConfig !== undefined && {
+        ...(input.DestinationConfig !== undefined &&
+            input.DestinationConfig !== null && {
             DestinationConfig: serializeAws_restJson1DestinationConfig(input.DestinationConfig, context),
         }),
-        ...(input.MaximumEventAgeInSeconds !== undefined && { MaximumEventAgeInSeconds: input.MaximumEventAgeInSeconds }),
-        ...(input.MaximumRetryAttempts !== undefined && { MaximumRetryAttempts: input.MaximumRetryAttempts }),
+        ...(input.MaximumEventAgeInSeconds !== undefined &&
+            input.MaximumEventAgeInSeconds !== null && { MaximumEventAgeInSeconds: input.MaximumEventAgeInSeconds }),
+        ...(input.MaximumRetryAttempts !== undefined &&
+            input.MaximumRetryAttempts !== null && { MaximumRetryAttempts: input.MaximumRetryAttempts }),
     });
     const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
@@ -12173,6 +12151,9 @@ const deserializeAws_restJson1InvokeAsyncCommand = async (output, context) => {
         $metadata: deserializeMetadata(output),
         Status: undefined,
     };
+    if (contents.Status === undefined) {
+        contents.Status = output.statusCode;
+    }
     await collectBody(output.body, context);
     return Promise.resolve(contents);
 };
@@ -15508,149 +15489,246 @@ const deserializeAws_restJson1UnsupportedMediaTypeExceptionResponse = async (par
     return contents;
 };
 const serializeAws_restJson1AdditionalVersionWeights = (input, context) => {
-    return Object.entries(input).reduce((acc, [key, value]) => ({
-        ...acc,
-        [key]: value,
-    }), {});
+    return Object.entries(input).reduce((acc, [key, value]) => {
+        if (value === null) {
+            return acc;
+        }
+        return {
+            ...acc,
+            [key]: value,
+        };
+    }, {});
 };
 const serializeAws_restJson1AliasRoutingConfiguration = (input, context) => {
     return {
-        ...(input.AdditionalVersionWeights !== undefined && {
+        ...(input.AdditionalVersionWeights !== undefined &&
+            input.AdditionalVersionWeights !== null && {
             AdditionalVersionWeights: serializeAws_restJson1AdditionalVersionWeights(input.AdditionalVersionWeights, context),
         }),
     };
 };
 const serializeAws_restJson1AllowedPublishers = (input, context) => {
     return {
-        ...(input.SigningProfileVersionArns !== undefined && {
+        ...(input.SigningProfileVersionArns !== undefined &&
+            input.SigningProfileVersionArns !== null && {
             SigningProfileVersionArns: serializeAws_restJson1SigningProfileVersionArns(input.SigningProfileVersionArns, context),
         }),
     };
 };
 const serializeAws_restJson1CodeSigningPolicies = (input, context) => {
     return {
-        ...(input.UntrustedArtifactOnDeployment !== undefined && {
+        ...(input.UntrustedArtifactOnDeployment !== undefined &&
+            input.UntrustedArtifactOnDeployment !== null && {
             UntrustedArtifactOnDeployment: input.UntrustedArtifactOnDeployment,
         }),
     };
 };
 const serializeAws_restJson1CompatibleRuntimes = (input, context) => {
-    return input.map((entry) => entry);
+    return input
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return entry;
+    });
 };
 const serializeAws_restJson1DeadLetterConfig = (input, context) => {
     return {
-        ...(input.TargetArn !== undefined && { TargetArn: input.TargetArn }),
+        ...(input.TargetArn !== undefined && input.TargetArn !== null && { TargetArn: input.TargetArn }),
     };
 };
 const serializeAws_restJson1DestinationConfig = (input, context) => {
     return {
-        ...(input.OnFailure !== undefined && { OnFailure: serializeAws_restJson1OnFailure(input.OnFailure, context) }),
-        ...(input.OnSuccess !== undefined && { OnSuccess: serializeAws_restJson1OnSuccess(input.OnSuccess, context) }),
+        ...(input.OnFailure !== undefined &&
+            input.OnFailure !== null && { OnFailure: serializeAws_restJson1OnFailure(input.OnFailure, context) }),
+        ...(input.OnSuccess !== undefined &&
+            input.OnSuccess !== null && { OnSuccess: serializeAws_restJson1OnSuccess(input.OnSuccess, context) }),
     };
 };
 const serializeAws_restJson1Environment = (input, context) => {
     return {
-        ...(input.Variables !== undefined && {
-            Variables: serializeAws_restJson1EnvironmentVariables(input.Variables, context),
-        }),
+        ...(input.Variables !== undefined &&
+            input.Variables !== null && { Variables: serializeAws_restJson1EnvironmentVariables(input.Variables, context) }),
     };
 };
 const serializeAws_restJson1EnvironmentVariables = (input, context) => {
-    return Object.entries(input).reduce((acc, [key, value]) => ({
-        ...acc,
-        [key]: value,
-    }), {});
+    return Object.entries(input).reduce((acc, [key, value]) => {
+        if (value === null) {
+            return acc;
+        }
+        return {
+            ...acc,
+            [key]: value,
+        };
+    }, {});
 };
 const serializeAws_restJson1FileSystemConfig = (input, context) => {
     return {
-        ...(input.Arn !== undefined && { Arn: input.Arn }),
-        ...(input.LocalMountPath !== undefined && { LocalMountPath: input.LocalMountPath }),
+        ...(input.Arn !== undefined && input.Arn !== null && { Arn: input.Arn }),
+        ...(input.LocalMountPath !== undefined &&
+            input.LocalMountPath !== null && { LocalMountPath: input.LocalMountPath }),
     };
 };
 const serializeAws_restJson1FileSystemConfigList = (input, context) => {
-    return input.map((entry) => serializeAws_restJson1FileSystemConfig(entry, context));
+    return input
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return serializeAws_restJson1FileSystemConfig(entry, context);
+    });
 };
 const serializeAws_restJson1FunctionCode = (input, context) => {
     return {
-        ...(input.ImageUri !== undefined && { ImageUri: input.ImageUri }),
-        ...(input.S3Bucket !== undefined && { S3Bucket: input.S3Bucket }),
-        ...(input.S3Key !== undefined && { S3Key: input.S3Key }),
-        ...(input.S3ObjectVersion !== undefined && { S3ObjectVersion: input.S3ObjectVersion }),
-        ...(input.ZipFile !== undefined && { ZipFile: context.base64Encoder(input.ZipFile) }),
+        ...(input.ImageUri !== undefined && input.ImageUri !== null && { ImageUri: input.ImageUri }),
+        ...(input.S3Bucket !== undefined && input.S3Bucket !== null && { S3Bucket: input.S3Bucket }),
+        ...(input.S3Key !== undefined && input.S3Key !== null && { S3Key: input.S3Key }),
+        ...(input.S3ObjectVersion !== undefined &&
+            input.S3ObjectVersion !== null && { S3ObjectVersion: input.S3ObjectVersion }),
+        ...(input.ZipFile !== undefined && input.ZipFile !== null && { ZipFile: context.base64Encoder(input.ZipFile) }),
     };
 };
 const serializeAws_restJson1ImageConfig = (input, context) => {
     return {
-        ...(input.Command !== undefined && { Command: serializeAws_restJson1StringList(input.Command, context) }),
-        ...(input.EntryPoint !== undefined && { EntryPoint: serializeAws_restJson1StringList(input.EntryPoint, context) }),
-        ...(input.WorkingDirectory !== undefined && { WorkingDirectory: input.WorkingDirectory }),
+        ...(input.Command !== undefined &&
+            input.Command !== null && { Command: serializeAws_restJson1StringList(input.Command, context) }),
+        ...(input.EntryPoint !== undefined &&
+            input.EntryPoint !== null && { EntryPoint: serializeAws_restJson1StringList(input.EntryPoint, context) }),
+        ...(input.WorkingDirectory !== undefined &&
+            input.WorkingDirectory !== null && { WorkingDirectory: input.WorkingDirectory }),
     };
 };
 const serializeAws_restJson1LayerList = (input, context) => {
-    return input.map((entry) => entry);
+    return input
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return entry;
+    });
 };
 const serializeAws_restJson1LayerVersionContentInput = (input, context) => {
     return {
-        ...(input.S3Bucket !== undefined && { S3Bucket: input.S3Bucket }),
-        ...(input.S3Key !== undefined && { S3Key: input.S3Key }),
-        ...(input.S3ObjectVersion !== undefined && { S3ObjectVersion: input.S3ObjectVersion }),
-        ...(input.ZipFile !== undefined && { ZipFile: context.base64Encoder(input.ZipFile) }),
+        ...(input.S3Bucket !== undefined && input.S3Bucket !== null && { S3Bucket: input.S3Bucket }),
+        ...(input.S3Key !== undefined && input.S3Key !== null && { S3Key: input.S3Key }),
+        ...(input.S3ObjectVersion !== undefined &&
+            input.S3ObjectVersion !== null && { S3ObjectVersion: input.S3ObjectVersion }),
+        ...(input.ZipFile !== undefined && input.ZipFile !== null && { ZipFile: context.base64Encoder(input.ZipFile) }),
     };
 };
 const serializeAws_restJson1OnFailure = (input, context) => {
     return {
-        ...(input.Destination !== undefined && { Destination: input.Destination }),
+        ...(input.Destination !== undefined && input.Destination !== null && { Destination: input.Destination }),
     };
 };
 const serializeAws_restJson1OnSuccess = (input, context) => {
     return {
-        ...(input.Destination !== undefined && { Destination: input.Destination }),
+        ...(input.Destination !== undefined && input.Destination !== null && { Destination: input.Destination }),
     };
 };
 const serializeAws_restJson1Queues = (input, context) => {
-    return input.map((entry) => entry);
+    return input
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return entry;
+    });
 };
 const serializeAws_restJson1SecurityGroupIds = (input, context) => {
-    return input.map((entry) => entry);
+    return input
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return entry;
+    });
 };
 const serializeAws_restJson1SigningProfileVersionArns = (input, context) => {
-    return input.map((entry) => entry);
+    return input
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return entry;
+    });
 };
 const serializeAws_restJson1SourceAccessConfiguration = (input, context) => {
     return {
-        ...(input.Type !== undefined && { Type: input.Type }),
-        ...(input.URI !== undefined && { URI: input.URI }),
+        ...(input.Type !== undefined && input.Type !== null && { Type: input.Type }),
+        ...(input.URI !== undefined && input.URI !== null && { URI: input.URI }),
     };
 };
 const serializeAws_restJson1SourceAccessConfigurations = (input, context) => {
-    return input.map((entry) => serializeAws_restJson1SourceAccessConfiguration(entry, context));
+    return input
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return serializeAws_restJson1SourceAccessConfiguration(entry, context);
+    });
 };
 const serializeAws_restJson1StringList = (input, context) => {
-    return input.map((entry) => entry);
+    return input
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return entry;
+    });
 };
 const serializeAws_restJson1SubnetIds = (input, context) => {
-    return input.map((entry) => entry);
+    return input
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return entry;
+    });
 };
 const serializeAws_restJson1Tags = (input, context) => {
-    return Object.entries(input).reduce((acc, [key, value]) => ({
-        ...acc,
-        [key]: value,
-    }), {});
+    return Object.entries(input).reduce((acc, [key, value]) => {
+        if (value === null) {
+            return acc;
+        }
+        return {
+            ...acc,
+            [key]: value,
+        };
+    }, {});
 };
 const serializeAws_restJson1Topics = (input, context) => {
-    return input.map((entry) => entry);
+    return input
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return entry;
+    });
 };
 const serializeAws_restJson1TracingConfig = (input, context) => {
     return {
-        ...(input.Mode !== undefined && { Mode: input.Mode }),
+        ...(input.Mode !== undefined && input.Mode !== null && { Mode: input.Mode }),
     };
 };
 const serializeAws_restJson1VpcConfig = (input, context) => {
     return {
-        ...(input.SecurityGroupIds !== undefined && {
+        ...(input.SecurityGroupIds !== undefined &&
+            input.SecurityGroupIds !== null && {
             SecurityGroupIds: serializeAws_restJson1SecurityGroupIds(input.SecurityGroupIds, context),
         }),
-        ...(input.SubnetIds !== undefined && { SubnetIds: serializeAws_restJson1SubnetIds(input.SubnetIds, context) }),
+        ...(input.SubnetIds !== undefined &&
+            input.SubnetIds !== null && { SubnetIds: serializeAws_restJson1SubnetIds(input.SubnetIds, context) }),
     };
 };
 const deserializeAws_restJson1AccountLimit = (output, context) => {
@@ -15673,10 +15751,15 @@ const deserializeAws_restJson1AccountUsage = (output, context) => {
     };
 };
 const deserializeAws_restJson1AdditionalVersionWeights = (output, context) => {
-    return Object.entries(output).reduce((acc, [key, value]) => ({
-        ...acc,
-        [key]: value,
-    }), {});
+    return Object.entries(output).reduce((acc, [key, value]) => {
+        if (value === null) {
+            return acc;
+        }
+        return {
+            ...acc,
+            [key]: value,
+        };
+    }, {});
 };
 const deserializeAws_restJson1AliasConfiguration = (output, context) => {
     return {
@@ -15691,7 +15774,14 @@ const deserializeAws_restJson1AliasConfiguration = (output, context) => {
     };
 };
 const deserializeAws_restJson1AliasList = (output, context) => {
-    return (output || []).map((entry) => deserializeAws_restJson1AliasConfiguration(entry, context));
+    return (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return deserializeAws_restJson1AliasConfiguration(entry, context);
+    });
 };
 const deserializeAws_restJson1AliasRoutingConfiguration = (output, context) => {
     return {
@@ -15726,7 +15816,14 @@ const deserializeAws_restJson1CodeSigningConfig = (output, context) => {
     };
 };
 const deserializeAws_restJson1CodeSigningConfigList = (output, context) => {
-    return (output || []).map((entry) => deserializeAws_restJson1CodeSigningConfig(entry, context));
+    return (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return deserializeAws_restJson1CodeSigningConfig(entry, context);
+    });
 };
 const deserializeAws_restJson1CodeSigningPolicies = (output, context) => {
     return {
@@ -15736,7 +15833,14 @@ const deserializeAws_restJson1CodeSigningPolicies = (output, context) => {
     };
 };
 const deserializeAws_restJson1CompatibleRuntimes = (output, context) => {
-    return (output || []).map((entry) => entry);
+    return (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return entry;
+    });
 };
 const deserializeAws_restJson1Concurrency = (output, context) => {
     return {
@@ -15777,10 +15881,15 @@ const deserializeAws_restJson1EnvironmentResponse = (output, context) => {
     };
 };
 const deserializeAws_restJson1EnvironmentVariables = (output, context) => {
-    return Object.entries(output).reduce((acc, [key, value]) => ({
-        ...acc,
-        [key]: value,
-    }), {});
+    return Object.entries(output).reduce((acc, [key, value]) => {
+        if (value === null) {
+            return acc;
+        }
+        return {
+            ...acc,
+            [key]: value,
+        };
+    }, {});
 };
 const deserializeAws_restJson1EventSourceMappingConfiguration = (output, context) => {
     return {
@@ -15832,7 +15941,14 @@ const deserializeAws_restJson1EventSourceMappingConfiguration = (output, context
     };
 };
 const deserializeAws_restJson1EventSourceMappingsList = (output, context) => {
-    return (output || []).map((entry) => deserializeAws_restJson1EventSourceMappingConfiguration(entry, context));
+    return (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return deserializeAws_restJson1EventSourceMappingConfiguration(entry, context);
+    });
 };
 const deserializeAws_restJson1FileSystemConfig = (output, context) => {
     return {
@@ -15841,10 +15957,24 @@ const deserializeAws_restJson1FileSystemConfig = (output, context) => {
     };
 };
 const deserializeAws_restJson1FileSystemConfigList = (output, context) => {
-    return (output || []).map((entry) => deserializeAws_restJson1FileSystemConfig(entry, context));
+    return (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return deserializeAws_restJson1FileSystemConfig(entry, context);
+    });
 };
 const deserializeAws_restJson1FunctionArnList = (output, context) => {
-    return (output || []).map((entry) => entry);
+    return (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return entry;
+    });
 };
 const deserializeAws_restJson1FunctionCodeLocation = (output, context) => {
     return {
@@ -15927,10 +16057,24 @@ const deserializeAws_restJson1FunctionEventInvokeConfig = (output, context) => {
     };
 };
 const deserializeAws_restJson1FunctionEventInvokeConfigList = (output, context) => {
-    return (output || []).map((entry) => deserializeAws_restJson1FunctionEventInvokeConfig(entry, context));
+    return (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return deserializeAws_restJson1FunctionEventInvokeConfig(entry, context);
+    });
 };
 const deserializeAws_restJson1FunctionList = (output, context) => {
-    return (output || []).map((entry) => deserializeAws_restJson1FunctionConfiguration(entry, context));
+    return (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return deserializeAws_restJson1FunctionConfiguration(entry, context);
+    });
 };
 const deserializeAws_restJson1ImageConfig = (output, context) => {
     return {
@@ -15970,7 +16114,14 @@ const deserializeAws_restJson1Layer = (output, context) => {
     };
 };
 const deserializeAws_restJson1LayersList = (output, context) => {
-    return (output || []).map((entry) => deserializeAws_restJson1LayersListItem(entry, context));
+    return (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return deserializeAws_restJson1LayersListItem(entry, context);
+    });
 };
 const deserializeAws_restJson1LayersListItem = (output, context) => {
     return {
@@ -15982,7 +16133,14 @@ const deserializeAws_restJson1LayersListItem = (output, context) => {
     };
 };
 const deserializeAws_restJson1LayersReferenceList = (output, context) => {
-    return (output || []).map((entry) => deserializeAws_restJson1Layer(entry, context));
+    return (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return deserializeAws_restJson1Layer(entry, context);
+    });
 };
 const deserializeAws_restJson1LayerVersionContentOutput = (output, context) => {
     return {
@@ -15996,7 +16154,14 @@ const deserializeAws_restJson1LayerVersionContentOutput = (output, context) => {
     };
 };
 const deserializeAws_restJson1LayerVersionsList = (output, context) => {
-    return (output || []).map((entry) => deserializeAws_restJson1LayerVersionsListItem(entry, context));
+    return (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return deserializeAws_restJson1LayerVersionsListItem(entry, context);
+    });
 };
 const deserializeAws_restJson1LayerVersionsListItem = (output, context) => {
     return {
@@ -16021,7 +16186,14 @@ const deserializeAws_restJson1OnSuccess = (output, context) => {
     };
 };
 const deserializeAws_restJson1ProvisionedConcurrencyConfigList = (output, context) => {
-    return (output || []).map((entry) => deserializeAws_restJson1ProvisionedConcurrencyConfigListItem(entry, context));
+    return (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return deserializeAws_restJson1ProvisionedConcurrencyConfigListItem(entry, context);
+    });
 };
 const deserializeAws_restJson1ProvisionedConcurrencyConfigListItem = (output, context) => {
     return {
@@ -16044,13 +16216,34 @@ const deserializeAws_restJson1ProvisionedConcurrencyConfigListItem = (output, co
     };
 };
 const deserializeAws_restJson1Queues = (output, context) => {
-    return (output || []).map((entry) => entry);
+    return (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return entry;
+    });
 };
 const deserializeAws_restJson1SecurityGroupIds = (output, context) => {
-    return (output || []).map((entry) => entry);
+    return (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return entry;
+    });
 };
 const deserializeAws_restJson1SigningProfileVersionArns = (output, context) => {
-    return (output || []).map((entry) => entry);
+    return (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return entry;
+    });
 };
 const deserializeAws_restJson1SourceAccessConfiguration = (output, context) => {
     return {
@@ -16059,22 +16252,55 @@ const deserializeAws_restJson1SourceAccessConfiguration = (output, context) => {
     };
 };
 const deserializeAws_restJson1SourceAccessConfigurations = (output, context) => {
-    return (output || []).map((entry) => deserializeAws_restJson1SourceAccessConfiguration(entry, context));
+    return (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return deserializeAws_restJson1SourceAccessConfiguration(entry, context);
+    });
 };
 const deserializeAws_restJson1StringList = (output, context) => {
-    return (output || []).map((entry) => entry);
+    return (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return entry;
+    });
 };
 const deserializeAws_restJson1SubnetIds = (output, context) => {
-    return (output || []).map((entry) => entry);
+    return (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return entry;
+    });
 };
 const deserializeAws_restJson1Tags = (output, context) => {
-    return Object.entries(output).reduce((acc, [key, value]) => ({
-        ...acc,
-        [key]: value,
-    }), {});
+    return Object.entries(output).reduce((acc, [key, value]) => {
+        if (value === null) {
+            return acc;
+        }
+        return {
+            ...acc,
+            [key]: value,
+        };
+    }, {});
 };
 const deserializeAws_restJson1Topics = (output, context) => {
-    return (output || []).map((entry) => entry);
+    return (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return entry;
+    });
 };
 const deserializeAws_restJson1TracingConfigResponse = (output, context) => {
     return {
@@ -16107,6 +16333,7 @@ const collectBody = (streamBody = new Uint8Array(), context) => {
 // Encode Uint8Array data into string with utf-8.
 const collectBodyString = (streamBody, context) => collectBody(streamBody, context).then((body) => context.utf8Encoder(body));
 const isSerializableHeaderValue = (value) => value !== undefined &&
+    value !== null &&
     value !== "" &&
     (!Object.getOwnPropertyNames(value).includes("length") || value.length != 0) &&
     (!Object.getOwnPropertyNames(value).includes("size") || value.size != 0);
@@ -16211,6 +16438,155 @@ exports.ClientSharedValues = {
     serviceId: "lambda",
 };
 //# sourceMappingURL=runtimeConfig.shared.js.map
+
+/***/ }),
+
+/***/ 2632:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.waitForFunctionActive = void 0;
+const GetFunctionConfigurationCommand_1 = __webpack_require__(9459);
+const util_waiter_1 = __webpack_require__(6243);
+const checkState = async (client, input) => {
+    try {
+        let result = await client.send(new GetFunctionConfigurationCommand_1.GetFunctionConfigurationCommand(input));
+        try {
+            let returnComparator = () => {
+                return result.State;
+            };
+            if (returnComparator() === "Active") {
+                return { state: util_waiter_1.WaiterState.SUCCESS };
+            }
+        }
+        catch (e) { }
+        try {
+            let returnComparator = () => {
+                return result.State;
+            };
+            if (returnComparator() === "Failed") {
+                return { state: util_waiter_1.WaiterState.FAILURE };
+            }
+        }
+        catch (e) { }
+        try {
+            let returnComparator = () => {
+                return result.State;
+            };
+            if (returnComparator() === "Pending") {
+                return { state: util_waiter_1.WaiterState.RETRY };
+            }
+        }
+        catch (e) { }
+    }
+    catch (exception) { }
+    return { state: util_waiter_1.WaiterState.RETRY };
+};
+/**
+ * Waits for the function's State to be Active.
+ *  @param params : Waiter configuration options.
+ *  @param input : the input to GetFunctionConfigurationCommand for polling.
+ */
+const waitForFunctionActive = async (params, input) => {
+    const serviceDefaults = { minDelay: 5, maxDelay: 120 };
+    return util_waiter_1.createWaiter({ ...serviceDefaults, ...params }, input, checkState);
+};
+exports.waitForFunctionActive = waitForFunctionActive;
+//# sourceMappingURL=waitForFunctionActive.js.map
+
+/***/ }),
+
+/***/ 1552:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.waitForFunctionExists = void 0;
+const GetFunctionCommand_1 = __webpack_require__(5296);
+const util_waiter_1 = __webpack_require__(6243);
+const checkState = async (client, input) => {
+    try {
+        let result = await client.send(new GetFunctionCommand_1.GetFunctionCommand(input));
+        return { state: util_waiter_1.WaiterState.SUCCESS };
+    }
+    catch (exception) {
+        if (exception.name && exception.name == "ResourceNotFoundException") {
+            return { state: util_waiter_1.WaiterState.RETRY };
+        }
+    }
+    return { state: util_waiter_1.WaiterState.RETRY };
+};
+/**
+ *
+ *  @param params : Waiter configuration options.
+ *  @param input : the input to GetFunctionCommand for polling.
+ */
+const waitForFunctionExists = async (params, input) => {
+    const serviceDefaults = { minDelay: 1, maxDelay: 120 };
+    return util_waiter_1.createWaiter({ ...serviceDefaults, ...params }, input, checkState);
+};
+exports.waitForFunctionExists = waitForFunctionExists;
+//# sourceMappingURL=waitForFunctionExists.js.map
+
+/***/ }),
+
+/***/ 1582:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.waitForFunctionUpdated = void 0;
+const GetFunctionConfigurationCommand_1 = __webpack_require__(9459);
+const util_waiter_1 = __webpack_require__(6243);
+const checkState = async (client, input) => {
+    try {
+        let result = await client.send(new GetFunctionConfigurationCommand_1.GetFunctionConfigurationCommand(input));
+        try {
+            let returnComparator = () => {
+                return result.LastUpdateStatus;
+            };
+            if (returnComparator() === "Successful") {
+                return { state: util_waiter_1.WaiterState.SUCCESS };
+            }
+        }
+        catch (e) { }
+        try {
+            let returnComparator = () => {
+                return result.LastUpdateStatus;
+            };
+            if (returnComparator() === "Failed") {
+                return { state: util_waiter_1.WaiterState.FAILURE };
+            }
+        }
+        catch (e) { }
+        try {
+            let returnComparator = () => {
+                return result.LastUpdateStatus;
+            };
+            if (returnComparator() === "InProgress") {
+                return { state: util_waiter_1.WaiterState.RETRY };
+            }
+        }
+        catch (e) { }
+    }
+    catch (exception) { }
+    return { state: util_waiter_1.WaiterState.RETRY };
+};
+/**
+ * Waits for the function's LastUpdateStatus to be Successful.
+ *  @param params : Waiter configuration options.
+ *  @param input : the input to GetFunctionConfigurationCommand for polling.
+ */
+const waitForFunctionUpdated = async (params, input) => {
+    const serviceDefaults = { minDelay: 5, maxDelay: 120 };
+    return util_waiter_1.createWaiter({ ...serviceDefaults, ...params }, input, checkState);
+};
+exports.waitForFunctionUpdated = waitForFunctionUpdated;
+//# sourceMappingURL=waitForFunctionUpdated.js.map
 
 /***/ }),
 
@@ -24141,6 +24517,450 @@ exports.fromUtf8 = fromUtf8;
 const toUtf8 = (input) => util_buffer_from_1.fromArrayBuffer(input.buffer, input.byteOffset, input.byteLength).toString("utf8");
 exports.toUtf8 = toUtf8;
 //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsZ0VBQXdFO0FBRWpFLE1BQU0sUUFBUSxHQUFHLENBQUMsS0FBYSxFQUFjLEVBQUU7SUFDcEQsTUFBTSxHQUFHLEdBQUcsNkJBQVUsQ0FBQyxLQUFLLEVBQUUsTUFBTSxDQUFDLENBQUM7SUFDdEMsT0FBTyxJQUFJLFVBQVUsQ0FBQyxHQUFHLENBQUMsTUFBTSxFQUFFLEdBQUcsQ0FBQyxVQUFVLEVBQUUsR0FBRyxDQUFDLFVBQVUsR0FBRyxVQUFVLENBQUMsaUJBQWlCLENBQUMsQ0FBQztBQUNuRyxDQUFDLENBQUM7QUFIVyxRQUFBLFFBQVEsWUFHbkI7QUFFSyxNQUFNLE1BQU0sR0FBRyxDQUFDLEtBQWlCLEVBQVUsRUFBRSxDQUNsRCxrQ0FBZSxDQUFDLEtBQUssQ0FBQyxNQUFNLEVBQUUsS0FBSyxDQUFDLFVBQVUsRUFBRSxLQUFLLENBQUMsVUFBVSxDQUFDLENBQUMsUUFBUSxDQUFDLE1BQU0sQ0FBQyxDQUFDO0FBRHhFLFFBQUEsTUFBTSxVQUNrRSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGZyb21BcnJheUJ1ZmZlciwgZnJvbVN0cmluZyB9IGZyb20gXCJAYXdzLXNkay91dGlsLWJ1ZmZlci1mcm9tXCI7XG5cbmV4cG9ydCBjb25zdCBmcm9tVXRmOCA9IChpbnB1dDogc3RyaW5nKTogVWludDhBcnJheSA9PiB7XG4gIGNvbnN0IGJ1ZiA9IGZyb21TdHJpbmcoaW5wdXQsIFwidXRmOFwiKTtcbiAgcmV0dXJuIG5ldyBVaW50OEFycmF5KGJ1Zi5idWZmZXIsIGJ1Zi5ieXRlT2Zmc2V0LCBidWYuYnl0ZUxlbmd0aCAvIFVpbnQ4QXJyYXkuQllURVNfUEVSX0VMRU1FTlQpO1xufTtcblxuZXhwb3J0IGNvbnN0IHRvVXRmOCA9IChpbnB1dDogVWludDhBcnJheSk6IHN0cmluZyA9PlxuICBmcm9tQXJyYXlCdWZmZXIoaW5wdXQuYnVmZmVyLCBpbnB1dC5ieXRlT2Zmc2V0LCBpbnB1dC5ieXRlTGVuZ3RoKS50b1N0cmluZyhcInV0ZjhcIik7XG4iXX0=
+
+/***/ }),
+
+/***/ 1194:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.createWaiter = void 0;
+const poller_1 = __webpack_require__(8015);
+const utils_1 = __webpack_require__(9534);
+const waiter_1 = __webpack_require__(709);
+const waiterTimeout = async (seconds) => {
+    await utils_1.sleep(seconds);
+    return { state: waiter_1.WaiterState.TIMEOUT };
+};
+const abortTimeout = async (abortSignal) => {
+    return new Promise((resolve) => {
+        abortSignal.onabort = () => resolve({ state: waiter_1.WaiterState.ABORTED });
+    });
+};
+/**
+ * Create a waiter promise that only resolves when:
+ * 1. Abort controller is signaled
+ * 2. Max wait time is reached
+ * 3. `acceptorChecks` succeeds, or fails
+ * Otherwise, it invokes `acceptorChecks` with exponential-backoff delay.
+ *
+ * @internal
+ */
+const createWaiter = async (options, input, acceptorChecks) => {
+    const params = {
+        ...waiter_1.waiterServiceDefaults,
+        ...options,
+    };
+    utils_1.validateWaiterOptions(params);
+    const exitConditions = [poller_1.runPolling(params, input, acceptorChecks)];
+    if (options.abortController) {
+        exitConditions.push(abortTimeout(options.abortController.signal));
+    }
+    return Promise.race(exitConditions);
+};
+exports.createWaiter = createWaiter;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY3JlYXRlV2FpdGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2NyZWF0ZVdhaXRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFFQSxxQ0FBc0M7QUFDdEMsbUNBQXVEO0FBQ3ZELHFDQUF5RztBQUV6RyxNQUFNLGFBQWEsR0FBRyxLQUFLLEVBQUUsT0FBZSxFQUF5QixFQUFFO0lBQ3JFLE1BQU0sYUFBSyxDQUFDLE9BQU8sQ0FBQyxDQUFDO0lBQ3JCLE9BQU8sRUFBRSxLQUFLLEVBQUUsb0JBQVcsQ0FBQyxPQUFPLEVBQUUsQ0FBQztBQUN4QyxDQUFDLENBQUM7QUFFRixNQUFNLFlBQVksR0FBRyxLQUFLLEVBQUUsV0FBd0IsRUFBeUIsRUFBRTtJQUM3RSxPQUFPLElBQUksT0FBTyxDQUFDLENBQUMsT0FBTyxFQUFFLEVBQUU7UUFDN0IsV0FBVyxDQUFDLE9BQU8sR0FBRyxHQUFHLEVBQUUsQ0FBQyxPQUFPLENBQUMsRUFBRSxLQUFLLEVBQUUsb0JBQVcsQ0FBQyxPQUFPLEVBQUUsQ0FBQyxDQUFDO0lBQ3RFLENBQUMsQ0FBQyxDQUFDO0FBQ0wsQ0FBQyxDQUFDO0FBRUY7Ozs7Ozs7O0dBUUc7QUFDSSxNQUFNLFlBQVksR0FBRyxLQUFLLEVBQy9CLE9BQThCLEVBQzlCLEtBQVksRUFDWixjQUF1RSxFQUNoRCxFQUFFO0lBQ3pCLE1BQU0sTUFBTSxHQUFHO1FBQ2IsR0FBRyw4QkFBcUI7UUFDeEIsR0FBRyxPQUFPO0tBQ1gsQ0FBQztJQUNGLDZCQUFxQixDQUFDLE1BQU0sQ0FBQyxDQUFDO0lBRTlCLE1BQU0sY0FBYyxHQUFHLENBQUMsbUJBQVUsQ0FBZ0IsTUFBTSxFQUFFLEtBQUssRUFBRSxjQUFjLENBQUMsQ0FBQyxDQUFDO0lBQ2xGLElBQUksT0FBTyxDQUFDLGVBQWUsRUFBRTtRQUMzQixjQUFjLENBQUMsSUFBSSxDQUFDLFlBQVksQ0FBQyxPQUFPLENBQUMsZUFBZSxDQUFDLE1BQU0sQ0FBQyxDQUFDLENBQUM7S0FDbkU7SUFDRCxPQUFPLE9BQU8sQ0FBQyxJQUFJLENBQUMsY0FBYyxDQUFDLENBQUM7QUFDdEMsQ0FBQyxDQUFDO0FBaEJXLFFBQUEsWUFBWSxnQkFnQnZCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQWJvcnRTaWduYWwgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuaW1wb3J0IHsgcnVuUG9sbGluZyB9IGZyb20gXCIuL3BvbGxlclwiO1xuaW1wb3J0IHsgc2xlZXAsIHZhbGlkYXRlV2FpdGVyT3B0aW9ucyB9IGZyb20gXCIuL3V0aWxzXCI7XG5pbXBvcnQgeyBTbWl0aHlDbGllbnQsIFdhaXRlck9wdGlvbnMsIFdhaXRlclJlc3VsdCwgd2FpdGVyU2VydmljZURlZmF1bHRzLCBXYWl0ZXJTdGF0ZSB9IGZyb20gXCIuL3dhaXRlclwiO1xuXG5jb25zdCB3YWl0ZXJUaW1lb3V0ID0gYXN5bmMgKHNlY29uZHM6IG51bWJlcik6IFByb21pc2U8V2FpdGVyUmVzdWx0PiA9PiB7XG4gIGF3YWl0IHNsZWVwKHNlY29uZHMpO1xuICByZXR1cm4geyBzdGF0ZTogV2FpdGVyU3RhdGUuVElNRU9VVCB9O1xufTtcblxuY29uc3QgYWJvcnRUaW1lb3V0ID0gYXN5bmMgKGFib3J0U2lnbmFsOiBBYm9ydFNpZ25hbCk6IFByb21pc2U8V2FpdGVyUmVzdWx0PiA9PiB7XG4gIHJldHVybiBuZXcgUHJvbWlzZSgocmVzb2x2ZSkgPT4ge1xuICAgIGFib3J0U2lnbmFsLm9uYWJvcnQgPSAoKSA9PiByZXNvbHZlKHsgc3RhdGU6IFdhaXRlclN0YXRlLkFCT1JURUQgfSk7XG4gIH0pO1xufTtcblxuLyoqXG4gKiBDcmVhdGUgYSB3YWl0ZXIgcHJvbWlzZSB0aGF0IG9ubHkgcmVzb2x2ZXMgd2hlbjpcbiAqIDEuIEFib3J0IGNvbnRyb2xsZXIgaXMgc2lnbmFsZWRcbiAqIDIuIE1heCB3YWl0IHRpbWUgaXMgcmVhY2hlZFxuICogMy4gYGFjY2VwdG9yQ2hlY2tzYCBzdWNjZWVkcywgb3IgZmFpbHNcbiAqIE90aGVyd2lzZSwgaXQgaW52b2tlcyBgYWNjZXB0b3JDaGVja3NgIHdpdGggZXhwb25lbnRpYWwtYmFja29mZiBkZWxheS5cbiAqXG4gKiBAaW50ZXJuYWxcbiAqL1xuZXhwb3J0IGNvbnN0IGNyZWF0ZVdhaXRlciA9IGFzeW5jIDxDbGllbnQgZXh0ZW5kcyBTbWl0aHlDbGllbnQsIElucHV0PihcbiAgb3B0aW9uczogV2FpdGVyT3B0aW9uczxDbGllbnQ+LFxuICBpbnB1dDogSW5wdXQsXG4gIGFjY2VwdG9yQ2hlY2tzOiAoY2xpZW50OiBDbGllbnQsIGlucHV0OiBJbnB1dCkgPT4gUHJvbWlzZTxXYWl0ZXJSZXN1bHQ+XG4pOiBQcm9taXNlPFdhaXRlclJlc3VsdD4gPT4ge1xuICBjb25zdCBwYXJhbXMgPSB7XG4gICAgLi4ud2FpdGVyU2VydmljZURlZmF1bHRzLFxuICAgIC4uLm9wdGlvbnMsXG4gIH07XG4gIHZhbGlkYXRlV2FpdGVyT3B0aW9ucyhwYXJhbXMpO1xuXG4gIGNvbnN0IGV4aXRDb25kaXRpb25zID0gW3J1blBvbGxpbmc8Q2xpZW50LCBJbnB1dD4ocGFyYW1zLCBpbnB1dCwgYWNjZXB0b3JDaGVja3MpXTtcbiAgaWYgKG9wdGlvbnMuYWJvcnRDb250cm9sbGVyKSB7XG4gICAgZXhpdENvbmRpdGlvbnMucHVzaChhYm9ydFRpbWVvdXQob3B0aW9ucy5hYm9ydENvbnRyb2xsZXIuc2lnbmFsKSk7XG4gIH1cbiAgcmV0dXJuIFByb21pc2UucmFjZShleGl0Q29uZGl0aW9ucyk7XG59O1xuIl19
+
+/***/ }),
+
+/***/ 6243:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __webpack_require__(192);
+tslib_1.__exportStar(__webpack_require__(1194), exports);
+tslib_1.__exportStar(__webpack_require__(709), exports);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEseURBQStCO0FBQy9CLG1EQUF5QiIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCAqIGZyb20gXCIuL2NyZWF0ZVdhaXRlclwiO1xuZXhwb3J0ICogZnJvbSBcIi4vd2FpdGVyXCI7XG4iXX0=
+
+/***/ }),
+
+/***/ 8015:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.runPolling = void 0;
+const sleep_1 = __webpack_require__(5442);
+const waiter_1 = __webpack_require__(709);
+/**
+ * Reference: https://awslabs.github.io/smithy/1.0/spec/waiters.html#waiter-retries
+ */
+const exponentialBackoffWithJitter = (minDelay, maxDelay, attemptCeiling, attempt) => {
+    if (attempt > attemptCeiling)
+        return maxDelay;
+    const delay = minDelay * 2 ** (attempt - 1);
+    return randomInRange(minDelay, delay);
+};
+const randomInRange = (min, max) => min + Math.random() * (max - min);
+/**
+ * Function that runs indefinite polling as part of waiters.
+ * @param params options passed to the waiter.
+ * @param client AWS SDK Client
+ * @param input client input
+ * @param stateChecker function that checks the acceptor states on each poll.
+ */
+const runPolling = async ({ minDelay, maxDelay, maxWaitTime, abortController, client }, input, acceptorChecks) => {
+    var _a;
+    let currentAttempt = 1;
+    const waitUntil = Date.now() + maxWaitTime * 1000;
+    // The max attempt number that the derived delay time tend to increase.
+    // Pre-compute this number to avoid Number type overflow.
+    const attemptCeiling = Math.log(maxDelay / minDelay) / Math.log(2) + 1;
+    while (true) {
+        if ((_a = abortController === null || abortController === void 0 ? void 0 : abortController.signal) === null || _a === void 0 ? void 0 : _a.aborted) {
+            return { state: waiter_1.WaiterState.ABORTED };
+        }
+        const delay = exponentialBackoffWithJitter(minDelay, maxDelay, attemptCeiling, currentAttempt);
+        // Resolve the promise explicitly at timeout or aborted. Otherwise this while loop will keep making API call until
+        // `acceptorCheck` returns non-retry status, even with the Promise.race() outside.
+        if (Date.now() + delay * 1000 > waitUntil) {
+            return { state: waiter_1.WaiterState.TIMEOUT };
+        }
+        await sleep_1.sleep(delay);
+        const { state } = await acceptorChecks(client, input);
+        if (state !== waiter_1.WaiterState.RETRY) {
+            return { state };
+        }
+        currentAttempt += 1;
+    }
+};
+exports.runPolling = runPolling;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicG9sbGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3BvbGxlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSx5Q0FBc0M7QUFDdEMscUNBQTBGO0FBRTFGOztHQUVHO0FBQ0gsTUFBTSw0QkFBNEIsR0FBRyxDQUFDLFFBQWdCLEVBQUUsUUFBZ0IsRUFBRSxjQUFzQixFQUFFLE9BQWUsRUFBRSxFQUFFO0lBQ25ILElBQUksT0FBTyxHQUFHLGNBQWM7UUFBRSxPQUFPLFFBQVEsQ0FBQztJQUM5QyxNQUFNLEtBQUssR0FBRyxRQUFRLEdBQUcsQ0FBQyxJQUFJLENBQUMsT0FBTyxHQUFHLENBQUMsQ0FBQyxDQUFDO0lBQzVDLE9BQU8sYUFBYSxDQUFDLFFBQVEsRUFBRSxLQUFLLENBQUMsQ0FBQztBQUN4QyxDQUFDLENBQUM7QUFFRixNQUFNLGFBQWEsR0FBRyxDQUFDLEdBQVcsRUFBRSxHQUFXLEVBQUUsRUFBRSxDQUFDLEdBQUcsR0FBRyxJQUFJLENBQUMsTUFBTSxFQUFFLEdBQUcsQ0FBQyxHQUFHLEdBQUcsR0FBRyxDQUFDLENBQUM7QUFFdEY7Ozs7OztHQU1HO0FBQ0ksTUFBTSxVQUFVLEdBQUcsS0FBSyxFQUM3QixFQUFFLFFBQVEsRUFBRSxRQUFRLEVBQUUsV0FBVyxFQUFFLGVBQWUsRUFBRSxNQUFNLEVBQTRCLEVBQ3RGLEtBQVEsRUFDUixjQUE4RCxFQUN2QyxFQUFFOztJQUN6QixJQUFJLGNBQWMsR0FBRyxDQUFDLENBQUM7SUFDdkIsTUFBTSxTQUFTLEdBQUcsSUFBSSxDQUFDLEdBQUcsRUFBRSxHQUFHLFdBQVcsR0FBRyxJQUFJLENBQUM7SUFDbEQsdUVBQXVFO0lBQ3ZFLHlEQUF5RDtJQUN6RCxNQUFNLGNBQWMsR0FBRyxJQUFJLENBQUMsR0FBRyxDQUFDLFFBQVEsR0FBRyxRQUFRLENBQUMsR0FBRyxJQUFJLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FBQztJQUN2RSxPQUFPLElBQUksRUFBRTtRQUNYLFVBQUksZUFBZSxhQUFmLGVBQWUsdUJBQWYsZUFBZSxDQUFFLE1BQU0sMENBQUUsT0FBTyxFQUFFO1lBQ3BDLE9BQU8sRUFBRSxLQUFLLEVBQUUsb0JBQVcsQ0FBQyxPQUFPLEVBQUUsQ0FBQztTQUN2QztRQUNELE1BQU0sS0FBSyxHQUFHLDRCQUE0QixDQUFDLFFBQVEsRUFBRSxRQUFRLEVBQUUsY0FBYyxFQUFFLGNBQWMsQ0FBQyxDQUFDO1FBQy9GLGtIQUFrSDtRQUNsSCxrRkFBa0Y7UUFDbEYsSUFBSSxJQUFJLENBQUMsR0FBRyxFQUFFLEdBQUcsS0FBSyxHQUFHLElBQUksR0FBRyxTQUFTLEVBQUU7WUFDekMsT0FBTyxFQUFFLEtBQUssRUFBRSxvQkFBVyxDQUFDLE9BQU8sRUFBRSxDQUFDO1NBQ3ZDO1FBQ0QsTUFBTSxhQUFLLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDbkIsTUFBTSxFQUFFLEtBQUssRUFBRSxHQUFHLE1BQU0sY0FBYyxDQUFDLE1BQU0sRUFBRSxLQUFLLENBQUMsQ0FBQztRQUN0RCxJQUFJLEtBQUssS0FBSyxvQkFBVyxDQUFDLEtBQUssRUFBRTtZQUMvQixPQUFPLEVBQUUsS0FBSyxFQUFFLENBQUM7U0FDbEI7UUFFRCxjQUFjLElBQUksQ0FBQyxDQUFDO0tBQ3JCO0FBQ0gsQ0FBQyxDQUFDO0FBNUJXLFFBQUEsVUFBVSxjQTRCckIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBzbGVlcCB9IGZyb20gXCIuL3V0aWxzL3NsZWVwXCI7XG5pbXBvcnQgeyBSZXNvbHZlZFdhaXRlck9wdGlvbnMsIFNtaXRoeUNsaWVudCwgV2FpdGVyUmVzdWx0LCBXYWl0ZXJTdGF0ZSB9IGZyb20gXCIuL3dhaXRlclwiO1xuXG4vKipcbiAqIFJlZmVyZW5jZTogaHR0cHM6Ly9hd3NsYWJzLmdpdGh1Yi5pby9zbWl0aHkvMS4wL3NwZWMvd2FpdGVycy5odG1sI3dhaXRlci1yZXRyaWVzXG4gKi9cbmNvbnN0IGV4cG9uZW50aWFsQmFja29mZldpdGhKaXR0ZXIgPSAobWluRGVsYXk6IG51bWJlciwgbWF4RGVsYXk6IG51bWJlciwgYXR0ZW1wdENlaWxpbmc6IG51bWJlciwgYXR0ZW1wdDogbnVtYmVyKSA9PiB7XG4gIGlmIChhdHRlbXB0ID4gYXR0ZW1wdENlaWxpbmcpIHJldHVybiBtYXhEZWxheTtcbiAgY29uc3QgZGVsYXkgPSBtaW5EZWxheSAqIDIgKiogKGF0dGVtcHQgLSAxKTtcbiAgcmV0dXJuIHJhbmRvbUluUmFuZ2UobWluRGVsYXksIGRlbGF5KTtcbn07XG5cbmNvbnN0IHJhbmRvbUluUmFuZ2UgPSAobWluOiBudW1iZXIsIG1heDogbnVtYmVyKSA9PiBtaW4gKyBNYXRoLnJhbmRvbSgpICogKG1heCAtIG1pbik7XG5cbi8qKlxuICogRnVuY3Rpb24gdGhhdCBydW5zIGluZGVmaW5pdGUgcG9sbGluZyBhcyBwYXJ0IG9mIHdhaXRlcnMuXG4gKiBAcGFyYW0gcGFyYW1zIG9wdGlvbnMgcGFzc2VkIHRvIHRoZSB3YWl0ZXIuXG4gKiBAcGFyYW0gY2xpZW50IEFXUyBTREsgQ2xpZW50XG4gKiBAcGFyYW0gaW5wdXQgY2xpZW50IGlucHV0XG4gKiBAcGFyYW0gc3RhdGVDaGVja2VyIGZ1bmN0aW9uIHRoYXQgY2hlY2tzIHRoZSBhY2NlcHRvciBzdGF0ZXMgb24gZWFjaCBwb2xsLlxuICovXG5leHBvcnQgY29uc3QgcnVuUG9sbGluZyA9IGFzeW5jIDxUIGV4dGVuZHMgU21pdGh5Q2xpZW50LCBTPihcbiAgeyBtaW5EZWxheSwgbWF4RGVsYXksIG1heFdhaXRUaW1lLCBhYm9ydENvbnRyb2xsZXIsIGNsaWVudCB9OiBSZXNvbHZlZFdhaXRlck9wdGlvbnM8VD4sXG4gIGlucHV0OiBTLFxuICBhY2NlcHRvckNoZWNrczogKGNsaWVudDogVCwgaW5wdXQ6IFMpID0+IFByb21pc2U8V2FpdGVyUmVzdWx0PlxuKTogUHJvbWlzZTxXYWl0ZXJSZXN1bHQ+ID0+IHtcbiAgbGV0IGN1cnJlbnRBdHRlbXB0ID0gMTtcbiAgY29uc3Qgd2FpdFVudGlsID0gRGF0ZS5ub3coKSArIG1heFdhaXRUaW1lICogMTAwMDtcbiAgLy8gVGhlIG1heCBhdHRlbXB0IG51bWJlciB0aGF0IHRoZSBkZXJpdmVkIGRlbGF5IHRpbWUgdGVuZCB0byBpbmNyZWFzZS5cbiAgLy8gUHJlLWNvbXB1dGUgdGhpcyBudW1iZXIgdG8gYXZvaWQgTnVtYmVyIHR5cGUgb3ZlcmZsb3cuXG4gIGNvbnN0IGF0dGVtcHRDZWlsaW5nID0gTWF0aC5sb2cobWF4RGVsYXkgLyBtaW5EZWxheSkgLyBNYXRoLmxvZygyKSArIDE7XG4gIHdoaWxlICh0cnVlKSB7XG4gICAgaWYgKGFib3J0Q29udHJvbGxlcj8uc2lnbmFsPy5hYm9ydGVkKSB7XG4gICAgICByZXR1cm4geyBzdGF0ZTogV2FpdGVyU3RhdGUuQUJPUlRFRCB9O1xuICAgIH1cbiAgICBjb25zdCBkZWxheSA9IGV4cG9uZW50aWFsQmFja29mZldpdGhKaXR0ZXIobWluRGVsYXksIG1heERlbGF5LCBhdHRlbXB0Q2VpbGluZywgY3VycmVudEF0dGVtcHQpO1xuICAgIC8vIFJlc29sdmUgdGhlIHByb21pc2UgZXhwbGljaXRseSBhdCB0aW1lb3V0IG9yIGFib3J0ZWQuIE90aGVyd2lzZSB0aGlzIHdoaWxlIGxvb3Agd2lsbCBrZWVwIG1ha2luZyBBUEkgY2FsbCB1bnRpbFxuICAgIC8vIGBhY2NlcHRvckNoZWNrYCByZXR1cm5zIG5vbi1yZXRyeSBzdGF0dXMsIGV2ZW4gd2l0aCB0aGUgUHJvbWlzZS5yYWNlKCkgb3V0c2lkZS5cbiAgICBpZiAoRGF0ZS5ub3coKSArIGRlbGF5ICogMTAwMCA+IHdhaXRVbnRpbCkge1xuICAgICAgcmV0dXJuIHsgc3RhdGU6IFdhaXRlclN0YXRlLlRJTUVPVVQgfTtcbiAgICB9XG4gICAgYXdhaXQgc2xlZXAoZGVsYXkpO1xuICAgIGNvbnN0IHsgc3RhdGUgfSA9IGF3YWl0IGFjY2VwdG9yQ2hlY2tzKGNsaWVudCwgaW5wdXQpO1xuICAgIGlmIChzdGF0ZSAhPT0gV2FpdGVyU3RhdGUuUkVUUlkpIHtcbiAgICAgIHJldHVybiB7IHN0YXRlIH07XG4gICAgfVxuXG4gICAgY3VycmVudEF0dGVtcHQgKz0gMTtcbiAgfVxufTtcbiJdfQ==
+
+/***/ }),
+
+/***/ 9534:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __webpack_require__(192);
+tslib_1.__exportStar(__webpack_require__(5442), exports);
+tslib_1.__exportStar(__webpack_require__(9067), exports);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvdXRpbHMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsa0RBQXdCO0FBQ3hCLHFEQUEyQiIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCAqIGZyb20gXCIuL3NsZWVwXCI7XG5leHBvcnQgKiBmcm9tIFwiLi92YWxpZGF0ZVwiO1xuIl19
+
+/***/ }),
+
+/***/ 5442:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.sleep = void 0;
+const sleep = (seconds) => {
+    return new Promise((resolve) => setTimeout(resolve, seconds * 1000));
+};
+exports.sleep = sleep;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2xlZXAuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvdXRpbHMvc2xlZXAudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQU8sTUFBTSxLQUFLLEdBQUcsQ0FBQyxPQUFlLEVBQUUsRUFBRTtJQUN2QyxPQUFPLElBQUksT0FBTyxDQUFDLENBQUMsT0FBTyxFQUFFLEVBQUUsQ0FBQyxVQUFVLENBQUMsT0FBTyxFQUFFLE9BQU8sR0FBRyxJQUFJLENBQUMsQ0FBQyxDQUFDO0FBQ3ZFLENBQUMsQ0FBQztBQUZXLFFBQUEsS0FBSyxTQUVoQiIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjb25zdCBzbGVlcCA9IChzZWNvbmRzOiBudW1iZXIpID0+IHtcbiAgcmV0dXJuIG5ldyBQcm9taXNlKChyZXNvbHZlKSA9PiBzZXRUaW1lb3V0KHJlc29sdmUsIHNlY29uZHMgKiAxMDAwKSk7XG59O1xuIl19
+
+/***/ }),
+
+/***/ 9067:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.validateWaiterOptions = void 0;
+/**
+ * Validates that waiter options are passed correctly
+ * @param options a waiter configuration object
+ */
+const validateWaiterOptions = (options) => {
+    if (options.maxWaitTime < 1) {
+        throw `WaiterOptions.maxWaitTime must be greater than 0`;
+    }
+    else if (options.maxWaitTime <= options.minDelay) {
+        throw `WaiterOptions.maxWaitTime [${options.maxWaitTime}] must be greater than WaiterOptions.minDelay [${options.minDelay}] for this waiter`;
+    }
+};
+exports.validateWaiterOptions = validateWaiterOptions;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidmFsaWRhdGUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvdXRpbHMvdmFsaWRhdGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBRUE7OztHQUdHO0FBQ0ksTUFBTSxxQkFBcUIsR0FBRyxDQUFDLE9BQTRDLEVBQVEsRUFBRTtJQUMxRixJQUFJLE9BQU8sQ0FBQyxXQUFXLEdBQUcsQ0FBQyxFQUFFO1FBQzNCLE1BQU0sa0RBQWtELENBQUM7S0FDMUQ7U0FBTSxJQUFJLE9BQU8sQ0FBQyxXQUFXLElBQUksT0FBTyxDQUFDLFFBQVEsRUFBRTtRQUNsRCxNQUFNLDhCQUE4QixPQUFPLENBQUMsV0FBVyxrREFBa0QsT0FBTyxDQUFDLFFBQVEsbUJBQW1CLENBQUM7S0FDOUk7QUFDSCxDQUFDLENBQUM7QUFOVyxRQUFBLHFCQUFxQix5QkFNaEMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBSZXNvbHZlZFdhaXRlck9wdGlvbnMsIFNtaXRoeUNsaWVudCB9IGZyb20gXCIuLi93YWl0ZXJcIjtcblxuLyoqXG4gKiBWYWxpZGF0ZXMgdGhhdCB3YWl0ZXIgb3B0aW9ucyBhcmUgcGFzc2VkIGNvcnJlY3RseVxuICogQHBhcmFtIG9wdGlvbnMgYSB3YWl0ZXIgY29uZmlndXJhdGlvbiBvYmplY3RcbiAqL1xuZXhwb3J0IGNvbnN0IHZhbGlkYXRlV2FpdGVyT3B0aW9ucyA9IChvcHRpb25zOiBSZXNvbHZlZFdhaXRlck9wdGlvbnM8U21pdGh5Q2xpZW50Pik6IHZvaWQgPT4ge1xuICBpZiAob3B0aW9ucy5tYXhXYWl0VGltZSA8IDEpIHtcbiAgICB0aHJvdyBgV2FpdGVyT3B0aW9ucy5tYXhXYWl0VGltZSBtdXN0IGJlIGdyZWF0ZXIgdGhhbiAwYDtcbiAgfSBlbHNlIGlmIChvcHRpb25zLm1heFdhaXRUaW1lIDw9IG9wdGlvbnMubWluRGVsYXkpIHtcbiAgICB0aHJvdyBgV2FpdGVyT3B0aW9ucy5tYXhXYWl0VGltZSBbJHtvcHRpb25zLm1heFdhaXRUaW1lfV0gbXVzdCBiZSBncmVhdGVyIHRoYW4gV2FpdGVyT3B0aW9ucy5taW5EZWxheSBbJHtvcHRpb25zLm1pbkRlbGF5fV0gZm9yIHRoaXMgd2FpdGVyYDtcbiAgfVxufTtcbiJdfQ==
+
+/***/ }),
+
+/***/ 709:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.WaiterState = exports.waiterServiceDefaults = void 0;
+/**
+ * @private
+ */
+exports.waiterServiceDefaults = {
+    minDelay: 2,
+    maxDelay: 120,
+};
+var WaiterState;
+(function (WaiterState) {
+    WaiterState["ABORTED"] = "ABORTED";
+    WaiterState["FAILURE"] = "FAILURE";
+    WaiterState["SUCCESS"] = "SUCCESS";
+    WaiterState["RETRY"] = "RETRY";
+    WaiterState["TIMEOUT"] = "TIMEOUT";
+})(WaiterState = exports.WaiterState || (exports.WaiterState = {}));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoid2FpdGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3dhaXRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUF1Q0E7O0dBRUc7QUFDVSxRQUFBLHFCQUFxQixHQUFHO0lBQ25DLFFBQVEsRUFBRSxDQUFDO0lBQ1gsUUFBUSxFQUFFLEdBQUc7Q0FDZCxDQUFDO0FBUUYsSUFBWSxXQU1YO0FBTkQsV0FBWSxXQUFXO0lBQ3JCLGtDQUFtQixDQUFBO0lBQ25CLGtDQUFtQixDQUFBO0lBQ25CLGtDQUFtQixDQUFBO0lBQ25CLDhCQUFlLENBQUE7SUFDZixrQ0FBbUIsQ0FBQTtBQUNyQixDQUFDLEVBTlcsV0FBVyxHQUFYLG1CQUFXLEtBQVgsbUJBQVcsUUFNdEIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBBYm9ydENvbnRyb2xsZXIsIENsaWVudCB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG4vKipcbiAqIEBpbnRlcm5hbFxuICovXG5leHBvcnQgdHlwZSBTbWl0aHlDbGllbnQgPSBDbGllbnQ8YW55LCBhbnksIGFueT47XG5leHBvcnQgaW50ZXJmYWNlIFdhaXRlckNvbmZpZ3VyYXRpb248Q2xpZW50IGV4dGVuZHMgU21pdGh5Q2xpZW50PiB7XG4gIC8qKlxuICAgKiBSZXF1aXJlZCBzZXJ2aWNlIGNsaWVudFxuICAgKi9cbiAgY2xpZW50OiBDbGllbnQ7XG5cbiAgLyoqXG4gICAqIFRoZSBhbW91bnQgb2YgdGltZSBpbiBzZWNvbmRzIGEgdXNlciBpcyB3aWxsaW5nIHRvIHdhaXQgZm9yIGEgd2FpdGVyIHRvIGNvbXBsZXRlLlxuICAgKi9cbiAgbWF4V2FpdFRpbWU6IG51bWJlcjtcblxuICAvKipcbiAgICogQWJvcnQgY29udHJvbGxlci4gVXNlZCBmb3IgZW5kaW5nIHRoZSB3YWl0ZXIgZWFybHkuXG4gICAqL1xuICBhYm9ydENvbnRyb2xsZXI/OiBBYm9ydENvbnRyb2xsZXI7XG59XG5cbmV4cG9ydCBpbnRlcmZhY2UgV2FpdGVyT3B0aW9uczxDbGllbnQgZXh0ZW5kcyBTbWl0aHlDbGllbnQ+IGV4dGVuZHMgV2FpdGVyQ29uZmlndXJhdGlvbjxDbGllbnQ+IHtcbiAgLyoqXG4gICAqIFRoZSBtaW5pbXVtIGFtb3VudCBvZiB0aW1lIHRvIGRlbGF5IGJldHdlZW4gcmV0cmllcyBpbiBzZWNvbmRzLiBUaGlzIHZhbHVlIGRlZmF1bHRzXG4gICAqIHRvIDIgaWYgbm90IHNwZWNpZmllZC4gSWYgc3BlY2lmaWVkLCB0aGlzIHZhbHVlIE1VU1QgYmUgZ3JlYXRlciB0aGFuIG9yIGVxdWFsIHRvIDFcbiAgICogYW5kIGxlc3MgdGhhbiBvciBlcXVhbCB0byBtYXhEZWxheS5cbiAgICovXG4gIG1pbkRlbGF5PzogbnVtYmVyO1xuXG4gIC8qKlxuICAgKiBUaGUgbWF4aW11bSBhbW91bnQgb2YgdGltZSB0byBkZWxheSBiZXR3ZWVuIHJldHJpZXMgaW4gc2Vjb25kcy4gVGhlIG1heGltdW0gYW1vdW50XG4gICAqIG9mIHRpbWUgaW4gc2Vjb25kcyB0byBkZWxheSBiZXR3ZWVuIGVhY2ggcmV0cnkuIFRoaXMgdmFsdWUgZGVmYXVsdHMgdG8gMTIwIGlmIG5vdFxuICAgKiBzcGVjaWZpZWQgKDIgbWludXRlcykuIElmIHNwZWNpZmllZCwgdGhpcyB2YWx1ZSBNVVNUIGJlIGdyZWF0ZXIgdGhhbiBvciBlcXVhbCB0byAxLlxuICAgKi9cbiAgbWF4RGVsYXk/OiBudW1iZXI7XG59XG5cbi8qKlxuICogQHByaXZhdGVcbiAqL1xuZXhwb3J0IGNvbnN0IHdhaXRlclNlcnZpY2VEZWZhdWx0cyA9IHtcbiAgbWluRGVsYXk6IDIsXG4gIG1heERlbGF5OiAxMjAsXG59O1xuXG4vKipcbiAqIEBwcml2YXRlXG4gKi9cbmV4cG9ydCB0eXBlIFJlc29sdmVkV2FpdGVyT3B0aW9uczxDbGllbnQgZXh0ZW5kcyBTbWl0aHlDbGllbnQ+ID0gV2FpdGVyT3B0aW9uczxDbGllbnQ+ICZcbiAgUmVxdWlyZWQ8UGljazxXYWl0ZXJPcHRpb25zPENsaWVudD4sIFwibWluRGVsYXlcIiB8IFwibWF4RGVsYXlcIj4+O1xuXG5leHBvcnQgZW51bSBXYWl0ZXJTdGF0ZSB7XG4gIEFCT1JURUQgPSBcIkFCT1JURURcIixcbiAgRkFJTFVSRSA9IFwiRkFJTFVSRVwiLFxuICBTVUNDRVNTID0gXCJTVUNDRVNTXCIsXG4gIFJFVFJZID0gXCJSRVRSWVwiLFxuICBUSU1FT1VUID0gXCJUSU1FT1VUXCIsXG59XG5cbmV4cG9ydCB0eXBlIFdhaXRlclJlc3VsdCA9IHtcbiAgc3RhdGU6IFdhaXRlclN0YXRlO1xufTtcbiJdfQ==
+
+/***/ }),
+
+/***/ 192:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "__extends": () => /* binding */ __extends,
+/* harmony export */   "__assign": () => /* binding */ __assign,
+/* harmony export */   "__rest": () => /* binding */ __rest,
+/* harmony export */   "__decorate": () => /* binding */ __decorate,
+/* harmony export */   "__param": () => /* binding */ __param,
+/* harmony export */   "__metadata": () => /* binding */ __metadata,
+/* harmony export */   "__awaiter": () => /* binding */ __awaiter,
+/* harmony export */   "__generator": () => /* binding */ __generator,
+/* harmony export */   "__createBinding": () => /* binding */ __createBinding,
+/* harmony export */   "__exportStar": () => /* binding */ __exportStar,
+/* harmony export */   "__values": () => /* binding */ __values,
+/* harmony export */   "__read": () => /* binding */ __read,
+/* harmony export */   "__spread": () => /* binding */ __spread,
+/* harmony export */   "__spreadArrays": () => /* binding */ __spreadArrays,
+/* harmony export */   "__await": () => /* binding */ __await,
+/* harmony export */   "__asyncGenerator": () => /* binding */ __asyncGenerator,
+/* harmony export */   "__asyncDelegator": () => /* binding */ __asyncDelegator,
+/* harmony export */   "__asyncValues": () => /* binding */ __asyncValues,
+/* harmony export */   "__makeTemplateObject": () => /* binding */ __makeTemplateObject,
+/* harmony export */   "__importStar": () => /* binding */ __importStar,
+/* harmony export */   "__importDefault": () => /* binding */ __importDefault,
+/* harmony export */   "__classPrivateFieldGet": () => /* binding */ __classPrivateFieldGet,
+/* harmony export */   "__classPrivateFieldSet": () => /* binding */ __classPrivateFieldSet
+/* harmony export */ });
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+/* global Reflect, Promise */
+
+var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return extendStatics(d, b);
+};
+
+function __extends(d, b) {
+    extendStatics(d, b);
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    }
+    return __assign.apply(this, arguments);
+}
+
+function __rest(s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+}
+
+function __decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+
+function __param(paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+}
+
+function __metadata(metadataKey, metadataValue) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+}
+
+function __awaiter(thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+}
+
+function __generator(thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+}
+
+function __createBinding(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}
+
+function __exportStar(m, exports) {
+    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+function __values(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+}
+
+function __read(o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+}
+
+function __spread() {
+    for (var ar = [], i = 0; i < arguments.length; i++)
+        ar = ar.concat(__read(arguments[i]));
+    return ar;
+}
+
+function __spreadArrays() {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+
+function __await(v) {
+    return this instanceof __await ? (this.v = v, this) : new __await(v);
+}
+
+function __asyncGenerator(thisArg, _arguments, generator) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var g = generator.apply(thisArg, _arguments || []), i, q = [];
+    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
+    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
+    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
+    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
+    function fulfill(value) { resume("next", value); }
+    function reject(value) { resume("throw", value); }
+    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
+}
+
+function __asyncDelegator(o) {
+    var i, p;
+    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
+    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
+}
+
+function __asyncValues(o) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var m = o[Symbol.asyncIterator], i;
+    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
+    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
+    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
+}
+
+function __makeTemplateObject(cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+
+function __importStar(mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result.default = mod;
+    return result;
+}
+
+function __importDefault(mod) {
+    return (mod && mod.__esModule) ? mod : { default: mod };
+}
+
+function __classPrivateFieldGet(receiver, privateMap) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to get private field on non-instance");
+    }
+    return privateMap.get(receiver);
+}
+
+function __classPrivateFieldSet(receiver, privateMap, value) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to set private field on non-instance");
+    }
+    privateMap.set(receiver, value);
+    return value;
+}
+
 
 /***/ }),
 

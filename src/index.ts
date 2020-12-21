@@ -7,8 +7,7 @@ import { getInput, info, setFailed } from '@actions/core';
 
 import { Action } from './action';
 
-const getValue = (key: string): string =>
-  (getInput(key) || process.env[key]) as string;
+const getValue = (key: string): string => getInput(key) || process.env[key];
 
 const zipFileLocation = getInput('zip-file', { required: true });
 const lambdaName = getInput('lambda-name') || basename(zipFileLocation, '.zip');
