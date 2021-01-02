@@ -21,10 +21,10 @@
     "@aws-sdk/types": "^3.1.0"
   },
   "devDependencies": {
-    "@types/node": "^14.14.17",
+    "@types/node": "^14.14.19",
     "@typescript-eslint/parser": "^4.11.1",
     "@vercel/ncc": "^0.26.1",
-    "eslint": "^7.16.0",
+    "eslint": "^7.17.0",
     "eslint-plugin-github": "^4.1.1",
     "prettier": "^2.2.1",
     "rimraf": "^3.0.2",
