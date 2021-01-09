@@ -36,16 +36,14 @@ The AWS Account needs to have the `"lambda:UpdateFunctionCode"` permission.
 
 ```json
 {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "lambda:UpdateFunctionCode"
-            ],
-            "Resource": "*"
-        }
-    ]
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": ["lambda:UpdateFunctionCode"],
+      "Resource": "*"
+    }
+  ]
 }
 ```
 

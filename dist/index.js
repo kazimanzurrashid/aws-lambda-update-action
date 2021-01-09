@@ -6,7 +6,7 @@ require('./sourcemap-register.js');module.exports =
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse("{\"name\":\"@aws-sdk/client-lambda\",\"description\":\"AWS SDK for JavaScript Lambda Client for Node.js, Browser and React Native\",\"version\":\"3.1.0\",\"scripts\":{\"clean\":\"yarn remove-definitions && yarn remove-dist && yarn remove-documentation\",\"build-documentation\":\"yarn remove-documentation && typedoc ./\",\"prepublishOnly\":\"yarn build\",\"pretest\":\"yarn build:cjs\",\"remove-definitions\":\"rimraf ./types\",\"remove-dist\":\"rimraf ./dist\",\"remove-documentation\":\"rimraf ./docs\",\"test\":\"exit 0\",\"build:cjs\":\"tsc -p tsconfig.json\",\"build:es\":\"tsc -p tsconfig.es.json\",\"build\":\"yarn build:cjs && yarn build:es\"},\"main\":\"./dist/cjs/index.js\",\"types\":\"./types/index.d.ts\",\"module\":\"./dist/es/index.js\",\"browser\":{\"./runtimeConfig\":\"./runtimeConfig.browser\"},\"react-native\":{\"./runtimeConfig\":\"./runtimeConfig.native\"},\"sideEffects\":false,\"dependencies\":{\"@aws-crypto/sha256-browser\":\"^1.0.0\",\"@aws-crypto/sha256-js\":\"^1.0.0\",\"@aws-sdk/config-resolver\":\"3.1.0\",\"@aws-sdk/credential-provider-node\":\"3.1.0\",\"@aws-sdk/fetch-http-handler\":\"3.1.0\",\"@aws-sdk/hash-node\":\"3.1.0\",\"@aws-sdk/invalid-dependency\":\"3.1.0\",\"@aws-sdk/middleware-content-length\":\"3.1.0\",\"@aws-sdk/middleware-host-header\":\"3.1.0\",\"@aws-sdk/middleware-logger\":\"3.1.0\",\"@aws-sdk/middleware-retry\":\"3.1.0\",\"@aws-sdk/middleware-serde\":\"3.1.0\",\"@aws-sdk/middleware-signing\":\"3.1.0\",\"@aws-sdk/middleware-stack\":\"3.1.0\",\"@aws-sdk/middleware-user-agent\":\"3.1.0\",\"@aws-sdk/node-config-provider\":\"3.1.0\",\"@aws-sdk/node-http-handler\":\"3.1.0\",\"@aws-sdk/protocol-http\":\"3.1.0\",\"@aws-sdk/smithy-client\":\"3.1.0\",\"@aws-sdk/url-parser-browser\":\"3.1.0\",\"@aws-sdk/url-parser-node\":\"3.1.0\",\"@aws-sdk/util-base64-browser\":\"3.1.0\",\"@aws-sdk/util-base64-node\":\"3.1.0\",\"@aws-sdk/util-body-length-browser\":\"3.1.0\",\"@aws-sdk/util-body-length-node\":\"3.1.0\",\"@aws-sdk/util-user-agent-browser\":\"3.1.0\",\"@aws-sdk/util-user-agent-node\":\"3.1.0\",\"@aws-sdk/util-utf8-browser\":\"3.1.0\",\"@aws-sdk/util-utf8-node\":\"3.1.0\",\"@aws-sdk/util-waiter\":\"3.1.0\",\"tslib\":\"^2.0.0\"},\"devDependencies\":{\"@aws-sdk/client-documentation-generator\":\"3.1.0\",\"@aws-sdk/types\":\"3.1.0\",\"@types/node\":\"^12.7.5\",\"jest\":\"^26.1.0\",\"rimraf\":\"^3.0.0\",\"typedoc\":\"^0.19.2\",\"typescript\":\"~4.1.2\"},\"engines\":{\"node\":\">=10.0.0\"},\"author\":{\"name\":\"AWS SDK for JavaScript Team\",\"url\":\"https://aws.amazon.com/javascript/\"},\"license\":\"Apache-2.0\",\"homepage\":\"https://github.com/aws/aws-sdk-js-v3/tree/master/clients/client-lambda\",\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/aws/aws-sdk-js-v3.git\",\"directory\":\"clients/client-lambda\"}}");
+module.exports = JSON.parse("{\"name\":\"@aws-sdk/client-lambda\",\"description\":\"AWS SDK for JavaScript Lambda Client for Node.js, Browser and React Native\",\"version\":\"3.2.0\",\"scripts\":{\"clean\":\"yarn remove-definitions && yarn remove-dist && yarn remove-documentation\",\"build-documentation\":\"yarn remove-documentation && typedoc ./\",\"prepublishOnly\":\"yarn build\",\"pretest\":\"yarn build:cjs\",\"remove-definitions\":\"rimraf ./types\",\"remove-dist\":\"rimraf ./dist\",\"remove-documentation\":\"rimraf ./docs\",\"test\":\"exit 0\",\"build:cjs\":\"tsc -p tsconfig.json\",\"build:es\":\"tsc -p tsconfig.es.json\",\"build\":\"yarn build:cjs && yarn build:es\"},\"main\":\"./dist/cjs/index.js\",\"types\":\"./types/index.d.ts\",\"module\":\"./dist/es/index.js\",\"browser\":{\"./runtimeConfig\":\"./runtimeConfig.browser\"},\"react-native\":{\"./runtimeConfig\":\"./runtimeConfig.native\"},\"sideEffects\":false,\"dependencies\":{\"@aws-crypto/sha256-browser\":\"^1.0.0\",\"@aws-crypto/sha256-js\":\"^1.0.0\",\"@aws-sdk/config-resolver\":\"3.2.0\",\"@aws-sdk/credential-provider-node\":\"3.1.0\",\"@aws-sdk/fetch-http-handler\":\"3.2.0\",\"@aws-sdk/hash-node\":\"3.1.0\",\"@aws-sdk/invalid-dependency\":\"3.2.0\",\"@aws-sdk/middleware-content-length\":\"3.2.0\",\"@aws-sdk/middleware-host-header\":\"3.2.0\",\"@aws-sdk/middleware-logger\":\"3.2.0\",\"@aws-sdk/middleware-retry\":\"3.2.0\",\"@aws-sdk/middleware-serde\":\"3.2.0\",\"@aws-sdk/middleware-signing\":\"3.2.0\",\"@aws-sdk/middleware-stack\":\"3.1.0\",\"@aws-sdk/middleware-user-agent\":\"3.2.0\",\"@aws-sdk/node-config-provider\":\"3.1.0\",\"@aws-sdk/node-http-handler\":\"3.2.0\",\"@aws-sdk/protocol-http\":\"3.2.0\",\"@aws-sdk/smithy-client\":\"3.2.0\",\"@aws-sdk/url-parser-browser\":\"3.1.0\",\"@aws-sdk/url-parser-node\":\"3.1.0\",\"@aws-sdk/util-base64-browser\":\"3.1.0\",\"@aws-sdk/util-base64-node\":\"3.1.0\",\"@aws-sdk/util-body-length-browser\":\"3.1.0\",\"@aws-sdk/util-body-length-node\":\"3.1.0\",\"@aws-sdk/util-user-agent-browser\":\"3.2.0\",\"@aws-sdk/util-user-agent-node\":\"3.2.0\",\"@aws-sdk/util-utf8-browser\":\"3.1.0\",\"@aws-sdk/util-utf8-node\":\"3.1.0\",\"@aws-sdk/util-waiter\":\"3.2.0\",\"tslib\":\"^2.0.0\"},\"devDependencies\":{\"@aws-sdk/client-documentation-generator\":\"3.1.0\",\"@aws-sdk/types\":\"3.1.0\",\"@types/node\":\"^12.7.5\",\"jest\":\"^26.1.0\",\"rimraf\":\"^3.0.0\",\"typedoc\":\"^0.19.2\",\"typescript\":\"~4.1.2\"},\"engines\":{\"node\":\">=10.0.0\"},\"author\":{\"name\":\"AWS SDK for JavaScript Team\",\"url\":\"https://aws.amazon.com/javascript/\"},\"license\":\"Apache-2.0\",\"homepage\":\"https://github.com/aws/aws-sdk-js-v3/tree/master/clients/client-lambda\",\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/aws/aws-sdk-js-v3.git\",\"directory\":\"clients/client-lambda\"}}");
 
 /***/ }),
 
@@ -1452,13 +1452,17 @@ class AddLayerVersionPermissionCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -1517,13 +1521,17 @@ class AddPermissionCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -1576,13 +1584,17 @@ class CreateAliasCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -1632,13 +1644,17 @@ class CreateCodeSigningConfigCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -1743,13 +1759,17 @@ class CreateEventSourceMappingCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -1831,13 +1851,17 @@ class CreateFunctionCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -1885,13 +1909,17 @@ class DeleteAliasCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -1940,13 +1968,17 @@ class DeleteCodeSigningConfigCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -1997,13 +2029,17 @@ class DeleteEventSourceMappingCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -2051,13 +2087,17 @@ class DeleteFunctionCodeSigningConfigCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -2110,13 +2150,17 @@ class DeleteFunctionCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -2164,13 +2208,17 @@ class DeleteFunctionConcurrencyCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -2219,13 +2267,17 @@ class DeleteFunctionEventInvokeConfigCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -2275,13 +2327,17 @@ class DeleteLayerVersionCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -2329,13 +2385,17 @@ class DeleteProvisionedConcurrencyConfigCommand extends smithy_client_1.Command 
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -2383,13 +2443,17 @@ class GetAccountSettingsCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -2437,13 +2501,17 @@ class GetAliasCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -2491,13 +2559,17 @@ class GetCodeSigningConfigCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -2546,13 +2618,17 @@ class GetEventSourceMappingCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -2600,13 +2676,17 @@ class GetFunctionCodeSigningConfigCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -2656,13 +2736,17 @@ class GetFunctionCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -2711,13 +2795,17 @@ class GetFunctionConcurrencyCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -2767,13 +2855,17 @@ class GetFunctionConfigurationCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -2822,13 +2914,17 @@ class GetFunctionEventInvokeConfigCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -2878,13 +2974,17 @@ class GetLayerVersionByArnCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -2934,13 +3034,17 @@ class GetLayerVersionCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -2989,13 +3093,17 @@ class GetLayerVersionPolicyCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -3043,13 +3151,17 @@ class GetPolicyCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -3097,13 +3209,17 @@ class GetProvisionedConcurrencyConfigCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -3142,6 +3258,8 @@ const Aws_restJson1_1 = __nccwpck_require__(758);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
+ * @deprecated
+ *
  * <important>
  *             <p>For asynchronous function invocation, use <a>Invoke</a>.</p>
  *          </important>
@@ -3154,13 +3272,17 @@ class InvokeAsyncCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -3234,13 +3356,17 @@ class InvokeCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -3289,13 +3415,17 @@ class ListAliasesCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -3345,13 +3475,17 @@ class ListCodeSigningConfigsCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -3400,13 +3534,17 @@ class ListEventSourceMappingsCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -3455,13 +3593,17 @@ class ListFunctionEventInvokeConfigsCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -3510,13 +3652,17 @@ class ListFunctionsByCodeSigningConfigCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -3567,13 +3713,17 @@ class ListFunctionsCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -3623,13 +3773,17 @@ class ListLayerVersionsCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -3679,13 +3833,17 @@ class ListLayersCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -3733,13 +3891,17 @@ class ListProvisionedConcurrencyConfigsCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -3788,13 +3950,17 @@ class ListTagsCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -3843,13 +4009,17 @@ class ListVersionsByFunctionCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -3900,13 +4070,17 @@ class PublishLayerVersionCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -3962,13 +4136,17 @@ class PublishVersionCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -4017,13 +4195,17 @@ class PutFunctionCodeSigningConfigCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -4079,13 +4261,17 @@ class PutFunctionConcurrencyCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -4143,13 +4329,17 @@ class PutFunctionEventInvokeConfigCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -4197,13 +4387,17 @@ class PutProvisionedConcurrencyConfigCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -4253,13 +4447,17 @@ class RemoveLayerVersionPermissionCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -4308,13 +4506,17 @@ class RemovePermissionCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -4362,13 +4564,17 @@ class TagResourceCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -4416,13 +4622,17 @@ class UntagResourceCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -4470,13 +4680,17 @@ class UpdateAliasCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -4525,13 +4739,17 @@ class UpdateCodeSigningConfigCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -4603,13 +4821,17 @@ class UpdateEventSourceMappingCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -4665,13 +4887,17 @@ class UpdateFunctionCodeCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -4733,13 +4959,17 @@ class UpdateFunctionConfigurationCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -4788,13 +5018,17 @@ class UpdateFunctionEventInvokeConfigCommand extends smithy_client_1.Command {
         // Start section: command_constructor
         super();
         this.input = input;
+        this.resolved = false;
         // End section: command_constructor
     }
     /**
      * @internal
      */
     resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        if (!this.resolved) {
+            this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+            this.resolved = true;
+        }
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "LambdaClient";
@@ -24206,7 +24440,7 @@ const runPolling = async ({ minDelay, maxDelay, maxWaitTime, abortController, cl
     }
 };
 exports.runPolling = runPolling;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicG9sbGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3BvbGxlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSx5Q0FBc0M7QUFDdEMscUNBQTRFO0FBRTVFOztHQUVHO0FBQ0gsTUFBTSw0QkFBNEIsR0FBRyxDQUFDLFFBQWdCLEVBQUUsUUFBZ0IsRUFBRSxjQUFzQixFQUFFLE9BQWUsRUFBRSxFQUFFO0lBQ25ILElBQUksT0FBTyxHQUFHLGNBQWM7UUFBRSxPQUFPLFFBQVEsQ0FBQztJQUM5QyxNQUFNLEtBQUssR0FBRyxRQUFRLEdBQUcsQ0FBQyxJQUFJLENBQUMsT0FBTyxHQUFHLENBQUMsQ0FBQyxDQUFDO0lBQzVDLE9BQU8sYUFBYSxDQUFDLFFBQVEsRUFBRSxLQUFLLENBQUMsQ0FBQztBQUN4QyxDQUFDLENBQUM7QUFFRixNQUFNLGFBQWEsR0FBRyxDQUFDLEdBQVcsRUFBRSxHQUFXLEVBQUUsRUFBRSxDQUFDLEdBQUcsR0FBRyxJQUFJLENBQUMsTUFBTSxFQUFFLEdBQUcsQ0FBQyxHQUFHLEdBQUcsR0FBRyxDQUFDLENBQUM7QUFFdEY7Ozs7OztHQU1HO0FBQ0ksTUFBTSxVQUFVLEdBQUcsS0FBSyxFQUM3QixFQUFFLFFBQVEsRUFBRSxRQUFRLEVBQUUsV0FBVyxFQUFFLGVBQWUsRUFBRSxNQUFNLEVBQWlDLEVBQzNGLEtBQVksRUFDWixjQUF1RSxFQUNoRCxFQUFFOztJQUN6QixJQUFJLGNBQWMsR0FBRyxDQUFDLENBQUM7SUFDdkIsTUFBTSxTQUFTLEdBQUcsSUFBSSxDQUFDLEdBQUcsRUFBRSxHQUFHLFdBQVcsR0FBRyxJQUFJLENBQUM7SUFDbEQsdUVBQXVFO0lBQ3ZFLHlEQUF5RDtJQUN6RCxNQUFNLGNBQWMsR0FBRyxJQUFJLENBQUMsR0FBRyxDQUFDLFFBQVEsR0FBRyxRQUFRLENBQUMsR0FBRyxJQUFJLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FBQztJQUN2RSxPQUFPLElBQUksRUFBRTtRQUNYLFVBQUksZUFBZSxhQUFmLGVBQWUsdUJBQWYsZUFBZSxDQUFFLE1BQU0sMENBQUUsT0FBTyxFQUFFO1lBQ3BDLE9BQU8sRUFBRSxLQUFLLEVBQUUsb0JBQVcsQ0FBQyxPQUFPLEVBQUUsQ0FBQztTQUN2QztRQUNELE1BQU0sS0FBSyxHQUFHLDRCQUE0QixDQUFDLFFBQVEsRUFBRSxRQUFRLEVBQUUsY0FBYyxFQUFFLGNBQWMsQ0FBQyxDQUFDO1FBQy9GLGtIQUFrSDtRQUNsSCxrRkFBa0Y7UUFDbEYsSUFBSSxJQUFJLENBQUMsR0FBRyxFQUFFLEdBQUcsS0FBSyxHQUFHLElBQUksR0FBRyxTQUFTLEVBQUU7WUFDekMsT0FBTyxFQUFFLEtBQUssRUFBRSxvQkFBVyxDQUFDLE9BQU8sRUFBRSxDQUFDO1NBQ3ZDO1FBQ0QsTUFBTSxhQUFLLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDbkIsTUFBTSxFQUFFLEtBQUssRUFBRSxHQUFHLE1BQU0sY0FBYyxDQUFDLE1BQU0sRUFBRSxLQUFLLENBQUMsQ0FBQztRQUN0RCxJQUFJLEtBQUssS0FBSyxvQkFBVyxDQUFDLEtBQUssRUFBRTtZQUMvQixPQUFPLEVBQUUsS0FBSyxFQUFFLENBQUM7U0FDbEI7UUFFRCxjQUFjLElBQUksQ0FBQyxDQUFDO0tBQ3JCO0FBQ0gsQ0FBQyxDQUFDO0FBNUJXLFFBQUEsVUFBVSxjQTRCckIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBzbGVlcCB9IGZyb20gXCIuL3V0aWxzL3NsZWVwXCI7XG5pbXBvcnQgeyBSZXNvbHZlZFdhaXRlck9wdGlvbnMsIFdhaXRlclJlc3VsdCwgV2FpdGVyU3RhdGUgfSBmcm9tIFwiLi93YWl0ZXJcIjtcblxuLyoqXG4gKiBSZWZlcmVuY2U6IGh0dHBzOi8vYXdzbGFicy5naXRodWIuaW8vc21pdGh5LzEuMC9zcGVjL3dhaXRlcnMuaHRtbCN3YWl0ZXItcmV0cmllc1xuICovXG5jb25zdCBleHBvbmVudGlhbEJhY2tvZmZXaXRoSml0dGVyID0gKG1pbkRlbGF5OiBudW1iZXIsIG1heERlbGF5OiBudW1iZXIsIGF0dGVtcHRDZWlsaW5nOiBudW1iZXIsIGF0dGVtcHQ6IG51bWJlcikgPT4ge1xuICBpZiAoYXR0ZW1wdCA+IGF0dGVtcHRDZWlsaW5nKSByZXR1cm4gbWF4RGVsYXk7XG4gIGNvbnN0IGRlbGF5ID0gbWluRGVsYXkgKiAyICoqIChhdHRlbXB0IC0gMSk7XG4gIHJldHVybiByYW5kb21JblJhbmdlKG1pbkRlbGF5LCBkZWxheSk7XG59O1xuXG5jb25zdCByYW5kb21JblJhbmdlID0gKG1pbjogbnVtYmVyLCBtYXg6IG51bWJlcikgPT4gbWluICsgTWF0aC5yYW5kb20oKSAqIChtYXggLSBtaW4pO1xuXG4vKipcbiAqIEZ1bmN0aW9uIHRoYXQgcnVucyBpbmRlZmluaXRlIHBvbGxpbmcgYXMgcGFydCBvZiB3YWl0ZXJzLlxuICogQHBhcmFtIHBhcmFtcyBvcHRpb25zIHBhc3NlZCB0byB0aGUgd2FpdGVyLlxuICogQHBhcmFtIGNsaWVudCBBV1MgU0RLIENsaWVudFxuICogQHBhcmFtIGlucHV0IGNsaWVudCBpbnB1dFxuICogQHBhcmFtIHN0YXRlQ2hlY2tlciBmdW5jdGlvbiB0aGF0IGNoZWNrcyB0aGUgYWNjZXB0b3Igc3RhdGVzIG9uIGVhY2ggcG9sbC5cbiAqL1xuZXhwb3J0IGNvbnN0IHJ1blBvbGxpbmcgPSBhc3luYyA8Q2xpZW50LCBJbnB1dD4oXG4gIHsgbWluRGVsYXksIG1heERlbGF5LCBtYXhXYWl0VGltZSwgYWJvcnRDb250cm9sbGVyLCBjbGllbnQgfTogUmVzb2x2ZWRXYWl0ZXJPcHRpb25zPENsaWVudD4sXG4gIGlucHV0OiBJbnB1dCxcbiAgYWNjZXB0b3JDaGVja3M6IChjbGllbnQ6IENsaWVudCwgaW5wdXQ6IElucHV0KSA9PiBQcm9taXNlPFdhaXRlclJlc3VsdD5cbik6IFByb21pc2U8V2FpdGVyUmVzdWx0PiA9PiB7XG4gIGxldCBjdXJyZW50QXR0ZW1wdCA9IDE7XG4gIGNvbnN0IHdhaXRVbnRpbCA9IERhdGUubm93KCkgKyBtYXhXYWl0VGltZSAqIDEwMDA7XG4gIC8vIFRoZSBtYXggYXR0ZW1wdCBudW1iZXIgdGhhdCB0aGUgZGVyaXZlZCBkZWxheSB0aW1lIHRlbmQgdG8gaW5jcmVhc2UuXG4gIC8vIFByZS1jb21wdXRlIHRoaXMgbnVtYmVyIHRvIGF2b2lkIE51bWJlciB0eXBlIG92ZXJmbG93LlxuICBjb25zdCBhdHRlbXB0Q2VpbGluZyA9IE1hdGgubG9nKG1heERlbGF5IC8gbWluRGVsYXkpIC8gTWF0aC5sb2coMikgKyAxO1xuICB3aGlsZSAodHJ1ZSkge1xuICAgIGlmIChhYm9ydENvbnRyb2xsZXI/LnNpZ25hbD8uYWJvcnRlZCkge1xuICAgICAgcmV0dXJuIHsgc3RhdGU6IFdhaXRlclN0YXRlLkFCT1JURUQgfTtcbiAgICB9XG4gICAgY29uc3QgZGVsYXkgPSBleHBvbmVudGlhbEJhY2tvZmZXaXRoSml0dGVyKG1pbkRlbGF5LCBtYXhEZWxheSwgYXR0ZW1wdENlaWxpbmcsIGN1cnJlbnRBdHRlbXB0KTtcbiAgICAvLyBSZXNvbHZlIHRoZSBwcm9taXNlIGV4cGxpY2l0bHkgYXQgdGltZW91dCBvciBhYm9ydGVkLiBPdGhlcndpc2UgdGhpcyB3aGlsZSBsb29wIHdpbGwga2VlcCBtYWtpbmcgQVBJIGNhbGwgdW50aWxcbiAgICAvLyBgYWNjZXB0b3JDaGVja2AgcmV0dXJucyBub24tcmV0cnkgc3RhdHVzLCBldmVuIHdpdGggdGhlIFByb21pc2UucmFjZSgpIG91dHNpZGUuXG4gICAgaWYgKERhdGUubm93KCkgKyBkZWxheSAqIDEwMDAgPiB3YWl0VW50aWwpIHtcbiAgICAgIHJldHVybiB7IHN0YXRlOiBXYWl0ZXJTdGF0ZS5USU1FT1VUIH07XG4gICAgfVxuICAgIGF3YWl0IHNsZWVwKGRlbGF5KTtcbiAgICBjb25zdCB7IHN0YXRlIH0gPSBhd2FpdCBhY2NlcHRvckNoZWNrcyhjbGllbnQsIGlucHV0KTtcbiAgICBpZiAoc3RhdGUgIT09IFdhaXRlclN0YXRlLlJFVFJZKSB7XG4gICAgICByZXR1cm4geyBzdGF0ZSB9O1xuICAgIH1cblxuICAgIGN1cnJlbnRBdHRlbXB0ICs9IDE7XG4gIH1cbn07XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicG9sbGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3BvbGxlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSx5Q0FBc0M7QUFDdEMscUNBQW9FO0FBRXBFOztHQUVHO0FBQ0gsTUFBTSw0QkFBNEIsR0FBRyxDQUFDLFFBQWdCLEVBQUUsUUFBZ0IsRUFBRSxjQUFzQixFQUFFLE9BQWUsRUFBRSxFQUFFO0lBQ25ILElBQUksT0FBTyxHQUFHLGNBQWM7UUFBRSxPQUFPLFFBQVEsQ0FBQztJQUM5QyxNQUFNLEtBQUssR0FBRyxRQUFRLEdBQUcsQ0FBQyxJQUFJLENBQUMsT0FBTyxHQUFHLENBQUMsQ0FBQyxDQUFDO0lBQzVDLE9BQU8sYUFBYSxDQUFDLFFBQVEsRUFBRSxLQUFLLENBQUMsQ0FBQztBQUN4QyxDQUFDLENBQUM7QUFFRixNQUFNLGFBQWEsR0FBRyxDQUFDLEdBQVcsRUFBRSxHQUFXLEVBQUUsRUFBRSxDQUFDLEdBQUcsR0FBRyxJQUFJLENBQUMsTUFBTSxFQUFFLEdBQUcsQ0FBQyxHQUFHLEdBQUcsR0FBRyxDQUFDLENBQUM7QUFFdEY7Ozs7OztHQU1HO0FBQ0ksTUFBTSxVQUFVLEdBQUcsS0FBSyxFQUM3QixFQUFFLFFBQVEsRUFBRSxRQUFRLEVBQUUsV0FBVyxFQUFFLGVBQWUsRUFBRSxNQUFNLEVBQXlCLEVBQ25GLEtBQVksRUFDWixjQUF1RSxFQUNoRCxFQUFFOztJQUN6QixJQUFJLGNBQWMsR0FBRyxDQUFDLENBQUM7SUFDdkIsTUFBTSxTQUFTLEdBQUcsSUFBSSxDQUFDLEdBQUcsRUFBRSxHQUFHLFdBQVcsR0FBRyxJQUFJLENBQUM7SUFDbEQsdUVBQXVFO0lBQ3ZFLHlEQUF5RDtJQUN6RCxNQUFNLGNBQWMsR0FBRyxJQUFJLENBQUMsR0FBRyxDQUFDLFFBQVEsR0FBRyxRQUFRLENBQUMsR0FBRyxJQUFJLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FBQztJQUN2RSxPQUFPLElBQUksRUFBRTtRQUNYLFVBQUksZUFBZSxhQUFmLGVBQWUsdUJBQWYsZUFBZSxDQUFFLE1BQU0sMENBQUUsT0FBTyxFQUFFO1lBQ3BDLE9BQU8sRUFBRSxLQUFLLEVBQUUsb0JBQVcsQ0FBQyxPQUFPLEVBQUUsQ0FBQztTQUN2QztRQUNELE1BQU0sS0FBSyxHQUFHLDRCQUE0QixDQUFDLFFBQVEsRUFBRSxRQUFRLEVBQUUsY0FBYyxFQUFFLGNBQWMsQ0FBQyxDQUFDO1FBQy9GLGtIQUFrSDtRQUNsSCxrRkFBa0Y7UUFDbEYsSUFBSSxJQUFJLENBQUMsR0FBRyxFQUFFLEdBQUcsS0FBSyxHQUFHLElBQUksR0FBRyxTQUFTLEVBQUU7WUFDekMsT0FBTyxFQUFFLEtBQUssRUFBRSxvQkFBVyxDQUFDLE9BQU8sRUFBRSxDQUFDO1NBQ3ZDO1FBQ0QsTUFBTSxhQUFLLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDbkIsTUFBTSxFQUFFLEtBQUssRUFBRSxHQUFHLE1BQU0sY0FBYyxDQUFDLE1BQU0sRUFBRSxLQUFLLENBQUMsQ0FBQztRQUN0RCxJQUFJLEtBQUssS0FBSyxvQkFBVyxDQUFDLEtBQUssRUFBRTtZQUMvQixPQUFPLEVBQUUsS0FBSyxFQUFFLENBQUM7U0FDbEI7UUFFRCxjQUFjLElBQUksQ0FBQyxDQUFDO0tBQ3JCO0FBQ0gsQ0FBQyxDQUFDO0FBNUJXLFFBQUEsVUFBVSxjQTRCckIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBzbGVlcCB9IGZyb20gXCIuL3V0aWxzL3NsZWVwXCI7XG5pbXBvcnQgeyBXYWl0ZXJPcHRpb25zLCBXYWl0ZXJSZXN1bHQsIFdhaXRlclN0YXRlIH0gZnJvbSBcIi4vd2FpdGVyXCI7XG5cbi8qKlxuICogUmVmZXJlbmNlOiBodHRwczovL2F3c2xhYnMuZ2l0aHViLmlvL3NtaXRoeS8xLjAvc3BlYy93YWl0ZXJzLmh0bWwjd2FpdGVyLXJldHJpZXNcbiAqL1xuY29uc3QgZXhwb25lbnRpYWxCYWNrb2ZmV2l0aEppdHRlciA9IChtaW5EZWxheTogbnVtYmVyLCBtYXhEZWxheTogbnVtYmVyLCBhdHRlbXB0Q2VpbGluZzogbnVtYmVyLCBhdHRlbXB0OiBudW1iZXIpID0+IHtcbiAgaWYgKGF0dGVtcHQgPiBhdHRlbXB0Q2VpbGluZykgcmV0dXJuIG1heERlbGF5O1xuICBjb25zdCBkZWxheSA9IG1pbkRlbGF5ICogMiAqKiAoYXR0ZW1wdCAtIDEpO1xuICByZXR1cm4gcmFuZG9tSW5SYW5nZShtaW5EZWxheSwgZGVsYXkpO1xufTtcblxuY29uc3QgcmFuZG9tSW5SYW5nZSA9IChtaW46IG51bWJlciwgbWF4OiBudW1iZXIpID0+IG1pbiArIE1hdGgucmFuZG9tKCkgKiAobWF4IC0gbWluKTtcblxuLyoqXG4gKiBGdW5jdGlvbiB0aGF0IHJ1bnMgaW5kZWZpbml0ZSBwb2xsaW5nIGFzIHBhcnQgb2Ygd2FpdGVycy5cbiAqIEBwYXJhbSBwYXJhbXMgb3B0aW9ucyBwYXNzZWQgdG8gdGhlIHdhaXRlci5cbiAqIEBwYXJhbSBjbGllbnQgQVdTIFNESyBDbGllbnRcbiAqIEBwYXJhbSBpbnB1dCBjbGllbnQgaW5wdXRcbiAqIEBwYXJhbSBzdGF0ZUNoZWNrZXIgZnVuY3Rpb24gdGhhdCBjaGVja3MgdGhlIGFjY2VwdG9yIHN0YXRlcyBvbiBlYWNoIHBvbGwuXG4gKi9cbmV4cG9ydCBjb25zdCBydW5Qb2xsaW5nID0gYXN5bmMgPENsaWVudCwgSW5wdXQ+KFxuICB7IG1pbkRlbGF5LCBtYXhEZWxheSwgbWF4V2FpdFRpbWUsIGFib3J0Q29udHJvbGxlciwgY2xpZW50IH06IFdhaXRlck9wdGlvbnM8Q2xpZW50PixcbiAgaW5wdXQ6IElucHV0LFxuICBhY2NlcHRvckNoZWNrczogKGNsaWVudDogQ2xpZW50LCBpbnB1dDogSW5wdXQpID0+IFByb21pc2U8V2FpdGVyUmVzdWx0PlxuKTogUHJvbWlzZTxXYWl0ZXJSZXN1bHQ+ID0+IHtcbiAgbGV0IGN1cnJlbnRBdHRlbXB0ID0gMTtcbiAgY29uc3Qgd2FpdFVudGlsID0gRGF0ZS5ub3coKSArIG1heFdhaXRUaW1lICogMTAwMDtcbiAgLy8gVGhlIG1heCBhdHRlbXB0IG51bWJlciB0aGF0IHRoZSBkZXJpdmVkIGRlbGF5IHRpbWUgdGVuZCB0byBpbmNyZWFzZS5cbiAgLy8gUHJlLWNvbXB1dGUgdGhpcyBudW1iZXIgdG8gYXZvaWQgTnVtYmVyIHR5cGUgb3ZlcmZsb3cuXG4gIGNvbnN0IGF0dGVtcHRDZWlsaW5nID0gTWF0aC5sb2cobWF4RGVsYXkgLyBtaW5EZWxheSkgLyBNYXRoLmxvZygyKSArIDE7XG4gIHdoaWxlICh0cnVlKSB7XG4gICAgaWYgKGFib3J0Q29udHJvbGxlcj8uc2lnbmFsPy5hYm9ydGVkKSB7XG4gICAgICByZXR1cm4geyBzdGF0ZTogV2FpdGVyU3RhdGUuQUJPUlRFRCB9O1xuICAgIH1cbiAgICBjb25zdCBkZWxheSA9IGV4cG9uZW50aWFsQmFja29mZldpdGhKaXR0ZXIobWluRGVsYXksIG1heERlbGF5LCBhdHRlbXB0Q2VpbGluZywgY3VycmVudEF0dGVtcHQpO1xuICAgIC8vIFJlc29sdmUgdGhlIHByb21pc2UgZXhwbGljaXRseSBhdCB0aW1lb3V0IG9yIGFib3J0ZWQuIE90aGVyd2lzZSB0aGlzIHdoaWxlIGxvb3Agd2lsbCBrZWVwIG1ha2luZyBBUEkgY2FsbCB1bnRpbFxuICAgIC8vIGBhY2NlcHRvckNoZWNrYCByZXR1cm5zIG5vbi1yZXRyeSBzdGF0dXMsIGV2ZW4gd2l0aCB0aGUgUHJvbWlzZS5yYWNlKCkgb3V0c2lkZS5cbiAgICBpZiAoRGF0ZS5ub3coKSArIGRlbGF5ICogMTAwMCA+IHdhaXRVbnRpbCkge1xuICAgICAgcmV0dXJuIHsgc3RhdGU6IFdhaXRlclN0YXRlLlRJTUVPVVQgfTtcbiAgICB9XG4gICAgYXdhaXQgc2xlZXAoZGVsYXkpO1xuICAgIGNvbnN0IHsgc3RhdGUgfSA9IGF3YWl0IGFjY2VwdG9yQ2hlY2tzKGNsaWVudCwgaW5wdXQpO1xuICAgIGlmIChzdGF0ZSAhPT0gV2FpdGVyU3RhdGUuUkVUUlkpIHtcbiAgICAgIHJldHVybiB7IHN0YXRlIH07XG4gICAgfVxuXG4gICAgY3VycmVudEF0dGVtcHQgKz0gMTtcbiAgfVxufTtcbiJdfQ==
 
 /***/ }),
 
@@ -24251,14 +24485,23 @@ exports.validateWaiterOptions = void 0;
  */
 const validateWaiterOptions = (options) => {
     if (options.maxWaitTime < 1) {
-        throw `WaiterOptions.maxWaitTime must be greater than 0`;
+        throw new Error(`WaiterConfiguration.maxWaitTime must be greater than 0`);
+    }
+    else if (options.minDelay < 1) {
+        throw new Error(`WaiterConfiguration.minDelay must be greater than 0`);
+    }
+    else if (options.maxDelay < 1) {
+        throw new Error(`WaiterConfiguration.maxDelay must be greater than 0`);
     }
     else if (options.maxWaitTime <= options.minDelay) {
-        throw `WaiterOptions.maxWaitTime [${options.maxWaitTime}] must be greater than WaiterOptions.minDelay [${options.minDelay}] for this waiter`;
+        throw new Error(`WaiterConfiguration.maxWaitTime [${options.maxWaitTime}] must be greater than WaiterConfiguration.minDelay [${options.minDelay}] for this waiter`);
+    }
+    else if (options.maxDelay < options.minDelay) {
+        throw new Error(`WaiterConfiguration.maxDelay [${options.maxDelay}] must be greater than WaiterConfiguration.minDelay [${options.minDelay}] for this waiter`);
     }
 };
 exports.validateWaiterOptions = validateWaiterOptions;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidmFsaWRhdGUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvdXRpbHMvdmFsaWRhdGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBRUE7OztHQUdHO0FBQ0ksTUFBTSxxQkFBcUIsR0FBRyxDQUFTLE9BQXNDLEVBQVEsRUFBRTtJQUM1RixJQUFJLE9BQU8sQ0FBQyxXQUFXLEdBQUcsQ0FBQyxFQUFFO1FBQzNCLE1BQU0sa0RBQWtELENBQUM7S0FDMUQ7U0FBTSxJQUFJLE9BQU8sQ0FBQyxXQUFXLElBQUksT0FBTyxDQUFDLFFBQVEsRUFBRTtRQUNsRCxNQUFNLDhCQUE4QixPQUFPLENBQUMsV0FBVyxrREFBa0QsT0FBTyxDQUFDLFFBQVEsbUJBQW1CLENBQUM7S0FDOUk7QUFDSCxDQUFDLENBQUM7QUFOVyxRQUFBLHFCQUFxQix5QkFNaEMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBSZXNvbHZlZFdhaXRlck9wdGlvbnMgfSBmcm9tIFwiLi4vd2FpdGVyXCI7XG5cbi8qKlxuICogVmFsaWRhdGVzIHRoYXQgd2FpdGVyIG9wdGlvbnMgYXJlIHBhc3NlZCBjb3JyZWN0bHlcbiAqIEBwYXJhbSBvcHRpb25zIGEgd2FpdGVyIGNvbmZpZ3VyYXRpb24gb2JqZWN0XG4gKi9cbmV4cG9ydCBjb25zdCB2YWxpZGF0ZVdhaXRlck9wdGlvbnMgPSA8Q2xpZW50PihvcHRpb25zOiBSZXNvbHZlZFdhaXRlck9wdGlvbnM8Q2xpZW50Pik6IHZvaWQgPT4ge1xuICBpZiAob3B0aW9ucy5tYXhXYWl0VGltZSA8IDEpIHtcbiAgICB0aHJvdyBgV2FpdGVyT3B0aW9ucy5tYXhXYWl0VGltZSBtdXN0IGJlIGdyZWF0ZXIgdGhhbiAwYDtcbiAgfSBlbHNlIGlmIChvcHRpb25zLm1heFdhaXRUaW1lIDw9IG9wdGlvbnMubWluRGVsYXkpIHtcbiAgICB0aHJvdyBgV2FpdGVyT3B0aW9ucy5tYXhXYWl0VGltZSBbJHtvcHRpb25zLm1heFdhaXRUaW1lfV0gbXVzdCBiZSBncmVhdGVyIHRoYW4gV2FpdGVyT3B0aW9ucy5taW5EZWxheSBbJHtvcHRpb25zLm1pbkRlbGF5fV0gZm9yIHRoaXMgd2FpdGVyYDtcbiAgfVxufTtcbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidmFsaWRhdGUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvdXRpbHMvdmFsaWRhdGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBRUE7OztHQUdHO0FBQ0ksTUFBTSxxQkFBcUIsR0FBRyxDQUFTLE9BQThCLEVBQVEsRUFBRTtJQUNwRixJQUFJLE9BQU8sQ0FBQyxXQUFXLEdBQUcsQ0FBQyxFQUFFO1FBQzNCLE1BQU0sSUFBSSxLQUFLLENBQUMsd0RBQXdELENBQUMsQ0FBQztLQUMzRTtTQUFNLElBQUksT0FBTyxDQUFDLFFBQVEsR0FBRyxDQUFDLEVBQUU7UUFDL0IsTUFBTSxJQUFJLEtBQUssQ0FBQyxxREFBcUQsQ0FBQyxDQUFDO0tBQ3hFO1NBQU0sSUFBSSxPQUFPLENBQUMsUUFBUSxHQUFHLENBQUMsRUFBRTtRQUMvQixNQUFNLElBQUksS0FBSyxDQUFDLHFEQUFxRCxDQUFDLENBQUM7S0FDeEU7U0FBTSxJQUFJLE9BQU8sQ0FBQyxXQUFXLElBQUksT0FBTyxDQUFDLFFBQVEsRUFBRTtRQUNsRCxNQUFNLElBQUksS0FBSyxDQUNiLG9DQUFvQyxPQUFPLENBQUMsV0FBVyx3REFBd0QsT0FBTyxDQUFDLFFBQVEsbUJBQW1CLENBQ25KLENBQUM7S0FDSDtTQUFNLElBQUksT0FBTyxDQUFDLFFBQVEsR0FBRyxPQUFPLENBQUMsUUFBUSxFQUFFO1FBQzlDLE1BQU0sSUFBSSxLQUFLLENBQ2IsaUNBQWlDLE9BQU8sQ0FBQyxRQUFRLHdEQUF3RCxPQUFPLENBQUMsUUFBUSxtQkFBbUIsQ0FDN0ksQ0FBQztLQUNIO0FBQ0gsQ0FBQyxDQUFDO0FBaEJXLFFBQUEscUJBQXFCLHlCQWdCaEMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBXYWl0ZXJPcHRpb25zIH0gZnJvbSBcIi4uL3dhaXRlclwiO1xuXG4vKipcbiAqIFZhbGlkYXRlcyB0aGF0IHdhaXRlciBvcHRpb25zIGFyZSBwYXNzZWQgY29ycmVjdGx5XG4gKiBAcGFyYW0gb3B0aW9ucyBhIHdhaXRlciBjb25maWd1cmF0aW9uIG9iamVjdFxuICovXG5leHBvcnQgY29uc3QgdmFsaWRhdGVXYWl0ZXJPcHRpb25zID0gPENsaWVudD4ob3B0aW9uczogV2FpdGVyT3B0aW9uczxDbGllbnQ+KTogdm9pZCA9PiB7XG4gIGlmIChvcHRpb25zLm1heFdhaXRUaW1lIDwgMSkge1xuICAgIHRocm93IG5ldyBFcnJvcihgV2FpdGVyQ29uZmlndXJhdGlvbi5tYXhXYWl0VGltZSBtdXN0IGJlIGdyZWF0ZXIgdGhhbiAwYCk7XG4gIH0gZWxzZSBpZiAob3B0aW9ucy5taW5EZWxheSA8IDEpIHtcbiAgICB0aHJvdyBuZXcgRXJyb3IoYFdhaXRlckNvbmZpZ3VyYXRpb24ubWluRGVsYXkgbXVzdCBiZSBncmVhdGVyIHRoYW4gMGApO1xuICB9IGVsc2UgaWYgKG9wdGlvbnMubWF4RGVsYXkgPCAxKSB7XG4gICAgdGhyb3cgbmV3IEVycm9yKGBXYWl0ZXJDb25maWd1cmF0aW9uLm1heERlbGF5IG11c3QgYmUgZ3JlYXRlciB0aGFuIDBgKTtcbiAgfSBlbHNlIGlmIChvcHRpb25zLm1heFdhaXRUaW1lIDw9IG9wdGlvbnMubWluRGVsYXkpIHtcbiAgICB0aHJvdyBuZXcgRXJyb3IoXG4gICAgICBgV2FpdGVyQ29uZmlndXJhdGlvbi5tYXhXYWl0VGltZSBbJHtvcHRpb25zLm1heFdhaXRUaW1lfV0gbXVzdCBiZSBncmVhdGVyIHRoYW4gV2FpdGVyQ29uZmlndXJhdGlvbi5taW5EZWxheSBbJHtvcHRpb25zLm1pbkRlbGF5fV0gZm9yIHRoaXMgd2FpdGVyYFxuICAgICk7XG4gIH0gZWxzZSBpZiAob3B0aW9ucy5tYXhEZWxheSA8IG9wdGlvbnMubWluRGVsYXkpIHtcbiAgICB0aHJvdyBuZXcgRXJyb3IoXG4gICAgICBgV2FpdGVyQ29uZmlndXJhdGlvbi5tYXhEZWxheSBbJHtvcHRpb25zLm1heERlbGF5fV0gbXVzdCBiZSBncmVhdGVyIHRoYW4gV2FpdGVyQ29uZmlndXJhdGlvbi5taW5EZWxheSBbJHtvcHRpb25zLm1pbkRlbGF5fV0gZm9yIHRoaXMgd2FpdGVyYFxuICAgICk7XG4gIH1cbn07XG4iXX0=
 
 /***/ }),
 
@@ -24284,7 +24527,7 @@ var WaiterState;
     WaiterState["RETRY"] = "RETRY";
     WaiterState["TIMEOUT"] = "TIMEOUT";
 })(WaiterState = exports.WaiterState || (exports.WaiterState = {}));
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoid2FpdGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3dhaXRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFtQ0E7O0dBRUc7QUFDVSxRQUFBLHFCQUFxQixHQUFHO0lBQ25DLFFBQVEsRUFBRSxDQUFDO0lBQ1gsUUFBUSxFQUFFLEdBQUc7Q0FDZCxDQUFDO0FBUUYsSUFBWSxXQU1YO0FBTkQsV0FBWSxXQUFXO0lBQ3JCLGtDQUFtQixDQUFBO0lBQ25CLGtDQUFtQixDQUFBO0lBQ25CLGtDQUFtQixDQUFBO0lBQ25CLDhCQUFlLENBQUE7SUFDZixrQ0FBbUIsQ0FBQTtBQUNyQixDQUFDLEVBTlcsV0FBVyxHQUFYLG1CQUFXLEtBQVgsbUJBQVcsUUFNdEIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBBYm9ydENvbnRyb2xsZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IGludGVyZmFjZSBXYWl0ZXJDb25maWd1cmF0aW9uPENsaWVudD4ge1xuICAvKipcbiAgICogUmVxdWlyZWQgc2VydmljZSBjbGllbnRcbiAgICovXG4gIGNsaWVudDogQ2xpZW50O1xuXG4gIC8qKlxuICAgKiBUaGUgYW1vdW50IG9mIHRpbWUgaW4gc2Vjb25kcyBhIHVzZXIgaXMgd2lsbGluZyB0byB3YWl0IGZvciBhIHdhaXRlciB0byBjb21wbGV0ZS5cbiAgICovXG4gIG1heFdhaXRUaW1lOiBudW1iZXI7XG5cbiAgLyoqXG4gICAqIEFib3J0IGNvbnRyb2xsZXIuIFVzZWQgZm9yIGVuZGluZyB0aGUgd2FpdGVyIGVhcmx5LlxuICAgKi9cbiAgYWJvcnRDb250cm9sbGVyPzogQWJvcnRDb250cm9sbGVyO1xufVxuXG5leHBvcnQgaW50ZXJmYWNlIFdhaXRlck9wdGlvbnM8Q2xpZW50PiBleHRlbmRzIFdhaXRlckNvbmZpZ3VyYXRpb248Q2xpZW50PiB7XG4gIC8qKlxuICAgKiBUaGUgbWluaW11bSBhbW91bnQgb2YgdGltZSB0byBkZWxheSBiZXR3ZWVuIHJldHJpZXMgaW4gc2Vjb25kcy4gVGhpcyB2YWx1ZSBkZWZhdWx0c1xuICAgKiB0byAyIGlmIG5vdCBzcGVjaWZpZWQuIElmIHNwZWNpZmllZCwgdGhpcyB2YWx1ZSBNVVNUIGJlIGdyZWF0ZXIgdGhhbiBvciBlcXVhbCB0byAxXG4gICAqIGFuZCBsZXNzIHRoYW4gb3IgZXF1YWwgdG8gbWF4RGVsYXkuXG4gICAqL1xuICBtaW5EZWxheT86IG51bWJlcjtcblxuICAvKipcbiAgICogVGhlIG1heGltdW0gYW1vdW50IG9mIHRpbWUgdG8gZGVsYXkgYmV0d2VlbiByZXRyaWVzIGluIHNlY29uZHMuIFRoZSBtYXhpbXVtIGFtb3VudFxuICAgKiBvZiB0aW1lIGluIHNlY29uZHMgdG8gZGVsYXkgYmV0d2VlbiBlYWNoIHJldHJ5LiBUaGlzIHZhbHVlIGRlZmF1bHRzIHRvIDEyMCBpZiBub3RcbiAgICogc3BlY2lmaWVkICgyIG1pbnV0ZXMpLiBJZiBzcGVjaWZpZWQsIHRoaXMgdmFsdWUgTVVTVCBiZSBncmVhdGVyIHRoYW4gb3IgZXF1YWwgdG8gMS5cbiAgICovXG4gIG1heERlbGF5PzogbnVtYmVyO1xufVxuXG4vKipcbiAqIEBwcml2YXRlXG4gKi9cbmV4cG9ydCBjb25zdCB3YWl0ZXJTZXJ2aWNlRGVmYXVsdHMgPSB7XG4gIG1pbkRlbGF5OiAyLFxuICBtYXhEZWxheTogMTIwLFxufTtcblxuLyoqXG4gKiBAcHJpdmF0ZVxuICovXG5leHBvcnQgdHlwZSBSZXNvbHZlZFdhaXRlck9wdGlvbnM8Q2xpZW50PiA9IFdhaXRlck9wdGlvbnM8Q2xpZW50PiAmXG4gIFJlcXVpcmVkPFBpY2s8V2FpdGVyT3B0aW9uczxDbGllbnQ+LCBcIm1pbkRlbGF5XCIgfCBcIm1heERlbGF5XCI+PjtcblxuZXhwb3J0IGVudW0gV2FpdGVyU3RhdGUge1xuICBBQk9SVEVEID0gXCJBQk9SVEVEXCIsXG4gIEZBSUxVUkUgPSBcIkZBSUxVUkVcIixcbiAgU1VDQ0VTUyA9IFwiU1VDQ0VTU1wiLFxuICBSRVRSWSA9IFwiUkVUUllcIixcbiAgVElNRU9VVCA9IFwiVElNRU9VVFwiLFxufVxuXG5leHBvcnQgdHlwZSBXYWl0ZXJSZXN1bHQgPSB7XG4gIHN0YXRlOiBXYWl0ZXJTdGF0ZTtcbn07XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoid2FpdGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3dhaXRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFpQ0E7O0dBRUc7QUFDVSxRQUFBLHFCQUFxQixHQUFHO0lBQ25DLFFBQVEsRUFBRSxDQUFDO0lBQ1gsUUFBUSxFQUFFLEdBQUc7Q0FDZCxDQUFDO0FBUUYsSUFBWSxXQU1YO0FBTkQsV0FBWSxXQUFXO0lBQ3JCLGtDQUFtQixDQUFBO0lBQ25CLGtDQUFtQixDQUFBO0lBQ25CLGtDQUFtQixDQUFBO0lBQ25CLDhCQUFlLENBQUE7SUFDZixrQ0FBbUIsQ0FBQTtBQUNyQixDQUFDLEVBTlcsV0FBVyxHQUFYLG1CQUFXLEtBQVgsbUJBQVcsUUFNdEIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBBYm9ydENvbnRyb2xsZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IGludGVyZmFjZSBXYWl0ZXJDb25maWd1cmF0aW9uPENsaWVudD4ge1xuICAvKipcbiAgICogUmVxdWlyZWQgc2VydmljZSBjbGllbnRcbiAgICovXG4gIGNsaWVudDogQ2xpZW50O1xuXG4gIC8qKlxuICAgKiBUaGUgYW1vdW50IG9mIHRpbWUgaW4gc2Vjb25kcyBhIHVzZXIgaXMgd2lsbGluZyB0byB3YWl0IGZvciBhIHdhaXRlciB0byBjb21wbGV0ZS5cbiAgICovXG4gIG1heFdhaXRUaW1lOiBudW1iZXI7XG5cbiAgLyoqXG4gICAqIEFib3J0IGNvbnRyb2xsZXIuIFVzZWQgZm9yIGVuZGluZyB0aGUgd2FpdGVyIGVhcmx5LlxuICAgKi9cbiAgYWJvcnRDb250cm9sbGVyPzogQWJvcnRDb250cm9sbGVyO1xuXG4gIC8qKlxuICAgKiBUaGUgbWluaW11bSBhbW91bnQgb2YgdGltZSB0byBkZWxheSBiZXR3ZWVuIHJldHJpZXMgaW4gc2Vjb25kcy4gVGhpcyBpcyB0aGVcbiAgICogZmxvb3Igb2YgdGhlIGV4cG9uZW50aWFsIGJhY2tvZmYuIFRoaXMgdmFsdWUgZGVmYXVsdHMgdG8gc2VydmljZSBkZWZhdWx0XG4gICAqIGlmIG5vdCBzcGVjaWZpZWQuIFRoaXMgdmFsdWUgTVVTVCBiZSBsZXNzIHRoYW4gb3IgZXF1YWwgdG8gbWF4RGVsYXkgYW5kIGdyZWF0ZXIgdGhhbiAwLlxuICAgKi9cbiAgbWluRGVsYXk/OiBudW1iZXI7XG5cbiAgLyoqXG4gICAqIFRoZSBtYXhpbXVtIGFtb3VudCBvZiB0aW1lIHRvIGRlbGF5IGJldHdlZW4gcmV0cmllcyBpbiBzZWNvbmRzLiBUaGlzIGlzIHRoZVxuICAgKiBjZWlsaW5nIG9mIHRoZSBleHBvbmVudGlhbCBiYWNrb2ZmLiBUaGlzIHZhbHVlIGRlZmF1bHRzIHRvIHNlcnZpY2UgZGVmYXVsdFxuICAgKiBpZiBub3Qgc3BlY2lmaWVkLiBJZiBzcGVjaWZpZWQsIHRoaXMgdmFsdWUgTVVTVCBiZSBncmVhdGVyIHRoYW4gb3IgZXF1YWwgdG8gMS5cbiAgICovXG4gIG1heERlbGF5PzogbnVtYmVyO1xufVxuXG4vKipcbiAqIEBwcml2YXRlXG4gKi9cbmV4cG9ydCBjb25zdCB3YWl0ZXJTZXJ2aWNlRGVmYXVsdHMgPSB7XG4gIG1pbkRlbGF5OiAyLFxuICBtYXhEZWxheTogMTIwLFxufTtcblxuLyoqXG4gKiBAcHJpdmF0ZVxuICovXG5leHBvcnQgdHlwZSBXYWl0ZXJPcHRpb25zPENsaWVudD4gPSBXYWl0ZXJDb25maWd1cmF0aW9uPENsaWVudD4gJlxuICBSZXF1aXJlZDxQaWNrPFdhaXRlckNvbmZpZ3VyYXRpb248Q2xpZW50PiwgXCJtaW5EZWxheVwiIHwgXCJtYXhEZWxheVwiPj47XG5cbmV4cG9ydCBlbnVtIFdhaXRlclN0YXRlIHtcbiAgQUJPUlRFRCA9IFwiQUJPUlRFRFwiLFxuICBGQUlMVVJFID0gXCJGQUlMVVJFXCIsXG4gIFNVQ0NFU1MgPSBcIlNVQ0NFU1NcIixcbiAgUkVUUlkgPSBcIlJFVFJZXCIsXG4gIFRJTUVPVVQgPSBcIlRJTUVPVVRcIixcbn1cblxuZXhwb3J0IHR5cGUgV2FpdGVyUmVzdWx0ID0ge1xuICBzdGF0ZTogV2FpdGVyU3RhdGU7XG59O1xuIl19
 
 /***/ }),
 
@@ -24560,6 +24803,7 @@ __nccwpck_require__.r(__webpack_exports__);
 /* harmony export */   "__read": () => /* binding */ __read,
 /* harmony export */   "__spread": () => /* binding */ __spread,
 /* harmony export */   "__spreadArrays": () => /* binding */ __spreadArrays,
+/* harmony export */   "__spreadArray": () => /* binding */ __spreadArray,
 /* harmony export */   "__await": () => /* binding */ __await,
 /* harmony export */   "__asyncGenerator": () => /* binding */ __asyncGenerator,
 /* harmony export */   "__asyncDelegator": () => /* binding */ __asyncDelegator,
@@ -24594,6 +24838,8 @@ var extendStatics = function(d, b) {
 };
 
 function __extends(d, b) {
+    if (typeof b !== "function" && b !== null)
+        throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
     extendStatics(d, b);
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -24716,19 +24962,27 @@ function __read(o, n) {
     return ar;
 }
 
+/** @deprecated */
 function __spread() {
     for (var ar = [], i = 0; i < arguments.length; i++)
         ar = ar.concat(__read(arguments[i]));
     return ar;
 }
 
+/** @deprecated */
 function __spreadArrays() {
     for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
     for (var r = Array(s), k = 0, i = 0; i < il; i++)
         for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
             r[k] = a[j];
     return r;
-};
+}
+
+function __spreadArray(to, from) {
+    for (var i = 0, il = from.length, j = to.length; i < il; i++, j++)
+        to[j] = from[i];
+    return to;
+}
 
 function __await(v) {
     return this instanceof __await ? (this.v = v, this) : new __await(v);
