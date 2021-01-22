@@ -4,7 +4,7 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/kazimanzurrashid/aws-lambda-update-action)](https://github.com/kazimanzurrashid/aws-lambda-update-action/releases)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/kazimanzurrashid/aws-lambda-update-action/v1)](https://github.com/kazimanzurrashid/aws-lambda-update-action/actions)
 
-This action updates a given lambda. It is very lightweight comparing to others, it uses the upcoming AWS Node SDK 3 which
+This action updates a given lambda. It is very lightweight comparing to others, it uses the latest [AWS Node SDK 3](https://github.com/aws/aws-sdk-js-v3) which
 only pulls lambda client to update the lambda code.
 
 ## Usage
