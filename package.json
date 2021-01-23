@@ -13,15 +13,14 @@
     "lint": "eslint src/**/*.ts",
     "build": "rimraf build && tsc",
     "pack": "ncc build --source-map --license licenses.txt",
-    "deploy": "npm run format && npm run lint && npm run build && npm run pack"
+    "release": "npm run format && npm run lint && npm run build && npm run pack"
   },
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "@aws-sdk/client-lambda": "^3.3.0",
-    "@aws-sdk/types": "^3.1.0"
+    "@aws-sdk/client-lambda": "^3.3.0"
   },
   "devDependencies": {
-    "@types/node": "^14.14.21",
+    "@types/node": "^14.14.22",
     "@typescript-eslint/parser": "^4.14.0",
     "@vercel/ncc": "^0.27.0",
     "eslint": "^7.18.0",
