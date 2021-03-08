@@ -4,7 +4,10 @@ updates:
     directory: '/'
     schedule:
       interval: 'weekly'
+    open-pull-requests-limit: 128
+
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:
       interval: 'weekly'
+    open-pull-requests-limit: 128
