@@ -1,4 +1,4 @@
-import { UpdateFunctionCodeRequest } from '@aws-sdk/client-lambda/types/models';
+import { UpdateFunctionCodeCommandInput } from '@aws-sdk/client-lambda';
 
 interface RunInput {
   zipFileLocation: string;
@@ -10,7 +10,7 @@ class Action {
   constructor(
     private readonly readFile: (path: string) => Promise<Buffer>,
     private readonly updateFunctionCode: (
-      args: UpdateFunctionCodeRequest
+      args: UpdateFunctionCodeCommandInput
     ) => Promise<void>,
     private readonly log: (message: string) => void
   ) {}
