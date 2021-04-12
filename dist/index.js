@@ -1,12 +1,11 @@
-require('./sourcemap-register.js');module.exports =
-/******/ (() => { // webpackBootstrap
+require('./sourcemap-register.js');/******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ 8229:
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse("{\"name\":\"@aws-sdk/client-lambda\",\"description\":\"AWS SDK for JavaScript Lambda Client for Node.js, Browser and React Native\",\"version\":\"3.11.0\",\"scripts\":{\"clean\":\"yarn remove-definitions && yarn remove-dist && yarn remove-documentation\",\"build-documentation\":\"yarn remove-documentation && typedoc ./\",\"prepublishOnly\":\"yarn build\",\"remove-definitions\":\"rimraf ./types\",\"remove-dist\":\"rimraf ./dist\",\"remove-documentation\":\"rimraf ./docs\",\"test\":\"exit 0\",\"build:cjs\":\"tsc -p tsconfig.json\",\"build:es\":\"tsc -p tsconfig.es.json\",\"build\":\"yarn build:cjs && yarn build:es\",\"postbuild\":\"downlevel-dts dist/types dist/types/ts3.4\"},\"main\":\"./dist/cjs/index.js\",\"types\":\"./dist/types/index.d.ts\",\"module\":\"./dist/es/index.js\",\"browser\":{\"./runtimeConfig\":\"./runtimeConfig.browser\"},\"react-native\":{\"./runtimeConfig\":\"./runtimeConfig.native\"},\"sideEffects\":false,\"dependencies\":{\"@aws-crypto/sha256-browser\":\"^1.0.0\",\"@aws-crypto/sha256-js\":\"^1.0.0\",\"@aws-sdk/config-resolver\":\"3.10.0\",\"@aws-sdk/credential-provider-node\":\"3.11.0\",\"@aws-sdk/fetch-http-handler\":\"3.10.0\",\"@aws-sdk/hash-node\":\"3.10.0\",\"@aws-sdk/invalid-dependency\":\"3.10.0\",\"@aws-sdk/middleware-content-length\":\"3.10.0\",\"@aws-sdk/middleware-host-header\":\"3.10.0\",\"@aws-sdk/middleware-logger\":\"3.10.0\",\"@aws-sdk/middleware-retry\":\"3.10.0\",\"@aws-sdk/middleware-serde\":\"3.10.0\",\"@aws-sdk/middleware-signing\":\"3.10.0\",\"@aws-sdk/middleware-stack\":\"3.10.0\",\"@aws-sdk/middleware-user-agent\":\"3.10.0\",\"@aws-sdk/node-config-provider\":\"3.10.0\",\"@aws-sdk/node-http-handler\":\"3.10.0\",\"@aws-sdk/protocol-http\":\"3.10.0\",\"@aws-sdk/smithy-client\":\"3.10.0\",\"@aws-sdk/types\":\"3.10.0\",\"@aws-sdk/url-parser\":\"3.10.0\",\"@aws-sdk/url-parser-native\":\"3.10.0\",\"@aws-sdk/util-base64-browser\":\"3.10.0\",\"@aws-sdk/util-base64-node\":\"3.10.0\",\"@aws-sdk/util-body-length-browser\":\"3.10.0\",\"@aws-sdk/util-body-length-node\":\"3.10.0\",\"@aws-sdk/util-user-agent-browser\":\"3.10.0\",\"@aws-sdk/util-user-agent-node\":\"3.10.0\",\"@aws-sdk/util-utf8-browser\":\"3.10.0\",\"@aws-sdk/util-utf8-node\":\"3.10.0\",\"@aws-sdk/util-waiter\":\"3.10.0\",\"tslib\":\"^2.0.0\"},\"devDependencies\":{\"@aws-sdk/client-documentation-generator\":\"3.10.0\",\"@types/node\":\"^12.7.5\",\"downlevel-dts\":\"0.7.0\",\"jest\":\"^26.1.0\",\"rimraf\":\"^3.0.0\",\"ts-jest\":\"^26.4.1\",\"typedoc\":\"^0.19.2\",\"typescript\":\"~4.1.2\"},\"engines\":{\"node\":\">=10.0.0\"},\"typesVersions\":{\"<4.0\":{\"types/*\":[\"types/ts3.4/*\"]}},\"author\":{\"name\":\"AWS SDK for JavaScript Team\",\"url\":\"https://aws.amazon.com/javascript/\"},\"license\":\"Apache-2.0\",\"homepage\":\"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-lambda\",\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/aws/aws-sdk-js-v3.git\",\"directory\":\"clients/client-lambda\"}}");
+module.exports = JSON.parse('{"name":"@aws-sdk/client-lambda","description":"AWS SDK for JavaScript Lambda Client for Node.js, Browser and React Native","version":"3.12.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","prepublishOnly":"yarn build && downlevel-dts dist/types dist/types/ts3.4","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/client-sts":"3.12.0","@aws-sdk/config-resolver":"3.12.0","@aws-sdk/credential-provider-node":"3.12.0","@aws-sdk/fetch-http-handler":"3.12.0","@aws-sdk/hash-node":"3.12.0","@aws-sdk/invalid-dependency":"3.12.0","@aws-sdk/middleware-content-length":"3.12.0","@aws-sdk/middleware-host-header":"3.12.0","@aws-sdk/middleware-logger":"3.12.0","@aws-sdk/middleware-retry":"3.12.0","@aws-sdk/middleware-serde":"3.12.0","@aws-sdk/middleware-signing":"3.12.0","@aws-sdk/middleware-stack":"3.12.0","@aws-sdk/middleware-user-agent":"3.12.0","@aws-sdk/node-config-provider":"3.12.0","@aws-sdk/node-http-handler":"3.12.0","@aws-sdk/protocol-http":"3.12.0","@aws-sdk/smithy-client":"3.12.0","@aws-sdk/types":"3.12.0","@aws-sdk/url-parser":"3.12.0","@aws-sdk/url-parser-native":"3.12.0","@aws-sdk/util-base64-browser":"3.12.0","@aws-sdk/util-base64-node":"3.12.0","@aws-sdk/util-body-length-browser":"3.12.0","@aws-sdk/util-body-length-node":"3.12.0","@aws-sdk/util-user-agent-browser":"3.12.0","@aws-sdk/util-user-agent-node":"3.12.0","@aws-sdk/util-utf8-browser":"3.12.0","@aws-sdk/util-utf8-node":"3.12.0","@aws-sdk/util-waiter":"3.12.0","tslib":"^2.0.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.12.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.1.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-lambda","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-lambda"}}');
 
 /***/ }),
 
@@ -14,7 +13,15 @@ module.exports = JSON.parse("{\"name\":\"@aws-sdk/client-lambda\",\"description\
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse("{\"name\":\"@aws-sdk/client-sso\",\"description\":\"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native\",\"version\":\"3.11.0\",\"scripts\":{\"clean\":\"yarn remove-definitions && yarn remove-dist && yarn remove-documentation\",\"build-documentation\":\"yarn remove-documentation && typedoc ./\",\"prepublishOnly\":\"yarn build\",\"remove-definitions\":\"rimraf ./types\",\"remove-dist\":\"rimraf ./dist\",\"remove-documentation\":\"rimraf ./docs\",\"test\":\"exit 0\",\"build:cjs\":\"tsc -p tsconfig.json\",\"build:es\":\"tsc -p tsconfig.es.json\",\"build\":\"yarn build:cjs && yarn build:es\",\"postbuild\":\"downlevel-dts dist/types dist/types/ts3.4\"},\"main\":\"./dist/cjs/index.js\",\"types\":\"./dist/types/index.d.ts\",\"module\":\"./dist/es/index.js\",\"browser\":{\"./runtimeConfig\":\"./runtimeConfig.browser\"},\"react-native\":{\"./runtimeConfig\":\"./runtimeConfig.native\"},\"sideEffects\":false,\"dependencies\":{\"@aws-crypto/sha256-browser\":\"^1.0.0\",\"@aws-crypto/sha256-js\":\"^1.0.0\",\"@aws-sdk/config-resolver\":\"3.10.0\",\"@aws-sdk/fetch-http-handler\":\"3.10.0\",\"@aws-sdk/hash-node\":\"3.10.0\",\"@aws-sdk/invalid-dependency\":\"3.10.0\",\"@aws-sdk/middleware-content-length\":\"3.10.0\",\"@aws-sdk/middleware-host-header\":\"3.10.0\",\"@aws-sdk/middleware-logger\":\"3.10.0\",\"@aws-sdk/middleware-retry\":\"3.10.0\",\"@aws-sdk/middleware-serde\":\"3.10.0\",\"@aws-sdk/middleware-stack\":\"3.10.0\",\"@aws-sdk/middleware-user-agent\":\"3.10.0\",\"@aws-sdk/node-config-provider\":\"3.10.0\",\"@aws-sdk/node-http-handler\":\"3.10.0\",\"@aws-sdk/protocol-http\":\"3.10.0\",\"@aws-sdk/smithy-client\":\"3.10.0\",\"@aws-sdk/types\":\"3.10.0\",\"@aws-sdk/url-parser\":\"3.10.0\",\"@aws-sdk/url-parser-native\":\"3.10.0\",\"@aws-sdk/util-base64-browser\":\"3.10.0\",\"@aws-sdk/util-base64-node\":\"3.10.0\",\"@aws-sdk/util-body-length-browser\":\"3.10.0\",\"@aws-sdk/util-body-length-node\":\"3.10.0\",\"@aws-sdk/util-user-agent-browser\":\"3.10.0\",\"@aws-sdk/util-user-agent-node\":\"3.10.0\",\"@aws-sdk/util-utf8-browser\":\"3.10.0\",\"@aws-sdk/util-utf8-node\":\"3.10.0\",\"tslib\":\"^2.0.0\"},\"devDependencies\":{\"@aws-sdk/client-documentation-generator\":\"3.10.0\",\"@types/node\":\"^12.7.5\",\"downlevel-dts\":\"0.7.0\",\"jest\":\"^26.1.0\",\"rimraf\":\"^3.0.0\",\"ts-jest\":\"^26.4.1\",\"typedoc\":\"^0.19.2\",\"typescript\":\"~4.1.2\"},\"engines\":{\"node\":\">=10.0.0\"},\"typesVersions\":{\"<4.0\":{\"types/*\":[\"types/ts3.4/*\"]}},\"author\":{\"name\":\"AWS SDK for JavaScript Team\",\"url\":\"https://aws.amazon.com/javascript/\"},\"license\":\"Apache-2.0\",\"homepage\":\"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso\",\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/aws/aws-sdk-js-v3.git\",\"directory\":\"clients/client-sso\"}}");
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.12.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","prepublishOnly":"yarn build && downlevel-dts dist/types dist/types/ts3.4","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.12.0","@aws-sdk/fetch-http-handler":"3.12.0","@aws-sdk/hash-node":"3.12.0","@aws-sdk/invalid-dependency":"3.12.0","@aws-sdk/middleware-content-length":"3.12.0","@aws-sdk/middleware-host-header":"3.12.0","@aws-sdk/middleware-logger":"3.12.0","@aws-sdk/middleware-retry":"3.12.0","@aws-sdk/middleware-serde":"3.12.0","@aws-sdk/middleware-stack":"3.12.0","@aws-sdk/middleware-user-agent":"3.12.0","@aws-sdk/node-config-provider":"3.12.0","@aws-sdk/node-http-handler":"3.12.0","@aws-sdk/protocol-http":"3.12.0","@aws-sdk/smithy-client":"3.12.0","@aws-sdk/types":"3.12.0","@aws-sdk/url-parser":"3.12.0","@aws-sdk/url-parser-native":"3.12.0","@aws-sdk/util-base64-browser":"3.12.0","@aws-sdk/util-base64-node":"3.12.0","@aws-sdk/util-body-length-browser":"3.12.0","@aws-sdk/util-body-length-node":"3.12.0","@aws-sdk/util-user-agent-browser":"3.12.0","@aws-sdk/util-user-agent-node":"3.12.0","@aws-sdk/util-utf8-browser":"3.12.0","@aws-sdk/util-utf8-node":"3.12.0","tslib":"^2.0.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.12.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.1.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
+
+/***/ }),
+
+/***/ 1508:
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.12.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","prepublishOnly":"yarn build && downlevel-dts dist/types dist/types/ts3.4","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.12.0","@aws-sdk/credential-provider-node":"3.12.0","@aws-sdk/fetch-http-handler":"3.12.0","@aws-sdk/hash-node":"3.12.0","@aws-sdk/invalid-dependency":"3.12.0","@aws-sdk/middleware-content-length":"3.12.0","@aws-sdk/middleware-host-header":"3.12.0","@aws-sdk/middleware-logger":"3.12.0","@aws-sdk/middleware-retry":"3.12.0","@aws-sdk/middleware-sdk-sts":"3.12.0","@aws-sdk/middleware-serde":"3.12.0","@aws-sdk/middleware-signing":"3.12.0","@aws-sdk/middleware-stack":"3.12.0","@aws-sdk/middleware-user-agent":"3.12.0","@aws-sdk/node-config-provider":"3.12.0","@aws-sdk/node-http-handler":"3.12.0","@aws-sdk/protocol-http":"3.12.0","@aws-sdk/smithy-client":"3.12.0","@aws-sdk/types":"3.12.0","@aws-sdk/url-parser":"3.12.0","@aws-sdk/url-parser-native":"3.12.0","@aws-sdk/util-base64-browser":"3.12.0","@aws-sdk/util-base64-node":"3.12.0","@aws-sdk/util-body-length-browser":"3.12.0","@aws-sdk/util-body-length-node":"3.12.0","@aws-sdk/util-user-agent-browser":"3.12.0","@aws-sdk/util-user-agent-node":"3.12.0","@aws-sdk/util-utf8-browser":"3.12.0","@aws-sdk/util-utf8-node":"3.12.0","fast-xml-parser":"3.19.0","tslib":"^2.0.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.12.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.1.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
 
 /***/ }),
 
@@ -44,50 +51,6 @@ class Action {
     }
 }
 exports.Action = Action;
-
-
-/***/ }),
-
-/***/ 1667:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-const path_1 = __nccwpck_require__(5622);
-const fs_1 = __nccwpck_require__(5747);
-const util_1 = __nccwpck_require__(1669);
-const client_lambda_1 = __nccwpck_require__(8390);
-const core_1 = __nccwpck_require__(2186);
-const action_1 = __nccwpck_require__(5834);
-const getValue = (key) => (core_1.getInput(key) || process.env[key]);
-const zipFileLocation = core_1.getInput('zip-file', { required: true });
-const lambdaName = core_1.getInput('lambda-name') || path_1.basename(zipFileLocation, '.zip');
-const publish = (core_1.getInput('publish') || '').toLowerCase() === 'true';
-const awsRegion = getValue('AWS_REGION');
-const awsAccessKeyId = getValue('AWS_ACCESS_KEY_ID');
-const awsSecretAccessKey = getValue('AWS_SECRET_ACCESS_KEY');
-const lambda = new client_lambda_1.Lambda({
-    region: awsRegion,
-    credentials: {
-        accessKeyId: awsAccessKeyId,
-        secretAccessKey: awsSecretAccessKey
-    }
-});
-(async () => {
-    try {
-        await new action_1.Action(util_1.promisify(fs_1.readFile), async (args) => {
-            await lambda.updateFunctionCode(args);
-        }, core_1.info).run({
-            zipFileLocation,
-            lambdaName,
-            publish
-        });
-    }
-    catch (error) {
-        core_1.setFailed(error);
-    }
-})();
 
 
 /***/ }),
@@ -507,7 +470,7 @@ const DeleteFunctionCommand_1 = __nccwpck_require__(9978);
 const DeleteFunctionConcurrencyCommand_1 = __nccwpck_require__(8111);
 const DeleteFunctionEventInvokeConfigCommand_1 = __nccwpck_require__(2980);
 const DeleteLayerVersionCommand_1 = __nccwpck_require__(6780);
-const DeleteProvisionedConcurrencyConfigCommand_1 = __nccwpck_require__(9106);
+const DeleteProvisionedConcurrencyConfigCommand_1 = __nccwpck_require__(824);
 const GetAccountSettingsCommand_1 = __nccwpck_require__(1899);
 const GetAliasCommand_1 = __nccwpck_require__(36);
 const GetCodeSigningConfigCommand_1 = __nccwpck_require__(7171);
@@ -536,7 +499,7 @@ const ListProvisionedConcurrencyConfigsCommand_1 = __nccwpck_require__(2154);
 const ListTagsCommand_1 = __nccwpck_require__(8431);
 const ListVersionsByFunctionCommand_1 = __nccwpck_require__(2197);
 const PublishLayerVersionCommand_1 = __nccwpck_require__(4848);
-const PublishVersionCommand_1 = __nccwpck_require__(1901);
+const PublishVersionCommand_1 = __nccwpck_require__(6013);
 const PutFunctionCodeSigningConfigCommand_1 = __nccwpck_require__(5397);
 const PutFunctionConcurrencyCommand_1 = __nccwpck_require__(3260);
 const PutFunctionEventInvokeConfigCommand_1 = __nccwpck_require__(9893);
@@ -545,7 +508,7 @@ const RemoveLayerVersionPermissionCommand_1 = __nccwpck_require__(2180);
 const RemovePermissionCommand_1 = __nccwpck_require__(2144);
 const TagResourceCommand_1 = __nccwpck_require__(1925);
 const UntagResourceCommand_1 = __nccwpck_require__(9330);
-const UpdateAliasCommand_1 = __nccwpck_require__(807);
+const UpdateAliasCommand_1 = __nccwpck_require__(4777);
 const UpdateCodeSigningConfigCommand_1 = __nccwpck_require__(3551);
 const UpdateEventSourceMappingCommand_1 = __nccwpck_require__(7201);
 const UpdateFunctionCodeCommand_1 = __nccwpck_require__(5365);
@@ -2321,7 +2284,7 @@ exports.DeleteLayerVersionCommand = DeleteLayerVersionCommand;
 
 /***/ }),
 
-/***/ 9106:
+/***/ 824:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
@@ -3948,7 +3911,7 @@ exports.PublishLayerVersionCommand = PublishLayerVersionCommand;
 
 /***/ }),
 
-/***/ 1901:
+/***/ 6013:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
@@ -4464,7 +4427,7 @@ exports.UntagResourceCommand = UntagResourceCommand;
 
 /***/ }),
 
-/***/ 807:
+/***/ 4777:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
@@ -5148,7 +5111,7 @@ tslib_1.__exportStar(__nccwpck_require__(4402), exports);
 tslib_1.__exportStar(__nccwpck_require__(8111), exports);
 tslib_1.__exportStar(__nccwpck_require__(2980), exports);
 tslib_1.__exportStar(__nccwpck_require__(6780), exports);
-tslib_1.__exportStar(__nccwpck_require__(9106), exports);
+tslib_1.__exportStar(__nccwpck_require__(824), exports);
 tslib_1.__exportStar(__nccwpck_require__(1899), exports);
 tslib_1.__exportStar(__nccwpck_require__(36), exports);
 tslib_1.__exportStar(__nccwpck_require__(7171), exports);
@@ -5190,7 +5153,7 @@ tslib_1.__exportStar(__nccwpck_require__(8431), exports);
 tslib_1.__exportStar(__nccwpck_require__(2197), exports);
 tslib_1.__exportStar(__nccwpck_require__(5943), exports);
 tslib_1.__exportStar(__nccwpck_require__(4848), exports);
-tslib_1.__exportStar(__nccwpck_require__(1901), exports);
+tslib_1.__exportStar(__nccwpck_require__(6013), exports);
 tslib_1.__exportStar(__nccwpck_require__(5397), exports);
 tslib_1.__exportStar(__nccwpck_require__(3260), exports);
 tslib_1.__exportStar(__nccwpck_require__(9893), exports);
@@ -5199,7 +5162,7 @@ tslib_1.__exportStar(__nccwpck_require__(2180), exports);
 tslib_1.__exportStar(__nccwpck_require__(2144), exports);
 tslib_1.__exportStar(__nccwpck_require__(1925), exports);
 tslib_1.__exportStar(__nccwpck_require__(9330), exports);
-tslib_1.__exportStar(__nccwpck_require__(807), exports);
+tslib_1.__exportStar(__nccwpck_require__(4777), exports);
 tslib_1.__exportStar(__nccwpck_require__(3551), exports);
 tslib_1.__exportStar(__nccwpck_require__(7201), exports);
 tslib_1.__exportStar(__nccwpck_require__(5365), exports);
@@ -16116,6 +16079,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ClientDefaultValues = void 0;
 const tslib_1 = __nccwpck_require__(4351);
 const package_json_1 = tslib_1.__importDefault(__nccwpck_require__(8229));
+const client_sts_1 = __nccwpck_require__(3285);
 const config_resolver_1 = __nccwpck_require__(7229);
 const credential_provider_node_1 = __nccwpck_require__(8030);
 const hash_node_1 = __nccwpck_require__(408);
@@ -16136,7 +16100,7 @@ exports.ClientDefaultValues = {
     base64Decoder: util_base64_node_1.fromBase64,
     base64Encoder: util_base64_node_1.toBase64,
     bodyLengthChecker: util_body_length_node_1.calculateBodyLength,
-    credentialDefaultProvider: credential_provider_node_1.defaultProvider,
+    credentialDefaultProvider: client_sts_1.decorateDefaultCredentialProvider(credential_provider_node_1.defaultProvider),
     defaultUserAgentProvider: util_user_agent_node_1.defaultUserAgent({
         serviceId: runtimeConfig_shared_1.ClientSharedValues.serviceId,
         clientVersion: package_json_1.default.version,
@@ -17711,6 +17675,3175 @@ exports.ClientSharedValues = {
 
 /***/ }),
 
+/***/ 3853:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.STS = void 0;
+const STSClient_1 = __nccwpck_require__(2316);
+const AssumeRoleCommand_1 = __nccwpck_require__(3638);
+const AssumeRoleWithSAMLCommand_1 = __nccwpck_require__(550);
+const AssumeRoleWithWebIdentityCommand_1 = __nccwpck_require__(1733);
+const DecodeAuthorizationMessageCommand_1 = __nccwpck_require__(9448);
+const GetAccessKeyInfoCommand_1 = __nccwpck_require__(4317);
+const GetCallerIdentityCommand_1 = __nccwpck_require__(2439);
+const GetFederationTokenCommand_1 = __nccwpck_require__(5239);
+const GetSessionTokenCommand_1 = __nccwpck_require__(6499);
+/**
+ * <fullname>AWS Security Token Service</fullname>
+ *          <p>AWS Security Token Service (STS) enables you to request temporary, limited-privilege
+ *       credentials for AWS Identity and Access Management (IAM) users or for users that you
+ *       authenticate (federated users). This guide provides descriptions of the STS API. For
+ *       more information about using this service, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html">Temporary Security Credentials</a>.</p>
+ */
+class STS extends STSClient_1.STSClient {
+    assumeRole(args, optionsOrCb, cb) {
+        const command = new AssumeRoleCommand_1.AssumeRoleCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    assumeRoleWithSAML(args, optionsOrCb, cb) {
+        const command = new AssumeRoleWithSAMLCommand_1.AssumeRoleWithSAMLCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    assumeRoleWithWebIdentity(args, optionsOrCb, cb) {
+        const command = new AssumeRoleWithWebIdentityCommand_1.AssumeRoleWithWebIdentityCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    decodeAuthorizationMessage(args, optionsOrCb, cb) {
+        const command = new DecodeAuthorizationMessageCommand_1.DecodeAuthorizationMessageCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    getAccessKeyInfo(args, optionsOrCb, cb) {
+        const command = new GetAccessKeyInfoCommand_1.GetAccessKeyInfoCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    getCallerIdentity(args, optionsOrCb, cb) {
+        const command = new GetCallerIdentityCommand_1.GetCallerIdentityCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    getFederationToken(args, optionsOrCb, cb) {
+        const command = new GetFederationTokenCommand_1.GetFederationTokenCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    getSessionToken(args, optionsOrCb, cb) {
+        const command = new GetSessionTokenCommand_1.GetSessionTokenCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+}
+exports.STS = STS;
+//# sourceMappingURL=STS.js.map
+
+/***/ }),
+
+/***/ 2316:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.STSClient = void 0;
+const runtimeConfig_1 = __nccwpck_require__(4675);
+const config_resolver_1 = __nccwpck_require__(7229);
+const middleware_content_length_1 = __nccwpck_require__(9323);
+const middleware_host_header_1 = __nccwpck_require__(8645);
+const middleware_logger_1 = __nccwpck_require__(8685);
+const middleware_retry_1 = __nccwpck_require__(7000);
+const middleware_sdk_sts_1 = __nccwpck_require__(9637);
+const middleware_user_agent_1 = __nccwpck_require__(5976);
+const smithy_client_1 = __nccwpck_require__(2223);
+/**
+ * <fullname>AWS Security Token Service</fullname>
+ *          <p>AWS Security Token Service (STS) enables you to request temporary, limited-privilege
+ *       credentials for AWS Identity and Access Management (IAM) users or for users that you
+ *       authenticate (federated users). This guide provides descriptions of the STS API. For
+ *       more information about using this service, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html">Temporary Security Credentials</a>.</p>
+ */
+class STSClient extends smithy_client_1.Client {
+    constructor(configuration) {
+        let _config_0 = {
+            ...runtimeConfig_1.ClientDefaultValues,
+            ...configuration,
+        };
+        let _config_1 = config_resolver_1.resolveRegionConfig(_config_0);
+        let _config_2 = config_resolver_1.resolveEndpointsConfig(_config_1);
+        let _config_3 = middleware_retry_1.resolveRetryConfig(_config_2);
+        let _config_4 = middleware_host_header_1.resolveHostHeaderConfig(_config_3);
+        let _config_5 = middleware_sdk_sts_1.resolveStsAuthConfig(_config_4, STSClient);
+        let _config_6 = middleware_user_agent_1.resolveUserAgentConfig(_config_5);
+        super(_config_6);
+        this.config = _config_6;
+        this.middlewareStack.use(middleware_retry_1.getRetryPlugin(this.config));
+        this.middlewareStack.use(middleware_content_length_1.getContentLengthPlugin(this.config));
+        this.middlewareStack.use(middleware_host_header_1.getHostHeaderPlugin(this.config));
+        this.middlewareStack.use(middleware_logger_1.getLoggerPlugin(this.config));
+        this.middlewareStack.use(middleware_user_agent_1.getUserAgentPlugin(this.config));
+    }
+    /**
+     * Destroy underlying resources, like sockets. It's usually not necessary to do this.
+     * However in Node.js, it's best to explicitly shut down the client's agent when it is no longer needed.
+     * Otherwise, sockets might stay open for quite a long time before the server terminates them.
+     */
+    destroy() {
+        super.destroy();
+    }
+}
+exports.STSClient = STSClient;
+//# sourceMappingURL=STSClient.js.map
+
+/***/ }),
+
+/***/ 3638:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.AssumeRoleCommand = void 0;
+const models_0_1 = __nccwpck_require__(536);
+const Aws_query_1 = __nccwpck_require__(6528);
+const middleware_serde_1 = __nccwpck_require__(6142);
+const middleware_signing_1 = __nccwpck_require__(2487);
+const smithy_client_1 = __nccwpck_require__(2223);
+/**
+ * <p>Returns a set of temporary security credentials that you can use to access AWS
+ *          resources that you might not normally have access to. These temporary credentials consist
+ *          of an access key ID, a secret access key, and a security token. Typically, you use
+ *             <code>AssumeRole</code> within your account or for cross-account access. For a
+ *          comparison of <code>AssumeRole</code> with other API operations that produce temporary
+ *          credentials, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html">Requesting Temporary Security
+ *             Credentials</a> and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#stsapi_comparison">Comparing the
+ *             AWS STS API operations</a> in the <i>IAM User Guide</i>.</p>
+ *          <important>
+ *             <p>You cannot use AWS account root user credentials to call <code>AssumeRole</code>.
+ *             You must use credentials for an IAM user or an IAM role to call
+ *                <code>AssumeRole</code>.</p>
+ *          </important>
+ *          <p>For cross-account access, imagine that you own multiple accounts and need to access
+ *          resources in each account. You could create long-term credentials in each account to access
+ *          those resources. However, managing all those credentials and remembering which one can
+ *          access which account can be time consuming. Instead, you can create one set of long-term
+ *          credentials in one account. Then use temporary security credentials to access all the other
+ *          accounts by assuming roles in those accounts. For more information about roles, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html">IAM Roles</a> in the
+ *             <i>IAM User Guide</i>. </p>
+ *          <p>
+ *             <b>Session Duration</b>
+ *          </p>
+ *          <p>By default, the temporary security credentials created by <code>AssumeRole</code> last
+ *          for one hour. However, you can use the optional <code>DurationSeconds</code> parameter to
+ *          specify the duration of your session. You can provide a value from 900 seconds (15 minutes)
+ *          up to the maximum session duration setting for the role. This setting can have a value from
+ *          1 hour to 12 hours. To learn how to view the maximum value for your role, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use.html#id_roles_use_view-role-max-session">View the
+ *             Maximum Session Duration Setting for a Role</a> in the
+ *             <i>IAM User Guide</i>. The maximum session duration limit applies when
+ *          you use the <code>AssumeRole*</code> API operations or the <code>assume-role*</code> CLI
+ *          commands. However the limit does not apply when you use those operations to create a
+ *          console URL. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use.html">Using IAM Roles</a> in the
+ *             <i>IAM User Guide</i>.</p>
+ *          <p>
+ *             <b>Permissions</b>
+ *          </p>
+ *          <p>The temporary security credentials created by <code>AssumeRole</code> can be used to
+ *          make API calls to any AWS service with the following exception: You cannot call the
+ *          AWS STS <code>GetFederationToken</code> or <code>GetSessionToken</code> API
+ *          operations.</p>
+ *          <p>(Optional) You can pass inline or managed <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">session policies</a> to
+ *          this operation. You can pass a single JSON policy document to use as an inline session
+ *          policy. You can also specify up to 10 managed policies to use as managed session policies.
+ *          The plain text that you use for both inline and managed session policies can't exceed 2,048
+ *          characters. Passing policies to this operation returns new
+ *          temporary credentials. The resulting session's permissions are the intersection of the
+ *          role's identity-based policy and the session policies. You can use the role's temporary
+ *          credentials in subsequent AWS API calls to access resources in the account that owns
+ *          the role. You cannot use session policies to grant more permissions than those allowed
+ *          by the identity-based policy of the role that is being assumed. For more information, see
+ *             <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">Session
+ *             Policies</a> in the <i>IAM User Guide</i>.</p>
+ *          <p>To assume a role from a different account, your AWS account must be trusted by the
+ *          role. The trust relationship is defined in the role's trust policy when the role is
+ *          created. That trust policy states which accounts are allowed to delegate that access to
+ *          users in the account. </p>
+ *          <p>A user who wants to access a role in a different account must also have permissions that
+ *          are delegated from the user account administrator. The administrator must attach a policy
+ *          that allows the user to call <code>AssumeRole</code> for the ARN of the role in the other
+ *          account. If the user is in the same account as the role, then you can do either of the
+ *          following:</p>
+ *          <ul>
+ *             <li>
+ *                <p>Attach a policy to the user (identical to the previous user in a different
+ *                account).</p>
+ *             </li>
+ *             <li>
+ *                <p>Add the user as a principal directly in the role's trust policy.</p>
+ *             </li>
+ *          </ul>
+ *          <p>In this case, the trust policy acts as an IAM resource-based policy. Users in the same
+ *          account as the role do not need explicit permission to assume the role. For more
+ *          information about trust policies and resource-based policies, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html">IAM Policies</a> in
+ *          the <i>IAM User Guide</i>.</p>
+ *          <p>
+ *             <b>Tags</b>
+ *          </p>
+ *          <p>(Optional) You can pass tag key-value pairs to your session. These tags are called
+ *          session tags. For more information about session tags, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html">Passing Session Tags in STS</a> in the
+ *             <i>IAM User Guide</i>.</p>
+ *          <p>An administrator must grant you the permissions necessary to pass session tags. The
+ *          administrator can also create granular permissions to allow you to pass only specific
+ *          session tags. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_attribute-based-access-control.html">Tutorial: Using Tags
+ *             for Attribute-Based Access Control</a> in the
+ *          <i>IAM User Guide</i>.</p>
+ *          <p>You can set the session tags as transitive. Transitive tags persist during role
+ *          chaining. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html#id_session-tags_role-chaining">Chaining Roles
+ *             with Session Tags</a> in the <i>IAM User Guide</i>.</p>
+ *          <p>
+ *             <b>Using MFA with AssumeRole</b>
+ *          </p>
+ *          <p>(Optional) You can include multi-factor authentication (MFA) information when you call
+ *             <code>AssumeRole</code>. This is useful for cross-account scenarios to ensure that the
+ *          user that assumes the role has been authenticated with an AWS MFA device. In that
+ *          scenario, the trust policy of the role being assumed includes a condition that tests for
+ *          MFA authentication. If the caller does not include valid MFA information, the request to
+ *          assume the role is denied. The condition in a trust policy that tests for MFA
+ *          authentication might look like the following example.</p>
+ *          <p>
+ *             <code>"Condition": {"Bool": {"aws:MultiFactorAuthPresent": true}}</code>
+ *          </p>
+ *          <p>For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/MFAProtectedAPI.html">Configuring MFA-Protected API Access</a>
+ *          in the <i>IAM User Guide</i> guide.</p>
+ *          <p>To use MFA with <code>AssumeRole</code>, you pass values for the
+ *             <code>SerialNumber</code> and <code>TokenCode</code> parameters. The
+ *             <code>SerialNumber</code> value identifies the user's hardware or virtual MFA device.
+ *          The <code>TokenCode</code> is the time-based one-time password (TOTP) that the MFA device
+ *          produces. </p>
+ */
+class AssumeRoleCommand extends smithy_client_1.Command {
+    // Start section: command_properties
+    // End section: command_properties
+    constructor(input) {
+        // Start section: command_constructor
+        super();
+        this.input = input;
+        // End section: command_constructor
+    }
+    /**
+     * @internal
+     */
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use(middleware_signing_1.getAwsAuthPlugin(configuration));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "STSClient";
+        const commandName = "AssumeRoleCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.AssumeRoleRequest.filterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.AssumeRoleResponse.filterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return Aws_query_1.serializeAws_queryAssumeRoleCommand(input, context);
+    }
+    deserialize(output, context) {
+        return Aws_query_1.deserializeAws_queryAssumeRoleCommand(output, context);
+    }
+}
+exports.AssumeRoleCommand = AssumeRoleCommand;
+//# sourceMappingURL=AssumeRoleCommand.js.map
+
+/***/ }),
+
+/***/ 550:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.AssumeRoleWithSAMLCommand = void 0;
+const models_0_1 = __nccwpck_require__(536);
+const Aws_query_1 = __nccwpck_require__(6528);
+const middleware_serde_1 = __nccwpck_require__(6142);
+const smithy_client_1 = __nccwpck_require__(2223);
+/**
+ * <p>Returns a set of temporary security credentials for users who have been authenticated
+ *          via a SAML authentication response. This operation provides a mechanism for tying an
+ *          enterprise identity store or directory to role-based AWS access without user-specific
+ *          credentials or configuration. For a comparison of <code>AssumeRoleWithSAML</code> with the
+ *          other API operations that produce temporary credentials, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html">Requesting Temporary Security
+ *             Credentials</a> and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#stsapi_comparison">Comparing the
+ *             AWS STS API operations</a> in the <i>IAM User Guide</i>.</p>
+ *          <p>The temporary security credentials returned by this operation consist of an access key
+ *          ID, a secret access key, and a security token. Applications can use these temporary
+ *          security credentials to sign calls to AWS services.</p>
+ *          <p>
+ *             <b>Session Duration</b>
+ *          </p>
+ *          <p>By default, the temporary security credentials created by
+ *             <code>AssumeRoleWithSAML</code> last for one hour. However, you can use the optional
+ *             <code>DurationSeconds</code> parameter to specify the duration of your session. Your
+ *          role session lasts for the duration that you specify, or until the time specified in the
+ *          SAML authentication response's <code>SessionNotOnOrAfter</code> value, whichever is
+ *          shorter. You can provide a <code>DurationSeconds</code> value from 900 seconds (15 minutes)
+ *          up to the maximum session duration setting for the role. This setting can have a value from
+ *          1 hour to 12 hours. To learn how to view the maximum value for your role, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use.html#id_roles_use_view-role-max-session">View the
+ *             Maximum Session Duration Setting for a Role</a> in the
+ *             <i>IAM User Guide</i>. The maximum session duration limit applies when
+ *          you use the <code>AssumeRole*</code> API operations or the <code>assume-role*</code> CLI
+ *          commands. However the limit does not apply when you use those operations to create a
+ *          console URL. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use.html">Using IAM Roles</a> in the
+ *             <i>IAM User Guide</i>.</p>
+ *          <p>
+ *             <b>Permissions</b>
+ *          </p>
+ *          <p>The temporary security credentials created by <code>AssumeRoleWithSAML</code> can be
+ *          used to make API calls to any AWS service with the following exception: you cannot call
+ *          the STS <code>GetFederationToken</code> or <code>GetSessionToken</code> API
+ *          operations.</p>
+ *          <p>(Optional) You can pass inline or managed <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">session policies</a> to
+ *          this operation. You can pass a single JSON policy document to use as an inline session
+ *          policy. You can also specify up to 10 managed policies to use as managed session policies.
+ *          The plain text that you use for both inline and managed session policies can't exceed 2,048
+ *          characters. Passing policies to this operation returns new
+ *          temporary credentials. The resulting session's permissions are the intersection of the
+ *          role's identity-based policy and the session policies. You can use the role's temporary
+ *          credentials in subsequent AWS API calls to access resources in the account that owns
+ *          the role. You cannot use session policies to grant more permissions than those allowed
+ *          by the identity-based policy of the role that is being assumed. For more information, see
+ *             <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">Session
+ *             Policies</a> in the <i>IAM User Guide</i>.</p>
+ *          <p>Calling <code>AssumeRoleWithSAML</code> does not require the use of AWS security
+ *          credentials. The identity of the caller is validated by using keys in the metadata document
+ *          that is uploaded for the SAML provider entity for your identity provider. </p>
+ *          <important>
+ *             <p>Calling <code>AssumeRoleWithSAML</code> can result in an entry in your AWS CloudTrail logs.
+ *             The entry includes the value in the <code>NameID</code> element of the SAML assertion.
+ *             We recommend that you use a <code>NameIDType</code> that is not associated with any
+ *             personally identifiable information (PII). For example, you could instead use the
+ *             persistent identifier
+ *             (<code>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</code>).</p>
+ *          </important>
+ *          <p>
+ *             <b>Tags</b>
+ *          </p>
+ *          <p>(Optional) You can configure your IdP to pass attributes into your SAML assertion as
+ *          session tags. Each session tag consists of a key name and an associated value. For more
+ *          information about session tags, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html">Passing Session Tags in STS</a> in the
+ *             <i>IAM User Guide</i>.</p>
+ *          <p>You can pass up to 50 session tags. The plain text session tag keys can’t exceed 128
+ *          characters and the values can’t exceed 256 characters. For these and additional limits, see
+ *             <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-limits.html#reference_iam-limits-entity-length">IAM
+ *             and STS Character Limits</a> in the <i>IAM User Guide</i>.</p>
+ *
+ *          <note>
+ *             <p>An AWS conversion compresses the passed session policies and session tags into a
+ *             packed binary format that has a separate limit. Your request can fail for this limit
+ *             even if your plain text meets the other requirements. The <code>PackedPolicySize</code>
+ *             response element indicates by percentage how close the policies and tags for your
+ *             request are to the upper size limit.
+ *             </p>
+ *          </note>
+ *
+ *          <p>You can pass a session tag with the same key as a tag that is attached to the role. When
+ *          you do, session tags override the role's tags with the same key.</p>
+ *          <p>An administrator must grant you the permissions necessary to pass session tags. The
+ *          administrator can also create granular permissions to allow you to pass only specific
+ *          session tags. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_attribute-based-access-control.html">Tutorial: Using Tags
+ *             for Attribute-Based Access Control</a> in the
+ *          <i>IAM User Guide</i>.</p>
+ *          <p>You can set the session tags as transitive. Transitive tags persist during role
+ *          chaining. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html#id_session-tags_role-chaining">Chaining Roles
+ *             with Session Tags</a> in the <i>IAM User Guide</i>.</p>
+ *          <p>
+ *             <b>SAML Configuration</b>
+ *          </p>
+ *          <p>Before your application can call <code>AssumeRoleWithSAML</code>, you must configure
+ *          your SAML identity provider (IdP) to issue the claims required by AWS. Additionally, you
+ *          must use AWS Identity and Access Management (IAM) to create a SAML provider entity in your AWS account that
+ *          represents your identity provider. You must also create an IAM role that specifies this
+ *          SAML provider in its trust policy. </p>
+ *          <p>For more information, see the following resources:</p>
+ *          <ul>
+ *             <li>
+ *                <p>
+ *                   <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html">About
+ *                   SAML 2.0-based Federation</a> in the <i>IAM User Guide</i>.
+ *             </p>
+ *             </li>
+ *             <li>
+ *                <p>
+ *                   <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_saml.html">Creating SAML Identity Providers</a> in the
+ *                   <i>IAM User Guide</i>. </p>
+ *             </li>
+ *             <li>
+ *                <p>
+ *                   <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_saml_relying-party.html">Configuring
+ *                   a Relying Party and Claims</a> in the <i>IAM User Guide</i>.
+ *             </p>
+ *             </li>
+ *             <li>
+ *                <p>
+ *                   <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-idp_saml.html">Creating a Role for SAML 2.0 Federation</a> in the
+ *                   <i>IAM User Guide</i>. </p>
+ *             </li>
+ *          </ul>
+ */
+class AssumeRoleWithSAMLCommand extends smithy_client_1.Command {
+    // Start section: command_properties
+    // End section: command_properties
+    constructor(input) {
+        // Start section: command_constructor
+        super();
+        this.input = input;
+        // End section: command_constructor
+    }
+    /**
+     * @internal
+     */
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "STSClient";
+        const commandName = "AssumeRoleWithSAMLCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.AssumeRoleWithSAMLRequest.filterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.AssumeRoleWithSAMLResponse.filterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return Aws_query_1.serializeAws_queryAssumeRoleWithSAMLCommand(input, context);
+    }
+    deserialize(output, context) {
+        return Aws_query_1.deserializeAws_queryAssumeRoleWithSAMLCommand(output, context);
+    }
+}
+exports.AssumeRoleWithSAMLCommand = AssumeRoleWithSAMLCommand;
+//# sourceMappingURL=AssumeRoleWithSAMLCommand.js.map
+
+/***/ }),
+
+/***/ 1733:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.AssumeRoleWithWebIdentityCommand = void 0;
+const models_0_1 = __nccwpck_require__(536);
+const Aws_query_1 = __nccwpck_require__(6528);
+const middleware_serde_1 = __nccwpck_require__(6142);
+const smithy_client_1 = __nccwpck_require__(2223);
+/**
+ * <p>Returns a set of temporary security credentials for users who have been authenticated in
+ *          a mobile or web application with a web identity provider. Example providers include Amazon Cognito,
+ *          Login with Amazon, Facebook, Google, or any OpenID Connect-compatible identity
+ *          provider.</p>
+ *          <note>
+ *             <p>For mobile applications, we recommend that you use Amazon Cognito. You can use Amazon Cognito with the
+ *                <a href="http://aws.amazon.com/sdkforios/">AWS SDK for iOS Developer Guide</a> and the <a href="http://aws.amazon.com/sdkforandroid/">AWS SDK for Android Developer Guide</a> to uniquely
+ *             identify a user. You can also supply the user with a consistent identity throughout the
+ *             lifetime of an application.</p>
+ *             <p>To learn more about Amazon Cognito, see <a href="https://docs.aws.amazon.com/mobile/sdkforandroid/developerguide/cognito-auth.html#d0e840">Amazon Cognito Overview</a> in
+ *                <i>AWS SDK for Android Developer Guide</i> and <a href="https://docs.aws.amazon.com/mobile/sdkforios/developerguide/cognito-auth.html#d0e664">Amazon Cognito Overview</a> in the
+ *                <i>AWS SDK for iOS Developer Guide</i>.</p>
+ *          </note>
+ *          <p>Calling <code>AssumeRoleWithWebIdentity</code> does not require the use of AWS
+ *          security credentials. Therefore, you can distribute an application (for example, on mobile
+ *          devices) that requests temporary security credentials without including long-term AWS
+ *          credentials in the application. You also don't need to deploy server-based proxy services
+ *          that use long-term AWS credentials. Instead, the identity of the caller is validated by
+ *          using a token from the web identity provider. For a comparison of
+ *             <code>AssumeRoleWithWebIdentity</code> with the other API operations that produce
+ *          temporary credentials, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html">Requesting Temporary Security
+ *             Credentials</a> and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#stsapi_comparison">Comparing the
+ *             AWS STS API operations</a> in the <i>IAM User Guide</i>.</p>
+ *          <p>The temporary security credentials returned by this API consist of an access key ID, a
+ *          secret access key, and a security token. Applications can use these temporary security
+ *          credentials to sign calls to AWS service API operations.</p>
+ *          <p>
+ *             <b>Session Duration</b>
+ *          </p>
+ *          <p>By default, the temporary security credentials created by
+ *             <code>AssumeRoleWithWebIdentity</code> last for one hour. However, you can use the
+ *          optional <code>DurationSeconds</code> parameter to specify the duration of your session.
+ *          You can provide a value from 900 seconds (15 minutes) up to the maximum session duration
+ *          setting for the role. This setting can have a value from 1 hour to 12 hours. To learn how
+ *          to view the maximum value for your role, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use.html#id_roles_use_view-role-max-session">View the
+ *             Maximum Session Duration Setting for a Role</a> in the
+ *             <i>IAM User Guide</i>. The maximum session duration limit applies when
+ *          you use the <code>AssumeRole*</code> API operations or the <code>assume-role*</code> CLI
+ *          commands. However the limit does not apply when you use those operations to create a
+ *          console URL. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use.html">Using IAM Roles</a> in the
+ *             <i>IAM User Guide</i>. </p>
+ *          <p>
+ *             <b>Permissions</b>
+ *          </p>
+ *          <p>The temporary security credentials created by <code>AssumeRoleWithWebIdentity</code> can
+ *          be used to make API calls to any AWS service with the following exception: you cannot
+ *          call the STS <code>GetFederationToken</code> or <code>GetSessionToken</code> API
+ *          operations.</p>
+ *          <p>(Optional) You can pass inline or managed <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">session policies</a> to
+ *          this operation. You can pass a single JSON policy document to use as an inline session
+ *          policy. You can also specify up to 10 managed policies to use as managed session policies.
+ *          The plain text that you use for both inline and managed session policies can't exceed 2,048
+ *          characters. Passing policies to this operation returns new
+ *          temporary credentials. The resulting session's permissions are the intersection of the
+ *          role's identity-based policy and the session policies. You can use the role's temporary
+ *          credentials in subsequent AWS API calls to access resources in the account that owns
+ *          the role. You cannot use session policies to grant more permissions than those allowed
+ *          by the identity-based policy of the role that is being assumed. For more information, see
+ *             <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">Session
+ *             Policies</a> in the <i>IAM User Guide</i>.</p>
+ *          <p>
+ *             <b>Tags</b>
+ *          </p>
+ *          <p>(Optional) You can configure your IdP to pass attributes into your web identity token as
+ *          session tags. Each session tag consists of a key name and an associated value. For more
+ *          information about session tags, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html">Passing Session Tags in STS</a> in the
+ *             <i>IAM User Guide</i>.</p>
+ *          <p>You can pass up to 50 session tags. The plain text session tag keys can’t exceed 128
+ *          characters and the values can’t exceed 256 characters. For these and additional limits, see
+ *             <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-limits.html#reference_iam-limits-entity-length">IAM
+ *             and STS Character Limits</a> in the <i>IAM User Guide</i>.</p>
+ *
+ *          <note>
+ *             <p>An AWS conversion compresses the passed session policies and session tags into a
+ *             packed binary format that has a separate limit. Your request can fail for this limit
+ *             even if your plain text meets the other requirements. The <code>PackedPolicySize</code>
+ *             response element indicates by percentage how close the policies and tags for your
+ *             request are to the upper size limit.
+ *             </p>
+ *          </note>
+ *
+ *          <p>You can pass a session tag with the same key as a tag that is attached to the role. When
+ *          you do, the session tag overrides the role tag with the same key.</p>
+ *          <p>An administrator must grant you the permissions necessary to pass session tags. The
+ *          administrator can also create granular permissions to allow you to pass only specific
+ *          session tags. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_attribute-based-access-control.html">Tutorial: Using Tags
+ *             for Attribute-Based Access Control</a> in the
+ *          <i>IAM User Guide</i>.</p>
+ *          <p>You can set the session tags as transitive. Transitive tags persist during role
+ *          chaining. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html#id_session-tags_role-chaining">Chaining Roles
+ *             with Session Tags</a> in the <i>IAM User Guide</i>.</p>
+ *          <p>
+ *             <b>Identities</b>
+ *          </p>
+ *          <p>Before your application can call <code>AssumeRoleWithWebIdentity</code>, you must have
+ *          an identity token from a supported identity provider and create a role that the application
+ *          can assume. The role that your application assumes must trust the identity provider that is
+ *          associated with the identity token. In other words, the identity provider must be specified
+ *          in the role's trust policy. </p>
+ *          <important>
+ *             <p>Calling <code>AssumeRoleWithWebIdentity</code> can result in an entry in your
+ *             AWS CloudTrail logs. The entry includes the <a href="http://openid.net/specs/openid-connect-core-1_0.html#Claims">Subject</a> of
+ *             the provided Web Identity Token. We recommend that you avoid using any personally
+ *             identifiable information (PII) in this field. For example, you could instead use a GUID
+ *             or a pairwise identifier, as <a href="http://openid.net/specs/openid-connect-core-1_0.html#SubjectIDTypes">suggested
+ *                in the OIDC specification</a>.</p>
+ *          </important>
+ *          <p>For more information about how to use web identity federation and the
+ *             <code>AssumeRoleWithWebIdentity</code> API, see the following resources: </p>
+ *          <ul>
+ *             <li>
+ *                <p>
+ *                   <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_oidc_manual.html">Using Web Identity Federation API Operations for Mobile Apps</a> and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#api_assumerolewithwebidentity">Federation Through a Web-based Identity Provider</a>. </p>
+ *             </li>
+ *             <li>
+ *                <p>
+ *                   <a href="https://aws.amazon.com/blogs/aws/the-aws-web-identity-federation-playground/">
+ *                   Web Identity Federation Playground</a>. Walk through the process of
+ *                authenticating through Login with Amazon, Facebook, or Google, getting temporary
+ *                security credentials, and then using those credentials to make a request to AWS.
+ *             </p>
+ *             </li>
+ *             <li>
+ *                <p>
+ *                   <a href="http://aws.amazon.com/sdkforios/">AWS SDK for iOS Developer Guide</a> and <a href="http://aws.amazon.com/sdkforandroid/">AWS SDK for Android Developer Guide</a>. These toolkits
+ *                contain sample apps that show how to invoke the identity providers. The toolkits then
+ *                show how to use the information from these providers to get and use temporary
+ *                security credentials. </p>
+ *             </li>
+ *             <li>
+ *                <p>
+ *                   <a href="http://aws.amazon.com/articles/web-identity-federation-with-mobile-applications">Web Identity
+ *                   Federation with Mobile Applications</a>. This article discusses web identity
+ *                federation and shows an example of how to use web identity federation to get access
+ *                to content in Amazon S3. </p>
+ *             </li>
+ *          </ul>
+ */
+class AssumeRoleWithWebIdentityCommand extends smithy_client_1.Command {
+    // Start section: command_properties
+    // End section: command_properties
+    constructor(input) {
+        // Start section: command_constructor
+        super();
+        this.input = input;
+        // End section: command_constructor
+    }
+    /**
+     * @internal
+     */
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "STSClient";
+        const commandName = "AssumeRoleWithWebIdentityCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.AssumeRoleWithWebIdentityRequest.filterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.AssumeRoleWithWebIdentityResponse.filterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return Aws_query_1.serializeAws_queryAssumeRoleWithWebIdentityCommand(input, context);
+    }
+    deserialize(output, context) {
+        return Aws_query_1.deserializeAws_queryAssumeRoleWithWebIdentityCommand(output, context);
+    }
+}
+exports.AssumeRoleWithWebIdentityCommand = AssumeRoleWithWebIdentityCommand;
+//# sourceMappingURL=AssumeRoleWithWebIdentityCommand.js.map
+
+/***/ }),
+
+/***/ 9448:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.DecodeAuthorizationMessageCommand = void 0;
+const models_0_1 = __nccwpck_require__(536);
+const Aws_query_1 = __nccwpck_require__(6528);
+const middleware_serde_1 = __nccwpck_require__(6142);
+const middleware_signing_1 = __nccwpck_require__(2487);
+const smithy_client_1 = __nccwpck_require__(2223);
+/**
+ * <p>Decodes additional information about the authorization status of a request from an
+ *          encoded message returned in response to an AWS request.</p>
+ *          <p>For example, if a user is not authorized to perform an operation that he or she has
+ *          requested, the request returns a <code>Client.UnauthorizedOperation</code> response (an
+ *          HTTP 403 response). Some AWS operations additionally return an encoded message that can
+ *          provide details about this authorization failure. </p>
+ *          <note>
+ *             <p>Only certain AWS operations return an encoded authorization message. The
+ *             documentation for an individual operation indicates whether that operation returns an
+ *             encoded message in addition to returning an HTTP code.</p>
+ *          </note>
+ *          <p>The message is encoded because the details of the authorization status can constitute
+ *          privileged information that the user who requested the operation should not see. To decode
+ *          an authorization status message, a user must be granted permissions via an IAM policy to
+ *          request the <code>DecodeAuthorizationMessage</code>
+ *             (<code>sts:DecodeAuthorizationMessage</code>) action. </p>
+ *          <p>The decoded message includes the following type of information:</p>
+ *          <ul>
+ *             <li>
+ *                <p>Whether the request was denied due to an explicit deny or due to the absence of an
+ *                explicit allow. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html#policy-eval-denyallow">Determining Whether a Request is Allowed or Denied</a> in the
+ *                   <i>IAM User Guide</i>. </p>
+ *             </li>
+ *             <li>
+ *                <p>The principal who made the request.</p>
+ *             </li>
+ *             <li>
+ *                <p>The requested action.</p>
+ *             </li>
+ *             <li>
+ *                <p>The requested resource.</p>
+ *             </li>
+ *             <li>
+ *                <p>The values of condition keys in the context of the user's request.</p>
+ *             </li>
+ *          </ul>
+ */
+class DecodeAuthorizationMessageCommand extends smithy_client_1.Command {
+    // Start section: command_properties
+    // End section: command_properties
+    constructor(input) {
+        // Start section: command_constructor
+        super();
+        this.input = input;
+        // End section: command_constructor
+    }
+    /**
+     * @internal
+     */
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use(middleware_signing_1.getAwsAuthPlugin(configuration));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "STSClient";
+        const commandName = "DecodeAuthorizationMessageCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.DecodeAuthorizationMessageRequest.filterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.DecodeAuthorizationMessageResponse.filterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return Aws_query_1.serializeAws_queryDecodeAuthorizationMessageCommand(input, context);
+    }
+    deserialize(output, context) {
+        return Aws_query_1.deserializeAws_queryDecodeAuthorizationMessageCommand(output, context);
+    }
+}
+exports.DecodeAuthorizationMessageCommand = DecodeAuthorizationMessageCommand;
+//# sourceMappingURL=DecodeAuthorizationMessageCommand.js.map
+
+/***/ }),
+
+/***/ 4317:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.GetAccessKeyInfoCommand = void 0;
+const models_0_1 = __nccwpck_require__(536);
+const Aws_query_1 = __nccwpck_require__(6528);
+const middleware_serde_1 = __nccwpck_require__(6142);
+const middleware_signing_1 = __nccwpck_require__(2487);
+const smithy_client_1 = __nccwpck_require__(2223);
+/**
+ * <p>Returns the account identifier for the specified access key ID.</p>
+ *          <p>Access keys consist of two parts: an access key ID (for example,
+ *             <code>AKIAIOSFODNN7EXAMPLE</code>) and a secret access key (for example,
+ *             <code>wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY</code>). For more information about
+ *          access keys, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html">Managing Access Keys for IAM
+ *             Users</a> in the <i>IAM User Guide</i>.</p>
+ *          <p>When you pass an access key ID to this operation, it returns the ID of the AWS account
+ *          to which the keys belong. Access key IDs beginning with <code>AKIA</code> are long-term
+ *          credentials for an IAM user or the AWS account root user. Access key IDs beginning with
+ *             <code>ASIA</code> are temporary credentials that are created using STS operations. If
+ *          the account in the response belongs to you, you can sign in as the root user and review
+ *          your root user access keys. Then, you can pull a <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_getting-report.html">credentials report</a> to
+ *          learn which IAM user owns the keys. To learn who requested the temporary credentials for
+ *          an <code>ASIA</code> access key, view the STS events in your <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/cloudtrail-integration.html">CloudTrail logs</a> in the
+ *             <i>IAM User Guide</i>.</p>
+ *          <p>This operation does not indicate the state of the access key. The key might be active,
+ *          inactive, or deleted. Active keys might not have permissions to perform an operation.
+ *          Providing a deleted access key might return an error that the key doesn't exist.</p>
+ */
+class GetAccessKeyInfoCommand extends smithy_client_1.Command {
+    // Start section: command_properties
+    // End section: command_properties
+    constructor(input) {
+        // Start section: command_constructor
+        super();
+        this.input = input;
+        // End section: command_constructor
+    }
+    /**
+     * @internal
+     */
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use(middleware_signing_1.getAwsAuthPlugin(configuration));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "STSClient";
+        const commandName = "GetAccessKeyInfoCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.GetAccessKeyInfoRequest.filterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.GetAccessKeyInfoResponse.filterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return Aws_query_1.serializeAws_queryGetAccessKeyInfoCommand(input, context);
+    }
+    deserialize(output, context) {
+        return Aws_query_1.deserializeAws_queryGetAccessKeyInfoCommand(output, context);
+    }
+}
+exports.GetAccessKeyInfoCommand = GetAccessKeyInfoCommand;
+//# sourceMappingURL=GetAccessKeyInfoCommand.js.map
+
+/***/ }),
+
+/***/ 2439:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.GetCallerIdentityCommand = void 0;
+const models_0_1 = __nccwpck_require__(536);
+const Aws_query_1 = __nccwpck_require__(6528);
+const middleware_serde_1 = __nccwpck_require__(6142);
+const middleware_signing_1 = __nccwpck_require__(2487);
+const smithy_client_1 = __nccwpck_require__(2223);
+/**
+ * <p>Returns details about the IAM user or role whose credentials are used to call the
+ *          operation.</p>
+ *          <note>
+ *             <p>No permissions are required to perform this operation. If an administrator adds a
+ *             policy to your IAM user or role that explicitly denies access to the
+ *                <code>sts:GetCallerIdentity</code> action, you can still perform this operation.
+ *             Permissions are not required because the same information is returned when an IAM user
+ *             or role is denied access. To view an example response, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_general.html#troubleshoot_general_access-denied-delete-mfa">I Am Not Authorized to Perform: iam:DeleteVirtualMFADevice</a> in the
+ *                <i>IAM User Guide</i>.</p>
+ *          </note>
+ */
+class GetCallerIdentityCommand extends smithy_client_1.Command {
+    // Start section: command_properties
+    // End section: command_properties
+    constructor(input) {
+        // Start section: command_constructor
+        super();
+        this.input = input;
+        // End section: command_constructor
+    }
+    /**
+     * @internal
+     */
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use(middleware_signing_1.getAwsAuthPlugin(configuration));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "STSClient";
+        const commandName = "GetCallerIdentityCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.GetCallerIdentityRequest.filterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.GetCallerIdentityResponse.filterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return Aws_query_1.serializeAws_queryGetCallerIdentityCommand(input, context);
+    }
+    deserialize(output, context) {
+        return Aws_query_1.deserializeAws_queryGetCallerIdentityCommand(output, context);
+    }
+}
+exports.GetCallerIdentityCommand = GetCallerIdentityCommand;
+//# sourceMappingURL=GetCallerIdentityCommand.js.map
+
+/***/ }),
+
+/***/ 5239:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.GetFederationTokenCommand = void 0;
+const models_0_1 = __nccwpck_require__(536);
+const Aws_query_1 = __nccwpck_require__(6528);
+const middleware_serde_1 = __nccwpck_require__(6142);
+const middleware_signing_1 = __nccwpck_require__(2487);
+const smithy_client_1 = __nccwpck_require__(2223);
+/**
+ * <p>Returns a set of temporary security credentials (consisting of an access key ID, a
+ *          secret access key, and a security token) for a federated user. A typical use is in a proxy
+ *          application that gets temporary security credentials on behalf of distributed applications
+ *          inside a corporate network. You must call the <code>GetFederationToken</code> operation
+ *          using the long-term security credentials of an IAM user. As a result, this call is
+ *          appropriate in contexts where those credentials can be safely stored, usually in a
+ *          server-based application. For a comparison of <code>GetFederationToken</code> with the
+ *          other API operations that produce temporary credentials, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html">Requesting Temporary Security
+ *             Credentials</a> and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#stsapi_comparison">Comparing the
+ *             AWS STS API operations</a> in the <i>IAM User Guide</i>.</p>
+ *          <note>
+ *             <p>You can create a mobile-based or browser-based app that can authenticate users using
+ *             a web identity provider like Login with Amazon, Facebook, Google, or an OpenID
+ *             Connect-compatible identity provider. In this case, we recommend that you use <a href="http://aws.amazon.com/cognito/">Amazon Cognito</a> or
+ *                <code>AssumeRoleWithWebIdentity</code>. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#api_assumerolewithwebidentity">Federation Through a Web-based Identity Provider</a> in the
+ *                <i>IAM User Guide</i>.</p>
+ *          </note>
+ *          <p>You can also call <code>GetFederationToken</code> using the security credentials of an
+ *          AWS account root user, but we do not recommend it. Instead, we recommend that you create
+ *          an IAM user for the purpose of the proxy application. Then attach a policy to the IAM
+ *          user that limits federated users to only the actions and resources that they need to
+ *          access. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html">IAM Best Practices</a> in the
+ *             <i>IAM User Guide</i>. </p>
+ *          <p>
+ *             <b>Session duration</b>
+ *          </p>
+ *          <p>The temporary credentials are valid for the specified duration, from 900 seconds (15
+ *          minutes) up to a maximum of 129,600 seconds (36 hours). The default session duration is
+ *          43,200 seconds (12 hours). Temporary credentials that are obtained by using AWS account
+ *          root user credentials have a maximum duration of 3,600 seconds (1 hour).</p>
+ *          <p>
+ *             <b>Permissions</b>
+ *          </p>
+ *          <p>You can use the temporary credentials created by <code>GetFederationToken</code> in any
+ *          AWS service except the following:</p>
+ *          <ul>
+ *             <li>
+ *                <p>You cannot call any IAM operations using the AWS CLI or the AWS API.  </p>
+ *             </li>
+ *             <li>
+ *                <p>You cannot call any STS operations except <code>GetCallerIdentity</code>.</p>
+ *             </li>
+ *          </ul>
+ *          <p>You must pass an inline or managed <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">session policy</a> to
+ *          this operation. You can pass a single JSON policy document to use as an inline session
+ *          policy. You can also specify up to 10 managed policies to use as managed session policies.
+ *          The plain text that you use for both inline and managed session policies can't exceed 2,048
+ *          characters.</p>
+ *          <p>Though the session policy parameters are optional, if you do not pass a policy, then the
+ *          resulting federated user session has no permissions. When you pass session policies, the
+ *          session permissions are the intersection of the IAM user policies and the session
+ *          policies that you pass. This gives you a way to further restrict the permissions for a
+ *          federated user. You cannot use session policies to grant more permissions than those that
+ *          are defined in the permissions policy of the IAM user. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">Session
+ *             Policies</a> in the <i>IAM User Guide</i>. For information about
+ *          using <code>GetFederationToken</code> to create temporary security credentials, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#api_getfederationtoken">GetFederationToken—Federation Through a Custom Identity Broker</a>. </p>
+ *          <p>You can use the credentials to access a resource that has a resource-based policy. If
+ *          that policy specifically references the federated user session in the
+ *             <code>Principal</code> element of the policy, the session has the permissions allowed by
+ *          the policy. These permissions are granted in addition to the permissions granted by the
+ *          session policies.</p>
+ *          <p>
+ *             <b>Tags</b>
+ *          </p>
+ *          <p>(Optional) You can pass tag key-value pairs to your session. These are called session
+ *          tags. For more information about session tags, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html">Passing Session Tags in STS</a> in the
+ *             <i>IAM User Guide</i>.</p>
+ *          <p>An administrator must grant you the permissions necessary to pass session tags. The
+ *          administrator can also create granular permissions to allow you to pass only specific
+ *          session tags. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_attribute-based-access-control.html">Tutorial: Using Tags
+ *             for Attribute-Based Access Control</a> in the
+ *          <i>IAM User Guide</i>.</p>
+ *          <p>Tag key–value pairs are not case sensitive, but case is preserved. This means that you
+ *          cannot have separate <code>Department</code> and <code>department</code> tag keys. Assume
+ *          that the user that you are federating has the
+ *             <code>Department</code>=<code>Marketing</code> tag and you pass the
+ *             <code>department</code>=<code>engineering</code> session tag. <code>Department</code>
+ *          and <code>department</code> are not saved as separate tags, and the session tag passed in
+ *          the request takes precedence over the user tag.</p>
+ */
+class GetFederationTokenCommand extends smithy_client_1.Command {
+    // Start section: command_properties
+    // End section: command_properties
+    constructor(input) {
+        // Start section: command_constructor
+        super();
+        this.input = input;
+        // End section: command_constructor
+    }
+    /**
+     * @internal
+     */
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use(middleware_signing_1.getAwsAuthPlugin(configuration));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "STSClient";
+        const commandName = "GetFederationTokenCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.GetFederationTokenRequest.filterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.GetFederationTokenResponse.filterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return Aws_query_1.serializeAws_queryGetFederationTokenCommand(input, context);
+    }
+    deserialize(output, context) {
+        return Aws_query_1.deserializeAws_queryGetFederationTokenCommand(output, context);
+    }
+}
+exports.GetFederationTokenCommand = GetFederationTokenCommand;
+//# sourceMappingURL=GetFederationTokenCommand.js.map
+
+/***/ }),
+
+/***/ 6499:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.GetSessionTokenCommand = void 0;
+const models_0_1 = __nccwpck_require__(536);
+const Aws_query_1 = __nccwpck_require__(6528);
+const middleware_serde_1 = __nccwpck_require__(6142);
+const middleware_signing_1 = __nccwpck_require__(2487);
+const smithy_client_1 = __nccwpck_require__(2223);
+/**
+ * <p>Returns a set of temporary credentials for an AWS account or IAM user. The
+ *          credentials consist of an access key ID, a secret access key, and a security token.
+ *          Typically, you use <code>GetSessionToken</code> if you want to use MFA to protect
+ *          programmatic calls to specific AWS API operations like Amazon EC2 <code>StopInstances</code>.
+ *          MFA-enabled IAM users would need to call <code>GetSessionToken</code> and submit an MFA
+ *          code that is associated with their MFA device. Using the temporary security credentials
+ *          that are returned from the call, IAM users can then make programmatic calls to API
+ *          operations that require MFA authentication. If you do not supply a correct MFA code, then
+ *          the API returns an access denied error. For a comparison of <code>GetSessionToken</code>
+ *          with the other API operations that produce temporary credentials, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html">Requesting
+ *             Temporary Security Credentials</a> and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#stsapi_comparison">Comparing the
+ *             AWS STS API operations</a> in the <i>IAM User Guide</i>.</p>
+ *          <p>
+ *             <b>Session Duration</b>
+ *          </p>
+ *          <p>The <code>GetSessionToken</code> operation must be called by using the long-term AWS
+ *          security credentials of the AWS account root user or an IAM user. Credentials that are
+ *          created by IAM users are valid for the duration that you specify. This duration can range
+ *          from 900 seconds (15 minutes) up to a maximum of 129,600 seconds (36 hours), with a default
+ *          of 43,200 seconds (12 hours). Credentials based on account credentials can range from 900
+ *          seconds (15 minutes) up to 3,600 seconds (1 hour), with a default of 1 hour. </p>
+ *          <p>
+ *             <b>Permissions</b>
+ *          </p>
+ *          <p>The temporary security credentials created by <code>GetSessionToken</code> can be used
+ *          to make API calls to any AWS service with the following exceptions:</p>
+ *          <ul>
+ *             <li>
+ *                <p>You cannot call any IAM API operations unless MFA authentication information is
+ *                included in the request.</p>
+ *             </li>
+ *             <li>
+ *                <p>You cannot call any STS API <i>except</i>
+ *                   <code>AssumeRole</code> or <code>GetCallerIdentity</code>.</p>
+ *             </li>
+ *          </ul>
+ *          <note>
+ *             <p>We recommend that you do not call <code>GetSessionToken</code> with AWS account
+ *             root user credentials. Instead, follow our <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#create-iam-users">best practices</a> by
+ *             creating one or more IAM users, giving them the necessary permissions, and using IAM
+ *             users for everyday interaction with AWS. </p>
+ *          </note>
+ *          <p>The credentials that are returned by <code>GetSessionToken</code> are based on
+ *          permissions associated with the user whose credentials were used to call the operation. If
+ *             <code>GetSessionToken</code> is called using AWS account root user credentials, the
+ *          temporary credentials have root user permissions. Similarly, if
+ *             <code>GetSessionToken</code> is called using the credentials of an IAM user, the
+ *          temporary credentials have the same permissions as the IAM user. </p>
+ *          <p>For more information about using <code>GetSessionToken</code> to create temporary
+ *          credentials, go to <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#api_getsessiontoken">Temporary
+ *             Credentials for Users in Untrusted Environments</a> in the
+ *             <i>IAM User Guide</i>. </p>
+ */
+class GetSessionTokenCommand extends smithy_client_1.Command {
+    // Start section: command_properties
+    // End section: command_properties
+    constructor(input) {
+        // Start section: command_constructor
+        super();
+        this.input = input;
+        // End section: command_constructor
+    }
+    /**
+     * @internal
+     */
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use(middleware_signing_1.getAwsAuthPlugin(configuration));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "STSClient";
+        const commandName = "GetSessionTokenCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.GetSessionTokenRequest.filterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.GetSessionTokenResponse.filterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return Aws_query_1.serializeAws_queryGetSessionTokenCommand(input, context);
+    }
+    deserialize(output, context) {
+        return Aws_query_1.deserializeAws_queryGetSessionTokenCommand(output, context);
+    }
+}
+exports.GetSessionTokenCommand = GetSessionTokenCommand;
+//# sourceMappingURL=GetSessionTokenCommand.js.map
+
+/***/ }),
+
+/***/ 7716:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.decorateDefaultCredentialProvider = exports.getDefaultRoleAssumerWithWebIdentity = exports.getDefaultRoleAssumer = void 0;
+const defaultStsRoleAssumers_1 = __nccwpck_require__(2418);
+const STSClient_1 = __nccwpck_require__(2316);
+/**
+ * The default role assumer that used by credential providers when sts:AssumeRole API is needed.
+ */
+const getDefaultRoleAssumer = (stsOptions = {}) => defaultStsRoleAssumers_1.getDefaultRoleAssumer(stsOptions, STSClient_1.STSClient);
+exports.getDefaultRoleAssumer = getDefaultRoleAssumer;
+/**
+ * The default role assumer that used by credential providers when sts:AssumeRoleWithWebIdentity API is needed.
+ */
+const getDefaultRoleAssumerWithWebIdentity = (stsOptions = {}) => defaultStsRoleAssumers_1.getDefaultRoleAssumerWithWebIdentity(stsOptions, STSClient_1.STSClient);
+exports.getDefaultRoleAssumerWithWebIdentity = getDefaultRoleAssumerWithWebIdentity;
+/**
+ * The default credential providers depend STS client to assume role with desired API: sts:assumeRole,
+ * sts:assumeRoleWithWebIdentity, etc. This function decorates the default credential provider with role assumers which
+ * encapsulates the process of calling STS commands. This can only be imported by AWS client packages to avoid circular
+ * dependencies.
+ *
+ * @internal
+ */
+const decorateDefaultCredentialProvider = (provider) => (input) => provider({
+    roleAssumer: exports.getDefaultRoleAssumer(input),
+    roleAssumerWithWebIdentity: exports.getDefaultRoleAssumerWithWebIdentity(input),
+    ...input,
+});
+exports.decorateDefaultCredentialProvider = decorateDefaultCredentialProvider;
+//# sourceMappingURL=defaultRoleAssumers.js.map
+
+/***/ }),
+
+/***/ 2418:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.decorateDefaultCredentialProvider = exports.getDefaultRoleAssumerWithWebIdentity = exports.getDefaultRoleAssumer = void 0;
+const AssumeRoleCommand_1 = __nccwpck_require__(3638);
+const AssumeRoleWithWebIdentityCommand_1 = __nccwpck_require__(1733);
+const ASSUME_ROLE_DEFAULT_REGION = "us-east-1";
+/**
+ * Inject the fallback STS region of us-east-1.
+ */
+const decorateDefaultRegion = (region) => {
+    if (typeof region !== "function") {
+        return region === undefined ? ASSUME_ROLE_DEFAULT_REGION : region;
+    }
+    return async () => {
+        try {
+            return await region();
+        }
+        catch (e) {
+            return ASSUME_ROLE_DEFAULT_REGION;
+        }
+    };
+};
+/**
+ * The default role assumer that used by credential providers when sts:AssumeRole API is needed.
+ * @internal
+ */
+const getDefaultRoleAssumer = (stsOptions, stsClientCtor) => {
+    let stsClient;
+    return async (sourceCreds, params) => {
+        if (!stsClient) {
+            const { logger, region } = stsOptions;
+            stsClient = new stsClientCtor({
+                logger,
+                credentials: sourceCreds,
+                region: decorateDefaultRegion(region),
+            });
+        }
+        const { Credentials } = await stsClient.send(new AssumeRoleCommand_1.AssumeRoleCommand(params));
+        if (!Credentials || !Credentials.AccessKeyId || !Credentials.SecretAccessKey) {
+            throw new Error(`Invalid response from STS.assumeRole call with role ${params.RoleArn}`);
+        }
+        return {
+            accessKeyId: Credentials.AccessKeyId,
+            secretAccessKey: Credentials.SecretAccessKey,
+            sessionToken: Credentials.SessionToken,
+            expiration: Credentials.Expiration,
+        };
+    };
+};
+exports.getDefaultRoleAssumer = getDefaultRoleAssumer;
+/**
+ * The default role assumer that used by credential providers when sts:AssumeRoleWithWebIdentity API is needed.
+ * @internal
+ */
+const getDefaultRoleAssumerWithWebIdentity = (stsOptions, stsClientCtor) => {
+    let stsClient;
+    return async (params) => {
+        if (!stsClient) {
+            const { logger, region } = stsOptions;
+            stsClient = new stsClientCtor({
+                logger,
+                region: decorateDefaultRegion(region),
+            });
+        }
+        const { Credentials } = await stsClient.send(new AssumeRoleWithWebIdentityCommand_1.AssumeRoleWithWebIdentityCommand(params));
+        if (!Credentials || !Credentials.AccessKeyId || !Credentials.SecretAccessKey) {
+            throw new Error(`Invalid response from STS.assumeRoleWithWebIdentity call with role ${params.RoleArn}`);
+        }
+        return {
+            accessKeyId: Credentials.AccessKeyId,
+            secretAccessKey: Credentials.SecretAccessKey,
+            sessionToken: Credentials.SessionToken,
+            expiration: Credentials.Expiration,
+        };
+    };
+};
+exports.getDefaultRoleAssumerWithWebIdentity = getDefaultRoleAssumerWithWebIdentity;
+/**
+ * The default credential providers depend STS client to assume role with desired API: sts:assumeRole,
+ * sts:assumeRoleWithWebIdentity, etc. This function decorates the default credential provider with role assumers which
+ * encapsulates the process of calling STS commands. This can only be imported by AWS client packages to avoid circular
+ * dependencies.
+ *
+ * @internal
+ */
+const decorateDefaultCredentialProvider = (provider) => (input) => provider({
+    roleAssumer: exports.getDefaultRoleAssumer(input, input.stsClientCtor),
+    roleAssumerWithWebIdentity: exports.getDefaultRoleAssumerWithWebIdentity(input, input.stsClientCtor),
+    ...input,
+});
+exports.decorateDefaultCredentialProvider = decorateDefaultCredentialProvider;
+//# sourceMappingURL=defaultStsRoleAssumers.js.map
+
+/***/ }),
+
+/***/ 2798:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.defaultRegionInfoProvider = void 0;
+// Partition default templates
+const AWS_TEMPLATE = "sts.{region}.amazonaws.com";
+const AWS_CN_TEMPLATE = "sts.{region}.amazonaws.com.cn";
+const AWS_ISO_TEMPLATE = "sts.{region}.c2s.ic.gov";
+const AWS_ISO_B_TEMPLATE = "sts.{region}.sc2s.sgov.gov";
+const AWS_US_GOV_TEMPLATE = "sts.{region}.amazonaws.com";
+// Partition regions
+const AWS_REGIONS = new Set([
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]);
+const AWS_CN_REGIONS = new Set(["cn-north-1", "cn-northwest-1"]);
+const AWS_ISO_REGIONS = new Set(["us-iso-east-1"]);
+const AWS_ISO_B_REGIONS = new Set(["us-isob-east-1"]);
+const AWS_US_GOV_REGIONS = new Set(["us-gov-east-1", "us-gov-west-1"]);
+const defaultRegionInfoProvider = (region, options) => {
+    let regionInfo = undefined;
+    switch (region) {
+        // First, try to match exact region names.
+        case "af-south-1":
+            regionInfo = {
+                hostname: "sts.af-south-1.amazonaws.com",
+                partition: "aws",
+            };
+            break;
+        case "ap-east-1":
+            regionInfo = {
+                hostname: "sts.ap-east-1.amazonaws.com",
+                partition: "aws",
+            };
+            break;
+        case "ap-northeast-1":
+            regionInfo = {
+                hostname: "sts.ap-northeast-1.amazonaws.com",
+                partition: "aws",
+            };
+            break;
+        case "ap-northeast-2":
+            regionInfo = {
+                hostname: "sts.ap-northeast-2.amazonaws.com",
+                partition: "aws",
+            };
+            break;
+        case "ap-south-1":
+            regionInfo = {
+                hostname: "sts.ap-south-1.amazonaws.com",
+                partition: "aws",
+            };
+            break;
+        case "ap-southeast-1":
+            regionInfo = {
+                hostname: "sts.ap-southeast-1.amazonaws.com",
+                partition: "aws",
+            };
+            break;
+        case "ap-southeast-2":
+            regionInfo = {
+                hostname: "sts.ap-southeast-2.amazonaws.com",
+                partition: "aws",
+            };
+            break;
+        case "aws-global":
+            regionInfo = {
+                hostname: "sts.amazonaws.com",
+                partition: "aws",
+                signingRegion: "us-east-1",
+            };
+            break;
+        case "ca-central-1":
+            regionInfo = {
+                hostname: "sts.ca-central-1.amazonaws.com",
+                partition: "aws",
+            };
+            break;
+        case "cn-north-1":
+            regionInfo = {
+                hostname: "sts.cn-north-1.amazonaws.com.cn",
+                partition: "aws-cn",
+            };
+            break;
+        case "cn-northwest-1":
+            regionInfo = {
+                hostname: "sts.cn-northwest-1.amazonaws.com.cn",
+                partition: "aws-cn",
+            };
+            break;
+        case "eu-central-1":
+            regionInfo = {
+                hostname: "sts.eu-central-1.amazonaws.com",
+                partition: "aws",
+            };
+            break;
+        case "eu-north-1":
+            regionInfo = {
+                hostname: "sts.eu-north-1.amazonaws.com",
+                partition: "aws",
+            };
+            break;
+        case "eu-south-1":
+            regionInfo = {
+                hostname: "sts.eu-south-1.amazonaws.com",
+                partition: "aws",
+            };
+            break;
+        case "eu-west-1":
+            regionInfo = {
+                hostname: "sts.eu-west-1.amazonaws.com",
+                partition: "aws",
+            };
+            break;
+        case "eu-west-2":
+            regionInfo = {
+                hostname: "sts.eu-west-2.amazonaws.com",
+                partition: "aws",
+            };
+            break;
+        case "eu-west-3":
+            regionInfo = {
+                hostname: "sts.eu-west-3.amazonaws.com",
+                partition: "aws",
+            };
+            break;
+        case "me-south-1":
+            regionInfo = {
+                hostname: "sts.me-south-1.amazonaws.com",
+                partition: "aws",
+            };
+            break;
+        case "sa-east-1":
+            regionInfo = {
+                hostname: "sts.sa-east-1.amazonaws.com",
+                partition: "aws",
+            };
+            break;
+        case "us-east-1":
+            regionInfo = {
+                hostname: "sts.us-east-1.amazonaws.com",
+                partition: "aws",
+            };
+            break;
+        case "us-east-1-fips":
+            regionInfo = {
+                hostname: "sts-fips.us-east-1.amazonaws.com",
+                partition: "aws",
+                signingRegion: "us-east-1",
+            };
+            break;
+        case "us-east-2":
+            regionInfo = {
+                hostname: "sts.us-east-2.amazonaws.com",
+                partition: "aws",
+            };
+            break;
+        case "us-east-2-fips":
+            regionInfo = {
+                hostname: "sts-fips.us-east-2.amazonaws.com",
+                partition: "aws",
+                signingRegion: "us-east-2",
+            };
+            break;
+        case "us-gov-east-1":
+            regionInfo = {
+                hostname: "sts.us-gov-east-1.amazonaws.com",
+                partition: "aws-us-gov",
+            };
+            break;
+        case "us-gov-east-1-fips":
+            regionInfo = {
+                hostname: "sts.us-gov-east-1.amazonaws.com",
+                partition: "aws-us-gov",
+                signingRegion: "us-gov-east-1",
+            };
+            break;
+        case "us-gov-west-1":
+            regionInfo = {
+                hostname: "sts.us-gov-west-1.amazonaws.com",
+                partition: "aws-us-gov",
+            };
+            break;
+        case "us-gov-west-1-fips":
+            regionInfo = {
+                hostname: "sts.us-gov-west-1.amazonaws.com",
+                partition: "aws-us-gov",
+                signingRegion: "us-gov-west-1",
+            };
+            break;
+        case "us-iso-east-1":
+            regionInfo = {
+                hostname: "sts.us-iso-east-1.c2s.ic.gov",
+                partition: "aws-iso",
+            };
+            break;
+        case "us-isob-east-1":
+            regionInfo = {
+                hostname: "sts.us-isob-east-1.sc2s.sgov.gov",
+                partition: "aws-iso-b",
+            };
+            break;
+        case "us-west-1":
+            regionInfo = {
+                hostname: "sts.us-west-1.amazonaws.com",
+                partition: "aws",
+            };
+            break;
+        case "us-west-1-fips":
+            regionInfo = {
+                hostname: "sts-fips.us-west-1.amazonaws.com",
+                partition: "aws",
+                signingRegion: "us-west-1",
+            };
+            break;
+        case "us-west-2":
+            regionInfo = {
+                hostname: "sts.us-west-2.amazonaws.com",
+                partition: "aws",
+            };
+            break;
+        case "us-west-2-fips":
+            regionInfo = {
+                hostname: "sts-fips.us-west-2.amazonaws.com",
+                partition: "aws",
+                signingRegion: "us-west-2",
+            };
+            break;
+        // Next, try to match partition endpoints.
+        default:
+            if (AWS_REGIONS.has(region)) {
+                regionInfo = {
+                    hostname: AWS_TEMPLATE.replace("{region}", region),
+                    partition: "aws",
+                };
+            }
+            if (AWS_CN_REGIONS.has(region)) {
+                regionInfo = {
+                    hostname: AWS_CN_TEMPLATE.replace("{region}", region),
+                    partition: "aws-cn",
+                };
+            }
+            if (AWS_ISO_REGIONS.has(region)) {
+                regionInfo = {
+                    hostname: AWS_ISO_TEMPLATE.replace("{region}", region),
+                    partition: "aws-iso",
+                };
+            }
+            if (AWS_ISO_B_REGIONS.has(region)) {
+                regionInfo = {
+                    hostname: AWS_ISO_B_TEMPLATE.replace("{region}", region),
+                    partition: "aws-iso-b",
+                };
+            }
+            if (AWS_US_GOV_REGIONS.has(region)) {
+                regionInfo = {
+                    hostname: AWS_US_GOV_TEMPLATE.replace("{region}", region),
+                    partition: "aws-us-gov",
+                };
+            }
+            // Finally, assume it's an AWS partition endpoint.
+            if (regionInfo === undefined) {
+                regionInfo = {
+                    hostname: AWS_TEMPLATE.replace("{region}", region),
+                    partition: "aws",
+                };
+            }
+    }
+    return Promise.resolve({ signingService: "sts", ...regionInfo });
+};
+exports.defaultRegionInfoProvider = defaultRegionInfoProvider;
+//# sourceMappingURL=endpoints.js.map
+
+/***/ }),
+
+/***/ 3285:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(2316), exports);
+tslib_1.__exportStar(__nccwpck_require__(3853), exports);
+tslib_1.__exportStar(__nccwpck_require__(3638), exports);
+tslib_1.__exportStar(__nccwpck_require__(550), exports);
+tslib_1.__exportStar(__nccwpck_require__(1733), exports);
+tslib_1.__exportStar(__nccwpck_require__(9448), exports);
+tslib_1.__exportStar(__nccwpck_require__(4317), exports);
+tslib_1.__exportStar(__nccwpck_require__(2439), exports);
+tslib_1.__exportStar(__nccwpck_require__(5239), exports);
+tslib_1.__exportStar(__nccwpck_require__(6499), exports);
+tslib_1.__exportStar(__nccwpck_require__(5231), exports);
+tslib_1.__exportStar(__nccwpck_require__(7716), exports);
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ 5231:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(536), exports);
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ 536:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.GetSessionTokenResponse = exports.GetSessionTokenRequest = exports.GetFederationTokenResponse = exports.FederatedUser = exports.GetFederationTokenRequest = exports.GetCallerIdentityResponse = exports.GetCallerIdentityRequest = exports.GetAccessKeyInfoResponse = exports.GetAccessKeyInfoRequest = exports.InvalidAuthorizationMessageException = exports.DecodeAuthorizationMessageResponse = exports.DecodeAuthorizationMessageRequest = exports.IDPCommunicationErrorException = exports.AssumeRoleWithWebIdentityResponse = exports.AssumeRoleWithWebIdentityRequest = exports.InvalidIdentityTokenException = exports.IDPRejectedClaimException = exports.AssumeRoleWithSAMLResponse = exports.AssumeRoleWithSAMLRequest = exports.RegionDisabledException = exports.PackedPolicyTooLargeException = exports.MalformedPolicyDocumentException = exports.ExpiredTokenException = exports.AssumeRoleResponse = exports.Credentials = exports.AssumeRoleRequest = exports.Tag = exports.PolicyDescriptorType = exports.AssumedRoleUser = void 0;
+var AssumedRoleUser;
+(function (AssumedRoleUser) {
+    AssumedRoleUser.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(AssumedRoleUser = exports.AssumedRoleUser || (exports.AssumedRoleUser = {}));
+var PolicyDescriptorType;
+(function (PolicyDescriptorType) {
+    PolicyDescriptorType.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(PolicyDescriptorType = exports.PolicyDescriptorType || (exports.PolicyDescriptorType = {}));
+var Tag;
+(function (Tag) {
+    Tag.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(Tag = exports.Tag || (exports.Tag = {}));
+var AssumeRoleRequest;
+(function (AssumeRoleRequest) {
+    AssumeRoleRequest.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(AssumeRoleRequest = exports.AssumeRoleRequest || (exports.AssumeRoleRequest = {}));
+var Credentials;
+(function (Credentials) {
+    Credentials.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(Credentials = exports.Credentials || (exports.Credentials = {}));
+var AssumeRoleResponse;
+(function (AssumeRoleResponse) {
+    AssumeRoleResponse.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(AssumeRoleResponse = exports.AssumeRoleResponse || (exports.AssumeRoleResponse = {}));
+var ExpiredTokenException;
+(function (ExpiredTokenException) {
+    ExpiredTokenException.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(ExpiredTokenException = exports.ExpiredTokenException || (exports.ExpiredTokenException = {}));
+var MalformedPolicyDocumentException;
+(function (MalformedPolicyDocumentException) {
+    MalformedPolicyDocumentException.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(MalformedPolicyDocumentException = exports.MalformedPolicyDocumentException || (exports.MalformedPolicyDocumentException = {}));
+var PackedPolicyTooLargeException;
+(function (PackedPolicyTooLargeException) {
+    PackedPolicyTooLargeException.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(PackedPolicyTooLargeException = exports.PackedPolicyTooLargeException || (exports.PackedPolicyTooLargeException = {}));
+var RegionDisabledException;
+(function (RegionDisabledException) {
+    RegionDisabledException.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(RegionDisabledException = exports.RegionDisabledException || (exports.RegionDisabledException = {}));
+var AssumeRoleWithSAMLRequest;
+(function (AssumeRoleWithSAMLRequest) {
+    AssumeRoleWithSAMLRequest.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(AssumeRoleWithSAMLRequest = exports.AssumeRoleWithSAMLRequest || (exports.AssumeRoleWithSAMLRequest = {}));
+var AssumeRoleWithSAMLResponse;
+(function (AssumeRoleWithSAMLResponse) {
+    AssumeRoleWithSAMLResponse.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(AssumeRoleWithSAMLResponse = exports.AssumeRoleWithSAMLResponse || (exports.AssumeRoleWithSAMLResponse = {}));
+var IDPRejectedClaimException;
+(function (IDPRejectedClaimException) {
+    IDPRejectedClaimException.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(IDPRejectedClaimException = exports.IDPRejectedClaimException || (exports.IDPRejectedClaimException = {}));
+var InvalidIdentityTokenException;
+(function (InvalidIdentityTokenException) {
+    InvalidIdentityTokenException.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(InvalidIdentityTokenException = exports.InvalidIdentityTokenException || (exports.InvalidIdentityTokenException = {}));
+var AssumeRoleWithWebIdentityRequest;
+(function (AssumeRoleWithWebIdentityRequest) {
+    AssumeRoleWithWebIdentityRequest.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(AssumeRoleWithWebIdentityRequest = exports.AssumeRoleWithWebIdentityRequest || (exports.AssumeRoleWithWebIdentityRequest = {}));
+var AssumeRoleWithWebIdentityResponse;
+(function (AssumeRoleWithWebIdentityResponse) {
+    AssumeRoleWithWebIdentityResponse.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(AssumeRoleWithWebIdentityResponse = exports.AssumeRoleWithWebIdentityResponse || (exports.AssumeRoleWithWebIdentityResponse = {}));
+var IDPCommunicationErrorException;
+(function (IDPCommunicationErrorException) {
+    IDPCommunicationErrorException.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(IDPCommunicationErrorException = exports.IDPCommunicationErrorException || (exports.IDPCommunicationErrorException = {}));
+var DecodeAuthorizationMessageRequest;
+(function (DecodeAuthorizationMessageRequest) {
+    DecodeAuthorizationMessageRequest.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(DecodeAuthorizationMessageRequest = exports.DecodeAuthorizationMessageRequest || (exports.DecodeAuthorizationMessageRequest = {}));
+var DecodeAuthorizationMessageResponse;
+(function (DecodeAuthorizationMessageResponse) {
+    DecodeAuthorizationMessageResponse.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(DecodeAuthorizationMessageResponse = exports.DecodeAuthorizationMessageResponse || (exports.DecodeAuthorizationMessageResponse = {}));
+var InvalidAuthorizationMessageException;
+(function (InvalidAuthorizationMessageException) {
+    InvalidAuthorizationMessageException.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(InvalidAuthorizationMessageException = exports.InvalidAuthorizationMessageException || (exports.InvalidAuthorizationMessageException = {}));
+var GetAccessKeyInfoRequest;
+(function (GetAccessKeyInfoRequest) {
+    GetAccessKeyInfoRequest.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(GetAccessKeyInfoRequest = exports.GetAccessKeyInfoRequest || (exports.GetAccessKeyInfoRequest = {}));
+var GetAccessKeyInfoResponse;
+(function (GetAccessKeyInfoResponse) {
+    GetAccessKeyInfoResponse.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(GetAccessKeyInfoResponse = exports.GetAccessKeyInfoResponse || (exports.GetAccessKeyInfoResponse = {}));
+var GetCallerIdentityRequest;
+(function (GetCallerIdentityRequest) {
+    GetCallerIdentityRequest.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(GetCallerIdentityRequest = exports.GetCallerIdentityRequest || (exports.GetCallerIdentityRequest = {}));
+var GetCallerIdentityResponse;
+(function (GetCallerIdentityResponse) {
+    GetCallerIdentityResponse.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(GetCallerIdentityResponse = exports.GetCallerIdentityResponse || (exports.GetCallerIdentityResponse = {}));
+var GetFederationTokenRequest;
+(function (GetFederationTokenRequest) {
+    GetFederationTokenRequest.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(GetFederationTokenRequest = exports.GetFederationTokenRequest || (exports.GetFederationTokenRequest = {}));
+var FederatedUser;
+(function (FederatedUser) {
+    FederatedUser.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(FederatedUser = exports.FederatedUser || (exports.FederatedUser = {}));
+var GetFederationTokenResponse;
+(function (GetFederationTokenResponse) {
+    GetFederationTokenResponse.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(GetFederationTokenResponse = exports.GetFederationTokenResponse || (exports.GetFederationTokenResponse = {}));
+var GetSessionTokenRequest;
+(function (GetSessionTokenRequest) {
+    GetSessionTokenRequest.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(GetSessionTokenRequest = exports.GetSessionTokenRequest || (exports.GetSessionTokenRequest = {}));
+var GetSessionTokenResponse;
+(function (GetSessionTokenResponse) {
+    GetSessionTokenResponse.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(GetSessionTokenResponse = exports.GetSessionTokenResponse || (exports.GetSessionTokenResponse = {}));
+//# sourceMappingURL=models_0.js.map
+
+/***/ }),
+
+/***/ 6528:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.deserializeAws_queryGetSessionTokenCommand = exports.deserializeAws_queryGetFederationTokenCommand = exports.deserializeAws_queryGetCallerIdentityCommand = exports.deserializeAws_queryGetAccessKeyInfoCommand = exports.deserializeAws_queryDecodeAuthorizationMessageCommand = exports.deserializeAws_queryAssumeRoleWithWebIdentityCommand = exports.deserializeAws_queryAssumeRoleWithSAMLCommand = exports.deserializeAws_queryAssumeRoleCommand = exports.serializeAws_queryGetSessionTokenCommand = exports.serializeAws_queryGetFederationTokenCommand = exports.serializeAws_queryGetCallerIdentityCommand = exports.serializeAws_queryGetAccessKeyInfoCommand = exports.serializeAws_queryDecodeAuthorizationMessageCommand = exports.serializeAws_queryAssumeRoleWithWebIdentityCommand = exports.serializeAws_queryAssumeRoleWithSAMLCommand = exports.serializeAws_queryAssumeRoleCommand = void 0;
+const protocol_http_1 = __nccwpck_require__(7498);
+const smithy_client_1 = __nccwpck_require__(2223);
+const fast_xml_parser_1 = __nccwpck_require__(7448);
+const serializeAws_queryAssumeRoleCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-www-form-urlencoded",
+    };
+    let body;
+    body = buildFormUrlencodedString({
+        ...serializeAws_queryAssumeRoleRequest(input, context),
+        Action: "AssumeRole",
+        Version: "2011-06-15",
+    });
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_queryAssumeRoleCommand = serializeAws_queryAssumeRoleCommand;
+const serializeAws_queryAssumeRoleWithSAMLCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-www-form-urlencoded",
+    };
+    let body;
+    body = buildFormUrlencodedString({
+        ...serializeAws_queryAssumeRoleWithSAMLRequest(input, context),
+        Action: "AssumeRoleWithSAML",
+        Version: "2011-06-15",
+    });
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_queryAssumeRoleWithSAMLCommand = serializeAws_queryAssumeRoleWithSAMLCommand;
+const serializeAws_queryAssumeRoleWithWebIdentityCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-www-form-urlencoded",
+    };
+    let body;
+    body = buildFormUrlencodedString({
+        ...serializeAws_queryAssumeRoleWithWebIdentityRequest(input, context),
+        Action: "AssumeRoleWithWebIdentity",
+        Version: "2011-06-15",
+    });
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_queryAssumeRoleWithWebIdentityCommand = serializeAws_queryAssumeRoleWithWebIdentityCommand;
+const serializeAws_queryDecodeAuthorizationMessageCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-www-form-urlencoded",
+    };
+    let body;
+    body = buildFormUrlencodedString({
+        ...serializeAws_queryDecodeAuthorizationMessageRequest(input, context),
+        Action: "DecodeAuthorizationMessage",
+        Version: "2011-06-15",
+    });
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_queryDecodeAuthorizationMessageCommand = serializeAws_queryDecodeAuthorizationMessageCommand;
+const serializeAws_queryGetAccessKeyInfoCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-www-form-urlencoded",
+    };
+    let body;
+    body = buildFormUrlencodedString({
+        ...serializeAws_queryGetAccessKeyInfoRequest(input, context),
+        Action: "GetAccessKeyInfo",
+        Version: "2011-06-15",
+    });
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_queryGetAccessKeyInfoCommand = serializeAws_queryGetAccessKeyInfoCommand;
+const serializeAws_queryGetCallerIdentityCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-www-form-urlencoded",
+    };
+    let body;
+    body = buildFormUrlencodedString({
+        ...serializeAws_queryGetCallerIdentityRequest(input, context),
+        Action: "GetCallerIdentity",
+        Version: "2011-06-15",
+    });
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_queryGetCallerIdentityCommand = serializeAws_queryGetCallerIdentityCommand;
+const serializeAws_queryGetFederationTokenCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-www-form-urlencoded",
+    };
+    let body;
+    body = buildFormUrlencodedString({
+        ...serializeAws_queryGetFederationTokenRequest(input, context),
+        Action: "GetFederationToken",
+        Version: "2011-06-15",
+    });
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_queryGetFederationTokenCommand = serializeAws_queryGetFederationTokenCommand;
+const serializeAws_queryGetSessionTokenCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-www-form-urlencoded",
+    };
+    let body;
+    body = buildFormUrlencodedString({
+        ...serializeAws_queryGetSessionTokenRequest(input, context),
+        Action: "GetSessionToken",
+        Version: "2011-06-15",
+    });
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_queryGetSessionTokenCommand = serializeAws_queryGetSessionTokenCommand;
+const deserializeAws_queryAssumeRoleCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_queryAssumeRoleCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_queryAssumeRoleResponse(data.AssumeRoleResult, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_queryAssumeRoleCommand = deserializeAws_queryAssumeRoleCommand;
+const deserializeAws_queryAssumeRoleCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseBody(output.body, context),
+    };
+    let response;
+    let errorCode = "UnknownError";
+    errorCode = loadQueryErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "ExpiredTokenException":
+        case "com.amazonaws.sts#ExpiredTokenException":
+            response = {
+                ...(await deserializeAws_queryExpiredTokenExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "MalformedPolicyDocumentException":
+        case "com.amazonaws.sts#MalformedPolicyDocumentException":
+            response = {
+                ...(await deserializeAws_queryMalformedPolicyDocumentExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "PackedPolicyTooLargeException":
+        case "com.amazonaws.sts#PackedPolicyTooLargeException":
+            response = {
+                ...(await deserializeAws_queryPackedPolicyTooLargeExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "RegionDisabledException":
+        case "com.amazonaws.sts#RegionDisabledException":
+            response = {
+                ...(await deserializeAws_queryRegionDisabledExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        default:
+            const parsedBody = parsedOutput.body;
+            errorCode = parsedBody.Error.code || parsedBody.Error.Code || errorCode;
+            response = {
+                ...parsedBody.Error,
+                name: `${errorCode}`,
+                message: parsedBody.Error.message || parsedBody.Error.Message || errorCode,
+                $fault: "client",
+                $metadata: deserializeMetadata(output),
+            };
+    }
+    const message = response.message || response.Message || errorCode;
+    response.message = message;
+    delete response.Message;
+    return Promise.reject(Object.assign(new Error(message), response));
+};
+const deserializeAws_queryAssumeRoleWithSAMLCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_queryAssumeRoleWithSAMLCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_queryAssumeRoleWithSAMLResponse(data.AssumeRoleWithSAMLResult, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_queryAssumeRoleWithSAMLCommand = deserializeAws_queryAssumeRoleWithSAMLCommand;
+const deserializeAws_queryAssumeRoleWithSAMLCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseBody(output.body, context),
+    };
+    let response;
+    let errorCode = "UnknownError";
+    errorCode = loadQueryErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "ExpiredTokenException":
+        case "com.amazonaws.sts#ExpiredTokenException":
+            response = {
+                ...(await deserializeAws_queryExpiredTokenExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "IDPRejectedClaimException":
+        case "com.amazonaws.sts#IDPRejectedClaimException":
+            response = {
+                ...(await deserializeAws_queryIDPRejectedClaimExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "InvalidIdentityTokenException":
+        case "com.amazonaws.sts#InvalidIdentityTokenException":
+            response = {
+                ...(await deserializeAws_queryInvalidIdentityTokenExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "MalformedPolicyDocumentException":
+        case "com.amazonaws.sts#MalformedPolicyDocumentException":
+            response = {
+                ...(await deserializeAws_queryMalformedPolicyDocumentExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "PackedPolicyTooLargeException":
+        case "com.amazonaws.sts#PackedPolicyTooLargeException":
+            response = {
+                ...(await deserializeAws_queryPackedPolicyTooLargeExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "RegionDisabledException":
+        case "com.amazonaws.sts#RegionDisabledException":
+            response = {
+                ...(await deserializeAws_queryRegionDisabledExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        default:
+            const parsedBody = parsedOutput.body;
+            errorCode = parsedBody.Error.code || parsedBody.Error.Code || errorCode;
+            response = {
+                ...parsedBody.Error,
+                name: `${errorCode}`,
+                message: parsedBody.Error.message || parsedBody.Error.Message || errorCode,
+                $fault: "client",
+                $metadata: deserializeMetadata(output),
+            };
+    }
+    const message = response.message || response.Message || errorCode;
+    response.message = message;
+    delete response.Message;
+    return Promise.reject(Object.assign(new Error(message), response));
+};
+const deserializeAws_queryAssumeRoleWithWebIdentityCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_queryAssumeRoleWithWebIdentityCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_queryAssumeRoleWithWebIdentityResponse(data.AssumeRoleWithWebIdentityResult, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_queryAssumeRoleWithWebIdentityCommand = deserializeAws_queryAssumeRoleWithWebIdentityCommand;
+const deserializeAws_queryAssumeRoleWithWebIdentityCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseBody(output.body, context),
+    };
+    let response;
+    let errorCode = "UnknownError";
+    errorCode = loadQueryErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "ExpiredTokenException":
+        case "com.amazonaws.sts#ExpiredTokenException":
+            response = {
+                ...(await deserializeAws_queryExpiredTokenExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "IDPCommunicationErrorException":
+        case "com.amazonaws.sts#IDPCommunicationErrorException":
+            response = {
+                ...(await deserializeAws_queryIDPCommunicationErrorExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "IDPRejectedClaimException":
+        case "com.amazonaws.sts#IDPRejectedClaimException":
+            response = {
+                ...(await deserializeAws_queryIDPRejectedClaimExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "InvalidIdentityTokenException":
+        case "com.amazonaws.sts#InvalidIdentityTokenException":
+            response = {
+                ...(await deserializeAws_queryInvalidIdentityTokenExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "MalformedPolicyDocumentException":
+        case "com.amazonaws.sts#MalformedPolicyDocumentException":
+            response = {
+                ...(await deserializeAws_queryMalformedPolicyDocumentExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "PackedPolicyTooLargeException":
+        case "com.amazonaws.sts#PackedPolicyTooLargeException":
+            response = {
+                ...(await deserializeAws_queryPackedPolicyTooLargeExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "RegionDisabledException":
+        case "com.amazonaws.sts#RegionDisabledException":
+            response = {
+                ...(await deserializeAws_queryRegionDisabledExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        default:
+            const parsedBody = parsedOutput.body;
+            errorCode = parsedBody.Error.code || parsedBody.Error.Code || errorCode;
+            response = {
+                ...parsedBody.Error,
+                name: `${errorCode}`,
+                message: parsedBody.Error.message || parsedBody.Error.Message || errorCode,
+                $fault: "client",
+                $metadata: deserializeMetadata(output),
+            };
+    }
+    const message = response.message || response.Message || errorCode;
+    response.message = message;
+    delete response.Message;
+    return Promise.reject(Object.assign(new Error(message), response));
+};
+const deserializeAws_queryDecodeAuthorizationMessageCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_queryDecodeAuthorizationMessageCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_queryDecodeAuthorizationMessageResponse(data.DecodeAuthorizationMessageResult, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_queryDecodeAuthorizationMessageCommand = deserializeAws_queryDecodeAuthorizationMessageCommand;
+const deserializeAws_queryDecodeAuthorizationMessageCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseBody(output.body, context),
+    };
+    let response;
+    let errorCode = "UnknownError";
+    errorCode = loadQueryErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InvalidAuthorizationMessageException":
+        case "com.amazonaws.sts#InvalidAuthorizationMessageException":
+            response = {
+                ...(await deserializeAws_queryInvalidAuthorizationMessageExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        default:
+            const parsedBody = parsedOutput.body;
+            errorCode = parsedBody.Error.code || parsedBody.Error.Code || errorCode;
+            response = {
+                ...parsedBody.Error,
+                name: `${errorCode}`,
+                message: parsedBody.Error.message || parsedBody.Error.Message || errorCode,
+                $fault: "client",
+                $metadata: deserializeMetadata(output),
+            };
+    }
+    const message = response.message || response.Message || errorCode;
+    response.message = message;
+    delete response.Message;
+    return Promise.reject(Object.assign(new Error(message), response));
+};
+const deserializeAws_queryGetAccessKeyInfoCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_queryGetAccessKeyInfoCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_queryGetAccessKeyInfoResponse(data.GetAccessKeyInfoResult, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_queryGetAccessKeyInfoCommand = deserializeAws_queryGetAccessKeyInfoCommand;
+const deserializeAws_queryGetAccessKeyInfoCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseBody(output.body, context),
+    };
+    let response;
+    let errorCode = "UnknownError";
+    errorCode = loadQueryErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        default:
+            const parsedBody = parsedOutput.body;
+            errorCode = parsedBody.Error.code || parsedBody.Error.Code || errorCode;
+            response = {
+                ...parsedBody.Error,
+                name: `${errorCode}`,
+                message: parsedBody.Error.message || parsedBody.Error.Message || errorCode,
+                $fault: "client",
+                $metadata: deserializeMetadata(output),
+            };
+    }
+    const message = response.message || response.Message || errorCode;
+    response.message = message;
+    delete response.Message;
+    return Promise.reject(Object.assign(new Error(message), response));
+};
+const deserializeAws_queryGetCallerIdentityCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_queryGetCallerIdentityCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_queryGetCallerIdentityResponse(data.GetCallerIdentityResult, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_queryGetCallerIdentityCommand = deserializeAws_queryGetCallerIdentityCommand;
+const deserializeAws_queryGetCallerIdentityCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseBody(output.body, context),
+    };
+    let response;
+    let errorCode = "UnknownError";
+    errorCode = loadQueryErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        default:
+            const parsedBody = parsedOutput.body;
+            errorCode = parsedBody.Error.code || parsedBody.Error.Code || errorCode;
+            response = {
+                ...parsedBody.Error,
+                name: `${errorCode}`,
+                message: parsedBody.Error.message || parsedBody.Error.Message || errorCode,
+                $fault: "client",
+                $metadata: deserializeMetadata(output),
+            };
+    }
+    const message = response.message || response.Message || errorCode;
+    response.message = message;
+    delete response.Message;
+    return Promise.reject(Object.assign(new Error(message), response));
+};
+const deserializeAws_queryGetFederationTokenCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_queryGetFederationTokenCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_queryGetFederationTokenResponse(data.GetFederationTokenResult, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_queryGetFederationTokenCommand = deserializeAws_queryGetFederationTokenCommand;
+const deserializeAws_queryGetFederationTokenCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseBody(output.body, context),
+    };
+    let response;
+    let errorCode = "UnknownError";
+    errorCode = loadQueryErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "MalformedPolicyDocumentException":
+        case "com.amazonaws.sts#MalformedPolicyDocumentException":
+            response = {
+                ...(await deserializeAws_queryMalformedPolicyDocumentExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "PackedPolicyTooLargeException":
+        case "com.amazonaws.sts#PackedPolicyTooLargeException":
+            response = {
+                ...(await deserializeAws_queryPackedPolicyTooLargeExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        case "RegionDisabledException":
+        case "com.amazonaws.sts#RegionDisabledException":
+            response = {
+                ...(await deserializeAws_queryRegionDisabledExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        default:
+            const parsedBody = parsedOutput.body;
+            errorCode = parsedBody.Error.code || parsedBody.Error.Code || errorCode;
+            response = {
+                ...parsedBody.Error,
+                name: `${errorCode}`,
+                message: parsedBody.Error.message || parsedBody.Error.Message || errorCode,
+                $fault: "client",
+                $metadata: deserializeMetadata(output),
+            };
+    }
+    const message = response.message || response.Message || errorCode;
+    response.message = message;
+    delete response.Message;
+    return Promise.reject(Object.assign(new Error(message), response));
+};
+const deserializeAws_queryGetSessionTokenCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_queryGetSessionTokenCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_queryGetSessionTokenResponse(data.GetSessionTokenResult, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_queryGetSessionTokenCommand = deserializeAws_queryGetSessionTokenCommand;
+const deserializeAws_queryGetSessionTokenCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseBody(output.body, context),
+    };
+    let response;
+    let errorCode = "UnknownError";
+    errorCode = loadQueryErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "RegionDisabledException":
+        case "com.amazonaws.sts#RegionDisabledException":
+            response = {
+                ...(await deserializeAws_queryRegionDisabledExceptionResponse(parsedOutput, context)),
+                name: errorCode,
+                $metadata: deserializeMetadata(output),
+            };
+            break;
+        default:
+            const parsedBody = parsedOutput.body;
+            errorCode = parsedBody.Error.code || parsedBody.Error.Code || errorCode;
+            response = {
+                ...parsedBody.Error,
+                name: `${errorCode}`,
+                message: parsedBody.Error.message || parsedBody.Error.Message || errorCode,
+                $fault: "client",
+                $metadata: deserializeMetadata(output),
+            };
+    }
+    const message = response.message || response.Message || errorCode;
+    response.message = message;
+    delete response.Message;
+    return Promise.reject(Object.assign(new Error(message), response));
+};
+const deserializeAws_queryExpiredTokenExceptionResponse = async (parsedOutput, context) => {
+    const body = parsedOutput.body;
+    const deserialized = deserializeAws_queryExpiredTokenException(body.Error, context);
+    const contents = {
+        name: "ExpiredTokenException",
+        $fault: "client",
+        $metadata: deserializeMetadata(parsedOutput),
+        ...deserialized,
+    };
+    return contents;
+};
+const deserializeAws_queryIDPCommunicationErrorExceptionResponse = async (parsedOutput, context) => {
+    const body = parsedOutput.body;
+    const deserialized = deserializeAws_queryIDPCommunicationErrorException(body.Error, context);
+    const contents = {
+        name: "IDPCommunicationErrorException",
+        $fault: "client",
+        $metadata: deserializeMetadata(parsedOutput),
+        ...deserialized,
+    };
+    return contents;
+};
+const deserializeAws_queryIDPRejectedClaimExceptionResponse = async (parsedOutput, context) => {
+    const body = parsedOutput.body;
+    const deserialized = deserializeAws_queryIDPRejectedClaimException(body.Error, context);
+    const contents = {
+        name: "IDPRejectedClaimException",
+        $fault: "client",
+        $metadata: deserializeMetadata(parsedOutput),
+        ...deserialized,
+    };
+    return contents;
+};
+const deserializeAws_queryInvalidAuthorizationMessageExceptionResponse = async (parsedOutput, context) => {
+    const body = parsedOutput.body;
+    const deserialized = deserializeAws_queryInvalidAuthorizationMessageException(body.Error, context);
+    const contents = {
+        name: "InvalidAuthorizationMessageException",
+        $fault: "client",
+        $metadata: deserializeMetadata(parsedOutput),
+        ...deserialized,
+    };
+    return contents;
+};
+const deserializeAws_queryInvalidIdentityTokenExceptionResponse = async (parsedOutput, context) => {
+    const body = parsedOutput.body;
+    const deserialized = deserializeAws_queryInvalidIdentityTokenException(body.Error, context);
+    const contents = {
+        name: "InvalidIdentityTokenException",
+        $fault: "client",
+        $metadata: deserializeMetadata(parsedOutput),
+        ...deserialized,
+    };
+    return contents;
+};
+const deserializeAws_queryMalformedPolicyDocumentExceptionResponse = async (parsedOutput, context) => {
+    const body = parsedOutput.body;
+    const deserialized = deserializeAws_queryMalformedPolicyDocumentException(body.Error, context);
+    const contents = {
+        name: "MalformedPolicyDocumentException",
+        $fault: "client",
+        $metadata: deserializeMetadata(parsedOutput),
+        ...deserialized,
+    };
+    return contents;
+};
+const deserializeAws_queryPackedPolicyTooLargeExceptionResponse = async (parsedOutput, context) => {
+    const body = parsedOutput.body;
+    const deserialized = deserializeAws_queryPackedPolicyTooLargeException(body.Error, context);
+    const contents = {
+        name: "PackedPolicyTooLargeException",
+        $fault: "client",
+        $metadata: deserializeMetadata(parsedOutput),
+        ...deserialized,
+    };
+    return contents;
+};
+const deserializeAws_queryRegionDisabledExceptionResponse = async (parsedOutput, context) => {
+    const body = parsedOutput.body;
+    const deserialized = deserializeAws_queryRegionDisabledException(body.Error, context);
+    const contents = {
+        name: "RegionDisabledException",
+        $fault: "client",
+        $metadata: deserializeMetadata(parsedOutput),
+        ...deserialized,
+    };
+    return contents;
+};
+const serializeAws_queryAssumeRoleRequest = (input, context) => {
+    const entries = {};
+    if (input.RoleArn !== undefined && input.RoleArn !== null) {
+        entries["RoleArn"] = input.RoleArn;
+    }
+    if (input.RoleSessionName !== undefined && input.RoleSessionName !== null) {
+        entries["RoleSessionName"] = input.RoleSessionName;
+    }
+    if (input.PolicyArns !== undefined && input.PolicyArns !== null) {
+        const memberEntries = serializeAws_querypolicyDescriptorListType(input.PolicyArns, context);
+        Object.entries(memberEntries).forEach(([key, value]) => {
+            const loc = `PolicyArns.${key}`;
+            entries[loc] = value;
+        });
+    }
+    if (input.Policy !== undefined && input.Policy !== null) {
+        entries["Policy"] = input.Policy;
+    }
+    if (input.DurationSeconds !== undefined && input.DurationSeconds !== null) {
+        entries["DurationSeconds"] = input.DurationSeconds;
+    }
+    if (input.Tags !== undefined && input.Tags !== null) {
+        const memberEntries = serializeAws_querytagListType(input.Tags, context);
+        Object.entries(memberEntries).forEach(([key, value]) => {
+            const loc = `Tags.${key}`;
+            entries[loc] = value;
+        });
+    }
+    if (input.TransitiveTagKeys !== undefined && input.TransitiveTagKeys !== null) {
+        const memberEntries = serializeAws_querytagKeyListType(input.TransitiveTagKeys, context);
+        Object.entries(memberEntries).forEach(([key, value]) => {
+            const loc = `TransitiveTagKeys.${key}`;
+            entries[loc] = value;
+        });
+    }
+    if (input.ExternalId !== undefined && input.ExternalId !== null) {
+        entries["ExternalId"] = input.ExternalId;
+    }
+    if (input.SerialNumber !== undefined && input.SerialNumber !== null) {
+        entries["SerialNumber"] = input.SerialNumber;
+    }
+    if (input.TokenCode !== undefined && input.TokenCode !== null) {
+        entries["TokenCode"] = input.TokenCode;
+    }
+    return entries;
+};
+const serializeAws_queryAssumeRoleWithSAMLRequest = (input, context) => {
+    const entries = {};
+    if (input.RoleArn !== undefined && input.RoleArn !== null) {
+        entries["RoleArn"] = input.RoleArn;
+    }
+    if (input.PrincipalArn !== undefined && input.PrincipalArn !== null) {
+        entries["PrincipalArn"] = input.PrincipalArn;
+    }
+    if (input.SAMLAssertion !== undefined && input.SAMLAssertion !== null) {
+        entries["SAMLAssertion"] = input.SAMLAssertion;
+    }
+    if (input.PolicyArns !== undefined && input.PolicyArns !== null) {
+        const memberEntries = serializeAws_querypolicyDescriptorListType(input.PolicyArns, context);
+        Object.entries(memberEntries).forEach(([key, value]) => {
+            const loc = `PolicyArns.${key}`;
+            entries[loc] = value;
+        });
+    }
+    if (input.Policy !== undefined && input.Policy !== null) {
+        entries["Policy"] = input.Policy;
+    }
+    if (input.DurationSeconds !== undefined && input.DurationSeconds !== null) {
+        entries["DurationSeconds"] = input.DurationSeconds;
+    }
+    return entries;
+};
+const serializeAws_queryAssumeRoleWithWebIdentityRequest = (input, context) => {
+    const entries = {};
+    if (input.RoleArn !== undefined && input.RoleArn !== null) {
+        entries["RoleArn"] = input.RoleArn;
+    }
+    if (input.RoleSessionName !== undefined && input.RoleSessionName !== null) {
+        entries["RoleSessionName"] = input.RoleSessionName;
+    }
+    if (input.WebIdentityToken !== undefined && input.WebIdentityToken !== null) {
+        entries["WebIdentityToken"] = input.WebIdentityToken;
+    }
+    if (input.ProviderId !== undefined && input.ProviderId !== null) {
+        entries["ProviderId"] = input.ProviderId;
+    }
+    if (input.PolicyArns !== undefined && input.PolicyArns !== null) {
+        const memberEntries = serializeAws_querypolicyDescriptorListType(input.PolicyArns, context);
+        Object.entries(memberEntries).forEach(([key, value]) => {
+            const loc = `PolicyArns.${key}`;
+            entries[loc] = value;
+        });
+    }
+    if (input.Policy !== undefined && input.Policy !== null) {
+        entries["Policy"] = input.Policy;
+    }
+    if (input.DurationSeconds !== undefined && input.DurationSeconds !== null) {
+        entries["DurationSeconds"] = input.DurationSeconds;
+    }
+    return entries;
+};
+const serializeAws_queryDecodeAuthorizationMessageRequest = (input, context) => {
+    const entries = {};
+    if (input.EncodedMessage !== undefined && input.EncodedMessage !== null) {
+        entries["EncodedMessage"] = input.EncodedMessage;
+    }
+    return entries;
+};
+const serializeAws_queryGetAccessKeyInfoRequest = (input, context) => {
+    const entries = {};
+    if (input.AccessKeyId !== undefined && input.AccessKeyId !== null) {
+        entries["AccessKeyId"] = input.AccessKeyId;
+    }
+    return entries;
+};
+const serializeAws_queryGetCallerIdentityRequest = (input, context) => {
+    const entries = {};
+    return entries;
+};
+const serializeAws_queryGetFederationTokenRequest = (input, context) => {
+    const entries = {};
+    if (input.Name !== undefined && input.Name !== null) {
+        entries["Name"] = input.Name;
+    }
+    if (input.Policy !== undefined && input.Policy !== null) {
+        entries["Policy"] = input.Policy;
+    }
+    if (input.PolicyArns !== undefined && input.PolicyArns !== null) {
+        const memberEntries = serializeAws_querypolicyDescriptorListType(input.PolicyArns, context);
+        Object.entries(memberEntries).forEach(([key, value]) => {
+            const loc = `PolicyArns.${key}`;
+            entries[loc] = value;
+        });
+    }
+    if (input.DurationSeconds !== undefined && input.DurationSeconds !== null) {
+        entries["DurationSeconds"] = input.DurationSeconds;
+    }
+    if (input.Tags !== undefined && input.Tags !== null) {
+        const memberEntries = serializeAws_querytagListType(input.Tags, context);
+        Object.entries(memberEntries).forEach(([key, value]) => {
+            const loc = `Tags.${key}`;
+            entries[loc] = value;
+        });
+    }
+    return entries;
+};
+const serializeAws_queryGetSessionTokenRequest = (input, context) => {
+    const entries = {};
+    if (input.DurationSeconds !== undefined && input.DurationSeconds !== null) {
+        entries["DurationSeconds"] = input.DurationSeconds;
+    }
+    if (input.SerialNumber !== undefined && input.SerialNumber !== null) {
+        entries["SerialNumber"] = input.SerialNumber;
+    }
+    if (input.TokenCode !== undefined && input.TokenCode !== null) {
+        entries["TokenCode"] = input.TokenCode;
+    }
+    return entries;
+};
+const serializeAws_querypolicyDescriptorListType = (input, context) => {
+    const entries = {};
+    let counter = 1;
+    for (let entry of input) {
+        if (entry === null) {
+            continue;
+        }
+        const memberEntries = serializeAws_queryPolicyDescriptorType(entry, context);
+        Object.entries(memberEntries).forEach(([key, value]) => {
+            entries[`member.${counter}.${key}`] = value;
+        });
+        counter++;
+    }
+    return entries;
+};
+const serializeAws_queryPolicyDescriptorType = (input, context) => {
+    const entries = {};
+    if (input.arn !== undefined && input.arn !== null) {
+        entries["arn"] = input.arn;
+    }
+    return entries;
+};
+const serializeAws_queryTag = (input, context) => {
+    const entries = {};
+    if (input.Key !== undefined && input.Key !== null) {
+        entries["Key"] = input.Key;
+    }
+    if (input.Value !== undefined && input.Value !== null) {
+        entries["Value"] = input.Value;
+    }
+    return entries;
+};
+const serializeAws_querytagKeyListType = (input, context) => {
+    const entries = {};
+    let counter = 1;
+    for (let entry of input) {
+        if (entry === null) {
+            continue;
+        }
+        entries[`member.${counter}`] = entry;
+        counter++;
+    }
+    return entries;
+};
+const serializeAws_querytagListType = (input, context) => {
+    const entries = {};
+    let counter = 1;
+    for (let entry of input) {
+        if (entry === null) {
+            continue;
+        }
+        const memberEntries = serializeAws_queryTag(entry, context);
+        Object.entries(memberEntries).forEach(([key, value]) => {
+            entries[`member.${counter}.${key}`] = value;
+        });
+        counter++;
+    }
+    return entries;
+};
+const deserializeAws_queryAssumedRoleUser = (output, context) => {
+    let contents = {
+        AssumedRoleId: undefined,
+        Arn: undefined,
+    };
+    if (output["AssumedRoleId"] !== undefined) {
+        contents.AssumedRoleId = output["AssumedRoleId"];
+    }
+    if (output["Arn"] !== undefined) {
+        contents.Arn = output["Arn"];
+    }
+    return contents;
+};
+const deserializeAws_queryAssumeRoleResponse = (output, context) => {
+    let contents = {
+        Credentials: undefined,
+        AssumedRoleUser: undefined,
+        PackedPolicySize: undefined,
+    };
+    if (output["Credentials"] !== undefined) {
+        contents.Credentials = deserializeAws_queryCredentials(output["Credentials"], context);
+    }
+    if (output["AssumedRoleUser"] !== undefined) {
+        contents.AssumedRoleUser = deserializeAws_queryAssumedRoleUser(output["AssumedRoleUser"], context);
+    }
+    if (output["PackedPolicySize"] !== undefined) {
+        contents.PackedPolicySize = parseInt(output["PackedPolicySize"]);
+    }
+    return contents;
+};
+const deserializeAws_queryAssumeRoleWithSAMLResponse = (output, context) => {
+    let contents = {
+        Credentials: undefined,
+        AssumedRoleUser: undefined,
+        PackedPolicySize: undefined,
+        Subject: undefined,
+        SubjectType: undefined,
+        Issuer: undefined,
+        Audience: undefined,
+        NameQualifier: undefined,
+    };
+    if (output["Credentials"] !== undefined) {
+        contents.Credentials = deserializeAws_queryCredentials(output["Credentials"], context);
+    }
+    if (output["AssumedRoleUser"] !== undefined) {
+        contents.AssumedRoleUser = deserializeAws_queryAssumedRoleUser(output["AssumedRoleUser"], context);
+    }
+    if (output["PackedPolicySize"] !== undefined) {
+        contents.PackedPolicySize = parseInt(output["PackedPolicySize"]);
+    }
+    if (output["Subject"] !== undefined) {
+        contents.Subject = output["Subject"];
+    }
+    if (output["SubjectType"] !== undefined) {
+        contents.SubjectType = output["SubjectType"];
+    }
+    if (output["Issuer"] !== undefined) {
+        contents.Issuer = output["Issuer"];
+    }
+    if (output["Audience"] !== undefined) {
+        contents.Audience = output["Audience"];
+    }
+    if (output["NameQualifier"] !== undefined) {
+        contents.NameQualifier = output["NameQualifier"];
+    }
+    return contents;
+};
+const deserializeAws_queryAssumeRoleWithWebIdentityResponse = (output, context) => {
+    let contents = {
+        Credentials: undefined,
+        SubjectFromWebIdentityToken: undefined,
+        AssumedRoleUser: undefined,
+        PackedPolicySize: undefined,
+        Provider: undefined,
+        Audience: undefined,
+    };
+    if (output["Credentials"] !== undefined) {
+        contents.Credentials = deserializeAws_queryCredentials(output["Credentials"], context);
+    }
+    if (output["SubjectFromWebIdentityToken"] !== undefined) {
+        contents.SubjectFromWebIdentityToken = output["SubjectFromWebIdentityToken"];
+    }
+    if (output["AssumedRoleUser"] !== undefined) {
+        contents.AssumedRoleUser = deserializeAws_queryAssumedRoleUser(output["AssumedRoleUser"], context);
+    }
+    if (output["PackedPolicySize"] !== undefined) {
+        contents.PackedPolicySize = parseInt(output["PackedPolicySize"]);
+    }
+    if (output["Provider"] !== undefined) {
+        contents.Provider = output["Provider"];
+    }
+    if (output["Audience"] !== undefined) {
+        contents.Audience = output["Audience"];
+    }
+    return contents;
+};
+const deserializeAws_queryCredentials = (output, context) => {
+    let contents = {
+        AccessKeyId: undefined,
+        SecretAccessKey: undefined,
+        SessionToken: undefined,
+        Expiration: undefined,
+    };
+    if (output["AccessKeyId"] !== undefined) {
+        contents.AccessKeyId = output["AccessKeyId"];
+    }
+    if (output["SecretAccessKey"] !== undefined) {
+        contents.SecretAccessKey = output["SecretAccessKey"];
+    }
+    if (output["SessionToken"] !== undefined) {
+        contents.SessionToken = output["SessionToken"];
+    }
+    if (output["Expiration"] !== undefined) {
+        contents.Expiration = new Date(output["Expiration"]);
+    }
+    return contents;
+};
+const deserializeAws_queryDecodeAuthorizationMessageResponse = (output, context) => {
+    let contents = {
+        DecodedMessage: undefined,
+    };
+    if (output["DecodedMessage"] !== undefined) {
+        contents.DecodedMessage = output["DecodedMessage"];
+    }
+    return contents;
+};
+const deserializeAws_queryExpiredTokenException = (output, context) => {
+    let contents = {
+        message: undefined,
+    };
+    if (output["message"] !== undefined) {
+        contents.message = output["message"];
+    }
+    return contents;
+};
+const deserializeAws_queryFederatedUser = (output, context) => {
+    let contents = {
+        FederatedUserId: undefined,
+        Arn: undefined,
+    };
+    if (output["FederatedUserId"] !== undefined) {
+        contents.FederatedUserId = output["FederatedUserId"];
+    }
+    if (output["Arn"] !== undefined) {
+        contents.Arn = output["Arn"];
+    }
+    return contents;
+};
+const deserializeAws_queryGetAccessKeyInfoResponse = (output, context) => {
+    let contents = {
+        Account: undefined,
+    };
+    if (output["Account"] !== undefined) {
+        contents.Account = output["Account"];
+    }
+    return contents;
+};
+const deserializeAws_queryGetCallerIdentityResponse = (output, context) => {
+    let contents = {
+        UserId: undefined,
+        Account: undefined,
+        Arn: undefined,
+    };
+    if (output["UserId"] !== undefined) {
+        contents.UserId = output["UserId"];
+    }
+    if (output["Account"] !== undefined) {
+        contents.Account = output["Account"];
+    }
+    if (output["Arn"] !== undefined) {
+        contents.Arn = output["Arn"];
+    }
+    return contents;
+};
+const deserializeAws_queryGetFederationTokenResponse = (output, context) => {
+    let contents = {
+        Credentials: undefined,
+        FederatedUser: undefined,
+        PackedPolicySize: undefined,
+    };
+    if (output["Credentials"] !== undefined) {
+        contents.Credentials = deserializeAws_queryCredentials(output["Credentials"], context);
+    }
+    if (output["FederatedUser"] !== undefined) {
+        contents.FederatedUser = deserializeAws_queryFederatedUser(output["FederatedUser"], context);
+    }
+    if (output["PackedPolicySize"] !== undefined) {
+        contents.PackedPolicySize = parseInt(output["PackedPolicySize"]);
+    }
+    return contents;
+};
+const deserializeAws_queryGetSessionTokenResponse = (output, context) => {
+    let contents = {
+        Credentials: undefined,
+    };
+    if (output["Credentials"] !== undefined) {
+        contents.Credentials = deserializeAws_queryCredentials(output["Credentials"], context);
+    }
+    return contents;
+};
+const deserializeAws_queryIDPCommunicationErrorException = (output, context) => {
+    let contents = {
+        message: undefined,
+    };
+    if (output["message"] !== undefined) {
+        contents.message = output["message"];
+    }
+    return contents;
+};
+const deserializeAws_queryIDPRejectedClaimException = (output, context) => {
+    let contents = {
+        message: undefined,
+    };
+    if (output["message"] !== undefined) {
+        contents.message = output["message"];
+    }
+    return contents;
+};
+const deserializeAws_queryInvalidAuthorizationMessageException = (output, context) => {
+    let contents = {
+        message: undefined,
+    };
+    if (output["message"] !== undefined) {
+        contents.message = output["message"];
+    }
+    return contents;
+};
+const deserializeAws_queryInvalidIdentityTokenException = (output, context) => {
+    let contents = {
+        message: undefined,
+    };
+    if (output["message"] !== undefined) {
+        contents.message = output["message"];
+    }
+    return contents;
+};
+const deserializeAws_queryMalformedPolicyDocumentException = (output, context) => {
+    let contents = {
+        message: undefined,
+    };
+    if (output["message"] !== undefined) {
+        contents.message = output["message"];
+    }
+    return contents;
+};
+const deserializeAws_queryPackedPolicyTooLargeException = (output, context) => {
+    let contents = {
+        message: undefined,
+    };
+    if (output["message"] !== undefined) {
+        contents.message = output["message"];
+    }
+    return contents;
+};
+const deserializeAws_queryRegionDisabledException = (output, context) => {
+    let contents = {
+        message: undefined,
+    };
+    if (output["message"] !== undefined) {
+        contents.message = output["message"];
+    }
+    return contents;
+};
+const deserializeMetadata = (output) => {
+    var _a;
+    return ({
+        httpStatusCode: output.statusCode,
+        requestId: (_a = output.headers["x-amzn-requestid"]) !== null && _a !== void 0 ? _a : output.headers["x-amzn-request-id"],
+        extendedRequestId: output.headers["x-amz-id-2"],
+        cfId: output.headers["x-amz-cf-id"],
+    });
+};
+// Collect low-level response body stream to Uint8Array.
+const collectBody = (streamBody = new Uint8Array(), context) => {
+    if (streamBody instanceof Uint8Array) {
+        return Promise.resolve(streamBody);
+    }
+    return context.streamCollector(streamBody) || Promise.resolve(new Uint8Array());
+};
+// Encode Uint8Array data into string with utf-8.
+const collectBodyString = (streamBody, context) => collectBody(streamBody, context).then((body) => context.utf8Encoder(body));
+const buildHttpRpcRequest = async (context, headers, path, resolvedHostname, body) => {
+    const { hostname, protocol = "https", port } = await context.endpoint();
+    const contents = {
+        protocol,
+        hostname,
+        port,
+        method: "POST",
+        path,
+        headers,
+    };
+    if (resolvedHostname !== undefined) {
+        contents.hostname = resolvedHostname;
+    }
+    if (body !== undefined) {
+        contents.body = body;
+    }
+    return new protocol_http_1.HttpRequest(contents);
+};
+const decodeEscapedXML = (str) => str
+    .replace(/&amp;/g, "&")
+    .replace(/&apos;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/&gt;/g, ">")
+    .replace(/&lt;/g, "<");
+const parseBody = (streamBody, context) => collectBodyString(streamBody, context).then((encoded) => {
+    if (encoded.length) {
+        const parsedObj = fast_xml_parser_1.parse(encoded, {
+            attributeNamePrefix: "",
+            ignoreAttributes: false,
+            parseNodeValue: false,
+            trimValues: false,
+            tagValueProcessor: (val, tagName) => (val.trim() === "" ? "" : decodeEscapedXML(val)),
+        });
+        const textNodeName = "#text";
+        const key = Object.keys(parsedObj)[0];
+        const parsedObjToReturn = parsedObj[key];
+        if (parsedObjToReturn[textNodeName]) {
+            parsedObjToReturn[key] = parsedObjToReturn[textNodeName];
+            delete parsedObjToReturn[textNodeName];
+        }
+        return smithy_client_1.getValueFromTextNode(parsedObjToReturn);
+    }
+    return {};
+});
+const buildFormUrlencodedString = (formEntries) => Object.entries(formEntries)
+    .map(([key, value]) => smithy_client_1.extendedEncodeURIComponent(key) + "=" + smithy_client_1.extendedEncodeURIComponent(value))
+    .join("&");
+const loadQueryErrorCode = (output, data) => {
+    if (data.Error.Code !== undefined) {
+        return data.Error.Code;
+    }
+    if (output.statusCode == 404) {
+        return "NotFound";
+    }
+    return "";
+};
+//# sourceMappingURL=Aws_query.js.map
+
+/***/ }),
+
+/***/ 4675:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ClientDefaultValues = void 0;
+const tslib_1 = __nccwpck_require__(4351);
+const package_json_1 = tslib_1.__importDefault(__nccwpck_require__(1508));
+const defaultStsRoleAssumers_1 = __nccwpck_require__(2418);
+const config_resolver_1 = __nccwpck_require__(7229);
+const credential_provider_node_1 = __nccwpck_require__(8030);
+const hash_node_1 = __nccwpck_require__(408);
+const middleware_retry_1 = __nccwpck_require__(7000);
+const node_config_provider_1 = __nccwpck_require__(1124);
+const node_http_handler_1 = __nccwpck_require__(5168);
+const util_base64_node_1 = __nccwpck_require__(2091);
+const util_body_length_node_1 = __nccwpck_require__(286);
+const util_user_agent_node_1 = __nccwpck_require__(4717);
+const util_utf8_node_1 = __nccwpck_require__(5227);
+const runtimeConfig_shared_1 = __nccwpck_require__(8137);
+/**
+ * @internal
+ */
+exports.ClientDefaultValues = {
+    ...runtimeConfig_shared_1.ClientSharedValues,
+    runtime: "node",
+    base64Decoder: util_base64_node_1.fromBase64,
+    base64Encoder: util_base64_node_1.toBase64,
+    bodyLengthChecker: util_body_length_node_1.calculateBodyLength,
+    credentialDefaultProvider: defaultStsRoleAssumers_1.decorateDefaultCredentialProvider(credential_provider_node_1.defaultProvider),
+    defaultUserAgentProvider: util_user_agent_node_1.defaultUserAgent({
+        serviceId: runtimeConfig_shared_1.ClientSharedValues.serviceId,
+        clientVersion: package_json_1.default.version,
+    }),
+    maxAttempts: node_config_provider_1.loadConfig(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
+    region: node_config_provider_1.loadConfig(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
+    requestHandler: new node_http_handler_1.NodeHttpHandler(),
+    sha256: hash_node_1.Hash.bind(null, "sha256"),
+    streamCollector: node_http_handler_1.streamCollector,
+    utf8Decoder: util_utf8_node_1.fromUtf8,
+    utf8Encoder: util_utf8_node_1.toUtf8,
+};
+//# sourceMappingURL=runtimeConfig.js.map
+
+/***/ }),
+
+/***/ 8137:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ClientSharedValues = void 0;
+const endpoints_1 = __nccwpck_require__(2798);
+const url_parser_1 = __nccwpck_require__(9427);
+/**
+ * @internal
+ */
+exports.ClientSharedValues = {
+    apiVersion: "2011-06-15",
+    disableHostPrefix: false,
+    logger: {},
+    regionInfoProvider: endpoints_1.defaultRegionInfoProvider,
+    serviceId: "STS",
+    urlParser: url_parser_1.parseUrl,
+};
+//# sourceMappingURL=runtimeConfig.shared.js.map
+
+/***/ }),
+
 /***/ 445:
 /***/ ((__unused_webpack_module, exports) => {
 
@@ -18160,30 +21293,31 @@ exports.ENV_CMDS_AUTH_TOKEN = "AWS_CONTAINER_AUTHORIZATION_TOKEN";
  * Creates a credential provider that will source credentials from the ECS
  * Container Metadata Service
  */
-function fromContainerMetadata(init = {}) {
+const fromContainerMetadata = (init = {}) => {
     const { timeout, maxRetries } = RemoteProviderInit_1.providerConfigFromInit(init);
-    return () => {
-        return getCmdsUri().then((url) => retry_1.retry(async () => {
-            const credsResponse = JSON.parse(await requestFromEcsImds(timeout, url));
-            if (!ImdsCredentials_1.isImdsCredentials(credsResponse)) {
-                throw new property_provider_1.ProviderError("Invalid response received from instance metadata service.");
-            }
-            return ImdsCredentials_1.fromImdsCredentials(credsResponse);
-        }, maxRetries));
-    };
-}
+    return () => retry_1.retry(async () => {
+        const requestOptions = await getCmdsUri();
+        const credsResponse = JSON.parse(await requestFromEcsImds(timeout, requestOptions));
+        if (!ImdsCredentials_1.isImdsCredentials(credsResponse)) {
+            throw new property_provider_1.ProviderError("Invalid response received from instance metadata service.");
+        }
+        return ImdsCredentials_1.fromImdsCredentials(credsResponse);
+    }, maxRetries);
+};
 exports.fromContainerMetadata = fromContainerMetadata;
-function requestFromEcsImds(timeout, options) {
+const requestFromEcsImds = async (timeout, options) => {
     if (process.env[exports.ENV_CMDS_AUTH_TOKEN]) {
-        const { headers = {} } = options;
-        headers.Authorization = process.env[exports.ENV_CMDS_AUTH_TOKEN];
-        options.headers = headers;
+        options.headers = {
+            ...options.headers,
+            Authorization: process.env[exports.ENV_CMDS_AUTH_TOKEN],
+        };
     }
-    return httpRequest_1.httpRequest({
+    const buffer = await httpRequest_1.httpRequest({
         ...options,
         timeout,
-    }).then((buffer) => buffer.toString());
-}
+    });
+    return buffer.toString();
+};
 const CMDS_IP = "169.254.170.2";
 const GREENGRASS_HOSTS = {
     localhost: true,
@@ -18193,31 +21327,31 @@ const GREENGRASS_PROTOCOLS = {
     "http:": true,
     "https:": true,
 };
-function getCmdsUri() {
+const getCmdsUri = async () => {
     if (process.env[exports.ENV_CMDS_RELATIVE_URI]) {
-        return Promise.resolve({
+        return {
             hostname: CMDS_IP,
             path: process.env[exports.ENV_CMDS_RELATIVE_URI],
-        });
+        };
     }
     if (process.env[exports.ENV_CMDS_FULL_URI]) {
         const parsed = url_1.parse(process.env[exports.ENV_CMDS_FULL_URI]);
         if (!parsed.hostname || !(parsed.hostname in GREENGRASS_HOSTS)) {
-            return Promise.reject(new property_provider_1.ProviderError(`${parsed.hostname} is not a valid container metadata service hostname`, false));
+            throw new property_provider_1.ProviderError(`${parsed.hostname} is not a valid container metadata service hostname`, false);
         }
         if (!parsed.protocol || !(parsed.protocol in GREENGRASS_PROTOCOLS)) {
-            return Promise.reject(new property_provider_1.ProviderError(`${parsed.protocol} is not a valid container metadata service protocol`, false));
+            throw new property_provider_1.ProviderError(`${parsed.protocol} is not a valid container metadata service protocol`, false);
         }
-        return Promise.resolve({
+        return {
             ...parsed,
             port: parsed.port ? parseInt(parsed.port, 10) : undefined,
-        });
+        };
     }
-    return Promise.reject(new property_provider_1.ProviderError("The container metadata credential provider cannot be used unless" +
+    throw new property_provider_1.ProviderError("The container metadata credential provider cannot be used unless" +
         ` the ${exports.ENV_CMDS_RELATIVE_URI} or ${exports.ENV_CMDS_FULL_URI} environment` +
-        " variable is set", false));
-}
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbUNvbnRhaW5lck1ldGFkYXRhLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2Zyb21Db250YWluZXJNZXRhZGF0YS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSxrRUFBMkQ7QUFHM0QsNkJBQTRCO0FBRTVCLDhEQUEyRDtBQUMzRCxzRUFBMEY7QUFDMUYsNEVBQWlHO0FBQ2pHLGtEQUErQztBQUVsQyxRQUFBLGlCQUFpQixHQUFHLG9DQUFvQyxDQUFDO0FBQ3pELFFBQUEscUJBQXFCLEdBQUcsd0NBQXdDLENBQUM7QUFDakUsUUFBQSxtQkFBbUIsR0FBRyxtQ0FBbUMsQ0FBQztBQUV2RTs7O0dBR0c7QUFDSCxTQUFnQixxQkFBcUIsQ0FBQyxPQUEyQixFQUFFO0lBQ2pFLE1BQU0sRUFBRSxPQUFPLEVBQUUsVUFBVSxFQUFFLEdBQUcsMkNBQXNCLENBQUMsSUFBSSxDQUFDLENBQUM7SUFDN0QsT0FBTyxHQUFHLEVBQUU7UUFDVixPQUFPLFVBQVUsRUFBRSxDQUFDLElBQUksQ0FBQyxDQUFDLEdBQUcsRUFBRSxFQUFFLENBQy9CLGFBQUssQ0FBQyxLQUFLLElBQUksRUFBRTtZQUNmLE1BQU0sYUFBYSxHQUFHLElBQUksQ0FBQyxLQUFLLENBQUMsTUFBTSxrQkFBa0IsQ0FBQyxPQUFPLEVBQUUsR0FBRyxDQUFDLENBQUMsQ0FBQztZQUN6RSxJQUFJLENBQUMsbUNBQWlCLENBQUMsYUFBYSxDQUFDLEVBQUU7Z0JBQ3JDLE1BQU0sSUFBSSxpQ0FBYSxDQUFDLDJEQUEyRCxDQUFDLENBQUM7YUFDdEY7WUFFRCxPQUFPLHFDQUFtQixDQUFDLGFBQWEsQ0FBQyxDQUFDO1FBQzVDLENBQUMsRUFBRSxVQUFVLENBQUMsQ0FDZixDQUFDO0lBQ0osQ0FBQyxDQUFDO0FBQ0osQ0FBQztBQWRELHNEQWNDO0FBRUQsU0FBUyxrQkFBa0IsQ0FBQyxPQUFlLEVBQUUsT0FBdUI7SUFDbEUsSUFBSSxPQUFPLENBQUMsR0FBRyxDQUFDLDJCQUFtQixDQUFDLEVBQUU7UUFDcEMsTUFBTSxFQUFFLE9BQU8sR0FBRyxFQUFFLEVBQUUsR0FBRyxPQUFPLENBQUM7UUFDakMsT0FBTyxDQUFDLGFBQWEsR0FBRyxPQUFPLENBQUMsR0FBRyxDQUFDLDJCQUFtQixDQUFDLENBQUM7UUFDekQsT0FBTyxDQUFDLE9BQU8sR0FBRyxPQUFPLENBQUM7S0FDM0I7SUFFRCxPQUFPLHlCQUFXLENBQUM7UUFDakIsR0FBRyxPQUFPO1FBQ1YsT0FBTztLQUNSLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxNQUFNLEVBQUUsRUFBRSxDQUFDLE1BQU0sQ0FBQyxRQUFRLEVBQUUsQ0FBQyxDQUFDO0FBQ3pDLENBQUM7QUFFRCxNQUFNLE9BQU8sR0FBRyxlQUFlLENBQUM7QUFDaEMsTUFBTSxnQkFBZ0IsR0FBRztJQUN2QixTQUFTLEVBQUUsSUFBSTtJQUNmLFdBQVcsRUFBRSxJQUFJO0NBQ2xCLENBQUM7QUFDRixNQUFNLG9CQUFvQixHQUFHO0lBQzNCLE9BQU8sRUFBRSxJQUFJO0lBQ2IsUUFBUSxFQUFFLElBQUk7Q0FDZixDQUFDO0FBRUYsU0FBUyxVQUFVO0lBQ2pCLElBQUksT0FBTyxDQUFDLEdBQUcsQ0FBQyw2QkFBcUIsQ0FBQyxFQUFFO1FBQ3RDLE9BQU8sT0FBTyxDQUFDLE9BQU8sQ0FBQztZQUNyQixRQUFRLEVBQUUsT0FBTztZQUNqQixJQUFJLEVBQUUsT0FBTyxDQUFDLEdBQUcsQ0FBQyw2QkFBcUIsQ0FBQztTQUN6QyxDQUFDLENBQUM7S0FDSjtJQUVELElBQUksT0FBTyxDQUFDLEdBQUcsQ0FBQyx5QkFBaUIsQ0FBQyxFQUFFO1FBQ2xDLE1BQU0sTUFBTSxHQUFHLFdBQUssQ0FBQyxPQUFPLENBQUMsR0FBRyxDQUFDLHlCQUFpQixDQUFFLENBQUMsQ0FBQztRQUN0RCxJQUFJLENBQUMsTUFBTSxDQUFDLFFBQVEsSUFBSSxDQUFDLENBQUMsTUFBTSxDQUFDLFFBQVEsSUFBSSxnQkFBZ0IsQ0FBQyxFQUFFO1lBQzlELE9BQU8sT0FBTyxDQUFDLE1BQU0sQ0FDbkIsSUFBSSxpQ0FBYSxDQUFDLEdBQUcsTUFBTSxDQUFDLFFBQVEscURBQXFELEVBQUUsS0FBSyxDQUFDLENBQ2xHLENBQUM7U0FDSDtRQUVELElBQUksQ0FBQyxNQUFNLENBQUMsUUFBUSxJQUFJLENBQUMsQ0FBQyxNQUFNLENBQUMsUUFBUSxJQUFJLG9CQUFvQixDQUFDLEVBQUU7WUFDbEUsT0FBTyxPQUFPLENBQUMsTUFBTSxDQUNuQixJQUFJLGlDQUFhLENBQUMsR0FBRyxNQUFNLENBQUMsUUFBUSxxREFBcUQsRUFBRSxLQUFLLENBQUMsQ0FDbEcsQ0FBQztTQUNIO1FBRUQsT0FBTyxPQUFPLENBQUMsT0FBTyxDQUFDO1lBQ3JCLEdBQUcsTUFBTTtZQUNULElBQUksRUFBRSxNQUFNLENBQUMsSUFBSSxDQUFDLENBQUMsQ0FBQyxRQUFRLENBQUMsTUFBTSxDQUFDLElBQUksRUFBRSxFQUFFLENBQUMsQ0FBQyxDQUFDLENBQUMsU0FBUztTQUMxRCxDQUFDLENBQUM7S0FDSjtJQUVELE9BQU8sT0FBTyxDQUFDLE1BQU0sQ0FDbkIsSUFBSSxpQ0FBYSxDQUNmLGtFQUFrRTtRQUNoRSxRQUFRLDZCQUFxQixPQUFPLHlCQUFpQixjQUFjO1FBQ25FLGtCQUFrQixFQUNwQixLQUFLLENBQ04sQ0FDRixDQUFDO0FBQ0osQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFByb3ZpZGVyRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvcHJvcGVydHktcHJvdmlkZXJcIjtcbmltcG9ydCB7IENyZWRlbnRpYWxQcm92aWRlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuaW1wb3J0IHsgUmVxdWVzdE9wdGlvbnMgfSBmcm9tIFwiaHR0cFwiO1xuaW1wb3J0IHsgcGFyc2UgfSBmcm9tIFwidXJsXCI7XG5cbmltcG9ydCB7IGh0dHBSZXF1ZXN0IH0gZnJvbSBcIi4vcmVtb3RlUHJvdmlkZXIvaHR0cFJlcXVlc3RcIjtcbmltcG9ydCB7IGZyb21JbWRzQ3JlZGVudGlhbHMsIGlzSW1kc0NyZWRlbnRpYWxzIH0gZnJvbSBcIi4vcmVtb3RlUHJvdmlkZXIvSW1kc0NyZWRlbnRpYWxzXCI7XG5pbXBvcnQgeyBwcm92aWRlckNvbmZpZ0Zyb21Jbml0LCBSZW1vdGVQcm92aWRlckluaXQgfSBmcm9tIFwiLi9yZW1vdGVQcm92aWRlci9SZW1vdGVQcm92aWRlckluaXRcIjtcbmltcG9ydCB7IHJldHJ5IH0gZnJvbSBcIi4vcmVtb3RlUHJvdmlkZXIvcmV0cnlcIjtcblxuZXhwb3J0IGNvbnN0IEVOVl9DTURTX0ZVTExfVVJJID0gXCJBV1NfQ09OVEFJTkVSX0NSRURFTlRJQUxTX0ZVTExfVVJJXCI7XG5leHBvcnQgY29uc3QgRU5WX0NNRFNfUkVMQVRJVkVfVVJJID0gXCJBV1NfQ09OVEFJTkVSX0NSRURFTlRJQUxTX1JFTEFUSVZFX1VSSVwiO1xuZXhwb3J0IGNvbnN0IEVOVl9DTURTX0FVVEhfVE9LRU4gPSBcIkFXU19DT05UQUlORVJfQVVUSE9SSVpBVElPTl9UT0tFTlwiO1xuXG4vKipcbiAqIENyZWF0ZXMgYSBjcmVkZW50aWFsIHByb3ZpZGVyIHRoYXQgd2lsbCBzb3VyY2UgY3JlZGVudGlhbHMgZnJvbSB0aGUgRUNTXG4gKiBDb250YWluZXIgTWV0YWRhdGEgU2VydmljZVxuICovXG5leHBvcnQgZnVuY3Rpb24gZnJvbUNvbnRhaW5lck1ldGFkYXRhKGluaXQ6IFJlbW90ZVByb3ZpZGVySW5pdCA9IHt9KTogQ3JlZGVudGlhbFByb3ZpZGVyIHtcbiAgY29uc3QgeyB0aW1lb3V0LCBtYXhSZXRyaWVzIH0gPSBwcm92aWRlckNvbmZpZ0Zyb21Jbml0KGluaXQpO1xuICByZXR1cm4gKCkgPT4ge1xuICAgIHJldHVybiBnZXRDbWRzVXJpKCkudGhlbigodXJsKSA9PlxuICAgICAgcmV0cnkoYXN5bmMgKCkgPT4ge1xuICAgICAgICBjb25zdCBjcmVkc1Jlc3BvbnNlID0gSlNPTi5wYXJzZShhd2FpdCByZXF1ZXN0RnJvbUVjc0ltZHModGltZW91dCwgdXJsKSk7XG4gICAgICAgIGlmICghaXNJbWRzQ3JlZGVudGlhbHMoY3JlZHNSZXNwb25zZSkpIHtcbiAgICAgICAgICB0aHJvdyBuZXcgUHJvdmlkZXJFcnJvcihcIkludmFsaWQgcmVzcG9uc2UgcmVjZWl2ZWQgZnJvbSBpbnN0YW5jZSBtZXRhZGF0YSBzZXJ2aWNlLlwiKTtcbiAgICAgICAgfVxuXG4gICAgICAgIHJldHVybiBmcm9tSW1kc0NyZWRlbnRpYWxzKGNyZWRzUmVzcG9uc2UpO1xuICAgICAgfSwgbWF4UmV0cmllcylcbiAgICApO1xuICB9O1xufVxuXG5mdW5jdGlvbiByZXF1ZXN0RnJvbUVjc0ltZHModGltZW91dDogbnVtYmVyLCBvcHRpb25zOiBSZXF1ZXN0T3B0aW9ucyk6IFByb21pc2U8c3RyaW5nPiB7XG4gIGlmIChwcm9jZXNzLmVudltFTlZfQ01EU19BVVRIX1RPS0VOXSkge1xuICAgIGNvbnN0IHsgaGVhZGVycyA9IHt9IH0gPSBvcHRpb25zO1xuICAgIGhlYWRlcnMuQXV0aG9yaXphdGlvbiA9IHByb2Nlc3MuZW52W0VOVl9DTURTX0FVVEhfVE9LRU5dO1xuICAgIG9wdGlvbnMuaGVhZGVycyA9IGhlYWRlcnM7XG4gIH1cblxuICByZXR1cm4gaHR0cFJlcXVlc3Qoe1xuICAgIC4uLm9wdGlvbnMsXG4gICAgdGltZW91dCxcbiAgfSkudGhlbigoYnVmZmVyKSA9PiBidWZmZXIudG9TdHJpbmcoKSk7XG59XG5cbmNvbnN0IENNRFNfSVAgPSBcIjE2OS4yNTQuMTcwLjJcIjtcbmNvbnN0IEdSRUVOR1JBU1NfSE9TVFMgPSB7XG4gIGxvY2FsaG9zdDogdHJ1ZSxcbiAgXCIxMjcuMC4wLjFcIjogdHJ1ZSxcbn07XG5jb25zdCBHUkVFTkdSQVNTX1BST1RPQ09MUyA9IHtcbiAgXCJodHRwOlwiOiB0cnVlLFxuICBcImh0dHBzOlwiOiB0cnVlLFxufTtcblxuZnVuY3Rpb24gZ2V0Q21kc1VyaSgpOiBQcm9taXNlPFJlcXVlc3RPcHRpb25zPiB7XG4gIGlmIChwcm9jZXNzLmVudltFTlZfQ01EU19SRUxBVElWRV9VUkldKSB7XG4gICAgcmV0dXJuIFByb21pc2UucmVzb2x2ZSh7XG4gICAgICBob3N0bmFtZTogQ01EU19JUCxcbiAgICAgIHBhdGg6IHByb2Nlc3MuZW52W0VOVl9DTURTX1JFTEFUSVZFX1VSSV0sXG4gICAgfSk7XG4gIH1cblxuICBpZiAocHJvY2Vzcy5lbnZbRU5WX0NNRFNfRlVMTF9VUkldKSB7XG4gICAgY29uc3QgcGFyc2VkID0gcGFyc2UocHJvY2Vzcy5lbnZbRU5WX0NNRFNfRlVMTF9VUkldISk7XG4gICAgaWYgKCFwYXJzZWQuaG9zdG5hbWUgfHwgIShwYXJzZWQuaG9zdG5hbWUgaW4gR1JFRU5HUkFTU19IT1NUUykpIHtcbiAgICAgIHJldHVybiBQcm9taXNlLnJlamVjdChcbiAgICAgICAgbmV3IFByb3ZpZGVyRXJyb3IoYCR7cGFyc2VkLmhvc3RuYW1lfSBpcyBub3QgYSB2YWxpZCBjb250YWluZXIgbWV0YWRhdGEgc2VydmljZSBob3N0bmFtZWAsIGZhbHNlKVxuICAgICAgKTtcbiAgICB9XG5cbiAgICBpZiAoIXBhcnNlZC5wcm90b2NvbCB8fCAhKHBhcnNlZC5wcm90b2NvbCBpbiBHUkVFTkdSQVNTX1BST1RPQ09MUykpIHtcbiAgICAgIHJldHVybiBQcm9taXNlLnJlamVjdChcbiAgICAgICAgbmV3IFByb3ZpZGVyRXJyb3IoYCR7cGFyc2VkLnByb3RvY29sfSBpcyBub3QgYSB2YWxpZCBjb250YWluZXIgbWV0YWRhdGEgc2VydmljZSBwcm90b2NvbGAsIGZhbHNlKVxuICAgICAgKTtcbiAgICB9XG5cbiAgICByZXR1cm4gUHJvbWlzZS5yZXNvbHZlKHtcbiAgICAgIC4uLnBhcnNlZCxcbiAgICAgIHBvcnQ6IHBhcnNlZC5wb3J0ID8gcGFyc2VJbnQocGFyc2VkLnBvcnQsIDEwKSA6IHVuZGVmaW5lZCxcbiAgICB9KTtcbiAgfVxuXG4gIHJldHVybiBQcm9taXNlLnJlamVjdChcbiAgICBuZXcgUHJvdmlkZXJFcnJvcihcbiAgICAgIFwiVGhlIGNvbnRhaW5lciBtZXRhZGF0YSBjcmVkZW50aWFsIHByb3ZpZGVyIGNhbm5vdCBiZSB1c2VkIHVubGVzc1wiICtcbiAgICAgICAgYCB0aGUgJHtFTlZfQ01EU19SRUxBVElWRV9VUkl9IG9yICR7RU5WX0NNRFNfRlVMTF9VUkl9IGVudmlyb25tZW50YCArXG4gICAgICAgIFwiIHZhcmlhYmxlIGlzIHNldFwiLFxuICAgICAgZmFsc2VcbiAgICApXG4gICk7XG59XG4iXX0=
+        " variable is set", false);
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbUNvbnRhaW5lck1ldGFkYXRhLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2Zyb21Db250YWluZXJNZXRhZGF0YS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSxrRUFBMkQ7QUFHM0QsNkJBQTRCO0FBRTVCLDhEQUEyRDtBQUMzRCxzRUFBMEY7QUFDMUYsNEVBQWlHO0FBQ2pHLGtEQUErQztBQUVsQyxRQUFBLGlCQUFpQixHQUFHLG9DQUFvQyxDQUFDO0FBQ3pELFFBQUEscUJBQXFCLEdBQUcsd0NBQXdDLENBQUM7QUFDakUsUUFBQSxtQkFBbUIsR0FBRyxtQ0FBbUMsQ0FBQztBQUV2RTs7O0dBR0c7QUFDSSxNQUFNLHFCQUFxQixHQUFHLENBQUMsT0FBMkIsRUFBRSxFQUFzQixFQUFFO0lBQ3pGLE1BQU0sRUFBRSxPQUFPLEVBQUUsVUFBVSxFQUFFLEdBQUcsMkNBQXNCLENBQUMsSUFBSSxDQUFDLENBQUM7SUFDN0QsT0FBTyxHQUFHLEVBQUUsQ0FDVixhQUFLLENBQUMsS0FBSyxJQUFJLEVBQUU7UUFDZixNQUFNLGNBQWMsR0FBRyxNQUFNLFVBQVUsRUFBRSxDQUFDO1FBQzFDLE1BQU0sYUFBYSxHQUFHLElBQUksQ0FBQyxLQUFLLENBQUMsTUFBTSxrQkFBa0IsQ0FBQyxPQUFPLEVBQUUsY0FBYyxDQUFDLENBQUMsQ0FBQztRQUNwRixJQUFJLENBQUMsbUNBQWlCLENBQUMsYUFBYSxDQUFDLEVBQUU7WUFDckMsTUFBTSxJQUFJLGlDQUFhLENBQUMsMkRBQTJELENBQUMsQ0FBQztTQUN0RjtRQUNELE9BQU8scUNBQW1CLENBQUMsYUFBYSxDQUFDLENBQUM7SUFDNUMsQ0FBQyxFQUFFLFVBQVUsQ0FBQyxDQUFDO0FBQ25CLENBQUMsQ0FBQztBQVhXLFFBQUEscUJBQXFCLHlCQVdoQztBQUVGLE1BQU0sa0JBQWtCLEdBQUcsS0FBSyxFQUFFLE9BQWUsRUFBRSxPQUF1QixFQUFtQixFQUFFO0lBQzdGLElBQUksT0FBTyxDQUFDLEdBQUcsQ0FBQywyQkFBbUIsQ0FBQyxFQUFFO1FBQ3BDLE9BQU8sQ0FBQyxPQUFPLEdBQUc7WUFDaEIsR0FBRyxPQUFPLENBQUMsT0FBTztZQUNsQixhQUFhLEVBQUUsT0FBTyxDQUFDLEdBQUcsQ0FBQywyQkFBbUIsQ0FBQztTQUNoRCxDQUFDO0tBQ0g7SUFFRCxNQUFNLE1BQU0sR0FBRyxNQUFNLHlCQUFXLENBQUM7UUFDL0IsR0FBRyxPQUFPO1FBQ1YsT0FBTztLQUNSLENBQUMsQ0FBQztJQUNILE9BQU8sTUFBTSxDQUFDLFFBQVEsRUFBRSxDQUFDO0FBQzNCLENBQUMsQ0FBQztBQUVGLE1BQU0sT0FBTyxHQUFHLGVBQWUsQ0FBQztBQUNoQyxNQUFNLGdCQUFnQixHQUFHO0lBQ3ZCLFNBQVMsRUFBRSxJQUFJO0lBQ2YsV0FBVyxFQUFFLElBQUk7Q0FDbEIsQ0FBQztBQUNGLE1BQU0sb0JBQW9CLEdBQUc7SUFDM0IsT0FBTyxFQUFFLElBQUk7SUFDYixRQUFRLEVBQUUsSUFBSTtDQUNmLENBQUM7QUFFRixNQUFNLFVBQVUsR0FBRyxLQUFLLElBQTZCLEVBQUU7SUFDckQsSUFBSSxPQUFPLENBQUMsR0FBRyxDQUFDLDZCQUFxQixDQUFDLEVBQUU7UUFDdEMsT0FBTztZQUNMLFFBQVEsRUFBRSxPQUFPO1lBQ2pCLElBQUksRUFBRSxPQUFPLENBQUMsR0FBRyxDQUFDLDZCQUFxQixDQUFDO1NBQ3pDLENBQUM7S0FDSDtJQUVELElBQUksT0FBTyxDQUFDLEdBQUcsQ0FBQyx5QkFBaUIsQ0FBQyxFQUFFO1FBQ2xDLE1BQU0sTUFBTSxHQUFHLFdBQUssQ0FBQyxPQUFPLENBQUMsR0FBRyxDQUFDLHlCQUFpQixDQUFFLENBQUMsQ0FBQztRQUN0RCxJQUFJLENBQUMsTUFBTSxDQUFDLFFBQVEsSUFBSSxDQUFDLENBQUMsTUFBTSxDQUFDLFFBQVEsSUFBSSxnQkFBZ0IsQ0FBQyxFQUFFO1lBQzlELE1BQU0sSUFBSSxpQ0FBYSxDQUFDLEdBQUcsTUFBTSxDQUFDLFFBQVEscURBQXFELEVBQUUsS0FBSyxDQUFDLENBQUM7U0FDekc7UUFFRCxJQUFJLENBQUMsTUFBTSxDQUFDLFFBQVEsSUFBSSxDQUFDLENBQUMsTUFBTSxDQUFDLFFBQVEsSUFBSSxvQkFBb0IsQ0FBQyxFQUFFO1lBQ2xFLE1BQU0sSUFBSSxpQ0FBYSxDQUFDLEdBQUcsTUFBTSxDQUFDLFFBQVEscURBQXFELEVBQUUsS0FBSyxDQUFDLENBQUM7U0FDekc7UUFFRCxPQUFPO1lBQ0wsR0FBRyxNQUFNO1lBQ1QsSUFBSSxFQUFFLE1BQU0sQ0FBQyxJQUFJLENBQUMsQ0FBQyxDQUFDLFFBQVEsQ0FBQyxNQUFNLENBQUMsSUFBSSxFQUFFLEVBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxTQUFTO1NBQzFELENBQUM7S0FDSDtJQUVELE1BQU0sSUFBSSxpQ0FBYSxDQUNyQixrRUFBa0U7UUFDaEUsUUFBUSw2QkFBcUIsT0FBTyx5QkFBaUIsY0FBYztRQUNuRSxrQkFBa0IsRUFDcEIsS0FBSyxDQUNOLENBQUM7QUFDSixDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBQcm92aWRlckVycm9yIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3BlcnR5LXByb3ZpZGVyXCI7XG5pbXBvcnQgeyBDcmVkZW50aWFsUHJvdmlkZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcbmltcG9ydCB7IFJlcXVlc3RPcHRpb25zIH0gZnJvbSBcImh0dHBcIjtcbmltcG9ydCB7IHBhcnNlIH0gZnJvbSBcInVybFwiO1xuXG5pbXBvcnQgeyBodHRwUmVxdWVzdCB9IGZyb20gXCIuL3JlbW90ZVByb3ZpZGVyL2h0dHBSZXF1ZXN0XCI7XG5pbXBvcnQgeyBmcm9tSW1kc0NyZWRlbnRpYWxzLCBpc0ltZHNDcmVkZW50aWFscyB9IGZyb20gXCIuL3JlbW90ZVByb3ZpZGVyL0ltZHNDcmVkZW50aWFsc1wiO1xuaW1wb3J0IHsgcHJvdmlkZXJDb25maWdGcm9tSW5pdCwgUmVtb3RlUHJvdmlkZXJJbml0IH0gZnJvbSBcIi4vcmVtb3RlUHJvdmlkZXIvUmVtb3RlUHJvdmlkZXJJbml0XCI7XG5pbXBvcnQgeyByZXRyeSB9IGZyb20gXCIuL3JlbW90ZVByb3ZpZGVyL3JldHJ5XCI7XG5cbmV4cG9ydCBjb25zdCBFTlZfQ01EU19GVUxMX1VSSSA9IFwiQVdTX0NPTlRBSU5FUl9DUkVERU5USUFMU19GVUxMX1VSSVwiO1xuZXhwb3J0IGNvbnN0IEVOVl9DTURTX1JFTEFUSVZFX1VSSSA9IFwiQVdTX0NPTlRBSU5FUl9DUkVERU5USUFMU19SRUxBVElWRV9VUklcIjtcbmV4cG9ydCBjb25zdCBFTlZfQ01EU19BVVRIX1RPS0VOID0gXCJBV1NfQ09OVEFJTkVSX0FVVEhPUklaQVRJT05fVE9LRU5cIjtcblxuLyoqXG4gKiBDcmVhdGVzIGEgY3JlZGVudGlhbCBwcm92aWRlciB0aGF0IHdpbGwgc291cmNlIGNyZWRlbnRpYWxzIGZyb20gdGhlIEVDU1xuICogQ29udGFpbmVyIE1ldGFkYXRhIFNlcnZpY2VcbiAqL1xuZXhwb3J0IGNvbnN0IGZyb21Db250YWluZXJNZXRhZGF0YSA9IChpbml0OiBSZW1vdGVQcm92aWRlckluaXQgPSB7fSk6IENyZWRlbnRpYWxQcm92aWRlciA9PiB7XG4gIGNvbnN0IHsgdGltZW91dCwgbWF4UmV0cmllcyB9ID0gcHJvdmlkZXJDb25maWdGcm9tSW5pdChpbml0KTtcbiAgcmV0dXJuICgpID0+XG4gICAgcmV0cnkoYXN5bmMgKCkgPT4ge1xuICAgICAgY29uc3QgcmVxdWVzdE9wdGlvbnMgPSBhd2FpdCBnZXRDbWRzVXJpKCk7XG4gICAgICBjb25zdCBjcmVkc1Jlc3BvbnNlID0gSlNPTi5wYXJzZShhd2FpdCByZXF1ZXN0RnJvbUVjc0ltZHModGltZW91dCwgcmVxdWVzdE9wdGlvbnMpKTtcbiAgICAgIGlmICghaXNJbWRzQ3JlZGVudGlhbHMoY3JlZHNSZXNwb25zZSkpIHtcbiAgICAgICAgdGhyb3cgbmV3IFByb3ZpZGVyRXJyb3IoXCJJbnZhbGlkIHJlc3BvbnNlIHJlY2VpdmVkIGZyb20gaW5zdGFuY2UgbWV0YWRhdGEgc2VydmljZS5cIik7XG4gICAgICB9XG4gICAgICByZXR1cm4gZnJvbUltZHNDcmVkZW50aWFscyhjcmVkc1Jlc3BvbnNlKTtcbiAgICB9LCBtYXhSZXRyaWVzKTtcbn07XG5cbmNvbnN0IHJlcXVlc3RGcm9tRWNzSW1kcyA9IGFzeW5jICh0aW1lb3V0OiBudW1iZXIsIG9wdGlvbnM6IFJlcXVlc3RPcHRpb25zKTogUHJvbWlzZTxzdHJpbmc+ID0+IHtcbiAgaWYgKHByb2Nlc3MuZW52W0VOVl9DTURTX0FVVEhfVE9LRU5dKSB7XG4gICAgb3B0aW9ucy5oZWFkZXJzID0ge1xuICAgICAgLi4ub3B0aW9ucy5oZWFkZXJzLFxuICAgICAgQXV0aG9yaXphdGlvbjogcHJvY2Vzcy5lbnZbRU5WX0NNRFNfQVVUSF9UT0tFTl0sXG4gICAgfTtcbiAgfVxuXG4gIGNvbnN0IGJ1ZmZlciA9IGF3YWl0IGh0dHBSZXF1ZXN0KHtcbiAgICAuLi5vcHRpb25zLFxuICAgIHRpbWVvdXQsXG4gIH0pO1xuICByZXR1cm4gYnVmZmVyLnRvU3RyaW5nKCk7XG59O1xuXG5jb25zdCBDTURTX0lQID0gXCIxNjkuMjU0LjE3MC4yXCI7XG5jb25zdCBHUkVFTkdSQVNTX0hPU1RTID0ge1xuICBsb2NhbGhvc3Q6IHRydWUsXG4gIFwiMTI3LjAuMC4xXCI6IHRydWUsXG59O1xuY29uc3QgR1JFRU5HUkFTU19QUk9UT0NPTFMgPSB7XG4gIFwiaHR0cDpcIjogdHJ1ZSxcbiAgXCJodHRwczpcIjogdHJ1ZSxcbn07XG5cbmNvbnN0IGdldENtZHNVcmkgPSBhc3luYyAoKTogUHJvbWlzZTxSZXF1ZXN0T3B0aW9ucz4gPT4ge1xuICBpZiAocHJvY2Vzcy5lbnZbRU5WX0NNRFNfUkVMQVRJVkVfVVJJXSkge1xuICAgIHJldHVybiB7XG4gICAgICBob3N0bmFtZTogQ01EU19JUCxcbiAgICAgIHBhdGg6IHByb2Nlc3MuZW52W0VOVl9DTURTX1JFTEFUSVZFX1VSSV0sXG4gICAgfTtcbiAgfVxuXG4gIGlmIChwcm9jZXNzLmVudltFTlZfQ01EU19GVUxMX1VSSV0pIHtcbiAgICBjb25zdCBwYXJzZWQgPSBwYXJzZShwcm9jZXNzLmVudltFTlZfQ01EU19GVUxMX1VSSV0hKTtcbiAgICBpZiAoIXBhcnNlZC5ob3N0bmFtZSB8fCAhKHBhcnNlZC5ob3N0bmFtZSBpbiBHUkVFTkdSQVNTX0hPU1RTKSkge1xuICAgICAgdGhyb3cgbmV3IFByb3ZpZGVyRXJyb3IoYCR7cGFyc2VkLmhvc3RuYW1lfSBpcyBub3QgYSB2YWxpZCBjb250YWluZXIgbWV0YWRhdGEgc2VydmljZSBob3N0bmFtZWAsIGZhbHNlKTtcbiAgICB9XG5cbiAgICBpZiAoIXBhcnNlZC5wcm90b2NvbCB8fCAhKHBhcnNlZC5wcm90b2NvbCBpbiBHUkVFTkdSQVNTX1BST1RPQ09MUykpIHtcbiAgICAgIHRocm93IG5ldyBQcm92aWRlckVycm9yKGAke3BhcnNlZC5wcm90b2NvbH0gaXMgbm90IGEgdmFsaWQgY29udGFpbmVyIG1ldGFkYXRhIHNlcnZpY2UgcHJvdG9jb2xgLCBmYWxzZSk7XG4gICAgfVxuXG4gICAgcmV0dXJuIHtcbiAgICAgIC4uLnBhcnNlZCxcbiAgICAgIHBvcnQ6IHBhcnNlZC5wb3J0ID8gcGFyc2VJbnQocGFyc2VkLnBvcnQsIDEwKSA6IHVuZGVmaW5lZCxcbiAgICB9O1xuICB9XG5cbiAgdGhyb3cgbmV3IFByb3ZpZGVyRXJyb3IoXG4gICAgXCJUaGUgY29udGFpbmVyIG1ldGFkYXRhIGNyZWRlbnRpYWwgcHJvdmlkZXIgY2Fubm90IGJlIHVzZWQgdW5sZXNzXCIgK1xuICAgICAgYCB0aGUgJHtFTlZfQ01EU19SRUxBVElWRV9VUkl9IG9yICR7RU5WX0NNRFNfRlVMTF9VUkl9IGVudmlyb25tZW50YCArXG4gICAgICBcIiB2YXJpYWJsZSBpcyBzZXRcIixcbiAgICBmYWxzZVxuICApO1xufTtcbiJdfQ==
 
 /***/ }),
 
@@ -20116,7 +23250,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.StandardRetryStrategy = exports.DEFAULT_RETRY_MODE = exports.DEFAULT_MAX_ATTEMPTS = void 0;
 const protocol_http_1 = __nccwpck_require__(7498);
 const service_error_classification_1 = __nccwpck_require__(4011);
-const uuid_1 = __nccwpck_require__(2155);
+const uuid_1 = __nccwpck_require__(5840);
 const constants_1 = __nccwpck_require__(1285);
 const defaultRetryQuota_1 = __nccwpck_require__(6814);
 const delayDecider_1 = __nccwpck_require__(7659);
@@ -20603,6 +23737,30 @@ var __createBinding;
     exporter("__classPrivateFieldSet", __classPrivateFieldSet);
 });
 
+
+/***/ }),
+
+/***/ 9637:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.resolveStsAuthConfig = void 0;
+const middleware_signing_1 = __nccwpck_require__(2487);
+/**
+ * Set STS client constructor to `stsClientCtor` config parameter. It is used
+ * for role assumers for STS client internally. See `clients/client-sts/defaultStsRoleAssumers.ts`
+ * and `clients/client-sts/STSClient.ts`.
+ */
+const resolveStsAuthConfig = (input, stsClientCtor) => {
+    return middleware_signing_1.resolveAwsAuthConfig({
+        ...input,
+        stsClientCtor,
+    });
+};
+exports.resolveStsAuthConfig = resolveStsAuthConfig;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsb0VBQThHO0FBZ0I5Rzs7OztHQUlHO0FBQ0ksTUFBTSxvQkFBb0IsR0FBRyxDQUNsQyxLQUFrRCxFQUNsRCxhQUErRCxFQUNwQyxFQUFFO0lBQzdCLE9BQU8seUNBQW9CLENBQUM7UUFDMUIsR0FBRyxLQUFLO1FBQ1IsYUFBYTtLQUNkLENBQUMsQ0FBQztBQUNMLENBQUMsQ0FBQztBQVJXLFFBQUEsb0JBQW9CLHdCQVEvQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEF3c0F1dGhJbnB1dENvbmZpZywgQXdzQXV0aFJlc29sdmVkQ29uZmlnLCByZXNvbHZlQXdzQXV0aENvbmZpZyB9IGZyb20gXCJAYXdzLXNkay9taWRkbGV3YXJlLXNpZ25pbmdcIjtcbmltcG9ydCB7IENsaWVudCwgQ3JlZGVudGlhbHMsIEhhc2hDb25zdHJ1Y3RvciwgUGx1Z2dhYmxlLCBQcm92aWRlciwgUmVnaW9uSW5mb1Byb3ZpZGVyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmV4cG9ydCBpbnRlcmZhY2UgU3RzQXV0aElucHV0Q29uZmlnIGV4dGVuZHMgQXdzQXV0aElucHV0Q29uZmlnIHt9XG5pbnRlcmZhY2UgUHJldmlvdXNseVJlc29sdmVkIHtcbiAgY3JlZGVudGlhbERlZmF1bHRQcm92aWRlcjogKGlucHV0OiBhbnkpID0+IFByb3ZpZGVyPENyZWRlbnRpYWxzPjtcbiAgcmVnaW9uOiBzdHJpbmcgfCBQcm92aWRlcjxzdHJpbmc+O1xuICByZWdpb25JbmZvUHJvdmlkZXI6IFJlZ2lvbkluZm9Qcm92aWRlcjtcbiAgc2lnbmluZ05hbWU/OiBzdHJpbmc7XG4gIHNlcnZpY2VJZDogc3RyaW5nO1xuICBzaGEyNTY6IEhhc2hDb25zdHJ1Y3Rvcjtcbn1cbmV4cG9ydCBpbnRlcmZhY2UgU3RzQXV0aFJlc29sdmVkQ29uZmlnIGV4dGVuZHMgQXdzQXV0aFJlc29sdmVkQ29uZmlnIHtcbiAgc3RzQ2xpZW50Q3RvcjogbmV3IChjbGllbnRDb25maWc6IGFueSkgPT4gQ2xpZW50PGFueSwgYW55LCBhbnk+O1xufVxuXG4vKipcbiAqIFNldCBTVFMgY2xpZW50IGNvbnN0cnVjdG9yIHRvIGBzdHNDbGllbnRDdG9yYCBjb25maWcgcGFyYW1ldGVyLiBJdCBpcyB1c2VkXG4gKiBmb3Igcm9sZSBhc3N1bWVycyBmb3IgU1RTIGNsaWVudCBpbnRlcm5hbGx5LiBTZWUgYGNsaWVudHMvY2xpZW50LXN0cy9kZWZhdWx0U3RzUm9sZUFzc3VtZXJzLnRzYFxuICogYW5kIGBjbGllbnRzL2NsaWVudC1zdHMvU1RTQ2xpZW50LnRzYC5cbiAqL1xuZXhwb3J0IGNvbnN0IHJlc29sdmVTdHNBdXRoQ29uZmlnID0gPFQ+KFxuICBpbnB1dDogVCAmIFByZXZpb3VzbHlSZXNvbHZlZCAmIFN0c0F1dGhJbnB1dENvbmZpZyxcbiAgc3RzQ2xpZW50Q3RvcjogbmV3IChjbGllbnRDb25maWc6IGFueSkgPT4gQ2xpZW50PGFueSwgYW55LCBhbnk+XG4pOiBUICYgU3RzQXV0aFJlc29sdmVkQ29uZmlnID0+IHtcbiAgcmV0dXJuIHJlc29sdmVBd3NBdXRoQ29uZmlnKHtcbiAgICAuLi5pbnB1dCxcbiAgICBzdHNDbGllbnRDdG9yLFxuICB9KTtcbn07XG4iXX0=
 
 /***/ }),
 
@@ -26549,7 +29707,7 @@ exports.UA_APP_ID_INI_NAME = "sdk-ua-app-id";
 /**
  * Collect metrics from runtime to put into user agent.
  */
-const defaultUserAgent = ({ serviceId, clientVersion, }) => async () => {
+const defaultUserAgent = ({ serviceId, clientVersion }) => {
     const sections = [
         // sdk-metadata
         ["aws-sdk-js", clientVersion],
@@ -26569,18 +29727,22 @@ const defaultUserAgent = ({ serviceId, clientVersion, }) => async () => {
         // env-metadata
         sections.push([`exec-env/${process_1.env.AWS_EXECUTION_ENV}`]);
     }
-    const appId = await node_config_provider_1.loadConfig({
+    const appIdPromise = node_config_provider_1.loadConfig({
         environmentVariableSelector: (env) => env[exports.UA_APP_ID_ENV_NAME],
         configFileSelector: (profile) => profile[exports.UA_APP_ID_INI_NAME],
         default: undefined,
     })();
-    if (appId) {
-        sections.push([`app/${appId}`]);
-    }
-    return sections;
+    let resolvedUserAgent = undefined;
+    return async () => {
+        if (!resolvedUserAgent) {
+            const appId = await appIdPromise;
+            resolvedUserAgent = appId ? [...sections, [`app/${appId}`]] : [...sections];
+        }
+        return resolvedUserAgent;
+    };
 };
 exports.defaultUserAgent = defaultUserAgent;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsd0VBQTJEO0FBRTNELDJCQUF1QztBQUN2QyxxQ0FBd0M7QUFFM0IsUUFBQSxrQkFBa0IsR0FBRyxtQkFBbUIsQ0FBQztBQUN6QyxRQUFBLGtCQUFrQixHQUFHLGVBQWUsQ0FBQztBQU9sRDs7R0FFRztBQUNJLE1BQU0sZ0JBQWdCLEdBQUcsQ0FBQyxFQUMvQixTQUFTLEVBQ1QsYUFBYSxHQUNXLEVBQXVCLEVBQUUsQ0FBQyxLQUFLLElBQUksRUFBRTtJQUM3RCxNQUFNLFFBQVEsR0FBYztRQUMxQixlQUFlO1FBQ2YsQ0FBQyxZQUFZLEVBQUUsYUFBYSxDQUFDO1FBQzdCLGNBQWM7UUFDZCxDQUFDLE1BQU0sYUFBUSxFQUFFLEVBQUUsRUFBRSxZQUFPLEVBQUUsQ0FBQztRQUMvQixvQkFBb0I7UUFDcEIsaUVBQWlFO1FBQ2pFLENBQUMsU0FBUyxDQUFDO1FBQ1gsQ0FBQyxXQUFXLEVBQUUsR0FBRyxrQkFBUSxDQUFDLElBQUksRUFBRSxDQUFDO0tBQ2xDLENBQUM7SUFFRixJQUFJLFNBQVMsRUFBRTtRQUNiLGVBQWU7UUFDZiwrQ0FBK0M7UUFDL0MsUUFBUSxDQUFDLElBQUksQ0FBQyxDQUFDLE9BQU8sU0FBUyxFQUFFLEVBQUUsYUFBYSxDQUFDLENBQUMsQ0FBQztLQUNwRDtJQUVELElBQUksYUFBRyxDQUFDLGlCQUFpQixFQUFFO1FBQ3pCLGVBQWU7UUFDZixRQUFRLENBQUMsSUFBSSxDQUFDLENBQUMsWUFBWSxhQUFHLENBQUMsaUJBQWlCLEVBQUUsQ0FBQyxDQUFDLENBQUM7S0FDdEQ7SUFFRCxNQUFNLEtBQUssR0FBRyxNQUFNLGlDQUFVLENBQXFCO1FBQ2pELDJCQUEyQixFQUFFLENBQUMsR0FBRyxFQUFFLEVBQUUsQ0FBQyxHQUFHLENBQUMsMEJBQWtCLENBQUM7UUFDN0Qsa0JBQWtCLEVBQUUsQ0FBQyxPQUFPLEVBQUUsRUFBRSxDQUFDLE9BQU8sQ0FBQywwQkFBa0IsQ0FBQztRQUM1RCxPQUFPLEVBQUUsU0FBUztLQUNuQixDQUFDLEVBQUUsQ0FBQztJQUNMLElBQUksS0FBSyxFQUFFO1FBQ1QsUUFBUSxDQUFDLElBQUksQ0FBQyxDQUFDLE9BQU8sS0FBSyxFQUFFLENBQUMsQ0FBQyxDQUFDO0tBQ2pDO0lBRUQsT0FBTyxRQUFRLENBQUM7QUFDbEIsQ0FBQyxDQUFDO0FBcENXLFFBQUEsZ0JBQWdCLG9CQW9DM0IiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBsb2FkQ29uZmlnIH0gZnJvbSBcIkBhd3Mtc2RrL25vZGUtY29uZmlnLXByb3ZpZGVyXCI7XG5pbXBvcnQgeyBQcm92aWRlciwgVXNlckFnZW50IH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5pbXBvcnQgeyBwbGF0Zm9ybSwgcmVsZWFzZSB9IGZyb20gXCJvc1wiO1xuaW1wb3J0IHsgZW52LCB2ZXJzaW9ucyB9IGZyb20gXCJwcm9jZXNzXCI7XG5cbmV4cG9ydCBjb25zdCBVQV9BUFBfSURfRU5WX05BTUUgPSBcIkFXU19TREtfVUFfQVBQX0lEXCI7XG5leHBvcnQgY29uc3QgVUFfQVBQX0lEX0lOSV9OQU1FID0gXCJzZGstdWEtYXBwLWlkXCI7XG5cbmludGVyZmFjZSBEZWZhdWx0VXNlckFnZW50T3B0aW9ucyB7XG4gIHNlcnZpY2VJZD86IHN0cmluZztcbiAgY2xpZW50VmVyc2lvbjogc3RyaW5nO1xufVxuXG4vKipcbiAqIENvbGxlY3QgbWV0cmljcyBmcm9tIHJ1bnRpbWUgdG8gcHV0IGludG8gdXNlciBhZ2VudC5cbiAqL1xuZXhwb3J0IGNvbnN0IGRlZmF1bHRVc2VyQWdlbnQgPSAoe1xuICBzZXJ2aWNlSWQsXG4gIGNsaWVudFZlcnNpb24sXG59OiBEZWZhdWx0VXNlckFnZW50T3B0aW9ucyk6IFByb3ZpZGVyPFVzZXJBZ2VudD4gPT4gYXN5bmMgKCkgPT4ge1xuICBjb25zdCBzZWN0aW9uczogVXNlckFnZW50ID0gW1xuICAgIC8vIHNkay1tZXRhZGF0YVxuICAgIFtcImF3cy1zZGstanNcIiwgY2xpZW50VmVyc2lvbl0sXG4gICAgLy8gb3MtbWV0YWRhdGFcbiAgICBbYG9zLyR7cGxhdGZvcm0oKX1gLCByZWxlYXNlKCldLFxuICAgIC8vIGxhbmd1YWdlLW1ldGFkYXRhXG4gICAgLy8gRUNNQVNjcmlwdCBlZGl0aW9uIGRvZXNuJ3QgbWF0dGVyIGluIEpTLCBzbyBubyB2ZXJzaW9uIG5lZWRlZC5cbiAgICBbXCJsYW5nL2pzXCJdLFxuICAgIFtcIm1kL25vZGVqc1wiLCBgJHt2ZXJzaW9ucy5ub2RlfWBdLFxuICBdO1xuXG4gIGlmIChzZXJ2aWNlSWQpIHtcbiAgICAvLyBhcGktbWV0YWRhdGFcbiAgICAvLyBzZXJ2aWNlIElkIG1heSBub3QgYXBwZWFyIGluIG5vbi1BV1MgY2xpZW50c1xuICAgIHNlY3Rpb25zLnB1c2goW2BhcGkvJHtzZXJ2aWNlSWR9YCwgY2xpZW50VmVyc2lvbl0pO1xuICB9XG5cbiAgaWYgKGVudi5BV1NfRVhFQ1VUSU9OX0VOVikge1xuICAgIC8vIGVudi1tZXRhZGF0YVxuICAgIHNlY3Rpb25zLnB1c2goW2BleGVjLWVudi8ke2Vudi5BV1NfRVhFQ1VUSU9OX0VOVn1gXSk7XG4gIH1cblxuICBjb25zdCBhcHBJZCA9IGF3YWl0IGxvYWRDb25maWc8c3RyaW5nIHwgdW5kZWZpbmVkPih7XG4gICAgZW52aXJvbm1lbnRWYXJpYWJsZVNlbGVjdG9yOiAoZW52KSA9PiBlbnZbVUFfQVBQX0lEX0VOVl9OQU1FXSxcbiAgICBjb25maWdGaWxlU2VsZWN0b3I6IChwcm9maWxlKSA9PiBwcm9maWxlW1VBX0FQUF9JRF9JTklfTkFNRV0sXG4gICAgZGVmYXVsdDogdW5kZWZpbmVkLFxuICB9KSgpO1xuICBpZiAoYXBwSWQpIHtcbiAgICBzZWN0aW9ucy5wdXNoKFtgYXBwLyR7YXBwSWR9YF0pO1xuICB9XG5cbiAgcmV0dXJuIHNlY3Rpb25zO1xufTtcbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsd0VBQTJEO0FBRTNELDJCQUF1QztBQUN2QyxxQ0FBd0M7QUFFM0IsUUFBQSxrQkFBa0IsR0FBRyxtQkFBbUIsQ0FBQztBQUN6QyxRQUFBLGtCQUFrQixHQUFHLGVBQWUsQ0FBQztBQU9sRDs7R0FFRztBQUNJLE1BQU0sZ0JBQWdCLEdBQUcsQ0FBQyxFQUFFLFNBQVMsRUFBRSxhQUFhLEVBQTJCLEVBQXVCLEVBQUU7SUFDN0csTUFBTSxRQUFRLEdBQWM7UUFDMUIsZUFBZTtRQUNmLENBQUMsWUFBWSxFQUFFLGFBQWEsQ0FBQztRQUM3QixjQUFjO1FBQ2QsQ0FBQyxNQUFNLGFBQVEsRUFBRSxFQUFFLEVBQUUsWUFBTyxFQUFFLENBQUM7UUFDL0Isb0JBQW9CO1FBQ3BCLGlFQUFpRTtRQUNqRSxDQUFDLFNBQVMsQ0FBQztRQUNYLENBQUMsV0FBVyxFQUFFLEdBQUcsa0JBQVEsQ0FBQyxJQUFJLEVBQUUsQ0FBQztLQUNsQyxDQUFDO0lBRUYsSUFBSSxTQUFTLEVBQUU7UUFDYixlQUFlO1FBQ2YsK0NBQStDO1FBQy9DLFFBQVEsQ0FBQyxJQUFJLENBQUMsQ0FBQyxPQUFPLFNBQVMsRUFBRSxFQUFFLGFBQWEsQ0FBQyxDQUFDLENBQUM7S0FDcEQ7SUFFRCxJQUFJLGFBQUcsQ0FBQyxpQkFBaUIsRUFBRTtRQUN6QixlQUFlO1FBQ2YsUUFBUSxDQUFDLElBQUksQ0FBQyxDQUFDLFlBQVksYUFBRyxDQUFDLGlCQUFpQixFQUFFLENBQUMsQ0FBQyxDQUFDO0tBQ3REO0lBRUQsTUFBTSxZQUFZLEdBQUcsaUNBQVUsQ0FBcUI7UUFDbEQsMkJBQTJCLEVBQUUsQ0FBQyxHQUFHLEVBQUUsRUFBRSxDQUFDLEdBQUcsQ0FBQywwQkFBa0IsQ0FBQztRQUM3RCxrQkFBa0IsRUFBRSxDQUFDLE9BQU8sRUFBRSxFQUFFLENBQUMsT0FBTyxDQUFDLDBCQUFrQixDQUFDO1FBQzVELE9BQU8sRUFBRSxTQUFTO0tBQ25CLENBQUMsRUFBRSxDQUFDO0lBRUwsSUFBSSxpQkFBaUIsR0FBMEIsU0FBUyxDQUFDO0lBQ3pELE9BQU8sS0FBSyxJQUFJLEVBQUU7UUFDaEIsSUFBSSxDQUFDLGlCQUFpQixFQUFFO1lBQ3RCLE1BQU0sS0FBSyxHQUFHLE1BQU0sWUFBWSxDQUFDO1lBQ2pDLGlCQUFpQixHQUFHLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLFFBQVEsRUFBRSxDQUFDLE9BQU8sS0FBSyxFQUFFLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEdBQUcsUUFBUSxDQUFDLENBQUM7U0FDN0U7UUFDRCxPQUFPLGlCQUFpQixDQUFDO0lBQzNCLENBQUMsQ0FBQztBQUNKLENBQUMsQ0FBQztBQXJDVyxRQUFBLGdCQUFnQixvQkFxQzNCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgbG9hZENvbmZpZyB9IGZyb20gXCJAYXdzLXNkay9ub2RlLWNvbmZpZy1wcm92aWRlclwiO1xuaW1wb3J0IHsgUHJvdmlkZXIsIFVzZXJBZ2VudCB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuaW1wb3J0IHsgcGxhdGZvcm0sIHJlbGVhc2UgfSBmcm9tIFwib3NcIjtcbmltcG9ydCB7IGVudiwgdmVyc2lvbnMgfSBmcm9tIFwicHJvY2Vzc1wiO1xuXG5leHBvcnQgY29uc3QgVUFfQVBQX0lEX0VOVl9OQU1FID0gXCJBV1NfU0RLX1VBX0FQUF9JRFwiO1xuZXhwb3J0IGNvbnN0IFVBX0FQUF9JRF9JTklfTkFNRSA9IFwic2RrLXVhLWFwcC1pZFwiO1xuXG5pbnRlcmZhY2UgRGVmYXVsdFVzZXJBZ2VudE9wdGlvbnMge1xuICBzZXJ2aWNlSWQ/OiBzdHJpbmc7XG4gIGNsaWVudFZlcnNpb246IHN0cmluZztcbn1cblxuLyoqXG4gKiBDb2xsZWN0IG1ldHJpY3MgZnJvbSBydW50aW1lIHRvIHB1dCBpbnRvIHVzZXIgYWdlbnQuXG4gKi9cbmV4cG9ydCBjb25zdCBkZWZhdWx0VXNlckFnZW50ID0gKHsgc2VydmljZUlkLCBjbGllbnRWZXJzaW9uIH06IERlZmF1bHRVc2VyQWdlbnRPcHRpb25zKTogUHJvdmlkZXI8VXNlckFnZW50PiA9PiB7XG4gIGNvbnN0IHNlY3Rpb25zOiBVc2VyQWdlbnQgPSBbXG4gICAgLy8gc2RrLW1ldGFkYXRhXG4gICAgW1wiYXdzLXNkay1qc1wiLCBjbGllbnRWZXJzaW9uXSxcbiAgICAvLyBvcy1tZXRhZGF0YVxuICAgIFtgb3MvJHtwbGF0Zm9ybSgpfWAsIHJlbGVhc2UoKV0sXG4gICAgLy8gbGFuZ3VhZ2UtbWV0YWRhdGFcbiAgICAvLyBFQ01BU2NyaXB0IGVkaXRpb24gZG9lc24ndCBtYXR0ZXIgaW4gSlMsIHNvIG5vIHZlcnNpb24gbmVlZGVkLlxuICAgIFtcImxhbmcvanNcIl0sXG4gICAgW1wibWQvbm9kZWpzXCIsIGAke3ZlcnNpb25zLm5vZGV9YF0sXG4gIF07XG5cbiAgaWYgKHNlcnZpY2VJZCkge1xuICAgIC8vIGFwaS1tZXRhZGF0YVxuICAgIC8vIHNlcnZpY2UgSWQgbWF5IG5vdCBhcHBlYXIgaW4gbm9uLUFXUyBjbGllbnRzXG4gICAgc2VjdGlvbnMucHVzaChbYGFwaS8ke3NlcnZpY2VJZH1gLCBjbGllbnRWZXJzaW9uXSk7XG4gIH1cblxuICBpZiAoZW52LkFXU19FWEVDVVRJT05fRU5WKSB7XG4gICAgLy8gZW52LW1ldGFkYXRhXG4gICAgc2VjdGlvbnMucHVzaChbYGV4ZWMtZW52LyR7ZW52LkFXU19FWEVDVVRJT05fRU5WfWBdKTtcbiAgfVxuXG4gIGNvbnN0IGFwcElkUHJvbWlzZSA9IGxvYWRDb25maWc8c3RyaW5nIHwgdW5kZWZpbmVkPih7XG4gICAgZW52aXJvbm1lbnRWYXJpYWJsZVNlbGVjdG9yOiAoZW52KSA9PiBlbnZbVUFfQVBQX0lEX0VOVl9OQU1FXSxcbiAgICBjb25maWdGaWxlU2VsZWN0b3I6IChwcm9maWxlKSA9PiBwcm9maWxlW1VBX0FQUF9JRF9JTklfTkFNRV0sXG4gICAgZGVmYXVsdDogdW5kZWZpbmVkLFxuICB9KSgpO1xuXG4gIGxldCByZXNvbHZlZFVzZXJBZ2VudDogVXNlckFnZW50IHwgdW5kZWZpbmVkID0gdW5kZWZpbmVkO1xuICByZXR1cm4gYXN5bmMgKCkgPT4ge1xuICAgIGlmICghcmVzb2x2ZWRVc2VyQWdlbnQpIHtcbiAgICAgIGNvbnN0IGFwcElkID0gYXdhaXQgYXBwSWRQcm9taXNlO1xuICAgICAgcmVzb2x2ZWRVc2VyQWdlbnQgPSBhcHBJZCA/IFsuLi5zZWN0aW9ucywgW2BhcHAvJHthcHBJZH1gXV0gOiBbLi4uc2VjdGlvbnNdO1xuICAgIH1cbiAgICByZXR1cm4gcmVzb2x2ZWRVc2VyQWdlbnQ7XG4gIH07XG59O1xuIl19
 
 /***/ }),
 
@@ -27096,6 +30258,1529 @@ var __createBinding;
 
 /***/ }),
 
+/***/ 5152:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+"use strict";
+
+//parse Empty Node as self closing node
+const buildOptions = __nccwpck_require__(8280).buildOptions;
+
+const defaultOptions = {
+  attributeNamePrefix: '@_',
+  attrNodeName: false,
+  textNodeName: '#text',
+  ignoreAttributes: true,
+  cdataTagName: false,
+  cdataPositionChar: '\\c',
+  format: false,
+  indentBy: '  ',
+  supressEmptyNode: false,
+  tagValueProcessor: function(a) {
+    return a;
+  },
+  attrValueProcessor: function(a) {
+    return a;
+  },
+};
+
+const props = [
+  'attributeNamePrefix',
+  'attrNodeName',
+  'textNodeName',
+  'ignoreAttributes',
+  'cdataTagName',
+  'cdataPositionChar',
+  'format',
+  'indentBy',
+  'supressEmptyNode',
+  'tagValueProcessor',
+  'attrValueProcessor',
+];
+
+function Parser(options) {
+  this.options = buildOptions(options, defaultOptions, props);
+  if (this.options.ignoreAttributes || this.options.attrNodeName) {
+    this.isAttribute = function(/*a*/) {
+      return false;
+    };
+  } else {
+    this.attrPrefixLen = this.options.attributeNamePrefix.length;
+    this.isAttribute = isAttribute;
+  }
+  if (this.options.cdataTagName) {
+    this.isCDATA = isCDATA;
+  } else {
+    this.isCDATA = function(/*a*/) {
+      return false;
+    };
+  }
+  this.replaceCDATAstr = replaceCDATAstr;
+  this.replaceCDATAarr = replaceCDATAarr;
+
+  if (this.options.format) {
+    this.indentate = indentate;
+    this.tagEndChar = '>\n';
+    this.newLine = '\n';
+  } else {
+    this.indentate = function() {
+      return '';
+    };
+    this.tagEndChar = '>';
+    this.newLine = '';
+  }
+
+  if (this.options.supressEmptyNode) {
+    this.buildTextNode = buildEmptyTextNode;
+    this.buildObjNode = buildEmptyObjNode;
+  } else {
+    this.buildTextNode = buildTextValNode;
+    this.buildObjNode = buildObjectNode;
+  }
+
+  this.buildTextValNode = buildTextValNode;
+  this.buildObjectNode = buildObjectNode;
+}
+
+Parser.prototype.parse = function(jObj) {
+  return this.j2x(jObj, 0).val;
+};
+
+Parser.prototype.j2x = function(jObj, level) {
+  let attrStr = '';
+  let val = '';
+  const keys = Object.keys(jObj);
+  const len = keys.length;
+  for (let i = 0; i < len; i++) {
+    const key = keys[i];
+    if (typeof jObj[key] === 'undefined') {
+      // supress undefined node
+    } else if (jObj[key] === null) {
+      val += this.indentate(level) + '<' + key + '/' + this.tagEndChar;
+    } else if (jObj[key] instanceof Date) {
+      val += this.buildTextNode(jObj[key], key, '', level);
+    } else if (typeof jObj[key] !== 'object') {
+      //premitive type
+      const attr = this.isAttribute(key);
+      if (attr) {
+        attrStr += ' ' + attr + '="' + this.options.attrValueProcessor('' + jObj[key]) + '"';
+      } else if (this.isCDATA(key)) {
+        if (jObj[this.options.textNodeName]) {
+          val += this.replaceCDATAstr(jObj[this.options.textNodeName], jObj[key]);
+        } else {
+          val += this.replaceCDATAstr('', jObj[key]);
+        }
+      } else {
+        //tag value
+        if (key === this.options.textNodeName) {
+          if (jObj[this.options.cdataTagName]) {
+            //value will added while processing cdata
+          } else {
+            val += this.options.tagValueProcessor('' + jObj[key]);
+          }
+        } else {
+          val += this.buildTextNode(jObj[key], key, '', level);
+        }
+      }
+    } else if (Array.isArray(jObj[key])) {
+      //repeated nodes
+      if (this.isCDATA(key)) {
+        val += this.indentate(level);
+        if (jObj[this.options.textNodeName]) {
+          val += this.replaceCDATAarr(jObj[this.options.textNodeName], jObj[key]);
+        } else {
+          val += this.replaceCDATAarr('', jObj[key]);
+        }
+      } else {
+        //nested nodes
+        const arrLen = jObj[key].length;
+        for (let j = 0; j < arrLen; j++) {
+          const item = jObj[key][j];
+          if (typeof item === 'undefined') {
+            // supress undefined node
+          } else if (item === null) {
+            val += this.indentate(level) + '<' + key + '/' + this.tagEndChar;
+          } else if (typeof item === 'object') {
+            const result = this.j2x(item, level + 1);
+            val += this.buildObjNode(result.val, key, result.attrStr, level);
+          } else {
+            val += this.buildTextNode(item, key, '', level);
+          }
+        }
+      }
+    } else {
+      //nested node
+      if (this.options.attrNodeName && key === this.options.attrNodeName) {
+        const Ks = Object.keys(jObj[key]);
+        const L = Ks.length;
+        for (let j = 0; j < L; j++) {
+          attrStr += ' ' + Ks[j] + '="' + this.options.attrValueProcessor('' + jObj[key][Ks[j]]) + '"';
+        }
+      } else {
+        const result = this.j2x(jObj[key], level + 1);
+        val += this.buildObjNode(result.val, key, result.attrStr, level);
+      }
+    }
+  }
+  return {attrStr: attrStr, val: val};
+};
+
+function replaceCDATAstr(str, cdata) {
+  str = this.options.tagValueProcessor('' + str);
+  if (this.options.cdataPositionChar === '' || str === '') {
+    return str + '<![CDATA[' + cdata + ']]' + this.tagEndChar;
+  } else {
+    return str.replace(this.options.cdataPositionChar, '<![CDATA[' + cdata + ']]' + this.tagEndChar);
+  }
+}
+
+function replaceCDATAarr(str, cdata) {
+  str = this.options.tagValueProcessor('' + str);
+  if (this.options.cdataPositionChar === '' || str === '') {
+    return str + '<![CDATA[' + cdata.join(']]><![CDATA[') + ']]' + this.tagEndChar;
+  } else {
+    for (let v in cdata) {
+      str = str.replace(this.options.cdataPositionChar, '<![CDATA[' + cdata[v] + ']]>');
+    }
+    return str + this.newLine;
+  }
+}
+
+function buildObjectNode(val, key, attrStr, level) {
+  if (attrStr && !val.includes('<')) {
+    return (
+      this.indentate(level) +
+      '<' +
+      key +
+      attrStr +
+      '>' +
+      val +
+      //+ this.newLine
+      // + this.indentate(level)
+      '</' +
+      key +
+      this.tagEndChar
+    );
+  } else {
+    return (
+      this.indentate(level) +
+      '<' +
+      key +
+      attrStr +
+      this.tagEndChar +
+      val +
+      //+ this.newLine
+      this.indentate(level) +
+      '</' +
+      key +
+      this.tagEndChar
+    );
+  }
+}
+
+function buildEmptyObjNode(val, key, attrStr, level) {
+  if (val !== '') {
+    return this.buildObjectNode(val, key, attrStr, level);
+  } else {
+    return this.indentate(level) + '<' + key + attrStr + '/' + this.tagEndChar;
+    //+ this.newLine
+  }
+}
+
+function buildTextValNode(val, key, attrStr, level) {
+  return (
+    this.indentate(level) +
+    '<' +
+    key +
+    attrStr +
+    '>' +
+    this.options.tagValueProcessor(val) +
+    '</' +
+    key +
+    this.tagEndChar
+  );
+}
+
+function buildEmptyTextNode(val, key, attrStr, level) {
+  if (val !== '') {
+    return this.buildTextValNode(val, key, attrStr, level);
+  } else {
+    return this.indentate(level) + '<' + key + attrStr + '/' + this.tagEndChar;
+  }
+}
+
+function indentate(level) {
+  return this.options.indentBy.repeat(level);
+}
+
+function isAttribute(name /*, options*/) {
+  if (name.startsWith(this.options.attributeNamePrefix)) {
+    return name.substr(this.attrPrefixLen);
+  } else {
+    return false;
+  }
+}
+
+function isCDATA(name) {
+  return name === this.options.cdataTagName;
+}
+
+//formatting
+//indentation
+//\n after each closing or self closing tag
+
+module.exports = Parser;
+
+
+/***/ }),
+
+/***/ 1901:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+const char = function(a) {
+  return String.fromCharCode(a);
+};
+
+const chars = {
+  nilChar: char(176),
+  missingChar: char(201),
+  nilPremitive: char(175),
+  missingPremitive: char(200),
+
+  emptyChar: char(178),
+  emptyValue: char(177), //empty Premitive
+
+  boundryChar: char(179),
+
+  objStart: char(198),
+  arrStart: char(204),
+  arrayEnd: char(185),
+};
+
+const charsArr = [
+  chars.nilChar,
+  chars.nilPremitive,
+  chars.missingChar,
+  chars.missingPremitive,
+  chars.boundryChar,
+  chars.emptyChar,
+  chars.emptyValue,
+  chars.arrayEnd,
+  chars.objStart,
+  chars.arrStart,
+];
+
+const _e = function(node, e_schema, options) {
+  if (typeof e_schema === 'string') {
+    //premitive
+    if (node && node[0] && node[0].val !== undefined) {
+      return getValue(node[0].val, e_schema);
+    } else {
+      return getValue(node, e_schema);
+    }
+  } else {
+    const hasValidData = hasData(node);
+    if (hasValidData === true) {
+      let str = '';
+      if (Array.isArray(e_schema)) {
+        //attributes can't be repeated. hence check in children tags only
+        str += chars.arrStart;
+        const itemSchema = e_schema[0];
+        //var itemSchemaType = itemSchema;
+        const arr_len = node.length;
+
+        if (typeof itemSchema === 'string') {
+          for (let arr_i = 0; arr_i < arr_len; arr_i++) {
+            const r = getValue(node[arr_i].val, itemSchema);
+            str = processValue(str, r);
+          }
+        } else {
+          for (let arr_i = 0; arr_i < arr_len; arr_i++) {
+            const r = _e(node[arr_i], itemSchema, options);
+            str = processValue(str, r);
+          }
+        }
+        str += chars.arrayEnd; //indicates that next item is not array item
+      } else {
+        //object
+        str += chars.objStart;
+        const keys = Object.keys(e_schema);
+        if (Array.isArray(node)) {
+          node = node[0];
+        }
+        for (let i in keys) {
+          const key = keys[i];
+          //a property defined in schema can be present either in attrsMap or children tags
+          //options.textNodeName will not present in both maps, take it's value from val
+          //options.attrNodeName will be present in attrsMap
+          let r;
+          if (!options.ignoreAttributes && node.attrsMap && node.attrsMap[key]) {
+            r = _e(node.attrsMap[key], e_schema[key], options);
+          } else if (key === options.textNodeName) {
+            r = _e(node.val, e_schema[key], options);
+          } else {
+            r = _e(node.child[key], e_schema[key], options);
+          }
+          str = processValue(str, r);
+        }
+      }
+      return str;
+    } else {
+      return hasValidData;
+    }
+  }
+};
+
+const getValue = function(a /*, type*/) {
+  switch (a) {
+    case undefined:
+      return chars.missingPremitive;
+    case null:
+      return chars.nilPremitive;
+    case '':
+      return chars.emptyValue;
+    default:
+      return a;
+  }
+};
+
+const processValue = function(str, r) {
+  if (!isAppChar(r[0]) && !isAppChar(str[str.length - 1])) {
+    str += chars.boundryChar;
+  }
+  return str + r;
+};
+
+const isAppChar = function(ch) {
+  return charsArr.indexOf(ch) !== -1;
+};
+
+function hasData(jObj) {
+  if (jObj === undefined) {
+    return chars.missingChar;
+  } else if (jObj === null) {
+    return chars.nilChar;
+  } else if (
+    jObj.child &&
+    Object.keys(jObj.child).length === 0 &&
+    (!jObj.attrsMap || Object.keys(jObj.attrsMap).length === 0)
+  ) {
+    return chars.emptyChar;
+  } else {
+    return true;
+  }
+}
+
+const x2j = __nccwpck_require__(6712);
+const buildOptions = __nccwpck_require__(8280).buildOptions;
+
+const convert2nimn = function(node, e_schema, options) {
+  options = buildOptions(options, x2j.defaultOptions, x2j.props);
+  return _e(node, e_schema, options);
+};
+
+exports.convert2nimn = convert2nimn;
+
+
+/***/ }),
+
+/***/ 8270:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+
+const util = __nccwpck_require__(8280);
+
+const convertToJson = function(node, options, parentTagName) {
+  const jObj = {};
+
+  // when no child node or attr is present
+  if ((!node.child || util.isEmptyObject(node.child)) && (!node.attrsMap || util.isEmptyObject(node.attrsMap))) {
+    return util.isExist(node.val) ? node.val : '';
+  }
+
+  // otherwise create a textnode if node has some text
+  if (util.isExist(node.val) && !(typeof node.val === 'string' && (node.val === '' || node.val === options.cdataPositionChar))) {
+    const asArray = util.isTagNameInArrayMode(node.tagname, options.arrayMode, parentTagName)
+    jObj[options.textNodeName] = asArray ? [node.val] : node.val;
+  }
+
+  util.merge(jObj, node.attrsMap, options.arrayMode);
+
+  const keys = Object.keys(node.child);
+  for (let index = 0; index < keys.length; index++) {
+    const tagName = keys[index];
+    if (node.child[tagName] && node.child[tagName].length > 1) {
+      jObj[tagName] = [];
+      for (let tag in node.child[tagName]) {
+        if (node.child[tagName].hasOwnProperty(tag)) {
+          jObj[tagName].push(convertToJson(node.child[tagName][tag], options, tagName));
+        }
+      }
+    } else {
+      const result = convertToJson(node.child[tagName][0], options, tagName);
+      const asArray = (options.arrayMode === true && typeof result === 'object') || util.isTagNameInArrayMode(tagName, options.arrayMode, parentTagName);
+      jObj[tagName] = asArray ? [result] : result;
+    }
+  }
+
+  //add value
+  return jObj;
+};
+
+exports.convertToJson = convertToJson;
+
+
+/***/ }),
+
+/***/ 6014:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+
+const util = __nccwpck_require__(8280);
+const buildOptions = __nccwpck_require__(8280).buildOptions;
+const x2j = __nccwpck_require__(6712);
+
+//TODO: do it later
+const convertToJsonString = function(node, options) {
+  options = buildOptions(options, x2j.defaultOptions, x2j.props);
+
+  options.indentBy = options.indentBy || '';
+  return _cToJsonStr(node, options, 0);
+};
+
+const _cToJsonStr = function(node, options, level) {
+  let jObj = '{';
+
+  //traver through all the children
+  const keys = Object.keys(node.child);
+
+  for (let index = 0; index < keys.length; index++) {
+    var tagname = keys[index];
+    if (node.child[tagname] && node.child[tagname].length > 1) {
+      jObj += '"' + tagname + '" : [ ';
+      for (var tag in node.child[tagname]) {
+        jObj += _cToJsonStr(node.child[tagname][tag], options) + ' , ';
+      }
+      jObj = jObj.substr(0, jObj.length - 1) + ' ] '; //remove extra comma in last
+    } else {
+      jObj += '"' + tagname + '" : ' + _cToJsonStr(node.child[tagname][0], options) + ' ,';
+    }
+  }
+  util.merge(jObj, node.attrsMap);
+  //add attrsMap as new children
+  if (util.isEmptyObject(jObj)) {
+    return util.isExist(node.val) ? node.val : '';
+  } else {
+    if (util.isExist(node.val)) {
+      if (!(typeof node.val === 'string' && (node.val === '' || node.val === options.cdataPositionChar))) {
+        jObj += '"' + options.textNodeName + '" : ' + stringval(node.val);
+      }
+    }
+  }
+  //add value
+  if (jObj[jObj.length - 1] === ',') {
+    jObj = jObj.substr(0, jObj.length - 2);
+  }
+  return jObj + '}';
+};
+
+function stringval(v) {
+  if (v === true || v === false || !isNaN(v)) {
+    return v;
+  } else {
+    return '"' + v + '"';
+  }
+}
+
+function indentate(options, level) {
+  return options.indentBy.repeat(level);
+}
+
+exports.convertToJsonString = convertToJsonString;
+
+
+/***/ }),
+
+/***/ 7448:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+
+const nodeToJson = __nccwpck_require__(8270);
+const xmlToNodeobj = __nccwpck_require__(6712);
+const x2xmlnode = __nccwpck_require__(6712);
+const buildOptions = __nccwpck_require__(8280).buildOptions;
+const validator = __nccwpck_require__(1739);
+
+exports.parse = function(xmlData, options, validationOption) {
+  if( validationOption){
+    if(validationOption === true) validationOption = {}
+    
+    const result = validator.validate(xmlData, validationOption);
+    if (result !== true) {
+      throw Error( result.err.msg)
+    }
+  }
+  options = buildOptions(options, x2xmlnode.defaultOptions, x2xmlnode.props);
+  const traversableObj = xmlToNodeobj.getTraversalObj(xmlData, options)
+  //print(traversableObj, "  ");
+  return nodeToJson.convertToJson(traversableObj, options);
+};
+exports.convertTonimn = __nccwpck_require__(1901).convert2nimn;
+exports.getTraversalObj = xmlToNodeobj.getTraversalObj;
+exports.convertToJson = nodeToJson.convertToJson;
+exports.convertToJsonString = __nccwpck_require__(6014).convertToJsonString;
+exports.validate = validator.validate;
+exports.j2xParser = __nccwpck_require__(5152);
+exports.parseToNimn = function(xmlData, schema, options) {
+  return exports.convertTonimn(exports.getTraversalObj(xmlData, options), schema, options);
+};
+
+
+function print(xmlNode, indentation){
+  if(xmlNode){
+    console.log(indentation + "{")
+    console.log(indentation + "  \"tagName\": \"" + xmlNode.tagname + "\", ");
+    if(xmlNode.parent){
+      console.log(indentation + "  \"parent\": \"" + xmlNode.parent.tagname  + "\", ");
+    }
+    console.log(indentation + "  \"val\": \"" + xmlNode.val  + "\", ");
+    console.log(indentation + "  \"attrs\": " + JSON.stringify(xmlNode.attrsMap,null,4)  + ", ");
+
+    if(xmlNode.child){
+      console.log(indentation + "\"child\": {")
+      const indentation2 = indentation + indentation;
+      Object.keys(xmlNode.child).forEach( function(key) {
+        const node = xmlNode.child[key];
+
+        if(Array.isArray(node)){
+          console.log(indentation +  "\""+key+"\" :[")
+          node.forEach( function(item,index) {
+            //console.log(indentation + " \""+index+"\" : [")
+            print(item, indentation2);
+          })
+          console.log(indentation + "],")  
+        }else{
+          console.log(indentation + " \""+key+"\" : {")
+          print(node, indentation2);
+          console.log(indentation + "},")  
+        }
+      });
+      console.log(indentation + "},")
+    }
+    console.log(indentation + "},")
+  }
+}
+
+
+/***/ }),
+
+/***/ 8280:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+
+const nameStartChar = ':A-Za-z_\\u00C0-\\u00D6\\u00D8-\\u00F6\\u00F8-\\u02FF\\u0370-\\u037D\\u037F-\\u1FFF\\u200C-\\u200D\\u2070-\\u218F\\u2C00-\\u2FEF\\u3001-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFFD';
+const nameChar = nameStartChar + '\\-.\\d\\u00B7\\u0300-\\u036F\\u203F-\\u2040';
+const nameRegexp = '[' + nameStartChar + '][' + nameChar + ']*'
+const regexName = new RegExp('^' + nameRegexp + '$');
+
+const getAllMatches = function(string, regex) {
+  const matches = [];
+  let match = regex.exec(string);
+  while (match) {
+    const allmatches = [];
+    const len = match.length;
+    for (let index = 0; index < len; index++) {
+      allmatches.push(match[index]);
+    }
+    matches.push(allmatches);
+    match = regex.exec(string);
+  }
+  return matches;
+};
+
+const isName = function(string) {
+  const match = regexName.exec(string);
+  return !(match === null || typeof match === 'undefined');
+};
+
+exports.isExist = function(v) {
+  return typeof v !== 'undefined';
+};
+
+exports.isEmptyObject = function(obj) {
+  return Object.keys(obj).length === 0;
+};
+
+/**
+ * Copy all the properties of a into b.
+ * @param {*} target
+ * @param {*} a
+ */
+exports.merge = function(target, a, arrayMode) {
+  if (a) {
+    const keys = Object.keys(a); // will return an array of own properties
+    const len = keys.length; //don't make it inline
+    for (let i = 0; i < len; i++) {
+      if (arrayMode === 'strict') {
+        target[keys[i]] = [ a[keys[i]] ];
+      } else {
+        target[keys[i]] = a[keys[i]];
+      }
+    }
+  }
+};
+/* exports.merge =function (b,a){
+  return Object.assign(b,a);
+} */
+
+exports.getValue = function(v) {
+  if (exports.isExist(v)) {
+    return v;
+  } else {
+    return '';
+  }
+};
+
+// const fakeCall = function(a) {return a;};
+// const fakeCallNoReturn = function() {};
+
+exports.buildOptions = function(options, defaultOptions, props) {
+  var newOptions = {};
+  if (!options) {
+    return defaultOptions; //if there are not options
+  }
+
+  for (let i = 0; i < props.length; i++) {
+    if (options[props[i]] !== undefined) {
+      newOptions[props[i]] = options[props[i]];
+    } else {
+      newOptions[props[i]] = defaultOptions[props[i]];
+    }
+  }
+  return newOptions;
+};
+
+/**
+ * Check if a tag name should be treated as array
+ *
+ * @param tagName the node tagname
+ * @param arrayMode the array mode option
+ * @param parentTagName the parent tag name
+ * @returns {boolean} true if node should be parsed as array
+ */
+exports.isTagNameInArrayMode = function (tagName, arrayMode, parentTagName) {
+  if (arrayMode === false) {
+    return false;
+  } else if (arrayMode instanceof RegExp) {
+    return arrayMode.test(tagName);
+  } else if (typeof arrayMode === 'function') {
+    return !!arrayMode(tagName, parentTagName);
+  }
+
+  return arrayMode === "strict";
+}
+
+exports.isName = isName;
+exports.getAllMatches = getAllMatches;
+exports.nameRegexp = nameRegexp;
+
+
+/***/ }),
+
+/***/ 1739:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+
+const util = __nccwpck_require__(8280);
+
+const defaultOptions = {
+  allowBooleanAttributes: false, //A tag can have attributes without any value
+};
+
+const props = ['allowBooleanAttributes'];
+
+//const tagsPattern = new RegExp("<\\/?([\\w:\\-_\.]+)\\s*\/?>","g");
+exports.validate = function (xmlData, options) {
+  options = util.buildOptions(options, defaultOptions, props);
+
+  //xmlData = xmlData.replace(/(\r\n|\n|\r)/gm,"");//make it single line
+  //xmlData = xmlData.replace(/(^\s*<\?xml.*?\?>)/g,"");//Remove XML starting tag
+  //xmlData = xmlData.replace(/(<!DOCTYPE[\s\w\"\.\/\-\:]+(\[.*\])*\s*>)/g,"");//Remove DOCTYPE
+  const tags = [];
+  let tagFound = false;
+
+  //indicates that the root tag has been closed (aka. depth 0 has been reached)
+  let reachedRoot = false;
+
+  if (xmlData[0] === '\ufeff') {
+    // check for byte order mark (BOM)
+    xmlData = xmlData.substr(1);
+  }
+
+  for (let i = 0; i < xmlData.length; i++) {
+
+    if (xmlData[i] === '<' && xmlData[i+1] === '?') {
+      i+=2;
+      i = readPI(xmlData,i);
+      if (i.err) return i;
+    }else if (xmlData[i] === '<') {
+      //starting of tag
+      //read until you reach to '>' avoiding any '>' in attribute value
+
+      i++;
+      
+      if (xmlData[i] === '!') {
+        i = readCommentAndCDATA(xmlData, i);
+        continue;
+      } else {
+        let closingTag = false;
+        if (xmlData[i] === '/') {
+          //closing tag
+          closingTag = true;
+          i++;
+        }
+        //read tagname
+        let tagName = '';
+        for (; i < xmlData.length &&
+          xmlData[i] !== '>' &&
+          xmlData[i] !== ' ' &&
+          xmlData[i] !== '\t' &&
+          xmlData[i] !== '\n' &&
+          xmlData[i] !== '\r'; i++
+        ) {
+          tagName += xmlData[i];
+        }
+        tagName = tagName.trim();
+        //console.log(tagName);
+
+        if (tagName[tagName.length - 1] === '/') {
+          //self closing tag without attributes
+          tagName = tagName.substring(0, tagName.length - 1);
+          //continue;
+          i--;
+        }
+        if (!validateTagName(tagName)) {
+          let msg;
+          if (tagName.trim().length === 0) {
+            msg = "There is an unnecessary space between tag name and backward slash '</ ..'.";
+          } else {
+            msg = "Tag '"+tagName+"' is an invalid name.";
+          }
+          return getErrorObject('InvalidTag', msg, getLineNumberForPosition(xmlData, i));
+        }
+
+        const result = readAttributeStr(xmlData, i);
+        if (result === false) {
+          return getErrorObject('InvalidAttr', "Attributes for '"+tagName+"' have open quote.", getLineNumberForPosition(xmlData, i));
+        }
+        let attrStr = result.value;
+        i = result.index;
+
+        if (attrStr[attrStr.length - 1] === '/') {
+          //self closing tag
+          attrStr = attrStr.substring(0, attrStr.length - 1);
+          const isValid = validateAttributeString(attrStr, options);
+          if (isValid === true) {
+            tagFound = true;
+            //continue; //text may presents after self closing tag
+          } else {
+            //the result from the nested function returns the position of the error within the attribute
+            //in order to get the 'true' error line, we need to calculate the position where the attribute begins (i - attrStr.length) and then add the position within the attribute
+            //this gives us the absolute index in the entire xml, which we can use to find the line at last
+            return getErrorObject(isValid.err.code, isValid.err.msg, getLineNumberForPosition(xmlData, i - attrStr.length + isValid.err.line));
+          }
+        } else if (closingTag) {
+          if (!result.tagClosed) {
+            return getErrorObject('InvalidTag', "Closing tag '"+tagName+"' doesn't have proper closing.", getLineNumberForPosition(xmlData, i));
+          } else if (attrStr.trim().length > 0) {
+            return getErrorObject('InvalidTag', "Closing tag '"+tagName+"' can't have attributes or invalid starting.", getLineNumberForPosition(xmlData, i));
+          } else {
+            const otg = tags.pop();
+            if (tagName !== otg) {
+              return getErrorObject('InvalidTag', "Closing tag '"+otg+"' is expected inplace of '"+tagName+"'.", getLineNumberForPosition(xmlData, i));
+            }
+
+            //when there are no more tags, we reached the root level.
+            if (tags.length == 0) {
+              reachedRoot = true;
+            }
+          }
+        } else {
+          const isValid = validateAttributeString(attrStr, options);
+          if (isValid !== true) {
+            //the result from the nested function returns the position of the error within the attribute
+            //in order to get the 'true' error line, we need to calculate the position where the attribute begins (i - attrStr.length) and then add the position within the attribute
+            //this gives us the absolute index in the entire xml, which we can use to find the line at last
+            return getErrorObject(isValid.err.code, isValid.err.msg, getLineNumberForPosition(xmlData, i - attrStr.length + isValid.err.line));
+          }
+
+          //if the root level has been reached before ...
+          if (reachedRoot === true) {
+            return getErrorObject('InvalidXml', 'Multiple possible root nodes found.', getLineNumberForPosition(xmlData, i));
+          } else {
+            tags.push(tagName);
+          }
+          tagFound = true;
+        }
+
+        //skip tag text value
+        //It may include comments and CDATA value
+        for (i++; i < xmlData.length; i++) {
+          if (xmlData[i] === '<') {
+            if (xmlData[i + 1] === '!') {
+              //comment or CADATA
+              i++;
+              i = readCommentAndCDATA(xmlData, i);
+              continue;
+            } else if (xmlData[i+1] === '?') {
+              i = readPI(xmlData, ++i);
+              if (i.err) return i;
+            } else{
+              break;
+            }
+          } else if (xmlData[i] === '&') {
+            const afterAmp = validateAmpersand(xmlData, i);
+            if (afterAmp == -1)
+              return getErrorObject('InvalidChar', "char '&' is not expected.", getLineNumberForPosition(xmlData, i));
+            i = afterAmp;
+          }
+        } //end of reading tag text value
+        if (xmlData[i] === '<') {
+          i--;
+        }
+      }
+    } else {
+      if (xmlData[i] === ' ' || xmlData[i] === '\t' || xmlData[i] === '\n' || xmlData[i] === '\r') {
+        continue;
+      }
+      return getErrorObject('InvalidChar', "char '"+xmlData[i]+"' is not expected.", getLineNumberForPosition(xmlData, i));
+    }
+  }
+
+  if (!tagFound) {
+    return getErrorObject('InvalidXml', 'Start tag expected.', 1);
+  } else if (tags.length > 0) {
+    return getErrorObject('InvalidXml', "Invalid '"+JSON.stringify(tags, null, 4).replace(/\r?\n/g, '')+"' found.", 1);
+  }
+
+  return true;
+};
+
+/**
+ * Read Processing insstructions and skip
+ * @param {*} xmlData
+ * @param {*} i
+ */
+function readPI(xmlData, i) {
+  var start = i;
+  for (; i < xmlData.length; i++) {
+    if (xmlData[i] == '?' || xmlData[i] == ' ') {
+      //tagname
+      var tagname = xmlData.substr(start, i - start);
+      if (i > 5 && tagname === 'xml') {
+        return getErrorObject('InvalidXml', 'XML declaration allowed only at the start of the document.', getLineNumberForPosition(xmlData, i));
+      } else if (xmlData[i] == '?' && xmlData[i + 1] == '>') {
+        //check if valid attribut string
+        i++;
+        break;
+      } else {
+        continue;
+      }
+    }
+  }
+  return i;
+}
+
+function readCommentAndCDATA(xmlData, i) {
+  if (xmlData.length > i + 5 && xmlData[i + 1] === '-' && xmlData[i + 2] === '-') {
+    //comment
+    for (i += 3; i < xmlData.length; i++) {
+      if (xmlData[i] === '-' && xmlData[i + 1] === '-' && xmlData[i + 2] === '>') {
+        i += 2;
+        break;
+      }
+    }
+  } else if (
+    xmlData.length > i + 8 &&
+    xmlData[i + 1] === 'D' &&
+    xmlData[i + 2] === 'O' &&
+    xmlData[i + 3] === 'C' &&
+    xmlData[i + 4] === 'T' &&
+    xmlData[i + 5] === 'Y' &&
+    xmlData[i + 6] === 'P' &&
+    xmlData[i + 7] === 'E'
+  ) {
+    let angleBracketsCount = 1;
+    for (i += 8; i < xmlData.length; i++) {
+      if (xmlData[i] === '<') {
+        angleBracketsCount++;
+      } else if (xmlData[i] === '>') {
+        angleBracketsCount--;
+        if (angleBracketsCount === 0) {
+          break;
+        }
+      }
+    }
+  } else if (
+    xmlData.length > i + 9 &&
+    xmlData[i + 1] === '[' &&
+    xmlData[i + 2] === 'C' &&
+    xmlData[i + 3] === 'D' &&
+    xmlData[i + 4] === 'A' &&
+    xmlData[i + 5] === 'T' &&
+    xmlData[i + 6] === 'A' &&
+    xmlData[i + 7] === '['
+  ) {
+    for (i += 8; i < xmlData.length; i++) {
+      if (xmlData[i] === ']' && xmlData[i + 1] === ']' && xmlData[i + 2] === '>') {
+        i += 2;
+        break;
+      }
+    }
+  }
+
+  return i;
+}
+
+var doubleQuote = '"';
+var singleQuote = "'";
+
+/**
+ * Keep reading xmlData until '<' is found outside the attribute value.
+ * @param {string} xmlData
+ * @param {number} i
+ */
+function readAttributeStr(xmlData, i) {
+  let attrStr = '';
+  let startChar = '';
+  let tagClosed = false;
+  for (; i < xmlData.length; i++) {
+    if (xmlData[i] === doubleQuote || xmlData[i] === singleQuote) {
+      if (startChar === '') {
+        startChar = xmlData[i];
+      } else if (startChar !== xmlData[i]) {
+        //if vaue is enclosed with double quote then single quotes are allowed inside the value and vice versa
+        continue;
+      } else {
+        startChar = '';
+      }
+    } else if (xmlData[i] === '>') {
+      if (startChar === '') {
+        tagClosed = true;
+        break;
+      }
+    }
+    attrStr += xmlData[i];
+  }
+  if (startChar !== '') {
+    return false;
+  }
+
+  return {
+    value: attrStr,
+    index: i,
+    tagClosed: tagClosed
+  };
+}
+
+/**
+ * Select all the attributes whether valid or invalid.
+ */
+const validAttrStrRegxp = new RegExp('(\\s*)([^\\s=]+)(\\s*=)?(\\s*([\'"])(([\\s\\S])*?)\\5)?', 'g');
+
+//attr, ="sd", a="amit's", a="sd"b="saf", ab  cd=""
+
+function validateAttributeString(attrStr, options) {
+  //console.log("start:"+attrStr+":end");
+
+  //if(attrStr.trim().length === 0) return true; //empty string
+
+  const matches = util.getAllMatches(attrStr, validAttrStrRegxp);
+  const attrNames = {};
+
+  for (let i = 0; i < matches.length; i++) {
+    if (matches[i][1].length === 0) {
+      //nospace before attribute name: a="sd"b="saf"
+      return getErrorObject('InvalidAttr', "Attribute '"+matches[i][2]+"' has no space in starting.", getPositionFromMatch(attrStr, matches[i][0]))
+    } else if (matches[i][3] === undefined && !options.allowBooleanAttributes) {
+      //independent attribute: ab
+      return getErrorObject('InvalidAttr', "boolean attribute '"+matches[i][2]+"' is not allowed.", getPositionFromMatch(attrStr, matches[i][0]));
+    }
+    /* else if(matches[i][6] === undefined){//attribute without value: ab=
+                    return { err: { code:"InvalidAttr",msg:"attribute " + matches[i][2] + " has no value assigned."}};
+                } */
+    const attrName = matches[i][2];
+    if (!validateAttrName(attrName)) {
+      return getErrorObject('InvalidAttr', "Attribute '"+attrName+"' is an invalid name.", getPositionFromMatch(attrStr, matches[i][0]));
+    }
+    if (!attrNames.hasOwnProperty(attrName)) {
+      //check for duplicate attribute.
+      attrNames[attrName] = 1;
+    } else {
+      return getErrorObject('InvalidAttr', "Attribute '"+attrName+"' is repeated.", getPositionFromMatch(attrStr, matches[i][0]));
+    }
+  }
+
+  return true;
+}
+
+function validateNumberAmpersand(xmlData, i) {
+  let re = /\d/;
+  if (xmlData[i] === 'x') {
+    i++;
+    re = /[\da-fA-F]/;
+  }
+  for (; i < xmlData.length; i++) {
+    if (xmlData[i] === ';')
+      return i;
+    if (!xmlData[i].match(re))
+      break;
+  }
+  return -1;
+}
+
+function validateAmpersand(xmlData, i) {
+  // https://www.w3.org/TR/xml/#dt-charref
+  i++;
+  if (xmlData[i] === ';')
+    return -1;
+  if (xmlData[i] === '#') {
+    i++;
+    return validateNumberAmpersand(xmlData, i);
+  }
+  let count = 0;
+  for (; i < xmlData.length; i++, count++) {
+    if (xmlData[i].match(/\w/) && count < 20)
+      continue;
+    if (xmlData[i] === ';')
+      break;
+    return -1;
+  }
+  return i;
+}
+
+function getErrorObject(code, message, lineNumber) {
+  return {
+    err: {
+      code: code,
+      msg: message,
+      line: lineNumber,
+    },
+  };
+}
+
+function validateAttrName(attrName) {
+  return util.isName(attrName);
+}
+
+// const startsWithXML = /^xml/i;
+
+function validateTagName(tagname) {
+  return util.isName(tagname) /* && !tagname.match(startsWithXML) */;
+}
+
+//this function returns the line number for the character at the given index
+function getLineNumberForPosition(xmlData, index) {
+  var lines = xmlData.substring(0, index).split(/\r?\n/);
+  return lines.length;
+}
+
+//this function returns the position of the last character of match within attrStr
+function getPositionFromMatch(attrStr, match) {
+  return attrStr.indexOf(match) + match.length;
+}
+
+
+/***/ }),
+
+/***/ 9539:
+/***/ ((module) => {
+
+"use strict";
+
+
+module.exports = function(tagname, parent, val) {
+  this.tagname = tagname;
+  this.parent = parent;
+  this.child = {}; //child tags
+  this.attrsMap = {}; //attributes map
+  this.val = val; //text only
+  this.addChild = function(child) {
+    if (Array.isArray(this.child[child.tagname])) {
+      //already presents
+      this.child[child.tagname].push(child);
+    } else {
+      this.child[child.tagname] = [child];
+    }
+  };
+};
+
+
+/***/ }),
+
+/***/ 6712:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+
+const util = __nccwpck_require__(8280);
+const buildOptions = __nccwpck_require__(8280).buildOptions;
+const xmlNode = __nccwpck_require__(9539);
+const regx =
+  '<((!\\[CDATA\\[([\\s\\S]*?)(]]>))|((NAME:)?(NAME))([^>]*)>|((\\/)(NAME)\\s*>))([^<]*)'
+  .replace(/NAME/g, util.nameRegexp);
+
+//const tagsRegx = new RegExp("<(\\/?[\\w:\\-\._]+)([^>]*)>(\\s*"+cdataRegx+")*([^<]+)?","g");
+//const tagsRegx = new RegExp("<(\\/?)((\\w*:)?([\\w:\\-\._]+))([^>]*)>([^<]*)("+cdataRegx+"([^<]*))*([^<]+)?","g");
+
+//polyfill
+if (!Number.parseInt && window.parseInt) {
+  Number.parseInt = window.parseInt;
+}
+if (!Number.parseFloat && window.parseFloat) {
+  Number.parseFloat = window.parseFloat;
+}
+
+const defaultOptions = {
+  attributeNamePrefix: '@_',
+  attrNodeName: false,
+  textNodeName: '#text',
+  ignoreAttributes: true,
+  ignoreNameSpace: false,
+  allowBooleanAttributes: false, //a tag can have attributes without any value
+  //ignoreRootElement : false,
+  parseNodeValue: true,
+  parseAttributeValue: false,
+  arrayMode: false,
+  trimValues: true, //Trim string values of tag and attributes
+  cdataTagName: false,
+  cdataPositionChar: '\\c',
+  tagValueProcessor: function(a, tagName) {
+    return a;
+  },
+  attrValueProcessor: function(a, attrName) {
+    return a;
+  },
+  stopNodes: []
+  //decodeStrict: false,
+};
+
+exports.defaultOptions = defaultOptions;
+
+const props = [
+  'attributeNamePrefix',
+  'attrNodeName',
+  'textNodeName',
+  'ignoreAttributes',
+  'ignoreNameSpace',
+  'allowBooleanAttributes',
+  'parseNodeValue',
+  'parseAttributeValue',
+  'arrayMode',
+  'trimValues',
+  'cdataTagName',
+  'cdataPositionChar',
+  'tagValueProcessor',
+  'attrValueProcessor',
+  'parseTrueNumberOnly',
+  'stopNodes'
+];
+exports.props = props;
+
+/**
+ * Trim -> valueProcessor -> parse value
+ * @param {string} tagName
+ * @param {string} val
+ * @param {object} options
+ */
+function processTagValue(tagName, val, options) {
+  if (val) {
+    if (options.trimValues) {
+      val = val.trim();
+    }
+    val = options.tagValueProcessor(val, tagName);
+    val = parseValue(val, options.parseNodeValue, options.parseTrueNumberOnly);
+  }
+
+  return val;
+}
+
+function resolveNameSpace(tagname, options) {
+  if (options.ignoreNameSpace) {
+    const tags = tagname.split(':');
+    const prefix = tagname.charAt(0) === '/' ? '/' : '';
+    if (tags[0] === 'xmlns') {
+      return '';
+    }
+    if (tags.length === 2) {
+      tagname = prefix + tags[1];
+    }
+  }
+  return tagname;
+}
+
+function parseValue(val, shouldParse, parseTrueNumberOnly) {
+  if (shouldParse && typeof val === 'string') {
+    let parsed;
+    if (val.trim() === '' || isNaN(val)) {
+      parsed = val === 'true' ? true : val === 'false' ? false : val;
+    } else {
+      if (val.indexOf('0x') !== -1) {
+        //support hexa decimal
+        parsed = Number.parseInt(val, 16);
+      } else if (val.indexOf('.') !== -1) {
+        parsed = Number.parseFloat(val);
+        val = val.replace(/\.?0+$/, "");
+      } else {
+        parsed = Number.parseInt(val, 10);
+      }
+      if (parseTrueNumberOnly) {
+        parsed = String(parsed) === val ? parsed : val;
+      }
+    }
+    return parsed;
+  } else {
+    if (util.isExist(val)) {
+      return val;
+    } else {
+      return '';
+    }
+  }
+}
+
+//TODO: change regex to capture NS
+//const attrsRegx = new RegExp("([\\w\\-\\.\\:]+)\\s*=\\s*(['\"])((.|\n)*?)\\2","gm");
+const attrsRegx = new RegExp('([^\\s=]+)\\s*(=\\s*([\'"])(.*?)\\3)?', 'g');
+
+function buildAttributesMap(attrStr, options) {
+  if (!options.ignoreAttributes && typeof attrStr === 'string') {
+    attrStr = attrStr.replace(/\r?\n/g, ' ');
+    //attrStr = attrStr || attrStr.trim();
+
+    const matches = util.getAllMatches(attrStr, attrsRegx);
+    const len = matches.length; //don't make it inline
+    const attrs = {};
+    for (let i = 0; i < len; i++) {
+      const attrName = resolveNameSpace(matches[i][1], options);
+      if (attrName.length) {
+        if (matches[i][4] !== undefined) {
+          if (options.trimValues) {
+            matches[i][4] = matches[i][4].trim();
+          }
+          matches[i][4] = options.attrValueProcessor(matches[i][4], attrName);
+          attrs[options.attributeNamePrefix + attrName] = parseValue(
+            matches[i][4],
+            options.parseAttributeValue,
+            options.parseTrueNumberOnly
+          );
+        } else if (options.allowBooleanAttributes) {
+          attrs[options.attributeNamePrefix + attrName] = true;
+        }
+      }
+    }
+    if (!Object.keys(attrs).length) {
+      return;
+    }
+    if (options.attrNodeName) {
+      const attrCollection = {};
+      attrCollection[options.attrNodeName] = attrs;
+      return attrCollection;
+    }
+    return attrs;
+  }
+}
+
+const getTraversalObj = function(xmlData, options) {
+  xmlData = xmlData.replace(/\r\n?/g, "\n");
+  options = buildOptions(options, defaultOptions, props);
+  const xmlObj = new xmlNode('!xml');
+  let currentNode = xmlObj;
+  let textData = "";
+
+//function match(xmlData){
+  for(let i=0; i< xmlData.length; i++){
+    const ch = xmlData[i];
+    if(ch === '<'){
+      if( xmlData[i+1] === '/') {//Closing Tag
+        const closeIndex = findClosingIndex(xmlData, ">", i, "Closing Tag is not closed.")
+        let tagName = xmlData.substring(i+2,closeIndex).trim();
+
+        if(options.ignoreNameSpace){
+          const colonIndex = tagName.indexOf(":");
+          if(colonIndex !== -1){
+            tagName = tagName.substr(colonIndex+1);
+          }
+        }
+
+        /* if (currentNode.parent) {
+          currentNode.parent.val = util.getValue(currentNode.parent.val) + '' + processTagValue2(tagName, textData , options);
+        } */
+        if(currentNode){
+          if(currentNode.val){
+            currentNode.val = util.getValue(currentNode.val) + '' + processTagValue(tagName, textData , options);
+          }else{
+            currentNode.val = processTagValue(tagName, textData , options);
+          }
+        }
+
+        if (options.stopNodes.length && options.stopNodes.includes(currentNode.tagname)) {
+          currentNode.child = []
+          if (currentNode.attrsMap == undefined) { currentNode.attrsMap = {}}
+          currentNode.val = xmlData.substr(currentNode.startIndex + 1, i - currentNode.startIndex - 1)
+        }
+        currentNode = currentNode.parent;
+        textData = "";
+        i = closeIndex;
+      } else if( xmlData[i+1] === '?') {
+        i = findClosingIndex(xmlData, "?>", i, "Pi Tag is not closed.")
+      } else if(xmlData.substr(i + 1, 3) === '!--') {
+        i = findClosingIndex(xmlData, "-->", i, "Comment is not closed.")
+      } else if( xmlData.substr(i + 1, 2) === '!D') {
+        const closeIndex = findClosingIndex(xmlData, ">", i, "DOCTYPE is not closed.")
+        const tagExp = xmlData.substring(i, closeIndex);
+        if(tagExp.indexOf("[") >= 0){
+          i = xmlData.indexOf("]>", i) + 1;
+        }else{
+          i = closeIndex;
+        }
+      }else if(xmlData.substr(i + 1, 2) === '![') {
+        const closeIndex = findClosingIndex(xmlData, "]]>", i, "CDATA is not closed.") - 2
+        const tagExp = xmlData.substring(i + 9,closeIndex);
+
+        //considerations
+        //1. CDATA will always have parent node
+        //2. A tag with CDATA is not a leaf node so it's value would be string type.
+        if(textData){
+          currentNode.val = util.getValue(currentNode.val) + '' + processTagValue(currentNode.tagname, textData , options);
+          textData = "";
+        }
+
+        if (options.cdataTagName) {
+          //add cdata node
+          const childNode = new xmlNode(options.cdataTagName, currentNode, tagExp);
+          currentNode.addChild(childNode);
+          //for backtracking
+          currentNode.val = util.getValue(currentNode.val) + options.cdataPositionChar;
+          //add rest value to parent node
+          if (tagExp) {
+            childNode.val = tagExp;
+          }
+        } else {
+          currentNode.val = (currentNode.val || '') + (tagExp || '');
+        }
+
+        i = closeIndex + 2;
+      }else {//Opening tag
+        const result = closingIndexForOpeningTag(xmlData, i+1)
+        let tagExp = result.data;
+        const closeIndex = result.index;
+        const separatorIndex = tagExp.indexOf(" ");
+        let tagName = tagExp;
+        let shouldBuildAttributesMap = true;
+        if(separatorIndex !== -1){
+          tagName = tagExp.substr(0, separatorIndex).replace(/\s\s*$/, '');
+          tagExp = tagExp.substr(separatorIndex + 1);
+        }
+
+        if(options.ignoreNameSpace){
+          const colonIndex = tagName.indexOf(":");
+          if(colonIndex !== -1){
+            tagName = tagName.substr(colonIndex+1);
+            shouldBuildAttributesMap = tagName !== result.data.substr(colonIndex + 1);
+          }
+        }
+
+        //save text to parent node
+        if (currentNode && textData) {
+          if(currentNode.tagname !== '!xml'){
+            currentNode.val = util.getValue(currentNode.val) + '' + processTagValue( currentNode.tagname, textData, options);
+          }
+        }
+
+        if(tagExp.length > 0 && tagExp.lastIndexOf("/") === tagExp.length - 1){//selfClosing tag
+
+          if(tagName[tagName.length - 1] === "/"){ //remove trailing '/'
+            tagName = tagName.substr(0, tagName.length - 1);
+            tagExp = tagName;
+          }else{
+            tagExp = tagExp.substr(0, tagExp.length - 1);
+          }
+
+          const childNode = new xmlNode(tagName, currentNode, '');
+          if(tagName !== tagExp){
+            childNode.attrsMap = buildAttributesMap(tagExp, options);
+          }
+          currentNode.addChild(childNode);
+        }else{//opening tag
+
+          const childNode = new xmlNode( tagName, currentNode );
+          if (options.stopNodes.length && options.stopNodes.includes(childNode.tagname)) {
+            childNode.startIndex=closeIndex;
+          }
+          if(tagName !== tagExp && shouldBuildAttributesMap){
+            childNode.attrsMap = buildAttributesMap(tagExp, options);
+          }
+          currentNode.addChild(childNode);
+          currentNode = childNode;
+        }
+        textData = "";
+        i = closeIndex;
+      }
+    }else{
+      textData += xmlData[i];
+    }
+  }
+  return xmlObj;
+}
+
+function closingIndexForOpeningTag(data, i){
+  let attrBoundary;
+  let tagExp = "";
+  for (let index = i; index < data.length; index++) {
+    let ch = data[index];
+    if (attrBoundary) {
+        if (ch === attrBoundary) attrBoundary = "";//reset
+    } else if (ch === '"' || ch === "'") {
+        attrBoundary = ch;
+    } else if (ch === '>') {
+        return {
+          data: tagExp,
+          index: index
+        }
+    } else if (ch === '\t') {
+      ch = " "
+    }
+    tagExp += ch;
+  }
+}
+
+function findClosingIndex(xmlData, str, i, errMsg){
+  const closingIndex = xmlData.indexOf(str, i);
+  if(closingIndex === -1){
+    throw new Error(errMsg)
+  }else{
+    return closingIndex + str.length - 1;
+  }
+}
+
+exports.getTraversalObj = getTraversalObj;
+
+
+/***/ }),
+
 /***/ 4351:
 /***/ ((module) => {
 
@@ -27363,19 +32048,17 @@ var __createBinding;
         return (mod && mod.__esModule) ? mod : { "default": mod };
     };
 
-    __classPrivateFieldGet = function (receiver, privateMap) {
-        if (!privateMap.has(receiver)) {
-            throw new TypeError("attempted to get private field on non-instance");
-        }
-        return privateMap.get(receiver);
+    __classPrivateFieldGet = function (receiver, state, kind, f) {
+        if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
+        if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
+        return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
     };
 
-    __classPrivateFieldSet = function (receiver, privateMap, value) {
-        if (!privateMap.has(receiver)) {
-            throw new TypeError("attempted to set private field on non-instance");
-        }
-        privateMap.set(receiver, value);
-        return value;
+    __classPrivateFieldSet = function (receiver, state, value, kind, f) {
+        if (kind === "m") throw new TypeError("Private method is not writable");
+        if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
+        if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
+        return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
     };
 
     exporter("__extends", __extends);
@@ -27407,218 +32090,649 @@ var __createBinding;
 
 /***/ }),
 
-/***/ 2155:
-/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+/***/ 5840:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
-var v1 = __nccwpck_require__(8749);
-var v4 = __nccwpck_require__(824);
+"use strict";
 
-var uuid = v4;
-uuid.v1 = v1;
-uuid.v4 = v4;
 
-module.exports = uuid;
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+Object.defineProperty(exports, "v1", ({
+  enumerable: true,
+  get: function () {
+    return _v.default;
+  }
+}));
+Object.defineProperty(exports, "v3", ({
+  enumerable: true,
+  get: function () {
+    return _v2.default;
+  }
+}));
+Object.defineProperty(exports, "v4", ({
+  enumerable: true,
+  get: function () {
+    return _v3.default;
+  }
+}));
+Object.defineProperty(exports, "v5", ({
+  enumerable: true,
+  get: function () {
+    return _v4.default;
+  }
+}));
+Object.defineProperty(exports, "NIL", ({
+  enumerable: true,
+  get: function () {
+    return _nil.default;
+  }
+}));
+Object.defineProperty(exports, "version", ({
+  enumerable: true,
+  get: function () {
+    return _version.default;
+  }
+}));
+Object.defineProperty(exports, "validate", ({
+  enumerable: true,
+  get: function () {
+    return _validate.default;
+  }
+}));
+Object.defineProperty(exports, "stringify", ({
+  enumerable: true,
+  get: function () {
+    return _stringify.default;
+  }
+}));
+Object.defineProperty(exports, "parse", ({
+  enumerable: true,
+  get: function () {
+    return _parse.default;
+  }
+}));
 
+var _v = _interopRequireDefault(__nccwpck_require__(8628));
+
+var _v2 = _interopRequireDefault(__nccwpck_require__(6409));
+
+var _v3 = _interopRequireDefault(__nccwpck_require__(5122));
+
+var _v4 = _interopRequireDefault(__nccwpck_require__(9120));
+
+var _nil = _interopRequireDefault(__nccwpck_require__(5332));
+
+var _version = _interopRequireDefault(__nccwpck_require__(1595));
+
+var _validate = _interopRequireDefault(__nccwpck_require__(6900));
+
+var _stringify = _interopRequireDefault(__nccwpck_require__(8950));
+
+var _parse = _interopRequireDefault(__nccwpck_require__(2746));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
 
-/***/ 2707:
-/***/ ((module) => {
+/***/ 4569:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.default = void 0;
+
+var _crypto = _interopRequireDefault(__nccwpck_require__(6417));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function md5(bytes) {
+  if (Array.isArray(bytes)) {
+    bytes = Buffer.from(bytes);
+  } else if (typeof bytes === 'string') {
+    bytes = Buffer.from(bytes, 'utf8');
+  }
+
+  return _crypto.default.createHash('md5').update(bytes).digest();
+}
+
+var _default = md5;
+exports.default = _default;
+
+/***/ }),
+
+/***/ 5332:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.default = void 0;
+var _default = '00000000-0000-0000-0000-000000000000';
+exports.default = _default;
+
+/***/ }),
+
+/***/ 2746:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.default = void 0;
+
+var _validate = _interopRequireDefault(__nccwpck_require__(6900));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function parse(uuid) {
+  if (!(0, _validate.default)(uuid)) {
+    throw TypeError('Invalid UUID');
+  }
+
+  let v;
+  const arr = new Uint8Array(16); // Parse ########-....-....-....-............
+
+  arr[0] = (v = parseInt(uuid.slice(0, 8), 16)) >>> 24;
+  arr[1] = v >>> 16 & 0xff;
+  arr[2] = v >>> 8 & 0xff;
+  arr[3] = v & 0xff; // Parse ........-####-....-....-............
+
+  arr[4] = (v = parseInt(uuid.slice(9, 13), 16)) >>> 8;
+  arr[5] = v & 0xff; // Parse ........-....-####-....-............
+
+  arr[6] = (v = parseInt(uuid.slice(14, 18), 16)) >>> 8;
+  arr[7] = v & 0xff; // Parse ........-....-....-####-............
+
+  arr[8] = (v = parseInt(uuid.slice(19, 23), 16)) >>> 8;
+  arr[9] = v & 0xff; // Parse ........-....-....-....-############
+  // (Use "/" to avoid 32-bit truncation when bit-shifting high-order bytes)
+
+  arr[10] = (v = parseInt(uuid.slice(24, 36), 16)) / 0x10000000000 & 0xff;
+  arr[11] = v / 0x100000000 & 0xff;
+  arr[12] = v >>> 24 & 0xff;
+  arr[13] = v >>> 16 & 0xff;
+  arr[14] = v >>> 8 & 0xff;
+  arr[15] = v & 0xff;
+  return arr;
+}
+
+var _default = parse;
+exports.default = _default;
+
+/***/ }),
+
+/***/ 814:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.default = void 0;
+var _default = /^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i;
+exports.default = _default;
+
+/***/ }),
+
+/***/ 807:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.default = rng;
+
+var _crypto = _interopRequireDefault(__nccwpck_require__(6417));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+const rnds8Pool = new Uint8Array(256); // # of random values to pre-allocate
+
+let poolPtr = rnds8Pool.length;
+
+function rng() {
+  if (poolPtr > rnds8Pool.length - 16) {
+    _crypto.default.randomFillSync(rnds8Pool);
+
+    poolPtr = 0;
+  }
+
+  return rnds8Pool.slice(poolPtr, poolPtr += 16);
+}
+
+/***/ }),
+
+/***/ 5274:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.default = void 0;
+
+var _crypto = _interopRequireDefault(__nccwpck_require__(6417));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function sha1(bytes) {
+  if (Array.isArray(bytes)) {
+    bytes = Buffer.from(bytes);
+  } else if (typeof bytes === 'string') {
+    bytes = Buffer.from(bytes, 'utf8');
+  }
+
+  return _crypto.default.createHash('sha1').update(bytes).digest();
+}
+
+var _default = sha1;
+exports.default = _default;
+
+/***/ }),
+
+/***/ 8950:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.default = void 0;
+
+var _validate = _interopRequireDefault(__nccwpck_require__(6900));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * Convert array of 16 byte values to UUID string format of the form:
  * XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
  */
-var byteToHex = [];
-for (var i = 0; i < 256; ++i) {
-  byteToHex[i] = (i + 0x100).toString(16).substr(1);
+const byteToHex = [];
+
+for (let i = 0; i < 256; ++i) {
+  byteToHex.push((i + 0x100).toString(16).substr(1));
 }
 
-function bytesToUuid(buf, offset) {
-  var i = offset || 0;
-  var bth = byteToHex;
-  // join used to fix memory issue caused by concatenation: https://bugs.chromium.org/p/v8/issues/detail?id=3175#c4
-  return ([
-    bth[buf[i++]], bth[buf[i++]],
-    bth[buf[i++]], bth[buf[i++]], '-',
-    bth[buf[i++]], bth[buf[i++]], '-',
-    bth[buf[i++]], bth[buf[i++]], '-',
-    bth[buf[i++]], bth[buf[i++]], '-',
-    bth[buf[i++]], bth[buf[i++]],
-    bth[buf[i++]], bth[buf[i++]],
-    bth[buf[i++]], bth[buf[i++]]
-  ]).join('');
+function stringify(arr, offset = 0) {
+  // Note: Be careful editing this code!  It's been tuned for performance
+  // and works in ways you may not expect. See https://github.com/uuidjs/uuid/pull/434
+  const uuid = (byteToHex[arr[offset + 0]] + byteToHex[arr[offset + 1]] + byteToHex[arr[offset + 2]] + byteToHex[arr[offset + 3]] + '-' + byteToHex[arr[offset + 4]] + byteToHex[arr[offset + 5]] + '-' + byteToHex[arr[offset + 6]] + byteToHex[arr[offset + 7]] + '-' + byteToHex[arr[offset + 8]] + byteToHex[arr[offset + 9]] + '-' + byteToHex[arr[offset + 10]] + byteToHex[arr[offset + 11]] + byteToHex[arr[offset + 12]] + byteToHex[arr[offset + 13]] + byteToHex[arr[offset + 14]] + byteToHex[arr[offset + 15]]).toLowerCase(); // Consistency check for valid UUID.  If this throws, it's likely due to one
+  // of the following:
+  // - One or more input array values don't map to a hex octet (leading to
+  // "undefined" in the uuid)
+  // - Invalid input values for the RFC `version` or `variant` fields
+
+  if (!(0, _validate.default)(uuid)) {
+    throw TypeError('Stringified UUID is invalid');
+  }
+
+  return uuid;
 }
 
-module.exports = bytesToUuid;
-
+var _default = stringify;
+exports.default = _default;
 
 /***/ }),
 
-/***/ 5859:
-/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+/***/ 8628:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
-// Unique ID creation requires a high quality random # generator.  In node.js
-// this is pretty straight-forward - we use the crypto API.
-
-var crypto = __nccwpck_require__(6417);
-
-module.exports = function nodeRNG() {
-  return crypto.randomBytes(16);
-};
+"use strict";
 
 
-/***/ }),
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.default = void 0;
 
-/***/ 8749:
-/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+var _rng = _interopRequireDefault(__nccwpck_require__(807));
 
-var rng = __nccwpck_require__(5859);
-var bytesToUuid = __nccwpck_require__(2707);
+var _stringify = _interopRequireDefault(__nccwpck_require__(8950));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // **`v1()` - Generate time-based UUID**
 //
 // Inspired by https://github.com/LiosK/UUID.js
 // and http://docs.python.org/library/uuid.html
+let _nodeId;
 
-var _nodeId;
-var _clockseq;
+let _clockseq; // Previous uuid creation time
 
-// Previous uuid creation time
-var _lastMSecs = 0;
-var _lastNSecs = 0;
 
-// See https://github.com/uuidjs/uuid for API details
+let _lastMSecs = 0;
+let _lastNSecs = 0; // See https://github.com/uuidjs/uuid for API details
+
 function v1(options, buf, offset) {
-  var i = buf && offset || 0;
-  var b = buf || [];
-
+  let i = buf && offset || 0;
+  const b = buf || new Array(16);
   options = options || {};
-  var node = options.node || _nodeId;
-  var clockseq = options.clockseq !== undefined ? options.clockseq : _clockseq;
-
-  // node and clockseq need to be initialized to random values if they're not
+  let node = options.node || _nodeId;
+  let clockseq = options.clockseq !== undefined ? options.clockseq : _clockseq; // node and clockseq need to be initialized to random values if they're not
   // specified.  We do this lazily to minimize issues related to insufficient
   // system entropy.  See #189
+
   if (node == null || clockseq == null) {
-    var seedBytes = rng();
+    const seedBytes = options.random || (options.rng || _rng.default)();
+
     if (node == null) {
       // Per 4.5, create and 48-bit node id, (47 random bits + multicast bit = 1)
-      node = _nodeId = [
-        seedBytes[0] | 0x01,
-        seedBytes[1], seedBytes[2], seedBytes[3], seedBytes[4], seedBytes[5]
-      ];
+      node = _nodeId = [seedBytes[0] | 0x01, seedBytes[1], seedBytes[2], seedBytes[3], seedBytes[4], seedBytes[5]];
     }
+
     if (clockseq == null) {
       // Per 4.2.2, randomize (14 bit) clockseq
       clockseq = _clockseq = (seedBytes[6] << 8 | seedBytes[7]) & 0x3fff;
     }
-  }
-
-  // UUID timestamps are 100 nano-second units since the Gregorian epoch,
+  } // UUID timestamps are 100 nano-second units since the Gregorian epoch,
   // (1582-10-15 00:00).  JSNumbers aren't precise enough for this, so
   // time is handled internally as 'msecs' (integer milliseconds) and 'nsecs'
   // (100-nanoseconds offset from msecs) since unix epoch, 1970-01-01 00:00.
-  var msecs = options.msecs !== undefined ? options.msecs : new Date().getTime();
 
-  // Per 4.2.1.2, use count of uuid's generated during the current clock
+
+  let msecs = options.msecs !== undefined ? options.msecs : Date.now(); // Per 4.2.1.2, use count of uuid's generated during the current clock
   // cycle to simulate higher resolution clock
-  var nsecs = options.nsecs !== undefined ? options.nsecs : _lastNSecs + 1;
 
-  // Time since last uuid creation (in msecs)
-  var dt = (msecs - _lastMSecs) + (nsecs - _lastNSecs)/10000;
+  let nsecs = options.nsecs !== undefined ? options.nsecs : _lastNSecs + 1; // Time since last uuid creation (in msecs)
 
-  // Per 4.2.1.2, Bump clockseq on clock regression
+  const dt = msecs - _lastMSecs + (nsecs - _lastNSecs) / 10000; // Per 4.2.1.2, Bump clockseq on clock regression
+
   if (dt < 0 && options.clockseq === undefined) {
     clockseq = clockseq + 1 & 0x3fff;
-  }
-
-  // Reset nsecs if clock regresses (new clockseq) or we've moved onto a new
+  } // Reset nsecs if clock regresses (new clockseq) or we've moved onto a new
   // time interval
+
+
   if ((dt < 0 || msecs > _lastMSecs) && options.nsecs === undefined) {
     nsecs = 0;
-  }
+  } // Per 4.2.1.2 Throw error if too many uuids are requested
 
-  // Per 4.2.1.2 Throw error if too many uuids are requested
+
   if (nsecs >= 10000) {
-    throw new Error('uuid.v1(): Can\'t create more than 10M uuids/sec');
+    throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
   }
 
   _lastMSecs = msecs;
   _lastNSecs = nsecs;
-  _clockseq = clockseq;
+  _clockseq = clockseq; // Per 4.1.4 - Convert from unix epoch to Gregorian epoch
 
-  // Per 4.1.4 - Convert from unix epoch to Gregorian epoch
-  msecs += 12219292800000;
+  msecs += 12219292800000; // `time_low`
 
-  // `time_low`
-  var tl = ((msecs & 0xfffffff) * 10000 + nsecs) % 0x100000000;
+  const tl = ((msecs & 0xfffffff) * 10000 + nsecs) % 0x100000000;
   b[i++] = tl >>> 24 & 0xff;
   b[i++] = tl >>> 16 & 0xff;
   b[i++] = tl >>> 8 & 0xff;
-  b[i++] = tl & 0xff;
+  b[i++] = tl & 0xff; // `time_mid`
 
-  // `time_mid`
-  var tmh = (msecs / 0x100000000 * 10000) & 0xfffffff;
+  const tmh = msecs / 0x100000000 * 10000 & 0xfffffff;
   b[i++] = tmh >>> 8 & 0xff;
-  b[i++] = tmh & 0xff;
+  b[i++] = tmh & 0xff; // `time_high_and_version`
 
-  // `time_high_and_version`
   b[i++] = tmh >>> 24 & 0xf | 0x10; // include version
-  b[i++] = tmh >>> 16 & 0xff;
 
-  // `clock_seq_hi_and_reserved` (Per 4.2.2 - include variant)
-  b[i++] = clockseq >>> 8 | 0x80;
+  b[i++] = tmh >>> 16 & 0xff; // `clock_seq_hi_and_reserved` (Per 4.2.2 - include variant)
 
-  // `clock_seq_low`
-  b[i++] = clockseq & 0xff;
+  b[i++] = clockseq >>> 8 | 0x80; // `clock_seq_low`
 
-  // `node`
-  for (var n = 0; n < 6; ++n) {
+  b[i++] = clockseq & 0xff; // `node`
+
+  for (let n = 0; n < 6; ++n) {
     b[i + n] = node[n];
   }
 
-  return buf ? buf : bytesToUuid(b);
+  return buf || (0, _stringify.default)(b);
 }
 
-module.exports = v1;
-
+var _default = v1;
+exports.default = _default;
 
 /***/ }),
 
-/***/ 824:
-/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+/***/ 6409:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
-var rng = __nccwpck_require__(5859);
-var bytesToUuid = __nccwpck_require__(2707);
+"use strict";
 
-function v4(options, buf, offset) {
-  var i = buf && offset || 0;
 
-  if (typeof(options) == 'string') {
-    buf = options === 'binary' ? new Array(16) : null;
-    options = null;
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.default = void 0;
+
+var _v = _interopRequireDefault(__nccwpck_require__(5998));
+
+var _md = _interopRequireDefault(__nccwpck_require__(4569));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+const v3 = (0, _v.default)('v3', 0x30, _md.default);
+var _default = v3;
+exports.default = _default;
+
+/***/ }),
+
+/***/ 5998:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.default = _default;
+exports.URL = exports.DNS = void 0;
+
+var _stringify = _interopRequireDefault(__nccwpck_require__(8950));
+
+var _parse = _interopRequireDefault(__nccwpck_require__(2746));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function stringToBytes(str) {
+  str = unescape(encodeURIComponent(str)); // UTF8 escape
+
+  const bytes = [];
+
+  for (let i = 0; i < str.length; ++i) {
+    bytes.push(str.charCodeAt(i));
   }
-  options = options || {};
 
-  var rnds = options.random || (options.rng || rng)();
-
-  // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
-  rnds[6] = (rnds[6] & 0x0f) | 0x40;
-  rnds[8] = (rnds[8] & 0x3f) | 0x80;
-
-  // Copy bytes to buffer, if provided
-  if (buf) {
-    for (var ii = 0; ii < 16; ++ii) {
-      buf[i + ii] = rnds[ii];
-    }
-  }
-
-  return buf || bytesToUuid(rnds);
+  return bytes;
 }
 
-module.exports = v4;
+const DNS = '6ba7b810-9dad-11d1-80b4-00c04fd430c8';
+exports.DNS = DNS;
+const URL = '6ba7b811-9dad-11d1-80b4-00c04fd430c8';
+exports.URL = URL;
 
+function _default(name, version, hashfunc) {
+  function generateUUID(value, namespace, buf, offset) {
+    if (typeof value === 'string') {
+      value = stringToBytes(value);
+    }
+
+    if (typeof namespace === 'string') {
+      namespace = (0, _parse.default)(namespace);
+    }
+
+    if (namespace.length !== 16) {
+      throw TypeError('Namespace must be array-like (16 iterable integer values, 0-255)');
+    } // Compute hash of namespace and value, Per 4.3
+    // Future: Use spread syntax when supported on all platforms, e.g. `bytes =
+    // hashfunc([...namespace, ... value])`
+
+
+    let bytes = new Uint8Array(16 + value.length);
+    bytes.set(namespace);
+    bytes.set(value, namespace.length);
+    bytes = hashfunc(bytes);
+    bytes[6] = bytes[6] & 0x0f | version;
+    bytes[8] = bytes[8] & 0x3f | 0x80;
+
+    if (buf) {
+      offset = offset || 0;
+
+      for (let i = 0; i < 16; ++i) {
+        buf[offset + i] = bytes[i];
+      }
+
+      return buf;
+    }
+
+    return (0, _stringify.default)(bytes);
+  } // Function#name is not settable on some platforms (#270)
+
+
+  try {
+    generateUUID.name = name; // eslint-disable-next-line no-empty
+  } catch (err) {} // For CommonJS default export support
+
+
+  generateUUID.DNS = DNS;
+  generateUUID.URL = URL;
+  return generateUUID;
+}
+
+/***/ }),
+
+/***/ 5122:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.default = void 0;
+
+var _rng = _interopRequireDefault(__nccwpck_require__(807));
+
+var _stringify = _interopRequireDefault(__nccwpck_require__(8950));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function v4(options, buf, offset) {
+  options = options || {};
+
+  const rnds = options.random || (options.rng || _rng.default)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0, _stringify.default)(rnds);
+}
+
+var _default = v4;
+exports.default = _default;
+
+/***/ }),
+
+/***/ 9120:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.default = void 0;
+
+var _v = _interopRequireDefault(__nccwpck_require__(5998));
+
+var _sha = _interopRequireDefault(__nccwpck_require__(5274));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+const v5 = (0, _v.default)('v5', 0x50, _sha.default);
+var _default = v5;
+exports.default = _default;
+
+/***/ }),
+
+/***/ 6900:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.default = void 0;
+
+var _regex = _interopRequireDefault(__nccwpck_require__(814));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function validate(uuid) {
+  return typeof uuid === 'string' && _regex.default.test(uuid);
+}
+
+var _default = validate;
+exports.default = _default;
+
+/***/ }),
+
+/***/ 1595:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.default = void 0;
+
+var _validate = _interopRequireDefault(__nccwpck_require__(6900));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function version(uuid) {
+  if (!(0, _validate.default)(uuid)) {
+    throw TypeError('Invalid UUID');
+  }
+
+  return parseInt(uuid.substr(14, 1), 16);
+}
+
+var _default = version;
+exports.default = _default;
 
 /***/ }),
 
@@ -27734,8 +32848,9 @@ module.exports = require("util");;
 /******/ 	// The require function
 /******/ 	function __nccwpck_require__(moduleId) {
 /******/ 		// Check if module is in cache
-/******/ 		if(__webpack_module_cache__[moduleId]) {
-/******/ 			return __webpack_module_cache__[moduleId].exports;
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
@@ -27760,11 +32875,52 @@ module.exports = require("util");;
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat */
 /******/ 	
-/******/ 	__nccwpck_require__.ab = __dirname + "/";/************************************************************************/
-/******/ 	// module exports must be returned from runtime so entry inlining is disabled
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	return __nccwpck_require__(1667);
+/******/ 	if (typeof __nccwpck_require__ !== 'undefined') __nccwpck_require__.ab = __dirname + "/";/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+(() => {
+"use strict";
+var exports = __webpack_exports__;
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const path_1 = __nccwpck_require__(5622);
+const fs_1 = __nccwpck_require__(5747);
+const util_1 = __nccwpck_require__(1669);
+const client_lambda_1 = __nccwpck_require__(8390);
+const core_1 = __nccwpck_require__(2186);
+const action_1 = __nccwpck_require__(5834);
+const getValue = (key) => (core_1.getInput(key) || process.env[key]);
+const zipFileLocation = core_1.getInput('zip-file', { required: true });
+const lambdaName = core_1.getInput('lambda-name') || path_1.basename(zipFileLocation, '.zip');
+const publish = (core_1.getInput('publish') || '').toLowerCase() === 'true';
+const awsRegion = getValue('AWS_REGION');
+const awsAccessKeyId = getValue('AWS_ACCESS_KEY_ID');
+const awsSecretAccessKey = getValue('AWS_SECRET_ACCESS_KEY');
+const lambda = new client_lambda_1.Lambda({
+    region: awsRegion,
+    credentials: {
+        accessKeyId: awsAccessKeyId,
+        secretAccessKey: awsSecretAccessKey
+    }
+});
+(async () => {
+    try {
+        await new action_1.Action(util_1.promisify(fs_1.readFile), async (args) => {
+            await lambda.updateFunctionCode(args);
+        }, core_1.info).run({
+            zipFileLocation,
+            lambdaName,
+            publish
+        });
+    }
+    catch (error) {
+        core_1.setFailed(error);
+    }
+})();
+
+})();
+
+module.exports = __webpack_exports__;
 /******/ })()
 ;
 //# sourceMappingURL=index.js.map
