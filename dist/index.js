@@ -5,7 +5,7 @@ require('./sourcemap-register.js');/******/ (() => { // webpackBootstrap
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-lambda","description":"AWS SDK for JavaScript Lambda Client for Node.js, Browser and React Native","version":"3.14.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","prepublishOnly":"yarn build && downlevel-dts dist/types dist/types/ts3.4","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/client-sts":"3.14.0","@aws-sdk/config-resolver":"3.14.0","@aws-sdk/credential-provider-node":"3.14.0","@aws-sdk/fetch-http-handler":"3.13.1","@aws-sdk/hash-node":"3.13.1","@aws-sdk/invalid-dependency":"3.13.1","@aws-sdk/middleware-content-length":"3.13.1","@aws-sdk/middleware-host-header":"3.13.1","@aws-sdk/middleware-logger":"3.13.1","@aws-sdk/middleware-retry":"3.13.1","@aws-sdk/middleware-serde":"3.13.1","@aws-sdk/middleware-signing":"3.13.1","@aws-sdk/middleware-stack":"3.13.1","@aws-sdk/middleware-user-agent":"3.14.0","@aws-sdk/node-config-provider":"3.13.1","@aws-sdk/node-http-handler":"3.13.1","@aws-sdk/protocol-http":"3.13.1","@aws-sdk/smithy-client":"3.13.1","@aws-sdk/types":"3.13.1","@aws-sdk/url-parser":"3.13.1","@aws-sdk/util-base64-browser":"3.13.1","@aws-sdk/util-base64-node":"3.13.1","@aws-sdk/util-body-length-browser":"3.13.1","@aws-sdk/util-body-length-node":"3.13.1","@aws-sdk/util-user-agent-browser":"3.13.1","@aws-sdk/util-user-agent-node":"3.13.1","@aws-sdk/util-utf8-browser":"3.13.1","@aws-sdk/util-utf8-node":"3.13.1","@aws-sdk/util-waiter":"3.13.1","tslib":"^2.0.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.14.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.2.4"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-lambda","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-lambda"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-lambda","description":"AWS SDK for JavaScript Lambda Client for Node.js, Browser and React Native","version":"3.16.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","prepublishOnly":"yarn build && downlevel-dts dist/types dist/types/ts3.4","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/client-sts":"3.16.0","@aws-sdk/config-resolver":"3.16.0","@aws-sdk/credential-provider-node":"3.16.0","@aws-sdk/fetch-http-handler":"3.15.0","@aws-sdk/hash-node":"3.15.0","@aws-sdk/invalid-dependency":"3.15.0","@aws-sdk/middleware-content-length":"3.15.0","@aws-sdk/middleware-host-header":"3.16.0","@aws-sdk/middleware-logger":"3.15.0","@aws-sdk/middleware-retry":"3.16.0","@aws-sdk/middleware-serde":"3.15.0","@aws-sdk/middleware-signing":"3.16.0","@aws-sdk/middleware-stack":"3.15.0","@aws-sdk/middleware-user-agent":"3.16.0","@aws-sdk/node-config-provider":"3.15.0","@aws-sdk/node-http-handler":"3.15.0","@aws-sdk/protocol-http":"3.15.0","@aws-sdk/smithy-client":"3.15.0","@aws-sdk/types":"3.15.0","@aws-sdk/url-parser":"3.15.0","@aws-sdk/util-base64-browser":"3.13.1","@aws-sdk/util-base64-node":"3.13.1","@aws-sdk/util-body-length-browser":"3.13.1","@aws-sdk/util-body-length-node":"3.13.1","@aws-sdk/util-user-agent-browser":"3.15.0","@aws-sdk/util-user-agent-node":"3.15.0","@aws-sdk/util-utf8-browser":"3.13.1","@aws-sdk/util-utf8-node":"3.13.1","@aws-sdk/util-waiter":"3.15.0","tslib":"^2.0.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.16.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.2.4"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-lambda","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-lambda"}}');
 
 /***/ }),
 
@@ -13,7 +13,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-lambda","description":"AWS
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.14.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","prepublishOnly":"yarn build && downlevel-dts dist/types dist/types/ts3.4","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.14.0","@aws-sdk/fetch-http-handler":"3.13.1","@aws-sdk/hash-node":"3.13.1","@aws-sdk/invalid-dependency":"3.13.1","@aws-sdk/middleware-content-length":"3.13.1","@aws-sdk/middleware-host-header":"3.13.1","@aws-sdk/middleware-logger":"3.13.1","@aws-sdk/middleware-retry":"3.13.1","@aws-sdk/middleware-serde":"3.13.1","@aws-sdk/middleware-stack":"3.13.1","@aws-sdk/middleware-user-agent":"3.14.0","@aws-sdk/node-config-provider":"3.13.1","@aws-sdk/node-http-handler":"3.13.1","@aws-sdk/protocol-http":"3.13.1","@aws-sdk/smithy-client":"3.13.1","@aws-sdk/types":"3.13.1","@aws-sdk/url-parser":"3.13.1","@aws-sdk/util-base64-browser":"3.13.1","@aws-sdk/util-base64-node":"3.13.1","@aws-sdk/util-body-length-browser":"3.13.1","@aws-sdk/util-body-length-node":"3.13.1","@aws-sdk/util-user-agent-browser":"3.13.1","@aws-sdk/util-user-agent-node":"3.13.1","@aws-sdk/util-utf8-browser":"3.13.1","@aws-sdk/util-utf8-node":"3.13.1","tslib":"^2.0.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.14.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.2.4"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.16.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","prepublishOnly":"yarn build && downlevel-dts dist/types dist/types/ts3.4","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.16.0","@aws-sdk/fetch-http-handler":"3.15.0","@aws-sdk/hash-node":"3.15.0","@aws-sdk/invalid-dependency":"3.15.0","@aws-sdk/middleware-content-length":"3.15.0","@aws-sdk/middleware-host-header":"3.16.0","@aws-sdk/middleware-logger":"3.15.0","@aws-sdk/middleware-retry":"3.16.0","@aws-sdk/middleware-serde":"3.15.0","@aws-sdk/middleware-stack":"3.15.0","@aws-sdk/middleware-user-agent":"3.16.0","@aws-sdk/node-config-provider":"3.15.0","@aws-sdk/node-http-handler":"3.15.0","@aws-sdk/protocol-http":"3.15.0","@aws-sdk/smithy-client":"3.15.0","@aws-sdk/types":"3.15.0","@aws-sdk/url-parser":"3.15.0","@aws-sdk/util-base64-browser":"3.13.1","@aws-sdk/util-base64-node":"3.13.1","@aws-sdk/util-body-length-browser":"3.13.1","@aws-sdk/util-body-length-node":"3.13.1","@aws-sdk/util-user-agent-browser":"3.15.0","@aws-sdk/util-user-agent-node":"3.15.0","@aws-sdk/util-utf8-browser":"3.13.1","@aws-sdk/util-utf8-node":"3.13.1","tslib":"^2.0.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.16.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.2.4"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
 
 /***/ }),
 
@@ -21,7 +21,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SD
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.14.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","prepublishOnly":"yarn build && downlevel-dts dist/types dist/types/ts3.4","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.14.0","@aws-sdk/credential-provider-node":"3.14.0","@aws-sdk/fetch-http-handler":"3.13.1","@aws-sdk/hash-node":"3.13.1","@aws-sdk/invalid-dependency":"3.13.1","@aws-sdk/middleware-content-length":"3.13.1","@aws-sdk/middleware-host-header":"3.13.1","@aws-sdk/middleware-logger":"3.13.1","@aws-sdk/middleware-retry":"3.13.1","@aws-sdk/middleware-sdk-sts":"3.13.1","@aws-sdk/middleware-serde":"3.13.1","@aws-sdk/middleware-signing":"3.13.1","@aws-sdk/middleware-stack":"3.13.1","@aws-sdk/middleware-user-agent":"3.14.0","@aws-sdk/node-config-provider":"3.13.1","@aws-sdk/node-http-handler":"3.13.1","@aws-sdk/protocol-http":"3.13.1","@aws-sdk/smithy-client":"3.13.1","@aws-sdk/types":"3.13.1","@aws-sdk/url-parser":"3.13.1","@aws-sdk/util-base64-browser":"3.13.1","@aws-sdk/util-base64-node":"3.13.1","@aws-sdk/util-body-length-browser":"3.13.1","@aws-sdk/util-body-length-node":"3.13.1","@aws-sdk/util-user-agent-browser":"3.13.1","@aws-sdk/util-user-agent-node":"3.13.1","@aws-sdk/util-utf8-browser":"3.13.1","@aws-sdk/util-utf8-node":"3.13.1","fast-xml-parser":"3.19.0","tslib":"^2.0.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.14.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.2.4"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.16.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","prepublishOnly":"yarn build && downlevel-dts dist/types dist/types/ts3.4","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.16.0","@aws-sdk/credential-provider-node":"3.16.0","@aws-sdk/fetch-http-handler":"3.15.0","@aws-sdk/hash-node":"3.15.0","@aws-sdk/invalid-dependency":"3.15.0","@aws-sdk/middleware-content-length":"3.15.0","@aws-sdk/middleware-host-header":"3.16.0","@aws-sdk/middleware-logger":"3.15.0","@aws-sdk/middleware-retry":"3.16.0","@aws-sdk/middleware-sdk-sts":"3.16.0","@aws-sdk/middleware-serde":"3.15.0","@aws-sdk/middleware-signing":"3.16.0","@aws-sdk/middleware-stack":"3.15.0","@aws-sdk/middleware-user-agent":"3.16.0","@aws-sdk/node-config-provider":"3.15.0","@aws-sdk/node-http-handler":"3.15.0","@aws-sdk/protocol-http":"3.15.0","@aws-sdk/smithy-client":"3.15.0","@aws-sdk/types":"3.15.0","@aws-sdk/url-parser":"3.15.0","@aws-sdk/util-base64-browser":"3.13.1","@aws-sdk/util-base64-node":"3.13.1","@aws-sdk/util-body-length-browser":"3.13.1","@aws-sdk/util-body-length-node":"3.13.1","@aws-sdk/util-user-agent-browser":"3.15.0","@aws-sdk/util-user-agent-node":"3.15.0","@aws-sdk/util-utf8-browser":"3.13.1","@aws-sdk/util-utf8-node":"3.13.1","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.0.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.16.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.2.4"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
 
 /***/ }),
 
@@ -1421,6 +1421,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *       accounts in an organization.</p>
  *          <p>To revoke permission, call <a>RemoveLayerVersionPermission</a> with the statement ID that you
  *       specified when you added it.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, AddLayerVersionPermissionCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, AddLayerVersionPermissionCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new AddLayerVersionPermissionCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link AddLayerVersionPermissionCommandInput} for command's `input` shape.
+ * @see {@link AddLayerVersionPermissionCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class AddLayerVersionPermissionCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -1486,6 +1500,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *
  *          <p>This action adds a statement to a resource-based permissions policy for the function. For more information
  *       about function policies, see <a href="https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html">Lambda Function Policies</a>. </p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, AddPermissionCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, AddPermissionCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new AddPermissionCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link AddPermissionCommandInput} for command's `input` shape.
+ * @see {@link AddPermissionCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class AddPermissionCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -1545,6 +1573,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          <p>You can also map an alias to split invocation requests between two versions. Use the
  *         <code>RoutingConfig</code> parameter to specify a second version and the percentage of invocation requests that
  *       it receives.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, CreateAliasCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, CreateAliasCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new CreateAliasCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link CreateAliasCommandInput} for command's `input` shape.
+ * @see {@link CreateAliasCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class CreateAliasCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -1601,6 +1643,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  * <p>Creates a code signing configuration. A <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-trustedcode.html">code signing configuration</a> defines a list of
  *       allowed signing profiles and defines the code-signing validation policy (action to be taken if deployment
  *       validation checks fail). </p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, CreateCodeSigningConfigCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, CreateCodeSigningConfigCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new CreateCodeSigningConfigCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link CreateCodeSigningConfigCommandInput} for command's `input` shape.
+ * @see {@link CreateCodeSigningConfigCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class CreateCodeSigningConfigCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -1716,6 +1772,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                   <code>ParallelizationFactor</code> - Process multiple batches from each shard concurrently.</p>
  *             </li>
  *          </ul>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, CreateEventSourceMappingCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, CreateEventSourceMappingCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new CreateEventSourceMappingCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link CreateEventSourceMappingCommandInput} for command's `input` shape.
+ * @see {@link CreateEventSourceMappingCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class CreateEventSourceMappingCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -1804,6 +1874,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          <p>To invoke your function directly, use <a>Invoke</a>. To invoke your function in response to events
  *       in other AWS services, create an event source mapping (<a>CreateEventSourceMapping</a>), or configure a
  *       function trigger in the other service. For more information, see <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html">Invoking Functions</a>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, CreateFunctionCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, CreateFunctionCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new CreateFunctionCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link CreateFunctionCommandInput} for command's `input` shape.
+ * @see {@link CreateFunctionCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class CreateFunctionCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -1858,6 +1942,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Deletes a Lambda function <a href="https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html">alias</a>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, DeleteAliasCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, DeleteAliasCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new DeleteAliasCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DeleteAliasCommandInput} for command's `input` shape.
+ * @see {@link DeleteAliasCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DeleteAliasCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -1913,6 +2011,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Deletes the code signing configuration. You can delete the code signing configuration only if no function is
  *       using it. </p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, DeleteCodeSigningConfigCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, DeleteCodeSigningConfigCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new DeleteCodeSigningConfigCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DeleteCodeSigningConfigCommandInput} for command's `input` shape.
+ * @see {@link DeleteCodeSigningConfigCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DeleteCodeSigningConfigCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -1969,6 +2081,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  * <p>Deletes an <a href="https://docs.aws.amazon.com/lambda/latest/dg/intro-invocation-modes.html">event source
  *       mapping</a>. You can get the identifier of a mapping from the output of <a>ListEventSourceMappings</a>.</p>
  *          <p>When you delete an event source mapping, it enters a <code>Deleting</code> state and might not be completely deleted for several seconds.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, DeleteEventSourceMappingCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, DeleteEventSourceMappingCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new DeleteEventSourceMappingCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DeleteEventSourceMappingCommandInput} for command's `input` shape.
+ * @see {@link DeleteEventSourceMappingCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DeleteEventSourceMappingCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -2023,6 +2149,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Removes the code signing configuration from the function.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, DeleteFunctionCodeSigningConfigCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, DeleteFunctionCodeSigningConfigCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new DeleteFunctionCodeSigningConfigCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DeleteFunctionCodeSigningConfigCommandInput} for command's `input` shape.
+ * @see {@link DeleteFunctionCodeSigningConfigCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DeleteFunctionCodeSigningConfigCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -2082,6 +2222,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          <p>To delete Lambda event source mappings that invoke a function, use <a>DeleteEventSourceMapping</a>.
  *       For AWS services and resources that invoke your function directly, delete the trigger in the service where you
  *       originally configured it.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, DeleteFunctionCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, DeleteFunctionCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new DeleteFunctionCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DeleteFunctionCommandInput} for command's `input` shape.
+ * @see {@link DeleteFunctionCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DeleteFunctionCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -2136,6 +2290,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Removes a concurrent execution limit from a function.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, DeleteFunctionConcurrencyCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, DeleteFunctionConcurrencyCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new DeleteFunctionConcurrencyCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DeleteFunctionConcurrencyCommandInput} for command's `input` shape.
+ * @see {@link DeleteFunctionConcurrencyCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DeleteFunctionConcurrencyCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -2191,6 +2359,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Deletes the configuration for asynchronous invocation for a function, version, or alias.</p>
  *          <p>To configure options for asynchronous invocation, use <a>PutFunctionEventInvokeConfig</a>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, DeleteFunctionEventInvokeConfigCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, DeleteFunctionEventInvokeConfigCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new DeleteFunctionEventInvokeConfigCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DeleteFunctionEventInvokeConfigCommandInput} for command's `input` shape.
+ * @see {@link DeleteFunctionEventInvokeConfigCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DeleteFunctionEventInvokeConfigCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -2247,6 +2429,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  * <p>Deletes a version of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
  *         layer</a>. Deleted versions can no longer be viewed or added to functions. To avoid
  *       breaking functions, a copy of the version remains in Lambda until no functions refer to it.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, DeleteLayerVersionCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, DeleteLayerVersionCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new DeleteLayerVersionCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DeleteLayerVersionCommandInput} for command's `input` shape.
+ * @see {@link DeleteLayerVersionCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DeleteLayerVersionCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -2301,6 +2497,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Deletes the provisioned concurrency configuration for a function.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, DeleteProvisionedConcurrencyConfigCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, DeleteProvisionedConcurrencyConfigCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new DeleteProvisionedConcurrencyConfigCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DeleteProvisionedConcurrencyConfigCommandInput} for command's `input` shape.
+ * @see {@link DeleteProvisionedConcurrencyConfigCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DeleteProvisionedConcurrencyConfigCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -2355,6 +2565,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Retrieves details about your account's <a href="https://docs.aws.amazon.com/lambda/latest/dg/limits.html">limits</a> and usage in an AWS Region.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, GetAccountSettingsCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, GetAccountSettingsCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new GetAccountSettingsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetAccountSettingsCommandInput} for command's `input` shape.
+ * @see {@link GetAccountSettingsCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetAccountSettingsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -2409,6 +2633,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Returns details about a Lambda function <a href="https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html">alias</a>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, GetAliasCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, GetAliasCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new GetAliasCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetAliasCommandInput} for command's `input` shape.
+ * @see {@link GetAliasCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetAliasCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -2463,6 +2701,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Returns information about the specified code signing configuration.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, GetCodeSigningConfigCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, GetCodeSigningConfigCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new GetCodeSigningConfigCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetCodeSigningConfigCommandInput} for command's `input` shape.
+ * @see {@link GetCodeSigningConfigCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetCodeSigningConfigCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -2517,6 +2769,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Returns details about an event source mapping. You can get the identifier of a mapping from the output of <a>ListEventSourceMappings</a>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, GetEventSourceMappingCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, GetEventSourceMappingCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new GetEventSourceMappingCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetEventSourceMappingCommandInput} for command's `input` shape.
+ * @see {@link GetEventSourceMappingCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetEventSourceMappingCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -2571,6 +2837,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Returns the code signing configuration for the specified function.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, GetFunctionCodeSigningConfigCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, GetFunctionCodeSigningConfigCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new GetFunctionCodeSigningConfigCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetFunctionCodeSigningConfigCommandInput} for command's `input` shape.
+ * @see {@link GetFunctionCodeSigningConfigCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetFunctionCodeSigningConfigCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -2627,6 +2907,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  * <p>Returns information about the function or function version, with a link to download the deployment package
  *       that's valid for 10 minutes. If you specify a function version, only details that are specific to that version are
  *       returned.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, GetFunctionCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, GetFunctionCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new GetFunctionCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetFunctionCommandInput} for command's `input` shape.
+ * @see {@link GetFunctionCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetFunctionCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -2682,6 +2976,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Returns details about the reserved concurrency configuration for a function. To set a concurrency limit for a
  *       function, use <a>PutFunctionConcurrency</a>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, GetFunctionConcurrencyCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, GetFunctionConcurrencyCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new GetFunctionConcurrencyCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetFunctionConcurrencyCommandInput} for command's `input` shape.
+ * @see {@link GetFunctionConcurrencyCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetFunctionConcurrencyCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -2738,6 +3046,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  * <p>Returns the version-specific settings of a Lambda function or version. The output includes only options that
  *       can vary between versions of a function. To modify these settings, use <a>UpdateFunctionConfiguration</a>.</p>
  *          <p>To get all of a function's details, including function-level settings, use <a>GetFunction</a>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, GetFunctionConfigurationCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, GetFunctionConfigurationCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new GetFunctionConfigurationCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetFunctionConfigurationCommandInput} for command's `input` shape.
+ * @see {@link GetFunctionConfigurationCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetFunctionConfigurationCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -2793,6 +3115,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Retrieves the configuration for asynchronous invocation for a function, version, or alias.</p>
  *          <p>To configure options for asynchronous invocation, use <a>PutFunctionEventInvokeConfig</a>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, GetFunctionEventInvokeConfigCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, GetFunctionEventInvokeConfigCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new GetFunctionEventInvokeConfigCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetFunctionEventInvokeConfigCommandInput} for command's `input` shape.
+ * @see {@link GetFunctionEventInvokeConfigCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetFunctionEventInvokeConfigCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -2849,6 +3185,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  * <p>Returns information about a version of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
  *         layer</a>, with a link to download the layer archive
  *         that's valid for 10 minutes.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, GetLayerVersionByArnCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, GetLayerVersionByArnCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new GetLayerVersionByArnCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetLayerVersionByArnCommandInput} for command's `input` shape.
+ * @see {@link GetLayerVersionByArnCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetLayerVersionByArnCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -2905,6 +3255,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  * <p>Returns information about a version of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
  *         layer</a>, with a link to download the layer archive
  *         that's valid for 10 minutes.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, GetLayerVersionCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, GetLayerVersionCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new GetLayerVersionCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetLayerVersionCommandInput} for command's `input` shape.
+ * @see {@link GetLayerVersionCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetLayerVersionCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -2960,6 +3324,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Returns the permission policy for a version of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
  *         layer</a>. For more information, see <a>AddLayerVersionPermission</a>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, GetLayerVersionPolicyCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, GetLayerVersionPolicyCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new GetLayerVersionPolicyCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetLayerVersionPolicyCommandInput} for command's `input` shape.
+ * @see {@link GetLayerVersionPolicyCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetLayerVersionPolicyCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3014,6 +3392,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Returns the <a href="https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html">resource-based IAM policy</a> for a function, version, or alias.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, GetPolicyCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, GetPolicyCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new GetPolicyCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetPolicyCommandInput} for command's `input` shape.
+ * @see {@link GetPolicyCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetPolicyCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3068,6 +3460,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Retrieves the provisioned concurrency configuration for a function's alias or version.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, GetProvisionedConcurrencyConfigCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, GetProvisionedConcurrencyConfigCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new GetProvisionedConcurrencyConfigCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetProvisionedConcurrencyConfigCommandInput} for command's `input` shape.
+ * @see {@link GetProvisionedConcurrencyConfigCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetProvisionedConcurrencyConfigCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3127,6 +3533,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             <p>For asynchronous function invocation, use <a>Invoke</a>.</p>
  *          </important>
  *          <p>Invokes a function asynchronously.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, InvokeAsyncCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, InvokeAsyncCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new InvokeAsyncCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link InvokeAsyncCommandInput} for command's `input` shape.
+ * @see {@link InvokeAsyncCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class InvokeAsyncCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3207,6 +3627,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *       connections with timeout or keep-alive settings.</p>
  *
  *          <p>This operation requires permission for the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awslambda.html">lambda:InvokeFunction</a> action.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, InvokeCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, InvokeCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new InvokeCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link InvokeCommandInput} for command's `input` shape.
+ * @see {@link InvokeCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class InvokeCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3262,6 +3696,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Returns a list of <a href="https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html">aliases</a>
  *       for a Lambda function.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, ListAliasesCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, ListAliasesCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new ListAliasesCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ListAliasesCommandInput} for command's `input` shape.
+ * @see {@link ListAliasesCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ListAliasesCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3318,6 +3766,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  * <p>Returns a list of <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuring-codesigning.html">code
  *         signing configurations</a>. A request returns up to 10,000 configurations per
  *       call. You can use the <code>MaxItems</code> parameter to return fewer configurations per call. </p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, ListCodeSigningConfigsCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, ListCodeSigningConfigsCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new ListCodeSigningConfigsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ListCodeSigningConfigsCommandInput} for command's `input` shape.
+ * @see {@link ListCodeSigningConfigsCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ListCodeSigningConfigsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3373,6 +3835,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Lists event source mappings. Specify an <code>EventSourceArn</code> to only show event source mappings for a
  *       single event source.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, ListEventSourceMappingsCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, ListEventSourceMappingsCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new ListEventSourceMappingsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ListEventSourceMappingsCommandInput} for command's `input` shape.
+ * @see {@link ListEventSourceMappingsCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ListEventSourceMappingsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3428,6 +3904,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Retrieves a list of configurations for asynchronous invocation for a function.</p>
  *          <p>To configure options for asynchronous invocation, use <a>PutFunctionEventInvokeConfig</a>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, ListFunctionEventInvokeConfigsCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, ListFunctionEventInvokeConfigsCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new ListFunctionEventInvokeConfigsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ListFunctionEventInvokeConfigsCommandInput} for command's `input` shape.
+ * @see {@link ListFunctionEventInvokeConfigsCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ListFunctionEventInvokeConfigsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3483,6 +3973,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>List the functions that use the specified code signing configuration. You can use this method prior to deleting a
  *       code signing configuration, to verify that no functions are using it.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, ListFunctionsByCodeSigningConfigCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, ListFunctionsByCodeSigningConfigCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new ListFunctionsByCodeSigningConfigCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ListFunctionsByCodeSigningConfigCommandInput} for command's `input` shape.
+ * @see {@link ListFunctionsByCodeSigningConfigCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ListFunctionsByCodeSigningConfigCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3545,6 +4049,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *       To get the additional fields (State, StateReasonCode, StateReason, LastUpdateStatus, LastUpdateStatusReason, LastUpdateStatusReasonCode)
  *       for a function or version, use <a>GetFunction</a>.</p>
  *          </note>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, ListFunctionsCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, ListFunctionsCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new ListFunctionsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ListFunctionsCommandInput} for command's `input` shape.
+ * @see {@link ListFunctionsCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ListFunctionsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3601,6 +4119,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  * <p>Lists the versions of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
  *         layer</a>. Versions that have been deleted aren't listed. Specify a <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html">runtime identifier</a> to list only
  *       versions that indicate that they're compatible with that runtime.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, ListLayerVersionsCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, ListLayerVersionsCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new ListLayerVersionsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ListLayerVersionsCommandInput} for command's `input` shape.
+ * @see {@link ListLayerVersionsCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ListLayerVersionsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3657,6 +4189,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  * <p>Lists <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
  *         layers</a> and shows information about the latest version of each. Specify a <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html">runtime identifier</a> to list only layers
  *       that indicate that they're compatible with that runtime.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, ListLayersCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, ListLayersCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new ListLayersCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ListLayersCommandInput} for command's `input` shape.
+ * @see {@link ListLayersCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ListLayersCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3711,6 +4257,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Retrieves a list of provisioned concurrency configurations for a function.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, ListProvisionedConcurrencyConfigsCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, ListProvisionedConcurrencyConfigsCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new ListProvisionedConcurrencyConfigsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ListProvisionedConcurrencyConfigsCommandInput} for command's `input` shape.
+ * @see {@link ListProvisionedConcurrencyConfigsCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ListProvisionedConcurrencyConfigsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3766,6 +4326,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Returns a function's <a href="https://docs.aws.amazon.com/lambda/latest/dg/tagging.html">tags</a>. You can
  *       also view tags with <a>GetFunction</a>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, ListTagsCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, ListTagsCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new ListTagsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ListTagsCommandInput} for command's `input` shape.
+ * @see {@link ListTagsCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ListTagsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3821,6 +4395,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Returns a list of <a href="https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html">versions</a>,
  *       with the version-specific configuration of each. Lambda returns up to 50 versions per call.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, ListVersionsByFunctionCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, ListVersionsByFunctionCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new ListVersionsByFunctionCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ListVersionsByFunctionCommandInput} for command's `input` shape.
+ * @see {@link ListVersionsByFunctionCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ListVersionsByFunctionCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3878,6 +4466,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *         layer</a> from a ZIP archive. Each time you call <code>PublishLayerVersion</code> with the same
  *       layer name, a new version is created.</p>
  *          <p>Add layers to your function with <a>CreateFunction</a> or <a>UpdateFunctionConfiguration</a>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, PublishLayerVersionCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, PublishLayerVersionCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new PublishLayerVersionCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link PublishLayerVersionCommandInput} for command's `input` shape.
+ * @see {@link PublishLayerVersionCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class PublishLayerVersionCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3940,6 +4542,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *       function before publishing a version.</p>
  *
  *          <p>Clients can invoke versions directly or with an alias. To create an alias, use <a>CreateAlias</a>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, PublishVersionCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, PublishVersionCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new PublishVersionCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link PublishVersionCommandInput} for command's `input` shape.
+ * @see {@link PublishVersionCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class PublishVersionCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3995,6 +4611,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Update the code signing configuration for the function. Changes to the code signing configuration take effect the
  *       next time a user tries to deploy a code package to the function. </p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, PutFunctionCodeSigningConfigCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, PutFunctionCodeSigningConfigCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new PutFunctionCodeSigningConfigCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link PutFunctionCodeSigningConfigCommandInput} for command's `input` shape.
+ * @see {@link PutFunctionCodeSigningConfigCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class PutFunctionCodeSigningConfigCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4057,6 +4687,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          <p>Use <a>GetAccountSettings</a> to see your Regional concurrency limit. You can reserve concurrency
  *       for as many functions as you like, as long as you leave at least 100 simultaneous executions unreserved for
  *       functions that aren't configured with a per-function limit. For more information, see <a href="https://docs.aws.amazon.com/lambda/latest/dg/concurrent-executions.html">Managing Concurrency</a>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, PutFunctionConcurrencyCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, PutFunctionConcurrencyCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new PutFunctionConcurrencyCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link PutFunctionConcurrencyCommandInput} for command's `input` shape.
+ * @see {@link PutFunctionConcurrencyCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class PutFunctionConcurrencyCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4121,6 +4765,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          <p>To send an invocation record to a queue, topic, function, or event bus, specify a <a href="https://docs.aws.amazon.com/lambda/latest/dg/invocation-async.html#invocation-async-destinations">destination</a>. You can configure separate destinations for successful invocations (on-success) and events
  *       that fail all processing attempts (on-failure). You can configure destinations in addition to or instead of a
  *       dead-letter queue.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, PutFunctionEventInvokeConfigCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, PutFunctionEventInvokeConfigCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new PutFunctionEventInvokeConfigCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link PutFunctionEventInvokeConfigCommandInput} for command's `input` shape.
+ * @see {@link PutFunctionEventInvokeConfigCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class PutFunctionEventInvokeConfigCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4175,6 +4833,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Adds a provisioned concurrency configuration to a function's alias or version.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, PutProvisionedConcurrencyConfigCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, PutProvisionedConcurrencyConfigCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new PutProvisionedConcurrencyConfigCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link PutProvisionedConcurrencyConfigCommandInput} for command's `input` shape.
+ * @see {@link PutProvisionedConcurrencyConfigCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class PutProvisionedConcurrencyConfigCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4231,6 +4903,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  * <p>Removes a statement from the permissions policy for a version of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
  *         layer</a>. For more information, see
  *         <a>AddLayerVersionPermission</a>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, RemoveLayerVersionPermissionCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, RemoveLayerVersionPermissionCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new RemoveLayerVersionPermissionCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link RemoveLayerVersionPermissionCommandInput} for command's `input` shape.
+ * @see {@link RemoveLayerVersionPermissionCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class RemoveLayerVersionPermissionCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4286,6 +4972,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Revokes function-use permission from an AWS service or another account. You can get the ID of the statement
  *       from the output of <a>GetPolicy</a>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, RemovePermissionCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, RemovePermissionCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new RemovePermissionCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link RemovePermissionCommandInput} for command's `input` shape.
+ * @see {@link RemovePermissionCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class RemovePermissionCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4340,6 +5040,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Adds <a href="https://docs.aws.amazon.com/lambda/latest/dg/tagging.html">tags</a> to a function.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, TagResourceCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, TagResourceCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new TagResourceCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link TagResourceCommandInput} for command's `input` shape.
+ * @see {@link TagResourceCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class TagResourceCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4394,6 +5108,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Removes <a href="https://docs.aws.amazon.com/lambda/latest/dg/tagging.html">tags</a> from a function.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, UntagResourceCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, UntagResourceCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new UntagResourceCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link UntagResourceCommandInput} for command's `input` shape.
+ * @see {@link UntagResourceCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class UntagResourceCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4448,6 +5176,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Updates the configuration of a Lambda function <a href="https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html">alias</a>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, UpdateAliasCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, UpdateAliasCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new UpdateAliasCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link UpdateAliasCommandInput} for command's `input` shape.
+ * @see {@link UpdateAliasCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class UpdateAliasCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4503,6 +5245,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Update the code signing configuration. Changes to the code signing configuration take effect the next time a
  *       user tries to deploy a code package to the function. </p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, UpdateCodeSigningConfigCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, UpdateCodeSigningConfigCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new UpdateCodeSigningConfigCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link UpdateCodeSigningConfigCommandInput} for command's `input` shape.
+ * @see {@link UpdateCodeSigningConfigCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class UpdateCodeSigningConfigCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4580,6 +5336,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                   <code>ParallelizationFactor</code> - Process multiple batches from each shard concurrently.</p>
  *             </li>
  *          </ul>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, UpdateEventSourceMappingCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, UpdateEventSourceMappingCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new UpdateEventSourceMappingCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link UpdateEventSourceMappingCommandInput} for command's `input` shape.
+ * @see {@link UpdateEventSourceMappingCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class UpdateEventSourceMappingCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4642,6 +5412,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             <p>For a function defined as a container image, Lambda resolves the image tag to an image digest. In Amazon ECR, if
  *         you update the image tag to a new image, Lambda does not automatically update the function.</p>
  *          </note>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, UpdateFunctionCodeCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, UpdateFunctionCodeCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new UpdateFunctionCodeCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link UpdateFunctionCodeCommandInput} for command's `input` shape.
+ * @see {@link UpdateFunctionCodeCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class UpdateFunctionCodeCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4710,6 +5494,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *
  *          <p>To configure function concurrency, use <a>PutFunctionConcurrency</a>. To grant invoke permissions
  *       to an account or AWS service, use <a>AddPermission</a>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, UpdateFunctionConfigurationCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, UpdateFunctionConfigurationCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new UpdateFunctionConfigurationCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link UpdateFunctionConfigurationCommandInput} for command's `input` shape.
+ * @see {@link UpdateFunctionConfigurationCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class UpdateFunctionConfigurationCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4765,6 +5563,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Updates the configuration for asynchronous invocation for a function, version, or alias.</p>
  *          <p>To configure options for asynchronous invocation, use <a>PutFunctionEventInvokeConfig</a>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { LambdaClient, UpdateFunctionEventInvokeConfigCommand } from "@aws-sdk/client-lambda"; // ES Modules import
+ * // const { LambdaClient, UpdateFunctionEventInvokeConfigCommand } = require("@aws-sdk/client-lambda"); // CommonJS import
+ * const client = new LambdaClient(config);
+ * const command = new UpdateFunctionEventInvokeConfigCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link UpdateFunctionEventInvokeConfigCommandInput} for command's `input` shape.
+ * @see {@link UpdateFunctionEventInvokeConfigCommandOutput} for command's `response` shape.
+ * @see {@link LambdaClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class UpdateFunctionEventInvokeConfigCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -5206,60 +6018,90 @@ exports.UpdateFunctionEventInvokeConfigRequest = exports.UpdateFunctionConfigura
 const smithy_client_1 = __nccwpck_require__(2223);
 var AccountLimit;
 (function (AccountLimit) {
+    /**
+     * @internal
+     */
     AccountLimit.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AccountLimit = exports.AccountLimit || (exports.AccountLimit = {}));
 var AccountUsage;
 (function (AccountUsage) {
+    /**
+     * @internal
+     */
     AccountUsage.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AccountUsage = exports.AccountUsage || (exports.AccountUsage = {}));
 var AddLayerVersionPermissionRequest;
 (function (AddLayerVersionPermissionRequest) {
+    /**
+     * @internal
+     */
     AddLayerVersionPermissionRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AddLayerVersionPermissionRequest = exports.AddLayerVersionPermissionRequest || (exports.AddLayerVersionPermissionRequest = {}));
 var AddLayerVersionPermissionResponse;
 (function (AddLayerVersionPermissionResponse) {
+    /**
+     * @internal
+     */
     AddLayerVersionPermissionResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AddLayerVersionPermissionResponse = exports.AddLayerVersionPermissionResponse || (exports.AddLayerVersionPermissionResponse = {}));
 var InvalidParameterValueException;
 (function (InvalidParameterValueException) {
+    /**
+     * @internal
+     */
     InvalidParameterValueException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(InvalidParameterValueException = exports.InvalidParameterValueException || (exports.InvalidParameterValueException = {}));
 var PolicyLengthExceededException;
 (function (PolicyLengthExceededException) {
+    /**
+     * @internal
+     */
     PolicyLengthExceededException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PolicyLengthExceededException = exports.PolicyLengthExceededException || (exports.PolicyLengthExceededException = {}));
 var PreconditionFailedException;
 (function (PreconditionFailedException) {
+    /**
+     * @internal
+     */
     PreconditionFailedException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PreconditionFailedException = exports.PreconditionFailedException || (exports.PreconditionFailedException = {}));
 var ResourceConflictException;
 (function (ResourceConflictException) {
+    /**
+     * @internal
+     */
     ResourceConflictException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ResourceConflictException = exports.ResourceConflictException || (exports.ResourceConflictException = {}));
 var ResourceNotFoundException;
 (function (ResourceNotFoundException) {
+    /**
+     * @internal
+     */
     ResourceNotFoundException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ResourceNotFoundException = exports.ResourceNotFoundException || (exports.ResourceNotFoundException = {}));
 var ServiceException;
 (function (ServiceException) {
+    /**
+     * @internal
+     */
     ServiceException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -5274,42 +6116,63 @@ var ThrottleReason;
 })(ThrottleReason = exports.ThrottleReason || (exports.ThrottleReason = {}));
 var TooManyRequestsException;
 (function (TooManyRequestsException) {
+    /**
+     * @internal
+     */
     TooManyRequestsException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(TooManyRequestsException = exports.TooManyRequestsException || (exports.TooManyRequestsException = {}));
 var AddPermissionRequest;
 (function (AddPermissionRequest) {
+    /**
+     * @internal
+     */
     AddPermissionRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AddPermissionRequest = exports.AddPermissionRequest || (exports.AddPermissionRequest = {}));
 var AddPermissionResponse;
 (function (AddPermissionResponse) {
+    /**
+     * @internal
+     */
     AddPermissionResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AddPermissionResponse = exports.AddPermissionResponse || (exports.AddPermissionResponse = {}));
 var AliasRoutingConfiguration;
 (function (AliasRoutingConfiguration) {
+    /**
+     * @internal
+     */
     AliasRoutingConfiguration.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AliasRoutingConfiguration = exports.AliasRoutingConfiguration || (exports.AliasRoutingConfiguration = {}));
 var AliasConfiguration;
 (function (AliasConfiguration) {
+    /**
+     * @internal
+     */
     AliasConfiguration.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AliasConfiguration = exports.AliasConfiguration || (exports.AliasConfiguration = {}));
 var AllowedPublishers;
 (function (AllowedPublishers) {
+    /**
+     * @internal
+     */
     AllowedPublishers.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AllowedPublishers = exports.AllowedPublishers || (exports.AllowedPublishers = {}));
 var CreateAliasRequest;
 (function (CreateAliasRequest) {
+    /**
+     * @internal
+     */
     CreateAliasRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -5321,42 +6184,63 @@ var CodeSigningPolicy;
 })(CodeSigningPolicy = exports.CodeSigningPolicy || (exports.CodeSigningPolicy = {}));
 var CodeSigningPolicies;
 (function (CodeSigningPolicies) {
+    /**
+     * @internal
+     */
     CodeSigningPolicies.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CodeSigningPolicies = exports.CodeSigningPolicies || (exports.CodeSigningPolicies = {}));
 var CreateCodeSigningConfigRequest;
 (function (CreateCodeSigningConfigRequest) {
+    /**
+     * @internal
+     */
     CreateCodeSigningConfigRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CreateCodeSigningConfigRequest = exports.CreateCodeSigningConfigRequest || (exports.CreateCodeSigningConfigRequest = {}));
 var CodeSigningConfig;
 (function (CodeSigningConfig) {
+    /**
+     * @internal
+     */
     CodeSigningConfig.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CodeSigningConfig = exports.CodeSigningConfig || (exports.CodeSigningConfig = {}));
 var CreateCodeSigningConfigResponse;
 (function (CreateCodeSigningConfigResponse) {
+    /**
+     * @internal
+     */
     CreateCodeSigningConfigResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CreateCodeSigningConfigResponse = exports.CreateCodeSigningConfigResponse || (exports.CreateCodeSigningConfigResponse = {}));
 var OnFailure;
 (function (OnFailure) {
+    /**
+     * @internal
+     */
     OnFailure.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(OnFailure = exports.OnFailure || (exports.OnFailure = {}));
 var OnSuccess;
 (function (OnSuccess) {
+    /**
+     * @internal
+     */
     OnSuccess.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(OnSuccess = exports.OnSuccess || (exports.OnSuccess = {}));
 var DestinationConfig;
 (function (DestinationConfig) {
+    /**
+     * @internal
+     */
     DestinationConfig.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -5371,6 +6255,9 @@ var EndPointType;
 })(EndPointType = exports.EndPointType || (exports.EndPointType = {}));
 var SelfManagedEventSource;
 (function (SelfManagedEventSource) {
+    /**
+     * @internal
+     */
     SelfManagedEventSource.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -5385,6 +6272,9 @@ var SourceAccessType;
 })(SourceAccessType = exports.SourceAccessType || (exports.SourceAccessType = {}));
 var SourceAccessConfiguration;
 (function (SourceAccessConfiguration) {
+    /**
+     * @internal
+     */
     SourceAccessConfiguration.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -5397,36 +6287,54 @@ var EventSourcePosition;
 })(EventSourcePosition = exports.EventSourcePosition || (exports.EventSourcePosition = {}));
 var CreateEventSourceMappingRequest;
 (function (CreateEventSourceMappingRequest) {
+    /**
+     * @internal
+     */
     CreateEventSourceMappingRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CreateEventSourceMappingRequest = exports.CreateEventSourceMappingRequest || (exports.CreateEventSourceMappingRequest = {}));
 var EventSourceMappingConfiguration;
 (function (EventSourceMappingConfiguration) {
+    /**
+     * @internal
+     */
     EventSourceMappingConfiguration.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(EventSourceMappingConfiguration = exports.EventSourceMappingConfiguration || (exports.EventSourceMappingConfiguration = {}));
 var CodeSigningConfigNotFoundException;
 (function (CodeSigningConfigNotFoundException) {
+    /**
+     * @internal
+     */
     CodeSigningConfigNotFoundException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CodeSigningConfigNotFoundException = exports.CodeSigningConfigNotFoundException || (exports.CodeSigningConfigNotFoundException = {}));
 var CodeStorageExceededException;
 (function (CodeStorageExceededException) {
+    /**
+     * @internal
+     */
     CodeStorageExceededException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CodeStorageExceededException = exports.CodeStorageExceededException || (exports.CodeStorageExceededException = {}));
 var CodeVerificationFailedException;
 (function (CodeVerificationFailedException) {
+    /**
+     * @internal
+     */
     CodeVerificationFailedException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CodeVerificationFailedException = exports.CodeVerificationFailedException || (exports.CodeVerificationFailedException = {}));
 var FunctionCode;
 (function (FunctionCode) {
+    /**
+     * @internal
+     */
     FunctionCode.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.ZipFile && { ZipFile: smithy_client_1.SENSITIVE_STRING }),
@@ -5434,12 +6342,18 @@ var FunctionCode;
 })(FunctionCode = exports.FunctionCode || (exports.FunctionCode = {}));
 var DeadLetterConfig;
 (function (DeadLetterConfig) {
+    /**
+     * @internal
+     */
     DeadLetterConfig.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeadLetterConfig = exports.DeadLetterConfig || (exports.DeadLetterConfig = {}));
 var Environment;
 (function (Environment) {
+    /**
+     * @internal
+     */
     Environment.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Variables && { Variables: smithy_client_1.SENSITIVE_STRING }),
@@ -5447,12 +6361,18 @@ var Environment;
 })(Environment = exports.Environment || (exports.Environment = {}));
 var FileSystemConfig;
 (function (FileSystemConfig) {
+    /**
+     * @internal
+     */
     FileSystemConfig.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(FileSystemConfig = exports.FileSystemConfig || (exports.FileSystemConfig = {}));
 var ImageConfig;
 (function (ImageConfig) {
+    /**
+     * @internal
+     */
     ImageConfig.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -5496,18 +6416,27 @@ var TracingMode;
 })(TracingMode = exports.TracingMode || (exports.TracingMode = {}));
 var TracingConfig;
 (function (TracingConfig) {
+    /**
+     * @internal
+     */
     TracingConfig.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(TracingConfig = exports.TracingConfig || (exports.TracingConfig = {}));
 var VpcConfig;
 (function (VpcConfig) {
+    /**
+     * @internal
+     */
     VpcConfig.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(VpcConfig = exports.VpcConfig || (exports.VpcConfig = {}));
 var CreateFunctionRequest;
 (function (CreateFunctionRequest) {
+    /**
+     * @internal
+     */
     CreateFunctionRequest.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Code && { Code: FunctionCode.filterSensitiveLog(obj.Code) }),
@@ -5516,6 +6445,9 @@ var CreateFunctionRequest;
 })(CreateFunctionRequest = exports.CreateFunctionRequest || (exports.CreateFunctionRequest = {}));
 var EnvironmentError;
 (function (EnvironmentError) {
+    /**
+     * @internal
+     */
     EnvironmentError.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Message && { Message: smithy_client_1.SENSITIVE_STRING }),
@@ -5523,6 +6455,9 @@ var EnvironmentError;
 })(EnvironmentError = exports.EnvironmentError || (exports.EnvironmentError = {}));
 var EnvironmentResponse;
 (function (EnvironmentResponse) {
+    /**
+     * @internal
+     */
     EnvironmentResponse.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Variables && { Variables: smithy_client_1.SENSITIVE_STRING }),
@@ -5531,6 +6466,9 @@ var EnvironmentResponse;
 })(EnvironmentResponse = exports.EnvironmentResponse || (exports.EnvironmentResponse = {}));
 var ImageConfigError;
 (function (ImageConfigError) {
+    /**
+     * @internal
+     */
     ImageConfigError.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Message && { Message: smithy_client_1.SENSITIVE_STRING }),
@@ -5538,6 +6476,9 @@ var ImageConfigError;
 })(ImageConfigError = exports.ImageConfigError || (exports.ImageConfigError = {}));
 var ImageConfigResponse;
 (function (ImageConfigResponse) {
+    /**
+     * @internal
+     */
     ImageConfigResponse.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Error && { Error: ImageConfigError.filterSensitiveLog(obj.Error) }),
@@ -5564,6 +6505,9 @@ var LastUpdateStatusReasonCode;
 })(LastUpdateStatusReasonCode = exports.LastUpdateStatusReasonCode || (exports.LastUpdateStatusReasonCode = {}));
 var Layer;
 (function (Layer) {
+    /**
+     * @internal
+     */
     Layer.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -5593,18 +6537,27 @@ var StateReasonCode;
 })(StateReasonCode = exports.StateReasonCode || (exports.StateReasonCode = {}));
 var TracingConfigResponse;
 (function (TracingConfigResponse) {
+    /**
+     * @internal
+     */
     TracingConfigResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(TracingConfigResponse = exports.TracingConfigResponse || (exports.TracingConfigResponse = {}));
 var VpcConfigResponse;
 (function (VpcConfigResponse) {
+    /**
+     * @internal
+     */
     VpcConfigResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(VpcConfigResponse = exports.VpcConfigResponse || (exports.VpcConfigResponse = {}));
 var FunctionConfiguration;
 (function (FunctionConfiguration) {
+    /**
+     * @internal
+     */
     FunctionConfiguration.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Environment && { Environment: EnvironmentResponse.filterSensitiveLog(obj.Environment) }),
@@ -5615,132 +6568,198 @@ var FunctionConfiguration;
 })(FunctionConfiguration = exports.FunctionConfiguration || (exports.FunctionConfiguration = {}));
 var InvalidCodeSignatureException;
 (function (InvalidCodeSignatureException) {
+    /**
+     * @internal
+     */
     InvalidCodeSignatureException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(InvalidCodeSignatureException = exports.InvalidCodeSignatureException || (exports.InvalidCodeSignatureException = {}));
 var DeleteAliasRequest;
 (function (DeleteAliasRequest) {
+    /**
+     * @internal
+     */
     DeleteAliasRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeleteAliasRequest = exports.DeleteAliasRequest || (exports.DeleteAliasRequest = {}));
 var DeleteCodeSigningConfigRequest;
 (function (DeleteCodeSigningConfigRequest) {
+    /**
+     * @internal
+     */
     DeleteCodeSigningConfigRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeleteCodeSigningConfigRequest = exports.DeleteCodeSigningConfigRequest || (exports.DeleteCodeSigningConfigRequest = {}));
 var DeleteCodeSigningConfigResponse;
 (function (DeleteCodeSigningConfigResponse) {
+    /**
+     * @internal
+     */
     DeleteCodeSigningConfigResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeleteCodeSigningConfigResponse = exports.DeleteCodeSigningConfigResponse || (exports.DeleteCodeSigningConfigResponse = {}));
 var DeleteEventSourceMappingRequest;
 (function (DeleteEventSourceMappingRequest) {
+    /**
+     * @internal
+     */
     DeleteEventSourceMappingRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeleteEventSourceMappingRequest = exports.DeleteEventSourceMappingRequest || (exports.DeleteEventSourceMappingRequest = {}));
 var ResourceInUseException;
 (function (ResourceInUseException) {
+    /**
+     * @internal
+     */
     ResourceInUseException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ResourceInUseException = exports.ResourceInUseException || (exports.ResourceInUseException = {}));
 var DeleteFunctionRequest;
 (function (DeleteFunctionRequest) {
+    /**
+     * @internal
+     */
     DeleteFunctionRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeleteFunctionRequest = exports.DeleteFunctionRequest || (exports.DeleteFunctionRequest = {}));
 var DeleteFunctionCodeSigningConfigRequest;
 (function (DeleteFunctionCodeSigningConfigRequest) {
+    /**
+     * @internal
+     */
     DeleteFunctionCodeSigningConfigRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeleteFunctionCodeSigningConfigRequest = exports.DeleteFunctionCodeSigningConfigRequest || (exports.DeleteFunctionCodeSigningConfigRequest = {}));
 var DeleteFunctionConcurrencyRequest;
 (function (DeleteFunctionConcurrencyRequest) {
+    /**
+     * @internal
+     */
     DeleteFunctionConcurrencyRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeleteFunctionConcurrencyRequest = exports.DeleteFunctionConcurrencyRequest || (exports.DeleteFunctionConcurrencyRequest = {}));
 var DeleteFunctionEventInvokeConfigRequest;
 (function (DeleteFunctionEventInvokeConfigRequest) {
+    /**
+     * @internal
+     */
     DeleteFunctionEventInvokeConfigRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeleteFunctionEventInvokeConfigRequest = exports.DeleteFunctionEventInvokeConfigRequest || (exports.DeleteFunctionEventInvokeConfigRequest = {}));
 var DeleteLayerVersionRequest;
 (function (DeleteLayerVersionRequest) {
+    /**
+     * @internal
+     */
     DeleteLayerVersionRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeleteLayerVersionRequest = exports.DeleteLayerVersionRequest || (exports.DeleteLayerVersionRequest = {}));
 var DeleteProvisionedConcurrencyConfigRequest;
 (function (DeleteProvisionedConcurrencyConfigRequest) {
+    /**
+     * @internal
+     */
     DeleteProvisionedConcurrencyConfigRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeleteProvisionedConcurrencyConfigRequest = exports.DeleteProvisionedConcurrencyConfigRequest || (exports.DeleteProvisionedConcurrencyConfigRequest = {}));
 var GetAccountSettingsRequest;
 (function (GetAccountSettingsRequest) {
+    /**
+     * @internal
+     */
     GetAccountSettingsRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetAccountSettingsRequest = exports.GetAccountSettingsRequest || (exports.GetAccountSettingsRequest = {}));
 var GetAccountSettingsResponse;
 (function (GetAccountSettingsResponse) {
+    /**
+     * @internal
+     */
     GetAccountSettingsResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetAccountSettingsResponse = exports.GetAccountSettingsResponse || (exports.GetAccountSettingsResponse = {}));
 var GetAliasRequest;
 (function (GetAliasRequest) {
+    /**
+     * @internal
+     */
     GetAliasRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetAliasRequest = exports.GetAliasRequest || (exports.GetAliasRequest = {}));
 var GetCodeSigningConfigRequest;
 (function (GetCodeSigningConfigRequest) {
+    /**
+     * @internal
+     */
     GetCodeSigningConfigRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetCodeSigningConfigRequest = exports.GetCodeSigningConfigRequest || (exports.GetCodeSigningConfigRequest = {}));
 var GetCodeSigningConfigResponse;
 (function (GetCodeSigningConfigResponse) {
+    /**
+     * @internal
+     */
     GetCodeSigningConfigResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetCodeSigningConfigResponse = exports.GetCodeSigningConfigResponse || (exports.GetCodeSigningConfigResponse = {}));
 var GetEventSourceMappingRequest;
 (function (GetEventSourceMappingRequest) {
+    /**
+     * @internal
+     */
     GetEventSourceMappingRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetEventSourceMappingRequest = exports.GetEventSourceMappingRequest || (exports.GetEventSourceMappingRequest = {}));
 var GetFunctionRequest;
 (function (GetFunctionRequest) {
+    /**
+     * @internal
+     */
     GetFunctionRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetFunctionRequest = exports.GetFunctionRequest || (exports.GetFunctionRequest = {}));
 var FunctionCodeLocation;
 (function (FunctionCodeLocation) {
+    /**
+     * @internal
+     */
     FunctionCodeLocation.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(FunctionCodeLocation = exports.FunctionCodeLocation || (exports.FunctionCodeLocation = {}));
 var Concurrency;
 (function (Concurrency) {
+    /**
+     * @internal
+     */
     Concurrency.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(Concurrency = exports.Concurrency || (exports.Concurrency = {}));
 var GetFunctionResponse;
 (function (GetFunctionResponse) {
+    /**
+     * @internal
+     */
     GetFunctionResponse.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Configuration && { Configuration: FunctionConfiguration.filterSensitiveLog(obj.Configuration) }),
@@ -5748,96 +6767,144 @@ var GetFunctionResponse;
 })(GetFunctionResponse = exports.GetFunctionResponse || (exports.GetFunctionResponse = {}));
 var GetFunctionCodeSigningConfigRequest;
 (function (GetFunctionCodeSigningConfigRequest) {
+    /**
+     * @internal
+     */
     GetFunctionCodeSigningConfigRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetFunctionCodeSigningConfigRequest = exports.GetFunctionCodeSigningConfigRequest || (exports.GetFunctionCodeSigningConfigRequest = {}));
 var GetFunctionCodeSigningConfigResponse;
 (function (GetFunctionCodeSigningConfigResponse) {
+    /**
+     * @internal
+     */
     GetFunctionCodeSigningConfigResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetFunctionCodeSigningConfigResponse = exports.GetFunctionCodeSigningConfigResponse || (exports.GetFunctionCodeSigningConfigResponse = {}));
 var GetFunctionConcurrencyRequest;
 (function (GetFunctionConcurrencyRequest) {
+    /**
+     * @internal
+     */
     GetFunctionConcurrencyRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetFunctionConcurrencyRequest = exports.GetFunctionConcurrencyRequest || (exports.GetFunctionConcurrencyRequest = {}));
 var GetFunctionConcurrencyResponse;
 (function (GetFunctionConcurrencyResponse) {
+    /**
+     * @internal
+     */
     GetFunctionConcurrencyResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetFunctionConcurrencyResponse = exports.GetFunctionConcurrencyResponse || (exports.GetFunctionConcurrencyResponse = {}));
 var GetFunctionConfigurationRequest;
 (function (GetFunctionConfigurationRequest) {
+    /**
+     * @internal
+     */
     GetFunctionConfigurationRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetFunctionConfigurationRequest = exports.GetFunctionConfigurationRequest || (exports.GetFunctionConfigurationRequest = {}));
 var FunctionEventInvokeConfig;
 (function (FunctionEventInvokeConfig) {
+    /**
+     * @internal
+     */
     FunctionEventInvokeConfig.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(FunctionEventInvokeConfig = exports.FunctionEventInvokeConfig || (exports.FunctionEventInvokeConfig = {}));
 var GetFunctionEventInvokeConfigRequest;
 (function (GetFunctionEventInvokeConfigRequest) {
+    /**
+     * @internal
+     */
     GetFunctionEventInvokeConfigRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetFunctionEventInvokeConfigRequest = exports.GetFunctionEventInvokeConfigRequest || (exports.GetFunctionEventInvokeConfigRequest = {}));
 var GetLayerVersionRequest;
 (function (GetLayerVersionRequest) {
+    /**
+     * @internal
+     */
     GetLayerVersionRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetLayerVersionRequest = exports.GetLayerVersionRequest || (exports.GetLayerVersionRequest = {}));
 var LayerVersionContentOutput;
 (function (LayerVersionContentOutput) {
+    /**
+     * @internal
+     */
     LayerVersionContentOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(LayerVersionContentOutput = exports.LayerVersionContentOutput || (exports.LayerVersionContentOutput = {}));
 var GetLayerVersionResponse;
 (function (GetLayerVersionResponse) {
+    /**
+     * @internal
+     */
     GetLayerVersionResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetLayerVersionResponse = exports.GetLayerVersionResponse || (exports.GetLayerVersionResponse = {}));
 var GetLayerVersionByArnRequest;
 (function (GetLayerVersionByArnRequest) {
+    /**
+     * @internal
+     */
     GetLayerVersionByArnRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetLayerVersionByArnRequest = exports.GetLayerVersionByArnRequest || (exports.GetLayerVersionByArnRequest = {}));
 var GetLayerVersionPolicyRequest;
 (function (GetLayerVersionPolicyRequest) {
+    /**
+     * @internal
+     */
     GetLayerVersionPolicyRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetLayerVersionPolicyRequest = exports.GetLayerVersionPolicyRequest || (exports.GetLayerVersionPolicyRequest = {}));
 var GetLayerVersionPolicyResponse;
 (function (GetLayerVersionPolicyResponse) {
+    /**
+     * @internal
+     */
     GetLayerVersionPolicyResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetLayerVersionPolicyResponse = exports.GetLayerVersionPolicyResponse || (exports.GetLayerVersionPolicyResponse = {}));
 var GetPolicyRequest;
 (function (GetPolicyRequest) {
+    /**
+     * @internal
+     */
     GetPolicyRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetPolicyRequest = exports.GetPolicyRequest || (exports.GetPolicyRequest = {}));
 var GetPolicyResponse;
 (function (GetPolicyResponse) {
+    /**
+     * @internal
+     */
     GetPolicyResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetPolicyResponse = exports.GetPolicyResponse || (exports.GetPolicyResponse = {}));
 var GetProvisionedConcurrencyConfigRequest;
 (function (GetProvisionedConcurrencyConfigRequest) {
+    /**
+     * @internal
+     */
     GetProvisionedConcurrencyConfigRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -5850,90 +6917,135 @@ var ProvisionedConcurrencyStatusEnum;
 })(ProvisionedConcurrencyStatusEnum = exports.ProvisionedConcurrencyStatusEnum || (exports.ProvisionedConcurrencyStatusEnum = {}));
 var GetProvisionedConcurrencyConfigResponse;
 (function (GetProvisionedConcurrencyConfigResponse) {
+    /**
+     * @internal
+     */
     GetProvisionedConcurrencyConfigResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetProvisionedConcurrencyConfigResponse = exports.GetProvisionedConcurrencyConfigResponse || (exports.GetProvisionedConcurrencyConfigResponse = {}));
 var ProvisionedConcurrencyConfigNotFoundException;
 (function (ProvisionedConcurrencyConfigNotFoundException) {
+    /**
+     * @internal
+     */
     ProvisionedConcurrencyConfigNotFoundException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ProvisionedConcurrencyConfigNotFoundException = exports.ProvisionedConcurrencyConfigNotFoundException || (exports.ProvisionedConcurrencyConfigNotFoundException = {}));
 var EC2AccessDeniedException;
 (function (EC2AccessDeniedException) {
+    /**
+     * @internal
+     */
     EC2AccessDeniedException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(EC2AccessDeniedException = exports.EC2AccessDeniedException || (exports.EC2AccessDeniedException = {}));
 var EC2ThrottledException;
 (function (EC2ThrottledException) {
+    /**
+     * @internal
+     */
     EC2ThrottledException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(EC2ThrottledException = exports.EC2ThrottledException || (exports.EC2ThrottledException = {}));
 var EC2UnexpectedException;
 (function (EC2UnexpectedException) {
+    /**
+     * @internal
+     */
     EC2UnexpectedException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(EC2UnexpectedException = exports.EC2UnexpectedException || (exports.EC2UnexpectedException = {}));
 var EFSIOException;
 (function (EFSIOException) {
+    /**
+     * @internal
+     */
     EFSIOException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(EFSIOException = exports.EFSIOException || (exports.EFSIOException = {}));
 var EFSMountConnectivityException;
 (function (EFSMountConnectivityException) {
+    /**
+     * @internal
+     */
     EFSMountConnectivityException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(EFSMountConnectivityException = exports.EFSMountConnectivityException || (exports.EFSMountConnectivityException = {}));
 var EFSMountFailureException;
 (function (EFSMountFailureException) {
+    /**
+     * @internal
+     */
     EFSMountFailureException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(EFSMountFailureException = exports.EFSMountFailureException || (exports.EFSMountFailureException = {}));
 var EFSMountTimeoutException;
 (function (EFSMountTimeoutException) {
+    /**
+     * @internal
+     */
     EFSMountTimeoutException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(EFSMountTimeoutException = exports.EFSMountTimeoutException || (exports.EFSMountTimeoutException = {}));
 var ENILimitReachedException;
 (function (ENILimitReachedException) {
+    /**
+     * @internal
+     */
     ENILimitReachedException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ENILimitReachedException = exports.ENILimitReachedException || (exports.ENILimitReachedException = {}));
 var InvalidRequestContentException;
 (function (InvalidRequestContentException) {
+    /**
+     * @internal
+     */
     InvalidRequestContentException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(InvalidRequestContentException = exports.InvalidRequestContentException || (exports.InvalidRequestContentException = {}));
 var InvalidRuntimeException;
 (function (InvalidRuntimeException) {
+    /**
+     * @internal
+     */
     InvalidRuntimeException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(InvalidRuntimeException = exports.InvalidRuntimeException || (exports.InvalidRuntimeException = {}));
 var InvalidSecurityGroupIDException;
 (function (InvalidSecurityGroupIDException) {
+    /**
+     * @internal
+     */
     InvalidSecurityGroupIDException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(InvalidSecurityGroupIDException = exports.InvalidSecurityGroupIDException || (exports.InvalidSecurityGroupIDException = {}));
 var InvalidSubnetIDException;
 (function (InvalidSubnetIDException) {
+    /**
+     * @internal
+     */
     InvalidSubnetIDException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(InvalidSubnetIDException = exports.InvalidSubnetIDException || (exports.InvalidSubnetIDException = {}));
 var InvalidZipFileException;
 (function (InvalidZipFileException) {
+    /**
+     * @internal
+     */
     InvalidZipFileException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -5951,6 +7063,9 @@ var LogType;
 })(LogType = exports.LogType || (exports.LogType = {}));
 var InvocationRequest;
 (function (InvocationRequest) {
+    /**
+     * @internal
+     */
     InvocationRequest.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Payload && { Payload: smithy_client_1.SENSITIVE_STRING }),
@@ -5958,6 +7073,9 @@ var InvocationRequest;
 })(InvocationRequest = exports.InvocationRequest || (exports.InvocationRequest = {}));
 var InvocationResponse;
 (function (InvocationResponse) {
+    /**
+     * @internal
+     */
     InvocationResponse.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Payload && { Payload: smithy_client_1.SENSITIVE_STRING }),
@@ -5965,108 +7083,162 @@ var InvocationResponse;
 })(InvocationResponse = exports.InvocationResponse || (exports.InvocationResponse = {}));
 var KMSAccessDeniedException;
 (function (KMSAccessDeniedException) {
+    /**
+     * @internal
+     */
     KMSAccessDeniedException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(KMSAccessDeniedException = exports.KMSAccessDeniedException || (exports.KMSAccessDeniedException = {}));
 var KMSDisabledException;
 (function (KMSDisabledException) {
+    /**
+     * @internal
+     */
     KMSDisabledException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(KMSDisabledException = exports.KMSDisabledException || (exports.KMSDisabledException = {}));
 var KMSInvalidStateException;
 (function (KMSInvalidStateException) {
+    /**
+     * @internal
+     */
     KMSInvalidStateException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(KMSInvalidStateException = exports.KMSInvalidStateException || (exports.KMSInvalidStateException = {}));
 var KMSNotFoundException;
 (function (KMSNotFoundException) {
+    /**
+     * @internal
+     */
     KMSNotFoundException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(KMSNotFoundException = exports.KMSNotFoundException || (exports.KMSNotFoundException = {}));
 var RequestTooLargeException;
 (function (RequestTooLargeException) {
+    /**
+     * @internal
+     */
     RequestTooLargeException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(RequestTooLargeException = exports.RequestTooLargeException || (exports.RequestTooLargeException = {}));
 var ResourceNotReadyException;
 (function (ResourceNotReadyException) {
+    /**
+     * @internal
+     */
     ResourceNotReadyException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ResourceNotReadyException = exports.ResourceNotReadyException || (exports.ResourceNotReadyException = {}));
 var SubnetIPAddressLimitReachedException;
 (function (SubnetIPAddressLimitReachedException) {
+    /**
+     * @internal
+     */
     SubnetIPAddressLimitReachedException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(SubnetIPAddressLimitReachedException = exports.SubnetIPAddressLimitReachedException || (exports.SubnetIPAddressLimitReachedException = {}));
 var UnsupportedMediaTypeException;
 (function (UnsupportedMediaTypeException) {
+    /**
+     * @internal
+     */
     UnsupportedMediaTypeException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UnsupportedMediaTypeException = exports.UnsupportedMediaTypeException || (exports.UnsupportedMediaTypeException = {}));
 var InvokeAsyncRequest;
 (function (InvokeAsyncRequest) {
+    /**
+     * @internal
+     */
     InvokeAsyncRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(InvokeAsyncRequest = exports.InvokeAsyncRequest || (exports.InvokeAsyncRequest = {}));
 var InvokeAsyncResponse;
 (function (InvokeAsyncResponse) {
+    /**
+     * @internal
+     */
     InvokeAsyncResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(InvokeAsyncResponse = exports.InvokeAsyncResponse || (exports.InvokeAsyncResponse = {}));
 var ListAliasesRequest;
 (function (ListAliasesRequest) {
+    /**
+     * @internal
+     */
     ListAliasesRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListAliasesRequest = exports.ListAliasesRequest || (exports.ListAliasesRequest = {}));
 var ListAliasesResponse;
 (function (ListAliasesResponse) {
+    /**
+     * @internal
+     */
     ListAliasesResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListAliasesResponse = exports.ListAliasesResponse || (exports.ListAliasesResponse = {}));
 var ListCodeSigningConfigsRequest;
 (function (ListCodeSigningConfigsRequest) {
+    /**
+     * @internal
+     */
     ListCodeSigningConfigsRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListCodeSigningConfigsRequest = exports.ListCodeSigningConfigsRequest || (exports.ListCodeSigningConfigsRequest = {}));
 var ListCodeSigningConfigsResponse;
 (function (ListCodeSigningConfigsResponse) {
+    /**
+     * @internal
+     */
     ListCodeSigningConfigsResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListCodeSigningConfigsResponse = exports.ListCodeSigningConfigsResponse || (exports.ListCodeSigningConfigsResponse = {}));
 var ListEventSourceMappingsRequest;
 (function (ListEventSourceMappingsRequest) {
+    /**
+     * @internal
+     */
     ListEventSourceMappingsRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListEventSourceMappingsRequest = exports.ListEventSourceMappingsRequest || (exports.ListEventSourceMappingsRequest = {}));
 var ListEventSourceMappingsResponse;
 (function (ListEventSourceMappingsResponse) {
+    /**
+     * @internal
+     */
     ListEventSourceMappingsResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListEventSourceMappingsResponse = exports.ListEventSourceMappingsResponse || (exports.ListEventSourceMappingsResponse = {}));
 var ListFunctionEventInvokeConfigsRequest;
 (function (ListFunctionEventInvokeConfigsRequest) {
+    /**
+     * @internal
+     */
     ListFunctionEventInvokeConfigsRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListFunctionEventInvokeConfigsRequest = exports.ListFunctionEventInvokeConfigsRequest || (exports.ListFunctionEventInvokeConfigsRequest = {}));
 var ListFunctionEventInvokeConfigsResponse;
 (function (ListFunctionEventInvokeConfigsResponse) {
+    /**
+     * @internal
+     */
     ListFunctionEventInvokeConfigsResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -6077,12 +7249,18 @@ var FunctionVersion;
 })(FunctionVersion = exports.FunctionVersion || (exports.FunctionVersion = {}));
 var ListFunctionsRequest;
 (function (ListFunctionsRequest) {
+    /**
+     * @internal
+     */
     ListFunctionsRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListFunctionsRequest = exports.ListFunctionsRequest || (exports.ListFunctionsRequest = {}));
 var ListFunctionsResponse;
 (function (ListFunctionsResponse) {
+    /**
+     * @internal
+     */
     ListFunctionsResponse.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Functions && { Functions: obj.Functions.map((item) => FunctionConfiguration.filterSensitiveLog(item)) }),
@@ -6090,90 +7268,135 @@ var ListFunctionsResponse;
 })(ListFunctionsResponse = exports.ListFunctionsResponse || (exports.ListFunctionsResponse = {}));
 var ListFunctionsByCodeSigningConfigRequest;
 (function (ListFunctionsByCodeSigningConfigRequest) {
+    /**
+     * @internal
+     */
     ListFunctionsByCodeSigningConfigRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListFunctionsByCodeSigningConfigRequest = exports.ListFunctionsByCodeSigningConfigRequest || (exports.ListFunctionsByCodeSigningConfigRequest = {}));
 var ListFunctionsByCodeSigningConfigResponse;
 (function (ListFunctionsByCodeSigningConfigResponse) {
+    /**
+     * @internal
+     */
     ListFunctionsByCodeSigningConfigResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListFunctionsByCodeSigningConfigResponse = exports.ListFunctionsByCodeSigningConfigResponse || (exports.ListFunctionsByCodeSigningConfigResponse = {}));
 var ListLayersRequest;
 (function (ListLayersRequest) {
+    /**
+     * @internal
+     */
     ListLayersRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListLayersRequest = exports.ListLayersRequest || (exports.ListLayersRequest = {}));
 var LayerVersionsListItem;
 (function (LayerVersionsListItem) {
+    /**
+     * @internal
+     */
     LayerVersionsListItem.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(LayerVersionsListItem = exports.LayerVersionsListItem || (exports.LayerVersionsListItem = {}));
 var LayersListItem;
 (function (LayersListItem) {
+    /**
+     * @internal
+     */
     LayersListItem.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(LayersListItem = exports.LayersListItem || (exports.LayersListItem = {}));
 var ListLayersResponse;
 (function (ListLayersResponse) {
+    /**
+     * @internal
+     */
     ListLayersResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListLayersResponse = exports.ListLayersResponse || (exports.ListLayersResponse = {}));
 var ListLayerVersionsRequest;
 (function (ListLayerVersionsRequest) {
+    /**
+     * @internal
+     */
     ListLayerVersionsRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListLayerVersionsRequest = exports.ListLayerVersionsRequest || (exports.ListLayerVersionsRequest = {}));
 var ListLayerVersionsResponse;
 (function (ListLayerVersionsResponse) {
+    /**
+     * @internal
+     */
     ListLayerVersionsResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListLayerVersionsResponse = exports.ListLayerVersionsResponse || (exports.ListLayerVersionsResponse = {}));
 var ListProvisionedConcurrencyConfigsRequest;
 (function (ListProvisionedConcurrencyConfigsRequest) {
+    /**
+     * @internal
+     */
     ListProvisionedConcurrencyConfigsRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListProvisionedConcurrencyConfigsRequest = exports.ListProvisionedConcurrencyConfigsRequest || (exports.ListProvisionedConcurrencyConfigsRequest = {}));
 var ProvisionedConcurrencyConfigListItem;
 (function (ProvisionedConcurrencyConfigListItem) {
+    /**
+     * @internal
+     */
     ProvisionedConcurrencyConfigListItem.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ProvisionedConcurrencyConfigListItem = exports.ProvisionedConcurrencyConfigListItem || (exports.ProvisionedConcurrencyConfigListItem = {}));
 var ListProvisionedConcurrencyConfigsResponse;
 (function (ListProvisionedConcurrencyConfigsResponse) {
+    /**
+     * @internal
+     */
     ListProvisionedConcurrencyConfigsResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListProvisionedConcurrencyConfigsResponse = exports.ListProvisionedConcurrencyConfigsResponse || (exports.ListProvisionedConcurrencyConfigsResponse = {}));
 var ListTagsRequest;
 (function (ListTagsRequest) {
+    /**
+     * @internal
+     */
     ListTagsRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListTagsRequest = exports.ListTagsRequest || (exports.ListTagsRequest = {}));
 var ListTagsResponse;
 (function (ListTagsResponse) {
+    /**
+     * @internal
+     */
     ListTagsResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListTagsResponse = exports.ListTagsResponse || (exports.ListTagsResponse = {}));
 var ListVersionsByFunctionRequest;
 (function (ListVersionsByFunctionRequest) {
+    /**
+     * @internal
+     */
     ListVersionsByFunctionRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListVersionsByFunctionRequest = exports.ListVersionsByFunctionRequest || (exports.ListVersionsByFunctionRequest = {}));
 var ListVersionsByFunctionResponse;
 (function (ListVersionsByFunctionResponse) {
+    /**
+     * @internal
+     */
     ListVersionsByFunctionResponse.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Versions && { Versions: obj.Versions.map((item) => FunctionConfiguration.filterSensitiveLog(item)) }),
@@ -6181,6 +7404,9 @@ var ListVersionsByFunctionResponse;
 })(ListVersionsByFunctionResponse = exports.ListVersionsByFunctionResponse || (exports.ListVersionsByFunctionResponse = {}));
 var LayerVersionContentInput;
 (function (LayerVersionContentInput) {
+    /**
+     * @internal
+     */
     LayerVersionContentInput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.ZipFile && { ZipFile: smithy_client_1.SENSITIVE_STRING }),
@@ -6188,6 +7414,9 @@ var LayerVersionContentInput;
 })(LayerVersionContentInput = exports.LayerVersionContentInput || (exports.LayerVersionContentInput = {}));
 var PublishLayerVersionRequest;
 (function (PublishLayerVersionRequest) {
+    /**
+     * @internal
+     */
     PublishLayerVersionRequest.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Content && { Content: LayerVersionContentInput.filterSensitiveLog(obj.Content) }),
@@ -6195,102 +7424,153 @@ var PublishLayerVersionRequest;
 })(PublishLayerVersionRequest = exports.PublishLayerVersionRequest || (exports.PublishLayerVersionRequest = {}));
 var PublishLayerVersionResponse;
 (function (PublishLayerVersionResponse) {
+    /**
+     * @internal
+     */
     PublishLayerVersionResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PublishLayerVersionResponse = exports.PublishLayerVersionResponse || (exports.PublishLayerVersionResponse = {}));
 var PublishVersionRequest;
 (function (PublishVersionRequest) {
+    /**
+     * @internal
+     */
     PublishVersionRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PublishVersionRequest = exports.PublishVersionRequest || (exports.PublishVersionRequest = {}));
 var PutFunctionCodeSigningConfigRequest;
 (function (PutFunctionCodeSigningConfigRequest) {
+    /**
+     * @internal
+     */
     PutFunctionCodeSigningConfigRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PutFunctionCodeSigningConfigRequest = exports.PutFunctionCodeSigningConfigRequest || (exports.PutFunctionCodeSigningConfigRequest = {}));
 var PutFunctionCodeSigningConfigResponse;
 (function (PutFunctionCodeSigningConfigResponse) {
+    /**
+     * @internal
+     */
     PutFunctionCodeSigningConfigResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PutFunctionCodeSigningConfigResponse = exports.PutFunctionCodeSigningConfigResponse || (exports.PutFunctionCodeSigningConfigResponse = {}));
 var PutFunctionConcurrencyRequest;
 (function (PutFunctionConcurrencyRequest) {
+    /**
+     * @internal
+     */
     PutFunctionConcurrencyRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PutFunctionConcurrencyRequest = exports.PutFunctionConcurrencyRequest || (exports.PutFunctionConcurrencyRequest = {}));
 var PutFunctionEventInvokeConfigRequest;
 (function (PutFunctionEventInvokeConfigRequest) {
+    /**
+     * @internal
+     */
     PutFunctionEventInvokeConfigRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PutFunctionEventInvokeConfigRequest = exports.PutFunctionEventInvokeConfigRequest || (exports.PutFunctionEventInvokeConfigRequest = {}));
 var PutProvisionedConcurrencyConfigRequest;
 (function (PutProvisionedConcurrencyConfigRequest) {
+    /**
+     * @internal
+     */
     PutProvisionedConcurrencyConfigRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PutProvisionedConcurrencyConfigRequest = exports.PutProvisionedConcurrencyConfigRequest || (exports.PutProvisionedConcurrencyConfigRequest = {}));
 var PutProvisionedConcurrencyConfigResponse;
 (function (PutProvisionedConcurrencyConfigResponse) {
+    /**
+     * @internal
+     */
     PutProvisionedConcurrencyConfigResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PutProvisionedConcurrencyConfigResponse = exports.PutProvisionedConcurrencyConfigResponse || (exports.PutProvisionedConcurrencyConfigResponse = {}));
 var RemoveLayerVersionPermissionRequest;
 (function (RemoveLayerVersionPermissionRequest) {
+    /**
+     * @internal
+     */
     RemoveLayerVersionPermissionRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(RemoveLayerVersionPermissionRequest = exports.RemoveLayerVersionPermissionRequest || (exports.RemoveLayerVersionPermissionRequest = {}));
 var RemovePermissionRequest;
 (function (RemovePermissionRequest) {
+    /**
+     * @internal
+     */
     RemovePermissionRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(RemovePermissionRequest = exports.RemovePermissionRequest || (exports.RemovePermissionRequest = {}));
 var TagResourceRequest;
 (function (TagResourceRequest) {
+    /**
+     * @internal
+     */
     TagResourceRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(TagResourceRequest = exports.TagResourceRequest || (exports.TagResourceRequest = {}));
 var UntagResourceRequest;
 (function (UntagResourceRequest) {
+    /**
+     * @internal
+     */
     UntagResourceRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UntagResourceRequest = exports.UntagResourceRequest || (exports.UntagResourceRequest = {}));
 var UpdateAliasRequest;
 (function (UpdateAliasRequest) {
+    /**
+     * @internal
+     */
     UpdateAliasRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdateAliasRequest = exports.UpdateAliasRequest || (exports.UpdateAliasRequest = {}));
 var UpdateCodeSigningConfigRequest;
 (function (UpdateCodeSigningConfigRequest) {
+    /**
+     * @internal
+     */
     UpdateCodeSigningConfigRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdateCodeSigningConfigRequest = exports.UpdateCodeSigningConfigRequest || (exports.UpdateCodeSigningConfigRequest = {}));
 var UpdateCodeSigningConfigResponse;
 (function (UpdateCodeSigningConfigResponse) {
+    /**
+     * @internal
+     */
     UpdateCodeSigningConfigResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdateCodeSigningConfigResponse = exports.UpdateCodeSigningConfigResponse || (exports.UpdateCodeSigningConfigResponse = {}));
 var UpdateEventSourceMappingRequest;
 (function (UpdateEventSourceMappingRequest) {
+    /**
+     * @internal
+     */
     UpdateEventSourceMappingRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdateEventSourceMappingRequest = exports.UpdateEventSourceMappingRequest || (exports.UpdateEventSourceMappingRequest = {}));
 var UpdateFunctionCodeRequest;
 (function (UpdateFunctionCodeRequest) {
+    /**
+     * @internal
+     */
     UpdateFunctionCodeRequest.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.ZipFile && { ZipFile: smithy_client_1.SENSITIVE_STRING }),
@@ -6298,6 +7578,9 @@ var UpdateFunctionCodeRequest;
 })(UpdateFunctionCodeRequest = exports.UpdateFunctionCodeRequest || (exports.UpdateFunctionCodeRequest = {}));
 var UpdateFunctionConfigurationRequest;
 (function (UpdateFunctionConfigurationRequest) {
+    /**
+     * @internal
+     */
     UpdateFunctionConfigurationRequest.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Environment && { Environment: Environment.filterSensitiveLog(obj.Environment) }),
@@ -6305,6 +7588,9 @@ var UpdateFunctionConfigurationRequest;
 })(UpdateFunctionConfigurationRequest = exports.UpdateFunctionConfigurationRequest || (exports.UpdateFunctionConfigurationRequest = {}));
 var UpdateFunctionEventInvokeConfigRequest;
 (function (UpdateFunctionEventInvokeConfigRequest) {
+    /**
+     * @internal
+     */
     UpdateFunctionEventInvokeConfigRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -7409,7 +8695,9 @@ const serializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand = async (i
 };
 exports.serializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand = serializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand;
 const serializeAws_restJson1GetAccountSettingsCommand = async (input, context) => {
-    const headers = {};
+    const headers = {
+        "content-type": "application/json",
+    };
     let resolvedPath = "/2016-08-19/account-settings";
     let body;
     body = "";
@@ -16321,18 +17609,20 @@ exports.ClientSharedValues = {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.waitForFunctionActive = void 0;
+exports.waitUntilFunctionActive = exports.waitForFunctionActive = void 0;
 const GetFunctionConfigurationCommand_1 = __nccwpck_require__(9459);
 const util_waiter_1 = __nccwpck_require__(6243);
 const checkState = async (client, input) => {
+    let reason;
     try {
         let result = await client.send(new GetFunctionConfigurationCommand_1.GetFunctionConfigurationCommand(input));
+        reason = result;
         try {
             let returnComparator = () => {
                 return result.State;
             };
             if (returnComparator() === "Active") {
-                return { state: util_waiter_1.WaiterState.SUCCESS };
+                return { state: util_waiter_1.WaiterState.SUCCESS, reason };
             }
         }
         catch (e) { }
@@ -16341,7 +17631,7 @@ const checkState = async (client, input) => {
                 return result.State;
             };
             if (returnComparator() === "Failed") {
-                return { state: util_waiter_1.WaiterState.FAILURE };
+                return { state: util_waiter_1.WaiterState.FAILURE, reason };
             }
         }
         catch (e) { }
@@ -16350,24 +17640,36 @@ const checkState = async (client, input) => {
                 return result.State;
             };
             if (returnComparator() === "Pending") {
-                return { state: util_waiter_1.WaiterState.RETRY };
+                return { state: util_waiter_1.WaiterState.RETRY, reason };
             }
         }
         catch (e) { }
     }
-    catch (exception) { }
-    return { state: util_waiter_1.WaiterState.RETRY };
+    catch (exception) {
+        reason = exception;
+    }
+    return { state: util_waiter_1.WaiterState.RETRY, reason };
 };
 /**
  * Waits for the function's State to be Active.
- *  @param params : Waiter configuration options.
- *  @param input : the input to GetFunctionConfigurationCommand for polling.
+ *  @deprecated Use waitUntilFunctionActive instead. waitForFunctionActive does not throw error in non-success cases.
  */
 const waitForFunctionActive = async (params, input) => {
     const serviceDefaults = { minDelay: 5, maxDelay: 120 };
     return util_waiter_1.createWaiter({ ...serviceDefaults, ...params }, input, checkState);
 };
 exports.waitForFunctionActive = waitForFunctionActive;
+/**
+ * Waits for the function's State to be Active.
+ *  @param params - Waiter configuration options.
+ *  @param input - The input to GetFunctionConfigurationCommand for polling.
+ */
+const waitUntilFunctionActive = async (params, input) => {
+    const serviceDefaults = { minDelay: 5, maxDelay: 120 };
+    const result = await util_waiter_1.createWaiter({ ...serviceDefaults, ...params }, input, checkState);
+    return util_waiter_1.checkExceptions(result);
+};
+exports.waitUntilFunctionActive = waitUntilFunctionActive;
 //# sourceMappingURL=waitForFunctionActive.js.map
 
 /***/ }),
@@ -16378,31 +17680,44 @@ exports.waitForFunctionActive = waitForFunctionActive;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.waitForFunctionExists = void 0;
+exports.waitUntilFunctionExists = exports.waitForFunctionExists = void 0;
 const GetFunctionCommand_1 = __nccwpck_require__(5296);
 const util_waiter_1 = __nccwpck_require__(6243);
 const checkState = async (client, input) => {
+    let reason;
     try {
         let result = await client.send(new GetFunctionCommand_1.GetFunctionCommand(input));
-        return { state: util_waiter_1.WaiterState.SUCCESS };
+        reason = result;
+        return { state: util_waiter_1.WaiterState.SUCCESS, reason };
     }
     catch (exception) {
+        reason = exception;
         if (exception.name && exception.name == "ResourceNotFoundException") {
-            return { state: util_waiter_1.WaiterState.RETRY };
+            return { state: util_waiter_1.WaiterState.RETRY, reason };
         }
     }
-    return { state: util_waiter_1.WaiterState.RETRY };
+    return { state: util_waiter_1.WaiterState.RETRY, reason };
 };
 /**
  *
- *  @param params : Waiter configuration options.
- *  @param input : the input to GetFunctionCommand for polling.
+ *  @deprecated Use waitUntilFunctionExists instead. waitForFunctionExists does not throw error in non-success cases.
  */
 const waitForFunctionExists = async (params, input) => {
     const serviceDefaults = { minDelay: 1, maxDelay: 120 };
     return util_waiter_1.createWaiter({ ...serviceDefaults, ...params }, input, checkState);
 };
 exports.waitForFunctionExists = waitForFunctionExists;
+/**
+ *
+ *  @param params - Waiter configuration options.
+ *  @param input - The input to GetFunctionCommand for polling.
+ */
+const waitUntilFunctionExists = async (params, input) => {
+    const serviceDefaults = { minDelay: 1, maxDelay: 120 };
+    const result = await util_waiter_1.createWaiter({ ...serviceDefaults, ...params }, input, checkState);
+    return util_waiter_1.checkExceptions(result);
+};
+exports.waitUntilFunctionExists = waitUntilFunctionExists;
 //# sourceMappingURL=waitForFunctionExists.js.map
 
 /***/ }),
@@ -16413,18 +17728,20 @@ exports.waitForFunctionExists = waitForFunctionExists;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.waitForFunctionUpdated = void 0;
+exports.waitUntilFunctionUpdated = exports.waitForFunctionUpdated = void 0;
 const GetFunctionConfigurationCommand_1 = __nccwpck_require__(9459);
 const util_waiter_1 = __nccwpck_require__(6243);
 const checkState = async (client, input) => {
+    let reason;
     try {
         let result = await client.send(new GetFunctionConfigurationCommand_1.GetFunctionConfigurationCommand(input));
+        reason = result;
         try {
             let returnComparator = () => {
                 return result.LastUpdateStatus;
             };
             if (returnComparator() === "Successful") {
-                return { state: util_waiter_1.WaiterState.SUCCESS };
+                return { state: util_waiter_1.WaiterState.SUCCESS, reason };
             }
         }
         catch (e) { }
@@ -16433,7 +17750,7 @@ const checkState = async (client, input) => {
                 return result.LastUpdateStatus;
             };
             if (returnComparator() === "Failed") {
-                return { state: util_waiter_1.WaiterState.FAILURE };
+                return { state: util_waiter_1.WaiterState.FAILURE, reason };
             }
         }
         catch (e) { }
@@ -16442,24 +17759,36 @@ const checkState = async (client, input) => {
                 return result.LastUpdateStatus;
             };
             if (returnComparator() === "InProgress") {
-                return { state: util_waiter_1.WaiterState.RETRY };
+                return { state: util_waiter_1.WaiterState.RETRY, reason };
             }
         }
         catch (e) { }
     }
-    catch (exception) { }
-    return { state: util_waiter_1.WaiterState.RETRY };
+    catch (exception) {
+        reason = exception;
+    }
+    return { state: util_waiter_1.WaiterState.RETRY, reason };
 };
 /**
  * Waits for the function's LastUpdateStatus to be Successful.
- *  @param params : Waiter configuration options.
- *  @param input : the input to GetFunctionConfigurationCommand for polling.
+ *  @deprecated Use waitUntilFunctionUpdated instead. waitForFunctionUpdated does not throw error in non-success cases.
  */
 const waitForFunctionUpdated = async (params, input) => {
     const serviceDefaults = { minDelay: 5, maxDelay: 120 };
     return util_waiter_1.createWaiter({ ...serviceDefaults, ...params }, input, checkState);
 };
 exports.waitForFunctionUpdated = waitForFunctionUpdated;
+/**
+ * Waits for the function's LastUpdateStatus to be Successful.
+ *  @param params - Waiter configuration options.
+ *  @param input - The input to GetFunctionConfigurationCommand for polling.
+ */
+const waitUntilFunctionUpdated = async (params, input) => {
+    const serviceDefaults = { minDelay: 5, maxDelay: 120 };
+    const result = await util_waiter_1.createWaiter({ ...serviceDefaults, ...params }, input, checkState);
+    return util_waiter_1.checkExceptions(result);
+};
+exports.waitUntilFunctionUpdated = waitUntilFunctionUpdated;
 //# sourceMappingURL=waitForFunctionUpdated.js.map
 
 /***/ }),
@@ -16637,6 +17966,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Returns the STS short-term credentials for a given role name that is assigned to the
  *       user.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { SSOClient, GetRoleCredentialsCommand } from "@aws-sdk/client-sso"; // ES Modules import
+ * // const { SSOClient, GetRoleCredentialsCommand } = require("@aws-sdk/client-sso"); // CommonJS import
+ * const client = new SSOClient(config);
+ * const command = new GetRoleCredentialsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetRoleCredentialsCommandInput} for command's `input` shape.
+ * @see {@link GetRoleCredentialsCommandOutput} for command's `response` shape.
+ * @see {@link SSOClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetRoleCredentialsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -16691,6 +18034,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Lists all roles that are assigned to the user for a given AWS account.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { SSOClient, ListAccountRolesCommand } from "@aws-sdk/client-sso"; // ES Modules import
+ * // const { SSOClient, ListAccountRolesCommand } = require("@aws-sdk/client-sso"); // CommonJS import
+ * const client = new SSOClient(config);
+ * const command = new ListAccountRolesCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ListAccountRolesCommandInput} for command's `input` shape.
+ * @see {@link ListAccountRolesCommandOutput} for command's `response` shape.
+ * @see {@link SSOClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ListAccountRolesCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -16747,6 +18104,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  * <p>Lists all AWS accounts assigned to the user. These AWS accounts are assigned by the
  *       administrator of the account. For more information, see <a href="https://docs.aws.amazon.com/singlesignon/latest/userguide/useraccess.html#assignusers">Assign User Access</a> in the <i>AWS SSO User Guide</i>. This operation
  *       returns a paginated response.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { SSOClient, ListAccountsCommand } from "@aws-sdk/client-sso"; // ES Modules import
+ * // const { SSOClient, ListAccountsCommand } = require("@aws-sdk/client-sso"); // CommonJS import
+ * const client = new SSOClient(config);
+ * const command = new ListAccountsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ListAccountsCommandInput} for command's `input` shape.
+ * @see {@link ListAccountsCommandOutput} for command's `response` shape.
+ * @see {@link SSOClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ListAccountsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -16801,6 +18172,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Removes the client- and server-side session that is associated with the user.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { SSOClient, LogoutCommand } from "@aws-sdk/client-sso"; // ES Modules import
+ * // const { SSOClient, LogoutCommand } = require("@aws-sdk/client-sso"); // CommonJS import
+ * const client = new SSOClient(config);
+ * const command = new LogoutCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link LogoutCommandInput} for command's `input` shape.
+ * @see {@link LogoutCommandOutput} for command's `response` shape.
+ * @see {@link SSOClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class LogoutCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -17039,12 +18424,18 @@ exports.LogoutRequest = exports.ListAccountsResponse = exports.ListAccountsReque
 const smithy_client_1 = __nccwpck_require__(2223);
 var AccountInfo;
 (function (AccountInfo) {
+    /**
+     * @internal
+     */
     AccountInfo.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AccountInfo = exports.AccountInfo || (exports.AccountInfo = {}));
 var GetRoleCredentialsRequest;
 (function (GetRoleCredentialsRequest) {
+    /**
+     * @internal
+     */
     GetRoleCredentialsRequest.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.accessToken && { accessToken: smithy_client_1.SENSITIVE_STRING }),
@@ -17052,6 +18443,9 @@ var GetRoleCredentialsRequest;
 })(GetRoleCredentialsRequest = exports.GetRoleCredentialsRequest || (exports.GetRoleCredentialsRequest = {}));
 var RoleCredentials;
 (function (RoleCredentials) {
+    /**
+     * @internal
+     */
     RoleCredentials.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.secretAccessKey && { secretAccessKey: smithy_client_1.SENSITIVE_STRING }),
@@ -17060,6 +18454,9 @@ var RoleCredentials;
 })(RoleCredentials = exports.RoleCredentials || (exports.RoleCredentials = {}));
 var GetRoleCredentialsResponse;
 (function (GetRoleCredentialsResponse) {
+    /**
+     * @internal
+     */
     GetRoleCredentialsResponse.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.roleCredentials && { roleCredentials: RoleCredentials.filterSensitiveLog(obj.roleCredentials) }),
@@ -17067,30 +18464,45 @@ var GetRoleCredentialsResponse;
 })(GetRoleCredentialsResponse = exports.GetRoleCredentialsResponse || (exports.GetRoleCredentialsResponse = {}));
 var InvalidRequestException;
 (function (InvalidRequestException) {
+    /**
+     * @internal
+     */
     InvalidRequestException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(InvalidRequestException = exports.InvalidRequestException || (exports.InvalidRequestException = {}));
 var ResourceNotFoundException;
 (function (ResourceNotFoundException) {
+    /**
+     * @internal
+     */
     ResourceNotFoundException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ResourceNotFoundException = exports.ResourceNotFoundException || (exports.ResourceNotFoundException = {}));
 var TooManyRequestsException;
 (function (TooManyRequestsException) {
+    /**
+     * @internal
+     */
     TooManyRequestsException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(TooManyRequestsException = exports.TooManyRequestsException || (exports.TooManyRequestsException = {}));
 var UnauthorizedException;
 (function (UnauthorizedException) {
+    /**
+     * @internal
+     */
     UnauthorizedException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UnauthorizedException = exports.UnauthorizedException || (exports.UnauthorizedException = {}));
 var ListAccountRolesRequest;
 (function (ListAccountRolesRequest) {
+    /**
+     * @internal
+     */
     ListAccountRolesRequest.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.accessToken && { accessToken: smithy_client_1.SENSITIVE_STRING }),
@@ -17098,18 +18510,27 @@ var ListAccountRolesRequest;
 })(ListAccountRolesRequest = exports.ListAccountRolesRequest || (exports.ListAccountRolesRequest = {}));
 var RoleInfo;
 (function (RoleInfo) {
+    /**
+     * @internal
+     */
     RoleInfo.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(RoleInfo = exports.RoleInfo || (exports.RoleInfo = {}));
 var ListAccountRolesResponse;
 (function (ListAccountRolesResponse) {
+    /**
+     * @internal
+     */
     ListAccountRolesResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListAccountRolesResponse = exports.ListAccountRolesResponse || (exports.ListAccountRolesResponse = {}));
 var ListAccountsRequest;
 (function (ListAccountsRequest) {
+    /**
+     * @internal
+     */
     ListAccountsRequest.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.accessToken && { accessToken: smithy_client_1.SENSITIVE_STRING }),
@@ -17117,12 +18538,18 @@ var ListAccountsRequest;
 })(ListAccountsRequest = exports.ListAccountsRequest || (exports.ListAccountsRequest = {}));
 var ListAccountsResponse;
 (function (ListAccountsResponse) {
+    /**
+     * @internal
+     */
     ListAccountsResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListAccountsResponse = exports.ListAccountsResponse || (exports.ListAccountsResponse = {}));
 var LogoutRequest;
 (function (LogoutRequest) {
+    /**
+     * @internal
+     */
     LogoutRequest.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.accessToken && { accessToken: smithy_client_1.SENSITIVE_STRING }),
@@ -18145,6 +19572,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             <code>SerialNumber</code> value identifies the user's hardware or virtual MFA device.
  *          The <code>TokenCode</code> is the time-based one-time password (TOTP) that the MFA device
  *          produces. </p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { STSClient, AssumeRoleCommand } from "@aws-sdk/client-sts"; // ES Modules import
+ * // const { STSClient, AssumeRoleCommand } = require("@aws-sdk/client-sts"); // CommonJS import
+ * const client = new STSClient(config);
+ * const command = new AssumeRoleCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link AssumeRoleCommandInput} for command's `input` shape.
+ * @see {@link AssumeRoleCommandOutput} for command's `response` shape.
+ * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class AssumeRoleCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -18331,6 +19772,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                   <i>IAM User Guide</i>. </p>
  *             </li>
  *          </ul>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { STSClient, AssumeRoleWithSAMLCommand } from "@aws-sdk/client-sts"; // ES Modules import
+ * // const { STSClient, AssumeRoleWithSAMLCommand } = require("@aws-sdk/client-sts"); // CommonJS import
+ * const client = new STSClient(config);
+ * const command = new AssumeRoleWithSAMLCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link AssumeRoleWithSAMLCommandInput} for command's `input` shape.
+ * @see {@link AssumeRoleWithSAMLCommandOutput} for command's `response` shape.
+ * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class AssumeRoleWithSAMLCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -18520,6 +19975,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                to content in Amazon S3. </p>
  *             </li>
  *          </ul>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { STSClient, AssumeRoleWithWebIdentityCommand } from "@aws-sdk/client-sts"; // ES Modules import
+ * // const { STSClient, AssumeRoleWithWebIdentityCommand } = require("@aws-sdk/client-sts"); // CommonJS import
+ * const client = new STSClient(config);
+ * const command = new AssumeRoleWithWebIdentityCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link AssumeRoleWithWebIdentityCommandInput} for command's `input` shape.
+ * @see {@link AssumeRoleWithWebIdentityCommandOutput} for command's `response` shape.
+ * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class AssumeRoleWithWebIdentityCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -18610,6 +20079,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                <p>The values of condition keys in the context of the user's request.</p>
  *             </li>
  *          </ul>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { STSClient, DecodeAuthorizationMessageCommand } from "@aws-sdk/client-sts"; // ES Modules import
+ * // const { STSClient, DecodeAuthorizationMessageCommand } = require("@aws-sdk/client-sts"); // CommonJS import
+ * const client = new STSClient(config);
+ * const command = new DecodeAuthorizationMessageCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DecodeAuthorizationMessageCommandInput} for command's `input` shape.
+ * @see {@link DecodeAuthorizationMessageCommandOutput} for command's `response` shape.
+ * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DecodeAuthorizationMessageCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -18683,6 +20166,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *         <p>This operation does not indicate the state of the access key. The key might be active,
  *             inactive, or deleted. Active keys might not have permissions to perform an operation.
  *             Providing a deleted access key might return an error that the key doesn't exist.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { STSClient, GetAccessKeyInfoCommand } from "@aws-sdk/client-sts"; // ES Modules import
+ * // const { STSClient, GetAccessKeyInfoCommand } = require("@aws-sdk/client-sts"); // CommonJS import
+ * const client = new STSClient(config);
+ * const command = new GetAccessKeyInfoCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetAccessKeyInfoCommandInput} for command's `input` shape.
+ * @see {@link GetAccessKeyInfoCommandOutput} for command's `response` shape.
+ * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetAccessKeyInfoCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -18748,6 +20245,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                 user or role is denied access. To view an example response, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_general.html#troubleshoot_general_access-denied-delete-mfa">I Am Not Authorized to Perform: iam:DeleteVirtualMFADevice</a> in the
  *                     <i>IAM User Guide</i>.</p>
  *         </note>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { STSClient, GetCallerIdentityCommand } from "@aws-sdk/client-sts"; // ES Modules import
+ * // const { STSClient, GetCallerIdentityCommand } = require("@aws-sdk/client-sts"); // CommonJS import
+ * const client = new STSClient(config);
+ * const command = new GetCallerIdentityCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetCallerIdentityCommandInput} for command's `input` shape.
+ * @see {@link GetCallerIdentityCommandOutput} for command's `response` shape.
+ * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetCallerIdentityCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -18942,6 +20453,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                 <code>department</code>=<code>engineering</code> session tag.
  *                 <code>Department</code> and <code>department</code> are not saved as separate tags,
  *             and the session tag passed in the request takes precedence over the user tag.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { STSClient, GetFederationTokenCommand } from "@aws-sdk/client-sts"; // ES Modules import
+ * // const { STSClient, GetFederationTokenCommand } = require("@aws-sdk/client-sts"); // CommonJS import
+ * const client = new STSClient(config);
+ * const command = new GetFederationTokenCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetFederationTokenCommandInput} for command's `input` shape.
+ * @see {@link GetFederationTokenCommandOutput} for command's `response` shape.
+ * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetFederationTokenCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -19049,6 +20574,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          credentials, go to <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#api_getsessiontoken">Temporary
  *             Credentials for Users in Untrusted Environments</a> in the
  *             <i>IAM User Guide</i>. </p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { STSClient, GetSessionTokenCommand } from "@aws-sdk/client-sts"; // ES Modules import
+ * // const { STSClient, GetSessionTokenCommand } = require("@aws-sdk/client-sts"); // CommonJS import
+ * const client = new STSClient(config);
+ * const command = new GetSessionTokenCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetSessionTokenCommandInput} for command's `input` shape.
+ * @see {@link GetSessionTokenCommandOutput} for command's `response` shape.
+ * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetSessionTokenCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -19098,6 +20637,8 @@ exports.GetSessionTokenCommand = GetSessionTokenCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.decorateDefaultCredentialProvider = exports.getDefaultRoleAssumerWithWebIdentity = exports.getDefaultRoleAssumer = void 0;
+// Please do not touch this file. It's generated from template in:
+// https://github.com/aws/aws-sdk-js-v3/blob/main/codegen/smithy-aws-typescript-codegen/src/main/resources/software/amazon/smithy/aws/typescript/codegen/sts-client-defaultRoleAssumers.ts
 const defaultStsRoleAssumers_1 = __nccwpck_require__(2418);
 const STSClient_1 = __nccwpck_require__(2316);
 /**
@@ -19160,12 +20701,15 @@ const decorateDefaultRegion = (region) => {
  */
 const getDefaultRoleAssumer = (stsOptions, stsClientCtor) => {
     let stsClient;
+    let closureSourceCreds;
     return async (sourceCreds, params) => {
+        closureSourceCreds = sourceCreds;
         if (!stsClient) {
             const { logger, region } = stsOptions;
             stsClient = new stsClientCtor({
                 logger,
-                credentials: sourceCreds,
+                // A hack to make sts client uses the credential in current closure.
+                credentialDefaultProvider: () => async () => closureSourceCreds,
                 region: decorateDefaultRegion(region),
             });
         }
@@ -19567,174 +21111,261 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.GetSessionTokenResponse = exports.GetSessionTokenRequest = exports.GetFederationTokenResponse = exports.FederatedUser = exports.GetFederationTokenRequest = exports.GetCallerIdentityResponse = exports.GetCallerIdentityRequest = exports.GetAccessKeyInfoResponse = exports.GetAccessKeyInfoRequest = exports.InvalidAuthorizationMessageException = exports.DecodeAuthorizationMessageResponse = exports.DecodeAuthorizationMessageRequest = exports.IDPCommunicationErrorException = exports.AssumeRoleWithWebIdentityResponse = exports.AssumeRoleWithWebIdentityRequest = exports.InvalidIdentityTokenException = exports.IDPRejectedClaimException = exports.AssumeRoleWithSAMLResponse = exports.AssumeRoleWithSAMLRequest = exports.RegionDisabledException = exports.PackedPolicyTooLargeException = exports.MalformedPolicyDocumentException = exports.ExpiredTokenException = exports.AssumeRoleResponse = exports.Credentials = exports.AssumeRoleRequest = exports.Tag = exports.PolicyDescriptorType = exports.AssumedRoleUser = void 0;
 var AssumedRoleUser;
 (function (AssumedRoleUser) {
+    /**
+     * @internal
+     */
     AssumedRoleUser.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AssumedRoleUser = exports.AssumedRoleUser || (exports.AssumedRoleUser = {}));
 var PolicyDescriptorType;
 (function (PolicyDescriptorType) {
+    /**
+     * @internal
+     */
     PolicyDescriptorType.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PolicyDescriptorType = exports.PolicyDescriptorType || (exports.PolicyDescriptorType = {}));
 var Tag;
 (function (Tag) {
+    /**
+     * @internal
+     */
     Tag.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(Tag = exports.Tag || (exports.Tag = {}));
 var AssumeRoleRequest;
 (function (AssumeRoleRequest) {
+    /**
+     * @internal
+     */
     AssumeRoleRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AssumeRoleRequest = exports.AssumeRoleRequest || (exports.AssumeRoleRequest = {}));
 var Credentials;
 (function (Credentials) {
+    /**
+     * @internal
+     */
     Credentials.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(Credentials = exports.Credentials || (exports.Credentials = {}));
 var AssumeRoleResponse;
 (function (AssumeRoleResponse) {
+    /**
+     * @internal
+     */
     AssumeRoleResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AssumeRoleResponse = exports.AssumeRoleResponse || (exports.AssumeRoleResponse = {}));
 var ExpiredTokenException;
 (function (ExpiredTokenException) {
+    /**
+     * @internal
+     */
     ExpiredTokenException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ExpiredTokenException = exports.ExpiredTokenException || (exports.ExpiredTokenException = {}));
 var MalformedPolicyDocumentException;
 (function (MalformedPolicyDocumentException) {
+    /**
+     * @internal
+     */
     MalformedPolicyDocumentException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(MalformedPolicyDocumentException = exports.MalformedPolicyDocumentException || (exports.MalformedPolicyDocumentException = {}));
 var PackedPolicyTooLargeException;
 (function (PackedPolicyTooLargeException) {
+    /**
+     * @internal
+     */
     PackedPolicyTooLargeException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PackedPolicyTooLargeException = exports.PackedPolicyTooLargeException || (exports.PackedPolicyTooLargeException = {}));
 var RegionDisabledException;
 (function (RegionDisabledException) {
+    /**
+     * @internal
+     */
     RegionDisabledException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(RegionDisabledException = exports.RegionDisabledException || (exports.RegionDisabledException = {}));
 var AssumeRoleWithSAMLRequest;
 (function (AssumeRoleWithSAMLRequest) {
+    /**
+     * @internal
+     */
     AssumeRoleWithSAMLRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AssumeRoleWithSAMLRequest = exports.AssumeRoleWithSAMLRequest || (exports.AssumeRoleWithSAMLRequest = {}));
 var AssumeRoleWithSAMLResponse;
 (function (AssumeRoleWithSAMLResponse) {
+    /**
+     * @internal
+     */
     AssumeRoleWithSAMLResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AssumeRoleWithSAMLResponse = exports.AssumeRoleWithSAMLResponse || (exports.AssumeRoleWithSAMLResponse = {}));
 var IDPRejectedClaimException;
 (function (IDPRejectedClaimException) {
+    /**
+     * @internal
+     */
     IDPRejectedClaimException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(IDPRejectedClaimException = exports.IDPRejectedClaimException || (exports.IDPRejectedClaimException = {}));
 var InvalidIdentityTokenException;
 (function (InvalidIdentityTokenException) {
+    /**
+     * @internal
+     */
     InvalidIdentityTokenException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(InvalidIdentityTokenException = exports.InvalidIdentityTokenException || (exports.InvalidIdentityTokenException = {}));
 var AssumeRoleWithWebIdentityRequest;
 (function (AssumeRoleWithWebIdentityRequest) {
+    /**
+     * @internal
+     */
     AssumeRoleWithWebIdentityRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AssumeRoleWithWebIdentityRequest = exports.AssumeRoleWithWebIdentityRequest || (exports.AssumeRoleWithWebIdentityRequest = {}));
 var AssumeRoleWithWebIdentityResponse;
 (function (AssumeRoleWithWebIdentityResponse) {
+    /**
+     * @internal
+     */
     AssumeRoleWithWebIdentityResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AssumeRoleWithWebIdentityResponse = exports.AssumeRoleWithWebIdentityResponse || (exports.AssumeRoleWithWebIdentityResponse = {}));
 var IDPCommunicationErrorException;
 (function (IDPCommunicationErrorException) {
+    /**
+     * @internal
+     */
     IDPCommunicationErrorException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(IDPCommunicationErrorException = exports.IDPCommunicationErrorException || (exports.IDPCommunicationErrorException = {}));
 var DecodeAuthorizationMessageRequest;
 (function (DecodeAuthorizationMessageRequest) {
+    /**
+     * @internal
+     */
     DecodeAuthorizationMessageRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DecodeAuthorizationMessageRequest = exports.DecodeAuthorizationMessageRequest || (exports.DecodeAuthorizationMessageRequest = {}));
 var DecodeAuthorizationMessageResponse;
 (function (DecodeAuthorizationMessageResponse) {
+    /**
+     * @internal
+     */
     DecodeAuthorizationMessageResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DecodeAuthorizationMessageResponse = exports.DecodeAuthorizationMessageResponse || (exports.DecodeAuthorizationMessageResponse = {}));
 var InvalidAuthorizationMessageException;
 (function (InvalidAuthorizationMessageException) {
+    /**
+     * @internal
+     */
     InvalidAuthorizationMessageException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(InvalidAuthorizationMessageException = exports.InvalidAuthorizationMessageException || (exports.InvalidAuthorizationMessageException = {}));
 var GetAccessKeyInfoRequest;
 (function (GetAccessKeyInfoRequest) {
+    /**
+     * @internal
+     */
     GetAccessKeyInfoRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetAccessKeyInfoRequest = exports.GetAccessKeyInfoRequest || (exports.GetAccessKeyInfoRequest = {}));
 var GetAccessKeyInfoResponse;
 (function (GetAccessKeyInfoResponse) {
+    /**
+     * @internal
+     */
     GetAccessKeyInfoResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetAccessKeyInfoResponse = exports.GetAccessKeyInfoResponse || (exports.GetAccessKeyInfoResponse = {}));
 var GetCallerIdentityRequest;
 (function (GetCallerIdentityRequest) {
+    /**
+     * @internal
+     */
     GetCallerIdentityRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetCallerIdentityRequest = exports.GetCallerIdentityRequest || (exports.GetCallerIdentityRequest = {}));
 var GetCallerIdentityResponse;
 (function (GetCallerIdentityResponse) {
+    /**
+     * @internal
+     */
     GetCallerIdentityResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetCallerIdentityResponse = exports.GetCallerIdentityResponse || (exports.GetCallerIdentityResponse = {}));
 var GetFederationTokenRequest;
 (function (GetFederationTokenRequest) {
+    /**
+     * @internal
+     */
     GetFederationTokenRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetFederationTokenRequest = exports.GetFederationTokenRequest || (exports.GetFederationTokenRequest = {}));
 var FederatedUser;
 (function (FederatedUser) {
+    /**
+     * @internal
+     */
     FederatedUser.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(FederatedUser = exports.FederatedUser || (exports.FederatedUser = {}));
 var GetFederationTokenResponse;
 (function (GetFederationTokenResponse) {
+    /**
+     * @internal
+     */
     GetFederationTokenResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetFederationTokenResponse = exports.GetFederationTokenResponse || (exports.GetFederationTokenResponse = {}));
 var GetSessionTokenRequest;
 (function (GetSessionTokenRequest) {
+    /**
+     * @internal
+     */
     GetSessionTokenRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetSessionTokenRequest = exports.GetSessionTokenRequest || (exports.GetSessionTokenRequest = {}));
 var GetSessionTokenResponse;
 (function (GetSessionTokenResponse) {
+    /**
+     * @internal
+     */
     GetSessionTokenResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -19752,6 +21383,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.deserializeAws_queryGetSessionTokenCommand = exports.deserializeAws_queryGetFederationTokenCommand = exports.deserializeAws_queryGetCallerIdentityCommand = exports.deserializeAws_queryGetAccessKeyInfoCommand = exports.deserializeAws_queryDecodeAuthorizationMessageCommand = exports.deserializeAws_queryAssumeRoleWithWebIdentityCommand = exports.deserializeAws_queryAssumeRoleWithSAMLCommand = exports.deserializeAws_queryAssumeRoleCommand = exports.serializeAws_queryGetSessionTokenCommand = exports.serializeAws_queryGetFederationTokenCommand = exports.serializeAws_queryGetCallerIdentityCommand = exports.serializeAws_queryGetAccessKeyInfoCommand = exports.serializeAws_queryDecodeAuthorizationMessageCommand = exports.serializeAws_queryAssumeRoleWithWebIdentityCommand = exports.serializeAws_queryAssumeRoleWithSAMLCommand = exports.serializeAws_queryAssumeRoleCommand = void 0;
 const protocol_http_1 = __nccwpck_require__(7498);
 const smithy_client_1 = __nccwpck_require__(2223);
+const entities_1 = __nccwpck_require__(3000);
 const fast_xml_parser_1 = __nccwpck_require__(7448);
 const serializeAws_queryAssumeRoleCommand = async (input, context) => {
     const headers = {
@@ -20965,12 +22597,6 @@ const buildHttpRpcRequest = async (context, headers, path, resolvedHostname, bod
     }
     return new protocol_http_1.HttpRequest(contents);
 };
-const decodeEscapedXML = (str) => str
-    .replace(/&amp;/g, "&")
-    .replace(/&apos;/g, "'")
-    .replace(/&quot;/g, '"')
-    .replace(/&gt;/g, ">")
-    .replace(/&lt;/g, "<");
 const parseBody = (streamBody, context) => collectBodyString(streamBody, context).then((encoded) => {
     if (encoded.length) {
         const parsedObj = fast_xml_parser_1.parse(encoded, {
@@ -20978,7 +22604,7 @@ const parseBody = (streamBody, context) => collectBodyString(streamBody, context
             ignoreAttributes: false,
             parseNodeValue: false,
             trimValues: false,
-            tagValueProcessor: (val, tagName) => (val.trim() === "" ? "" : decodeEscapedXML(val)),
+            tagValueProcessor: (val, tagName) => (val.trim() === "" ? "" : entities_1.decodeHTML(val)),
         });
         const textNodeName = "#text";
         const key = Object.keys(parsedObj)[0];
@@ -21107,7 +22733,7 @@ const normalizeEndpoint = (input) => {
     }
     return endpoint;
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ3VzdG9tRW5kcG9pbnRzQ29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL0N1c3RvbUVuZHBvaW50c0NvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUF1Qk8sTUFBTSw0QkFBNEIsR0FBRyxDQUMxQyxLQUEwRCxFQUN2QixFQUFFOztJQUFDLE9BQUEsQ0FBQztRQUN2QyxHQUFHLEtBQUs7UUFDUixHQUFHLEVBQUUsTUFBQSxLQUFLLENBQUMsR0FBRyxtQ0FBSSxJQUFJO1FBQ3RCLFFBQVEsRUFBRSxpQkFBaUIsQ0FBQyxLQUFLLENBQUM7UUFDbEMsZ0JBQWdCLEVBQUUsSUFBSTtLQUN2QixDQUFDLENBQUE7Q0FBQSxDQUFDO0FBUFUsUUFBQSw0QkFBNEIsZ0NBT3RDO0FBRUgsTUFBTSxpQkFBaUIsR0FBRyxDQUFDLEtBQXNELEVBQXNCLEVBQUU7SUFDdkcsTUFBTSxFQUFFLFFBQVEsRUFBRSxTQUFTLEVBQUUsR0FBRyxLQUFLLENBQUM7SUFDdEMsSUFBSSxPQUFPLFFBQVEsS0FBSyxRQUFRLEVBQUU7UUFDaEMsTUFBTSxXQUFXLEdBQUcsT0FBTyxDQUFDLE9BQU8sQ0FBQyxTQUFTLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQztRQUN6RCxPQUFPLEdBQUcsRUFBRSxDQUFDLFdBQVcsQ0FBQztLQUMxQjtTQUFNLElBQUksT0FBTyxRQUFRLEtBQUssUUFBUSxFQUFFO1FBQ3ZDLE1BQU0sV0FBVyxHQUFHLE9BQU8sQ0FBQyxPQUFPLENBQUMsUUFBUSxDQUFDLENBQUM7UUFDOUMsT0FBTyxHQUFHLEVBQUUsQ0FBQyxXQUFXLENBQUM7S0FDMUI7SUFDRCxPQUFPLFFBQVEsQ0FBQztBQUNsQixDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBFbmRwb2ludCwgUHJvdmlkZXIsIFVybFBhcnNlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5leHBvcnQgaW50ZXJmYWNlIEN1c3RvbUVuZHBvaW50c0lucHV0Q29uZmlnIHtcbiAgLyoqXG4gICAqIFRoZSBmdWxseSBxdWFsaWZpZWQgZW5kcG9pbnQgb2YgdGhlIHdlYnNlcnZpY2UuXG4gICAqL1xuICBlbmRwb2ludDogc3RyaW5nIHwgRW5kcG9pbnQgfCBQcm92aWRlcjxFbmRwb2ludD47XG5cbiAgLyoqXG4gICAqIFdoZXRoZXIgVExTIGlzIGVuYWJsZWQgZm9yIHJlcXVlc3RzLlxuICAgKi9cbiAgdGxzPzogYm9vbGVhbjtcbn1cblxuaW50ZXJmYWNlIFByZXZpb3VzbHlSZXNvbHZlZCB7XG4gIHVybFBhcnNlcjogVXJsUGFyc2VyO1xufVxuXG5leHBvcnQgaW50ZXJmYWNlIEN1c3RvbUVuZHBvaW50c1Jlc29sdmVkQ29uZmlnIGV4dGVuZHMgUmVxdWlyZWQ8Q3VzdG9tRW5kcG9pbnRzSW5wdXRDb25maWc+IHtcbiAgZW5kcG9pbnQ6IFByb3ZpZGVyPEVuZHBvaW50PjtcbiAgaXNDdXN0b21FbmRwb2ludDogdHJ1ZTtcbn1cblxuZXhwb3J0IGNvbnN0IHJlc29sdmVDdXN0b21FbmRwb2ludHNDb25maWcgPSA8VD4oXG4gIGlucHV0OiBUICYgQ3VzdG9tRW5kcG9pbnRzSW5wdXRDb25maWcgJiBQcmV2aW91c2x5UmVzb2x2ZWRcbik6IFQgJiBDdXN0b21FbmRwb2ludHNSZXNvbHZlZENvbmZpZyA9PiAoe1xuICAuLi5pbnB1dCxcbiAgdGxzOiBpbnB1dC50bHMgPz8gdHJ1ZSxcbiAgZW5kcG9pbnQ6IG5vcm1hbGl6ZUVuZHBvaW50KGlucHV0KSxcbiAgaXNDdXN0b21FbmRwb2ludDogdHJ1ZSxcbn0pO1xuXG5jb25zdCBub3JtYWxpemVFbmRwb2ludCA9IChpbnB1dDogQ3VzdG9tRW5kcG9pbnRzSW5wdXRDb25maWcgJiBQcmV2aW91c2x5UmVzb2x2ZWQpOiBQcm92aWRlcjxFbmRwb2ludD4gPT4ge1xuICBjb25zdCB7IGVuZHBvaW50LCB1cmxQYXJzZXIgfSA9IGlucHV0O1xuICBpZiAodHlwZW9mIGVuZHBvaW50ID09PSBcInN0cmluZ1wiKSB7XG4gICAgY29uc3QgcHJvbWlzaWZpZWQgPSBQcm9taXNlLnJlc29sdmUodXJsUGFyc2VyKGVuZHBvaW50KSk7XG4gICAgcmV0dXJuICgpID0+IHByb21pc2lmaWVkO1xuICB9IGVsc2UgaWYgKHR5cGVvZiBlbmRwb2ludCA9PT0gXCJvYmplY3RcIikge1xuICAgIGNvbnN0IHByb21pc2lmaWVkID0gUHJvbWlzZS5yZXNvbHZlKGVuZHBvaW50KTtcbiAgICByZXR1cm4gKCkgPT4gcHJvbWlzaWZpZWQ7XG4gIH1cbiAgcmV0dXJuIGVuZHBvaW50O1xufTtcbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ3VzdG9tRW5kcG9pbnRzQ29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL0N1c3RvbUVuZHBvaW50c0NvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUE4Qk8sTUFBTSw0QkFBNEIsR0FBRyxDQUMxQyxLQUEwRCxFQUN2QixFQUFFOztJQUFDLE9BQUEsQ0FBQztRQUN2QyxHQUFHLEtBQUs7UUFDUixHQUFHLEVBQUUsTUFBQSxLQUFLLENBQUMsR0FBRyxtQ0FBSSxJQUFJO1FBQ3RCLFFBQVEsRUFBRSxpQkFBaUIsQ0FBQyxLQUFLLENBQUM7UUFDbEMsZ0JBQWdCLEVBQUUsSUFBSTtLQUN2QixDQUFDLENBQUE7Q0FBQSxDQUFDO0FBUFUsUUFBQSw0QkFBNEIsZ0NBT3RDO0FBRUgsTUFBTSxpQkFBaUIsR0FBRyxDQUFDLEtBQXNELEVBQXNCLEVBQUU7SUFDdkcsTUFBTSxFQUFFLFFBQVEsRUFBRSxTQUFTLEVBQUUsR0FBRyxLQUFLLENBQUM7SUFDdEMsSUFBSSxPQUFPLFFBQVEsS0FBSyxRQUFRLEVBQUU7UUFDaEMsTUFBTSxXQUFXLEdBQUcsT0FBTyxDQUFDLE9BQU8sQ0FBQyxTQUFTLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQztRQUN6RCxPQUFPLEdBQUcsRUFBRSxDQUFDLFdBQVcsQ0FBQztLQUMxQjtTQUFNLElBQUksT0FBTyxRQUFRLEtBQUssUUFBUSxFQUFFO1FBQ3ZDLE1BQU0sV0FBVyxHQUFHLE9BQU8sQ0FBQyxPQUFPLENBQUMsUUFBUSxDQUFDLENBQUM7UUFDOUMsT0FBTyxHQUFHLEVBQUUsQ0FBQyxXQUFXLENBQUM7S0FDMUI7SUFDRCxPQUFPLFFBQVEsQ0FBQztBQUNsQixDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBFbmRwb2ludCwgUHJvdmlkZXIsIFVybFBhcnNlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5leHBvcnQgaW50ZXJmYWNlIEN1c3RvbUVuZHBvaW50c0lucHV0Q29uZmlnIHtcbiAgLyoqXG4gICAqIFRoZSBmdWxseSBxdWFsaWZpZWQgZW5kcG9pbnQgb2YgdGhlIHdlYnNlcnZpY2UuXG4gICAqL1xuICBlbmRwb2ludDogc3RyaW5nIHwgRW5kcG9pbnQgfCBQcm92aWRlcjxFbmRwb2ludD47XG5cbiAgLyoqXG4gICAqIFdoZXRoZXIgVExTIGlzIGVuYWJsZWQgZm9yIHJlcXVlc3RzLlxuICAgKi9cbiAgdGxzPzogYm9vbGVhbjtcbn1cblxuaW50ZXJmYWNlIFByZXZpb3VzbHlSZXNvbHZlZCB7XG4gIHVybFBhcnNlcjogVXJsUGFyc2VyO1xufVxuXG5leHBvcnQgaW50ZXJmYWNlIEN1c3RvbUVuZHBvaW50c1Jlc29sdmVkQ29uZmlnIGV4dGVuZHMgUmVxdWlyZWQ8Q3VzdG9tRW5kcG9pbnRzSW5wdXRDb25maWc+IHtcbiAgLyoqXG4gICAqIFJlc29sdmVkIHZhbHVlIGZvciBpbnB1dCB7QGxpbmsgQ3VzdG9tRW5kcG9pbnRzSW5wdXRDb25maWcuZW5kcG9pbnR9XG4gICAqL1xuICBlbmRwb2ludDogUHJvdmlkZXI8RW5kcG9pbnQ+O1xuICAvKipcbiAgICogV2hldGhlciB0aGUgZW5kcG9pbnQgaXMgc3BlY2lmaWVkIGJ5IGNhbGxlci5cbiAgICogQGludGVybmFsXG4gICAqL1xuICBpc0N1c3RvbUVuZHBvaW50OiB0cnVlO1xufVxuXG5leHBvcnQgY29uc3QgcmVzb2x2ZUN1c3RvbUVuZHBvaW50c0NvbmZpZyA9IDxUPihcbiAgaW5wdXQ6IFQgJiBDdXN0b21FbmRwb2ludHNJbnB1dENvbmZpZyAmIFByZXZpb3VzbHlSZXNvbHZlZFxuKTogVCAmIEN1c3RvbUVuZHBvaW50c1Jlc29sdmVkQ29uZmlnID0+ICh7XG4gIC4uLmlucHV0LFxuICB0bHM6IGlucHV0LnRscyA/PyB0cnVlLFxuICBlbmRwb2ludDogbm9ybWFsaXplRW5kcG9pbnQoaW5wdXQpLFxuICBpc0N1c3RvbUVuZHBvaW50OiB0cnVlLFxufSk7XG5cbmNvbnN0IG5vcm1hbGl6ZUVuZHBvaW50ID0gKGlucHV0OiBDdXN0b21FbmRwb2ludHNJbnB1dENvbmZpZyAmIFByZXZpb3VzbHlSZXNvbHZlZCk6IFByb3ZpZGVyPEVuZHBvaW50PiA9PiB7XG4gIGNvbnN0IHsgZW5kcG9pbnQsIHVybFBhcnNlciB9ID0gaW5wdXQ7XG4gIGlmICh0eXBlb2YgZW5kcG9pbnQgPT09IFwic3RyaW5nXCIpIHtcbiAgICBjb25zdCBwcm9taXNpZmllZCA9IFByb21pc2UucmVzb2x2ZSh1cmxQYXJzZXIoZW5kcG9pbnQpKTtcbiAgICByZXR1cm4gKCkgPT4gcHJvbWlzaWZpZWQ7XG4gIH0gZWxzZSBpZiAodHlwZW9mIGVuZHBvaW50ID09PSBcIm9iamVjdFwiKSB7XG4gICAgY29uc3QgcHJvbWlzaWZpZWQgPSBQcm9taXNlLnJlc29sdmUoZW5kcG9pbnQpO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfVxuICByZXR1cm4gZW5kcG9pbnQ7XG59O1xuIl19
 
 /***/ }),
 
@@ -21154,7 +22780,7 @@ const getEndPointFromRegion = async (input) => {
     }
     return input.urlParser(`${tls ? "https:" : "http:"}//${hostname}`);
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRW5kcG9pbnRzQ29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL0VuZHBvaW50c0NvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUF5Qk8sTUFBTSxzQkFBc0IsR0FBRyxDQUNwQyxLQUFvRCxFQUN2QixFQUFFOztJQUFDLE9BQUEsQ0FBQztRQUNqQyxHQUFHLEtBQUs7UUFDUixHQUFHLEVBQUUsTUFBQSxLQUFLLENBQUMsR0FBRyxtQ0FBSSxJQUFJO1FBQ3RCLFFBQVEsRUFBRSxLQUFLLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQyxpQkFBaUIsQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxFQUFFLENBQUMscUJBQXFCLENBQUMsS0FBSyxDQUFDO1FBQ3hGLGdCQUFnQixFQUFFLEtBQUssQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUFDLENBQUMsS0FBSztLQUNoRCxDQUFDLENBQUE7Q0FBQSxDQUFDO0FBUFUsUUFBQSxzQkFBc0IsMEJBT2hDO0FBRUgsTUFBTSxpQkFBaUIsR0FBRyxDQUFDLEtBQWdELEVBQXNCLEVBQUU7SUFDakcsTUFBTSxFQUFFLFFBQVEsRUFBRSxTQUFTLEVBQUUsR0FBRyxLQUFLLENBQUM7SUFDdEMsSUFBSSxPQUFPLFFBQVEsS0FBSyxRQUFRLEVBQUU7UUFDaEMsTUFBTSxXQUFXLEdBQUcsT0FBTyxDQUFDLE9BQU8sQ0FBQyxTQUFTLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQztRQUN6RCxPQUFPLEdBQUcsRUFBRSxDQUFDLFdBQVcsQ0FBQztLQUMxQjtTQUFNLElBQUksT0FBTyxRQUFRLEtBQUssUUFBUSxFQUFFO1FBQ3ZDLE1BQU0sV0FBVyxHQUFHLE9BQU8sQ0FBQyxPQUFPLENBQUMsUUFBUSxDQUFDLENBQUM7UUFDOUMsT0FBTyxHQUFHLEVBQUUsQ0FBQyxXQUFXLENBQUM7S0FDMUI7SUFDRCxPQUFPLFFBQVMsQ0FBQztBQUNuQixDQUFDLENBQUM7QUFFRixNQUFNLHFCQUFxQixHQUFHLEtBQUssRUFBRSxLQUFnRCxFQUFFLEVBQUU7O0lBQ3ZGLE1BQU0sRUFBRSxHQUFHLEdBQUcsSUFBSSxFQUFFLEdBQUcsS0FBSyxDQUFDO0lBQzdCLE1BQU0sTUFBTSxHQUFHLE1BQU0sS0FBSyxDQUFDLE1BQU0sRUFBRSxDQUFDO0lBRXBDLE1BQU0sWUFBWSxHQUFHLElBQUksTUFBTSxDQUFDLDBEQUEwRCxDQUFDLENBQUM7SUFDNUYsSUFBSSxDQUFDLFlBQVksQ0FBQyxJQUFJLENBQUMsTUFBTSxDQUFDLEVBQUU7UUFDOUIsTUFBTSxJQUFJLEtBQUssQ0FBQyxpQ0FBaUMsQ0FBQyxDQUFDO0tBQ3BEO0lBRUQsTUFBTSxFQUFFLFFBQVEsRUFBRSxHQUFHLE1BQUEsQ0FBQyxNQUFNLEtBQUssQ0FBQyxrQkFBa0IsQ0FBQyxNQUFNLENBQUMsQ0FBQyxtQ0FBSSxFQUFFLENBQUM7SUFDcEUsSUFBSSxDQUFDLFFBQVEsRUFBRTtRQUNiLE1BQU0sSUFBSSxLQUFLLENBQUMsNENBQTRDLENBQUMsQ0FBQztLQUMvRDtJQUVELE9BQU8sS0FBSyxDQUFDLFNBQVMsQ0FBQyxHQUFHLEdBQUcsQ0FBQyxDQUFDLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQyxPQUFPLEtBQUssUUFBUSxFQUFFLENBQUMsQ0FBQztBQUNyRSxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBFbmRwb2ludCwgUHJvdmlkZXIsIFJlZ2lvbkluZm9Qcm92aWRlciwgVXJsUGFyc2VyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmV4cG9ydCBpbnRlcmZhY2UgRW5kcG9pbnRzSW5wdXRDb25maWcge1xuICAvKipcbiAgICogVGhlIGZ1bGx5IHF1YWxpZmllZCBlbmRwb2ludCBvZiB0aGUgd2Vic2VydmljZS4gVGhpcyBpcyBvbmx5IHJlcXVpcmVkIHdoZW4gdXNpbmcgYSBjdXN0b20gZW5kcG9pbnQgKGZvciBleGFtcGxlLCB3aGVuIHVzaW5nIGEgbG9jYWwgdmVyc2lvbiBvZiBTMykuXG4gICAqL1xuICBlbmRwb2ludD86IHN0cmluZyB8IEVuZHBvaW50IHwgUHJvdmlkZXI8RW5kcG9pbnQ+O1xuXG4gIC8qKlxuICAgKiBXaGV0aGVyIFRMUyBpcyBlbmFibGVkIGZvciByZXF1ZXN0cy5cbiAgICovXG4gIHRscz86IGJvb2xlYW47XG59XG5cbmludGVyZmFjZSBQcmV2aW91c2x5UmVzb2x2ZWQge1xuICByZWdpb25JbmZvUHJvdmlkZXI6IFJlZ2lvbkluZm9Qcm92aWRlcjtcbiAgdXJsUGFyc2VyOiBVcmxQYXJzZXI7XG4gIHJlZ2lvbjogUHJvdmlkZXI8c3RyaW5nPjtcbn1cblxuZXhwb3J0IGludGVyZmFjZSBFbmRwb2ludHNSZXNvbHZlZENvbmZpZyBleHRlbmRzIFJlcXVpcmVkPEVuZHBvaW50c0lucHV0Q29uZmlnPiB7XG4gIGVuZHBvaW50OiBQcm92aWRlcjxFbmRwb2ludD47XG4gIGlzQ3VzdG9tRW5kcG9pbnQ6IGJvb2xlYW47XG59XG5cbmV4cG9ydCBjb25zdCByZXNvbHZlRW5kcG9pbnRzQ29uZmlnID0gPFQ+KFxuICBpbnB1dDogVCAmIEVuZHBvaW50c0lucHV0Q29uZmlnICYgUHJldmlvdXNseVJlc29sdmVkXG4pOiBUICYgRW5kcG9pbnRzUmVzb2x2ZWRDb25maWcgPT4gKHtcbiAgLi4uaW5wdXQsXG4gIHRsczogaW5wdXQudGxzID8/IHRydWUsXG4gIGVuZHBvaW50OiBpbnB1dC5lbmRwb2ludCA/IG5vcm1hbGl6ZUVuZHBvaW50KGlucHV0KSA6ICgpID0+IGdldEVuZFBvaW50RnJvbVJlZ2lvbihpbnB1dCksXG4gIGlzQ3VzdG9tRW5kcG9pbnQ6IGlucHV0LmVuZHBvaW50ID8gdHJ1ZSA6IGZhbHNlLFxufSk7XG5cbmNvbnN0IG5vcm1hbGl6ZUVuZHBvaW50ID0gKGlucHV0OiBFbmRwb2ludHNJbnB1dENvbmZpZyAmIFByZXZpb3VzbHlSZXNvbHZlZCk6IFByb3ZpZGVyPEVuZHBvaW50PiA9PiB7XG4gIGNvbnN0IHsgZW5kcG9pbnQsIHVybFBhcnNlciB9ID0gaW5wdXQ7XG4gIGlmICh0eXBlb2YgZW5kcG9pbnQgPT09IFwic3RyaW5nXCIpIHtcbiAgICBjb25zdCBwcm9taXNpZmllZCA9IFByb21pc2UucmVzb2x2ZSh1cmxQYXJzZXIoZW5kcG9pbnQpKTtcbiAgICByZXR1cm4gKCkgPT4gcHJvbWlzaWZpZWQ7XG4gIH0gZWxzZSBpZiAodHlwZW9mIGVuZHBvaW50ID09PSBcIm9iamVjdFwiKSB7XG4gICAgY29uc3QgcHJvbWlzaWZpZWQgPSBQcm9taXNlLnJlc29sdmUoZW5kcG9pbnQpO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfVxuICByZXR1cm4gZW5kcG9pbnQhO1xufTtcblxuY29uc3QgZ2V0RW5kUG9pbnRGcm9tUmVnaW9uID0gYXN5bmMgKGlucHV0OiBFbmRwb2ludHNJbnB1dENvbmZpZyAmIFByZXZpb3VzbHlSZXNvbHZlZCkgPT4ge1xuICBjb25zdCB7IHRscyA9IHRydWUgfSA9IGlucHV0O1xuICBjb25zdCByZWdpb24gPSBhd2FpdCBpbnB1dC5yZWdpb24oKTtcblxuICBjb25zdCBkbnNIb3N0UmVnZXggPSBuZXcgUmVnRXhwKC9eKFthLXpBLVowLTldfFthLXpBLVowLTldW2EtekEtWjAtOS1dezAsNjF9W2EtekEtWjAtOV0pJC8pO1xuICBpZiAoIWRuc0hvc3RSZWdleC50ZXN0KHJlZ2lvbikpIHtcbiAgICB0aHJvdyBuZXcgRXJyb3IoXCJJbnZhbGlkIHJlZ2lvbiBpbiBjbGllbnQgY29uZmlnXCIpO1xuICB9XG5cbiAgY29uc3QgeyBob3N0bmFtZSB9ID0gKGF3YWl0IGlucHV0LnJlZ2lvbkluZm9Qcm92aWRlcihyZWdpb24pKSA/PyB7fTtcbiAgaWYgKCFob3N0bmFtZSkge1xuICAgIHRocm93IG5ldyBFcnJvcihcIkNhbm5vdCByZXNvbHZlIGhvc3RuYW1lIGZyb20gY2xpZW50IGNvbmZpZ1wiKTtcbiAgfVxuXG4gIHJldHVybiBpbnB1dC51cmxQYXJzZXIoYCR7dGxzID8gXCJodHRwczpcIiA6IFwiaHR0cDpcIn0vLyR7aG9zdG5hbWV9YCk7XG59O1xuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRW5kcG9pbnRzQ29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL0VuZHBvaW50c0NvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFnQ08sTUFBTSxzQkFBc0IsR0FBRyxDQUNwQyxLQUFvRCxFQUN2QixFQUFFOztJQUFDLE9BQUEsQ0FBQztRQUNqQyxHQUFHLEtBQUs7UUFDUixHQUFHLEVBQUUsTUFBQSxLQUFLLENBQUMsR0FBRyxtQ0FBSSxJQUFJO1FBQ3RCLFFBQVEsRUFBRSxLQUFLLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQyxpQkFBaUIsQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxFQUFFLENBQUMscUJBQXFCLENBQUMsS0FBSyxDQUFDO1FBQ3hGLGdCQUFnQixFQUFFLEtBQUssQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUFDLENBQUMsS0FBSztLQUNoRCxDQUFDLENBQUE7Q0FBQSxDQUFDO0FBUFUsUUFBQSxzQkFBc0IsMEJBT2hDO0FBRUgsTUFBTSxpQkFBaUIsR0FBRyxDQUFDLEtBQWdELEVBQXNCLEVBQUU7SUFDakcsTUFBTSxFQUFFLFFBQVEsRUFBRSxTQUFTLEVBQUUsR0FBRyxLQUFLLENBQUM7SUFDdEMsSUFBSSxPQUFPLFFBQVEsS0FBSyxRQUFRLEVBQUU7UUFDaEMsTUFBTSxXQUFXLEdBQUcsT0FBTyxDQUFDLE9BQU8sQ0FBQyxTQUFTLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQztRQUN6RCxPQUFPLEdBQUcsRUFBRSxDQUFDLFdBQVcsQ0FBQztLQUMxQjtTQUFNLElBQUksT0FBTyxRQUFRLEtBQUssUUFBUSxFQUFFO1FBQ3ZDLE1BQU0sV0FBVyxHQUFHLE9BQU8sQ0FBQyxPQUFPLENBQUMsUUFBUSxDQUFDLENBQUM7UUFDOUMsT0FBTyxHQUFHLEVBQUUsQ0FBQyxXQUFXLENBQUM7S0FDMUI7SUFDRCxPQUFPLFFBQVMsQ0FBQztBQUNuQixDQUFDLENBQUM7QUFFRixNQUFNLHFCQUFxQixHQUFHLEtBQUssRUFBRSxLQUFnRCxFQUFFLEVBQUU7O0lBQ3ZGLE1BQU0sRUFBRSxHQUFHLEdBQUcsSUFBSSxFQUFFLEdBQUcsS0FBSyxDQUFDO0lBQzdCLE1BQU0sTUFBTSxHQUFHLE1BQU0sS0FBSyxDQUFDLE1BQU0sRUFBRSxDQUFDO0lBRXBDLE1BQU0sWUFBWSxHQUFHLElBQUksTUFBTSxDQUFDLDBEQUEwRCxDQUFDLENBQUM7SUFDNUYsSUFBSSxDQUFDLFlBQVksQ0FBQyxJQUFJLENBQUMsTUFBTSxDQUFDLEVBQUU7UUFDOUIsTUFBTSxJQUFJLEtBQUssQ0FBQyxpQ0FBaUMsQ0FBQyxDQUFDO0tBQ3BEO0lBRUQsTUFBTSxFQUFFLFFBQVEsRUFBRSxHQUFHLE1BQUEsQ0FBQyxNQUFNLEtBQUssQ0FBQyxrQkFBa0IsQ0FBQyxNQUFNLENBQUMsQ0FBQyxtQ0FBSSxFQUFFLENBQUM7SUFDcEUsSUFBSSxDQUFDLFFBQVEsRUFBRTtRQUNiLE1BQU0sSUFBSSxLQUFLLENBQUMsNENBQTRDLENBQUMsQ0FBQztLQUMvRDtJQUVELE9BQU8sS0FBSyxDQUFDLFNBQVMsQ0FBQyxHQUFHLEdBQUcsQ0FBQyxDQUFDLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQyxPQUFPLEtBQUssUUFBUSxFQUFFLENBQUMsQ0FBQztBQUNyRSxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBFbmRwb2ludCwgUHJvdmlkZXIsIFJlZ2lvbkluZm9Qcm92aWRlciwgVXJsUGFyc2VyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmV4cG9ydCBpbnRlcmZhY2UgRW5kcG9pbnRzSW5wdXRDb25maWcge1xuICAvKipcbiAgICogVGhlIGZ1bGx5IHF1YWxpZmllZCBlbmRwb2ludCBvZiB0aGUgd2Vic2VydmljZS4gVGhpcyBpcyBvbmx5IHJlcXVpcmVkIHdoZW4gdXNpbmcgYSBjdXN0b20gZW5kcG9pbnQgKGZvciBleGFtcGxlLCB3aGVuIHVzaW5nIGEgbG9jYWwgdmVyc2lvbiBvZiBTMykuXG4gICAqL1xuICBlbmRwb2ludD86IHN0cmluZyB8IEVuZHBvaW50IHwgUHJvdmlkZXI8RW5kcG9pbnQ+O1xuXG4gIC8qKlxuICAgKiBXaGV0aGVyIFRMUyBpcyBlbmFibGVkIGZvciByZXF1ZXN0cy5cbiAgICovXG4gIHRscz86IGJvb2xlYW47XG59XG5cbmludGVyZmFjZSBQcmV2aW91c2x5UmVzb2x2ZWQge1xuICByZWdpb25JbmZvUHJvdmlkZXI6IFJlZ2lvbkluZm9Qcm92aWRlcjtcbiAgdXJsUGFyc2VyOiBVcmxQYXJzZXI7XG4gIHJlZ2lvbjogUHJvdmlkZXI8c3RyaW5nPjtcbn1cblxuZXhwb3J0IGludGVyZmFjZSBFbmRwb2ludHNSZXNvbHZlZENvbmZpZyBleHRlbmRzIFJlcXVpcmVkPEVuZHBvaW50c0lucHV0Q29uZmlnPiB7XG4gIC8qKlxuICAgKiBSZXNvbHZlZCB2YWx1ZSBmb3IgaW5wdXQge0BsaW5rIEVuZHBvaW50c1Jlc29sdmVkQ29uZmlnLmVuZHBvaW50fVxuICAgKi9cbiAgZW5kcG9pbnQ6IFByb3ZpZGVyPEVuZHBvaW50PjtcbiAgLyoqXG4gICAqIFdoZXRoZXIgdGhlIGVuZHBvaW50IGlzIHNwZWNpZmllZCBieSBjYWxsZXIuXG4gICAqIEBpbnRlcm5hbFxuICAgKi9cbiAgaXNDdXN0b21FbmRwb2ludDogYm9vbGVhbjtcbn1cblxuZXhwb3J0IGNvbnN0IHJlc29sdmVFbmRwb2ludHNDb25maWcgPSA8VD4oXG4gIGlucHV0OiBUICYgRW5kcG9pbnRzSW5wdXRDb25maWcgJiBQcmV2aW91c2x5UmVzb2x2ZWRcbik6IFQgJiBFbmRwb2ludHNSZXNvbHZlZENvbmZpZyA9PiAoe1xuICAuLi5pbnB1dCxcbiAgdGxzOiBpbnB1dC50bHMgPz8gdHJ1ZSxcbiAgZW5kcG9pbnQ6IGlucHV0LmVuZHBvaW50ID8gbm9ybWFsaXplRW5kcG9pbnQoaW5wdXQpIDogKCkgPT4gZ2V0RW5kUG9pbnRGcm9tUmVnaW9uKGlucHV0KSxcbiAgaXNDdXN0b21FbmRwb2ludDogaW5wdXQuZW5kcG9pbnQgPyB0cnVlIDogZmFsc2UsXG59KTtcblxuY29uc3Qgbm9ybWFsaXplRW5kcG9pbnQgPSAoaW5wdXQ6IEVuZHBvaW50c0lucHV0Q29uZmlnICYgUHJldmlvdXNseVJlc29sdmVkKTogUHJvdmlkZXI8RW5kcG9pbnQ+ID0+IHtcbiAgY29uc3QgeyBlbmRwb2ludCwgdXJsUGFyc2VyIH0gPSBpbnB1dDtcbiAgaWYgKHR5cGVvZiBlbmRwb2ludCA9PT0gXCJzdHJpbmdcIikge1xuICAgIGNvbnN0IHByb21pc2lmaWVkID0gUHJvbWlzZS5yZXNvbHZlKHVybFBhcnNlcihlbmRwb2ludCkpO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfSBlbHNlIGlmICh0eXBlb2YgZW5kcG9pbnQgPT09IFwib2JqZWN0XCIpIHtcbiAgICBjb25zdCBwcm9taXNpZmllZCA9IFByb21pc2UucmVzb2x2ZShlbmRwb2ludCk7XG4gICAgcmV0dXJuICgpID0+IHByb21pc2lmaWVkO1xuICB9XG4gIHJldHVybiBlbmRwb2ludCE7XG59O1xuXG5jb25zdCBnZXRFbmRQb2ludEZyb21SZWdpb24gPSBhc3luYyAoaW5wdXQ6IEVuZHBvaW50c0lucHV0Q29uZmlnICYgUHJldmlvdXNseVJlc29sdmVkKSA9PiB7XG4gIGNvbnN0IHsgdGxzID0gdHJ1ZSB9ID0gaW5wdXQ7XG4gIGNvbnN0IHJlZ2lvbiA9IGF3YWl0IGlucHV0LnJlZ2lvbigpO1xuXG4gIGNvbnN0IGRuc0hvc3RSZWdleCA9IG5ldyBSZWdFeHAoL14oW2EtekEtWjAtOV18W2EtekEtWjAtOV1bYS16QS1aMC05LV17MCw2MX1bYS16QS1aMC05XSkkLyk7XG4gIGlmICghZG5zSG9zdFJlZ2V4LnRlc3QocmVnaW9uKSkge1xuICAgIHRocm93IG5ldyBFcnJvcihcIkludmFsaWQgcmVnaW9uIGluIGNsaWVudCBjb25maWdcIik7XG4gIH1cblxuICBjb25zdCB7IGhvc3RuYW1lIH0gPSAoYXdhaXQgaW5wdXQucmVnaW9uSW5mb1Byb3ZpZGVyKHJlZ2lvbikpID8/IHt9O1xuICBpZiAoIWhvc3RuYW1lKSB7XG4gICAgdGhyb3cgbmV3IEVycm9yKFwiQ2Fubm90IHJlc29sdmUgaG9zdG5hbWUgZnJvbSBjbGllbnQgY29uZmlnXCIpO1xuICB9XG5cbiAgcmV0dXJuIGlucHV0LnVybFBhcnNlcihgJHt0bHMgPyBcImh0dHBzOlwiIDogXCJodHRwOlwifS8vJHtob3N0bmFtZX1gKTtcbn07XG4iXX0=
 
 /***/ }),
 
@@ -21194,7 +22820,7 @@ const normalizeRegion = (region) => {
     }
     return region;
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmVnaW9uQ29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL1JlZ2lvbkNvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFHYSxRQUFBLGVBQWUsR0FBRyxZQUFZLENBQUM7QUFDL0IsUUFBQSxlQUFlLEdBQUcsUUFBUSxDQUFDO0FBRTNCLFFBQUEsMEJBQTBCLEdBQWtDO0lBQ3ZFLDJCQUEyQixFQUFFLENBQUMsR0FBRyxFQUFFLEVBQUUsQ0FBQyxHQUFHLENBQUMsdUJBQWUsQ0FBQztJQUMxRCxrQkFBa0IsRUFBRSxDQUFDLE9BQU8sRUFBRSxFQUFFLENBQUMsT0FBTyxDQUFDLHVCQUFlLENBQUM7SUFDekQsT0FBTyxFQUFFLEdBQUcsRUFBRTtRQUNaLE1BQU0sSUFBSSxLQUFLLENBQUMsbUJBQW1CLENBQUMsQ0FBQztJQUN2QyxDQUFDO0NBQ0YsQ0FBQztBQUVXLFFBQUEsK0JBQStCLEdBQXVCO0lBQ2pFLGFBQWEsRUFBRSxhQUFhO0NBQzdCLENBQUM7QUFlSyxNQUFNLG1CQUFtQixHQUFHLENBQUksS0FBaUQsRUFBNEIsRUFBRTtJQUNwSCxJQUFJLENBQUMsS0FBSyxDQUFDLE1BQU0sRUFBRTtRQUNqQixNQUFNLElBQUksS0FBSyxDQUFDLG1CQUFtQixDQUFDLENBQUM7S0FDdEM7SUFDRCxPQUFPO1FBQ0wsR0FBRyxLQUFLO1FBQ1IsTUFBTSxFQUFFLGVBQWUsQ0FBQyxLQUFLLENBQUMsTUFBTyxDQUFDO0tBQ3ZDLENBQUM7QUFDSixDQUFDLENBQUM7QUFSVyxRQUFBLG1CQUFtQix1QkFROUI7QUFFRixNQUFNLGVBQWUsR0FBRyxDQUFDLE1BQWlDLEVBQW9CLEVBQUU7SUFDOUUsSUFBSSxPQUFPLE1BQU0sS0FBSyxRQUFRLEVBQUU7UUFDOUIsTUFBTSxXQUFXLEdBQUcsT0FBTyxDQUFDLE9BQU8sQ0FBQyxNQUFNLENBQUMsQ0FBQztRQUM1QyxPQUFPLEdBQUcsRUFBRSxDQUFDLFdBQVcsQ0FBQztLQUMxQjtJQUNELE9BQU8sTUFBMEIsQ0FBQztBQUNwQyxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBMb2FkZWRDb25maWdTZWxlY3RvcnMsIExvY2FsQ29uZmlnT3B0aW9ucyB9IGZyb20gXCJAYXdzLXNkay9ub2RlLWNvbmZpZy1wcm92aWRlclwiO1xuaW1wb3J0IHsgUHJvdmlkZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IGNvbnN0IFJFR0lPTl9FTlZfTkFNRSA9IFwiQVdTX1JFR0lPTlwiO1xuZXhwb3J0IGNvbnN0IFJFR0lPTl9JTklfTkFNRSA9IFwicmVnaW9uXCI7XG5cbmV4cG9ydCBjb25zdCBOT0RFX1JFR0lPTl9DT05GSUdfT1BUSU9OUzogTG9hZGVkQ29uZmlnU2VsZWN0b3JzPHN0cmluZz4gPSB7XG4gIGVudmlyb25tZW50VmFyaWFibGVTZWxlY3RvcjogKGVudikgPT4gZW52W1JFR0lPTl9FTlZfTkFNRV0sXG4gIGNvbmZpZ0ZpbGVTZWxlY3RvcjogKHByb2ZpbGUpID0+IHByb2ZpbGVbUkVHSU9OX0lOSV9OQU1FXSxcbiAgZGVmYXVsdDogKCkgPT4ge1xuICAgIHRocm93IG5ldyBFcnJvcihcIlJlZ2lvbiBpcyBtaXNzaW5nXCIpO1xuICB9LFxufTtcblxuZXhwb3J0IGNvbnN0IE5PREVfUkVHSU9OX0NPTkZJR19GSUxFX09QVElPTlM6IExvY2FsQ29uZmlnT3B0aW9ucyA9IHtcbiAgcHJlZmVycmVkRmlsZTogXCJjcmVkZW50aWFsc1wiLFxufTtcblxuZXhwb3J0IGludGVyZmFjZSBSZWdpb25JbnB1dENvbmZpZyB7XG4gIC8qKlxuICAgKiBUaGUgQVdTIHJlZ2lvbiB0byB3aGljaCB0aGlzIGNsaWVudCB3aWxsIHNlbmQgcmVxdWVzdHNcbiAgICovXG4gIHJlZ2lvbj86IHN0cmluZyB8IFByb3ZpZGVyPHN0cmluZz47XG59XG5cbmludGVyZmFjZSBQcmV2aW91c2x5UmVzb2x2ZWQge31cblxuZXhwb3J0IGludGVyZmFjZSBSZWdpb25SZXNvbHZlZENvbmZpZyB7XG4gIHJlZ2lvbjogUHJvdmlkZXI8c3RyaW5nPjtcbn1cblxuZXhwb3J0IGNvbnN0IHJlc29sdmVSZWdpb25Db25maWcgPSA8VD4oaW5wdXQ6IFQgJiBSZWdpb25JbnB1dENvbmZpZyAmIFByZXZpb3VzbHlSZXNvbHZlZCk6IFQgJiBSZWdpb25SZXNvbHZlZENvbmZpZyA9PiB7XG4gIGlmICghaW5wdXQucmVnaW9uKSB7XG4gICAgdGhyb3cgbmV3IEVycm9yKFwiUmVnaW9uIGlzIG1pc3NpbmdcIik7XG4gIH1cbiAgcmV0dXJuIHtcbiAgICAuLi5pbnB1dCxcbiAgICByZWdpb246IG5vcm1hbGl6ZVJlZ2lvbihpbnB1dC5yZWdpb24hKSxcbiAgfTtcbn07XG5cbmNvbnN0IG5vcm1hbGl6ZVJlZ2lvbiA9IChyZWdpb246IHN0cmluZyB8IFByb3ZpZGVyPHN0cmluZz4pOiBQcm92aWRlcjxzdHJpbmc+ID0+IHtcbiAgaWYgKHR5cGVvZiByZWdpb24gPT09IFwic3RyaW5nXCIpIHtcbiAgICBjb25zdCBwcm9taXNpZmllZCA9IFByb21pc2UucmVzb2x2ZShyZWdpb24pO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfVxuICByZXR1cm4gcmVnaW9uIGFzIFByb3ZpZGVyPHN0cmluZz47XG59O1xuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmVnaW9uQ29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL1JlZ2lvbkNvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFHYSxRQUFBLGVBQWUsR0FBRyxZQUFZLENBQUM7QUFDL0IsUUFBQSxlQUFlLEdBQUcsUUFBUSxDQUFDO0FBRTNCLFFBQUEsMEJBQTBCLEdBQWtDO0lBQ3ZFLDJCQUEyQixFQUFFLENBQUMsR0FBRyxFQUFFLEVBQUUsQ0FBQyxHQUFHLENBQUMsdUJBQWUsQ0FBQztJQUMxRCxrQkFBa0IsRUFBRSxDQUFDLE9BQU8sRUFBRSxFQUFFLENBQUMsT0FBTyxDQUFDLHVCQUFlLENBQUM7SUFDekQsT0FBTyxFQUFFLEdBQUcsRUFBRTtRQUNaLE1BQU0sSUFBSSxLQUFLLENBQUMsbUJBQW1CLENBQUMsQ0FBQztJQUN2QyxDQUFDO0NBQ0YsQ0FBQztBQUVXLFFBQUEsK0JBQStCLEdBQXVCO0lBQ2pFLGFBQWEsRUFBRSxhQUFhO0NBQzdCLENBQUM7QUFrQkssTUFBTSxtQkFBbUIsR0FBRyxDQUFJLEtBQWlELEVBQTRCLEVBQUU7SUFDcEgsSUFBSSxDQUFDLEtBQUssQ0FBQyxNQUFNLEVBQUU7UUFDakIsTUFBTSxJQUFJLEtBQUssQ0FBQyxtQkFBbUIsQ0FBQyxDQUFDO0tBQ3RDO0lBQ0QsT0FBTztRQUNMLEdBQUcsS0FBSztRQUNSLE1BQU0sRUFBRSxlQUFlLENBQUMsS0FBSyxDQUFDLE1BQU8sQ0FBQztLQUN2QyxDQUFDO0FBQ0osQ0FBQyxDQUFDO0FBUlcsUUFBQSxtQkFBbUIsdUJBUTlCO0FBRUYsTUFBTSxlQUFlLEdBQUcsQ0FBQyxNQUFpQyxFQUFvQixFQUFFO0lBQzlFLElBQUksT0FBTyxNQUFNLEtBQUssUUFBUSxFQUFFO1FBQzlCLE1BQU0sV0FBVyxHQUFHLE9BQU8sQ0FBQyxPQUFPLENBQUMsTUFBTSxDQUFDLENBQUM7UUFDNUMsT0FBTyxHQUFHLEVBQUUsQ0FBQyxXQUFXLENBQUM7S0FDMUI7SUFDRCxPQUFPLE1BQTBCLENBQUM7QUFDcEMsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTG9hZGVkQ29uZmlnU2VsZWN0b3JzLCBMb2NhbENvbmZpZ09wdGlvbnMgfSBmcm9tIFwiQGF3cy1zZGsvbm9kZS1jb25maWctcHJvdmlkZXJcIjtcbmltcG9ydCB7IFByb3ZpZGVyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmV4cG9ydCBjb25zdCBSRUdJT05fRU5WX05BTUUgPSBcIkFXU19SRUdJT05cIjtcbmV4cG9ydCBjb25zdCBSRUdJT05fSU5JX05BTUUgPSBcInJlZ2lvblwiO1xuXG5leHBvcnQgY29uc3QgTk9ERV9SRUdJT05fQ09ORklHX09QVElPTlM6IExvYWRlZENvbmZpZ1NlbGVjdG9yczxzdHJpbmc+ID0ge1xuICBlbnZpcm9ubWVudFZhcmlhYmxlU2VsZWN0b3I6IChlbnYpID0+IGVudltSRUdJT05fRU5WX05BTUVdLFxuICBjb25maWdGaWxlU2VsZWN0b3I6IChwcm9maWxlKSA9PiBwcm9maWxlW1JFR0lPTl9JTklfTkFNRV0sXG4gIGRlZmF1bHQ6ICgpID0+IHtcbiAgICB0aHJvdyBuZXcgRXJyb3IoXCJSZWdpb24gaXMgbWlzc2luZ1wiKTtcbiAgfSxcbn07XG5cbmV4cG9ydCBjb25zdCBOT0RFX1JFR0lPTl9DT05GSUdfRklMRV9PUFRJT05TOiBMb2NhbENvbmZpZ09wdGlvbnMgPSB7XG4gIHByZWZlcnJlZEZpbGU6IFwiY3JlZGVudGlhbHNcIixcbn07XG5cbmV4cG9ydCBpbnRlcmZhY2UgUmVnaW9uSW5wdXRDb25maWcge1xuICAvKipcbiAgICogVGhlIEFXUyByZWdpb24gdG8gd2hpY2ggdGhpcyBjbGllbnQgd2lsbCBzZW5kIHJlcXVlc3RzXG4gICAqL1xuICByZWdpb24/OiBzdHJpbmcgfCBQcm92aWRlcjxzdHJpbmc+O1xufVxuXG5pbnRlcmZhY2UgUHJldmlvdXNseVJlc29sdmVkIHt9XG5cbmV4cG9ydCBpbnRlcmZhY2UgUmVnaW9uUmVzb2x2ZWRDb25maWcge1xuICAvKipcbiAgICogUmVzb2x2ZWQgdmFsdWUgZm9yIGlucHV0IGNvbmZpZyB7QGxpbmsgUmVnaW9uSW5wdXRDb25maWcucmVnaW9ufVxuICAgKi9cbiAgcmVnaW9uOiBQcm92aWRlcjxzdHJpbmc+O1xufVxuXG5leHBvcnQgY29uc3QgcmVzb2x2ZVJlZ2lvbkNvbmZpZyA9IDxUPihpbnB1dDogVCAmIFJlZ2lvbklucHV0Q29uZmlnICYgUHJldmlvdXNseVJlc29sdmVkKTogVCAmIFJlZ2lvblJlc29sdmVkQ29uZmlnID0+IHtcbiAgaWYgKCFpbnB1dC5yZWdpb24pIHtcbiAgICB0aHJvdyBuZXcgRXJyb3IoXCJSZWdpb24gaXMgbWlzc2luZ1wiKTtcbiAgfVxuICByZXR1cm4ge1xuICAgIC4uLmlucHV0LFxuICAgIHJlZ2lvbjogbm9ybWFsaXplUmVnaW9uKGlucHV0LnJlZ2lvbiEpLFxuICB9O1xufTtcblxuY29uc3Qgbm9ybWFsaXplUmVnaW9uID0gKHJlZ2lvbjogc3RyaW5nIHwgUHJvdmlkZXI8c3RyaW5nPik6IFByb3ZpZGVyPHN0cmluZz4gPT4ge1xuICBpZiAodHlwZW9mIHJlZ2lvbiA9PT0gXCJzdHJpbmdcIikge1xuICAgIGNvbnN0IHByb21pc2lmaWVkID0gUHJvbWlzZS5yZXNvbHZlKHJlZ2lvbik7XG4gICAgcmV0dXJuICgpID0+IHByb21pc2lmaWVkO1xuICB9XG4gIHJldHVybiByZWdpb24gYXMgUHJvdmlkZXI8c3RyaW5nPjtcbn07XG4iXX0=
 
 /***/ }),
 
@@ -21721,6 +23347,7 @@ const credential_provider_imds_1 = __nccwpck_require__(1732);
 const credential_provider_ini_1 = __nccwpck_require__(2975);
 const credential_provider_process_1 = __nccwpck_require__(693);
 const credential_provider_sso_1 = __nccwpck_require__(676);
+const credential_provider_web_identity_1 = __nccwpck_require__(1961);
 const property_provider_1 = __nccwpck_require__(1014);
 const shared_ini_file_loader_1 = __nccwpck_require__(4847);
 exports.ENV_IMDS_DISABLED = "AWS_EC2_METADATA_DISABLED";
@@ -21728,6 +23355,8 @@ exports.ENV_IMDS_DISABLED = "AWS_EC2_METADATA_DISABLED";
  * Creates a credential provider that will attempt to find credentials from the
  * following sources (listed in order of precedence):
  *   * Environment variables exposed via `process.env`
+ *   * SSO credentials from token cache
+ *   * Web identity token credentials
  *   * Shared credentials and config ini files
  *   * The EC2/ECS Instance Metadata Service
  *
@@ -21745,6 +23374,8 @@ exports.ENV_IMDS_DISABLED = "AWS_EC2_METADATA_DISABLED";
  *                              environment variables
  * @see fromSSO                 The function used to source credentials from
  *                              resolved SSO token cache
+ * @see fromTokenFile           The function used to source credentials from
+ *                              token file
  * @see fromIni                 The function used to source credentials from INI
  *                              files
  * @see fromProcess             The function used to sources credentials from
@@ -21758,7 +23389,13 @@ const defaultProvider = (init = {}) => {
     const options = { profile: process.env[credential_provider_ini_1.ENV_PROFILE], ...init };
     if (!options.loadedConfig)
         options.loadedConfig = shared_ini_file_loader_1.loadSharedConfigFiles(init);
-    const providers = [credential_provider_sso_1.fromSSO(options), credential_provider_ini_1.fromIni(options), credential_provider_process_1.fromProcess(options), remoteProvider(options)];
+    const providers = [
+        credential_provider_sso_1.fromSSO(options),
+        credential_provider_ini_1.fromIni(options),
+        credential_provider_process_1.fromProcess(options),
+        credential_provider_web_identity_1.fromTokenFile(options),
+        remoteProvider(options),
+    ];
     if (!options.profile)
         providers.unshift(credential_provider_env_1.fromEnv());
     const providerChain = property_provider_1.chain(...providers);
@@ -21774,7 +23411,7 @@ const remoteProvider = (init) => {
     }
     return credential_provider_imds_1.fromInstanceMetadata(init);
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsOEVBQTJEO0FBQzNELGdGQU0yQztBQUMzQyw4RUFBcUY7QUFDckYsc0ZBQW9GO0FBQ3BGLDhFQUF3RTtBQUN4RSxrRUFBMkU7QUFDM0UsNEVBQXdFO0FBRzNELFFBQUEsaUJBQWlCLEdBQUcsMkJBQTJCLENBQUM7QUFFN0Q7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0dBNkJHO0FBQ0ksTUFBTSxlQUFlLEdBQUcsQ0FDN0IsT0FBeUUsRUFBRSxFQUN2RCxFQUFFO0lBQ3RCLE1BQU0sT0FBTyxHQUFHLEVBQUUsT0FBTyxFQUFFLE9BQU8sQ0FBQyxHQUFHLENBQUMscUNBQVcsQ0FBQyxFQUFFLEdBQUcsSUFBSSxFQUFFLENBQUM7SUFDL0QsSUFBSSxDQUFDLE9BQU8sQ0FBQyxZQUFZO1FBQUUsT0FBTyxDQUFDLFlBQVksR0FBRyw4Q0FBcUIsQ0FBQyxJQUFJLENBQUMsQ0FBQztJQUM5RSxNQUFNLFNBQVMsR0FBRyxDQUFDLGlDQUFPLENBQUMsT0FBTyxDQUFDLEVBQUUsaUNBQU8sQ0FBQyxPQUFPLENBQUMsRUFBRSx5Q0FBVyxDQUFDLE9BQU8sQ0FBQyxFQUFFLGNBQWMsQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFDO0lBQ3RHLElBQUksQ0FBQyxPQUFPLENBQUMsT0FBTztRQUFFLFNBQVMsQ0FBQyxPQUFPLENBQUMsaUNBQU8sRUFBRSxDQUFDLENBQUM7SUFDbkQsTUFBTSxhQUFhLEdBQUcseUJBQUssQ0FBQyxHQUFHLFNBQVMsQ0FBQyxDQUFDO0lBRTFDLE9BQU8sMkJBQU8sQ0FDWixhQUFhLEVBQ2IsQ0FBQyxXQUFXLEVBQUUsRUFBRSxDQUFDLFdBQVcsQ0FBQyxVQUFVLEtBQUssU0FBUyxJQUFJLFdBQVcsQ0FBQyxVQUFVLENBQUMsT0FBTyxFQUFFLEdBQUcsSUFBSSxDQUFDLEdBQUcsRUFBRSxHQUFHLE1BQU0sRUFDL0csQ0FBQyxXQUFXLEVBQUUsRUFBRSxDQUFDLFdBQVcsQ0FBQyxVQUFVLEtBQUssU0FBUyxDQUN0RCxDQUFDO0FBQ0osQ0FBQyxDQUFDO0FBZFcsUUFBQSxlQUFlLG1CQWMxQjtBQUVGLE1BQU0sY0FBYyxHQUFHLENBQUMsSUFBd0IsRUFBc0IsRUFBRTtJQUN0RSxJQUFJLE9BQU8sQ0FBQyxHQUFHLENBQUMsZ0RBQXFCLENBQUMsSUFBSSxPQUFPLENBQUMsR0FBRyxDQUFDLDRDQUFpQixDQUFDLEVBQUU7UUFDeEUsT0FBTyxnREFBcUIsQ0FBQyxJQUFJLENBQUMsQ0FBQztLQUNwQztJQUVELElBQUksT0FBTyxDQUFDLEdBQUcsQ0FBQyx5QkFBaUIsQ0FBQyxFQUFFO1FBQ2xDLE9BQU8sR0FBRyxFQUFFLENBQUMsT0FBTyxDQUFDLE1BQU0sQ0FBQyxJQUFJLGlDQUFhLENBQUMsK0NBQStDLENBQUMsQ0FBQyxDQUFDO0tBQ2pHO0lBRUQsT0FBTywrQ0FBb0IsQ0FBQyxJQUFJLENBQUMsQ0FBQztBQUNwQyxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBmcm9tRW52IH0gZnJvbSBcIkBhd3Mtc2RrL2NyZWRlbnRpYWwtcHJvdmlkZXItZW52XCI7XG5pbXBvcnQge1xuICBFTlZfQ01EU19GVUxMX1VSSSxcbiAgRU5WX0NNRFNfUkVMQVRJVkVfVVJJLFxuICBmcm9tQ29udGFpbmVyTWV0YWRhdGEsXG4gIGZyb21JbnN0YW5jZU1ldGFkYXRhLFxuICBSZW1vdGVQcm92aWRlckluaXQsXG59IGZyb20gXCJAYXdzLXNkay9jcmVkZW50aWFsLXByb3ZpZGVyLWltZHNcIjtcbmltcG9ydCB7IEVOVl9QUk9GSUxFLCBmcm9tSW5pLCBGcm9tSW5pSW5pdCB9IGZyb20gXCJAYXdzLXNkay9jcmVkZW50aWFsLXByb3ZpZGVyLWluaVwiO1xuaW1wb3J0IHsgZnJvbVByb2Nlc3MsIEZyb21Qcm9jZXNzSW5pdCB9IGZyb20gXCJAYXdzLXNkay9jcmVkZW50aWFsLXByb3ZpZGVyLXByb2Nlc3NcIjtcbmltcG9ydCB7IGZyb21TU08sIEZyb21TU09Jbml0IH0gZnJvbSBcIkBhd3Mtc2RrL2NyZWRlbnRpYWwtcHJvdmlkZXItc3NvXCI7XG5pbXBvcnQgeyBjaGFpbiwgbWVtb2l6ZSwgUHJvdmlkZXJFcnJvciB9IGZyb20gXCJAYXdzLXNkay9wcm9wZXJ0eS1wcm92aWRlclwiO1xuaW1wb3J0IHsgbG9hZFNoYXJlZENvbmZpZ0ZpbGVzIH0gZnJvbSBcIkBhd3Mtc2RrL3NoYXJlZC1pbmktZmlsZS1sb2FkZXJcIjtcbmltcG9ydCB7IENyZWRlbnRpYWxQcm92aWRlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5leHBvcnQgY29uc3QgRU5WX0lNRFNfRElTQUJMRUQgPSBcIkFXU19FQzJfTUVUQURBVEFfRElTQUJMRURcIjtcblxuLyoqXG4gKiBDcmVhdGVzIGEgY3JlZGVudGlhbCBwcm92aWRlciB0aGF0IHdpbGwgYXR0ZW1wdCB0byBmaW5kIGNyZWRlbnRpYWxzIGZyb20gdGhlXG4gKiBmb2xsb3dpbmcgc291cmNlcyAobGlzdGVkIGluIG9yZGVyIG9mIHByZWNlZGVuY2UpOlxuICogICAqIEVudmlyb25tZW50IHZhcmlhYmxlcyBleHBvc2VkIHZpYSBgcHJvY2Vzcy5lbnZgXG4gKiAgICogU2hhcmVkIGNyZWRlbnRpYWxzIGFuZCBjb25maWcgaW5pIGZpbGVzXG4gKiAgICogVGhlIEVDMi9FQ1MgSW5zdGFuY2UgTWV0YWRhdGEgU2VydmljZVxuICpcbiAqIFRoZSBkZWZhdWx0IGNyZWRlbnRpYWwgcHJvdmlkZXIgd2lsbCBpbnZva2Ugb25lIHByb3ZpZGVyIGF0IGEgdGltZSBhbmQgb25seVxuICogY29udGludWUgdG8gdGhlIG5leHQgaWYgbm8gY3JlZGVudGlhbHMgaGF2ZSBiZWVuIGxvY2F0ZWQuIEZvciBleGFtcGxlLCBpZlxuICogdGhlIHByb2Nlc3MgZmluZHMgdmFsdWVzIGRlZmluZWQgdmlhIHRoZSBgQVdTX0FDQ0VTU19LRVlfSURgIGFuZFxuICogYEFXU19TRUNSRVRfQUNDRVNTX0tFWWAgZW52aXJvbm1lbnQgdmFyaWFibGVzLCB0aGUgZmlsZXMgYXRcbiAqIGB+Ly5hd3MvY3JlZGVudGlhbHNgIGFuZCBgfi8uYXdzL2NvbmZpZ2Agd2lsbCBub3QgYmUgcmVhZCwgbm9yIHdpbGwgYW55XG4gKiBtZXNzYWdlcyBiZSBzZW50IHRvIHRoZSBJbnN0YW5jZSBNZXRhZGF0YSBTZXJ2aWNlLlxuICpcbiAqIEBwYXJhbSBpbml0ICAgICAgICAgICAgICAgICAgQ29uZmlndXJhdGlvbiB0aGF0IGlzIHBhc3NlZCB0byBlYWNoIGluZGl2aWR1YWxcbiAqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJvdmlkZXJcbiAqXG4gKiBAc2VlIGZyb21FbnYgICAgICAgICAgICAgICAgIFRoZSBmdW5jdGlvbiB1c2VkIHRvIHNvdXJjZSBjcmVkZW50aWFscyBmcm9tXG4gKiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGVudmlyb25tZW50IHZhcmlhYmxlc1xuICogQHNlZSBmcm9tU1NPICAgICAgICAgICAgICAgICBUaGUgZnVuY3Rpb24gdXNlZCB0byBzb3VyY2UgY3JlZGVudGlhbHMgZnJvbVxuICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICByZXNvbHZlZCBTU08gdG9rZW4gY2FjaGVcbiAqIEBzZWUgZnJvbUluaSAgICAgICAgICAgICAgICAgVGhlIGZ1bmN0aW9uIHVzZWQgdG8gc291cmNlIGNyZWRlbnRpYWxzIGZyb20gSU5JXG4gKiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZpbGVzXG4gKiBAc2VlIGZyb21Qcm9jZXNzICAgICAgICAgICAgIFRoZSBmdW5jdGlvbiB1c2VkIHRvIHNvdXJjZXMgY3JlZGVudGlhbHMgZnJvbVxuICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjcmVkZW50aWFsX3Byb2Nlc3MgaW4gSU5JIGZpbGVzXG4gKiBAc2VlIGZyb21JbnN0YW5jZU1ldGFkYXRhICAgIFRoZSBmdW5jdGlvbiB1c2VkIHRvIHNvdXJjZSBjcmVkZW50aWFscyBmcm9tIHRoZVxuICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBFQzIgSW5zdGFuY2UgTWV0YWRhdGEgU2VydmljZVxuICogQHNlZSBmcm9tQ29udGFpbmVyTWV0YWRhdGEgICBUaGUgZnVuY3Rpb24gdXNlZCB0byBzb3VyY2UgY3JlZGVudGlhbHMgZnJvbSB0aGVcbiAqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgRUNTIENvbnRhaW5lciBNZXRhZGF0YSBTZXJ2aWNlXG4gKi9cbmV4cG9ydCBjb25zdCBkZWZhdWx0UHJvdmlkZXIgPSAoXG4gIGluaXQ6IEZyb21JbmlJbml0ICYgUmVtb3RlUHJvdmlkZXJJbml0ICYgRnJvbVByb2Nlc3NJbml0ICYgRnJvbVNTT0luaXQgPSB7fVxuKTogQ3JlZGVudGlhbFByb3ZpZGVyID0+IHtcbiAgY29uc3Qgb3B0aW9ucyA9IHsgcHJvZmlsZTogcHJvY2Vzcy5lbnZbRU5WX1BST0ZJTEVdLCAuLi5pbml0IH07XG4gIGlmICghb3B0aW9ucy5sb2FkZWRDb25maWcpIG9wdGlvbnMubG9hZGVkQ29uZmlnID0gbG9hZFNoYXJlZENvbmZpZ0ZpbGVzKGluaXQpO1xuICBjb25zdCBwcm92aWRlcnMgPSBbZnJvbVNTTyhvcHRpb25zKSwgZnJvbUluaShvcHRpb25zKSwgZnJvbVByb2Nlc3Mob3B0aW9ucyksIHJlbW90ZVByb3ZpZGVyKG9wdGlvbnMpXTtcbiAgaWYgKCFvcHRpb25zLnByb2ZpbGUpIHByb3ZpZGVycy51bnNoaWZ0KGZyb21FbnYoKSk7XG4gIGNvbnN0IHByb3ZpZGVyQ2hhaW4gPSBjaGFpbiguLi5wcm92aWRlcnMpO1xuXG4gIHJldHVybiBtZW1vaXplKFxuICAgIHByb3ZpZGVyQ2hhaW4sXG4gICAgKGNyZWRlbnRpYWxzKSA9PiBjcmVkZW50aWFscy5leHBpcmF0aW9uICE9PSB1bmRlZmluZWQgJiYgY3JlZGVudGlhbHMuZXhwaXJhdGlvbi5nZXRUaW1lKCkgLSBEYXRlLm5vdygpIDwgMzAwMDAwLFxuICAgIChjcmVkZW50aWFscykgPT4gY3JlZGVudGlhbHMuZXhwaXJhdGlvbiAhPT0gdW5kZWZpbmVkXG4gICk7XG59O1xuXG5jb25zdCByZW1vdGVQcm92aWRlciA9IChpbml0OiBSZW1vdGVQcm92aWRlckluaXQpOiBDcmVkZW50aWFsUHJvdmlkZXIgPT4ge1xuICBpZiAocHJvY2Vzcy5lbnZbRU5WX0NNRFNfUkVMQVRJVkVfVVJJXSB8fCBwcm9jZXNzLmVudltFTlZfQ01EU19GVUxMX1VSSV0pIHtcbiAgICByZXR1cm4gZnJvbUNvbnRhaW5lck1ldGFkYXRhKGluaXQpO1xuICB9XG5cbiAgaWYgKHByb2Nlc3MuZW52W0VOVl9JTURTX0RJU0FCTEVEXSkge1xuICAgIHJldHVybiAoKSA9PiBQcm9taXNlLnJlamVjdChuZXcgUHJvdmlkZXJFcnJvcihcIkVDMiBJbnN0YW5jZSBNZXRhZGF0YSBTZXJ2aWNlIGFjY2VzcyBkaXNhYmxlZFwiKSk7XG4gIH1cblxuICByZXR1cm4gZnJvbUluc3RhbmNlTWV0YWRhdGEoaW5pdCk7XG59O1xuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsOEVBQTJEO0FBQzNELGdGQU0yQztBQUMzQyw4RUFBcUY7QUFDckYsc0ZBQW9GO0FBQ3BGLDhFQUF3RTtBQUN4RSxnR0FBNkY7QUFDN0Ysa0VBQTJFO0FBQzNFLDRFQUF3RTtBQUczRCxRQUFBLGlCQUFpQixHQUFHLDJCQUEyQixDQUFDO0FBRTdEOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7R0FpQ0c7QUFDSSxNQUFNLGVBQWUsR0FBRyxDQUM3QixPQUE2RixFQUFFLEVBQzNFLEVBQUU7SUFDdEIsTUFBTSxPQUFPLEdBQUcsRUFBRSxPQUFPLEVBQUUsT0FBTyxDQUFDLEdBQUcsQ0FBQyxxQ0FBVyxDQUFDLEVBQUUsR0FBRyxJQUFJLEVBQUUsQ0FBQztJQUMvRCxJQUFJLENBQUMsT0FBTyxDQUFDLFlBQVk7UUFBRSxPQUFPLENBQUMsWUFBWSxHQUFHLDhDQUFxQixDQUFDLElBQUksQ0FBQyxDQUFDO0lBQzlFLE1BQU0sU0FBUyxHQUFHO1FBQ2hCLGlDQUFPLENBQUMsT0FBTyxDQUFDO1FBQ2hCLGlDQUFPLENBQUMsT0FBTyxDQUFDO1FBQ2hCLHlDQUFXLENBQUMsT0FBTyxDQUFDO1FBQ3BCLGdEQUFhLENBQUMsT0FBTyxDQUFDO1FBQ3RCLGNBQWMsQ0FBQyxPQUFPLENBQUM7S0FDeEIsQ0FBQztJQUNGLElBQUksQ0FBQyxPQUFPLENBQUMsT0FBTztRQUFFLFNBQVMsQ0FBQyxPQUFPLENBQUMsaUNBQU8sRUFBRSxDQUFDLENBQUM7SUFDbkQsTUFBTSxhQUFhLEdBQUcseUJBQUssQ0FBQyxHQUFHLFNBQVMsQ0FBQyxDQUFDO0lBRTFDLE9BQU8sMkJBQU8sQ0FDWixhQUFhLEVBQ2IsQ0FBQyxXQUFXLEVBQUUsRUFBRSxDQUFDLFdBQVcsQ0FBQyxVQUFVLEtBQUssU0FBUyxJQUFJLFdBQVcsQ0FBQyxVQUFVLENBQUMsT0FBTyxFQUFFLEdBQUcsSUFBSSxDQUFDLEdBQUcsRUFBRSxHQUFHLE1BQU0sRUFDL0csQ0FBQyxXQUFXLEVBQUUsRUFBRSxDQUFDLFdBQVcsQ0FBQyxVQUFVLEtBQUssU0FBUyxDQUN0RCxDQUFDO0FBQ0osQ0FBQyxDQUFDO0FBcEJXLFFBQUEsZUFBZSxtQkFvQjFCO0FBRUYsTUFBTSxjQUFjLEdBQUcsQ0FBQyxJQUF3QixFQUFzQixFQUFFO0lBQ3RFLElBQUksT0FBTyxDQUFDLEdBQUcsQ0FBQyxnREFBcUIsQ0FBQyxJQUFJLE9BQU8sQ0FBQyxHQUFHLENBQUMsNENBQWlCLENBQUMsRUFBRTtRQUN4RSxPQUFPLGdEQUFxQixDQUFDLElBQUksQ0FBQyxDQUFDO0tBQ3BDO0lBRUQsSUFBSSxPQUFPLENBQUMsR0FBRyxDQUFDLHlCQUFpQixDQUFDLEVBQUU7UUFDbEMsT0FBTyxHQUFHLEVBQUUsQ0FBQyxPQUFPLENBQUMsTUFBTSxDQUFDLElBQUksaUNBQWEsQ0FBQywrQ0FBK0MsQ0FBQyxDQUFDLENBQUM7S0FDakc7SUFFRCxPQUFPLCtDQUFvQixDQUFDLElBQUksQ0FBQyxDQUFDO0FBQ3BDLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGZyb21FbnYgfSBmcm9tIFwiQGF3cy1zZGsvY3JlZGVudGlhbC1wcm92aWRlci1lbnZcIjtcbmltcG9ydCB7XG4gIEVOVl9DTURTX0ZVTExfVVJJLFxuICBFTlZfQ01EU19SRUxBVElWRV9VUkksXG4gIGZyb21Db250YWluZXJNZXRhZGF0YSxcbiAgZnJvbUluc3RhbmNlTWV0YWRhdGEsXG4gIFJlbW90ZVByb3ZpZGVySW5pdCxcbn0gZnJvbSBcIkBhd3Mtc2RrL2NyZWRlbnRpYWwtcHJvdmlkZXItaW1kc1wiO1xuaW1wb3J0IHsgRU5WX1BST0ZJTEUsIGZyb21JbmksIEZyb21JbmlJbml0IH0gZnJvbSBcIkBhd3Mtc2RrL2NyZWRlbnRpYWwtcHJvdmlkZXItaW5pXCI7XG5pbXBvcnQgeyBmcm9tUHJvY2VzcywgRnJvbVByb2Nlc3NJbml0IH0gZnJvbSBcIkBhd3Mtc2RrL2NyZWRlbnRpYWwtcHJvdmlkZXItcHJvY2Vzc1wiO1xuaW1wb3J0IHsgZnJvbVNTTywgRnJvbVNTT0luaXQgfSBmcm9tIFwiQGF3cy1zZGsvY3JlZGVudGlhbC1wcm92aWRlci1zc29cIjtcbmltcG9ydCB7IGZyb21Ub2tlbkZpbGUsIEZyb21Ub2tlbkZpbGVJbml0IH0gZnJvbSBcIkBhd3Mtc2RrL2NyZWRlbnRpYWwtcHJvdmlkZXItd2ViLWlkZW50aXR5XCI7XG5pbXBvcnQgeyBjaGFpbiwgbWVtb2l6ZSwgUHJvdmlkZXJFcnJvciB9IGZyb20gXCJAYXdzLXNkay9wcm9wZXJ0eS1wcm92aWRlclwiO1xuaW1wb3J0IHsgbG9hZFNoYXJlZENvbmZpZ0ZpbGVzIH0gZnJvbSBcIkBhd3Mtc2RrL3NoYXJlZC1pbmktZmlsZS1sb2FkZXJcIjtcbmltcG9ydCB7IENyZWRlbnRpYWxQcm92aWRlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5leHBvcnQgY29uc3QgRU5WX0lNRFNfRElTQUJMRUQgPSBcIkFXU19FQzJfTUVUQURBVEFfRElTQUJMRURcIjtcblxuLyoqXG4gKiBDcmVhdGVzIGEgY3JlZGVudGlhbCBwcm92aWRlciB0aGF0IHdpbGwgYXR0ZW1wdCB0byBmaW5kIGNyZWRlbnRpYWxzIGZyb20gdGhlXG4gKiBmb2xsb3dpbmcgc291cmNlcyAobGlzdGVkIGluIG9yZGVyIG9mIHByZWNlZGVuY2UpOlxuICogICAqIEVudmlyb25tZW50IHZhcmlhYmxlcyBleHBvc2VkIHZpYSBgcHJvY2Vzcy5lbnZgXG4gKiAgICogU1NPIGNyZWRlbnRpYWxzIGZyb20gdG9rZW4gY2FjaGVcbiAqICAgKiBXZWIgaWRlbnRpdHkgdG9rZW4gY3JlZGVudGlhbHNcbiAqICAgKiBTaGFyZWQgY3JlZGVudGlhbHMgYW5kIGNvbmZpZyBpbmkgZmlsZXNcbiAqICAgKiBUaGUgRUMyL0VDUyBJbnN0YW5jZSBNZXRhZGF0YSBTZXJ2aWNlXG4gKlxuICogVGhlIGRlZmF1bHQgY3JlZGVudGlhbCBwcm92aWRlciB3aWxsIGludm9rZSBvbmUgcHJvdmlkZXIgYXQgYSB0aW1lIGFuZCBvbmx5XG4gKiBjb250aW51ZSB0byB0aGUgbmV4dCBpZiBubyBjcmVkZW50aWFscyBoYXZlIGJlZW4gbG9jYXRlZC4gRm9yIGV4YW1wbGUsIGlmXG4gKiB0aGUgcHJvY2VzcyBmaW5kcyB2YWx1ZXMgZGVmaW5lZCB2aWEgdGhlIGBBV1NfQUNDRVNTX0tFWV9JRGAgYW5kXG4gKiBgQVdTX1NFQ1JFVF9BQ0NFU1NfS0VZYCBlbnZpcm9ubWVudCB2YXJpYWJsZXMsIHRoZSBmaWxlcyBhdFxuICogYH4vLmF3cy9jcmVkZW50aWFsc2AgYW5kIGB+Ly5hd3MvY29uZmlnYCB3aWxsIG5vdCBiZSByZWFkLCBub3Igd2lsbCBhbnlcbiAqIG1lc3NhZ2VzIGJlIHNlbnQgdG8gdGhlIEluc3RhbmNlIE1ldGFkYXRhIFNlcnZpY2UuXG4gKlxuICogQHBhcmFtIGluaXQgICAgICAgICAgICAgICAgICBDb25maWd1cmF0aW9uIHRoYXQgaXMgcGFzc2VkIHRvIGVhY2ggaW5kaXZpZHVhbFxuICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBwcm92aWRlclxuICpcbiAqIEBzZWUgZnJvbUVudiAgICAgICAgICAgICAgICAgVGhlIGZ1bmN0aW9uIHVzZWQgdG8gc291cmNlIGNyZWRlbnRpYWxzIGZyb21cbiAqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZW52aXJvbm1lbnQgdmFyaWFibGVzXG4gKiBAc2VlIGZyb21TU08gICAgICAgICAgICAgICAgIFRoZSBmdW5jdGlvbiB1c2VkIHRvIHNvdXJjZSBjcmVkZW50aWFscyBmcm9tXG4gKiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHJlc29sdmVkIFNTTyB0b2tlbiBjYWNoZVxuICogQHNlZSBmcm9tVG9rZW5GaWxlICAgICAgICAgICBUaGUgZnVuY3Rpb24gdXNlZCB0byBzb3VyY2UgY3JlZGVudGlhbHMgZnJvbVxuICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0b2tlbiBmaWxlXG4gKiBAc2VlIGZyb21JbmkgICAgICAgICAgICAgICAgIFRoZSBmdW5jdGlvbiB1c2VkIHRvIHNvdXJjZSBjcmVkZW50aWFscyBmcm9tIElOSVxuICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBmaWxlc1xuICogQHNlZSBmcm9tUHJvY2VzcyAgICAgICAgICAgICBUaGUgZnVuY3Rpb24gdXNlZCB0byBzb3VyY2VzIGNyZWRlbnRpYWxzIGZyb21cbiAqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY3JlZGVudGlhbF9wcm9jZXNzIGluIElOSSBmaWxlc1xuICogQHNlZSBmcm9tSW5zdGFuY2VNZXRhZGF0YSAgICBUaGUgZnVuY3Rpb24gdXNlZCB0byBzb3VyY2UgY3JlZGVudGlhbHMgZnJvbSB0aGVcbiAqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgRUMyIEluc3RhbmNlIE1ldGFkYXRhIFNlcnZpY2VcbiAqIEBzZWUgZnJvbUNvbnRhaW5lck1ldGFkYXRhICAgVGhlIGZ1bmN0aW9uIHVzZWQgdG8gc291cmNlIGNyZWRlbnRpYWxzIGZyb20gdGhlXG4gKiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEVDUyBDb250YWluZXIgTWV0YWRhdGEgU2VydmljZVxuICovXG5leHBvcnQgY29uc3QgZGVmYXVsdFByb3ZpZGVyID0gKFxuICBpbml0OiBGcm9tSW5pSW5pdCAmIFJlbW90ZVByb3ZpZGVySW5pdCAmIEZyb21Qcm9jZXNzSW5pdCAmIEZyb21TU09Jbml0ICYgRnJvbVRva2VuRmlsZUluaXQgPSB7fVxuKTogQ3JlZGVudGlhbFByb3ZpZGVyID0+IHtcbiAgY29uc3Qgb3B0aW9ucyA9IHsgcHJvZmlsZTogcHJvY2Vzcy5lbnZbRU5WX1BST0ZJTEVdLCAuLi5pbml0IH07XG4gIGlmICghb3B0aW9ucy5sb2FkZWRDb25maWcpIG9wdGlvbnMubG9hZGVkQ29uZmlnID0gbG9hZFNoYXJlZENvbmZpZ0ZpbGVzKGluaXQpO1xuICBjb25zdCBwcm92aWRlcnMgPSBbXG4gICAgZnJvbVNTTyhvcHRpb25zKSxcbiAgICBmcm9tSW5pKG9wdGlvbnMpLFxuICAgIGZyb21Qcm9jZXNzKG9wdGlvbnMpLFxuICAgIGZyb21Ub2tlbkZpbGUob3B0aW9ucyksXG4gICAgcmVtb3RlUHJvdmlkZXIob3B0aW9ucyksXG4gIF07XG4gIGlmICghb3B0aW9ucy5wcm9maWxlKSBwcm92aWRlcnMudW5zaGlmdChmcm9tRW52KCkpO1xuICBjb25zdCBwcm92aWRlckNoYWluID0gY2hhaW4oLi4ucHJvdmlkZXJzKTtcblxuICByZXR1cm4gbWVtb2l6ZShcbiAgICBwcm92aWRlckNoYWluLFxuICAgIChjcmVkZW50aWFscykgPT4gY3JlZGVudGlhbHMuZXhwaXJhdGlvbiAhPT0gdW5kZWZpbmVkICYmIGNyZWRlbnRpYWxzLmV4cGlyYXRpb24uZ2V0VGltZSgpIC0gRGF0ZS5ub3coKSA8IDMwMDAwMCxcbiAgICAoY3JlZGVudGlhbHMpID0+IGNyZWRlbnRpYWxzLmV4cGlyYXRpb24gIT09IHVuZGVmaW5lZFxuICApO1xufTtcblxuY29uc3QgcmVtb3RlUHJvdmlkZXIgPSAoaW5pdDogUmVtb3RlUHJvdmlkZXJJbml0KTogQ3JlZGVudGlhbFByb3ZpZGVyID0+IHtcbiAgaWYgKHByb2Nlc3MuZW52W0VOVl9DTURTX1JFTEFUSVZFX1VSSV0gfHwgcHJvY2Vzcy5lbnZbRU5WX0NNRFNfRlVMTF9VUkldKSB7XG4gICAgcmV0dXJuIGZyb21Db250YWluZXJNZXRhZGF0YShpbml0KTtcbiAgfVxuXG4gIGlmIChwcm9jZXNzLmVudltFTlZfSU1EU19ESVNBQkxFRF0pIHtcbiAgICByZXR1cm4gKCkgPT4gUHJvbWlzZS5yZWplY3QobmV3IFByb3ZpZGVyRXJyb3IoXCJFQzIgSW5zdGFuY2UgTWV0YWRhdGEgU2VydmljZSBhY2Nlc3MgZGlzYWJsZWRcIikpO1xuICB9XG5cbiAgcmV0dXJuIGZyb21JbnN0YW5jZU1ldGFkYXRhKGluaXQpO1xufTtcbiJdfQ==
 
 /***/ }),
 
@@ -21955,6 +23592,7 @@ const resolveSSOCredentials = async (profileName, profiles, options) => {
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.fromTokenFile = void 0;
+const property_provider_1 = __nccwpck_require__(1014);
 const fs_1 = __nccwpck_require__(5747);
 const fromWebToken_1 = __nccwpck_require__(7112);
 const ENV_TOKEN_FILE = "AWS_WEB_IDENTITY_TOKEN_FILE";
@@ -21963,17 +23601,26 @@ const ENV_ROLE_SESSION_NAME = "AWS_ROLE_SESSION_NAME";
 /**
  * Represents OIDC credentials from a file on disk.
  */
-const fromTokenFile = (init) => {
-    const { webIdentityTokenFile, roleArn, roleSessionName } = init;
-    return fromWebToken_1.fromWebToken({
-        ...init,
-        webIdentityToken: fs_1.readFileSync(webIdentityTokenFile !== null && webIdentityTokenFile !== void 0 ? webIdentityTokenFile : process.env[ENV_TOKEN_FILE], { encoding: "ascii" }),
-        roleArn: roleArn !== null && roleArn !== void 0 ? roleArn : process.env[ENV_ROLE_ARN],
-        roleSessionName: roleSessionName !== null && roleSessionName !== void 0 ? roleSessionName : process.env[ENV_ROLE_SESSION_NAME],
-    });
+const fromTokenFile = (init = {}) => async () => {
+    return resolveTokenFile(init);
 };
 exports.fromTokenFile = fromTokenFile;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbVRva2VuRmlsZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9mcm9tVG9rZW5GaWxlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUNBLDJCQUFrQztBQUVsQyxpREFBZ0U7QUFFaEUsTUFBTSxjQUFjLEdBQUcsNkJBQTZCLENBQUM7QUFDckQsTUFBTSxZQUFZLEdBQUcsY0FBYyxDQUFDO0FBQ3BDLE1BQU0scUJBQXFCLEdBQUcsdUJBQXVCLENBQUM7QUFTdEQ7O0dBRUc7QUFDSSxNQUFNLGFBQWEsR0FBRyxDQUFDLElBQXVCLEVBQXNCLEVBQUU7SUFDM0UsTUFBTSxFQUFFLG9CQUFvQixFQUFFLE9BQU8sRUFBRSxlQUFlLEVBQUUsR0FBRyxJQUFJLENBQUM7SUFFaEUsT0FBTywyQkFBWSxDQUFDO1FBQ2xCLEdBQUcsSUFBSTtRQUNQLGdCQUFnQixFQUFFLGlCQUFZLENBQUMsb0JBQW9CLGFBQXBCLG9CQUFvQixjQUFwQixvQkFBb0IsR0FBSSxPQUFPLENBQUMsR0FBRyxDQUFDLGNBQWMsQ0FBRSxFQUFFLEVBQUUsUUFBUSxFQUFFLE9BQU8sRUFBRSxDQUFDO1FBQzNHLE9BQU8sRUFBRSxPQUFPLGFBQVAsT0FBTyxjQUFQLE9BQU8sR0FBSSxPQUFPLENBQUMsR0FBRyxDQUFDLFlBQVksQ0FBRTtRQUM5QyxlQUFlLEVBQUUsZUFBZSxhQUFmLGVBQWUsY0FBZixlQUFlLEdBQUksT0FBTyxDQUFDLEdBQUcsQ0FBQyxxQkFBcUIsQ0FBQztLQUN2RSxDQUFDLENBQUM7QUFDTCxDQUFDLENBQUM7QUFUVyxRQUFBLGFBQWEsaUJBU3hCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ3JlZGVudGlhbFByb3ZpZGVyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5pbXBvcnQgeyByZWFkRmlsZVN5bmMgfSBmcm9tIFwiZnNcIjtcblxuaW1wb3J0IHsgZnJvbVdlYlRva2VuLCBGcm9tV2ViVG9rZW5Jbml0IH0gZnJvbSBcIi4vZnJvbVdlYlRva2VuXCI7XG5cbmNvbnN0IEVOVl9UT0tFTl9GSUxFID0gXCJBV1NfV0VCX0lERU5USVRZX1RPS0VOX0ZJTEVcIjtcbmNvbnN0IEVOVl9ST0xFX0FSTiA9IFwiQVdTX1JPTEVfQVJOXCI7XG5jb25zdCBFTlZfUk9MRV9TRVNTSU9OX05BTUUgPSBcIkFXU19ST0xFX1NFU1NJT05fTkFNRVwiO1xuXG5leHBvcnQgaW50ZXJmYWNlIEZyb21Ub2tlbkZpbGVJbml0IGV4dGVuZHMgUGFydGlhbDxPbWl0PEZyb21XZWJUb2tlbkluaXQsIFwid2ViSWRlbnRpdHlUb2tlblwiPj4ge1xuICAvKipcbiAgICogRmlsZSBsb2NhdGlvbiBvZiB3aGVyZSB0aGUgYE9JRENgIHRva2VuIGlzIHN0b3JlZC5cbiAgICovXG4gIHdlYklkZW50aXR5VG9rZW5GaWxlPzogc3RyaW5nO1xufVxuXG4vKipcbiAqIFJlcHJlc2VudHMgT0lEQyBjcmVkZW50aWFscyBmcm9tIGEgZmlsZSBvbiBkaXNrLlxuICovXG5leHBvcnQgY29uc3QgZnJvbVRva2VuRmlsZSA9IChpbml0OiBGcm9tVG9rZW5GaWxlSW5pdCk6IENyZWRlbnRpYWxQcm92aWRlciA9PiB7XG4gIGNvbnN0IHsgd2ViSWRlbnRpdHlUb2tlbkZpbGUsIHJvbGVBcm4sIHJvbGVTZXNzaW9uTmFtZSB9ID0gaW5pdDtcblxuICByZXR1cm4gZnJvbVdlYlRva2VuKHtcbiAgICAuLi5pbml0LFxuICAgIHdlYklkZW50aXR5VG9rZW46IHJlYWRGaWxlU3luYyh3ZWJJZGVudGl0eVRva2VuRmlsZSA/PyBwcm9jZXNzLmVudltFTlZfVE9LRU5fRklMRV0hLCB7IGVuY29kaW5nOiBcImFzY2lpXCIgfSksXG4gICAgcm9sZUFybjogcm9sZUFybiA/PyBwcm9jZXNzLmVudltFTlZfUk9MRV9BUk5dISxcbiAgICByb2xlU2Vzc2lvbk5hbWU6IHJvbGVTZXNzaW9uTmFtZSA/PyBwcm9jZXNzLmVudltFTlZfUk9MRV9TRVNTSU9OX05BTUVdLFxuICB9KTtcbn07XG4iXX0=
+const resolveTokenFile = (init) => {
+    var _a, _b, _c;
+    const webIdentityTokenFile = (_a = init === null || init === void 0 ? void 0 : init.webIdentityTokenFile) !== null && _a !== void 0 ? _a : process.env[ENV_TOKEN_FILE];
+    const roleArn = (_b = init === null || init === void 0 ? void 0 : init.roleArn) !== null && _b !== void 0 ? _b : process.env[ENV_ROLE_ARN];
+    const roleSessionName = (_c = init === null || init === void 0 ? void 0 : init.roleSessionName) !== null && _c !== void 0 ? _c : process.env[ENV_ROLE_SESSION_NAME];
+    if (!webIdentityTokenFile || !roleArn) {
+        throw new property_provider_1.ProviderError("Web identity configuration not specified");
+    }
+    return fromWebToken_1.fromWebToken({
+        ...init,
+        webIdentityToken: fs_1.readFileSync(webIdentityTokenFile, { encoding: "ascii" }),
+        roleArn,
+        roleSessionName
+    })();
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbVRva2VuRmlsZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9mcm9tVG9rZW5GaWxlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLGtFQUEyRDtBQUUzRCwyQkFBa0M7QUFFbEMsaURBQWdFO0FBRWhFLE1BQU0sY0FBYyxHQUFHLDZCQUE2QixDQUFDO0FBQ3JELE1BQU0sWUFBWSxHQUFHLGNBQWMsQ0FBQztBQUNwQyxNQUFNLHFCQUFxQixHQUFHLHVCQUF1QixDQUFDO0FBU3REOztHQUVHO0FBQ0ksTUFBTSxhQUFhLEdBQUcsQ0FBQyxPQUEwQixFQUFFLEVBQXNCLEVBQUUsQ0FBQyxLQUFLLElBQUksRUFBRTtJQUM1RixPQUFPLGdCQUFnQixDQUFDLElBQUksQ0FBQyxDQUFDO0FBQ2hDLENBQUMsQ0FBQztBQUZXLFFBQUEsYUFBYSxpQkFFeEI7QUFFRixNQUFNLGdCQUFnQixHQUFHLENBQUMsSUFBd0IsRUFBd0IsRUFBRTs7SUFDMUUsTUFBTSxvQkFBb0IsR0FBRyxNQUFBLElBQUksYUFBSixJQUFJLHVCQUFKLElBQUksQ0FBRSxvQkFBb0IsbUNBQUksT0FBTyxDQUFDLEdBQUcsQ0FBQyxjQUFjLENBQUMsQ0FBQztJQUN2RixNQUFNLE9BQU8sR0FBRyxNQUFBLElBQUksYUFBSixJQUFJLHVCQUFKLElBQUksQ0FBRSxPQUFPLG1DQUFJLE9BQU8sQ0FBQyxHQUFHLENBQUMsWUFBWSxDQUFDLENBQUM7SUFDM0QsTUFBTSxlQUFlLEdBQUcsTUFBQSxJQUFJLGFBQUosSUFBSSx1QkFBSixJQUFJLENBQUUsZUFBZSxtQ0FBSSxPQUFPLENBQUMsR0FBRyxDQUFDLHFCQUFxQixDQUFDLENBQUM7SUFFcEYsSUFBSSxDQUFDLG9CQUFvQixJQUFJLENBQUMsT0FBTyxFQUFFO1FBQ3JDLE1BQU0sSUFBSSxpQ0FBYSxDQUFDLDBDQUEwQyxDQUFDLENBQUM7S0FDckU7SUFFRCxPQUFPLDJCQUFZLENBQUM7UUFDbEIsR0FBRyxJQUFJO1FBQ1AsZ0JBQWdCLEVBQUUsaUJBQVksQ0FBQyxvQkFBb0IsRUFBRSxFQUFFLFFBQVEsRUFBRSxPQUFPLEVBQUUsQ0FBQztRQUMzRSxPQUFPO1FBQ1AsZUFBZTtLQUNoQixDQUFDLEVBQUUsQ0FBQztBQUNQLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFByb3ZpZGVyRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvcHJvcGVydHktcHJvdmlkZXJcIjtcbmltcG9ydCB7IENyZWRlbnRpYWxQcm92aWRlciwgQ3JlZGVudGlhbHMgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcbmltcG9ydCB7IHJlYWRGaWxlU3luYyB9IGZyb20gXCJmc1wiO1xuXG5pbXBvcnQgeyBmcm9tV2ViVG9rZW4sIEZyb21XZWJUb2tlbkluaXQgfSBmcm9tIFwiLi9mcm9tV2ViVG9rZW5cIjtcblxuY29uc3QgRU5WX1RPS0VOX0ZJTEUgPSBcIkFXU19XRUJfSURFTlRJVFlfVE9LRU5fRklMRVwiO1xuY29uc3QgRU5WX1JPTEVfQVJOID0gXCJBV1NfUk9MRV9BUk5cIjtcbmNvbnN0IEVOVl9ST0xFX1NFU1NJT05fTkFNRSA9IFwiQVdTX1JPTEVfU0VTU0lPTl9OQU1FXCI7XG5cbmV4cG9ydCBpbnRlcmZhY2UgRnJvbVRva2VuRmlsZUluaXQgZXh0ZW5kcyBQYXJ0aWFsPE9taXQ8RnJvbVdlYlRva2VuSW5pdCwgXCJ3ZWJJZGVudGl0eVRva2VuXCI+PiB7XG4gIC8qKlxuICAgKiBGaWxlIGxvY2F0aW9uIG9mIHdoZXJlIHRoZSBgT0lEQ2AgdG9rZW4gaXMgc3RvcmVkLlxuICAgKi9cbiAgd2ViSWRlbnRpdHlUb2tlbkZpbGU/OiBzdHJpbmc7XG59XG5cbi8qKlxuICogUmVwcmVzZW50cyBPSURDIGNyZWRlbnRpYWxzIGZyb20gYSBmaWxlIG9uIGRpc2suXG4gKi9cbmV4cG9ydCBjb25zdCBmcm9tVG9rZW5GaWxlID0gKGluaXQ6IEZyb21Ub2tlbkZpbGVJbml0ID0ge30pOiBDcmVkZW50aWFsUHJvdmlkZXIgPT4gYXN5bmMgKCkgPT4ge1xuICByZXR1cm4gcmVzb2x2ZVRva2VuRmlsZShpbml0KTtcbn07XG5cbmNvbnN0IHJlc29sdmVUb2tlbkZpbGUgPSAoaW5pdD86IEZyb21Ub2tlbkZpbGVJbml0KTogUHJvbWlzZTxDcmVkZW50aWFscz4gPT4ge1xuICBjb25zdCB3ZWJJZGVudGl0eVRva2VuRmlsZSA9IGluaXQ/LndlYklkZW50aXR5VG9rZW5GaWxlID8/IHByb2Nlc3MuZW52W0VOVl9UT0tFTl9GSUxFXTtcbiAgY29uc3Qgcm9sZUFybiA9IGluaXQ/LnJvbGVBcm4gPz8gcHJvY2Vzcy5lbnZbRU5WX1JPTEVfQVJOXTtcbiAgY29uc3Qgcm9sZVNlc3Npb25OYW1lID0gaW5pdD8ucm9sZVNlc3Npb25OYW1lID8/IHByb2Nlc3MuZW52W0VOVl9ST0xFX1NFU1NJT05fTkFNRV07XG5cbiAgaWYgKCF3ZWJJZGVudGl0eVRva2VuRmlsZSB8fCAhcm9sZUFybikge1xuICAgIHRocm93IG5ldyBQcm92aWRlckVycm9yKFwiV2ViIGlkZW50aXR5IGNvbmZpZ3VyYXRpb24gbm90IHNwZWNpZmllZFwiKTtcbiAgfVxuXG4gIHJldHVybiBmcm9tV2ViVG9rZW4oe1xuICAgIC4uLmluaXQsXG4gICAgd2ViSWRlbnRpdHlUb2tlbjogcmVhZEZpbGVTeW5jKHdlYklkZW50aXR5VG9rZW5GaWxlLCB7IGVuY29kaW5nOiBcImFzY2lpXCIgfSksXG4gICAgcm9sZUFybixcbiAgICByb2xlU2Vzc2lvbk5hbWVcbiAgfSkoKTtcbn07XG4iXX0=
 
 /***/ }),
 
@@ -22163,7 +23810,7 @@ const getHostHeaderPlugin = (options) => ({
     },
 });
 exports.getHostHeaderPlugin = getHostHeaderPlugin;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsMERBQXFEO0FBVXJELFNBQWdCLHVCQUF1QixDQUNyQyxLQUFxRDtJQUVyRCxPQUFPLEtBQUssQ0FBQztBQUNmLENBQUM7QUFKRCwwREFJQztBQUVNLE1BQU0sb0JBQW9CLEdBQUcsQ0FDbEMsT0FBaUMsRUFDRCxFQUFFLENBQUMsQ0FBQyxJQUFJLEVBQUUsRUFBRSxDQUFDLEtBQUssRUFBRSxJQUFJLEVBQUUsRUFBRTtJQUM1RCxJQUFJLENBQUMsMkJBQVcsQ0FBQyxVQUFVLENBQUMsSUFBSSxDQUFDLE9BQU8sQ0FBQztRQUFFLE9BQU8sSUFBSSxDQUFDLElBQUksQ0FBQyxDQUFDO0lBQzdELE1BQU0sRUFBRSxPQUFPLEVBQUUsR0FBRyxJQUFJLENBQUM7SUFDekIsTUFBTSxFQUFFLGVBQWUsR0FBRyxFQUFFLEVBQUUsR0FBRyxPQUFPLENBQUMsY0FBYyxDQUFDLFFBQVEsSUFBSSxFQUFFLENBQUM7SUFDdkUsMEVBQTBFO0lBQzFFLDJHQUEyRztJQUMzRyxJQUFJLGVBQWUsQ0FBQyxPQUFPLENBQUMsSUFBSSxDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsT0FBTyxDQUFDLE9BQU8sQ0FBQyxZQUFZLENBQUMsRUFBRTtRQUN4RSxPQUFPLE9BQU8sQ0FBQyxPQUFPLENBQUMsTUFBTSxDQUFDLENBQUM7UUFDL0IsT0FBTyxDQUFDLE9BQU8sQ0FBQyxZQUFZLENBQUMsR0FBRyxFQUFFLENBQUM7UUFDbkMsMkZBQTJGO0tBQzVGO1NBQU0sSUFBSSxDQUFDLE9BQU8sQ0FBQyxPQUFPLENBQUMsTUFBTSxDQUFDLEVBQUU7UUFDbkMsT0FBTyxDQUFDLE9BQU8sQ0FBQyxNQUFNLENBQUMsR0FBRyxPQUFPLENBQUMsUUFBUSxDQUFDO0tBQzVDO0lBQ0QsT0FBTyxJQUFJLENBQUMsSUFBSSxDQUFDLENBQUM7QUFDcEIsQ0FBQyxDQUFDO0FBaEJXLFFBQUEsb0JBQW9CLHdCQWdCL0I7QUFFVyxRQUFBLDJCQUEyQixHQUEyQztJQUNqRixJQUFJLEVBQUUsc0JBQXNCO0lBQzVCLElBQUksRUFBRSxPQUFPO0lBQ2IsUUFBUSxFQUFFLEtBQUs7SUFDZixJQUFJLEVBQUUsQ0FBQyxNQUFNLENBQUM7SUFDZCxRQUFRLEVBQUUsSUFBSTtDQUNmLENBQUM7QUFFSyxNQUFNLG1CQUFtQixHQUFHLENBQUMsT0FBaUMsRUFBdUIsRUFBRSxDQUFDLENBQUM7SUFDOUYsWUFBWSxFQUFFLENBQUMsV0FBVyxFQUFFLEVBQUU7UUFDNUIsV0FBVyxDQUFDLEdBQUcsQ0FBQyw0QkFBb0IsQ0FBQyxPQUFPLENBQUMsRUFBRSxtQ0FBMkIsQ0FBQyxDQUFDO0lBQzlFLENBQUM7Q0FDRixDQUFDLENBQUM7QUFKVSxRQUFBLG1CQUFtQix1QkFJN0IiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBIdHRwUmVxdWVzdCB9IGZyb20gXCJAYXdzLXNkay9wcm90b2NvbC1odHRwXCI7XG5pbXBvcnQgeyBBYnNvbHV0ZUxvY2F0aW9uLCBCdWlsZEhhbmRsZXJPcHRpb25zLCBCdWlsZE1pZGRsZXdhcmUsIFBsdWdnYWJsZSwgUmVxdWVzdEhhbmRsZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IGludGVyZmFjZSBIb3N0SGVhZGVySW5wdXRDb25maWcge31cbmludGVyZmFjZSBQcmV2aW91c2x5UmVzb2x2ZWQge1xuICByZXF1ZXN0SGFuZGxlcjogUmVxdWVzdEhhbmRsZXI8YW55LCBhbnk+O1xufVxuZXhwb3J0IGludGVyZmFjZSBIb3N0SGVhZGVyUmVzb2x2ZWRDb25maWcge1xuICByZXF1ZXN0SGFuZGxlcjogUmVxdWVzdEhhbmRsZXI8YW55LCBhbnk+O1xufVxuZXhwb3J0IGZ1bmN0aW9uIHJlc29sdmVIb3N0SGVhZGVyQ29uZmlnPFQ+KFxuICBpbnB1dDogVCAmIFByZXZpb3VzbHlSZXNvbHZlZCAmIEhvc3RIZWFkZXJJbnB1dENvbmZpZ1xuKTogVCAmIEhvc3RIZWFkZXJSZXNvbHZlZENvbmZpZyB7XG4gIHJldHVybiBpbnB1dDtcbn1cblxuZXhwb3J0IGNvbnN0IGhvc3RIZWFkZXJNaWRkbGV3YXJlID0gPElucHV0IGV4dGVuZHMgb2JqZWN0LCBPdXRwdXQgZXh0ZW5kcyBvYmplY3Q+KFxuICBvcHRpb25zOiBIb3N0SGVhZGVyUmVzb2x2ZWRDb25maWdcbik6IEJ1aWxkTWlkZGxld2FyZTxJbnB1dCwgT3V0cHV0PiA9PiAobmV4dCkgPT4gYXN5bmMgKGFyZ3MpID0+IHtcbiAgaWYgKCFIdHRwUmVxdWVzdC5pc0luc3RhbmNlKGFyZ3MucmVxdWVzdCkpIHJldHVybiBuZXh0KGFyZ3MpO1xuICBjb25zdCB7IHJlcXVlc3QgfSA9IGFyZ3M7XG4gIGNvbnN0IHsgaGFuZGxlclByb3RvY29sID0gXCJcIiB9ID0gb3B0aW9ucy5yZXF1ZXN0SGFuZGxlci5tZXRhZGF0YSB8fCB7fTtcbiAgLy9Gb3IgSDIgcmVxdWVzdCwgcmVtb3ZlICdob3N0JyBoZWFkZXIgYW5kIHVzZSAnOmF1dGhvcml0eScgaGVhZGVyIGluc3RlYWRcbiAgLy9yZWZlcmVuY2U6IGh0dHBzOi8vbm9kZWpzLm9yZy9kaXN0L2xhdGVzdC12MTMueC9kb2NzL2FwaS9lcnJvcnMuaHRtbCNFUlJfSFRUUDJfSU5WQUxJRF9DT05ORUNUSU9OX0hFQURFUlNcbiAgaWYgKGhhbmRsZXJQcm90b2NvbC5pbmRleE9mKFwiaDJcIikgPj0gMCAmJiAhcmVxdWVzdC5oZWFkZXJzW1wiOmF1dGhvcml0eVwiXSkge1xuICAgIGRlbGV0ZSByZXF1ZXN0LmhlYWRlcnNbXCJob3N0XCJdO1xuICAgIHJlcXVlc3QuaGVhZGVyc1tcIjphdXRob3JpdHlcIl0gPSBcIlwiO1xuICAgIC8vbm9uLUgyIHJlcXVlc3QgYW5kICdob3N0JyBoZWFkZXIgaXMgbm90IHNldCwgc2V0IHRoZSAnaG9zdCcgaGVhZGVyIHRvIHJlcXVlc3QncyBob3N0bmFtZS5cbiAgfSBlbHNlIGlmICghcmVxdWVzdC5oZWFkZXJzW1wiaG9zdFwiXSkge1xuICAgIHJlcXVlc3QuaGVhZGVyc1tcImhvc3RcIl0gPSByZXF1ZXN0Lmhvc3RuYW1lO1xuICB9XG4gIHJldHVybiBuZXh0KGFyZ3MpO1xufTtcblxuZXhwb3J0IGNvbnN0IGhvc3RIZWFkZXJNaWRkbGV3YXJlT3B0aW9uczogQnVpbGRIYW5kbGVyT3B0aW9ucyAmIEFic29sdXRlTG9jYXRpb24gPSB7XG4gIG5hbWU6IFwiaG9zdEhlYWRlck1pZGRsZXdhcmVcIixcbiAgc3RlcDogXCJidWlsZFwiLFxuICBwcmlvcml0eTogXCJsb3dcIixcbiAgdGFnczogW1wiSE9TVFwiXSxcbiAgb3ZlcnJpZGU6IHRydWUsXG59O1xuXG5leHBvcnQgY29uc3QgZ2V0SG9zdEhlYWRlclBsdWdpbiA9IChvcHRpb25zOiBIb3N0SGVhZGVyUmVzb2x2ZWRDb25maWcpOiBQbHVnZ2FibGU8YW55LCBhbnk+ID0+ICh7XG4gIGFwcGx5VG9TdGFjazogKGNsaWVudFN0YWNrKSA9PiB7XG4gICAgY2xpZW50U3RhY2suYWRkKGhvc3RIZWFkZXJNaWRkbGV3YXJlKG9wdGlvbnMpLCBob3N0SGVhZGVyTWlkZGxld2FyZU9wdGlvbnMpO1xuICB9LFxufSk7XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsMERBQXFEO0FBYXJELFNBQWdCLHVCQUF1QixDQUNyQyxLQUFxRDtJQUVyRCxPQUFPLEtBQUssQ0FBQztBQUNmLENBQUM7QUFKRCwwREFJQztBQUVNLE1BQU0sb0JBQW9CLEdBQUcsQ0FDbEMsT0FBaUMsRUFDRCxFQUFFLENBQUMsQ0FBQyxJQUFJLEVBQUUsRUFBRSxDQUFDLEtBQUssRUFBRSxJQUFJLEVBQUUsRUFBRTtJQUM1RCxJQUFJLENBQUMsMkJBQVcsQ0FBQyxVQUFVLENBQUMsSUFBSSxDQUFDLE9BQU8sQ0FBQztRQUFFLE9BQU8sSUFBSSxDQUFDLElBQUksQ0FBQyxDQUFDO0lBQzdELE1BQU0sRUFBRSxPQUFPLEVBQUUsR0FBRyxJQUFJLENBQUM7SUFDekIsTUFBTSxFQUFFLGVBQWUsR0FBRyxFQUFFLEVBQUUsR0FBRyxPQUFPLENBQUMsY0FBYyxDQUFDLFFBQVEsSUFBSSxFQUFFLENBQUM7SUFDdkUsMEVBQTBFO0lBQzFFLDJHQUEyRztJQUMzRyxJQUFJLGVBQWUsQ0FBQyxPQUFPLENBQUMsSUFBSSxDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsT0FBTyxDQUFDLE9BQU8sQ0FBQyxZQUFZLENBQUMsRUFBRTtRQUN4RSxPQUFPLE9BQU8sQ0FBQyxPQUFPLENBQUMsTUFBTSxDQUFDLENBQUM7UUFDL0IsT0FBTyxDQUFDLE9BQU8sQ0FBQyxZQUFZLENBQUMsR0FBRyxFQUFFLENBQUM7UUFDbkMsMkZBQTJGO0tBQzVGO1NBQU0sSUFBSSxDQUFDLE9BQU8sQ0FBQyxPQUFPLENBQUMsTUFBTSxDQUFDLEVBQUU7UUFDbkMsT0FBTyxDQUFDLE9BQU8sQ0FBQyxNQUFNLENBQUMsR0FBRyxPQUFPLENBQUMsUUFBUSxDQUFDO0tBQzVDO0lBQ0QsT0FBTyxJQUFJLENBQUMsSUFBSSxDQUFDLENBQUM7QUFDcEIsQ0FBQyxDQUFDO0FBaEJXLFFBQUEsb0JBQW9CLHdCQWdCL0I7QUFFVyxRQUFBLDJCQUEyQixHQUEyQztJQUNqRixJQUFJLEVBQUUsc0JBQXNCO0lBQzVCLElBQUksRUFBRSxPQUFPO0lBQ2IsUUFBUSxFQUFFLEtBQUs7SUFDZixJQUFJLEVBQUUsQ0FBQyxNQUFNLENBQUM7SUFDZCxRQUFRLEVBQUUsSUFBSTtDQUNmLENBQUM7QUFFSyxNQUFNLG1CQUFtQixHQUFHLENBQUMsT0FBaUMsRUFBdUIsRUFBRSxDQUFDLENBQUM7SUFDOUYsWUFBWSxFQUFFLENBQUMsV0FBVyxFQUFFLEVBQUU7UUFDNUIsV0FBVyxDQUFDLEdBQUcsQ0FBQyw0QkFBb0IsQ0FBQyxPQUFPLENBQUMsRUFBRSxtQ0FBMkIsQ0FBQyxDQUFDO0lBQzlFLENBQUM7Q0FDRixDQUFDLENBQUM7QUFKVSxRQUFBLG1CQUFtQix1QkFJN0IiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBIdHRwUmVxdWVzdCB9IGZyb20gXCJAYXdzLXNkay9wcm90b2NvbC1odHRwXCI7XG5pbXBvcnQgeyBBYnNvbHV0ZUxvY2F0aW9uLCBCdWlsZEhhbmRsZXJPcHRpb25zLCBCdWlsZE1pZGRsZXdhcmUsIFBsdWdnYWJsZSwgUmVxdWVzdEhhbmRsZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IGludGVyZmFjZSBIb3N0SGVhZGVySW5wdXRDb25maWcge31cbmludGVyZmFjZSBQcmV2aW91c2x5UmVzb2x2ZWQge1xuICByZXF1ZXN0SGFuZGxlcjogUmVxdWVzdEhhbmRsZXI8YW55LCBhbnk+O1xufVxuZXhwb3J0IGludGVyZmFjZSBIb3N0SGVhZGVyUmVzb2x2ZWRDb25maWcge1xuICAvKipcbiAgICogVGhlIEhUVFAgaGFuZGxlciB0byB1c2UuIEZldGNoIGluIGJyb3dzZXIgYW5kIEh0dHBzIGluIE5vZGVqcy5cbiAgICovXG4gIHJlcXVlc3RIYW5kbGVyOiBSZXF1ZXN0SGFuZGxlcjxhbnksIGFueT47XG59XG5leHBvcnQgZnVuY3Rpb24gcmVzb2x2ZUhvc3RIZWFkZXJDb25maWc8VD4oXG4gIGlucHV0OiBUICYgUHJldmlvdXNseVJlc29sdmVkICYgSG9zdEhlYWRlcklucHV0Q29uZmlnXG4pOiBUICYgSG9zdEhlYWRlclJlc29sdmVkQ29uZmlnIHtcbiAgcmV0dXJuIGlucHV0O1xufVxuXG5leHBvcnQgY29uc3QgaG9zdEhlYWRlck1pZGRsZXdhcmUgPSA8SW5wdXQgZXh0ZW5kcyBvYmplY3QsIE91dHB1dCBleHRlbmRzIG9iamVjdD4oXG4gIG9wdGlvbnM6IEhvc3RIZWFkZXJSZXNvbHZlZENvbmZpZ1xuKTogQnVpbGRNaWRkbGV3YXJlPElucHV0LCBPdXRwdXQ+ID0+IChuZXh0KSA9PiBhc3luYyAoYXJncykgPT4ge1xuICBpZiAoIUh0dHBSZXF1ZXN0LmlzSW5zdGFuY2UoYXJncy5yZXF1ZXN0KSkgcmV0dXJuIG5leHQoYXJncyk7XG4gIGNvbnN0IHsgcmVxdWVzdCB9ID0gYXJncztcbiAgY29uc3QgeyBoYW5kbGVyUHJvdG9jb2wgPSBcIlwiIH0gPSBvcHRpb25zLnJlcXVlc3RIYW5kbGVyLm1ldGFkYXRhIHx8IHt9O1xuICAvL0ZvciBIMiByZXF1ZXN0LCByZW1vdmUgJ2hvc3QnIGhlYWRlciBhbmQgdXNlICc6YXV0aG9yaXR5JyBoZWFkZXIgaW5zdGVhZFxuICAvL3JlZmVyZW5jZTogaHR0cHM6Ly9ub2RlanMub3JnL2Rpc3QvbGF0ZXN0LXYxMy54L2RvY3MvYXBpL2Vycm9ycy5odG1sI0VSUl9IVFRQMl9JTlZBTElEX0NPTk5FQ1RJT05fSEVBREVSU1xuICBpZiAoaGFuZGxlclByb3RvY29sLmluZGV4T2YoXCJoMlwiKSA+PSAwICYmICFyZXF1ZXN0LmhlYWRlcnNbXCI6YXV0aG9yaXR5XCJdKSB7XG4gICAgZGVsZXRlIHJlcXVlc3QuaGVhZGVyc1tcImhvc3RcIl07XG4gICAgcmVxdWVzdC5oZWFkZXJzW1wiOmF1dGhvcml0eVwiXSA9IFwiXCI7XG4gICAgLy9ub24tSDIgcmVxdWVzdCBhbmQgJ2hvc3QnIGhlYWRlciBpcyBub3Qgc2V0LCBzZXQgdGhlICdob3N0JyBoZWFkZXIgdG8gcmVxdWVzdCdzIGhvc3RuYW1lLlxuICB9IGVsc2UgaWYgKCFyZXF1ZXN0LmhlYWRlcnNbXCJob3N0XCJdKSB7XG4gICAgcmVxdWVzdC5oZWFkZXJzW1wiaG9zdFwiXSA9IHJlcXVlc3QuaG9zdG5hbWU7XG4gIH1cbiAgcmV0dXJuIG5leHQoYXJncyk7XG59O1xuXG5leHBvcnQgY29uc3QgaG9zdEhlYWRlck1pZGRsZXdhcmVPcHRpb25zOiBCdWlsZEhhbmRsZXJPcHRpb25zICYgQWJzb2x1dGVMb2NhdGlvbiA9IHtcbiAgbmFtZTogXCJob3N0SGVhZGVyTWlkZGxld2FyZVwiLFxuICBzdGVwOiBcImJ1aWxkXCIsXG4gIHByaW9yaXR5OiBcImxvd1wiLFxuICB0YWdzOiBbXCJIT1NUXCJdLFxuICBvdmVycmlkZTogdHJ1ZSxcbn07XG5cbmV4cG9ydCBjb25zdCBnZXRIb3N0SGVhZGVyUGx1Z2luID0gKG9wdGlvbnM6IEhvc3RIZWFkZXJSZXNvbHZlZENvbmZpZyk6IFBsdWdnYWJsZTxhbnksIGFueT4gPT4gKHtcbiAgYXBwbHlUb1N0YWNrOiAoY2xpZW50U3RhY2spID0+IHtcbiAgICBjbGllbnRTdGFjay5hZGQoaG9zdEhlYWRlck1pZGRsZXdhcmUob3B0aW9ucyksIGhvc3RIZWFkZXJNaWRkbGV3YXJlT3B0aW9ucyk7XG4gIH0sXG59KTtcbiJdfQ==
 
 /***/ }),
 
@@ -22278,7 +23925,7 @@ exports.NODE_RETRY_MODE_CONFIG_OPTIONS = {
     configFileSelector: (profile) => profile[exports.CONFIG_RETRY_MODE],
     default: defaultStrategy_1.DEFAULT_RETRY_MODE,
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlndXJhdGlvbnMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvY29uZmlndXJhdGlvbnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBR0EsdURBQW9HO0FBRXZGLFFBQUEsZ0JBQWdCLEdBQUcsa0JBQWtCLENBQUM7QUFDdEMsUUFBQSxtQkFBbUIsR0FBRyxjQUFjLENBQUM7QUFFckMsUUFBQSwrQkFBK0IsR0FBa0M7SUFDNUUsMkJBQTJCLEVBQUUsQ0FBQyxHQUFHLEVBQUUsRUFBRTtRQUNuQyxNQUFNLEtBQUssR0FBRyxHQUFHLENBQUMsd0JBQWdCLENBQUMsQ0FBQztRQUNwQyxJQUFJLENBQUMsS0FBSztZQUFFLE9BQU8sU0FBUyxDQUFDO1FBQzdCLE1BQU0sVUFBVSxHQUFHLFFBQVEsQ0FBQyxLQUFLLENBQUMsQ0FBQztRQUNuQyxJQUFJLE1BQU0sQ0FBQyxLQUFLLENBQUMsVUFBVSxDQUFDLEVBQUU7WUFDNUIsTUFBTSxJQUFJLEtBQUssQ0FBQyx3QkFBd0Isd0JBQWdCLDJCQUEyQixLQUFLLEdBQUcsQ0FBQyxDQUFDO1NBQzlGO1FBQ0QsT0FBTyxVQUFVLENBQUM7SUFDcEIsQ0FBQztJQUNELGtCQUFrQixFQUFFLENBQUMsT0FBTyxFQUFFLEVBQUU7UUFDOUIsTUFBTSxLQUFLLEdBQUcsT0FBTyxDQUFDLDJCQUFtQixDQUFDLENBQUM7UUFDM0MsSUFBSSxDQUFDLEtBQUs7WUFBRSxPQUFPLFNBQVMsQ0FBQztRQUM3QixNQUFNLFVBQVUsR0FBRyxRQUFRLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDbkMsSUFBSSxNQUFNLENBQUMsS0FBSyxDQUFDLFVBQVUsQ0FBQyxFQUFFO1lBQzVCLE1BQU0sSUFBSSxLQUFLLENBQUMsNEJBQTRCLDJCQUFtQiwyQkFBMkIsS0FBSyxHQUFHLENBQUMsQ0FBQztTQUNyRztRQUNELE9BQU8sVUFBVSxDQUFDO0lBQ3BCLENBQUM7SUFDRCxPQUFPLEVBQUUsc0NBQW9CO0NBQzlCLENBQUM7QUFtQkssTUFBTSxrQkFBa0IsR0FBRyxDQUFJLEtBQWdELEVBQTJCLEVBQUU7SUFDakgsTUFBTSxXQUFXLEdBQUcsb0JBQW9CLENBQUMsS0FBSyxDQUFDLFdBQVcsQ0FBQyxDQUFDO0lBQzVELE9BQU87UUFDTCxHQUFHLEtBQUs7UUFDUixXQUFXO1FBQ1gsYUFBYSxFQUFFLEtBQUssQ0FBQyxhQUFhLElBQUksSUFBSSx1Q0FBcUIsQ0FBQyxXQUFXLENBQUM7S0FDN0UsQ0FBQztBQUNKLENBQUMsQ0FBQztBQVBXLFFBQUEsa0JBQWtCLHNCQU83QjtBQUVGLE1BQU0sb0JBQW9CLEdBQUcsQ0FBQyxjQUF5QyxzQ0FBb0IsRUFBb0IsRUFBRTtJQUMvRyxJQUFJLE9BQU8sV0FBVyxLQUFLLFFBQVEsRUFBRTtRQUNuQyxNQUFNLFdBQVcsR0FBRyxPQUFPLENBQUMsT0FBTyxDQUFDLFdBQVcsQ0FBQyxDQUFDO1FBQ2pELE9BQU8sR0FBRyxFQUFFLENBQUMsV0FBVyxDQUFDO0tBQzFCO0lBQ0QsT0FBTyxXQUFXLENBQUM7QUFDckIsQ0FBQyxDQUFDO0FBRVcsUUFBQSxjQUFjLEdBQUcsZ0JBQWdCLENBQUM7QUFDbEMsUUFBQSxpQkFBaUIsR0FBRyxZQUFZLENBQUM7QUFFakMsUUFBQSw4QkFBOEIsR0FBa0M7SUFDM0UsMkJBQTJCLEVBQUUsQ0FBQyxHQUFHLEVBQUUsRUFBRSxDQUFDLEdBQUcsQ0FBQyxzQkFBYyxDQUFDO0lBQ3pELGtCQUFrQixFQUFFLENBQUMsT0FBTyxFQUFFLEVBQUUsQ0FBQyxPQUFPLENBQUMseUJBQWlCLENBQUM7SUFDM0QsT0FBTyxFQUFFLG9DQUFrQjtDQUM1QixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTG9hZGVkQ29uZmlnU2VsZWN0b3JzIH0gZnJvbSBcIkBhd3Mtc2RrL25vZGUtY29uZmlnLXByb3ZpZGVyXCI7XG5pbXBvcnQgeyBQcm92aWRlciwgUmV0cnlTdHJhdGVneSB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5pbXBvcnQgeyBERUZBVUxUX01BWF9BVFRFTVBUUywgREVGQVVMVF9SRVRSWV9NT0RFLCBTdGFuZGFyZFJldHJ5U3RyYXRlZ3kgfSBmcm9tIFwiLi9kZWZhdWx0U3RyYXRlZ3lcIjtcblxuZXhwb3J0IGNvbnN0IEVOVl9NQVhfQVRURU1QVFMgPSBcIkFXU19NQVhfQVRURU1QVFNcIjtcbmV4cG9ydCBjb25zdCBDT05GSUdfTUFYX0FUVEVNUFRTID0gXCJtYXhfYXR0ZW1wdHNcIjtcblxuZXhwb3J0IGNvbnN0IE5PREVfTUFYX0FUVEVNUFRfQ09ORklHX09QVElPTlM6IExvYWRlZENvbmZpZ1NlbGVjdG9yczxudW1iZXI+ID0ge1xuICBlbnZpcm9ubWVudFZhcmlhYmxlU2VsZWN0b3I6IChlbnYpID0+IHtcbiAgICBjb25zdCB2YWx1ZSA9IGVudltFTlZfTUFYX0FUVEVNUFRTXTtcbiAgICBpZiAoIXZhbHVlKSByZXR1cm4gdW5kZWZpbmVkO1xuICAgIGNvbnN0IG1heEF0dGVtcHQgPSBwYXJzZUludCh2YWx1ZSk7XG4gICAgaWYgKE51bWJlci5pc05hTihtYXhBdHRlbXB0KSkge1xuICAgICAgdGhyb3cgbmV3IEVycm9yKGBFbnZpcm9ubWVudCB2YXJpYWJsZSAke0VOVl9NQVhfQVRURU1QVFN9IG1hc3QgYmUgYSBudW1iZXIsIGdvdCBcIiR7dmFsdWV9XCJgKTtcbiAgICB9XG4gICAgcmV0dXJuIG1heEF0dGVtcHQ7XG4gIH0sXG4gIGNvbmZpZ0ZpbGVTZWxlY3RvcjogKHByb2ZpbGUpID0+IHtcbiAgICBjb25zdCB2YWx1ZSA9IHByb2ZpbGVbQ09ORklHX01BWF9BVFRFTVBUU107XG4gICAgaWYgKCF2YWx1ZSkgcmV0dXJuIHVuZGVmaW5lZDtcbiAgICBjb25zdCBtYXhBdHRlbXB0ID0gcGFyc2VJbnQodmFsdWUpO1xuICAgIGlmIChOdW1iZXIuaXNOYU4obWF4QXR0ZW1wdCkpIHtcbiAgICAgIHRocm93IG5ldyBFcnJvcihgU2hhcmVkIGNvbmZpZyBmaWxlIGVudHJ5ICR7Q09ORklHX01BWF9BVFRFTVBUU30gbWFzdCBiZSBhIG51bWJlciwgZ290IFwiJHt2YWx1ZX1cImApO1xuICAgIH1cbiAgICByZXR1cm4gbWF4QXR0ZW1wdDtcbiAgfSxcbiAgZGVmYXVsdDogREVGQVVMVF9NQVhfQVRURU1QVFMsXG59O1xuXG5leHBvcnQgaW50ZXJmYWNlIFJldHJ5SW5wdXRDb25maWcge1xuICAvKipcbiAgICogVGhlIG1heGltdW0gbnVtYmVyIG9mIHRpbWVzIHJlcXVlc3RzIHRoYXQgZW5jb3VudGVyIHJldHJ5YWJsZSBmYWlsdXJlcyBzaG91bGQgYmUgYXR0ZW1wdGVkLlxuICAgKi9cbiAgbWF4QXR0ZW1wdHM/OiBudW1iZXIgfCBQcm92aWRlcjxudW1iZXI+O1xuICAvKipcbiAgICogVGhlIHN0cmF0ZWd5IHRvIHJldHJ5IHRoZSByZXF1ZXN0LiBVc2luZyBidWlsdC1pbiBleHBvbmVudGlhbCBiYWNrb2ZmIHN0cmF0ZWd5IGJ5IGRlZmF1bHQuXG4gICAqL1xuICByZXRyeVN0cmF0ZWd5PzogUmV0cnlTdHJhdGVneTtcbn1cblxuaW50ZXJmYWNlIFByZXZpb3VzbHlSZXNvbHZlZCB7fVxuZXhwb3J0IGludGVyZmFjZSBSZXRyeVJlc29sdmVkQ29uZmlnIHtcbiAgbWF4QXR0ZW1wdHM6IFByb3ZpZGVyPG51bWJlcj47XG4gIHJldHJ5U3RyYXRlZ3k6IFJldHJ5U3RyYXRlZ3k7XG59XG5cbmV4cG9ydCBjb25zdCByZXNvbHZlUmV0cnlDb25maWcgPSA8VD4oaW5wdXQ6IFQgJiBQcmV2aW91c2x5UmVzb2x2ZWQgJiBSZXRyeUlucHV0Q29uZmlnKTogVCAmIFJldHJ5UmVzb2x2ZWRDb25maWcgPT4ge1xuICBjb25zdCBtYXhBdHRlbXB0cyA9IG5vcm1hbGl6ZU1heEF0dGVtcHRzKGlucHV0Lm1heEF0dGVtcHRzKTtcbiAgcmV0dXJuIHtcbiAgICAuLi5pbnB1dCxcbiAgICBtYXhBdHRlbXB0cyxcbiAgICByZXRyeVN0cmF0ZWd5OiBpbnB1dC5yZXRyeVN0cmF0ZWd5IHx8IG5ldyBTdGFuZGFyZFJldHJ5U3RyYXRlZ3kobWF4QXR0ZW1wdHMpLFxuICB9O1xufTtcblxuY29uc3Qgbm9ybWFsaXplTWF4QXR0ZW1wdHMgPSAobWF4QXR0ZW1wdHM6IG51bWJlciB8IFByb3ZpZGVyPG51bWJlcj4gPSBERUZBVUxUX01BWF9BVFRFTVBUUyk6IFByb3ZpZGVyPG51bWJlcj4gPT4ge1xuICBpZiAodHlwZW9mIG1heEF0dGVtcHRzID09PSBcIm51bWJlclwiKSB7XG4gICAgY29uc3QgcHJvbWlzaWZpZWQgPSBQcm9taXNlLnJlc29sdmUobWF4QXR0ZW1wdHMpO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfVxuICByZXR1cm4gbWF4QXR0ZW1wdHM7XG59O1xuXG5leHBvcnQgY29uc3QgRU5WX1JFVFJZX01PREUgPSBcIkFXU19SRVRSWV9NT0RFXCI7XG5leHBvcnQgY29uc3QgQ09ORklHX1JFVFJZX01PREUgPSBcInJldHJ5X21vZGVcIjtcblxuZXhwb3J0IGNvbnN0IE5PREVfUkVUUllfTU9ERV9DT05GSUdfT1BUSU9OUzogTG9hZGVkQ29uZmlnU2VsZWN0b3JzPHN0cmluZz4gPSB7XG4gIGVudmlyb25tZW50VmFyaWFibGVTZWxlY3RvcjogKGVudikgPT4gZW52W0VOVl9SRVRSWV9NT0RFXSxcbiAgY29uZmlnRmlsZVNlbGVjdG9yOiAocHJvZmlsZSkgPT4gcHJvZmlsZVtDT05GSUdfUkVUUllfTU9ERV0sXG4gIGRlZmF1bHQ6IERFRkFVTFRfUkVUUllfTU9ERSxcbn07XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlndXJhdGlvbnMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvY29uZmlndXJhdGlvbnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBR0EsdURBQW9HO0FBRXZGLFFBQUEsZ0JBQWdCLEdBQUcsa0JBQWtCLENBQUM7QUFDdEMsUUFBQSxtQkFBbUIsR0FBRyxjQUFjLENBQUM7QUFFckMsUUFBQSwrQkFBK0IsR0FBa0M7SUFDNUUsMkJBQTJCLEVBQUUsQ0FBQyxHQUFHLEVBQUUsRUFBRTtRQUNuQyxNQUFNLEtBQUssR0FBRyxHQUFHLENBQUMsd0JBQWdCLENBQUMsQ0FBQztRQUNwQyxJQUFJLENBQUMsS0FBSztZQUFFLE9BQU8sU0FBUyxDQUFDO1FBQzdCLE1BQU0sVUFBVSxHQUFHLFFBQVEsQ0FBQyxLQUFLLENBQUMsQ0FBQztRQUNuQyxJQUFJLE1BQU0sQ0FBQyxLQUFLLENBQUMsVUFBVSxDQUFDLEVBQUU7WUFDNUIsTUFBTSxJQUFJLEtBQUssQ0FBQyx3QkFBd0Isd0JBQWdCLDJCQUEyQixLQUFLLEdBQUcsQ0FBQyxDQUFDO1NBQzlGO1FBQ0QsT0FBTyxVQUFVLENBQUM7SUFDcEIsQ0FBQztJQUNELGtCQUFrQixFQUFFLENBQUMsT0FBTyxFQUFFLEVBQUU7UUFDOUIsTUFBTSxLQUFLLEdBQUcsT0FBTyxDQUFDLDJCQUFtQixDQUFDLENBQUM7UUFDM0MsSUFBSSxDQUFDLEtBQUs7WUFBRSxPQUFPLFNBQVMsQ0FBQztRQUM3QixNQUFNLFVBQVUsR0FBRyxRQUFRLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDbkMsSUFBSSxNQUFNLENBQUMsS0FBSyxDQUFDLFVBQVUsQ0FBQyxFQUFFO1lBQzVCLE1BQU0sSUFBSSxLQUFLLENBQUMsNEJBQTRCLDJCQUFtQiwyQkFBMkIsS0FBSyxHQUFHLENBQUMsQ0FBQztTQUNyRztRQUNELE9BQU8sVUFBVSxDQUFDO0lBQ3BCLENBQUM7SUFDRCxPQUFPLEVBQUUsc0NBQW9CO0NBQzlCLENBQUM7QUF5QkssTUFBTSxrQkFBa0IsR0FBRyxDQUFJLEtBQWdELEVBQTJCLEVBQUU7SUFDakgsTUFBTSxXQUFXLEdBQUcsb0JBQW9CLENBQUMsS0FBSyxDQUFDLFdBQVcsQ0FBQyxDQUFDO0lBQzVELE9BQU87UUFDTCxHQUFHLEtBQUs7UUFDUixXQUFXO1FBQ1gsYUFBYSxFQUFFLEtBQUssQ0FBQyxhQUFhLElBQUksSUFBSSx1Q0FBcUIsQ0FBQyxXQUFXLENBQUM7S0FDN0UsQ0FBQztBQUNKLENBQUMsQ0FBQztBQVBXLFFBQUEsa0JBQWtCLHNCQU83QjtBQUVGLE1BQU0sb0JBQW9CLEdBQUcsQ0FBQyxjQUF5QyxzQ0FBb0IsRUFBb0IsRUFBRTtJQUMvRyxJQUFJLE9BQU8sV0FBVyxLQUFLLFFBQVEsRUFBRTtRQUNuQyxNQUFNLFdBQVcsR0FBRyxPQUFPLENBQUMsT0FBTyxDQUFDLFdBQVcsQ0FBQyxDQUFDO1FBQ2pELE9BQU8sR0FBRyxFQUFFLENBQUMsV0FBVyxDQUFDO0tBQzFCO0lBQ0QsT0FBTyxXQUFXLENBQUM7QUFDckIsQ0FBQyxDQUFDO0FBRVcsUUFBQSxjQUFjLEdBQUcsZ0JBQWdCLENBQUM7QUFDbEMsUUFBQSxpQkFBaUIsR0FBRyxZQUFZLENBQUM7QUFFakMsUUFBQSw4QkFBOEIsR0FBa0M7SUFDM0UsMkJBQTJCLEVBQUUsQ0FBQyxHQUFHLEVBQUUsRUFBRSxDQUFDLEdBQUcsQ0FBQyxzQkFBYyxDQUFDO0lBQ3pELGtCQUFrQixFQUFFLENBQUMsT0FBTyxFQUFFLEVBQUUsQ0FBQyxPQUFPLENBQUMseUJBQWlCLENBQUM7SUFDM0QsT0FBTyxFQUFFLG9DQUFrQjtDQUM1QixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTG9hZGVkQ29uZmlnU2VsZWN0b3JzIH0gZnJvbSBcIkBhd3Mtc2RrL25vZGUtY29uZmlnLXByb3ZpZGVyXCI7XG5pbXBvcnQgeyBQcm92aWRlciwgUmV0cnlTdHJhdGVneSB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5pbXBvcnQgeyBERUZBVUxUX01BWF9BVFRFTVBUUywgREVGQVVMVF9SRVRSWV9NT0RFLCBTdGFuZGFyZFJldHJ5U3RyYXRlZ3kgfSBmcm9tIFwiLi9kZWZhdWx0U3RyYXRlZ3lcIjtcblxuZXhwb3J0IGNvbnN0IEVOVl9NQVhfQVRURU1QVFMgPSBcIkFXU19NQVhfQVRURU1QVFNcIjtcbmV4cG9ydCBjb25zdCBDT05GSUdfTUFYX0FUVEVNUFRTID0gXCJtYXhfYXR0ZW1wdHNcIjtcblxuZXhwb3J0IGNvbnN0IE5PREVfTUFYX0FUVEVNUFRfQ09ORklHX09QVElPTlM6IExvYWRlZENvbmZpZ1NlbGVjdG9yczxudW1iZXI+ID0ge1xuICBlbnZpcm9ubWVudFZhcmlhYmxlU2VsZWN0b3I6IChlbnYpID0+IHtcbiAgICBjb25zdCB2YWx1ZSA9IGVudltFTlZfTUFYX0FUVEVNUFRTXTtcbiAgICBpZiAoIXZhbHVlKSByZXR1cm4gdW5kZWZpbmVkO1xuICAgIGNvbnN0IG1heEF0dGVtcHQgPSBwYXJzZUludCh2YWx1ZSk7XG4gICAgaWYgKE51bWJlci5pc05hTihtYXhBdHRlbXB0KSkge1xuICAgICAgdGhyb3cgbmV3IEVycm9yKGBFbnZpcm9ubWVudCB2YXJpYWJsZSAke0VOVl9NQVhfQVRURU1QVFN9IG1hc3QgYmUgYSBudW1iZXIsIGdvdCBcIiR7dmFsdWV9XCJgKTtcbiAgICB9XG4gICAgcmV0dXJuIG1heEF0dGVtcHQ7XG4gIH0sXG4gIGNvbmZpZ0ZpbGVTZWxlY3RvcjogKHByb2ZpbGUpID0+IHtcbiAgICBjb25zdCB2YWx1ZSA9IHByb2ZpbGVbQ09ORklHX01BWF9BVFRFTVBUU107XG4gICAgaWYgKCF2YWx1ZSkgcmV0dXJuIHVuZGVmaW5lZDtcbiAgICBjb25zdCBtYXhBdHRlbXB0ID0gcGFyc2VJbnQodmFsdWUpO1xuICAgIGlmIChOdW1iZXIuaXNOYU4obWF4QXR0ZW1wdCkpIHtcbiAgICAgIHRocm93IG5ldyBFcnJvcihgU2hhcmVkIGNvbmZpZyBmaWxlIGVudHJ5ICR7Q09ORklHX01BWF9BVFRFTVBUU30gbWFzdCBiZSBhIG51bWJlciwgZ290IFwiJHt2YWx1ZX1cImApO1xuICAgIH1cbiAgICByZXR1cm4gbWF4QXR0ZW1wdDtcbiAgfSxcbiAgZGVmYXVsdDogREVGQVVMVF9NQVhfQVRURU1QVFMsXG59O1xuXG5leHBvcnQgaW50ZXJmYWNlIFJldHJ5SW5wdXRDb25maWcge1xuICAvKipcbiAgICogVGhlIG1heGltdW0gbnVtYmVyIG9mIHRpbWVzIHJlcXVlc3RzIHRoYXQgZW5jb3VudGVyIHJldHJ5YWJsZSBmYWlsdXJlcyBzaG91bGQgYmUgYXR0ZW1wdGVkLlxuICAgKi9cbiAgbWF4QXR0ZW1wdHM/OiBudW1iZXIgfCBQcm92aWRlcjxudW1iZXI+O1xuICAvKipcbiAgICogVGhlIHN0cmF0ZWd5IHRvIHJldHJ5IHRoZSByZXF1ZXN0LiBVc2luZyBidWlsdC1pbiBleHBvbmVudGlhbCBiYWNrb2ZmIHN0cmF0ZWd5IGJ5IGRlZmF1bHQuXG4gICAqL1xuICByZXRyeVN0cmF0ZWd5PzogUmV0cnlTdHJhdGVneTtcbn1cblxuaW50ZXJmYWNlIFByZXZpb3VzbHlSZXNvbHZlZCB7fVxuZXhwb3J0IGludGVyZmFjZSBSZXRyeVJlc29sdmVkQ29uZmlnIHtcbiAgLyoqXG4gICAqIFJlc29sdmVkIHZhbHVlIGZvciBpbnB1dCBjb25maWcge0BsaW5rIFJldHJ5SW5wdXRDb25maWcubWF4QXR0ZW1wdHN9XG4gICAqL1xuICBtYXhBdHRlbXB0czogUHJvdmlkZXI8bnVtYmVyPjtcbiAgLyoqXG4gICAqIFJlc29sdmVkIHZhbHVlIGZvciBpbnB1dCBjb25maWcge0BsaW5rIFJldHJ5SW5wdXRDb25maWcucmV0cnlTdHJhdGVneX1cbiAgICovXG4gIHJldHJ5U3RyYXRlZ3k6IFJldHJ5U3RyYXRlZ3k7XG59XG5cbmV4cG9ydCBjb25zdCByZXNvbHZlUmV0cnlDb25maWcgPSA8VD4oaW5wdXQ6IFQgJiBQcmV2aW91c2x5UmVzb2x2ZWQgJiBSZXRyeUlucHV0Q29uZmlnKTogVCAmIFJldHJ5UmVzb2x2ZWRDb25maWcgPT4ge1xuICBjb25zdCBtYXhBdHRlbXB0cyA9IG5vcm1hbGl6ZU1heEF0dGVtcHRzKGlucHV0Lm1heEF0dGVtcHRzKTtcbiAgcmV0dXJuIHtcbiAgICAuLi5pbnB1dCxcbiAgICBtYXhBdHRlbXB0cyxcbiAgICByZXRyeVN0cmF0ZWd5OiBpbnB1dC5yZXRyeVN0cmF0ZWd5IHx8IG5ldyBTdGFuZGFyZFJldHJ5U3RyYXRlZ3kobWF4QXR0ZW1wdHMpLFxuICB9O1xufTtcblxuY29uc3Qgbm9ybWFsaXplTWF4QXR0ZW1wdHMgPSAobWF4QXR0ZW1wdHM6IG51bWJlciB8IFByb3ZpZGVyPG51bWJlcj4gPSBERUZBVUxUX01BWF9BVFRFTVBUUyk6IFByb3ZpZGVyPG51bWJlcj4gPT4ge1xuICBpZiAodHlwZW9mIG1heEF0dGVtcHRzID09PSBcIm51bWJlclwiKSB7XG4gICAgY29uc3QgcHJvbWlzaWZpZWQgPSBQcm9taXNlLnJlc29sdmUobWF4QXR0ZW1wdHMpO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfVxuICByZXR1cm4gbWF4QXR0ZW1wdHM7XG59O1xuXG5leHBvcnQgY29uc3QgRU5WX1JFVFJZX01PREUgPSBcIkFXU19SRVRSWV9NT0RFXCI7XG5leHBvcnQgY29uc3QgQ09ORklHX1JFVFJZX01PREUgPSBcInJldHJ5X21vZGVcIjtcblxuZXhwb3J0IGNvbnN0IE5PREVfUkVUUllfTU9ERV9DT05GSUdfT1BUSU9OUzogTG9hZGVkQ29uZmlnU2VsZWN0b3JzPHN0cmluZz4gPSB7XG4gIGVudmlyb25tZW50VmFyaWFibGVTZWxlY3RvcjogKGVudikgPT4gZW52W0VOVl9SRVRSWV9NT0RFXSxcbiAgY29uZmlnRmlsZVNlbGVjdG9yOiAocHJvZmlsZSkgPT4gcHJvZmlsZVtDT05GSUdfUkVUUllfTU9ERV0sXG4gIGRlZmF1bHQ6IERFRkFVTFRfUkVUUllfTU9ERSxcbn07XG4iXX0=
 
 /***/ }),
 
@@ -22436,7 +24083,8 @@ class StandardRetryStrategy {
                 output.$metadata.totalRetryDelay = totalDelay;
                 return { response, output };
             }
-            catch (err) {
+            catch (e) {
+                const err = asSdkError(e);
                 attempts++;
                 if (this.shouldRetry(err, attempts, maxAttempts)) {
                     retryTokenAmount = this.retryQuota.retrieveRetryTokens(err);
@@ -22456,7 +24104,16 @@ class StandardRetryStrategy {
     }
 }
 exports.StandardRetryStrategy = StandardRetryStrategy;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGVmYXVsdFN0cmF0ZWd5LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2RlZmF1bHRTdHJhdGVneS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwwREFBcUQ7QUFDckQsd0ZBQTBFO0FBRzFFLCtCQUEwQjtBQUUxQiwyQ0FNcUI7QUFDckIsMkRBQTJEO0FBQzNELGlEQUFxRDtBQUNyRCxpREFBcUQ7QUFFckQ7OztHQUdHO0FBQ1UsUUFBQSxvQkFBb0IsR0FBRyxDQUFDLENBQUM7QUFFdEM7O0dBRUc7QUFDVSxRQUFBLGtCQUFrQixHQUFHLFVBQVUsQ0FBQztBQW9EN0MsTUFBYSxxQkFBcUI7SUFNaEMsWUFBNkIsbUJBQXFDLEVBQUUsT0FBc0M7O1FBQTdFLHdCQUFtQixHQUFuQixtQkFBbUIsQ0FBa0I7UUFGbEQsU0FBSSxHQUFHLDBCQUFrQixDQUFDO1FBR3hDLElBQUksQ0FBQyxZQUFZLEdBQUcsTUFBQSxPQUFPLGFBQVAsT0FBTyx1QkFBUCxPQUFPLENBQUUsWUFBWSxtQ0FBSSxrQ0FBbUIsQ0FBQztRQUNqRSxJQUFJLENBQUMsWUFBWSxHQUFHLE1BQUEsT0FBTyxhQUFQLE9BQU8sdUJBQVAsT0FBTyxDQUFFLFlBQVksbUNBQUksa0NBQW1CLENBQUM7UUFDakUsSUFBSSxDQUFDLFVBQVUsR0FBRyxNQUFBLE9BQU8sYUFBUCxPQUFPLHVCQUFQLE9BQU8sQ0FBRSxVQUFVLG1DQUFJLHdDQUFvQixDQUFDLGdDQUFvQixDQUFDLENBQUM7SUFDdEYsQ0FBQztJQUVPLFdBQVcsQ0FBQyxLQUFlLEVBQUUsUUFBZ0IsRUFBRSxXQUFtQjtRQUN4RSxPQUFPLFFBQVEsR0FBRyxXQUFXLElBQUksSUFBSSxDQUFDLFlBQVksQ0FBQyxLQUFLLENBQUMsSUFBSSxJQUFJLENBQUMsVUFBVSxDQUFDLGNBQWMsQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUNyRyxDQUFDO0lBRU8sS0FBSyxDQUFDLGNBQWM7UUFDMUIsSUFBSSxXQUFtQixDQUFDO1FBQ3hCLElBQUk7WUFDRixXQUFXLEdBQUcsTUFBTSxJQUFJLENBQUMsbUJBQW1CLEVBQUUsQ0FBQztTQUNoRDtRQUFDLE9BQU8sS0FBSyxFQUFFO1lBQ2QsV0FBVyxHQUFHLDRCQUFvQixDQUFDO1NBQ3BDO1FBQ0QsT0FBTyxXQUFXLENBQUM7SUFDckIsQ0FBQztJQUVELEtBQUssQ0FBQyxLQUFLLENBQ1QsSUFBbUMsRUFDbkMsSUFBcUM7UUFFckMsSUFBSSxnQkFBZ0IsQ0FBQztRQUNyQixJQUFJLFFBQVEsR0FBRyxDQUFDLENBQUM7UUFDakIsSUFBSSxVQUFVLEdBQUcsQ0FBQyxDQUFDO1FBRW5CLE1BQU0sV0FBVyxHQUFHLE1BQU0sSUFBSSxDQUFDLGNBQWMsRUFBRSxDQUFDO1FBRWhELE1BQU0sRUFBRSxPQUFPLEVBQUUsR0FBRyxJQUFJLENBQUM7UUFDekIsSUFBSSwyQkFBVyxDQUFDLFVBQVUsQ0FBQyxPQUFPLENBQUMsRUFBRTtZQUNuQyxPQUFPLENBQUMsT0FBTyxDQUFDLGdDQUFvQixDQUFDLEdBQUcsU0FBRSxFQUFFLENBQUM7U0FDOUM7UUFFRCxPQUFPLElBQUksRUFBRTtZQUNYLElBQUk7Z0JBQ0YsSUFBSSwyQkFBVyxDQUFDLFVBQVUsQ0FBQyxPQUFPLENBQUMsRUFBRTtvQkFDbkMsT0FBTyxDQUFDLE9BQU8sQ0FBQywwQkFBYyxDQUFDLEdBQUcsV0FBVyxRQUFRLEdBQUcsQ0FBQyxTQUFTLFdBQVcsRUFBRSxDQUFDO2lCQUNqRjtnQkFDRCxNQUFNLEVBQUUsUUFBUSxFQUFFLE1BQU0sRUFBRSxHQUFHLE1BQU0sSUFBSSxDQUFDLElBQUksQ0FBQyxDQUFDO2dCQUU5QyxJQUFJLENBQUMsVUFBVSxDQUFDLGtCQUFrQixDQUFDLGdCQUFnQixDQUFDLENBQUM7Z0JBQ3JELE1BQU0sQ0FBQyxTQUFTLENBQUMsUUFBUSxHQUFHLFFBQVEsR0FBRyxDQUFDLENBQUM7Z0JBQ3pDLE1BQU0sQ0FBQyxTQUFTLENBQUMsZUFBZSxHQUFHLFVBQVUsQ0FBQztnQkFFOUMsT0FBTyxFQUFFLFFBQVEsRUFBRSxNQUFNLEVBQUUsQ0FBQzthQUM3QjtZQUFDLE9BQU8sR0FBRyxFQUFFO2dCQUNaLFFBQVEsRUFBRSxDQUFDO2dCQUNYLElBQUksSUFBSSxDQUFDLFdBQVcsQ0FBQyxHQUFlLEVBQUUsUUFBUSxFQUFFLFdBQVcsQ0FBQyxFQUFFO29CQUM1RCxnQkFBZ0IsR0FBRyxJQUFJLENBQUMsVUFBVSxDQUFDLG1CQUFtQixDQUFDLEdBQUcsQ0FBQyxDQUFDO29CQUM1RCxNQUFNLEtBQUssR0FBRyxJQUFJLENBQUMsWUFBWSxDQUM3QixnREFBaUIsQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDLENBQUMsdUNBQTJCLENBQUMsQ0FBQyxDQUFDLG9DQUF3QixFQUMvRSxRQUFRLENBQ1QsQ0FBQztvQkFDRixVQUFVLElBQUksS0FBSyxDQUFDO29CQUVwQixNQUFNLElBQUksT0FBTyxDQUFDLENBQUMsT0FBTyxFQUFFLEVBQUUsQ0FBQyxVQUFVLENBQUMsT0FBTyxFQUFFLEtBQUssQ0FBQyxDQUFDLENBQUM7b0JBQzNELFNBQVM7aUJBQ1Y7Z0JBRUQsSUFBSSxDQUFDLEdBQUcsQ0FBQyxTQUFTLEVBQUU7b0JBQ2xCLEdBQUcsQ0FBQyxTQUFTLEdBQUcsRUFBRSxDQUFDO2lCQUNwQjtnQkFFRCxHQUFHLENBQUMsU0FBUyxDQUFDLFFBQVEsR0FBRyxRQUFRLENBQUM7Z0JBQ2xDLEdBQUcsQ0FBQyxTQUFTLENBQUMsZUFBZSxHQUFHLFVBQVUsQ0FBQztnQkFDM0MsTUFBTSxHQUFHLENBQUM7YUFDWDtTQUNGO0lBQ0gsQ0FBQztDQUNGO0FBN0VELHNEQTZFQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEh0dHBSZXF1ZXN0IH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3RvY29sLWh0dHBcIjtcbmltcG9ydCB7IGlzVGhyb3R0bGluZ0Vycm9yIH0gZnJvbSBcIkBhd3Mtc2RrL3NlcnZpY2UtZXJyb3ItY2xhc3NpZmljYXRpb25cIjtcbmltcG9ydCB7IFNka0Vycm9yIH0gZnJvbSBcIkBhd3Mtc2RrL3NtaXRoeS1jbGllbnRcIjtcbmltcG9ydCB7IEZpbmFsaXplSGFuZGxlciwgRmluYWxpemVIYW5kbGVyQXJndW1lbnRzLCBNZXRhZGF0YUJlYXJlciwgUHJvdmlkZXIsIFJldHJ5U3RyYXRlZ3kgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcbmltcG9ydCB7IHY0IH0gZnJvbSBcInV1aWRcIjtcblxuaW1wb3J0IHtcbiAgREVGQVVMVF9SRVRSWV9ERUxBWV9CQVNFLFxuICBJTklUSUFMX1JFVFJZX1RPS0VOUyxcbiAgSU5WT0NBVElPTl9JRF9IRUFERVIsXG4gIFJFUVVFU1RfSEVBREVSLFxuICBUSFJPVFRMSU5HX1JFVFJZX0RFTEFZX0JBU0UsXG59IGZyb20gXCIuL2NvbnN0YW50c1wiO1xuaW1wb3J0IHsgZ2V0RGVmYXVsdFJldHJ5UXVvdGEgfSBmcm9tIFwiLi9kZWZhdWx0UmV0cnlRdW90YVwiO1xuaW1wb3J0IHsgZGVmYXVsdERlbGF5RGVjaWRlciB9IGZyb20gXCIuL2RlbGF5RGVjaWRlclwiO1xuaW1wb3J0IHsgZGVmYXVsdFJldHJ5RGVjaWRlciB9IGZyb20gXCIuL3JldHJ5RGVjaWRlclwiO1xuXG4vKipcbiAqIFRoZSBkZWZhdWx0IHZhbHVlIGZvciBob3cgbWFueSBIVFRQIHJlcXVlc3RzIGFuIFNESyBzaG91bGQgbWFrZSBmb3IgYVxuICogc2luZ2xlIFNESyBvcGVyYXRpb24gaW52b2NhdGlvbiBiZWZvcmUgZ2l2aW5nIHVwXG4gKi9cbmV4cG9ydCBjb25zdCBERUZBVUxUX01BWF9BVFRFTVBUUyA9IDM7XG5cbi8qKlxuICogVGhlIGRlZmF1bHQgcmV0cnkgYWxnb3JpdGhtIHRvIHVzZS5cbiAqL1xuZXhwb3J0IGNvbnN0IERFRkFVTFRfUkVUUllfTU9ERSA9IFwic3RhbmRhcmRcIjtcblxuLyoqXG4gKiBEZXRlcm1pbmVzIHdoZXRoZXIgYW4gZXJyb3IgaXMgcmV0cnlhYmxlIGJhc2VkIG9uIHRoZSBudW1iZXIgb2YgcmV0cmllc1xuICogYWxyZWFkeSBhdHRlbXB0ZWQsIHRoZSBIVFRQIHN0YXR1cyBjb2RlLCBhbmQgdGhlIGVycm9yIHJlY2VpdmVkIChpZiBhbnkpLlxuICpcbiAqIEBwYXJhbSBlcnJvciAgICAgICAgIFRoZSBlcnJvciBlbmNvdW50ZXJlZC5cbiAqL1xuZXhwb3J0IGludGVyZmFjZSBSZXRyeURlY2lkZXIge1xuICAoZXJyb3I6IFNka0Vycm9yKTogYm9vbGVhbjtcbn1cblxuLyoqXG4gKiBEZXRlcm1pbmVzIHRoZSBudW1iZXIgb2YgbWlsbGlzZWNvbmRzIHRvIHdhaXQgYmVmb3JlIHJldHJ5aW5nIGFuIGFjdGlvbi5cbiAqXG4gKiBAcGFyYW0gZGVsYXlCYXNlIFRoZSBiYXNlIGRlbGF5IChpbiBtaWxsaXNlY29uZHMpLlxuICogQHBhcmFtIGF0dGVtcHRzICBUaGUgbnVtYmVyIG9mIHRpbWVzIHRoZSBhY3Rpb24gaGFzIGFscmVhZHkgYmVlbiB0cmllZC5cbiAqL1xuZXhwb3J0IGludGVyZmFjZSBEZWxheURlY2lkZXIge1xuICAoZGVsYXlCYXNlOiBudW1iZXIsIGF0dGVtcHRzOiBudW1iZXIpOiBudW1iZXI7XG59XG5cbi8qKlxuICogSW50ZXJmYWNlIHRoYXQgc3BlY2lmaWVzIHRoZSByZXRyeSBxdW90YSBiZWhhdmlvci5cbiAqL1xuZXhwb3J0IGludGVyZmFjZSBSZXRyeVF1b3RhIHtcbiAgLyoqXG4gICAqIHJldHVybnMgdHJ1ZSBpZiByZXRyeSB0b2tlbnMgYXJlIGF2YWlsYWJsZSBmcm9tIHRoZSByZXRyeSBxdW90YSBidWNrZXQuXG4gICAqL1xuICBoYXNSZXRyeVRva2VuczogKGVycm9yOiBTZGtFcnJvcikgPT4gYm9vbGVhbjtcblxuICAvKipcbiAgICogcmV0dXJucyB0b2tlbiBhbW91bnQgZnJvbSB0aGUgcmV0cnkgcXVvdGEgYnVja2V0LlxuICAgKiB0aHJvd3MgZXJyb3IgaXMgcmV0cnkgdG9rZW5zIGFyZSBub3QgYXZhaWxhYmxlLlxuICAgKi9cbiAgcmV0cmlldmVSZXRyeVRva2VuczogKGVycm9yOiBTZGtFcnJvcikgPT4gbnVtYmVyO1xuXG4gIC8qKlxuICAgKiByZWxlYXNlcyB0b2tlbnMgYmFjayB0byB0aGUgcmV0cnkgcXVvdGEuXG4gICAqL1xuICByZWxlYXNlUmV0cnlUb2tlbnM6IChyZWxlYXNlQ2FwYWNpdHlBbW91bnQ/OiBudW1iZXIpID0+IHZvaWQ7XG59XG5cbi8qKlxuICogU3RyYXRlZ3kgb3B0aW9ucyB0byBiZSBwYXNzZWQgdG8gU3RhbmRhcmRSZXRyeVN0cmF0ZWd5XG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgU3RhbmRhcmRSZXRyeVN0cmF0ZWd5T3B0aW9ucyB7XG4gIHJldHJ5RGVjaWRlcj86IFJldHJ5RGVjaWRlcjtcbiAgZGVsYXlEZWNpZGVyPzogRGVsYXlEZWNpZGVyO1xuICByZXRyeVF1b3RhPzogUmV0cnlRdW90YTtcbn1cblxuZXhwb3J0IGNsYXNzIFN0YW5kYXJkUmV0cnlTdHJhdGVneSBpbXBsZW1lbnRzIFJldHJ5U3RyYXRlZ3kge1xuICBwcml2YXRlIHJldHJ5RGVjaWRlcjogUmV0cnlEZWNpZGVyO1xuICBwcml2YXRlIGRlbGF5RGVjaWRlcjogRGVsYXlEZWNpZGVyO1xuICBwcml2YXRlIHJldHJ5UXVvdGE6IFJldHJ5UXVvdGE7XG4gIHB1YmxpYyByZWFkb25seSBtb2RlID0gREVGQVVMVF9SRVRSWV9NT0RFO1xuXG4gIGNvbnN0cnVjdG9yKHByaXZhdGUgcmVhZG9ubHkgbWF4QXR0ZW1wdHNQcm92aWRlcjogUHJvdmlkZXI8bnVtYmVyPiwgb3B0aW9ucz86IFN0YW5kYXJkUmV0cnlTdHJhdGVneU9wdGlvbnMpIHtcbiAgICB0aGlzLnJldHJ5RGVjaWRlciA9IG9wdGlvbnM/LnJldHJ5RGVjaWRlciA/PyBkZWZhdWx0UmV0cnlEZWNpZGVyO1xuICAgIHRoaXMuZGVsYXlEZWNpZGVyID0gb3B0aW9ucz8uZGVsYXlEZWNpZGVyID8/IGRlZmF1bHREZWxheURlY2lkZXI7XG4gICAgdGhpcy5yZXRyeVF1b3RhID0gb3B0aW9ucz8ucmV0cnlRdW90YSA/PyBnZXREZWZhdWx0UmV0cnlRdW90YShJTklUSUFMX1JFVFJZX1RPS0VOUyk7XG4gIH1cblxuICBwcml2YXRlIHNob3VsZFJldHJ5KGVycm9yOiBTZGtFcnJvciwgYXR0ZW1wdHM6IG51bWJlciwgbWF4QXR0ZW1wdHM6IG51bWJlcikge1xuICAgIHJldHVybiBhdHRlbXB0cyA8IG1heEF0dGVtcHRzICYmIHRoaXMucmV0cnlEZWNpZGVyKGVycm9yKSAmJiB0aGlzLnJldHJ5UXVvdGEuaGFzUmV0cnlUb2tlbnMoZXJyb3IpO1xuICB9XG5cbiAgcHJpdmF0ZSBhc3luYyBnZXRNYXhBdHRlbXB0cygpIHtcbiAgICBsZXQgbWF4QXR0ZW1wdHM6IG51bWJlcjtcbiAgICB0cnkge1xuICAgICAgbWF4QXR0ZW1wdHMgPSBhd2FpdCB0aGlzLm1heEF0dGVtcHRzUHJvdmlkZXIoKTtcbiAgICB9IGNhdGNoIChlcnJvcikge1xuICAgICAgbWF4QXR0ZW1wdHMgPSBERUZBVUxUX01BWF9BVFRFTVBUUztcbiAgICB9XG4gICAgcmV0dXJuIG1heEF0dGVtcHRzO1xuICB9XG5cbiAgYXN5bmMgcmV0cnk8SW5wdXQgZXh0ZW5kcyBvYmplY3QsIE91cHV0IGV4dGVuZHMgTWV0YWRhdGFCZWFyZXI+KFxuICAgIG5leHQ6IEZpbmFsaXplSGFuZGxlcjxJbnB1dCwgT3VwdXQ+LFxuICAgIGFyZ3M6IEZpbmFsaXplSGFuZGxlckFyZ3VtZW50czxJbnB1dD5cbiAgKSB7XG4gICAgbGV0IHJldHJ5VG9rZW5BbW91bnQ7XG4gICAgbGV0IGF0dGVtcHRzID0gMDtcbiAgICBsZXQgdG90YWxEZWxheSA9IDA7XG5cbiAgICBjb25zdCBtYXhBdHRlbXB0cyA9IGF3YWl0IHRoaXMuZ2V0TWF4QXR0ZW1wdHMoKTtcblxuICAgIGNvbnN0IHsgcmVxdWVzdCB9ID0gYXJncztcbiAgICBpZiAoSHR0cFJlcXVlc3QuaXNJbnN0YW5jZShyZXF1ZXN0KSkge1xuICAgICAgcmVxdWVzdC5oZWFkZXJzW0lOVk9DQVRJT05fSURfSEVBREVSXSA9IHY0KCk7XG4gICAgfVxuXG4gICAgd2hpbGUgKHRydWUpIHtcbiAgICAgIHRyeSB7XG4gICAgICAgIGlmIChIdHRwUmVxdWVzdC5pc0luc3RhbmNlKHJlcXVlc3QpKSB7XG4gICAgICAgICAgcmVxdWVzdC5oZWFkZXJzW1JFUVVFU1RfSEVBREVSXSA9IGBhdHRlbXB0PSR7YXR0ZW1wdHMgKyAxfTsgbWF4PSR7bWF4QXR0ZW1wdHN9YDtcbiAgICAgICAgfVxuICAgICAgICBjb25zdCB7IHJlc3BvbnNlLCBvdXRwdXQgfSA9IGF3YWl0IG5leHQoYXJncyk7XG5cbiAgICAgICAgdGhpcy5yZXRyeVF1b3RhLnJlbGVhc2VSZXRyeVRva2VucyhyZXRyeVRva2VuQW1vdW50KTtcbiAgICAgICAgb3V0cHV0LiRtZXRhZGF0YS5hdHRlbXB0cyA9IGF0dGVtcHRzICsgMTtcbiAgICAgICAgb3V0cHV0LiRtZXRhZGF0YS50b3RhbFJldHJ5RGVsYXkgPSB0b3RhbERlbGF5O1xuXG4gICAgICAgIHJldHVybiB7IHJlc3BvbnNlLCBvdXRwdXQgfTtcbiAgICAgIH0gY2F0Y2ggKGVycikge1xuICAgICAgICBhdHRlbXB0cysrO1xuICAgICAgICBpZiAodGhpcy5zaG91bGRSZXRyeShlcnIgYXMgU2RrRXJyb3IsIGF0dGVtcHRzLCBtYXhBdHRlbXB0cykpIHtcbiAgICAgICAgICByZXRyeVRva2VuQW1vdW50ID0gdGhpcy5yZXRyeVF1b3RhLnJldHJpZXZlUmV0cnlUb2tlbnMoZXJyKTtcbiAgICAgICAgICBjb25zdCBkZWxheSA9IHRoaXMuZGVsYXlEZWNpZGVyKFxuICAgICAgICAgICAgaXNUaHJvdHRsaW5nRXJyb3IoZXJyKSA/IFRIUk9UVExJTkdfUkVUUllfREVMQVlfQkFTRSA6IERFRkFVTFRfUkVUUllfREVMQVlfQkFTRSxcbiAgICAgICAgICAgIGF0dGVtcHRzXG4gICAgICAgICAgKTtcbiAgICAgICAgICB0b3RhbERlbGF5ICs9IGRlbGF5O1xuXG4gICAgICAgICAgYXdhaXQgbmV3IFByb21pc2UoKHJlc29sdmUpID0+IHNldFRpbWVvdXQocmVzb2x2ZSwgZGVsYXkpKTtcbiAgICAgICAgICBjb250aW51ZTtcbiAgICAgICAgfVxuXG4gICAgICAgIGlmICghZXJyLiRtZXRhZGF0YSkge1xuICAgICAgICAgIGVyci4kbWV0YWRhdGEgPSB7fTtcbiAgICAgICAgfVxuXG4gICAgICAgIGVyci4kbWV0YWRhdGEuYXR0ZW1wdHMgPSBhdHRlbXB0cztcbiAgICAgICAgZXJyLiRtZXRhZGF0YS50b3RhbFJldHJ5RGVsYXkgPSB0b3RhbERlbGF5O1xuICAgICAgICB0aHJvdyBlcnI7XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0=
+const asSdkError = (error) => {
+    if (error instanceof Error)
+        return error;
+    if (error instanceof Object)
+        return Object.assign(new Error(), error);
+    if (typeof error === "string")
+        return new Error(error);
+    return new Error(`AWS SDK error wrapper for ${error}`);
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGVmYXVsdFN0cmF0ZWd5LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2RlZmF1bHRTdHJhdGVneS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwwREFBcUQ7QUFDckQsd0ZBQTBFO0FBRzFFLCtCQUEwQjtBQUUxQiwyQ0FNcUI7QUFDckIsMkRBQTJEO0FBQzNELGlEQUFxRDtBQUNyRCxpREFBcUQ7QUFFckQ7OztHQUdHO0FBQ1UsUUFBQSxvQkFBb0IsR0FBRyxDQUFDLENBQUM7QUFFdEM7O0dBRUc7QUFDVSxRQUFBLGtCQUFrQixHQUFHLFVBQVUsQ0FBQztBQW9EN0MsTUFBYSxxQkFBcUI7SUFNaEMsWUFBNkIsbUJBQXFDLEVBQUUsT0FBc0M7O1FBQTdFLHdCQUFtQixHQUFuQixtQkFBbUIsQ0FBa0I7UUFGbEQsU0FBSSxHQUFHLDBCQUFrQixDQUFDO1FBR3hDLElBQUksQ0FBQyxZQUFZLEdBQUcsTUFBQSxPQUFPLGFBQVAsT0FBTyx1QkFBUCxPQUFPLENBQUUsWUFBWSxtQ0FBSSxrQ0FBbUIsQ0FBQztRQUNqRSxJQUFJLENBQUMsWUFBWSxHQUFHLE1BQUEsT0FBTyxhQUFQLE9BQU8sdUJBQVAsT0FBTyxDQUFFLFlBQVksbUNBQUksa0NBQW1CLENBQUM7UUFDakUsSUFBSSxDQUFDLFVBQVUsR0FBRyxNQUFBLE9BQU8sYUFBUCxPQUFPLHVCQUFQLE9BQU8sQ0FBRSxVQUFVLG1DQUFJLHdDQUFvQixDQUFDLGdDQUFvQixDQUFDLENBQUM7SUFDdEYsQ0FBQztJQUVPLFdBQVcsQ0FBQyxLQUFlLEVBQUUsUUFBZ0IsRUFBRSxXQUFtQjtRQUN4RSxPQUFPLFFBQVEsR0FBRyxXQUFXLElBQUksSUFBSSxDQUFDLFlBQVksQ0FBQyxLQUFLLENBQUMsSUFBSSxJQUFJLENBQUMsVUFBVSxDQUFDLGNBQWMsQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUNyRyxDQUFDO0lBRU8sS0FBSyxDQUFDLGNBQWM7UUFDMUIsSUFBSSxXQUFtQixDQUFDO1FBQ3hCLElBQUk7WUFDRixXQUFXLEdBQUcsTUFBTSxJQUFJLENBQUMsbUJBQW1CLEVBQUUsQ0FBQztTQUNoRDtRQUFDLE9BQU8sS0FBSyxFQUFFO1lBQ2QsV0FBVyxHQUFHLDRCQUFvQixDQUFDO1NBQ3BDO1FBQ0QsT0FBTyxXQUFXLENBQUM7SUFDckIsQ0FBQztJQUVELEtBQUssQ0FBQyxLQUFLLENBQ1QsSUFBbUMsRUFDbkMsSUFBcUM7UUFFckMsSUFBSSxnQkFBZ0IsQ0FBQztRQUNyQixJQUFJLFFBQVEsR0FBRyxDQUFDLENBQUM7UUFDakIsSUFBSSxVQUFVLEdBQUcsQ0FBQyxDQUFDO1FBRW5CLE1BQU0sV0FBVyxHQUFHLE1BQU0sSUFBSSxDQUFDLGNBQWMsRUFBRSxDQUFDO1FBRWhELE1BQU0sRUFBRSxPQUFPLEVBQUUsR0FBRyxJQUFJLENBQUM7UUFDekIsSUFBSSwyQkFBVyxDQUFDLFVBQVUsQ0FBQyxPQUFPLENBQUMsRUFBRTtZQUNuQyxPQUFPLENBQUMsT0FBTyxDQUFDLGdDQUFvQixDQUFDLEdBQUcsU0FBRSxFQUFFLENBQUM7U0FDOUM7UUFFRCxPQUFPLElBQUksRUFBRTtZQUNYLElBQUk7Z0JBQ0YsSUFBSSwyQkFBVyxDQUFDLFVBQVUsQ0FBQyxPQUFPLENBQUMsRUFBRTtvQkFDbkMsT0FBTyxDQUFDLE9BQU8sQ0FBQywwQkFBYyxDQUFDLEdBQUcsV0FBVyxRQUFRLEdBQUcsQ0FBQyxTQUFTLFdBQVcsRUFBRSxDQUFDO2lCQUNqRjtnQkFDRCxNQUFNLEVBQUUsUUFBUSxFQUFFLE1BQU0sRUFBRSxHQUFHLE1BQU0sSUFBSSxDQUFDLElBQUksQ0FBQyxDQUFDO2dCQUU5QyxJQUFJLENBQUMsVUFBVSxDQUFDLGtCQUFrQixDQUFDLGdCQUFnQixDQUFDLENBQUM7Z0JBQ3JELE1BQU0sQ0FBQyxTQUFTLENBQUMsUUFBUSxHQUFHLFFBQVEsR0FBRyxDQUFDLENBQUM7Z0JBQ3pDLE1BQU0sQ0FBQyxTQUFTLENBQUMsZUFBZSxHQUFHLFVBQVUsQ0FBQztnQkFFOUMsT0FBTyxFQUFFLFFBQVEsRUFBRSxNQUFNLEVBQUUsQ0FBQzthQUM3QjtZQUFDLE9BQU8sQ0FBQyxFQUFFO2dCQUNWLE1BQU0sR0FBRyxHQUFHLFVBQVUsQ0FBQyxDQUFDLENBQUMsQ0FBQztnQkFDMUIsUUFBUSxFQUFFLENBQUM7Z0JBQ1gsSUFBSSxJQUFJLENBQUMsV0FBVyxDQUFDLEdBQWUsRUFBRSxRQUFRLEVBQUUsV0FBVyxDQUFDLEVBQUU7b0JBQzVELGdCQUFnQixHQUFHLElBQUksQ0FBQyxVQUFVLENBQUMsbUJBQW1CLENBQUMsR0FBRyxDQUFDLENBQUM7b0JBQzVELE1BQU0sS0FBSyxHQUFHLElBQUksQ0FBQyxZQUFZLENBQzdCLGdEQUFpQixDQUFDLEdBQUcsQ0FBQyxDQUFDLENBQUMsQ0FBQyx1Q0FBMkIsQ0FBQyxDQUFDLENBQUMsb0NBQXdCLEVBQy9FLFFBQVEsQ0FDVCxDQUFDO29CQUNGLFVBQVUsSUFBSSxLQUFLLENBQUM7b0JBRXBCLE1BQU0sSUFBSSxPQUFPLENBQUMsQ0FBQyxPQUFPLEVBQUUsRUFBRSxDQUFDLFVBQVUsQ0FBQyxPQUFPLEVBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQztvQkFDM0QsU0FBUztpQkFDVjtnQkFFRCxJQUFJLENBQUMsR0FBRyxDQUFDLFNBQVMsRUFBRTtvQkFDbEIsR0FBRyxDQUFDLFNBQVMsR0FBRyxFQUFFLENBQUM7aUJBQ3BCO2dCQUVELEdBQUcsQ0FBQyxTQUFTLENBQUMsUUFBUSxHQUFHLFFBQVEsQ0FBQztnQkFDbEMsR0FBRyxDQUFDLFNBQVMsQ0FBQyxlQUFlLEdBQUcsVUFBVSxDQUFDO2dCQUMzQyxNQUFNLEdBQUcsQ0FBQzthQUNYO1NBQ0Y7SUFDSCxDQUFDO0NBQ0Y7QUE5RUQsc0RBOEVDO0FBRUQsTUFBTSxVQUFVLEdBQUcsQ0FBQyxLQUFjLEVBQVksRUFBRTtJQUM5QyxJQUFJLEtBQUssWUFBWSxLQUFLO1FBQUUsT0FBTyxLQUFLLENBQUM7SUFDekMsSUFBSSxLQUFLLFlBQVksTUFBTTtRQUFFLE9BQU8sTUFBTSxDQUFDLE1BQU0sQ0FBQyxJQUFJLEtBQUssRUFBRSxFQUFFLEtBQUssQ0FBQyxDQUFDO0lBQ3RFLElBQUksT0FBTyxLQUFLLEtBQUssUUFBUTtRQUFFLE9BQU8sSUFBSSxLQUFLLENBQUMsS0FBSyxDQUFDLENBQUM7SUFDdkQsT0FBTyxJQUFJLEtBQUssQ0FBQyw2QkFBNkIsS0FBSyxFQUFFLENBQUMsQ0FBQztBQUN6RCxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBIdHRwUmVxdWVzdCB9IGZyb20gXCJAYXdzLXNkay9wcm90b2NvbC1odHRwXCI7XG5pbXBvcnQgeyBpc1Rocm90dGxpbmdFcnJvciB9IGZyb20gXCJAYXdzLXNkay9zZXJ2aWNlLWVycm9yLWNsYXNzaWZpY2F0aW9uXCI7XG5pbXBvcnQgeyBTZGtFcnJvciB9IGZyb20gXCJAYXdzLXNkay9zbWl0aHktY2xpZW50XCI7XG5pbXBvcnQgeyBGaW5hbGl6ZUhhbmRsZXIsIEZpbmFsaXplSGFuZGxlckFyZ3VtZW50cywgTWV0YWRhdGFCZWFyZXIsIFByb3ZpZGVyLCBSZXRyeVN0cmF0ZWd5IH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5pbXBvcnQgeyB2NCB9IGZyb20gXCJ1dWlkXCI7XG5cbmltcG9ydCB7XG4gIERFRkFVTFRfUkVUUllfREVMQVlfQkFTRSxcbiAgSU5JVElBTF9SRVRSWV9UT0tFTlMsXG4gIElOVk9DQVRJT05fSURfSEVBREVSLFxuICBSRVFVRVNUX0hFQURFUixcbiAgVEhST1RUTElOR19SRVRSWV9ERUxBWV9CQVNFLFxufSBmcm9tIFwiLi9jb25zdGFudHNcIjtcbmltcG9ydCB7IGdldERlZmF1bHRSZXRyeVF1b3RhIH0gZnJvbSBcIi4vZGVmYXVsdFJldHJ5UXVvdGFcIjtcbmltcG9ydCB7IGRlZmF1bHREZWxheURlY2lkZXIgfSBmcm9tIFwiLi9kZWxheURlY2lkZXJcIjtcbmltcG9ydCB7IGRlZmF1bHRSZXRyeURlY2lkZXIgfSBmcm9tIFwiLi9yZXRyeURlY2lkZXJcIjtcblxuLyoqXG4gKiBUaGUgZGVmYXVsdCB2YWx1ZSBmb3IgaG93IG1hbnkgSFRUUCByZXF1ZXN0cyBhbiBTREsgc2hvdWxkIG1ha2UgZm9yIGFcbiAqIHNpbmdsZSBTREsgb3BlcmF0aW9uIGludm9jYXRpb24gYmVmb3JlIGdpdmluZyB1cFxuICovXG5leHBvcnQgY29uc3QgREVGQVVMVF9NQVhfQVRURU1QVFMgPSAzO1xuXG4vKipcbiAqIFRoZSBkZWZhdWx0IHJldHJ5IGFsZ29yaXRobSB0byB1c2UuXG4gKi9cbmV4cG9ydCBjb25zdCBERUZBVUxUX1JFVFJZX01PREUgPSBcInN0YW5kYXJkXCI7XG5cbi8qKlxuICogRGV0ZXJtaW5lcyB3aGV0aGVyIGFuIGVycm9yIGlzIHJldHJ5YWJsZSBiYXNlZCBvbiB0aGUgbnVtYmVyIG9mIHJldHJpZXNcbiAqIGFscmVhZHkgYXR0ZW1wdGVkLCB0aGUgSFRUUCBzdGF0dXMgY29kZSwgYW5kIHRoZSBlcnJvciByZWNlaXZlZCAoaWYgYW55KS5cbiAqXG4gKiBAcGFyYW0gZXJyb3IgICAgICAgICBUaGUgZXJyb3IgZW5jb3VudGVyZWQuXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgUmV0cnlEZWNpZGVyIHtcbiAgKGVycm9yOiBTZGtFcnJvcik6IGJvb2xlYW47XG59XG5cbi8qKlxuICogRGV0ZXJtaW5lcyB0aGUgbnVtYmVyIG9mIG1pbGxpc2Vjb25kcyB0byB3YWl0IGJlZm9yZSByZXRyeWluZyBhbiBhY3Rpb24uXG4gKlxuICogQHBhcmFtIGRlbGF5QmFzZSBUaGUgYmFzZSBkZWxheSAoaW4gbWlsbGlzZWNvbmRzKS5cbiAqIEBwYXJhbSBhdHRlbXB0cyAgVGhlIG51bWJlciBvZiB0aW1lcyB0aGUgYWN0aW9uIGhhcyBhbHJlYWR5IGJlZW4gdHJpZWQuXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgRGVsYXlEZWNpZGVyIHtcbiAgKGRlbGF5QmFzZTogbnVtYmVyLCBhdHRlbXB0czogbnVtYmVyKTogbnVtYmVyO1xufVxuXG4vKipcbiAqIEludGVyZmFjZSB0aGF0IHNwZWNpZmllcyB0aGUgcmV0cnkgcXVvdGEgYmVoYXZpb3IuXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgUmV0cnlRdW90YSB7XG4gIC8qKlxuICAgKiByZXR1cm5zIHRydWUgaWYgcmV0cnkgdG9rZW5zIGFyZSBhdmFpbGFibGUgZnJvbSB0aGUgcmV0cnkgcXVvdGEgYnVja2V0LlxuICAgKi9cbiAgaGFzUmV0cnlUb2tlbnM6IChlcnJvcjogU2RrRXJyb3IpID0+IGJvb2xlYW47XG5cbiAgLyoqXG4gICAqIHJldHVybnMgdG9rZW4gYW1vdW50IGZyb20gdGhlIHJldHJ5IHF1b3RhIGJ1Y2tldC5cbiAgICogdGhyb3dzIGVycm9yIGlzIHJldHJ5IHRva2VucyBhcmUgbm90IGF2YWlsYWJsZS5cbiAgICovXG4gIHJldHJpZXZlUmV0cnlUb2tlbnM6IChlcnJvcjogU2RrRXJyb3IpID0+IG51bWJlcjtcblxuICAvKipcbiAgICogcmVsZWFzZXMgdG9rZW5zIGJhY2sgdG8gdGhlIHJldHJ5IHF1b3RhLlxuICAgKi9cbiAgcmVsZWFzZVJldHJ5VG9rZW5zOiAocmVsZWFzZUNhcGFjaXR5QW1vdW50PzogbnVtYmVyKSA9PiB2b2lkO1xufVxuXG4vKipcbiAqIFN0cmF0ZWd5IG9wdGlvbnMgdG8gYmUgcGFzc2VkIHRvIFN0YW5kYXJkUmV0cnlTdHJhdGVneVxuICovXG5leHBvcnQgaW50ZXJmYWNlIFN0YW5kYXJkUmV0cnlTdHJhdGVneU9wdGlvbnMge1xuICByZXRyeURlY2lkZXI/OiBSZXRyeURlY2lkZXI7XG4gIGRlbGF5RGVjaWRlcj86IERlbGF5RGVjaWRlcjtcbiAgcmV0cnlRdW90YT86IFJldHJ5UXVvdGE7XG59XG5cbmV4cG9ydCBjbGFzcyBTdGFuZGFyZFJldHJ5U3RyYXRlZ3kgaW1wbGVtZW50cyBSZXRyeVN0cmF0ZWd5IHtcbiAgcHJpdmF0ZSByZXRyeURlY2lkZXI6IFJldHJ5RGVjaWRlcjtcbiAgcHJpdmF0ZSBkZWxheURlY2lkZXI6IERlbGF5RGVjaWRlcjtcbiAgcHJpdmF0ZSByZXRyeVF1b3RhOiBSZXRyeVF1b3RhO1xuICBwdWJsaWMgcmVhZG9ubHkgbW9kZSA9IERFRkFVTFRfUkVUUllfTU9ERTtcblxuICBjb25zdHJ1Y3Rvcihwcml2YXRlIHJlYWRvbmx5IG1heEF0dGVtcHRzUHJvdmlkZXI6IFByb3ZpZGVyPG51bWJlcj4sIG9wdGlvbnM/OiBTdGFuZGFyZFJldHJ5U3RyYXRlZ3lPcHRpb25zKSB7XG4gICAgdGhpcy5yZXRyeURlY2lkZXIgPSBvcHRpb25zPy5yZXRyeURlY2lkZXIgPz8gZGVmYXVsdFJldHJ5RGVjaWRlcjtcbiAgICB0aGlzLmRlbGF5RGVjaWRlciA9IG9wdGlvbnM/LmRlbGF5RGVjaWRlciA/PyBkZWZhdWx0RGVsYXlEZWNpZGVyO1xuICAgIHRoaXMucmV0cnlRdW90YSA9IG9wdGlvbnM/LnJldHJ5UXVvdGEgPz8gZ2V0RGVmYXVsdFJldHJ5UXVvdGEoSU5JVElBTF9SRVRSWV9UT0tFTlMpO1xuICB9XG5cbiAgcHJpdmF0ZSBzaG91bGRSZXRyeShlcnJvcjogU2RrRXJyb3IsIGF0dGVtcHRzOiBudW1iZXIsIG1heEF0dGVtcHRzOiBudW1iZXIpIHtcbiAgICByZXR1cm4gYXR0ZW1wdHMgPCBtYXhBdHRlbXB0cyAmJiB0aGlzLnJldHJ5RGVjaWRlcihlcnJvcikgJiYgdGhpcy5yZXRyeVF1b3RhLmhhc1JldHJ5VG9rZW5zKGVycm9yKTtcbiAgfVxuXG4gIHByaXZhdGUgYXN5bmMgZ2V0TWF4QXR0ZW1wdHMoKSB7XG4gICAgbGV0IG1heEF0dGVtcHRzOiBudW1iZXI7XG4gICAgdHJ5IHtcbiAgICAgIG1heEF0dGVtcHRzID0gYXdhaXQgdGhpcy5tYXhBdHRlbXB0c1Byb3ZpZGVyKCk7XG4gICAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICAgIG1heEF0dGVtcHRzID0gREVGQVVMVF9NQVhfQVRURU1QVFM7XG4gICAgfVxuICAgIHJldHVybiBtYXhBdHRlbXB0cztcbiAgfVxuXG4gIGFzeW5jIHJldHJ5PElucHV0IGV4dGVuZHMgb2JqZWN0LCBPdXB1dCBleHRlbmRzIE1ldGFkYXRhQmVhcmVyPihcbiAgICBuZXh0OiBGaW5hbGl6ZUhhbmRsZXI8SW5wdXQsIE91cHV0PixcbiAgICBhcmdzOiBGaW5hbGl6ZUhhbmRsZXJBcmd1bWVudHM8SW5wdXQ+XG4gICkge1xuICAgIGxldCByZXRyeVRva2VuQW1vdW50O1xuICAgIGxldCBhdHRlbXB0cyA9IDA7XG4gICAgbGV0IHRvdGFsRGVsYXkgPSAwO1xuXG4gICAgY29uc3QgbWF4QXR0ZW1wdHMgPSBhd2FpdCB0aGlzLmdldE1heEF0dGVtcHRzKCk7XG5cbiAgICBjb25zdCB7IHJlcXVlc3QgfSA9IGFyZ3M7XG4gICAgaWYgKEh0dHBSZXF1ZXN0LmlzSW5zdGFuY2UocmVxdWVzdCkpIHtcbiAgICAgIHJlcXVlc3QuaGVhZGVyc1tJTlZPQ0FUSU9OX0lEX0hFQURFUl0gPSB2NCgpO1xuICAgIH1cblxuICAgIHdoaWxlICh0cnVlKSB7XG4gICAgICB0cnkge1xuICAgICAgICBpZiAoSHR0cFJlcXVlc3QuaXNJbnN0YW5jZShyZXF1ZXN0KSkge1xuICAgICAgICAgIHJlcXVlc3QuaGVhZGVyc1tSRVFVRVNUX0hFQURFUl0gPSBgYXR0ZW1wdD0ke2F0dGVtcHRzICsgMX07IG1heD0ke21heEF0dGVtcHRzfWA7XG4gICAgICAgIH1cbiAgICAgICAgY29uc3QgeyByZXNwb25zZSwgb3V0cHV0IH0gPSBhd2FpdCBuZXh0KGFyZ3MpO1xuXG4gICAgICAgIHRoaXMucmV0cnlRdW90YS5yZWxlYXNlUmV0cnlUb2tlbnMocmV0cnlUb2tlbkFtb3VudCk7XG4gICAgICAgIG91dHB1dC4kbWV0YWRhdGEuYXR0ZW1wdHMgPSBhdHRlbXB0cyArIDE7XG4gICAgICAgIG91dHB1dC4kbWV0YWRhdGEudG90YWxSZXRyeURlbGF5ID0gdG90YWxEZWxheTtcblxuICAgICAgICByZXR1cm4geyByZXNwb25zZSwgb3V0cHV0IH07XG4gICAgICB9IGNhdGNoIChlKSB7XG4gICAgICAgIGNvbnN0IGVyciA9IGFzU2RrRXJyb3IoZSk7XG4gICAgICAgIGF0dGVtcHRzKys7XG4gICAgICAgIGlmICh0aGlzLnNob3VsZFJldHJ5KGVyciBhcyBTZGtFcnJvciwgYXR0ZW1wdHMsIG1heEF0dGVtcHRzKSkge1xuICAgICAgICAgIHJldHJ5VG9rZW5BbW91bnQgPSB0aGlzLnJldHJ5UXVvdGEucmV0cmlldmVSZXRyeVRva2VucyhlcnIpO1xuICAgICAgICAgIGNvbnN0IGRlbGF5ID0gdGhpcy5kZWxheURlY2lkZXIoXG4gICAgICAgICAgICBpc1Rocm90dGxpbmdFcnJvcihlcnIpID8gVEhST1RUTElOR19SRVRSWV9ERUxBWV9CQVNFIDogREVGQVVMVF9SRVRSWV9ERUxBWV9CQVNFLFxuICAgICAgICAgICAgYXR0ZW1wdHNcbiAgICAgICAgICApO1xuICAgICAgICAgIHRvdGFsRGVsYXkgKz0gZGVsYXk7XG5cbiAgICAgICAgICBhd2FpdCBuZXcgUHJvbWlzZSgocmVzb2x2ZSkgPT4gc2V0VGltZW91dChyZXNvbHZlLCBkZWxheSkpO1xuICAgICAgICAgIGNvbnRpbnVlO1xuICAgICAgICB9XG5cbiAgICAgICAgaWYgKCFlcnIuJG1ldGFkYXRhKSB7XG4gICAgICAgICAgZXJyLiRtZXRhZGF0YSA9IHt9O1xuICAgICAgICB9XG5cbiAgICAgICAgZXJyLiRtZXRhZGF0YS5hdHRlbXB0cyA9IGF0dGVtcHRzO1xuICAgICAgICBlcnIuJG1ldGFkYXRhLnRvdGFsUmV0cnlEZWxheSA9IHRvdGFsRGVsYXk7XG4gICAgICAgIHRocm93IGVycjtcbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cblxuY29uc3QgYXNTZGtFcnJvciA9IChlcnJvcjogdW5rbm93bik6IFNka0Vycm9yID0+IHtcbiAgaWYgKGVycm9yIGluc3RhbmNlb2YgRXJyb3IpIHJldHVybiBlcnJvcjtcbiAgaWYgKGVycm9yIGluc3RhbmNlb2YgT2JqZWN0KSByZXR1cm4gT2JqZWN0LmFzc2lnbihuZXcgRXJyb3IoKSwgZXJyb3IpO1xuICBpZiAodHlwZW9mIGVycm9yID09PSBcInN0cmluZ1wiKSByZXR1cm4gbmV3IEVycm9yKGVycm9yKTtcbiAgcmV0dXJuIG5ldyBFcnJvcihgQVdTIFNESyBlcnJvciB3cmFwcGVyIGZvciAke2Vycm9yfWApO1xufTtcbiJdfQ==
 
 /***/ }),
 
@@ -22599,7 +24256,7 @@ const resolveStsAuthConfig = (input, stsClientCtor) => {
     });
 };
 exports.resolveStsAuthConfig = resolveStsAuthConfig;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsb0VBQThHO0FBZ0I5Rzs7OztHQUlHO0FBQ0ksTUFBTSxvQkFBb0IsR0FBRyxDQUNsQyxLQUFrRCxFQUNsRCxhQUErRCxFQUNwQyxFQUFFO0lBQzdCLE9BQU8seUNBQW9CLENBQUM7UUFDMUIsR0FBRyxLQUFLO1FBQ1IsYUFBYTtLQUNkLENBQUMsQ0FBQztBQUNMLENBQUMsQ0FBQztBQVJXLFFBQUEsb0JBQW9CLHdCQVEvQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEF3c0F1dGhJbnB1dENvbmZpZywgQXdzQXV0aFJlc29sdmVkQ29uZmlnLCByZXNvbHZlQXdzQXV0aENvbmZpZyB9IGZyb20gXCJAYXdzLXNkay9taWRkbGV3YXJlLXNpZ25pbmdcIjtcbmltcG9ydCB7IENsaWVudCwgQ3JlZGVudGlhbHMsIEhhc2hDb25zdHJ1Y3RvciwgUGx1Z2dhYmxlLCBQcm92aWRlciwgUmVnaW9uSW5mb1Byb3ZpZGVyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmV4cG9ydCBpbnRlcmZhY2UgU3RzQXV0aElucHV0Q29uZmlnIGV4dGVuZHMgQXdzQXV0aElucHV0Q29uZmlnIHt9XG5pbnRlcmZhY2UgUHJldmlvdXNseVJlc29sdmVkIHtcbiAgY3JlZGVudGlhbERlZmF1bHRQcm92aWRlcjogKGlucHV0OiBhbnkpID0+IFByb3ZpZGVyPENyZWRlbnRpYWxzPjtcbiAgcmVnaW9uOiBzdHJpbmcgfCBQcm92aWRlcjxzdHJpbmc+O1xuICByZWdpb25JbmZvUHJvdmlkZXI6IFJlZ2lvbkluZm9Qcm92aWRlcjtcbiAgc2lnbmluZ05hbWU/OiBzdHJpbmc7XG4gIHNlcnZpY2VJZDogc3RyaW5nO1xuICBzaGEyNTY6IEhhc2hDb25zdHJ1Y3Rvcjtcbn1cbmV4cG9ydCBpbnRlcmZhY2UgU3RzQXV0aFJlc29sdmVkQ29uZmlnIGV4dGVuZHMgQXdzQXV0aFJlc29sdmVkQ29uZmlnIHtcbiAgc3RzQ2xpZW50Q3RvcjogbmV3IChjbGllbnRDb25maWc6IGFueSkgPT4gQ2xpZW50PGFueSwgYW55LCBhbnk+O1xufVxuXG4vKipcbiAqIFNldCBTVFMgY2xpZW50IGNvbnN0cnVjdG9yIHRvIGBzdHNDbGllbnRDdG9yYCBjb25maWcgcGFyYW1ldGVyLiBJdCBpcyB1c2VkXG4gKiBmb3Igcm9sZSBhc3N1bWVycyBmb3IgU1RTIGNsaWVudCBpbnRlcm5hbGx5LiBTZWUgYGNsaWVudHMvY2xpZW50LXN0cy9kZWZhdWx0U3RzUm9sZUFzc3VtZXJzLnRzYFxuICogYW5kIGBjbGllbnRzL2NsaWVudC1zdHMvU1RTQ2xpZW50LnRzYC5cbiAqL1xuZXhwb3J0IGNvbnN0IHJlc29sdmVTdHNBdXRoQ29uZmlnID0gPFQ+KFxuICBpbnB1dDogVCAmIFByZXZpb3VzbHlSZXNvbHZlZCAmIFN0c0F1dGhJbnB1dENvbmZpZyxcbiAgc3RzQ2xpZW50Q3RvcjogbmV3IChjbGllbnRDb25maWc6IGFueSkgPT4gQ2xpZW50PGFueSwgYW55LCBhbnk+XG4pOiBUICYgU3RzQXV0aFJlc29sdmVkQ29uZmlnID0+IHtcbiAgcmV0dXJuIHJlc29sdmVBd3NBdXRoQ29uZmlnKHtcbiAgICAuLi5pbnB1dCxcbiAgICBzdHNDbGllbnRDdG9yLFxuICB9KTtcbn07XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsb0VBQThHO0FBb0I5Rzs7OztHQUlHO0FBQ0ksTUFBTSxvQkFBb0IsR0FBRyxDQUNsQyxLQUFrRCxFQUNsRCxhQUErRCxFQUNwQyxFQUFFO0lBQzdCLE9BQU8seUNBQW9CLENBQUM7UUFDMUIsR0FBRyxLQUFLO1FBQ1IsYUFBYTtLQUNkLENBQUMsQ0FBQztBQUNMLENBQUMsQ0FBQztBQVJXLFFBQUEsb0JBQW9CLHdCQVEvQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEF3c0F1dGhJbnB1dENvbmZpZywgQXdzQXV0aFJlc29sdmVkQ29uZmlnLCByZXNvbHZlQXdzQXV0aENvbmZpZyB9IGZyb20gXCJAYXdzLXNkay9taWRkbGV3YXJlLXNpZ25pbmdcIjtcbmltcG9ydCB7IENsaWVudCwgQ3JlZGVudGlhbHMsIEhhc2hDb25zdHJ1Y3RvciwgUGx1Z2dhYmxlLCBQcm92aWRlciwgUmVnaW9uSW5mb1Byb3ZpZGVyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmV4cG9ydCBpbnRlcmZhY2UgU3RzQXV0aElucHV0Q29uZmlnIGV4dGVuZHMgQXdzQXV0aElucHV0Q29uZmlnIHt9XG5pbnRlcmZhY2UgUHJldmlvdXNseVJlc29sdmVkIHtcbiAgY3JlZGVudGlhbERlZmF1bHRQcm92aWRlcjogKGlucHV0OiBhbnkpID0+IFByb3ZpZGVyPENyZWRlbnRpYWxzPjtcbiAgcmVnaW9uOiBzdHJpbmcgfCBQcm92aWRlcjxzdHJpbmc+O1xuICByZWdpb25JbmZvUHJvdmlkZXI6IFJlZ2lvbkluZm9Qcm92aWRlcjtcbiAgc2lnbmluZ05hbWU/OiBzdHJpbmc7XG4gIHNlcnZpY2VJZDogc3RyaW5nO1xuICBzaGEyNTY6IEhhc2hDb25zdHJ1Y3Rvcjtcbn1cbmV4cG9ydCBpbnRlcmZhY2UgU3RzQXV0aFJlc29sdmVkQ29uZmlnIGV4dGVuZHMgQXdzQXV0aFJlc29sdmVkQ29uZmlnIHtcbiAgLyoqXG4gICAqIFJlZmVyZW5jZSB0byBTVFNDbGllbnQgY2xhc3MgY29uc3RydWN0b3IuXG4gICAqIEBpbnRlcm5hbFxuICAgKi9cbiAgc3RzQ2xpZW50Q3RvcjogbmV3IChjbGllbnRDb25maWc6IGFueSkgPT4gQ2xpZW50PGFueSwgYW55LCBhbnk+O1xufVxuXG4vKipcbiAqIFNldCBTVFMgY2xpZW50IGNvbnN0cnVjdG9yIHRvIGBzdHNDbGllbnRDdG9yYCBjb25maWcgcGFyYW1ldGVyLiBJdCBpcyB1c2VkXG4gKiBmb3Igcm9sZSBhc3N1bWVycyBmb3IgU1RTIGNsaWVudCBpbnRlcm5hbGx5LiBTZWUgYGNsaWVudHMvY2xpZW50LXN0cy9kZWZhdWx0U3RzUm9sZUFzc3VtZXJzLnRzYFxuICogYW5kIGBjbGllbnRzL2NsaWVudC1zdHMvU1RTQ2xpZW50LnRzYC5cbiAqL1xuZXhwb3J0IGNvbnN0IHJlc29sdmVTdHNBdXRoQ29uZmlnID0gPFQ+KFxuICBpbnB1dDogVCAmIFByZXZpb3VzbHlSZXNvbHZlZCAmIFN0c0F1dGhJbnB1dENvbmZpZyxcbiAgc3RzQ2xpZW50Q3RvcjogbmV3IChjbGllbnRDb25maWc6IGFueSkgPT4gQ2xpZW50PGFueSwgYW55LCBhbnk+XG4pOiBUICYgU3RzQXV0aFJlc29sdmVkQ29uZmlnID0+IHtcbiAgcmV0dXJuIHJlc29sdmVBd3NBdXRoQ29uZmlnKHtcbiAgICAuLi5pbnB1dCxcbiAgICBzdHNDbGllbnRDdG9yLFxuICB9KTtcbn07XG4iXX0=
 
 /***/ }),
 
@@ -22755,7 +24412,7 @@ const normalizeCredentialProvider = (credentials) => {
     }
     return normalizeProvider(credentials);
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlndXJhdGlvbnMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvY29uZmlndXJhdGlvbnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsa0VBQXFEO0FBQ3JELHdEQUFvRDtBQUdwRCw0RUFBNEU7QUFDNUUsTUFBTSx3QkFBd0IsR0FBRyxNQUFNLENBQUM7QUE0Q2pDLE1BQU0sb0JBQW9CLEdBQUcsQ0FDbEMsS0FBa0QsRUFDdkIsRUFBRTtJQUM3QixNQUFNLGVBQWUsR0FBRyxLQUFLLENBQUMsV0FBVztRQUN2QyxDQUFDLENBQUMsMkJBQTJCLENBQUMsS0FBSyxDQUFDLFdBQVcsQ0FBQztRQUNoRCxDQUFDLENBQUMsS0FBSyxDQUFDLHlCQUF5QixDQUFDLEtBQVksQ0FBQyxDQUFDO0lBQ2xELE1BQU0sRUFBRSxpQkFBaUIsR0FBRyxJQUFJLEVBQUUsaUJBQWlCLEdBQUcsS0FBSyxDQUFDLGlCQUFpQixJQUFJLENBQUMsRUFBRSxNQUFNLEVBQUUsR0FBRyxLQUFLLENBQUM7SUFDckcsSUFBSSxNQUErQixDQUFDO0lBQ3BDLElBQUksS0FBSyxDQUFDLE1BQU0sRUFBRTtRQUNoQiwyRkFBMkY7UUFDM0YsTUFBTSxHQUFHLGlCQUFpQixDQUFDLEtBQUssQ0FBQyxNQUFNLENBQUMsQ0FBQztLQUMxQztTQUFNO1FBQ0wscURBQXFEO1FBQ3JELE1BQU0sR0FBRyxHQUFHLEVBQUUsQ0FDWixpQkFBaUIsQ0FBQyxLQUFLLENBQUMsTUFBTSxDQUFDLEVBQUU7YUFDOUIsSUFBSSxDQUFDLEtBQUssRUFBRSxNQUFNLEVBQUUsRUFBRSxDQUFDLENBQUMsQ0FBQyxNQUFNLEtBQUssQ0FBQyxrQkFBa0IsQ0FBQyxNQUFNLENBQUMsQ0FBQyxJQUFJLEVBQUUsRUFBRSxNQUFNLENBQXlCLENBQUM7YUFDeEcsSUFBSSxDQUFDLENBQUMsQ0FBQyxVQUFVLEVBQUUsTUFBTSxDQUFDLEVBQUUsRUFBRTtZQUM3QixNQUFNLEVBQUUsYUFBYSxFQUFFLGNBQWMsRUFBRSxHQUFHLFVBQVUsQ0FBQztZQUNyRCxpRkFBaUY7WUFDakYsZ0hBQWdIO1lBQ2hILEtBQUssQ0FBQyxhQUFhLEdBQUcsS0FBSyxDQUFDLGFBQWEsSUFBSSxhQUFhLElBQUksTUFBTSxDQUFDO1lBQ3JFLCtCQUErQjtZQUMvQixtSEFBbUg7WUFDbkgsS0FBSyxDQUFDLFdBQVcsR0FBRyxLQUFLLENBQUMsV0FBVyxJQUFJLGNBQWMsSUFBSSxLQUFLLENBQUMsU0FBUyxDQUFDO1lBRTNFLE9BQU8sSUFBSSwwQkFBVyxDQUFDO2dCQUNyQixXQUFXLEVBQUUsZUFBZTtnQkFDNUIsTUFBTSxFQUFFLEtBQUssQ0FBQyxhQUFhO2dCQUMzQixPQUFPLEVBQUUsS0FBSyxDQUFDLFdBQVc7Z0JBQzFCLE1BQU07Z0JBQ04sYUFBYSxFQUFFLGlCQUFpQjthQUNqQyxDQUFDLENBQUM7UUFDTCxDQUFDLENBQUMsQ0FBQztLQUNSO0lBRUQsT0FBTztRQUNMLEdBQUcsS0FBSztRQUNSLGlCQUFpQjtRQUNqQixpQkFBaUI7UUFDakIsV0FBVyxFQUFFLGVBQWU7UUFDNUIsTUFBTTtLQUNQLENBQUM7QUFDSixDQUFDLENBQUM7QUExQ1csUUFBQSxvQkFBb0Isd0JBMEMvQjtBQUVGLE1BQU0saUJBQWlCLEdBQUcsQ0FBSSxLQUFzQixFQUFlLEVBQUU7SUFDbkUsSUFBSSxPQUFPLEtBQUssS0FBSyxRQUFRLEVBQUU7UUFDN0IsTUFBTSxXQUFXLEdBQUcsT0FBTyxDQUFDLE9BQU8sQ0FBQyxLQUFLLENBQUMsQ0FBQztRQUMzQyxPQUFPLEdBQUcsRUFBRSxDQUFDLFdBQVcsQ0FBQztLQUMxQjtJQUNELE9BQU8sS0FBb0IsQ0FBQztBQUM5QixDQUFDLENBQUM7QUFFRixNQUFNLDJCQUEyQixHQUFHLENBQUMsV0FBZ0QsRUFBeUIsRUFBRTtJQUM5RyxJQUFJLE9BQU8sV0FBVyxLQUFLLFVBQVUsRUFBRTtRQUNyQyxPQUFPLDJCQUFPLENBQ1osV0FBVyxFQUNYLENBQUMsV0FBVyxFQUFFLEVBQUUsQ0FDZCxXQUFXLENBQUMsVUFBVSxLQUFLLFNBQVM7WUFDcEMsV0FBVyxDQUFDLFVBQVUsQ0FBQyxPQUFPLEVBQUUsR0FBRyxJQUFJLENBQUMsR0FBRyxFQUFFLEdBQUcsd0JBQXdCLEVBQzFFLENBQUMsV0FBVyxFQUFFLEVBQUUsQ0FBQyxXQUFXLENBQUMsVUFBVSxLQUFLLFNBQVMsQ0FDdEQsQ0FBQztLQUNIO0lBQ0QsT0FBTyxpQkFBaUIsQ0FBQyxXQUFXLENBQUMsQ0FBQztBQUN4QyxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBtZW1vaXplIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3BlcnR5LXByb3ZpZGVyXCI7XG5pbXBvcnQgeyBTaWduYXR1cmVWNCB9IGZyb20gXCJAYXdzLXNkay9zaWduYXR1cmUtdjRcIjtcbmltcG9ydCB7IENyZWRlbnRpYWxzLCBIYXNoQ29uc3RydWN0b3IsIFByb3ZpZGVyLCBSZWdpb25JbmZvLCBSZWdpb25JbmZvUHJvdmlkZXIsIFJlcXVlc3RTaWduZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuLy8gNSBtaW51dGVzIGJ1ZmZlciB0aW1lIHRoZSByZWZyZXNoIHRoZSBjcmVkZW50aWFsIGJlZm9yZSBpdCByZWFsbHkgZXhwaXJlc1xuY29uc3QgQ1JFREVOVElBTF9FWFBJUkVfV0lORE9XID0gMzAwMDAwO1xuXG5leHBvcnQgaW50ZXJmYWNlIEF3c0F1dGhJbnB1dENvbmZpZyB7XG4gIC8qKlxuICAgKiBUaGUgY3JlZGVudGlhbHMgdXNlZCB0byBzaWduIHJlcXVlc3RzLlxuICAgKi9cbiAgY3JlZGVudGlhbHM/OiBDcmVkZW50aWFscyB8IFByb3ZpZGVyPENyZWRlbnRpYWxzPjtcblxuICAvKipcbiAgICogVGhlIHNpZ25lciB0byB1c2Ugd2hlbiBzaWduaW5nIHJlcXVlc3RzLlxuICAgKi9cbiAgc2lnbmVyPzogUmVxdWVzdFNpZ25lciB8IFByb3ZpZGVyPFJlcXVlc3RTaWduZXI+O1xuXG4gIC8qKlxuICAgKiBXaGV0aGVyIHRvIGVzY2FwZSByZXF1ZXN0IHBhdGggd2hlbiBzaWduaW5nIHRoZSByZXF1ZXN0LlxuICAgKi9cbiAgc2lnbmluZ0VzY2FwZVBhdGg/OiBib29sZWFuO1xuXG4gIC8qKlxuICAgKiBBbiBvZmZzZXQgdmFsdWUgaW4gbWlsbGlzZWNvbmRzIHRvIGFwcGx5IHRvIGFsbCBzaWduaW5nIHRpbWVzLlxuICAgKi9cbiAgc3lzdGVtQ2xvY2tPZmZzZXQ/OiBudW1iZXI7XG5cbiAgLyoqXG4gICAqIFRoZSByZWdpb24gd2hlcmUgeW91IHdhbnQgdG8gc2lnbiB5b3VyIHJlcXVlc3QgYWdhaW5zdC4gVGhpc1xuICAgKiBjYW4gYmUgZGlmZmVyZW50IHRvIHRoZSByZWdpb24gaW4gdGhlIGVuZHBvaW50LlxuICAgKi9cbiAgc2lnbmluZ1JlZ2lvbj86IHN0cmluZztcbn1cbmludGVyZmFjZSBQcmV2aW91c2x5UmVzb2x2ZWQge1xuICBjcmVkZW50aWFsRGVmYXVsdFByb3ZpZGVyOiAoaW5wdXQ6IGFueSkgPT4gUHJvdmlkZXI8Q3JlZGVudGlhbHM+O1xuICByZWdpb246IHN0cmluZyB8IFByb3ZpZGVyPHN0cmluZz47XG4gIHJlZ2lvbkluZm9Qcm92aWRlcjogUmVnaW9uSW5mb1Byb3ZpZGVyO1xuICBzaWduaW5nTmFtZT86IHN0cmluZztcbiAgc2VydmljZUlkOiBzdHJpbmc7XG4gIHNoYTI1NjogSGFzaENvbnN0cnVjdG9yO1xufVxuZXhwb3J0IGludGVyZmFjZSBBd3NBdXRoUmVzb2x2ZWRDb25maWcge1xuICBjcmVkZW50aWFsczogUHJvdmlkZXI8Q3JlZGVudGlhbHM+O1xuICBzaWduZXI6IFByb3ZpZGVyPFJlcXVlc3RTaWduZXI+O1xuICBzaWduaW5nRXNjYXBlUGF0aDogYm9vbGVhbjtcbiAgc3lzdGVtQ2xvY2tPZmZzZXQ6IG51bWJlcjtcbn1cblxuZXhwb3J0IGNvbnN0IHJlc29sdmVBd3NBdXRoQ29uZmlnID0gPFQ+KFxuICBpbnB1dDogVCAmIEF3c0F1dGhJbnB1dENvbmZpZyAmIFByZXZpb3VzbHlSZXNvbHZlZFxuKTogVCAmIEF3c0F1dGhSZXNvbHZlZENvbmZpZyA9PiB7XG4gIGNvbnN0IG5vcm1hbGl6ZWRDcmVkcyA9IGlucHV0LmNyZWRlbnRpYWxzXG4gICAgPyBub3JtYWxpemVDcmVkZW50aWFsUHJvdmlkZXIoaW5wdXQuY3JlZGVudGlhbHMpXG4gICAgOiBpbnB1dC5jcmVkZW50aWFsRGVmYXVsdFByb3ZpZGVyKGlucHV0IGFzIGFueSk7XG4gIGNvbnN0IHsgc2lnbmluZ0VzY2FwZVBhdGggPSB0cnVlLCBzeXN0ZW1DbG9ja09mZnNldCA9IGlucHV0LnN5c3RlbUNsb2NrT2Zmc2V0IHx8IDAsIHNoYTI1NiB9ID0gaW5wdXQ7XG4gIGxldCBzaWduZXI6IFByb3ZpZGVyPFJlcXVlc3RTaWduZXI+O1xuICBpZiAoaW5wdXQuc2lnbmVyKSB7XG4gICAgLy9pZiBzaWduZXIgaXMgc3VwcGxpZWQgYnkgdXNlciwgbm9ybWFsaXplIGl0IHRvIGEgZnVuY3Rpb24gcmV0dXJuaW5nIGEgcHJvbWlzZSBmb3Igc2lnbmVyLlxuICAgIHNpZ25lciA9IG5vcm1hbGl6ZVByb3ZpZGVyKGlucHV0LnNpZ25lcik7XG4gIH0gZWxzZSB7XG4gICAgLy9jb25zdHJ1Y3QgYSBwcm92aWRlciBpbmZlcnJpbmcgc2lnbmluZyBmcm9tIHJlZ2lvbi5cbiAgICBzaWduZXIgPSAoKSA9PlxuICAgICAgbm9ybWFsaXplUHJvdmlkZXIoaW5wdXQucmVnaW9uKSgpXG4gICAgICAgIC50aGVuKGFzeW5jIChyZWdpb24pID0+IFsoYXdhaXQgaW5wdXQucmVnaW9uSW5mb1Byb3ZpZGVyKHJlZ2lvbikpIHx8IHt9LCByZWdpb25dIGFzIFtSZWdpb25JbmZvLCBzdHJpbmddKVxuICAgICAgICAudGhlbigoW3JlZ2lvbkluZm8sIHJlZ2lvbl0pID0+IHtcbiAgICAgICAgICBjb25zdCB7IHNpZ25pbmdSZWdpb24sIHNpZ25pbmdTZXJ2aWNlIH0gPSByZWdpb25JbmZvO1xuICAgICAgICAgIC8vdXBkYXRlIGNsaWVudCdzIHNpbmdpbmcgcmVnaW9uIGFuZCBzaWduaW5nIHNlcnZpY2UgY29uZmlnIGlmIHRoZXkgYXJlIHJlc29sdmVkLlxuICAgICAgICAgIC8vc2lnbmluZyByZWdpb24gcmVzb2x2aW5nIG9yZGVyOiB1c2VyIHN1cHBsaWVkIHNpZ25pbmdSZWdpb24gLT4gZW5kcG9pbnRzLmpzb24gaW5mZXJyZWQgcmVnaW9uIC0+IGNsaWVudCByZWdpb25cbiAgICAgICAgICBpbnB1dC5zaWduaW5nUmVnaW9uID0gaW5wdXQuc2lnbmluZ1JlZ2lvbiB8fCBzaWduaW5nUmVnaW9uIHx8IHJlZ2lvbjtcbiAgICAgICAgICAvL3NpZ25pbmcgbmFtZSByZXNvbHZpbmcgb3JkZXI6XG4gICAgICAgICAgLy91c2VyIHN1cHBsaWVkIHNpZ25pbmdOYW1lIC0+IGVuZHBvaW50cy5qc29uIGluZmVycmVkIChjcmVkZW50aWFsIHNjb3BlIC0+IG1vZGVsIGFybk5hbWVzcGFjZSkgLT4gbW9kZWwgc2VydmljZSBpZFxuICAgICAgICAgIGlucHV0LnNpZ25pbmdOYW1lID0gaW5wdXQuc2lnbmluZ05hbWUgfHwgc2lnbmluZ1NlcnZpY2UgfHwgaW5wdXQuc2VydmljZUlkO1xuXG4gICAgICAgICAgcmV0dXJuIG5ldyBTaWduYXR1cmVWNCh7XG4gICAgICAgICAgICBjcmVkZW50aWFsczogbm9ybWFsaXplZENyZWRzLFxuICAgICAgICAgICAgcmVnaW9uOiBpbnB1dC5zaWduaW5nUmVnaW9uLFxuICAgICAgICAgICAgc2VydmljZTogaW5wdXQuc2lnbmluZ05hbWUsXG4gICAgICAgICAgICBzaGEyNTYsXG4gICAgICAgICAgICB1cmlFc2NhcGVQYXRoOiBzaWduaW5nRXNjYXBlUGF0aCxcbiAgICAgICAgICB9KTtcbiAgICAgICAgfSk7XG4gIH1cblxuICByZXR1cm4ge1xuICAgIC4uLmlucHV0LFxuICAgIHN5c3RlbUNsb2NrT2Zmc2V0LFxuICAgIHNpZ25pbmdFc2NhcGVQYXRoLFxuICAgIGNyZWRlbnRpYWxzOiBub3JtYWxpemVkQ3JlZHMsXG4gICAgc2lnbmVyLFxuICB9O1xufTtcblxuY29uc3Qgbm9ybWFsaXplUHJvdmlkZXIgPSA8VD4oaW5wdXQ6IFQgfCBQcm92aWRlcjxUPik6IFByb3ZpZGVyPFQ+ID0+IHtcbiAgaWYgKHR5cGVvZiBpbnB1dCA9PT0gXCJvYmplY3RcIikge1xuICAgIGNvbnN0IHByb21pc2lmaWVkID0gUHJvbWlzZS5yZXNvbHZlKGlucHV0KTtcbiAgICByZXR1cm4gKCkgPT4gcHJvbWlzaWZpZWQ7XG4gIH1cbiAgcmV0dXJuIGlucHV0IGFzIFByb3ZpZGVyPFQ+O1xufTtcblxuY29uc3Qgbm9ybWFsaXplQ3JlZGVudGlhbFByb3ZpZGVyID0gKGNyZWRlbnRpYWxzOiBDcmVkZW50aWFscyB8IFByb3ZpZGVyPENyZWRlbnRpYWxzPik6IFByb3ZpZGVyPENyZWRlbnRpYWxzPiA9PiB7XG4gIGlmICh0eXBlb2YgY3JlZGVudGlhbHMgPT09IFwiZnVuY3Rpb25cIikge1xuICAgIHJldHVybiBtZW1vaXplKFxuICAgICAgY3JlZGVudGlhbHMsXG4gICAgICAoY3JlZGVudGlhbHMpID0+XG4gICAgICAgIGNyZWRlbnRpYWxzLmV4cGlyYXRpb24gIT09IHVuZGVmaW5lZCAmJlxuICAgICAgICBjcmVkZW50aWFscy5leHBpcmF0aW9uLmdldFRpbWUoKSAtIERhdGUubm93KCkgPCBDUkVERU5USUFMX0VYUElSRV9XSU5ET1csXG4gICAgICAoY3JlZGVudGlhbHMpID0+IGNyZWRlbnRpYWxzLmV4cGlyYXRpb24gIT09IHVuZGVmaW5lZFxuICAgICk7XG4gIH1cbiAgcmV0dXJuIG5vcm1hbGl6ZVByb3ZpZGVyKGNyZWRlbnRpYWxzKTtcbn07XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlndXJhdGlvbnMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvY29uZmlndXJhdGlvbnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsa0VBQXFEO0FBQ3JELHdEQUFvRDtBQUdwRCw0RUFBNEU7QUFDNUUsTUFBTSx3QkFBd0IsR0FBRyxNQUFNLENBQUM7QUF3RGpDLE1BQU0sb0JBQW9CLEdBQUcsQ0FDbEMsS0FBa0QsRUFDdkIsRUFBRTtJQUM3QixNQUFNLGVBQWUsR0FBRyxLQUFLLENBQUMsV0FBVztRQUN2QyxDQUFDLENBQUMsMkJBQTJCLENBQUMsS0FBSyxDQUFDLFdBQVcsQ0FBQztRQUNoRCxDQUFDLENBQUMsS0FBSyxDQUFDLHlCQUF5QixDQUFDLEtBQVksQ0FBQyxDQUFDO0lBQ2xELE1BQU0sRUFBRSxpQkFBaUIsR0FBRyxJQUFJLEVBQUUsaUJBQWlCLEdBQUcsS0FBSyxDQUFDLGlCQUFpQixJQUFJLENBQUMsRUFBRSxNQUFNLEVBQUUsR0FBRyxLQUFLLENBQUM7SUFDckcsSUFBSSxNQUErQixDQUFDO0lBQ3BDLElBQUksS0FBSyxDQUFDLE1BQU0sRUFBRTtRQUNoQiwyRkFBMkY7UUFDM0YsTUFBTSxHQUFHLGlCQUFpQixDQUFDLEtBQUssQ0FBQyxNQUFNLENBQUMsQ0FBQztLQUMxQztTQUFNO1FBQ0wscURBQXFEO1FBQ3JELE1BQU0sR0FBRyxHQUFHLEVBQUUsQ0FDWixpQkFBaUIsQ0FBQyxLQUFLLENBQUMsTUFBTSxDQUFDLEVBQUU7YUFDOUIsSUFBSSxDQUFDLEtBQUssRUFBRSxNQUFNLEVBQUUsRUFBRSxDQUFDLENBQUMsQ0FBQyxNQUFNLEtBQUssQ0FBQyxrQkFBa0IsQ0FBQyxNQUFNLENBQUMsQ0FBQyxJQUFJLEVBQUUsRUFBRSxNQUFNLENBQXlCLENBQUM7YUFDeEcsSUFBSSxDQUFDLENBQUMsQ0FBQyxVQUFVLEVBQUUsTUFBTSxDQUFDLEVBQUUsRUFBRTtZQUM3QixNQUFNLEVBQUUsYUFBYSxFQUFFLGNBQWMsRUFBRSxHQUFHLFVBQVUsQ0FBQztZQUNyRCxpRkFBaUY7WUFDakYsZ0hBQWdIO1lBQ2hILEtBQUssQ0FBQyxhQUFhLEdBQUcsS0FBSyxDQUFDLGFBQWEsSUFBSSxhQUFhLElBQUksTUFBTSxDQUFDO1lBQ3JFLCtCQUErQjtZQUMvQixtSEFBbUg7WUFDbkgsS0FBSyxDQUFDLFdBQVcsR0FBRyxLQUFLLENBQUMsV0FBVyxJQUFJLGNBQWMsSUFBSSxLQUFLLENBQUMsU0FBUyxDQUFDO1lBRTNFLE9BQU8sSUFBSSwwQkFBVyxDQUFDO2dCQUNyQixXQUFXLEVBQUUsZUFBZTtnQkFDNUIsTUFBTSxFQUFFLEtBQUssQ0FBQyxhQUFhO2dCQUMzQixPQUFPLEVBQUUsS0FBSyxDQUFDLFdBQVc7Z0JBQzFCLE1BQU07Z0JBQ04sYUFBYSxFQUFFLGlCQUFpQjthQUNqQyxDQUFDLENBQUM7UUFDTCxDQUFDLENBQUMsQ0FBQztLQUNSO0lBRUQsT0FBTztRQUNMLEdBQUcsS0FBSztRQUNSLGlCQUFpQjtRQUNqQixpQkFBaUI7UUFDakIsV0FBVyxFQUFFLGVBQWU7UUFDNUIsTUFBTTtLQUNQLENBQUM7QUFDSixDQUFDLENBQUM7QUExQ1csUUFBQSxvQkFBb0Isd0JBMEMvQjtBQUVGLE1BQU0saUJBQWlCLEdBQUcsQ0FBSSxLQUFzQixFQUFlLEVBQUU7SUFDbkUsSUFBSSxPQUFPLEtBQUssS0FBSyxRQUFRLEVBQUU7UUFDN0IsTUFBTSxXQUFXLEdBQUcsT0FBTyxDQUFDLE9BQU8sQ0FBQyxLQUFLLENBQUMsQ0FBQztRQUMzQyxPQUFPLEdBQUcsRUFBRSxDQUFDLFdBQVcsQ0FBQztLQUMxQjtJQUNELE9BQU8sS0FBb0IsQ0FBQztBQUM5QixDQUFDLENBQUM7QUFFRixNQUFNLDJCQUEyQixHQUFHLENBQUMsV0FBZ0QsRUFBeUIsRUFBRTtJQUM5RyxJQUFJLE9BQU8sV0FBVyxLQUFLLFVBQVUsRUFBRTtRQUNyQyxPQUFPLDJCQUFPLENBQ1osV0FBVyxFQUNYLENBQUMsV0FBVyxFQUFFLEVBQUUsQ0FDZCxXQUFXLENBQUMsVUFBVSxLQUFLLFNBQVM7WUFDcEMsV0FBVyxDQUFDLFVBQVUsQ0FBQyxPQUFPLEVBQUUsR0FBRyxJQUFJLENBQUMsR0FBRyxFQUFFLEdBQUcsd0JBQXdCLEVBQzFFLENBQUMsV0FBVyxFQUFFLEVBQUUsQ0FBQyxXQUFXLENBQUMsVUFBVSxLQUFLLFNBQVMsQ0FDdEQsQ0FBQztLQUNIO0lBQ0QsT0FBTyxpQkFBaUIsQ0FBQyxXQUFXLENBQUMsQ0FBQztBQUN4QyxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBtZW1vaXplIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3BlcnR5LXByb3ZpZGVyXCI7XG5pbXBvcnQgeyBTaWduYXR1cmVWNCB9IGZyb20gXCJAYXdzLXNkay9zaWduYXR1cmUtdjRcIjtcbmltcG9ydCB7IENyZWRlbnRpYWxzLCBIYXNoQ29uc3RydWN0b3IsIFByb3ZpZGVyLCBSZWdpb25JbmZvLCBSZWdpb25JbmZvUHJvdmlkZXIsIFJlcXVlc3RTaWduZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuLy8gNSBtaW51dGVzIGJ1ZmZlciB0aW1lIHRoZSByZWZyZXNoIHRoZSBjcmVkZW50aWFsIGJlZm9yZSBpdCByZWFsbHkgZXhwaXJlc1xuY29uc3QgQ1JFREVOVElBTF9FWFBJUkVfV0lORE9XID0gMzAwMDAwO1xuXG5leHBvcnQgaW50ZXJmYWNlIEF3c0F1dGhJbnB1dENvbmZpZyB7XG4gIC8qKlxuICAgKiBUaGUgY3JlZGVudGlhbHMgdXNlZCB0byBzaWduIHJlcXVlc3RzLlxuICAgKi9cbiAgY3JlZGVudGlhbHM/OiBDcmVkZW50aWFscyB8IFByb3ZpZGVyPENyZWRlbnRpYWxzPjtcblxuICAvKipcbiAgICogVGhlIHNpZ25lciB0byB1c2Ugd2hlbiBzaWduaW5nIHJlcXVlc3RzLlxuICAgKi9cbiAgc2lnbmVyPzogUmVxdWVzdFNpZ25lciB8IFByb3ZpZGVyPFJlcXVlc3RTaWduZXI+O1xuXG4gIC8qKlxuICAgKiBXaGV0aGVyIHRvIGVzY2FwZSByZXF1ZXN0IHBhdGggd2hlbiBzaWduaW5nIHRoZSByZXF1ZXN0LlxuICAgKi9cbiAgc2lnbmluZ0VzY2FwZVBhdGg/OiBib29sZWFuO1xuXG4gIC8qKlxuICAgKiBBbiBvZmZzZXQgdmFsdWUgaW4gbWlsbGlzZWNvbmRzIHRvIGFwcGx5IHRvIGFsbCBzaWduaW5nIHRpbWVzLlxuICAgKi9cbiAgc3lzdGVtQ2xvY2tPZmZzZXQ/OiBudW1iZXI7XG5cbiAgLyoqXG4gICAqIFRoZSByZWdpb24gd2hlcmUgeW91IHdhbnQgdG8gc2lnbiB5b3VyIHJlcXVlc3QgYWdhaW5zdC4gVGhpc1xuICAgKiBjYW4gYmUgZGlmZmVyZW50IHRvIHRoZSByZWdpb24gaW4gdGhlIGVuZHBvaW50LlxuICAgKi9cbiAgc2lnbmluZ1JlZ2lvbj86IHN0cmluZztcbn1cbmludGVyZmFjZSBQcmV2aW91c2x5UmVzb2x2ZWQge1xuICBjcmVkZW50aWFsRGVmYXVsdFByb3ZpZGVyOiAoaW5wdXQ6IGFueSkgPT4gUHJvdmlkZXI8Q3JlZGVudGlhbHM+O1xuICByZWdpb246IHN0cmluZyB8IFByb3ZpZGVyPHN0cmluZz47XG4gIHJlZ2lvbkluZm9Qcm92aWRlcjogUmVnaW9uSW5mb1Byb3ZpZGVyO1xuICBzaWduaW5nTmFtZT86IHN0cmluZztcbiAgc2VydmljZUlkOiBzdHJpbmc7XG4gIHNoYTI1NjogSGFzaENvbnN0cnVjdG9yO1xufVxuZXhwb3J0IGludGVyZmFjZSBBd3NBdXRoUmVzb2x2ZWRDb25maWcge1xuICAvKipcbiAgICogUmVzb2x2ZWQgdmFsdWUgZm9yIGlucHV0IGNvbmZpZyB7QGxpbmsgQXdzQXV0aElucHV0Q29uZmlnLmNyZWRlbnRpYWxzfVxuICAgKi9cbiAgY3JlZGVudGlhbHM6IFByb3ZpZGVyPENyZWRlbnRpYWxzPjtcbiAgLyoqXG4gICAqIFJlc29sdmVkIHZhbHVlIGZvciBpbnB1dCBjb25maWcge0BsaW5rIEF3c0F1dGhJbnB1dENvbmZpZy5zaWduZXJ9XG4gICAqL1xuICBzaWduZXI6IFByb3ZpZGVyPFJlcXVlc3RTaWduZXI+O1xuICAvKipcbiAgICogUmVzb2x2ZWQgdmFsdWUgZm9yIGlucHV0IGNvbmZpZyB7QGxpbmsgQXdzQXV0aElucHV0Q29uZmlnLnNpZ25pbmdFc2NhcGVQYXRofVxuICAgKi9cbiAgc2lnbmluZ0VzY2FwZVBhdGg6IGJvb2xlYW47XG4gIC8qKlxuICAgKiBSZXNvbHZlZCB2YWx1ZSBmb3IgaW5wdXQgY29uZmlnIHtAbGluayBBd3NBdXRoSW5wdXRDb25maWcuc3lzdGVtQ2xvY2tPZmZzZXR9XG4gICAqL1xuICBzeXN0ZW1DbG9ja09mZnNldDogbnVtYmVyO1xufVxuXG5leHBvcnQgY29uc3QgcmVzb2x2ZUF3c0F1dGhDb25maWcgPSA8VD4oXG4gIGlucHV0OiBUICYgQXdzQXV0aElucHV0Q29uZmlnICYgUHJldmlvdXNseVJlc29sdmVkXG4pOiBUICYgQXdzQXV0aFJlc29sdmVkQ29uZmlnID0+IHtcbiAgY29uc3Qgbm9ybWFsaXplZENyZWRzID0gaW5wdXQuY3JlZGVudGlhbHNcbiAgICA/IG5vcm1hbGl6ZUNyZWRlbnRpYWxQcm92aWRlcihpbnB1dC5jcmVkZW50aWFscylcbiAgICA6IGlucHV0LmNyZWRlbnRpYWxEZWZhdWx0UHJvdmlkZXIoaW5wdXQgYXMgYW55KTtcbiAgY29uc3QgeyBzaWduaW5nRXNjYXBlUGF0aCA9IHRydWUsIHN5c3RlbUNsb2NrT2Zmc2V0ID0gaW5wdXQuc3lzdGVtQ2xvY2tPZmZzZXQgfHwgMCwgc2hhMjU2IH0gPSBpbnB1dDtcbiAgbGV0IHNpZ25lcjogUHJvdmlkZXI8UmVxdWVzdFNpZ25lcj47XG4gIGlmIChpbnB1dC5zaWduZXIpIHtcbiAgICAvL2lmIHNpZ25lciBpcyBzdXBwbGllZCBieSB1c2VyLCBub3JtYWxpemUgaXQgdG8gYSBmdW5jdGlvbiByZXR1cm5pbmcgYSBwcm9taXNlIGZvciBzaWduZXIuXG4gICAgc2lnbmVyID0gbm9ybWFsaXplUHJvdmlkZXIoaW5wdXQuc2lnbmVyKTtcbiAgfSBlbHNlIHtcbiAgICAvL2NvbnN0cnVjdCBhIHByb3ZpZGVyIGluZmVycmluZyBzaWduaW5nIGZyb20gcmVnaW9uLlxuICAgIHNpZ25lciA9ICgpID0+XG4gICAgICBub3JtYWxpemVQcm92aWRlcihpbnB1dC5yZWdpb24pKClcbiAgICAgICAgLnRoZW4oYXN5bmMgKHJlZ2lvbikgPT4gWyhhd2FpdCBpbnB1dC5yZWdpb25JbmZvUHJvdmlkZXIocmVnaW9uKSkgfHwge30sIHJlZ2lvbl0gYXMgW1JlZ2lvbkluZm8sIHN0cmluZ10pXG4gICAgICAgIC50aGVuKChbcmVnaW9uSW5mbywgcmVnaW9uXSkgPT4ge1xuICAgICAgICAgIGNvbnN0IHsgc2lnbmluZ1JlZ2lvbiwgc2lnbmluZ1NlcnZpY2UgfSA9IHJlZ2lvbkluZm87XG4gICAgICAgICAgLy91cGRhdGUgY2xpZW50J3Mgc2luZ2luZyByZWdpb24gYW5kIHNpZ25pbmcgc2VydmljZSBjb25maWcgaWYgdGhleSBhcmUgcmVzb2x2ZWQuXG4gICAgICAgICAgLy9zaWduaW5nIHJlZ2lvbiByZXNvbHZpbmcgb3JkZXI6IHVzZXIgc3VwcGxpZWQgc2lnbmluZ1JlZ2lvbiAtPiBlbmRwb2ludHMuanNvbiBpbmZlcnJlZCByZWdpb24gLT4gY2xpZW50IHJlZ2lvblxuICAgICAgICAgIGlucHV0LnNpZ25pbmdSZWdpb24gPSBpbnB1dC5zaWduaW5nUmVnaW9uIHx8IHNpZ25pbmdSZWdpb24gfHwgcmVnaW9uO1xuICAgICAgICAgIC8vc2lnbmluZyBuYW1lIHJlc29sdmluZyBvcmRlcjpcbiAgICAgICAgICAvL3VzZXIgc3VwcGxpZWQgc2lnbmluZ05hbWUgLT4gZW5kcG9pbnRzLmpzb24gaW5mZXJyZWQgKGNyZWRlbnRpYWwgc2NvcGUgLT4gbW9kZWwgYXJuTmFtZXNwYWNlKSAtPiBtb2RlbCBzZXJ2aWNlIGlkXG4gICAgICAgICAgaW5wdXQuc2lnbmluZ05hbWUgPSBpbnB1dC5zaWduaW5nTmFtZSB8fCBzaWduaW5nU2VydmljZSB8fCBpbnB1dC5zZXJ2aWNlSWQ7XG5cbiAgICAgICAgICByZXR1cm4gbmV3IFNpZ25hdHVyZVY0KHtcbiAgICAgICAgICAgIGNyZWRlbnRpYWxzOiBub3JtYWxpemVkQ3JlZHMsXG4gICAgICAgICAgICByZWdpb246IGlucHV0LnNpZ25pbmdSZWdpb24sXG4gICAgICAgICAgICBzZXJ2aWNlOiBpbnB1dC5zaWduaW5nTmFtZSxcbiAgICAgICAgICAgIHNoYTI1NixcbiAgICAgICAgICAgIHVyaUVzY2FwZVBhdGg6IHNpZ25pbmdFc2NhcGVQYXRoLFxuICAgICAgICAgIH0pO1xuICAgICAgICB9KTtcbiAgfVxuXG4gIHJldHVybiB7XG4gICAgLi4uaW5wdXQsXG4gICAgc3lzdGVtQ2xvY2tPZmZzZXQsXG4gICAgc2lnbmluZ0VzY2FwZVBhdGgsXG4gICAgY3JlZGVudGlhbHM6IG5vcm1hbGl6ZWRDcmVkcyxcbiAgICBzaWduZXIsXG4gIH07XG59O1xuXG5jb25zdCBub3JtYWxpemVQcm92aWRlciA9IDxUPihpbnB1dDogVCB8IFByb3ZpZGVyPFQ+KTogUHJvdmlkZXI8VD4gPT4ge1xuICBpZiAodHlwZW9mIGlucHV0ID09PSBcIm9iamVjdFwiKSB7XG4gICAgY29uc3QgcHJvbWlzaWZpZWQgPSBQcm9taXNlLnJlc29sdmUoaW5wdXQpO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfVxuICByZXR1cm4gaW5wdXQgYXMgUHJvdmlkZXI8VD47XG59O1xuXG5jb25zdCBub3JtYWxpemVDcmVkZW50aWFsUHJvdmlkZXIgPSAoY3JlZGVudGlhbHM6IENyZWRlbnRpYWxzIHwgUHJvdmlkZXI8Q3JlZGVudGlhbHM+KTogUHJvdmlkZXI8Q3JlZGVudGlhbHM+ID0+IHtcbiAgaWYgKHR5cGVvZiBjcmVkZW50aWFscyA9PT0gXCJmdW5jdGlvblwiKSB7XG4gICAgcmV0dXJuIG1lbW9pemUoXG4gICAgICBjcmVkZW50aWFscyxcbiAgICAgIChjcmVkZW50aWFscykgPT5cbiAgICAgICAgY3JlZGVudGlhbHMuZXhwaXJhdGlvbiAhPT0gdW5kZWZpbmVkICYmXG4gICAgICAgIGNyZWRlbnRpYWxzLmV4cGlyYXRpb24uZ2V0VGltZSgpIC0gRGF0ZS5ub3coKSA8IENSRURFTlRJQUxfRVhQSVJFX1dJTkRPVyxcbiAgICAgIChjcmVkZW50aWFscykgPT4gY3JlZGVudGlhbHMuZXhwaXJhdGlvbiAhPT0gdW5kZWZpbmVkXG4gICAgKTtcbiAgfVxuICByZXR1cm4gbm9ybWFsaXplUHJvdmlkZXIoY3JlZGVudGlhbHMpO1xufTtcbiJdfQ==
 
 /***/ }),
 
@@ -23079,7 +24736,7 @@ function resolveUserAgentConfig(input) {
     };
 }
 exports.resolveUserAgentConfig = resolveUserAgentConfig;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlndXJhdGlvbnMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvY29uZmlndXJhdGlvbnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBZ0JBLFNBQWdCLHNCQUFzQixDQUNwQyxLQUFvRDtJQUVwRCxPQUFPO1FBQ0wsR0FBRyxLQUFLO1FBQ1IsZUFBZSxFQUFFLE9BQU8sS0FBSyxDQUFDLGVBQWUsS0FBSyxRQUFRLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxLQUFLLENBQUMsZUFBZSxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsS0FBSyxDQUFDLGVBQWU7S0FDL0csQ0FBQztBQUNKLENBQUM7QUFQRCx3REFPQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFByb3ZpZGVyLCBVc2VyQWdlbnQgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcbmV4cG9ydCBpbnRlcmZhY2UgVXNlckFnZW50SW5wdXRDb25maWcge1xuICAvKipcbiAgICogVGhlIGN1c3RvbSB1c2VyIGFnZW50IGhlYWRlciB0aGF0IHdvdWxkIGJlIGFwcGVuZGVkIHRvIGRlZmF1bHQgb25lXG4gICAqL1xuICBjdXN0b21Vc2VyQWdlbnQ/OiBzdHJpbmcgfCBVc2VyQWdlbnQ7XG59XG5pbnRlcmZhY2UgUHJldmlvdXNseVJlc29sdmVkIHtcbiAgZGVmYXVsdFVzZXJBZ2VudFByb3ZpZGVyOiBQcm92aWRlcjxVc2VyQWdlbnQ+O1xuICBydW50aW1lOiBzdHJpbmc7XG59XG5leHBvcnQgaW50ZXJmYWNlIFVzZXJBZ2VudFJlc29sdmVkQ29uZmlnIHtcbiAgZGVmYXVsdFVzZXJBZ2VudFByb3ZpZGVyOiBQcm92aWRlcjxVc2VyQWdlbnQ+O1xuICBjdXN0b21Vc2VyQWdlbnQ/OiBVc2VyQWdlbnQ7XG4gIHJ1bnRpbWU6IHN0cmluZztcbn1cbmV4cG9ydCBmdW5jdGlvbiByZXNvbHZlVXNlckFnZW50Q29uZmlnPFQ+KFxuICBpbnB1dDogVCAmIFByZXZpb3VzbHlSZXNvbHZlZCAmIFVzZXJBZ2VudElucHV0Q29uZmlnXG4pOiBUICYgVXNlckFnZW50UmVzb2x2ZWRDb25maWcge1xuICByZXR1cm4ge1xuICAgIC4uLmlucHV0LFxuICAgIGN1c3RvbVVzZXJBZ2VudDogdHlwZW9mIGlucHV0LmN1c3RvbVVzZXJBZ2VudCA9PT0gXCJzdHJpbmdcIiA/IFtbaW5wdXQuY3VzdG9tVXNlckFnZW50XV0gOiBpbnB1dC5jdXN0b21Vc2VyQWdlbnQsXG4gIH07XG59XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlndXJhdGlvbnMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvY29uZmlndXJhdGlvbnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBMEJBLFNBQWdCLHNCQUFzQixDQUNwQyxLQUFvRDtJQUVwRCxPQUFPO1FBQ0wsR0FBRyxLQUFLO1FBQ1IsZUFBZSxFQUFFLE9BQU8sS0FBSyxDQUFDLGVBQWUsS0FBSyxRQUFRLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxLQUFLLENBQUMsZUFBZSxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsS0FBSyxDQUFDLGVBQWU7S0FDL0csQ0FBQztBQUNKLENBQUM7QUFQRCx3REFPQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFByb3ZpZGVyLCBVc2VyQWdlbnQgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcbmV4cG9ydCBpbnRlcmZhY2UgVXNlckFnZW50SW5wdXRDb25maWcge1xuICAvKipcbiAgICogVGhlIGN1c3RvbSB1c2VyIGFnZW50IGhlYWRlciB0aGF0IHdvdWxkIGJlIGFwcGVuZGVkIHRvIGRlZmF1bHQgb25lXG4gICAqL1xuICBjdXN0b21Vc2VyQWdlbnQ/OiBzdHJpbmcgfCBVc2VyQWdlbnQ7XG59XG5pbnRlcmZhY2UgUHJldmlvdXNseVJlc29sdmVkIHtcbiAgZGVmYXVsdFVzZXJBZ2VudFByb3ZpZGVyOiBQcm92aWRlcjxVc2VyQWdlbnQ+O1xuICBydW50aW1lOiBzdHJpbmc7XG59XG5leHBvcnQgaW50ZXJmYWNlIFVzZXJBZ2VudFJlc29sdmVkQ29uZmlnIHtcbiAgLyoqXG4gICAqIFRoZSBwcm92aWRlciBwb3B1bGF0aW5nIGRlZmF1bHQgdHJhY2tpbmcgaW5mb3JtYXRpb24gdG8gYmUgc2VudCB3aXRoIGB1c2VyLWFnZW50YCwgYHgtYW16LXVzZXItYWdlbnRgIGhlYWRlci5cbiAgICogQGludGVybmFsXG4gICAqL1xuICBkZWZhdWx0VXNlckFnZW50UHJvdmlkZXI6IFByb3ZpZGVyPFVzZXJBZ2VudD47XG4gIC8qKlxuICAgKiBUaGUgY3VzdG9tIHVzZXIgYWdlbnQgaGVhZGVyIHRoYXQgd291bGQgYmUgYXBwZW5kZWQgdG8gZGVmYXVsdCBvbmVcbiAgICovXG4gIGN1c3RvbVVzZXJBZ2VudD86IFVzZXJBZ2VudDtcbiAgLyoqXG4gICAqIFRoZSBydW50aW1lIGVudmlyb25tZW50XG4gICAqL1xuICBydW50aW1lOiBzdHJpbmc7XG59XG5leHBvcnQgZnVuY3Rpb24gcmVzb2x2ZVVzZXJBZ2VudENvbmZpZzxUPihcbiAgaW5wdXQ6IFQgJiBQcmV2aW91c2x5UmVzb2x2ZWQgJiBVc2VyQWdlbnRJbnB1dENvbmZpZ1xuKTogVCAmIFVzZXJBZ2VudFJlc29sdmVkQ29uZmlnIHtcbiAgcmV0dXJuIHtcbiAgICAuLi5pbnB1dCxcbiAgICBjdXN0b21Vc2VyQWdlbnQ6IHR5cGVvZiBpbnB1dC5jdXN0b21Vc2VyQWdlbnQgPT09IFwic3RyaW5nXCIgPyBbW2lucHV0LmN1c3RvbVVzZXJBZ2VudF1dIDogaW5wdXQuY3VzdG9tVXNlckFnZW50LFxuICB9O1xufVxuIl19
 
 /***/ }),
 
@@ -23475,7 +25132,14 @@ class NodeHttp2Handler {
         this.connectionPool.clear();
     }
     handle(request, { abortSignal } = {}) {
-        return new Promise((resolve, reject) => {
+        return new Promise((resolve, rejectOriginal) => {
+            // It's redundant to track fulfilled because promises use the first resolution/rejection
+            // but avoids generating unnecessary stack traces in the "close" event handler.
+            let fulfilled = false;
+            const reject = (err) => {
+                fulfilled = true;
+                rejectOriginal(err);
+            };
             // if the request was already aborted, prevent doing extra work
             if (abortSignal === null || abortSignal === void 0 ? void 0 : abortSignal.aborted) {
                 const abortError = new Error("Request aborted");
@@ -23497,11 +25161,9 @@ class NodeHttp2Handler {
                     headers: get_transformed_headers_1.getTransformedHeaders(headers),
                     body: req,
                 });
+                fulfilled = true;
                 resolve({ response: httpResponse });
             });
-            req.on("error", reject);
-            req.on("frameError", reject);
-            req.on("aborted", reject);
             const requestTimeout = this.requestTimeout;
             if (requestTimeout) {
                 req.setTimeout(requestTimeout, () => {
@@ -23519,6 +25181,19 @@ class NodeHttp2Handler {
                     reject(abortError);
                 };
             }
+            // Set up handlers for errors
+            req.on("frameError", reject);
+            req.on("error", reject);
+            req.on("goaway", reject);
+            req.on("aborted", reject);
+            // The HTTP/2 error code used when closing the stream can be retrieved using the
+            // http2stream.rstCode property. If the code is any value other than NGHTTP2_NO_ERROR (0),
+            // an 'error' event will have also been emitted.
+            req.on("close", () => {
+                if (!fulfilled) {
+                    reject(new Error("Unexpected error: http2 request did not get a response"));
+                }
+            });
             write_request_body_1.writeRequestBody(req, request);
         });
     }
@@ -23529,18 +25204,45 @@ class NodeHttp2Handler {
             return existingSession;
         const newSession = http2_1.connect(authority);
         connectionPool.set(authority, newSession);
+        const destroySessionCb = () => {
+            this.destroySession(authority, newSession);
+        };
+        newSession.on("goaway", destroySessionCb);
+        newSession.on("error", destroySessionCb);
+        newSession.on("frameError", destroySessionCb);
         const sessionTimeout = this.sessionTimeout;
         if (sessionTimeout) {
             newSession.setTimeout(sessionTimeout, () => {
-                newSession.close();
-                connectionPool.delete(authority);
+                if (connectionPool.get(authority) === newSession) {
+                    newSession.close();
+                    connectionPool.delete(authority);
+                }
             });
         }
         return newSession;
     }
+    /**
+     * Destroy a session immediately and remove it from the http2 pool.
+     *
+     * This check ensures that the session is only closed once
+     * and that an event on one session does not close a different session.
+     */
+    destroySession(authority, session) {
+        if (this.connectionPool.get(authority) !== session) {
+            // Already closed?
+            return;
+        }
+        this.connectionPool.delete(authority);
+        session.removeAllListeners("goaway");
+        session.removeAllListeners("error");
+        session.removeAllListeners("frameError");
+        if (!session.destroyed) {
+            session.destroy();
+        }
+    }
 }
 exports.NodeHttp2Handler = NodeHttp2Handler;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibm9kZS1odHRwMi1oYW5kbGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL25vZGUtaHR0cDItaGFuZGxlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwwREFBZ0Y7QUFDaEYsc0VBQWdFO0FBRWhFLGlDQUErRDtBQUUvRCx1RUFBa0U7QUFDbEUsNkRBQXdEO0FBb0J4RCxNQUFhLGdCQUFnQjtJQU0zQixZQUFZLEVBQUUsY0FBYyxFQUFFLGNBQWMsS0FBOEIsRUFBRTtRQUY1RCxhQUFRLEdBQUcsRUFBRSxlQUFlLEVBQUUsSUFBSSxFQUFFLENBQUM7UUFHbkQsSUFBSSxDQUFDLGNBQWMsR0FBRyxjQUFjLENBQUM7UUFDckMsSUFBSSxDQUFDLGNBQWMsR0FBRyxjQUFjLENBQUM7UUFDckMsSUFBSSxDQUFDLGNBQWMsR0FBRyxJQUFJLEdBQUcsRUFBOEIsQ0FBQztJQUM5RCxDQUFDO0lBRUQsT0FBTztRQUNMLDZEQUE2RDtRQUM3RCxLQUFLLE1BQU0sQ0FBQyxDQUFDLEVBQUUsWUFBWSxDQUFDLElBQUksSUFBSSxDQUFDLGNBQWMsRUFBRTtZQUNuRCxZQUFZLENBQUMsT0FBTyxFQUFFLENBQUM7U0FDeEI7UUFDRCxJQUFJLENBQUMsY0FBYyxDQUFDLEtBQUssRUFBRSxDQUFDO0lBQzlCLENBQUM7SUFFRCxNQUFNLENBQUMsT0FBb0IsRUFBRSxFQUFFLFdBQVcsS0FBeUIsRUFBRTtRQUNuRSxPQUFPLElBQUksT0FBTyxDQUFDLENBQUMsT0FBTyxFQUFFLE1BQU0sRUFBRSxFQUFFO1lBQ3JDLCtEQUErRDtZQUMvRCxJQUFJLFdBQVcsYUFBWCxXQUFXLHVCQUFYLFdBQVcsQ0FBRSxPQUFPLEVBQUU7Z0JBQ3hCLE1BQU0sVUFBVSxHQUFHLElBQUksS0FBSyxDQUFDLGlCQUFpQixDQUFDLENBQUM7Z0JBQ2hELFVBQVUsQ0FBQyxJQUFJLEdBQUcsWUFBWSxDQUFDO2dCQUMvQixNQUFNLENBQUMsVUFBVSxDQUFDLENBQUM7Z0JBQ25CLE9BQU87YUFDUjtZQUVELE1BQU0sRUFBRSxRQUFRLEVBQUUsTUFBTSxFQUFFLElBQUksRUFBRSxRQUFRLEVBQUUsSUFBSSxFQUFFLEtBQUssRUFBRSxHQUFHLE9BQU8sQ0FBQztZQUNsRSxNQUFNLFdBQVcsR0FBRyxzQ0FBZ0IsQ0FBQyxLQUFLLElBQUksRUFBRSxDQUFDLENBQUM7WUFFbEQsMkJBQTJCO1lBQzNCLE1BQU0sR0FBRyxHQUFHLElBQUksQ0FBQyxVQUFVLENBQUMsR0FBRyxRQUFRLEtBQUssUUFBUSxHQUFHLElBQUksQ0FBQyxDQUFDLENBQUMsSUFBSSxJQUFJLEVBQUUsQ0FBQyxDQUFDLENBQUMsRUFBRSxFQUFFLENBQUMsQ0FBQyxPQUFPLENBQUM7Z0JBQ3ZGLEdBQUcsT0FBTyxDQUFDLE9BQU87Z0JBQ2xCLENBQUMsaUJBQVMsQ0FBQyxpQkFBaUIsQ0FBQyxFQUFFLFdBQVcsQ0FBQyxDQUFDLENBQUMsR0FBRyxJQUFJLElBQUksV0FBVyxFQUFFLENBQUMsQ0FBQyxDQUFDLElBQUk7Z0JBQzVFLENBQUMsaUJBQVMsQ0FBQyxtQkFBbUIsQ0FBQyxFQUFFLE1BQU07YUFDeEMsQ0FBQyxDQUFDO1lBRUgsR0FBRyxDQUFDLEVBQUUsQ0FBQyxVQUFVLEVBQUUsQ0FBQyxPQUFPLEVBQUUsRUFBRTtnQkFDN0IsTUFBTSxZQUFZLEdBQUcsSUFBSSw0QkFBWSxDQUFDO29CQUNwQyxVQUFVLEVBQUUsT0FBTyxDQUFDLFNBQVMsQ0FBQyxJQUFJLENBQUMsQ0FBQztvQkFDcEMsT0FBTyxFQUFFLCtDQUFxQixDQUFDLE9BQU8sQ0FBQztvQkFDdkMsSUFBSSxFQUFFLEdBQUc7aUJBQ1YsQ0FBQyxDQUFDO2dCQUNILE9BQU8sQ0FBQyxFQUFFLFFBQVEsRUFBRSxZQUFZLEVBQUUsQ0FBQyxDQUFDO1lBQ3RDLENBQUMsQ0FBQyxDQUFDO1lBRUgsR0FBRyxDQUFDLEVBQUUsQ0FBQyxPQUFPLEVBQUUsTUFBTSxDQUFDLENBQUM7WUFDeEIsR0FBRyxDQUFDLEVBQUUsQ0FBQyxZQUFZLEVBQUUsTUFBTSxDQUFDLENBQUM7WUFDN0IsR0FBRyxDQUFDLEVBQUUsQ0FBQyxTQUFTLEVBQUUsTUFBTSxDQUFDLENBQUM7WUFFMUIsTUFBTSxjQUFjLEdBQUcsSUFBSSxDQUFDLGNBQWMsQ0FBQztZQUMzQyxJQUFJLGNBQWMsRUFBRTtnQkFDbEIsR0FBRyxDQUFDLFVBQVUsQ0FBQyxjQUFjLEVBQUUsR0FBRyxFQUFFO29CQUNsQyxHQUFHLENBQUMsS0FBSyxFQUFFLENBQUM7b0JBQ1osTUFBTSxZQUFZLEdBQUcsSUFBSSxLQUFLLENBQUMsK0NBQStDLGNBQWMsS0FBSyxDQUFDLENBQUM7b0JBQ25HLFlBQVksQ0FBQyxJQUFJLEdBQUcsY0FBYyxDQUFDO29CQUNuQyxNQUFNLENBQUMsWUFBWSxDQUFDLENBQUM7Z0JBQ3ZCLENBQUMsQ0FBQyxDQUFDO2FBQ0o7WUFFRCxJQUFJLFdBQVcsRUFBRTtnQkFDZixXQUFXLENBQUMsT0FBTyxHQUFHLEdBQUcsRUFBRTtvQkFDekIsR0FBRyxDQUFDLEtBQUssRUFBRSxDQUFDO29CQUNaLE1BQU0sVUFBVSxHQUFHLElBQUksS0FBSyxDQUFDLGlCQUFpQixDQUFDLENBQUM7b0JBQ2hELFVBQVUsQ0FBQyxJQUFJLEdBQUcsWUFBWSxDQUFDO29CQUMvQixNQUFNLENBQUMsVUFBVSxDQUFDLENBQUM7Z0JBQ3JCLENBQUMsQ0FBQzthQUNIO1lBRUQscUNBQWdCLENBQUMsR0FBRyxFQUFFLE9BQU8sQ0FBQyxDQUFDO1FBQ2pDLENBQUMsQ0FBQyxDQUFDO0lBQ0wsQ0FBQztJQUVPLFVBQVUsQ0FBQyxTQUFpQjtRQUNsQyxNQUFNLGNBQWMsR0FBRyxJQUFJLENBQUMsY0FBYyxDQUFDO1FBQzNDLE1BQU0sZUFBZSxHQUFHLGNBQWMsQ0FBQyxHQUFHLENBQUMsU0FBUyxDQUFDLENBQUM7UUFDdEQsSUFBSSxlQUFlO1lBQUUsT0FBTyxlQUFlLENBQUM7UUFFNUMsTUFBTSxVQUFVLEdBQUcsZUFBTyxDQUFDLFNBQVMsQ0FBQyxDQUFDO1FBQ3RDLGNBQWMsQ0FBQyxHQUFHLENBQUMsU0FBUyxFQUFFLFVBQVUsQ0FBQyxDQUFDO1FBRTFDLE1BQU0sY0FBYyxHQUFHLElBQUksQ0FBQyxjQUFjLENBQUM7UUFDM0MsSUFBSSxjQUFjLEVBQUU7WUFDbEIsVUFBVSxDQUFDLFVBQVUsQ0FBQyxjQUFjLEVBQUUsR0FBRyxFQUFFO2dCQUN6QyxVQUFVLENBQUMsS0FBSyxFQUFFLENBQUM7Z0JBQ25CLGNBQWMsQ0FBQyxNQUFNLENBQUMsU0FBUyxDQUFDLENBQUM7WUFDbkMsQ0FBQyxDQUFDLENBQUM7U0FDSjtRQUNELE9BQU8sVUFBVSxDQUFDO0lBQ3BCLENBQUM7Q0FDRjtBQTdGRCw0Q0E2RkMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBIdHRwSGFuZGxlciwgSHR0cFJlcXVlc3QsIEh0dHBSZXNwb25zZSB9IGZyb20gXCJAYXdzLXNkay9wcm90b2NvbC1odHRwXCI7XG5pbXBvcnQgeyBidWlsZFF1ZXJ5U3RyaW5nIH0gZnJvbSBcIkBhd3Mtc2RrL3F1ZXJ5c3RyaW5nLWJ1aWxkZXJcIjtcbmltcG9ydCB7IEh0dHBIYW5kbGVyT3B0aW9ucyB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuaW1wb3J0IHsgQ2xpZW50SHR0cDJTZXNzaW9uLCBjb25uZWN0LCBjb25zdGFudHMgfSBmcm9tIFwiaHR0cDJcIjtcblxuaW1wb3J0IHsgZ2V0VHJhbnNmb3JtZWRIZWFkZXJzIH0gZnJvbSBcIi4vZ2V0LXRyYW5zZm9ybWVkLWhlYWRlcnNcIjtcbmltcG9ydCB7IHdyaXRlUmVxdWVzdEJvZHkgfSBmcm9tIFwiLi93cml0ZS1yZXF1ZXN0LWJvZHlcIjtcblxuLyoqXG4gKiBSZXByZXNlbnRzIHRoZSBodHRwMiBvcHRpb25zIHRoYXQgY2FuIGJlIHBhc3NlZCB0byBhIG5vZGUgaHR0cDIgY2xpZW50LlxuICovXG5leHBvcnQgaW50ZXJmYWNlIE5vZGVIdHRwMkhhbmRsZXJPcHRpb25zIHtcbiAgLyoqXG4gICAqIFRoZSBtYXhpbXVtIHRpbWUgaW4gbWlsbGlzZWNvbmRzIHRoYXQgYSBzdHJlYW0gbWF5IHJlbWFpbiBpZGxlIGJlZm9yZSBpdFxuICAgKiBpcyBjbG9zZWQuXG4gICAqL1xuICByZXF1ZXN0VGltZW91dD86IG51bWJlcjtcblxuICAvKipcbiAgICogVGhlIG1heGltdW0gdGltZSBpbiBtaWxsaXNlY29uZHMgdGhhdCBhIHNlc3Npb24gb3Igc29ja2V0IG1heSByZW1haW4gaWRsZVxuICAgKiBiZWZvcmUgaXQgaXMgY2xvc2VkLlxuICAgKiBodHRwczovL25vZGVqcy5vcmcvZG9jcy9sYXRlc3QtdjEyLngvYXBpL2h0dHAyLmh0bWwjaHR0cDJfaHR0cDJzZXNzaW9uX2FuZF9zb2NrZXRzXG4gICAqL1xuICBzZXNzaW9uVGltZW91dD86IG51bWJlcjtcbn1cblxuZXhwb3J0IGNsYXNzIE5vZGVIdHRwMkhhbmRsZXIgaW1wbGVtZW50cyBIdHRwSGFuZGxlciB7XG4gIHByaXZhdGUgcmVhZG9ubHkgcmVxdWVzdFRpbWVvdXQ/OiBudW1iZXI7XG4gIHByaXZhdGUgcmVhZG9ubHkgc2Vzc2lvblRpbWVvdXQ/OiBudW1iZXI7XG4gIHByaXZhdGUgcmVhZG9ubHkgY29ubmVjdGlvblBvb2w6IE1hcDxzdHJpbmcsIENsaWVudEh0dHAyU2Vzc2lvbj47XG4gIHB1YmxpYyByZWFkb25seSBtZXRhZGF0YSA9IHsgaGFuZGxlclByb3RvY29sOiBcImgyXCIgfTtcblxuICBjb25zdHJ1Y3Rvcih7IHJlcXVlc3RUaW1lb3V0LCBzZXNzaW9uVGltZW91dCB9OiBOb2RlSHR0cDJIYW5kbGVyT3B0aW9ucyA9IHt9KSB7XG4gICAgdGhpcy5yZXF1ZXN0VGltZW91dCA9IHJlcXVlc3RUaW1lb3V0O1xuICAgIHRoaXMuc2Vzc2lvblRpbWVvdXQgPSBzZXNzaW9uVGltZW91dDtcbiAgICB0aGlzLmNvbm5lY3Rpb25Qb29sID0gbmV3IE1hcDxzdHJpbmcsIENsaWVudEh0dHAyU2Vzc2lvbj4oKTtcbiAgfVxuXG4gIGRlc3Ryb3koKTogdm9pZCB7XG4gICAgLy8gZXNsaW50LWRpc2FibGUtbmV4dC1saW5lIEB0eXBlc2NyaXB0LWVzbGludC9uby11bnVzZWQtdmFyc1xuICAgIGZvciAoY29uc3QgW18sIGh0dHAyU2Vzc2lvbl0gb2YgdGhpcy5jb25uZWN0aW9uUG9vbCkge1xuICAgICAgaHR0cDJTZXNzaW9uLmRlc3Ryb3koKTtcbiAgICB9XG4gICAgdGhpcy5jb25uZWN0aW9uUG9vbC5jbGVhcigpO1xuICB9XG5cbiAgaGFuZGxlKHJlcXVlc3Q6IEh0dHBSZXF1ZXN0LCB7IGFib3J0U2lnbmFsIH06IEh0dHBIYW5kbGVyT3B0aW9ucyA9IHt9KTogUHJvbWlzZTx7IHJlc3BvbnNlOiBIdHRwUmVzcG9uc2UgfT4ge1xuICAgIHJldHVybiBuZXcgUHJvbWlzZSgocmVzb2x2ZSwgcmVqZWN0KSA9PiB7XG4gICAgICAvLyBpZiB0aGUgcmVxdWVzdCB3YXMgYWxyZWFkeSBhYm9ydGVkLCBwcmV2ZW50IGRvaW5nIGV4dHJhIHdvcmtcbiAgICAgIGlmIChhYm9ydFNpZ25hbD8uYWJvcnRlZCkge1xuICAgICAgICBjb25zdCBhYm9ydEVycm9yID0gbmV3IEVycm9yKFwiUmVxdWVzdCBhYm9ydGVkXCIpO1xuICAgICAgICBhYm9ydEVycm9yLm5hbWUgPSBcIkFib3J0RXJyb3JcIjtcbiAgICAgICAgcmVqZWN0KGFib3J0RXJyb3IpO1xuICAgICAgICByZXR1cm47XG4gICAgICB9XG5cbiAgICAgIGNvbnN0IHsgaG9zdG5hbWUsIG1ldGhvZCwgcG9ydCwgcHJvdG9jb2wsIHBhdGgsIHF1ZXJ5IH0gPSByZXF1ZXN0O1xuICAgICAgY29uc3QgcXVlcnlTdHJpbmcgPSBidWlsZFF1ZXJ5U3RyaW5nKHF1ZXJ5IHx8IHt9KTtcblxuICAgICAgLy8gY3JlYXRlIHRoZSBodHRwMiByZXF1ZXN0XG4gICAgICBjb25zdCByZXEgPSB0aGlzLmdldFNlc3Npb24oYCR7cHJvdG9jb2x9Ly8ke2hvc3RuYW1lfSR7cG9ydCA/IGA6JHtwb3J0fWAgOiBcIlwifWApLnJlcXVlc3Qoe1xuICAgICAgICAuLi5yZXF1ZXN0LmhlYWRlcnMsXG4gICAgICAgIFtjb25zdGFudHMuSFRUUDJfSEVBREVSX1BBVEhdOiBxdWVyeVN0cmluZyA/IGAke3BhdGh9PyR7cXVlcnlTdHJpbmd9YCA6IHBhdGgsXG4gICAgICAgIFtjb25zdGFudHMuSFRUUDJfSEVBREVSX01FVEhPRF06IG1ldGhvZCxcbiAgICAgIH0pO1xuXG4gICAgICByZXEub24oXCJyZXNwb25zZVwiLCAoaGVhZGVycykgPT4ge1xuICAgICAgICBjb25zdCBodHRwUmVzcG9uc2UgPSBuZXcgSHR0cFJlc3BvbnNlKHtcbiAgICAgICAgICBzdGF0dXNDb2RlOiBoZWFkZXJzW1wiOnN0YXR1c1wiXSB8fCAtMSxcbiAgICAgICAgICBoZWFkZXJzOiBnZXRUcmFuc2Zvcm1lZEhlYWRlcnMoaGVhZGVycyksXG4gICAgICAgICAgYm9keTogcmVxLFxuICAgICAgICB9KTtcbiAgICAgICAgcmVzb2x2ZSh7IHJlc3BvbnNlOiBodHRwUmVzcG9uc2UgfSk7XG4gICAgICB9KTtcblxuICAgICAgcmVxLm9uKFwiZXJyb3JcIiwgcmVqZWN0KTtcbiAgICAgIHJlcS5vbihcImZyYW1lRXJyb3JcIiwgcmVqZWN0KTtcbiAgICAgIHJlcS5vbihcImFib3J0ZWRcIiwgcmVqZWN0KTtcblxuICAgICAgY29uc3QgcmVxdWVzdFRpbWVvdXQgPSB0aGlzLnJlcXVlc3RUaW1lb3V0O1xuICAgICAgaWYgKHJlcXVlc3RUaW1lb3V0KSB7XG4gICAgICAgIHJlcS5zZXRUaW1lb3V0KHJlcXVlc3RUaW1lb3V0LCAoKSA9PiB7XG4gICAgICAgICAgcmVxLmNsb3NlKCk7XG4gICAgICAgICAgY29uc3QgdGltZW91dEVycm9yID0gbmV3IEVycm9yKGBTdHJlYW0gdGltZWQgb3V0IGJlY2F1c2Ugb2Ygbm8gYWN0aXZpdHkgZm9yICR7cmVxdWVzdFRpbWVvdXR9IG1zYCk7XG4gICAgICAgICAgdGltZW91dEVycm9yLm5hbWUgPSBcIlRpbWVvdXRFcnJvclwiO1xuICAgICAgICAgIHJlamVjdCh0aW1lb3V0RXJyb3IpO1xuICAgICAgICB9KTtcbiAgICAgIH1cblxuICAgICAgaWYgKGFib3J0U2lnbmFsKSB7XG4gICAgICAgIGFib3J0U2lnbmFsLm9uYWJvcnQgPSAoKSA9PiB7XG4gICAgICAgICAgcmVxLmNsb3NlKCk7XG4gICAgICAgICAgY29uc3QgYWJvcnRFcnJvciA9IG5ldyBFcnJvcihcIlJlcXVlc3QgYWJvcnRlZFwiKTtcbiAgICAgICAgICBhYm9ydEVycm9yLm5hbWUgPSBcIkFib3J0RXJyb3JcIjtcbiAgICAgICAgICByZWplY3QoYWJvcnRFcnJvcik7XG4gICAgICAgIH07XG4gICAgICB9XG5cbiAgICAgIHdyaXRlUmVxdWVzdEJvZHkocmVxLCByZXF1ZXN0KTtcbiAgICB9KTtcbiAgfVxuXG4gIHByaXZhdGUgZ2V0U2Vzc2lvbihhdXRob3JpdHk6IHN0cmluZyk6IENsaWVudEh0dHAyU2Vzc2lvbiB7XG4gICAgY29uc3QgY29ubmVjdGlvblBvb2wgPSB0aGlzLmNvbm5lY3Rpb25Qb29sO1xuICAgIGNvbnN0IGV4aXN0aW5nU2Vzc2lvbiA9IGNvbm5lY3Rpb25Qb29sLmdldChhdXRob3JpdHkpO1xuICAgIGlmIChleGlzdGluZ1Nlc3Npb24pIHJldHVybiBleGlzdGluZ1Nlc3Npb247XG5cbiAgICBjb25zdCBuZXdTZXNzaW9uID0gY29ubmVjdChhdXRob3JpdHkpO1xuICAgIGNvbm5lY3Rpb25Qb29sLnNldChhdXRob3JpdHksIG5ld1Nlc3Npb24pO1xuXG4gICAgY29uc3Qgc2Vzc2lvblRpbWVvdXQgPSB0aGlzLnNlc3Npb25UaW1lb3V0O1xuICAgIGlmIChzZXNzaW9uVGltZW91dCkge1xuICAgICAgbmV3U2Vzc2lvbi5zZXRUaW1lb3V0KHNlc3Npb25UaW1lb3V0LCAoKSA9PiB7XG4gICAgICAgIG5ld1Nlc3Npb24uY2xvc2UoKTtcbiAgICAgICAgY29ubmVjdGlvblBvb2wuZGVsZXRlKGF1dGhvcml0eSk7XG4gICAgICB9KTtcbiAgICB9XG4gICAgcmV0dXJuIG5ld1Nlc3Npb247XG4gIH1cbn1cbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibm9kZS1odHRwMi1oYW5kbGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL25vZGUtaHR0cDItaGFuZGxlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwwREFBZ0Y7QUFDaEYsc0VBQWdFO0FBRWhFLGlDQUErRDtBQUUvRCx1RUFBa0U7QUFDbEUsNkRBQXdEO0FBb0J4RCxNQUFhLGdCQUFnQjtJQU0zQixZQUFZLEVBQUUsY0FBYyxFQUFFLGNBQWMsS0FBOEIsRUFBRTtRQUY1RCxhQUFRLEdBQUcsRUFBRSxlQUFlLEVBQUUsSUFBSSxFQUFFLENBQUM7UUFHbkQsSUFBSSxDQUFDLGNBQWMsR0FBRyxjQUFjLENBQUM7UUFDckMsSUFBSSxDQUFDLGNBQWMsR0FBRyxjQUFjLENBQUM7UUFDckMsSUFBSSxDQUFDLGNBQWMsR0FBRyxJQUFJLEdBQUcsRUFBOEIsQ0FBQztJQUM5RCxDQUFDO0lBRUQsT0FBTztRQUNMLDZEQUE2RDtRQUM3RCxLQUFLLE1BQU0sQ0FBQyxDQUFDLEVBQUUsWUFBWSxDQUFDLElBQUksSUFBSSxDQUFDLGNBQWMsRUFBRTtZQUNuRCxZQUFZLENBQUMsT0FBTyxFQUFFLENBQUM7U0FDeEI7UUFDRCxJQUFJLENBQUMsY0FBYyxDQUFDLEtBQUssRUFBRSxDQUFDO0lBQzlCLENBQUM7SUFFRCxNQUFNLENBQUMsT0FBb0IsRUFBRSxFQUFFLFdBQVcsS0FBeUIsRUFBRTtRQUNuRSxPQUFPLElBQUksT0FBTyxDQUFDLENBQUMsT0FBTyxFQUFFLGNBQWMsRUFBRSxFQUFFO1lBQzdDLHdGQUF3RjtZQUN4RiwrRUFBK0U7WUFDL0UsSUFBSSxTQUFTLEdBQUcsS0FBSyxDQUFDO1lBQ3RCLE1BQU0sTUFBTSxHQUFHLENBQUMsR0FBVSxFQUFFLEVBQUU7Z0JBQzVCLFNBQVMsR0FBRyxJQUFJLENBQUM7Z0JBQ2pCLGNBQWMsQ0FBQyxHQUFHLENBQUMsQ0FBQztZQUN0QixDQUFDLENBQUM7WUFDRiwrREFBK0Q7WUFDL0QsSUFBSSxXQUFXLGFBQVgsV0FBVyx1QkFBWCxXQUFXLENBQUUsT0FBTyxFQUFFO2dCQUN4QixNQUFNLFVBQVUsR0FBRyxJQUFJLEtBQUssQ0FBQyxpQkFBaUIsQ0FBQyxDQUFDO2dCQUNoRCxVQUFVLENBQUMsSUFBSSxHQUFHLFlBQVksQ0FBQztnQkFDL0IsTUFBTSxDQUFDLFVBQVUsQ0FBQyxDQUFDO2dCQUNuQixPQUFPO2FBQ1I7WUFFRCxNQUFNLEVBQUUsUUFBUSxFQUFFLE1BQU0sRUFBRSxJQUFJLEVBQUUsUUFBUSxFQUFFLElBQUksRUFBRSxLQUFLLEVBQUUsR0FBRyxPQUFPLENBQUM7WUFDbEUsTUFBTSxXQUFXLEdBQUcsc0NBQWdCLENBQUMsS0FBSyxJQUFJLEVBQUUsQ0FBQyxDQUFDO1lBRWxELDJCQUEyQjtZQUMzQixNQUFNLEdBQUcsR0FBRyxJQUFJLENBQUMsVUFBVSxDQUFDLEdBQUcsUUFBUSxLQUFLLFFBQVEsR0FBRyxJQUFJLENBQUMsQ0FBQyxDQUFDLElBQUksSUFBSSxFQUFFLENBQUMsQ0FBQyxDQUFDLEVBQUUsRUFBRSxDQUFDLENBQUMsT0FBTyxDQUFDO2dCQUN2RixHQUFHLE9BQU8sQ0FBQyxPQUFPO2dCQUNsQixDQUFDLGlCQUFTLENBQUMsaUJBQWlCLENBQUMsRUFBRSxXQUFXLENBQUMsQ0FBQyxDQUFDLEdBQUcsSUFBSSxJQUFJLFdBQVcsRUFBRSxDQUFDLENBQUMsQ0FBQyxJQUFJO2dCQUM1RSxDQUFDLGlCQUFTLENBQUMsbUJBQW1CLENBQUMsRUFBRSxNQUFNO2FBQ3hDLENBQUMsQ0FBQztZQUVILEdBQUcsQ0FBQyxFQUFFLENBQUMsVUFBVSxFQUFFLENBQUMsT0FBTyxFQUFFLEVBQUU7Z0JBQzdCLE1BQU0sWUFBWSxHQUFHLElBQUksNEJBQVksQ0FBQztvQkFDcEMsVUFBVSxFQUFFLE9BQU8sQ0FBQyxTQUFTLENBQUMsSUFBSSxDQUFDLENBQUM7b0JBQ3BDLE9BQU8sRUFBRSwrQ0FBcUIsQ0FBQyxPQUFPLENBQUM7b0JBQ3ZDLElBQUksRUFBRSxHQUFHO2lCQUNWLENBQUMsQ0FBQztnQkFDSCxTQUFTLEdBQUcsSUFBSSxDQUFDO2dCQUNqQixPQUFPLENBQUMsRUFBRSxRQUFRLEVBQUUsWUFBWSxFQUFFLENBQUMsQ0FBQztZQUN0QyxDQUFDLENBQUMsQ0FBQztZQUVILE1BQU0sY0FBYyxHQUFHLElBQUksQ0FBQyxjQUFjLENBQUM7WUFDM0MsSUFBSSxjQUFjLEVBQUU7Z0JBQ2xCLEdBQUcsQ0FBQyxVQUFVLENBQUMsY0FBYyxFQUFFLEdBQUcsRUFBRTtvQkFDbEMsR0FBRyxDQUFDLEtBQUssRUFBRSxDQUFDO29CQUNaLE1BQU0sWUFBWSxHQUFHLElBQUksS0FBSyxDQUFDLCtDQUErQyxjQUFjLEtBQUssQ0FBQyxDQUFDO29CQUNuRyxZQUFZLENBQUMsSUFBSSxHQUFHLGNBQWMsQ0FBQztvQkFDbkMsTUFBTSxDQUFDLFlBQVksQ0FBQyxDQUFDO2dCQUN2QixDQUFDLENBQUMsQ0FBQzthQUNKO1lBRUQsSUFBSSxXQUFXLEVBQUU7Z0JBQ2YsV0FBVyxDQUFDLE9BQU8sR0FBRyxHQUFHLEVBQUU7b0JBQ3pCLEdBQUcsQ0FBQyxLQUFLLEVBQUUsQ0FBQztvQkFDWixNQUFNLFVBQVUsR0FBRyxJQUFJLEtBQUssQ0FBQyxpQkFBaUIsQ0FBQyxDQUFDO29CQUNoRCxVQUFVLENBQUMsSUFBSSxHQUFHLFlBQVksQ0FBQztvQkFDL0IsTUFBTSxDQUFDLFVBQVUsQ0FBQyxDQUFDO2dCQUNyQixDQUFDLENBQUM7YUFDSDtZQUVELDZCQUE2QjtZQUM3QixHQUFHLENBQUMsRUFBRSxDQUFDLFlBQVksRUFBRSxNQUFNLENBQUMsQ0FBQztZQUM3QixHQUFHLENBQUMsRUFBRSxDQUFDLE9BQU8sRUFBRSxNQUFNLENBQUMsQ0FBQztZQUN4QixHQUFHLENBQUMsRUFBRSxDQUFDLFFBQVEsRUFBRSxNQUFNLENBQUMsQ0FBQztZQUN6QixHQUFHLENBQUMsRUFBRSxDQUFDLFNBQVMsRUFBRSxNQUFNLENBQUMsQ0FBQztZQUUxQixnRkFBZ0Y7WUFDaEYsMEZBQTBGO1lBQzFGLGdEQUFnRDtZQUNoRCxHQUFHLENBQUMsRUFBRSxDQUFDLE9BQU8sRUFBRSxHQUFHLEVBQUU7Z0JBQ25CLElBQUksQ0FBQyxTQUFTLEVBQUU7b0JBQ2QsTUFBTSxDQUFDLElBQUksS0FBSyxDQUFDLHdEQUF3RCxDQUFDLENBQUMsQ0FBQztpQkFDN0U7WUFDSCxDQUFDLENBQUMsQ0FBQztZQUNILHFDQUFnQixDQUFDLEdBQUcsRUFBRSxPQUFPLENBQUMsQ0FBQztRQUNqQyxDQUFDLENBQUMsQ0FBQztJQUNMLENBQUM7SUFFTyxVQUFVLENBQUMsU0FBaUI7UUFDbEMsTUFBTSxjQUFjLEdBQUcsSUFBSSxDQUFDLGNBQWMsQ0FBQztRQUMzQyxNQUFNLGVBQWUsR0FBRyxjQUFjLENBQUMsR0FBRyxDQUFDLFNBQVMsQ0FBQyxDQUFDO1FBQ3RELElBQUksZUFBZTtZQUFFLE9BQU8sZUFBZSxDQUFDO1FBRTVDLE1BQU0sVUFBVSxHQUFHLGVBQU8sQ0FBQyxTQUFTLENBQUMsQ0FBQztRQUN0QyxjQUFjLENBQUMsR0FBRyxDQUFDLFNBQVMsRUFBRSxVQUFVLENBQUMsQ0FBQztRQUMxQyxNQUFNLGdCQUFnQixHQUFHLEdBQUcsRUFBRTtZQUM1QixJQUFJLENBQUMsY0FBYyxDQUFDLFNBQVMsRUFBRSxVQUFVLENBQUMsQ0FBQztRQUM3QyxDQUFDLENBQUM7UUFDRixVQUFVLENBQUMsRUFBRSxDQUFDLFFBQVEsRUFBRSxnQkFBZ0IsQ0FBQyxDQUFDO1FBQzFDLFVBQVUsQ0FBQyxFQUFFLENBQUMsT0FBTyxFQUFFLGdCQUFnQixDQUFDLENBQUM7UUFDekMsVUFBVSxDQUFDLEVBQUUsQ0FBQyxZQUFZLEVBQUUsZ0JBQWdCLENBQUMsQ0FBQztRQUU5QyxNQUFNLGNBQWMsR0FBRyxJQUFJLENBQUMsY0FBYyxDQUFDO1FBQzNDLElBQUksY0FBYyxFQUFFO1lBQ2xCLFVBQVUsQ0FBQyxVQUFVLENBQUMsY0FBYyxFQUFFLEdBQUcsRUFBRTtnQkFDekMsSUFBSSxjQUFjLENBQUMsR0FBRyxDQUFDLFNBQVMsQ0FBQyxLQUFLLFVBQVUsRUFBRTtvQkFDaEQsVUFBVSxDQUFDLEtBQUssRUFBRSxDQUFDO29CQUNuQixjQUFjLENBQUMsTUFBTSxDQUFDLFNBQVMsQ0FBQyxDQUFDO2lCQUNsQztZQUNILENBQUMsQ0FBQyxDQUFDO1NBQ0o7UUFDRCxPQUFPLFVBQVUsQ0FBQztJQUNwQixDQUFDO0lBRUQ7Ozs7O09BS0c7SUFDSyxjQUFjLENBQUMsU0FBaUIsRUFBRSxPQUEyQjtRQUNuRSxJQUFJLElBQUksQ0FBQyxjQUFjLENBQUMsR0FBRyxDQUFDLFNBQVMsQ0FBQyxLQUFLLE9BQU8sRUFBRTtZQUNsRCxrQkFBa0I7WUFDbEIsT0FBTztTQUNSO1FBQ0QsSUFBSSxDQUFDLGNBQWMsQ0FBQyxNQUFNLENBQUMsU0FBUyxDQUFDLENBQUM7UUFDdEMsT0FBTyxDQUFDLGtCQUFrQixDQUFDLFFBQVEsQ0FBQyxDQUFDO1FBQ3JDLE9BQU8sQ0FBQyxrQkFBa0IsQ0FBQyxPQUFPLENBQUMsQ0FBQztRQUNwQyxPQUFPLENBQUMsa0JBQWtCLENBQUMsWUFBWSxDQUFDLENBQUM7UUFDekMsSUFBSSxDQUFDLE9BQU8sQ0FBQyxTQUFTLEVBQUU7WUFDdEIsT0FBTyxDQUFDLE9BQU8sRUFBRSxDQUFDO1NBQ25CO0lBQ0gsQ0FBQztDQUNGO0FBM0lELDRDQTJJQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEh0dHBIYW5kbGVyLCBIdHRwUmVxdWVzdCwgSHR0cFJlc3BvbnNlIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3RvY29sLWh0dHBcIjtcbmltcG9ydCB7IGJ1aWxkUXVlcnlTdHJpbmcgfSBmcm9tIFwiQGF3cy1zZGsvcXVlcnlzdHJpbmctYnVpbGRlclwiO1xuaW1wb3J0IHsgSHR0cEhhbmRsZXJPcHRpb25zIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5pbXBvcnQgeyBDbGllbnRIdHRwMlNlc3Npb24sIGNvbm5lY3QsIGNvbnN0YW50cyB9IGZyb20gXCJodHRwMlwiO1xuXG5pbXBvcnQgeyBnZXRUcmFuc2Zvcm1lZEhlYWRlcnMgfSBmcm9tIFwiLi9nZXQtdHJhbnNmb3JtZWQtaGVhZGVyc1wiO1xuaW1wb3J0IHsgd3JpdGVSZXF1ZXN0Qm9keSB9IGZyb20gXCIuL3dyaXRlLXJlcXVlc3QtYm9keVwiO1xuXG4vKipcbiAqIFJlcHJlc2VudHMgdGhlIGh0dHAyIG9wdGlvbnMgdGhhdCBjYW4gYmUgcGFzc2VkIHRvIGEgbm9kZSBodHRwMiBjbGllbnQuXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgTm9kZUh0dHAySGFuZGxlck9wdGlvbnMge1xuICAvKipcbiAgICogVGhlIG1heGltdW0gdGltZSBpbiBtaWxsaXNlY29uZHMgdGhhdCBhIHN0cmVhbSBtYXkgcmVtYWluIGlkbGUgYmVmb3JlIGl0XG4gICAqIGlzIGNsb3NlZC5cbiAgICovXG4gIHJlcXVlc3RUaW1lb3V0PzogbnVtYmVyO1xuXG4gIC8qKlxuICAgKiBUaGUgbWF4aW11bSB0aW1lIGluIG1pbGxpc2Vjb25kcyB0aGF0IGEgc2Vzc2lvbiBvciBzb2NrZXQgbWF5IHJlbWFpbiBpZGxlXG4gICAqIGJlZm9yZSBpdCBpcyBjbG9zZWQuXG4gICAqIGh0dHBzOi8vbm9kZWpzLm9yZy9kb2NzL2xhdGVzdC12MTIueC9hcGkvaHR0cDIuaHRtbCNodHRwMl9odHRwMnNlc3Npb25fYW5kX3NvY2tldHNcbiAgICovXG4gIHNlc3Npb25UaW1lb3V0PzogbnVtYmVyO1xufVxuXG5leHBvcnQgY2xhc3MgTm9kZUh0dHAySGFuZGxlciBpbXBsZW1lbnRzIEh0dHBIYW5kbGVyIHtcbiAgcHJpdmF0ZSByZWFkb25seSByZXF1ZXN0VGltZW91dD86IG51bWJlcjtcbiAgcHJpdmF0ZSByZWFkb25seSBzZXNzaW9uVGltZW91dD86IG51bWJlcjtcbiAgcHJpdmF0ZSByZWFkb25seSBjb25uZWN0aW9uUG9vbDogTWFwPHN0cmluZywgQ2xpZW50SHR0cDJTZXNzaW9uPjtcbiAgcHVibGljIHJlYWRvbmx5IG1ldGFkYXRhID0geyBoYW5kbGVyUHJvdG9jb2w6IFwiaDJcIiB9O1xuXG4gIGNvbnN0cnVjdG9yKHsgcmVxdWVzdFRpbWVvdXQsIHNlc3Npb25UaW1lb3V0IH06IE5vZGVIdHRwMkhhbmRsZXJPcHRpb25zID0ge30pIHtcbiAgICB0aGlzLnJlcXVlc3RUaW1lb3V0ID0gcmVxdWVzdFRpbWVvdXQ7XG4gICAgdGhpcy5zZXNzaW9uVGltZW91dCA9IHNlc3Npb25UaW1lb3V0O1xuICAgIHRoaXMuY29ubmVjdGlvblBvb2wgPSBuZXcgTWFwPHN0cmluZywgQ2xpZW50SHR0cDJTZXNzaW9uPigpO1xuICB9XG5cbiAgZGVzdHJveSgpOiB2b2lkIHtcbiAgICAvLyBlc2xpbnQtZGlzYWJsZS1uZXh0LWxpbmUgQHR5cGVzY3JpcHQtZXNsaW50L25vLXVudXNlZC12YXJzXG4gICAgZm9yIChjb25zdCBbXywgaHR0cDJTZXNzaW9uXSBvZiB0aGlzLmNvbm5lY3Rpb25Qb29sKSB7XG4gICAgICBodHRwMlNlc3Npb24uZGVzdHJveSgpO1xuICAgIH1cbiAgICB0aGlzLmNvbm5lY3Rpb25Qb29sLmNsZWFyKCk7XG4gIH1cblxuICBoYW5kbGUocmVxdWVzdDogSHR0cFJlcXVlc3QsIHsgYWJvcnRTaWduYWwgfTogSHR0cEhhbmRsZXJPcHRpb25zID0ge30pOiBQcm9taXNlPHsgcmVzcG9uc2U6IEh0dHBSZXNwb25zZSB9PiB7XG4gICAgcmV0dXJuIG5ldyBQcm9taXNlKChyZXNvbHZlLCByZWplY3RPcmlnaW5hbCkgPT4ge1xuICAgICAgLy8gSXQncyByZWR1bmRhbnQgdG8gdHJhY2sgZnVsZmlsbGVkIGJlY2F1c2UgcHJvbWlzZXMgdXNlIHRoZSBmaXJzdCByZXNvbHV0aW9uL3JlamVjdGlvblxuICAgICAgLy8gYnV0IGF2b2lkcyBnZW5lcmF0aW5nIHVubmVjZXNzYXJ5IHN0YWNrIHRyYWNlcyBpbiB0aGUgXCJjbG9zZVwiIGV2ZW50IGhhbmRsZXIuXG4gICAgICBsZXQgZnVsZmlsbGVkID0gZmFsc2U7XG4gICAgICBjb25zdCByZWplY3QgPSAoZXJyOiBFcnJvcikgPT4ge1xuICAgICAgICBmdWxmaWxsZWQgPSB0cnVlO1xuICAgICAgICByZWplY3RPcmlnaW5hbChlcnIpO1xuICAgICAgfTtcbiAgICAgIC8vIGlmIHRoZSByZXF1ZXN0IHdhcyBhbHJlYWR5IGFib3J0ZWQsIHByZXZlbnQgZG9pbmcgZXh0cmEgd29ya1xuICAgICAgaWYgKGFib3J0U2lnbmFsPy5hYm9ydGVkKSB7XG4gICAgICAgIGNvbnN0IGFib3J0RXJyb3IgPSBuZXcgRXJyb3IoXCJSZXF1ZXN0IGFib3J0ZWRcIik7XG4gICAgICAgIGFib3J0RXJyb3IubmFtZSA9IFwiQWJvcnRFcnJvclwiO1xuICAgICAgICByZWplY3QoYWJvcnRFcnJvcik7XG4gICAgICAgIHJldHVybjtcbiAgICAgIH1cblxuICAgICAgY29uc3QgeyBob3N0bmFtZSwgbWV0aG9kLCBwb3J0LCBwcm90b2NvbCwgcGF0aCwgcXVlcnkgfSA9IHJlcXVlc3Q7XG4gICAgICBjb25zdCBxdWVyeVN0cmluZyA9IGJ1aWxkUXVlcnlTdHJpbmcocXVlcnkgfHwge30pO1xuXG4gICAgICAvLyBjcmVhdGUgdGhlIGh0dHAyIHJlcXVlc3RcbiAgICAgIGNvbnN0IHJlcSA9IHRoaXMuZ2V0U2Vzc2lvbihgJHtwcm90b2NvbH0vLyR7aG9zdG5hbWV9JHtwb3J0ID8gYDoke3BvcnR9YCA6IFwiXCJ9YCkucmVxdWVzdCh7XG4gICAgICAgIC4uLnJlcXVlc3QuaGVhZGVycyxcbiAgICAgICAgW2NvbnN0YW50cy5IVFRQMl9IRUFERVJfUEFUSF06IHF1ZXJ5U3RyaW5nID8gYCR7cGF0aH0/JHtxdWVyeVN0cmluZ31gIDogcGF0aCxcbiAgICAgICAgW2NvbnN0YW50cy5IVFRQMl9IRUFERVJfTUVUSE9EXTogbWV0aG9kLFxuICAgICAgfSk7XG5cbiAgICAgIHJlcS5vbihcInJlc3BvbnNlXCIsIChoZWFkZXJzKSA9PiB7XG4gICAgICAgIGNvbnN0IGh0dHBSZXNwb25zZSA9IG5ldyBIdHRwUmVzcG9uc2Uoe1xuICAgICAgICAgIHN0YXR1c0NvZGU6IGhlYWRlcnNbXCI6c3RhdHVzXCJdIHx8IC0xLFxuICAgICAgICAgIGhlYWRlcnM6IGdldFRyYW5zZm9ybWVkSGVhZGVycyhoZWFkZXJzKSxcbiAgICAgICAgICBib2R5OiByZXEsXG4gICAgICAgIH0pO1xuICAgICAgICBmdWxmaWxsZWQgPSB0cnVlO1xuICAgICAgICByZXNvbHZlKHsgcmVzcG9uc2U6IGh0dHBSZXNwb25zZSB9KTtcbiAgICAgIH0pO1xuXG4gICAgICBjb25zdCByZXF1ZXN0VGltZW91dCA9IHRoaXMucmVxdWVzdFRpbWVvdXQ7XG4gICAgICBpZiAocmVxdWVzdFRpbWVvdXQpIHtcbiAgICAgICAgcmVxLnNldFRpbWVvdXQocmVxdWVzdFRpbWVvdXQsICgpID0+IHtcbiAgICAgICAgICByZXEuY2xvc2UoKTtcbiAgICAgICAgICBjb25zdCB0aW1lb3V0RXJyb3IgPSBuZXcgRXJyb3IoYFN0cmVhbSB0aW1lZCBvdXQgYmVjYXVzZSBvZiBubyBhY3Rpdml0eSBmb3IgJHtyZXF1ZXN0VGltZW91dH0gbXNgKTtcbiAgICAgICAgICB0aW1lb3V0RXJyb3IubmFtZSA9IFwiVGltZW91dEVycm9yXCI7XG4gICAgICAgICAgcmVqZWN0KHRpbWVvdXRFcnJvcik7XG4gICAgICAgIH0pO1xuICAgICAgfVxuXG4gICAgICBpZiAoYWJvcnRTaWduYWwpIHtcbiAgICAgICAgYWJvcnRTaWduYWwub25hYm9ydCA9ICgpID0+IHtcbiAgICAgICAgICByZXEuY2xvc2UoKTtcbiAgICAgICAgICBjb25zdCBhYm9ydEVycm9yID0gbmV3IEVycm9yKFwiUmVxdWVzdCBhYm9ydGVkXCIpO1xuICAgICAgICAgIGFib3J0RXJyb3IubmFtZSA9IFwiQWJvcnRFcnJvclwiO1xuICAgICAgICAgIHJlamVjdChhYm9ydEVycm9yKTtcbiAgICAgICAgfTtcbiAgICAgIH1cblxuICAgICAgLy8gU2V0IHVwIGhhbmRsZXJzIGZvciBlcnJvcnNcbiAgICAgIHJlcS5vbihcImZyYW1lRXJyb3JcIiwgcmVqZWN0KTtcbiAgICAgIHJlcS5vbihcImVycm9yXCIsIHJlamVjdCk7XG4gICAgICByZXEub24oXCJnb2F3YXlcIiwgcmVqZWN0KTtcbiAgICAgIHJlcS5vbihcImFib3J0ZWRcIiwgcmVqZWN0KTtcblxuICAgICAgLy8gVGhlIEhUVFAvMiBlcnJvciBjb2RlIHVzZWQgd2hlbiBjbG9zaW5nIHRoZSBzdHJlYW0gY2FuIGJlIHJldHJpZXZlZCB1c2luZyB0aGVcbiAgICAgIC8vIGh0dHAyc3RyZWFtLnJzdENvZGUgcHJvcGVydHkuIElmIHRoZSBjb2RlIGlzIGFueSB2YWx1ZSBvdGhlciB0aGFuIE5HSFRUUDJfTk9fRVJST1IgKDApLFxuICAgICAgLy8gYW4gJ2Vycm9yJyBldmVudCB3aWxsIGhhdmUgYWxzbyBiZWVuIGVtaXR0ZWQuXG4gICAgICByZXEub24oXCJjbG9zZVwiLCAoKSA9PiB7XG4gICAgICAgIGlmICghZnVsZmlsbGVkKSB7XG4gICAgICAgICAgcmVqZWN0KG5ldyBFcnJvcihcIlVuZXhwZWN0ZWQgZXJyb3I6IGh0dHAyIHJlcXVlc3QgZGlkIG5vdCBnZXQgYSByZXNwb25zZVwiKSk7XG4gICAgICAgIH1cbiAgICAgIH0pO1xuICAgICAgd3JpdGVSZXF1ZXN0Qm9keShyZXEsIHJlcXVlc3QpO1xuICAgIH0pO1xuICB9XG5cbiAgcHJpdmF0ZSBnZXRTZXNzaW9uKGF1dGhvcml0eTogc3RyaW5nKTogQ2xpZW50SHR0cDJTZXNzaW9uIHtcbiAgICBjb25zdCBjb25uZWN0aW9uUG9vbCA9IHRoaXMuY29ubmVjdGlvblBvb2w7XG4gICAgY29uc3QgZXhpc3RpbmdTZXNzaW9uID0gY29ubmVjdGlvblBvb2wuZ2V0KGF1dGhvcml0eSk7XG4gICAgaWYgKGV4aXN0aW5nU2Vzc2lvbikgcmV0dXJuIGV4aXN0aW5nU2Vzc2lvbjtcblxuICAgIGNvbnN0IG5ld1Nlc3Npb24gPSBjb25uZWN0KGF1dGhvcml0eSk7XG4gICAgY29ubmVjdGlvblBvb2wuc2V0KGF1dGhvcml0eSwgbmV3U2Vzc2lvbik7XG4gICAgY29uc3QgZGVzdHJveVNlc3Npb25DYiA9ICgpID0+IHtcbiAgICAgIHRoaXMuZGVzdHJveVNlc3Npb24oYXV0aG9yaXR5LCBuZXdTZXNzaW9uKTtcbiAgICB9O1xuICAgIG5ld1Nlc3Npb24ub24oXCJnb2F3YXlcIiwgZGVzdHJveVNlc3Npb25DYik7XG4gICAgbmV3U2Vzc2lvbi5vbihcImVycm9yXCIsIGRlc3Ryb3lTZXNzaW9uQ2IpO1xuICAgIG5ld1Nlc3Npb24ub24oXCJmcmFtZUVycm9yXCIsIGRlc3Ryb3lTZXNzaW9uQ2IpO1xuXG4gICAgY29uc3Qgc2Vzc2lvblRpbWVvdXQgPSB0aGlzLnNlc3Npb25UaW1lb3V0O1xuICAgIGlmIChzZXNzaW9uVGltZW91dCkge1xuICAgICAgbmV3U2Vzc2lvbi5zZXRUaW1lb3V0KHNlc3Npb25UaW1lb3V0LCAoKSA9PiB7XG4gICAgICAgIGlmIChjb25uZWN0aW9uUG9vbC5nZXQoYXV0aG9yaXR5KSA9PT0gbmV3U2Vzc2lvbikge1xuICAgICAgICAgIG5ld1Nlc3Npb24uY2xvc2UoKTtcbiAgICAgICAgICBjb25uZWN0aW9uUG9vbC5kZWxldGUoYXV0aG9yaXR5KTtcbiAgICAgICAgfVxuICAgICAgfSk7XG4gICAgfVxuICAgIHJldHVybiBuZXdTZXNzaW9uO1xuICB9XG5cbiAgLyoqXG4gICAqIERlc3Ryb3kgYSBzZXNzaW9uIGltbWVkaWF0ZWx5IGFuZCByZW1vdmUgaXQgZnJvbSB0aGUgaHR0cDIgcG9vbC5cbiAgICpcbiAgICogVGhpcyBjaGVjayBlbnN1cmVzIHRoYXQgdGhlIHNlc3Npb24gaXMgb25seSBjbG9zZWQgb25jZVxuICAgKiBhbmQgdGhhdCBhbiBldmVudCBvbiBvbmUgc2Vzc2lvbiBkb2VzIG5vdCBjbG9zZSBhIGRpZmZlcmVudCBzZXNzaW9uLlxuICAgKi9cbiAgcHJpdmF0ZSBkZXN0cm95U2Vzc2lvbihhdXRob3JpdHk6IHN0cmluZywgc2Vzc2lvbjogQ2xpZW50SHR0cDJTZXNzaW9uKTogdm9pZCB7XG4gICAgaWYgKHRoaXMuY29ubmVjdGlvblBvb2wuZ2V0KGF1dGhvcml0eSkgIT09IHNlc3Npb24pIHtcbiAgICAgIC8vIEFscmVhZHkgY2xvc2VkP1xuICAgICAgcmV0dXJuO1xuICAgIH1cbiAgICB0aGlzLmNvbm5lY3Rpb25Qb29sLmRlbGV0ZShhdXRob3JpdHkpO1xuICAgIHNlc3Npb24ucmVtb3ZlQWxsTGlzdGVuZXJzKFwiZ29hd2F5XCIpO1xuICAgIHNlc3Npb24ucmVtb3ZlQWxsTGlzdGVuZXJzKFwiZXJyb3JcIik7XG4gICAgc2Vzc2lvbi5yZW1vdmVBbGxMaXN0ZW5lcnMoXCJmcmFtZUVycm9yXCIpO1xuICAgIGlmICghc2Vzc2lvbi5kZXN0cm95ZWQpIHtcbiAgICAgIHNlc3Npb24uZGVzdHJveSgpO1xuICAgIH1cbiAgfVxufVxuIl19
 
 /***/ }),
 
@@ -25061,7 +26763,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2RrLWVycm9yLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3Nkay1lcnJvci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTWV0YWRhdGFCZWFyZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuaW1wb3J0IHsgU21pdGh5RXhjZXB0aW9uIH0gZnJvbSBcIi4vZXhjZXB0aW9uXCI7XG5cbmV4cG9ydCB0eXBlIFNka0Vycm9yID0gRXJyb3IgJiBTbWl0aHlFeGNlcHRpb24gJiBNZXRhZGF0YUJlYXJlcjtcbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2RrLWVycm9yLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3Nkay1lcnJvci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTWV0YWRhdGFCZWFyZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuaW1wb3J0IHsgU21pdGh5RXhjZXB0aW9uIH0gZnJvbSBcIi4vZXhjZXB0aW9uXCI7XG5cbmV4cG9ydCB0eXBlIFNka0Vycm9yID0gRXJyb3IgJiBQYXJ0aWFsPFNtaXRoeUV4Y2VwdGlvbj4gJiBQYXJ0aWFsPE1ldGFkYXRhQmVhcmVyPjtcbiJdfQ==
 
 /***/ }),
 
@@ -25444,10 +27146,13 @@ const createWaiter = async (options, input, acceptorChecks) => {
     if (options.abortController) {
         exitConditions.push(abortTimeout(options.abortController.signal));
     }
+    if (options.abortSignal) {
+        exitConditions.push(abortTimeout(options.abortSignal));
+    }
     return Promise.race(exitConditions);
 };
 exports.createWaiter = createWaiter;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY3JlYXRlV2FpdGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2NyZWF0ZVdhaXRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFFQSxxQ0FBc0M7QUFDdEMsbUNBQWdEO0FBQ2hELHFDQUEyRjtBQUUzRixNQUFNLFlBQVksR0FBRyxLQUFLLEVBQUUsV0FBd0IsRUFBeUIsRUFBRTtJQUM3RSxPQUFPLElBQUksT0FBTyxDQUFDLENBQUMsT0FBTyxFQUFFLEVBQUU7UUFDN0IsV0FBVyxDQUFDLE9BQU8sR0FBRyxHQUFHLEVBQUUsQ0FBQyxPQUFPLENBQUMsRUFBRSxLQUFLLEVBQUUsb0JBQVcsQ0FBQyxPQUFPLEVBQUUsQ0FBQyxDQUFDO0lBQ3RFLENBQUMsQ0FBQyxDQUFDO0FBQ0wsQ0FBQyxDQUFDO0FBRUY7Ozs7Ozs7O0dBUUc7QUFDSSxNQUFNLFlBQVksR0FBRyxLQUFLLEVBQy9CLE9BQThCLEVBQzlCLEtBQVksRUFDWixjQUF1RSxFQUNoRCxFQUFFO0lBQ3pCLE1BQU0sTUFBTSxHQUFHO1FBQ2IsR0FBRyw4QkFBcUI7UUFDeEIsR0FBRyxPQUFPO0tBQ1gsQ0FBQztJQUNGLDZCQUFxQixDQUFDLE1BQU0sQ0FBQyxDQUFDO0lBRTlCLE1BQU0sY0FBYyxHQUFHLENBQUMsbUJBQVUsQ0FBZ0IsTUFBTSxFQUFFLEtBQUssRUFBRSxjQUFjLENBQUMsQ0FBQyxDQUFDO0lBQ2xGLElBQUksT0FBTyxDQUFDLGVBQWUsRUFBRTtRQUMzQixjQUFjLENBQUMsSUFBSSxDQUFDLFlBQVksQ0FBQyxPQUFPLENBQUMsZUFBZSxDQUFDLE1BQU0sQ0FBQyxDQUFDLENBQUM7S0FDbkU7SUFDRCxPQUFPLE9BQU8sQ0FBQyxJQUFJLENBQUMsY0FBYyxDQUFDLENBQUM7QUFDdEMsQ0FBQyxDQUFDO0FBaEJXLFFBQUEsWUFBWSxnQkFnQnZCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQWJvcnRTaWduYWwgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuaW1wb3J0IHsgcnVuUG9sbGluZyB9IGZyb20gXCIuL3BvbGxlclwiO1xuaW1wb3J0IHsgdmFsaWRhdGVXYWl0ZXJPcHRpb25zIH0gZnJvbSBcIi4vdXRpbHNcIjtcbmltcG9ydCB7IFdhaXRlck9wdGlvbnMsIFdhaXRlclJlc3VsdCwgd2FpdGVyU2VydmljZURlZmF1bHRzLCBXYWl0ZXJTdGF0ZSB9IGZyb20gXCIuL3dhaXRlclwiO1xuXG5jb25zdCBhYm9ydFRpbWVvdXQgPSBhc3luYyAoYWJvcnRTaWduYWw6IEFib3J0U2lnbmFsKTogUHJvbWlzZTxXYWl0ZXJSZXN1bHQ+ID0+IHtcbiAgcmV0dXJuIG5ldyBQcm9taXNlKChyZXNvbHZlKSA9PiB7XG4gICAgYWJvcnRTaWduYWwub25hYm9ydCA9ICgpID0+IHJlc29sdmUoeyBzdGF0ZTogV2FpdGVyU3RhdGUuQUJPUlRFRCB9KTtcbiAgfSk7XG59O1xuXG4vKipcbiAqIENyZWF0ZSBhIHdhaXRlciBwcm9taXNlIHRoYXQgb25seSByZXNvbHZlcyB3aGVuOlxuICogMS4gQWJvcnQgY29udHJvbGxlciBpcyBzaWduYWxlZFxuICogMi4gTWF4IHdhaXQgdGltZSBpcyByZWFjaGVkXG4gKiAzLiBgYWNjZXB0b3JDaGVja3NgIHN1Y2NlZWRzLCBvciBmYWlsc1xuICogT3RoZXJ3aXNlLCBpdCBpbnZva2VzIGBhY2NlcHRvckNoZWNrc2Agd2l0aCBleHBvbmVudGlhbC1iYWNrb2ZmIGRlbGF5LlxuICpcbiAqIEBpbnRlcm5hbFxuICovXG5leHBvcnQgY29uc3QgY3JlYXRlV2FpdGVyID0gYXN5bmMgPENsaWVudCwgSW5wdXQ+KFxuICBvcHRpb25zOiBXYWl0ZXJPcHRpb25zPENsaWVudD4sXG4gIGlucHV0OiBJbnB1dCxcbiAgYWNjZXB0b3JDaGVja3M6IChjbGllbnQ6IENsaWVudCwgaW5wdXQ6IElucHV0KSA9PiBQcm9taXNlPFdhaXRlclJlc3VsdD5cbik6IFByb21pc2U8V2FpdGVyUmVzdWx0PiA9PiB7XG4gIGNvbnN0IHBhcmFtcyA9IHtcbiAgICAuLi53YWl0ZXJTZXJ2aWNlRGVmYXVsdHMsXG4gICAgLi4ub3B0aW9ucyxcbiAgfTtcbiAgdmFsaWRhdGVXYWl0ZXJPcHRpb25zKHBhcmFtcyk7XG5cbiAgY29uc3QgZXhpdENvbmRpdGlvbnMgPSBbcnVuUG9sbGluZzxDbGllbnQsIElucHV0PihwYXJhbXMsIGlucHV0LCBhY2NlcHRvckNoZWNrcyldO1xuICBpZiAob3B0aW9ucy5hYm9ydENvbnRyb2xsZXIpIHtcbiAgICBleGl0Q29uZGl0aW9ucy5wdXNoKGFib3J0VGltZW91dChvcHRpb25zLmFib3J0Q29udHJvbGxlci5zaWduYWwpKTtcbiAgfVxuICByZXR1cm4gUHJvbWlzZS5yYWNlKGV4aXRDb25kaXRpb25zKTtcbn07XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY3JlYXRlV2FpdGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2NyZWF0ZVdhaXRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFFQSxxQ0FBc0M7QUFDdEMsbUNBQWdEO0FBQ2hELHFDQUEyRjtBQUUzRixNQUFNLFlBQVksR0FBRyxLQUFLLEVBQUUsV0FBd0IsRUFBeUIsRUFBRTtJQUM3RSxPQUFPLElBQUksT0FBTyxDQUFDLENBQUMsT0FBTyxFQUFFLEVBQUU7UUFDN0IsV0FBVyxDQUFDLE9BQU8sR0FBRyxHQUFHLEVBQUUsQ0FBQyxPQUFPLENBQUMsRUFBRSxLQUFLLEVBQUUsb0JBQVcsQ0FBQyxPQUFPLEVBQUUsQ0FBQyxDQUFDO0lBQ3RFLENBQUMsQ0FBQyxDQUFDO0FBQ0wsQ0FBQyxDQUFDO0FBRUY7Ozs7Ozs7O0dBUUc7QUFDSSxNQUFNLFlBQVksR0FBRyxLQUFLLEVBQy9CLE9BQThCLEVBQzlCLEtBQVksRUFDWixjQUF1RSxFQUNoRCxFQUFFO0lBQ3pCLE1BQU0sTUFBTSxHQUFHO1FBQ2IsR0FBRyw4QkFBcUI7UUFDeEIsR0FBRyxPQUFPO0tBQ1gsQ0FBQztJQUNGLDZCQUFxQixDQUFDLE1BQU0sQ0FBQyxDQUFDO0lBRTlCLE1BQU0sY0FBYyxHQUFHLENBQUMsbUJBQVUsQ0FBZ0IsTUFBTSxFQUFFLEtBQUssRUFBRSxjQUFjLENBQUMsQ0FBQyxDQUFDO0lBQ2xGLElBQUksT0FBTyxDQUFDLGVBQWUsRUFBRTtRQUMzQixjQUFjLENBQUMsSUFBSSxDQUFDLFlBQVksQ0FBQyxPQUFPLENBQUMsZUFBZSxDQUFDLE1BQU0sQ0FBQyxDQUFDLENBQUM7S0FDbkU7SUFFRCxJQUFJLE9BQU8sQ0FBQyxXQUFXLEVBQUU7UUFDdkIsY0FBYyxDQUFDLElBQUksQ0FBQyxZQUFZLENBQUMsT0FBTyxDQUFDLFdBQVcsQ0FBQyxDQUFDLENBQUM7S0FDeEQ7SUFFRCxPQUFPLE9BQU8sQ0FBQyxJQUFJLENBQUMsY0FBYyxDQUFDLENBQUM7QUFDdEMsQ0FBQyxDQUFDO0FBckJXLFFBQUEsWUFBWSxnQkFxQnZCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQWJvcnRTaWduYWwgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuaW1wb3J0IHsgcnVuUG9sbGluZyB9IGZyb20gXCIuL3BvbGxlclwiO1xuaW1wb3J0IHsgdmFsaWRhdGVXYWl0ZXJPcHRpb25zIH0gZnJvbSBcIi4vdXRpbHNcIjtcbmltcG9ydCB7IFdhaXRlck9wdGlvbnMsIFdhaXRlclJlc3VsdCwgd2FpdGVyU2VydmljZURlZmF1bHRzLCBXYWl0ZXJTdGF0ZSB9IGZyb20gXCIuL3dhaXRlclwiO1xuXG5jb25zdCBhYm9ydFRpbWVvdXQgPSBhc3luYyAoYWJvcnRTaWduYWw6IEFib3J0U2lnbmFsKTogUHJvbWlzZTxXYWl0ZXJSZXN1bHQ+ID0+IHtcbiAgcmV0dXJuIG5ldyBQcm9taXNlKChyZXNvbHZlKSA9PiB7XG4gICAgYWJvcnRTaWduYWwub25hYm9ydCA9ICgpID0+IHJlc29sdmUoeyBzdGF0ZTogV2FpdGVyU3RhdGUuQUJPUlRFRCB9KTtcbiAgfSk7XG59O1xuXG4vKipcbiAqIENyZWF0ZSBhIHdhaXRlciBwcm9taXNlIHRoYXQgb25seSByZXNvbHZlcyB3aGVuOlxuICogMS4gQWJvcnQgY29udHJvbGxlciBpcyBzaWduYWxlZFxuICogMi4gTWF4IHdhaXQgdGltZSBpcyByZWFjaGVkXG4gKiAzLiBgYWNjZXB0b3JDaGVja3NgIHN1Y2NlZWRzLCBvciBmYWlsc1xuICogT3RoZXJ3aXNlLCBpdCBpbnZva2VzIGBhY2NlcHRvckNoZWNrc2Agd2l0aCBleHBvbmVudGlhbC1iYWNrb2ZmIGRlbGF5LlxuICpcbiAqIEBpbnRlcm5hbFxuICovXG5leHBvcnQgY29uc3QgY3JlYXRlV2FpdGVyID0gYXN5bmMgPENsaWVudCwgSW5wdXQ+KFxuICBvcHRpb25zOiBXYWl0ZXJPcHRpb25zPENsaWVudD4sXG4gIGlucHV0OiBJbnB1dCxcbiAgYWNjZXB0b3JDaGVja3M6IChjbGllbnQ6IENsaWVudCwgaW5wdXQ6IElucHV0KSA9PiBQcm9taXNlPFdhaXRlclJlc3VsdD5cbik6IFByb21pc2U8V2FpdGVyUmVzdWx0PiA9PiB7XG4gIGNvbnN0IHBhcmFtcyA9IHtcbiAgICAuLi53YWl0ZXJTZXJ2aWNlRGVmYXVsdHMsXG4gICAgLi4ub3B0aW9ucyxcbiAgfTtcbiAgdmFsaWRhdGVXYWl0ZXJPcHRpb25zKHBhcmFtcyk7XG5cbiAgY29uc3QgZXhpdENvbmRpdGlvbnMgPSBbcnVuUG9sbGluZzxDbGllbnQsIElucHV0PihwYXJhbXMsIGlucHV0LCBhY2NlcHRvckNoZWNrcyldO1xuICBpZiAob3B0aW9ucy5hYm9ydENvbnRyb2xsZXIpIHtcbiAgICBleGl0Q29uZGl0aW9ucy5wdXNoKGFib3J0VGltZW91dChvcHRpb25zLmFib3J0Q29udHJvbGxlci5zaWduYWwpKTtcbiAgfVxuXG4gIGlmIChvcHRpb25zLmFib3J0U2lnbmFsKSB7XG4gICAgZXhpdENvbmRpdGlvbnMucHVzaChhYm9ydFRpbWVvdXQob3B0aW9ucy5hYm9ydFNpZ25hbCkpO1xuICB9XG5cbiAgcmV0dXJuIFByb21pc2UucmFjZShleGl0Q29uZGl0aW9ucyk7XG59O1xuIl19
 
 /***/ }),
 
@@ -25491,7 +27196,7 @@ const randomInRange = (min, max) => min + Math.random() * (max - min);
  * @param input client input
  * @param stateChecker function that checks the acceptor states on each poll.
  */
-const runPolling = async ({ minDelay, maxDelay, maxWaitTime, abortController, client }, input, acceptorChecks) => {
+const runPolling = async ({ minDelay, maxDelay, maxWaitTime, abortController, client, abortSignal }, input, acceptorChecks) => {
     var _a;
     const { state } = await acceptorChecks(client, input);
     if (state !== waiter_1.WaiterState.RETRY) {
@@ -25503,7 +27208,7 @@ const runPolling = async ({ minDelay, maxDelay, maxWaitTime, abortController, cl
     // Pre-compute this number to avoid Number type overflow.
     const attemptCeiling = Math.log(maxDelay / minDelay) / Math.log(2) + 1;
     while (true) {
-        if ((_a = abortController === null || abortController === void 0 ? void 0 : abortController.signal) === null || _a === void 0 ? void 0 : _a.aborted) {
+        if (((_a = abortController === null || abortController === void 0 ? void 0 : abortController.signal) === null || _a === void 0 ? void 0 : _a.aborted) || (abortSignal === null || abortSignal === void 0 ? void 0 : abortSignal.aborted)) {
             return { state: waiter_1.WaiterState.ABORTED };
         }
         const delay = exponentialBackoffWithJitter(minDelay, maxDelay, attemptCeiling, currentAttempt);
@@ -25521,7 +27226,7 @@ const runPolling = async ({ minDelay, maxDelay, maxWaitTime, abortController, cl
     }
 };
 exports.runPolling = runPolling;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicG9sbGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3BvbGxlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSx5Q0FBc0M7QUFDdEMscUNBQW9FO0FBRXBFOztHQUVHO0FBQ0gsTUFBTSw0QkFBNEIsR0FBRyxDQUFDLFFBQWdCLEVBQUUsUUFBZ0IsRUFBRSxjQUFzQixFQUFFLE9BQWUsRUFBRSxFQUFFO0lBQ25ILElBQUksT0FBTyxHQUFHLGNBQWM7UUFBRSxPQUFPLFFBQVEsQ0FBQztJQUM5QyxNQUFNLEtBQUssR0FBRyxRQUFRLEdBQUcsQ0FBQyxJQUFJLENBQUMsT0FBTyxHQUFHLENBQUMsQ0FBQyxDQUFDO0lBQzVDLE9BQU8sYUFBYSxDQUFDLFFBQVEsRUFBRSxLQUFLLENBQUMsQ0FBQztBQUN4QyxDQUFDLENBQUM7QUFFRixNQUFNLGFBQWEsR0FBRyxDQUFDLEdBQVcsRUFBRSxHQUFXLEVBQUUsRUFBRSxDQUFDLEdBQUcsR0FBRyxJQUFJLENBQUMsTUFBTSxFQUFFLEdBQUcsQ0FBQyxHQUFHLEdBQUcsR0FBRyxDQUFDLENBQUM7QUFFdEY7Ozs7Ozs7R0FPRztBQUNJLE1BQU0sVUFBVSxHQUFHLEtBQUssRUFDN0IsRUFBRSxRQUFRLEVBQUUsUUFBUSxFQUFFLFdBQVcsRUFBRSxlQUFlLEVBQUUsTUFBTSxFQUF5QixFQUNuRixLQUFZLEVBQ1osY0FBdUUsRUFDaEQsRUFBRTs7SUFDekIsTUFBTSxFQUFFLEtBQUssRUFBRSxHQUFHLE1BQU0sY0FBYyxDQUFDLE1BQU0sRUFBRSxLQUFLLENBQUMsQ0FBQztJQUN0RCxJQUFJLEtBQUssS0FBSyxvQkFBVyxDQUFDLEtBQUssRUFBRTtRQUMvQixPQUFPLEVBQUUsS0FBSyxFQUFFLENBQUM7S0FDbEI7SUFFRCxJQUFJLGNBQWMsR0FBRyxDQUFDLENBQUM7SUFDdkIsTUFBTSxTQUFTLEdBQUcsSUFBSSxDQUFDLEdBQUcsRUFBRSxHQUFHLFdBQVcsR0FBRyxJQUFJLENBQUM7SUFDbEQsdUVBQXVFO0lBQ3ZFLHlEQUF5RDtJQUN6RCxNQUFNLGNBQWMsR0FBRyxJQUFJLENBQUMsR0FBRyxDQUFDLFFBQVEsR0FBRyxRQUFRLENBQUMsR0FBRyxJQUFJLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FBQztJQUN2RSxPQUFPLElBQUksRUFBRTtRQUNYLElBQUksTUFBQSxlQUFlLGFBQWYsZUFBZSx1QkFBZixlQUFlLENBQUUsTUFBTSwwQ0FBRSxPQUFPLEVBQUU7WUFDcEMsT0FBTyxFQUFFLEtBQUssRUFBRSxvQkFBVyxDQUFDLE9BQU8sRUFBRSxDQUFDO1NBQ3ZDO1FBQ0QsTUFBTSxLQUFLLEdBQUcsNEJBQTRCLENBQUMsUUFBUSxFQUFFLFFBQVEsRUFBRSxjQUFjLEVBQUUsY0FBYyxDQUFDLENBQUM7UUFDL0Ysa0hBQWtIO1FBQ2xILGtGQUFrRjtRQUNsRixJQUFJLElBQUksQ0FBQyxHQUFHLEVBQUUsR0FBRyxLQUFLLEdBQUcsSUFBSSxHQUFHLFNBQVMsRUFBRTtZQUN6QyxPQUFPLEVBQUUsS0FBSyxFQUFFLG9CQUFXLENBQUMsT0FBTyxFQUFFLENBQUM7U0FDdkM7UUFDRCxNQUFNLGFBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQztRQUNuQixNQUFNLEVBQUUsS0FBSyxFQUFFLEdBQUcsTUFBTSxjQUFjLENBQUMsTUFBTSxFQUFFLEtBQUssQ0FBQyxDQUFDO1FBQ3RELElBQUksS0FBSyxLQUFLLG9CQUFXLENBQUMsS0FBSyxFQUFFO1lBQy9CLE9BQU8sRUFBRSxLQUFLLEVBQUUsQ0FBQztTQUNsQjtRQUVELGNBQWMsSUFBSSxDQUFDLENBQUM7S0FDckI7QUFDSCxDQUFDLENBQUM7QUFqQ1csUUFBQSxVQUFVLGNBaUNyQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IHNsZWVwIH0gZnJvbSBcIi4vdXRpbHMvc2xlZXBcIjtcbmltcG9ydCB7IFdhaXRlck9wdGlvbnMsIFdhaXRlclJlc3VsdCwgV2FpdGVyU3RhdGUgfSBmcm9tIFwiLi93YWl0ZXJcIjtcblxuLyoqXG4gKiBSZWZlcmVuY2U6IGh0dHBzOi8vYXdzbGFicy5naXRodWIuaW8vc21pdGh5LzEuMC9zcGVjL3dhaXRlcnMuaHRtbCN3YWl0ZXItcmV0cmllc1xuICovXG5jb25zdCBleHBvbmVudGlhbEJhY2tvZmZXaXRoSml0dGVyID0gKG1pbkRlbGF5OiBudW1iZXIsIG1heERlbGF5OiBudW1iZXIsIGF0dGVtcHRDZWlsaW5nOiBudW1iZXIsIGF0dGVtcHQ6IG51bWJlcikgPT4ge1xuICBpZiAoYXR0ZW1wdCA+IGF0dGVtcHRDZWlsaW5nKSByZXR1cm4gbWF4RGVsYXk7XG4gIGNvbnN0IGRlbGF5ID0gbWluRGVsYXkgKiAyICoqIChhdHRlbXB0IC0gMSk7XG4gIHJldHVybiByYW5kb21JblJhbmdlKG1pbkRlbGF5LCBkZWxheSk7XG59O1xuXG5jb25zdCByYW5kb21JblJhbmdlID0gKG1pbjogbnVtYmVyLCBtYXg6IG51bWJlcikgPT4gbWluICsgTWF0aC5yYW5kb20oKSAqIChtYXggLSBtaW4pO1xuXG4vKipcbiAqIEZ1bmN0aW9uIHRoYXQgcnVucyBwb2xsaW5nIGFzIHBhcnQgb2Ygd2FpdGVycy4gVGhpcyB3aWxsIG1ha2Ugb25lIGluaXRhbCBhdHRlbXB0IGFuZCB0aGVuXG4gKiBzdWJzZXF1ZW50IGF0dGVtcHRzIHdpdGggYW4gaW5jcmVhc2luZyBkZWxheS5cbiAqIEBwYXJhbSBwYXJhbXMgb3B0aW9ucyBwYXNzZWQgdG8gdGhlIHdhaXRlci5cbiAqIEBwYXJhbSBjbGllbnQgQVdTIFNESyBDbGllbnRcbiAqIEBwYXJhbSBpbnB1dCBjbGllbnQgaW5wdXRcbiAqIEBwYXJhbSBzdGF0ZUNoZWNrZXIgZnVuY3Rpb24gdGhhdCBjaGVja3MgdGhlIGFjY2VwdG9yIHN0YXRlcyBvbiBlYWNoIHBvbGwuXG4gKi9cbmV4cG9ydCBjb25zdCBydW5Qb2xsaW5nID0gYXN5bmMgPENsaWVudCwgSW5wdXQ+KFxuICB7IG1pbkRlbGF5LCBtYXhEZWxheSwgbWF4V2FpdFRpbWUsIGFib3J0Q29udHJvbGxlciwgY2xpZW50IH06IFdhaXRlck9wdGlvbnM8Q2xpZW50PixcbiAgaW5wdXQ6IElucHV0LFxuICBhY2NlcHRvckNoZWNrczogKGNsaWVudDogQ2xpZW50LCBpbnB1dDogSW5wdXQpID0+IFByb21pc2U8V2FpdGVyUmVzdWx0PlxuKTogUHJvbWlzZTxXYWl0ZXJSZXN1bHQ+ID0+IHtcbiAgY29uc3QgeyBzdGF0ZSB9ID0gYXdhaXQgYWNjZXB0b3JDaGVja3MoY2xpZW50LCBpbnB1dCk7XG4gIGlmIChzdGF0ZSAhPT0gV2FpdGVyU3RhdGUuUkVUUlkpIHtcbiAgICByZXR1cm4geyBzdGF0ZSB9O1xuICB9XG5cbiAgbGV0IGN1cnJlbnRBdHRlbXB0ID0gMTtcbiAgY29uc3Qgd2FpdFVudGlsID0gRGF0ZS5ub3coKSArIG1heFdhaXRUaW1lICogMTAwMDtcbiAgLy8gVGhlIG1heCBhdHRlbXB0IG51bWJlciB0aGF0IHRoZSBkZXJpdmVkIGRlbGF5IHRpbWUgdGVuZCB0byBpbmNyZWFzZS5cbiAgLy8gUHJlLWNvbXB1dGUgdGhpcyBudW1iZXIgdG8gYXZvaWQgTnVtYmVyIHR5cGUgb3ZlcmZsb3cuXG4gIGNvbnN0IGF0dGVtcHRDZWlsaW5nID0gTWF0aC5sb2cobWF4RGVsYXkgLyBtaW5EZWxheSkgLyBNYXRoLmxvZygyKSArIDE7XG4gIHdoaWxlICh0cnVlKSB7XG4gICAgaWYgKGFib3J0Q29udHJvbGxlcj8uc2lnbmFsPy5hYm9ydGVkKSB7XG4gICAgICByZXR1cm4geyBzdGF0ZTogV2FpdGVyU3RhdGUuQUJPUlRFRCB9O1xuICAgIH1cbiAgICBjb25zdCBkZWxheSA9IGV4cG9uZW50aWFsQmFja29mZldpdGhKaXR0ZXIobWluRGVsYXksIG1heERlbGF5LCBhdHRlbXB0Q2VpbGluZywgY3VycmVudEF0dGVtcHQpO1xuICAgIC8vIFJlc29sdmUgdGhlIHByb21pc2UgZXhwbGljaXRseSBhdCB0aW1lb3V0IG9yIGFib3J0ZWQuIE90aGVyd2lzZSB0aGlzIHdoaWxlIGxvb3Agd2lsbCBrZWVwIG1ha2luZyBBUEkgY2FsbCB1bnRpbFxuICAgIC8vIGBhY2NlcHRvckNoZWNrYCByZXR1cm5zIG5vbi1yZXRyeSBzdGF0dXMsIGV2ZW4gd2l0aCB0aGUgUHJvbWlzZS5yYWNlKCkgb3V0c2lkZS5cbiAgICBpZiAoRGF0ZS5ub3coKSArIGRlbGF5ICogMTAwMCA+IHdhaXRVbnRpbCkge1xuICAgICAgcmV0dXJuIHsgc3RhdGU6IFdhaXRlclN0YXRlLlRJTUVPVVQgfTtcbiAgICB9XG4gICAgYXdhaXQgc2xlZXAoZGVsYXkpO1xuICAgIGNvbnN0IHsgc3RhdGUgfSA9IGF3YWl0IGFjY2VwdG9yQ2hlY2tzKGNsaWVudCwgaW5wdXQpO1xuICAgIGlmIChzdGF0ZSAhPT0gV2FpdGVyU3RhdGUuUkVUUlkpIHtcbiAgICAgIHJldHVybiB7IHN0YXRlIH07XG4gICAgfVxuXG4gICAgY3VycmVudEF0dGVtcHQgKz0gMTtcbiAgfVxufTtcbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicG9sbGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3BvbGxlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSx5Q0FBc0M7QUFDdEMscUNBQW9FO0FBRXBFOztHQUVHO0FBQ0gsTUFBTSw0QkFBNEIsR0FBRyxDQUFDLFFBQWdCLEVBQUUsUUFBZ0IsRUFBRSxjQUFzQixFQUFFLE9BQWUsRUFBRSxFQUFFO0lBQ25ILElBQUksT0FBTyxHQUFHLGNBQWM7UUFBRSxPQUFPLFFBQVEsQ0FBQztJQUM5QyxNQUFNLEtBQUssR0FBRyxRQUFRLEdBQUcsQ0FBQyxJQUFJLENBQUMsT0FBTyxHQUFHLENBQUMsQ0FBQyxDQUFDO0lBQzVDLE9BQU8sYUFBYSxDQUFDLFFBQVEsRUFBRSxLQUFLLENBQUMsQ0FBQztBQUN4QyxDQUFDLENBQUM7QUFFRixNQUFNLGFBQWEsR0FBRyxDQUFDLEdBQVcsRUFBRSxHQUFXLEVBQUUsRUFBRSxDQUFDLEdBQUcsR0FBRyxJQUFJLENBQUMsTUFBTSxFQUFFLEdBQUcsQ0FBQyxHQUFHLEdBQUcsR0FBRyxDQUFDLENBQUM7QUFFdEY7Ozs7Ozs7R0FPRztBQUNJLE1BQU0sVUFBVSxHQUFHLEtBQUssRUFDN0IsRUFBRSxRQUFRLEVBQUUsUUFBUSxFQUFFLFdBQVcsRUFBRSxlQUFlLEVBQUUsTUFBTSxFQUFFLFdBQVcsRUFBeUIsRUFDaEcsS0FBWSxFQUNaLGNBQXVFLEVBQ2hELEVBQUU7O0lBQ3pCLE1BQU0sRUFBRSxLQUFLLEVBQUUsR0FBRyxNQUFNLGNBQWMsQ0FBQyxNQUFNLEVBQUUsS0FBSyxDQUFDLENBQUM7SUFDdEQsSUFBSSxLQUFLLEtBQUssb0JBQVcsQ0FBQyxLQUFLLEVBQUU7UUFDL0IsT0FBTyxFQUFFLEtBQUssRUFBRSxDQUFDO0tBQ2xCO0lBRUQsSUFBSSxjQUFjLEdBQUcsQ0FBQyxDQUFDO0lBQ3ZCLE1BQU0sU0FBUyxHQUFHLElBQUksQ0FBQyxHQUFHLEVBQUUsR0FBRyxXQUFXLEdBQUcsSUFBSSxDQUFDO0lBQ2xELHVFQUF1RTtJQUN2RSx5REFBeUQ7SUFDekQsTUFBTSxjQUFjLEdBQUcsSUFBSSxDQUFDLEdBQUcsQ0FBQyxRQUFRLEdBQUcsUUFBUSxDQUFDLEdBQUcsSUFBSSxDQUFDLEdBQUcsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQUM7SUFDdkUsT0FBTyxJQUFJLEVBQUU7UUFDWCxJQUFJLENBQUEsTUFBQSxlQUFlLGFBQWYsZUFBZSx1QkFBZixlQUFlLENBQUUsTUFBTSwwQ0FBRSxPQUFPLE1BQUksV0FBVyxhQUFYLFdBQVcsdUJBQVgsV0FBVyxDQUFFLE9BQU8sQ0FBQSxFQUFFO1lBQzVELE9BQU8sRUFBRSxLQUFLLEVBQUUsb0JBQVcsQ0FBQyxPQUFPLEVBQUUsQ0FBQztTQUN2QztRQUNELE1BQU0sS0FBSyxHQUFHLDRCQUE0QixDQUFDLFFBQVEsRUFBRSxRQUFRLEVBQUUsY0FBYyxFQUFFLGNBQWMsQ0FBQyxDQUFDO1FBQy9GLGtIQUFrSDtRQUNsSCxrRkFBa0Y7UUFDbEYsSUFBSSxJQUFJLENBQUMsR0FBRyxFQUFFLEdBQUcsS0FBSyxHQUFHLElBQUksR0FBRyxTQUFTLEVBQUU7WUFDekMsT0FBTyxFQUFFLEtBQUssRUFBRSxvQkFBVyxDQUFDLE9BQU8sRUFBRSxDQUFDO1NBQ3ZDO1FBQ0QsTUFBTSxhQUFLLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDbkIsTUFBTSxFQUFFLEtBQUssRUFBRSxHQUFHLE1BQU0sY0FBYyxDQUFDLE1BQU0sRUFBRSxLQUFLLENBQUMsQ0FBQztRQUN0RCxJQUFJLEtBQUssS0FBSyxvQkFBVyxDQUFDLEtBQUssRUFBRTtZQUMvQixPQUFPLEVBQUUsS0FBSyxFQUFFLENBQUM7U0FDbEI7UUFFRCxjQUFjLElBQUksQ0FBQyxDQUFDO0tBQ3JCO0FBQ0gsQ0FBQyxDQUFDO0FBakNXLFFBQUEsVUFBVSxjQWlDckIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBzbGVlcCB9IGZyb20gXCIuL3V0aWxzL3NsZWVwXCI7XG5pbXBvcnQgeyBXYWl0ZXJPcHRpb25zLCBXYWl0ZXJSZXN1bHQsIFdhaXRlclN0YXRlIH0gZnJvbSBcIi4vd2FpdGVyXCI7XG5cbi8qKlxuICogUmVmZXJlbmNlOiBodHRwczovL2F3c2xhYnMuZ2l0aHViLmlvL3NtaXRoeS8xLjAvc3BlYy93YWl0ZXJzLmh0bWwjd2FpdGVyLXJldHJpZXNcbiAqL1xuY29uc3QgZXhwb25lbnRpYWxCYWNrb2ZmV2l0aEppdHRlciA9IChtaW5EZWxheTogbnVtYmVyLCBtYXhEZWxheTogbnVtYmVyLCBhdHRlbXB0Q2VpbGluZzogbnVtYmVyLCBhdHRlbXB0OiBudW1iZXIpID0+IHtcbiAgaWYgKGF0dGVtcHQgPiBhdHRlbXB0Q2VpbGluZykgcmV0dXJuIG1heERlbGF5O1xuICBjb25zdCBkZWxheSA9IG1pbkRlbGF5ICogMiAqKiAoYXR0ZW1wdCAtIDEpO1xuICByZXR1cm4gcmFuZG9tSW5SYW5nZShtaW5EZWxheSwgZGVsYXkpO1xufTtcblxuY29uc3QgcmFuZG9tSW5SYW5nZSA9IChtaW46IG51bWJlciwgbWF4OiBudW1iZXIpID0+IG1pbiArIE1hdGgucmFuZG9tKCkgKiAobWF4IC0gbWluKTtcblxuLyoqXG4gKiBGdW5jdGlvbiB0aGF0IHJ1bnMgcG9sbGluZyBhcyBwYXJ0IG9mIHdhaXRlcnMuIFRoaXMgd2lsbCBtYWtlIG9uZSBpbml0YWwgYXR0ZW1wdCBhbmQgdGhlblxuICogc3Vic2VxdWVudCBhdHRlbXB0cyB3aXRoIGFuIGluY3JlYXNpbmcgZGVsYXkuXG4gKiBAcGFyYW0gcGFyYW1zIG9wdGlvbnMgcGFzc2VkIHRvIHRoZSB3YWl0ZXIuXG4gKiBAcGFyYW0gY2xpZW50IEFXUyBTREsgQ2xpZW50XG4gKiBAcGFyYW0gaW5wdXQgY2xpZW50IGlucHV0XG4gKiBAcGFyYW0gc3RhdGVDaGVja2VyIGZ1bmN0aW9uIHRoYXQgY2hlY2tzIHRoZSBhY2NlcHRvciBzdGF0ZXMgb24gZWFjaCBwb2xsLlxuICovXG5leHBvcnQgY29uc3QgcnVuUG9sbGluZyA9IGFzeW5jIDxDbGllbnQsIElucHV0PihcbiAgeyBtaW5EZWxheSwgbWF4RGVsYXksIG1heFdhaXRUaW1lLCBhYm9ydENvbnRyb2xsZXIsIGNsaWVudCwgYWJvcnRTaWduYWwgfTogV2FpdGVyT3B0aW9uczxDbGllbnQ+LFxuICBpbnB1dDogSW5wdXQsXG4gIGFjY2VwdG9yQ2hlY2tzOiAoY2xpZW50OiBDbGllbnQsIGlucHV0OiBJbnB1dCkgPT4gUHJvbWlzZTxXYWl0ZXJSZXN1bHQ+XG4pOiBQcm9taXNlPFdhaXRlclJlc3VsdD4gPT4ge1xuICBjb25zdCB7IHN0YXRlIH0gPSBhd2FpdCBhY2NlcHRvckNoZWNrcyhjbGllbnQsIGlucHV0KTtcbiAgaWYgKHN0YXRlICE9PSBXYWl0ZXJTdGF0ZS5SRVRSWSkge1xuICAgIHJldHVybiB7IHN0YXRlIH07XG4gIH1cblxuICBsZXQgY3VycmVudEF0dGVtcHQgPSAxO1xuICBjb25zdCB3YWl0VW50aWwgPSBEYXRlLm5vdygpICsgbWF4V2FpdFRpbWUgKiAxMDAwO1xuICAvLyBUaGUgbWF4IGF0dGVtcHQgbnVtYmVyIHRoYXQgdGhlIGRlcml2ZWQgZGVsYXkgdGltZSB0ZW5kIHRvIGluY3JlYXNlLlxuICAvLyBQcmUtY29tcHV0ZSB0aGlzIG51bWJlciB0byBhdm9pZCBOdW1iZXIgdHlwZSBvdmVyZmxvdy5cbiAgY29uc3QgYXR0ZW1wdENlaWxpbmcgPSBNYXRoLmxvZyhtYXhEZWxheSAvIG1pbkRlbGF5KSAvIE1hdGgubG9nKDIpICsgMTtcbiAgd2hpbGUgKHRydWUpIHtcbiAgICBpZiAoYWJvcnRDb250cm9sbGVyPy5zaWduYWw/LmFib3J0ZWQgfHwgYWJvcnRTaWduYWw/LmFib3J0ZWQpIHtcbiAgICAgIHJldHVybiB7IHN0YXRlOiBXYWl0ZXJTdGF0ZS5BQk9SVEVEIH07XG4gICAgfVxuICAgIGNvbnN0IGRlbGF5ID0gZXhwb25lbnRpYWxCYWNrb2ZmV2l0aEppdHRlcihtaW5EZWxheSwgbWF4RGVsYXksIGF0dGVtcHRDZWlsaW5nLCBjdXJyZW50QXR0ZW1wdCk7XG4gICAgLy8gUmVzb2x2ZSB0aGUgcHJvbWlzZSBleHBsaWNpdGx5IGF0IHRpbWVvdXQgb3IgYWJvcnRlZC4gT3RoZXJ3aXNlIHRoaXMgd2hpbGUgbG9vcCB3aWxsIGtlZXAgbWFraW5nIEFQSSBjYWxsIHVudGlsXG4gICAgLy8gYGFjY2VwdG9yQ2hlY2tgIHJldHVybnMgbm9uLXJldHJ5IHN0YXR1cywgZXZlbiB3aXRoIHRoZSBQcm9taXNlLnJhY2UoKSBvdXRzaWRlLlxuICAgIGlmIChEYXRlLm5vdygpICsgZGVsYXkgKiAxMDAwID4gd2FpdFVudGlsKSB7XG4gICAgICByZXR1cm4geyBzdGF0ZTogV2FpdGVyU3RhdGUuVElNRU9VVCB9O1xuICAgIH1cbiAgICBhd2FpdCBzbGVlcChkZWxheSk7XG4gICAgY29uc3QgeyBzdGF0ZSB9ID0gYXdhaXQgYWNjZXB0b3JDaGVja3MoY2xpZW50LCBpbnB1dCk7XG4gICAgaWYgKHN0YXRlICE9PSBXYWl0ZXJTdGF0ZS5SRVRSWSkge1xuICAgICAgcmV0dXJuIHsgc3RhdGUgfTtcbiAgICB9XG5cbiAgICBjdXJyZW50QXR0ZW1wdCArPSAxO1xuICB9XG59O1xuIl19
 
 /***/ }),
 
@@ -25592,7 +27297,7 @@ exports.validateWaiterOptions = validateWaiterOptions;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.WaiterState = exports.waiterServiceDefaults = void 0;
+exports.checkExceptions = exports.WaiterState = exports.waiterServiceDefaults = void 0;
 /**
  * @private
  */
@@ -25608,7 +27313,342 @@ var WaiterState;
     WaiterState["RETRY"] = "RETRY";
     WaiterState["TIMEOUT"] = "TIMEOUT";
 })(WaiterState = exports.WaiterState || (exports.WaiterState = {}));
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoid2FpdGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3dhaXRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFpQ0E7O0dBRUc7QUFDVSxRQUFBLHFCQUFxQixHQUFHO0lBQ25DLFFBQVEsRUFBRSxDQUFDO0lBQ1gsUUFBUSxFQUFFLEdBQUc7Q0FDZCxDQUFDO0FBUUYsSUFBWSxXQU1YO0FBTkQsV0FBWSxXQUFXO0lBQ3JCLGtDQUFtQixDQUFBO0lBQ25CLGtDQUFtQixDQUFBO0lBQ25CLGtDQUFtQixDQUFBO0lBQ25CLDhCQUFlLENBQUE7SUFDZixrQ0FBbUIsQ0FBQTtBQUNyQixDQUFDLEVBTlcsV0FBVyxHQUFYLG1CQUFXLEtBQVgsbUJBQVcsUUFNdEIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBBYm9ydENvbnRyb2xsZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IGludGVyZmFjZSBXYWl0ZXJDb25maWd1cmF0aW9uPENsaWVudD4ge1xuICAvKipcbiAgICogUmVxdWlyZWQgc2VydmljZSBjbGllbnRcbiAgICovXG4gIGNsaWVudDogQ2xpZW50O1xuXG4gIC8qKlxuICAgKiBUaGUgYW1vdW50IG9mIHRpbWUgaW4gc2Vjb25kcyBhIHVzZXIgaXMgd2lsbGluZyB0byB3YWl0IGZvciBhIHdhaXRlciB0byBjb21wbGV0ZS5cbiAgICovXG4gIG1heFdhaXRUaW1lOiBudW1iZXI7XG5cbiAgLyoqXG4gICAqIEFib3J0IGNvbnRyb2xsZXIuIFVzZWQgZm9yIGVuZGluZyB0aGUgd2FpdGVyIGVhcmx5LlxuICAgKi9cbiAgYWJvcnRDb250cm9sbGVyPzogQWJvcnRDb250cm9sbGVyO1xuXG4gIC8qKlxuICAgKiBUaGUgbWluaW11bSBhbW91bnQgb2YgdGltZSB0byBkZWxheSBiZXR3ZWVuIHJldHJpZXMgaW4gc2Vjb25kcy4gVGhpcyBpcyB0aGVcbiAgICogZmxvb3Igb2YgdGhlIGV4cG9uZW50aWFsIGJhY2tvZmYuIFRoaXMgdmFsdWUgZGVmYXVsdHMgdG8gc2VydmljZSBkZWZhdWx0XG4gICAqIGlmIG5vdCBzcGVjaWZpZWQuIFRoaXMgdmFsdWUgTVVTVCBiZSBsZXNzIHRoYW4gb3IgZXF1YWwgdG8gbWF4RGVsYXkgYW5kIGdyZWF0ZXIgdGhhbiAwLlxuICAgKi9cbiAgbWluRGVsYXk/OiBudW1iZXI7XG5cbiAgLyoqXG4gICAqIFRoZSBtYXhpbXVtIGFtb3VudCBvZiB0aW1lIHRvIGRlbGF5IGJldHdlZW4gcmV0cmllcyBpbiBzZWNvbmRzLiBUaGlzIGlzIHRoZVxuICAgKiBjZWlsaW5nIG9mIHRoZSBleHBvbmVudGlhbCBiYWNrb2ZmLiBUaGlzIHZhbHVlIGRlZmF1bHRzIHRvIHNlcnZpY2UgZGVmYXVsdFxuICAgKiBpZiBub3Qgc3BlY2lmaWVkLiBJZiBzcGVjaWZpZWQsIHRoaXMgdmFsdWUgTVVTVCBiZSBncmVhdGVyIHRoYW4gb3IgZXF1YWwgdG8gMS5cbiAgICovXG4gIG1heERlbGF5PzogbnVtYmVyO1xufVxuXG4vKipcbiAqIEBwcml2YXRlXG4gKi9cbmV4cG9ydCBjb25zdCB3YWl0ZXJTZXJ2aWNlRGVmYXVsdHMgPSB7XG4gIG1pbkRlbGF5OiAyLFxuICBtYXhEZWxheTogMTIwLFxufTtcblxuLyoqXG4gKiBAcHJpdmF0ZVxuICovXG5leHBvcnQgdHlwZSBXYWl0ZXJPcHRpb25zPENsaWVudD4gPSBXYWl0ZXJDb25maWd1cmF0aW9uPENsaWVudD4gJlxuICBSZXF1aXJlZDxQaWNrPFdhaXRlckNvbmZpZ3VyYXRpb248Q2xpZW50PiwgXCJtaW5EZWxheVwiIHwgXCJtYXhEZWxheVwiPj47XG5cbmV4cG9ydCBlbnVtIFdhaXRlclN0YXRlIHtcbiAgQUJPUlRFRCA9IFwiQUJPUlRFRFwiLFxuICBGQUlMVVJFID0gXCJGQUlMVVJFXCIsXG4gIFNVQ0NFU1MgPSBcIlNVQ0NFU1NcIixcbiAgUkVUUlkgPSBcIlJFVFJZXCIsXG4gIFRJTUVPVVQgPSBcIlRJTUVPVVRcIixcbn1cblxuZXhwb3J0IHR5cGUgV2FpdGVyUmVzdWx0ID0ge1xuICBzdGF0ZTogV2FpdGVyU3RhdGU7XG59O1xuIl19
+/**
+ * Handles and throws exceptions resulting from the waiterResult
+ * @param result WaiterResult
+ */
+const checkExceptions = (result) => {
+    if (result.state === WaiterState.ABORTED) {
+        const abortError = new Error(`${JSON.stringify({
+            ...result,
+            reason: "Request was aborted",
+        })}`);
+        abortError.name = "AbortError";
+        throw abortError;
+    }
+    else if (result.state === WaiterState.TIMEOUT) {
+        const timeoutError = new Error(`${JSON.stringify({
+            ...result,
+            reason: "Waiter has timed out",
+        })}`);
+        timeoutError.name = "TimeoutError";
+        throw timeoutError;
+    }
+    else if (result.state !== WaiterState.SUCCESS) {
+        throw new Error(`${JSON.stringify({ result })}`);
+    }
+    return result;
+};
+exports.checkExceptions = checkExceptions;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoid2FpdGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3dhaXRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFJQTs7R0FFRztBQUNVLFFBQUEscUJBQXFCLEdBQUc7SUFDbkMsUUFBUSxFQUFFLENBQUM7SUFDWCxRQUFRLEVBQUUsR0FBRztDQUNkLENBQUM7QUFRRixJQUFZLFdBTVg7QUFORCxXQUFZLFdBQVc7SUFDckIsa0NBQW1CLENBQUE7SUFDbkIsa0NBQW1CLENBQUE7SUFDbkIsa0NBQW1CLENBQUE7SUFDbkIsOEJBQWUsQ0FBQTtJQUNmLGtDQUFtQixDQUFBO0FBQ3JCLENBQUMsRUFOVyxXQUFXLEdBQVgsbUJBQVcsS0FBWCxtQkFBVyxRQU10QjtBQVdEOzs7R0FHRztBQUNJLE1BQU0sZUFBZSxHQUFHLENBQUMsTUFBb0IsRUFBZ0IsRUFBRTtJQUNwRSxJQUFJLE1BQU0sQ0FBQyxLQUFLLEtBQUssV0FBVyxDQUFDLE9BQU8sRUFBRTtRQUN4QyxNQUFNLFVBQVUsR0FBRyxJQUFJLEtBQUssQ0FDMUIsR0FBRyxJQUFJLENBQUMsU0FBUyxDQUFDO1lBQ2hCLEdBQUcsTUFBTTtZQUNULE1BQU0sRUFBRSxxQkFBcUI7U0FDOUIsQ0FBQyxFQUFFLENBQ0wsQ0FBQztRQUNGLFVBQVUsQ0FBQyxJQUFJLEdBQUcsWUFBWSxDQUFDO1FBQy9CLE1BQU0sVUFBVSxDQUFDO0tBQ2xCO1NBQU0sSUFBSSxNQUFNLENBQUMsS0FBSyxLQUFLLFdBQVcsQ0FBQyxPQUFPLEVBQUU7UUFDL0MsTUFBTSxZQUFZLEdBQUcsSUFBSSxLQUFLLENBQzVCLEdBQUcsSUFBSSxDQUFDLFNBQVMsQ0FBQztZQUNoQixHQUFHLE1BQU07WUFDVCxNQUFNLEVBQUUsc0JBQXNCO1NBQy9CLENBQUMsRUFBRSxDQUNMLENBQUM7UUFDRixZQUFZLENBQUMsSUFBSSxHQUFHLGNBQWMsQ0FBQztRQUNuQyxNQUFNLFlBQVksQ0FBQztLQUNwQjtTQUFNLElBQUksTUFBTSxDQUFDLEtBQUssS0FBSyxXQUFXLENBQUMsT0FBTyxFQUFFO1FBQy9DLE1BQU0sSUFBSSxLQUFLLENBQUMsR0FBRyxJQUFJLENBQUMsU0FBUyxDQUFDLEVBQUUsTUFBTSxFQUFFLENBQUMsRUFBRSxDQUFDLENBQUM7S0FDbEQ7SUFDRCxPQUFPLE1BQU0sQ0FBQztBQUNoQixDQUFDLENBQUM7QUF2QlcsUUFBQSxlQUFlLG1CQXVCMUIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBXYWl0ZXJDb25maWd1cmF0aW9uIGFzIFdhaXRlckNvbmZpZ3VyYXRpb25fXyB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5leHBvcnQgaW50ZXJmYWNlIFdhaXRlckNvbmZpZ3VyYXRpb248VD4gZXh0ZW5kcyBXYWl0ZXJDb25maWd1cmF0aW9uX188VD4ge31cblxuLyoqXG4gKiBAcHJpdmF0ZVxuICovXG5leHBvcnQgY29uc3Qgd2FpdGVyU2VydmljZURlZmF1bHRzID0ge1xuICBtaW5EZWxheTogMixcbiAgbWF4RGVsYXk6IDEyMCxcbn07XG5cbi8qKlxuICogQHByaXZhdGVcbiAqL1xuZXhwb3J0IHR5cGUgV2FpdGVyT3B0aW9uczxDbGllbnQ+ID0gV2FpdGVyQ29uZmlndXJhdGlvbjxDbGllbnQ+ICZcbiAgUmVxdWlyZWQ8UGljazxXYWl0ZXJDb25maWd1cmF0aW9uPENsaWVudD4sIFwibWluRGVsYXlcIiB8IFwibWF4RGVsYXlcIj4+O1xuXG5leHBvcnQgZW51bSBXYWl0ZXJTdGF0ZSB7XG4gIEFCT1JURUQgPSBcIkFCT1JURURcIixcbiAgRkFJTFVSRSA9IFwiRkFJTFVSRVwiLFxuICBTVUNDRVNTID0gXCJTVUNDRVNTXCIsXG4gIFJFVFJZID0gXCJSRVRSWVwiLFxuICBUSU1FT1VUID0gXCJUSU1FT1VUXCIsXG59XG5cbmV4cG9ydCB0eXBlIFdhaXRlclJlc3VsdCA9IHtcbiAgc3RhdGU6IFdhaXRlclN0YXRlO1xuXG4gIC8qKlxuICAgKiAob3B0aW9uYWwpIEluZGljYXRlcyBhIHJlYXNvbiBmb3Igd2h5IGEgd2FpdGVyIGhhcyByZWFjaGVkIGl0cyBzdGF0ZS5cbiAgICovXG4gIHJlYXNvbj86IGFueTtcbn07XG5cbi8qKlxuICogSGFuZGxlcyBhbmQgdGhyb3dzIGV4Y2VwdGlvbnMgcmVzdWx0aW5nIGZyb20gdGhlIHdhaXRlclJlc3VsdFxuICogQHBhcmFtIHJlc3VsdCBXYWl0ZXJSZXN1bHRcbiAqL1xuZXhwb3J0IGNvbnN0IGNoZWNrRXhjZXB0aW9ucyA9IChyZXN1bHQ6IFdhaXRlclJlc3VsdCk6IFdhaXRlclJlc3VsdCA9PiB7XG4gIGlmIChyZXN1bHQuc3RhdGUgPT09IFdhaXRlclN0YXRlLkFCT1JURUQpIHtcbiAgICBjb25zdCBhYm9ydEVycm9yID0gbmV3IEVycm9yKFxuICAgICAgYCR7SlNPTi5zdHJpbmdpZnkoe1xuICAgICAgICAuLi5yZXN1bHQsXG4gICAgICAgIHJlYXNvbjogXCJSZXF1ZXN0IHdhcyBhYm9ydGVkXCIsXG4gICAgICB9KX1gXG4gICAgKTtcbiAgICBhYm9ydEVycm9yLm5hbWUgPSBcIkFib3J0RXJyb3JcIjtcbiAgICB0aHJvdyBhYm9ydEVycm9yO1xuICB9IGVsc2UgaWYgKHJlc3VsdC5zdGF0ZSA9PT0gV2FpdGVyU3RhdGUuVElNRU9VVCkge1xuICAgIGNvbnN0IHRpbWVvdXRFcnJvciA9IG5ldyBFcnJvcihcbiAgICAgIGAke0pTT04uc3RyaW5naWZ5KHtcbiAgICAgICAgLi4ucmVzdWx0LFxuICAgICAgICByZWFzb246IFwiV2FpdGVyIGhhcyB0aW1lZCBvdXRcIixcbiAgICAgIH0pfWBcbiAgICApO1xuICAgIHRpbWVvdXRFcnJvci5uYW1lID0gXCJUaW1lb3V0RXJyb3JcIjtcbiAgICB0aHJvdyB0aW1lb3V0RXJyb3I7XG4gIH0gZWxzZSBpZiAocmVzdWx0LnN0YXRlICE9PSBXYWl0ZXJTdGF0ZS5TVUNDRVNTKSB7XG4gICAgdGhyb3cgbmV3IEVycm9yKGAke0pTT04uc3RyaW5naWZ5KHsgcmVzdWx0IH0pfWApO1xuICB9XG4gIHJldHVybiByZXN1bHQ7XG59O1xuIl19
+
+/***/ }),
+
+/***/ 5107:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.decodeHTML = exports.decodeHTMLStrict = exports.decodeXML = void 0;
+var entities_json_1 = __importDefault(__nccwpck_require__(4007));
+var legacy_json_1 = __importDefault(__nccwpck_require__(7802));
+var xml_json_1 = __importDefault(__nccwpck_require__(2228));
+var decode_codepoint_1 = __importDefault(__nccwpck_require__(1227));
+var strictEntityRe = /&(?:[a-zA-Z0-9]+|#[xX][\da-fA-F]+|#\d+);/g;
+exports.decodeXML = getStrictDecoder(xml_json_1.default);
+exports.decodeHTMLStrict = getStrictDecoder(entities_json_1.default);
+function getStrictDecoder(map) {
+    var replace = getReplacer(map);
+    return function (str) { return String(str).replace(strictEntityRe, replace); };
+}
+var sorter = function (a, b) { return (a < b ? 1 : -1); };
+exports.decodeHTML = (function () {
+    var legacy = Object.keys(legacy_json_1.default).sort(sorter);
+    var keys = Object.keys(entities_json_1.default).sort(sorter);
+    for (var i = 0, j = 0; i < keys.length; i++) {
+        if (legacy[j] === keys[i]) {
+            keys[i] += ";?";
+            j++;
+        }
+        else {
+            keys[i] += ";";
+        }
+    }
+    var re = new RegExp("&(?:" + keys.join("|") + "|#[xX][\\da-fA-F]+;?|#\\d+;?)", "g");
+    var replace = getReplacer(entities_json_1.default);
+    function replacer(str) {
+        if (str.substr(-1) !== ";")
+            str += ";";
+        return replace(str);
+    }
+    // TODO consider creating a merged map
+    return function (str) { return String(str).replace(re, replacer); };
+})();
+function getReplacer(map) {
+    return function replace(str) {
+        if (str.charAt(1) === "#") {
+            var secondChar = str.charAt(2);
+            if (secondChar === "X" || secondChar === "x") {
+                return decode_codepoint_1.default(parseInt(str.substr(3), 16));
+            }
+            return decode_codepoint_1.default(parseInt(str.substr(2), 10));
+        }
+        // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
+        return map[str.slice(1, -1)] || str;
+    };
+}
+
+
+/***/ }),
+
+/***/ 1227:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var decode_json_1 = __importDefault(__nccwpck_require__(4589));
+// Adapted from https://github.com/mathiasbynens/he/blob/master/src/he.js#L94-L119
+var fromCodePoint = 
+// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
+String.fromCodePoint ||
+    function (codePoint) {
+        var output = "";
+        if (codePoint > 0xffff) {
+            codePoint -= 0x10000;
+            output += String.fromCharCode(((codePoint >>> 10) & 0x3ff) | 0xd800);
+            codePoint = 0xdc00 | (codePoint & 0x3ff);
+        }
+        output += String.fromCharCode(codePoint);
+        return output;
+    };
+function decodeCodePoint(codePoint) {
+    if ((codePoint >= 0xd800 && codePoint <= 0xdfff) || codePoint > 0x10ffff) {
+        return "\uFFFD";
+    }
+    if (codePoint in decode_json_1.default) {
+        codePoint = decode_json_1.default[codePoint];
+    }
+    return fromCodePoint(codePoint);
+}
+exports.default = decodeCodePoint;
+
+
+/***/ }),
+
+/***/ 2006:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.escapeUTF8 = exports.escape = exports.encodeNonAsciiHTML = exports.encodeHTML = exports.encodeXML = void 0;
+var xml_json_1 = __importDefault(__nccwpck_require__(2228));
+var inverseXML = getInverseObj(xml_json_1.default);
+var xmlReplacer = getInverseReplacer(inverseXML);
+/**
+ * Encodes all non-ASCII characters, as well as characters not valid in XML
+ * documents using XML entities.
+ *
+ * If a character has no equivalent entity, a
+ * numeric hexadecimal reference (eg. `&#xfc;`) will be used.
+ */
+exports.encodeXML = getASCIIEncoder(inverseXML);
+var entities_json_1 = __importDefault(__nccwpck_require__(4007));
+var inverseHTML = getInverseObj(entities_json_1.default);
+var htmlReplacer = getInverseReplacer(inverseHTML);
+/**
+ * Encodes all entities and non-ASCII characters in the input.
+ *
+ * This includes characters that are valid ASCII characters in HTML documents.
+ * For example `#` will be encoded as `&num;`. To get a more compact output,
+ * consider using the `encodeNonAsciiHTML` function.
+ *
+ * If a character has no equivalent entity, a
+ * numeric hexadecimal reference (eg. `&#xfc;`) will be used.
+ */
+exports.encodeHTML = getInverse(inverseHTML, htmlReplacer);
+/**
+ * Encodes all non-ASCII characters, as well as characters not valid in HTML
+ * documents using HTML entities.
+ *
+ * If a character has no equivalent entity, a
+ * numeric hexadecimal reference (eg. `&#xfc;`) will be used.
+ */
+exports.encodeNonAsciiHTML = getASCIIEncoder(inverseHTML);
+function getInverseObj(obj) {
+    return Object.keys(obj)
+        .sort()
+        .reduce(function (inverse, name) {
+        inverse[obj[name]] = "&" + name + ";";
+        return inverse;
+    }, {});
+}
+function getInverseReplacer(inverse) {
+    var single = [];
+    var multiple = [];
+    for (var _i = 0, _a = Object.keys(inverse); _i < _a.length; _i++) {
+        var k = _a[_i];
+        if (k.length === 1) {
+            // Add value to single array
+            single.push("\\" + k);
+        }
+        else {
+            // Add value to multiple array
+            multiple.push(k);
+        }
+    }
+    // Add ranges to single characters.
+    single.sort();
+    for (var start = 0; start < single.length - 1; start++) {
+        // Find the end of a run of characters
+        var end = start;
+        while (end < single.length - 1 &&
+            single[end].charCodeAt(1) + 1 === single[end + 1].charCodeAt(1)) {
+            end += 1;
+        }
+        var count = 1 + end - start;
+        // We want to replace at least three characters
+        if (count < 3)
+            continue;
+        single.splice(start, count, single[start] + "-" + single[end]);
+    }
+    multiple.unshift("[" + single.join("") + "]");
+    return new RegExp(multiple.join("|"), "g");
+}
+// /[^\0-\x7F]/gu
+var reNonASCII = /(?:[\x80-\uD7FF\uE000-\uFFFF]|[\uD800-\uDBFF][\uDC00-\uDFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF])/g;
+var getCodePoint = 
+// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
+String.prototype.codePointAt != null
+    ? // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+        function (str) { return str.codePointAt(0); }
+    : // http://mathiasbynens.be/notes/javascript-encoding#surrogate-formulae
+        function (c) {
+            return (c.charCodeAt(0) - 0xd800) * 0x400 +
+                c.charCodeAt(1) -
+                0xdc00 +
+                0x10000;
+        };
+function singleCharReplacer(c) {
+    return "&#x" + (c.length > 1 ? getCodePoint(c) : c.charCodeAt(0))
+        .toString(16)
+        .toUpperCase() + ";";
+}
+function getInverse(inverse, re) {
+    return function (data) {
+        return data
+            .replace(re, function (name) { return inverse[name]; })
+            .replace(reNonASCII, singleCharReplacer);
+    };
+}
+var reEscapeChars = new RegExp(xmlReplacer.source + "|" + reNonASCII.source, "g");
+/**
+ * Encodes all non-ASCII characters, as well as characters not valid in XML
+ * documents using numeric hexadecimal reference (eg. `&#xfc;`).
+ *
+ * Have a look at `escapeUTF8` if you want a more concise output at the expense
+ * of reduced transportability.
+ *
+ * @param data String to escape.
+ */
+function escape(data) {
+    return data.replace(reEscapeChars, singleCharReplacer);
+}
+exports.escape = escape;
+/**
+ * Encodes all characters not valid in XML documents using numeric hexadecimal
+ * reference (eg. `&#xfc;`).
+ *
+ * Note that the output will be character-set dependent.
+ *
+ * @param data String to escape.
+ */
+function escapeUTF8(data) {
+    return data.replace(xmlReplacer, singleCharReplacer);
+}
+exports.escapeUTF8 = escapeUTF8;
+function getASCIIEncoder(obj) {
+    return function (data) {
+        return data.replace(reEscapeChars, function (c) { return obj[c] || singleCharReplacer(c); });
+    };
+}
+
+
+/***/ }),
+
+/***/ 3000:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.decodeXMLStrict = exports.decodeHTML5Strict = exports.decodeHTML4Strict = exports.decodeHTML5 = exports.decodeHTML4 = exports.decodeHTMLStrict = exports.decodeHTML = exports.decodeXML = exports.encodeHTML5 = exports.encodeHTML4 = exports.escapeUTF8 = exports.escape = exports.encodeNonAsciiHTML = exports.encodeHTML = exports.encodeXML = exports.encode = exports.decodeStrict = exports.decode = void 0;
+var decode_1 = __nccwpck_require__(5107);
+var encode_1 = __nccwpck_require__(2006);
+/**
+ * Decodes a string with entities.
+ *
+ * @param data String to decode.
+ * @param level Optional level to decode at. 0 = XML, 1 = HTML. Default is 0.
+ * @deprecated Use `decodeXML` or `decodeHTML` directly.
+ */
+function decode(data, level) {
+    return (!level || level <= 0 ? decode_1.decodeXML : decode_1.decodeHTML)(data);
+}
+exports.decode = decode;
+/**
+ * Decodes a string with entities. Does not allow missing trailing semicolons for entities.
+ *
+ * @param data String to decode.
+ * @param level Optional level to decode at. 0 = XML, 1 = HTML. Default is 0.
+ * @deprecated Use `decodeHTMLStrict` or `decodeXML` directly.
+ */
+function decodeStrict(data, level) {
+    return (!level || level <= 0 ? decode_1.decodeXML : decode_1.decodeHTMLStrict)(data);
+}
+exports.decodeStrict = decodeStrict;
+/**
+ * Encodes a string with entities.
+ *
+ * @param data String to encode.
+ * @param level Optional level to encode at. 0 = XML, 1 = HTML. Default is 0.
+ * @deprecated Use `encodeHTML`, `encodeXML` or `encodeNonAsciiHTML` directly.
+ */
+function encode(data, level) {
+    return (!level || level <= 0 ? encode_1.encodeXML : encode_1.encodeHTML)(data);
+}
+exports.encode = encode;
+var encode_2 = __nccwpck_require__(2006);
+Object.defineProperty(exports, "encodeXML", ({ enumerable: true, get: function () { return encode_2.encodeXML; } }));
+Object.defineProperty(exports, "encodeHTML", ({ enumerable: true, get: function () { return encode_2.encodeHTML; } }));
+Object.defineProperty(exports, "encodeNonAsciiHTML", ({ enumerable: true, get: function () { return encode_2.encodeNonAsciiHTML; } }));
+Object.defineProperty(exports, "escape", ({ enumerable: true, get: function () { return encode_2.escape; } }));
+Object.defineProperty(exports, "escapeUTF8", ({ enumerable: true, get: function () { return encode_2.escapeUTF8; } }));
+// Legacy aliases (deprecated)
+Object.defineProperty(exports, "encodeHTML4", ({ enumerable: true, get: function () { return encode_2.encodeHTML; } }));
+Object.defineProperty(exports, "encodeHTML5", ({ enumerable: true, get: function () { return encode_2.encodeHTML; } }));
+var decode_2 = __nccwpck_require__(5107);
+Object.defineProperty(exports, "decodeXML", ({ enumerable: true, get: function () { return decode_2.decodeXML; } }));
+Object.defineProperty(exports, "decodeHTML", ({ enumerable: true, get: function () { return decode_2.decodeHTML; } }));
+Object.defineProperty(exports, "decodeHTMLStrict", ({ enumerable: true, get: function () { return decode_2.decodeHTMLStrict; } }));
+// Legacy aliases (deprecated)
+Object.defineProperty(exports, "decodeHTML4", ({ enumerable: true, get: function () { return decode_2.decodeHTML; } }));
+Object.defineProperty(exports, "decodeHTML5", ({ enumerable: true, get: function () { return decode_2.decodeHTML; } }));
+Object.defineProperty(exports, "decodeHTML4Strict", ({ enumerable: true, get: function () { return decode_2.decodeHTMLStrict; } }));
+Object.defineProperty(exports, "decodeHTML5Strict", ({ enumerable: true, get: function () { return decode_2.decodeHTMLStrict; } }));
+Object.defineProperty(exports, "decodeXMLStrict", ({ enumerable: true, get: function () { return decode_2.decodeXML; } }));
+
 
 /***/ }),
 
@@ -28087,6 +30127,38 @@ function version(uuid) {
 
 var _default = version;
 exports.default = _default;
+
+/***/ }),
+
+/***/ 4589:
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"0":65533,"128":8364,"130":8218,"131":402,"132":8222,"133":8230,"134":8224,"135":8225,"136":710,"137":8240,"138":352,"139":8249,"140":338,"142":381,"145":8216,"146":8217,"147":8220,"148":8221,"149":8226,"150":8211,"151":8212,"152":732,"153":8482,"154":353,"155":8250,"156":339,"158":382,"159":376}');
+
+/***/ }),
+
+/***/ 4007:
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"Aacute":"Á","aacute":"á","Abreve":"Ă","abreve":"ă","ac":"∾","acd":"∿","acE":"∾̳","Acirc":"Â","acirc":"â","acute":"´","Acy":"А","acy":"а","AElig":"Æ","aelig":"æ","af":"⁡","Afr":"𝔄","afr":"𝔞","Agrave":"À","agrave":"à","alefsym":"ℵ","aleph":"ℵ","Alpha":"Α","alpha":"α","Amacr":"Ā","amacr":"ā","amalg":"⨿","amp":"&","AMP":"&","andand":"⩕","And":"⩓","and":"∧","andd":"⩜","andslope":"⩘","andv":"⩚","ang":"∠","ange":"⦤","angle":"∠","angmsdaa":"⦨","angmsdab":"⦩","angmsdac":"⦪","angmsdad":"⦫","angmsdae":"⦬","angmsdaf":"⦭","angmsdag":"⦮","angmsdah":"⦯","angmsd":"∡","angrt":"∟","angrtvb":"⊾","angrtvbd":"⦝","angsph":"∢","angst":"Å","angzarr":"⍼","Aogon":"Ą","aogon":"ą","Aopf":"𝔸","aopf":"𝕒","apacir":"⩯","ap":"≈","apE":"⩰","ape":"≊","apid":"≋","apos":"\'","ApplyFunction":"⁡","approx":"≈","approxeq":"≊","Aring":"Å","aring":"å","Ascr":"𝒜","ascr":"𝒶","Assign":"≔","ast":"*","asymp":"≈","asympeq":"≍","Atilde":"Ã","atilde":"ã","Auml":"Ä","auml":"ä","awconint":"∳","awint":"⨑","backcong":"≌","backepsilon":"϶","backprime":"‵","backsim":"∽","backsimeq":"⋍","Backslash":"∖","Barv":"⫧","barvee":"⊽","barwed":"⌅","Barwed":"⌆","barwedge":"⌅","bbrk":"⎵","bbrktbrk":"⎶","bcong":"≌","Bcy":"Б","bcy":"б","bdquo":"„","becaus":"∵","because":"∵","Because":"∵","bemptyv":"⦰","bepsi":"϶","bernou":"ℬ","Bernoullis":"ℬ","Beta":"Β","beta":"β","beth":"ℶ","between":"≬","Bfr":"𝔅","bfr":"𝔟","bigcap":"⋂","bigcirc":"◯","bigcup":"⋃","bigodot":"⨀","bigoplus":"⨁","bigotimes":"⨂","bigsqcup":"⨆","bigstar":"★","bigtriangledown":"▽","bigtriangleup":"△","biguplus":"⨄","bigvee":"⋁","bigwedge":"⋀","bkarow":"⤍","blacklozenge":"⧫","blacksquare":"▪","blacktriangle":"▴","blacktriangledown":"▾","blacktriangleleft":"◂","blacktriangleright":"▸","blank":"␣","blk12":"▒","blk14":"░","blk34":"▓","block":"█","bne":"=⃥","bnequiv":"≡⃥","bNot":"⫭","bnot":"⌐","Bopf":"𝔹","bopf":"𝕓","bot":"⊥","bottom":"⊥","bowtie":"⋈","boxbox":"⧉","boxdl":"┐","boxdL":"╕","boxDl":"╖","boxDL":"╗","boxdr":"┌","boxdR":"╒","boxDr":"╓","boxDR":"╔","boxh":"─","boxH":"═","boxhd":"┬","boxHd":"╤","boxhD":"╥","boxHD":"╦","boxhu":"┴","boxHu":"╧","boxhU":"╨","boxHU":"╩","boxminus":"⊟","boxplus":"⊞","boxtimes":"⊠","boxul":"┘","boxuL":"╛","boxUl":"╜","boxUL":"╝","boxur":"└","boxuR":"╘","boxUr":"╙","boxUR":"╚","boxv":"│","boxV":"║","boxvh":"┼","boxvH":"╪","boxVh":"╫","boxVH":"╬","boxvl":"┤","boxvL":"╡","boxVl":"╢","boxVL":"╣","boxvr":"├","boxvR":"╞","boxVr":"╟","boxVR":"╠","bprime":"‵","breve":"˘","Breve":"˘","brvbar":"¦","bscr":"𝒷","Bscr":"ℬ","bsemi":"⁏","bsim":"∽","bsime":"⋍","bsolb":"⧅","bsol":"\\\\","bsolhsub":"⟈","bull":"•","bullet":"•","bump":"≎","bumpE":"⪮","bumpe":"≏","Bumpeq":"≎","bumpeq":"≏","Cacute":"Ć","cacute":"ć","capand":"⩄","capbrcup":"⩉","capcap":"⩋","cap":"∩","Cap":"⋒","capcup":"⩇","capdot":"⩀","CapitalDifferentialD":"ⅅ","caps":"∩︀","caret":"⁁","caron":"ˇ","Cayleys":"ℭ","ccaps":"⩍","Ccaron":"Č","ccaron":"č","Ccedil":"Ç","ccedil":"ç","Ccirc":"Ĉ","ccirc":"ĉ","Cconint":"∰","ccups":"⩌","ccupssm":"⩐","Cdot":"Ċ","cdot":"ċ","cedil":"¸","Cedilla":"¸","cemptyv":"⦲","cent":"¢","centerdot":"·","CenterDot":"·","cfr":"𝔠","Cfr":"ℭ","CHcy":"Ч","chcy":"ч","check":"✓","checkmark":"✓","Chi":"Χ","chi":"χ","circ":"ˆ","circeq":"≗","circlearrowleft":"↺","circlearrowright":"↻","circledast":"⊛","circledcirc":"⊚","circleddash":"⊝","CircleDot":"⊙","circledR":"®","circledS":"Ⓢ","CircleMinus":"⊖","CirclePlus":"⊕","CircleTimes":"⊗","cir":"○","cirE":"⧃","cire":"≗","cirfnint":"⨐","cirmid":"⫯","cirscir":"⧂","ClockwiseContourIntegral":"∲","CloseCurlyDoubleQuote":"”","CloseCurlyQuote":"’","clubs":"♣","clubsuit":"♣","colon":":","Colon":"∷","Colone":"⩴","colone":"≔","coloneq":"≔","comma":",","commat":"@","comp":"∁","compfn":"∘","complement":"∁","complexes":"ℂ","cong":"≅","congdot":"⩭","Congruent":"≡","conint":"∮","Conint":"∯","ContourIntegral":"∮","copf":"𝕔","Copf":"ℂ","coprod":"∐","Coproduct":"∐","copy":"©","COPY":"©","copysr":"℗","CounterClockwiseContourIntegral":"∳","crarr":"↵","cross":"✗","Cross":"⨯","Cscr":"𝒞","cscr":"𝒸","csub":"⫏","csube":"⫑","csup":"⫐","csupe":"⫒","ctdot":"⋯","cudarrl":"⤸","cudarrr":"⤵","cuepr":"⋞","cuesc":"⋟","cularr":"↶","cularrp":"⤽","cupbrcap":"⩈","cupcap":"⩆","CupCap":"≍","cup":"∪","Cup":"⋓","cupcup":"⩊","cupdot":"⊍","cupor":"⩅","cups":"∪︀","curarr":"↷","curarrm":"⤼","curlyeqprec":"⋞","curlyeqsucc":"⋟","curlyvee":"⋎","curlywedge":"⋏","curren":"¤","curvearrowleft":"↶","curvearrowright":"↷","cuvee":"⋎","cuwed":"⋏","cwconint":"∲","cwint":"∱","cylcty":"⌭","dagger":"†","Dagger":"‡","daleth":"ℸ","darr":"↓","Darr":"↡","dArr":"⇓","dash":"‐","Dashv":"⫤","dashv":"⊣","dbkarow":"⤏","dblac":"˝","Dcaron":"Ď","dcaron":"ď","Dcy":"Д","dcy":"д","ddagger":"‡","ddarr":"⇊","DD":"ⅅ","dd":"ⅆ","DDotrahd":"⤑","ddotseq":"⩷","deg":"°","Del":"∇","Delta":"Δ","delta":"δ","demptyv":"⦱","dfisht":"⥿","Dfr":"𝔇","dfr":"𝔡","dHar":"⥥","dharl":"⇃","dharr":"⇂","DiacriticalAcute":"´","DiacriticalDot":"˙","DiacriticalDoubleAcute":"˝","DiacriticalGrave":"`","DiacriticalTilde":"˜","diam":"⋄","diamond":"⋄","Diamond":"⋄","diamondsuit":"♦","diams":"♦","die":"¨","DifferentialD":"ⅆ","digamma":"ϝ","disin":"⋲","div":"÷","divide":"÷","divideontimes":"⋇","divonx":"⋇","DJcy":"Ђ","djcy":"ђ","dlcorn":"⌞","dlcrop":"⌍","dollar":"$","Dopf":"𝔻","dopf":"𝕕","Dot":"¨","dot":"˙","DotDot":"⃜","doteq":"≐","doteqdot":"≑","DotEqual":"≐","dotminus":"∸","dotplus":"∔","dotsquare":"⊡","doublebarwedge":"⌆","DoubleContourIntegral":"∯","DoubleDot":"¨","DoubleDownArrow":"⇓","DoubleLeftArrow":"⇐","DoubleLeftRightArrow":"⇔","DoubleLeftTee":"⫤","DoubleLongLeftArrow":"⟸","DoubleLongLeftRightArrow":"⟺","DoubleLongRightArrow":"⟹","DoubleRightArrow":"⇒","DoubleRightTee":"⊨","DoubleUpArrow":"⇑","DoubleUpDownArrow":"⇕","DoubleVerticalBar":"∥","DownArrowBar":"⤓","downarrow":"↓","DownArrow":"↓","Downarrow":"⇓","DownArrowUpArrow":"⇵","DownBreve":"̑","downdownarrows":"⇊","downharpoonleft":"⇃","downharpoonright":"⇂","DownLeftRightVector":"⥐","DownLeftTeeVector":"⥞","DownLeftVectorBar":"⥖","DownLeftVector":"↽","DownRightTeeVector":"⥟","DownRightVectorBar":"⥗","DownRightVector":"⇁","DownTeeArrow":"↧","DownTee":"⊤","drbkarow":"⤐","drcorn":"⌟","drcrop":"⌌","Dscr":"𝒟","dscr":"𝒹","DScy":"Ѕ","dscy":"ѕ","dsol":"⧶","Dstrok":"Đ","dstrok":"đ","dtdot":"⋱","dtri":"▿","dtrif":"▾","duarr":"⇵","duhar":"⥯","dwangle":"⦦","DZcy":"Џ","dzcy":"џ","dzigrarr":"⟿","Eacute":"É","eacute":"é","easter":"⩮","Ecaron":"Ě","ecaron":"ě","Ecirc":"Ê","ecirc":"ê","ecir":"≖","ecolon":"≕","Ecy":"Э","ecy":"э","eDDot":"⩷","Edot":"Ė","edot":"ė","eDot":"≑","ee":"ⅇ","efDot":"≒","Efr":"𝔈","efr":"𝔢","eg":"⪚","Egrave":"È","egrave":"è","egs":"⪖","egsdot":"⪘","el":"⪙","Element":"∈","elinters":"⏧","ell":"ℓ","els":"⪕","elsdot":"⪗","Emacr":"Ē","emacr":"ē","empty":"∅","emptyset":"∅","EmptySmallSquare":"◻","emptyv":"∅","EmptyVerySmallSquare":"▫","emsp13":" ","emsp14":" ","emsp":" ","ENG":"Ŋ","eng":"ŋ","ensp":" ","Eogon":"Ę","eogon":"ę","Eopf":"𝔼","eopf":"𝕖","epar":"⋕","eparsl":"⧣","eplus":"⩱","epsi":"ε","Epsilon":"Ε","epsilon":"ε","epsiv":"ϵ","eqcirc":"≖","eqcolon":"≕","eqsim":"≂","eqslantgtr":"⪖","eqslantless":"⪕","Equal":"⩵","equals":"=","EqualTilde":"≂","equest":"≟","Equilibrium":"⇌","equiv":"≡","equivDD":"⩸","eqvparsl":"⧥","erarr":"⥱","erDot":"≓","escr":"ℯ","Escr":"ℰ","esdot":"≐","Esim":"⩳","esim":"≂","Eta":"Η","eta":"η","ETH":"Ð","eth":"ð","Euml":"Ë","euml":"ë","euro":"€","excl":"!","exist":"∃","Exists":"∃","expectation":"ℰ","exponentiale":"ⅇ","ExponentialE":"ⅇ","fallingdotseq":"≒","Fcy":"Ф","fcy":"ф","female":"♀","ffilig":"ﬃ","fflig":"ﬀ","ffllig":"ﬄ","Ffr":"𝔉","ffr":"𝔣","filig":"ﬁ","FilledSmallSquare":"◼","FilledVerySmallSquare":"▪","fjlig":"fj","flat":"♭","fllig":"ﬂ","fltns":"▱","fnof":"ƒ","Fopf":"𝔽","fopf":"𝕗","forall":"∀","ForAll":"∀","fork":"⋔","forkv":"⫙","Fouriertrf":"ℱ","fpartint":"⨍","frac12":"½","frac13":"⅓","frac14":"¼","frac15":"⅕","frac16":"⅙","frac18":"⅛","frac23":"⅔","frac25":"⅖","frac34":"¾","frac35":"⅗","frac38":"⅜","frac45":"⅘","frac56":"⅚","frac58":"⅝","frac78":"⅞","frasl":"⁄","frown":"⌢","fscr":"𝒻","Fscr":"ℱ","gacute":"ǵ","Gamma":"Γ","gamma":"γ","Gammad":"Ϝ","gammad":"ϝ","gap":"⪆","Gbreve":"Ğ","gbreve":"ğ","Gcedil":"Ģ","Gcirc":"Ĝ","gcirc":"ĝ","Gcy":"Г","gcy":"г","Gdot":"Ġ","gdot":"ġ","ge":"≥","gE":"≧","gEl":"⪌","gel":"⋛","geq":"≥","geqq":"≧","geqslant":"⩾","gescc":"⪩","ges":"⩾","gesdot":"⪀","gesdoto":"⪂","gesdotol":"⪄","gesl":"⋛︀","gesles":"⪔","Gfr":"𝔊","gfr":"𝔤","gg":"≫","Gg":"⋙","ggg":"⋙","gimel":"ℷ","GJcy":"Ѓ","gjcy":"ѓ","gla":"⪥","gl":"≷","glE":"⪒","glj":"⪤","gnap":"⪊","gnapprox":"⪊","gne":"⪈","gnE":"≩","gneq":"⪈","gneqq":"≩","gnsim":"⋧","Gopf":"𝔾","gopf":"𝕘","grave":"`","GreaterEqual":"≥","GreaterEqualLess":"⋛","GreaterFullEqual":"≧","GreaterGreater":"⪢","GreaterLess":"≷","GreaterSlantEqual":"⩾","GreaterTilde":"≳","Gscr":"𝒢","gscr":"ℊ","gsim":"≳","gsime":"⪎","gsiml":"⪐","gtcc":"⪧","gtcir":"⩺","gt":">","GT":">","Gt":"≫","gtdot":"⋗","gtlPar":"⦕","gtquest":"⩼","gtrapprox":"⪆","gtrarr":"⥸","gtrdot":"⋗","gtreqless":"⋛","gtreqqless":"⪌","gtrless":"≷","gtrsim":"≳","gvertneqq":"≩︀","gvnE":"≩︀","Hacek":"ˇ","hairsp":" ","half":"½","hamilt":"ℋ","HARDcy":"Ъ","hardcy":"ъ","harrcir":"⥈","harr":"↔","hArr":"⇔","harrw":"↭","Hat":"^","hbar":"ℏ","Hcirc":"Ĥ","hcirc":"ĥ","hearts":"♥","heartsuit":"♥","hellip":"…","hercon":"⊹","hfr":"𝔥","Hfr":"ℌ","HilbertSpace":"ℋ","hksearow":"⤥","hkswarow":"⤦","hoarr":"⇿","homtht":"∻","hookleftarrow":"↩","hookrightarrow":"↪","hopf":"𝕙","Hopf":"ℍ","horbar":"―","HorizontalLine":"─","hscr":"𝒽","Hscr":"ℋ","hslash":"ℏ","Hstrok":"Ħ","hstrok":"ħ","HumpDownHump":"≎","HumpEqual":"≏","hybull":"⁃","hyphen":"‐","Iacute":"Í","iacute":"í","ic":"⁣","Icirc":"Î","icirc":"î","Icy":"И","icy":"и","Idot":"İ","IEcy":"Е","iecy":"е","iexcl":"¡","iff":"⇔","ifr":"𝔦","Ifr":"ℑ","Igrave":"Ì","igrave":"ì","ii":"ⅈ","iiiint":"⨌","iiint":"∭","iinfin":"⧜","iiota":"℩","IJlig":"Ĳ","ijlig":"ĳ","Imacr":"Ī","imacr":"ī","image":"ℑ","ImaginaryI":"ⅈ","imagline":"ℐ","imagpart":"ℑ","imath":"ı","Im":"ℑ","imof":"⊷","imped":"Ƶ","Implies":"⇒","incare":"℅","in":"∈","infin":"∞","infintie":"⧝","inodot":"ı","intcal":"⊺","int":"∫","Int":"∬","integers":"ℤ","Integral":"∫","intercal":"⊺","Intersection":"⋂","intlarhk":"⨗","intprod":"⨼","InvisibleComma":"⁣","InvisibleTimes":"⁢","IOcy":"Ё","iocy":"ё","Iogon":"Į","iogon":"į","Iopf":"𝕀","iopf":"𝕚","Iota":"Ι","iota":"ι","iprod":"⨼","iquest":"¿","iscr":"𝒾","Iscr":"ℐ","isin":"∈","isindot":"⋵","isinE":"⋹","isins":"⋴","isinsv":"⋳","isinv":"∈","it":"⁢","Itilde":"Ĩ","itilde":"ĩ","Iukcy":"І","iukcy":"і","Iuml":"Ï","iuml":"ï","Jcirc":"Ĵ","jcirc":"ĵ","Jcy":"Й","jcy":"й","Jfr":"𝔍","jfr":"𝔧","jmath":"ȷ","Jopf":"𝕁","jopf":"𝕛","Jscr":"𝒥","jscr":"𝒿","Jsercy":"Ј","jsercy":"ј","Jukcy":"Є","jukcy":"є","Kappa":"Κ","kappa":"κ","kappav":"ϰ","Kcedil":"Ķ","kcedil":"ķ","Kcy":"К","kcy":"к","Kfr":"𝔎","kfr":"𝔨","kgreen":"ĸ","KHcy":"Х","khcy":"х","KJcy":"Ќ","kjcy":"ќ","Kopf":"𝕂","kopf":"𝕜","Kscr":"𝒦","kscr":"𝓀","lAarr":"⇚","Lacute":"Ĺ","lacute":"ĺ","laemptyv":"⦴","lagran":"ℒ","Lambda":"Λ","lambda":"λ","lang":"⟨","Lang":"⟪","langd":"⦑","langle":"⟨","lap":"⪅","Laplacetrf":"ℒ","laquo":"«","larrb":"⇤","larrbfs":"⤟","larr":"←","Larr":"↞","lArr":"⇐","larrfs":"⤝","larrhk":"↩","larrlp":"↫","larrpl":"⤹","larrsim":"⥳","larrtl":"↢","latail":"⤙","lAtail":"⤛","lat":"⪫","late":"⪭","lates":"⪭︀","lbarr":"⤌","lBarr":"⤎","lbbrk":"❲","lbrace":"{","lbrack":"[","lbrke":"⦋","lbrksld":"⦏","lbrkslu":"⦍","Lcaron":"Ľ","lcaron":"ľ","Lcedil":"Ļ","lcedil":"ļ","lceil":"⌈","lcub":"{","Lcy":"Л","lcy":"л","ldca":"⤶","ldquo":"“","ldquor":"„","ldrdhar":"⥧","ldrushar":"⥋","ldsh":"↲","le":"≤","lE":"≦","LeftAngleBracket":"⟨","LeftArrowBar":"⇤","leftarrow":"←","LeftArrow":"←","Leftarrow":"⇐","LeftArrowRightArrow":"⇆","leftarrowtail":"↢","LeftCeiling":"⌈","LeftDoubleBracket":"⟦","LeftDownTeeVector":"⥡","LeftDownVectorBar":"⥙","LeftDownVector":"⇃","LeftFloor":"⌊","leftharpoondown":"↽","leftharpoonup":"↼","leftleftarrows":"⇇","leftrightarrow":"↔","LeftRightArrow":"↔","Leftrightarrow":"⇔","leftrightarrows":"⇆","leftrightharpoons":"⇋","leftrightsquigarrow":"↭","LeftRightVector":"⥎","LeftTeeArrow":"↤","LeftTee":"⊣","LeftTeeVector":"⥚","leftthreetimes":"⋋","LeftTriangleBar":"⧏","LeftTriangle":"⊲","LeftTriangleEqual":"⊴","LeftUpDownVector":"⥑","LeftUpTeeVector":"⥠","LeftUpVectorBar":"⥘","LeftUpVector":"↿","LeftVectorBar":"⥒","LeftVector":"↼","lEg":"⪋","leg":"⋚","leq":"≤","leqq":"≦","leqslant":"⩽","lescc":"⪨","les":"⩽","lesdot":"⩿","lesdoto":"⪁","lesdotor":"⪃","lesg":"⋚︀","lesges":"⪓","lessapprox":"⪅","lessdot":"⋖","lesseqgtr":"⋚","lesseqqgtr":"⪋","LessEqualGreater":"⋚","LessFullEqual":"≦","LessGreater":"≶","lessgtr":"≶","LessLess":"⪡","lesssim":"≲","LessSlantEqual":"⩽","LessTilde":"≲","lfisht":"⥼","lfloor":"⌊","Lfr":"𝔏","lfr":"𝔩","lg":"≶","lgE":"⪑","lHar":"⥢","lhard":"↽","lharu":"↼","lharul":"⥪","lhblk":"▄","LJcy":"Љ","ljcy":"љ","llarr":"⇇","ll":"≪","Ll":"⋘","llcorner":"⌞","Lleftarrow":"⇚","llhard":"⥫","lltri":"◺","Lmidot":"Ŀ","lmidot":"ŀ","lmoustache":"⎰","lmoust":"⎰","lnap":"⪉","lnapprox":"⪉","lne":"⪇","lnE":"≨","lneq":"⪇","lneqq":"≨","lnsim":"⋦","loang":"⟬","loarr":"⇽","lobrk":"⟦","longleftarrow":"⟵","LongLeftArrow":"⟵","Longleftarrow":"⟸","longleftrightarrow":"⟷","LongLeftRightArrow":"⟷","Longleftrightarrow":"⟺","longmapsto":"⟼","longrightarrow":"⟶","LongRightArrow":"⟶","Longrightarrow":"⟹","looparrowleft":"↫","looparrowright":"↬","lopar":"⦅","Lopf":"𝕃","lopf":"𝕝","loplus":"⨭","lotimes":"⨴","lowast":"∗","lowbar":"_","LowerLeftArrow":"↙","LowerRightArrow":"↘","loz":"◊","lozenge":"◊","lozf":"⧫","lpar":"(","lparlt":"⦓","lrarr":"⇆","lrcorner":"⌟","lrhar":"⇋","lrhard":"⥭","lrm":"‎","lrtri":"⊿","lsaquo":"‹","lscr":"𝓁","Lscr":"ℒ","lsh":"↰","Lsh":"↰","lsim":"≲","lsime":"⪍","lsimg":"⪏","lsqb":"[","lsquo":"‘","lsquor":"‚","Lstrok":"Ł","lstrok":"ł","ltcc":"⪦","ltcir":"⩹","lt":"<","LT":"<","Lt":"≪","ltdot":"⋖","lthree":"⋋","ltimes":"⋉","ltlarr":"⥶","ltquest":"⩻","ltri":"◃","ltrie":"⊴","ltrif":"◂","ltrPar":"⦖","lurdshar":"⥊","luruhar":"⥦","lvertneqq":"≨︀","lvnE":"≨︀","macr":"¯","male":"♂","malt":"✠","maltese":"✠","Map":"⤅","map":"↦","mapsto":"↦","mapstodown":"↧","mapstoleft":"↤","mapstoup":"↥","marker":"▮","mcomma":"⨩","Mcy":"М","mcy":"м","mdash":"—","mDDot":"∺","measuredangle":"∡","MediumSpace":" ","Mellintrf":"ℳ","Mfr":"𝔐","mfr":"𝔪","mho":"℧","micro":"µ","midast":"*","midcir":"⫰","mid":"∣","middot":"·","minusb":"⊟","minus":"−","minusd":"∸","minusdu":"⨪","MinusPlus":"∓","mlcp":"⫛","mldr":"…","mnplus":"∓","models":"⊧","Mopf":"𝕄","mopf":"𝕞","mp":"∓","mscr":"𝓂","Mscr":"ℳ","mstpos":"∾","Mu":"Μ","mu":"μ","multimap":"⊸","mumap":"⊸","nabla":"∇","Nacute":"Ń","nacute":"ń","nang":"∠⃒","nap":"≉","napE":"⩰̸","napid":"≋̸","napos":"ŉ","napprox":"≉","natural":"♮","naturals":"ℕ","natur":"♮","nbsp":" ","nbump":"≎̸","nbumpe":"≏̸","ncap":"⩃","Ncaron":"Ň","ncaron":"ň","Ncedil":"Ņ","ncedil":"ņ","ncong":"≇","ncongdot":"⩭̸","ncup":"⩂","Ncy":"Н","ncy":"н","ndash":"–","nearhk":"⤤","nearr":"↗","neArr":"⇗","nearrow":"↗","ne":"≠","nedot":"≐̸","NegativeMediumSpace":"​","NegativeThickSpace":"​","NegativeThinSpace":"​","NegativeVeryThinSpace":"​","nequiv":"≢","nesear":"⤨","nesim":"≂̸","NestedGreaterGreater":"≫","NestedLessLess":"≪","NewLine":"\\n","nexist":"∄","nexists":"∄","Nfr":"𝔑","nfr":"𝔫","ngE":"≧̸","nge":"≱","ngeq":"≱","ngeqq":"≧̸","ngeqslant":"⩾̸","nges":"⩾̸","nGg":"⋙̸","ngsim":"≵","nGt":"≫⃒","ngt":"≯","ngtr":"≯","nGtv":"≫̸","nharr":"↮","nhArr":"⇎","nhpar":"⫲","ni":"∋","nis":"⋼","nisd":"⋺","niv":"∋","NJcy":"Њ","njcy":"њ","nlarr":"↚","nlArr":"⇍","nldr":"‥","nlE":"≦̸","nle":"≰","nleftarrow":"↚","nLeftarrow":"⇍","nleftrightarrow":"↮","nLeftrightarrow":"⇎","nleq":"≰","nleqq":"≦̸","nleqslant":"⩽̸","nles":"⩽̸","nless":"≮","nLl":"⋘̸","nlsim":"≴","nLt":"≪⃒","nlt":"≮","nltri":"⋪","nltrie":"⋬","nLtv":"≪̸","nmid":"∤","NoBreak":"⁠","NonBreakingSpace":" ","nopf":"𝕟","Nopf":"ℕ","Not":"⫬","not":"¬","NotCongruent":"≢","NotCupCap":"≭","NotDoubleVerticalBar":"∦","NotElement":"∉","NotEqual":"≠","NotEqualTilde":"≂̸","NotExists":"∄","NotGreater":"≯","NotGreaterEqual":"≱","NotGreaterFullEqual":"≧̸","NotGreaterGreater":"≫̸","NotGreaterLess":"≹","NotGreaterSlantEqual":"⩾̸","NotGreaterTilde":"≵","NotHumpDownHump":"≎̸","NotHumpEqual":"≏̸","notin":"∉","notindot":"⋵̸","notinE":"⋹̸","notinva":"∉","notinvb":"⋷","notinvc":"⋶","NotLeftTriangleBar":"⧏̸","NotLeftTriangle":"⋪","NotLeftTriangleEqual":"⋬","NotLess":"≮","NotLessEqual":"≰","NotLessGreater":"≸","NotLessLess":"≪̸","NotLessSlantEqual":"⩽̸","NotLessTilde":"≴","NotNestedGreaterGreater":"⪢̸","NotNestedLessLess":"⪡̸","notni":"∌","notniva":"∌","notnivb":"⋾","notnivc":"⋽","NotPrecedes":"⊀","NotPrecedesEqual":"⪯̸","NotPrecedesSlantEqual":"⋠","NotReverseElement":"∌","NotRightTriangleBar":"⧐̸","NotRightTriangle":"⋫","NotRightTriangleEqual":"⋭","NotSquareSubset":"⊏̸","NotSquareSubsetEqual":"⋢","NotSquareSuperset":"⊐̸","NotSquareSupersetEqual":"⋣","NotSubset":"⊂⃒","NotSubsetEqual":"⊈","NotSucceeds":"⊁","NotSucceedsEqual":"⪰̸","NotSucceedsSlantEqual":"⋡","NotSucceedsTilde":"≿̸","NotSuperset":"⊃⃒","NotSupersetEqual":"⊉","NotTilde":"≁","NotTildeEqual":"≄","NotTildeFullEqual":"≇","NotTildeTilde":"≉","NotVerticalBar":"∤","nparallel":"∦","npar":"∦","nparsl":"⫽⃥","npart":"∂̸","npolint":"⨔","npr":"⊀","nprcue":"⋠","nprec":"⊀","npreceq":"⪯̸","npre":"⪯̸","nrarrc":"⤳̸","nrarr":"↛","nrArr":"⇏","nrarrw":"↝̸","nrightarrow":"↛","nRightarrow":"⇏","nrtri":"⋫","nrtrie":"⋭","nsc":"⊁","nsccue":"⋡","nsce":"⪰̸","Nscr":"𝒩","nscr":"𝓃","nshortmid":"∤","nshortparallel":"∦","nsim":"≁","nsime":"≄","nsimeq":"≄","nsmid":"∤","nspar":"∦","nsqsube":"⋢","nsqsupe":"⋣","nsub":"⊄","nsubE":"⫅̸","nsube":"⊈","nsubset":"⊂⃒","nsubseteq":"⊈","nsubseteqq":"⫅̸","nsucc":"⊁","nsucceq":"⪰̸","nsup":"⊅","nsupE":"⫆̸","nsupe":"⊉","nsupset":"⊃⃒","nsupseteq":"⊉","nsupseteqq":"⫆̸","ntgl":"≹","Ntilde":"Ñ","ntilde":"ñ","ntlg":"≸","ntriangleleft":"⋪","ntrianglelefteq":"⋬","ntriangleright":"⋫","ntrianglerighteq":"⋭","Nu":"Ν","nu":"ν","num":"#","numero":"№","numsp":" ","nvap":"≍⃒","nvdash":"⊬","nvDash":"⊭","nVdash":"⊮","nVDash":"⊯","nvge":"≥⃒","nvgt":">⃒","nvHarr":"⤄","nvinfin":"⧞","nvlArr":"⤂","nvle":"≤⃒","nvlt":"<⃒","nvltrie":"⊴⃒","nvrArr":"⤃","nvrtrie":"⊵⃒","nvsim":"∼⃒","nwarhk":"⤣","nwarr":"↖","nwArr":"⇖","nwarrow":"↖","nwnear":"⤧","Oacute":"Ó","oacute":"ó","oast":"⊛","Ocirc":"Ô","ocirc":"ô","ocir":"⊚","Ocy":"О","ocy":"о","odash":"⊝","Odblac":"Ő","odblac":"ő","odiv":"⨸","odot":"⊙","odsold":"⦼","OElig":"Œ","oelig":"œ","ofcir":"⦿","Ofr":"𝔒","ofr":"𝔬","ogon":"˛","Ograve":"Ò","ograve":"ò","ogt":"⧁","ohbar":"⦵","ohm":"Ω","oint":"∮","olarr":"↺","olcir":"⦾","olcross":"⦻","oline":"‾","olt":"⧀","Omacr":"Ō","omacr":"ō","Omega":"Ω","omega":"ω","Omicron":"Ο","omicron":"ο","omid":"⦶","ominus":"⊖","Oopf":"𝕆","oopf":"𝕠","opar":"⦷","OpenCurlyDoubleQuote":"“","OpenCurlyQuote":"‘","operp":"⦹","oplus":"⊕","orarr":"↻","Or":"⩔","or":"∨","ord":"⩝","order":"ℴ","orderof":"ℴ","ordf":"ª","ordm":"º","origof":"⊶","oror":"⩖","orslope":"⩗","orv":"⩛","oS":"Ⓢ","Oscr":"𝒪","oscr":"ℴ","Oslash":"Ø","oslash":"ø","osol":"⊘","Otilde":"Õ","otilde":"õ","otimesas":"⨶","Otimes":"⨷","otimes":"⊗","Ouml":"Ö","ouml":"ö","ovbar":"⌽","OverBar":"‾","OverBrace":"⏞","OverBracket":"⎴","OverParenthesis":"⏜","para":"¶","parallel":"∥","par":"∥","parsim":"⫳","parsl":"⫽","part":"∂","PartialD":"∂","Pcy":"П","pcy":"п","percnt":"%","period":".","permil":"‰","perp":"⊥","pertenk":"‱","Pfr":"𝔓","pfr":"𝔭","Phi":"Φ","phi":"φ","phiv":"ϕ","phmmat":"ℳ","phone":"☎","Pi":"Π","pi":"π","pitchfork":"⋔","piv":"ϖ","planck":"ℏ","planckh":"ℎ","plankv":"ℏ","plusacir":"⨣","plusb":"⊞","pluscir":"⨢","plus":"+","plusdo":"∔","plusdu":"⨥","pluse":"⩲","PlusMinus":"±","plusmn":"±","plussim":"⨦","plustwo":"⨧","pm":"±","Poincareplane":"ℌ","pointint":"⨕","popf":"𝕡","Popf":"ℙ","pound":"£","prap":"⪷","Pr":"⪻","pr":"≺","prcue":"≼","precapprox":"⪷","prec":"≺","preccurlyeq":"≼","Precedes":"≺","PrecedesEqual":"⪯","PrecedesSlantEqual":"≼","PrecedesTilde":"≾","preceq":"⪯","precnapprox":"⪹","precneqq":"⪵","precnsim":"⋨","pre":"⪯","prE":"⪳","precsim":"≾","prime":"′","Prime":"″","primes":"ℙ","prnap":"⪹","prnE":"⪵","prnsim":"⋨","prod":"∏","Product":"∏","profalar":"⌮","profline":"⌒","profsurf":"⌓","prop":"∝","Proportional":"∝","Proportion":"∷","propto":"∝","prsim":"≾","prurel":"⊰","Pscr":"𝒫","pscr":"𝓅","Psi":"Ψ","psi":"ψ","puncsp":" ","Qfr":"𝔔","qfr":"𝔮","qint":"⨌","qopf":"𝕢","Qopf":"ℚ","qprime":"⁗","Qscr":"𝒬","qscr":"𝓆","quaternions":"ℍ","quatint":"⨖","quest":"?","questeq":"≟","quot":"\\"","QUOT":"\\"","rAarr":"⇛","race":"∽̱","Racute":"Ŕ","racute":"ŕ","radic":"√","raemptyv":"⦳","rang":"⟩","Rang":"⟫","rangd":"⦒","range":"⦥","rangle":"⟩","raquo":"»","rarrap":"⥵","rarrb":"⇥","rarrbfs":"⤠","rarrc":"⤳","rarr":"→","Rarr":"↠","rArr":"⇒","rarrfs":"⤞","rarrhk":"↪","rarrlp":"↬","rarrpl":"⥅","rarrsim":"⥴","Rarrtl":"⤖","rarrtl":"↣","rarrw":"↝","ratail":"⤚","rAtail":"⤜","ratio":"∶","rationals":"ℚ","rbarr":"⤍","rBarr":"⤏","RBarr":"⤐","rbbrk":"❳","rbrace":"}","rbrack":"]","rbrke":"⦌","rbrksld":"⦎","rbrkslu":"⦐","Rcaron":"Ř","rcaron":"ř","Rcedil":"Ŗ","rcedil":"ŗ","rceil":"⌉","rcub":"}","Rcy":"Р","rcy":"р","rdca":"⤷","rdldhar":"⥩","rdquo":"”","rdquor":"”","rdsh":"↳","real":"ℜ","realine":"ℛ","realpart":"ℜ","reals":"ℝ","Re":"ℜ","rect":"▭","reg":"®","REG":"®","ReverseElement":"∋","ReverseEquilibrium":"⇋","ReverseUpEquilibrium":"⥯","rfisht":"⥽","rfloor":"⌋","rfr":"𝔯","Rfr":"ℜ","rHar":"⥤","rhard":"⇁","rharu":"⇀","rharul":"⥬","Rho":"Ρ","rho":"ρ","rhov":"ϱ","RightAngleBracket":"⟩","RightArrowBar":"⇥","rightarrow":"→","RightArrow":"→","Rightarrow":"⇒","RightArrowLeftArrow":"⇄","rightarrowtail":"↣","RightCeiling":"⌉","RightDoubleBracket":"⟧","RightDownTeeVector":"⥝","RightDownVectorBar":"⥕","RightDownVector":"⇂","RightFloor":"⌋","rightharpoondown":"⇁","rightharpoonup":"⇀","rightleftarrows":"⇄","rightleftharpoons":"⇌","rightrightarrows":"⇉","rightsquigarrow":"↝","RightTeeArrow":"↦","RightTee":"⊢","RightTeeVector":"⥛","rightthreetimes":"⋌","RightTriangleBar":"⧐","RightTriangle":"⊳","RightTriangleEqual":"⊵","RightUpDownVector":"⥏","RightUpTeeVector":"⥜","RightUpVectorBar":"⥔","RightUpVector":"↾","RightVectorBar":"⥓","RightVector":"⇀","ring":"˚","risingdotseq":"≓","rlarr":"⇄","rlhar":"⇌","rlm":"‏","rmoustache":"⎱","rmoust":"⎱","rnmid":"⫮","roang":"⟭","roarr":"⇾","robrk":"⟧","ropar":"⦆","ropf":"𝕣","Ropf":"ℝ","roplus":"⨮","rotimes":"⨵","RoundImplies":"⥰","rpar":")","rpargt":"⦔","rppolint":"⨒","rrarr":"⇉","Rrightarrow":"⇛","rsaquo":"›","rscr":"𝓇","Rscr":"ℛ","rsh":"↱","Rsh":"↱","rsqb":"]","rsquo":"’","rsquor":"’","rthree":"⋌","rtimes":"⋊","rtri":"▹","rtrie":"⊵","rtrif":"▸","rtriltri":"⧎","RuleDelayed":"⧴","ruluhar":"⥨","rx":"℞","Sacute":"Ś","sacute":"ś","sbquo":"‚","scap":"⪸","Scaron":"Š","scaron":"š","Sc":"⪼","sc":"≻","sccue":"≽","sce":"⪰","scE":"⪴","Scedil":"Ş","scedil":"ş","Scirc":"Ŝ","scirc":"ŝ","scnap":"⪺","scnE":"⪶","scnsim":"⋩","scpolint":"⨓","scsim":"≿","Scy":"С","scy":"с","sdotb":"⊡","sdot":"⋅","sdote":"⩦","searhk":"⤥","searr":"↘","seArr":"⇘","searrow":"↘","sect":"§","semi":";","seswar":"⤩","setminus":"∖","setmn":"∖","sext":"✶","Sfr":"𝔖","sfr":"𝔰","sfrown":"⌢","sharp":"♯","SHCHcy":"Щ","shchcy":"щ","SHcy":"Ш","shcy":"ш","ShortDownArrow":"↓","ShortLeftArrow":"←","shortmid":"∣","shortparallel":"∥","ShortRightArrow":"→","ShortUpArrow":"↑","shy":"­","Sigma":"Σ","sigma":"σ","sigmaf":"ς","sigmav":"ς","sim":"∼","simdot":"⩪","sime":"≃","simeq":"≃","simg":"⪞","simgE":"⪠","siml":"⪝","simlE":"⪟","simne":"≆","simplus":"⨤","simrarr":"⥲","slarr":"←","SmallCircle":"∘","smallsetminus":"∖","smashp":"⨳","smeparsl":"⧤","smid":"∣","smile":"⌣","smt":"⪪","smte":"⪬","smtes":"⪬︀","SOFTcy":"Ь","softcy":"ь","solbar":"⌿","solb":"⧄","sol":"/","Sopf":"𝕊","sopf":"𝕤","spades":"♠","spadesuit":"♠","spar":"∥","sqcap":"⊓","sqcaps":"⊓︀","sqcup":"⊔","sqcups":"⊔︀","Sqrt":"√","sqsub":"⊏","sqsube":"⊑","sqsubset":"⊏","sqsubseteq":"⊑","sqsup":"⊐","sqsupe":"⊒","sqsupset":"⊐","sqsupseteq":"⊒","square":"□","Square":"□","SquareIntersection":"⊓","SquareSubset":"⊏","SquareSubsetEqual":"⊑","SquareSuperset":"⊐","SquareSupersetEqual":"⊒","SquareUnion":"⊔","squarf":"▪","squ":"□","squf":"▪","srarr":"→","Sscr":"𝒮","sscr":"𝓈","ssetmn":"∖","ssmile":"⌣","sstarf":"⋆","Star":"⋆","star":"☆","starf":"★","straightepsilon":"ϵ","straightphi":"ϕ","strns":"¯","sub":"⊂","Sub":"⋐","subdot":"⪽","subE":"⫅","sube":"⊆","subedot":"⫃","submult":"⫁","subnE":"⫋","subne":"⊊","subplus":"⪿","subrarr":"⥹","subset":"⊂","Subset":"⋐","subseteq":"⊆","subseteqq":"⫅","SubsetEqual":"⊆","subsetneq":"⊊","subsetneqq":"⫋","subsim":"⫇","subsub":"⫕","subsup":"⫓","succapprox":"⪸","succ":"≻","succcurlyeq":"≽","Succeeds":"≻","SucceedsEqual":"⪰","SucceedsSlantEqual":"≽","SucceedsTilde":"≿","succeq":"⪰","succnapprox":"⪺","succneqq":"⪶","succnsim":"⋩","succsim":"≿","SuchThat":"∋","sum":"∑","Sum":"∑","sung":"♪","sup1":"¹","sup2":"²","sup3":"³","sup":"⊃","Sup":"⋑","supdot":"⪾","supdsub":"⫘","supE":"⫆","supe":"⊇","supedot":"⫄","Superset":"⊃","SupersetEqual":"⊇","suphsol":"⟉","suphsub":"⫗","suplarr":"⥻","supmult":"⫂","supnE":"⫌","supne":"⊋","supplus":"⫀","supset":"⊃","Supset":"⋑","supseteq":"⊇","supseteqq":"⫆","supsetneq":"⊋","supsetneqq":"⫌","supsim":"⫈","supsub":"⫔","supsup":"⫖","swarhk":"⤦","swarr":"↙","swArr":"⇙","swarrow":"↙","swnwar":"⤪","szlig":"ß","Tab":"\\t","target":"⌖","Tau":"Τ","tau":"τ","tbrk":"⎴","Tcaron":"Ť","tcaron":"ť","Tcedil":"Ţ","tcedil":"ţ","Tcy":"Т","tcy":"т","tdot":"⃛","telrec":"⌕","Tfr":"𝔗","tfr":"𝔱","there4":"∴","therefore":"∴","Therefore":"∴","Theta":"Θ","theta":"θ","thetasym":"ϑ","thetav":"ϑ","thickapprox":"≈","thicksim":"∼","ThickSpace":"  ","ThinSpace":" ","thinsp":" ","thkap":"≈","thksim":"∼","THORN":"Þ","thorn":"þ","tilde":"˜","Tilde":"∼","TildeEqual":"≃","TildeFullEqual":"≅","TildeTilde":"≈","timesbar":"⨱","timesb":"⊠","times":"×","timesd":"⨰","tint":"∭","toea":"⤨","topbot":"⌶","topcir":"⫱","top":"⊤","Topf":"𝕋","topf":"𝕥","topfork":"⫚","tosa":"⤩","tprime":"‴","trade":"™","TRADE":"™","triangle":"▵","triangledown":"▿","triangleleft":"◃","trianglelefteq":"⊴","triangleq":"≜","triangleright":"▹","trianglerighteq":"⊵","tridot":"◬","trie":"≜","triminus":"⨺","TripleDot":"⃛","triplus":"⨹","trisb":"⧍","tritime":"⨻","trpezium":"⏢","Tscr":"𝒯","tscr":"𝓉","TScy":"Ц","tscy":"ц","TSHcy":"Ћ","tshcy":"ћ","Tstrok":"Ŧ","tstrok":"ŧ","twixt":"≬","twoheadleftarrow":"↞","twoheadrightarrow":"↠","Uacute":"Ú","uacute":"ú","uarr":"↑","Uarr":"↟","uArr":"⇑","Uarrocir":"⥉","Ubrcy":"Ў","ubrcy":"ў","Ubreve":"Ŭ","ubreve":"ŭ","Ucirc":"Û","ucirc":"û","Ucy":"У","ucy":"у","udarr":"⇅","Udblac":"Ű","udblac":"ű","udhar":"⥮","ufisht":"⥾","Ufr":"𝔘","ufr":"𝔲","Ugrave":"Ù","ugrave":"ù","uHar":"⥣","uharl":"↿","uharr":"↾","uhblk":"▀","ulcorn":"⌜","ulcorner":"⌜","ulcrop":"⌏","ultri":"◸","Umacr":"Ū","umacr":"ū","uml":"¨","UnderBar":"_","UnderBrace":"⏟","UnderBracket":"⎵","UnderParenthesis":"⏝","Union":"⋃","UnionPlus":"⊎","Uogon":"Ų","uogon":"ų","Uopf":"𝕌","uopf":"𝕦","UpArrowBar":"⤒","uparrow":"↑","UpArrow":"↑","Uparrow":"⇑","UpArrowDownArrow":"⇅","updownarrow":"↕","UpDownArrow":"↕","Updownarrow":"⇕","UpEquilibrium":"⥮","upharpoonleft":"↿","upharpoonright":"↾","uplus":"⊎","UpperLeftArrow":"↖","UpperRightArrow":"↗","upsi":"υ","Upsi":"ϒ","upsih":"ϒ","Upsilon":"Υ","upsilon":"υ","UpTeeArrow":"↥","UpTee":"⊥","upuparrows":"⇈","urcorn":"⌝","urcorner":"⌝","urcrop":"⌎","Uring":"Ů","uring":"ů","urtri":"◹","Uscr":"𝒰","uscr":"𝓊","utdot":"⋰","Utilde":"Ũ","utilde":"ũ","utri":"▵","utrif":"▴","uuarr":"⇈","Uuml":"Ü","uuml":"ü","uwangle":"⦧","vangrt":"⦜","varepsilon":"ϵ","varkappa":"ϰ","varnothing":"∅","varphi":"ϕ","varpi":"ϖ","varpropto":"∝","varr":"↕","vArr":"⇕","varrho":"ϱ","varsigma":"ς","varsubsetneq":"⊊︀","varsubsetneqq":"⫋︀","varsupsetneq":"⊋︀","varsupsetneqq":"⫌︀","vartheta":"ϑ","vartriangleleft":"⊲","vartriangleright":"⊳","vBar":"⫨","Vbar":"⫫","vBarv":"⫩","Vcy":"В","vcy":"в","vdash":"⊢","vDash":"⊨","Vdash":"⊩","VDash":"⊫","Vdashl":"⫦","veebar":"⊻","vee":"∨","Vee":"⋁","veeeq":"≚","vellip":"⋮","verbar":"|","Verbar":"‖","vert":"|","Vert":"‖","VerticalBar":"∣","VerticalLine":"|","VerticalSeparator":"❘","VerticalTilde":"≀","VeryThinSpace":" ","Vfr":"𝔙","vfr":"𝔳","vltri":"⊲","vnsub":"⊂⃒","vnsup":"⊃⃒","Vopf":"𝕍","vopf":"𝕧","vprop":"∝","vrtri":"⊳","Vscr":"𝒱","vscr":"𝓋","vsubnE":"⫋︀","vsubne":"⊊︀","vsupnE":"⫌︀","vsupne":"⊋︀","Vvdash":"⊪","vzigzag":"⦚","Wcirc":"Ŵ","wcirc":"ŵ","wedbar":"⩟","wedge":"∧","Wedge":"⋀","wedgeq":"≙","weierp":"℘","Wfr":"𝔚","wfr":"𝔴","Wopf":"𝕎","wopf":"𝕨","wp":"℘","wr":"≀","wreath":"≀","Wscr":"𝒲","wscr":"𝓌","xcap":"⋂","xcirc":"◯","xcup":"⋃","xdtri":"▽","Xfr":"𝔛","xfr":"𝔵","xharr":"⟷","xhArr":"⟺","Xi":"Ξ","xi":"ξ","xlarr":"⟵","xlArr":"⟸","xmap":"⟼","xnis":"⋻","xodot":"⨀","Xopf":"𝕏","xopf":"𝕩","xoplus":"⨁","xotime":"⨂","xrarr":"⟶","xrArr":"⟹","Xscr":"𝒳","xscr":"𝓍","xsqcup":"⨆","xuplus":"⨄","xutri":"△","xvee":"⋁","xwedge":"⋀","Yacute":"Ý","yacute":"ý","YAcy":"Я","yacy":"я","Ycirc":"Ŷ","ycirc":"ŷ","Ycy":"Ы","ycy":"ы","yen":"¥","Yfr":"𝔜","yfr":"𝔶","YIcy":"Ї","yicy":"ї","Yopf":"𝕐","yopf":"𝕪","Yscr":"𝒴","yscr":"𝓎","YUcy":"Ю","yucy":"ю","yuml":"ÿ","Yuml":"Ÿ","Zacute":"Ź","zacute":"ź","Zcaron":"Ž","zcaron":"ž","Zcy":"З","zcy":"з","Zdot":"Ż","zdot":"ż","zeetrf":"ℨ","ZeroWidthSpace":"​","Zeta":"Ζ","zeta":"ζ","zfr":"𝔷","Zfr":"ℨ","ZHcy":"Ж","zhcy":"ж","zigrarr":"⇝","zopf":"𝕫","Zopf":"ℤ","Zscr":"𝒵","zscr":"𝓏","zwj":"‍","zwnj":"‌"}');
+
+/***/ }),
+
+/***/ 7802:
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"Aacute":"Á","aacute":"á","Acirc":"Â","acirc":"â","acute":"´","AElig":"Æ","aelig":"æ","Agrave":"À","agrave":"à","amp":"&","AMP":"&","Aring":"Å","aring":"å","Atilde":"Ã","atilde":"ã","Auml":"Ä","auml":"ä","brvbar":"¦","Ccedil":"Ç","ccedil":"ç","cedil":"¸","cent":"¢","copy":"©","COPY":"©","curren":"¤","deg":"°","divide":"÷","Eacute":"É","eacute":"é","Ecirc":"Ê","ecirc":"ê","Egrave":"È","egrave":"è","ETH":"Ð","eth":"ð","Euml":"Ë","euml":"ë","frac12":"½","frac14":"¼","frac34":"¾","gt":">","GT":">","Iacute":"Í","iacute":"í","Icirc":"Î","icirc":"î","iexcl":"¡","Igrave":"Ì","igrave":"ì","iquest":"¿","Iuml":"Ï","iuml":"ï","laquo":"«","lt":"<","LT":"<","macr":"¯","micro":"µ","middot":"·","nbsp":" ","not":"¬","Ntilde":"Ñ","ntilde":"ñ","Oacute":"Ó","oacute":"ó","Ocirc":"Ô","ocirc":"ô","Ograve":"Ò","ograve":"ò","ordf":"ª","ordm":"º","Oslash":"Ø","oslash":"ø","Otilde":"Õ","otilde":"õ","Ouml":"Ö","ouml":"ö","para":"¶","plusmn":"±","pound":"£","quot":"\\"","QUOT":"\\"","raquo":"»","reg":"®","REG":"®","sect":"§","shy":"­","sup1":"¹","sup2":"²","sup3":"³","szlig":"ß","THORN":"Þ","thorn":"þ","times":"×","Uacute":"Ú","uacute":"ú","Ucirc":"Û","ucirc":"û","Ugrave":"Ù","ugrave":"ù","uml":"¨","Uuml":"Ü","uuml":"ü","Yacute":"Ý","yacute":"ý","yen":"¥","yuml":"ÿ"}');
+
+/***/ }),
+
+/***/ 2228:
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"amp":"&","apos":"\'","gt":">","lt":"<","quot":"\\""}');
 
 /***/ }),
 
