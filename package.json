@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@actions/core": "^1.4.0",
-    "@aws-sdk/client-lambda": "^3.18.0"
+    "@aws-sdk/client-lambda": "^3.19.0"
   },
   "devDependencies": {
     "@types/node": "^15.12.4",
