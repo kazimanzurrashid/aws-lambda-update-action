@@ -5,7 +5,7 @@ require('./sourcemap-register.js');/******/ (() => { // webpackBootstrap
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-lambda","description":"AWS SDK for JavaScript Lambda Client for Node.js, Browser and React Native","version":"3.20.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es","downlevel-dts":"downlevel-dts dist/types dist/types/ts3.4"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/client-sts":"3.20.0","@aws-sdk/config-resolver":"3.20.0","@aws-sdk/credential-provider-node":"3.20.0","@aws-sdk/fetch-http-handler":"3.20.0","@aws-sdk/hash-node":"3.20.0","@aws-sdk/invalid-dependency":"3.20.0","@aws-sdk/middleware-content-length":"3.20.0","@aws-sdk/middleware-host-header":"3.20.0","@aws-sdk/middleware-logger":"3.20.0","@aws-sdk/middleware-retry":"3.20.0","@aws-sdk/middleware-serde":"3.20.0","@aws-sdk/middleware-signing":"3.20.0","@aws-sdk/middleware-stack":"3.20.0","@aws-sdk/middleware-user-agent":"3.20.0","@aws-sdk/node-config-provider":"3.20.0","@aws-sdk/node-http-handler":"3.20.0","@aws-sdk/protocol-http":"3.20.0","@aws-sdk/smithy-client":"3.20.0","@aws-sdk/types":"3.20.0","@aws-sdk/url-parser":"3.20.0","@aws-sdk/util-base64-browser":"3.20.0","@aws-sdk/util-base64-node":"3.20.0","@aws-sdk/util-body-length-browser":"3.20.0","@aws-sdk/util-body-length-node":"3.20.0","@aws-sdk/util-user-agent-browser":"3.20.0","@aws-sdk/util-user-agent-node":"3.20.0","@aws-sdk/util-utf8-browser":"3.20.0","@aws-sdk/util-utf8-node":"3.20.0","@aws-sdk/util-waiter":"3.20.0","tslib":"^2.0.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.20.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-lambda","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-lambda"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-lambda","description":"AWS SDK for JavaScript Lambda Client for Node.js, Browser and React Native","version":"3.21.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es","downlevel-dts":"downlevel-dts dist/types dist/types/ts3.4"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/client-sts":"3.21.0","@aws-sdk/config-resolver":"3.20.0","@aws-sdk/credential-provider-node":"3.21.0","@aws-sdk/fetch-http-handler":"3.20.0","@aws-sdk/hash-node":"3.20.0","@aws-sdk/invalid-dependency":"3.20.0","@aws-sdk/middleware-content-length":"3.20.0","@aws-sdk/middleware-host-header":"3.20.0","@aws-sdk/middleware-logger":"3.20.0","@aws-sdk/middleware-retry":"3.20.0","@aws-sdk/middleware-serde":"3.20.0","@aws-sdk/middleware-signing":"3.20.0","@aws-sdk/middleware-stack":"3.20.0","@aws-sdk/middleware-user-agent":"3.20.0","@aws-sdk/node-config-provider":"3.20.0","@aws-sdk/node-http-handler":"3.21.0","@aws-sdk/protocol-http":"3.20.0","@aws-sdk/smithy-client":"3.20.0","@aws-sdk/types":"3.20.0","@aws-sdk/url-parser":"3.20.0","@aws-sdk/util-base64-browser":"3.20.0","@aws-sdk/util-base64-node":"3.20.0","@aws-sdk/util-body-length-browser":"3.20.0","@aws-sdk/util-body-length-node":"3.20.0","@aws-sdk/util-user-agent-browser":"3.20.0","@aws-sdk/util-user-agent-node":"3.20.0","@aws-sdk/util-utf8-browser":"3.20.0","@aws-sdk/util-utf8-node":"3.20.0","@aws-sdk/util-waiter":"3.20.0","tslib":"^2.0.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.20.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-lambda","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-lambda"}}');
 
 /***/ }),
 
@@ -13,7 +13,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-lambda","description":"AWS
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.20.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es","downlevel-dts":"downlevel-dts dist/types dist/types/ts3.4"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.20.0","@aws-sdk/fetch-http-handler":"3.20.0","@aws-sdk/hash-node":"3.20.0","@aws-sdk/invalid-dependency":"3.20.0","@aws-sdk/middleware-content-length":"3.20.0","@aws-sdk/middleware-host-header":"3.20.0","@aws-sdk/middleware-logger":"3.20.0","@aws-sdk/middleware-retry":"3.20.0","@aws-sdk/middleware-serde":"3.20.0","@aws-sdk/middleware-stack":"3.20.0","@aws-sdk/middleware-user-agent":"3.20.0","@aws-sdk/node-config-provider":"3.20.0","@aws-sdk/node-http-handler":"3.20.0","@aws-sdk/protocol-http":"3.20.0","@aws-sdk/smithy-client":"3.20.0","@aws-sdk/types":"3.20.0","@aws-sdk/url-parser":"3.20.0","@aws-sdk/util-base64-browser":"3.20.0","@aws-sdk/util-base64-node":"3.20.0","@aws-sdk/util-body-length-browser":"3.20.0","@aws-sdk/util-body-length-node":"3.20.0","@aws-sdk/util-user-agent-browser":"3.20.0","@aws-sdk/util-user-agent-node":"3.20.0","@aws-sdk/util-utf8-browser":"3.20.0","@aws-sdk/util-utf8-node":"3.20.0","tslib":"^2.0.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.20.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.21.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es","downlevel-dts":"downlevel-dts dist/types dist/types/ts3.4"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.20.0","@aws-sdk/fetch-http-handler":"3.20.0","@aws-sdk/hash-node":"3.20.0","@aws-sdk/invalid-dependency":"3.20.0","@aws-sdk/middleware-content-length":"3.20.0","@aws-sdk/middleware-host-header":"3.20.0","@aws-sdk/middleware-logger":"3.20.0","@aws-sdk/middleware-retry":"3.20.0","@aws-sdk/middleware-serde":"3.20.0","@aws-sdk/middleware-stack":"3.20.0","@aws-sdk/middleware-user-agent":"3.20.0","@aws-sdk/node-config-provider":"3.20.0","@aws-sdk/node-http-handler":"3.21.0","@aws-sdk/protocol-http":"3.20.0","@aws-sdk/smithy-client":"3.20.0","@aws-sdk/types":"3.20.0","@aws-sdk/url-parser":"3.20.0","@aws-sdk/util-base64-browser":"3.20.0","@aws-sdk/util-base64-node":"3.20.0","@aws-sdk/util-body-length-browser":"3.20.0","@aws-sdk/util-body-length-node":"3.20.0","@aws-sdk/util-user-agent-browser":"3.20.0","@aws-sdk/util-user-agent-node":"3.20.0","@aws-sdk/util-utf8-browser":"3.20.0","@aws-sdk/util-utf8-node":"3.20.0","tslib":"^2.0.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.20.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
 
 /***/ }),
 
@@ -21,7 +21,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SD
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.20.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es","downlevel-dts":"downlevel-dts dist/types dist/types/ts3.4"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.20.0","@aws-sdk/credential-provider-node":"3.20.0","@aws-sdk/fetch-http-handler":"3.20.0","@aws-sdk/hash-node":"3.20.0","@aws-sdk/invalid-dependency":"3.20.0","@aws-sdk/middleware-content-length":"3.20.0","@aws-sdk/middleware-host-header":"3.20.0","@aws-sdk/middleware-logger":"3.20.0","@aws-sdk/middleware-retry":"3.20.0","@aws-sdk/middleware-sdk-sts":"3.20.0","@aws-sdk/middleware-serde":"3.20.0","@aws-sdk/middleware-signing":"3.20.0","@aws-sdk/middleware-stack":"3.20.0","@aws-sdk/middleware-user-agent":"3.20.0","@aws-sdk/node-config-provider":"3.20.0","@aws-sdk/node-http-handler":"3.20.0","@aws-sdk/protocol-http":"3.20.0","@aws-sdk/smithy-client":"3.20.0","@aws-sdk/types":"3.20.0","@aws-sdk/url-parser":"3.20.0","@aws-sdk/util-base64-browser":"3.20.0","@aws-sdk/util-base64-node":"3.20.0","@aws-sdk/util-body-length-browser":"3.20.0","@aws-sdk/util-body-length-node":"3.20.0","@aws-sdk/util-user-agent-browser":"3.20.0","@aws-sdk/util-user-agent-node":"3.20.0","@aws-sdk/util-utf8-browser":"3.20.0","@aws-sdk/util-utf8-node":"3.20.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.0.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.20.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.21.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es","downlevel-dts":"downlevel-dts dist/types dist/types/ts3.4"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.20.0","@aws-sdk/credential-provider-node":"3.21.0","@aws-sdk/fetch-http-handler":"3.20.0","@aws-sdk/hash-node":"3.20.0","@aws-sdk/invalid-dependency":"3.20.0","@aws-sdk/middleware-content-length":"3.20.0","@aws-sdk/middleware-host-header":"3.20.0","@aws-sdk/middleware-logger":"3.20.0","@aws-sdk/middleware-retry":"3.20.0","@aws-sdk/middleware-sdk-sts":"3.20.0","@aws-sdk/middleware-serde":"3.20.0","@aws-sdk/middleware-signing":"3.20.0","@aws-sdk/middleware-stack":"3.20.0","@aws-sdk/middleware-user-agent":"3.20.0","@aws-sdk/node-config-provider":"3.20.0","@aws-sdk/node-http-handler":"3.21.0","@aws-sdk/protocol-http":"3.20.0","@aws-sdk/smithy-client":"3.20.0","@aws-sdk/types":"3.20.0","@aws-sdk/url-parser":"3.20.0","@aws-sdk/util-base64-browser":"3.20.0","@aws-sdk/util-base64-node":"3.20.0","@aws-sdk/util-body-length-browser":"3.20.0","@aws-sdk/util-body-length-node":"3.20.0","@aws-sdk/util-user-agent-browser":"3.20.0","@aws-sdk/util-user-agent-node":"3.20.0","@aws-sdk/util-utf8-browser":"3.20.0","@aws-sdk/util-utf8-node":"3.20.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.0.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.20.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
 
 /***/ }),
 
@@ -598,13 +598,13 @@ const UpdateFunctionCodeCommand_1 = __nccwpck_require__(5365);
 const UpdateFunctionConfigurationCommand_1 = __nccwpck_require__(908);
 const UpdateFunctionEventInvokeConfigCommand_1 = __nccwpck_require__(1701);
 /**
- * <fullname>AWS Lambda</fullname>
+ * <fullname>Lambda</fullname>
  *          <p>
  *             <b>Overview</b>
  *          </p>
- *          <p>This is the <i>AWS Lambda API Reference</i>. The AWS Lambda Developer Guide provides additional
+ *          <p>This is the <i>Lambda API Reference</i>. The Lambda Developer Guide provides additional
  *       information. For the service overview, see <a href="https://docs.aws.amazon.com/lambda/latest/dg/welcome.html">What is
- *         AWS Lambda</a>, and for information about how the service works, see <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-introduction.html">AWS Lambda: How it Works</a> in the <b>AWS Lambda Developer Guide</b>.</p>
+ *         Lambda</a>, and for information about how the service works, see <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-introduction.html">Lambda: How it Works</a> in the <b>Lambda Developer Guide</b>.</p>
  */
 class Lambda extends LambdaClient_1.LambdaClient {
     addLayerVersionPermission(args, optionsOrCb, cb) {
@@ -1442,13 +1442,13 @@ const middleware_signing_1 = __nccwpck_require__(2487);
 const middleware_user_agent_1 = __nccwpck_require__(5976);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
- * <fullname>AWS Lambda</fullname>
+ * <fullname>Lambda</fullname>
  *          <p>
  *             <b>Overview</b>
  *          </p>
- *          <p>This is the <i>AWS Lambda API Reference</i>. The AWS Lambda Developer Guide provides additional
+ *          <p>This is the <i>Lambda API Reference</i>. The Lambda Developer Guide provides additional
  *       information. For the service overview, see <a href="https://docs.aws.amazon.com/lambda/latest/dg/welcome.html">What is
- *         AWS Lambda</a>, and for information about how the service works, see <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-introduction.html">AWS Lambda: How it Works</a> in the <b>AWS Lambda Developer Guide</b>.</p>
+ *         Lambda</a>, and for information about how the service works, see <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-introduction.html">Lambda: How it Works</a> in the <b>Lambda Developer Guide</b>.</p>
  */
 class LambdaClient extends smithy_client_1.Client {
     constructor(configuration) {
@@ -1497,10 +1497,10 @@ const Aws_restJson1_1 = __nccwpck_require__(758);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
- * <p>Adds permissions to the resource-based policy of a version of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
+ * <p>Adds permissions to the resource-based policy of a version of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">Lambda
  *         layer</a>. Use this action to grant layer
- *       usage permission to other accounts. You can grant permission to a single account, all AWS accounts, or all
- *       accounts in an organization.</p>
+ *       usage permission to other accounts. You can grant permission to a single account, all accounts in an organization,
+ *       or all Amazon Web Services accounts.  </p>
  *          <p>To revoke permission, call <a>RemoveLayerVersionPermission</a> with the statement ID that you
  *       specified when you added it.</p>
  * @example
@@ -1570,13 +1570,13 @@ const Aws_restJson1_1 = __nccwpck_require__(758);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
- * <p>Grants an AWS service or another account permission to use a function. You can apply the policy at the
+ * <p>Grants an Amazon Web Services service or another account permission to use a function. You can apply the policy at the
  *       function level, or specify a qualifier to restrict access to a single version or alias. If you use a qualifier,
  *       the invoker must use the full Amazon Resource Name (ARN) of that version or alias to invoke the function.</p>
  *
- *          <p>To grant permission to another account, specify the account ID as the <code>Principal</code>. For AWS
+ *          <p>To grant permission to another account, specify the account ID as the <code>Principal</code>. For Amazon Web Services
  *       services, the principal is a domain-style identifier defined by the service, like <code>s3.amazonaws.com</code> or
- *         <code>sns.amazonaws.com</code>. For AWS services, you can also specify the ARN of the associated resource as the
+ *         <code>sns.amazonaws.com</code>. For Amazon Web Services services, you can also specify the ARN of the associated resource as the
  *         <code>SourceArn</code>. If you grant permission to a service principal without specifying the source, other
  *       accounts could potentially configure resources in their account to invoke your Lambda function.</p>
  *
@@ -1792,42 +1792,45 @@ const Aws_restJson1_1 = __nccwpck_require__(758);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
- * <p>Creates a mapping between an event source and an AWS Lambda function. Lambda reads items from the event source
+ * <p>Creates a mapping between an event source and an Lambda function. Lambda reads items from the event source
  *       and triggers the function.</p>
- *          <p>For details about each event source type, see the following topics.</p>
+ *          <p>For details about each event source type, see the following topics. In particular, each of the topics
+ *       describes the required and optional parameters for the specific event source. </p>
  *          <ul>
  *             <li>
  *                <p>
- *                   <a href="https://docs.aws.amazon.com/lambda/latest/dg/with-ddb.html">Using AWS Lambda with Amazon
- *           DynamoDB</a>
+ *                   <a href="https://docs.aws.amazon.com/lambda/latest/dg/with-ddb.html#services-dynamodb-eventsourcemapping">
+ *           Configuring a Dynamo DB stream as an event source</a>
  *                </p>
  *             </li>
  *             <li>
  *                <p>
- *                   <a href="https://docs.aws.amazon.com/lambda/latest/dg/with-kinesis.html">Using AWS Lambda with Amazon
- *           Kinesis</a>
+ *                   <a href="https://docs.aws.amazon.com/lambda/latest/dg/with-kinesis.html#services-kinesis-eventsourcemapping">
+ *           Configuring a Kinesis stream as an event source</a>
  *                </p>
  *             </li>
  *             <li>
  *                <p>
- *                   <a href="https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html">Using AWS Lambda with Amazon
- *           SQS</a>
+ *                   <a href="https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html#events-sqs-eventsource">
+ *           Configuring an SQS queue as an event source</a>
  *                </p>
  *             </li>
  *             <li>
  *                <p>
- *                   <a href="https://docs.aws.amazon.com/lambda/latest/dg/with-mq.html">Using AWS Lambda with Amazon
- *           MQ</a>
+ *                   <a href="https://docs.aws.amazon.com/lambda/latest/dg/with-mq.html#services-mq-eventsourcemapping">
+ *           Configuring an MQ broker as an event source</a>
  *                </p>
  *             </li>
  *             <li>
  *                <p>
- *                   <a href="https://docs.aws.amazon.com/lambda/latest/dg/with-msk.html">Using AWS Lambda with Amazon MSK</a>
+ *                   <a href="https://docs.aws.amazon.com/lambda/latest/dg/with-msk.html">
+ *           Configuring MSK as an event source</a>
  *                </p>
  *             </li>
  *             <li>
  *                <p>
- *                   <a href="https://docs.aws.amazon.com/lambda/latest/dg/kafka-smaa.html">Using AWS Lambda with Self-Managed Apache Kafka</a>
+ *                   <a href="https://docs.aws.amazon.com/lambda/latest/dg/kafka-smaa.html">
+ *           Configuring Self-Managed Apache Kafka as an event source</a>
  *                </p>
  *             </li>
  *          </ul>
@@ -1922,8 +1925,18 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Creates a Lambda function. To create a function, you need a <a href="https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html">deployment package</a> and an <a href="https://docs.aws.amazon.com/lambda/latest/dg/intro-permission-model.html#lambda-intro-execution-role">execution role</a>. The
- *       deployment package is a .zip file  archive or container image that contains your function code. The execution role grants the function permission to use AWS
- *       services, such as Amazon CloudWatch Logs for log streaming and AWS X-Ray for request tracing.</p>
+ *       deployment package is a .zip file  archive or container image that contains your function code. The execution role grants the function permission to use Amazon Web Services
+ *       services, such as Amazon CloudWatch Logs for log streaming and X-Ray for request tracing.</p>
+ *
+ *          <p>You set the package type to <code>Image</code> if the deployment package is a
+ *       <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html">container image</a>. For a container image,
+ *       the code property must include the URI of a container image in the Amazon ECR registry.
+ *       You do not need to specify the handler and runtime properties. </p>
+ *
+ *          <p>You set the package type to <code>Zip</code> if the deployment package is a
+ *       <a href="https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html#gettingstarted-package-zip">.zip file archive</a>.
+ *       For a .zip file archive, the code property specifies the location of the .zip file. You must also specify the handler and
+ *       runtime properties.</p>
  *
  *          <p>When you create a function, Lambda provisions an instance of the function and its supporting resources. If
  *       your function connects to a VPC, this process can take a minute or so. During this time, you can't invoke or
@@ -1949,12 +1962,12 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *       package has a valid signature from a trusted publisher. The code-signing configuration
  *       includes set set of signing profiles, which define the trusted publishers for this function.</p>
  *
- *          <p>If another account or an AWS service invokes your function, use <a>AddPermission</a> to grant
+ *          <p>If another account or an Amazon Web Services service invokes your function, use <a>AddPermission</a> to grant
  *       permission by creating a resource-based IAM policy. You can grant permissions at the function level, on a version,
  *       or on an alias.</p>
  *
  *          <p>To invoke your function directly, use <a>Invoke</a>. To invoke your function in response to events
- *       in other AWS services, create an event source mapping (<a>CreateEventSourceMapping</a>), or configure a
+ *       in other Amazon Web Services services, create an event source mapping (<a>CreateEventSourceMapping</a>), or configure a
  *       function trigger in the other service. For more information, see <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html">Invoking Functions</a>.</p>
  * @example
  * Use a bare-bones client and the command you need to make an API call.
@@ -2302,7 +2315,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *       Otherwise, all versions and aliases are deleted.</p>
  *
  *          <p>To delete Lambda event source mappings that invoke a function, use <a>DeleteEventSourceMapping</a>.
- *       For AWS services and resources that invoke your function directly, delete the trigger in the service where you
+ *       For Amazon Web Services services and resources that invoke your function directly, delete the trigger in the service where you
  *       originally configured it.</p>
  * @example
  * Use a bare-bones client and the command you need to make an API call.
@@ -2508,7 +2521,7 @@ const Aws_restJson1_1 = __nccwpck_require__(758);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
- * <p>Deletes a version of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
+ * <p>Deletes a version of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">Lambda
  *         layer</a>. Deleted versions can no longer be viewed or added to functions. To avoid
  *       breaking functions, a copy of the version remains in Lambda until no functions refer to it.</p>
  * @example
@@ -2646,7 +2659,7 @@ const Aws_restJson1_1 = __nccwpck_require__(758);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
- * <p>Retrieves details about your account's <a href="https://docs.aws.amazon.com/lambda/latest/dg/limits.html">limits</a> and usage in an AWS Region.</p>
+ * <p>Retrieves details about your account's <a href="https://docs.aws.amazon.com/lambda/latest/dg/limits.html">limits</a> and usage in an Amazon Web Services Region.</p>
  * @example
  * Use a bare-bones client and the command you need to make an API call.
  * ```javascript
@@ -3264,7 +3277,7 @@ const Aws_restJson1_1 = __nccwpck_require__(758);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
- * <p>Returns information about a version of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
+ * <p>Returns information about a version of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">Lambda
  *         layer</a>, with a link to download the layer archive
  *         that's valid for 10 minutes.</p>
  * @example
@@ -3334,7 +3347,7 @@ const Aws_restJson1_1 = __nccwpck_require__(758);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
- * <p>Returns information about a version of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
+ * <p>Returns information about a version of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">Lambda
  *         layer</a>, with a link to download the layer archive
  *         that's valid for 10 minutes.</p>
  * @example
@@ -3404,7 +3417,7 @@ const Aws_restJson1_1 = __nccwpck_require__(758);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
- * <p>Returns the permission policy for a version of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
+ * <p>Returns the permission policy for a version of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">Lambda
  *         layer</a>. For more information, see <a>AddLayerVersionPermission</a>.</p>
  * @example
  * Use a bare-bones client and the command you need to make an API call.
@@ -4198,7 +4211,7 @@ const Aws_restJson1_1 = __nccwpck_require__(758);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
- * <p>Lists the versions of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
+ * <p>Lists the versions of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">Lambda
  *         layer</a>. Versions that have been deleted aren't listed. Specify a <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html">runtime identifier</a> to list only
  *       versions that indicate that they're compatible with that runtime.</p>
  * @example
@@ -4268,7 +4281,7 @@ const Aws_restJson1_1 = __nccwpck_require__(758);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
- * <p>Lists <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
+ * <p>Lists <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">Lambda
  *         layers</a> and shows information about the latest version of each. Specify a <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html">runtime identifier</a> to list only layers
  *       that indicate that they're compatible with that runtime.</p>
  * @example
@@ -4544,7 +4557,7 @@ const Aws_restJson1_1 = __nccwpck_require__(758);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
- * <p>Creates an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
+ * <p>Creates an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">Lambda
  *         layer</a> from a ZIP archive. Each time you call <code>PublishLayerVersion</code> with the same
  *       layer name, a new version is created.</p>
  *          <p>Add layers to your function with <a>CreateFunction</a> or <a>UpdateFunctionConfiguration</a>.</p>
@@ -4619,7 +4632,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *       current code and configuration of a function. Use versions to create a snapshot of your function code and
  *       configuration that doesn't change.</p>
  *
- *          <p>AWS Lambda doesn't publish a version if the function's configuration and code haven't changed since the last
+ *          <p>Lambda doesn't publish a version if the function's configuration and code haven't changed since the last
  *       version. Use <a>UpdateFunctionCode</a> or <a>UpdateFunctionConfiguration</a> to update the
  *       function before publishing a version.</p>
  *
@@ -4982,7 +4995,7 @@ const Aws_restJson1_1 = __nccwpck_require__(758);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
- * <p>Removes a statement from the permissions policy for a version of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">AWS Lambda
+ * <p>Removes a statement from the permissions policy for a version of an <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">Lambda
  *         layer</a>. For more information, see
  *         <a>AddLayerVersionPermission</a>.</p>
  * @example
@@ -5052,7 +5065,7 @@ const Aws_restJson1_1 = __nccwpck_require__(758);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
- * <p>Revokes function-use permission from an AWS service or another account. You can get the ID of the statement
+ * <p>Revokes function-use permission from an Amazon Web Services service or another account. You can get the ID of the statement
  *       from the output of <a>GetPolicy</a>.</p>
  * @example
  * Use a bare-bones client and the command you need to make an API call.
@@ -5394,7 +5407,7 @@ const Aws_restJson1_1 = __nccwpck_require__(758);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
- * <p>Updates an event source mapping. You can change the function that AWS Lambda invokes, or pause invocation and resume later from the same location.</p>
+ * <p>Updates an event source mapping. You can change the function that Lambda invokes, or pause invocation and resume later from the same location.</p>
  *          <p>The following error handling options are only available for stream sources (DynamoDB and Kinesis):</p>
  *          <ul>
  *             <li>
@@ -5575,7 +5588,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *       modify the configuration of a published version, only the unpublished version.</p>
  *
  *          <p>To configure function concurrency, use <a>PutFunctionConcurrency</a>. To grant invoke permissions
- *       to an account or AWS service, use <a>AddPermission</a>.</p>
+ *       to an account or Amazon Web Services service, use <a>AddPermission</a>.</p>
  * @example
  * Use a bare-bones client and the command you need to make an API call.
  * ```javascript
@@ -6356,6 +6369,7 @@ var SourceAccessType;
     SourceAccessType["BASIC_AUTH"] = "BASIC_AUTH";
     SourceAccessType["SASL_SCRAM_256_AUTH"] = "SASL_SCRAM_256_AUTH";
     SourceAccessType["SASL_SCRAM_512_AUTH"] = "SASL_SCRAM_512_AUTH";
+    SourceAccessType["VIRTUAL_HOST"] = "VIRTUAL_HOST";
     SourceAccessType["VPC_SECURITY_GROUP"] = "VPC_SECURITY_GROUP";
     SourceAccessType["VPC_SUBNET"] = "VPC_SUBNET";
 })(SourceAccessType = exports.SourceAccessType || (exports.SourceAccessType = {}));
@@ -19376,9 +19390,9 @@ const GetCallerIdentityCommand_1 = __nccwpck_require__(2439);
 const GetFederationTokenCommand_1 = __nccwpck_require__(5239);
 const GetSessionTokenCommand_1 = __nccwpck_require__(6499);
 /**
- * <fullname>AWS Security Token Service</fullname>
- *          <p>AWS Security Token Service (STS) enables you to request temporary, limited-privilege
- *       credentials for AWS Identity and Access Management (IAM) users or for users that you
+ * <fullname>Security Token Service</fullname>
+ *          <p>Security Token Service (STS) enables you to request temporary, limited-privilege
+ *       credentials for Identity and Access Management (IAM) users or for users that you
  *       authenticate (federated users). This guide provides descriptions of the STS API. For
  *       more information about using this service, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html">Temporary Security Credentials</a>.</p>
  */
@@ -19518,9 +19532,9 @@ const middleware_sdk_sts_1 = __nccwpck_require__(9637);
 const middleware_user_agent_1 = __nccwpck_require__(5976);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
- * <fullname>AWS Security Token Service</fullname>
- *          <p>AWS Security Token Service (STS) enables you to request temporary, limited-privilege
- *       credentials for AWS Identity and Access Management (IAM) users or for users that you
+ * <fullname>Security Token Service</fullname>
+ *          <p>Security Token Service (STS) enables you to request temporary, limited-privilege
+ *       credentials for Identity and Access Management (IAM) users or for users that you
  *       authenticate (federated users). This guide provides descriptions of the STS API. For
  *       more information about using this service, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html">Temporary Security Credentials</a>.</p>
  */
@@ -19571,21 +19585,21 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const middleware_signing_1 = __nccwpck_require__(2487);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
- * <p>Returns a set of temporary security credentials that you can use to access AWS
+ * <p>Returns a set of temporary security credentials that you can use to access Amazon Web Services
  *             resources that you might not normally have access to. These temporary credentials
  *             consist of an access key ID, a secret access key, and a security token. Typically, you
  *             use <code>AssumeRole</code> within your account or for cross-account access. For a
  *             comparison of <code>AssumeRole</code> with other API operations that produce temporary
  *             credentials, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html">Requesting Temporary Security
  *                 Credentials</a> and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#stsapi_comparison">Comparing
- *                 the AWS STS API operations</a> in the
+ *                 the STS API operations</a> in the
  *             <i>IAM User Guide</i>.</p>
  *          <p>
  *             <b>Permissions</b>
  *          </p>
  *          <p>The temporary security credentials created by <code>AssumeRole</code> can be used to
- *          make API calls to any AWS service with the following exception: You cannot call the
- *          AWS STS <code>GetFederationToken</code> or <code>GetSessionToken</code> API
+ *          make API calls to any Amazon Web Services service with the following exception: You cannot call the
+ *          STS <code>GetFederationToken</code> or <code>GetSessionToken</code> API
  *          operations.</p>
  *          <p>(Optional) You can pass inline or managed <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">session policies</a> to
  *          this operation. You can pass a single JSON policy document to use as an inline session
@@ -19594,12 +19608,12 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          characters. Passing policies to this operation returns new
  *          temporary credentials. The resulting session's permissions are the intersection of the
  *          role's identity-based policy and the session policies. You can use the role's temporary
- *          credentials in subsequent AWS API calls to access resources in the account that owns
+ *          credentials in subsequent Amazon Web Services API calls to access resources in the account that owns
  *          the role. You cannot use session policies to grant more permissions than those allowed
  *          by the identity-based policy of the role that is being assumed. For more information, see
  *             <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">Session
  *             Policies</a> in the <i>IAM User Guide</i>.</p>
- *          <p>To assume a role from a different account, your AWS account must be trusted by the
+ *          <p>To assume a role from a different account, your account must be trusted by the
  *          role. The trust relationship is defined in the role's trust policy when the role is
  *          created. That trust policy states which accounts are allowed to delegate that access to
  *          users in the account. </p>
@@ -19640,7 +19654,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          </p>
  *          <p>(Optional) You can include multi-factor authentication (MFA) information when you call
  *             <code>AssumeRole</code>. This is useful for cross-account scenarios to ensure that the
- *          user that assumes the role has been authenticated with an AWS MFA device. In that
+ *          user that assumes the role has been authenticated with an Amazon Web Services MFA device. In that
  *          scenario, the trust policy of the role being assumed includes a condition that tests for
  *          MFA authentication. If the caller does not include valid MFA information, the request to
  *          assume the role is denied. The condition in a trust policy that tests for MFA
@@ -19725,14 +19739,14 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Returns a set of temporary security credentials for users who have been authenticated
  *          via a SAML authentication response. This operation provides a mechanism for tying an
- *          enterprise identity store or directory to role-based AWS access without user-specific
+ *          enterprise identity store or directory to role-based Amazon Web Services access without user-specific
  *          credentials or configuration. For a comparison of <code>AssumeRoleWithSAML</code> with the
  *          other API operations that produce temporary credentials, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html">Requesting Temporary Security
  *             Credentials</a> and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#stsapi_comparison">Comparing the
- *             AWS STS API operations</a> in the <i>IAM User Guide</i>.</p>
+ *             STS API operations</a> in the <i>IAM User Guide</i>.</p>
  *          <p>The temporary security credentials returned by this operation consist of an access key
  *          ID, a secret access key, and a security token. Applications can use these temporary
- *          security credentials to sign calls to AWS services.</p>
+ *          security credentials to sign calls to Amazon Web Services services.</p>
  *          <p>
  *             <b>Session Duration</b>
  *          </p>
@@ -19752,7 +19766,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             <i>IAM User Guide</i>.</p>
  *          <note>
  *            <p>
- *                <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-role-chaining">Role chaining</a> limits your AWS CLI or AWS API
+ *                <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-role-chaining">Role chaining</a> limits your CLI or Amazon Web Services API
  *                role session to a maximum of one hour. When you use the <code>AssumeRole</code> API
  *                operation to assume a role, you can specify the duration of your role session with
  *                the <code>DurationSeconds</code> parameter. You can specify a parameter value of up
@@ -19765,7 +19779,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             <b>Permissions</b>
  *          </p>
  *          <p>The temporary security credentials created by <code>AssumeRoleWithSAML</code> can be
- *          used to make API calls to any AWS service with the following exception: you cannot call
+ *          used to make API calls to any Amazon Web Services service with the following exception: you cannot call
  *          the STS <code>GetFederationToken</code> or <code>GetSessionToken</code> API
  *          operations.</p>
  *          <p>(Optional) You can pass inline or managed <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">session policies</a> to
@@ -19775,16 +19789,16 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          characters. Passing policies to this operation returns new
  *          temporary credentials. The resulting session's permissions are the intersection of the
  *          role's identity-based policy and the session policies. You can use the role's temporary
- *          credentials in subsequent AWS API calls to access resources in the account that owns
+ *          credentials in subsequent Amazon Web Services API calls to access resources in the account that owns
  *          the role. You cannot use session policies to grant more permissions than those allowed
  *          by the identity-based policy of the role that is being assumed. For more information, see
  *             <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">Session
  *             Policies</a> in the <i>IAM User Guide</i>.</p>
- *          <p>Calling <code>AssumeRoleWithSAML</code> does not require the use of AWS security
+ *          <p>Calling <code>AssumeRoleWithSAML</code> does not require the use of Amazon Web Services security
  *          credentials. The identity of the caller is validated by using keys in the metadata document
  *          that is uploaded for the SAML provider entity for your identity provider. </p>
  *          <important>
- *             <p>Calling <code>AssumeRoleWithSAML</code> can result in an entry in your AWS CloudTrail logs.
+ *             <p>Calling <code>AssumeRoleWithSAML</code> can result in an entry in your CloudTrail logs.
  *             The entry includes the value in the <code>NameID</code> element of the SAML assertion.
  *             We recommend that you use a <code>NameIDType</code> that is not associated with any
  *             personally identifiable information (PII). For example, you could instead use the
@@ -19804,7 +19818,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             and STS Character Limits</a> in the <i>IAM User Guide</i>.</p>
  *
  *          <note>
- *             <p>An AWS conversion compresses the passed session policies and session tags into a
+ *             <p>An Amazon Web Services conversion compresses the passed session policies and session tags into a
  *             packed binary format that has a separate limit. Your request can fail for this limit
  *             even if your plaintext meets the other requirements. The <code>PackedPolicySize</code>
  *             response element indicates by percentage how close the policies and tags for your
@@ -19826,8 +19840,8 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             <b>SAML Configuration</b>
  *          </p>
  *          <p>Before your application can call <code>AssumeRoleWithSAML</code>, you must configure
- *          your SAML identity provider (IdP) to issue the claims required by AWS. Additionally, you
- *          must use AWS Identity and Access Management (IAM) to create a SAML provider entity in your AWS account that
+ *          your SAML identity provider (IdP) to issue the claims required by Amazon Web Services. Additionally, you
+ *          must use Identity and Access Management (IAM) to create a SAML provider entity in your Amazon Web Services account that
  *          represents your identity provider. You must also create an IAM role that specifies this
  *          SAML provider in its trust policy. </p>
  *          <p>For more information, see the following resources:</p>
@@ -19928,26 +19942,26 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          provider.</p>
  *          <note>
  *             <p>For mobile applications, we recommend that you use Amazon Cognito. You can use Amazon Cognito with the
- *                <a href="http://aws.amazon.com/sdkforios/">AWS SDK for iOS Developer Guide</a> and the <a href="http://aws.amazon.com/sdkforandroid/">AWS SDK for Android Developer Guide</a> to uniquely
+ *                <a href="http://aws.amazon.com/sdkforios/">Amazon Web Services SDK for iOS Developer Guide</a> and the <a href="http://aws.amazon.com/sdkforandroid/">Amazon Web Services SDK for Android Developer Guide</a> to uniquely
  *             identify a user. You can also supply the user with a consistent identity throughout the
  *             lifetime of an application.</p>
  *             <p>To learn more about Amazon Cognito, see <a href="https://docs.aws.amazon.com/mobile/sdkforandroid/developerguide/cognito-auth.html#d0e840">Amazon Cognito Overview</a> in
- *                <i>AWS SDK for Android Developer Guide</i> and <a href="https://docs.aws.amazon.com/mobile/sdkforios/developerguide/cognito-auth.html#d0e664">Amazon Cognito Overview</a> in the
- *                <i>AWS SDK for iOS Developer Guide</i>.</p>
+ *                <i>Amazon Web Services SDK for Android Developer Guide</i> and <a href="https://docs.aws.amazon.com/mobile/sdkforios/developerguide/cognito-auth.html#d0e664">Amazon Cognito Overview</a> in the
+ *                <i>Amazon Web Services SDK for iOS Developer Guide</i>.</p>
  *          </note>
- *          <p>Calling <code>AssumeRoleWithWebIdentity</code> does not require the use of AWS
+ *          <p>Calling <code>AssumeRoleWithWebIdentity</code> does not require the use of Amazon Web Services
  *          security credentials. Therefore, you can distribute an application (for example, on mobile
- *          devices) that requests temporary security credentials without including long-term AWS
+ *          devices) that requests temporary security credentials without including long-term Amazon Web Services
  *          credentials in the application. You also don't need to deploy server-based proxy services
- *          that use long-term AWS credentials. Instead, the identity of the caller is validated by
+ *          that use long-term Amazon Web Services credentials. Instead, the identity of the caller is validated by
  *          using a token from the web identity provider. For a comparison of
  *             <code>AssumeRoleWithWebIdentity</code> with the other API operations that produce
  *          temporary credentials, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html">Requesting Temporary Security
  *             Credentials</a> and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#stsapi_comparison">Comparing the
- *             AWS STS API operations</a> in the <i>IAM User Guide</i>.</p>
+ *             STS API operations</a> in the <i>IAM User Guide</i>.</p>
  *          <p>The temporary security credentials returned by this API consist of an access key ID, a
  *          secret access key, and a security token. Applications can use these temporary security
- *          credentials to sign calls to AWS service API operations.</p>
+ *          credentials to sign calls to Amazon Web Services service API operations.</p>
  *          <p>
  *             <b>Session Duration</b>
  *          </p>
@@ -19967,7 +19981,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             <b>Permissions</b>
  *          </p>
  *          <p>The temporary security credentials created by <code>AssumeRoleWithWebIdentity</code> can
- *          be used to make API calls to any AWS service with the following exception: you cannot
+ *          be used to make API calls to any Amazon Web Services service with the following exception: you cannot
  *          call the STS <code>GetFederationToken</code> or <code>GetSessionToken</code> API
  *          operations.</p>
  *          <p>(Optional) You can pass inline or managed <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">session policies</a> to
@@ -19977,7 +19991,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          characters. Passing policies to this operation returns new
  *          temporary credentials. The resulting session's permissions are the intersection of the
  *          role's identity-based policy and the session policies. You can use the role's temporary
- *          credentials in subsequent AWS API calls to access resources in the account that owns
+ *          credentials in subsequent Amazon Web Services API calls to access resources in the account that owns
  *          the role. You cannot use session policies to grant more permissions than those allowed
  *          by the identity-based policy of the role that is being assumed. For more information, see
  *             <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">Session
@@ -19995,7 +20009,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             and STS Character Limits</a> in the <i>IAM User Guide</i>.</p>
  *
  *          <note>
- *             <p>An AWS conversion compresses the passed session policies and session tags into a
+ *             <p>An Amazon Web Services conversion compresses the passed session policies and session tags into a
  *             packed binary format that has a separate limit. Your request can fail for this limit
  *             even if your plaintext meets the other requirements. The <code>PackedPolicySize</code>
  *             response element indicates by percentage how close the policies and tags for your
@@ -20023,7 +20037,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          in the role's trust policy. </p>
  *          <important>
  *             <p>Calling <code>AssumeRoleWithWebIdentity</code> can result in an entry in your
- *             AWS CloudTrail logs. The entry includes the <a href="http://openid.net/specs/openid-connect-core-1_0.html#Claims">Subject</a> of
+ *             CloudTrail logs. The entry includes the <a href="http://openid.net/specs/openid-connect-core-1_0.html#Claims">Subject</a> of
  *             the provided web identity token. We recommend that you avoid using any personally
  *             identifiable information (PII) in this field. For example, you could instead use a GUID
  *             or a pairwise identifier, as <a href="http://openid.net/specs/openid-connect-core-1_0.html#SubjectIDTypes">suggested
@@ -20040,12 +20054,12 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                <p>
  *                   <a href="https://aws.amazon.com/blogs/aws/the-aws-web-identity-federation-playground/"> Web Identity Federation Playground</a>. Walk through the process of
  *                authenticating through Login with Amazon, Facebook, or Google, getting temporary
- *                security credentials, and then using those credentials to make a request to AWS.
+ *                security credentials, and then using those credentials to make a request to Amazon Web Services.
  *             </p>
  *             </li>
  *             <li>
  *                <p>
- *                   <a href="http://aws.amazon.com/sdkforios/">AWS SDK for iOS Developer Guide</a> and <a href="http://aws.amazon.com/sdkforandroid/">AWS SDK for Android Developer Guide</a>. These toolkits
+ *                   <a href="http://aws.amazon.com/sdkforios/">Amazon Web Services SDK for iOS Developer Guide</a> and <a href="http://aws.amazon.com/sdkforandroid/">Amazon Web Services SDK for Android Developer Guide</a>. These toolkits
  *                contain sample apps that show how to invoke the identity providers. The toolkits then
  *                show how to use the information from these providers to get and use temporary
  *                security credentials. </p>
@@ -20127,13 +20141,13 @@ const middleware_signing_1 = __nccwpck_require__(2487);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Decodes additional information about the authorization status of a request from an
- *          encoded message returned in response to an AWS request.</p>
+ *          encoded message returned in response to an Amazon Web Services request.</p>
  *          <p>For example, if a user is not authorized to perform an operation that he or she has
  *          requested, the request returns a <code>Client.UnauthorizedOperation</code> response (an
- *          HTTP 403 response). Some AWS operations additionally return an encoded message that can
+ *          HTTP 403 response). Some Amazon Web Services operations additionally return an encoded message that can
  *          provide details about this authorization failure. </p>
  *          <note>
- *             <p>Only certain AWS operations return an encoded authorization message. The
+ *             <p>Only certain Amazon Web Services operations return an encoded authorization message. The
  *             documentation for an individual operation indicates whether that operation returns an
  *             encoded message in addition to returning an HTTP code.</p>
  *          </note>
@@ -20237,9 +20251,9 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                 <code>wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY</code>). For more information about
  *             access keys, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html">Managing Access Keys for IAM
  *                 Users</a> in the <i>IAM User Guide</i>.</p>
- *         <p>When you pass an access key ID to this operation, it returns the ID of the AWS
+ *         <p>When you pass an access key ID to this operation, it returns the ID of the Amazon Web Services
  *             account to which the keys belong. Access key IDs beginning with <code>AKIA</code> are
- *             long-term credentials for an IAM user or the AWS account root user. Access key IDs
+ *             long-term credentials for an IAM user or the Amazon Web Services account root user. Access key IDs
  *             beginning with <code>ASIA</code> are temporary credentials that are created using STS
  *             operations. If the account in the response belongs to you, you can sign in as the root
  *             user and review your root user access keys. Then, you can pull a <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_getting-report.html">credentials report</a> to learn which IAM user owns the keys. To learn who
@@ -20406,7 +20420,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          server-based application. For a comparison of <code>GetFederationToken</code> with the
  *          other API operations that produce temporary credentials, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html">Requesting Temporary Security
  *             Credentials</a> and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#stsapi_comparison">Comparing the
- *             AWS STS API operations</a> in the <i>IAM User Guide</i>.</p>
+ *             STS API operations</a> in the <i>IAM User Guide</i>.</p>
  *          <note>
  *             <p>You can create a mobile-based or browser-based app that can authenticate users using
  *             a web identity provider like Login with Amazon, Facebook, Google, or an OpenID
@@ -20415,7 +20429,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                <i>IAM User Guide</i>.</p>
  *          </note>
  *          <p>You can also call <code>GetFederationToken</code> using the security credentials of an
- *          AWS account root user, but we do not recommend it. Instead, we recommend that you create
+ *          Amazon Web Services account root user, but we do not recommend it. Instead, we recommend that you create
  *          an IAM user for the purpose of the proxy application. Then attach a policy to the IAM
  *          user that limits federated users to only the actions and resources that they need to
  *          access. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html">IAM Best Practices</a> in the
@@ -20425,16 +20439,16 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          </p>
  *          <p>The temporary credentials are valid for the specified duration, from 900 seconds (15
  *          minutes) up to a maximum of 129,600 seconds (36 hours). The default session duration is
- *          43,200 seconds (12 hours). Temporary credentials that are obtained by using AWS account
+ *          43,200 seconds (12 hours). Temporary credentials that are obtained by using Amazon Web Services account
  *          root user credentials have a maximum duration of 3,600 seconds (1 hour).</p>
  *          <p>
  *             <b>Permissions</b>
  *          </p>
  *          <p>You can use the temporary credentials created by <code>GetFederationToken</code> in any
- *          AWS service except the following:</p>
+ *          Amazon Web Services service except the following:</p>
  *          <ul>
  *             <li>
- *                <p>You cannot call any IAM operations using the AWS CLI or the AWS API. </p>
+ *                <p>You cannot call any IAM operations using the CLI or the Amazon Web Services API. </p>
  *             </li>
  *             <li>
  *                <p>You cannot call any STS operations except <code>GetCallerIdentity</code>.</p>
@@ -20472,7 +20486,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                     <i>IAM User Guide</i>.</p>
  *         </note>
  *         <p>You can also call <code>GetFederationToken</code> using the security credentials of an
- *             AWS account root user, but we do not recommend it. Instead, we recommend that you
+ *             Amazon Web Services account root user, but we do not recommend it. Instead, we recommend that you
  *             create an IAM user for the purpose of the proxy application. Then attach a policy to
  *             the IAM user that limits federated users to only the actions and resources that they
  *             need to access. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html">IAM Best Practices</a> in the
@@ -20482,16 +20496,16 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          </p>
  *         <p>The temporary credentials are valid for the specified duration, from 900 seconds (15
  *             minutes) up to a maximum of 129,600 seconds (36 hours). The default session duration is
- *             43,200 seconds (12 hours). Temporary credentials that are obtained by using AWS
+ *             43,200 seconds (12 hours). Temporary credentials that are obtained by using Amazon Web Services
  *             account root user credentials have a maximum duration of 3,600 seconds (1 hour).</p>
  *         <p>
  *             <b>Permissions</b>
  *         </p>
  *         <p>You can use the temporary credentials created by <code>GetFederationToken</code> in
- *             any AWS service except the following:</p>
+ *             any Amazon Web Services service except the following:</p>
  *         <ul>
  *             <li>
- *                 <p>You cannot call any IAM operations using the AWS CLI or the AWS API.
+ *                 <p>You cannot call any IAM operations using the CLI or the Amazon Web Services API.
  *                 </p>
  *             </li>
  *             <li>
@@ -20605,10 +20619,10 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const middleware_signing_1 = __nccwpck_require__(2487);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
- * <p>Returns a set of temporary credentials for an AWS account or IAM user. The
+ * <p>Returns a set of temporary credentials for an Amazon Web Services account or IAM user. The
  *          credentials consist of an access key ID, a secret access key, and a security token.
  *          Typically, you use <code>GetSessionToken</code> if you want to use MFA to protect
- *          programmatic calls to specific AWS API operations like Amazon EC2 <code>StopInstances</code>.
+ *          programmatic calls to specific Amazon Web Services API operations like Amazon EC2 <code>StopInstances</code>.
  *          MFA-enabled IAM users would need to call <code>GetSessionToken</code> and submit an MFA
  *          code that is associated with their MFA device. Using the temporary security credentials
  *          that are returned from the call, IAM users can then make programmatic calls to API
@@ -20616,12 +20630,12 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          the API returns an access denied error. For a comparison of <code>GetSessionToken</code>
  *          with the other API operations that produce temporary credentials, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html">Requesting
  *             Temporary Security Credentials</a> and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#stsapi_comparison">Comparing the
- *             AWS STS API operations</a> in the <i>IAM User Guide</i>.</p>
+ *             STS API operations</a> in the <i>IAM User Guide</i>.</p>
  *          <p>
  *             <b>Session Duration</b>
  *          </p>
- *          <p>The <code>GetSessionToken</code> operation must be called by using the long-term AWS
- *          security credentials of the AWS account root user or an IAM user. Credentials that are
+ *          <p>The <code>GetSessionToken</code> operation must be called by using the long-term Amazon Web Services
+ *          security credentials of the Amazon Web Services account root user or an IAM user. Credentials that are
  *          created by IAM users are valid for the duration that you specify. This duration can range
  *          from 900 seconds (15 minutes) up to a maximum of 129,600 seconds (36 hours), with a default
  *          of 43,200 seconds (12 hours). Credentials based on account credentials can range from 900
@@ -20630,7 +20644,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             <b>Permissions</b>
  *          </p>
  *          <p>The temporary security credentials created by <code>GetSessionToken</code> can be used
- *          to make API calls to any AWS service with the following exceptions:</p>
+ *          to make API calls to any Amazon Web Services service with the following exceptions:</p>
  *          <ul>
  *             <li>
  *                <p>You cannot call any IAM API operations unless MFA authentication information is
@@ -20642,14 +20656,14 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             </li>
  *          </ul>
  *          <note>
- *             <p>We recommend that you do not call <code>GetSessionToken</code> with AWS account
+ *             <p>We recommend that you do not call <code>GetSessionToken</code> with Amazon Web Services account
  *             root user credentials. Instead, follow our <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#create-iam-users">best practices</a> by
  *             creating one or more IAM users, giving them the necessary permissions, and using IAM
- *             users for everyday interaction with AWS. </p>
+ *             users for everyday interaction with Amazon Web Services. </p>
  *          </note>
  *          <p>The credentials that are returned by <code>GetSessionToken</code> are based on
  *          permissions associated with the user whose credentials were used to call the operation. If
- *             <code>GetSessionToken</code> is called using AWS account root user credentials, the
+ *             <code>GetSessionToken</code> is called using Amazon Web Services account root user credentials, the
  *          temporary credentials have root user permissions. Similarly, if
  *             <code>GetSessionToken</code> is called using the credentials of an IAM user, the
  *          temporary credentials have the same permissions as the IAM user. </p>
@@ -25451,39 +25465,45 @@ const http2_1 = __nccwpck_require__(7565);
 const get_transformed_headers_1 = __nccwpck_require__(2269);
 const write_request_body_1 = __nccwpck_require__(3306);
 class NodeHttp2Handler {
-    constructor({ requestTimeout, sessionTimeout } = {}) {
+    constructor({ requestTimeout, sessionTimeout, disableConcurrentStreams } = {}) {
         this.metadata = { handlerProtocol: "h2" };
         this.requestTimeout = requestTimeout;
         this.sessionTimeout = sessionTimeout;
-        this.connectionPool = new Map();
+        this.disableConcurrentStreams = disableConcurrentStreams;
+        this.sessionCache = new Map();
     }
     destroy() {
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        for (const [_, http2Session] of this.connectionPool) {
-            http2Session.destroy();
+        for (const sessions of this.sessionCache.values()) {
+            sessions.forEach((session) => this.destroySession(session));
         }
-        this.connectionPool.clear();
+        this.sessionCache.clear();
     }
     handle(request, { abortSignal } = {}) {
         return new Promise((resolve, rejectOriginal) => {
             // It's redundant to track fulfilled because promises use the first resolution/rejection
             // but avoids generating unnecessary stack traces in the "close" event handler.
             let fulfilled = false;
-            const reject = (err) => {
-                fulfilled = true;
-                rejectOriginal(err);
-            };
             // if the request was already aborted, prevent doing extra work
             if (abortSignal === null || abortSignal === void 0 ? void 0 : abortSignal.aborted) {
+                fulfilled = true;
                 const abortError = new Error("Request aborted");
                 abortError.name = "AbortError";
-                reject(abortError);
+                rejectOriginal(abortError);
                 return;
             }
             const { hostname, method, port, protocol, path, query } = request;
+            const authority = `${protocol}//${hostname}${port ? `:${port}` : ""}`;
+            const session = this.getSession(authority, this.disableConcurrentStreams || false);
+            const reject = (err) => {
+                if (this.disableConcurrentStreams) {
+                    this.destroySession(session);
+                }
+                fulfilled = true;
+                rejectOriginal(err);
+            };
             const queryString = querystring_builder_1.buildQueryString(query || {});
             // create the http2 request
-            const req = this.getSession(`${protocol}//${hostname}${port ? `:${port}` : ""}`).request({
+            const req = session.request({
                 ...request.headers,
                 [http2_1.constants.HTTP2_HEADER_PATH]: queryString ? `${path}?${queryString}` : path,
                 [http2_1.constants.HTTP2_HEADER_METHOD]: method,
@@ -25496,6 +25516,12 @@ class NodeHttp2Handler {
                 });
                 fulfilled = true;
                 resolve({ response: httpResponse });
+                if (this.disableConcurrentStreams) {
+                    // Gracefully closes the Http2Session, allowing any existing streams to complete
+                    // on their own and preventing new Http2Stream instances from being created.
+                    session.close();
+                    this.deleteSessionFromCache(authority, session);
+                }
             });
             const requestTimeout = this.requestTimeout;
             if (requestTimeout) {
@@ -25523,6 +25549,9 @@ class NodeHttp2Handler {
             // http2stream.rstCode property. If the code is any value other than NGHTTP2_NO_ERROR (0),
             // an 'error' event will have also been emitted.
             req.on("close", () => {
+                if (this.disableConcurrentStreams) {
+                    session.destroy();
+                }
                 if (!fulfilled) {
                     reject(new Error("Unexpected error: http2 request did not get a response"));
                 }
@@ -25530,52 +25559,60 @@ class NodeHttp2Handler {
             write_request_body_1.writeRequestBody(req, request);
         });
     }
-    getSession(authority) {
-        const connectionPool = this.connectionPool;
-        const existingSession = connectionPool.get(authority);
-        if (existingSession)
-            return existingSession;
+    /**
+     * Returns a session for the given URL.
+     *
+     * @param authority The URL to create a session for.
+     * @param disableConcurrentStreams If true, a new session will be created for each request.
+     * @returns A session for the given URL.
+     */
+    getSession(authority, disableConcurrentStreams) {
+        const sessionCache = this.sessionCache;
+        const existingSessions = sessionCache.get(authority) || [];
+        // If concurrent streams are not disabled, we can use the existing session.
+        if (existingSessions.length > 0 && !disableConcurrentStreams)
+            return existingSessions[0];
         const newSession = http2_1.connect(authority);
-        connectionPool.set(authority, newSession);
         const destroySessionCb = () => {
-            this.destroySession(authority, newSession);
+            this.destroySession(newSession);
+            this.deleteSessionFromCache(authority, newSession);
         };
         newSession.on("goaway", destroySessionCb);
         newSession.on("error", destroySessionCb);
         newSession.on("frameError", destroySessionCb);
         const sessionTimeout = this.sessionTimeout;
         if (sessionTimeout) {
-            newSession.setTimeout(sessionTimeout, () => {
-                if (connectionPool.get(authority) === newSession) {
-                    newSession.close();
-                    connectionPool.delete(authority);
-                }
-            });
+            newSession.setTimeout(sessionTimeout, destroySessionCb);
         }
+        existingSessions.push(newSession);
+        sessionCache.set(authority, existingSessions);
         return newSession;
     }
     /**
-     * Destroy a session immediately and remove it from the http2 pool.
-     *
-     * This check ensures that the session is only closed once
-     * and that an event on one session does not close a different session.
+     * Destroys a session.
+     * @param session The session to destroy.
      */
-    destroySession(authority, session) {
-        if (this.connectionPool.get(authority) !== session) {
-            // Already closed?
-            return;
-        }
-        this.connectionPool.delete(authority);
-        session.removeAllListeners("goaway");
-        session.removeAllListeners("error");
-        session.removeAllListeners("frameError");
+    destroySession(session) {
         if (!session.destroyed) {
             session.destroy();
         }
     }
+    /**
+     * Delete a session from the connection pool.
+     * @param authority The authority of the session to delete.
+     * @param session The session to delete.
+     */
+    deleteSessionFromCache(authority, session) {
+        const existingSessions = this.sessionCache.get(authority) || [];
+        if (!existingSessions.includes(session)) {
+            // If the session is not in the cache, it has already been deleted.
+            return;
+        }
+        this.sessionCache.set(authority, existingSessions.filter((s) => s !== session));
+    }
 }
 exports.NodeHttp2Handler = NodeHttp2Handler;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibm9kZS1odHRwMi1oYW5kbGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL25vZGUtaHR0cDItaGFuZGxlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwwREFBZ0Y7QUFDaEYsc0VBQWdFO0FBRWhFLGlDQUErRDtBQUUvRCx1RUFBa0U7QUFDbEUsNkRBQXdEO0FBb0J4RCxNQUFhLGdCQUFnQjtJQU0zQixZQUFZLEVBQUUsY0FBYyxFQUFFLGNBQWMsS0FBOEIsRUFBRTtRQUY1RCxhQUFRLEdBQUcsRUFBRSxlQUFlLEVBQUUsSUFBSSxFQUFFLENBQUM7UUFHbkQsSUFBSSxDQUFDLGNBQWMsR0FBRyxjQUFjLENBQUM7UUFDckMsSUFBSSxDQUFDLGNBQWMsR0FBRyxjQUFjLENBQUM7UUFDckMsSUFBSSxDQUFDLGNBQWMsR0FBRyxJQUFJLEdBQUcsRUFBOEIsQ0FBQztJQUM5RCxDQUFDO0lBRUQsT0FBTztRQUNMLDZEQUE2RDtRQUM3RCxLQUFLLE1BQU0sQ0FBQyxDQUFDLEVBQUUsWUFBWSxDQUFDLElBQUksSUFBSSxDQUFDLGNBQWMsRUFBRTtZQUNuRCxZQUFZLENBQUMsT0FBTyxFQUFFLENBQUM7U0FDeEI7UUFDRCxJQUFJLENBQUMsY0FBYyxDQUFDLEtBQUssRUFBRSxDQUFDO0lBQzlCLENBQUM7SUFFRCxNQUFNLENBQUMsT0FBb0IsRUFBRSxFQUFFLFdBQVcsS0FBeUIsRUFBRTtRQUNuRSxPQUFPLElBQUksT0FBTyxDQUFDLENBQUMsT0FBTyxFQUFFLGNBQWMsRUFBRSxFQUFFO1lBQzdDLHdGQUF3RjtZQUN4RiwrRUFBK0U7WUFDL0UsSUFBSSxTQUFTLEdBQUcsS0FBSyxDQUFDO1lBQ3RCLE1BQU0sTUFBTSxHQUFHLENBQUMsR0FBVSxFQUFFLEVBQUU7Z0JBQzVCLFNBQVMsR0FBRyxJQUFJLENBQUM7Z0JBQ2pCLGNBQWMsQ0FBQyxHQUFHLENBQUMsQ0FBQztZQUN0QixDQUFDLENBQUM7WUFDRiwrREFBK0Q7WUFD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aEQsVUFBVSxDQUFDLEtBQUssRUFBRSxDQUFDO29CQUNuQixjQUFjLENBQUMsTUFBTSxDQUFDLFNBQVMsQ0FBQyxDQUFDO2lCQUNsQztZQUNILENBQUMsQ0FBQyxDQUFDO1NBQ0o7UUFDRCxPQUFPLFVBQVUsQ0FBQztJQUNwQixDQUFDO0lBRUQ7Ozs7O09BS0c7SUFDSyxjQUFjLENBQUMsU0FBaUIsRUFBRSxPQUEyQjtRQUNuRSxJQUFJLElBQUksQ0FBQyxjQUFjLENBQUMsR0FBRyxDQUFDLFNBQVMsQ0FBQyxLQUFLLE9BQU8sRUFBRTtZQUNsRCxrQkFBa0I7WUFDbEIsT0FBTztTQUNSO1FBQ0QsSUFBSSxDQUFDLGNBQWMsQ0FBQyxNQUFNLENBQUMsU0FBUyxDQUFDLENBQUM7UUFDdEMsT0FBTyxDQUFDLGtCQUFrQixDQUFDLFFBQVEsQ0FBQyxDQUFDO1FBQ3JDLE9BQU8sQ0FBQyxrQkFBa0IsQ0FBQyxPQUFPLENBQUMsQ0FBQztRQUNwQyxPQUFPLENBQUMsa0JBQWtCLENBQUMsWUFBWSxDQUFDLENBQUM7UUFDekMsSUFBSSxDQUFDLE9BQU8sQ0FBQyxTQUFTLEVBQUU7WUFDdEIsT0FBTyxDQUFDLE9BQU8sRUFBRSxDQUFDO1NBQ25CO0lBQ0gsQ0FBQztDQUNGO0FBM0lELDRDQTJJQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEh0dHBIYW5kbGVyLCBIdHRwUmVxdWVzdCwgSHR0cFJlc3BvbnNlIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3RvY29sLWh0dHBcIjtcbmltcG9ydCB7IGJ1aWxkUXVlcnlTdHJpbmcgfSBmcm9tIFwiQGF3cy1zZGsvcXVlcnlzdHJpbmctYnVpbGRlclwiO1xuaW1wb3J0IHsgSHR0cEhhbmRsZXJPcHRpb25zIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5pbXBvcnQgeyBDbGllbnRIdHRwMlNlc3Npb24sIGNvbm5lY3QsIGNvbnN0YW50cyB9IGZyb20gXCJodHRwMlwiO1xuXG5pbXBvcnQgeyBnZXRUcmFuc2Zvcm1lZEhlYWRlcnMgfSBmcm9tIFwiLi9nZXQtdHJhbnNmb3JtZWQtaGVhZGVyc1wiO1xuaW1wb3J0IHsgd3JpdGVSZXF1ZXN0Qm9keSB9IGZyb20gXCIuL3dyaXRlLXJlcXVlc3QtYm9keVwiO1xuXG4vKipcbiAqIFJlcHJlc2VudHMgdGhlIGh0dHAyIG9wdGlvbnMgdGhhdCBjYW4gYmUgcGFzc2VkIHRvIGEgbm9kZSBodHRwMiBjbGllbnQuXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgTm9kZUh0dHAySGFuZGxlck9wdGlvbnMge1xuICAvKipcbiAgICogVGhlIG1heGltdW0gdGltZSBpbiBtaWxsaXNlY29uZHMgdGhhdCBhIHN0cmVhbSBtYXkgcmVtYWluIGlkbGUgYmVmb3JlIGl0XG4gICAqIGlzIGNsb3NlZC5cbiAgICovXG4gIHJlcXVlc3RUaW1lb3V0PzogbnVtYmVyO1xuXG4gIC8qKlxuICAgKiBUaGUgbWF4aW11bSB0aW1lIGluIG1pbGxpc2Vjb25kcyB0aGF0IGEgc2Vzc2lvbiBvciBzb2NrZXQgbWF5IHJlbWFpbiBpZGxlXG4gICAqIGJlZm9yZSBpdCBpcyBjbG9zZWQuXG4gICAqIGh0dHBzOi8vbm9kZWpzLm9yZy9kb2NzL2xhdGVzdC12MTIueC9hcGkvaHR0cDIuaHRtbCNodHRwMl9odHRwMnNlc3Npb25fYW5kX3NvY2tldHNcbiAgICovXG4gIHNlc3Npb25UaW1lb3V0PzogbnVtYmVyO1xufVxuXG5leHBvcnQgY2xhc3MgTm9kZUh0dHAySGFuZGxlciBpbXBsZW1lbnRzIEh0dHBIYW5kbGVyIHtcbiAgcHJpdmF0ZSByZWFkb25seSByZXF1ZXN0VGltZW91dD86IG51bWJlcjtcbiAgcHJpdmF0ZSByZWFkb25seSBzZXNzaW9uVGltZW91dD86IG51bWJlcjtcbiAgcHJpdmF0ZSByZWFkb25seSBjb25uZWN0aW9uUG9vbDogTWFwPHN0cmluZywgQ2xpZW50SHR0cDJTZXNzaW9uPjtcbiAgcHVibGljIHJlYWRvbmx5IG1ldGFkYXRhID0geyBoYW5kbGVyUHJvdG9jb2w6IFwiaDJcIiB9O1xuXG4gIGNvbnN0cnVjdG9yKHsgcmVxdWVzdFRpbWVvdXQsIHNlc3Npb25UaW1lb3V0IH06IE5vZGVIdHRwMkhhbmRsZXJPcHRpb25zID0ge30pIHtcbiAgICB0aGlzLnJlcXVlc3RUaW1lb3V0ID0gcmVxdWVzdFRpbWVvdXQ7XG4gICAgdGhpcy5zZXNzaW9uVGltZW91dCA9IHNlc3Npb25UaW1lb3V0O1xuICAgIHRoaXMuY29ubmVjdGlvblBvb2wgPSBuZXcgTWFwPHN0cmluZywgQ2xpZW50SHR0cDJTZXNzaW9uPigpO1xuICB9XG5cbiAgZGVzdHJveSgpOiB2b2lkIHtcbiAgICAvLyBlc2xpbnQtZGlzYWJsZS1uZXh0LWxpbmUgQHR5cGVzY3JpcHQtZXNsaW50L25vLXVudXNlZC12YXJzXG4gICAgZm9yIChjb25zdCBbXywgaHR0cDJTZXNzaW9uXSBvZiB0aGlzLmNvbm5lY3Rpb25Qb29sKSB7XG4gICAgICBodHRwMlNlc3Npb24uZGVzdHJveSgpO1xuICAgIH1cbiAgICB0aGlzLmNvbm5lY3Rpb25Qb29sLmNsZWFyKCk7XG4gIH1cblxuICBoYW5kbGUocmVxdWVzdDogSHR0cFJlcXVlc3QsIHsgYWJvcnRTaWduYWwgfTogSHR0cEhhbmRsZXJPcHRpb25zID0ge30pOiBQcm9taXNlPHsgcmVzcG9uc2U6IEh0dHBSZXNwb25zZSB9PiB7XG4gICAgcmV0dXJuIG5ldyBQcm9taXNlKChyZXNvbHZlLCByZWplY3RPcmlnaW5hbCkgPT4ge1xuICAgICAgLy8gSXQncyByZWR1bmRhbnQgdG8gdHJhY2sgZnVsZmlsbGVkIGJlY2F1c2UgcHJvbWlzZXMgdXNlIHRoZSBmaXJzdCByZXNvbHV0aW9uL3JlamVjdGlvblxuICAgICAgLy8gYnV0IGF2b2lkcyBnZW5lcmF0aW5nIHVubmVjZXNzYXJ5IHN0YWNrIHRyYWNlcyBpbiB0aGUgXCJjbG9zZVwiIGV2ZW50IGhhbmRsZXIuXG4gICAgICBsZXQgZnVsZmlsbGVkID0gZmFsc2U7XG4gICAgICBjb25zdCByZWplY3QgPSAoZXJyOiBFcnJvcikgPT4ge1xuICAgICAgICBmdWxmaWxsZWQgPSB0cnVlO1xuICAgICAgICByZWplY3RPcmlnaW5hbChlcnIpO1xuICAgICAgfTtcbiAgICAgIC8vIGlmIHRoZSByZXF1ZXN0IHdhcyBhbHJlYWR5IGFib3J0ZWQsIHByZXZlbnQgZG9pbmcgZXh0cmEgd29ya1xuICAgICAgaWYgKGFib3J0U2lnbmFsPy5hYm9ydGVkKSB7XG4gICAgICAgIGNvbnN0IGFib3J0RXJyb3IgPSBuZXcgRXJyb3IoXCJSZXF1ZXN0IGFib3J0ZWRcIik7XG4gICAgICAgIGFib3J0RXJyb3IubmFtZSA9IFwiQWJvcnRFcnJvclwiO1xuICAgICAgICByZWplY3QoYWJvcnRFcnJvcik7XG4gICAgICAgIHJldHVybjtcbiAgICAgIH1cblxuICAgICAgY29uc3QgeyBob3N0bmFtZSwgbWV0aG9kLCBwb3J0LCBwcm90b2NvbCwgcGF0aCwgcXVlcnkgfSA9IHJlcXVlc3Q7XG4gICAgICBjb25zdCBxdWVyeVN0cmluZyA9IGJ1aWxkUXVlcnlTdHJpbmcocXVlcnkgfHwge30pO1xuXG4gICAgICAvLyBjcmVhdGUgdGhlIGh0dHAyIHJlcXVlc3RcbiAgICAgIGNvbnN0IHJlcSA9IHRoaXMuZ2V0U2Vzc2lvbihgJHtwcm90b2NvbH0vLyR7aG9zdG5hbWV9JHtwb3J0ID8gYDoke3BvcnR9YCA6IFwiXCJ9YCkucmVxdWVzdCh7XG4gICAgICAgIC4uLnJlcXVlc3QuaGVhZGVycyxcbiAgICAgICAgW2NvbnN0YW50cy5IVFRQMl9IRUFERVJfUEFUSF06IHF1ZXJ5U3RyaW5nID8gYCR7cGF0aH0/JHtxdWVyeVN0cmluZ31gIDogcGF0aCxcbiAgICAgICAgW2NvbnN0YW50cy5IVFRQMl9IRUFERVJfTUVUSE9EXTogbWV0aG9kLFxuICAgICAgfSk7XG5cbiAgICAgIHJlcS5vbihcInJlc3BvbnNlXCIsIChoZWFkZXJzKSA9PiB7XG4gICAgICAgIGNvbnN0IGh0dHBSZXNwb25zZSA9IG5ldyBIdHRwUmVzcG9uc2Uoe1xuICAgICAgICAgIHN0YXR1c0NvZGU6IGhlYWRlcnNbXCI6c3RhdHVzXCJdIHx8IC0xLFxuICAgICAgICAgIGhlYWRlcnM6IGdldFRyYW5zZm9ybWVkSGVhZGVycyhoZWFkZXJzKSxcbiAgICAgICAgICBib2R5OiByZXEsXG4gICAgICAgIH0pO1xuICAgICAgICBmdWxmaWxsZWQgPSB0cnVlO1xuICAgICAgICByZXNvbHZlKHsgcmVzcG9uc2U6IGh0dHBSZXNwb25zZSB9KTtcbiAgICAgIH0pO1xuXG4gICAgICBjb25zdCByZXF1ZXN0VGltZW91dCA9IHRoaXMucmVxdWVzdFRpbWVvdXQ7XG4gICAgICBpZiAocmVxdWVzdFRpbWVvdXQpIHtcbiAgICAgICAgcmVxLnNldFRpbWVvdXQocmVxdWVzdFRpbWVvdXQsICgpID0+IHtcbiAgICAgICAgICByZXEuY2xvc2UoKTtcbiAgICAgICAgICBjb25zdCB0aW1lb3V0RXJyb3IgPSBuZXcgRXJyb3IoYFN0cmVhbSB0aW1lZCBvdXQgYmVjYXVzZSBvZiBubyBhY3Rpdml0eSBmb3IgJHtyZXF1ZXN0VGltZW91dH0gbXNgKTtcbiAgICAgICAgICB0aW1lb3V0RXJyb3IubmFtZSA9IFwiVGltZW91dEVycm9yXCI7XG4gICAgICAgICAgcmVqZWN0KHRpbWVvdXRFcnJvcik7XG4gICAgICAgIH0pO1xuICAgICAgfVxuXG4gICAgICBpZiAoYWJvcnRTaWduYWwpIHtcbiAgICAgICAgYWJvcnRTaWduYWwub25hYm9ydCA9ICgpID0+IHtcbiAgICAgICAgICByZXEuY2xvc2UoKTtcbiAgICAgICAgICBjb25zdCBhYm9ydEVycm9yID0gbmV3IEVycm9yKFwiUmVxdWVzdCBhYm9ydGVkXCIpO1xuICAgICAgICAgIGFib3J0RXJyb3IubmFtZSA9IFwiQWJvcnRFcnJvclwiO1xuICAgICAgICAgIHJlamVjdChhYm9ydEVycm9yKTtcbiAgICAgICAgfTtcbiAgICAgIH1cblxuICAgICAgLy8gU2V0IHVwIGhhbmRsZXJzIGZvciBlcnJvcnNcbiAgICAgIHJlcS5vbihcImZyYW1lRXJyb3JcIiwgcmVqZWN0KTtcbiAgICAgIHJlcS5vbihcImVycm9yXCIsIHJlamVjdCk7XG4gICAgICByZXEub24oXCJnb2F3YXlcIiwgcmVqZWN0KTtcbiAgICAgIHJlcS5vbihcImFib3J0ZWRcIiwgcmVqZWN0KTtcblxuICAgICAgLy8gVGhlIEhUVFAvMiBlcnJvciBjb2RlIHVzZWQgd2hlbiBjbG9zaW5nIHRoZSBzdHJlYW0gY2FuIGJlIHJldHJpZXZlZCB1c2luZyB0aGVcbiAgICAgIC8vIGh0dHAyc3RyZWFtLnJzdENvZGUgcHJvcGVydHkuIElmIHRoZSBjb2RlIGlzIGFueSB2YWx1ZSBvdGhlciB0aGFuIE5HSFRUUDJfTk9fRVJST1IgKDApLFxuICAgICAgLy8gYW4gJ2Vycm9yJyBldmVudCB3aWxsIGhhdmUgYWxzbyBiZWVuIGVtaXR0ZWQuXG4gICAgICByZXEub24oXCJjbG9zZVwiLCAoKSA9PiB7XG4gICAgICAgIGlmICghZnVsZmlsbGVkKSB7XG4gICAgICAgICAgcmVqZWN0KG5ldyBFcnJvcihcIlVuZXhwZWN0ZWQgZXJyb3I6IGh0dHAyIHJlcXVlc3QgZGlkIG5vdCBnZXQgYSByZXNwb25zZVwiKSk7XG4gICAgICAgIH1cbiAgICAgIH0pO1xuICAgICAgd3JpdGVSZXF1ZXN0Qm9keShyZXEsIHJlcXVlc3QpO1xuICAgIH0pO1xuICB9XG5cbiAgcHJpdmF0ZSBnZXRTZXNzaW9uKGF1dGhvcml0eTogc3RyaW5nKTogQ2xpZW50SHR0cDJTZXNzaW9uIHtcbiAgICBjb25zdCBjb25uZWN0aW9uUG9vbCA9IHRoaXMuY29ubmVjdGlvblBvb2w7XG4gICAgY29uc3QgZXhpc3RpbmdTZXNzaW9uID0gY29ubmVjdGlvblBvb2wuZ2V0KGF1dGhvcml0eSk7XG4gICAgaWYgKGV4aXN0aW5nU2Vzc2lvbikgcmV0dXJuIGV4aXN0aW5nU2Vzc2lvbjtcblxuICAgIGNvbnN0IG5ld1Nlc3Npb24gPSBjb25uZWN0KGF1dGhvcml0eSk7XG4gICAgY29ubmVjdGlvblBvb2wuc2V0KGF1dGhvcml0eSwgbmV3U2Vzc2lvbik7XG4gICAgY29uc3QgZGVzdHJveVNlc3Npb25DYiA9ICgpID0+IHtcbiAgICAgIHRoaXMuZGVzdHJveVNlc3Npb24oYXV0aG9yaXR5LCBuZXdTZXNzaW9uKTtcbiAgICB9O1xuICAgIG5ld1Nlc3Npb24ub24oXCJnb2F3YXlcIiwgZGVzdHJveVNlc3Npb25DYik7XG4gICAgbmV3U2Vzc2lvbi5vbihcImVycm9yXCIsIGRlc3Ryb3lTZXNzaW9uQ2IpO1xuICAgIG5ld1Nlc3Npb24ub24oXCJmcmFtZUVycm9yXCIsIGRlc3Ryb3lTZXNzaW9uQ2IpO1xuXG4gICAgY29uc3Qgc2Vzc2lvblRpbWVvdXQgPSB0aGlzLnNlc3Npb25UaW1lb3V0O1xuICAgIGlmIChzZXNzaW9uVGltZW91dCkge1xuICAgICAgbmV3U2Vzc2lvbi5zZXRUaW1lb3V0KHNlc3Npb25UaW1lb3V0LCAoKSA9PiB7XG4gICAgICAgIGlmIChjb25uZWN0aW9uUG9vbC5nZXQoYXV0aG9yaXR5KSA9PT0gbmV3U2Vzc2lvbikge1xuICAgICAgICAgIG5ld1Nlc3Npb24uY2xvc2UoKTtcbiAgICAgICAgICBjb25uZWN0aW9uUG9vbC5kZWxldGUoYXV0aG9yaXR5KTtcbiAgICAgICAgfVxuICAgICAgfSk7XG4gICAgfVxuICAgIHJldHVybiBuZXdTZXNzaW9uO1xuICB9XG5cbiAgLyoqXG4gICAqIERlc3Ryb3kgYSBzZXNzaW9uIGltbWVkaWF0ZWx5IGFuZCByZW1vdmUgaXQgZnJvbSB0aGUgaHR0cDIgcG9vbC5cbiAgICpcbiAgICogVGhpcyBjaGVjayBlbnN1cmVzIHRoYXQgdGhlIHNlc3Npb24gaXMgb25seSBjbG9zZWQgb25jZVxuICAgKiBhbmQgdGhhdCBhbiBldmVudCBvbiBvbmUgc2Vzc2lvbiBkb2VzIG5vdCBjbG9zZSBhIGRpZmZlcmVudCBzZXNzaW9uLlxuICAgKi9cbiAgcHJpdmF0ZSBkZXN0cm95U2Vzc2lvbihhdXRob3JpdHk6IHN0cmluZywgc2Vzc2lvbjogQ2xpZW50SHR0cDJTZXNzaW9uKTogdm9pZCB7XG4gICAgaWYgKHRoaXMuY29ubmVjdGlvblBvb2wuZ2V0KGF1dGhvcml0eSkgIT09IHNlc3Npb24pIHtcbiAgICAgIC8vIEFscmVhZHkgY2xvc2VkP1xuICAgICAgcmV0dXJuO1xuICAgIH1cbiAgICB0aGlzLmNvbm5lY3Rpb25Qb29sLmRlbGV0ZShhdXRob3JpdHkpO1xuICAgIHNlc3Npb24ucmVtb3ZlQWxsTGlzdGVuZXJzKFwiZ29hd2F5XCIpO1xuICAgIHNlc3Npb24ucmVtb3ZlQWxsTGlzdGVuZXJzKFwiZXJyb3JcIik7XG4gICAgc2Vzc2lvbi5yZW1vdmVBbGxMaXN0ZW5lcnMoXCJmcmFtZUVycm9yXCIpO1xuICAgIGlmICghc2Vzc2lvbi5kZXN0cm95ZWQpIHtcbiAgICAgIHNlc3Npb24uZGVzdHJveSgpO1xuICAgIH1cbiAgfVxufVxuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibm9kZS1odHRwMi1oYW5kbGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL25vZGUtaHR0cDItaGFuZGxlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwwREFBZ0Y7QUFDaEYsc0VBQWdFO0FBRWhFLGlDQUErRDtBQUUvRCx1RUFBa0U7QUFDbEUsNkRBQXdEO0FBNEJ4RCxNQUFhLGdCQUFnQjtJQVEzQixZQUFZLEVBQUUsY0FBYyxFQUFFLGNBQWMsRUFBRSx3QkFBd0IsS0FBOEIsRUFBRTtRQUh0RixhQUFRLEdBQUcsRUFBRSxlQUFlLEVBQUUsSUFBSSxFQUFFLENBQUM7UUFJbkQsSUFBSSxDQUFDLGNBQWMsR0FBRyxjQUFjLENBQUM7UUFDckMsSUFBSSxDQUFDLGNBQWMsR0FBRyxjQUFjLENBQUM7UUFDckMsSUFBSSxDQUFDLHdCQUF3QixHQUFHLHdCQUF3QixDQUFDO1FBQ3pELElBQUksQ0FBQyxZQUFZLEdBQUcsSUFBSSxHQUFHLEVBQWdDLENBQUM7SUFDOUQsQ0FBQztJQUVELE9BQU87UUFDTCxLQUFLLE1BQU0sUUFBUSxJQUFJLElBQUksQ0FBQyxZQUFZLENBQUMsTUFBTSxFQUFFLEVBQUU7WUFDakQsUUFBUSxDQUFDLE9BQU8sQ0FBQyxDQUFDLE9BQU8sRUFBRSxFQUFFLENBQUMsSUFBSSxDQUFDLGNBQWMsQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFDO1NBQzdEO1FBQ0QsSUFBSSxDQUFDLFlBQVksQ0FBQyxLQUFLLEVBQUUsQ0FBQztJQUM1QixDQUFDO0lBRUQsTUFBTSxDQUFDLE9BQW9CLEVBQUUsRUFBRSxXQUFXLEtBQXlCLEVBQUU7UUFDbkUsT0FBTyxJQUFJLE9BQU8sQ0FBQyxDQUFDLE9BQU8sRUFBRSxjQUFjLEVBQUUsRUFBRTtZQUM3Qyx3RkFBd0Y7WUFDeEYsK0VBQStFO1lBQy9FLElBQUksU0FBUyxHQUFHLEtBQUssQ0FBQztZQUV0QiwrREFBK0Q7WUFDL0QsSUFBSSxXQUFXLGFBQVgsV0FBVyx1QkFBWCxXQUFXLENBQUUsT0FBTyxFQUFFO2dCQUN4QixTQUFTLEdBQUcsSUFBSSxDQUFDO2dCQUNqQixNQUFNLFVBQVUsR0FBRyxJQUFJLEtBQUssQ0FBQyxpQkFBaUIsQ0FBQyxDQUFDO2dCQUNoRCxVQUFVLENBQUMsSUFBSSxHQUFHLFlBQVksQ0FBQztnQkFDL0IsY0FBYyxDQUFDLFVBQVUsQ0FBQyxDQUFDO2dCQUMzQixPQUFPO2FBQ1I7WUFFRCxNQUFNLEVBQUUsUUFBUSxFQUFFLE1BQU0sRUFBRSxJQUFJLEVBQUUsUUFBUSxFQUFFLElBQUksRUFBRSxLQUFLLEVBQUUsR0FBRyxPQUFPLENBQUM7WUFDbEUsTUFBTSxTQUFTLEdBQUcsR0FBRyxRQUFRLEtBQUssUUFBUSxHQUFHLElBQUksQ0FBQyxDQUFDLENBQUMsSUFBSSxJQUFJLEVBQUUsQ0FBQyxDQUFDLENBQUMsRUFBRSxFQUFFLENBQUM7WUFDdEUsTUFBTSxPQUFPLEdBQUcsSUFBSSxDQUFDLFVBQVUsQ0FBQyxTQUFTLEVBQUUsSUFBSSxDQUFDLHdCQUF3QixJQUFJLEtBQUssQ0FBQyxDQUFDO1lBRW5GLE1BQU0sTUFBTSxHQUFHLENBQUMsR0FBVSxFQUFFLEVBQUU7Z0JBQzVCLElBQUksSUFBSSxDQUFDLHdCQUF3QixFQUFFO29CQUNqQyxJQUFJLENBQUMsY0FBYyxDQUFDLE9BQU8sQ0FBQyxDQUFDO2lCQUM5QjtnQkFDRCxTQUFTLEdBQUcsSUFBSSxDQUFDO2dCQUNqQixjQUFjLENBQUMsR0FBRyxDQUFDLENBQUM7WUFDdEIsQ0FBQyxDQUFDO1lBRUYsTUFBTSxXQUFXLEdBQUcsc0NBQWdCLENBQUMsS0FBSyxJQUFJLEVBQUUsQ0FBQyxDQUFDO1lBQ2xELDJCQUEyQjtZQUMzQixNQUFNLEdBQUcsR0FBRyxPQUFPLENBQUMsT0FBTyxDQUFDO2dCQUMxQixHQUFHLE9BQU8sQ0FBQyxPQUFPO2dCQUNsQixDQUFDLGlCQUFTLENBQUMsaUJBQWlCLENBQUMsRUFBRSxXQUFXLENBQUMsQ0FBQyxDQUFDLEdBQUcsSUFBSSxJQUFJLFdBQVcsRUFBRSxDQUFDLENBQUMsQ0FBQyxJQUFJO2dCQUM1RSxDQUFDLGlCQUFTLENBQUMsbUJBQW1CLENBQUMsRUFBRSxNQUFNO2FBQ3hDLENBQUMsQ0FBQztZQUVILEdBQUcsQ0FBQyxFQUFFLENBQUMsVUFBVSxFQUFFLENBQUMsT0FBTyxFQUFFLEVBQUU7Z0JBQzdCLE1BQU0sWUFBWSxHQUFHLElBQUksNEJBQVksQ0FBQztvQkFDcEMsVUFBVSxFQUFFLE9BQU8sQ0FBQyxTQUFTLENBQUMsSUFBSSxDQUFDLENBQUM7b0JBQ3BDLE9BQU8sRUFBRSwrQ0FBcUIsQ0FBQyxPQUFPLENBQUM7b0JBQ3ZDLElBQUksRUFBRSxHQUFHO2lCQUNWLENBQUMsQ0FBQztnQkFDSCxTQUFTLEdBQUcsSUFBSSxDQUFDO2dCQUNqQixPQUFPLENBQUMsRUFBRSxRQUFRLEVBQUUsWUFBWSxFQUFFLENBQUMsQ0FBQztnQkFDcEMsSUFBSSxJQUFJLENBQUMsd0JBQXdCLEVBQUU7b0JBQ2pDLGdGQUFnRjtvQkFDaEYsNEVBQTRFO29CQUM1RSxPQUFPLENBQUMsS0FBSyxFQUFFLENBQUM7b0JBQ2hCLElBQUksQ0FBQyxzQkFBc0IsQ0FBQyxTQUFTLEVBQUUsT0FBTyxDQUFDLENBQUM7aUJBQ2pEO1lBQ0gsQ0FBQyxDQUFDLENBQUM7WUFFSCxNQUFNLGNBQWMsR0FBRyxJQUFJLENBQUMsY0FBYyxDQUFDO1lBQzNDLElBQUksY0FBYyxFQUFFO2dCQUNsQixHQUFHLENBQUMsVUFBVSxDQUFDLGNBQWMsRUFBRSxHQUFHLEVBQUU7b0JBQ2xDLEdBQUcsQ0FBQyxLQUFLLEVBQUUsQ0FBQztvQkFDWixNQUFNLFlBQVksR0FBRyxJQUFJLEtBQUssQ0FBQywrQ0FBK0MsY0FBYyxLQUFLLENBQUMsQ0FBQztvQkFDbkcsWUFBWSxDQUFDLElBQUksR0FBRyxjQUFjLENBQUM7b0JBQ25DLE1BQU0sQ0FBQyxZQUFZLENBQUMsQ0FBQztnQkFDdkIsQ0FBQyxDQUFDLENBQUM7YUFDSjtZQUVELElBQUksV0FBVyxFQUFFO2dCQUNmLFdBQVcsQ0FBQyxPQUFPLEdBQUcsR0FBRyxFQUFFO29CQUN6QixHQUFHLENBQUMsS0FBSyxFQUFFLENBQUM7b0JBQ1osTUFBTSxVQUFVLEdBQUcsSUFBSSxLQUFLLENBQUMsaUJBQWlCLENBQUMsQ0FBQztvQkFDaEQsVUFBVSxDQUFDLElBQUksR0FBRyxZQUFZLENBQUM7b0JBQy9CLE1BQU0sQ0FBQyxVQUFVLENBQUMsQ0FBQztnQkFDckIsQ0FBQyxDQUFDO2FBQ0g7WUFFRCw2QkFBNkI7WUFDN0IsR0FBRyxDQUFDLEVBQUUsQ0FBQyxZQUFZLEVBQUUsTUFBTSxDQUFDLENBQUM7WUFDN0IsR0FBRyxDQUFDLEVBQUUsQ0FBQyxPQUFPLEVBQUUsTUFBTSxDQUFDLENBQUM7WUFDeEIsR0FBRyxDQUFDLEVBQUUsQ0FBQyxRQUFRLEVBQUUsTUFBTSxDQUFDLENBQUM7WUFDekIsR0FBRyxDQUFDLEVBQUUsQ0FBQyxTQUFTLEVBQUUsTUFBTSxDQUFDLENBQUM7WUFFMUIsZ0ZBQWdGO1lBQ2hGLDBGQUEwRjtZQUMxRixnREFBZ0Q7WUFDaEQsR0FBRyxDQUFDLEVBQUUsQ0FBQyxPQUFPLEVBQUUsR0FBRyxFQUFFO2dCQUNuQixJQUFJLElBQUksQ0FBQyx3QkFBd0IsRUFBRTtvQkFDakMsT0FBTyxDQUFDLE9BQU8sRUFBRSxDQUFDO2lCQUNuQjtnQkFDRCxJQUFJLENBQUMsU0FBUyxFQUFFO29CQUNkLE1BQU0sQ0FBQyxJQUFJLEtBQUssQ0FBQyx3REFBd0QsQ0FBQyxDQUFDLENBQUM7aUJBQzdFO1lBQ0gsQ0FBQyxDQUFDLENBQUM7WUFFSCxxQ0FBZ0IsQ0FBQyxHQUFHLEVBQUUsT0FBTyxDQUFDLENBQUM7UUFDakMsQ0FBQyxDQUFDLENBQUM7SUFDTCxDQUFDO0lBRUQ7Ozs7OztPQU1HO0lBQ0ssVUFBVSxDQUFDLFNBQWlCLEVBQUUsd0JBQWlDO1FBQ3JFLE1BQU0sWUFBWSxHQUFHLElBQUksQ0FBQyxZQUFZLENBQUM7UUFDdkMsTUFBTSxnQkFBZ0IsR0FBRyxZQUFZLENBQUMsR0FBRyxDQUFDLFNBQVMsQ0FBQyxJQUFJLEVBQUUsQ0FBQztRQUUzRCwyRUFBMkU7UUFDM0UsSUFBSSxnQkFBZ0IsQ0FBQyxNQUFNLEdBQUcsQ0FBQyxJQUFJLENBQUMsd0JBQXdCO1lBQUUsT0FBTyxnQkFBZ0IsQ0FBQyxDQUFDLENBQUMsQ0FBQztRQUV6RixNQUFNLFVBQVUsR0FBRyxlQUFPLENBQUMsU0FBUyxDQUFDLENBQUM7UUFDdEMsTUFBTSxnQkFBZ0IsR0FBRyxHQUFHLEVBQUU7WUFDNUIsSUFBSSxDQUFDLGNBQWMsQ0FBQyxVQUFVLENBQUMsQ0FBQztZQUNoQyxJQUFJLENBQUMsc0JBQXNCLENBQUMsU0FBUyxFQUFFLFVBQVUsQ0FBQyxDQUFDO1FBQ3JELENBQUMsQ0FBQztRQUNGLFVBQVUsQ0FBQyxFQUFFLENBQUMsUUFBUSxFQUFFLGdCQUFnQixDQUFDLENBQUM7UUFDMUMsVUFBVSxDQUFDLEVBQUUsQ0FBQyxPQUFPLEVBQUUsZ0JBQWdCLENBQUMsQ0FBQztRQUN6QyxVQUFVLENBQUMsRUFBRSxDQUFDLFlBQVksRUFBRSxnQkFBZ0IsQ0FBQyxDQUFDO1FBRTlDLE1BQU0sY0FBYyxHQUFHLElBQUksQ0FBQyxjQUFjLENBQUM7UUFDM0MsSUFBSSxjQUFjLEVBQUU7WUFDbEIsVUFBVSxDQUFDLFVBQVUsQ0FBQyxjQUFjLEVBQUUsZ0JBQWdCLENBQUMsQ0FBQztTQUN6RDtRQUVELGdCQUFnQixDQUFDLElBQUksQ0FBQyxVQUFVLENBQUMsQ0FBQztRQUNsQyxZQUFZLENBQUMsR0FBRyxDQUFDLFNBQVMsRUFBRSxnQkFBZ0IsQ0FBQyxDQUFDO1FBRTlDLE9BQU8sVUFBVSxDQUFDO0lBQ3BCLENBQUM7SUFFRDs7O09BR0c7SUFDSyxjQUFjLENBQUMsT0FBMkI7UUFDaEQsSUFBSSxDQUFDLE9BQU8sQ0FBQyxTQUFTLEVBQUU7WUFDdEIsT0FBTyxDQUFDLE9BQU8sRUFBRSxDQUFDO1NBQ25CO0lBQ0gsQ0FBQztJQUVEOzs7O09BSUc7SUFDSyxzQkFBc0IsQ0FBQyxTQUFpQixFQUFFLE9BQTJCO1FBQzNFLE1BQU0sZ0JBQWdCLEdBQUcsSUFBSSxDQUFDLFlBQVksQ0FBQyxHQUFHLENBQUMsU0FBUyxDQUFDLElBQUksRUFBRSxDQUFDO1FBQ2hFLElBQUksQ0FBQyxnQkFBZ0IsQ0FBQyxRQUFRLENBQUMsT0FBTyxDQUFDLEVBQUU7WUFDdkMsbUVBQW1FO1lBQ25FLE9BQU87U0FDUjtRQUNELElBQUksQ0FBQyxZQUFZLENBQUMsR0FBRyxDQUNuQixTQUFTLEVBQ1QsZ0JBQWdCLENBQUMsTUFBTSxDQUFDLENBQUMsQ0FBQyxFQUFFLEVBQUUsQ0FBQyxDQUFDLEtBQUssT0FBTyxDQUFDLENBQzlDLENBQUM7SUFDSixDQUFDO0NBQ0Y7QUE5S0QsNENBOEtDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgSHR0cEhhbmRsZXIsIEh0dHBSZXF1ZXN0LCBIdHRwUmVzcG9uc2UgfSBmcm9tIFwiQGF3cy1zZGsvcHJvdG9jb2wtaHR0cFwiO1xuaW1wb3J0IHsgYnVpbGRRdWVyeVN0cmluZyB9IGZyb20gXCJAYXdzLXNkay9xdWVyeXN0cmluZy1idWlsZGVyXCI7XG5pbXBvcnQgeyBIdHRwSGFuZGxlck9wdGlvbnMgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcbmltcG9ydCB7IENsaWVudEh0dHAyU2Vzc2lvbiwgY29ubmVjdCwgY29uc3RhbnRzIH0gZnJvbSBcImh0dHAyXCI7XG5cbmltcG9ydCB7IGdldFRyYW5zZm9ybWVkSGVhZGVycyB9IGZyb20gXCIuL2dldC10cmFuc2Zvcm1lZC1oZWFkZXJzXCI7XG5pbXBvcnQgeyB3cml0ZVJlcXVlc3RCb2R5IH0gZnJvbSBcIi4vd3JpdGUtcmVxdWVzdC1ib2R5XCI7XG5cbi8qKlxuICogUmVwcmVzZW50cyB0aGUgaHR0cDIgb3B0aW9ucyB0aGF0IGNhbiBiZSBwYXNzZWQgdG8gYSBub2RlIGh0dHAyIGNsaWVudC5cbiAqL1xuZXhwb3J0IGludGVyZmFjZSBOb2RlSHR0cDJIYW5kbGVyT3B0aW9ucyB7XG4gIC8qKlxuICAgKiBUaGUgbWF4aW11bSB0aW1lIGluIG1pbGxpc2Vjb25kcyB0aGF0IGEgc3RyZWFtIG1heSByZW1haW4gaWRsZSBiZWZvcmUgaXRcbiAgICogaXMgY2xvc2VkLlxuICAgKi9cbiAgcmVxdWVzdFRpbWVvdXQ/OiBudW1iZXI7XG5cbiAgLyoqXG4gICAqIFRoZSBtYXhpbXVtIHRpbWUgaW4gbWlsbGlzZWNvbmRzIHRoYXQgYSBzZXNzaW9uIG9yIHNvY2tldCBtYXkgcmVtYWluIGlkbGVcbiAgICogYmVmb3JlIGl0IGlzIGNsb3NlZC5cbiAgICogaHR0cHM6Ly9ub2RlanMub3JnL2RvY3MvbGF0ZXN0LXYxMi54L2FwaS9odHRwMi5odG1sI2h0dHAyX2h0dHAyc2Vzc2lvbl9hbmRfc29ja2V0c1xuICAgKi9cbiAgc2Vzc2lvblRpbWVvdXQ/OiBudW1iZXI7XG5cbiAgLyoqXG4gICAqIERpc2FibGVzIHByb2Nlc3NpbmcgY29uY3VycmVudCBzdHJlYW1zIG9uIGEgQ2xpZW50SHR0cDJTZXNzaW9uIGluc3RhbmNlLiBXaGVuIHNldFxuICAgKiB0byB0cnVlLCB0aGUgaGFuZGxlciB3aWxsIGNyZWF0ZSBhIG5ldyBzZXNzaW9uIGluc3RhbmNlIGZvciBlYWNoIHJlcXVlc3QgdG8gYSBVUkwuXG4gICAqICoqRGVmYXVsdDoqKiBmYWxzZS5cbiAgICogaHR0cHM6Ly9ub2RlanMub3JnL2FwaS9odHRwMi5odG1sI2h0dHAyX2NsYXNzX2NsaWVudGh0dHAyc2Vzc2lvblxuICAgKi9cbiAgZGlzYWJsZUNvbmN1cnJlbnRTdHJlYW1zPzogYm9vbGVhbjtcbn1cblxuZXhwb3J0IGNsYXNzIE5vZGVIdHRwMkhhbmRsZXIgaW1wbGVtZW50cyBIdHRwSGFuZGxlciB7XG4gIHByaXZhdGUgcmVhZG9ubHkgcmVxdWVzdFRpbWVvdXQ/OiBudW1iZXI7XG4gIHByaXZhdGUgcmVhZG9ubHkgc2Vzc2lvblRpbWVvdXQ/OiBudW1iZXI7XG4gIHByaXZhdGUgcmVhZG9ubHkgZGlzYWJsZUNvbmN1cnJlbnRTdHJlYW1zPzogYm9vbGVhbjtcblxuICBwdWJsaWMgcmVhZG9ubHkgbWV0YWRhdGEgPSB7IGhhbmRsZXJQcm90b2NvbDogXCJoMlwiIH07XG4gIHByaXZhdGUgc2Vzc2lvbkNhY2hlOiBNYXA8c3RyaW5nLCBDbGllbnRIdHRwMlNlc3Npb25bXT47XG5cbiAgY29uc3RydWN0b3IoeyByZXF1ZXN0VGltZW91dCwgc2Vzc2lvblRpbWVvdXQsIGRpc2FibGVDb25jdXJyZW50U3RyZWFtcyB9OiBOb2RlSHR0cDJIYW5kbGVyT3B0aW9ucyA9IHt9KSB7XG4gICAgdGhpcy5yZXF1ZXN0VGltZW91dCA9IHJlcXVlc3RUaW1lb3V0O1xuICAgIHRoaXMuc2Vzc2lvblRpbWVvdXQgPSBzZXNzaW9uVGltZW91dDtcbiAgICB0aGlzLmRpc2FibGVDb25jdXJyZW50U3RyZWFtcyA9IGRpc2FibGVDb25jdXJyZW50U3RyZWFtcztcbiAgICB0aGlzLnNlc3Npb25DYWNoZSA9IG5ldyBNYXA8c3RyaW5nLCBDbGllbnRIdHRwMlNlc3Npb25bXT4oKTtcbiAgfVxuXG4gIGRlc3Ryb3koKTogdm9pZCB7XG4gICAgZm9yIChjb25zdCBzZXNzaW9ucyBvZiB0aGlzLnNlc3Npb25DYWNoZS52YWx1ZXMoKSkge1xuICAgICAgc2Vzc2lvbnMuZm9yRWFjaCgoc2Vzc2lvbikgPT4gdGhpcy5kZXN0cm95U2Vzc2lvbihzZXNzaW9uKSk7XG4gICAgfVxuICAgIHRoaXMuc2Vzc2lvbkNhY2hlLmNsZWFyKCk7XG4gIH1cblxuICBoYW5kbGUocmVxdWVzdDogSHR0cFJlcXVlc3QsIHsgYWJvcnRTaWduYWwgfTogSHR0cEhhbmRsZXJPcHRpb25zID0ge30pOiBQcm9taXNlPHsgcmVzcG9uc2U6IEh0dHBSZXNwb25zZSB9PiB7XG4gICAgcmV0dXJuIG5ldyBQcm9taXNlKChyZXNvbHZlLCByZWplY3RPcmlnaW5hbCkgPT4ge1xuICAgICAgLy8gSXQncyByZWR1bmRhbnQgdG8gdHJhY2sgZnVsZmlsbGVkIGJlY2F1c2UgcHJvbWlzZXMgdXNlIHRoZSBmaXJzdCByZXNvbHV0aW9uL3JlamVjdGlvblxuICAgICAgLy8gYnV0IGF2b2lkcyBnZW5lcmF0aW5nIHVubmVjZXNzYXJ5IHN0YWNrIHRyYWNlcyBpbiB0aGUgXCJjbG9zZVwiIGV2ZW50IGhhbmRsZXIuXG4gICAgICBsZXQgZnVsZmlsbGVkID0gZmFsc2U7XG5cbiAgICAgIC8vIGlmIHRoZSByZXF1ZXN0IHdhcyBhbHJlYWR5IGFib3J0ZWQsIHByZXZlbnQgZG9pbmcgZXh0cmEgd29ya1xuICAgICAgaWYgKGFib3J0U2lnbmFsPy5hYm9ydGVkKSB7XG4gICAgICAgIGZ1bGZpbGxlZCA9IHRydWU7XG4gICAgICAgIGNvbnN0IGFib3J0RXJyb3IgPSBuZXcgRXJyb3IoXCJSZXF1ZXN0IGFib3J0ZWRcIik7XG4gICAgICAgIGFib3J0RXJyb3IubmFtZSA9IFwiQWJvcnRFcnJvclwiO1xuICAgICAgICByZWplY3RPcmlnaW5hbChhYm9ydEVycm9yKTtcbiAgICAgICAgcmV0dXJuO1xuICAgICAgfVxuXG4gICAgICBjb25zdCB7IGhvc3RuYW1lLCBtZXRob2QsIHBvcnQsIHByb3RvY29sLCBwYXRoLCBxdWVyeSB9ID0gcmVxdWVzdDtcbiAgICAgIGNvbnN0IGF1dGhvcml0eSA9IGAke3Byb3RvY29sfS8vJHtob3N0bmFtZX0ke3BvcnQgPyBgOiR7cG9ydH1gIDogXCJcIn1gO1xuICAgICAgY29uc3Qgc2Vzc2lvbiA9IHRoaXMuZ2V0U2Vzc2lvbihhdXRob3JpdHksIHRoaXMuZGlzYWJsZUNvbmN1cnJlbnRTdHJlYW1zIHx8IGZhbHNlKTtcblxuICAgICAgY29uc3QgcmVqZWN0ID0gKGVycjogRXJyb3IpID0+IHtcbiAgICAgICAgaWYgKHRoaXMuZGlzYWJsZUNvbmN1cnJlbnRTdHJlYW1zKSB7XG4gICAgICAgICAgdGhpcy5kZXN0cm95U2Vzc2lvbihzZXNzaW9uKTtcbiAgICAgICAgfVxuICAgICAgICBmdWxmaWxsZWQgPSB0cnVlO1xuICAgICAgICByZWplY3RPcmlnaW5hbChlcnIpO1xuICAgICAgfTtcblxuICAgICAgY29uc3QgcXVlcnlTdHJpbmcgPSBidWlsZFF1ZXJ5U3RyaW5nKHF1ZXJ5IHx8IHt9KTtcbiAgICAgIC8vIGNyZWF0ZSB0aGUgaHR0cDIgcmVxdWVzdFxuICAgICAgY29uc3QgcmVxID0gc2Vzc2lvbi5yZXF1ZXN0KHtcbiAgICAgICAgLi4ucmVxdWVzdC5oZWFkZXJzLFxuICAgICAgICBbY29uc3RhbnRzLkhUVFAyX0hFQURFUl9QQVRIXTogcXVlcnlTdHJpbmcgPyBgJHtwYXRofT8ke3F1ZXJ5U3RyaW5nfWAgOiBwYXRoLFxuICAgICAgICBbY29uc3RhbnRzLkhUVFAyX0hFQURFUl9NRVRIT0RdOiBtZXRob2QsXG4gICAgICB9KTtcblxuICAgICAgcmVxLm9uKFwicmVzcG9uc2VcIiwgKGhlYWRlcnMpID0+IHtcbiAgICAgICAgY29uc3QgaHR0cFJlc3BvbnNlID0gbmV3IEh0dHBSZXNwb25zZSh7XG4gICAgICAgICAgc3RhdHVzQ29kZTogaGVhZGVyc1tcIjpzdGF0dXNcIl0gfHwgLTEsXG4gICAgICAgICAgaGVhZGVyczogZ2V0VHJhbnNmb3JtZWRIZWFkZXJzKGhlYWRlcnMpLFxuICAgICAgICAgIGJvZHk6IHJlcSxcbiAgICAgICAgfSk7XG4gICAgICAgIGZ1bGZpbGxlZCA9IHRydWU7XG4gICAgICAgIHJlc29sdmUoeyByZXNwb25zZTogaHR0cFJlc3BvbnNlIH0pO1xuICAgICAgICBpZiAodGhpcy5kaXNhYmxlQ29uY3VycmVudFN0cmVhbXMpIHtcbiAgICAgICAgICAvLyBHcmFjZWZ1bGx5IGNsb3NlcyB0aGUgSHR0cDJTZXNzaW9uLCBhbGxvd2luZyBhbnkgZXhpc3Rpbmcgc3RyZWFtcyB0byBjb21wbGV0ZVxuICAgICAgICAgIC8vIG9uIHRoZWlyIG93biBhbmQgcHJldmVudGluZyBuZXcgSHR0cDJTdHJlYW0gaW5zdGFuY2VzIGZyb20gYmVpbmcgY3JlYXRlZC5cbiAgICAgICAgICBzZXNzaW9uLmNsb3NlKCk7XG4gICAgICAgICAgdGhpcy5kZWxldGVTZXNzaW9uRnJvbUNhY2hlKGF1dGhvcml0eSwgc2Vzc2lvbik7XG4gICAgICAgIH1cbiAgICAgIH0pO1xuXG4gICAgICBjb25zdCByZXF1ZXN0VGltZW91dCA9IHRoaXMucmVxdWVzdFRpbWVvdXQ7XG4gICAgICBpZiAocmVxdWVzdFRpbWVvdXQpIHtcbiAgICAgICAgcmVxLnNldFRpbWVvdXQocmVxdWVzdFRpbWVvdXQsICgpID0+IHtcbiAgICAgICAgICByZXEuY2xvc2UoKTtcbiAgICAgICAgICBjb25zdCB0aW1lb3V0RXJyb3IgPSBuZXcgRXJyb3IoYFN0cmVhbSB0aW1lZCBvdXQgYmVjYXVzZSBvZiBubyBhY3Rpdml0eSBmb3IgJHtyZXF1ZXN0VGltZW91dH0gbXNgKTtcbiAgICAgICAgICB0aW1lb3V0RXJyb3IubmFtZSA9IFwiVGltZW91dEVycm9yXCI7XG4gICAgICAgICAgcmVqZWN0KHRpbWVvdXRFcnJvcik7XG4gICAgICAgIH0pO1xuICAgICAgfVxuXG4gICAgICBpZiAoYWJvcnRTaWduYWwpIHtcbiAgICAgICAgYWJvcnRTaWduYWwub25hYm9ydCA9ICgpID0+IHtcbiAgICAgICAgICByZXEuY2xvc2UoKTtcbiAgICAgICAgICBjb25zdCBhYm9ydEVycm9yID0gbmV3IEVycm9yKFwiUmVxdWVzdCBhYm9ydGVkXCIpO1xuICAgICAgICAgIGFib3J0RXJyb3IubmFtZSA9IFwiQWJvcnRFcnJvclwiO1xuICAgICAgICAgIHJlamVjdChhYm9ydEVycm9yKTtcbiAgICAgICAgfTtcbiAgICAgIH1cblxuICAgICAgLy8gU2V0IHVwIGhhbmRsZXJzIGZvciBlcnJvcnNcbiAgICAgIHJlcS5vbihcImZyYW1lRXJyb3JcIiwgcmVqZWN0KTtcbiAgICAgIHJlcS5vbihcImVycm9yXCIsIHJlamVjdCk7XG4gICAgICByZXEub24oXCJnb2F3YXlcIiwgcmVqZWN0KTtcbiAgICAgIHJlcS5vbihcImFib3J0ZWRcIiwgcmVqZWN0KTtcblxuICAgICAgLy8gVGhlIEhUVFAvMiBlcnJvciBjb2RlIHVzZWQgd2hlbiBjbG9zaW5nIHRoZSBzdHJlYW0gY2FuIGJlIHJldHJpZXZlZCB1c2luZyB0aGVcbiAgICAgIC8vIGh0dHAyc3RyZWFtLnJzdENvZGUgcHJvcGVydHkuIElmIHRoZSBjb2RlIGlzIGFueSB2YWx1ZSBvdGhlciB0aGFuIE5HSFRUUDJfTk9fRVJST1IgKDApLFxuICAgICAgLy8gYW4gJ2Vycm9yJyBldmVudCB3aWxsIGhhdmUgYWxzbyBiZWVuIGVtaXR0ZWQuXG4gICAgICByZXEub24oXCJjbG9zZVwiLCAoKSA9PiB7XG4gICAgICAgIGlmICh0aGlzLmRpc2FibGVDb25jdXJyZW50U3RyZWFtcykge1xuICAgICAgICAgIHNlc3Npb24uZGVzdHJveSgpO1xuICAgICAgICB9XG4gICAgICAgIGlmICghZnVsZmlsbGVkKSB7XG4gICAgICAgICAgcmVqZWN0KG5ldyBFcnJvcihcIlVuZXhwZWN0ZWQgZXJyb3I6IGh0dHAyIHJlcXVlc3QgZGlkIG5vdCBnZXQgYSByZXNwb25zZVwiKSk7XG4gICAgICAgIH1cbiAgICAgIH0pO1xuXG4gICAgICB3cml0ZVJlcXVlc3RCb2R5KHJlcSwgcmVxdWVzdCk7XG4gICAgfSk7XG4gIH1cblxuICAvKipcbiAgICogUmV0dXJucyBhIHNlc3Npb24gZm9yIHRoZSBnaXZlbiBVUkwuXG4gICAqXG4gICAqIEBwYXJhbSBhdXRob3JpdHkgVGhlIFVSTCB0byBjcmVhdGUgYSBzZXNzaW9uIGZvci5cbiAgICogQHBhcmFtIGRpc2FibGVDb25jdXJyZW50U3RyZWFtcyBJZiB0cnVlLCBhIG5ldyBzZXNzaW9uIHdpbGwgYmUgY3JlYXRlZCBmb3IgZWFjaCByZXF1ZXN0LlxuICAgKiBAcmV0dXJucyBBIHNlc3Npb24gZm9yIHRoZSBnaXZlbiBVUkwuXG4gICAqL1xuICBwcml2YXRlIGdldFNlc3Npb24oYXV0aG9yaXR5OiBzdHJpbmcsIGRpc2FibGVDb25jdXJyZW50U3RyZWFtczogYm9vbGVhbik6IENsaWVudEh0dHAyU2Vzc2lvbiB7XG4gICAgY29uc3Qgc2Vzc2lvbkNhY2hlID0gdGhpcy5zZXNzaW9uQ2FjaGU7XG4gICAgY29uc3QgZXhpc3RpbmdTZXNzaW9ucyA9IHNlc3Npb25DYWNoZS5nZXQoYXV0aG9yaXR5KSB8fCBbXTtcblxuICAgIC8vIElmIGNvbmN1cnJlbnQgc3RyZWFtcyBhcmUgbm90IGRpc2FibGVkLCB3ZSBjYW4gdXNlIHRoZSBleGlzdGluZyBzZXNzaW9uLlxuICAgIGlmIChleGlzdGluZ1Nlc3Npb25zLmxlbmd0aCA+IDAgJiYgIWRpc2FibGVDb25jdXJyZW50U3RyZWFtcykgcmV0dXJuIGV4aXN0aW5nU2Vzc2lvbnNbMF07XG5cbiAgICBjb25zdCBuZXdTZXNzaW9uID0gY29ubmVjdChhdXRob3JpdHkpO1xuICAgIGNvbnN0IGRlc3Ryb3lTZXNzaW9uQ2IgPSAoKSA9PiB7XG4gICAgICB0aGlzLmRlc3Ryb3lTZXNzaW9uKG5ld1Nlc3Npb24pO1xuICAgICAgdGhpcy5kZWxldGVTZXNzaW9uRnJvbUNhY2hlKGF1dGhvcml0eSwgbmV3U2Vzc2lvbik7XG4gICAgfTtcbiAgICBuZXdTZXNzaW9uLm9uKFwiZ29hd2F5XCIsIGRlc3Ryb3lTZXNzaW9uQ2IpO1xuICAgIG5ld1Nlc3Npb24ub24oXCJlcnJvclwiLCBkZXN0cm95U2Vzc2lvbkNiKTtcbiAgICBuZXdTZXNzaW9uLm9uKFwiZnJhbWVFcnJvclwiLCBkZXN0cm95U2Vzc2lvbkNiKTtcblxuICAgIGNvbnN0IHNlc3Npb25UaW1lb3V0ID0gdGhpcy5zZXNzaW9uVGltZW91dDtcbiAgICBpZiAoc2Vzc2lvblRpbWVvdXQpIHtcbiAgICAgIG5ld1Nlc3Npb24uc2V0VGltZW91dChzZXNzaW9uVGltZW91dCwgZGVzdHJveVNlc3Npb25DYik7XG4gICAgfVxuXG4gICAgZXhpc3RpbmdTZXNzaW9ucy5wdXNoKG5ld1Nlc3Npb24pO1xuICAgIHNlc3Npb25DYWNoZS5zZXQoYXV0aG9yaXR5LCBleGlzdGluZ1Nlc3Npb25zKTtcblxuICAgIHJldHVybiBuZXdTZXNzaW9uO1xuICB9XG5cbiAgLyoqXG4gICAqIERlc3Ryb3lzIGEgc2Vzc2lvbi5cbiAgICogQHBhcmFtIHNlc3Npb24gVGhlIHNlc3Npb24gdG8gZGVzdHJveS5cbiAgICovXG4gIHByaXZhdGUgZGVzdHJveVNlc3Npb24oc2Vzc2lvbjogQ2xpZW50SHR0cDJTZXNzaW9uKTogdm9pZCB7XG4gICAgaWYgKCFzZXNzaW9uLmRlc3Ryb3llZCkge1xuICAgICAgc2Vzc2lvbi5kZXN0cm95KCk7XG4gICAgfVxuICB9XG5cbiAgLyoqXG4gICAqIERlbGV0ZSBhIHNlc3Npb24gZnJvbSB0aGUgY29ubmVjdGlvbiBwb29sLlxuICAgKiBAcGFyYW0gYXV0aG9yaXR5IFRoZSBhdXRob3JpdHkgb2YgdGhlIHNlc3Npb24gdG8gZGVsZXRlLlxuICAgKiBAcGFyYW0gc2Vzc2lvbiBUaGUgc2Vzc2lvbiB0byBkZWxldGUuXG4gICAqL1xuICBwcml2YXRlIGRlbGV0ZVNlc3Npb25Gcm9tQ2FjaGUoYXV0aG9yaXR5OiBzdHJpbmcsIHNlc3Npb246IENsaWVudEh0dHAyU2Vzc2lvbik6IHZvaWQge1xuICAgIGNvbnN0IGV4aXN0aW5nU2Vzc2lvbnMgPSB0aGlzLnNlc3Npb25DYWNoZS5nZXQoYXV0aG9yaXR5KSB8fCBbXTtcbiAgICBpZiAoIWV4aXN0aW5nU2Vzc2lvbnMuaW5jbHVkZXMoc2Vzc2lvbikpIHtcbiAgICAgIC8vIElmIHRoZSBzZXNzaW9uIGlzIG5vdCBpbiB0aGUgY2FjaGUsIGl0IGhhcyBhbHJlYWR5IGJlZW4gZGVsZXRlZC5cbiAgICAgIHJldHVybjtcbiAgICB9XG4gICAgdGhpcy5zZXNzaW9uQ2FjaGUuc2V0KFxuICAgICAgYXV0aG9yaXR5LFxuICAgICAgZXhpc3RpbmdTZXNzaW9ucy5maWx0ZXIoKHMpID0+IHMgIT09IHNlc3Npb24pXG4gICAgKTtcbiAgfVxufVxuIl19
 
 /***/ }),
 
