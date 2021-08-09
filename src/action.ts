@@ -1,4 +1,4 @@
-import { UpdateFunctionCodeCommandInput } from '@aws-sdk/client-lambda';
+import { UpdateFunctionCodeCommand } from '@aws-sdk/client-lambda';
 
 interface RunInput {
   zipFileLocation: string;
@@ -10,7 +10,7 @@ class Action {
   constructor(
     private readonly readFile: (path: string) => Promise<Buffer>,
     private readonly updateFunctionCode: (
-      args: UpdateFunctionCodeCommandInput
+      args: UpdateFunctionCodeCommand
     ) => Promise<void>,
     private readonly log: (message: string) => void
   ) {}
@@ -20,13 +20,13 @@ class Action {
 
     const zipFile = await this.readFile(input.zipFileLocation);
 
-    const params = {
+    const cmd = new UpdateFunctionCodeCommand({
       FunctionName: input.lambdaName,
       Publish: input.publish,
       ZipFile: zipFile
-    };
+    });
 
-    await this.updateFunctionCode(params);
+    await this.updateFunctionCode(cmd);
 
     this.log(`Updated ${input.lambdaName}`);
   }

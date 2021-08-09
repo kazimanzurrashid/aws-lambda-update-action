@@ -2,7 +2,7 @@ import { basename } from 'path';
 import { readFile } from 'fs';
 import { promisify } from 'util';
 
-import { Lambda } from '@aws-sdk/client-lambda';
+import { LambdaClient } from '@aws-sdk/client-lambda';
 import { getInput, info, setFailed } from '@actions/core';
 
 import { Action } from './action';
@@ -18,7 +18,7 @@ const awsRegion = getValue('AWS_REGION');
 const awsAccessKeyId = getValue('AWS_ACCESS_KEY_ID');
 const awsSecretAccessKey = getValue('AWS_SECRET_ACCESS_KEY');
 
-const lambda = new Lambda({
+const lambda = new LambdaClient({
   region: awsRegion,
   credentials: {
     accessKeyId: awsAccessKeyId,
@@ -31,7 +31,7 @@ const lambda = new Lambda({
     await new Action(
       promisify(readFile),
       async (args) => {
-        await lambda.updateFunctionCode(args);
+        await lambda.send(args);
       },
       info
     ).run({
