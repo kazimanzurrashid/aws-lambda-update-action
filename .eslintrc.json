@@ -16,9 +16,11 @@
   "plugins": ["prettier", "@typescript-eslint"],
   "rules": {
     "camelcase": "off",
+    "i18n-text/no-en": "off",
     "import/no-namespace": "off",
     "no-unused-vars": "off",
     "eslint-comments/no-use": "off",
+    "sort-imports": "off",
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/explicit-member-accessibility": [
       "error",
