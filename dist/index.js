@@ -5,7 +5,7 @@ require('./sourcemap-register.js');/******/ (() => { // webpackBootstrap
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-lambda","description":"AWS SDK for JavaScript Lambda Client for Node.js, Browser and React Native","version":"3.26.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es","downlevel-dts":"downlevel-dts dist/types dist/types/ts3.4"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/client-sts":"3.26.0","@aws-sdk/config-resolver":"3.25.0","@aws-sdk/credential-provider-node":"3.26.0","@aws-sdk/fetch-http-handler":"3.25.0","@aws-sdk/hash-node":"3.25.0","@aws-sdk/invalid-dependency":"3.25.0","@aws-sdk/middleware-content-length":"3.25.0","@aws-sdk/middleware-host-header":"3.25.0","@aws-sdk/middleware-logger":"3.25.0","@aws-sdk/middleware-retry":"3.25.0","@aws-sdk/middleware-serde":"3.25.0","@aws-sdk/middleware-signing":"3.25.0","@aws-sdk/middleware-stack":"3.25.0","@aws-sdk/middleware-user-agent":"3.25.0","@aws-sdk/node-config-provider":"3.25.0","@aws-sdk/node-http-handler":"3.25.0","@aws-sdk/protocol-http":"3.25.0","@aws-sdk/smithy-client":"3.25.0","@aws-sdk/types":"3.25.0","@aws-sdk/url-parser":"3.25.0","@aws-sdk/util-base64-browser":"3.23.0","@aws-sdk/util-base64-node":"3.23.0","@aws-sdk/util-body-length-browser":"3.23.0","@aws-sdk/util-body-length-node":"3.23.0","@aws-sdk/util-user-agent-browser":"3.25.0","@aws-sdk/util-user-agent-node":"3.25.0","@aws-sdk/util-utf8-browser":"3.23.0","@aws-sdk/util-utf8-node":"3.23.0","@aws-sdk/util-waiter":"3.25.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.23.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist/types/*":["dist/types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-lambda","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-lambda"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-lambda","description":"AWS SDK for JavaScript Lambda Client for Node.js, Browser and React Native","version":"3.27.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es","downlevel-dts":"downlevel-dts dist/types dist/types/ts3.4"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/client-sts":"3.27.0","@aws-sdk/config-resolver":"3.27.0","@aws-sdk/credential-provider-node":"3.27.0","@aws-sdk/fetch-http-handler":"3.25.0","@aws-sdk/hash-node":"3.25.0","@aws-sdk/invalid-dependency":"3.25.0","@aws-sdk/middleware-content-length":"3.25.0","@aws-sdk/middleware-host-header":"3.25.0","@aws-sdk/middleware-logger":"3.25.0","@aws-sdk/middleware-retry":"3.27.0","@aws-sdk/middleware-serde":"3.25.0","@aws-sdk/middleware-signing":"3.27.0","@aws-sdk/middleware-stack":"3.25.0","@aws-sdk/middleware-user-agent":"3.25.0","@aws-sdk/node-config-provider":"3.27.0","@aws-sdk/node-http-handler":"3.25.0","@aws-sdk/protocol-http":"3.25.0","@aws-sdk/smithy-client":"3.27.0","@aws-sdk/types":"3.25.0","@aws-sdk/url-parser":"3.25.0","@aws-sdk/util-base64-browser":"3.23.0","@aws-sdk/util-base64-node":"3.23.0","@aws-sdk/util-body-length-browser":"3.23.0","@aws-sdk/util-body-length-node":"3.23.0","@aws-sdk/util-user-agent-browser":"3.25.0","@aws-sdk/util-user-agent-node":"3.27.0","@aws-sdk/util-utf8-browser":"3.23.0","@aws-sdk/util-utf8-node":"3.23.0","@aws-sdk/util-waiter":"3.25.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.23.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist/types/*":["dist/types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-lambda","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-lambda"}}');
 
 /***/ }),
 
@@ -13,7 +13,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-lambda","description":"AWS
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.25.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es","downlevel-dts":"downlevel-dts dist/types dist/types/ts3.4"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.25.0","@aws-sdk/fetch-http-handler":"3.25.0","@aws-sdk/hash-node":"3.25.0","@aws-sdk/invalid-dependency":"3.25.0","@aws-sdk/middleware-content-length":"3.25.0","@aws-sdk/middleware-host-header":"3.25.0","@aws-sdk/middleware-logger":"3.25.0","@aws-sdk/middleware-retry":"3.25.0","@aws-sdk/middleware-serde":"3.25.0","@aws-sdk/middleware-stack":"3.25.0","@aws-sdk/middleware-user-agent":"3.25.0","@aws-sdk/node-config-provider":"3.25.0","@aws-sdk/node-http-handler":"3.25.0","@aws-sdk/protocol-http":"3.25.0","@aws-sdk/smithy-client":"3.25.0","@aws-sdk/types":"3.25.0","@aws-sdk/url-parser":"3.25.0","@aws-sdk/util-base64-browser":"3.23.0","@aws-sdk/util-base64-node":"3.23.0","@aws-sdk/util-body-length-browser":"3.23.0","@aws-sdk/util-body-length-node":"3.23.0","@aws-sdk/util-user-agent-browser":"3.25.0","@aws-sdk/util-user-agent-node":"3.25.0","@aws-sdk/util-utf8-browser":"3.23.0","@aws-sdk/util-utf8-node":"3.23.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.23.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist/types/*":["dist/types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.27.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es","downlevel-dts":"downlevel-dts dist/types dist/types/ts3.4"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.27.0","@aws-sdk/fetch-http-handler":"3.25.0","@aws-sdk/hash-node":"3.25.0","@aws-sdk/invalid-dependency":"3.25.0","@aws-sdk/middleware-content-length":"3.25.0","@aws-sdk/middleware-host-header":"3.25.0","@aws-sdk/middleware-logger":"3.25.0","@aws-sdk/middleware-retry":"3.27.0","@aws-sdk/middleware-serde":"3.25.0","@aws-sdk/middleware-stack":"3.25.0","@aws-sdk/middleware-user-agent":"3.25.0","@aws-sdk/node-config-provider":"3.27.0","@aws-sdk/node-http-handler":"3.25.0","@aws-sdk/protocol-http":"3.25.0","@aws-sdk/smithy-client":"3.27.0","@aws-sdk/types":"3.25.0","@aws-sdk/url-parser":"3.25.0","@aws-sdk/util-base64-browser":"3.23.0","@aws-sdk/util-base64-node":"3.23.0","@aws-sdk/util-body-length-browser":"3.23.0","@aws-sdk/util-body-length-node":"3.23.0","@aws-sdk/util-user-agent-browser":"3.25.0","@aws-sdk/util-user-agent-node":"3.27.0","@aws-sdk/util-utf8-browser":"3.23.0","@aws-sdk/util-utf8-node":"3.23.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.23.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist/types/*":["dist/types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
 
 /***/ }),
 
@@ -21,7 +21,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SD
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.26.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es","downlevel-dts":"downlevel-dts dist/types dist/types/ts3.4"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.25.0","@aws-sdk/credential-provider-node":"3.26.0","@aws-sdk/fetch-http-handler":"3.25.0","@aws-sdk/hash-node":"3.25.0","@aws-sdk/invalid-dependency":"3.25.0","@aws-sdk/middleware-content-length":"3.25.0","@aws-sdk/middleware-host-header":"3.25.0","@aws-sdk/middleware-logger":"3.25.0","@aws-sdk/middleware-retry":"3.25.0","@aws-sdk/middleware-sdk-sts":"3.25.0","@aws-sdk/middleware-serde":"3.25.0","@aws-sdk/middleware-signing":"3.25.0","@aws-sdk/middleware-stack":"3.25.0","@aws-sdk/middleware-user-agent":"3.25.0","@aws-sdk/node-config-provider":"3.25.0","@aws-sdk/node-http-handler":"3.25.0","@aws-sdk/protocol-http":"3.25.0","@aws-sdk/smithy-client":"3.25.0","@aws-sdk/types":"3.25.0","@aws-sdk/url-parser":"3.25.0","@aws-sdk/util-base64-browser":"3.23.0","@aws-sdk/util-base64-node":"3.23.0","@aws-sdk/util-body-length-browser":"3.23.0","@aws-sdk/util-body-length-node":"3.23.0","@aws-sdk/util-user-agent-browser":"3.25.0","@aws-sdk/util-user-agent-node":"3.25.0","@aws-sdk/util-utf8-browser":"3.23.0","@aws-sdk/util-utf8-node":"3.23.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.23.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist/types/*":["dist/types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.27.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es","downlevel-dts":"downlevel-dts dist/types dist/types/ts3.4"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.27.0","@aws-sdk/credential-provider-node":"3.27.0","@aws-sdk/fetch-http-handler":"3.25.0","@aws-sdk/hash-node":"3.25.0","@aws-sdk/invalid-dependency":"3.25.0","@aws-sdk/middleware-content-length":"3.25.0","@aws-sdk/middleware-host-header":"3.25.0","@aws-sdk/middleware-logger":"3.25.0","@aws-sdk/middleware-retry":"3.27.0","@aws-sdk/middleware-sdk-sts":"3.27.0","@aws-sdk/middleware-serde":"3.25.0","@aws-sdk/middleware-signing":"3.27.0","@aws-sdk/middleware-stack":"3.25.0","@aws-sdk/middleware-user-agent":"3.25.0","@aws-sdk/node-config-provider":"3.27.0","@aws-sdk/node-http-handler":"3.25.0","@aws-sdk/protocol-http":"3.25.0","@aws-sdk/smithy-client":"3.27.0","@aws-sdk/types":"3.25.0","@aws-sdk/url-parser":"3.25.0","@aws-sdk/util-base64-browser":"3.23.0","@aws-sdk/util-base64-node":"3.23.0","@aws-sdk/util-body-length-browser":"3.23.0","@aws-sdk/util-body-length-node":"3.23.0","@aws-sdk/util-user-agent-browser":"3.25.0","@aws-sdk/util-user-agent-node":"3.27.0","@aws-sdk/util-utf8-browser":"3.23.0","@aws-sdk/util-utf8-node":"3.23.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.23.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist/types/*":["dist/types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
 
 /***/ }),
 
@@ -189,7 +189,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.getState = exports.saveState = exports.group = exports.endGroup = exports.startGroup = exports.info = exports.warning = exports.error = exports.debug = exports.isDebug = exports.setFailed = exports.setCommandEcho = exports.setOutput = exports.getBooleanInput = exports.getMultilineInput = exports.getInput = exports.addPath = exports.setSecret = exports.exportVariable = exports.ExitCode = void 0;
+exports.getState = exports.saveState = exports.group = exports.endGroup = exports.startGroup = exports.info = exports.notice = exports.warning = exports.error = exports.debug = exports.isDebug = exports.setFailed = exports.setCommandEcho = exports.setOutput = exports.getBooleanInput = exports.getMultilineInput = exports.getInput = exports.addPath = exports.setSecret = exports.exportVariable = exports.ExitCode = void 0;
 const command_1 = __nccwpck_require__(7351);
 const file_command_1 = __nccwpck_require__(717);
 const utils_1 = __nccwpck_require__(5278);
@@ -367,19 +367,30 @@ exports.debug = debug;
 /**
  * Adds an error issue
  * @param message error issue message. Errors will be converted to string via toString()
+ * @param properties optional properties to add to the annotation.
  */
-function error(message) {
-    command_1.issue('error', message instanceof Error ? message.toString() : message);
+function error(message, properties = {}) {
+    command_1.issueCommand('error', utils_1.toCommandProperties(properties), message instanceof Error ? message.toString() : message);
 }
 exports.error = error;
 /**
- * Adds an warning issue
+ * Adds a warning issue
  * @param message warning issue message. Errors will be converted to string via toString()
+ * @param properties optional properties to add to the annotation.
  */
-function warning(message) {
-    command_1.issue('warning', message instanceof Error ? message.toString() : message);
+function warning(message, properties = {}) {
+    command_1.issueCommand('warning', utils_1.toCommandProperties(properties), message instanceof Error ? message.toString() : message);
 }
 exports.warning = warning;
+/**
+ * Adds a notice issue
+ * @param message notice issue message. Errors will be converted to string via toString()
+ * @param properties optional properties to add to the annotation.
+ */
+function notice(message, properties = {}) {
+    command_1.issueCommand('notice', utils_1.toCommandProperties(properties), message instanceof Error ? message.toString() : message);
+}
+exports.notice = notice;
 /**
  * Writes info to log with console.log.
  * @param message info message
@@ -513,7 +524,7 @@ exports.issueCommand = issueCommand;
 // We use any as a valid input type
 /* eslint-disable @typescript-eslint/no-explicit-any */
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.toCommandValue = void 0;
+exports.toCommandProperties = exports.toCommandValue = void 0;
 /**
  * Sanitizes an input into a string so it can be passed into issueCommand safely
  * @param input input to sanitize into a string
@@ -528,6 +539,25 @@ function toCommandValue(input) {
     return JSON.stringify(input);
 }
 exports.toCommandValue = toCommandValue;
+/**
+ *
+ * @param annotationProperties
+ * @returns The command properties to send with the actual annotation command
+ * See IssueCommandProperties: https://github.com/actions/runner/blob/main/src/Runner.Worker/ActionCommandManager.cs#L646
+ */
+function toCommandProperties(annotationProperties) {
+    if (!Object.keys(annotationProperties).length) {
+        return {};
+    }
+    return {
+        title: annotationProperties.title,
+        line: annotationProperties.startLine,
+        endLine: annotationProperties.endLine,
+        col: annotationProperties.startColumn,
+        endColumn: annotationProperties.endColumn
+    };
+}
+exports.toCommandProperties = toCommandProperties;
 //# sourceMappingURL=utils.js.map
 
 /***/ }),
@@ -10646,7 +10676,7 @@ const deserializeAws_restJson1CreateEventSourceMappingCommand = async (output, c
     };
     const data = await parseBody(output.body, context);
     if (data.BatchSize !== undefined && data.BatchSize !== null) {
-        contents.BatchSize = smithy_client_1.expectNumber(data.BatchSize);
+        contents.BatchSize = smithy_client_1.expectInt(data.BatchSize);
     }
     if (data.BisectBatchOnFunctionError !== undefined && data.BisectBatchOnFunctionError !== null) {
         contents.BisectBatchOnFunctionError = smithy_client_1.expectBoolean(data.BisectBatchOnFunctionError);
@@ -10670,16 +10700,16 @@ const deserializeAws_restJson1CreateEventSourceMappingCommand = async (output, c
         contents.LastProcessingResult = smithy_client_1.expectString(data.LastProcessingResult);
     }
     if (data.MaximumBatchingWindowInSeconds !== undefined && data.MaximumBatchingWindowInSeconds !== null) {
-        contents.MaximumBatchingWindowInSeconds = smithy_client_1.expectNumber(data.MaximumBatchingWindowInSeconds);
+        contents.MaximumBatchingWindowInSeconds = smithy_client_1.expectInt(data.MaximumBatchingWindowInSeconds);
     }
     if (data.MaximumRecordAgeInSeconds !== undefined && data.MaximumRecordAgeInSeconds !== null) {
-        contents.MaximumRecordAgeInSeconds = smithy_client_1.expectNumber(data.MaximumRecordAgeInSeconds);
+        contents.MaximumRecordAgeInSeconds = smithy_client_1.expectInt(data.MaximumRecordAgeInSeconds);
     }
     if (data.MaximumRetryAttempts !== undefined && data.MaximumRetryAttempts !== null) {
-        contents.MaximumRetryAttempts = smithy_client_1.expectNumber(data.MaximumRetryAttempts);
+        contents.MaximumRetryAttempts = smithy_client_1.expectInt(data.MaximumRetryAttempts);
     }
     if (data.ParallelizationFactor !== undefined && data.ParallelizationFactor !== null) {
-        contents.ParallelizationFactor = smithy_client_1.expectNumber(data.ParallelizationFactor);
+        contents.ParallelizationFactor = smithy_client_1.expectInt(data.ParallelizationFactor);
     }
     if (data.Queues !== undefined && data.Queues !== null) {
         contents.Queues = deserializeAws_restJson1Queues(data.Queues, context);
@@ -10706,7 +10736,7 @@ const deserializeAws_restJson1CreateEventSourceMappingCommand = async (output, c
         contents.Topics = deserializeAws_restJson1Topics(data.Topics, context);
     }
     if (data.TumblingWindowInSeconds !== undefined && data.TumblingWindowInSeconds !== null) {
-        contents.TumblingWindowInSeconds = smithy_client_1.expectNumber(data.TumblingWindowInSeconds);
+        contents.TumblingWindowInSeconds = smithy_client_1.expectInt(data.TumblingWindowInSeconds);
     }
     if (data.UUID !== undefined && data.UUID !== null) {
         contents.UUID = smithy_client_1.expectString(data.UUID);
@@ -10822,7 +10852,7 @@ const deserializeAws_restJson1CreateFunctionCommand = async (output, context) =>
         contents.CodeSha256 = smithy_client_1.expectString(data.CodeSha256);
     }
     if (data.CodeSize !== undefined && data.CodeSize !== null) {
-        contents.CodeSize = smithy_client_1.expectNumber(data.CodeSize);
+        contents.CodeSize = smithy_client_1.expectInt(data.CodeSize);
     }
     if (data.DeadLetterConfig !== undefined && data.DeadLetterConfig !== null) {
         contents.DeadLetterConfig = deserializeAws_restJson1DeadLetterConfig(data.DeadLetterConfig, context);
@@ -10870,7 +10900,7 @@ const deserializeAws_restJson1CreateFunctionCommand = async (output, context) =>
         contents.MasterArn = smithy_client_1.expectString(data.MasterArn);
     }
     if (data.MemorySize !== undefined && data.MemorySize !== null) {
-        contents.MemorySize = smithy_client_1.expectNumber(data.MemorySize);
+        contents.MemorySize = smithy_client_1.expectInt(data.MemorySize);
     }
     if (data.PackageType !== undefined && data.PackageType !== null) {
         contents.PackageType = smithy_client_1.expectString(data.PackageType);
@@ -10900,7 +10930,7 @@ const deserializeAws_restJson1CreateFunctionCommand = async (output, context) =>
         contents.StateReasonCode = smithy_client_1.expectString(data.StateReasonCode);
     }
     if (data.Timeout !== undefined && data.Timeout !== null) {
-        contents.Timeout = smithy_client_1.expectNumber(data.Timeout);
+        contents.Timeout = smithy_client_1.expectInt(data.Timeout);
     }
     if (data.TracingConfig !== undefined && data.TracingConfig !== null) {
         contents.TracingConfig = deserializeAws_restJson1TracingConfigResponse(data.TracingConfig, context);
@@ -11178,7 +11208,7 @@ const deserializeAws_restJson1DeleteEventSourceMappingCommand = async (output, c
     };
     const data = await parseBody(output.body, context);
     if (data.BatchSize !== undefined && data.BatchSize !== null) {
-        contents.BatchSize = smithy_client_1.expectNumber(data.BatchSize);
+        contents.BatchSize = smithy_client_1.expectInt(data.BatchSize);
     }
     if (data.BisectBatchOnFunctionError !== undefined && data.BisectBatchOnFunctionError !== null) {
         contents.BisectBatchOnFunctionError = smithy_client_1.expectBoolean(data.BisectBatchOnFunctionError);
@@ -11202,16 +11232,16 @@ const deserializeAws_restJson1DeleteEventSourceMappingCommand = async (output, c
         contents.LastProcessingResult = smithy_client_1.expectString(data.LastProcessingResult);
     }
     if (data.MaximumBatchingWindowInSeconds !== undefined && data.MaximumBatchingWindowInSeconds !== null) {
-        contents.MaximumBatchingWindowInSeconds = smithy_client_1.expectNumber(data.MaximumBatchingWindowInSeconds);
+        contents.MaximumBatchingWindowInSeconds = smithy_client_1.expectInt(data.MaximumBatchingWindowInSeconds);
     }
     if (data.MaximumRecordAgeInSeconds !== undefined && data.MaximumRecordAgeInSeconds !== null) {
-        contents.MaximumRecordAgeInSeconds = smithy_client_1.expectNumber(data.MaximumRecordAgeInSeconds);
+        contents.MaximumRecordAgeInSeconds = smithy_client_1.expectInt(data.MaximumRecordAgeInSeconds);
     }
     if (data.MaximumRetryAttempts !== undefined && data.MaximumRetryAttempts !== null) {
-        contents.MaximumRetryAttempts = smithy_client_1.expectNumber(data.MaximumRetryAttempts);
+        contents.MaximumRetryAttempts = smithy_client_1.expectInt(data.MaximumRetryAttempts);
     }
     if (data.ParallelizationFactor !== undefined && data.ParallelizationFactor !== null) {
-        contents.ParallelizationFactor = smithy_client_1.expectNumber(data.ParallelizationFactor);
+        contents.ParallelizationFactor = smithy_client_1.expectInt(data.ParallelizationFactor);
     }
     if (data.Queues !== undefined && data.Queues !== null) {
         contents.Queues = deserializeAws_restJson1Queues(data.Queues, context);
@@ -11238,7 +11268,7 @@ const deserializeAws_restJson1DeleteEventSourceMappingCommand = async (output, c
         contents.Topics = deserializeAws_restJson1Topics(data.Topics, context);
     }
     if (data.TumblingWindowInSeconds !== undefined && data.TumblingWindowInSeconds !== null) {
-        contents.TumblingWindowInSeconds = smithy_client_1.expectNumber(data.TumblingWindowInSeconds);
+        contents.TumblingWindowInSeconds = smithy_client_1.expectInt(data.TumblingWindowInSeconds);
     }
     if (data.UUID !== undefined && data.UUID !== null) {
         contents.UUID = smithy_client_1.expectString(data.UUID);
@@ -11998,7 +12028,7 @@ const deserializeAws_restJson1GetEventSourceMappingCommand = async (output, cont
     };
     const data = await parseBody(output.body, context);
     if (data.BatchSize !== undefined && data.BatchSize !== null) {
-        contents.BatchSize = smithy_client_1.expectNumber(data.BatchSize);
+        contents.BatchSize = smithy_client_1.expectInt(data.BatchSize);
     }
     if (data.BisectBatchOnFunctionError !== undefined && data.BisectBatchOnFunctionError !== null) {
         contents.BisectBatchOnFunctionError = smithy_client_1.expectBoolean(data.BisectBatchOnFunctionError);
@@ -12022,16 +12052,16 @@ const deserializeAws_restJson1GetEventSourceMappingCommand = async (output, cont
         contents.LastProcessingResult = smithy_client_1.expectString(data.LastProcessingResult);
     }
     if (data.MaximumBatchingWindowInSeconds !== undefined && data.MaximumBatchingWindowInSeconds !== null) {
-        contents.MaximumBatchingWindowInSeconds = smithy_client_1.expectNumber(data.MaximumBatchingWindowInSeconds);
+        contents.MaximumBatchingWindowInSeconds = smithy_client_1.expectInt(data.MaximumBatchingWindowInSeconds);
     }
     if (data.MaximumRecordAgeInSeconds !== undefined && data.MaximumRecordAgeInSeconds !== null) {
-        contents.MaximumRecordAgeInSeconds = smithy_client_1.expectNumber(data.MaximumRecordAgeInSeconds);
+        contents.MaximumRecordAgeInSeconds = smithy_client_1.expectInt(data.MaximumRecordAgeInSeconds);
     }
     if (data.MaximumRetryAttempts !== undefined && data.MaximumRetryAttempts !== null) {
-        contents.MaximumRetryAttempts = smithy_client_1.expectNumber(data.MaximumRetryAttempts);
+        contents.MaximumRetryAttempts = smithy_client_1.expectInt(data.MaximumRetryAttempts);
     }
     if (data.ParallelizationFactor !== undefined && data.ParallelizationFactor !== null) {
-        contents.ParallelizationFactor = smithy_client_1.expectNumber(data.ParallelizationFactor);
+        contents.ParallelizationFactor = smithy_client_1.expectInt(data.ParallelizationFactor);
     }
     if (data.Queues !== undefined && data.Queues !== null) {
         contents.Queues = deserializeAws_restJson1Queues(data.Queues, context);
@@ -12058,7 +12088,7 @@ const deserializeAws_restJson1GetEventSourceMappingCommand = async (output, cont
         contents.Topics = deserializeAws_restJson1Topics(data.Topics, context);
     }
     if (data.TumblingWindowInSeconds !== undefined && data.TumblingWindowInSeconds !== null) {
-        contents.TumblingWindowInSeconds = smithy_client_1.expectNumber(data.TumblingWindowInSeconds);
+        contents.TumblingWindowInSeconds = smithy_client_1.expectInt(data.TumblingWindowInSeconds);
     }
     if (data.UUID !== undefined && data.UUID !== null) {
         contents.UUID = smithy_client_1.expectString(data.UUID);
@@ -12293,7 +12323,7 @@ const deserializeAws_restJson1GetFunctionConcurrencyCommand = async (output, con
     };
     const data = await parseBody(output.body, context);
     if (data.ReservedConcurrentExecutions !== undefined && data.ReservedConcurrentExecutions !== null) {
-        contents.ReservedConcurrentExecutions = smithy_client_1.expectNumber(data.ReservedConcurrentExecutions);
+        contents.ReservedConcurrentExecutions = smithy_client_1.expectInt(data.ReservedConcurrentExecutions);
     }
     return Promise.resolve(contents);
 };
@@ -12398,7 +12428,7 @@ const deserializeAws_restJson1GetFunctionConfigurationCommand = async (output, c
         contents.CodeSha256 = smithy_client_1.expectString(data.CodeSha256);
     }
     if (data.CodeSize !== undefined && data.CodeSize !== null) {
-        contents.CodeSize = smithy_client_1.expectNumber(data.CodeSize);
+        contents.CodeSize = smithy_client_1.expectInt(data.CodeSize);
     }
     if (data.DeadLetterConfig !== undefined && data.DeadLetterConfig !== null) {
         contents.DeadLetterConfig = deserializeAws_restJson1DeadLetterConfig(data.DeadLetterConfig, context);
@@ -12446,7 +12476,7 @@ const deserializeAws_restJson1GetFunctionConfigurationCommand = async (output, c
         contents.MasterArn = smithy_client_1.expectString(data.MasterArn);
     }
     if (data.MemorySize !== undefined && data.MemorySize !== null) {
-        contents.MemorySize = smithy_client_1.expectNumber(data.MemorySize);
+        contents.MemorySize = smithy_client_1.expectInt(data.MemorySize);
     }
     if (data.PackageType !== undefined && data.PackageType !== null) {
         contents.PackageType = smithy_client_1.expectString(data.PackageType);
@@ -12476,7 +12506,7 @@ const deserializeAws_restJson1GetFunctionConfigurationCommand = async (output, c
         contents.StateReasonCode = smithy_client_1.expectString(data.StateReasonCode);
     }
     if (data.Timeout !== undefined && data.Timeout !== null) {
-        contents.Timeout = smithy_client_1.expectNumber(data.Timeout);
+        contents.Timeout = smithy_client_1.expectInt(data.Timeout);
     }
     if (data.TracingConfig !== undefined && data.TracingConfig !== null) {
         contents.TracingConfig = deserializeAws_restJson1TracingConfigResponse(data.TracingConfig, context);
@@ -12570,10 +12600,10 @@ const deserializeAws_restJson1GetFunctionEventInvokeConfigCommand = async (outpu
         contents.LastModified = new Date(Math.round(data.LastModified * 1000));
     }
     if (data.MaximumEventAgeInSeconds !== undefined && data.MaximumEventAgeInSeconds !== null) {
-        contents.MaximumEventAgeInSeconds = smithy_client_1.expectNumber(data.MaximumEventAgeInSeconds);
+        contents.MaximumEventAgeInSeconds = smithy_client_1.expectInt(data.MaximumEventAgeInSeconds);
     }
     if (data.MaximumRetryAttempts !== undefined && data.MaximumRetryAttempts !== null) {
-        contents.MaximumRetryAttempts = smithy_client_1.expectNumber(data.MaximumRetryAttempts);
+        contents.MaximumRetryAttempts = smithy_client_1.expectInt(data.MaximumRetryAttempts);
     }
     return Promise.resolve(contents);
 };
@@ -12673,7 +12703,7 @@ const deserializeAws_restJson1GetLayerVersionCommand = async (output, context) =
         contents.LicenseInfo = smithy_client_1.expectString(data.LicenseInfo);
     }
     if (data.Version !== undefined && data.Version !== null) {
-        contents.Version = smithy_client_1.expectNumber(data.Version);
+        contents.Version = smithy_client_1.expectInt(data.Version);
     }
     return Promise.resolve(contents);
 };
@@ -12773,7 +12803,7 @@ const deserializeAws_restJson1GetLayerVersionByArnCommand = async (output, conte
         contents.LicenseInfo = smithy_client_1.expectString(data.LicenseInfo);
     }
     if (data.Version !== undefined && data.Version !== null) {
-        contents.Version = smithy_client_1.expectNumber(data.Version);
+        contents.Version = smithy_client_1.expectInt(data.Version);
     }
     return Promise.resolve(contents);
 };
@@ -13003,18 +13033,18 @@ const deserializeAws_restJson1GetProvisionedConcurrencyConfigCommand = async (ou
     const data = await parseBody(output.body, context);
     if (data.AllocatedProvisionedConcurrentExecutions !== undefined &&
         data.AllocatedProvisionedConcurrentExecutions !== null) {
-        contents.AllocatedProvisionedConcurrentExecutions = smithy_client_1.expectNumber(data.AllocatedProvisionedConcurrentExecutions);
+        contents.AllocatedProvisionedConcurrentExecutions = smithy_client_1.expectInt(data.AllocatedProvisionedConcurrentExecutions);
     }
     if (data.AvailableProvisionedConcurrentExecutions !== undefined &&
         data.AvailableProvisionedConcurrentExecutions !== null) {
-        contents.AvailableProvisionedConcurrentExecutions = smithy_client_1.expectNumber(data.AvailableProvisionedConcurrentExecutions);
+        contents.AvailableProvisionedConcurrentExecutions = smithy_client_1.expectInt(data.AvailableProvisionedConcurrentExecutions);
     }
     if (data.LastModified !== undefined && data.LastModified !== null) {
         contents.LastModified = smithy_client_1.expectString(data.LastModified);
     }
     if (data.RequestedProvisionedConcurrentExecutions !== undefined &&
         data.RequestedProvisionedConcurrentExecutions !== null) {
-        contents.RequestedProvisionedConcurrentExecutions = smithy_client_1.expectNumber(data.RequestedProvisionedConcurrentExecutions);
+        contents.RequestedProvisionedConcurrentExecutions = smithy_client_1.expectInt(data.RequestedProvisionedConcurrentExecutions);
     }
     if (data.Status !== undefined && data.Status !== null) {
         contents.Status = smithy_client_1.expectString(data.Status);
@@ -14262,7 +14292,7 @@ const deserializeAws_restJson1PublishLayerVersionCommand = async (output, contex
         contents.LicenseInfo = smithy_client_1.expectString(data.LicenseInfo);
     }
     if (data.Version !== undefined && data.Version !== null) {
-        contents.Version = smithy_client_1.expectNumber(data.Version);
+        contents.Version = smithy_client_1.expectInt(data.Version);
     }
     return Promise.resolve(contents);
 };
@@ -14375,7 +14405,7 @@ const deserializeAws_restJson1PublishVersionCommand = async (output, context) =>
         contents.CodeSha256 = smithy_client_1.expectString(data.CodeSha256);
     }
     if (data.CodeSize !== undefined && data.CodeSize !== null) {
-        contents.CodeSize = smithy_client_1.expectNumber(data.CodeSize);
+        contents.CodeSize = smithy_client_1.expectInt(data.CodeSize);
     }
     if (data.DeadLetterConfig !== undefined && data.DeadLetterConfig !== null) {
         contents.DeadLetterConfig = deserializeAws_restJson1DeadLetterConfig(data.DeadLetterConfig, context);
@@ -14423,7 +14453,7 @@ const deserializeAws_restJson1PublishVersionCommand = async (output, context) =>
         contents.MasterArn = smithy_client_1.expectString(data.MasterArn);
     }
     if (data.MemorySize !== undefined && data.MemorySize !== null) {
-        contents.MemorySize = smithy_client_1.expectNumber(data.MemorySize);
+        contents.MemorySize = smithy_client_1.expectInt(data.MemorySize);
     }
     if (data.PackageType !== undefined && data.PackageType !== null) {
         contents.PackageType = smithy_client_1.expectString(data.PackageType);
@@ -14453,7 +14483,7 @@ const deserializeAws_restJson1PublishVersionCommand = async (output, context) =>
         contents.StateReasonCode = smithy_client_1.expectString(data.StateReasonCode);
     }
     if (data.Timeout !== undefined && data.Timeout !== null) {
-        contents.Timeout = smithy_client_1.expectNumber(data.Timeout);
+        contents.Timeout = smithy_client_1.expectInt(data.Timeout);
     }
     if (data.TracingConfig !== undefined && data.TracingConfig !== null) {
         contents.TracingConfig = deserializeAws_restJson1TracingConfigResponse(data.TracingConfig, context);
@@ -14650,7 +14680,7 @@ const deserializeAws_restJson1PutFunctionConcurrencyCommand = async (output, con
     };
     const data = await parseBody(output.body, context);
     if (data.ReservedConcurrentExecutions !== undefined && data.ReservedConcurrentExecutions !== null) {
-        contents.ReservedConcurrentExecutions = smithy_client_1.expectNumber(data.ReservedConcurrentExecutions);
+        contents.ReservedConcurrentExecutions = smithy_client_1.expectInt(data.ReservedConcurrentExecutions);
     }
     return Promise.resolve(contents);
 };
@@ -14743,10 +14773,10 @@ const deserializeAws_restJson1PutFunctionEventInvokeConfigCommand = async (outpu
         contents.LastModified = new Date(Math.round(data.LastModified * 1000));
     }
     if (data.MaximumEventAgeInSeconds !== undefined && data.MaximumEventAgeInSeconds !== null) {
-        contents.MaximumEventAgeInSeconds = smithy_client_1.expectNumber(data.MaximumEventAgeInSeconds);
+        contents.MaximumEventAgeInSeconds = smithy_client_1.expectInt(data.MaximumEventAgeInSeconds);
     }
     if (data.MaximumRetryAttempts !== undefined && data.MaximumRetryAttempts !== null) {
-        contents.MaximumRetryAttempts = smithy_client_1.expectNumber(data.MaximumRetryAttempts);
+        contents.MaximumRetryAttempts = smithy_client_1.expectInt(data.MaximumRetryAttempts);
     }
     return Promise.resolve(contents);
 };
@@ -14832,18 +14862,18 @@ const deserializeAws_restJson1PutProvisionedConcurrencyConfigCommand = async (ou
     const data = await parseBody(output.body, context);
     if (data.AllocatedProvisionedConcurrentExecutions !== undefined &&
         data.AllocatedProvisionedConcurrentExecutions !== null) {
-        contents.AllocatedProvisionedConcurrentExecutions = smithy_client_1.expectNumber(data.AllocatedProvisionedConcurrentExecutions);
+        contents.AllocatedProvisionedConcurrentExecutions = smithy_client_1.expectInt(data.AllocatedProvisionedConcurrentExecutions);
     }
     if (data.AvailableProvisionedConcurrentExecutions !== undefined &&
         data.AvailableProvisionedConcurrentExecutions !== null) {
-        contents.AvailableProvisionedConcurrentExecutions = smithy_client_1.expectNumber(data.AvailableProvisionedConcurrentExecutions);
+        contents.AvailableProvisionedConcurrentExecutions = smithy_client_1.expectInt(data.AvailableProvisionedConcurrentExecutions);
     }
     if (data.LastModified !== undefined && data.LastModified !== null) {
         contents.LastModified = smithy_client_1.expectString(data.LastModified);
     }
     if (data.RequestedProvisionedConcurrentExecutions !== undefined &&
         data.RequestedProvisionedConcurrentExecutions !== null) {
-        contents.RequestedProvisionedConcurrentExecutions = smithy_client_1.expectNumber(data.RequestedProvisionedConcurrentExecutions);
+        contents.RequestedProvisionedConcurrentExecutions = smithy_client_1.expectInt(data.RequestedProvisionedConcurrentExecutions);
     }
     if (data.Status !== undefined && data.Status !== null) {
         contents.Status = smithy_client_1.expectString(data.Status);
@@ -15426,7 +15456,7 @@ const deserializeAws_restJson1UpdateEventSourceMappingCommand = async (output, c
     };
     const data = await parseBody(output.body, context);
     if (data.BatchSize !== undefined && data.BatchSize !== null) {
-        contents.BatchSize = smithy_client_1.expectNumber(data.BatchSize);
+        contents.BatchSize = smithy_client_1.expectInt(data.BatchSize);
     }
     if (data.BisectBatchOnFunctionError !== undefined && data.BisectBatchOnFunctionError !== null) {
         contents.BisectBatchOnFunctionError = smithy_client_1.expectBoolean(data.BisectBatchOnFunctionError);
@@ -15450,16 +15480,16 @@ const deserializeAws_restJson1UpdateEventSourceMappingCommand = async (output, c
         contents.LastProcessingResult = smithy_client_1.expectString(data.LastProcessingResult);
     }
     if (data.MaximumBatchingWindowInSeconds !== undefined && data.MaximumBatchingWindowInSeconds !== null) {
-        contents.MaximumBatchingWindowInSeconds = smithy_client_1.expectNumber(data.MaximumBatchingWindowInSeconds);
+        contents.MaximumBatchingWindowInSeconds = smithy_client_1.expectInt(data.MaximumBatchingWindowInSeconds);
     }
     if (data.MaximumRecordAgeInSeconds !== undefined && data.MaximumRecordAgeInSeconds !== null) {
-        contents.MaximumRecordAgeInSeconds = smithy_client_1.expectNumber(data.MaximumRecordAgeInSeconds);
+        contents.MaximumRecordAgeInSeconds = smithy_client_1.expectInt(data.MaximumRecordAgeInSeconds);
     }
     if (data.MaximumRetryAttempts !== undefined && data.MaximumRetryAttempts !== null) {
-        contents.MaximumRetryAttempts = smithy_client_1.expectNumber(data.MaximumRetryAttempts);
+        contents.MaximumRetryAttempts = smithy_client_1.expectInt(data.MaximumRetryAttempts);
     }
     if (data.ParallelizationFactor !== undefined && data.ParallelizationFactor !== null) {
-        contents.ParallelizationFactor = smithy_client_1.expectNumber(data.ParallelizationFactor);
+        contents.ParallelizationFactor = smithy_client_1.expectInt(data.ParallelizationFactor);
     }
     if (data.Queues !== undefined && data.Queues !== null) {
         contents.Queues = deserializeAws_restJson1Queues(data.Queues, context);
@@ -15486,7 +15516,7 @@ const deserializeAws_restJson1UpdateEventSourceMappingCommand = async (output, c
         contents.Topics = deserializeAws_restJson1Topics(data.Topics, context);
     }
     if (data.TumblingWindowInSeconds !== undefined && data.TumblingWindowInSeconds !== null) {
-        contents.TumblingWindowInSeconds = smithy_client_1.expectNumber(data.TumblingWindowInSeconds);
+        contents.TumblingWindowInSeconds = smithy_client_1.expectInt(data.TumblingWindowInSeconds);
     }
     if (data.UUID !== undefined && data.UUID !== null) {
         contents.UUID = smithy_client_1.expectString(data.UUID);
@@ -15610,7 +15640,7 @@ const deserializeAws_restJson1UpdateFunctionCodeCommand = async (output, context
         contents.CodeSha256 = smithy_client_1.expectString(data.CodeSha256);
     }
     if (data.CodeSize !== undefined && data.CodeSize !== null) {
-        contents.CodeSize = smithy_client_1.expectNumber(data.CodeSize);
+        contents.CodeSize = smithy_client_1.expectInt(data.CodeSize);
     }
     if (data.DeadLetterConfig !== undefined && data.DeadLetterConfig !== null) {
         contents.DeadLetterConfig = deserializeAws_restJson1DeadLetterConfig(data.DeadLetterConfig, context);
@@ -15658,7 +15688,7 @@ const deserializeAws_restJson1UpdateFunctionCodeCommand = async (output, context
         contents.MasterArn = smithy_client_1.expectString(data.MasterArn);
     }
     if (data.MemorySize !== undefined && data.MemorySize !== null) {
-        contents.MemorySize = smithy_client_1.expectNumber(data.MemorySize);
+        contents.MemorySize = smithy_client_1.expectInt(data.MemorySize);
     }
     if (data.PackageType !== undefined && data.PackageType !== null) {
         contents.PackageType = smithy_client_1.expectString(data.PackageType);
@@ -15688,7 +15718,7 @@ const deserializeAws_restJson1UpdateFunctionCodeCommand = async (output, context
         contents.StateReasonCode = smithy_client_1.expectString(data.StateReasonCode);
     }
     if (data.Timeout !== undefined && data.Timeout !== null) {
-        contents.Timeout = smithy_client_1.expectNumber(data.Timeout);
+        contents.Timeout = smithy_client_1.expectInt(data.Timeout);
     }
     if (data.TracingConfig !== undefined && data.TracingConfig !== null) {
         contents.TracingConfig = deserializeAws_restJson1TracingConfigResponse(data.TracingConfig, context);
@@ -15850,7 +15880,7 @@ const deserializeAws_restJson1UpdateFunctionConfigurationCommand = async (output
         contents.CodeSha256 = smithy_client_1.expectString(data.CodeSha256);
     }
     if (data.CodeSize !== undefined && data.CodeSize !== null) {
-        contents.CodeSize = smithy_client_1.expectNumber(data.CodeSize);
+        contents.CodeSize = smithy_client_1.expectInt(data.CodeSize);
     }
     if (data.DeadLetterConfig !== undefined && data.DeadLetterConfig !== null) {
         contents.DeadLetterConfig = deserializeAws_restJson1DeadLetterConfig(data.DeadLetterConfig, context);
@@ -15898,7 +15928,7 @@ const deserializeAws_restJson1UpdateFunctionConfigurationCommand = async (output
         contents.MasterArn = smithy_client_1.expectString(data.MasterArn);
     }
     if (data.MemorySize !== undefined && data.MemorySize !== null) {
-        contents.MemorySize = smithy_client_1.expectNumber(data.MemorySize);
+        contents.MemorySize = smithy_client_1.expectInt(data.MemorySize);
     }
     if (data.PackageType !== undefined && data.PackageType !== null) {
         contents.PackageType = smithy_client_1.expectString(data.PackageType);
@@ -15928,7 +15958,7 @@ const deserializeAws_restJson1UpdateFunctionConfigurationCommand = async (output
         contents.StateReasonCode = smithy_client_1.expectString(data.StateReasonCode);
     }
     if (data.Timeout !== undefined && data.Timeout !== null) {
-        contents.Timeout = smithy_client_1.expectNumber(data.Timeout);
+        contents.Timeout = smithy_client_1.expectInt(data.Timeout);
     }
     if (data.TracingConfig !== undefined && data.TracingConfig !== null) {
         contents.TracingConfig = deserializeAws_restJson1TracingConfigResponse(data.TracingConfig, context);
@@ -16062,10 +16092,10 @@ const deserializeAws_restJson1UpdateFunctionEventInvokeConfigCommand = async (ou
         contents.LastModified = new Date(Math.round(data.LastModified * 1000));
     }
     if (data.MaximumEventAgeInSeconds !== undefined && data.MaximumEventAgeInSeconds !== null) {
-        contents.MaximumEventAgeInSeconds = smithy_client_1.expectNumber(data.MaximumEventAgeInSeconds);
+        contents.MaximumEventAgeInSeconds = smithy_client_1.expectInt(data.MaximumEventAgeInSeconds);
     }
     if (data.MaximumRetryAttempts !== undefined && data.MaximumRetryAttempts !== null) {
-        contents.MaximumRetryAttempts = smithy_client_1.expectNumber(data.MaximumRetryAttempts);
+        contents.MaximumRetryAttempts = smithy_client_1.expectInt(data.MaximumRetryAttempts);
     }
     return Promise.resolve(contents);
 };
@@ -17007,17 +17037,17 @@ const serializeAws_restJson1VpcConfig = (input, context) => {
 };
 const deserializeAws_restJson1AccountLimit = (output, context) => {
     return {
-        CodeSizeUnzipped: smithy_client_1.expectNumber(output.CodeSizeUnzipped),
-        CodeSizeZipped: smithy_client_1.expectNumber(output.CodeSizeZipped),
-        ConcurrentExecutions: smithy_client_1.expectNumber(output.ConcurrentExecutions),
-        TotalCodeSize: smithy_client_1.expectNumber(output.TotalCodeSize),
-        UnreservedConcurrentExecutions: smithy_client_1.expectNumber(output.UnreservedConcurrentExecutions),
+        CodeSizeUnzipped: smithy_client_1.expectInt(output.CodeSizeUnzipped),
+        CodeSizeZipped: smithy_client_1.expectInt(output.CodeSizeZipped),
+        ConcurrentExecutions: smithy_client_1.expectInt(output.ConcurrentExecutions),
+        TotalCodeSize: smithy_client_1.expectInt(output.TotalCodeSize),
+        UnreservedConcurrentExecutions: smithy_client_1.expectInt(output.UnreservedConcurrentExecutions),
     };
 };
 const deserializeAws_restJson1AccountUsage = (output, context) => {
     return {
-        FunctionCount: smithy_client_1.expectNumber(output.FunctionCount),
-        TotalCodeSize: smithy_client_1.expectNumber(output.TotalCodeSize),
+        FunctionCount: smithy_client_1.expectInt(output.FunctionCount),
+        TotalCodeSize: smithy_client_1.expectInt(output.TotalCodeSize),
     };
 };
 const deserializeAws_restJson1AdditionalVersionWeights = (output, context) => {
@@ -17027,7 +17057,7 @@ const deserializeAws_restJson1AdditionalVersionWeights = (output, context) => {
         }
         return {
             ...acc,
-            [key]: smithy_client_1.handleFloat(value),
+            [key]: smithy_client_1.limitedParseFloat(value),
         };
     }, {});
 };
@@ -17108,7 +17138,7 @@ const deserializeAws_restJson1CompatibleRuntimes = (output, context) => {
 };
 const deserializeAws_restJson1Concurrency = (output, context) => {
     return {
-        ReservedConcurrentExecutions: smithy_client_1.expectNumber(output.ReservedConcurrentExecutions),
+        ReservedConcurrentExecutions: smithy_client_1.expectInt(output.ReservedConcurrentExecutions),
     };
 };
 const deserializeAws_restJson1DeadLetterConfig = (output, context) => {
@@ -17176,7 +17206,7 @@ const deserializeAws_restJson1EnvironmentVariables = (output, context) => {
 };
 const deserializeAws_restJson1EventSourceMappingConfiguration = (output, context) => {
     return {
-        BatchSize: smithy_client_1.expectNumber(output.BatchSize),
+        BatchSize: smithy_client_1.expectInt(output.BatchSize),
         BisectBatchOnFunctionError: smithy_client_1.expectBoolean(output.BisectBatchOnFunctionError),
         DestinationConfig: output.DestinationConfig !== undefined && output.DestinationConfig !== null
             ? deserializeAws_restJson1DestinationConfig(output.DestinationConfig, context)
@@ -17190,10 +17220,10 @@ const deserializeAws_restJson1EventSourceMappingConfiguration = (output, context
             ? new Date(Math.round(output.LastModified * 1000))
             : undefined,
         LastProcessingResult: smithy_client_1.expectString(output.LastProcessingResult),
-        MaximumBatchingWindowInSeconds: smithy_client_1.expectNumber(output.MaximumBatchingWindowInSeconds),
-        MaximumRecordAgeInSeconds: smithy_client_1.expectNumber(output.MaximumRecordAgeInSeconds),
-        MaximumRetryAttempts: smithy_client_1.expectNumber(output.MaximumRetryAttempts),
-        ParallelizationFactor: smithy_client_1.expectNumber(output.ParallelizationFactor),
+        MaximumBatchingWindowInSeconds: smithy_client_1.expectInt(output.MaximumBatchingWindowInSeconds),
+        MaximumRecordAgeInSeconds: smithy_client_1.expectInt(output.MaximumRecordAgeInSeconds),
+        MaximumRetryAttempts: smithy_client_1.expectInt(output.MaximumRetryAttempts),
+        ParallelizationFactor: smithy_client_1.expectInt(output.ParallelizationFactor),
         Queues: output.Queues !== undefined && output.Queues !== null
             ? deserializeAws_restJson1Queues(output.Queues, context)
             : undefined,
@@ -17212,7 +17242,7 @@ const deserializeAws_restJson1EventSourceMappingConfiguration = (output, context
         Topics: output.Topics !== undefined && output.Topics !== null
             ? deserializeAws_restJson1Topics(output.Topics, context)
             : undefined,
-        TumblingWindowInSeconds: smithy_client_1.expectNumber(output.TumblingWindowInSeconds),
+        TumblingWindowInSeconds: smithy_client_1.expectInt(output.TumblingWindowInSeconds),
         UUID: smithy_client_1.expectString(output.UUID),
     };
 };
@@ -17263,7 +17293,7 @@ const deserializeAws_restJson1FunctionCodeLocation = (output, context) => {
 const deserializeAws_restJson1FunctionConfiguration = (output, context) => {
     return {
         CodeSha256: smithy_client_1.expectString(output.CodeSha256),
-        CodeSize: smithy_client_1.expectNumber(output.CodeSize),
+        CodeSize: smithy_client_1.expectInt(output.CodeSize),
         DeadLetterConfig: output.DeadLetterConfig !== undefined && output.DeadLetterConfig !== null
             ? deserializeAws_restJson1DeadLetterConfig(output.DeadLetterConfig, context)
             : undefined,
@@ -17289,7 +17319,7 @@ const deserializeAws_restJson1FunctionConfiguration = (output, context) => {
             ? deserializeAws_restJson1LayersReferenceList(output.Layers, context)
             : undefined,
         MasterArn: smithy_client_1.expectString(output.MasterArn),
-        MemorySize: smithy_client_1.expectNumber(output.MemorySize),
+        MemorySize: smithy_client_1.expectInt(output.MemorySize),
         PackageType: smithy_client_1.expectString(output.PackageType),
         RevisionId: smithy_client_1.expectString(output.RevisionId),
         Role: smithy_client_1.expectString(output.Role),
@@ -17299,7 +17329,7 @@ const deserializeAws_restJson1FunctionConfiguration = (output, context) => {
         State: smithy_client_1.expectString(output.State),
         StateReason: smithy_client_1.expectString(output.StateReason),
         StateReasonCode: smithy_client_1.expectString(output.StateReasonCode),
-        Timeout: smithy_client_1.expectNumber(output.Timeout),
+        Timeout: smithy_client_1.expectInt(output.Timeout),
         TracingConfig: output.TracingConfig !== undefined && output.TracingConfig !== null
             ? deserializeAws_restJson1TracingConfigResponse(output.TracingConfig, context)
             : undefined,
@@ -17318,8 +17348,8 @@ const deserializeAws_restJson1FunctionEventInvokeConfig = (output, context) => {
         LastModified: output.LastModified !== undefined && output.LastModified !== null
             ? new Date(Math.round(output.LastModified * 1000))
             : undefined,
-        MaximumEventAgeInSeconds: smithy_client_1.expectNumber(output.MaximumEventAgeInSeconds),
-        MaximumRetryAttempts: smithy_client_1.expectNumber(output.MaximumRetryAttempts),
+        MaximumEventAgeInSeconds: smithy_client_1.expectInt(output.MaximumEventAgeInSeconds),
+        MaximumRetryAttempts: smithy_client_1.expectInt(output.MaximumRetryAttempts),
     };
 };
 const deserializeAws_restJson1FunctionEventInvokeConfigList = (output, context) => {
@@ -17382,7 +17412,7 @@ const deserializeAws_restJson1ImageConfigResponse = (output, context) => {
 const deserializeAws_restJson1Layer = (output, context) => {
     return {
         Arn: smithy_client_1.expectString(output.Arn),
-        CodeSize: smithy_client_1.expectNumber(output.CodeSize),
+        CodeSize: smithy_client_1.expectInt(output.CodeSize),
         SigningJobArn: smithy_client_1.expectString(output.SigningJobArn),
         SigningProfileVersionArn: smithy_client_1.expectString(output.SigningProfileVersionArn),
     };
@@ -17419,7 +17449,7 @@ const deserializeAws_restJson1LayersReferenceList = (output, context) => {
 const deserializeAws_restJson1LayerVersionContentOutput = (output, context) => {
     return {
         CodeSha256: smithy_client_1.expectString(output.CodeSha256),
-        CodeSize: smithy_client_1.expectNumber(output.CodeSize),
+        CodeSize: smithy_client_1.expectInt(output.CodeSize),
         Location: smithy_client_1.expectString(output.Location),
         SigningJobArn: smithy_client_1.expectString(output.SigningJobArn),
         SigningProfileVersionArn: smithy_client_1.expectString(output.SigningProfileVersionArn),
@@ -17444,7 +17474,7 @@ const deserializeAws_restJson1LayerVersionsListItem = (output, context) => {
         Description: smithy_client_1.expectString(output.Description),
         LayerVersionArn: smithy_client_1.expectString(output.LayerVersionArn),
         LicenseInfo: smithy_client_1.expectString(output.LicenseInfo),
-        Version: smithy_client_1.expectNumber(output.Version),
+        Version: smithy_client_1.expectInt(output.Version),
     };
 };
 const deserializeAws_restJson1OnFailure = (output, context) => {
@@ -17469,11 +17499,11 @@ const deserializeAws_restJson1ProvisionedConcurrencyConfigList = (output, contex
 };
 const deserializeAws_restJson1ProvisionedConcurrencyConfigListItem = (output, context) => {
     return {
-        AllocatedProvisionedConcurrentExecutions: smithy_client_1.expectNumber(output.AllocatedProvisionedConcurrentExecutions),
-        AvailableProvisionedConcurrentExecutions: smithy_client_1.expectNumber(output.AvailableProvisionedConcurrentExecutions),
+        AllocatedProvisionedConcurrentExecutions: smithy_client_1.expectInt(output.AllocatedProvisionedConcurrentExecutions),
+        AvailableProvisionedConcurrentExecutions: smithy_client_1.expectInt(output.AvailableProvisionedConcurrentExecutions),
         FunctionArn: smithy_client_1.expectString(output.FunctionArn),
         LastModified: smithy_client_1.expectString(output.LastModified),
-        RequestedProvisionedConcurrentExecutions: smithy_client_1.expectNumber(output.RequestedProvisionedConcurrentExecutions),
+        RequestedProvisionedConcurrentExecutions: smithy_client_1.expectInt(output.RequestedProvisionedConcurrentExecutions),
         Status: smithy_client_1.expectString(output.Status),
         StatusReason: smithy_client_1.expectString(output.StatusReason),
     };
@@ -19252,7 +19282,7 @@ const deserializeAws_restJson1AccountListType = (output, context) => {
 const deserializeAws_restJson1RoleCredentials = (output, context) => {
     return {
         accessKeyId: smithy_client_1.expectString(output.accessKeyId),
-        expiration: smithy_client_1.expectNumber(output.expiration),
+        expiration: smithy_client_1.expectInt(output.expiration),
         secretAccessKey: smithy_client_1.expectString(output.secretAccessKey),
         sessionToken: smithy_client_1.expectString(output.sessionToken),
     };
@@ -22454,7 +22484,7 @@ const deserializeAws_queryAssumeRoleResponse = (output, context) => {
         contents.AssumedRoleUser = deserializeAws_queryAssumedRoleUser(output["AssumedRoleUser"], context);
     }
     if (output["PackedPolicySize"] !== undefined) {
-        contents.PackedPolicySize = parseInt(output["PackedPolicySize"]);
+        contents.PackedPolicySize = smithy_client_1.strictParseInt(output["PackedPolicySize"]);
     }
     if (output["SourceIdentity"] !== undefined) {
         contents.SourceIdentity = smithy_client_1.expectString(output["SourceIdentity"]);
@@ -22480,7 +22510,7 @@ const deserializeAws_queryAssumeRoleWithSAMLResponse = (output, context) => {
         contents.AssumedRoleUser = deserializeAws_queryAssumedRoleUser(output["AssumedRoleUser"], context);
     }
     if (output["PackedPolicySize"] !== undefined) {
-        contents.PackedPolicySize = parseInt(output["PackedPolicySize"]);
+        contents.PackedPolicySize = smithy_client_1.strictParseInt(output["PackedPolicySize"]);
     }
     if (output["Subject"] !== undefined) {
         contents.Subject = smithy_client_1.expectString(output["Subject"]);
@@ -22522,7 +22552,7 @@ const deserializeAws_queryAssumeRoleWithWebIdentityResponse = (output, context) 
         contents.AssumedRoleUser = deserializeAws_queryAssumedRoleUser(output["AssumedRoleUser"], context);
     }
     if (output["PackedPolicySize"] !== undefined) {
-        contents.PackedPolicySize = parseInt(output["PackedPolicySize"]);
+        contents.PackedPolicySize = smithy_client_1.strictParseInt(output["PackedPolicySize"]);
     }
     if (output["Provider"] !== undefined) {
         contents.Provider = smithy_client_1.expectString(output["Provider"]);
@@ -22626,7 +22656,7 @@ const deserializeAws_queryGetFederationTokenResponse = (output, context) => {
         contents.FederatedUser = deserializeAws_queryFederatedUser(output["FederatedUser"], context);
     }
     if (output["PackedPolicySize"] !== undefined) {
-        contents.PackedPolicySize = parseInt(output["PackedPolicySize"]);
+        contents.PackedPolicySize = smithy_client_1.strictParseInt(output["PackedPolicySize"]);
     }
     return contents;
 };
@@ -24969,32 +24999,32 @@ tslib_1.__exportStar(__nccwpck_require__(4834), exports);
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getSigV4AuthPlugin = exports.getAwsAuthPlugin = exports.awsAuthMiddlewareOptions = exports.awsAuthMiddleware = void 0;
 const protocol_http_1 = __nccwpck_require__(7498);
-const isClockSkewed = (newServerTime, systemClockOffset) => Math.abs(getSkewCorrectedDate(systemClockOffset).getTime() - newServerTime) >= 300000;
-const getSkewCorrectedDate = (systemClockOffset) => new Date(Date.now() + systemClockOffset);
-function awsAuthMiddleware(options) {
-    return (next, context) => async function (args) {
-        if (!protocol_http_1.HttpRequest.isInstance(args.request))
-            return next(args);
-        const signer = typeof options.signer === "function" ? await options.signer() : options.signer;
-        const output = await next({
-            ...args,
-            request: await signer.sign(args.request, {
-                signingDate: new Date(Date.now() + options.systemClockOffset),
-                signingRegion: context["signing_region"],
-                signingService: context["signing_service"],
-            }),
-        });
-        const { headers } = output.response;
-        const dateHeader = headers && (headers.date || headers.Date);
-        if (dateHeader) {
-            const serverTime = Date.parse(dateHeader);
-            if (isClockSkewed(serverTime, options.systemClockOffset)) {
-                options.systemClockOffset = serverTime - Date.now();
-            }
+const getSkewCorrectedDate_1 = __nccwpck_require__(7322);
+const getUpdatedSystemClockOffset_1 = __nccwpck_require__(1636);
+const awsAuthMiddleware = (options) => (next, context) => async function (args) {
+    if (!protocol_http_1.HttpRequest.isInstance(args.request))
+        return next(args);
+    const signer = await options.signer();
+    const output = await next({
+        ...args,
+        request: await signer.sign(args.request, {
+            signingDate: getSkewCorrectedDate_1.getSkewCorrectedDate(options.systemClockOffset),
+            signingRegion: context["signing_region"],
+            signingService: context["signing_service"],
+        }),
+    }).catch((error) => {
+        if (error.ServerTime) {
+            options.systemClockOffset = getUpdatedSystemClockOffset_1.getUpdatedSystemClockOffset(error.ServerTime, options.systemClockOffset);
         }
-        return output;
-    };
-}
+        throw error;
+    });
+    const { headers } = output.response;
+    const dateHeader = headers && (headers.date || headers.Date);
+    if (dateHeader) {
+        options.systemClockOffset = getUpdatedSystemClockOffset_1.getUpdatedSystemClockOffset(dateHeader, options.systemClockOffset);
+    }
+    return output;
+};
 exports.awsAuthMiddleware = awsAuthMiddleware;
 exports.awsAuthMiddlewareOptions = {
     name: "awsAuthMiddleware",
@@ -25005,12 +25035,77 @@ exports.awsAuthMiddlewareOptions = {
 };
 const getAwsAuthPlugin = (options) => ({
     applyToStack: (clientStack) => {
-        clientStack.addRelativeTo(awsAuthMiddleware(options), exports.awsAuthMiddlewareOptions);
+        clientStack.addRelativeTo(exports.awsAuthMiddleware(options), exports.awsAuthMiddlewareOptions);
     },
 });
 exports.getAwsAuthPlugin = getAwsAuthPlugin;
 exports.getSigV4AuthPlugin = exports.getAwsAuthPlugin;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWlkZGxld2FyZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9taWRkbGV3YXJlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLDBEQUFxRDtBQWFyRCxNQUFNLGFBQWEsR0FBRyxDQUFDLGFBQXFCLEVBQUUsaUJBQXlCLEVBQUUsRUFBRSxDQUN6RSxJQUFJLENBQUMsR0FBRyxDQUFDLG9CQUFvQixDQUFDLGlCQUFpQixDQUFDLENBQUMsT0FBTyxFQUFFLEdBQUcsYUFBYSxDQUFDLElBQUksTUFBTSxDQUFDO0FBRXhGLE1BQU0sb0JBQW9CLEdBQUcsQ0FBQyxpQkFBeUIsRUFBRSxFQUFFLENBQUMsSUFBSSxJQUFJLENBQUMsSUFBSSxDQUFDLEdBQUcsRUFBRSxHQUFHLGlCQUFpQixDQUFDLENBQUM7QUFFckcsU0FBZ0IsaUJBQWlCLENBQy9CLE9BQThCO0lBRTlCLE9BQU8sQ0FBQyxJQUFvQyxFQUFFLE9BQWdDLEVBQWtDLEVBQUUsQ0FDaEgsS0FBSyxXQUFXLElBQXFDO1FBQ25ELElBQUksQ0FBQywyQkFBVyxDQUFDLFVBQVUsQ0FBQyxJQUFJLENBQUMsT0FBTyxDQUFDO1lBQUUsT0FBTyxJQUFJLENBQUMsSUFBSSxDQUFDLENBQUM7UUFDN0QsTUFBTSxNQUFNLEdBQUcsT0FBTyxPQUFPLENBQUMsTUFBTSxLQUFLLFVBQVUsQ0FBQyxDQUFDLENBQUMsTUFBTSxPQUFPLENBQUMsTUFBTSxFQUFFLENBQUMsQ0FBQyxDQUFDLE9BQU8sQ0FBQyxNQUFNLENBQUM7UUFDOUYsTUFBTSxNQUFNLEdBQUcsTUFBTSxJQUFJLENBQUM7WUFDeEIsR0FBRyxJQUFJO1lBQ1AsT0FBTyxFQUFFLE1BQU0sTUFBTSxDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsT0FBTyxFQUFFO2dCQUN2QyxXQUFXLEVBQUUsSUFBSSxJQUFJLENBQUMsSUFBSSxDQUFDLEdBQUcsRUFBRSxHQUFHLE9BQU8sQ0FBQyxpQkFBaUIsQ0FBQztnQkFDN0QsYUFBYSxFQUFFLE9BQU8sQ0FBQyxnQkFBZ0IsQ0FBQztnQkFDeEMsY0FBYyxFQUFFLE9BQU8sQ0FBQyxpQkFBaUIsQ0FBQzthQUMzQyxDQUFDO1NBQ0gsQ0FBQyxDQUFDO1FBRUgsTUFBTSxFQUFFLE9BQU8sRUFBRSxHQUFHLE1BQU0sQ0FBQyxRQUFlLENBQUM7UUFDM0MsTUFBTSxVQUFVLEdBQUcsT0FBTyxJQUFJLENBQUMsT0FBTyxDQUFDLElBQUksSUFBSSxPQUFPLENBQUMsSUFBSSxDQUFDLENBQUM7UUFDN0QsSUFBSSxVQUFVLEVBQUU7WUFDZCxNQUFNLFVBQVUsR0FBRyxJQUFJLENBQUMsS0FBSyxDQUFDLFVBQVUsQ0FBQyxDQUFDO1lBQzFDLElBQUksYUFBYSxDQUFDLFVBQVUsRUFBRSxPQUFPLENBQUMsaUJBQWlCLENBQUMsRUFBRTtnQkFDeEQsT0FBTyxDQUFDLGlCQUFpQixHQUFHLFVBQVUsR0FBRyxJQUFJLENBQUMsR0FBRyxFQUFFLENBQUM7YUFDckQ7U0FDRjtRQUVELE9BQU8sTUFBTSxDQUFDO0lBQ2hCLENBQUMsQ0FBQztBQUNOLENBQUM7QUEzQkQsOENBMkJDO0FBRVksUUFBQSx3QkFBd0IsR0FBOEI7SUFDakUsSUFBSSxFQUFFLG1CQUFtQjtJQUN6QixJQUFJLEVBQUUsQ0FBQyxXQUFXLEVBQUUsU0FBUyxDQUFDO0lBQzlCLFFBQVEsRUFBRSxPQUFPO0lBQ2pCLFlBQVksRUFBRSxpQkFBaUI7SUFDL0IsUUFBUSxFQUFFLElBQUk7Q0FDZixDQUFDO0FBRUssTUFBTSxnQkFBZ0IsR0FBRyxDQUFDLE9BQThCLEVBQXVCLEVBQUUsQ0FBQyxDQUFDO0lBQ3hGLFlBQVksRUFBRSxDQUFDLFdBQVcsRUFBRSxFQUFFO1FBQzVCLFdBQVcsQ0FBQyxhQUFhLENBQUMsaUJBQWlCLENBQUMsT0FBTyxDQUFDLEVBQUUsZ0NBQXdCLENBQUMsQ0FBQztJQUNsRixDQUFDO0NBQ0YsQ0FBQyxDQUFDO0FBSlUsUUFBQSxnQkFBZ0Isb0JBSTFCO0FBRVUsUUFBQSxrQkFBa0IsR0FBRyx3QkFBZ0IsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEh0dHBSZXF1ZXN0IH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3RvY29sLWh0dHBcIjtcbmltcG9ydCB7XG4gIEZpbmFsaXplSGFuZGxlcixcbiAgRmluYWxpemVIYW5kbGVyQXJndW1lbnRzLFxuICBGaW5hbGl6ZUhhbmRsZXJPdXRwdXQsXG4gIEZpbmFsaXplUmVxdWVzdE1pZGRsZXdhcmUsXG4gIEhhbmRsZXJFeGVjdXRpb25Db250ZXh0LFxuICBQbHVnZ2FibGUsXG4gIFJlbGF0aXZlTWlkZGxld2FyZU9wdGlvbnMsXG59IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5pbXBvcnQgeyBBd3NBdXRoUmVzb2x2ZWRDb25maWcgfSBmcm9tIFwiLi9jb25maWd1cmF0aW9uc1wiO1xuXG5jb25zdCBpc0Nsb2NrU2tld2VkID0gKG5ld1NlcnZlclRpbWU6IG51bWJlciwgc3lzdGVtQ2xvY2tPZmZzZXQ6IG51bWJlcikgPT5cbiAgTWF0aC5hYnMoZ2V0U2tld0NvcnJlY3RlZERhdGUoc3lzdGVtQ2xvY2tPZmZzZXQpLmdldFRpbWUoKSAtIG5ld1NlcnZlclRpbWUpID49IDMwMDAwMDtcblxuY29uc3QgZ2V0U2tld0NvcnJlY3RlZERhdGUgPSAoc3lzdGVtQ2xvY2tPZmZzZXQ6IG51bWJlcikgPT4gbmV3IERhdGUoRGF0ZS5ub3coKSArIHN5c3RlbUNsb2NrT2Zmc2V0KTtcblxuZXhwb3J0IGZ1bmN0aW9uIGF3c0F1dGhNaWRkbGV3YXJlPElucHV0IGV4dGVuZHMgb2JqZWN0LCBPdXRwdXQgZXh0ZW5kcyBvYmplY3Q+KFxuICBvcHRpb25zOiBBd3NBdXRoUmVzb2x2ZWRDb25maWdcbik6IEZpbmFsaXplUmVxdWVzdE1pZGRsZXdhcmU8SW5wdXQsIE91dHB1dD4ge1xuICByZXR1cm4gKG5leHQ6IEZpbmFsaXplSGFuZGxlcjxJbnB1dCwgT3V0cHV0PiwgY29udGV4dDogSGFuZGxlckV4ZWN1dGlvbkNvbnRleHQpOiBGaW5hbGl6ZUhhbmRsZXI8SW5wdXQsIE91dHB1dD4gPT5cbiAgICBhc3luYyBmdW5jdGlvbiAoYXJnczogRmluYWxpemVIYW5kbGVyQXJndW1lbnRzPElucHV0Pik6IFByb21pc2U8RmluYWxpemVIYW5kbGVyT3V0cHV0PE91dHB1dD4+IHtcbiAgICAgIGlmICghSHR0cFJlcXVlc3QuaXNJbnN0YW5jZShhcmdzLnJlcXVlc3QpKSByZXR1cm4gbmV4dChhcmdzKTtcbiAgICAgIGNvbnN0IHNpZ25lciA9IHR5cGVvZiBvcHRpb25zLnNpZ25lciA9PT0gXCJmdW5jdGlvblwiID8gYXdhaXQgb3B0aW9ucy5zaWduZXIoKSA6IG9wdGlvbnMuc2lnbmVyO1xuICAgICAgY29uc3Qgb3V0cHV0ID0gYXdhaXQgbmV4dCh7XG4gICAgICAgIC4uLmFyZ3MsXG4gICAgICAgIHJlcXVlc3Q6IGF3YWl0IHNpZ25lci5zaWduKGFyZ3MucmVxdWVzdCwge1xuICAgICAgICAgIHNpZ25pbmdEYXRlOiBuZXcgRGF0ZShEYXRlLm5vdygpICsgb3B0aW9ucy5zeXN0ZW1DbG9ja09mZnNldCksXG4gICAgICAgICAgc2lnbmluZ1JlZ2lvbjogY29udGV4dFtcInNpZ25pbmdfcmVnaW9uXCJdLFxuICAgICAgICAgIHNpZ25pbmdTZXJ2aWNlOiBjb250ZXh0W1wic2lnbmluZ19zZXJ2aWNlXCJdLFxuICAgICAgICB9KSxcbiAgICAgIH0pO1xuXG4gICAgICBjb25zdCB7IGhlYWRlcnMgfSA9IG91dHB1dC5yZXNwb25zZSBhcyBhbnk7XG4gICAgICBjb25zdCBkYXRlSGVhZGVyID0gaGVhZGVycyAmJiAoaGVhZGVycy5kYXRlIHx8IGhlYWRlcnMuRGF0ZSk7XG4gICAgICBpZiAoZGF0ZUhlYWRlcikge1xuICAgICAgICBjb25zdCBzZXJ2ZXJUaW1lID0gRGF0ZS5wYXJzZShkYXRlSGVhZGVyKTtcbiAgICAgICAgaWYgKGlzQ2xvY2tTa2V3ZWQoc2VydmVyVGltZSwgb3B0aW9ucy5zeXN0ZW1DbG9ja09mZnNldCkpIHtcbiAgICAgICAgICBvcHRpb25zLnN5c3RlbUNsb2NrT2Zmc2V0ID0gc2VydmVyVGltZSAtIERhdGUubm93KCk7XG4gICAgICAgIH1cbiAgICAgIH1cblxuICAgICAgcmV0dXJuIG91dHB1dDtcbiAgICB9O1xufVxuXG5leHBvcnQgY29uc3QgYXdzQXV0aE1pZGRsZXdhcmVPcHRpb25zOiBSZWxhdGl2ZU1pZGRsZXdhcmVPcHRpb25zID0ge1xuICBuYW1lOiBcImF3c0F1dGhNaWRkbGV3YXJlXCIsXG4gIHRhZ3M6IFtcIlNJR05BVFVSRVwiLCBcIkFXU0FVVEhcIl0sXG4gIHJlbGF0aW9uOiBcImFmdGVyXCIsXG4gIHRvTWlkZGxld2FyZTogXCJyZXRyeU1pZGRsZXdhcmVcIixcbiAgb3ZlcnJpZGU6IHRydWUsXG59O1xuXG5leHBvcnQgY29uc3QgZ2V0QXdzQXV0aFBsdWdpbiA9IChvcHRpb25zOiBBd3NBdXRoUmVzb2x2ZWRDb25maWcpOiBQbHVnZ2FibGU8YW55LCBhbnk+ID0+ICh7XG4gIGFwcGx5VG9TdGFjazogKGNsaWVudFN0YWNrKSA9PiB7XG4gICAgY2xpZW50U3RhY2suYWRkUmVsYXRpdmVUbyhhd3NBdXRoTWlkZGxld2FyZShvcHRpb25zKSwgYXdzQXV0aE1pZGRsZXdhcmVPcHRpb25zKTtcbiAgfSxcbn0pO1xuXG5leHBvcnQgY29uc3QgZ2V0U2lnVjRBdXRoUGx1Z2luID0gZ2V0QXdzQXV0aFBsdWdpbjtcbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWlkZGxld2FyZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9taWRkbGV3YXJlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLDBEQUFxRDtBQVlyRCx1RUFBb0U7QUFDcEUscUZBQWtGO0FBRTNFLE1BQU0saUJBQWlCLEdBQzVCLENBQ0UsT0FBOEIsRUFDWSxFQUFFLENBQzlDLENBQUMsSUFBb0MsRUFBRSxPQUFnQyxFQUFrQyxFQUFFLENBQ3pHLEtBQUssV0FBVyxJQUFxQztJQUNuRCxJQUFJLENBQUMsMkJBQVcsQ0FBQyxVQUFVLENBQUMsSUFBSSxDQUFDLE9BQU8sQ0FBQztRQUFFLE9BQU8sSUFBSSxDQUFDLElBQUksQ0FBQyxDQUFDO0lBQzdELE1BQU0sTUFBTSxHQUFHLE1BQU0sT0FBTyxDQUFDLE1BQU0sRUFBRSxDQUFDO0lBQ3RDLE1BQU0sTUFBTSxHQUFHLE1BQU0sSUFBSSxDQUFDO1FBQ3hCLEdBQUcsSUFBSTtRQUNQLE9BQU8sRUFBRSxNQUFNLE1BQU0sQ0FBQyxJQUFJLENBQUMsSUFBSSxDQUFDLE9BQU8sRUFBRTtZQUN2QyxXQUFXLEVBQUUsMkNBQW9CLENBQUMsT0FBTyxDQUFDLGlCQUFpQixDQUFDO1lBQzVELGFBQWEsRUFBRSxPQUFPLENBQUMsZ0JBQWdCLENBQUM7WUFDeEMsY0FBYyxFQUFFLE9BQU8sQ0FBQyxpQkFBaUIsQ0FBQztTQUMzQyxDQUFDO0tBQ0gsQ0FBQyxDQUFDLEtBQUssQ0FBQyxDQUFDLEtBQUssRUFBRSxFQUFFO1FBQ2pCLElBQUksS0FBSyxDQUFDLFVBQVUsRUFBRTtZQUNwQixPQUFPLENBQUMsaUJBQWlCLEdBQUcseURBQTJCLENBQUMsS0FBSyxDQUFDLFVBQVUsRUFBRSxPQUFPLENBQUMsaUJBQWlCLENBQUMsQ0FBQztTQUN0RztRQUNELE1BQU0sS0FBSyxDQUFDO0lBQ2QsQ0FBQyxDQUFDLENBQUM7SUFFSCxNQUFNLEVBQUUsT0FBTyxFQUFFLEdBQUcsTUFBTSxDQUFDLFFBQWUsQ0FBQztJQUMzQyxNQUFNLFVBQVUsR0FBRyxPQUFPLElBQUksQ0FBQyxPQUFPLENBQUMsSUFBSSxJQUFJLE9BQU8sQ0FBQyxJQUFJLENBQUMsQ0FBQztJQUM3RCxJQUFJLFVBQVUsRUFBRTtRQUNkLE9BQU8sQ0FBQyxpQkFBaUIsR0FBRyx5REFBMkIsQ0FBQyxVQUFVLEVBQUUsT0FBTyxDQUFDLGlCQUFpQixDQUFDLENBQUM7S0FDaEc7SUFFRCxPQUFPLE1BQU0sQ0FBQztBQUNoQixDQUFDLENBQUM7QUE3Qk8sUUFBQSxpQkFBaUIscUJBNkJ4QjtBQUVPLFFBQUEsd0JBQXdCLEdBQThCO0lBQ2pFLElBQUksRUFBRSxtQkFBbUI7SUFDekIsSUFBSSxFQUFFLENBQUMsV0FBVyxFQUFFLFNBQVMsQ0FBQztJQUM5QixRQUFRLEVBQUUsT0FBTztJQUNqQixZQUFZLEVBQUUsaUJBQWlCO0lBQy9CLFFBQVEsRUFBRSxJQUFJO0NBQ2YsQ0FBQztBQUVLLE1BQU0sZ0JBQWdCLEdBQUcsQ0FBQyxPQUE4QixFQUF1QixFQUFFLENBQUMsQ0FBQztJQUN4RixZQUFZLEVBQUUsQ0FBQyxXQUFXLEVBQUUsRUFBRTtRQUM1QixXQUFXLENBQUMsYUFBYSxDQUFDLHlCQUFpQixDQUFDLE9BQU8sQ0FBQyxFQUFFLGdDQUF3QixDQUFDLENBQUM7SUFDbEYsQ0FBQztDQUNGLENBQUMsQ0FBQztBQUpVLFFBQUEsZ0JBQWdCLG9CQUkxQjtBQUVVLFFBQUEsa0JBQWtCLEdBQUcsd0JBQWdCLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBIdHRwUmVxdWVzdCB9IGZyb20gXCJAYXdzLXNkay9wcm90b2NvbC1odHRwXCI7XG5pbXBvcnQge1xuICBGaW5hbGl6ZUhhbmRsZXIsXG4gIEZpbmFsaXplSGFuZGxlckFyZ3VtZW50cyxcbiAgRmluYWxpemVIYW5kbGVyT3V0cHV0LFxuICBGaW5hbGl6ZVJlcXVlc3RNaWRkbGV3YXJlLFxuICBIYW5kbGVyRXhlY3V0aW9uQ29udGV4dCxcbiAgUGx1Z2dhYmxlLFxuICBSZWxhdGl2ZU1pZGRsZXdhcmVPcHRpb25zLFxufSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuaW1wb3J0IHsgQXdzQXV0aFJlc29sdmVkQ29uZmlnIH0gZnJvbSBcIi4vY29uZmlndXJhdGlvbnNcIjtcbmltcG9ydCB7IGdldFNrZXdDb3JyZWN0ZWREYXRlIH0gZnJvbSBcIi4vdXRpbHMvZ2V0U2tld0NvcnJlY3RlZERhdGVcIjtcbmltcG9ydCB7IGdldFVwZGF0ZWRTeXN0ZW1DbG9ja09mZnNldCB9IGZyb20gXCIuL3V0aWxzL2dldFVwZGF0ZWRTeXN0ZW1DbG9ja09mZnNldFwiO1xuXG5leHBvcnQgY29uc3QgYXdzQXV0aE1pZGRsZXdhcmUgPVxuICA8SW5wdXQgZXh0ZW5kcyBvYmplY3QsIE91dHB1dCBleHRlbmRzIG9iamVjdD4oXG4gICAgb3B0aW9uczogQXdzQXV0aFJlc29sdmVkQ29uZmlnXG4gICk6IEZpbmFsaXplUmVxdWVzdE1pZGRsZXdhcmU8SW5wdXQsIE91dHB1dD4gPT5cbiAgKG5leHQ6IEZpbmFsaXplSGFuZGxlcjxJbnB1dCwgT3V0cHV0PiwgY29udGV4dDogSGFuZGxlckV4ZWN1dGlvbkNvbnRleHQpOiBGaW5hbGl6ZUhhbmRsZXI8SW5wdXQsIE91dHB1dD4gPT5cbiAgICBhc3luYyBmdW5jdGlvbiAoYXJnczogRmluYWxpemVIYW5kbGVyQXJndW1lbnRzPElucHV0Pik6IFByb21pc2U8RmluYWxpemVIYW5kbGVyT3V0cHV0PE91dHB1dD4+IHtcbiAgICAgIGlmICghSHR0cFJlcXVlc3QuaXNJbnN0YW5jZShhcmdzLnJlcXVlc3QpKSByZXR1cm4gbmV4dChhcmdzKTtcbiAgICAgIGNvbnN0IHNpZ25lciA9IGF3YWl0IG9wdGlvbnMuc2lnbmVyKCk7XG4gICAgICBjb25zdCBvdXRwdXQgPSBhd2FpdCBuZXh0KHtcbiAgICAgICAgLi4uYXJncyxcbiAgICAgICAgcmVxdWVzdDogYXdhaXQgc2lnbmVyLnNpZ24oYXJncy5yZXF1ZXN0LCB7XG4gICAgICAgICAgc2lnbmluZ0RhdGU6IGdldFNrZXdDb3JyZWN0ZWREYXRlKG9wdGlvbnMuc3lzdGVtQ2xvY2tPZmZzZXQpLFxuICAgICAgICAgIHNpZ25pbmdSZWdpb246IGNvbnRleHRbXCJzaWduaW5nX3JlZ2lvblwiXSxcbiAgICAgICAgICBzaWduaW5nU2VydmljZTogY29udGV4dFtcInNpZ25pbmdfc2VydmljZVwiXSxcbiAgICAgICAgfSksXG4gICAgICB9KS5jYXRjaCgoZXJyb3IpID0+IHtcbiAgICAgICAgaWYgKGVycm9yLlNlcnZlclRpbWUpIHtcbiAgICAgICAgICBvcHRpb25zLnN5c3RlbUNsb2NrT2Zmc2V0ID0gZ2V0VXBkYXRlZFN5c3RlbUNsb2NrT2Zmc2V0KGVycm9yLlNlcnZlclRpbWUsIG9wdGlvbnMuc3lzdGVtQ2xvY2tPZmZzZXQpO1xuICAgICAgICB9XG4gICAgICAgIHRocm93IGVycm9yO1xuICAgICAgfSk7XG5cbiAgICAgIGNvbnN0IHsgaGVhZGVycyB9ID0gb3V0cHV0LnJlc3BvbnNlIGFzIGFueTtcbiAgICAgIGNvbnN0IGRhdGVIZWFkZXIgPSBoZWFkZXJzICYmIChoZWFkZXJzLmRhdGUgfHwgaGVhZGVycy5EYXRlKTtcbiAgICAgIGlmIChkYXRlSGVhZGVyKSB7XG4gICAgICAgIG9wdGlvbnMuc3lzdGVtQ2xvY2tPZmZzZXQgPSBnZXRVcGRhdGVkU3lzdGVtQ2xvY2tPZmZzZXQoZGF0ZUhlYWRlciwgb3B0aW9ucy5zeXN0ZW1DbG9ja09mZnNldCk7XG4gICAgICB9XG5cbiAgICAgIHJldHVybiBvdXRwdXQ7XG4gICAgfTtcblxuZXhwb3J0IGNvbnN0IGF3c0F1dGhNaWRkbGV3YXJlT3B0aW9uczogUmVsYXRpdmVNaWRkbGV3YXJlT3B0aW9ucyA9IHtcbiAgbmFtZTogXCJhd3NBdXRoTWlkZGxld2FyZVwiLFxuICB0YWdzOiBbXCJTSUdOQVRVUkVcIiwgXCJBV1NBVVRIXCJdLFxuICByZWxhdGlvbjogXCJhZnRlclwiLFxuICB0b01pZGRsZXdhcmU6IFwicmV0cnlNaWRkbGV3YXJlXCIsXG4gIG92ZXJyaWRlOiB0cnVlLFxufTtcblxuZXhwb3J0IGNvbnN0IGdldEF3c0F1dGhQbHVnaW4gPSAob3B0aW9uczogQXdzQXV0aFJlc29sdmVkQ29uZmlnKTogUGx1Z2dhYmxlPGFueSwgYW55PiA9PiAoe1xuICBhcHBseVRvU3RhY2s6IChjbGllbnRTdGFjaykgPT4ge1xuICAgIGNsaWVudFN0YWNrLmFkZFJlbGF0aXZlVG8oYXdzQXV0aE1pZGRsZXdhcmUob3B0aW9ucyksIGF3c0F1dGhNaWRkbGV3YXJlT3B0aW9ucyk7XG4gIH0sXG59KTtcblxuZXhwb3J0IGNvbnN0IGdldFNpZ1Y0QXV0aFBsdWdpbiA9IGdldEF3c0F1dGhQbHVnaW47XG4iXX0=
+
+/***/ }),
+
+/***/ 7322:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getSkewCorrectedDate = void 0;
+/**
+ * Returns a date that is corrected for clock skew.
+ *
+ * @param systemClockOffset The offset of the system clock in milliseconds.
+ */
+const getSkewCorrectedDate = (systemClockOffset) => new Date(Date.now() + systemClockOffset);
+exports.getSkewCorrectedDate = getSkewCorrectedDate;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZ2V0U2tld0NvcnJlY3RlZERhdGUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvdXRpbHMvZ2V0U2tld0NvcnJlY3RlZERhdGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUE7Ozs7R0FJRztBQUNJLE1BQU0sb0JBQW9CLEdBQUcsQ0FBQyxpQkFBeUIsRUFBRSxFQUFFLENBQUMsSUFBSSxJQUFJLENBQUMsSUFBSSxDQUFDLEdBQUcsRUFBRSxHQUFHLGlCQUFpQixDQUFDLENBQUM7QUFBL0YsUUFBQSxvQkFBb0Isd0JBQTJFIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBSZXR1cm5zIGEgZGF0ZSB0aGF0IGlzIGNvcnJlY3RlZCBmb3IgY2xvY2sgc2tldy5cbiAqXG4gKiBAcGFyYW0gc3lzdGVtQ2xvY2tPZmZzZXQgVGhlIG9mZnNldCBvZiB0aGUgc3lzdGVtIGNsb2NrIGluIG1pbGxpc2Vjb25kcy5cbiAqL1xuZXhwb3J0IGNvbnN0IGdldFNrZXdDb3JyZWN0ZWREYXRlID0gKHN5c3RlbUNsb2NrT2Zmc2V0OiBudW1iZXIpID0+IG5ldyBEYXRlKERhdGUubm93KCkgKyBzeXN0ZW1DbG9ja09mZnNldCk7XG4iXX0=
+
+/***/ }),
+
+/***/ 1636:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getUpdatedSystemClockOffset = void 0;
+const isClockSkewed_1 = __nccwpck_require__(9060);
+/**
+ * If clock is skewed, it returns the difference between serverTime and current time.
+ * If clock is not skewed, it returns currentSystemClockOffset.
+ *
+ * @param clockTime The string value of the server time.
+ * @param currentSystemClockOffset The current system clock offset.
+ */
+const getUpdatedSystemClockOffset = (clockTime, currentSystemClockOffset) => {
+    const clockTimeInMs = Date.parse(clockTime);
+    if (isClockSkewed_1.isClockSkewed(clockTimeInMs, currentSystemClockOffset)) {
+        return clockTimeInMs - Date.now();
+    }
+    return currentSystemClockOffset;
+};
+exports.getUpdatedSystemClockOffset = getUpdatedSystemClockOffset;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZ2V0VXBkYXRlZFN5c3RlbUNsb2NrT2Zmc2V0LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vc3JjL3V0aWxzL2dldFVwZGF0ZWRTeXN0ZW1DbG9ja09mZnNldC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSxtREFBZ0Q7QUFFaEQ7Ozs7OztHQU1HO0FBQ0ksTUFBTSwyQkFBMkIsR0FBRyxDQUFDLFNBQWlCLEVBQUUsd0JBQWdDLEVBQVUsRUFBRTtJQUN6RyxNQUFNLGFBQWEsR0FBRyxJQUFJLENBQUMsS0FBSyxDQUFDLFNBQVMsQ0FBQyxDQUFDO0lBQzVDLElBQUksNkJBQWEsQ0FBQyxhQUFhLEVBQUUsd0JBQXdCLENBQUMsRUFBRTtRQUMxRCxPQUFPLGFBQWEsR0FBRyxJQUFJLENBQUMsR0FBRyxFQUFFLENBQUM7S0FDbkM7SUFDRCxPQUFPLHdCQUF3QixDQUFDO0FBQ2xDLENBQUMsQ0FBQztBQU5XLFFBQUEsMkJBQTJCLCtCQU10QyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGlzQ2xvY2tTa2V3ZWQgfSBmcm9tIFwiLi9pc0Nsb2NrU2tld2VkXCI7XG5cbi8qKlxuICogSWYgY2xvY2sgaXMgc2tld2VkLCBpdCByZXR1cm5zIHRoZSBkaWZmZXJlbmNlIGJldHdlZW4gc2VydmVyVGltZSBhbmQgY3VycmVudCB0aW1lLlxuICogSWYgY2xvY2sgaXMgbm90IHNrZXdlZCwgaXQgcmV0dXJucyBjdXJyZW50U3lzdGVtQ2xvY2tPZmZzZXQuXG4gKlxuICogQHBhcmFtIGNsb2NrVGltZSBUaGUgc3RyaW5nIHZhbHVlIG9mIHRoZSBzZXJ2ZXIgdGltZS5cbiAqIEBwYXJhbSBjdXJyZW50U3lzdGVtQ2xvY2tPZmZzZXQgVGhlIGN1cnJlbnQgc3lzdGVtIGNsb2NrIG9mZnNldC5cbiAqL1xuZXhwb3J0IGNvbnN0IGdldFVwZGF0ZWRTeXN0ZW1DbG9ja09mZnNldCA9IChjbG9ja1RpbWU6IHN0cmluZywgY3VycmVudFN5c3RlbUNsb2NrT2Zmc2V0OiBudW1iZXIpOiBudW1iZXIgPT4ge1xuICBjb25zdCBjbG9ja1RpbWVJbk1zID0gRGF0ZS5wYXJzZShjbG9ja1RpbWUpO1xuICBpZiAoaXNDbG9ja1NrZXdlZChjbG9ja1RpbWVJbk1zLCBjdXJyZW50U3lzdGVtQ2xvY2tPZmZzZXQpKSB7XG4gICAgcmV0dXJuIGNsb2NrVGltZUluTXMgLSBEYXRlLm5vdygpO1xuICB9XG4gIHJldHVybiBjdXJyZW50U3lzdGVtQ2xvY2tPZmZzZXQ7XG59O1xuIl19
+
+/***/ }),
+
+/***/ 9060:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.isClockSkewed = void 0;
+const getSkewCorrectedDate_1 = __nccwpck_require__(7322);
+/**
+ * Checks if the provided date is within the skew window of 300000ms.
+ *
+ * @param clockTime - The time to check for skew in milliseconds.
+ * @param systemClockOffset - The offset of the system clock in milliseconds.
+ */
+const isClockSkewed = (clockTime, systemClockOffset) => Math.abs(getSkewCorrectedDate_1.getSkewCorrectedDate(systemClockOffset).getTime() - clockTime) >= 300000;
+exports.isClockSkewed = isClockSkewed;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaXNDbG9ja1NrZXdlZC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy91dGlscy9pc0Nsb2NrU2tld2VkLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLGlFQUE4RDtBQUU5RDs7Ozs7R0FLRztBQUNJLE1BQU0sYUFBYSxHQUFHLENBQUMsU0FBaUIsRUFBRSxpQkFBeUIsRUFBRSxFQUFFLENBQzVFLElBQUksQ0FBQyxHQUFHLENBQUMsMkNBQW9CLENBQUMsaUJBQWlCLENBQUMsQ0FBQyxPQUFPLEVBQUUsR0FBRyxTQUFTLENBQUMsSUFBSSxNQUFNLENBQUM7QUFEdkUsUUFBQSxhQUFhLGlCQUMwRCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGdldFNrZXdDb3JyZWN0ZWREYXRlIH0gZnJvbSBcIi4vZ2V0U2tld0NvcnJlY3RlZERhdGVcIjtcblxuLyoqXG4gKiBDaGVja3MgaWYgdGhlIHByb3ZpZGVkIGRhdGUgaXMgd2l0aGluIHRoZSBza2V3IHdpbmRvdyBvZiAzMDAwMDBtcy5cbiAqXG4gKiBAcGFyYW0gY2xvY2tUaW1lIC0gVGhlIHRpbWUgdG8gY2hlY2sgZm9yIHNrZXcgaW4gbWlsbGlzZWNvbmRzLlxuICogQHBhcmFtIHN5c3RlbUNsb2NrT2Zmc2V0IC0gVGhlIG9mZnNldCBvZiB0aGUgc3lzdGVtIGNsb2NrIGluIG1pbGxpc2Vjb25kcy5cbiAqL1xuZXhwb3J0IGNvbnN0IGlzQ2xvY2tTa2V3ZWQgPSAoY2xvY2tUaW1lOiBudW1iZXIsIHN5c3RlbUNsb2NrT2Zmc2V0OiBudW1iZXIpID0+XG4gIE1hdGguYWJzKGdldFNrZXdDb3JyZWN0ZWREYXRlKHN5c3RlbUNsb2NrT2Zmc2V0KS5nZXRUaW1lKCkgLSBjbG9ja1RpbWUpID49IDMwMDAwMDtcbiJdfQ==
 
 /***/ }),
 
@@ -26082,40 +26177,39 @@ tslib_1.__exportStar(__nccwpck_require__(791), exports);
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.memoize = void 0;
 const memoize = (provider, isExpired, requiresRefresh) => {
-    let result;
+    let resolved;
     let hasResult;
     if (isExpired === undefined) {
         // This is a static memoization; no need to incorporate refreshing
-        return () => {
+        return async () => {
             if (!hasResult) {
-                result = provider();
+                resolved = await provider();
                 hasResult = true;
             }
-            return result;
+            return resolved;
         };
     }
     let isConstant = false;
     return async () => {
         if (!hasResult) {
-            result = provider();
+            resolved = await provider();
             hasResult = true;
         }
         if (isConstant) {
-            return result;
+            return resolved;
         }
-        const resolved = await result;
         if (requiresRefresh && !requiresRefresh(resolved)) {
             isConstant = true;
             return resolved;
         }
         if (isExpired(resolved)) {
-            return (result = provider());
+            return (resolved = await provider());
         }
         return resolved;
     };
 };
 exports.memoize = memoize;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWVtb2l6ZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9tZW1vaXplLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQTBDTyxNQUFNLE9BQU8sR0FBb0IsQ0FDdEMsUUFBcUIsRUFDckIsU0FBb0MsRUFDcEMsZUFBMEMsRUFDN0IsRUFBRTtJQUNmLElBQUksTUFBVyxDQUFDO0lBQ2hCLElBQUksU0FBa0IsQ0FBQztJQUN2QixJQUFJLFNBQVMsS0FBSyxTQUFTLEVBQUU7UUFDM0Isa0VBQWtFO1FBQ2xFLE9BQU8sR0FBRyxFQUFFO1lBQ1YsSUFBSSxDQUFDLFNBQVMsRUFBRTtnQkFDZCxNQUFNLEdBQUcsUUFBUSxFQUFFLENBQUM7Z0JBQ3BCLFNBQVMsR0FBRyxJQUFJLENBQUM7YUFDbEI7WUFDRCxPQUFPLE1BQU0sQ0FBQztRQUNoQixDQUFDLENBQUM7S0FDSDtJQUVELElBQUksVUFBVSxHQUFHLEtBQUssQ0FBQztJQUV2QixPQUFPLEtBQUssSUFBSSxFQUFFO1FBQ2hCLElBQUksQ0FBQyxTQUFTLEVBQUU7WUFDZCxNQUFNLEdBQUcsUUFBUSxFQUFFLENBQUM7WUFDcEIsU0FBUyxHQUFHLElBQUksQ0FBQztTQUNsQjtRQUNELElBQUksVUFBVSxFQUFFO1lBQ2QsT0FBTyxNQUFNLENBQUM7U0FDZjtRQUVELE1BQU0sUUFBUSxHQUFHLE1BQU0sTUFBTSxDQUFDO1FBQzlCLElBQUksZUFBZSxJQUFJLENBQUMsZUFBZSxDQUFDLFFBQVEsQ0FBQyxFQUFFO1lBQ2pELFVBQVUsR0FBRyxJQUFJLENBQUM7WUFDbEIsT0FBTyxRQUFRLENBQUM7U0FDakI7UUFDRCxJQUFJLFNBQVMsQ0FBQyxRQUFRLENBQUMsRUFBRTtZQUN2QixPQUFPLENBQUMsTUFBTSxHQUFHLFFBQVEsRUFBRSxDQUFDLENBQUM7U0FDOUI7UUFDRCxPQUFPLFFBQVEsQ0FBQztJQUNsQixDQUFDLENBQUM7QUFDSixDQUFDLENBQUM7QUF2Q1csUUFBQSxPQUFPLFdBdUNsQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFByb3ZpZGVyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmludGVyZmFjZSBNZW1vaXplT3ZlcmxvYWQge1xuICAvKipcbiAgICpcbiAgICogRGVjb3JhdGVzIGEgcHJvdmlkZXIgZnVuY3Rpb24gd2l0aCBlaXRoZXIgc3RhdGljIG1lbW9pemF0aW9uLlxuICAgKlxuICAgKiBUbyBjcmVhdGUgYSBzdGF0aWNhbGx5IG1lbW9pemVkIHByb3ZpZGVyLCBzdXBwbHkgYSBwcm92aWRlciBhcyB0aGUgb25seVxuICAgKiBhcmd1bWVudCB0byB0aGlzIGZ1bmN0aW9uLiBUaGUgcHJvdmlkZXIgd2lsbCBiZSBpbnZva2VkIG9uY2UsIGFuZCBhbGxcbiAgICogaW52b2NhdGlvbnMgb2YgdGhlIHByb3ZpZGVyIHJldHVybmVkIGJ5IGBtZW1vaXplYCB3aWxsIHJldHVybiB0aGUgc2FtZVxuICAgKiBwcm9taXNlIG9iamVjdC5cbiAgICpcbiAgICogQHBhcmFtIHByb3ZpZGVyIFRoZSBwcm92aWRlciB3aG9zZSByZXN1bHQgc2hvdWxkIGJlIGNhY2hlZCBpbmRlZmluaXRlbHkuXG4gICAqL1xuICA8VD4ocHJvdmlkZXI6IFByb3ZpZGVyPFQ+KTogUHJvdmlkZXI8VD47XG5cbiAgLyoqXG4gICAqIERlY29yYXRlcyBhIHByb3ZpZGVyIGZ1bmN0aW9uIHdpdGggcmVmcmVzaGluZyBtZW1vaXphdGlvbi5cbiAgICpcbiAgICogQHBhcmFtIHByb3ZpZGVyICAgICAgICAgIFRoZSBwcm92aWRlciB3aG9zZSByZXN1bHQgc2hvdWxkIGJlIGNhY2hlZC5cbiAgICogQHBhcmFtIGlzRXhwaXJlZCAgICAgICAgIEEgZnVuY3Rpb24gdGhhdCB3aWxsIGV2YWx1YXRlIHRoZSByZXNvbHZlZCB2YWx1ZSBhbmRcbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIGRldGVybWluZSBpZiBpdCBpcyBleHBpcmVkLiBGb3IgZXhhbXBsZSwgd2hlblxuICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgbWVtb2l6aW5nIEFXUyBjcmVkZW50aWFsIHByb3ZpZGVycywgdGhpcyBmdW5jdGlvblxuICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgc2hvdWxkIHJldHVybiBgdHJ1ZWAgd2hlbiB0aGUgY3JlZGVudGlhbCdzXG4gICAqICAgICAgICAgICAgICAgICAgICAgICAgICBleHBpcmF0aW9uIGlzIGluIHRoZSBwYXN0IChvciB2ZXJ5IG5lYXIgZnV0dXJlKSBhbmRcbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIGBmYWxzZWAgb3RoZXJ3aXNlLlxuICAgKiBAcGFyYW0gcmVxdWlyZXNSZWZyZXNoICAgQSBmdW5jdGlvbiB0aGF0IHdpbGwgZXZhbHVhdGUgdGhlIHJlc29sdmVkIHZhbHVlIGFuZFxuICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgZGV0ZXJtaW5lIGlmIGl0IHJlcHJlc2VudHMgc3RhdGljIHZhbHVlIG9yIG9uZSB0aGF0XG4gICAqICAgICAgICAgICAgICAgICAgICAgICAgICB3aWxsIGV2ZW50dWFsbHkgbmVlZCB0byBiZSByZWZyZXNoZWQuIEZvciBleGFtcGxlLFxuICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgQVdTIGNyZWRlbnRpYWxzIHRoYXQgaGF2ZSBubyBkZWZpbmVkIGV4cGlyYXRpb24gd2lsbFxuICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgbmV2ZXIgbmVlZCB0byBiZSByZWZyZXNoZWQsIHNvIHRoaXMgZnVuY3Rpb24gd291bGRcbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIHJldHVybiBgdHJ1ZWAgaWYgdGhlIGNyZWRlbnRpYWxzIHJlc29sdmVkIGJ5IHRoZVxuICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgdW5kZXJseWluZyBwcm92aWRlciBoYWQgYW4gZXhwaXJhdGlvbiBhbmQgYGZhbHNlYFxuICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgb3RoZXJ3aXNlLlxuICAgKi9cbiAgPFQ+KFxuICAgIHByb3ZpZGVyOiBQcm92aWRlcjxUPixcbiAgICBpc0V4cGlyZWQ6IChyZXNvbHZlZDogVCkgPT4gYm9vbGVhbixcbiAgICByZXF1aXJlc1JlZnJlc2g/OiAocmVzb2x2ZWQ6IFQpID0+IGJvb2xlYW5cbiAgKTogUHJvdmlkZXI8VD47XG59XG5cbmV4cG9ydCBjb25zdCBtZW1vaXplOiBNZW1vaXplT3ZlcmxvYWQgPSA8VD4oXG4gIHByb3ZpZGVyOiBQcm92aWRlcjxUPixcbiAgaXNFeHBpcmVkPzogKHJlc29sdmVkOiBUKSA9PiBib29sZWFuLFxuICByZXF1aXJlc1JlZnJlc2g/OiAocmVzb2x2ZWQ6IFQpID0+IGJvb2xlYW5cbik6IFByb3ZpZGVyPFQ+ID0+IHtcbiAgbGV0IHJlc3VsdDogYW55O1xuICBsZXQgaGFzUmVzdWx0OiBib29sZWFuO1xuICBpZiAoaXNFeHBpcmVkID09PSB1bmRlZmluZWQpIHtcbiAgICAvLyBUaGlzIGlzIGEgc3RhdGljIG1lbW9pemF0aW9uOyBubyBuZWVkIHRvIGluY29ycG9yYXRlIHJlZnJlc2hpbmdcbiAgICByZXR1cm4gKCkgPT4ge1xuICAgICAgaWYgKCFoYXNSZXN1bHQpIHtcbiAgICAgICAgcmVzdWx0ID0gcHJvdmlkZXIoKTtcbiAgICAgICAgaGFzUmVzdWx0ID0gdHJ1ZTtcbiAgICAgIH1cbiAgICAgIHJldHVybiByZXN1bHQ7XG4gICAgfTtcbiAgfVxuXG4gIGxldCBpc0NvbnN0YW50ID0gZmFsc2U7XG5cbiAgcmV0dXJuIGFzeW5jICgpID0+IHtcbiAgICBpZiAoIWhhc1Jlc3VsdCkge1xuICAgICAgcmVzdWx0ID0gcHJvdmlkZXIoKTtcbiAgICAgIGhhc1Jlc3VsdCA9IHRydWU7XG4gICAgfVxuICAgIGlmIChpc0NvbnN0YW50KSB7XG4gICAgICByZXR1cm4gcmVzdWx0O1xuICAgIH1cblxuICAgIGNvbnN0IHJlc29sdmVkID0gYXdhaXQgcmVzdWx0O1xuICAgIGlmIChyZXF1aXJlc1JlZnJlc2ggJiYgIXJlcXVpcmVzUmVmcmVzaChyZXNvbHZlZCkpIHtcbiAgICAgIGlzQ29uc3RhbnQgPSB0cnVlO1xuICAgICAgcmV0dXJuIHJlc29sdmVkO1xuICAgIH1cbiAgICBpZiAoaXNFeHBpcmVkKHJlc29sdmVkKSkge1xuICAgICAgcmV0dXJuIChyZXN1bHQgPSBwcm92aWRlcigpKTtcbiAgICB9XG4gICAgcmV0dXJuIHJlc29sdmVkO1xuICB9O1xufTtcbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWVtb2l6ZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9tZW1vaXplLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQTBDTyxNQUFNLE9BQU8sR0FBb0IsQ0FDdEMsUUFBcUIsRUFDckIsU0FBb0MsRUFDcEMsZUFBMEMsRUFDN0IsRUFBRTtJQUNmLElBQUksUUFBYSxDQUFDO0lBQ2xCLElBQUksU0FBa0IsQ0FBQztJQUN2QixJQUFJLFNBQVMsS0FBSyxTQUFTLEVBQUU7UUFDM0Isa0VBQWtFO1FBQ2xFLE9BQU8sS0FBSyxJQUFJLEVBQUU7WUFDaEIsSUFBSSxDQUFDLFNBQVMsRUFBRTtnQkFDZCxRQUFRLEdBQUcsTUFBTSxRQUFRLEVBQUUsQ0FBQztnQkFDNUIsU0FBUyxHQUFHLElBQUksQ0FBQzthQUNsQjtZQUNELE9BQU8sUUFBUSxDQUFDO1FBQ2xCLENBQUMsQ0FBQztLQUNIO0lBRUQsSUFBSSxVQUFVLEdBQUcsS0FBSyxDQUFDO0lBRXZCLE9BQU8sS0FBSyxJQUFJLEVBQUU7UUFDaEIsSUFBSSxDQUFDLFNBQVMsRUFBRTtZQUNkLFFBQVEsR0FBRyxNQUFNLFFBQVEsRUFBRSxDQUFDO1lBQzVCLFNBQVMsR0FBRyxJQUFJLENBQUM7U0FDbEI7UUFDRCxJQUFJLFVBQVUsRUFBRTtZQUNkLE9BQU8sUUFBUSxDQUFDO1NBQ2pCO1FBRUQsSUFBSSxlQUFlLElBQUksQ0FBQyxlQUFlLENBQUMsUUFBUSxDQUFDLEVBQUU7WUFDakQsVUFBVSxHQUFHLElBQUksQ0FBQztZQUNsQixPQUFPLFFBQVEsQ0FBQztTQUNqQjtRQUNELElBQUksU0FBUyxDQUFDLFFBQVEsQ0FBQyxFQUFFO1lBQ3ZCLE9BQU8sQ0FBQyxRQUFRLEdBQUcsTUFBTSxRQUFRLEVBQUUsQ0FBQyxDQUFDO1NBQ3RDO1FBQ0QsT0FBTyxRQUFRLENBQUM7SUFDbEIsQ0FBQyxDQUFDO0FBQ0osQ0FBQyxDQUFDO0FBdENXLFFBQUEsT0FBTyxXQXNDbEIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBQcm92aWRlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5pbnRlcmZhY2UgTWVtb2l6ZU92ZXJsb2FkIHtcbiAgLyoqXG4gICAqXG4gICAqIERlY29yYXRlcyBhIHByb3ZpZGVyIGZ1bmN0aW9uIHdpdGggZWl0aGVyIHN0YXRpYyBtZW1vaXphdGlvbi5cbiAgICpcbiAgICogVG8gY3JlYXRlIGEgc3RhdGljYWxseSBtZW1vaXplZCBwcm92aWRlciwgc3VwcGx5IGEgcHJvdmlkZXIgYXMgdGhlIG9ubHlcbiAgICogYXJndW1lbnQgdG8gdGhpcyBmdW5jdGlvbi4gVGhlIHByb3ZpZGVyIHdpbGwgYmUgaW52b2tlZCBvbmNlLCBhbmQgYWxsXG4gICAqIGludm9jYXRpb25zIG9mIHRoZSBwcm92aWRlciByZXR1cm5lZCBieSBgbWVtb2l6ZWAgd2lsbCByZXR1cm4gdGhlIHNhbWVcbiAgICogcHJvbWlzZSBvYmplY3QuXG4gICAqXG4gICAqIEBwYXJhbSBwcm92aWRlciBUaGUgcHJvdmlkZXIgd2hvc2UgcmVzdWx0IHNob3VsZCBiZSBjYWNoZWQgaW5kZWZpbml0ZWx5LlxuICAgKi9cbiAgPFQ+KHByb3ZpZGVyOiBQcm92aWRlcjxUPik6IFByb3ZpZGVyPFQ+O1xuXG4gIC8qKlxuICAgKiBEZWNvcmF0ZXMgYSBwcm92aWRlciBmdW5jdGlvbiB3aXRoIHJlZnJlc2hpbmcgbWVtb2l6YXRpb24uXG4gICAqXG4gICAqIEBwYXJhbSBwcm92aWRlciAgICAgICAgICBUaGUgcHJvdmlkZXIgd2hvc2UgcmVzdWx0IHNob3VsZCBiZSBjYWNoZWQuXG4gICAqIEBwYXJhbSBpc0V4cGlyZWQgICAgICAgICBBIGZ1bmN0aW9uIHRoYXQgd2lsbCBldmFsdWF0ZSB0aGUgcmVzb2x2ZWQgdmFsdWUgYW5kXG4gICAqICAgICAgICAgICAgICAgICAgICAgICAgICBkZXRlcm1pbmUgaWYgaXQgaXMgZXhwaXJlZC4gRm9yIGV4YW1wbGUsIHdoZW5cbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIG1lbW9pemluZyBBV1MgY3JlZGVudGlhbCBwcm92aWRlcnMsIHRoaXMgZnVuY3Rpb25cbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIHNob3VsZCByZXR1cm4gYHRydWVgIHdoZW4gdGhlIGNyZWRlbnRpYWwnc1xuICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgZXhwaXJhdGlvbiBpcyBpbiB0aGUgcGFzdCAob3IgdmVyeSBuZWFyIGZ1dHVyZSkgYW5kXG4gICAqICAgICAgICAgICAgICAgICAgICAgICAgICBgZmFsc2VgIG90aGVyd2lzZS5cbiAgICogQHBhcmFtIHJlcXVpcmVzUmVmcmVzaCAgIEEgZnVuY3Rpb24gdGhhdCB3aWxsIGV2YWx1YXRlIHRoZSByZXNvbHZlZCB2YWx1ZSBhbmRcbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIGRldGVybWluZSBpZiBpdCByZXByZXNlbnRzIHN0YXRpYyB2YWx1ZSBvciBvbmUgdGhhdFxuICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgd2lsbCBldmVudHVhbGx5IG5lZWQgdG8gYmUgcmVmcmVzaGVkLiBGb3IgZXhhbXBsZSxcbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIEFXUyBjcmVkZW50aWFscyB0aGF0IGhhdmUgbm8gZGVmaW5lZCBleHBpcmF0aW9uIHdpbGxcbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIG5ldmVyIG5lZWQgdG8gYmUgcmVmcmVzaGVkLCBzbyB0aGlzIGZ1bmN0aW9uIHdvdWxkXG4gICAqICAgICAgICAgICAgICAgICAgICAgICAgICByZXR1cm4gYHRydWVgIGlmIHRoZSBjcmVkZW50aWFscyByZXNvbHZlZCBieSB0aGVcbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIHVuZGVybHlpbmcgcHJvdmlkZXIgaGFkIGFuIGV4cGlyYXRpb24gYW5kIGBmYWxzZWBcbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIG90aGVyd2lzZS5cbiAgICovXG4gIDxUPihcbiAgICBwcm92aWRlcjogUHJvdmlkZXI8VD4sXG4gICAgaXNFeHBpcmVkOiAocmVzb2x2ZWQ6IFQpID0+IGJvb2xlYW4sXG4gICAgcmVxdWlyZXNSZWZyZXNoPzogKHJlc29sdmVkOiBUKSA9PiBib29sZWFuXG4gICk6IFByb3ZpZGVyPFQ+O1xufVxuXG5leHBvcnQgY29uc3QgbWVtb2l6ZTogTWVtb2l6ZU92ZXJsb2FkID0gPFQ+KFxuICBwcm92aWRlcjogUHJvdmlkZXI8VD4sXG4gIGlzRXhwaXJlZD86IChyZXNvbHZlZDogVCkgPT4gYm9vbGVhbixcbiAgcmVxdWlyZXNSZWZyZXNoPzogKHJlc29sdmVkOiBUKSA9PiBib29sZWFuXG4pOiBQcm92aWRlcjxUPiA9PiB7XG4gIGxldCByZXNvbHZlZDogYW55O1xuICBsZXQgaGFzUmVzdWx0OiBib29sZWFuO1xuICBpZiAoaXNFeHBpcmVkID09PSB1bmRlZmluZWQpIHtcbiAgICAvLyBUaGlzIGlzIGEgc3RhdGljIG1lbW9pemF0aW9uOyBubyBuZWVkIHRvIGluY29ycG9yYXRlIHJlZnJlc2hpbmdcbiAgICByZXR1cm4gYXN5bmMgKCkgPT4ge1xuICAgICAgaWYgKCFoYXNSZXN1bHQpIHtcbiAgICAgICAgcmVzb2x2ZWQgPSBhd2FpdCBwcm92aWRlcigpO1xuICAgICAgICBoYXNSZXN1bHQgPSB0cnVlO1xuICAgICAgfVxuICAgICAgcmV0dXJuIHJlc29sdmVkO1xuICAgIH07XG4gIH1cblxuICBsZXQgaXNDb25zdGFudCA9IGZhbHNlO1xuXG4gIHJldHVybiBhc3luYyAoKSA9PiB7XG4gICAgaWYgKCFoYXNSZXN1bHQpIHtcbiAgICAgIHJlc29sdmVkID0gYXdhaXQgcHJvdmlkZXIoKTtcbiAgICAgIGhhc1Jlc3VsdCA9IHRydWU7XG4gICAgfVxuICAgIGlmIChpc0NvbnN0YW50KSB7XG4gICAgICByZXR1cm4gcmVzb2x2ZWQ7XG4gICAgfVxuXG4gICAgaWYgKHJlcXVpcmVzUmVmcmVzaCAmJiAhcmVxdWlyZXNSZWZyZXNoKHJlc29sdmVkKSkge1xuICAgICAgaXNDb25zdGFudCA9IHRydWU7XG4gICAgICByZXR1cm4gcmVzb2x2ZWQ7XG4gICAgfVxuICAgIGlmIChpc0V4cGlyZWQocmVzb2x2ZWQpKSB7XG4gICAgICByZXR1cm4gKHJlc29sdmVkID0gYXdhaXQgcHJvdmlkZXIoKSk7XG4gICAgfVxuICAgIHJldHVybiByZXNvbHZlZDtcbiAgfTtcbn07XG4iXX0=
 
 /***/ }),
 
@@ -27351,7 +27445,7 @@ exports.LazyJsonString = LazyJsonString;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.handleFloat = exports.expectString = exports.expectNumber = exports.expectBoolean = exports.parseBoolean = void 0;
+exports.strictParseInt = exports.handleFloat = exports.limitedParseFloat = exports.strictParseFloat = exports.expectString = exports.expectInt = exports.expectNumber = exports.expectBoolean = exports.parseBoolean = void 0;
 /**
  * Give an input string, strictly parses a boolean value.
  *
@@ -27404,6 +27498,23 @@ const expectNumber = (value) => {
 };
 exports.expectNumber = expectNumber;
 /**
+ * Asserts a value is an integer and returns it.
+ *
+ * @param value A value that is expected to be an integer.
+ * @returns The value if it's an integer, undefined if it's null/undefined,
+ *   otherwise an error is thrown.
+ */
+const expectInt = (value) => {
+    if (value === null || value === undefined) {
+        return undefined;
+    }
+    if (Number.isInteger(value) && !Number.isNaN(value)) {
+        return value;
+    }
+    throw new TypeError(`Expected integer, got ${typeof value}`);
+};
+exports.expectInt = expectInt;
+/**
  * Asserts a value is a string and returns it.
  *
  * @param value A value that is expected to be a string.
@@ -27421,14 +27532,41 @@ const expectString = (value) => {
 };
 exports.expectString = expectString;
 /**
- * Asserts a value is a number and returns it, and also converts string
- * representations of non-numeric floats into Numbers.
+ * Parses a value into a float. If the value is null or undefined, undefined
+ * will be returned. If the value is a string, it will be parsed by the standard
+ * parseFloat with one exception: NaN may only be explicitly set as the string
+ * "NaN", any implicit Nan values will result in an error being thrown. If any
+ * other type is provided, an exception will be thrown.
+ *
+ * @param value A number or string representation of a float.
+ * @returns The value as a number, or undefined if it's null/undefined.
+ */
+const strictParseFloat = (value) => {
+    if (value === "NaN") {
+        return NaN;
+    }
+    if (typeof value == "string") {
+        // TODO: handle underflow / overflow explicitly
+        const parsed = parseFloat(value);
+        if (Number.isNaN(parsed)) {
+            throw new TypeError(`Expected real number, got implicit NaN`);
+        }
+        return exports.expectNumber(parsed);
+    }
+    return exports.expectNumber(value);
+};
+exports.strictParseFloat = strictParseFloat;
+/**
+ * Asserts a value is a number and returns it. If the value is a string
+ * representation of a non-numeric number type (NaN, Infinity, -Infinity),
+ * the value will be parsed. Any other string value will result in an exception
+ * being thrown. Null or undefined will be returned as undefined. Any other
+ * type will result in an exception being thrown.
  *
  * @param value A number or string representation of a non-numeric float.
- * @returns The value as a number, undefined if it's null/undefined,
- *     otherwise an error is thrown.
+ * @returns The value as a number, or undefined if it's null/undefined.
  */
-const handleFloat = (value) => {
+const limitedParseFloat = (value) => {
     if (typeof value == "string") {
         switch (value) {
             case "NaN":
@@ -27443,8 +27581,32 @@ const handleFloat = (value) => {
     }
     return exports.expectNumber(value);
 };
-exports.handleFloat = handleFloat;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFyc2UtdXRpbHMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvcGFyc2UtdXRpbHMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUE7Ozs7O0dBS0c7QUFDSSxNQUFNLFlBQVksR0FBRyxDQUFDLEtBQWEsRUFBVyxFQUFFO0lBQ3JELFFBQVEsS0FBSyxFQUFFO1FBQ2IsS0FBSyxNQUFNO1lBQ1QsT0FBTyxJQUFJLENBQUM7UUFDZCxLQUFLLE9BQU87WUFDVixPQUFPLEtBQUssQ0FBQztRQUNmO1lBQ0UsTUFBTSxJQUFJLEtBQUssQ0FBQyxrQ0FBa0MsS0FBSyxHQUFHLENBQUMsQ0FBQztLQUMvRDtBQUNILENBQUMsQ0FBQztBQVRXLFFBQUEsWUFBWSxnQkFTdkI7QUFFRjs7Ozs7O0dBTUc7QUFDSSxNQUFNLGFBQWEsR0FBRyxDQUFDLEtBQVUsRUFBdUIsRUFBRTtJQUMvRCxJQUFJLEtBQUssS0FBSyxJQUFJLElBQUksS0FBSyxLQUFLLFNBQVMsRUFBRTtRQUN6QyxPQUFPLFNBQVMsQ0FBQztLQUNsQjtJQUNELElBQUksT0FBTyxLQUFLLEtBQUssU0FBUyxFQUFFO1FBQzlCLE9BQU8sS0FBSyxDQUFDO0tBQ2Q7SUFDRCxNQUFNLElBQUksU0FBUyxDQUFDLHlCQUF5QixPQUFPLEtBQUssRUFBRSxDQUFDLENBQUM7QUFDL0QsQ0FBQyxDQUFDO0FBUlcsUUFBQSxhQUFhLGlCQVF4QjtBQUVGOzs7Ozs7R0FNRztBQUNJLE1BQU0sWUFBWSxHQUFHLENBQUMsS0FBVSxFQUFzQixFQUFFO0lBQzdELElBQUksS0FBSyxLQUFLLElBQUksSUFBSSxLQUFLLEtBQUssU0FBUyxFQUFFO1FBQ3pDLE9BQU8sU0FBUyxDQUFDO0tBQ2xCO0lBQ0QsSUFBSSxPQUFPLEtBQUssS0FBSyxRQUFRLEVBQUU7UUFDN0IsT0FBTyxLQUFLLENBQUM7S0FDZDtJQUNELE1BQU0sSUFBSSxTQUFTLENBQUMsd0JBQXdCLE9BQU8sS0FBSyxFQUFFLENBQUMsQ0FBQztBQUM5RCxDQUFDLENBQUM7QUFSVyxRQUFBLFlBQVksZ0JBUXZCO0FBRUY7Ozs7OztHQU1HO0FBQ0ksTUFBTSxZQUFZLEdBQUcsQ0FBQyxLQUFVLEVBQXNCLEVBQUU7SUFDN0QsSUFBSSxLQUFLLEtBQUssSUFBSSxJQUFJLEtBQUssS0FBSyxTQUFTLEVBQUU7UUFDekMsT0FBTyxTQUFTLENBQUM7S0FDbEI7SUFDRCxJQUFJLE9BQU8sS0FBSyxLQUFLLFFBQVEsRUFBRTtRQUM3QixPQUFPLEtBQUssQ0FBQztLQUNkO0lBQ0QsTUFBTSxJQUFJLFNBQVMsQ0FBQyx3QkFBd0IsT0FBTyxLQUFLLEVBQUUsQ0FBQyxDQUFDO0FBQzlELENBQUMsQ0FBQztBQVJXLFFBQUEsWUFBWSxnQkFRdkI7QUFFRjs7Ozs7OztHQU9HO0FBQ0ksTUFBTSxXQUFXLEdBQUcsQ0FBQyxLQUFzQixFQUFzQixFQUFFO0lBQ3hFLElBQUksT0FBTyxLQUFLLElBQUksUUFBUSxFQUFFO1FBQzVCLFFBQVEsS0FBSyxFQUFFO1lBQ2IsS0FBSyxLQUFLO2dCQUNSLE9BQU8sR0FBRyxDQUFDO1lBQ2IsS0FBSyxVQUFVO2dCQUNiLE9BQU8sUUFBUSxDQUFDO1lBQ2xCLEtBQUssV0FBVztnQkFDZCxPQUFPLENBQUMsUUFBUSxDQUFDO1lBQ25CO2dCQUNFLE1BQU0sSUFBSSxLQUFLLENBQUMsZ0NBQWdDLEtBQUssRUFBRSxDQUFDLENBQUM7U0FDNUQ7S0FDRjtJQUNELE9BQU8sb0JBQVksQ0FBQyxLQUFLLENBQUMsQ0FBQztBQUM3QixDQUFDLENBQUM7QUFkVyxRQUFBLFdBQVcsZUFjdEIiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEdpdmUgYW4gaW5wdXQgc3RyaW5nLCBzdHJpY3RseSBwYXJzZXMgYSBib29sZWFuIHZhbHVlLlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBUaGUgYm9vbGVhbiBzdHJpbmcgdG8gcGFyc2UuXG4gKiBAcmV0dXJucyB0cnVlIGZvciBcInRydWVcIiwgZmFsc2UgZm9yIFwiZmFsc2VcIiwgb3RoZXJ3aXNlIGFuIGVycm9yIGlzIHRocm93bi5cbiAqL1xuZXhwb3J0IGNvbnN0IHBhcnNlQm9vbGVhbiA9ICh2YWx1ZTogc3RyaW5nKTogYm9vbGVhbiA9PiB7XG4gIHN3aXRjaCAodmFsdWUpIHtcbiAgICBjYXNlIFwidHJ1ZVwiOlxuICAgICAgcmV0dXJuIHRydWU7XG4gICAgY2FzZSBcImZhbHNlXCI6XG4gICAgICByZXR1cm4gZmFsc2U7XG4gICAgZGVmYXVsdDpcbiAgICAgIHRocm93IG5ldyBFcnJvcihgVW5hYmxlIHRvIHBhcnNlIGJvb2xlYW4gdmFsdWUgXCIke3ZhbHVlfVwiYCk7XG4gIH1cbn07XG5cbi8qXG4gKiBBc3NlcnRzIGEgdmFsdWUgaXMgYSBib29sZWFuIGFuZCByZXR1cm5zIGl0LlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBBIHZhbHVlIHRoYXQgaXMgZXhwZWN0ZWQgdG8gYmUgYSBib29sZWFuLlxuICogQHJldHVybnMgVGhlIHZhbHVlIGlmIGl0J3MgYSBib29sZWFuLCB1bmRlZmluZWQgaWYgaXQncyBudWxsL3VuZGVmaW5lZCxcbiAqICAgb3RoZXJ3aXNlIGFuIGVycm9yIGlzIHRocm93bi5cbiAqL1xuZXhwb3J0IGNvbnN0IGV4cGVjdEJvb2xlYW4gPSAodmFsdWU6IGFueSk6IGJvb2xlYW4gfCB1bmRlZmluZWQgPT4ge1xuICBpZiAodmFsdWUgPT09IG51bGwgfHwgdmFsdWUgPT09IHVuZGVmaW5lZCkge1xuICAgIHJldHVybiB1bmRlZmluZWQ7XG4gIH1cbiAgaWYgKHR5cGVvZiB2YWx1ZSA9PT0gXCJib29sZWFuXCIpIHtcbiAgICByZXR1cm4gdmFsdWU7XG4gIH1cbiAgdGhyb3cgbmV3IFR5cGVFcnJvcihgRXhwZWN0ZWQgYm9vbGVhbiwgZ290ICR7dHlwZW9mIHZhbHVlfWApO1xufTtcblxuLyoqXG4gKiBBc3NlcnRzIGEgdmFsdWUgaXMgYSBudW1iZXIgYW5kIHJldHVybnMgaXQuXG4gKlxuICogQHBhcmFtIHZhbHVlIEEgdmFsdWUgdGhhdCBpcyBleHBlY3RlZCB0byBiZSBhIG51bWJlci5cbiAqIEByZXR1cm5zIFRoZSB2YWx1ZSBpZiBpdCdzIGEgbnVtYmVyLCB1bmRlZmluZWQgaWYgaXQncyBudWxsL3VuZGVmaW5lZCxcbiAqICAgb3RoZXJ3aXNlIGFuIGVycm9yIGlzIHRocm93bi5cbiAqL1xuZXhwb3J0IGNvbnN0IGV4cGVjdE51bWJlciA9ICh2YWx1ZTogYW55KTogbnVtYmVyIHwgdW5kZWZpbmVkID0+IHtcbiAgaWYgKHZhbHVlID09PSBudWxsIHx8IHZhbHVlID09PSB1bmRlZmluZWQpIHtcbiAgICByZXR1cm4gdW5kZWZpbmVkO1xuICB9XG4gIGlmICh0eXBlb2YgdmFsdWUgPT09IFwibnVtYmVyXCIpIHtcbiAgICByZXR1cm4gdmFsdWU7XG4gIH1cbiAgdGhyb3cgbmV3IFR5cGVFcnJvcihgRXhwZWN0ZWQgbnVtYmVyLCBnb3QgJHt0eXBlb2YgdmFsdWV9YCk7XG59O1xuXG4vKipcbiAqIEFzc2VydHMgYSB2YWx1ZSBpcyBhIHN0cmluZyBhbmQgcmV0dXJucyBpdC5cbiAqXG4gKiBAcGFyYW0gdmFsdWUgQSB2YWx1ZSB0aGF0IGlzIGV4cGVjdGVkIHRvIGJlIGEgc3RyaW5nLlxuICogQHJldHVybnMgVGhlIHZhbHVlIGlmIGl0J3MgYSBzdHJpbmcsIHVuZGVmaW5lZCBpZiBpdCdzIG51bGwvdW5kZWZpbmVkLFxuICogICBvdGhlcndpc2UgYW4gZXJyb3IgaXMgdGhyb3duLlxuICovXG5leHBvcnQgY29uc3QgZXhwZWN0U3RyaW5nID0gKHZhbHVlOiBhbnkpOiBzdHJpbmcgfCB1bmRlZmluZWQgPT4ge1xuICBpZiAodmFsdWUgPT09IG51bGwgfHwgdmFsdWUgPT09IHVuZGVmaW5lZCkge1xuICAgIHJldHVybiB1bmRlZmluZWQ7XG4gIH1cbiAgaWYgKHR5cGVvZiB2YWx1ZSA9PT0gXCJzdHJpbmdcIikge1xuICAgIHJldHVybiB2YWx1ZTtcbiAgfVxuICB0aHJvdyBuZXcgVHlwZUVycm9yKGBFeHBlY3RlZCBzdHJpbmcsIGdvdCAke3R5cGVvZiB2YWx1ZX1gKTtcbn07XG5cbi8qKlxuICogQXNzZXJ0cyBhIHZhbHVlIGlzIGEgbnVtYmVyIGFuZCByZXR1cm5zIGl0LCBhbmQgYWxzbyBjb252ZXJ0cyBzdHJpbmdcbiAqIHJlcHJlc2VudGF0aW9ucyBvZiBub24tbnVtZXJpYyBmbG9hdHMgaW50byBOdW1iZXJzLlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBBIG51bWJlciBvciBzdHJpbmcgcmVwcmVzZW50YXRpb24gb2YgYSBub24tbnVtZXJpYyBmbG9hdC5cbiAqIEByZXR1cm5zIFRoZSB2YWx1ZSBhcyBhIG51bWJlciwgdW5kZWZpbmVkIGlmIGl0J3MgbnVsbC91bmRlZmluZWQsXG4gKiAgICAgb3RoZXJ3aXNlIGFuIGVycm9yIGlzIHRocm93bi5cbiAqL1xuZXhwb3J0IGNvbnN0IGhhbmRsZUZsb2F0ID0gKHZhbHVlOiBzdHJpbmcgfCBudW1iZXIpOiBudW1iZXIgfCB1bmRlZmluZWQgPT4ge1xuICBpZiAodHlwZW9mIHZhbHVlID09IFwic3RyaW5nXCIpIHtcbiAgICBzd2l0Y2ggKHZhbHVlKSB7XG4gICAgICBjYXNlIFwiTmFOXCI6XG4gICAgICAgIHJldHVybiBOYU47XG4gICAgICBjYXNlIFwiSW5maW5pdHlcIjpcbiAgICAgICAgcmV0dXJuIEluZmluaXR5O1xuICAgICAgY2FzZSBcIi1JbmZpbml0eVwiOlxuICAgICAgICByZXR1cm4gLUluZmluaXR5O1xuICAgICAgZGVmYXVsdDpcbiAgICAgICAgdGhyb3cgbmV3IEVycm9yKGBVbmFibGUgdG8gcGFyc2UgZmxvYXQgdmFsdWU6ICR7dmFsdWV9YCk7XG4gICAgfVxuICB9XG4gIHJldHVybiBleHBlY3ROdW1iZXIodmFsdWUpO1xufTtcbiJdfQ==
+exports.limitedParseFloat = limitedParseFloat;
+/**
+ * @deprecated Use limitedParseFloat or strictParseFloat
+ */
+exports.handleFloat = exports.limitedParseFloat;
+/**
+ * Parses a value into an integer. If the value is null or undefined, undefined
+ * will be returned. If the value is a string, it will be parsed by parseFloat
+ * and the result will be asserted to be an integer. If the parsed value is not
+ * an integer, or the raw value is any type other than a string or number, an
+ * exception will be thrown.
+ *
+ * @param value A number or string representation of an integer.
+ * @returns The value as a number, or undefined if it's null/undefined.
+ */
+const strictParseInt = (value) => {
+    if (typeof value === "string") {
+        // parseInt can't be used here, because it will silently discard any
+        // existing decimals. We want to instead throw an error if there are any.
+        // TODO: handle underflow / overflow explicitly
+        return exports.expectInt(parseFloat(value));
+    }
+    return exports.expectInt(value);
+};
+exports.strictParseInt = strictParseInt;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFyc2UtdXRpbHMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvcGFyc2UtdXRpbHMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUE7Ozs7O0dBS0c7QUFDSSxNQUFNLFlBQVksR0FBRyxDQUFDLEtBQWEsRUFBVyxFQUFFO0lBQ3JELFFBQVEsS0FBSyxFQUFFO1FBQ2IsS0FBSyxNQUFNO1lBQ1QsT0FBTyxJQUFJLENBQUM7UUFDZCxLQUFLLE9BQU87WUFDVixPQUFPLEtBQUssQ0FBQztRQUNmO1lBQ0UsTUFBTSxJQUFJLEtBQUssQ0FBQyxrQ0FBa0MsS0FBSyxHQUFHLENBQUMsQ0FBQztLQUMvRDtBQUNILENBQUMsQ0FBQztBQVRXLFFBQUEsWUFBWSxnQkFTdkI7QUFFRjs7Ozs7O0dBTUc7QUFDSSxNQUFNLGFBQWEsR0FBRyxDQUFDLEtBQVUsRUFBdUIsRUFBRTtJQUMvRCxJQUFJLEtBQUssS0FBSyxJQUFJLElBQUksS0FBSyxLQUFLLFNBQVMsRUFBRTtRQUN6QyxPQUFPLFNBQVMsQ0FBQztLQUNsQjtJQUNELElBQUksT0FBTyxLQUFLLEtBQUssU0FBUyxFQUFFO1FBQzlCLE9BQU8sS0FBSyxDQUFDO0tBQ2Q7SUFDRCxNQUFNLElBQUksU0FBUyxDQUFDLHlCQUF5QixPQUFPLEtBQUssRUFBRSxDQUFDLENBQUM7QUFDL0QsQ0FBQyxDQUFDO0FBUlcsUUFBQSxhQUFhLGlCQVF4QjtBQUVGOzs7Ozs7R0FNRztBQUNJLE1BQU0sWUFBWSxHQUFHLENBQUMsS0FBVSxFQUFzQixFQUFFO0lBQzdELElBQUksS0FBSyxLQUFLLElBQUksSUFBSSxLQUFLLEtBQUssU0FBUyxFQUFFO1FBQ3pDLE9BQU8sU0FBUyxDQUFDO0tBQ2xCO0lBQ0QsSUFBSSxPQUFPLEtBQUssS0FBSyxRQUFRLEVBQUU7UUFDN0IsT0FBTyxLQUFLLENBQUM7S0FDZDtJQUNELE1BQU0sSUFBSSxTQUFTLENBQUMsd0JBQXdCLE9BQU8sS0FBSyxFQUFFLENBQUMsQ0FBQztBQUM5RCxDQUFDLENBQUM7QUFSVyxRQUFBLFlBQVksZ0JBUXZCO0FBRUY7Ozs7OztHQU1HO0FBQ0ksTUFBTSxTQUFTLEdBQUcsQ0FBQyxLQUFVLEVBQXNCLEVBQUU7SUFDMUQsSUFBSSxLQUFLLEtBQUssSUFBSSxJQUFJLEtBQUssS0FBSyxTQUFTLEVBQUU7UUFDekMsT0FBTyxTQUFTLENBQUM7S0FDbEI7SUFDRCxJQUFJLE1BQU0sQ0FBQyxTQUFTLENBQUMsS0FBSyxDQUFDLElBQUksQ0FBQyxNQUFNLENBQUMsS0FBSyxDQUFDLEtBQUssQ0FBQyxFQUFFO1FBQ25ELE9BQU8sS0FBSyxDQUFDO0tBQ2Q7SUFDRCxNQUFNLElBQUksU0FBUyxDQUFDLHlCQUF5QixPQUFPLEtBQUssRUFBRSxDQUFDLENBQUM7QUFDL0QsQ0FBQyxDQUFDO0FBUlcsUUFBQSxTQUFTLGFBUXBCO0FBRUY7Ozs7OztHQU1HO0FBQ0ksTUFBTSxZQUFZLEdBQUcsQ0FBQyxLQUFVLEVBQXNCLEVBQUU7SUFDN0QsSUFBSSxLQUFLLEtBQUssSUFBSSxJQUFJLEtBQUssS0FBSyxTQUFTLEVBQUU7UUFDekMsT0FBTyxTQUFTLENBQUM7S0FDbEI7SUFDRCxJQUFJLE9BQU8sS0FBSyxLQUFLLFFBQVEsRUFBRTtRQUM3QixPQUFPLEtBQUssQ0FBQztLQUNkO0lBQ0QsTUFBTSxJQUFJLFNBQVMsQ0FBQyx3QkFBd0IsT0FBTyxLQUFLLEVBQUUsQ0FBQyxDQUFDO0FBQzlELENBQUMsQ0FBQztBQVJXLFFBQUEsWUFBWSxnQkFRdkI7QUFFRjs7Ozs7Ozs7O0dBU0c7QUFDSSxNQUFNLGdCQUFnQixHQUFHLENBQUMsS0FBc0IsRUFBc0IsRUFBRTtJQUM3RSxJQUFJLEtBQUssS0FBSyxLQUFLLEVBQUU7UUFDbkIsT0FBTyxHQUFHLENBQUM7S0FDWjtJQUNELElBQUksT0FBTyxLQUFLLElBQUksUUFBUSxFQUFFO1FBQzVCLCtDQUErQztRQUMvQyxNQUFNLE1BQU0sR0FBVyxVQUFVLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDekMsSUFBSSxNQUFNLENBQUMsS0FBSyxDQUFDLE1BQU0sQ0FBQyxFQUFFO1lBQ3hCLE1BQU0sSUFBSSxTQUFTLENBQUMsd0NBQXdDLENBQUMsQ0FBQztTQUMvRDtRQUNELE9BQU8sb0JBQVksQ0FBQyxNQUFNLENBQUMsQ0FBQztLQUM3QjtJQUNELE9BQU8sb0JBQVksQ0FBQyxLQUFLLENBQUMsQ0FBQztBQUM3QixDQUFDLENBQUM7QUFiVyxRQUFBLGdCQUFnQixvQkFhM0I7QUFFRjs7Ozs7Ozs7O0dBU0c7QUFDSSxNQUFNLGlCQUFpQixHQUFHLENBQUMsS0FBc0IsRUFBc0IsRUFBRTtJQUM5RSxJQUFJLE9BQU8sS0FBSyxJQUFJLFFBQVEsRUFBRTtRQUM1QixRQUFRLEtBQUssRUFBRTtZQUNiLEtBQUssS0FBSztnQkFDUixPQUFPLEdBQUcsQ0FBQztZQUNiLEtBQUssVUFBVTtnQkFDYixPQUFPLFFBQVEsQ0FBQztZQUNsQixLQUFLLFdBQVc7Z0JBQ2QsT0FBTyxDQUFDLFFBQVEsQ0FBQztZQUNuQjtnQkFDRSxNQUFNLElBQUksS0FBSyxDQUFDLGdDQUFnQyxLQUFLLEVBQUUsQ0FBQyxDQUFDO1NBQzVEO0tBQ0Y7SUFFRCxPQUFPLG9CQUFZLENBQUMsS0FBSyxDQUFDLENBQUM7QUFDN0IsQ0FBQyxDQUFDO0FBZlcsUUFBQSxpQkFBaUIscUJBZTVCO0FBRUY7O0dBRUc7QUFDVSxRQUFBLFdBQVcsR0FBRyx5QkFBaUIsQ0FBQztBQUU3Qzs7Ozs7Ozs7O0dBU0c7QUFDSSxNQUFNLGNBQWMsR0FBRyxDQUFDLEtBQXNCLEVBQXNCLEVBQUU7SUFDM0UsSUFBSSxPQUFPLEtBQUssS0FBSyxRQUFRLEVBQUU7UUFDN0Isb0VBQW9FO1FBQ3BFLHlFQUF5RTtRQUN6RSwrQ0FBK0M7UUFDL0MsT0FBTyxpQkFBUyxDQUFDLFVBQVUsQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDO0tBQ3JDO0lBQ0QsT0FBTyxpQkFBUyxDQUFDLEtBQUssQ0FBQyxDQUFDO0FBQzFCLENBQUMsQ0FBQztBQVJXLFFBQUEsY0FBYyxrQkFRekIiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEdpdmUgYW4gaW5wdXQgc3RyaW5nLCBzdHJpY3RseSBwYXJzZXMgYSBib29sZWFuIHZhbHVlLlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBUaGUgYm9vbGVhbiBzdHJpbmcgdG8gcGFyc2UuXG4gKiBAcmV0dXJucyB0cnVlIGZvciBcInRydWVcIiwgZmFsc2UgZm9yIFwiZmFsc2VcIiwgb3RoZXJ3aXNlIGFuIGVycm9yIGlzIHRocm93bi5cbiAqL1xuZXhwb3J0IGNvbnN0IHBhcnNlQm9vbGVhbiA9ICh2YWx1ZTogc3RyaW5nKTogYm9vbGVhbiA9PiB7XG4gIHN3aXRjaCAodmFsdWUpIHtcbiAgICBjYXNlIFwidHJ1ZVwiOlxuICAgICAgcmV0dXJuIHRydWU7XG4gICAgY2FzZSBcImZhbHNlXCI6XG4gICAgICByZXR1cm4gZmFsc2U7XG4gICAgZGVmYXVsdDpcbiAgICAgIHRocm93IG5ldyBFcnJvcihgVW5hYmxlIHRvIHBhcnNlIGJvb2xlYW4gdmFsdWUgXCIke3ZhbHVlfVwiYCk7XG4gIH1cbn07XG5cbi8qXG4gKiBBc3NlcnRzIGEgdmFsdWUgaXMgYSBib29sZWFuIGFuZCByZXR1cm5zIGl0LlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBBIHZhbHVlIHRoYXQgaXMgZXhwZWN0ZWQgdG8gYmUgYSBib29sZWFuLlxuICogQHJldHVybnMgVGhlIHZhbHVlIGlmIGl0J3MgYSBib29sZWFuLCB1bmRlZmluZWQgaWYgaXQncyBudWxsL3VuZGVmaW5lZCxcbiAqICAgb3RoZXJ3aXNlIGFuIGVycm9yIGlzIHRocm93bi5cbiAqL1xuZXhwb3J0IGNvbnN0IGV4cGVjdEJvb2xlYW4gPSAodmFsdWU6IGFueSk6IGJvb2xlYW4gfCB1bmRlZmluZWQgPT4ge1xuICBpZiAodmFsdWUgPT09IG51bGwgfHwgdmFsdWUgPT09IHVuZGVmaW5lZCkge1xuICAgIHJldHVybiB1bmRlZmluZWQ7XG4gIH1cbiAgaWYgKHR5cGVvZiB2YWx1ZSA9PT0gXCJib29sZWFuXCIpIHtcbiAgICByZXR1cm4gdmFsdWU7XG4gIH1cbiAgdGhyb3cgbmV3IFR5cGVFcnJvcihgRXhwZWN0ZWQgYm9vbGVhbiwgZ290ICR7dHlwZW9mIHZhbHVlfWApO1xufTtcblxuLyoqXG4gKiBBc3NlcnRzIGEgdmFsdWUgaXMgYSBudW1iZXIgYW5kIHJldHVybnMgaXQuXG4gKlxuICogQHBhcmFtIHZhbHVlIEEgdmFsdWUgdGhhdCBpcyBleHBlY3RlZCB0byBiZSBhIG51bWJlci5cbiAqIEByZXR1cm5zIFRoZSB2YWx1ZSBpZiBpdCdzIGEgbnVtYmVyLCB1bmRlZmluZWQgaWYgaXQncyBudWxsL3VuZGVmaW5lZCxcbiAqICAgb3RoZXJ3aXNlIGFuIGVycm9yIGlzIHRocm93bi5cbiAqL1xuZXhwb3J0IGNvbnN0IGV4cGVjdE51bWJlciA9ICh2YWx1ZTogYW55KTogbnVtYmVyIHwgdW5kZWZpbmVkID0+IHtcbiAgaWYgKHZhbHVlID09PSBudWxsIHx8IHZhbHVlID09PSB1bmRlZmluZWQpIHtcbiAgICByZXR1cm4gdW5kZWZpbmVkO1xuICB9XG4gIGlmICh0eXBlb2YgdmFsdWUgPT09IFwibnVtYmVyXCIpIHtcbiAgICByZXR1cm4gdmFsdWU7XG4gIH1cbiAgdGhyb3cgbmV3IFR5cGVFcnJvcihgRXhwZWN0ZWQgbnVtYmVyLCBnb3QgJHt0eXBlb2YgdmFsdWV9YCk7XG59O1xuXG4vKipcbiAqIEFzc2VydHMgYSB2YWx1ZSBpcyBhbiBpbnRlZ2VyIGFuZCByZXR1cm5zIGl0LlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBBIHZhbHVlIHRoYXQgaXMgZXhwZWN0ZWQgdG8gYmUgYW4gaW50ZWdlci5cbiAqIEByZXR1cm5zIFRoZSB2YWx1ZSBpZiBpdCdzIGFuIGludGVnZXIsIHVuZGVmaW5lZCBpZiBpdCdzIG51bGwvdW5kZWZpbmVkLFxuICogICBvdGhlcndpc2UgYW4gZXJyb3IgaXMgdGhyb3duLlxuICovXG5leHBvcnQgY29uc3QgZXhwZWN0SW50ID0gKHZhbHVlOiBhbnkpOiBudW1iZXIgfCB1bmRlZmluZWQgPT4ge1xuICBpZiAodmFsdWUgPT09IG51bGwgfHwgdmFsdWUgPT09IHVuZGVmaW5lZCkge1xuICAgIHJldHVybiB1bmRlZmluZWQ7XG4gIH1cbiAgaWYgKE51bWJlci5pc0ludGVnZXIodmFsdWUpICYmICFOdW1iZXIuaXNOYU4odmFsdWUpKSB7XG4gICAgcmV0dXJuIHZhbHVlO1xuICB9XG4gIHRocm93IG5ldyBUeXBlRXJyb3IoYEV4cGVjdGVkIGludGVnZXIsIGdvdCAke3R5cGVvZiB2YWx1ZX1gKTtcbn07XG5cbi8qKlxuICogQXNzZXJ0cyBhIHZhbHVlIGlzIGEgc3RyaW5nIGFuZCByZXR1cm5zIGl0LlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBBIHZhbHVlIHRoYXQgaXMgZXhwZWN0ZWQgdG8gYmUgYSBzdHJpbmcuXG4gKiBAcmV0dXJucyBUaGUgdmFsdWUgaWYgaXQncyBhIHN0cmluZywgdW5kZWZpbmVkIGlmIGl0J3MgbnVsbC91bmRlZmluZWQsXG4gKiAgIG90aGVyd2lzZSBhbiBlcnJvciBpcyB0aHJvd24uXG4gKi9cbmV4cG9ydCBjb25zdCBleHBlY3RTdHJpbmcgPSAodmFsdWU6IGFueSk6IHN0cmluZyB8IHVuZGVmaW5lZCA9PiB7XG4gIGlmICh2YWx1ZSA9PT0gbnVsbCB8fCB2YWx1ZSA9PT0gdW5kZWZpbmVkKSB7XG4gICAgcmV0dXJuIHVuZGVmaW5lZDtcbiAgfVxuICBpZiAodHlwZW9mIHZhbHVlID09PSBcInN0cmluZ1wiKSB7XG4gICAgcmV0dXJuIHZhbHVlO1xuICB9XG4gIHRocm93IG5ldyBUeXBlRXJyb3IoYEV4cGVjdGVkIHN0cmluZywgZ290ICR7dHlwZW9mIHZhbHVlfWApO1xufTtcblxuLyoqXG4gKiBQYXJzZXMgYSB2YWx1ZSBpbnRvIGEgZmxvYXQuIElmIHRoZSB2YWx1ZSBpcyBudWxsIG9yIHVuZGVmaW5lZCwgdW5kZWZpbmVkXG4gKiB3aWxsIGJlIHJldHVybmVkLiBJZiB0aGUgdmFsdWUgaXMgYSBzdHJpbmcsIGl0IHdpbGwgYmUgcGFyc2VkIGJ5IHRoZSBzdGFuZGFyZFxuICogcGFyc2VGbG9hdCB3aXRoIG9uZSBleGNlcHRpb246IE5hTiBtYXkgb25seSBiZSBleHBsaWNpdGx5IHNldCBhcyB0aGUgc3RyaW5nXG4gKiBcIk5hTlwiLCBhbnkgaW1wbGljaXQgTmFuIHZhbHVlcyB3aWxsIHJlc3VsdCBpbiBhbiBlcnJvciBiZWluZyB0aHJvd24uIElmIGFueVxuICogb3RoZXIgdHlwZSBpcyBwcm92aWRlZCwgYW4gZXhjZXB0aW9uIHdpbGwgYmUgdGhyb3duLlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBBIG51bWJlciBvciBzdHJpbmcgcmVwcmVzZW50YXRpb24gb2YgYSBmbG9hdC5cbiAqIEByZXR1cm5zIFRoZSB2YWx1ZSBhcyBhIG51bWJlciwgb3IgdW5kZWZpbmVkIGlmIGl0J3MgbnVsbC91bmRlZmluZWQuXG4gKi9cbmV4cG9ydCBjb25zdCBzdHJpY3RQYXJzZUZsb2F0ID0gKHZhbHVlOiBzdHJpbmcgfCBudW1iZXIpOiBudW1iZXIgfCB1bmRlZmluZWQgPT4ge1xuICBpZiAodmFsdWUgPT09IFwiTmFOXCIpIHtcbiAgICByZXR1cm4gTmFOO1xuICB9XG4gIGlmICh0eXBlb2YgdmFsdWUgPT0gXCJzdHJpbmdcIikge1xuICAgIC8vIFRPRE86IGhhbmRsZSB1bmRlcmZsb3cgLyBvdmVyZmxvdyBleHBsaWNpdGx5XG4gICAgY29uc3QgcGFyc2VkOiBudW1iZXIgPSBwYXJzZUZsb2F0KHZhbHVlKTtcbiAgICBpZiAoTnVtYmVyLmlzTmFOKHBhcnNlZCkpIHtcbiAgICAgIHRocm93IG5ldyBUeXBlRXJyb3IoYEV4cGVjdGVkIHJlYWwgbnVtYmVyLCBnb3QgaW1wbGljaXQgTmFOYCk7XG4gICAgfVxuICAgIHJldHVybiBleHBlY3ROdW1iZXIocGFyc2VkKTtcbiAgfVxuICByZXR1cm4gZXhwZWN0TnVtYmVyKHZhbHVlKTtcbn07XG5cbi8qKlxuICogQXNzZXJ0cyBhIHZhbHVlIGlzIGEgbnVtYmVyIGFuZCByZXR1cm5zIGl0LiBJZiB0aGUgdmFsdWUgaXMgYSBzdHJpbmdcbiAqIHJlcHJlc2VudGF0aW9uIG9mIGEgbm9uLW51bWVyaWMgbnVtYmVyIHR5cGUgKE5hTiwgSW5maW5pdHksIC1JbmZpbml0eSksXG4gKiB0aGUgdmFsdWUgd2lsbCBiZSBwYXJzZWQuIEFueSBvdGhlciBzdHJpbmcgdmFsdWUgd2lsbCByZXN1bHQgaW4gYW4gZXhjZXB0aW9uXG4gKiBiZWluZyB0aHJvd24uIE51bGwgb3IgdW5kZWZpbmVkIHdpbGwgYmUgcmV0dXJuZWQgYXMgdW5kZWZpbmVkLiBBbnkgb3RoZXJcbiAqIHR5cGUgd2lsbCByZXN1bHQgaW4gYW4gZXhjZXB0aW9uIGJlaW5nIHRocm93bi5cbiAqXG4gKiBAcGFyYW0gdmFsdWUgQSBudW1iZXIgb3Igc3RyaW5nIHJlcHJlc2VudGF0aW9uIG9mIGEgbm9uLW51bWVyaWMgZmxvYXQuXG4gKiBAcmV0dXJucyBUaGUgdmFsdWUgYXMgYSBudW1iZXIsIG9yIHVuZGVmaW5lZCBpZiBpdCdzIG51bGwvdW5kZWZpbmVkLlxuICovXG5leHBvcnQgY29uc3QgbGltaXRlZFBhcnNlRmxvYXQgPSAodmFsdWU6IHN0cmluZyB8IG51bWJlcik6IG51bWJlciB8IHVuZGVmaW5lZCA9PiB7XG4gIGlmICh0eXBlb2YgdmFsdWUgPT0gXCJzdHJpbmdcIikge1xuICAgIHN3aXRjaCAodmFsdWUpIHtcbiAgICAgIGNhc2UgXCJOYU5cIjpcbiAgICAgICAgcmV0dXJuIE5hTjtcbiAgICAgIGNhc2UgXCJJbmZpbml0eVwiOlxuICAgICAgICByZXR1cm4gSW5maW5pdHk7XG4gICAgICBjYXNlIFwiLUluZmluaXR5XCI6XG4gICAgICAgIHJldHVybiAtSW5maW5pdHk7XG4gICAgICBkZWZhdWx0OlxuICAgICAgICB0aHJvdyBuZXcgRXJyb3IoYFVuYWJsZSB0byBwYXJzZSBmbG9hdCB2YWx1ZTogJHt2YWx1ZX1gKTtcbiAgICB9XG4gIH1cblxuICByZXR1cm4gZXhwZWN0TnVtYmVyKHZhbHVlKTtcbn07XG5cbi8qKlxuICogQGRlcHJlY2F0ZWQgVXNlIGxpbWl0ZWRQYXJzZUZsb2F0IG9yIHN0cmljdFBhcnNlRmxvYXRcbiAqL1xuZXhwb3J0IGNvbnN0IGhhbmRsZUZsb2F0ID0gbGltaXRlZFBhcnNlRmxvYXQ7XG5cbi8qKlxuICogUGFyc2VzIGEgdmFsdWUgaW50byBhbiBpbnRlZ2VyLiBJZiB0aGUgdmFsdWUgaXMgbnVsbCBvciB1bmRlZmluZWQsIHVuZGVmaW5lZFxuICogd2lsbCBiZSByZXR1cm5lZC4gSWYgdGhlIHZhbHVlIGlzIGEgc3RyaW5nLCBpdCB3aWxsIGJlIHBhcnNlZCBieSBwYXJzZUZsb2F0XG4gKiBhbmQgdGhlIHJlc3VsdCB3aWxsIGJlIGFzc2VydGVkIHRvIGJlIGFuIGludGVnZXIuIElmIHRoZSBwYXJzZWQgdmFsdWUgaXMgbm90XG4gKiBhbiBpbnRlZ2VyLCBvciB0aGUgcmF3IHZhbHVlIGlzIGFueSB0eXBlIG90aGVyIHRoYW4gYSBzdHJpbmcgb3IgbnVtYmVyLCBhblxuICogZXhjZXB0aW9uIHdpbGwgYmUgdGhyb3duLlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBBIG51bWJlciBvciBzdHJpbmcgcmVwcmVzZW50YXRpb24gb2YgYW4gaW50ZWdlci5cbiAqIEByZXR1cm5zIFRoZSB2YWx1ZSBhcyBhIG51bWJlciwgb3IgdW5kZWZpbmVkIGlmIGl0J3MgbnVsbC91bmRlZmluZWQuXG4gKi9cbmV4cG9ydCBjb25zdCBzdHJpY3RQYXJzZUludCA9ICh2YWx1ZTogc3RyaW5nIHwgbnVtYmVyKTogbnVtYmVyIHwgdW5kZWZpbmVkID0+IHtcbiAgaWYgKHR5cGVvZiB2YWx1ZSA9PT0gXCJzdHJpbmdcIikge1xuICAgIC8vIHBhcnNlSW50IGNhbid0IGJlIHVzZWQgaGVyZSwgYmVjYXVzZSBpdCB3aWxsIHNpbGVudGx5IGRpc2NhcmQgYW55XG4gICAgLy8gZXhpc3RpbmcgZGVjaW1hbHMuIFdlIHdhbnQgdG8gaW5zdGVhZCB0aHJvdyBhbiBlcnJvciBpZiB0aGVyZSBhcmUgYW55LlxuICAgIC8vIFRPRE86IGhhbmRsZSB1bmRlcmZsb3cgLyBvdmVyZmxvdyBleHBsaWNpdGx5XG4gICAgcmV0dXJuIGV4cGVjdEludChwYXJzZUZsb2F0KHZhbHVlKSk7XG4gIH1cbiAgcmV0dXJuIGV4cGVjdEludCh2YWx1ZSk7XG59O1xuIl19
 
 /***/ }),
 
