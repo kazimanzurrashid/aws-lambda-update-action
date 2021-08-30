@@ -5,7 +5,7 @@ require('./sourcemap-register.js');/******/ (() => { // webpackBootstrap
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-lambda","description":"AWS SDK for JavaScript Lambda Client for Node.js, Browser and React Native","version":"3.27.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es","downlevel-dts":"downlevel-dts dist/types dist/types/ts3.4"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/client-sts":"3.27.0","@aws-sdk/config-resolver":"3.27.0","@aws-sdk/credential-provider-node":"3.27.0","@aws-sdk/fetch-http-handler":"3.25.0","@aws-sdk/hash-node":"3.25.0","@aws-sdk/invalid-dependency":"3.25.0","@aws-sdk/middleware-content-length":"3.25.0","@aws-sdk/middleware-host-header":"3.25.0","@aws-sdk/middleware-logger":"3.25.0","@aws-sdk/middleware-retry":"3.27.0","@aws-sdk/middleware-serde":"3.25.0","@aws-sdk/middleware-signing":"3.27.0","@aws-sdk/middleware-stack":"3.25.0","@aws-sdk/middleware-user-agent":"3.25.0","@aws-sdk/node-config-provider":"3.27.0","@aws-sdk/node-http-handler":"3.25.0","@aws-sdk/protocol-http":"3.25.0","@aws-sdk/smithy-client":"3.27.0","@aws-sdk/types":"3.25.0","@aws-sdk/url-parser":"3.25.0","@aws-sdk/util-base64-browser":"3.23.0","@aws-sdk/util-base64-node":"3.23.0","@aws-sdk/util-body-length-browser":"3.23.0","@aws-sdk/util-body-length-node":"3.23.0","@aws-sdk/util-user-agent-browser":"3.25.0","@aws-sdk/util-user-agent-node":"3.27.0","@aws-sdk/util-utf8-browser":"3.23.0","@aws-sdk/util-utf8-node":"3.23.0","@aws-sdk/util-waiter":"3.25.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.23.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist/types/*":["dist/types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-lambda","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-lambda"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-lambda","description":"AWS SDK for JavaScript Lambda Client for Node.js, Browser and React Native","version":"3.28.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es","downlevel-dts":"downlevel-dts dist/types dist/types/ts3.4"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/client-sts":"3.28.0","@aws-sdk/config-resolver":"3.28.0","@aws-sdk/credential-provider-node":"3.28.0","@aws-sdk/fetch-http-handler":"3.25.0","@aws-sdk/hash-node":"3.25.0","@aws-sdk/invalid-dependency":"3.25.0","@aws-sdk/middleware-content-length":"3.25.0","@aws-sdk/middleware-host-header":"3.25.0","@aws-sdk/middleware-logger":"3.25.0","@aws-sdk/middleware-retry":"3.28.0","@aws-sdk/middleware-serde":"3.25.0","@aws-sdk/middleware-signing":"3.28.0","@aws-sdk/middleware-stack":"3.25.0","@aws-sdk/middleware-user-agent":"3.25.0","@aws-sdk/node-config-provider":"3.28.0","@aws-sdk/node-http-handler":"3.25.0","@aws-sdk/protocol-http":"3.25.0","@aws-sdk/smithy-client":"3.28.0","@aws-sdk/types":"3.25.0","@aws-sdk/url-parser":"3.25.0","@aws-sdk/util-base64-browser":"3.23.0","@aws-sdk/util-base64-node":"3.23.0","@aws-sdk/util-body-length-browser":"3.23.0","@aws-sdk/util-body-length-node":"3.23.0","@aws-sdk/util-user-agent-browser":"3.25.0","@aws-sdk/util-user-agent-node":"3.28.0","@aws-sdk/util-utf8-browser":"3.23.0","@aws-sdk/util-utf8-node":"3.23.0","@aws-sdk/util-waiter":"3.25.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.23.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist/types/*":["dist/types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-lambda","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-lambda"}}');
 
 /***/ }),
 
@@ -13,7 +13,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-lambda","description":"AWS
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.27.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es","downlevel-dts":"downlevel-dts dist/types dist/types/ts3.4"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.27.0","@aws-sdk/fetch-http-handler":"3.25.0","@aws-sdk/hash-node":"3.25.0","@aws-sdk/invalid-dependency":"3.25.0","@aws-sdk/middleware-content-length":"3.25.0","@aws-sdk/middleware-host-header":"3.25.0","@aws-sdk/middleware-logger":"3.25.0","@aws-sdk/middleware-retry":"3.27.0","@aws-sdk/middleware-serde":"3.25.0","@aws-sdk/middleware-stack":"3.25.0","@aws-sdk/middleware-user-agent":"3.25.0","@aws-sdk/node-config-provider":"3.27.0","@aws-sdk/node-http-handler":"3.25.0","@aws-sdk/protocol-http":"3.25.0","@aws-sdk/smithy-client":"3.27.0","@aws-sdk/types":"3.25.0","@aws-sdk/url-parser":"3.25.0","@aws-sdk/util-base64-browser":"3.23.0","@aws-sdk/util-base64-node":"3.23.0","@aws-sdk/util-body-length-browser":"3.23.0","@aws-sdk/util-body-length-node":"3.23.0","@aws-sdk/util-user-agent-browser":"3.25.0","@aws-sdk/util-user-agent-node":"3.27.0","@aws-sdk/util-utf8-browser":"3.23.0","@aws-sdk/util-utf8-node":"3.23.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.23.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist/types/*":["dist/types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.28.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es","downlevel-dts":"downlevel-dts dist/types dist/types/ts3.4"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.28.0","@aws-sdk/fetch-http-handler":"3.25.0","@aws-sdk/hash-node":"3.25.0","@aws-sdk/invalid-dependency":"3.25.0","@aws-sdk/middleware-content-length":"3.25.0","@aws-sdk/middleware-host-header":"3.25.0","@aws-sdk/middleware-logger":"3.25.0","@aws-sdk/middleware-retry":"3.28.0","@aws-sdk/middleware-serde":"3.25.0","@aws-sdk/middleware-stack":"3.25.0","@aws-sdk/middleware-user-agent":"3.25.0","@aws-sdk/node-config-provider":"3.28.0","@aws-sdk/node-http-handler":"3.25.0","@aws-sdk/protocol-http":"3.25.0","@aws-sdk/smithy-client":"3.28.0","@aws-sdk/types":"3.25.0","@aws-sdk/url-parser":"3.25.0","@aws-sdk/util-base64-browser":"3.23.0","@aws-sdk/util-base64-node":"3.23.0","@aws-sdk/util-body-length-browser":"3.23.0","@aws-sdk/util-body-length-node":"3.23.0","@aws-sdk/util-user-agent-browser":"3.25.0","@aws-sdk/util-user-agent-node":"3.28.0","@aws-sdk/util-utf8-browser":"3.23.0","@aws-sdk/util-utf8-node":"3.23.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.23.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist/types/*":["dist/types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
 
 /***/ }),
 
@@ -21,7 +21,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SD
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.27.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es","downlevel-dts":"downlevel-dts dist/types dist/types/ts3.4"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.27.0","@aws-sdk/credential-provider-node":"3.27.0","@aws-sdk/fetch-http-handler":"3.25.0","@aws-sdk/hash-node":"3.25.0","@aws-sdk/invalid-dependency":"3.25.0","@aws-sdk/middleware-content-length":"3.25.0","@aws-sdk/middleware-host-header":"3.25.0","@aws-sdk/middleware-logger":"3.25.0","@aws-sdk/middleware-retry":"3.27.0","@aws-sdk/middleware-sdk-sts":"3.27.0","@aws-sdk/middleware-serde":"3.25.0","@aws-sdk/middleware-signing":"3.27.0","@aws-sdk/middleware-stack":"3.25.0","@aws-sdk/middleware-user-agent":"3.25.0","@aws-sdk/node-config-provider":"3.27.0","@aws-sdk/node-http-handler":"3.25.0","@aws-sdk/protocol-http":"3.25.0","@aws-sdk/smithy-client":"3.27.0","@aws-sdk/types":"3.25.0","@aws-sdk/url-parser":"3.25.0","@aws-sdk/util-base64-browser":"3.23.0","@aws-sdk/util-base64-node":"3.23.0","@aws-sdk/util-body-length-browser":"3.23.0","@aws-sdk/util-body-length-node":"3.23.0","@aws-sdk/util-user-agent-browser":"3.25.0","@aws-sdk/util-user-agent-node":"3.27.0","@aws-sdk/util-utf8-browser":"3.23.0","@aws-sdk/util-utf8-node":"3.23.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.23.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist/types/*":["dist/types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.28.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es","downlevel-dts":"downlevel-dts dist/types dist/types/ts3.4"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.28.0","@aws-sdk/credential-provider-node":"3.28.0","@aws-sdk/fetch-http-handler":"3.25.0","@aws-sdk/hash-node":"3.25.0","@aws-sdk/invalid-dependency":"3.25.0","@aws-sdk/middleware-content-length":"3.25.0","@aws-sdk/middleware-host-header":"3.25.0","@aws-sdk/middleware-logger":"3.25.0","@aws-sdk/middleware-retry":"3.28.0","@aws-sdk/middleware-sdk-sts":"3.28.0","@aws-sdk/middleware-serde":"3.25.0","@aws-sdk/middleware-signing":"3.28.0","@aws-sdk/middleware-stack":"3.25.0","@aws-sdk/middleware-user-agent":"3.25.0","@aws-sdk/node-config-provider":"3.28.0","@aws-sdk/node-http-handler":"3.25.0","@aws-sdk/protocol-http":"3.25.0","@aws-sdk/smithy-client":"3.28.0","@aws-sdk/types":"3.25.0","@aws-sdk/url-parser":"3.25.0","@aws-sdk/util-base64-browser":"3.23.0","@aws-sdk/util-base64-node":"3.23.0","@aws-sdk/util-body-length-browser":"3.23.0","@aws-sdk/util-body-length-node":"3.23.0","@aws-sdk/util-user-agent-browser":"3.25.0","@aws-sdk/util-user-agent-node":"3.28.0","@aws-sdk/util-utf8-browser":"3.23.0","@aws-sdk/util-utf8-node":"3.23.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.23.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist/types/*":["dist/types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
 
 /***/ }),
 
@@ -5742,296 +5742,93 @@ exports.UpdateFunctionEventInvokeConfigCommand = UpdateFunctionEventInvokeConfig
 /***/ }),
 
 /***/ 4904:
-/***/ ((__unused_webpack_module, exports) => {
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.defaultRegionInfoProvider = void 0;
-// Partition default templates
-const AWS_TEMPLATE = "lambda.{region}.amazonaws.com";
-const AWS_CN_TEMPLATE = "lambda.{region}.amazonaws.com.cn";
-const AWS_ISO_TEMPLATE = "lambda.{region}.c2s.ic.gov";
-const AWS_ISO_B_TEMPLATE = "lambda.{region}.sc2s.sgov.gov";
-const AWS_US_GOV_TEMPLATE = "lambda.{region}.amazonaws.com";
-// Partition regions
-const AWS_REGIONS = new Set([
-    "af-south-1",
-    "ap-east-1",
-    "ap-northeast-1",
-    "ap-northeast-2",
-    "ap-northeast-3",
-    "ap-south-1",
-    "ap-southeast-1",
-    "ap-southeast-2",
-    "ca-central-1",
-    "eu-central-1",
-    "eu-north-1",
-    "eu-south-1",
-    "eu-west-1",
-    "eu-west-2",
-    "eu-west-3",
-    "me-south-1",
-    "sa-east-1",
-    "us-east-1",
-    "us-east-2",
-    "us-west-1",
-    "us-west-2",
-]);
-const AWS_CN_REGIONS = new Set(["cn-north-1", "cn-northwest-1"]);
-const AWS_ISO_REGIONS = new Set(["us-iso-east-1"]);
-const AWS_ISO_B_REGIONS = new Set(["us-isob-east-1"]);
-const AWS_US_GOV_REGIONS = new Set(["us-gov-east-1", "us-gov-west-1"]);
-const defaultRegionInfoProvider = (region, options) => {
-    let regionInfo = undefined;
-    switch (region) {
-        // First, try to match exact region names.
-        case "af-south-1":
-            regionInfo = {
-                hostname: "lambda.af-south-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "ap-east-1":
-            regionInfo = {
-                hostname: "lambda.ap-east-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "ap-northeast-1":
-            regionInfo = {
-                hostname: "lambda.ap-northeast-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "ap-northeast-2":
-            regionInfo = {
-                hostname: "lambda.ap-northeast-2.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "ap-northeast-3":
-            regionInfo = {
-                hostname: "lambda.ap-northeast-3.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "ap-south-1":
-            regionInfo = {
-                hostname: "lambda.ap-south-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "ap-southeast-1":
-            regionInfo = {
-                hostname: "lambda.ap-southeast-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "ap-southeast-2":
-            regionInfo = {
-                hostname: "lambda.ap-southeast-2.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "ca-central-1":
-            regionInfo = {
-                hostname: "lambda.ca-central-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "cn-north-1":
-            regionInfo = {
-                hostname: "lambda.cn-north-1.amazonaws.com.cn",
-                partition: "aws-cn",
-            };
-            break;
-        case "cn-northwest-1":
-            regionInfo = {
-                hostname: "lambda.cn-northwest-1.amazonaws.com.cn",
-                partition: "aws-cn",
-            };
-            break;
-        case "eu-central-1":
-            regionInfo = {
-                hostname: "lambda.eu-central-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "eu-north-1":
-            regionInfo = {
-                hostname: "lambda.eu-north-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "eu-south-1":
-            regionInfo = {
-                hostname: "lambda.eu-south-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "eu-west-1":
-            regionInfo = {
-                hostname: "lambda.eu-west-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "eu-west-2":
-            regionInfo = {
-                hostname: "lambda.eu-west-2.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "eu-west-3":
-            regionInfo = {
-                hostname: "lambda.eu-west-3.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "fips-us-east-1":
-            regionInfo = {
-                hostname: "lambda-fips.us-east-1.amazonaws.com",
-                partition: "aws",
-                signingRegion: "us-east-1",
-            };
-            break;
-        case "fips-us-east-2":
-            regionInfo = {
-                hostname: "lambda-fips.us-east-2.amazonaws.com",
-                partition: "aws",
-                signingRegion: "us-east-2",
-            };
-            break;
-        case "fips-us-gov-east-1":
-            regionInfo = {
-                hostname: "lambda-fips.us-gov-east-1.amazonaws.com",
-                partition: "aws-us-gov",
-                signingRegion: "us-gov-east-1",
-            };
-            break;
-        case "fips-us-gov-west-1":
-            regionInfo = {
-                hostname: "lambda-fips.us-gov-west-1.amazonaws.com",
-                partition: "aws-us-gov",
-                signingRegion: "us-gov-west-1",
-            };
-            break;
-        case "fips-us-west-1":
-            regionInfo = {
-                hostname: "lambda-fips.us-west-1.amazonaws.com",
-                partition: "aws",
-                signingRegion: "us-west-1",
-            };
-            break;
-        case "fips-us-west-2":
-            regionInfo = {
-                hostname: "lambda-fips.us-west-2.amazonaws.com",
-                partition: "aws",
-                signingRegion: "us-west-2",
-            };
-            break;
-        case "me-south-1":
-            regionInfo = {
-                hostname: "lambda.me-south-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "sa-east-1":
-            regionInfo = {
-                hostname: "lambda.sa-east-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "us-east-1":
-            regionInfo = {
-                hostname: "lambda.us-east-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "us-east-2":
-            regionInfo = {
-                hostname: "lambda.us-east-2.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "us-gov-east-1":
-            regionInfo = {
-                hostname: "lambda.us-gov-east-1.amazonaws.com",
-                partition: "aws-us-gov",
-            };
-            break;
-        case "us-gov-west-1":
-            regionInfo = {
-                hostname: "lambda.us-gov-west-1.amazonaws.com",
-                partition: "aws-us-gov",
-            };
-            break;
-        case "us-iso-east-1":
-            regionInfo = {
-                hostname: "lambda.us-iso-east-1.c2s.ic.gov",
-                partition: "aws-iso",
-            };
-            break;
-        case "us-isob-east-1":
-            regionInfo = {
-                hostname: "lambda.us-isob-east-1.sc2s.sgov.gov",
-                partition: "aws-iso-b",
-            };
-            break;
-        case "us-west-1":
-            regionInfo = {
-                hostname: "lambda.us-west-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "us-west-2":
-            regionInfo = {
-                hostname: "lambda.us-west-2.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        // Next, try to match partition endpoints.
-        default:
-            if (AWS_REGIONS.has(region)) {
-                regionInfo = {
-                    hostname: AWS_TEMPLATE.replace("{region}", region),
-                    partition: "aws",
-                };
-            }
-            if (AWS_CN_REGIONS.has(region)) {
-                regionInfo = {
-                    hostname: AWS_CN_TEMPLATE.replace("{region}", region),
-                    partition: "aws-cn",
-                };
-            }
-            if (AWS_ISO_REGIONS.has(region)) {
-                regionInfo = {
-                    hostname: AWS_ISO_TEMPLATE.replace("{region}", region),
-                    partition: "aws-iso",
-                };
-            }
-            if (AWS_ISO_B_REGIONS.has(region)) {
-                regionInfo = {
-                    hostname: AWS_ISO_B_TEMPLATE.replace("{region}", region),
-                    partition: "aws-iso-b",
-                };
-            }
-            if (AWS_US_GOV_REGIONS.has(region)) {
-                regionInfo = {
-                    hostname: AWS_US_GOV_TEMPLATE.replace("{region}", region),
-                    partition: "aws-us-gov",
-                };
-            }
-            // Finally, assume it's an AWS partition endpoint.
-            if (regionInfo === undefined) {
-                regionInfo = {
-                    hostname: AWS_TEMPLATE.replace("{region}", region),
-                    partition: "aws",
-                };
-            }
-    }
-    return Promise.resolve({ signingService: "lambda", ...regionInfo });
+const config_resolver_1 = __nccwpck_require__(7229);
+const regionHash = {
+    "fips-us-east-1": {
+        hostname: "lambda-fips.us-east-1.amazonaws.com",
+        signingRegion: "us-east-1",
+    },
+    "fips-us-east-2": {
+        hostname: "lambda-fips.us-east-2.amazonaws.com",
+        signingRegion: "us-east-2",
+    },
+    "fips-us-gov-east-1": {
+        hostname: "lambda-fips.us-gov-east-1.amazonaws.com",
+        signingRegion: "us-gov-east-1",
+    },
+    "fips-us-gov-west-1": {
+        hostname: "lambda-fips.us-gov-west-1.amazonaws.com",
+        signingRegion: "us-gov-west-1",
+    },
+    "fips-us-west-1": {
+        hostname: "lambda-fips.us-west-1.amazonaws.com",
+        signingRegion: "us-west-1",
+    },
+    "fips-us-west-2": {
+        hostname: "lambda-fips.us-west-2.amazonaws.com",
+        signingRegion: "us-west-2",
+    },
 };
+const partitionHash = {
+    aws: {
+        regions: [
+            "af-south-1",
+            "ap-east-1",
+            "ap-northeast-1",
+            "ap-northeast-2",
+            "ap-northeast-3",
+            "ap-south-1",
+            "ap-southeast-1",
+            "ap-southeast-2",
+            "ca-central-1",
+            "eu-central-1",
+            "eu-north-1",
+            "eu-south-1",
+            "eu-west-1",
+            "eu-west-2",
+            "eu-west-3",
+            "fips-us-east-1",
+            "fips-us-east-2",
+            "fips-us-west-1",
+            "fips-us-west-2",
+            "me-south-1",
+            "sa-east-1",
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2",
+        ],
+        hostname: "lambda.{region}.amazonaws.com",
+    },
+    "aws-cn": {
+        regions: ["cn-north-1", "cn-northwest-1"],
+        hostname: "lambda.{region}.amazonaws.com.cn",
+    },
+    "aws-iso": {
+        regions: ["us-iso-east-1"],
+        hostname: "lambda.{region}.c2s.ic.gov",
+    },
+    "aws-iso-b": {
+        regions: ["us-isob-east-1"],
+        hostname: "lambda.{region}.sc2s.sgov.gov",
+    },
+    "aws-us-gov": {
+        regions: ["fips-us-gov-east-1", "fips-us-gov-west-1", "us-gov-east-1", "us-gov-west-1"],
+        hostname: "lambda.{region}.amazonaws.com",
+    },
+};
+const defaultRegionInfoProvider = async (region, options) => config_resolver_1.getRegionInfo(region, {
+    ...options,
+    signingService: "lambda",
+    regionHash,
+    partitionHash,
+});
 exports.defaultRegionInfoProvider = defaultRegionInfoProvider;
 //# sourceMappingURL=endpoints.js.map
 
@@ -17703,7 +17500,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * @internal
  */
-const getRuntimeConfig = (config = {}) => {
+const getRuntimeConfig = (config) => {
     var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o;
     smithy_client_1.emitWarningIfUnsupportedVersion(process.version);
     const clientSharedValues = runtimeConfig_shared_1.getRuntimeConfig(config);
@@ -17711,19 +17508,19 @@ const getRuntimeConfig = (config = {}) => {
         ...clientSharedValues,
         ...config,
         runtime: "node",
-        base64Decoder: (_a = config.base64Decoder) !== null && _a !== void 0 ? _a : util_base64_node_1.fromBase64,
-        base64Encoder: (_b = config.base64Encoder) !== null && _b !== void 0 ? _b : util_base64_node_1.toBase64,
-        bodyLengthChecker: (_c = config.bodyLengthChecker) !== null && _c !== void 0 ? _c : util_body_length_node_1.calculateBodyLength,
-        credentialDefaultProvider: (_d = config.credentialDefaultProvider) !== null && _d !== void 0 ? _d : client_sts_1.decorateDefaultCredentialProvider(credential_provider_node_1.defaultProvider),
-        defaultUserAgentProvider: (_e = config.defaultUserAgentProvider) !== null && _e !== void 0 ? _e : util_user_agent_node_1.defaultUserAgent({ serviceId: clientSharedValues.serviceId, clientVersion: package_json_1.default.version }),
-        maxAttempts: (_f = config.maxAttempts) !== null && _f !== void 0 ? _f : node_config_provider_1.loadConfig(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
-        region: (_g = config.region) !== null && _g !== void 0 ? _g : node_config_provider_1.loadConfig(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
-        requestHandler: (_h = config.requestHandler) !== null && _h !== void 0 ? _h : new node_http_handler_1.NodeHttpHandler(),
-        retryModeProvider: (_j = config.retryModeProvider) !== null && _j !== void 0 ? _j : node_config_provider_1.loadConfig(middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS),
-        sha256: (_k = config.sha256) !== null && _k !== void 0 ? _k : hash_node_1.Hash.bind(null, "sha256"),
-        streamCollector: (_l = config.streamCollector) !== null && _l !== void 0 ? _l : node_http_handler_1.streamCollector,
-        utf8Decoder: (_m = config.utf8Decoder) !== null && _m !== void 0 ? _m : util_utf8_node_1.fromUtf8,
-        utf8Encoder: (_o = config.utf8Encoder) !== null && _o !== void 0 ? _o : util_utf8_node_1.toUtf8,
+        base64Decoder: (_a = config === null || config === void 0 ? void 0 : config.base64Decoder) !== null && _a !== void 0 ? _a : util_base64_node_1.fromBase64,
+        base64Encoder: (_b = config === null || config === void 0 ? void 0 : config.base64Encoder) !== null && _b !== void 0 ? _b : util_base64_node_1.toBase64,
+        bodyLengthChecker: (_c = config === null || config === void 0 ? void 0 : config.bodyLengthChecker) !== null && _c !== void 0 ? _c : util_body_length_node_1.calculateBodyLength,
+        credentialDefaultProvider: (_d = config === null || config === void 0 ? void 0 : config.credentialDefaultProvider) !== null && _d !== void 0 ? _d : client_sts_1.decorateDefaultCredentialProvider(credential_provider_node_1.defaultProvider),
+        defaultUserAgentProvider: (_e = config === null || config === void 0 ? void 0 : config.defaultUserAgentProvider) !== null && _e !== void 0 ? _e : util_user_agent_node_1.defaultUserAgent({ serviceId: clientSharedValues.serviceId, clientVersion: package_json_1.default.version }),
+        maxAttempts: (_f = config === null || config === void 0 ? void 0 : config.maxAttempts) !== null && _f !== void 0 ? _f : node_config_provider_1.loadConfig(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
+        region: (_g = config === null || config === void 0 ? void 0 : config.region) !== null && _g !== void 0 ? _g : node_config_provider_1.loadConfig(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
+        requestHandler: (_h = config === null || config === void 0 ? void 0 : config.requestHandler) !== null && _h !== void 0 ? _h : new node_http_handler_1.NodeHttpHandler(),
+        retryMode: (_j = config === null || config === void 0 ? void 0 : config.retryMode) !== null && _j !== void 0 ? _j : node_config_provider_1.loadConfig(middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS),
+        sha256: (_k = config === null || config === void 0 ? void 0 : config.sha256) !== null && _k !== void 0 ? _k : hash_node_1.Hash.bind(null, "sha256"),
+        streamCollector: (_l = config === null || config === void 0 ? void 0 : config.streamCollector) !== null && _l !== void 0 ? _l : node_http_handler_1.streamCollector,
+        utf8Decoder: (_m = config === null || config === void 0 ? void 0 : config.utf8Decoder) !== null && _m !== void 0 ? _m : util_utf8_node_1.fromUtf8,
+        utf8Encoder: (_o = config === null || config === void 0 ? void 0 : config.utf8Encoder) !== null && _o !== void 0 ? _o : util_utf8_node_1.toUtf8,
     };
 };
 exports.getRuntimeConfig = getRuntimeConfig;
@@ -17743,15 +17540,15 @@ const url_parser_1 = __nccwpck_require__(9427);
 /**
  * @internal
  */
-const getRuntimeConfig = (config = {}) => {
+const getRuntimeConfig = (config) => {
     var _a, _b, _c, _d, _e;
     return ({
         apiVersion: "2015-03-31",
-        disableHostPrefix: (_a = config.disableHostPrefix) !== null && _a !== void 0 ? _a : false,
-        logger: (_b = config.logger) !== null && _b !== void 0 ? _b : {},
-        regionInfoProvider: (_c = config.regionInfoProvider) !== null && _c !== void 0 ? _c : endpoints_1.defaultRegionInfoProvider,
-        serviceId: (_d = config.serviceId) !== null && _d !== void 0 ? _d : "Lambda",
-        urlParser: (_e = config.urlParser) !== null && _e !== void 0 ? _e : url_parser_1.parseUrl,
+        disableHostPrefix: (_a = config === null || config === void 0 ? void 0 : config.disableHostPrefix) !== null && _a !== void 0 ? _a : false,
+        logger: (_b = config === null || config === void 0 ? void 0 : config.logger) !== null && _b !== void 0 ? _b : {},
+        regionInfoProvider: (_c = config === null || config === void 0 ? void 0 : config.regionInfoProvider) !== null && _c !== void 0 ? _c : endpoints_1.defaultRegionInfoProvider,
+        serviceId: (_d = config === null || config === void 0 ? void 0 : config.serviceId) !== null && _d !== void 0 ? _d : "Lambda",
+        urlParser: (_e = config === null || config === void 0 ? void 0 : config.urlParser) !== null && _e !== void 0 ? _e : url_parser_1.parseUrl,
     });
 };
 exports.getRuntimeConfig = getRuntimeConfig;
@@ -18381,155 +18178,101 @@ exports.LogoutCommand = LogoutCommand;
 /***/ }),
 
 /***/ 8274:
-/***/ ((__unused_webpack_module, exports) => {
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.defaultRegionInfoProvider = void 0;
-// Partition default templates
-const AWS_TEMPLATE = "portal.sso.{region}.amazonaws.com";
-const AWS_CN_TEMPLATE = "portal.sso.{region}.amazonaws.com.cn";
-const AWS_ISO_TEMPLATE = "portal.sso.{region}.c2s.ic.gov";
-const AWS_ISO_B_TEMPLATE = "portal.sso.{region}.sc2s.sgov.gov";
-const AWS_US_GOV_TEMPLATE = "portal.sso.{region}.amazonaws.com";
-// Partition regions
-const AWS_REGIONS = new Set([
-    "af-south-1",
-    "ap-east-1",
-    "ap-northeast-1",
-    "ap-northeast-2",
-    "ap-northeast-3",
-    "ap-south-1",
-    "ap-southeast-1",
-    "ap-southeast-2",
-    "ca-central-1",
-    "eu-central-1",
-    "eu-north-1",
-    "eu-south-1",
-    "eu-west-1",
-    "eu-west-2",
-    "eu-west-3",
-    "me-south-1",
-    "sa-east-1",
-    "us-east-1",
-    "us-east-2",
-    "us-west-1",
-    "us-west-2",
-]);
-const AWS_CN_REGIONS = new Set(["cn-north-1", "cn-northwest-1"]);
-const AWS_ISO_REGIONS = new Set(["us-iso-east-1"]);
-const AWS_ISO_B_REGIONS = new Set(["us-isob-east-1"]);
-const AWS_US_GOV_REGIONS = new Set(["us-gov-east-1", "us-gov-west-1"]);
-const defaultRegionInfoProvider = (region, options) => {
-    let regionInfo = undefined;
-    switch (region) {
-        // First, try to match exact region names.
-        case "ap-southeast-1":
-            regionInfo = {
-                hostname: "portal.sso.ap-southeast-1.amazonaws.com",
-                partition: "aws",
-                signingRegion: "ap-southeast-1",
-            };
-            break;
-        case "ap-southeast-2":
-            regionInfo = {
-                hostname: "portal.sso.ap-southeast-2.amazonaws.com",
-                partition: "aws",
-                signingRegion: "ap-southeast-2",
-            };
-            break;
-        case "ca-central-1":
-            regionInfo = {
-                hostname: "portal.sso.ca-central-1.amazonaws.com",
-                partition: "aws",
-                signingRegion: "ca-central-1",
-            };
-            break;
-        case "eu-central-1":
-            regionInfo = {
-                hostname: "portal.sso.eu-central-1.amazonaws.com",
-                partition: "aws",
-                signingRegion: "eu-central-1",
-            };
-            break;
-        case "eu-west-1":
-            regionInfo = {
-                hostname: "portal.sso.eu-west-1.amazonaws.com",
-                partition: "aws",
-                signingRegion: "eu-west-1",
-            };
-            break;
-        case "eu-west-2":
-            regionInfo = {
-                hostname: "portal.sso.eu-west-2.amazonaws.com",
-                partition: "aws",
-                signingRegion: "eu-west-2",
-            };
-            break;
-        case "us-east-1":
-            regionInfo = {
-                hostname: "portal.sso.us-east-1.amazonaws.com",
-                partition: "aws",
-                signingRegion: "us-east-1",
-            };
-            break;
-        case "us-east-2":
-            regionInfo = {
-                hostname: "portal.sso.us-east-2.amazonaws.com",
-                partition: "aws",
-                signingRegion: "us-east-2",
-            };
-            break;
-        case "us-west-2":
-            regionInfo = {
-                hostname: "portal.sso.us-west-2.amazonaws.com",
-                partition: "aws",
-                signingRegion: "us-west-2",
-            };
-            break;
-        // Next, try to match partition endpoints.
-        default:
-            if (AWS_REGIONS.has(region)) {
-                regionInfo = {
-                    hostname: AWS_TEMPLATE.replace("{region}", region),
-                    partition: "aws",
-                };
-            }
-            if (AWS_CN_REGIONS.has(region)) {
-                regionInfo = {
-                    hostname: AWS_CN_TEMPLATE.replace("{region}", region),
-                    partition: "aws-cn",
-                };
-            }
-            if (AWS_ISO_REGIONS.has(region)) {
-                regionInfo = {
-                    hostname: AWS_ISO_TEMPLATE.replace("{region}", region),
-                    partition: "aws-iso",
-                };
-            }
-            if (AWS_ISO_B_REGIONS.has(region)) {
-                regionInfo = {
-                    hostname: AWS_ISO_B_TEMPLATE.replace("{region}", region),
-                    partition: "aws-iso-b",
-                };
-            }
-            if (AWS_US_GOV_REGIONS.has(region)) {
-                regionInfo = {
-                    hostname: AWS_US_GOV_TEMPLATE.replace("{region}", region),
-                    partition: "aws-us-gov",
-                };
-            }
-            // Finally, assume it's an AWS partition endpoint.
-            if (regionInfo === undefined) {
-                regionInfo = {
-                    hostname: AWS_TEMPLATE.replace("{region}", region),
-                    partition: "aws",
-                };
-            }
-    }
-    return Promise.resolve({ signingService: "awsssoportal", ...regionInfo });
+const config_resolver_1 = __nccwpck_require__(7229);
+const regionHash = {
+    "ap-southeast-1": {
+        hostname: "portal.sso.ap-southeast-1.amazonaws.com",
+        signingRegion: "ap-southeast-1",
+    },
+    "ap-southeast-2": {
+        hostname: "portal.sso.ap-southeast-2.amazonaws.com",
+        signingRegion: "ap-southeast-2",
+    },
+    "ca-central-1": {
+        hostname: "portal.sso.ca-central-1.amazonaws.com",
+        signingRegion: "ca-central-1",
+    },
+    "eu-central-1": {
+        hostname: "portal.sso.eu-central-1.amazonaws.com",
+        signingRegion: "eu-central-1",
+    },
+    "eu-west-1": {
+        hostname: "portal.sso.eu-west-1.amazonaws.com",
+        signingRegion: "eu-west-1",
+    },
+    "eu-west-2": {
+        hostname: "portal.sso.eu-west-2.amazonaws.com",
+        signingRegion: "eu-west-2",
+    },
+    "us-east-1": {
+        hostname: "portal.sso.us-east-1.amazonaws.com",
+        signingRegion: "us-east-1",
+    },
+    "us-east-2": {
+        hostname: "portal.sso.us-east-2.amazonaws.com",
+        signingRegion: "us-east-2",
+    },
+    "us-west-2": {
+        hostname: "portal.sso.us-west-2.amazonaws.com",
+        signingRegion: "us-west-2",
+    },
 };
+const partitionHash = {
+    aws: {
+        regions: [
+            "af-south-1",
+            "ap-east-1",
+            "ap-northeast-1",
+            "ap-northeast-2",
+            "ap-northeast-3",
+            "ap-south-1",
+            "ap-southeast-1",
+            "ap-southeast-2",
+            "ca-central-1",
+            "eu-central-1",
+            "eu-north-1",
+            "eu-south-1",
+            "eu-west-1",
+            "eu-west-2",
+            "eu-west-3",
+            "me-south-1",
+            "sa-east-1",
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2",
+        ],
+        hostname: "portal.sso.{region}.amazonaws.com",
+    },
+    "aws-cn": {
+        regions: ["cn-north-1", "cn-northwest-1"],
+        hostname: "portal.sso.{region}.amazonaws.com.cn",
+    },
+    "aws-iso": {
+        regions: ["us-iso-east-1"],
+        hostname: "portal.sso.{region}.c2s.ic.gov",
+    },
+    "aws-iso-b": {
+        regions: ["us-isob-east-1"],
+        hostname: "portal.sso.{region}.sc2s.sgov.gov",
+    },
+    "aws-us-gov": {
+        regions: ["us-gov-east-1", "us-gov-west-1"],
+        hostname: "portal.sso.{region}.amazonaws.com",
+    },
+};
+const defaultRegionInfoProvider = async (region, options) => config_resolver_1.getRegionInfo(region, {
+    ...options,
+    signingService: "awsssoportal",
+    regionHash,
+    partitionHash,
+});
 exports.defaultRegionInfoProvider = defaultRegionInfoProvider;
 //# sourceMappingURL=endpoints.js.map
 
@@ -19386,7 +19129,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * @internal
  */
-const getRuntimeConfig = (config = {}) => {
+const getRuntimeConfig = (config) => {
     var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m;
     smithy_client_1.emitWarningIfUnsupportedVersion(process.version);
     const clientSharedValues = runtimeConfig_shared_1.getRuntimeConfig(config);
@@ -19394,18 +19137,18 @@ const getRuntimeConfig = (config = {}) => {
         ...clientSharedValues,
         ...config,
         runtime: "node",
-        base64Decoder: (_a = config.base64Decoder) !== null && _a !== void 0 ? _a : util_base64_node_1.fromBase64,
-        base64Encoder: (_b = config.base64Encoder) !== null && _b !== void 0 ? _b : util_base64_node_1.toBase64,
-        bodyLengthChecker: (_c = config.bodyLengthChecker) !== null && _c !== void 0 ? _c : util_body_length_node_1.calculateBodyLength,
-        defaultUserAgentProvider: (_d = config.defaultUserAgentProvider) !== null && _d !== void 0 ? _d : util_user_agent_node_1.defaultUserAgent({ serviceId: clientSharedValues.serviceId, clientVersion: package_json_1.default.version }),
-        maxAttempts: (_e = config.maxAttempts) !== null && _e !== void 0 ? _e : node_config_provider_1.loadConfig(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
-        region: (_f = config.region) !== null && _f !== void 0 ? _f : node_config_provider_1.loadConfig(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
-        requestHandler: (_g = config.requestHandler) !== null && _g !== void 0 ? _g : new node_http_handler_1.NodeHttpHandler(),
-        retryModeProvider: (_h = config.retryModeProvider) !== null && _h !== void 0 ? _h : node_config_provider_1.loadConfig(middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS),
-        sha256: (_j = config.sha256) !== null && _j !== void 0 ? _j : hash_node_1.Hash.bind(null, "sha256"),
-        streamCollector: (_k = config.streamCollector) !== null && _k !== void 0 ? _k : node_http_handler_1.streamCollector,
-        utf8Decoder: (_l = config.utf8Decoder) !== null && _l !== void 0 ? _l : util_utf8_node_1.fromUtf8,
-        utf8Encoder: (_m = config.utf8Encoder) !== null && _m !== void 0 ? _m : util_utf8_node_1.toUtf8,
+        base64Decoder: (_a = config === null || config === void 0 ? void 0 : config.base64Decoder) !== null && _a !== void 0 ? _a : util_base64_node_1.fromBase64,
+        base64Encoder: (_b = config === null || config === void 0 ? void 0 : config.base64Encoder) !== null && _b !== void 0 ? _b : util_base64_node_1.toBase64,
+        bodyLengthChecker: (_c = config === null || config === void 0 ? void 0 : config.bodyLengthChecker) !== null && _c !== void 0 ? _c : util_body_length_node_1.calculateBodyLength,
+        defaultUserAgentProvider: (_d = config === null || config === void 0 ? void 0 : config.defaultUserAgentProvider) !== null && _d !== void 0 ? _d : util_user_agent_node_1.defaultUserAgent({ serviceId: clientSharedValues.serviceId, clientVersion: package_json_1.default.version }),
+        maxAttempts: (_e = config === null || config === void 0 ? void 0 : config.maxAttempts) !== null && _e !== void 0 ? _e : node_config_provider_1.loadConfig(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
+        region: (_f = config === null || config === void 0 ? void 0 : config.region) !== null && _f !== void 0 ? _f : node_config_provider_1.loadConfig(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
+        requestHandler: (_g = config === null || config === void 0 ? void 0 : config.requestHandler) !== null && _g !== void 0 ? _g : new node_http_handler_1.NodeHttpHandler(),
+        retryMode: (_h = config === null || config === void 0 ? void 0 : config.retryMode) !== null && _h !== void 0 ? _h : node_config_provider_1.loadConfig(middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS),
+        sha256: (_j = config === null || config === void 0 ? void 0 : config.sha256) !== null && _j !== void 0 ? _j : hash_node_1.Hash.bind(null, "sha256"),
+        streamCollector: (_k = config === null || config === void 0 ? void 0 : config.streamCollector) !== null && _k !== void 0 ? _k : node_http_handler_1.streamCollector,
+        utf8Decoder: (_l = config === null || config === void 0 ? void 0 : config.utf8Decoder) !== null && _l !== void 0 ? _l : util_utf8_node_1.fromUtf8,
+        utf8Encoder: (_m = config === null || config === void 0 ? void 0 : config.utf8Encoder) !== null && _m !== void 0 ? _m : util_utf8_node_1.toUtf8,
     };
 };
 exports.getRuntimeConfig = getRuntimeConfig;
@@ -19425,15 +19168,15 @@ const url_parser_1 = __nccwpck_require__(9427);
 /**
  * @internal
  */
-const getRuntimeConfig = (config = {}) => {
+const getRuntimeConfig = (config) => {
     var _a, _b, _c, _d, _e;
     return ({
         apiVersion: "2019-06-10",
-        disableHostPrefix: (_a = config.disableHostPrefix) !== null && _a !== void 0 ? _a : false,
-        logger: (_b = config.logger) !== null && _b !== void 0 ? _b : {},
-        regionInfoProvider: (_c = config.regionInfoProvider) !== null && _c !== void 0 ? _c : endpoints_1.defaultRegionInfoProvider,
-        serviceId: (_d = config.serviceId) !== null && _d !== void 0 ? _d : "SSO",
-        urlParser: (_e = config.urlParser) !== null && _e !== void 0 ? _e : url_parser_1.parseUrl,
+        disableHostPrefix: (_a = config === null || config === void 0 ? void 0 : config.disableHostPrefix) !== null && _a !== void 0 ? _a : false,
+        logger: (_b = config === null || config === void 0 ? void 0 : config.logger) !== null && _b !== void 0 ? _b : {},
+        regionInfoProvider: (_c = config === null || config === void 0 ? void 0 : config.regionInfoProvider) !== null && _c !== void 0 ? _c : endpoints_1.defaultRegionInfoProvider,
+        serviceId: (_d = config === null || config === void 0 ? void 0 : config.serviceId) !== null && _d !== void 0 ? _d : "SSO",
+        urlParser: (_e = config === null || config === void 0 ? void 0 : config.urlParser) !== null && _e !== void 0 ? _e : url_parser_1.parseUrl,
     });
 };
 exports.getRuntimeConfig = getRuntimeConfig;
@@ -20936,303 +20679,98 @@ exports.decorateDefaultCredentialProvider = decorateDefaultCredentialProvider;
 /***/ }),
 
 /***/ 2798:
-/***/ ((__unused_webpack_module, exports) => {
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.defaultRegionInfoProvider = void 0;
-// Partition default templates
-const AWS_TEMPLATE = "sts.{region}.amazonaws.com";
-const AWS_CN_TEMPLATE = "sts.{region}.amazonaws.com.cn";
-const AWS_ISO_TEMPLATE = "sts.{region}.c2s.ic.gov";
-const AWS_ISO_B_TEMPLATE = "sts.{region}.sc2s.sgov.gov";
-const AWS_US_GOV_TEMPLATE = "sts.{region}.amazonaws.com";
-// Partition regions
-const AWS_REGIONS = new Set([
-    "af-south-1",
-    "ap-east-1",
-    "ap-northeast-1",
-    "ap-northeast-2",
-    "ap-northeast-3",
-    "ap-south-1",
-    "ap-southeast-1",
-    "ap-southeast-2",
-    "ca-central-1",
-    "eu-central-1",
-    "eu-north-1",
-    "eu-south-1",
-    "eu-west-1",
-    "eu-west-2",
-    "eu-west-3",
-    "me-south-1",
-    "sa-east-1",
-    "us-east-1",
-    "us-east-2",
-    "us-west-1",
-    "us-west-2",
-]);
-const AWS_CN_REGIONS = new Set(["cn-north-1", "cn-northwest-1"]);
-const AWS_ISO_REGIONS = new Set(["us-iso-east-1"]);
-const AWS_ISO_B_REGIONS = new Set(["us-isob-east-1"]);
-const AWS_US_GOV_REGIONS = new Set(["us-gov-east-1", "us-gov-west-1"]);
-const defaultRegionInfoProvider = (region, options) => {
-    let regionInfo = undefined;
-    switch (region) {
-        // First, try to match exact region names.
-        case "af-south-1":
-            regionInfo = {
-                hostname: "sts.af-south-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "ap-east-1":
-            regionInfo = {
-                hostname: "sts.ap-east-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "ap-northeast-1":
-            regionInfo = {
-                hostname: "sts.ap-northeast-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "ap-northeast-2":
-            regionInfo = {
-                hostname: "sts.ap-northeast-2.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "ap-northeast-3":
-            regionInfo = {
-                hostname: "sts.ap-northeast-3.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "ap-south-1":
-            regionInfo = {
-                hostname: "sts.ap-south-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "ap-southeast-1":
-            regionInfo = {
-                hostname: "sts.ap-southeast-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "ap-southeast-2":
-            regionInfo = {
-                hostname: "sts.ap-southeast-2.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "aws-global":
-            regionInfo = {
-                hostname: "sts.amazonaws.com",
-                partition: "aws",
-                signingRegion: "us-east-1",
-            };
-            break;
-        case "ca-central-1":
-            regionInfo = {
-                hostname: "sts.ca-central-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "cn-north-1":
-            regionInfo = {
-                hostname: "sts.cn-north-1.amazonaws.com.cn",
-                partition: "aws-cn",
-            };
-            break;
-        case "cn-northwest-1":
-            regionInfo = {
-                hostname: "sts.cn-northwest-1.amazonaws.com.cn",
-                partition: "aws-cn",
-            };
-            break;
-        case "eu-central-1":
-            regionInfo = {
-                hostname: "sts.eu-central-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "eu-north-1":
-            regionInfo = {
-                hostname: "sts.eu-north-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "eu-south-1":
-            regionInfo = {
-                hostname: "sts.eu-south-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "eu-west-1":
-            regionInfo = {
-                hostname: "sts.eu-west-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "eu-west-2":
-            regionInfo = {
-                hostname: "sts.eu-west-2.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "eu-west-3":
-            regionInfo = {
-                hostname: "sts.eu-west-3.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "me-south-1":
-            regionInfo = {
-                hostname: "sts.me-south-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "sa-east-1":
-            regionInfo = {
-                hostname: "sts.sa-east-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "us-east-1":
-            regionInfo = {
-                hostname: "sts.us-east-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "us-east-1-fips":
-            regionInfo = {
-                hostname: "sts-fips.us-east-1.amazonaws.com",
-                partition: "aws",
-                signingRegion: "us-east-1",
-            };
-            break;
-        case "us-east-2":
-            regionInfo = {
-                hostname: "sts.us-east-2.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "us-east-2-fips":
-            regionInfo = {
-                hostname: "sts-fips.us-east-2.amazonaws.com",
-                partition: "aws",
-                signingRegion: "us-east-2",
-            };
-            break;
-        case "us-gov-east-1":
-            regionInfo = {
-                hostname: "sts.us-gov-east-1.amazonaws.com",
-                partition: "aws-us-gov",
-            };
-            break;
-        case "us-gov-east-1-fips":
-            regionInfo = {
-                hostname: "sts.us-gov-east-1.amazonaws.com",
-                partition: "aws-us-gov",
-                signingRegion: "us-gov-east-1",
-            };
-            break;
-        case "us-gov-west-1":
-            regionInfo = {
-                hostname: "sts.us-gov-west-1.amazonaws.com",
-                partition: "aws-us-gov",
-            };
-            break;
-        case "us-gov-west-1-fips":
-            regionInfo = {
-                hostname: "sts.us-gov-west-1.amazonaws.com",
-                partition: "aws-us-gov",
-                signingRegion: "us-gov-west-1",
-            };
-            break;
-        case "us-iso-east-1":
-            regionInfo = {
-                hostname: "sts.us-iso-east-1.c2s.ic.gov",
-                partition: "aws-iso",
-            };
-            break;
-        case "us-isob-east-1":
-            regionInfo = {
-                hostname: "sts.us-isob-east-1.sc2s.sgov.gov",
-                partition: "aws-iso-b",
-            };
-            break;
-        case "us-west-1":
-            regionInfo = {
-                hostname: "sts.us-west-1.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "us-west-1-fips":
-            regionInfo = {
-                hostname: "sts-fips.us-west-1.amazonaws.com",
-                partition: "aws",
-                signingRegion: "us-west-1",
-            };
-            break;
-        case "us-west-2":
-            regionInfo = {
-                hostname: "sts.us-west-2.amazonaws.com",
-                partition: "aws",
-            };
-            break;
-        case "us-west-2-fips":
-            regionInfo = {
-                hostname: "sts-fips.us-west-2.amazonaws.com",
-                partition: "aws",
-                signingRegion: "us-west-2",
-            };
-            break;
-        // Next, try to match partition endpoints.
-        default:
-            if (AWS_REGIONS.has(region)) {
-                regionInfo = {
-                    hostname: AWS_TEMPLATE.replace("{region}", region),
-                    partition: "aws",
-                };
-            }
-            if (AWS_CN_REGIONS.has(region)) {
-                regionInfo = {
-                    hostname: AWS_CN_TEMPLATE.replace("{region}", region),
-                    partition: "aws-cn",
-                };
-            }
-            if (AWS_ISO_REGIONS.has(region)) {
-                regionInfo = {
-                    hostname: AWS_ISO_TEMPLATE.replace("{region}", region),
-                    partition: "aws-iso",
-                };
-            }
-            if (AWS_ISO_B_REGIONS.has(region)) {
-                regionInfo = {
-                    hostname: AWS_ISO_B_TEMPLATE.replace("{region}", region),
-                    partition: "aws-iso-b",
-                };
-            }
-            if (AWS_US_GOV_REGIONS.has(region)) {
-                regionInfo = {
-                    hostname: AWS_US_GOV_TEMPLATE.replace("{region}", region),
-                    partition: "aws-us-gov",
-                };
-            }
-            // Finally, assume it's an AWS partition endpoint.
-            if (regionInfo === undefined) {
-                regionInfo = {
-                    hostname: AWS_TEMPLATE.replace("{region}", region),
-                    partition: "aws",
-                };
-            }
-    }
-    return Promise.resolve({ signingService: "sts", ...regionInfo });
+const config_resolver_1 = __nccwpck_require__(7229);
+const regionHash = {
+    "aws-global": {
+        hostname: "sts.amazonaws.com",
+        signingRegion: "us-east-1",
+    },
+    "us-east-1-fips": {
+        hostname: "sts-fips.us-east-1.amazonaws.com",
+        signingRegion: "us-east-1",
+    },
+    "us-east-2-fips": {
+        hostname: "sts-fips.us-east-2.amazonaws.com",
+        signingRegion: "us-east-2",
+    },
+    "us-gov-east-1-fips": {
+        hostname: "sts.us-gov-east-1.amazonaws.com",
+        signingRegion: "us-gov-east-1",
+    },
+    "us-gov-west-1-fips": {
+        hostname: "sts.us-gov-west-1.amazonaws.com",
+        signingRegion: "us-gov-west-1",
+    },
+    "us-west-1-fips": {
+        hostname: "sts-fips.us-west-1.amazonaws.com",
+        signingRegion: "us-west-1",
+    },
+    "us-west-2-fips": {
+        hostname: "sts-fips.us-west-2.amazonaws.com",
+        signingRegion: "us-west-2",
+    },
 };
+const partitionHash = {
+    aws: {
+        regions: [
+            "af-south-1",
+            "ap-east-1",
+            "ap-northeast-1",
+            "ap-northeast-2",
+            "ap-northeast-3",
+            "ap-south-1",
+            "ap-southeast-1",
+            "ap-southeast-2",
+            "aws-global",
+            "ca-central-1",
+            "eu-central-1",
+            "eu-north-1",
+            "eu-south-1",
+            "eu-west-1",
+            "eu-west-2",
+            "eu-west-3",
+            "me-south-1",
+            "sa-east-1",
+            "us-east-1",
+            "us-east-1-fips",
+            "us-east-2",
+            "us-east-2-fips",
+            "us-west-1",
+            "us-west-1-fips",
+            "us-west-2",
+            "us-west-2-fips",
+        ],
+        hostname: "sts.{region}.amazonaws.com",
+    },
+    "aws-cn": {
+        regions: ["cn-north-1", "cn-northwest-1"],
+        hostname: "sts.{region}.amazonaws.com.cn",
+    },
+    "aws-iso": {
+        regions: ["us-iso-east-1"],
+        hostname: "sts.{region}.c2s.ic.gov",
+    },
+    "aws-iso-b": {
+        regions: ["us-isob-east-1"],
+        hostname: "sts.{region}.sc2s.sgov.gov",
+    },
+    "aws-us-gov": {
+        regions: ["us-gov-east-1", "us-gov-east-1-fips", "us-gov-west-1", "us-gov-west-1-fips"],
+        hostname: "sts.{region}.amazonaws.com",
+    },
+};
+const defaultRegionInfoProvider = async (region, options) => config_resolver_1.getRegionInfo(region, {
+    ...options,
+    signingService: "sts",
+    regionHash,
+    partitionHash,
+});
 exports.defaultRegionInfoProvider = defaultRegionInfoProvider;
 //# sourceMappingURL=endpoints.js.map
 
@@ -22751,13 +22289,13 @@ const collectBody = (streamBody = new Uint8Array(), context) => {
 // Encode Uint8Array data into string with utf-8.
 const collectBodyString = (streamBody, context) => collectBody(streamBody, context).then((body) => context.utf8Encoder(body));
 const buildHttpRpcRequest = async (context, headers, path, resolvedHostname, body) => {
-    const { hostname, protocol = "https", port } = await context.endpoint();
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const contents = {
         protocol,
         hostname,
         port,
         method: "POST",
-        path,
+        path: basePath.endsWith("/") ? basePath.slice(0, -1) + path : basePath + path,
         headers,
     };
     if (resolvedHostname !== undefined) {
@@ -22829,7 +22367,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * @internal
  */
-const getRuntimeConfig = (config = {}) => {
+const getRuntimeConfig = (config) => {
     var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o;
     smithy_client_1.emitWarningIfUnsupportedVersion(process.version);
     const clientSharedValues = runtimeConfig_shared_1.getRuntimeConfig(config);
@@ -22837,19 +22375,19 @@ const getRuntimeConfig = (config = {}) => {
         ...clientSharedValues,
         ...config,
         runtime: "node",
-        base64Decoder: (_a = config.base64Decoder) !== null && _a !== void 0 ? _a : util_base64_node_1.fromBase64,
-        base64Encoder: (_b = config.base64Encoder) !== null && _b !== void 0 ? _b : util_base64_node_1.toBase64,
-        bodyLengthChecker: (_c = config.bodyLengthChecker) !== null && _c !== void 0 ? _c : util_body_length_node_1.calculateBodyLength,
-        credentialDefaultProvider: (_d = config.credentialDefaultProvider) !== null && _d !== void 0 ? _d : defaultStsRoleAssumers_1.decorateDefaultCredentialProvider(credential_provider_node_1.defaultProvider),
-        defaultUserAgentProvider: (_e = config.defaultUserAgentProvider) !== null && _e !== void 0 ? _e : util_user_agent_node_1.defaultUserAgent({ serviceId: clientSharedValues.serviceId, clientVersion: package_json_1.default.version }),
-        maxAttempts: (_f = config.maxAttempts) !== null && _f !== void 0 ? _f : node_config_provider_1.loadConfig(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
-        region: (_g = config.region) !== null && _g !== void 0 ? _g : node_config_provider_1.loadConfig(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
-        requestHandler: (_h = config.requestHandler) !== null && _h !== void 0 ? _h : new node_http_handler_1.NodeHttpHandler(),
-        retryModeProvider: (_j = config.retryModeProvider) !== null && _j !== void 0 ? _j : node_config_provider_1.loadConfig(middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS),
-        sha256: (_k = config.sha256) !== null && _k !== void 0 ? _k : hash_node_1.Hash.bind(null, "sha256"),
-        streamCollector: (_l = config.streamCollector) !== null && _l !== void 0 ? _l : node_http_handler_1.streamCollector,
-        utf8Decoder: (_m = config.utf8Decoder) !== null && _m !== void 0 ? _m : util_utf8_node_1.fromUtf8,
-        utf8Encoder: (_o = config.utf8Encoder) !== null && _o !== void 0 ? _o : util_utf8_node_1.toUtf8,
+        base64Decoder: (_a = config === null || config === void 0 ? void 0 : config.base64Decoder) !== null && _a !== void 0 ? _a : util_base64_node_1.fromBase64,
+        base64Encoder: (_b = config === null || config === void 0 ? void 0 : config.base64Encoder) !== null && _b !== void 0 ? _b : util_base64_node_1.toBase64,
+        bodyLengthChecker: (_c = config === null || config === void 0 ? void 0 : config.bodyLengthChecker) !== null && _c !== void 0 ? _c : util_body_length_node_1.calculateBodyLength,
+        credentialDefaultProvider: (_d = config === null || config === void 0 ? void 0 : config.credentialDefaultProvider) !== null && _d !== void 0 ? _d : defaultStsRoleAssumers_1.decorateDefaultCredentialProvider(credential_provider_node_1.defaultProvider),
+        defaultUserAgentProvider: (_e = config === null || config === void 0 ? void 0 : config.defaultUserAgentProvider) !== null && _e !== void 0 ? _e : util_user_agent_node_1.defaultUserAgent({ serviceId: clientSharedValues.serviceId, clientVersion: package_json_1.default.version }),
+        maxAttempts: (_f = config === null || config === void 0 ? void 0 : config.maxAttempts) !== null && _f !== void 0 ? _f : node_config_provider_1.loadConfig(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
+        region: (_g = config === null || config === void 0 ? void 0 : config.region) !== null && _g !== void 0 ? _g : node_config_provider_1.loadConfig(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
+        requestHandler: (_h = config === null || config === void 0 ? void 0 : config.requestHandler) !== null && _h !== void 0 ? _h : new node_http_handler_1.NodeHttpHandler(),
+        retryMode: (_j = config === null || config === void 0 ? void 0 : config.retryMode) !== null && _j !== void 0 ? _j : node_config_provider_1.loadConfig(middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS),
+        sha256: (_k = config === null || config === void 0 ? void 0 : config.sha256) !== null && _k !== void 0 ? _k : hash_node_1.Hash.bind(null, "sha256"),
+        streamCollector: (_l = config === null || config === void 0 ? void 0 : config.streamCollector) !== null && _l !== void 0 ? _l : node_http_handler_1.streamCollector,
+        utf8Decoder: (_m = config === null || config === void 0 ? void 0 : config.utf8Decoder) !== null && _m !== void 0 ? _m : util_utf8_node_1.fromUtf8,
+        utf8Encoder: (_o = config === null || config === void 0 ? void 0 : config.utf8Encoder) !== null && _o !== void 0 ? _o : util_utf8_node_1.toUtf8,
     };
 };
 exports.getRuntimeConfig = getRuntimeConfig;
@@ -22869,99 +22407,19 @@ const url_parser_1 = __nccwpck_require__(9427);
 /**
  * @internal
  */
-const getRuntimeConfig = (config = {}) => {
+const getRuntimeConfig = (config) => {
     var _a, _b, _c, _d, _e;
     return ({
         apiVersion: "2011-06-15",
-        disableHostPrefix: (_a = config.disableHostPrefix) !== null && _a !== void 0 ? _a : false,
-        logger: (_b = config.logger) !== null && _b !== void 0 ? _b : {},
-        regionInfoProvider: (_c = config.regionInfoProvider) !== null && _c !== void 0 ? _c : endpoints_1.defaultRegionInfoProvider,
-        serviceId: (_d = config.serviceId) !== null && _d !== void 0 ? _d : "STS",
-        urlParser: (_e = config.urlParser) !== null && _e !== void 0 ? _e : url_parser_1.parseUrl,
+        disableHostPrefix: (_a = config === null || config === void 0 ? void 0 : config.disableHostPrefix) !== null && _a !== void 0 ? _a : false,
+        logger: (_b = config === null || config === void 0 ? void 0 : config.logger) !== null && _b !== void 0 ? _b : {},
+        regionInfoProvider: (_c = config === null || config === void 0 ? void 0 : config.regionInfoProvider) !== null && _c !== void 0 ? _c : endpoints_1.defaultRegionInfoProvider,
+        serviceId: (_d = config === null || config === void 0 ? void 0 : config.serviceId) !== null && _d !== void 0 ? _d : "STS",
+        urlParser: (_e = config === null || config === void 0 ? void 0 : config.urlParser) !== null && _e !== void 0 ? _e : url_parser_1.parseUrl,
     });
 };
 exports.getRuntimeConfig = getRuntimeConfig;
 //# sourceMappingURL=runtimeConfig.shared.js.map
-
-/***/ }),
-
-/***/ 7510:
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.resolveCustomEndpointsConfig = void 0;
-const resolveCustomEndpointsConfig = (input) => {
-    var _a;
-    return ({
-        ...input,
-        tls: (_a = input.tls) !== null && _a !== void 0 ? _a : true,
-        endpoint: normalizeEndpoint(input),
-        isCustomEndpoint: true,
-    });
-};
-exports.resolveCustomEndpointsConfig = resolveCustomEndpointsConfig;
-const normalizeEndpoint = (input) => {
-    const { endpoint, urlParser } = input;
-    if (typeof endpoint === "string") {
-        const promisified = Promise.resolve(urlParser(endpoint));
-        return () => promisified;
-    }
-    else if (typeof endpoint === "object") {
-        const promisified = Promise.resolve(endpoint);
-        return () => promisified;
-    }
-    return endpoint;
-};
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ3VzdG9tRW5kcG9pbnRzQ29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL0N1c3RvbUVuZHBvaW50c0NvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUE4Qk8sTUFBTSw0QkFBNEIsR0FBRyxDQUMxQyxLQUEwRCxFQUN2QixFQUFFOztJQUFDLE9BQUEsQ0FBQztRQUN2QyxHQUFHLEtBQUs7UUFDUixHQUFHLEVBQUUsTUFBQSxLQUFLLENBQUMsR0FBRyxtQ0FBSSxJQUFJO1FBQ3RCLFFBQVEsRUFBRSxpQkFBaUIsQ0FBQyxLQUFLLENBQUM7UUFDbEMsZ0JBQWdCLEVBQUUsSUFBSTtLQUN2QixDQUFDLENBQUE7Q0FBQSxDQUFDO0FBUFUsUUFBQSw0QkFBNEIsZ0NBT3RDO0FBRUgsTUFBTSxpQkFBaUIsR0FBRyxDQUFDLEtBQXNELEVBQXNCLEVBQUU7SUFDdkcsTUFBTSxFQUFFLFFBQVEsRUFBRSxTQUFTLEVBQUUsR0FBRyxLQUFLLENBQUM7SUFDdEMsSUFBSSxPQUFPLFFBQVEsS0FBSyxRQUFRLEVBQUU7UUFDaEMsTUFBTSxXQUFXLEdBQUcsT0FBTyxDQUFDLE9BQU8sQ0FBQyxTQUFTLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQztRQUN6RCxPQUFPLEdBQUcsRUFBRSxDQUFDLFdBQVcsQ0FBQztLQUMxQjtTQUFNLElBQUksT0FBTyxRQUFRLEtBQUssUUFBUSxFQUFFO1FBQ3ZDLE1BQU0sV0FBVyxHQUFHLE9BQU8sQ0FBQyxPQUFPLENBQUMsUUFBUSxDQUFDLENBQUM7UUFDOUMsT0FBTyxHQUFHLEVBQUUsQ0FBQyxXQUFXLENBQUM7S0FDMUI7SUFDRCxPQUFPLFFBQVEsQ0FBQztBQUNsQixDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBFbmRwb2ludCwgUHJvdmlkZXIsIFVybFBhcnNlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5leHBvcnQgaW50ZXJmYWNlIEN1c3RvbUVuZHBvaW50c0lucHV0Q29uZmlnIHtcbiAgLyoqXG4gICAqIFRoZSBmdWxseSBxdWFsaWZpZWQgZW5kcG9pbnQgb2YgdGhlIHdlYnNlcnZpY2UuXG4gICAqL1xuICBlbmRwb2ludDogc3RyaW5nIHwgRW5kcG9pbnQgfCBQcm92aWRlcjxFbmRwb2ludD47XG5cbiAgLyoqXG4gICAqIFdoZXRoZXIgVExTIGlzIGVuYWJsZWQgZm9yIHJlcXVlc3RzLlxuICAgKi9cbiAgdGxzPzogYm9vbGVhbjtcbn1cblxuaW50ZXJmYWNlIFByZXZpb3VzbHlSZXNvbHZlZCB7XG4gIHVybFBhcnNlcjogVXJsUGFyc2VyO1xufVxuXG5leHBvcnQgaW50ZXJmYWNlIEN1c3RvbUVuZHBvaW50c1Jlc29sdmVkQ29uZmlnIGV4dGVuZHMgUmVxdWlyZWQ8Q3VzdG9tRW5kcG9pbnRzSW5wdXRDb25maWc+IHtcbiAgLyoqXG4gICAqIFJlc29sdmVkIHZhbHVlIGZvciBpbnB1dCB7QGxpbmsgQ3VzdG9tRW5kcG9pbnRzSW5wdXRDb25maWcuZW5kcG9pbnR9XG4gICAqL1xuICBlbmRwb2ludDogUHJvdmlkZXI8RW5kcG9pbnQ+O1xuICAvKipcbiAgICogV2hldGhlciB0aGUgZW5kcG9pbnQgaXMgc3BlY2lmaWVkIGJ5IGNhbGxlci5cbiAgICogQGludGVybmFsXG4gICAqL1xuICBpc0N1c3RvbUVuZHBvaW50OiB0cnVlO1xufVxuXG5leHBvcnQgY29uc3QgcmVzb2x2ZUN1c3RvbUVuZHBvaW50c0NvbmZpZyA9IDxUPihcbiAgaW5wdXQ6IFQgJiBDdXN0b21FbmRwb2ludHNJbnB1dENvbmZpZyAmIFByZXZpb3VzbHlSZXNvbHZlZFxuKTogVCAmIEN1c3RvbUVuZHBvaW50c1Jlc29sdmVkQ29uZmlnID0+ICh7XG4gIC4uLmlucHV0LFxuICB0bHM6IGlucHV0LnRscyA/PyB0cnVlLFxuICBlbmRwb2ludDogbm9ybWFsaXplRW5kcG9pbnQoaW5wdXQpLFxuICBpc0N1c3RvbUVuZHBvaW50OiB0cnVlLFxufSk7XG5cbmNvbnN0IG5vcm1hbGl6ZUVuZHBvaW50ID0gKGlucHV0OiBDdXN0b21FbmRwb2ludHNJbnB1dENvbmZpZyAmIFByZXZpb3VzbHlSZXNvbHZlZCk6IFByb3ZpZGVyPEVuZHBvaW50PiA9PiB7XG4gIGNvbnN0IHsgZW5kcG9pbnQsIHVybFBhcnNlciB9ID0gaW5wdXQ7XG4gIGlmICh0eXBlb2YgZW5kcG9pbnQgPT09IFwic3RyaW5nXCIpIHtcbiAgICBjb25zdCBwcm9taXNpZmllZCA9IFByb21pc2UucmVzb2x2ZSh1cmxQYXJzZXIoZW5kcG9pbnQpKTtcbiAgICByZXR1cm4gKCkgPT4gcHJvbWlzaWZpZWQ7XG4gIH0gZWxzZSBpZiAodHlwZW9mIGVuZHBvaW50ID09PSBcIm9iamVjdFwiKSB7XG4gICAgY29uc3QgcHJvbWlzaWZpZWQgPSBQcm9taXNlLnJlc29sdmUoZW5kcG9pbnQpO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfVxuICByZXR1cm4gZW5kcG9pbnQ7XG59O1xuIl19
-
-/***/ }),
-
-/***/ 445:
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.resolveEndpointsConfig = void 0;
-const resolveEndpointsConfig = (input) => {
-    var _a;
-    return ({
-        ...input,
-        tls: (_a = input.tls) !== null && _a !== void 0 ? _a : true,
-        endpoint: input.endpoint ? normalizeEndpoint(input) : () => getEndPointFromRegion(input),
-        isCustomEndpoint: input.endpoint ? true : false,
-    });
-};
-exports.resolveEndpointsConfig = resolveEndpointsConfig;
-const normalizeEndpoint = (input) => {
-    const { endpoint, urlParser } = input;
-    if (typeof endpoint === "string") {
-        const promisified = Promise.resolve(urlParser(endpoint));
-        return () => promisified;
-    }
-    else if (typeof endpoint === "object") {
-        const promisified = Promise.resolve(endpoint);
-        return () => promisified;
-    }
-    return endpoint;
-};
-const getEndPointFromRegion = async (input) => {
-    var _a;
-    const { tls = true } = input;
-    const region = await input.region();
-    const dnsHostRegex = new RegExp(/^([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9])$/);
-    if (!dnsHostRegex.test(region)) {
-        throw new Error("Invalid region in client config");
-    }
-    const { hostname } = (_a = (await input.regionInfoProvider(region))) !== null && _a !== void 0 ? _a : {};
-    if (!hostname) {
-        throw new Error("Cannot resolve hostname from client config");
-    }
-    return input.urlParser(`${tls ? "https:" : "http:"}//${hostname}`);
-};
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRW5kcG9pbnRzQ29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL0VuZHBvaW50c0NvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFnQ08sTUFBTSxzQkFBc0IsR0FBRyxDQUNwQyxLQUFvRCxFQUN2QixFQUFFOztJQUFDLE9BQUEsQ0FBQztRQUNqQyxHQUFHLEtBQUs7UUFDUixHQUFHLEVBQUUsTUFBQSxLQUFLLENBQUMsR0FBRyxtQ0FBSSxJQUFJO1FBQ3RCLFFBQVEsRUFBRSxLQUFLLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQyxpQkFBaUIsQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxFQUFFLENBQUMscUJBQXFCLENBQUMsS0FBSyxDQUFDO1FBQ3hGLGdCQUFnQixFQUFFLEtBQUssQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUFDLENBQUMsS0FBSztLQUNoRCxDQUFDLENBQUE7Q0FBQSxDQUFDO0FBUFUsUUFBQSxzQkFBc0IsMEJBT2hDO0FBRUgsTUFBTSxpQkFBaUIsR0FBRyxDQUFDLEtBQWdELEVBQXNCLEVBQUU7SUFDakcsTUFBTSxFQUFFLFFBQVEsRUFBRSxTQUFTLEVBQUUsR0FBRyxLQUFLLENBQUM7SUFDdEMsSUFBSSxPQUFPLFFBQVEsS0FBSyxRQUFRLEVBQUU7UUFDaEMsTUFBTSxXQUFXLEdBQUcsT0FBTyxDQUFDLE9BQU8sQ0FBQyxTQUFTLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQztRQUN6RCxPQUFPLEdBQUcsRUFBRSxDQUFDLFdBQVcsQ0FBQztLQUMxQjtTQUFNLElBQUksT0FBTyxRQUFRLEtBQUssUUFBUSxFQUFFO1FBQ3ZDLE1BQU0sV0FBVyxHQUFHLE9BQU8sQ0FBQyxPQUFPLENBQUMsUUFBUSxDQUFDLENBQUM7UUFDOUMsT0FBTyxHQUFHLEVBQUUsQ0FBQyxXQUFXLENBQUM7S0FDMUI7SUFDRCxPQUFPLFFBQVMsQ0FBQztBQUNuQixDQUFDLENBQUM7QUFFRixNQUFNLHFCQUFxQixHQUFHLEtBQUssRUFBRSxLQUFnRCxFQUFFLEVBQUU7O0lBQ3ZGLE1BQU0sRUFBRSxHQUFHLEdBQUcsSUFBSSxFQUFFLEdBQUcsS0FBSyxDQUFDO0lBQzdCLE1BQU0sTUFBTSxHQUFHLE1BQU0sS0FBSyxDQUFDLE1BQU0sRUFBRSxDQUFDO0lBRXBDLE1BQU0sWUFBWSxHQUFHLElBQUksTUFBTSxDQUFDLDBEQUEwRCxDQUFDLENBQUM7SUFDNUYsSUFBSSxDQUFDLFlBQVksQ0FBQyxJQUFJLENBQUMsTUFBTSxDQUFDLEVBQUU7UUFDOUIsTUFBTSxJQUFJLEtBQUssQ0FBQyxpQ0FBaUMsQ0FBQyxDQUFDO0tBQ3BEO0lBRUQsTUFBTSxFQUFFLFFBQVEsRUFBRSxHQUFHLE1BQUEsQ0FBQyxNQUFNLEtBQUssQ0FBQyxrQkFBa0IsQ0FBQyxNQUFNLENBQUMsQ0FBQyxtQ0FBSSxFQUFFLENBQUM7SUFDcEUsSUFBSSxDQUFDLFFBQVEsRUFBRTtRQUNiLE1BQU0sSUFBSSxLQUFLLENBQUMsNENBQTRDLENBQUMsQ0FBQztLQUMvRDtJQUVELE9BQU8sS0FBSyxDQUFDLFNBQVMsQ0FBQyxHQUFHLEdBQUcsQ0FBQyxDQUFDLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQyxPQUFPLEtBQUssUUFBUSxFQUFFLENBQUMsQ0FBQztBQUNyRSxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBFbmRwb2ludCwgUHJvdmlkZXIsIFJlZ2lvbkluZm9Qcm92aWRlciwgVXJsUGFyc2VyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmV4cG9ydCBpbnRlcmZhY2UgRW5kcG9pbnRzSW5wdXRDb25maWcge1xuICAvKipcbiAgICogVGhlIGZ1bGx5IHF1YWxpZmllZCBlbmRwb2ludCBvZiB0aGUgd2Vic2VydmljZS4gVGhpcyBpcyBvbmx5IHJlcXVpcmVkIHdoZW4gdXNpbmcgYSBjdXN0b20gZW5kcG9pbnQgKGZvciBleGFtcGxlLCB3aGVuIHVzaW5nIGEgbG9jYWwgdmVyc2lvbiBvZiBTMykuXG4gICAqL1xuICBlbmRwb2ludD86IHN0cmluZyB8IEVuZHBvaW50IHwgUHJvdmlkZXI8RW5kcG9pbnQ+O1xuXG4gIC8qKlxuICAgKiBXaGV0aGVyIFRMUyBpcyBlbmFibGVkIGZvciByZXF1ZXN0cy5cbiAgICovXG4gIHRscz86IGJvb2xlYW47XG59XG5cbmludGVyZmFjZSBQcmV2aW91c2x5UmVzb2x2ZWQge1xuICByZWdpb25JbmZvUHJvdmlkZXI6IFJlZ2lvbkluZm9Qcm92aWRlcjtcbiAgdXJsUGFyc2VyOiBVcmxQYXJzZXI7XG4gIHJlZ2lvbjogUHJvdmlkZXI8c3RyaW5nPjtcbn1cblxuZXhwb3J0IGludGVyZmFjZSBFbmRwb2ludHNSZXNvbHZlZENvbmZpZyBleHRlbmRzIFJlcXVpcmVkPEVuZHBvaW50c0lucHV0Q29uZmlnPiB7XG4gIC8qKlxuICAgKiBSZXNvbHZlZCB2YWx1ZSBmb3IgaW5wdXQge0BsaW5rIEVuZHBvaW50c1Jlc29sdmVkQ29uZmlnLmVuZHBvaW50fVxuICAgKi9cbiAgZW5kcG9pbnQ6IFByb3ZpZGVyPEVuZHBvaW50PjtcbiAgLyoqXG4gICAqIFdoZXRoZXIgdGhlIGVuZHBvaW50IGlzIHNwZWNpZmllZCBieSBjYWxsZXIuXG4gICAqIEBpbnRlcm5hbFxuICAgKi9cbiAgaXNDdXN0b21FbmRwb2ludDogYm9vbGVhbjtcbn1cblxuZXhwb3J0IGNvbnN0IHJlc29sdmVFbmRwb2ludHNDb25maWcgPSA8VD4oXG4gIGlucHV0OiBUICYgRW5kcG9pbnRzSW5wdXRDb25maWcgJiBQcmV2aW91c2x5UmVzb2x2ZWRcbik6IFQgJiBFbmRwb2ludHNSZXNvbHZlZENvbmZpZyA9PiAoe1xuICAuLi5pbnB1dCxcbiAgdGxzOiBpbnB1dC50bHMgPz8gdHJ1ZSxcbiAgZW5kcG9pbnQ6IGlucHV0LmVuZHBvaW50ID8gbm9ybWFsaXplRW5kcG9pbnQoaW5wdXQpIDogKCkgPT4gZ2V0RW5kUG9pbnRGcm9tUmVnaW9uKGlucHV0KSxcbiAgaXNDdXN0b21FbmRwb2ludDogaW5wdXQuZW5kcG9pbnQgPyB0cnVlIDogZmFsc2UsXG59KTtcblxuY29uc3Qgbm9ybWFsaXplRW5kcG9pbnQgPSAoaW5wdXQ6IEVuZHBvaW50c0lucHV0Q29uZmlnICYgUHJldmlvdXNseVJlc29sdmVkKTogUHJvdmlkZXI8RW5kcG9pbnQ+ID0+IHtcbiAgY29uc3QgeyBlbmRwb2ludCwgdXJsUGFyc2VyIH0gPSBpbnB1dDtcbiAgaWYgKHR5cGVvZiBlbmRwb2ludCA9PT0gXCJzdHJpbmdcIikge1xuICAgIGNvbnN0IHByb21pc2lmaWVkID0gUHJvbWlzZS5yZXNvbHZlKHVybFBhcnNlcihlbmRwb2ludCkpO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfSBlbHNlIGlmICh0eXBlb2YgZW5kcG9pbnQgPT09IFwib2JqZWN0XCIpIHtcbiAgICBjb25zdCBwcm9taXNpZmllZCA9IFByb21pc2UucmVzb2x2ZShlbmRwb2ludCk7XG4gICAgcmV0dXJuICgpID0+IHByb21pc2lmaWVkO1xuICB9XG4gIHJldHVybiBlbmRwb2ludCE7XG59O1xuXG5jb25zdCBnZXRFbmRQb2ludEZyb21SZWdpb24gPSBhc3luYyAoaW5wdXQ6IEVuZHBvaW50c0lucHV0Q29uZmlnICYgUHJldmlvdXNseVJlc29sdmVkKSA9PiB7XG4gIGNvbnN0IHsgdGxzID0gdHJ1ZSB9ID0gaW5wdXQ7XG4gIGNvbnN0IHJlZ2lvbiA9IGF3YWl0IGlucHV0LnJlZ2lvbigpO1xuXG4gIGNvbnN0IGRuc0hvc3RSZWdleCA9IG5ldyBSZWdFeHAoL14oW2EtekEtWjAtOV18W2EtekEtWjAtOV1bYS16QS1aMC05LV17MCw2MX1bYS16QS1aMC05XSkkLyk7XG4gIGlmICghZG5zSG9zdFJlZ2V4LnRlc3QocmVnaW9uKSkge1xuICAgIHRocm93IG5ldyBFcnJvcihcIkludmFsaWQgcmVnaW9uIGluIGNsaWVudCBjb25maWdcIik7XG4gIH1cblxuICBjb25zdCB7IGhvc3RuYW1lIH0gPSAoYXdhaXQgaW5wdXQucmVnaW9uSW5mb1Byb3ZpZGVyKHJlZ2lvbikpID8/IHt9O1xuICBpZiAoIWhvc3RuYW1lKSB7XG4gICAgdGhyb3cgbmV3IEVycm9yKFwiQ2Fubm90IHJlc29sdmUgaG9zdG5hbWUgZnJvbSBjbGllbnQgY29uZmlnXCIpO1xuICB9XG5cbiAgcmV0dXJuIGlucHV0LnVybFBhcnNlcihgJHt0bHMgPyBcImh0dHBzOlwiIDogXCJodHRwOlwifS8vJHtob3N0bmFtZX1gKTtcbn07XG4iXX0=
 
 /***/ }),
 
@@ -23005,6 +22463,115 @@ const normalizeRegion = (region) => {
 
 /***/ }),
 
+/***/ 9640:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(1844), exports);
+tslib_1.__exportStar(__nccwpck_require__(9472), exports);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvZW5kcG9pbnRzQ29uZmlnL2luZGV4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLHlFQUErQztBQUMvQyxtRUFBeUMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgKiBmcm9tIFwiLi9yZXNvbHZlQ3VzdG9tRW5kcG9pbnRzQ29uZmlnXCI7XG5leHBvcnQgKiBmcm9tIFwiLi9yZXNvbHZlRW5kcG9pbnRzQ29uZmlnXCI7XG4iXX0=
+
+/***/ }),
+
+/***/ 1844:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.resolveCustomEndpointsConfig = void 0;
+const normalizeEndpoint_1 = __nccwpck_require__(2900);
+const resolveCustomEndpointsConfig = (input) => {
+    var _a;
+    return ({
+        ...input,
+        tls: (_a = input.tls) !== null && _a !== void 0 ? _a : true,
+        endpoint: normalizeEndpoint_1.normalizeEndpoint(input),
+        isCustomEndpoint: true,
+    });
+};
+exports.resolveCustomEndpointsConfig = resolveCustomEndpointsConfig;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmVzb2x2ZUN1c3RvbUVuZHBvaW50c0NvbmZpZy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy9lbmRwb2ludHNDb25maWcvcmVzb2x2ZUN1c3RvbUVuZHBvaW50c0NvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFHQSxpRUFBOEQ7QUFxQnZELE1BQU0sNEJBQTRCLEdBQUcsQ0FDMUMsS0FBMEQsRUFDdkIsRUFBRTs7SUFBQyxPQUFBLENBQUM7UUFDdkMsR0FBRyxLQUFLO1FBQ1IsR0FBRyxFQUFFLE1BQUEsS0FBSyxDQUFDLEdBQUcsbUNBQUksSUFBSTtRQUN0QixRQUFRLEVBQUUscUNBQWlCLENBQUMsS0FBSyxDQUFDO1FBQ2xDLGdCQUFnQixFQUFFLElBQUk7S0FDdkIsQ0FBQyxDQUFBO0NBQUEsQ0FBQztBQVBVLFFBQUEsNEJBQTRCLGdDQU90QyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEVuZHBvaW50LCBQcm92aWRlciwgVXJsUGFyc2VyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmltcG9ydCB7IEVuZHBvaW50c0lucHV0Q29uZmlnLCBFbmRwb2ludHNSZXNvbHZlZENvbmZpZyB9IGZyb20gXCIuL3Jlc29sdmVFbmRwb2ludHNDb25maWdcIjtcbmltcG9ydCB7IG5vcm1hbGl6ZUVuZHBvaW50IH0gZnJvbSBcIi4vdXRpbHMvbm9ybWFsaXplRW5kcG9pbnRcIjtcblxuZXhwb3J0IGludGVyZmFjZSBDdXN0b21FbmRwb2ludHNJbnB1dENvbmZpZyBleHRlbmRzIEVuZHBvaW50c0lucHV0Q29uZmlnIHtcbiAgLyoqXG4gICAqIFRoZSBmdWxseSBxdWFsaWZpZWQgZW5kcG9pbnQgb2YgdGhlIHdlYnNlcnZpY2UuXG4gICAqL1xuICBlbmRwb2ludDogc3RyaW5nIHwgRW5kcG9pbnQgfCBQcm92aWRlcjxFbmRwb2ludD47XG59XG5cbmludGVyZmFjZSBQcmV2aW91c2x5UmVzb2x2ZWQge1xuICB1cmxQYXJzZXI6IFVybFBhcnNlcjtcbn1cblxuZXhwb3J0IGludGVyZmFjZSBDdXN0b21FbmRwb2ludHNSZXNvbHZlZENvbmZpZyBleHRlbmRzIEVuZHBvaW50c1Jlc29sdmVkQ29uZmlnIHtcbiAgLyoqXG4gICAqIFdoZXRoZXIgdGhlIGVuZHBvaW50IGlzIHNwZWNpZmllZCBieSBjYWxsZXIuXG4gICAqIEBpbnRlcm5hbFxuICAgKi9cbiAgaXNDdXN0b21FbmRwb2ludDogdHJ1ZTtcbn1cblxuZXhwb3J0IGNvbnN0IHJlc29sdmVDdXN0b21FbmRwb2ludHNDb25maWcgPSA8VD4oXG4gIGlucHV0OiBUICYgQ3VzdG9tRW5kcG9pbnRzSW5wdXRDb25maWcgJiBQcmV2aW91c2x5UmVzb2x2ZWRcbik6IFQgJiBDdXN0b21FbmRwb2ludHNSZXNvbHZlZENvbmZpZyA9PiAoe1xuICAuLi5pbnB1dCxcbiAgdGxzOiBpbnB1dC50bHMgPz8gdHJ1ZSxcbiAgZW5kcG9pbnQ6IG5vcm1hbGl6ZUVuZHBvaW50KGlucHV0KSxcbiAgaXNDdXN0b21FbmRwb2ludDogdHJ1ZSxcbn0pO1xuIl19
+
+/***/ }),
+
+/***/ 9472:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.resolveEndpointsConfig = void 0;
+const getEndpointFromRegion_1 = __nccwpck_require__(8519);
+const normalizeEndpoint_1 = __nccwpck_require__(2900);
+const resolveEndpointsConfig = (input) => {
+    var _a;
+    return ({
+        ...input,
+        tls: (_a = input.tls) !== null && _a !== void 0 ? _a : true,
+        endpoint: input.endpoint
+            ? normalizeEndpoint_1.normalizeEndpoint({ ...input, endpoint: input.endpoint })
+            : () => getEndpointFromRegion_1.getEndpointFromRegion(input),
+        isCustomEndpoint: input.endpoint ? true : false,
+    });
+};
+exports.resolveEndpointsConfig = resolveEndpointsConfig;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmVzb2x2ZUVuZHBvaW50c0NvbmZpZy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy9lbmRwb2ludHNDb25maWcvcmVzb2x2ZUVuZHBvaW50c0NvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFFQSx5RUFBc0U7QUFDdEUsaUVBQThEO0FBaUN2RCxNQUFNLHNCQUFzQixHQUFHLENBQ3BDLEtBQW9ELEVBQ3ZCLEVBQUU7O0lBQUMsT0FBQSxDQUFDO1FBQ2pDLEdBQUcsS0FBSztRQUNSLEdBQUcsRUFBRSxNQUFBLEtBQUssQ0FBQyxHQUFHLG1DQUFJLElBQUk7UUFDdEIsUUFBUSxFQUFFLEtBQUssQ0FBQyxRQUFRO1lBQ3RCLENBQUMsQ0FBQyxxQ0FBaUIsQ0FBQyxFQUFFLEdBQUcsS0FBSyxFQUFFLFFBQVEsRUFBRSxLQUFLLENBQUMsUUFBUSxFQUFFLENBQUM7WUFDM0QsQ0FBQyxDQUFDLEdBQUcsRUFBRSxDQUFDLDZDQUFxQixDQUFDLEtBQUssQ0FBQztRQUN0QyxnQkFBZ0IsRUFBRSxLQUFLLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxDQUFDLEtBQUs7S0FDaEQsQ0FBQyxDQUFBO0NBQUEsQ0FBQztBQVRVLFFBQUEsc0JBQXNCLDBCQVNoQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEVuZHBvaW50LCBQcm92aWRlciwgUmVnaW9uSW5mb1Byb3ZpZGVyLCBVcmxQYXJzZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuaW1wb3J0IHsgZ2V0RW5kcG9pbnRGcm9tUmVnaW9uIH0gZnJvbSBcIi4vdXRpbHMvZ2V0RW5kcG9pbnRGcm9tUmVnaW9uXCI7XG5pbXBvcnQgeyBub3JtYWxpemVFbmRwb2ludCB9IGZyb20gXCIuL3V0aWxzL25vcm1hbGl6ZUVuZHBvaW50XCI7XG5cbmV4cG9ydCBpbnRlcmZhY2UgRW5kcG9pbnRzSW5wdXRDb25maWcge1xuICAvKipcbiAgICogVGhlIGZ1bGx5IHF1YWxpZmllZCBlbmRwb2ludCBvZiB0aGUgd2Vic2VydmljZS4gVGhpcyBpcyBvbmx5IHJlcXVpcmVkIHdoZW4gdXNpbmcgYSBjdXN0b20gZW5kcG9pbnQgKGZvciBleGFtcGxlLCB3aGVuIHVzaW5nIGEgbG9jYWwgdmVyc2lvbiBvZiBTMykuXG4gICAqL1xuICBlbmRwb2ludD86IHN0cmluZyB8IEVuZHBvaW50IHwgUHJvdmlkZXI8RW5kcG9pbnQ+O1xuXG4gIC8qKlxuICAgKiBXaGV0aGVyIFRMUyBpcyBlbmFibGVkIGZvciByZXF1ZXN0cy5cbiAgICovXG4gIHRscz86IGJvb2xlYW47XG59XG5cbmludGVyZmFjZSBQcmV2aW91c2x5UmVzb2x2ZWQge1xuICByZWdpb25JbmZvUHJvdmlkZXI6IFJlZ2lvbkluZm9Qcm92aWRlcjtcbiAgdXJsUGFyc2VyOiBVcmxQYXJzZXI7XG4gIHJlZ2lvbjogUHJvdmlkZXI8c3RyaW5nPjtcbn1cblxuZXhwb3J0IGludGVyZmFjZSBFbmRwb2ludHNSZXNvbHZlZENvbmZpZyBleHRlbmRzIFJlcXVpcmVkPEVuZHBvaW50c0lucHV0Q29uZmlnPiB7XG4gIC8qKlxuICAgKiBSZXNvbHZlZCB2YWx1ZSBmb3IgaW5wdXQge0BsaW5rIEVuZHBvaW50c1Jlc29sdmVkQ29uZmlnLmVuZHBvaW50fVxuICAgKi9cbiAgZW5kcG9pbnQ6IFByb3ZpZGVyPEVuZHBvaW50PjtcblxuICAvKipcbiAgICogV2hldGhlciB0aGUgZW5kcG9pbnQgaXMgc3BlY2lmaWVkIGJ5IGNhbGxlci5cbiAgICogQGludGVybmFsXG4gICAqL1xuICBpc0N1c3RvbUVuZHBvaW50OiBib29sZWFuO1xufVxuXG5leHBvcnQgY29uc3QgcmVzb2x2ZUVuZHBvaW50c0NvbmZpZyA9IDxUPihcbiAgaW5wdXQ6IFQgJiBFbmRwb2ludHNJbnB1dENvbmZpZyAmIFByZXZpb3VzbHlSZXNvbHZlZFxuKTogVCAmIEVuZHBvaW50c1Jlc29sdmVkQ29uZmlnID0+ICh7XG4gIC4uLmlucHV0LFxuICB0bHM6IGlucHV0LnRscyA/PyB0cnVlLFxuICBlbmRwb2ludDogaW5wdXQuZW5kcG9pbnRcbiAgICA/IG5vcm1hbGl6ZUVuZHBvaW50KHsgLi4uaW5wdXQsIGVuZHBvaW50OiBpbnB1dC5lbmRwb2ludCB9KVxuICAgIDogKCkgPT4gZ2V0RW5kcG9pbnRGcm9tUmVnaW9uKGlucHV0KSxcbiAgaXNDdXN0b21FbmRwb2ludDogaW5wdXQuZW5kcG9pbnQgPyB0cnVlIDogZmFsc2UsXG59KTtcbiJdfQ==
+
+/***/ }),
+
+/***/ 8519:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getEndpointFromRegion = void 0;
+const getEndpointFromRegion = async (input) => {
+    var _a;
+    const { tls = true } = input;
+    const region = await input.region();
+    const dnsHostRegex = new RegExp(/^([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9])$/);
+    if (!dnsHostRegex.test(region)) {
+        throw new Error("Invalid region in client config");
+    }
+    const { hostname } = (_a = (await input.regionInfoProvider(region))) !== null && _a !== void 0 ? _a : {};
+    if (!hostname) {
+        throw new Error("Cannot resolve hostname from client config");
+    }
+    return input.urlParser(`${tls ? "https:" : "http:"}//${hostname}`);
+};
+exports.getEndpointFromRegion = getEndpointFromRegion;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZ2V0RW5kcG9pbnRGcm9tUmVnaW9uLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vc3JjL2VuZHBvaW50c0NvbmZpZy91dGlscy9nZXRFbmRwb2ludEZyb21SZWdpb24udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBU08sTUFBTSxxQkFBcUIsR0FBRyxLQUFLLEVBQUUsS0FBbUMsRUFBRSxFQUFFOztJQUNqRixNQUFNLEVBQUUsR0FBRyxHQUFHLElBQUksRUFBRSxHQUFHLEtBQUssQ0FBQztJQUM3QixNQUFNLE1BQU0sR0FBRyxNQUFNLEtBQUssQ0FBQyxNQUFNLEVBQUUsQ0FBQztJQUVwQyxNQUFNLFlBQVksR0FBRyxJQUFJLE1BQU0sQ0FBQywwREFBMEQsQ0FBQyxDQUFDO0lBQzVGLElBQUksQ0FBQyxZQUFZLENBQUMsSUFBSSxDQUFDLE1BQU0sQ0FBQyxFQUFFO1FBQzlCLE1BQU0sSUFBSSxLQUFLLENBQUMsaUNBQWlDLENBQUMsQ0FBQztLQUNwRDtJQUVELE1BQU0sRUFBRSxRQUFRLEVBQUUsR0FBRyxNQUFBLENBQUMsTUFBTSxLQUFLLENBQUMsa0JBQWtCLENBQUMsTUFBTSxDQUFDLENBQUMsbUNBQUksRUFBRSxDQUFDO0lBQ3BFLElBQUksQ0FBQyxRQUFRLEVBQUU7UUFDYixNQUFNLElBQUksS0FBSyxDQUFDLDRDQUE0QyxDQUFDLENBQUM7S0FDL0Q7SUFFRCxPQUFPLEtBQUssQ0FBQyxTQUFTLENBQUMsR0FBRyxHQUFHLENBQUMsQ0FBQyxDQUFDLFFBQVEsQ0FBQyxDQUFDLENBQUMsT0FBTyxLQUFLLFFBQVEsRUFBRSxDQUFDLENBQUM7QUFDckUsQ0FBQyxDQUFDO0FBZlcsUUFBQSxxQkFBcUIseUJBZWhDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgUHJvdmlkZXIsIFJlZ2lvbkluZm9Qcm92aWRlciwgVXJsUGFyc2VyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmludGVyZmFjZSBHZXRFbmRwb2ludEZyb21SZWdpb25PcHRpb25zIHtcbiAgcmVnaW9uOiBQcm92aWRlcjxzdHJpbmc+O1xuICB0bHM/OiBib29sZWFuO1xuICByZWdpb25JbmZvUHJvdmlkZXI6IFJlZ2lvbkluZm9Qcm92aWRlcjtcbiAgdXJsUGFyc2VyOiBVcmxQYXJzZXI7XG59XG5cbmV4cG9ydCBjb25zdCBnZXRFbmRwb2ludEZyb21SZWdpb24gPSBhc3luYyAoaW5wdXQ6IEdldEVuZHBvaW50RnJvbVJlZ2lvbk9wdGlvbnMpID0+IHtcbiAgY29uc3QgeyB0bHMgPSB0cnVlIH0gPSBpbnB1dDtcbiAgY29uc3QgcmVnaW9uID0gYXdhaXQgaW5wdXQucmVnaW9uKCk7XG5cbiAgY29uc3QgZG5zSG9zdFJlZ2V4ID0gbmV3IFJlZ0V4cCgvXihbYS16QS1aMC05XXxbYS16QS1aMC05XVthLXpBLVowLTktXXswLDYxfVthLXpBLVowLTldKSQvKTtcbiAgaWYgKCFkbnNIb3N0UmVnZXgudGVzdChyZWdpb24pKSB7XG4gICAgdGhyb3cgbmV3IEVycm9yKFwiSW52YWxpZCByZWdpb24gaW4gY2xpZW50IGNvbmZpZ1wiKTtcbiAgfVxuXG4gIGNvbnN0IHsgaG9zdG5hbWUgfSA9IChhd2FpdCBpbnB1dC5yZWdpb25JbmZvUHJvdmlkZXIocmVnaW9uKSkgPz8ge307XG4gIGlmICghaG9zdG5hbWUpIHtcbiAgICB0aHJvdyBuZXcgRXJyb3IoXCJDYW5ub3QgcmVzb2x2ZSBob3N0bmFtZSBmcm9tIGNsaWVudCBjb25maWdcIik7XG4gIH1cblxuICByZXR1cm4gaW5wdXQudXJsUGFyc2VyKGAke3RscyA/IFwiaHR0cHM6XCIgOiBcImh0dHA6XCJ9Ly8ke2hvc3RuYW1lfWApO1xufTtcbiJdfQ==
+
+/***/ }),
+
+/***/ 2900:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.normalizeEndpoint = void 0;
+const normalizeEndpoint = ({ endpoint, urlParser }) => {
+    if (typeof endpoint === "string") {
+        const promisified = Promise.resolve(urlParser(endpoint));
+        return () => promisified;
+    }
+    else if (typeof endpoint === "object") {
+        const promisified = Promise.resolve(endpoint);
+        return () => promisified;
+    }
+    return endpoint;
+};
+exports.normalizeEndpoint = normalizeEndpoint;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibm9ybWFsaXplRW5kcG9pbnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi9zcmMvZW5kcG9pbnRzQ29uZmlnL3V0aWxzL25vcm1hbGl6ZUVuZHBvaW50LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQU9PLE1BQU0saUJBQWlCLEdBQUcsQ0FBQyxFQUFFLFFBQVEsRUFBRSxTQUFTLEVBQTRCLEVBQXNCLEVBQUU7SUFDekcsSUFBSSxPQUFPLFFBQVEsS0FBSyxRQUFRLEVBQUU7UUFDaEMsTUFBTSxXQUFXLEdBQUcsT0FBTyxDQUFDLE9BQU8sQ0FBQyxTQUFTLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQztRQUN6RCxPQUFPLEdBQUcsRUFBRSxDQUFDLFdBQVcsQ0FBQztLQUMxQjtTQUFNLElBQUksT0FBTyxRQUFRLEtBQUssUUFBUSxFQUFFO1FBQ3ZDLE1BQU0sV0FBVyxHQUFHLE9BQU8sQ0FBQyxPQUFPLENBQUMsUUFBUSxDQUFDLENBQUM7UUFDOUMsT0FBTyxHQUFHLEVBQUUsQ0FBQyxXQUFXLENBQUM7S0FDMUI7SUFDRCxPQUFPLFFBQVEsQ0FBQztBQUNsQixDQUFDLENBQUM7QUFUVyxRQUFBLGlCQUFpQixxQkFTNUIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBFbmRwb2ludCwgUHJvdmlkZXIsIFVybFBhcnNlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5pbnRlcmZhY2UgTm9ybWFsaXplRW5kcG9pbnRPcHRpb25zIHtcbiAgZW5kcG9pbnQ6IHN0cmluZyB8IEVuZHBvaW50IHwgUHJvdmlkZXI8RW5kcG9pbnQ+O1xuICB1cmxQYXJzZXI6IFVybFBhcnNlcjtcbn1cblxuZXhwb3J0IGNvbnN0IG5vcm1hbGl6ZUVuZHBvaW50ID0gKHsgZW5kcG9pbnQsIHVybFBhcnNlciB9OiBOb3JtYWxpemVFbmRwb2ludE9wdGlvbnMpOiBQcm92aWRlcjxFbmRwb2ludD4gPT4ge1xuICBpZiAodHlwZW9mIGVuZHBvaW50ID09PSBcInN0cmluZ1wiKSB7XG4gICAgY29uc3QgcHJvbWlzaWZpZWQgPSBQcm9taXNlLnJlc29sdmUodXJsUGFyc2VyKGVuZHBvaW50KSk7XG4gICAgcmV0dXJuICgpID0+IHByb21pc2lmaWVkO1xuICB9IGVsc2UgaWYgKHR5cGVvZiBlbmRwb2ludCA9PT0gXCJvYmplY3RcIikge1xuICAgIGNvbnN0IHByb21pc2lmaWVkID0gUHJvbWlzZS5yZXNvbHZlKGVuZHBvaW50KTtcbiAgICByZXR1cm4gKCkgPT4gcHJvbWlzaWZpZWQ7XG4gIH1cbiAgcmV0dXJuIGVuZHBvaW50O1xufTtcbiJdfQ==
+
+/***/ }),
+
 /***/ 7229:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
@@ -23012,10 +22579,100 @@ const normalizeRegion = (region) => {
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const tslib_1 = __nccwpck_require__(4351);
-tslib_1.__exportStar(__nccwpck_require__(7510), exports);
-tslib_1.__exportStar(__nccwpck_require__(445), exports);
+tslib_1.__exportStar(__nccwpck_require__(9640), exports);
 tslib_1.__exportStar(__nccwpck_require__(1977), exports);
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsa0VBQXdDO0FBQ3hDLDREQUFrQztBQUNsQyx5REFBK0IiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgKiBmcm9tIFwiLi9DdXN0b21FbmRwb2ludHNDb25maWdcIjtcbmV4cG9ydCAqIGZyb20gXCIuL0VuZHBvaW50c0NvbmZpZ1wiO1xuZXhwb3J0ICogZnJvbSBcIi4vUmVnaW9uQ29uZmlnXCI7XG4iXX0=
+tslib_1.__exportStar(__nccwpck_require__(3830), exports);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsNERBQWtDO0FBQ2xDLHlEQUErQjtBQUMvQix1REFBNkIiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgKiBmcm9tIFwiLi9lbmRwb2ludHNDb25maWdcIjtcbmV4cG9ydCAqIGZyb20gXCIuL1JlZ2lvbkNvbmZpZ1wiO1xuZXhwb3J0ICogZnJvbSBcIi4vcmVnaW9uSW5mb1wiO1xuIl19
+
+/***/ }),
+
+/***/ 1397:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getHostnameTemplate = void 0;
+const getResolvedPartition_1 = __nccwpck_require__(5527);
+const AWS_TEMPLATE = "{signingService}.{region}.amazonaws.com";
+const getHostnameTemplate = (region, { signingService, partitionHash }) => {
+    var _a, _b;
+    return (_b = (_a = partitionHash[getResolvedPartition_1.getResolvedPartition(region, { partitionHash })]) === null || _a === void 0 ? void 0 : _a.hostname) !== null && _b !== void 0 ? _b : AWS_TEMPLATE.replace("{signingService}", signingService);
+};
+exports.getHostnameTemplate = getHostnameTemplate;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZ2V0SG9zdG5hbWVUZW1wbGF0ZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy9yZWdpb25JbmZvL2dldEhvc3RuYW1lVGVtcGxhdGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsaUVBQTJGO0FBRTNGLE1BQU0sWUFBWSxHQUFHLHlDQUF5QyxDQUFDO0FBU3hELE1BQU0sbUJBQW1CLEdBQUcsQ0FBQyxNQUFjLEVBQUUsRUFBRSxjQUFjLEVBQUUsYUFBYSxFQUE4QixFQUFFLEVBQUU7O0lBQ25ILE9BQUEsTUFBQSxNQUFBLGFBQWEsQ0FBQywyQ0FBb0IsQ0FBQyxNQUFNLEVBQUUsRUFBRSxhQUFhLEVBQUUsQ0FBQyxDQUFDLDBDQUFFLFFBQVEsbUNBQ3hFLFlBQVksQ0FBQyxPQUFPLENBQUMsa0JBQWtCLEVBQUUsY0FBYyxDQUFDLENBQUE7Q0FBQSxDQUFDO0FBRjlDLFFBQUEsbUJBQW1CLHVCQUUyQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGdldFJlc29sdmVkUGFydGl0aW9uLCBHZXRSZXNvbHZlZFBhcnRpdGlvbk9wdGlvbnMgfSBmcm9tIFwiLi9nZXRSZXNvbHZlZFBhcnRpdGlvblwiO1xuXG5jb25zdCBBV1NfVEVNUExBVEUgPSBcIntzaWduaW5nU2VydmljZX0ue3JlZ2lvbn0uYW1hem9uYXdzLmNvbVwiO1xuXG5leHBvcnQgaW50ZXJmYWNlIEdldEhvc3RuYW1lVGVtcGxhdGVPcHRpb25zIGV4dGVuZHMgR2V0UmVzb2x2ZWRQYXJ0aXRpb25PcHRpb25zIHtcbiAgLyoqXG4gICAqIFRoZSBuYW1lIHRvIGJlIHVzZWQgd2hpbGUgc2lnbmluZyB0aGUgc2VydmljZSByZXF1ZXN0LlxuICAgKi9cbiAgc2lnbmluZ1NlcnZpY2U6IHN0cmluZztcbn1cblxuZXhwb3J0IGNvbnN0IGdldEhvc3RuYW1lVGVtcGxhdGUgPSAocmVnaW9uOiBzdHJpbmcsIHsgc2lnbmluZ1NlcnZpY2UsIHBhcnRpdGlvbkhhc2ggfTogR2V0SG9zdG5hbWVUZW1wbGF0ZU9wdGlvbnMpID0+XG4gIHBhcnRpdGlvbkhhc2hbZ2V0UmVzb2x2ZWRQYXJ0aXRpb24ocmVnaW9uLCB7IHBhcnRpdGlvbkhhc2ggfSldPy5ob3N0bmFtZSA/P1xuICBBV1NfVEVNUExBVEUucmVwbGFjZShcIntzaWduaW5nU2VydmljZX1cIiwgc2lnbmluZ1NlcnZpY2UpO1xuIl19
+
+/***/ }),
+
+/***/ 1580:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getRegionInfo = void 0;
+const getResolvedHostname_1 = __nccwpck_require__(2693);
+const getResolvedPartition_1 = __nccwpck_require__(5527);
+const getRegionInfo = (region, { signingService, regionHash, partitionHash }) => {
+    var _a, _b, _c, _d;
+    const partition = getResolvedPartition_1.getResolvedPartition(region, { partitionHash });
+    const resolvedRegion = (_b = (_a = partitionHash[partition]) === null || _a === void 0 ? void 0 : _a.endpoint) !== null && _b !== void 0 ? _b : region;
+    return {
+        partition,
+        signingService,
+        hostname: getResolvedHostname_1.getResolvedHostname(resolvedRegion, { signingService, regionHash, partitionHash }),
+        ...(((_c = regionHash[resolvedRegion]) === null || _c === void 0 ? void 0 : _c.signingRegion) && {
+            signingRegion: regionHash[resolvedRegion].signingRegion,
+        }),
+        ...(((_d = regionHash[resolvedRegion]) === null || _d === void 0 ? void 0 : _d.signingService) && {
+            signingService: regionHash[resolvedRegion].signingService,
+        }),
+    };
+};
+exports.getRegionInfo = getRegionInfo;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZ2V0UmVnaW9uSW5mby5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy9yZWdpb25JbmZvL2dldFJlZ2lvbkluZm8udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBRUEsK0RBQW9HO0FBQ3BHLGlFQUE2RTtBQU10RSxNQUFNLGFBQWEsR0FBRyxDQUMzQixNQUFjLEVBQ2QsRUFBRSxjQUFjLEVBQUUsVUFBVSxFQUFFLGFBQWEsRUFBd0IsRUFDdkQsRUFBRTs7SUFDZCxNQUFNLFNBQVMsR0FBRywyQ0FBb0IsQ0FBQyxNQUFNLEVBQUUsRUFBRSxhQUFhLEVBQUUsQ0FBQyxDQUFDO0lBQ2xFLE1BQU0sY0FBYyxHQUFHLE1BQUEsTUFBQSxhQUFhLENBQUMsU0FBUyxDQUFDLDBDQUFFLFFBQVEsbUNBQUksTUFBTSxDQUFDO0lBQ3BFLE9BQU87UUFDTCxTQUFTO1FBQ1QsY0FBYztRQUNkLFFBQVEsRUFBRSx5Q0FBbUIsQ0FBQyxjQUFjLEVBQUUsRUFBRSxjQUFjLEVBQUUsVUFBVSxFQUFFLGFBQWEsRUFBRSxDQUFDO1FBQzVGLEdBQUcsQ0FBQyxDQUFBLE1BQUEsVUFBVSxDQUFDLGNBQWMsQ0FBQywwQ0FBRSxhQUFhLEtBQUk7WUFDL0MsYUFBYSxFQUFFLFVBQVUsQ0FBQyxjQUFjLENBQUMsQ0FBQyxhQUFhO1NBQ3hELENBQUM7UUFDRixHQUFHLENBQUMsQ0FBQSxNQUFBLFVBQVUsQ0FBQyxjQUFjLENBQUMsMENBQUUsY0FBYyxLQUFJO1lBQ2hELGNBQWMsRUFBRSxVQUFVLENBQUMsY0FBYyxDQUFDLENBQUMsY0FBYztTQUMxRCxDQUFDO0tBQ0gsQ0FBQztBQUNKLENBQUMsQ0FBQztBQWpCVyxRQUFBLGFBQWEsaUJBaUJ4QiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFJlZ2lvbkluZm8gfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuaW1wb3J0IHsgZ2V0UmVzb2x2ZWRIb3N0bmFtZSwgR2V0UmVzb2x2ZWRIb3N0bmFtZU9wdGlvbnMsIFJlZ2lvbkhhc2ggfSBmcm9tIFwiLi9nZXRSZXNvbHZlZEhvc3RuYW1lXCI7XG5pbXBvcnQgeyBnZXRSZXNvbHZlZFBhcnRpdGlvbiwgUGFydGl0aW9uSGFzaCB9IGZyb20gXCIuL2dldFJlc29sdmVkUGFydGl0aW9uXCI7XG5cbmV4cG9ydCB7IFJlZ2lvbkhhc2gsIFBhcnRpdGlvbkhhc2ggfTtcblxuZXhwb3J0IGludGVyZmFjZSBHZXRSZWdpb25JbmZvT3B0aW9ucyBleHRlbmRzIEdldFJlc29sdmVkSG9zdG5hbWVPcHRpb25zIHt9XG5cbmV4cG9ydCBjb25zdCBnZXRSZWdpb25JbmZvID0gKFxuICByZWdpb246IHN0cmluZyxcbiAgeyBzaWduaW5nU2VydmljZSwgcmVnaW9uSGFzaCwgcGFydGl0aW9uSGFzaCB9OiBHZXRSZWdpb25JbmZvT3B0aW9uc1xuKTogUmVnaW9uSW5mbyA9PiB7XG4gIGNvbnN0IHBhcnRpdGlvbiA9IGdldFJlc29sdmVkUGFydGl0aW9uKHJlZ2lvbiwgeyBwYXJ0aXRpb25IYXNoIH0pO1xuICBjb25zdCByZXNvbHZlZFJlZ2lvbiA9IHBhcnRpdGlvbkhhc2hbcGFydGl0aW9uXT8uZW5kcG9pbnQgPz8gcmVnaW9uO1xuICByZXR1cm4ge1xuICAgIHBhcnRpdGlvbixcbiAgICBzaWduaW5nU2VydmljZSxcbiAgICBob3N0bmFtZTogZ2V0UmVzb2x2ZWRIb3N0bmFtZShyZXNvbHZlZFJlZ2lvbiwgeyBzaWduaW5nU2VydmljZSwgcmVnaW9uSGFzaCwgcGFydGl0aW9uSGFzaCB9KSxcbiAgICAuLi4ocmVnaW9uSGFzaFtyZXNvbHZlZFJlZ2lvbl0/LnNpZ25pbmdSZWdpb24gJiYge1xuICAgICAgc2lnbmluZ1JlZ2lvbjogcmVnaW9uSGFzaFtyZXNvbHZlZFJlZ2lvbl0uc2lnbmluZ1JlZ2lvbixcbiAgICB9KSxcbiAgICAuLi4ocmVnaW9uSGFzaFtyZXNvbHZlZFJlZ2lvbl0/LnNpZ25pbmdTZXJ2aWNlICYmIHtcbiAgICAgIHNpZ25pbmdTZXJ2aWNlOiByZWdpb25IYXNoW3Jlc29sdmVkUmVnaW9uXS5zaWduaW5nU2VydmljZSxcbiAgICB9KSxcbiAgfTtcbn07XG4iXX0=
+
+/***/ }),
+
+/***/ 2693:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getResolvedHostname = void 0;
+const getHostnameTemplate_1 = __nccwpck_require__(1397);
+const getResolvedHostname = (region, { signingService, regionHash, partitionHash }) => {
+    var _a, _b;
+    return (_b = (_a = regionHash[region]) === null || _a === void 0 ? void 0 : _a.hostname) !== null && _b !== void 0 ? _b : getHostnameTemplate_1.getHostnameTemplate(region, { signingService, partitionHash }).replace("{region}", region);
+};
+exports.getResolvedHostname = getResolvedHostname;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZ2V0UmVzb2x2ZWRIb3N0bmFtZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy9yZWdpb25JbmZvL2dldFJlc29sdmVkSG9zdG5hbWUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBRUEsK0RBQXdGO0FBYWpGLE1BQU0sbUJBQW1CLEdBQUcsQ0FDakMsTUFBYyxFQUNkLEVBQUUsY0FBYyxFQUFFLFVBQVUsRUFBRSxhQUFhLEVBQThCLEVBQ3pFLEVBQUU7O0lBQ0YsT0FBQSxNQUFBLE1BQUEsVUFBVSxDQUFDLE1BQU0sQ0FBQywwQ0FBRSxRQUFRLG1DQUM1Qix5Q0FBbUIsQ0FBQyxNQUFNLEVBQUUsRUFBRSxjQUFjLEVBQUUsYUFBYSxFQUFFLENBQUMsQ0FBQyxPQUFPLENBQUMsVUFBVSxFQUFFLE1BQU0sQ0FBQyxDQUFBO0NBQUEsQ0FBQztBQUxoRixRQUFBLG1CQUFtQix1QkFLNkQiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBSZWdpb25JbmZvIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmltcG9ydCB7IGdldEhvc3RuYW1lVGVtcGxhdGUsIEdldEhvc3RuYW1lVGVtcGxhdGVPcHRpb25zIH0gZnJvbSBcIi4vZ2V0SG9zdG5hbWVUZW1wbGF0ZVwiO1xuaW1wb3J0IHsgR2V0UmVzb2x2ZWRQYXJ0aXRpb25PcHRpb25zIH0gZnJvbSBcIi4vZ2V0UmVzb2x2ZWRQYXJ0aXRpb25cIjtcblxuZXhwb3J0IHR5cGUgUmVnaW9uSGFzaCA9IHsgW2tleTogc3RyaW5nXTogUGFydGlhbDxPbWl0PFJlZ2lvbkluZm8sIFwicGFydGl0aW9uXCIgfCBcInBhdGhcIj4+IH07XG5cbmV4cG9ydCBpbnRlcmZhY2UgR2V0UmVzb2x2ZWRIb3N0bmFtZU9wdGlvbnMgZXh0ZW5kcyBHZXRIb3N0bmFtZVRlbXBsYXRlT3B0aW9ucywgR2V0UmVzb2x2ZWRQYXJ0aXRpb25PcHRpb25zIHtcbiAgLyoqXG4gICAqIFRoZSBoYXNoIG9mIHJlZ2lvbiB3aXRoIHRoZSBpbmZvcm1hdGlvbiBzcGVjaWZpYyB0byB0aGF0IHJlZ2lvbi5cbiAgICogVGhlIGluZm9ybWF0aW9uIGNhbiBpbmNsdWRlIGhvc3RuYW1lLCBzaWduaW5nU2VydmljZSBhbmQgc2lnbmluZ1JlZ2lvbi5cbiAgICovXG4gIHJlZ2lvbkhhc2g6IFJlZ2lvbkhhc2g7XG59XG5cbmV4cG9ydCBjb25zdCBnZXRSZXNvbHZlZEhvc3RuYW1lID0gKFxuICByZWdpb246IHN0cmluZyxcbiAgeyBzaWduaW5nU2VydmljZSwgcmVnaW9uSGFzaCwgcGFydGl0aW9uSGFzaCB9OiBHZXRSZXNvbHZlZEhvc3RuYW1lT3B0aW9uc1xuKSA9PlxuICByZWdpb25IYXNoW3JlZ2lvbl0/Lmhvc3RuYW1lID8/XG4gIGdldEhvc3RuYW1lVGVtcGxhdGUocmVnaW9uLCB7IHNpZ25pbmdTZXJ2aWNlLCBwYXJ0aXRpb25IYXNoIH0pLnJlcGxhY2UoXCJ7cmVnaW9ufVwiLCByZWdpb24pO1xuIl19
+
+/***/ }),
+
+/***/ 5527:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getResolvedPartition = void 0;
+const getResolvedPartition = (region, { partitionHash }) => { var _a; return (_a = Object.keys(partitionHash || {}).find((key) => partitionHash[key].regions.includes(region))) !== null && _a !== void 0 ? _a : "aws"; };
+exports.getResolvedPartition = getResolvedPartition;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZ2V0UmVzb2x2ZWRQYXJ0aXRpb24uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvcmVnaW9uSW5mby9nZXRSZXNvbHZlZFBhcnRpdGlvbi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFXTyxNQUFNLG9CQUFvQixHQUFHLENBQUMsTUFBYyxFQUFFLEVBQUUsYUFBYSxFQUErQixFQUFFLEVBQUUsV0FDckcsT0FBQSxNQUFBLE1BQU0sQ0FBQyxJQUFJLENBQUMsYUFBYSxJQUFJLEVBQUUsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUFDLEdBQUcsRUFBRSxFQUFFLENBQUMsYUFBYSxDQUFDLEdBQUcsQ0FBQyxDQUFDLE9BQU8sQ0FBQyxRQUFRLENBQUMsTUFBTSxDQUFDLENBQUMsbUNBQUksS0FBSyxDQUFBLEVBQUEsQ0FBQztBQUQxRixRQUFBLG9CQUFvQix3QkFDc0UiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgdHlwZSBQYXJ0aXRpb25IYXNoID0geyBba2V5OiBzdHJpbmddOiB7IHJlZ2lvbnM6IHN0cmluZ1tdOyBob3N0bmFtZT86IHN0cmluZzsgZW5kcG9pbnQ/OiBzdHJpbmcgfSB9O1xuXG5leHBvcnQgaW50ZXJmYWNlIEdldFJlc29sdmVkUGFydGl0aW9uT3B0aW9ucyB7XG4gIC8qKlxuICAgKiBUaGUgaGFzaCBvZiBwYXJ0aXRpb24gd2l0aCB0aGUgaW5mb3JtYXRpb24gc3BlY2lmaWMgdG8gdGhhdCBwYXJ0aXRpb24uXG4gICAqIFRoZSBpbmZvcm1hdGlvbiBpbmNsdWRlcyB0aGUgbGlzdCBvZiByZWdpb25zIGJlbG9uZ2luZyB0byB0aGF0IHBhcnRpdGlvbixcbiAgICogYW5kIHRoZSBob3N0bmFtZSB0byBiZSB1c2VkIGZvciB0aGUgcGFydGl0aW9uLlxuICAgKi9cbiAgcGFydGl0aW9uSGFzaDogUGFydGl0aW9uSGFzaDtcbn1cblxuZXhwb3J0IGNvbnN0IGdldFJlc29sdmVkUGFydGl0aW9uID0gKHJlZ2lvbjogc3RyaW5nLCB7IHBhcnRpdGlvbkhhc2ggfTogR2V0UmVzb2x2ZWRQYXJ0aXRpb25PcHRpb25zKSA9PlxuICBPYmplY3Qua2V5cyhwYXJ0aXRpb25IYXNoIHx8IHt9KS5maW5kKChrZXkpID0+IHBhcnRpdGlvbkhhc2hba2V5XS5yZWdpb25zLmluY2x1ZGVzKHJlZ2lvbikpID8/IFwiYXdzXCI7XG4iXX0=
+
+/***/ }),
+
+/***/ 3830:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(1580), exports);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvcmVnaW9uSW5mby9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwwREFBZ0MiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgKiBmcm9tIFwiLi9nZXRSZWdpb25JbmZvXCI7XG4iXX0=
 
 /***/ }),
 
@@ -24518,7 +24175,7 @@ const resolveRetryConfig = (input) => {
             if (input.retryStrategy) {
                 return input.retryStrategy;
             }
-            const retryMode = input.retryMode || (await input.retryModeProvider());
+            const retryMode = await getRetryMode(input.retryMode);
             if (retryMode === config_1.RETRY_MODES.ADAPTIVE) {
                 return new AdaptiveRetryStrategy_1.AdaptiveRetryStrategy(maxAttempts);
             }
@@ -24527,6 +24184,12 @@ const resolveRetryConfig = (input) => {
     };
 };
 exports.resolveRetryConfig = resolveRetryConfig;
+const getRetryMode = async (retryMode) => {
+    if (typeof retryMode === "string") {
+        return retryMode;
+    }
+    return await retryMode();
+};
 const normalizeMaxAttempts = (maxAttempts = config_1.DEFAULT_MAX_ATTEMPTS) => {
     if (typeof maxAttempts === "number") {
         const promisified = Promise.resolve(maxAttempts);
@@ -24541,7 +24204,7 @@ exports.NODE_RETRY_MODE_CONFIG_OPTIONS = {
     configFileSelector: (profile) => profile[exports.CONFIG_RETRY_MODE],
     default: config_1.DEFAULT_RETRY_MODE,
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlndXJhdGlvbnMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvY29uZmlndXJhdGlvbnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBR0EsbUVBQWdFO0FBQ2hFLHFDQUFpRjtBQUNqRixtRUFBZ0U7QUFFbkQsUUFBQSxnQkFBZ0IsR0FBRyxrQkFBa0IsQ0FBQztBQUN0QyxRQUFBLG1CQUFtQixHQUFHLGNBQWMsQ0FBQztBQUVyQyxRQUFBLCtCQUErQixHQUFrQztJQUM1RSwyQkFBMkIsRUFBRSxDQUFDLEdBQUcsRUFBRSxFQUFFO1FBQ25DLE1BQU0sS0FBSyxHQUFHLEdBQUcsQ0FBQyx3QkFBZ0IsQ0FBQyxDQUFDO1FBQ3BDLElBQUksQ0FBQyxLQUFLO1lBQUUsT0FBTyxTQUFTLENBQUM7UUFDN0IsTUFBTSxVQUFVLEdBQUcsUUFBUSxDQUFDLEtBQUssQ0FBQyxDQUFDO1FBQ25DLElBQUksTUFBTSxDQUFDLEtBQUssQ0FBQyxVQUFVLENBQUMsRUFBRTtZQUM1QixNQUFNLElBQUksS0FBSyxDQUFDLHdCQUF3Qix3QkFBZ0IsMkJBQTJCLEtBQUssR0FBRyxDQUFDLENBQUM7U0FDOUY7UUFDRCxPQUFPLFVBQVUsQ0FBQztJQUNwQixDQUFDO0lBQ0Qsa0JBQWtCLEVBQUUsQ0FBQyxPQUFPLEVBQUUsRUFBRTtRQUM5QixNQUFNLEtBQUssR0FBRyxPQUFPLENBQUMsMkJBQW1CLENBQUMsQ0FBQztRQUMzQyxJQUFJLENBQUMsS0FBSztZQUFFLE9BQU8sU0FBUyxDQUFDO1FBQzdCLE1BQU0sVUFBVSxHQUFHLFFBQVEsQ0FBQyxLQUFLLENBQUMsQ0FBQztRQUNuQyxJQUFJLE1BQU0sQ0FBQyxLQUFLLENBQUMsVUFBVSxDQUFDLEVBQUU7WUFDNUIsTUFBTSxJQUFJLEtBQUssQ0FBQyw0QkFBNEIsMkJBQW1CLDJCQUEyQixLQUFLLEdBQUcsQ0FBQyxDQUFDO1NBQ3JHO1FBQ0QsT0FBTyxVQUFVLENBQUM7SUFDcEIsQ0FBQztJQUNELE9BQU8sRUFBRSw2QkFBb0I7Q0FDOUIsQ0FBQztBQW9DSyxNQUFNLGtCQUFrQixHQUFHLENBQUksS0FBZ0QsRUFBMkIsRUFBRTtJQUNqSCxNQUFNLFdBQVcsR0FBRyxvQkFBb0IsQ0FBQyxLQUFLLENBQUMsV0FBVyxDQUFDLENBQUM7SUFDNUQsT0FBTztRQUNMLEdBQUcsS0FBSztRQUNSLFdBQVc7UUFDWCxhQUFhLEVBQUUsS0FBSyxJQUFJLEVBQUU7WUFDeEIsSUFBSSxLQUFLLENBQUMsYUFBYSxFQUFFO2dCQUN2QixPQUFPLEtBQUssQ0FBQyxhQUFhLENBQUM7YUFDNUI7WUFDRCxNQUFNLFNBQVMsR0FBRyxLQUFLLENBQUMsU0FBUyxJQUFJLENBQUMsTUFBTSxLQUFLLENBQUMsaUJBQWlCLEVBQUUsQ0FBQyxDQUFDO1lBQ3ZFLElBQUksU0FBUyxLQUFLLG9CQUFXLENBQUMsUUFBUSxFQUFFO2dCQUN0QyxPQUFPLElBQUksNkNBQXFCLENBQUMsV0FBVyxDQUFDLENBQUM7YUFDL0M7WUFDRCxPQUFPLElBQUksNkNBQXFCLENBQUMsV0FBVyxDQUFDLENBQUM7UUFDaEQsQ0FBQztLQUNGLENBQUM7QUFDSixDQUFDLENBQUM7QUFoQlcsUUFBQSxrQkFBa0Isc0JBZ0I3QjtBQUVGLE1BQU0sb0JBQW9CLEdBQUcsQ0FBQyxjQUF5Qyw2QkFBb0IsRUFBb0IsRUFBRTtJQUMvRyxJQUFJLE9BQU8sV0FBVyxLQUFLLFFBQVEsRUFBRTtRQUNuQyxNQUFNLFdBQVcsR0FBRyxPQUFPLENBQUMsT0FBTyxDQUFDLFdBQVcsQ0FBQyxDQUFDO1FBQ2pELE9BQU8sR0FBRyxFQUFFLENBQUMsV0FBVyxDQUFDO0tBQzFCO0lBQ0QsT0FBTyxXQUFXLENBQUM7QUFDckIsQ0FBQyxDQUFDO0FBRVcsUUFBQSxjQUFjLEdBQUcsZ0JBQWdCLENBQUM7QUFDbEMsUUFBQSxpQkFBaUIsR0FBRyxZQUFZLENBQUM7QUFFakMsUUFBQSw4QkFBOEIsR0FBa0M7SUFDM0UsMkJBQTJCLEVBQUUsQ0FBQyxHQUFHLEVBQUUsRUFBRSxDQUFDLEdBQUcsQ0FBQyxzQkFBYyxDQUFDO0lBQ3pELGtCQUFrQixFQUFFLENBQUMsT0FBTyxFQUFFLEVBQUUsQ0FBQyxPQUFPLENBQUMseUJBQWlCLENBQUM7SUFDM0QsT0FBTyxFQUFFLDJCQUFrQjtDQUM1QixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTG9hZGVkQ29uZmlnU2VsZWN0b3JzIH0gZnJvbSBcIkBhd3Mtc2RrL25vZGUtY29uZmlnLXByb3ZpZGVyXCI7XG5pbXBvcnQgeyBQcm92aWRlciwgUmV0cnlTdHJhdGVneSB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5pbXBvcnQgeyBBZGFwdGl2ZVJldHJ5U3RyYXRlZ3kgfSBmcm9tIFwiLi9BZGFwdGl2ZVJldHJ5U3RyYXRlZ3lcIjtcbmltcG9ydCB7IERFRkFVTFRfTUFYX0FUVEVNUFRTLCBERUZBVUxUX1JFVFJZX01PREUsIFJFVFJZX01PREVTIH0gZnJvbSBcIi4vY29uZmlnXCI7XG5pbXBvcnQgeyBTdGFuZGFyZFJldHJ5U3RyYXRlZ3kgfSBmcm9tIFwiLi9TdGFuZGFyZFJldHJ5U3RyYXRlZ3lcIjtcblxuZXhwb3J0IGNvbnN0IEVOVl9NQVhfQVRURU1QVFMgPSBcIkFXU19NQVhfQVRURU1QVFNcIjtcbmV4cG9ydCBjb25zdCBDT05GSUdfTUFYX0FUVEVNUFRTID0gXCJtYXhfYXR0ZW1wdHNcIjtcblxuZXhwb3J0IGNvbnN0IE5PREVfTUFYX0FUVEVNUFRfQ09ORklHX09QVElPTlM6IExvYWRlZENvbmZpZ1NlbGVjdG9yczxudW1iZXI+ID0ge1xuICBlbnZpcm9ubWVudFZhcmlhYmxlU2VsZWN0b3I6IChlbnYpID0+IHtcbiAgICBjb25zdCB2YWx1ZSA9IGVudltFTlZfTUFYX0FUVEVNUFRTXTtcbiAgICBpZiAoIXZhbHVlKSByZXR1cm4gdW5kZWZpbmVkO1xuICAgIGNvbnN0IG1heEF0dGVtcHQgPSBwYXJzZUludCh2YWx1ZSk7XG4gICAgaWYgKE51bWJlci5pc05hTihtYXhBdHRlbXB0KSkge1xuICAgICAgdGhyb3cgbmV3IEVycm9yKGBFbnZpcm9ubWVudCB2YXJpYWJsZSAke0VOVl9NQVhfQVRURU1QVFN9IG1hc3QgYmUgYSBudW1iZXIsIGdvdCBcIiR7dmFsdWV9XCJgKTtcbiAgICB9XG4gICAgcmV0dXJuIG1heEF0dGVtcHQ7XG4gIH0sXG4gIGNvbmZpZ0ZpbGVTZWxlY3RvcjogKHByb2ZpbGUpID0+IHtcbiAgICBjb25zdCB2YWx1ZSA9IHByb2ZpbGVbQ09ORklHX01BWF9BVFRFTVBUU107XG4gICAgaWYgKCF2YWx1ZSkgcmV0dXJuIHVuZGVmaW5lZDtcbiAgICBjb25zdCBtYXhBdHRlbXB0ID0gcGFyc2VJbnQodmFsdWUpO1xuICAgIGlmIChOdW1iZXIuaXNOYU4obWF4QXR0ZW1wdCkpIHtcbiAgICAgIHRocm93IG5ldyBFcnJvcihgU2hhcmVkIGNvbmZpZyBmaWxlIGVudHJ5ICR7Q09ORklHX01BWF9BVFRFTVBUU30gbWFzdCBiZSBhIG51bWJlciwgZ290IFwiJHt2YWx1ZX1cImApO1xuICAgIH1cbiAgICByZXR1cm4gbWF4QXR0ZW1wdDtcbiAgfSxcbiAgZGVmYXVsdDogREVGQVVMVF9NQVhfQVRURU1QVFMsXG59O1xuXG5leHBvcnQgaW50ZXJmYWNlIFJldHJ5SW5wdXRDb25maWcge1xuICAvKipcbiAgICogVGhlIG1heGltdW0gbnVtYmVyIG9mIHRpbWVzIHJlcXVlc3RzIHRoYXQgZW5jb3VudGVyIHJldHJ5YWJsZSBmYWlsdXJlcyBzaG91bGQgYmUgYXR0ZW1wdGVkLlxuICAgKi9cbiAgbWF4QXR0ZW1wdHM/OiBudW1iZXIgfCBQcm92aWRlcjxudW1iZXI+O1xuICAvKipcbiAgICogVGhlIHN0cmF0ZWd5IHRvIHJldHJ5IHRoZSByZXF1ZXN0LiBVc2luZyBidWlsdC1pbiBleHBvbmVudGlhbCBiYWNrb2ZmIHN0cmF0ZWd5IGJ5IGRlZmF1bHQuXG4gICAqL1xuICByZXRyeVN0cmF0ZWd5PzogUmV0cnlTdHJhdGVneTtcbiAgLyoqXG4gICAqIFNwZWNpZmllcyB3aGljaCByZXRyeSBhbGdvcml0aG0gdG8gdXNlLlxuICAgKi9cbiAgcmV0cnlNb2RlPzogc3RyaW5nO1xufVxuXG5pbnRlcmZhY2UgUHJldmlvdXNseVJlc29sdmVkIHtcbiAgLyoqXG4gICAqIFNwZWNpZmllcyBwcm92aWRlciBmb3IgcmV0cnkgYWxnb3JpdGhtIHRvIHVzZS5cbiAgICogQGludGVybmFsXG4gICAqL1xuICByZXRyeU1vZGVQcm92aWRlcjogUHJvdmlkZXI8c3RyaW5nPjtcbn1cblxuZXhwb3J0IGludGVyZmFjZSBSZXRyeVJlc29sdmVkQ29uZmlnIHtcbiAgLyoqXG4gICAqIFJlc29sdmVkIHZhbHVlIGZvciBpbnB1dCBjb25maWcge0BsaW5rIFJldHJ5SW5wdXRDb25maWcubWF4QXR0ZW1wdHN9XG4gICAqL1xuICBtYXhBdHRlbXB0czogUHJvdmlkZXI8bnVtYmVyPjtcbiAgLyoqXG4gICAqIFJlc29sdmVkIHZhbHVlIGZvciBpbnB1dCBjb25maWcge0BsaW5rIFJldHJ5SW5wdXRDb25maWcucmV0cnlTdHJhdGVneX1cbiAgICovXG4gIHJldHJ5U3RyYXRlZ3k6IFByb3ZpZGVyPFJldHJ5U3RyYXRlZ3k+O1xufVxuXG5leHBvcnQgY29uc3QgcmVzb2x2ZVJldHJ5Q29uZmlnID0gPFQ+KGlucHV0OiBUICYgUHJldmlvdXNseVJlc29sdmVkICYgUmV0cnlJbnB1dENvbmZpZyk6IFQgJiBSZXRyeVJlc29sdmVkQ29uZmlnID0+IHtcbiAgY29uc3QgbWF4QXR0ZW1wdHMgPSBub3JtYWxpemVNYXhBdHRlbXB0cyhpbnB1dC5tYXhBdHRlbXB0cyk7XG4gIHJldHVybiB7XG4gICAgLi4uaW5wdXQsXG4gICAgbWF4QXR0ZW1wdHMsXG4gICAgcmV0cnlTdHJhdGVneTogYXN5bmMgKCkgPT4ge1xuICAgICAgaWYgKGlucHV0LnJldHJ5U3RyYXRlZ3kpIHtcbiAgICAgICAgcmV0dXJuIGlucHV0LnJldHJ5U3RyYXRlZ3k7XG4gICAgICB9XG4gICAgICBjb25zdCByZXRyeU1vZGUgPSBpbnB1dC5yZXRyeU1vZGUgfHwgKGF3YWl0IGlucHV0LnJldHJ5TW9kZVByb3ZpZGVyKCkpO1xuICAgICAgaWYgKHJldHJ5TW9kZSA9PT0gUkVUUllfTU9ERVMuQURBUFRJVkUpIHtcbiAgICAgICAgcmV0dXJuIG5ldyBBZGFwdGl2ZVJldHJ5U3RyYXRlZ3kobWF4QXR0ZW1wdHMpO1xuICAgICAgfVxuICAgICAgcmV0dXJuIG5ldyBTdGFuZGFyZFJldHJ5U3RyYXRlZ3kobWF4QXR0ZW1wdHMpO1xuICAgIH0sXG4gIH07XG59O1xuXG5jb25zdCBub3JtYWxpemVNYXhBdHRlbXB0cyA9IChtYXhBdHRlbXB0czogbnVtYmVyIHwgUHJvdmlkZXI8bnVtYmVyPiA9IERFRkFVTFRfTUFYX0FUVEVNUFRTKTogUHJvdmlkZXI8bnVtYmVyPiA9PiB7XG4gIGlmICh0eXBlb2YgbWF4QXR0ZW1wdHMgPT09IFwibnVtYmVyXCIpIHtcbiAgICBjb25zdCBwcm9taXNpZmllZCA9IFByb21pc2UucmVzb2x2ZShtYXhBdHRlbXB0cyk7XG4gICAgcmV0dXJuICgpID0+IHByb21pc2lmaWVkO1xuICB9XG4gIHJldHVybiBtYXhBdHRlbXB0cztcbn07XG5cbmV4cG9ydCBjb25zdCBFTlZfUkVUUllfTU9ERSA9IFwiQVdTX1JFVFJZX01PREVcIjtcbmV4cG9ydCBjb25zdCBDT05GSUdfUkVUUllfTU9ERSA9IFwicmV0cnlfbW9kZVwiO1xuXG5leHBvcnQgY29uc3QgTk9ERV9SRVRSWV9NT0RFX0NPTkZJR19PUFRJT05TOiBMb2FkZWRDb25maWdTZWxlY3RvcnM8c3RyaW5nPiA9IHtcbiAgZW52aXJvbm1lbnRWYXJpYWJsZVNlbGVjdG9yOiAoZW52KSA9PiBlbnZbRU5WX1JFVFJZX01PREVdLFxuICBjb25maWdGaWxlU2VsZWN0b3I6IChwcm9maWxlKSA9PiBwcm9maWxlW0NPTkZJR19SRVRSWV9NT0RFXSxcbiAgZGVmYXVsdDogREVGQVVMVF9SRVRSWV9NT0RFLFxufTtcbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlndXJhdGlvbnMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvY29uZmlndXJhdGlvbnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBR0EsbUVBQWdFO0FBQ2hFLHFDQUFpRjtBQUNqRixtRUFBZ0U7QUFFbkQsUUFBQSxnQkFBZ0IsR0FBRyxrQkFBa0IsQ0FBQztBQUN0QyxRQUFBLG1CQUFtQixHQUFHLGNBQWMsQ0FBQztBQUVyQyxRQUFBLCtCQUErQixHQUFrQztJQUM1RSwyQkFBMkIsRUFBRSxDQUFDLEdBQUcsRUFBRSxFQUFFO1FBQ25DLE1BQU0sS0FBSyxHQUFHLEdBQUcsQ0FBQyx3QkFBZ0IsQ0FBQyxDQUFDO1FBQ3BDLElBQUksQ0FBQyxLQUFLO1lBQUUsT0FBTyxTQUFTLENBQUM7UUFDN0IsTUFBTSxVQUFVLEdBQUcsUUFBUSxDQUFDLEtBQUssQ0FBQyxDQUFDO1FBQ25DLElBQUksTUFBTSxDQUFDLEtBQUssQ0FBQyxVQUFVLENBQUMsRUFBRTtZQUM1QixNQUFNLElBQUksS0FBSyxDQUFDLHdCQUF3Qix3QkFBZ0IsMkJBQTJCLEtBQUssR0FBRyxDQUFDLENBQUM7U0FDOUY7UUFDRCxPQUFPLFVBQVUsQ0FBQztJQUNwQixDQUFDO0lBQ0Qsa0JBQWtCLEVBQUUsQ0FBQyxPQUFPLEVBQUUsRUFBRTtRQUM5QixNQUFNLEtBQUssR0FBRyxPQUFPLENBQUMsMkJBQW1CLENBQUMsQ0FBQztRQUMzQyxJQUFJLENBQUMsS0FBSztZQUFFLE9BQU8sU0FBUyxDQUFDO1FBQzdCLE1BQU0sVUFBVSxHQUFHLFFBQVEsQ0FBQyxLQUFLLENBQUMsQ0FBQztRQUNuQyxJQUFJLE1BQU0sQ0FBQyxLQUFLLENBQUMsVUFBVSxDQUFDLEVBQUU7WUFDNUIsTUFBTSxJQUFJLEtBQUssQ0FBQyw0QkFBNEIsMkJBQW1CLDJCQUEyQixLQUFLLEdBQUcsQ0FBQyxDQUFDO1NBQ3JHO1FBQ0QsT0FBTyxVQUFVLENBQUM7SUFDcEIsQ0FBQztJQUNELE9BQU8sRUFBRSw2QkFBb0I7Q0FDOUIsQ0FBQztBQWdDSyxNQUFNLGtCQUFrQixHQUFHLENBQUksS0FBZ0QsRUFBMkIsRUFBRTtJQUNqSCxNQUFNLFdBQVcsR0FBRyxvQkFBb0IsQ0FBQyxLQUFLLENBQUMsV0FBVyxDQUFDLENBQUM7SUFDNUQsT0FBTztRQUNMLEdBQUcsS0FBSztRQUNSLFdBQVc7UUFDWCxhQUFhLEVBQUUsS0FBSyxJQUFJLEVBQUU7WUFDeEIsSUFBSSxLQUFLLENBQUMsYUFBYSxFQUFFO2dCQUN2QixPQUFPLEtBQUssQ0FBQyxhQUFhLENBQUM7YUFDNUI7WUFDRCxNQUFNLFNBQVMsR0FBRyxNQUFNLFlBQVksQ0FBQyxLQUFLLENBQUMsU0FBUyxDQUFDLENBQUM7WUFDdEQsSUFBSSxTQUFTLEtBQUssb0JBQVcsQ0FBQyxRQUFRLEVBQUU7Z0JBQ3RDLE9BQU8sSUFBSSw2Q0FBcUIsQ0FBQyxXQUFXLENBQUMsQ0FBQzthQUMvQztZQUNELE9BQU8sSUFBSSw2Q0FBcUIsQ0FBQyxXQUFXLENBQUMsQ0FBQztRQUNoRCxDQUFDO0tBQ0YsQ0FBQztBQUNKLENBQUMsQ0FBQztBQWhCVyxRQUFBLGtCQUFrQixzQkFnQjdCO0FBRUYsTUFBTSxZQUFZLEdBQUcsS0FBSyxFQUFFLFNBQW9DLEVBQW1CLEVBQUU7SUFDbkYsSUFBSSxPQUFPLFNBQVMsS0FBSyxRQUFRLEVBQUU7UUFDakMsT0FBTyxTQUFTLENBQUM7S0FDbEI7SUFDRCxPQUFPLE1BQU0sU0FBUyxFQUFFLENBQUM7QUFDM0IsQ0FBQyxDQUFDO0FBRUYsTUFBTSxvQkFBb0IsR0FBRyxDQUFDLGNBQXlDLDZCQUFvQixFQUFvQixFQUFFO0lBQy9HLElBQUksT0FBTyxXQUFXLEtBQUssUUFBUSxFQUFFO1FBQ25DLE1BQU0sV0FBVyxHQUFHLE9BQU8sQ0FBQyxPQUFPLENBQUMsV0FBVyxDQUFDLENBQUM7UUFDakQsT0FBTyxHQUFHLEVBQUUsQ0FBQyxXQUFXLENBQUM7S0FDMUI7SUFDRCxPQUFPLFdBQVcsQ0FBQztBQUNyQixDQUFDLENBQUM7QUFFVyxRQUFBLGNBQWMsR0FBRyxnQkFBZ0IsQ0FBQztBQUNsQyxRQUFBLGlCQUFpQixHQUFHLFlBQVksQ0FBQztBQUVqQyxRQUFBLDhCQUE4QixHQUFrQztJQUMzRSwyQkFBMkIsRUFBRSxDQUFDLEdBQUcsRUFBRSxFQUFFLENBQUMsR0FBRyxDQUFDLHNCQUFjLENBQUM7SUFDekQsa0JBQWtCLEVBQUUsQ0FBQyxPQUFPLEVBQUUsRUFBRSxDQUFDLE9BQU8sQ0FBQyx5QkFBaUIsQ0FBQztJQUMzRCxPQUFPLEVBQUUsMkJBQWtCO0NBQzVCLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBMb2FkZWRDb25maWdTZWxlY3RvcnMgfSBmcm9tIFwiQGF3cy1zZGsvbm9kZS1jb25maWctcHJvdmlkZXJcIjtcbmltcG9ydCB7IFByb3ZpZGVyLCBSZXRyeVN0cmF0ZWd5IH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmltcG9ydCB7IEFkYXB0aXZlUmV0cnlTdHJhdGVneSB9IGZyb20gXCIuL0FkYXB0aXZlUmV0cnlTdHJhdGVneVwiO1xuaW1wb3J0IHsgREVGQVVMVF9NQVhfQVRURU1QVFMsIERFRkFVTFRfUkVUUllfTU9ERSwgUkVUUllfTU9ERVMgfSBmcm9tIFwiLi9jb25maWdcIjtcbmltcG9ydCB7IFN0YW5kYXJkUmV0cnlTdHJhdGVneSB9IGZyb20gXCIuL1N0YW5kYXJkUmV0cnlTdHJhdGVneVwiO1xuXG5leHBvcnQgY29uc3QgRU5WX01BWF9BVFRFTVBUUyA9IFwiQVdTX01BWF9BVFRFTVBUU1wiO1xuZXhwb3J0IGNvbnN0IENPTkZJR19NQVhfQVRURU1QVFMgPSBcIm1heF9hdHRlbXB0c1wiO1xuXG5leHBvcnQgY29uc3QgTk9ERV9NQVhfQVRURU1QVF9DT05GSUdfT1BUSU9OUzogTG9hZGVkQ29uZmlnU2VsZWN0b3JzPG51bWJlcj4gPSB7XG4gIGVudmlyb25tZW50VmFyaWFibGVTZWxlY3RvcjogKGVudikgPT4ge1xuICAgIGNvbnN0IHZhbHVlID0gZW52W0VOVl9NQVhfQVRURU1QVFNdO1xuICAgIGlmICghdmFsdWUpIHJldHVybiB1bmRlZmluZWQ7XG4gICAgY29uc3QgbWF4QXR0ZW1wdCA9IHBhcnNlSW50KHZhbHVlKTtcbiAgICBpZiAoTnVtYmVyLmlzTmFOKG1heEF0dGVtcHQpKSB7XG4gICAgICB0aHJvdyBuZXcgRXJyb3IoYEVudmlyb25tZW50IHZhcmlhYmxlICR7RU5WX01BWF9BVFRFTVBUU30gbWFzdCBiZSBhIG51bWJlciwgZ290IFwiJHt2YWx1ZX1cImApO1xuICAgIH1cbiAgICByZXR1cm4gbWF4QXR0ZW1wdDtcbiAgfSxcbiAgY29uZmlnRmlsZVNlbGVjdG9yOiAocHJvZmlsZSkgPT4ge1xuICAgIGNvbnN0IHZhbHVlID0gcHJvZmlsZVtDT05GSUdfTUFYX0FUVEVNUFRTXTtcbiAgICBpZiAoIXZhbHVlKSByZXR1cm4gdW5kZWZpbmVkO1xuICAgIGNvbnN0IG1heEF0dGVtcHQgPSBwYXJzZUludCh2YWx1ZSk7XG4gICAgaWYgKE51bWJlci5pc05hTihtYXhBdHRlbXB0KSkge1xuICAgICAgdGhyb3cgbmV3IEVycm9yKGBTaGFyZWQgY29uZmlnIGZpbGUgZW50cnkgJHtDT05GSUdfTUFYX0FUVEVNUFRTfSBtYXN0IGJlIGEgbnVtYmVyLCBnb3QgXCIke3ZhbHVlfVwiYCk7XG4gICAgfVxuICAgIHJldHVybiBtYXhBdHRlbXB0O1xuICB9LFxuICBkZWZhdWx0OiBERUZBVUxUX01BWF9BVFRFTVBUUyxcbn07XG5cbmV4cG9ydCBpbnRlcmZhY2UgUmV0cnlJbnB1dENvbmZpZyB7XG4gIC8qKlxuICAgKiBUaGUgbWF4aW11bSBudW1iZXIgb2YgdGltZXMgcmVxdWVzdHMgdGhhdCBlbmNvdW50ZXIgcmV0cnlhYmxlIGZhaWx1cmVzIHNob3VsZCBiZSBhdHRlbXB0ZWQuXG4gICAqL1xuICBtYXhBdHRlbXB0cz86IG51bWJlciB8IFByb3ZpZGVyPG51bWJlcj47XG4gIC8qKlxuICAgKiBUaGUgc3RyYXRlZ3kgdG8gcmV0cnkgdGhlIHJlcXVlc3QuIFVzaW5nIGJ1aWx0LWluIGV4cG9uZW50aWFsIGJhY2tvZmYgc3RyYXRlZ3kgYnkgZGVmYXVsdC5cbiAgICovXG4gIHJldHJ5U3RyYXRlZ3k/OiBSZXRyeVN0cmF0ZWd5O1xufVxuXG5pbnRlcmZhY2UgUHJldmlvdXNseVJlc29sdmVkIHtcbiAgLyoqXG4gICAqIFNwZWNpZmllcyBwcm92aWRlciBmb3IgcmV0cnkgYWxnb3JpdGhtIHRvIHVzZS5cbiAgICogQGludGVybmFsXG4gICAqL1xuICByZXRyeU1vZGU6IHN0cmluZyB8IFByb3ZpZGVyPHN0cmluZz47XG59XG5cbmV4cG9ydCBpbnRlcmZhY2UgUmV0cnlSZXNvbHZlZENvbmZpZyB7XG4gIC8qKlxuICAgKiBSZXNvbHZlZCB2YWx1ZSBmb3IgaW5wdXQgY29uZmlnIHtAbGluayBSZXRyeUlucHV0Q29uZmlnLm1heEF0dGVtcHRzfVxuICAgKi9cbiAgbWF4QXR0ZW1wdHM6IFByb3ZpZGVyPG51bWJlcj47XG4gIC8qKlxuICAgKiBSZXNvbHZlZCB2YWx1ZSBmb3IgaW5wdXQgY29uZmlnIHtAbGluayBSZXRyeUlucHV0Q29uZmlnLnJldHJ5U3RyYXRlZ3l9XG4gICAqL1xuICByZXRyeVN0cmF0ZWd5OiBQcm92aWRlcjxSZXRyeVN0cmF0ZWd5Pjtcbn1cblxuZXhwb3J0IGNvbnN0IHJlc29sdmVSZXRyeUNvbmZpZyA9IDxUPihpbnB1dDogVCAmIFByZXZpb3VzbHlSZXNvbHZlZCAmIFJldHJ5SW5wdXRDb25maWcpOiBUICYgUmV0cnlSZXNvbHZlZENvbmZpZyA9PiB7XG4gIGNvbnN0IG1heEF0dGVtcHRzID0gbm9ybWFsaXplTWF4QXR0ZW1wdHMoaW5wdXQubWF4QXR0ZW1wdHMpO1xuICByZXR1cm4ge1xuICAgIC4uLmlucHV0LFxuICAgIG1heEF0dGVtcHRzLFxuICAgIHJldHJ5U3RyYXRlZ3k6IGFzeW5jICgpID0+IHtcbiAgICAgIGlmIChpbnB1dC5yZXRyeVN0cmF0ZWd5KSB7XG4gICAgICAgIHJldHVybiBpbnB1dC5yZXRyeVN0cmF0ZWd5O1xuICAgICAgfVxuICAgICAgY29uc3QgcmV0cnlNb2RlID0gYXdhaXQgZ2V0UmV0cnlNb2RlKGlucHV0LnJldHJ5TW9kZSk7XG4gICAgICBpZiAocmV0cnlNb2RlID09PSBSRVRSWV9NT0RFUy5BREFQVElWRSkge1xuICAgICAgICByZXR1cm4gbmV3IEFkYXB0aXZlUmV0cnlTdHJhdGVneShtYXhBdHRlbXB0cyk7XG4gICAgICB9XG4gICAgICByZXR1cm4gbmV3IFN0YW5kYXJkUmV0cnlTdHJhdGVneShtYXhBdHRlbXB0cyk7XG4gICAgfSxcbiAgfTtcbn07XG5cbmNvbnN0IGdldFJldHJ5TW9kZSA9IGFzeW5jIChyZXRyeU1vZGU6IHN0cmluZyB8IFByb3ZpZGVyPHN0cmluZz4pOiBQcm9taXNlPHN0cmluZz4gPT4ge1xuICBpZiAodHlwZW9mIHJldHJ5TW9kZSA9PT0gXCJzdHJpbmdcIikge1xuICAgIHJldHVybiByZXRyeU1vZGU7XG4gIH1cbiAgcmV0dXJuIGF3YWl0IHJldHJ5TW9kZSgpO1xufTtcblxuY29uc3Qgbm9ybWFsaXplTWF4QXR0ZW1wdHMgPSAobWF4QXR0ZW1wdHM6IG51bWJlciB8IFByb3ZpZGVyPG51bWJlcj4gPSBERUZBVUxUX01BWF9BVFRFTVBUUyk6IFByb3ZpZGVyPG51bWJlcj4gPT4ge1xuICBpZiAodHlwZW9mIG1heEF0dGVtcHRzID09PSBcIm51bWJlclwiKSB7XG4gICAgY29uc3QgcHJvbWlzaWZpZWQgPSBQcm9taXNlLnJlc29sdmUobWF4QXR0ZW1wdHMpO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfVxuICByZXR1cm4gbWF4QXR0ZW1wdHM7XG59O1xuXG5leHBvcnQgY29uc3QgRU5WX1JFVFJZX01PREUgPSBcIkFXU19SRVRSWV9NT0RFXCI7XG5leHBvcnQgY29uc3QgQ09ORklHX1JFVFJZX01PREUgPSBcInJldHJ5X21vZGVcIjtcblxuZXhwb3J0IGNvbnN0IE5PREVfUkVUUllfTU9ERV9DT05GSUdfT1BUSU9OUzogTG9hZGVkQ29uZmlnU2VsZWN0b3JzPHN0cmluZz4gPSB7XG4gIGVudmlyb25tZW50VmFyaWFibGVTZWxlY3RvcjogKGVudikgPT4gZW52W0VOVl9SRVRSWV9NT0RFXSxcbiAgY29uZmlnRmlsZVNlbGVjdG9yOiAocHJvZmlsZSkgPT4gcHJvZmlsZVtDT05GSUdfUkVUUllfTU9ERV0sXG4gIGRlZmF1bHQ6IERFRkFVTFRfUkVUUllfTU9ERSxcbn07XG4iXX0=
 
 /***/ }),
 
@@ -26178,13 +25841,27 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.memoize = void 0;
 const memoize = (provider, isExpired, requiresRefresh) => {
     let resolved;
+    let pending;
     let hasResult;
+    // Wrapper over supplied provider with side effect to handle concurrent invocation.
+    const coalesceProvider = async () => {
+        if (!pending) {
+            pending = provider();
+        }
+        try {
+            resolved = await pending;
+            hasResult = true;
+        }
+        finally {
+            pending = undefined;
+        }
+        return resolved;
+    };
     if (isExpired === undefined) {
         // This is a static memoization; no need to incorporate refreshing
         return async () => {
             if (!hasResult) {
-                resolved = await provider();
-                hasResult = true;
+                resolved = await coalesceProvider();
             }
             return resolved;
         };
@@ -26192,8 +25869,7 @@ const memoize = (provider, isExpired, requiresRefresh) => {
     let isConstant = false;
     return async () => {
         if (!hasResult) {
-            resolved = await provider();
-            hasResult = true;
+            resolved = await coalesceProvider();
         }
         if (isConstant) {
             return resolved;
@@ -26203,13 +25879,14 @@ const memoize = (provider, isExpired, requiresRefresh) => {
             return resolved;
         }
         if (isExpired(resolved)) {
-            return (resolved = await provider());
+            await coalesceProvider();
+            return resolved;
         }
         return resolved;
     };
 };
 exports.memoize = memoize;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWVtb2l6ZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9tZW1vaXplLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQTBDTyxNQUFNLE9BQU8sR0FBb0IsQ0FDdEMsUUFBcUIsRUFDckIsU0FBb0MsRUFDcEMsZUFBMEMsRUFDN0IsRUFBRTtJQUNmLElBQUksUUFBYSxDQUFDO0lBQ2xCLElBQUksU0FBa0IsQ0FBQztJQUN2QixJQUFJLFNBQVMsS0FBSyxTQUFTLEVBQUU7UUFDM0Isa0VBQWtFO1FBQ2xFLE9BQU8sS0FBSyxJQUFJLEVBQUU7WUFDaEIsSUFBSSxDQUFDLFNBQVMsRUFBRTtnQkFDZCxRQUFRLEdBQUcsTUFBTSxRQUFRLEVBQUUsQ0FBQztnQkFDNUIsU0FBUyxHQUFHLElBQUksQ0FBQzthQUNsQjtZQUNELE9BQU8sUUFBUSxDQUFDO1FBQ2xCLENBQUMsQ0FBQztLQUNIO0lBRUQsSUFBSSxVQUFVLEdBQUcsS0FBSyxDQUFDO0lBRXZCLE9BQU8sS0FBSyxJQUFJLEVBQUU7UUFDaEIsSUFBSSxDQUFDLFNBQVMsRUFBRTtZQUNkLFFBQVEsR0FBRyxNQUFNLFFBQVEsRUFBRSxDQUFDO1lBQzVCLFNBQVMsR0FBRyxJQUFJLENBQUM7U0FDbEI7UUFDRCxJQUFJLFVBQVUsRUFBRTtZQUNkLE9BQU8sUUFBUSxDQUFDO1NBQ2pCO1FBRUQsSUFBSSxlQUFlLElBQUksQ0FBQyxlQUFlLENBQUMsUUFBUSxDQUFDLEVBQUU7WUFDakQsVUFBVSxHQUFHLElBQUksQ0FBQztZQUNsQixPQUFPLFFBQVEsQ0FBQztTQUNqQjtRQUNELElBQUksU0FBUyxDQUFDLFFBQVEsQ0FBQyxFQUFFO1lBQ3ZCLE9BQU8sQ0FBQyxRQUFRLEdBQUcsTUFBTSxRQUFRLEVBQUUsQ0FBQyxDQUFDO1NBQ3RDO1FBQ0QsT0FBTyxRQUFRLENBQUM7SUFDbEIsQ0FBQyxDQUFDO0FBQ0osQ0FBQyxDQUFDO0FBdENXLFFBQUEsT0FBTyxXQXNDbEIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBQcm92aWRlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5pbnRlcmZhY2UgTWVtb2l6ZU92ZXJsb2FkIHtcbiAgLyoqXG4gICAqXG4gICAqIERlY29yYXRlcyBhIHByb3ZpZGVyIGZ1bmN0aW9uIHdpdGggZWl0aGVyIHN0YXRpYyBtZW1vaXphdGlvbi5cbiAgICpcbiAgICogVG8gY3JlYXRlIGEgc3RhdGljYWxseSBtZW1vaXplZCBwcm92aWRlciwgc3VwcGx5IGEgcHJvdmlkZXIgYXMgdGhlIG9ubHlcbiAgICogYXJndW1lbnQgdG8gdGhpcyBmdW5jdGlvbi4gVGhlIHByb3ZpZGVyIHdpbGwgYmUgaW52b2tlZCBvbmNlLCBhbmQgYWxsXG4gICAqIGludm9jYXRpb25zIG9mIHRoZSBwcm92aWRlciByZXR1cm5lZCBieSBgbWVtb2l6ZWAgd2lsbCByZXR1cm4gdGhlIHNhbWVcbiAgICogcHJvbWlzZSBvYmplY3QuXG4gICAqXG4gICAqIEBwYXJhbSBwcm92aWRlciBUaGUgcHJvdmlkZXIgd2hvc2UgcmVzdWx0IHNob3VsZCBiZSBjYWNoZWQgaW5kZWZpbml0ZWx5LlxuICAgKi9cbiAgPFQ+KHByb3ZpZGVyOiBQcm92aWRlcjxUPik6IFByb3ZpZGVyPFQ+O1xuXG4gIC8qKlxuICAgKiBEZWNvcmF0ZXMgYSBwcm92aWRlciBmdW5jdGlvbiB3aXRoIHJlZnJlc2hpbmcgbWVtb2l6YXRpb24uXG4gICAqXG4gICAqIEBwYXJhbSBwcm92aWRlciAgICAgICAgICBUaGUgcHJvdmlkZXIgd2hvc2UgcmVzdWx0IHNob3VsZCBiZSBjYWNoZWQuXG4gICAqIEBwYXJhbSBpc0V4cGlyZWQgICAgICAgICBBIGZ1bmN0aW9uIHRoYXQgd2lsbCBldmFsdWF0ZSB0aGUgcmVzb2x2ZWQgdmFsdWUgYW5kXG4gICAqICAgICAgICAgICAgICAgICAgICAgICAgICBkZXRlcm1pbmUgaWYgaXQgaXMgZXhwaXJlZC4gRm9yIGV4YW1wbGUsIHdoZW5cbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIG1lbW9pemluZyBBV1MgY3JlZGVudGlhbCBwcm92aWRlcnMsIHRoaXMgZnVuY3Rpb25cbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIHNob3VsZCByZXR1cm4gYHRydWVgIHdoZW4gdGhlIGNyZWRlbnRpYWwnc1xuICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgZXhwaXJhdGlvbiBpcyBpbiB0aGUgcGFzdCAob3IgdmVyeSBuZWFyIGZ1dHVyZSkgYW5kXG4gICAqICAgICAgICAgICAgICAgICAgICAgICAgICBgZmFsc2VgIG90aGVyd2lzZS5cbiAgICogQHBhcmFtIHJlcXVpcmVzUmVmcmVzaCAgIEEgZnVuY3Rpb24gdGhhdCB3aWxsIGV2YWx1YXRlIHRoZSByZXNvbHZlZCB2YWx1ZSBhbmRcbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIGRldGVybWluZSBpZiBpdCByZXByZXNlbnRzIHN0YXRpYyB2YWx1ZSBvciBvbmUgdGhhdFxuICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgd2lsbCBldmVudHVhbGx5IG5lZWQgdG8gYmUgcmVmcmVzaGVkLiBGb3IgZXhhbXBsZSxcbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIEFXUyBjcmVkZW50aWFscyB0aGF0IGhhdmUgbm8gZGVmaW5lZCBleHBpcmF0aW9uIHdpbGxcbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIG5ldmVyIG5lZWQgdG8gYmUgcmVmcmVzaGVkLCBzbyB0aGlzIGZ1bmN0aW9uIHdvdWxkXG4gICAqICAgICAgICAgICAgICAgICAgICAgICAgICByZXR1cm4gYHRydWVgIGlmIHRoZSBjcmVkZW50aWFscyByZXNvbHZlZCBieSB0aGVcbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIHVuZGVybHlpbmcgcHJvdmlkZXIgaGFkIGFuIGV4cGlyYXRpb24gYW5kIGBmYWxzZWBcbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIG90aGVyd2lzZS5cbiAgICovXG4gIDxUPihcbiAgICBwcm92aWRlcjogUHJvdmlkZXI8VD4sXG4gICAgaXNFeHBpcmVkOiAocmVzb2x2ZWQ6IFQpID0+IGJvb2xlYW4sXG4gICAgcmVxdWlyZXNSZWZyZXNoPzogKHJlc29sdmVkOiBUKSA9PiBib29sZWFuXG4gICk6IFByb3ZpZGVyPFQ+O1xufVxuXG5leHBvcnQgY29uc3QgbWVtb2l6ZTogTWVtb2l6ZU92ZXJsb2FkID0gPFQ+KFxuICBwcm92aWRlcjogUHJvdmlkZXI8VD4sXG4gIGlzRXhwaXJlZD86IChyZXNvbHZlZDogVCkgPT4gYm9vbGVhbixcbiAgcmVxdWlyZXNSZWZyZXNoPzogKHJlc29sdmVkOiBUKSA9PiBib29sZWFuXG4pOiBQcm92aWRlcjxUPiA9PiB7XG4gIGxldCByZXNvbHZlZDogYW55O1xuICBsZXQgaGFzUmVzdWx0OiBib29sZWFuO1xuICBpZiAoaXNFeHBpcmVkID09PSB1bmRlZmluZWQpIHtcbiAgICAvLyBUaGlzIGlzIGEgc3RhdGljIG1lbW9pemF0aW9uOyBubyBuZWVkIHRvIGluY29ycG9yYXRlIHJlZnJlc2hpbmdcbiAgICByZXR1cm4gYXN5bmMgKCkgPT4ge1xuICAgICAgaWYgKCFoYXNSZXN1bHQpIHtcbiAgICAgICAgcmVzb2x2ZWQgPSBhd2FpdCBwcm92aWRlcigpO1xuICAgICAgICBoYXNSZXN1bHQgPSB0cnVlO1xuICAgICAgfVxuICAgICAgcmV0dXJuIHJlc29sdmVkO1xuICAgIH07XG4gIH1cblxuICBsZXQgaXNDb25zdGFudCA9IGZhbHNlO1xuXG4gIHJldHVybiBhc3luYyAoKSA9PiB7XG4gICAgaWYgKCFoYXNSZXN1bHQpIHtcbiAgICAgIHJlc29sdmVkID0gYXdhaXQgcHJvdmlkZXIoKTtcbiAgICAgIGhhc1Jlc3VsdCA9IHRydWU7XG4gICAgfVxuICAgIGlmIChpc0NvbnN0YW50KSB7XG4gICAgICByZXR1cm4gcmVzb2x2ZWQ7XG4gICAgfVxuXG4gICAgaWYgKHJlcXVpcmVzUmVmcmVzaCAmJiAhcmVxdWlyZXNSZWZyZXNoKHJlc29sdmVkKSkge1xuICAgICAgaXNDb25zdGFudCA9IHRydWU7XG4gICAgICByZXR1cm4gcmVzb2x2ZWQ7XG4gICAgfVxuICAgIGlmIChpc0V4cGlyZWQocmVzb2x2ZWQpKSB7XG4gICAgICByZXR1cm4gKHJlc29sdmVkID0gYXdhaXQgcHJvdmlkZXIoKSk7XG4gICAgfVxuICAgIHJldHVybiByZXNvbHZlZDtcbiAgfTtcbn07XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWVtb2l6ZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9tZW1vaXplLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQTBDTyxNQUFNLE9BQU8sR0FBb0IsQ0FDdEMsUUFBcUIsRUFDckIsU0FBb0MsRUFDcEMsZUFBMEMsRUFDN0IsRUFBRTtJQUNmLElBQUksUUFBVyxDQUFDO0lBQ2hCLElBQUksT0FBK0IsQ0FBQztJQUNwQyxJQUFJLFNBQWtCLENBQUM7SUFDdkIsbUZBQW1GO0lBQ25GLE1BQU0sZ0JBQWdCLEdBQWdCLEtBQUssSUFBSSxFQUFFO1FBQy9DLElBQUksQ0FBQyxPQUFPLEVBQUU7WUFDWixPQUFPLEdBQUcsUUFBUSxFQUFFLENBQUM7U0FDdEI7UUFDRCxJQUFJO1lBQ0YsUUFBUSxHQUFHLE1BQU0sT0FBTyxDQUFDO1lBQ3pCLFNBQVMsR0FBRyxJQUFJLENBQUM7U0FDbEI7Z0JBQVM7WUFDUixPQUFPLEdBQUcsU0FBUyxDQUFDO1NBQ3JCO1FBQ0QsT0FBTyxRQUFRLENBQUM7SUFDbEIsQ0FBQyxDQUFDO0lBRUYsSUFBSSxTQUFTLEtBQUssU0FBUyxFQUFFO1FBQzNCLGtFQUFrRTtRQUNsRSxPQUFPLEtBQUssSUFBSSxFQUFFO1lBQ2hCLElBQUksQ0FBQyxTQUFTLEVBQUU7Z0JBQ2QsUUFBUSxHQUFHLE1BQU0sZ0JBQWdCLEVBQUUsQ0FBQzthQUNyQztZQUNELE9BQU8sUUFBUSxDQUFDO1FBQ2xCLENBQUMsQ0FBQztLQUNIO0lBRUQsSUFBSSxVQUFVLEdBQUcsS0FBSyxDQUFDO0lBRXZCLE9BQU8sS0FBSyxJQUFJLEVBQUU7UUFDaEIsSUFBSSxDQUFDLFNBQVMsRUFBRTtZQUNkLFFBQVEsR0FBRyxNQUFNLGdCQUFnQixFQUFFLENBQUM7U0FDckM7UUFDRCxJQUFJLFVBQVUsRUFBRTtZQUNkLE9BQU8sUUFBUSxDQUFDO1NBQ2pCO1FBRUQsSUFBSSxlQUFlLElBQUksQ0FBQyxlQUFlLENBQUMsUUFBUSxDQUFDLEVBQUU7WUFDakQsVUFBVSxHQUFHLElBQUksQ0FBQztZQUNsQixPQUFPLFFBQVEsQ0FBQztTQUNqQjtRQUNELElBQUksU0FBUyxDQUFDLFFBQVEsQ0FBQyxFQUFFO1lBQ3ZCLE1BQU0sZ0JBQWdCLEVBQUUsQ0FBQztZQUN6QixPQUFPLFFBQVEsQ0FBQztTQUNqQjtRQUNELE9BQU8sUUFBUSxDQUFDO0lBQ2xCLENBQUMsQ0FBQztBQUNKLENBQUMsQ0FBQztBQXBEVyxRQUFBLE9BQU8sV0FvRGxCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgUHJvdmlkZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuaW50ZXJmYWNlIE1lbW9pemVPdmVybG9hZCB7XG4gIC8qKlxuICAgKlxuICAgKiBEZWNvcmF0ZXMgYSBwcm92aWRlciBmdW5jdGlvbiB3aXRoIGVpdGhlciBzdGF0aWMgbWVtb2l6YXRpb24uXG4gICAqXG4gICAqIFRvIGNyZWF0ZSBhIHN0YXRpY2FsbHkgbWVtb2l6ZWQgcHJvdmlkZXIsIHN1cHBseSBhIHByb3ZpZGVyIGFzIHRoZSBvbmx5XG4gICAqIGFyZ3VtZW50IHRvIHRoaXMgZnVuY3Rpb24uIFRoZSBwcm92aWRlciB3aWxsIGJlIGludm9rZWQgb25jZSwgYW5kIGFsbFxuICAgKiBpbnZvY2F0aW9ucyBvZiB0aGUgcHJvdmlkZXIgcmV0dXJuZWQgYnkgYG1lbW9pemVgIHdpbGwgcmV0dXJuIHRoZSBzYW1lXG4gICAqIHByb21pc2Ugb2JqZWN0LlxuICAgKlxuICAgKiBAcGFyYW0gcHJvdmlkZXIgVGhlIHByb3ZpZGVyIHdob3NlIHJlc3VsdCBzaG91bGQgYmUgY2FjaGVkIGluZGVmaW5pdGVseS5cbiAgICovXG4gIDxUPihwcm92aWRlcjogUHJvdmlkZXI8VD4pOiBQcm92aWRlcjxUPjtcblxuICAvKipcbiAgICogRGVjb3JhdGVzIGEgcHJvdmlkZXIgZnVuY3Rpb24gd2l0aCByZWZyZXNoaW5nIG1lbW9pemF0aW9uLlxuICAgKlxuICAgKiBAcGFyYW0gcHJvdmlkZXIgICAgICAgICAgVGhlIHByb3ZpZGVyIHdob3NlIHJlc3VsdCBzaG91bGQgYmUgY2FjaGVkLlxuICAgKiBAcGFyYW0gaXNFeHBpcmVkICAgICAgICAgQSBmdW5jdGlvbiB0aGF0IHdpbGwgZXZhbHVhdGUgdGhlIHJlc29sdmVkIHZhbHVlIGFuZFxuICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgZGV0ZXJtaW5lIGlmIGl0IGlzIGV4cGlyZWQuIEZvciBleGFtcGxlLCB3aGVuXG4gICAqICAgICAgICAgICAgICAgICAgICAgICAgICBtZW1vaXppbmcgQVdTIGNyZWRlbnRpYWwgcHJvdmlkZXJzLCB0aGlzIGZ1bmN0aW9uXG4gICAqICAgICAgICAgICAgICAgICAgICAgICAgICBzaG91bGQgcmV0dXJuIGB0cnVlYCB3aGVuIHRoZSBjcmVkZW50aWFsJ3NcbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIGV4cGlyYXRpb24gaXMgaW4gdGhlIHBhc3QgKG9yIHZlcnkgbmVhciBmdXR1cmUpIGFuZFxuICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgYGZhbHNlYCBvdGhlcndpc2UuXG4gICAqIEBwYXJhbSByZXF1aXJlc1JlZnJlc2ggICBBIGZ1bmN0aW9uIHRoYXQgd2lsbCBldmFsdWF0ZSB0aGUgcmVzb2x2ZWQgdmFsdWUgYW5kXG4gICAqICAgICAgICAgICAgICAgICAgICAgICAgICBkZXRlcm1pbmUgaWYgaXQgcmVwcmVzZW50cyBzdGF0aWMgdmFsdWUgb3Igb25lIHRoYXRcbiAgICogICAgICAgICAgICAgICAgICAgICAgICAgIHdpbGwgZXZlbnR1YWxseSBuZWVkIHRvIGJlIHJlZnJlc2hlZC4gRm9yIGV4YW1wbGUsXG4gICAqICAgICAgICAgICAgICAgICAgICAgICAgICBBV1MgY3JlZGVudGlhbHMgdGhhdCBoYXZlIG5vIGRlZmluZWQgZXhwaXJhdGlvbiB3aWxsXG4gICAqICAgICAgICAgICAgICAgICAgICAgICAgICBuZXZlciBuZWVkIHRvIGJlIHJlZnJlc2hlZCwgc28gdGhpcyBmdW5jdGlvbiB3b3VsZFxuICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgcmV0dXJuIGB0cnVlYCBpZiB0aGUgY3JlZGVudGlhbHMgcmVzb2x2ZWQgYnkgdGhlXG4gICAqICAgICAgICAgICAgICAgICAgICAgICAgICB1bmRlcmx5aW5nIHByb3ZpZGVyIGhhZCBhbiBleHBpcmF0aW9uIGFuZCBgZmFsc2VgXG4gICAqICAgICAgICAgICAgICAgICAgICAgICAgICBvdGhlcndpc2UuXG4gICAqL1xuICA8VD4oXG4gICAgcHJvdmlkZXI6IFByb3ZpZGVyPFQ+LFxuICAgIGlzRXhwaXJlZDogKHJlc29sdmVkOiBUKSA9PiBib29sZWFuLFxuICAgIHJlcXVpcmVzUmVmcmVzaD86IChyZXNvbHZlZDogVCkgPT4gYm9vbGVhblxuICApOiBQcm92aWRlcjxUPjtcbn1cblxuZXhwb3J0IGNvbnN0IG1lbW9pemU6IE1lbW9pemVPdmVybG9hZCA9IDxUPihcbiAgcHJvdmlkZXI6IFByb3ZpZGVyPFQ+LFxuICBpc0V4cGlyZWQ/OiAocmVzb2x2ZWQ6IFQpID0+IGJvb2xlYW4sXG4gIHJlcXVpcmVzUmVmcmVzaD86IChyZXNvbHZlZDogVCkgPT4gYm9vbGVhblxuKTogUHJvdmlkZXI8VD4gPT4ge1xuICBsZXQgcmVzb2x2ZWQ6IFQ7XG4gIGxldCBwZW5kaW5nOiBQcm9taXNlPFQ+IHwgdW5kZWZpbmVkO1xuICBsZXQgaGFzUmVzdWx0OiBib29sZWFuO1xuICAvLyBXcmFwcGVyIG92ZXIgc3VwcGxpZWQgcHJvdmlkZXIgd2l0aCBzaWRlIGVmZmVjdCB0byBoYW5kbGUgY29uY3VycmVudCBpbnZvY2F0aW9uLlxuICBjb25zdCBjb2FsZXNjZVByb3ZpZGVyOiBQcm92aWRlcjxUPiA9IGFzeW5jICgpID0+IHtcbiAgICBpZiAoIXBlbmRpbmcpIHtcbiAgICAgIHBlbmRpbmcgPSBwcm92aWRlcigpO1xuICAgIH1cbiAgICB0cnkge1xuICAgICAgcmVzb2x2ZWQgPSBhd2FpdCBwZW5kaW5nO1xuICAgICAgaGFzUmVzdWx0ID0gdHJ1ZTtcbiAgICB9IGZpbmFsbHkge1xuICAgICAgcGVuZGluZyA9IHVuZGVmaW5lZDtcbiAgICB9XG4gICAgcmV0dXJuIHJlc29sdmVkO1xuICB9O1xuXG4gIGlmIChpc0V4cGlyZWQgPT09IHVuZGVmaW5lZCkge1xuICAgIC8vIFRoaXMgaXMgYSBzdGF0aWMgbWVtb2l6YXRpb247IG5vIG5lZWQgdG8gaW5jb3Jwb3JhdGUgcmVmcmVzaGluZ1xuICAgIHJldHVybiBhc3luYyAoKSA9PiB7XG4gICAgICBpZiAoIWhhc1Jlc3VsdCkge1xuICAgICAgICByZXNvbHZlZCA9IGF3YWl0IGNvYWxlc2NlUHJvdmlkZXIoKTtcbiAgICAgIH1cbiAgICAgIHJldHVybiByZXNvbHZlZDtcbiAgICB9O1xuICB9XG5cbiAgbGV0IGlzQ29uc3RhbnQgPSBmYWxzZTtcblxuICByZXR1cm4gYXN5bmMgKCkgPT4ge1xuICAgIGlmICghaGFzUmVzdWx0KSB7XG4gICAgICByZXNvbHZlZCA9IGF3YWl0IGNvYWxlc2NlUHJvdmlkZXIoKTtcbiAgICB9XG4gICAgaWYgKGlzQ29uc3RhbnQpIHtcbiAgICAgIHJldHVybiByZXNvbHZlZDtcbiAgICB9XG5cbiAgICBpZiAocmVxdWlyZXNSZWZyZXNoICYmICFyZXF1aXJlc1JlZnJlc2gocmVzb2x2ZWQpKSB7XG4gICAgICBpc0NvbnN0YW50ID0gdHJ1ZTtcbiAgICAgIHJldHVybiByZXNvbHZlZDtcbiAgICB9XG4gICAgaWYgKGlzRXhwaXJlZChyZXNvbHZlZCkpIHtcbiAgICAgIGF3YWl0IGNvYWxlc2NlUHJvdmlkZXIoKTtcbiAgICAgIHJldHVybiByZXNvbHZlZDtcbiAgICB9XG4gICAgcmV0dXJuIHJlc29sdmVkO1xuICB9O1xufTtcbiJdfQ==
 
 /***/ }),
 
@@ -27445,7 +27122,7 @@ exports.LazyJsonString = LazyJsonString;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.strictParseInt = exports.handleFloat = exports.limitedParseFloat = exports.strictParseFloat = exports.expectString = exports.expectInt = exports.expectNumber = exports.expectBoolean = exports.parseBoolean = void 0;
+exports.strictParseInt = exports.handleFloat = exports.limitedParseFloat = exports.strictParseFloat = exports.expectString = exports.expectObject = exports.expectNonNull = exports.expectInt = exports.expectNumber = exports.expectBoolean = exports.parseBoolean = void 0;
 /**
  * Give an input string, strictly parses a boolean value.
  *
@@ -27514,6 +27191,41 @@ const expectInt = (value) => {
     throw new TypeError(`Expected integer, got ${typeof value}`);
 };
 exports.expectInt = expectInt;
+/**
+ * Asserts a value is not null or undefined and returns it, or throws an error.
+ *
+ * @param value A value that is expected to be defined
+ * @param location The location where we're expecting to find a defined object (optional)
+ * @returns The value if it's not undefined, otherwise throws an error
+ */
+const expectNonNull = (value, location) => {
+    if (value === null || value === undefined) {
+        if (location) {
+            throw new TypeError(`Expected a non-null value for ${location}`);
+        }
+        throw new TypeError("Expected a non-null value");
+    }
+    return value;
+};
+exports.expectNonNull = expectNonNull;
+/**
+ * Asserts a value is an JSON-like object and returns it. This is expected to be used
+ * with values parsed from JSON (arrays, objects, numbers, strings, booleans).
+ *
+ * @param value A value that is expected to be an object
+ * @returns The value if it's an object, undefined if it's null/undefined,
+ *   otherwise an error is thrown.
+ */
+const expectObject = (value) => {
+    if (value === null || value === undefined) {
+        return undefined;
+    }
+    if (typeof value === "object" && !Array.isArray(value)) {
+        return value;
+    }
+    throw new TypeError(`Expected object, got ${typeof value}`);
+};
+exports.expectObject = expectObject;
 /**
  * Asserts a value is a string and returns it.
  *
@@ -27606,7 +27318,7 @@ const strictParseInt = (value) => {
     return exports.expectInt(value);
 };
 exports.strictParseInt = strictParseInt;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFyc2UtdXRpbHMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvcGFyc2UtdXRpbHMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUE7Ozs7O0dBS0c7QUFDSSxNQUFNLFlBQVksR0FBRyxDQUFDLEtBQWEsRUFBVyxFQUFFO0lBQ3JELFFBQVEsS0FBSyxFQUFFO1FBQ2IsS0FBSyxNQUFNO1lBQ1QsT0FBTyxJQUFJLENBQUM7UUFDZCxLQUFLLE9BQU87WUFDVixPQUFPLEtBQUssQ0FBQztRQUNmO1lBQ0UsTUFBTSxJQUFJLEtBQUssQ0FBQyxrQ0FBa0MsS0FBSyxHQUFHLENBQUMsQ0FBQztLQUMvRDtBQUNILENBQUMsQ0FBQztBQVRXLFFBQUEsWUFBWSxnQkFTdkI7QUFFRjs7Ozs7O0dBTUc7QUFDSSxNQUFNLGFBQWEsR0FBRyxDQUFDLEtBQVUsRUFBdUIsRUFBRTtJQUMvRCxJQUFJLEtBQUssS0FBSyxJQUFJLElBQUksS0FBSyxLQUFLLFNBQVMsRUFBRTtRQUN6QyxPQUFPLFNBQVMsQ0FBQztLQUNsQjtJQUNELElBQUksT0FBTyxLQUFLLEtBQUssU0FBUyxFQUFFO1FBQzlCLE9BQU8sS0FBSyxDQUFDO0tBQ2Q7SUFDRCxNQUFNLElBQUksU0FBUyxDQUFDLHlCQUF5QixPQUFPLEtBQUssRUFBRSxDQUFDLENBQUM7QUFDL0QsQ0FBQyxDQUFDO0FBUlcsUUFBQSxhQUFhLGlCQVF4QjtBQUVGOzs7Ozs7R0FNRztBQUNJLE1BQU0sWUFBWSxHQUFHLENBQUMsS0FBVSxFQUFzQixFQUFFO0lBQzdELElBQUksS0FBSyxLQUFLLElBQUksSUFBSSxLQUFLLEtBQUssU0FBUyxFQUFFO1FBQ3pDLE9BQU8sU0FBUyxDQUFDO0tBQ2xCO0lBQ0QsSUFBSSxPQUFPLEtBQUssS0FBSyxRQUFRLEVBQUU7UUFDN0IsT0FBTyxLQUFLLENBQUM7S0FDZDtJQUNELE1BQU0sSUFBSSxTQUFTLENBQUMsd0JBQXdCLE9BQU8sS0FBSyxFQUFFLENBQUMsQ0FBQztBQUM5RCxDQUFDLENBQUM7QUFSVyxRQUFBLFlBQVksZ0JBUXZCO0FBRUY7Ozs7OztHQU1HO0FBQ0ksTUFBTSxTQUFTLEdBQUcsQ0FBQyxLQUFVLEVBQXNCLEVBQUU7SUFDMUQsSUFBSSxLQUFLLEtBQUssSUFBSSxJQUFJLEtBQUssS0FBSyxTQUFTLEVBQUU7UUFDekMsT0FBTyxTQUFTLENBQUM7S0FDbEI7SUFDRCxJQUFJLE1BQU0sQ0FBQyxTQUFTLENBQUMsS0FBSyxDQUFDLElBQUksQ0FBQyxNQUFNLENBQUMsS0FBSyxDQUFDLEtBQUssQ0FBQyxFQUFFO1FBQ25ELE9BQU8sS0FBSyxDQUFDO0tBQ2Q7SUFDRCxNQUFNLElBQUksU0FBUyxDQUFDLHlCQUF5QixPQUFPLEtBQUssRUFBRSxDQUFDLENBQUM7QUFDL0QsQ0FBQyxDQUFDO0FBUlcsUUFBQSxTQUFTLGFBUXBCO0FBRUY7Ozs7OztHQU1HO0FBQ0ksTUFBTSxZQUFZLEdBQUcsQ0FBQyxLQUFVLEVBQXNCLEVBQUU7SUFDN0QsSUFBSSxLQUFLLEtBQUssSUFBSSxJQUFJLEtBQUssS0FBSyxTQUFTLEVBQUU7UUFDekMsT0FBTyxTQUFTLENBQUM7S0FDbEI7SUFDRCxJQUFJLE9BQU8sS0FBSyxLQUFLLFFBQVEsRUFBRTtRQUM3QixPQUFPLEtBQUssQ0FBQztLQUNkO0lBQ0QsTUFBTSxJQUFJLFNBQVMsQ0FBQyx3QkFBd0IsT0FBTyxLQUFLLEVBQUUsQ0FBQyxDQUFDO0FBQzlELENBQUMsQ0FBQztBQVJXLFFBQUEsWUFBWSxnQkFRdkI7QUFFRjs7Ozs7Ozs7O0dBU0c7QUFDSSxNQUFNLGdCQUFnQixHQUFHLENBQUMsS0FBc0IsRUFBc0IsRUFBRTtJQUM3RSxJQUFJLEtBQUssS0FBSyxLQUFLLEVBQUU7UUFDbkIsT0FBTyxHQUFHLENBQUM7S0FDWjtJQUNELElBQUksT0FBTyxLQUFLLElBQUksUUFBUSxFQUFFO1FBQzVCLCtDQUErQztRQUMvQyxNQUFNLE1BQU0sR0FBVyxVQUFVLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDekMsSUFBSSxNQUFNLENBQUMsS0FBSyxDQUFDLE1BQU0sQ0FBQyxFQUFFO1lBQ3hCLE1BQU0sSUFBSSxTQUFTLENBQUMsd0NBQXdDLENBQUMsQ0FBQztTQUMvRDtRQUNELE9BQU8sb0JBQVksQ0FBQyxNQUFNLENBQUMsQ0FBQztLQUM3QjtJQUNELE9BQU8sb0JBQVksQ0FBQyxLQUFLLENBQUMsQ0FBQztBQUM3QixDQUFDLENBQUM7QUFiVyxRQUFBLGdCQUFnQixvQkFhM0I7QUFFRjs7Ozs7Ozs7O0dBU0c7QUFDSSxNQUFNLGlCQUFpQixHQUFHLENBQUMsS0FBc0IsRUFBc0IsRUFBRTtJQUM5RSxJQUFJLE9BQU8sS0FBSyxJQUFJLFFBQVEsRUFBRTtRQUM1QixRQUFRLEtBQUssRUFBRTtZQUNiLEtBQUssS0FBSztnQkFDUixPQUFPLEdBQUcsQ0FBQztZQUNiLEtBQUssVUFBVTtnQkFDYixPQUFPLFFBQVEsQ0FBQztZQUNsQixLQUFLLFdBQVc7Z0JBQ2QsT0FBTyxDQUFDLFFBQVEsQ0FBQztZQUNuQjtnQkFDRSxNQUFNLElBQUksS0FBSyxDQUFDLGdDQUFnQyxLQUFLLEVBQUUsQ0FBQyxDQUFDO1NBQzVEO0tBQ0Y7SUFFRCxPQUFPLG9CQUFZLENBQUMsS0FBSyxDQUFDLENBQUM7QUFDN0IsQ0FBQyxDQUFDO0FBZlcsUUFBQSxpQkFBaUIscUJBZTVCO0FBRUY7O0dBRUc7QUFDVSxRQUFBLFdBQVcsR0FBRyx5QkFBaUIsQ0FBQztBQUU3Qzs7Ozs7Ozs7O0dBU0c7QUFDSSxNQUFNLGNBQWMsR0FBRyxDQUFDLEtBQXNCLEVBQXNCLEVBQUU7SUFDM0UsSUFBSSxPQUFPLEtBQUssS0FBSyxRQUFRLEVBQUU7UUFDN0Isb0VBQW9FO1FBQ3BFLHlFQUF5RTtRQUN6RSwrQ0FBK0M7UUFDL0MsT0FBTyxpQkFBUyxDQUFDLFVBQVUsQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDO0tBQ3JDO0lBQ0QsT0FBTyxpQkFBUyxDQUFDLEtBQUssQ0FBQyxDQUFDO0FBQzFCLENBQUMsQ0FBQztBQVJXLFFBQUEsY0FBYyxrQkFRekIiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEdpdmUgYW4gaW5wdXQgc3RyaW5nLCBzdHJpY3RseSBwYXJzZXMgYSBib29sZWFuIHZhbHVlLlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBUaGUgYm9vbGVhbiBzdHJpbmcgdG8gcGFyc2UuXG4gKiBAcmV0dXJucyB0cnVlIGZvciBcInRydWVcIiwgZmFsc2UgZm9yIFwiZmFsc2VcIiwgb3RoZXJ3aXNlIGFuIGVycm9yIGlzIHRocm93bi5cbiAqL1xuZXhwb3J0IGNvbnN0IHBhcnNlQm9vbGVhbiA9ICh2YWx1ZTogc3RyaW5nKTogYm9vbGVhbiA9PiB7XG4gIHN3aXRjaCAodmFsdWUpIHtcbiAgICBjYXNlIFwidHJ1ZVwiOlxuICAgICAgcmV0dXJuIHRydWU7XG4gICAgY2FzZSBcImZhbHNlXCI6XG4gICAgICByZXR1cm4gZmFsc2U7XG4gICAgZGVmYXVsdDpcbiAgICAgIHRocm93IG5ldyBFcnJvcihgVW5hYmxlIHRvIHBhcnNlIGJvb2xlYW4gdmFsdWUgXCIke3ZhbHVlfVwiYCk7XG4gIH1cbn07XG5cbi8qXG4gKiBBc3NlcnRzIGEgdmFsdWUgaXMgYSBib29sZWFuIGFuZCByZXR1cm5zIGl0LlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBBIHZhbHVlIHRoYXQgaXMgZXhwZWN0ZWQgdG8gYmUgYSBib29sZWFuLlxuICogQHJldHVybnMgVGhlIHZhbHVlIGlmIGl0J3MgYSBib29sZWFuLCB1bmRlZmluZWQgaWYgaXQncyBudWxsL3VuZGVmaW5lZCxcbiAqICAgb3RoZXJ3aXNlIGFuIGVycm9yIGlzIHRocm93bi5cbiAqL1xuZXhwb3J0IGNvbnN0IGV4cGVjdEJvb2xlYW4gPSAodmFsdWU6IGFueSk6IGJvb2xlYW4gfCB1bmRlZmluZWQgPT4ge1xuICBpZiAodmFsdWUgPT09IG51bGwgfHwgdmFsdWUgPT09IHVuZGVmaW5lZCkge1xuICAgIHJldHVybiB1bmRlZmluZWQ7XG4gIH1cbiAgaWYgKHR5cGVvZiB2YWx1ZSA9PT0gXCJib29sZWFuXCIpIHtcbiAgICByZXR1cm4gdmFsdWU7XG4gIH1cbiAgdGhyb3cgbmV3IFR5cGVFcnJvcihgRXhwZWN0ZWQgYm9vbGVhbiwgZ290ICR7dHlwZW9mIHZhbHVlfWApO1xufTtcblxuLyoqXG4gKiBBc3NlcnRzIGEgdmFsdWUgaXMgYSBudW1iZXIgYW5kIHJldHVybnMgaXQuXG4gKlxuICogQHBhcmFtIHZhbHVlIEEgdmFsdWUgdGhhdCBpcyBleHBlY3RlZCB0byBiZSBhIG51bWJlci5cbiAqIEByZXR1cm5zIFRoZSB2YWx1ZSBpZiBpdCdzIGEgbnVtYmVyLCB1bmRlZmluZWQgaWYgaXQncyBudWxsL3VuZGVmaW5lZCxcbiAqICAgb3RoZXJ3aXNlIGFuIGVycm9yIGlzIHRocm93bi5cbiAqL1xuZXhwb3J0IGNvbnN0IGV4cGVjdE51bWJlciA9ICh2YWx1ZTogYW55KTogbnVtYmVyIHwgdW5kZWZpbmVkID0+IHtcbiAgaWYgKHZhbHVlID09PSBudWxsIHx8IHZhbHVlID09PSB1bmRlZmluZWQpIHtcbiAgICByZXR1cm4gdW5kZWZpbmVkO1xuICB9XG4gIGlmICh0eXBlb2YgdmFsdWUgPT09IFwibnVtYmVyXCIpIHtcbiAgICByZXR1cm4gdmFsdWU7XG4gIH1cbiAgdGhyb3cgbmV3IFR5cGVFcnJvcihgRXhwZWN0ZWQgbnVtYmVyLCBnb3QgJHt0eXBlb2YgdmFsdWV9YCk7XG59O1xuXG4vKipcbiAqIEFzc2VydHMgYSB2YWx1ZSBpcyBhbiBpbnRlZ2VyIGFuZCByZXR1cm5zIGl0LlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBBIHZhbHVlIHRoYXQgaXMgZXhwZWN0ZWQgdG8gYmUgYW4gaW50ZWdlci5cbiAqIEByZXR1cm5zIFRoZSB2YWx1ZSBpZiBpdCdzIGFuIGludGVnZXIsIHVuZGVmaW5lZCBpZiBpdCdzIG51bGwvdW5kZWZpbmVkLFxuICogICBvdGhlcndpc2UgYW4gZXJyb3IgaXMgdGhyb3duLlxuICovXG5leHBvcnQgY29uc3QgZXhwZWN0SW50ID0gKHZhbHVlOiBhbnkpOiBudW1iZXIgfCB1bmRlZmluZWQgPT4ge1xuICBpZiAodmFsdWUgPT09IG51bGwgfHwgdmFsdWUgPT09IHVuZGVmaW5lZCkge1xuICAgIHJldHVybiB1bmRlZmluZWQ7XG4gIH1cbiAgaWYgKE51bWJlci5pc0ludGVnZXIodmFsdWUpICYmICFOdW1iZXIuaXNOYU4odmFsdWUpKSB7XG4gICAgcmV0dXJuIHZhbHVlO1xuICB9XG4gIHRocm93IG5ldyBUeXBlRXJyb3IoYEV4cGVjdGVkIGludGVnZXIsIGdvdCAke3R5cGVvZiB2YWx1ZX1gKTtcbn07XG5cbi8qKlxuICogQXNzZXJ0cyBhIHZhbHVlIGlzIGEgc3RyaW5nIGFuZCByZXR1cm5zIGl0LlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBBIHZhbHVlIHRoYXQgaXMgZXhwZWN0ZWQgdG8gYmUgYSBzdHJpbmcuXG4gKiBAcmV0dXJucyBUaGUgdmFsdWUgaWYgaXQncyBhIHN0cmluZywgdW5kZWZpbmVkIGlmIGl0J3MgbnVsbC91bmRlZmluZWQsXG4gKiAgIG90aGVyd2lzZSBhbiBlcnJvciBpcyB0aHJvd24uXG4gKi9cbmV4cG9ydCBjb25zdCBleHBlY3RTdHJpbmcgPSAodmFsdWU6IGFueSk6IHN0cmluZyB8IHVuZGVmaW5lZCA9PiB7XG4gIGlmICh2YWx1ZSA9PT0gbnVsbCB8fCB2YWx1ZSA9PT0gdW5kZWZpbmVkKSB7XG4gICAgcmV0dXJuIHVuZGVmaW5lZDtcbiAgfVxuICBpZiAodHlwZW9mIHZhbHVlID09PSBcInN0cmluZ1wiKSB7XG4gICAgcmV0dXJuIHZhbHVlO1xuICB9XG4gIHRocm93IG5ldyBUeXBlRXJyb3IoYEV4cGVjdGVkIHN0cmluZywgZ290ICR7dHlwZW9mIHZhbHVlfWApO1xufTtcblxuLyoqXG4gKiBQYXJzZXMgYSB2YWx1ZSBpbnRvIGEgZmxvYXQuIElmIHRoZSB2YWx1ZSBpcyBudWxsIG9yIHVuZGVmaW5lZCwgdW5kZWZpbmVkXG4gKiB3aWxsIGJlIHJldHVybmVkLiBJZiB0aGUgdmFsdWUgaXMgYSBzdHJpbmcsIGl0IHdpbGwgYmUgcGFyc2VkIGJ5IHRoZSBzdGFuZGFyZFxuICogcGFyc2VGbG9hdCB3aXRoIG9uZSBleGNlcHRpb246IE5hTiBtYXkgb25seSBiZSBleHBsaWNpdGx5IHNldCBhcyB0aGUgc3RyaW5nXG4gKiBcIk5hTlwiLCBhbnkgaW1wbGljaXQgTmFuIHZhbHVlcyB3aWxsIHJlc3VsdCBpbiBhbiBlcnJvciBiZWluZyB0aHJvd24uIElmIGFueVxuICogb3RoZXIgdHlwZSBpcyBwcm92aWRlZCwgYW4gZXhjZXB0aW9uIHdpbGwgYmUgdGhyb3duLlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBBIG51bWJlciBvciBzdHJpbmcgcmVwcmVzZW50YXRpb24gb2YgYSBmbG9hdC5cbiAqIEByZXR1cm5zIFRoZSB2YWx1ZSBhcyBhIG51bWJlciwgb3IgdW5kZWZpbmVkIGlmIGl0J3MgbnVsbC91bmRlZmluZWQuXG4gKi9cbmV4cG9ydCBjb25zdCBzdHJpY3RQYXJzZUZsb2F0ID0gKHZhbHVlOiBzdHJpbmcgfCBudW1iZXIpOiBudW1iZXIgfCB1bmRlZmluZWQgPT4ge1xuICBpZiAodmFsdWUgPT09IFwiTmFOXCIpIHtcbiAgICByZXR1cm4gTmFOO1xuICB9XG4gIGlmICh0eXBlb2YgdmFsdWUgPT0gXCJzdHJpbmdcIikge1xuICAgIC8vIFRPRE86IGhhbmRsZSB1bmRlcmZsb3cgLyBvdmVyZmxvdyBleHBsaWNpdGx5XG4gICAgY29uc3QgcGFyc2VkOiBudW1iZXIgPSBwYXJzZUZsb2F0KHZhbHVlKTtcbiAgICBpZiAoTnVtYmVyLmlzTmFOKHBhcnNlZCkpIHtcbiAgICAgIHRocm93IG5ldyBUeXBlRXJyb3IoYEV4cGVjdGVkIHJlYWwgbnVtYmVyLCBnb3QgaW1wbGljaXQgTmFOYCk7XG4gICAgfVxuICAgIHJldHVybiBleHBlY3ROdW1iZXIocGFyc2VkKTtcbiAgfVxuICByZXR1cm4gZXhwZWN0TnVtYmVyKHZhbHVlKTtcbn07XG5cbi8qKlxuICogQXNzZXJ0cyBhIHZhbHVlIGlzIGEgbnVtYmVyIGFuZCByZXR1cm5zIGl0LiBJZiB0aGUgdmFsdWUgaXMgYSBzdHJpbmdcbiAqIHJlcHJlc2VudGF0aW9uIG9mIGEgbm9uLW51bWVyaWMgbnVtYmVyIHR5cGUgKE5hTiwgSW5maW5pdHksIC1JbmZpbml0eSksXG4gKiB0aGUgdmFsdWUgd2lsbCBiZSBwYXJzZWQuIEFueSBvdGhlciBzdHJpbmcgdmFsdWUgd2lsbCByZXN1bHQgaW4gYW4gZXhjZXB0aW9uXG4gKiBiZWluZyB0aHJvd24uIE51bGwgb3IgdW5kZWZpbmVkIHdpbGwgYmUgcmV0dXJuZWQgYXMgdW5kZWZpbmVkLiBBbnkgb3RoZXJcbiAqIHR5cGUgd2lsbCByZXN1bHQgaW4gYW4gZXhjZXB0aW9uIGJlaW5nIHRocm93bi5cbiAqXG4gKiBAcGFyYW0gdmFsdWUgQSBudW1iZXIgb3Igc3RyaW5nIHJlcHJlc2VudGF0aW9uIG9mIGEgbm9uLW51bWVyaWMgZmxvYXQuXG4gKiBAcmV0dXJucyBUaGUgdmFsdWUgYXMgYSBudW1iZXIsIG9yIHVuZGVmaW5lZCBpZiBpdCdzIG51bGwvdW5kZWZpbmVkLlxuICovXG5leHBvcnQgY29uc3QgbGltaXRlZFBhcnNlRmxvYXQgPSAodmFsdWU6IHN0cmluZyB8IG51bWJlcik6IG51bWJlciB8IHVuZGVmaW5lZCA9PiB7XG4gIGlmICh0eXBlb2YgdmFsdWUgPT0gXCJzdHJpbmdcIikge1xuICAgIHN3aXRjaCAodmFsdWUpIHtcbiAgICAgIGNhc2UgXCJOYU5cIjpcbiAgICAgICAgcmV0dXJuIE5hTjtcbiAgICAgIGNhc2UgXCJJbmZpbml0eVwiOlxuICAgICAgICByZXR1cm4gSW5maW5pdHk7XG4gICAgICBjYXNlIFwiLUluZmluaXR5XCI6XG4gICAgICAgIHJldHVybiAtSW5maW5pdHk7XG4gICAgICBkZWZhdWx0OlxuICAgICAgICB0aHJvdyBuZXcgRXJyb3IoYFVuYWJsZSB0byBwYXJzZSBmbG9hdCB2YWx1ZTogJHt2YWx1ZX1gKTtcbiAgICB9XG4gIH1cblxuICByZXR1cm4gZXhwZWN0TnVtYmVyKHZhbHVlKTtcbn07XG5cbi8qKlxuICogQGRlcHJlY2F0ZWQgVXNlIGxpbWl0ZWRQYXJzZUZsb2F0IG9yIHN0cmljdFBhcnNlRmxvYXRcbiAqL1xuZXhwb3J0IGNvbnN0IGhhbmRsZUZsb2F0ID0gbGltaXRlZFBhcnNlRmxvYXQ7XG5cbi8qKlxuICogUGFyc2VzIGEgdmFsdWUgaW50byBhbiBpbnRlZ2VyLiBJZiB0aGUgdmFsdWUgaXMgbnVsbCBvciB1bmRlZmluZWQsIHVuZGVmaW5lZFxuICogd2lsbCBiZSByZXR1cm5lZC4gSWYgdGhlIHZhbHVlIGlzIGEgc3RyaW5nLCBpdCB3aWxsIGJlIHBhcnNlZCBieSBwYXJzZUZsb2F0XG4gKiBhbmQgdGhlIHJlc3VsdCB3aWxsIGJlIGFzc2VydGVkIHRvIGJlIGFuIGludGVnZXIuIElmIHRoZSBwYXJzZWQgdmFsdWUgaXMgbm90XG4gKiBhbiBpbnRlZ2VyLCBvciB0aGUgcmF3IHZhbHVlIGlzIGFueSB0eXBlIG90aGVyIHRoYW4gYSBzdHJpbmcgb3IgbnVtYmVyLCBhblxuICogZXhjZXB0aW9uIHdpbGwgYmUgdGhyb3duLlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBBIG51bWJlciBvciBzdHJpbmcgcmVwcmVzZW50YXRpb24gb2YgYW4gaW50ZWdlci5cbiAqIEByZXR1cm5zIFRoZSB2YWx1ZSBhcyBhIG51bWJlciwgb3IgdW5kZWZpbmVkIGlmIGl0J3MgbnVsbC91bmRlZmluZWQuXG4gKi9cbmV4cG9ydCBjb25zdCBzdHJpY3RQYXJzZUludCA9ICh2YWx1ZTogc3RyaW5nIHwgbnVtYmVyKTogbnVtYmVyIHwgdW5kZWZpbmVkID0+IHtcbiAgaWYgKHR5cGVvZiB2YWx1ZSA9PT0gXCJzdHJpbmdcIikge1xuICAgIC8vIHBhcnNlSW50IGNhbid0IGJlIHVzZWQgaGVyZSwgYmVjYXVzZSBpdCB3aWxsIHNpbGVudGx5IGRpc2NhcmQgYW55XG4gICAgLy8gZXhpc3RpbmcgZGVjaW1hbHMuIFdlIHdhbnQgdG8gaW5zdGVhZCB0aHJvdyBhbiBlcnJvciBpZiB0aGVyZSBhcmUgYW55LlxuICAgIC8vIFRPRE86IGhhbmRsZSB1bmRlcmZsb3cgLyBvdmVyZmxvdyBleHBsaWNpdGx5XG4gICAgcmV0dXJuIGV4cGVjdEludChwYXJzZUZsb2F0KHZhbHVlKSk7XG4gIH1cbiAgcmV0dXJuIGV4cGVjdEludCh2YWx1ZSk7XG59O1xuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFyc2UtdXRpbHMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvcGFyc2UtdXRpbHMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUE7Ozs7O0dBS0c7QUFDSSxNQUFNLFlBQVksR0FBRyxDQUFDLEtBQWEsRUFBVyxFQUFFO0lBQ3JELFFBQVEsS0FBSyxFQUFFO1FBQ2IsS0FBSyxNQUFNO1lBQ1QsT0FBTyxJQUFJLENBQUM7UUFDZCxLQUFLLE9BQU87WUFDVixPQUFPLEtBQUssQ0FBQztRQUNmO1lBQ0UsTUFBTSxJQUFJLEtBQUssQ0FBQyxrQ0FBa0MsS0FBSyxHQUFHLENBQUMsQ0FBQztLQUMvRDtBQUNILENBQUMsQ0FBQztBQVRXLFFBQUEsWUFBWSxnQkFTdkI7QUFFRjs7Ozs7O0dBTUc7QUFDSSxNQUFNLGFBQWEsR0FBRyxDQUFDLEtBQVUsRUFBdUIsRUFBRTtJQUMvRCxJQUFJLEtBQUssS0FBSyxJQUFJLElBQUksS0FBSyxLQUFLLFNBQVMsRUFBRTtRQUN6QyxPQUFPLFNBQVMsQ0FBQztLQUNsQjtJQUNELElBQUksT0FBTyxLQUFLLEtBQUssU0FBUyxFQUFFO1FBQzlCLE9BQU8sS0FBSyxDQUFDO0tBQ2Q7SUFDRCxNQUFNLElBQUksU0FBUyxDQUFDLHlCQUF5QixPQUFPLEtBQUssRUFBRSxDQUFDLENBQUM7QUFDL0QsQ0FBQyxDQUFDO0FBUlcsUUFBQSxhQUFhLGlCQVF4QjtBQUVGOzs7Ozs7R0FNRztBQUNJLE1BQU0sWUFBWSxHQUFHLENBQUMsS0FBVSxFQUFzQixFQUFFO0lBQzdELElBQUksS0FBSyxLQUFLLElBQUksSUFBSSxLQUFLLEtBQUssU0FBUyxFQUFFO1FBQ3pDLE9BQU8sU0FBUyxDQUFDO0tBQ2xCO0lBQ0QsSUFBSSxPQUFPLEtBQUssS0FBSyxRQUFRLEVBQUU7UUFDN0IsT0FBTyxLQUFLLENBQUM7S0FDZDtJQUNELE1BQU0sSUFBSSxTQUFTLENBQUMsd0JBQXdCLE9BQU8sS0FBSyxFQUFFLENBQUMsQ0FBQztBQUM5RCxDQUFDLENBQUM7QUFSVyxRQUFBLFlBQVksZ0JBUXZCO0FBRUY7Ozs7OztHQU1HO0FBQ0ksTUFBTSxTQUFTLEdBQUcsQ0FBQyxLQUFVLEVBQXNCLEVBQUU7SUFDMUQsSUFBSSxLQUFLLEtBQUssSUFBSSxJQUFJLEtBQUssS0FBSyxTQUFTLEVBQUU7UUFDekMsT0FBTyxTQUFTLENBQUM7S0FDbEI7SUFDRCxJQUFJLE1BQU0sQ0FBQyxTQUFTLENBQUMsS0FBSyxDQUFDLElBQUksQ0FBQyxNQUFNLENBQUMsS0FBSyxDQUFDLEtBQUssQ0FBQyxFQUFFO1FBQ25ELE9BQU8sS0FBSyxDQUFDO0tBQ2Q7SUFDRCxNQUFNLElBQUksU0FBUyxDQUFDLHlCQUF5QixPQUFPLEtBQUssRUFBRSxDQUFDLENBQUM7QUFDL0QsQ0FBQyxDQUFDO0FBUlcsUUFBQSxTQUFTLGFBUXBCO0FBRUY7Ozs7OztHQU1HO0FBQ0ksTUFBTSxhQUFhLEdBQUcsQ0FBSSxLQUEyQixFQUFFLFFBQWlCLEVBQUssRUFBRTtJQUNwRixJQUFJLEtBQUssS0FBSyxJQUFJLElBQUksS0FBSyxLQUFLLFNBQVMsRUFBRTtRQUN6QyxJQUFJLFFBQVEsRUFBRTtZQUNaLE1BQU0sSUFBSSxTQUFTLENBQUMsaUNBQWlDLFFBQVEsRUFBRSxDQUFDLENBQUM7U0FDbEU7UUFDRCxNQUFNLElBQUksU0FBUyxDQUFDLDJCQUEyQixDQUFDLENBQUM7S0FDbEQ7SUFDRCxPQUFPLEtBQUssQ0FBQztBQUNmLENBQUMsQ0FBQztBQVJXLFFBQUEsYUFBYSxpQkFReEI7QUFFRjs7Ozs7OztHQU9HO0FBQ0ksTUFBTSxZQUFZLEdBQUcsQ0FBQyxLQUFVLEVBQXNDLEVBQUU7SUFDN0UsSUFBSSxLQUFLLEtBQUssSUFBSSxJQUFJLEtBQUssS0FBSyxTQUFTLEVBQUU7UUFDekMsT0FBTyxTQUFTLENBQUM7S0FDbEI7SUFDRCxJQUFJLE9BQU8sS0FBSyxLQUFLLFFBQVEsSUFBSSxDQUFDLEtBQUssQ0FBQyxPQUFPLENBQUMsS0FBSyxDQUFDLEVBQUU7UUFDdEQsT0FBTyxLQUFLLENBQUM7S0FDZDtJQUNELE1BQU0sSUFBSSxTQUFTLENBQUMsd0JBQXdCLE9BQU8sS0FBSyxFQUFFLENBQUMsQ0FBQztBQUM5RCxDQUFDLENBQUM7QUFSVyxRQUFBLFlBQVksZ0JBUXZCO0FBRUY7Ozs7OztHQU1HO0FBQ0ksTUFBTSxZQUFZLEdBQUcsQ0FBQyxLQUFVLEVBQXNCLEVBQUU7SUFDN0QsSUFBSSxLQUFLLEtBQUssSUFBSSxJQUFJLEtBQUssS0FBSyxTQUFTLEVBQUU7UUFDekMsT0FBTyxTQUFTLENBQUM7S0FDbEI7SUFDRCxJQUFJLE9BQU8sS0FBSyxLQUFLLFFBQVEsRUFBRTtRQUM3QixPQUFPLEtBQUssQ0FBQztLQUNkO0lBQ0QsTUFBTSxJQUFJLFNBQVMsQ0FBQyx3QkFBd0IsT0FBTyxLQUFLLEVBQUUsQ0FBQyxDQUFDO0FBQzlELENBQUMsQ0FBQztBQVJXLFFBQUEsWUFBWSxnQkFRdkI7QUFFRjs7Ozs7Ozs7O0dBU0c7QUFDSSxNQUFNLGdCQUFnQixHQUFHLENBQUMsS0FBc0IsRUFBc0IsRUFBRTtJQUM3RSxJQUFJLEtBQUssS0FBSyxLQUFLLEVBQUU7UUFDbkIsT0FBTyxHQUFHLENBQUM7S0FDWjtJQUNELElBQUksT0FBTyxLQUFLLElBQUksUUFBUSxFQUFFO1FBQzVCLCtDQUErQztRQUMvQyxNQUFNLE1BQU0sR0FBVyxVQUFVLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDekMsSUFBSSxNQUFNLENBQUMsS0FBSyxDQUFDLE1BQU0sQ0FBQyxFQUFFO1lBQ3hCLE1BQU0sSUFBSSxTQUFTLENBQUMsd0NBQXdDLENBQUMsQ0FBQztTQUMvRDtRQUNELE9BQU8sb0JBQVksQ0FBQyxNQUFNLENBQUMsQ0FBQztLQUM3QjtJQUNELE9BQU8sb0JBQVksQ0FBQyxLQUFLLENBQUMsQ0FBQztBQUM3QixDQUFDLENBQUM7QUFiVyxRQUFBLGdCQUFnQixvQkFhM0I7QUFFRjs7Ozs7Ozs7O0dBU0c7QUFDSSxNQUFNLGlCQUFpQixHQUFHLENBQUMsS0FBc0IsRUFBc0IsRUFBRTtJQUM5RSxJQUFJLE9BQU8sS0FBSyxJQUFJLFFBQVEsRUFBRTtRQUM1QixRQUFRLEtBQUssRUFBRTtZQUNiLEtBQUssS0FBSztnQkFDUixPQUFPLEdBQUcsQ0FBQztZQUNiLEtBQUssVUFBVTtnQkFDYixPQUFPLFFBQVEsQ0FBQztZQUNsQixLQUFLLFdBQVc7Z0JBQ2QsT0FBTyxDQUFDLFFBQVEsQ0FBQztZQUNuQjtnQkFDRSxNQUFNLElBQUksS0FBSyxDQUFDLGdDQUFnQyxLQUFLLEVBQUUsQ0FBQyxDQUFDO1NBQzVEO0tBQ0Y7SUFFRCxPQUFPLG9CQUFZLENBQUMsS0FBSyxDQUFDLENBQUM7QUFDN0IsQ0FBQyxDQUFDO0FBZlcsUUFBQSxpQkFBaUIscUJBZTVCO0FBRUY7O0dBRUc7QUFDVSxRQUFBLFdBQVcsR0FBRyx5QkFBaUIsQ0FBQztBQUU3Qzs7Ozs7Ozs7O0dBU0c7QUFDSSxNQUFNLGNBQWMsR0FBRyxDQUFDLEtBQXNCLEVBQXNCLEVBQUU7SUFDM0UsSUFBSSxPQUFPLEtBQUssS0FBSyxRQUFRLEVBQUU7UUFDN0Isb0VBQW9FO1FBQ3BFLHlFQUF5RTtRQUN6RSwrQ0FBK0M7UUFDL0MsT0FBTyxpQkFBUyxDQUFDLFVBQVUsQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDO0tBQ3JDO0lBQ0QsT0FBTyxpQkFBUyxDQUFDLEtBQUssQ0FBQyxDQUFDO0FBQzFCLENBQUMsQ0FBQztBQVJXLFFBQUEsY0FBYyxrQkFRekIiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEdpdmUgYW4gaW5wdXQgc3RyaW5nLCBzdHJpY3RseSBwYXJzZXMgYSBib29sZWFuIHZhbHVlLlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBUaGUgYm9vbGVhbiBzdHJpbmcgdG8gcGFyc2UuXG4gKiBAcmV0dXJucyB0cnVlIGZvciBcInRydWVcIiwgZmFsc2UgZm9yIFwiZmFsc2VcIiwgb3RoZXJ3aXNlIGFuIGVycm9yIGlzIHRocm93bi5cbiAqL1xuZXhwb3J0IGNvbnN0IHBhcnNlQm9vbGVhbiA9ICh2YWx1ZTogc3RyaW5nKTogYm9vbGVhbiA9PiB7XG4gIHN3aXRjaCAodmFsdWUpIHtcbiAgICBjYXNlIFwidHJ1ZVwiOlxuICAgICAgcmV0dXJuIHRydWU7XG4gICAgY2FzZSBcImZhbHNlXCI6XG4gICAgICByZXR1cm4gZmFsc2U7XG4gICAgZGVmYXVsdDpcbiAgICAgIHRocm93IG5ldyBFcnJvcihgVW5hYmxlIHRvIHBhcnNlIGJvb2xlYW4gdmFsdWUgXCIke3ZhbHVlfVwiYCk7XG4gIH1cbn07XG5cbi8qXG4gKiBBc3NlcnRzIGEgdmFsdWUgaXMgYSBib29sZWFuIGFuZCByZXR1cm5zIGl0LlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBBIHZhbHVlIHRoYXQgaXMgZXhwZWN0ZWQgdG8gYmUgYSBib29sZWFuLlxuICogQHJldHVybnMgVGhlIHZhbHVlIGlmIGl0J3MgYSBib29sZWFuLCB1bmRlZmluZWQgaWYgaXQncyBudWxsL3VuZGVmaW5lZCxcbiAqICAgb3RoZXJ3aXNlIGFuIGVycm9yIGlzIHRocm93bi5cbiAqL1xuZXhwb3J0IGNvbnN0IGV4cGVjdEJvb2xlYW4gPSAodmFsdWU6IGFueSk6IGJvb2xlYW4gfCB1bmRlZmluZWQgPT4ge1xuICBpZiAodmFsdWUgPT09IG51bGwgfHwgdmFsdWUgPT09IHVuZGVmaW5lZCkge1xuICAgIHJldHVybiB1bmRlZmluZWQ7XG4gIH1cbiAgaWYgKHR5cGVvZiB2YWx1ZSA9PT0gXCJib29sZWFuXCIpIHtcbiAgICByZXR1cm4gdmFsdWU7XG4gIH1cbiAgdGhyb3cgbmV3IFR5cGVFcnJvcihgRXhwZWN0ZWQgYm9vbGVhbiwgZ290ICR7dHlwZW9mIHZhbHVlfWApO1xufTtcblxuLyoqXG4gKiBBc3NlcnRzIGEgdmFsdWUgaXMgYSBudW1iZXIgYW5kIHJldHVybnMgaXQuXG4gKlxuICogQHBhcmFtIHZhbHVlIEEgdmFsdWUgdGhhdCBpcyBleHBlY3RlZCB0byBiZSBhIG51bWJlci5cbiAqIEByZXR1cm5zIFRoZSB2YWx1ZSBpZiBpdCdzIGEgbnVtYmVyLCB1bmRlZmluZWQgaWYgaXQncyBudWxsL3VuZGVmaW5lZCxcbiAqICAgb3RoZXJ3aXNlIGFuIGVycm9yIGlzIHRocm93bi5cbiAqL1xuZXhwb3J0IGNvbnN0IGV4cGVjdE51bWJlciA9ICh2YWx1ZTogYW55KTogbnVtYmVyIHwgdW5kZWZpbmVkID0+IHtcbiAgaWYgKHZhbHVlID09PSBudWxsIHx8IHZhbHVlID09PSB1bmRlZmluZWQpIHtcbiAgICByZXR1cm4gdW5kZWZpbmVkO1xuICB9XG4gIGlmICh0eXBlb2YgdmFsdWUgPT09IFwibnVtYmVyXCIpIHtcbiAgICByZXR1cm4gdmFsdWU7XG4gIH1cbiAgdGhyb3cgbmV3IFR5cGVFcnJvcihgRXhwZWN0ZWQgbnVtYmVyLCBnb3QgJHt0eXBlb2YgdmFsdWV9YCk7XG59O1xuXG4vKipcbiAqIEFzc2VydHMgYSB2YWx1ZSBpcyBhbiBpbnRlZ2VyIGFuZCByZXR1cm5zIGl0LlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBBIHZhbHVlIHRoYXQgaXMgZXhwZWN0ZWQgdG8gYmUgYW4gaW50ZWdlci5cbiAqIEByZXR1cm5zIFRoZSB2YWx1ZSBpZiBpdCdzIGFuIGludGVnZXIsIHVuZGVmaW5lZCBpZiBpdCdzIG51bGwvdW5kZWZpbmVkLFxuICogICBvdGhlcndpc2UgYW4gZXJyb3IgaXMgdGhyb3duLlxuICovXG5leHBvcnQgY29uc3QgZXhwZWN0SW50ID0gKHZhbHVlOiBhbnkpOiBudW1iZXIgfCB1bmRlZmluZWQgPT4ge1xuICBpZiAodmFsdWUgPT09IG51bGwgfHwgdmFsdWUgPT09IHVuZGVmaW5lZCkge1xuICAgIHJldHVybiB1bmRlZmluZWQ7XG4gIH1cbiAgaWYgKE51bWJlci5pc0ludGVnZXIodmFsdWUpICYmICFOdW1iZXIuaXNOYU4odmFsdWUpKSB7XG4gICAgcmV0dXJuIHZhbHVlO1xuICB9XG4gIHRocm93IG5ldyBUeXBlRXJyb3IoYEV4cGVjdGVkIGludGVnZXIsIGdvdCAke3R5cGVvZiB2YWx1ZX1gKTtcbn07XG5cbi8qKlxuICogQXNzZXJ0cyBhIHZhbHVlIGlzIG5vdCBudWxsIG9yIHVuZGVmaW5lZCBhbmQgcmV0dXJucyBpdCwgb3IgdGhyb3dzIGFuIGVycm9yLlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBBIHZhbHVlIHRoYXQgaXMgZXhwZWN0ZWQgdG8gYmUgZGVmaW5lZFxuICogQHBhcmFtIGxvY2F0aW9uIFRoZSBsb2NhdGlvbiB3aGVyZSB3ZSdyZSBleHBlY3RpbmcgdG8gZmluZCBhIGRlZmluZWQgb2JqZWN0IChvcHRpb25hbClcbiAqIEByZXR1cm5zIFRoZSB2YWx1ZSBpZiBpdCdzIG5vdCB1bmRlZmluZWQsIG90aGVyd2lzZSB0aHJvd3MgYW4gZXJyb3JcbiAqL1xuZXhwb3J0IGNvbnN0IGV4cGVjdE5vbk51bGwgPSA8VD4odmFsdWU6IFQgfCBudWxsIHwgdW5kZWZpbmVkLCBsb2NhdGlvbj86IHN0cmluZyk6IFQgPT4ge1xuICBpZiAodmFsdWUgPT09IG51bGwgfHwgdmFsdWUgPT09IHVuZGVmaW5lZCkge1xuICAgIGlmIChsb2NhdGlvbikge1xuICAgICAgdGhyb3cgbmV3IFR5cGVFcnJvcihgRXhwZWN0ZWQgYSBub24tbnVsbCB2YWx1ZSBmb3IgJHtsb2NhdGlvbn1gKTtcbiAgICB9XG4gICAgdGhyb3cgbmV3IFR5cGVFcnJvcihcIkV4cGVjdGVkIGEgbm9uLW51bGwgdmFsdWVcIik7XG4gIH1cbiAgcmV0dXJuIHZhbHVlO1xufTtcblxuLyoqXG4gKiBBc3NlcnRzIGEgdmFsdWUgaXMgYW4gSlNPTi1saWtlIG9iamVjdCBhbmQgcmV0dXJucyBpdC4gVGhpcyBpcyBleHBlY3RlZCB0byBiZSB1c2VkXG4gKiB3aXRoIHZhbHVlcyBwYXJzZWQgZnJvbSBKU09OIChhcnJheXMsIG9iamVjdHMsIG51bWJlcnMsIHN0cmluZ3MsIGJvb2xlYW5zKS5cbiAqXG4gKiBAcGFyYW0gdmFsdWUgQSB2YWx1ZSB0aGF0IGlzIGV4cGVjdGVkIHRvIGJlIGFuIG9iamVjdFxuICogQHJldHVybnMgVGhlIHZhbHVlIGlmIGl0J3MgYW4gb2JqZWN0LCB1bmRlZmluZWQgaWYgaXQncyBudWxsL3VuZGVmaW5lZCxcbiAqICAgb3RoZXJ3aXNlIGFuIGVycm9yIGlzIHRocm93bi5cbiAqL1xuZXhwb3J0IGNvbnN0IGV4cGVjdE9iamVjdCA9ICh2YWx1ZTogYW55KTogeyBba2V5OiBzdHJpbmddOiBhbnkgfSB8IHVuZGVmaW5lZCA9PiB7XG4gIGlmICh2YWx1ZSA9PT0gbnVsbCB8fCB2YWx1ZSA9PT0gdW5kZWZpbmVkKSB7XG4gICAgcmV0dXJuIHVuZGVmaW5lZDtcbiAgfVxuICBpZiAodHlwZW9mIHZhbHVlID09PSBcIm9iamVjdFwiICYmICFBcnJheS5pc0FycmF5KHZhbHVlKSkge1xuICAgIHJldHVybiB2YWx1ZTtcbiAgfVxuICB0aHJvdyBuZXcgVHlwZUVycm9yKGBFeHBlY3RlZCBvYmplY3QsIGdvdCAke3R5cGVvZiB2YWx1ZX1gKTtcbn07XG5cbi8qKlxuICogQXNzZXJ0cyBhIHZhbHVlIGlzIGEgc3RyaW5nIGFuZCByZXR1cm5zIGl0LlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBBIHZhbHVlIHRoYXQgaXMgZXhwZWN0ZWQgdG8gYmUgYSBzdHJpbmcuXG4gKiBAcmV0dXJucyBUaGUgdmFsdWUgaWYgaXQncyBhIHN0cmluZywgdW5kZWZpbmVkIGlmIGl0J3MgbnVsbC91bmRlZmluZWQsXG4gKiAgIG90aGVyd2lzZSBhbiBlcnJvciBpcyB0aHJvd24uXG4gKi9cbmV4cG9ydCBjb25zdCBleHBlY3RTdHJpbmcgPSAodmFsdWU6IGFueSk6IHN0cmluZyB8IHVuZGVmaW5lZCA9PiB7XG4gIGlmICh2YWx1ZSA9PT0gbnVsbCB8fCB2YWx1ZSA9PT0gdW5kZWZpbmVkKSB7XG4gICAgcmV0dXJuIHVuZGVmaW5lZDtcbiAgfVxuICBpZiAodHlwZW9mIHZhbHVlID09PSBcInN0cmluZ1wiKSB7XG4gICAgcmV0dXJuIHZhbHVlO1xuICB9XG4gIHRocm93IG5ldyBUeXBlRXJyb3IoYEV4cGVjdGVkIHN0cmluZywgZ290ICR7dHlwZW9mIHZhbHVlfWApO1xufTtcblxuLyoqXG4gKiBQYXJzZXMgYSB2YWx1ZSBpbnRvIGEgZmxvYXQuIElmIHRoZSB2YWx1ZSBpcyBudWxsIG9yIHVuZGVmaW5lZCwgdW5kZWZpbmVkXG4gKiB3aWxsIGJlIHJldHVybmVkLiBJZiB0aGUgdmFsdWUgaXMgYSBzdHJpbmcsIGl0IHdpbGwgYmUgcGFyc2VkIGJ5IHRoZSBzdGFuZGFyZFxuICogcGFyc2VGbG9hdCB3aXRoIG9uZSBleGNlcHRpb246IE5hTiBtYXkgb25seSBiZSBleHBsaWNpdGx5IHNldCBhcyB0aGUgc3RyaW5nXG4gKiBcIk5hTlwiLCBhbnkgaW1wbGljaXQgTmFuIHZhbHVlcyB3aWxsIHJlc3VsdCBpbiBhbiBlcnJvciBiZWluZyB0aHJvd24uIElmIGFueVxuICogb3RoZXIgdHlwZSBpcyBwcm92aWRlZCwgYW4gZXhjZXB0aW9uIHdpbGwgYmUgdGhyb3duLlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBBIG51bWJlciBvciBzdHJpbmcgcmVwcmVzZW50YXRpb24gb2YgYSBmbG9hdC5cbiAqIEByZXR1cm5zIFRoZSB2YWx1ZSBhcyBhIG51bWJlciwgb3IgdW5kZWZpbmVkIGlmIGl0J3MgbnVsbC91bmRlZmluZWQuXG4gKi9cbmV4cG9ydCBjb25zdCBzdHJpY3RQYXJzZUZsb2F0ID0gKHZhbHVlOiBzdHJpbmcgfCBudW1iZXIpOiBudW1iZXIgfCB1bmRlZmluZWQgPT4ge1xuICBpZiAodmFsdWUgPT09IFwiTmFOXCIpIHtcbiAgICByZXR1cm4gTmFOO1xuICB9XG4gIGlmICh0eXBlb2YgdmFsdWUgPT0gXCJzdHJpbmdcIikge1xuICAgIC8vIFRPRE86IGhhbmRsZSB1bmRlcmZsb3cgLyBvdmVyZmxvdyBleHBsaWNpdGx5XG4gICAgY29uc3QgcGFyc2VkOiBudW1iZXIgPSBwYXJzZUZsb2F0KHZhbHVlKTtcbiAgICBpZiAoTnVtYmVyLmlzTmFOKHBhcnNlZCkpIHtcbiAgICAgIHRocm93IG5ldyBUeXBlRXJyb3IoYEV4cGVjdGVkIHJlYWwgbnVtYmVyLCBnb3QgaW1wbGljaXQgTmFOYCk7XG4gICAgfVxuICAgIHJldHVybiBleHBlY3ROdW1iZXIocGFyc2VkKTtcbiAgfVxuICByZXR1cm4gZXhwZWN0TnVtYmVyKHZhbHVlKTtcbn07XG5cbi8qKlxuICogQXNzZXJ0cyBhIHZhbHVlIGlzIGEgbnVtYmVyIGFuZCByZXR1cm5zIGl0LiBJZiB0aGUgdmFsdWUgaXMgYSBzdHJpbmdcbiAqIHJlcHJlc2VudGF0aW9uIG9mIGEgbm9uLW51bWVyaWMgbnVtYmVyIHR5cGUgKE5hTiwgSW5maW5pdHksIC1JbmZpbml0eSksXG4gKiB0aGUgdmFsdWUgd2lsbCBiZSBwYXJzZWQuIEFueSBvdGhlciBzdHJpbmcgdmFsdWUgd2lsbCByZXN1bHQgaW4gYW4gZXhjZXB0aW9uXG4gKiBiZWluZyB0aHJvd24uIE51bGwgb3IgdW5kZWZpbmVkIHdpbGwgYmUgcmV0dXJuZWQgYXMgdW5kZWZpbmVkLiBBbnkgb3RoZXJcbiAqIHR5cGUgd2lsbCByZXN1bHQgaW4gYW4gZXhjZXB0aW9uIGJlaW5nIHRocm93bi5cbiAqXG4gKiBAcGFyYW0gdmFsdWUgQSBudW1iZXIgb3Igc3RyaW5nIHJlcHJlc2VudGF0aW9uIG9mIGEgbm9uLW51bWVyaWMgZmxvYXQuXG4gKiBAcmV0dXJucyBUaGUgdmFsdWUgYXMgYSBudW1iZXIsIG9yIHVuZGVmaW5lZCBpZiBpdCdzIG51bGwvdW5kZWZpbmVkLlxuICovXG5leHBvcnQgY29uc3QgbGltaXRlZFBhcnNlRmxvYXQgPSAodmFsdWU6IHN0cmluZyB8IG51bWJlcik6IG51bWJlciB8IHVuZGVmaW5lZCA9PiB7XG4gIGlmICh0eXBlb2YgdmFsdWUgPT0gXCJzdHJpbmdcIikge1xuICAgIHN3aXRjaCAodmFsdWUpIHtcbiAgICAgIGNhc2UgXCJOYU5cIjpcbiAgICAgICAgcmV0dXJuIE5hTjtcbiAgICAgIGNhc2UgXCJJbmZpbml0eVwiOlxuICAgICAgICByZXR1cm4gSW5maW5pdHk7XG4gICAgICBjYXNlIFwiLUluZmluaXR5XCI6XG4gICAgICAgIHJldHVybiAtSW5maW5pdHk7XG4gICAgICBkZWZhdWx0OlxuICAgICAgICB0aHJvdyBuZXcgRXJyb3IoYFVuYWJsZSB0byBwYXJzZSBmbG9hdCB2YWx1ZTogJHt2YWx1ZX1gKTtcbiAgICB9XG4gIH1cblxuICByZXR1cm4gZXhwZWN0TnVtYmVyKHZhbHVlKTtcbn07XG5cbi8qKlxuICogQGRlcHJlY2F0ZWQgVXNlIGxpbWl0ZWRQYXJzZUZsb2F0IG9yIHN0cmljdFBhcnNlRmxvYXRcbiAqL1xuZXhwb3J0IGNvbnN0IGhhbmRsZUZsb2F0ID0gbGltaXRlZFBhcnNlRmxvYXQ7XG5cbi8qKlxuICogUGFyc2VzIGEgdmFsdWUgaW50byBhbiBpbnRlZ2VyLiBJZiB0aGUgdmFsdWUgaXMgbnVsbCBvciB1bmRlZmluZWQsIHVuZGVmaW5lZFxuICogd2lsbCBiZSByZXR1cm5lZC4gSWYgdGhlIHZhbHVlIGlzIGEgc3RyaW5nLCBpdCB3aWxsIGJlIHBhcnNlZCBieSBwYXJzZUZsb2F0XG4gKiBhbmQgdGhlIHJlc3VsdCB3aWxsIGJlIGFzc2VydGVkIHRvIGJlIGFuIGludGVnZXIuIElmIHRoZSBwYXJzZWQgdmFsdWUgaXMgbm90XG4gKiBhbiBpbnRlZ2VyLCBvciB0aGUgcmF3IHZhbHVlIGlzIGFueSB0eXBlIG90aGVyIHRoYW4gYSBzdHJpbmcgb3IgbnVtYmVyLCBhblxuICogZXhjZXB0aW9uIHdpbGwgYmUgdGhyb3duLlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBBIG51bWJlciBvciBzdHJpbmcgcmVwcmVzZW50YXRpb24gb2YgYW4gaW50ZWdlci5cbiAqIEByZXR1cm5zIFRoZSB2YWx1ZSBhcyBhIG51bWJlciwgb3IgdW5kZWZpbmVkIGlmIGl0J3MgbnVsbC91bmRlZmluZWQuXG4gKi9cbmV4cG9ydCBjb25zdCBzdHJpY3RQYXJzZUludCA9ICh2YWx1ZTogc3RyaW5nIHwgbnVtYmVyKTogbnVtYmVyIHwgdW5kZWZpbmVkID0+IHtcbiAgaWYgKHR5cGVvZiB2YWx1ZSA9PT0gXCJzdHJpbmdcIikge1xuICAgIC8vIHBhcnNlSW50IGNhbid0IGJlIHVzZWQgaGVyZSwgYmVjYXVzZSBpdCB3aWxsIHNpbGVudGx5IGRpc2NhcmQgYW55XG4gICAgLy8gZXhpc3RpbmcgZGVjaW1hbHMuIFdlIHdhbnQgdG8gaW5zdGVhZCB0aHJvdyBhbiBlcnJvciBpZiB0aGVyZSBhcmUgYW55LlxuICAgIC8vIFRPRE86IGhhbmRsZSB1bmRlcmZsb3cgLyBvdmVyZmxvdyBleHBsaWNpdGx5XG4gICAgcmV0dXJuIGV4cGVjdEludChwYXJzZUZsb2F0KHZhbHVlKSk7XG4gIH1cbiAgcmV0dXJuIGV4cGVjdEludCh2YWx1ZSk7XG59O1xuIl19
 
 /***/ }),
 
@@ -31230,10 +30942,10 @@ const util_1 = __nccwpck_require__(1669);
 const client_lambda_1 = __nccwpck_require__(8390);
 const core_1 = __nccwpck_require__(2186);
 const action_1 = __nccwpck_require__(5834);
-const getValue = (key) => (core_1.getInput(key) || process.env[key]);
-const zipFileLocation = core_1.getInput('zip-file', { required: true });
-const lambdaName = core_1.getInput('lambda-name') || path_1.basename(zipFileLocation, '.zip');
-const publish = (core_1.getInput('publish') || '').toLowerCase() === 'true';
+const getValue = (key) => ((0, core_1.getInput)(key) || process.env[key]);
+const zipFileLocation = (0, core_1.getInput)('zip-file', { required: true });
+const lambdaName = (0, core_1.getInput)('lambda-name') || (0, path_1.basename)(zipFileLocation, '.zip');
+const publish = ((0, core_1.getInput)('publish') || '').toLowerCase() === 'true';
 const awsRegion = getValue('AWS_REGION');
 const awsAccessKeyId = getValue('AWS_ACCESS_KEY_ID');
 const awsSecretAccessKey = getValue('AWS_SECRET_ACCESS_KEY');
@@ -31246,7 +30958,7 @@ const lambda = new client_lambda_1.LambdaClient({
 });
 (async () => {
     try {
-        await new action_1.Action(util_1.promisify(fs_1.readFile), async (args) => {
+        await new action_1.Action((0, util_1.promisify)(fs_1.readFile), async (args) => {
             await lambda.send(args);
         }, core_1.info).run({
             zipFileLocation,
@@ -31255,7 +30967,7 @@ const lambda = new client_lambda_1.LambdaClient({
         });
     }
     catch (error) {
-        core_1.setFailed(error);
+        (0, core_1.setFailed)(error);
     }
 })();
 

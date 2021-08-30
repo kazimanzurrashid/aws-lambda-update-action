@@ -40,6 +40,6 @@ const lambda = new LambdaClient({
       publish
     });
   } catch (error) {
-    setFailed(error);
+    setFailed(error as Error);
   }
 })();
