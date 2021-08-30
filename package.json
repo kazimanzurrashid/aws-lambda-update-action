@@ -20,7 +20,7 @@
     "@aws-sdk/client-lambda": "^3.27.0"
   },
   "devDependencies": {
-    "@types/node": "^16.7.1",
+    "@types/node": "^16.7.6",
     "@typescript-eslint/parser": "^4.29.2",
     "@vercel/ncc": "^0.29.2",
     "eslint": "^7.32.0",
