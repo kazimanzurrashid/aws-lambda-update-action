@@ -5105,10 +5105,10 @@ tslib_1.__exportStar(__nccwpck_require__(5436), exports);
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.EnvironmentError = exports.CreateFunctionRequest = exports.VpcConfig = exports.TracingConfig = exports.TracingMode = exports.Runtime = exports.PackageType = exports.ImageConfig = exports.FileSystemConfig = exports.Environment = exports.DeadLetterConfig = exports.FunctionCode = exports.CodeVerificationFailedException = exports.CodeStorageExceededException = exports.CodeSigningConfigNotFoundException = exports.EventSourceMappingConfiguration = exports.CreateEventSourceMappingRequest = exports.EventSourcePosition = exports.SourceAccessConfiguration = exports.SourceAccessType = exports.SelfManagedEventSource = exports.EndPointType = exports.FunctionResponseType = exports.DestinationConfig = exports.OnSuccess = exports.OnFailure = exports.CreateCodeSigningConfigResponse = exports.CodeSigningConfig = exports.CreateCodeSigningConfigRequest = exports.CodeSigningPolicies = exports.CodeSigningPolicy = exports.CreateAliasRequest = exports.Architecture = exports.AllowedPublishers = exports.AliasConfiguration = exports.AliasRoutingConfiguration = exports.AddPermissionResponse = exports.AddPermissionRequest = exports.TooManyRequestsException = exports.ThrottleReason = exports.ServiceException = exports.ResourceNotFoundException = exports.ResourceConflictException = exports.PreconditionFailedException = exports.PolicyLengthExceededException = exports.InvalidParameterValueException = exports.AddLayerVersionPermissionResponse = exports.AddLayerVersionPermissionRequest = exports.AccountUsage = exports.AccountLimit = void 0;
-exports.ProvisionedConcurrencyStatusEnum = exports.GetProvisionedConcurrencyConfigRequest = exports.GetPolicyResponse = exports.GetPolicyRequest = exports.GetLayerVersionPolicyResponse = exports.GetLayerVersionPolicyRequest = exports.GetLayerVersionByArnRequest = exports.GetLayerVersionResponse = exports.LayerVersionContentOutput = exports.GetLayerVersionRequest = exports.GetFunctionEventInvokeConfigRequest = exports.FunctionEventInvokeConfig = exports.GetFunctionConfigurationRequest = exports.GetFunctionConcurrencyResponse = exports.GetFunctionConcurrencyRequest = exports.GetFunctionCodeSigningConfigResponse = exports.GetFunctionCodeSigningConfigRequest = exports.GetFunctionResponse = exports.Concurrency = exports.FunctionCodeLocation = exports.GetFunctionRequest = exports.GetEventSourceMappingRequest = exports.GetCodeSigningConfigResponse = exports.GetCodeSigningConfigRequest = exports.GetAliasRequest = exports.GetAccountSettingsResponse = exports.GetAccountSettingsRequest = exports.DeleteProvisionedConcurrencyConfigRequest = exports.DeleteLayerVersionRequest = exports.DeleteFunctionEventInvokeConfigRequest = exports.DeleteFunctionConcurrencyRequest = exports.DeleteFunctionCodeSigningConfigRequest = exports.DeleteFunctionRequest = exports.ResourceInUseException = exports.DeleteEventSourceMappingRequest = exports.DeleteCodeSigningConfigResponse = exports.DeleteCodeSigningConfigRequest = exports.DeleteAliasRequest = exports.InvalidCodeSignatureException = exports.FunctionConfiguration = exports.VpcConfigResponse = exports.TracingConfigResponse = exports.StateReasonCode = exports.State = exports.Layer = exports.LastUpdateStatusReasonCode = exports.LastUpdateStatus = exports.ImageConfigResponse = exports.ImageConfigError = exports.EnvironmentResponse = void 0;
-exports.ProvisionedConcurrencyConfigListItem = exports.ListProvisionedConcurrencyConfigsRequest = exports.ListLayerVersionsResponse = exports.ListLayerVersionsRequest = exports.ListLayersResponse = exports.LayersListItem = exports.LayerVersionsListItem = exports.ListLayersRequest = exports.ListFunctionsByCodeSigningConfigResponse = exports.ListFunctionsByCodeSigningConfigRequest = exports.ListFunctionsResponse = exports.ListFunctionsRequest = exports.FunctionVersion = exports.ListFunctionEventInvokeConfigsResponse = exports.ListFunctionEventInvokeConfigsRequest = exports.ListEventSourceMappingsResponse = exports.ListEventSourceMappingsRequest = exports.ListCodeSigningConfigsResponse = exports.ListCodeSigningConfigsRequest = exports.ListAliasesResponse = exports.ListAliasesRequest = exports.InvokeAsyncResponse = exports.InvokeAsyncRequest = exports.UnsupportedMediaTypeException = exports.SubnetIPAddressLimitReachedException = exports.ResourceNotReadyException = exports.RequestTooLargeException = exports.KMSNotFoundException = exports.KMSInvalidStateException = exports.KMSDisabledException = exports.KMSAccessDeniedException = exports.InvocationResponse = exports.InvocationRequest = exports.LogType = exports.InvocationType = exports.InvalidZipFileException = exports.InvalidSubnetIDException = exports.InvalidSecurityGroupIDException = exports.InvalidRuntimeException = exports.InvalidRequestContentException = exports.ENILimitReachedException = exports.EFSMountTimeoutException = exports.EFSMountFailureException = exports.EFSMountConnectivityException = exports.EFSIOException = exports.EC2UnexpectedException = exports.EC2ThrottledException = exports.EC2AccessDeniedException = exports.ProvisionedConcurrencyConfigNotFoundException = exports.GetProvisionedConcurrencyConfigResponse = void 0;
-exports.UpdateFunctionEventInvokeConfigRequest = exports.UpdateFunctionConfigurationRequest = exports.UpdateFunctionCodeRequest = exports.UpdateEventSourceMappingRequest = exports.UpdateCodeSigningConfigResponse = exports.UpdateCodeSigningConfigRequest = exports.UpdateAliasRequest = exports.UntagResourceRequest = exports.TagResourceRequest = exports.RemovePermissionRequest = exports.RemoveLayerVersionPermissionRequest = exports.PutProvisionedConcurrencyConfigResponse = exports.PutProvisionedConcurrencyConfigRequest = exports.PutFunctionEventInvokeConfigRequest = exports.PutFunctionConcurrencyRequest = exports.PutFunctionCodeSigningConfigResponse = exports.PutFunctionCodeSigningConfigRequest = exports.PublishVersionRequest = exports.PublishLayerVersionResponse = exports.PublishLayerVersionRequest = exports.LayerVersionContentInput = exports.ListVersionsByFunctionResponse = exports.ListVersionsByFunctionRequest = exports.ListTagsResponse = exports.ListTagsRequest = exports.ListProvisionedConcurrencyConfigsResponse = void 0;
+exports.VpcConfig = exports.TracingConfig = exports.TracingMode = exports.Runtime = exports.PackageType = exports.ImageConfig = exports.FileSystemConfig = exports.Environment = exports.DeadLetterConfig = exports.FunctionCode = exports.CodeVerificationFailedException = exports.CodeStorageExceededException = exports.CodeSigningConfigNotFoundException = exports.EventSourceMappingConfiguration = exports.CreateEventSourceMappingRequest = exports.EventSourcePosition = exports.SourceAccessConfiguration = exports.SourceAccessType = exports.SelfManagedEventSource = exports.EndPointType = exports.FunctionResponseType = exports.FilterCriteria = exports.Filter = exports.DestinationConfig = exports.OnSuccess = exports.OnFailure = exports.CreateCodeSigningConfigResponse = exports.CodeSigningConfig = exports.CreateCodeSigningConfigRequest = exports.CodeSigningPolicies = exports.CodeSigningPolicy = exports.CreateAliasRequest = exports.Architecture = exports.AllowedPublishers = exports.AliasConfiguration = exports.AliasRoutingConfiguration = exports.AddPermissionResponse = exports.AddPermissionRequest = exports.TooManyRequestsException = exports.ThrottleReason = exports.ServiceException = exports.ResourceNotFoundException = exports.ResourceConflictException = exports.PreconditionFailedException = exports.PolicyLengthExceededException = exports.InvalidParameterValueException = exports.AddLayerVersionPermissionResponse = exports.AddLayerVersionPermissionRequest = exports.AccountUsage = exports.AccountLimit = void 0;
+exports.GetPolicyResponse = exports.GetPolicyRequest = exports.GetLayerVersionPolicyResponse = exports.GetLayerVersionPolicyRequest = exports.GetLayerVersionByArnRequest = exports.GetLayerVersionResponse = exports.LayerVersionContentOutput = exports.GetLayerVersionRequest = exports.GetFunctionEventInvokeConfigRequest = exports.FunctionEventInvokeConfig = exports.GetFunctionConfigurationRequest = exports.GetFunctionConcurrencyResponse = exports.GetFunctionConcurrencyRequest = exports.GetFunctionCodeSigningConfigResponse = exports.GetFunctionCodeSigningConfigRequest = exports.GetFunctionResponse = exports.Concurrency = exports.FunctionCodeLocation = exports.GetFunctionRequest = exports.GetEventSourceMappingRequest = exports.GetCodeSigningConfigResponse = exports.GetCodeSigningConfigRequest = exports.GetAliasRequest = exports.GetAccountSettingsResponse = exports.GetAccountSettingsRequest = exports.DeleteProvisionedConcurrencyConfigRequest = exports.DeleteLayerVersionRequest = exports.DeleteFunctionEventInvokeConfigRequest = exports.DeleteFunctionConcurrencyRequest = exports.DeleteFunctionCodeSigningConfigRequest = exports.DeleteFunctionRequest = exports.ResourceInUseException = exports.DeleteEventSourceMappingRequest = exports.DeleteCodeSigningConfigResponse = exports.DeleteCodeSigningConfigRequest = exports.DeleteAliasRequest = exports.InvalidCodeSignatureException = exports.FunctionConfiguration = exports.VpcConfigResponse = exports.TracingConfigResponse = exports.StateReasonCode = exports.State = exports.Layer = exports.LastUpdateStatusReasonCode = exports.LastUpdateStatus = exports.ImageConfigResponse = exports.ImageConfigError = exports.EnvironmentResponse = exports.EnvironmentError = exports.CreateFunctionRequest = void 0;
+exports.ListLayerVersionsResponse = exports.ListLayerVersionsRequest = exports.ListLayersResponse = exports.LayersListItem = exports.LayerVersionsListItem = exports.ListLayersRequest = exports.ListFunctionsByCodeSigningConfigResponse = exports.ListFunctionsByCodeSigningConfigRequest = exports.ListFunctionsResponse = exports.ListFunctionsRequest = exports.FunctionVersion = exports.ListFunctionEventInvokeConfigsResponse = exports.ListFunctionEventInvokeConfigsRequest = exports.ListEventSourceMappingsResponse = exports.ListEventSourceMappingsRequest = exports.ListCodeSigningConfigsResponse = exports.ListCodeSigningConfigsRequest = exports.ListAliasesResponse = exports.ListAliasesRequest = exports.InvokeAsyncResponse = exports.InvokeAsyncRequest = exports.UnsupportedMediaTypeException = exports.SubnetIPAddressLimitReachedException = exports.ResourceNotReadyException = exports.RequestTooLargeException = exports.KMSNotFoundException = exports.KMSInvalidStateException = exports.KMSDisabledException = exports.KMSAccessDeniedException = exports.InvocationResponse = exports.InvocationRequest = exports.LogType = exports.InvocationType = exports.InvalidZipFileException = exports.InvalidSubnetIDException = exports.InvalidSecurityGroupIDException = exports.InvalidRuntimeException = exports.InvalidRequestContentException = exports.ENILimitReachedException = exports.EFSMountTimeoutException = exports.EFSMountFailureException = exports.EFSMountConnectivityException = exports.EFSIOException = exports.EC2UnexpectedException = exports.EC2ThrottledException = exports.EC2AccessDeniedException = exports.ProvisionedConcurrencyConfigNotFoundException = exports.GetProvisionedConcurrencyConfigResponse = exports.ProvisionedConcurrencyStatusEnum = exports.GetProvisionedConcurrencyConfigRequest = void 0;
+exports.UpdateFunctionEventInvokeConfigRequest = exports.UpdateFunctionConfigurationRequest = exports.UpdateFunctionCodeRequest = exports.UpdateEventSourceMappingRequest = exports.UpdateCodeSigningConfigResponse = exports.UpdateCodeSigningConfigRequest = exports.UpdateAliasRequest = exports.UntagResourceRequest = exports.TagResourceRequest = exports.RemovePermissionRequest = exports.RemoveLayerVersionPermissionRequest = exports.PutProvisionedConcurrencyConfigResponse = exports.PutProvisionedConcurrencyConfigRequest = exports.PutFunctionEventInvokeConfigRequest = exports.PutFunctionConcurrencyRequest = exports.PutFunctionCodeSigningConfigResponse = exports.PutFunctionCodeSigningConfigRequest = exports.PublishVersionRequest = exports.PublishLayerVersionResponse = exports.PublishLayerVersionRequest = exports.LayerVersionContentInput = exports.ListVersionsByFunctionResponse = exports.ListVersionsByFunctionRequest = exports.ListTagsResponse = exports.ListTagsRequest = exports.ListProvisionedConcurrencyConfigsResponse = exports.ProvisionedConcurrencyConfigListItem = exports.ListProvisionedConcurrencyConfigsRequest = void 0;
 const smithy_client_1 = __nccwpck_require__(4963);
 var AccountLimit;
 (function (AccountLimit) {
@@ -5272,6 +5272,18 @@ var DestinationConfig;
         ...obj,
     });
 })(DestinationConfig = exports.DestinationConfig || (exports.DestinationConfig = {}));
+var Filter;
+(function (Filter) {
+    Filter.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(Filter = exports.Filter || (exports.Filter = {}));
+var FilterCriteria;
+(function (FilterCriteria) {
+    FilterCriteria.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(FilterCriteria = exports.FilterCriteria || (exports.FilterCriteria = {}));
 var FunctionResponseType;
 (function (FunctionResponseType) {
     FunctionResponseType["ReportBatchItemFailures"] = "ReportBatchItemFailures";
@@ -5289,8 +5301,10 @@ var SelfManagedEventSource;
 var SourceAccessType;
 (function (SourceAccessType) {
     SourceAccessType["BASIC_AUTH"] = "BASIC_AUTH";
+    SourceAccessType["CLIENT_CERTIFICATE_TLS_AUTH"] = "CLIENT_CERTIFICATE_TLS_AUTH";
     SourceAccessType["SASL_SCRAM_256_AUTH"] = "SASL_SCRAM_256_AUTH";
     SourceAccessType["SASL_SCRAM_512_AUTH"] = "SASL_SCRAM_512_AUTH";
+    SourceAccessType["SERVER_ROOT_CA_CERTIFICATE"] = "SERVER_ROOT_CA_CERTIFICATE";
     SourceAccessType["VIRTUAL_HOST"] = "VIRTUAL_HOST";
     SourceAccessType["VPC_SECURITY_GROUP"] = "VPC_SECURITY_GROUP";
     SourceAccessType["VPC_SUBNET"] = "VPC_SUBNET";
@@ -6878,6 +6892,10 @@ const serializeAws_restJson1CreateEventSourceMappingCommand = async (input, cont
         ...(input.Enabled !== undefined && input.Enabled !== null && { Enabled: input.Enabled }),
         ...(input.EventSourceArn !== undefined &&
             input.EventSourceArn !== null && { EventSourceArn: input.EventSourceArn }),
+        ...(input.FilterCriteria !== undefined &&
+            input.FilterCriteria !== null && {
+            FilterCriteria: serializeAws_restJson1FilterCriteria(input.FilterCriteria, context),
+        }),
         ...(input.FunctionName !== undefined && input.FunctionName !== null && { FunctionName: input.FunctionName }),
         ...(input.FunctionResponseTypes !== undefined &&
             input.FunctionResponseTypes !== null && {
@@ -8546,6 +8564,10 @@ const serializeAws_restJson1UpdateEventSourceMappingCommand = async (input, cont
             DestinationConfig: serializeAws_restJson1DestinationConfig(input.DestinationConfig, context),
         }),
         ...(input.Enabled !== undefined && input.Enabled !== null && { Enabled: input.Enabled }),
+        ...(input.FilterCriteria !== undefined &&
+            input.FilterCriteria !== null && {
+            FilterCriteria: serializeAws_restJson1FilterCriteria(input.FilterCriteria, context),
+        }),
         ...(input.FunctionName !== undefined && input.FunctionName !== null && { FunctionName: input.FunctionName }),
         ...(input.FunctionResponseTypes !== undefined &&
             input.FunctionResponseTypes !== null && {
@@ -9086,6 +9108,7 @@ const deserializeAws_restJson1CreateEventSourceMappingCommand = async (output, c
         BisectBatchOnFunctionError: undefined,
         DestinationConfig: undefined,
         EventSourceArn: undefined,
+        FilterCriteria: undefined,
         FunctionArn: undefined,
         FunctionResponseTypes: undefined,
         LastModified: undefined,
@@ -9117,6 +9140,9 @@ const deserializeAws_restJson1CreateEventSourceMappingCommand = async (output, c
     }
     if (data.EventSourceArn !== undefined && data.EventSourceArn !== null) {
         contents.EventSourceArn = smithy_client_1.expectString(data.EventSourceArn);
+    }
+    if (data.FilterCriteria !== undefined && data.FilterCriteria !== null) {
+        contents.FilterCriteria = deserializeAws_restJson1FilterCriteria(data.FilterCriteria, context);
     }
     if (data.FunctionArn !== undefined && data.FunctionArn !== null) {
         contents.FunctionArn = smithy_client_1.expectString(data.FunctionArn);
@@ -9622,6 +9648,7 @@ const deserializeAws_restJson1DeleteEventSourceMappingCommand = async (output, c
         BisectBatchOnFunctionError: undefined,
         DestinationConfig: undefined,
         EventSourceArn: undefined,
+        FilterCriteria: undefined,
         FunctionArn: undefined,
         FunctionResponseTypes: undefined,
         LastModified: undefined,
@@ -9653,6 +9680,9 @@ const deserializeAws_restJson1DeleteEventSourceMappingCommand = async (output, c
     }
     if (data.EventSourceArn !== undefined && data.EventSourceArn !== null) {
         contents.EventSourceArn = smithy_client_1.expectString(data.EventSourceArn);
+    }
+    if (data.FilterCriteria !== undefined && data.FilterCriteria !== null) {
+        contents.FilterCriteria = deserializeAws_restJson1FilterCriteria(data.FilterCriteria, context);
     }
     if (data.FunctionArn !== undefined && data.FunctionArn !== null) {
         contents.FunctionArn = smithy_client_1.expectString(data.FunctionArn);
@@ -10442,6 +10472,7 @@ const deserializeAws_restJson1GetEventSourceMappingCommand = async (output, cont
         BisectBatchOnFunctionError: undefined,
         DestinationConfig: undefined,
         EventSourceArn: undefined,
+        FilterCriteria: undefined,
         FunctionArn: undefined,
         FunctionResponseTypes: undefined,
         LastModified: undefined,
@@ -10473,6 +10504,9 @@ const deserializeAws_restJson1GetEventSourceMappingCommand = async (output, cont
     }
     if (data.EventSourceArn !== undefined && data.EventSourceArn !== null) {
         contents.EventSourceArn = smithy_client_1.expectString(data.EventSourceArn);
+    }
+    if (data.FilterCriteria !== undefined && data.FilterCriteria !== null) {
+        contents.FilterCriteria = deserializeAws_restJson1FilterCriteria(data.FilterCriteria, context);
     }
     if (data.FunctionArn !== undefined && data.FunctionArn !== null) {
         contents.FunctionArn = smithy_client_1.expectString(data.FunctionArn);
@@ -13890,6 +13924,7 @@ const deserializeAws_restJson1UpdateEventSourceMappingCommand = async (output, c
         BisectBatchOnFunctionError: undefined,
         DestinationConfig: undefined,
         EventSourceArn: undefined,
+        FilterCriteria: undefined,
         FunctionArn: undefined,
         FunctionResponseTypes: undefined,
         LastModified: undefined,
@@ -13921,6 +13956,9 @@ const deserializeAws_restJson1UpdateEventSourceMappingCommand = async (output, c
     }
     if (data.EventSourceArn !== undefined && data.EventSourceArn !== null) {
         contents.EventSourceArn = smithy_client_1.expectString(data.EventSourceArn);
+    }
+    if (data.FilterCriteria !== undefined && data.FilterCriteria !== null) {
+        contents.FilterCriteria = deserializeAws_restJson1FilterCriteria(data.FilterCriteria, context);
     }
     if (data.FunctionArn !== undefined && data.FunctionArn !== null) {
         contents.FunctionArn = smithy_client_1.expectString(data.FunctionArn);
@@ -15351,6 +15389,27 @@ const serializeAws_restJson1FileSystemConfigList = (input, context) => {
         return serializeAws_restJson1FileSystemConfig(entry, context);
     });
 };
+const serializeAws_restJson1Filter = (input, context) => {
+    return {
+        ...(input.Pattern !== undefined && input.Pattern !== null && { Pattern: input.Pattern }),
+    };
+};
+const serializeAws_restJson1FilterCriteria = (input, context) => {
+    return {
+        ...(input.Filters !== undefined &&
+            input.Filters !== null && { Filters: serializeAws_restJson1FilterList(input.Filters, context) }),
+    };
+};
+const serializeAws_restJson1FilterList = (input, context) => {
+    return input
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return serializeAws_restJson1Filter(entry, context);
+    });
+};
 const serializeAws_restJson1FunctionCode = (input, context) => {
     return {
         ...(input.ImageUri !== undefined && input.ImageUri !== null && { ImageUri: input.ImageUri }),
@@ -15715,6 +15774,9 @@ const deserializeAws_restJson1EventSourceMappingConfiguration = (output, context
             ? deserializeAws_restJson1DestinationConfig(output.DestinationConfig, context)
             : undefined,
         EventSourceArn: smithy_client_1.expectString(output.EventSourceArn),
+        FilterCriteria: output.FilterCriteria !== undefined && output.FilterCriteria !== null
+            ? deserializeAws_restJson1FilterCriteria(output.FilterCriteria, context)
+            : undefined,
         FunctionArn: smithy_client_1.expectString(output.FunctionArn),
         FunctionResponseTypes: output.FunctionResponseTypes !== undefined && output.FunctionResponseTypes !== null
             ? deserializeAws_restJson1FunctionResponseTypeList(output.FunctionResponseTypes, context)
@@ -15773,6 +15835,28 @@ const deserializeAws_restJson1FileSystemConfigList = (output, context) => {
             return null;
         }
         return deserializeAws_restJson1FileSystemConfig(entry, context);
+    });
+};
+const deserializeAws_restJson1Filter = (output, context) => {
+    return {
+        Pattern: smithy_client_1.expectString(output.Pattern),
+    };
+};
+const deserializeAws_restJson1FilterCriteria = (output, context) => {
+    return {
+        Filters: output.Filters !== undefined && output.Filters !== null
+            ? deserializeAws_restJson1FilterList(output.Filters, context)
+            : undefined,
+    };
+};
+const deserializeAws_restJson1FilterList = (output, context) => {
+    return (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return deserializeAws_restJson1Filter(entry, context);
     });
 };
 const deserializeAws_restJson1FunctionArnList = (output, context) => {
@@ -28983,7 +29067,7 @@ module.exports = require("util");
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-lambda","description":"AWS SDK for JavaScript Lambda Client for Node.js, Browser and React Native","version":"3.42.0","scripts":{"build":"yarn build:cjs && yarn build:es && yarn build:types","build:cjs":"tsc -p tsconfig.json","build:docs":"yarn clean:docs && typedoc ./","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","clean":"yarn clean:dist && yarn clean:docs","clean:dist":"rimraf ./dist","clean:docs":"rimraf ./docs","downlevel-dts":"downlevel-dts dist-types dist-types/ts3.4","test":"exit 0"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/client-sts":"3.42.0","@aws-sdk/config-resolver":"3.40.0","@aws-sdk/credential-provider-node":"3.41.0","@aws-sdk/fetch-http-handler":"3.40.0","@aws-sdk/hash-node":"3.40.0","@aws-sdk/invalid-dependency":"3.40.0","@aws-sdk/middleware-content-length":"3.40.0","@aws-sdk/middleware-host-header":"3.40.0","@aws-sdk/middleware-logger":"3.40.0","@aws-sdk/middleware-retry":"3.40.0","@aws-sdk/middleware-serde":"3.40.0","@aws-sdk/middleware-signing":"3.40.0","@aws-sdk/middleware-stack":"3.40.0","@aws-sdk/middleware-user-agent":"3.40.0","@aws-sdk/node-config-provider":"3.40.0","@aws-sdk/node-http-handler":"3.40.0","@aws-sdk/protocol-http":"3.40.0","@aws-sdk/smithy-client":"3.41.0","@aws-sdk/types":"3.40.0","@aws-sdk/url-parser":"3.40.0","@aws-sdk/util-base64-browser":"3.37.0","@aws-sdk/util-base64-node":"3.37.0","@aws-sdk/util-body-length-browser":"3.37.0","@aws-sdk/util-body-length-node":"3.37.0","@aws-sdk/util-user-agent-browser":"3.40.0","@aws-sdk/util-user-agent-node":"3.40.0","@aws-sdk/util-utf8-browser":"3.37.0","@aws-sdk/util-utf8-node":"3.37.0","@aws-sdk/util-waiter":"3.40.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.38.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.5"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-lambda","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-lambda"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-lambda","description":"AWS SDK for JavaScript Lambda Client for Node.js, Browser and React Native","version":"3.43.0","scripts":{"build":"yarn build:cjs && yarn build:es && yarn build:types","build:cjs":"tsc -p tsconfig.json","build:docs":"yarn clean:docs && typedoc ./","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","clean":"yarn clean:dist && yarn clean:docs","clean:dist":"rimraf ./dist","clean:docs":"rimraf ./docs","downlevel-dts":"downlevel-dts dist-types dist-types/ts3.4","test":"exit 0"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/client-sts":"3.43.0","@aws-sdk/config-resolver":"3.40.0","@aws-sdk/credential-provider-node":"3.41.0","@aws-sdk/fetch-http-handler":"3.40.0","@aws-sdk/hash-node":"3.40.0","@aws-sdk/invalid-dependency":"3.40.0","@aws-sdk/middleware-content-length":"3.40.0","@aws-sdk/middleware-host-header":"3.40.0","@aws-sdk/middleware-logger":"3.40.0","@aws-sdk/middleware-retry":"3.40.0","@aws-sdk/middleware-serde":"3.40.0","@aws-sdk/middleware-signing":"3.40.0","@aws-sdk/middleware-stack":"3.40.0","@aws-sdk/middleware-user-agent":"3.40.0","@aws-sdk/node-config-provider":"3.40.0","@aws-sdk/node-http-handler":"3.40.0","@aws-sdk/protocol-http":"3.40.0","@aws-sdk/smithy-client":"3.41.0","@aws-sdk/types":"3.40.0","@aws-sdk/url-parser":"3.40.0","@aws-sdk/util-base64-browser":"3.37.0","@aws-sdk/util-base64-node":"3.37.0","@aws-sdk/util-body-length-browser":"3.37.0","@aws-sdk/util-body-length-node":"3.37.0","@aws-sdk/util-user-agent-browser":"3.40.0","@aws-sdk/util-user-agent-node":"3.40.0","@aws-sdk/util-utf8-browser":"3.37.0","@aws-sdk/util-utf8-node":"3.37.0","@aws-sdk/util-waiter":"3.40.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.38.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.5"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-lambda","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-lambda"}}');
 
 /***/ }),
 
@@ -28999,7 +29083,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SD
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.42.0","scripts":{"build":"yarn build:cjs && yarn build:es && yarn build:types","build:cjs":"tsc -p tsconfig.json","build:docs":"yarn clean:docs && typedoc ./","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","clean":"yarn clean:dist && yarn clean:docs","clean:dist":"rimraf ./dist","clean:docs":"rimraf ./docs","downlevel-dts":"downlevel-dts dist-types dist-types/ts3.4","test":"exit 0"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/config-resolver":"3.40.0","@aws-sdk/credential-provider-node":"3.41.0","@aws-sdk/fetch-http-handler":"3.40.0","@aws-sdk/hash-node":"3.40.0","@aws-sdk/invalid-dependency":"3.40.0","@aws-sdk/middleware-content-length":"3.40.0","@aws-sdk/middleware-host-header":"3.40.0","@aws-sdk/middleware-logger":"3.40.0","@aws-sdk/middleware-retry":"3.40.0","@aws-sdk/middleware-sdk-sts":"3.40.0","@aws-sdk/middleware-serde":"3.40.0","@aws-sdk/middleware-signing":"3.40.0","@aws-sdk/middleware-stack":"3.40.0","@aws-sdk/middleware-user-agent":"3.40.0","@aws-sdk/node-config-provider":"3.40.0","@aws-sdk/node-http-handler":"3.40.0","@aws-sdk/protocol-http":"3.40.0","@aws-sdk/smithy-client":"3.41.0","@aws-sdk/types":"3.40.0","@aws-sdk/url-parser":"3.40.0","@aws-sdk/util-base64-browser":"3.37.0","@aws-sdk/util-base64-node":"3.37.0","@aws-sdk/util-body-length-browser":"3.37.0","@aws-sdk/util-body-length-node":"3.37.0","@aws-sdk/util-user-agent-browser":"3.40.0","@aws-sdk/util-user-agent-node":"3.40.0","@aws-sdk/util-utf8-browser":"3.37.0","@aws-sdk/util-utf8-node":"3.37.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.38.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.5"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.43.0","scripts":{"build":"yarn build:cjs && yarn build:es && yarn build:types","build:cjs":"tsc -p tsconfig.json","build:docs":"yarn clean:docs && typedoc ./","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","clean":"yarn clean:dist && yarn clean:docs","clean:dist":"rimraf ./dist","clean:docs":"rimraf ./docs","downlevel-dts":"downlevel-dts dist-types dist-types/ts3.4","test":"exit 0"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/config-resolver":"3.40.0","@aws-sdk/credential-provider-node":"3.41.0","@aws-sdk/fetch-http-handler":"3.40.0","@aws-sdk/hash-node":"3.40.0","@aws-sdk/invalid-dependency":"3.40.0","@aws-sdk/middleware-content-length":"3.40.0","@aws-sdk/middleware-host-header":"3.40.0","@aws-sdk/middleware-logger":"3.40.0","@aws-sdk/middleware-retry":"3.40.0","@aws-sdk/middleware-sdk-sts":"3.40.0","@aws-sdk/middleware-serde":"3.40.0","@aws-sdk/middleware-signing":"3.40.0","@aws-sdk/middleware-stack":"3.40.0","@aws-sdk/middleware-user-agent":"3.40.0","@aws-sdk/node-config-provider":"3.40.0","@aws-sdk/node-http-handler":"3.40.0","@aws-sdk/protocol-http":"3.40.0","@aws-sdk/smithy-client":"3.41.0","@aws-sdk/types":"3.40.0","@aws-sdk/url-parser":"3.40.0","@aws-sdk/util-base64-browser":"3.37.0","@aws-sdk/util-base64-node":"3.37.0","@aws-sdk/util-body-length-browser":"3.37.0","@aws-sdk/util-body-length-node":"3.37.0","@aws-sdk/util-user-agent-browser":"3.40.0","@aws-sdk/util-user-agent-node":"3.40.0","@aws-sdk/util-utf8-browser":"3.37.0","@aws-sdk/util-utf8-node":"3.37.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.38.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.5"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
 
 /***/ }),
 
