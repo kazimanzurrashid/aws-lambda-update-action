@@ -4864,36 +4864,192 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.defaultRegionInfoProvider = void 0;
 const config_resolver_1 = __nccwpck_require__(6153);
 const regionHash = {
+    "af-south-1": {
+        variants: [
+            {
+                hostname: "lambda.af-south-1.api.aws",
+                tags: ["dualstack"],
+            },
+        ],
+    },
+    "ap-east-1": {
+        variants: [
+            {
+                hostname: "lambda.ap-east-1.api.aws",
+                tags: ["dualstack"],
+            },
+        ],
+    },
+    "ap-northeast-1": {
+        variants: [
+            {
+                hostname: "lambda.ap-northeast-1.api.aws",
+                tags: ["dualstack"],
+            },
+        ],
+    },
+    "ap-northeast-2": {
+        variants: [
+            {
+                hostname: "lambda.ap-northeast-2.api.aws",
+                tags: ["dualstack"],
+            },
+        ],
+    },
+    "ap-northeast-3": {
+        variants: [
+            {
+                hostname: "lambda.ap-northeast-3.api.aws",
+                tags: ["dualstack"],
+            },
+        ],
+    },
+    "ap-south-1": {
+        variants: [
+            {
+                hostname: "lambda.ap-south-1.api.aws",
+                tags: ["dualstack"],
+            },
+        ],
+    },
+    "ap-southeast-1": {
+        variants: [
+            {
+                hostname: "lambda.ap-southeast-1.api.aws",
+                tags: ["dualstack"],
+            },
+        ],
+    },
+    "ap-southeast-2": {
+        variants: [
+            {
+                hostname: "lambda.ap-southeast-2.api.aws",
+                tags: ["dualstack"],
+            },
+        ],
+    },
+    "ap-southeast-3": {
+        variants: [
+            {
+                hostname: "lambda.ap-southeast-3.api.aws",
+                tags: ["dualstack"],
+            },
+        ],
+    },
+    "ca-central-1": {
+        variants: [
+            {
+                hostname: "lambda.ca-central-1.api.aws",
+                tags: ["dualstack"],
+            },
+        ],
+    },
+    "cn-north-1": {
+        variants: [
+            {
+                hostname: "lambda.cn-north-1.api.amazonwebservices.com.cn",
+                tags: ["dualstack"],
+            },
+        ],
+    },
+    "cn-northwest-1": {
+        variants: [
+            {
+                hostname: "lambda.cn-northwest-1.api.amazonwebservices.com.cn",
+                tags: ["dualstack"],
+            },
+        ],
+    },
+    "eu-central-1": {
+        variants: [
+            {
+                hostname: "lambda.eu-central-1.api.aws",
+                tags: ["dualstack"],
+            },
+        ],
+    },
+    "eu-north-1": {
+        variants: [
+            {
+                hostname: "lambda.eu-north-1.api.aws",
+                tags: ["dualstack"],
+            },
+        ],
+    },
+    "eu-south-1": {
+        variants: [
+            {
+                hostname: "lambda.eu-south-1.api.aws",
+                tags: ["dualstack"],
+            },
+        ],
+    },
+    "eu-west-1": {
+        variants: [
+            {
+                hostname: "lambda.eu-west-1.api.aws",
+                tags: ["dualstack"],
+            },
+        ],
+    },
+    "eu-west-2": {
+        variants: [
+            {
+                hostname: "lambda.eu-west-2.api.aws",
+                tags: ["dualstack"],
+            },
+        ],
+    },
+    "eu-west-3": {
+        variants: [
+            {
+                hostname: "lambda.eu-west-3.api.aws",
+                tags: ["dualstack"],
+            },
+        ],
+    },
+    "me-south-1": {
+        variants: [
+            {
+                hostname: "lambda.me-south-1.api.aws",
+                tags: ["dualstack"],
+            },
+        ],
+    },
+    "sa-east-1": {
+        variants: [
+            {
+                hostname: "lambda.sa-east-1.api.aws",
+                tags: ["dualstack"],
+            },
+        ],
+    },
     "us-east-1": {
         variants: [
             {
-                hostname: "lambda.us-east-1.amazonaws.com",
-                tags: [],
-            },
-            {
                 hostname: "lambda-fips.us-east-1.amazonaws.com",
                 tags: ["fips"],
+            },
+            {
+                hostname: "lambda.us-east-1.api.aws",
+                tags: ["dualstack"],
             },
         ],
     },
     "us-east-2": {
         variants: [
             {
-                hostname: "lambda.us-east-2.amazonaws.com",
-                tags: [],
-            },
-            {
                 hostname: "lambda-fips.us-east-2.amazonaws.com",
                 tags: ["fips"],
+            },
+            {
+                hostname: "lambda.us-east-2.api.aws",
+                tags: ["dualstack"],
             },
         ],
     },
     "us-gov-east-1": {
         variants: [
-            {
-                hostname: "lambda.us-gov-east-1.amazonaws.com",
-                tags: [],
-            },
             {
                 hostname: "lambda-fips.us-gov-east-1.amazonaws.com",
                 tags: ["fips"],
@@ -4903,10 +5059,6 @@ const regionHash = {
     "us-gov-west-1": {
         variants: [
             {
-                hostname: "lambda.us-gov-west-1.amazonaws.com",
-                tags: [],
-            },
-            {
                 hostname: "lambda-fips.us-gov-west-1.amazonaws.com",
                 tags: ["fips"],
             },
@@ -4915,24 +5067,24 @@ const regionHash = {
     "us-west-1": {
         variants: [
             {
-                hostname: "lambda.us-west-1.amazonaws.com",
-                tags: [],
-            },
-            {
                 hostname: "lambda-fips.us-west-1.amazonaws.com",
                 tags: ["fips"],
+            },
+            {
+                hostname: "lambda.us-west-1.api.aws",
+                tags: ["dualstack"],
             },
         ],
     },
     "us-west-2": {
         variants: [
             {
-                hostname: "lambda.us-west-2.amazonaws.com",
-                tags: [],
-            },
-            {
                 hostname: "lambda-fips.us-west-2.amazonaws.com",
                 tags: ["fips"],
+            },
+            {
+                hostname: "lambda.us-west-2.api.aws",
+                tags: ["dualstack"],
             },
         ],
     },
@@ -5077,6 +5229,7 @@ exports.defaultRegionInfoProvider = defaultRegionInfoProvider;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.LambdaServiceException = void 0;
 const tslib_1 = __nccwpck_require__(4351);
 tslib_1.__exportStar(__nccwpck_require__(3623), exports);
 tslib_1.__exportStar(__nccwpck_require__(8373), exports);
@@ -5084,6 +5237,27 @@ tslib_1.__exportStar(__nccwpck_require__(3193), exports);
 tslib_1.__exportStar(__nccwpck_require__(4205), exports);
 tslib_1.__exportStar(__nccwpck_require__(5422), exports);
 tslib_1.__exportStar(__nccwpck_require__(2946), exports);
+var LambdaServiceException_1 = __nccwpck_require__(2084);
+Object.defineProperty(exports, "LambdaServiceException", ({ enumerable: true, get: function () { return LambdaServiceException_1.LambdaServiceException; } }));
+
+
+/***/ }),
+
+/***/ 2084:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.LambdaServiceException = void 0;
+const smithy_client_1 = __nccwpck_require__(4963);
+class LambdaServiceException extends smithy_client_1.ServiceException {
+    constructor(options) {
+        super(options);
+        Object.setPrototypeOf(this, LambdaServiceException.prototype);
+    }
+}
+exports.LambdaServiceException = LambdaServiceException;
 
 
 /***/ }),
@@ -5111,6 +5285,7 @@ exports.GetPolicyResponse = exports.GetPolicyRequest = exports.GetLayerVersionPo
 exports.ListLayerVersionsResponse = exports.ListLayerVersionsRequest = exports.ListLayersResponse = exports.LayersListItem = exports.LayerVersionsListItem = exports.ListLayersRequest = exports.ListFunctionsByCodeSigningConfigResponse = exports.ListFunctionsByCodeSigningConfigRequest = exports.ListFunctionsResponse = exports.ListFunctionsRequest = exports.FunctionVersion = exports.ListFunctionEventInvokeConfigsResponse = exports.ListFunctionEventInvokeConfigsRequest = exports.ListEventSourceMappingsResponse = exports.ListEventSourceMappingsRequest = exports.ListCodeSigningConfigsResponse = exports.ListCodeSigningConfigsRequest = exports.ListAliasesResponse = exports.ListAliasesRequest = exports.InvokeAsyncResponse = exports.InvokeAsyncRequest = exports.UnsupportedMediaTypeException = exports.SubnetIPAddressLimitReachedException = exports.ResourceNotReadyException = exports.RequestTooLargeException = exports.KMSNotFoundException = exports.KMSInvalidStateException = exports.KMSDisabledException = exports.KMSAccessDeniedException = exports.InvocationResponse = exports.InvocationRequest = exports.LogType = exports.InvocationType = exports.InvalidZipFileException = exports.InvalidSubnetIDException = exports.InvalidSecurityGroupIDException = exports.InvalidRuntimeException = exports.InvalidRequestContentException = exports.ENILimitReachedException = exports.EFSMountTimeoutException = exports.EFSMountFailureException = exports.EFSMountConnectivityException = exports.EFSIOException = exports.EC2UnexpectedException = exports.EC2ThrottledException = exports.EC2AccessDeniedException = exports.ProvisionedConcurrencyConfigNotFoundException = exports.GetProvisionedConcurrencyConfigResponse = exports.ProvisionedConcurrencyStatusEnum = exports.GetProvisionedConcurrencyConfigRequest = void 0;
 exports.UpdateFunctionEventInvokeConfigRequest = exports.UpdateFunctionConfigurationRequest = exports.UpdateFunctionCodeRequest = exports.UpdateEventSourceMappingRequest = exports.UpdateCodeSigningConfigResponse = exports.UpdateCodeSigningConfigRequest = exports.UpdateAliasRequest = exports.UntagResourceRequest = exports.TagResourceRequest = exports.RemovePermissionRequest = exports.RemoveLayerVersionPermissionRequest = exports.PutProvisionedConcurrencyConfigResponse = exports.PutProvisionedConcurrencyConfigRequest = exports.PutFunctionEventInvokeConfigRequest = exports.PutFunctionConcurrencyRequest = exports.PutFunctionCodeSigningConfigResponse = exports.PutFunctionCodeSigningConfigRequest = exports.PublishVersionRequest = exports.PublishLayerVersionResponse = exports.PublishLayerVersionRequest = exports.LayerVersionContentInput = exports.ListVersionsByFunctionResponse = exports.ListVersionsByFunctionRequest = exports.ListTagsResponse = exports.ListTagsRequest = exports.ListProvisionedConcurrencyConfigsResponse = exports.ProvisionedConcurrencyConfigListItem = exports.ListProvisionedConcurrencyConfigsRequest = void 0;
 const smithy_client_1 = __nccwpck_require__(4963);
+const LambdaServiceException_1 = __nccwpck_require__(2084);
 var AccountLimit;
 (function (AccountLimit) {
     AccountLimit.filterSensitiveLog = (obj) => ({
@@ -5135,42 +5310,92 @@ var AddLayerVersionPermissionResponse;
         ...obj,
     });
 })(AddLayerVersionPermissionResponse = exports.AddLayerVersionPermissionResponse || (exports.AddLayerVersionPermissionResponse = {}));
-var InvalidParameterValueException;
-(function (InvalidParameterValueException) {
-    InvalidParameterValueException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(InvalidParameterValueException = exports.InvalidParameterValueException || (exports.InvalidParameterValueException = {}));
-var PolicyLengthExceededException;
-(function (PolicyLengthExceededException) {
-    PolicyLengthExceededException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(PolicyLengthExceededException = exports.PolicyLengthExceededException || (exports.PolicyLengthExceededException = {}));
-var PreconditionFailedException;
-(function (PreconditionFailedException) {
-    PreconditionFailedException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(PreconditionFailedException = exports.PreconditionFailedException || (exports.PreconditionFailedException = {}));
-var ResourceConflictException;
-(function (ResourceConflictException) {
-    ResourceConflictException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ResourceConflictException = exports.ResourceConflictException || (exports.ResourceConflictException = {}));
-var ResourceNotFoundException;
-(function (ResourceNotFoundException) {
-    ResourceNotFoundException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ResourceNotFoundException = exports.ResourceNotFoundException || (exports.ResourceNotFoundException = {}));
-var ServiceException;
-(function (ServiceException) {
-    ServiceException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ServiceException = exports.ServiceException || (exports.ServiceException = {}));
+class InvalidParameterValueException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "InvalidParameterValueException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "InvalidParameterValueException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, InvalidParameterValueException.prototype);
+        this.Type = opts.Type;
+    }
+}
+exports.InvalidParameterValueException = InvalidParameterValueException;
+class PolicyLengthExceededException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "PolicyLengthExceededException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "PolicyLengthExceededException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, PolicyLengthExceededException.prototype);
+        this.Type = opts.Type;
+    }
+}
+exports.PolicyLengthExceededException = PolicyLengthExceededException;
+class PreconditionFailedException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "PreconditionFailedException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "PreconditionFailedException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, PreconditionFailedException.prototype);
+        this.Type = opts.Type;
+    }
+}
+exports.PreconditionFailedException = PreconditionFailedException;
+class ResourceConflictException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "ResourceConflictException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "ResourceConflictException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, ResourceConflictException.prototype);
+        this.Type = opts.Type;
+    }
+}
+exports.ResourceConflictException = ResourceConflictException;
+class ResourceNotFoundException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "ResourceNotFoundException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "ResourceNotFoundException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, ResourceNotFoundException.prototype);
+        this.Type = opts.Type;
+        this.Message = opts.Message;
+    }
+}
+exports.ResourceNotFoundException = ResourceNotFoundException;
+class ServiceException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "ServiceException",
+            $fault: "server",
+            ...opts,
+        });
+        this.name = "ServiceException";
+        this.$fault = "server";
+        Object.setPrototypeOf(this, ServiceException.prototype);
+        this.Type = opts.Type;
+        this.Message = opts.Message;
+    }
+}
+exports.ServiceException = ServiceException;
 var ThrottleReason;
 (function (ThrottleReason) {
     ThrottleReason["CallerRateLimitExceeded"] = "CallerRateLimitExceeded";
@@ -5179,12 +5404,22 @@ var ThrottleReason;
     ThrottleReason["ReservedFunctionConcurrentInvocationLimitExceeded"] = "ReservedFunctionConcurrentInvocationLimitExceeded";
     ThrottleReason["ReservedFunctionInvocationRateLimitExceeded"] = "ReservedFunctionInvocationRateLimitExceeded";
 })(ThrottleReason = exports.ThrottleReason || (exports.ThrottleReason = {}));
-var TooManyRequestsException;
-(function (TooManyRequestsException) {
-    TooManyRequestsException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(TooManyRequestsException = exports.TooManyRequestsException || (exports.TooManyRequestsException = {}));
+class TooManyRequestsException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "TooManyRequestsException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "TooManyRequestsException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, TooManyRequestsException.prototype);
+        this.retryAfterSeconds = opts.retryAfterSeconds;
+        this.Type = opts.Type;
+        this.Reason = opts.Reason;
+    }
+}
+exports.TooManyRequestsException = TooManyRequestsException;
 var AddPermissionRequest;
 (function (AddPermissionRequest) {
     AddPermissionRequest.filterSensitiveLog = (obj) => ({
@@ -5334,24 +5569,50 @@ var EventSourceMappingConfiguration;
         ...obj,
     });
 })(EventSourceMappingConfiguration = exports.EventSourceMappingConfiguration || (exports.EventSourceMappingConfiguration = {}));
-var CodeSigningConfigNotFoundException;
-(function (CodeSigningConfigNotFoundException) {
-    CodeSigningConfigNotFoundException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(CodeSigningConfigNotFoundException = exports.CodeSigningConfigNotFoundException || (exports.CodeSigningConfigNotFoundException = {}));
-var CodeStorageExceededException;
-(function (CodeStorageExceededException) {
-    CodeStorageExceededException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(CodeStorageExceededException = exports.CodeStorageExceededException || (exports.CodeStorageExceededException = {}));
-var CodeVerificationFailedException;
-(function (CodeVerificationFailedException) {
-    CodeVerificationFailedException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(CodeVerificationFailedException = exports.CodeVerificationFailedException || (exports.CodeVerificationFailedException = {}));
+class CodeSigningConfigNotFoundException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "CodeSigningConfigNotFoundException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "CodeSigningConfigNotFoundException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, CodeSigningConfigNotFoundException.prototype);
+        this.Type = opts.Type;
+        this.Message = opts.Message;
+    }
+}
+exports.CodeSigningConfigNotFoundException = CodeSigningConfigNotFoundException;
+class CodeStorageExceededException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "CodeStorageExceededException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "CodeStorageExceededException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, CodeStorageExceededException.prototype);
+        this.Type = opts.Type;
+    }
+}
+exports.CodeStorageExceededException = CodeStorageExceededException;
+class CodeVerificationFailedException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "CodeVerificationFailedException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "CodeVerificationFailedException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, CodeVerificationFailedException.prototype);
+        this.Type = opts.Type;
+        this.Message = opts.Message;
+    }
+}
+exports.CodeVerificationFailedException = CodeVerificationFailedException;
 var FunctionCode;
 (function (FunctionCode) {
     FunctionCode.filterSensitiveLog = (obj) => ({
@@ -5391,6 +5652,7 @@ var PackageType;
 })(PackageType = exports.PackageType || (exports.PackageType = {}));
 var Runtime;
 (function (Runtime) {
+    Runtime["dotnet6"] = "dotnet6";
     Runtime["dotnetcore10"] = "dotnetcore1.0";
     Runtime["dotnetcore20"] = "dotnetcore2.0";
     Runtime["dotnetcore21"] = "dotnetcore2.1";
@@ -5541,12 +5803,21 @@ var FunctionConfiguration;
         }),
     });
 })(FunctionConfiguration = exports.FunctionConfiguration || (exports.FunctionConfiguration = {}));
-var InvalidCodeSignatureException;
-(function (InvalidCodeSignatureException) {
-    InvalidCodeSignatureException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(InvalidCodeSignatureException = exports.InvalidCodeSignatureException || (exports.InvalidCodeSignatureException = {}));
+class InvalidCodeSignatureException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "InvalidCodeSignatureException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "InvalidCodeSignatureException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, InvalidCodeSignatureException.prototype);
+        this.Type = opts.Type;
+        this.Message = opts.Message;
+    }
+}
+exports.InvalidCodeSignatureException = InvalidCodeSignatureException;
 var DeleteAliasRequest;
 (function (DeleteAliasRequest) {
     DeleteAliasRequest.filterSensitiveLog = (obj) => ({
@@ -5571,12 +5842,21 @@ var DeleteEventSourceMappingRequest;
         ...obj,
     });
 })(DeleteEventSourceMappingRequest = exports.DeleteEventSourceMappingRequest || (exports.DeleteEventSourceMappingRequest = {}));
-var ResourceInUseException;
-(function (ResourceInUseException) {
-    ResourceInUseException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ResourceInUseException = exports.ResourceInUseException || (exports.ResourceInUseException = {}));
+class ResourceInUseException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "ResourceInUseException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "ResourceInUseException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, ResourceInUseException.prototype);
+        this.Type = opts.Type;
+        this.Message = opts.Message;
+    }
+}
+exports.ResourceInUseException = ResourceInUseException;
 var DeleteFunctionRequest;
 (function (DeleteFunctionRequest) {
     DeleteFunctionRequest.filterSensitiveLog = (obj) => ({
@@ -5782,90 +6062,215 @@ var GetProvisionedConcurrencyConfigResponse;
         ...obj,
     });
 })(GetProvisionedConcurrencyConfigResponse = exports.GetProvisionedConcurrencyConfigResponse || (exports.GetProvisionedConcurrencyConfigResponse = {}));
-var ProvisionedConcurrencyConfigNotFoundException;
-(function (ProvisionedConcurrencyConfigNotFoundException) {
-    ProvisionedConcurrencyConfigNotFoundException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ProvisionedConcurrencyConfigNotFoundException = exports.ProvisionedConcurrencyConfigNotFoundException || (exports.ProvisionedConcurrencyConfigNotFoundException = {}));
-var EC2AccessDeniedException;
-(function (EC2AccessDeniedException) {
-    EC2AccessDeniedException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(EC2AccessDeniedException = exports.EC2AccessDeniedException || (exports.EC2AccessDeniedException = {}));
-var EC2ThrottledException;
-(function (EC2ThrottledException) {
-    EC2ThrottledException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(EC2ThrottledException = exports.EC2ThrottledException || (exports.EC2ThrottledException = {}));
-var EC2UnexpectedException;
-(function (EC2UnexpectedException) {
-    EC2UnexpectedException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(EC2UnexpectedException = exports.EC2UnexpectedException || (exports.EC2UnexpectedException = {}));
-var EFSIOException;
-(function (EFSIOException) {
-    EFSIOException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(EFSIOException = exports.EFSIOException || (exports.EFSIOException = {}));
-var EFSMountConnectivityException;
-(function (EFSMountConnectivityException) {
-    EFSMountConnectivityException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(EFSMountConnectivityException = exports.EFSMountConnectivityException || (exports.EFSMountConnectivityException = {}));
-var EFSMountFailureException;
-(function (EFSMountFailureException) {
-    EFSMountFailureException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(EFSMountFailureException = exports.EFSMountFailureException || (exports.EFSMountFailureException = {}));
-var EFSMountTimeoutException;
-(function (EFSMountTimeoutException) {
-    EFSMountTimeoutException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(EFSMountTimeoutException = exports.EFSMountTimeoutException || (exports.EFSMountTimeoutException = {}));
-var ENILimitReachedException;
-(function (ENILimitReachedException) {
-    ENILimitReachedException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ENILimitReachedException = exports.ENILimitReachedException || (exports.ENILimitReachedException = {}));
-var InvalidRequestContentException;
-(function (InvalidRequestContentException) {
-    InvalidRequestContentException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(InvalidRequestContentException = exports.InvalidRequestContentException || (exports.InvalidRequestContentException = {}));
-var InvalidRuntimeException;
-(function (InvalidRuntimeException) {
-    InvalidRuntimeException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(InvalidRuntimeException = exports.InvalidRuntimeException || (exports.InvalidRuntimeException = {}));
-var InvalidSecurityGroupIDException;
-(function (InvalidSecurityGroupIDException) {
-    InvalidSecurityGroupIDException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(InvalidSecurityGroupIDException = exports.InvalidSecurityGroupIDException || (exports.InvalidSecurityGroupIDException = {}));
-var InvalidSubnetIDException;
-(function (InvalidSubnetIDException) {
-    InvalidSubnetIDException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(InvalidSubnetIDException = exports.InvalidSubnetIDException || (exports.InvalidSubnetIDException = {}));
-var InvalidZipFileException;
-(function (InvalidZipFileException) {
-    InvalidZipFileException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(InvalidZipFileException = exports.InvalidZipFileException || (exports.InvalidZipFileException = {}));
+class ProvisionedConcurrencyConfigNotFoundException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "ProvisionedConcurrencyConfigNotFoundException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "ProvisionedConcurrencyConfigNotFoundException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, ProvisionedConcurrencyConfigNotFoundException.prototype);
+        this.Type = opts.Type;
+    }
+}
+exports.ProvisionedConcurrencyConfigNotFoundException = ProvisionedConcurrencyConfigNotFoundException;
+class EC2AccessDeniedException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "EC2AccessDeniedException",
+            $fault: "server",
+            ...opts,
+        });
+        this.name = "EC2AccessDeniedException";
+        this.$fault = "server";
+        Object.setPrototypeOf(this, EC2AccessDeniedException.prototype);
+        this.Type = opts.Type;
+        this.Message = opts.Message;
+    }
+}
+exports.EC2AccessDeniedException = EC2AccessDeniedException;
+class EC2ThrottledException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "EC2ThrottledException",
+            $fault: "server",
+            ...opts,
+        });
+        this.name = "EC2ThrottledException";
+        this.$fault = "server";
+        Object.setPrototypeOf(this, EC2ThrottledException.prototype);
+        this.Type = opts.Type;
+        this.Message = opts.Message;
+    }
+}
+exports.EC2ThrottledException = EC2ThrottledException;
+class EC2UnexpectedException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "EC2UnexpectedException",
+            $fault: "server",
+            ...opts,
+        });
+        this.name = "EC2UnexpectedException";
+        this.$fault = "server";
+        Object.setPrototypeOf(this, EC2UnexpectedException.prototype);
+        this.Type = opts.Type;
+        this.Message = opts.Message;
+        this.EC2ErrorCode = opts.EC2ErrorCode;
+    }
+}
+exports.EC2UnexpectedException = EC2UnexpectedException;
+class EFSIOException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "EFSIOException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "EFSIOException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, EFSIOException.prototype);
+        this.Type = opts.Type;
+        this.Message = opts.Message;
+    }
+}
+exports.EFSIOException = EFSIOException;
+class EFSMountConnectivityException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "EFSMountConnectivityException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "EFSMountConnectivityException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, EFSMountConnectivityException.prototype);
+        this.Type = opts.Type;
+        this.Message = opts.Message;
+    }
+}
+exports.EFSMountConnectivityException = EFSMountConnectivityException;
+class EFSMountFailureException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "EFSMountFailureException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "EFSMountFailureException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, EFSMountFailureException.prototype);
+        this.Type = opts.Type;
+        this.Message = opts.Message;
+    }
+}
+exports.EFSMountFailureException = EFSMountFailureException;
+class EFSMountTimeoutException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "EFSMountTimeoutException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "EFSMountTimeoutException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, EFSMountTimeoutException.prototype);
+        this.Type = opts.Type;
+        this.Message = opts.Message;
+    }
+}
+exports.EFSMountTimeoutException = EFSMountTimeoutException;
+class ENILimitReachedException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "ENILimitReachedException",
+            $fault: "server",
+            ...opts,
+        });
+        this.name = "ENILimitReachedException";
+        this.$fault = "server";
+        Object.setPrototypeOf(this, ENILimitReachedException.prototype);
+        this.Type = opts.Type;
+        this.Message = opts.Message;
+    }
+}
+exports.ENILimitReachedException = ENILimitReachedException;
+class InvalidRequestContentException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "InvalidRequestContentException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "InvalidRequestContentException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, InvalidRequestContentException.prototype);
+        this.Type = opts.Type;
+    }
+}
+exports.InvalidRequestContentException = InvalidRequestContentException;
+class InvalidRuntimeException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "InvalidRuntimeException",
+            $fault: "server",
+            ...opts,
+        });
+        this.name = "InvalidRuntimeException";
+        this.$fault = "server";
+        Object.setPrototypeOf(this, InvalidRuntimeException.prototype);
+        this.Type = opts.Type;
+        this.Message = opts.Message;
+    }
+}
+exports.InvalidRuntimeException = InvalidRuntimeException;
+class InvalidSecurityGroupIDException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "InvalidSecurityGroupIDException",
+            $fault: "server",
+            ...opts,
+        });
+        this.name = "InvalidSecurityGroupIDException";
+        this.$fault = "server";
+        Object.setPrototypeOf(this, InvalidSecurityGroupIDException.prototype);
+        this.Type = opts.Type;
+        this.Message = opts.Message;
+    }
+}
+exports.InvalidSecurityGroupIDException = InvalidSecurityGroupIDException;
+class InvalidSubnetIDException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "InvalidSubnetIDException",
+            $fault: "server",
+            ...opts,
+        });
+        this.name = "InvalidSubnetIDException";
+        this.$fault = "server";
+        Object.setPrototypeOf(this, InvalidSubnetIDException.prototype);
+        this.Type = opts.Type;
+        this.Message = opts.Message;
+    }
+}
+exports.InvalidSubnetIDException = InvalidSubnetIDException;
+class InvalidZipFileException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "InvalidZipFileException",
+            $fault: "server",
+            ...opts,
+        });
+        this.name = "InvalidZipFileException";
+        this.$fault = "server";
+        Object.setPrototypeOf(this, InvalidZipFileException.prototype);
+        this.Type = opts.Type;
+        this.Message = opts.Message;
+    }
+}
+exports.InvalidZipFileException = InvalidZipFileException;
 var InvocationType;
 (function (InvocationType) {
     InvocationType["DryRun"] = "DryRun";
@@ -5891,54 +6296,123 @@ var InvocationResponse;
         ...(obj.Payload && { Payload: smithy_client_1.SENSITIVE_STRING }),
     });
 })(InvocationResponse = exports.InvocationResponse || (exports.InvocationResponse = {}));
-var KMSAccessDeniedException;
-(function (KMSAccessDeniedException) {
-    KMSAccessDeniedException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(KMSAccessDeniedException = exports.KMSAccessDeniedException || (exports.KMSAccessDeniedException = {}));
-var KMSDisabledException;
-(function (KMSDisabledException) {
-    KMSDisabledException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(KMSDisabledException = exports.KMSDisabledException || (exports.KMSDisabledException = {}));
-var KMSInvalidStateException;
-(function (KMSInvalidStateException) {
-    KMSInvalidStateException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(KMSInvalidStateException = exports.KMSInvalidStateException || (exports.KMSInvalidStateException = {}));
-var KMSNotFoundException;
-(function (KMSNotFoundException) {
-    KMSNotFoundException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(KMSNotFoundException = exports.KMSNotFoundException || (exports.KMSNotFoundException = {}));
-var RequestTooLargeException;
-(function (RequestTooLargeException) {
-    RequestTooLargeException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(RequestTooLargeException = exports.RequestTooLargeException || (exports.RequestTooLargeException = {}));
-var ResourceNotReadyException;
-(function (ResourceNotReadyException) {
-    ResourceNotReadyException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ResourceNotReadyException = exports.ResourceNotReadyException || (exports.ResourceNotReadyException = {}));
-var SubnetIPAddressLimitReachedException;
-(function (SubnetIPAddressLimitReachedException) {
-    SubnetIPAddressLimitReachedException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(SubnetIPAddressLimitReachedException = exports.SubnetIPAddressLimitReachedException || (exports.SubnetIPAddressLimitReachedException = {}));
-var UnsupportedMediaTypeException;
-(function (UnsupportedMediaTypeException) {
-    UnsupportedMediaTypeException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(UnsupportedMediaTypeException = exports.UnsupportedMediaTypeException || (exports.UnsupportedMediaTypeException = {}));
+class KMSAccessDeniedException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "KMSAccessDeniedException",
+            $fault: "server",
+            ...opts,
+        });
+        this.name = "KMSAccessDeniedException";
+        this.$fault = "server";
+        Object.setPrototypeOf(this, KMSAccessDeniedException.prototype);
+        this.Type = opts.Type;
+        this.Message = opts.Message;
+    }
+}
+exports.KMSAccessDeniedException = KMSAccessDeniedException;
+class KMSDisabledException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "KMSDisabledException",
+            $fault: "server",
+            ...opts,
+        });
+        this.name = "KMSDisabledException";
+        this.$fault = "server";
+        Object.setPrototypeOf(this, KMSDisabledException.prototype);
+        this.Type = opts.Type;
+        this.Message = opts.Message;
+    }
+}
+exports.KMSDisabledException = KMSDisabledException;
+class KMSInvalidStateException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "KMSInvalidStateException",
+            $fault: "server",
+            ...opts,
+        });
+        this.name = "KMSInvalidStateException";
+        this.$fault = "server";
+        Object.setPrototypeOf(this, KMSInvalidStateException.prototype);
+        this.Type = opts.Type;
+        this.Message = opts.Message;
+    }
+}
+exports.KMSInvalidStateException = KMSInvalidStateException;
+class KMSNotFoundException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "KMSNotFoundException",
+            $fault: "server",
+            ...opts,
+        });
+        this.name = "KMSNotFoundException";
+        this.$fault = "server";
+        Object.setPrototypeOf(this, KMSNotFoundException.prototype);
+        this.Type = opts.Type;
+        this.Message = opts.Message;
+    }
+}
+exports.KMSNotFoundException = KMSNotFoundException;
+class RequestTooLargeException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "RequestTooLargeException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "RequestTooLargeException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, RequestTooLargeException.prototype);
+        this.Type = opts.Type;
+    }
+}
+exports.RequestTooLargeException = RequestTooLargeException;
+class ResourceNotReadyException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "ResourceNotReadyException",
+            $fault: "server",
+            ...opts,
+        });
+        this.name = "ResourceNotReadyException";
+        this.$fault = "server";
+        Object.setPrototypeOf(this, ResourceNotReadyException.prototype);
+        this.Type = opts.Type;
+    }
+}
+exports.ResourceNotReadyException = ResourceNotReadyException;
+class SubnetIPAddressLimitReachedException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "SubnetIPAddressLimitReachedException",
+            $fault: "server",
+            ...opts,
+        });
+        this.name = "SubnetIPAddressLimitReachedException";
+        this.$fault = "server";
+        Object.setPrototypeOf(this, SubnetIPAddressLimitReachedException.prototype);
+        this.Type = opts.Type;
+        this.Message = opts.Message;
+    }
+}
+exports.SubnetIPAddressLimitReachedException = SubnetIPAddressLimitReachedException;
+class UnsupportedMediaTypeException extends LambdaServiceException_1.LambdaServiceException {
+    constructor(opts) {
+        super({
+            name: "UnsupportedMediaTypeException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "UnsupportedMediaTypeException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, UnsupportedMediaTypeException.prototype);
+        this.Type = opts.Type;
+    }
+}
+exports.UnsupportedMediaTypeException = UnsupportedMediaTypeException;
 var InvokeAsyncRequest;
 (function (InvokeAsyncRequest) {
     InvokeAsyncRequest.filterSensitiveLog = (obj) => ({
@@ -6714,6 +7188,8 @@ exports.deserializeAws_restJson1ListVersionsByFunctionCommand = exports.deserial
 exports.deserializeAws_restJson1UpdateFunctionEventInvokeConfigCommand = exports.deserializeAws_restJson1UpdateFunctionConfigurationCommand = exports.deserializeAws_restJson1UpdateFunctionCodeCommand = exports.deserializeAws_restJson1UpdateEventSourceMappingCommand = exports.deserializeAws_restJson1UpdateCodeSigningConfigCommand = exports.deserializeAws_restJson1UpdateAliasCommand = exports.deserializeAws_restJson1UntagResourceCommand = exports.deserializeAws_restJson1TagResourceCommand = exports.deserializeAws_restJson1RemovePermissionCommand = exports.deserializeAws_restJson1RemoveLayerVersionPermissionCommand = exports.deserializeAws_restJson1PutProvisionedConcurrencyConfigCommand = exports.deserializeAws_restJson1PutFunctionEventInvokeConfigCommand = exports.deserializeAws_restJson1PutFunctionConcurrencyCommand = exports.deserializeAws_restJson1PutFunctionCodeSigningConfigCommand = exports.deserializeAws_restJson1PublishVersionCommand = exports.deserializeAws_restJson1PublishLayerVersionCommand = void 0;
 const protocol_http_1 = __nccwpck_require__(223);
 const smithy_client_1 = __nccwpck_require__(4963);
+const LambdaServiceException_1 = __nccwpck_require__(2084);
+const models_0_1 = __nccwpck_require__(5436);
 const serializeAws_restJson1AddLayerVersionPermissionCommand = async (input, context) => {
     const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
@@ -8777,75 +9253,34 @@ const deserializeAws_restJson1AddLayerVersionPermissionCommandError = async (out
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "PolicyLengthExceededException":
         case "com.amazonaws.lambda#PolicyLengthExceededException":
-            response = {
-                ...(await deserializeAws_restJson1PolicyLengthExceededExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1PolicyLengthExceededExceptionResponse(parsedOutput, context);
         case "PreconditionFailedException":
         case "com.amazonaws.lambda#PreconditionFailedException":
-            response = {
-                ...(await deserializeAws_restJson1PreconditionFailedExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1PreconditionFailedExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1AddPermissionCommand = async (output, context) => {
     if (output.statusCode !== 201 && output.statusCode >= 300) {
@@ -8873,75 +9308,34 @@ const deserializeAws_restJson1AddPermissionCommandError = async (output, context
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "PolicyLengthExceededException":
         case "com.amazonaws.lambda#PolicyLengthExceededException":
-            response = {
-                ...(await deserializeAws_restJson1PolicyLengthExceededExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1PolicyLengthExceededExceptionResponse(parsedOutput, context);
         case "PreconditionFailedException":
         case "com.amazonaws.lambda#PreconditionFailedException":
-            response = {
-                ...(await deserializeAws_restJson1PreconditionFailedExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1PreconditionFailedExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1CreateAliasCommand = async (output, context) => {
     if (output.statusCode !== 201 && output.statusCode >= 300) {
@@ -8989,59 +9383,28 @@ const deserializeAws_restJson1CreateAliasCommandError = async (output, context) 
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1CreateCodeSigningConfigCommand = async (output, context) => {
     if (output.statusCode !== 201 && output.statusCode >= 300) {
@@ -9069,35 +9432,19 @@ const deserializeAws_restJson1CreateCodeSigningConfigCommandError = async (outpu
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1CreateEventSourceMappingCommand = async (output, context) => {
     if (output.statusCode !== 202 && output.statusCode >= 300) {
@@ -9213,59 +9560,28 @@ const deserializeAws_restJson1CreateEventSourceMappingCommandError = async (outp
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1CreateFunctionCommand = async (output, context) => {
     if (output.statusCode !== 201 && output.statusCode >= 300) {
@@ -9417,91 +9733,40 @@ const deserializeAws_restJson1CreateFunctionCommandError = async (output, contex
     switch (errorCode) {
         case "CodeSigningConfigNotFoundException":
         case "com.amazonaws.lambda#CodeSigningConfigNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1CodeSigningConfigNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1CodeSigningConfigNotFoundExceptionResponse(parsedOutput, context);
         case "CodeStorageExceededException":
         case "com.amazonaws.lambda#CodeStorageExceededException":
-            response = {
-                ...(await deserializeAws_restJson1CodeStorageExceededExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1CodeStorageExceededExceptionResponse(parsedOutput, context);
         case "CodeVerificationFailedException":
         case "com.amazonaws.lambda#CodeVerificationFailedException":
-            response = {
-                ...(await deserializeAws_restJson1CodeVerificationFailedExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1CodeVerificationFailedExceptionResponse(parsedOutput, context);
         case "InvalidCodeSignatureException":
         case "com.amazonaws.lambda#InvalidCodeSignatureException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidCodeSignatureExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidCodeSignatureExceptionResponse(parsedOutput, context);
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1DeleteAliasCommand = async (output, context) => {
     if (output.statusCode !== 204 && output.statusCode >= 300) {
@@ -9525,51 +9790,25 @@ const deserializeAws_restJson1DeleteAliasCommandError = async (output, context) 
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1DeleteCodeSigningConfigCommand = async (output, context) => {
     if (output.statusCode !== 204 && output.statusCode >= 300) {
@@ -9593,51 +9832,25 @@ const deserializeAws_restJson1DeleteCodeSigningConfigCommandError = async (outpu
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1DeleteEventSourceMappingCommand = async (output, context) => {
     if (output.statusCode !== 202 && output.statusCode >= 300) {
@@ -9753,59 +9966,28 @@ const deserializeAws_restJson1DeleteEventSourceMappingCommandError = async (outp
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceInUseException":
         case "com.amazonaws.lambda#ResourceInUseException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceInUseExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceInUseExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1DeleteFunctionCommand = async (output, context) => {
     if (output.statusCode !== 204 && output.statusCode >= 300) {
@@ -9829,59 +10011,28 @@ const deserializeAws_restJson1DeleteFunctionCommandError = async (output, contex
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1DeleteFunctionCodeSigningConfigCommand = async (output, context) => {
     if (output.statusCode !== 204 && output.statusCode >= 300) {
@@ -9905,67 +10056,31 @@ const deserializeAws_restJson1DeleteFunctionCodeSigningConfigCommandError = asyn
     switch (errorCode) {
         case "CodeSigningConfigNotFoundException":
         case "com.amazonaws.lambda#CodeSigningConfigNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1CodeSigningConfigNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1CodeSigningConfigNotFoundExceptionResponse(parsedOutput, context);
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1DeleteFunctionConcurrencyCommand = async (output, context) => {
     if (output.statusCode !== 204 && output.statusCode >= 300) {
@@ -9989,59 +10104,28 @@ const deserializeAws_restJson1DeleteFunctionConcurrencyCommandError = async (out
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1DeleteFunctionEventInvokeConfigCommand = async (output, context) => {
     if (output.statusCode !== 204 && output.statusCode >= 300) {
@@ -10065,59 +10149,28 @@ const deserializeAws_restJson1DeleteFunctionEventInvokeConfigCommandError = asyn
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1DeleteLayerVersionCommand = async (output, context) => {
     if (output.statusCode !== 204 && output.statusCode >= 300) {
@@ -10141,35 +10194,19 @@ const deserializeAws_restJson1DeleteLayerVersionCommandError = async (output, co
     switch (errorCode) {
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand = async (output, context) => {
     if (output.statusCode !== 204 && output.statusCode >= 300) {
@@ -10193,59 +10230,28 @@ const deserializeAws_restJson1DeleteProvisionedConcurrencyConfigCommandError = a
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1GetAccountSettingsCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -10277,35 +10283,19 @@ const deserializeAws_restJson1GetAccountSettingsCommandError = async (output, co
     switch (errorCode) {
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1GetAliasCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -10353,51 +10343,25 @@ const deserializeAws_restJson1GetAliasCommandError = async (output, context) => 
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1GetCodeSigningConfigCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -10425,43 +10389,22 @@ const deserializeAws_restJson1GetCodeSigningConfigCommandError = async (output, 
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1GetEventSourceMappingCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -10577,51 +10520,25 @@ const deserializeAws_restJson1GetEventSourceMappingCommandError = async (output,
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1GetFunctionCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -10661,51 +10578,25 @@ const deserializeAws_restJson1GetFunctionCommandError = async (output, context) 
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1GetFunctionCodeSigningConfigCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -10737,51 +10628,25 @@ const deserializeAws_restJson1GetFunctionCodeSigningConfigCommandError = async (
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1GetFunctionConcurrencyCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -10809,51 +10674,25 @@ const deserializeAws_restJson1GetFunctionConcurrencyCommandError = async (output
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1GetFunctionConfigurationCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -11005,51 +10844,25 @@ const deserializeAws_restJson1GetFunctionConfigurationCommandError = async (outp
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1GetFunctionEventInvokeConfigCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -11093,51 +10906,25 @@ const deserializeAws_restJson1GetFunctionEventInvokeConfigCommandError = async (
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1GetLayerVersionCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -11197,51 +10984,25 @@ const deserializeAws_restJson1GetLayerVersionCommandError = async (output, conte
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1GetLayerVersionByArnCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -11301,51 +11062,25 @@ const deserializeAws_restJson1GetLayerVersionByArnCommandError = async (output, 
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1GetLayerVersionPolicyCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -11377,51 +11112,25 @@ const deserializeAws_restJson1GetLayerVersionPolicyCommandError = async (output,
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1GetPolicyCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -11453,51 +11162,25 @@ const deserializeAws_restJson1GetPolicyCommandError = async (output, context) =>
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1GetProvisionedConcurrencyConfigCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -11548,59 +11231,28 @@ const deserializeAws_restJson1GetProvisionedConcurrencyConfigCommandError = asyn
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ProvisionedConcurrencyConfigNotFoundException":
         case "com.amazonaws.lambda#ProvisionedConcurrencyConfigNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ProvisionedConcurrencyConfigNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ProvisionedConcurrencyConfigNotFoundExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1InvokeCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -11642,227 +11294,91 @@ const deserializeAws_restJson1InvokeCommandError = async (output, context) => {
     switch (errorCode) {
         case "EC2AccessDeniedException":
         case "com.amazonaws.lambda#EC2AccessDeniedException":
-            response = {
-                ...(await deserializeAws_restJson1EC2AccessDeniedExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1EC2AccessDeniedExceptionResponse(parsedOutput, context);
         case "EC2ThrottledException":
         case "com.amazonaws.lambda#EC2ThrottledException":
-            response = {
-                ...(await deserializeAws_restJson1EC2ThrottledExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1EC2ThrottledExceptionResponse(parsedOutput, context);
         case "EC2UnexpectedException":
         case "com.amazonaws.lambda#EC2UnexpectedException":
-            response = {
-                ...(await deserializeAws_restJson1EC2UnexpectedExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1EC2UnexpectedExceptionResponse(parsedOutput, context);
         case "EFSIOException":
         case "com.amazonaws.lambda#EFSIOException":
-            response = {
-                ...(await deserializeAws_restJson1EFSIOExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1EFSIOExceptionResponse(parsedOutput, context);
         case "EFSMountConnectivityException":
         case "com.amazonaws.lambda#EFSMountConnectivityException":
-            response = {
-                ...(await deserializeAws_restJson1EFSMountConnectivityExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1EFSMountConnectivityExceptionResponse(parsedOutput, context);
         case "EFSMountFailureException":
         case "com.amazonaws.lambda#EFSMountFailureException":
-            response = {
-                ...(await deserializeAws_restJson1EFSMountFailureExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1EFSMountFailureExceptionResponse(parsedOutput, context);
         case "EFSMountTimeoutException":
         case "com.amazonaws.lambda#EFSMountTimeoutException":
-            response = {
-                ...(await deserializeAws_restJson1EFSMountTimeoutExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1EFSMountTimeoutExceptionResponse(parsedOutput, context);
         case "ENILimitReachedException":
         case "com.amazonaws.lambda#ENILimitReachedException":
-            response = {
-                ...(await deserializeAws_restJson1ENILimitReachedExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ENILimitReachedExceptionResponse(parsedOutput, context);
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "InvalidRequestContentException":
         case "com.amazonaws.lambda#InvalidRequestContentException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidRequestContentExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidRequestContentExceptionResponse(parsedOutput, context);
         case "InvalidRuntimeException":
         case "com.amazonaws.lambda#InvalidRuntimeException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidRuntimeExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidRuntimeExceptionResponse(parsedOutput, context);
         case "InvalidSecurityGroupIDException":
         case "com.amazonaws.lambda#InvalidSecurityGroupIDException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidSecurityGroupIDExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidSecurityGroupIDExceptionResponse(parsedOutput, context);
         case "InvalidSubnetIDException":
         case "com.amazonaws.lambda#InvalidSubnetIDException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidSubnetIDExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidSubnetIDExceptionResponse(parsedOutput, context);
         case "InvalidZipFileException":
         case "com.amazonaws.lambda#InvalidZipFileException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidZipFileExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidZipFileExceptionResponse(parsedOutput, context);
         case "KMSAccessDeniedException":
         case "com.amazonaws.lambda#KMSAccessDeniedException":
-            response = {
-                ...(await deserializeAws_restJson1KMSAccessDeniedExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1KMSAccessDeniedExceptionResponse(parsedOutput, context);
         case "KMSDisabledException":
         case "com.amazonaws.lambda#KMSDisabledException":
-            response = {
-                ...(await deserializeAws_restJson1KMSDisabledExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1KMSDisabledExceptionResponse(parsedOutput, context);
         case "KMSInvalidStateException":
         case "com.amazonaws.lambda#KMSInvalidStateException":
-            response = {
-                ...(await deserializeAws_restJson1KMSInvalidStateExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1KMSInvalidStateExceptionResponse(parsedOutput, context);
         case "KMSNotFoundException":
         case "com.amazonaws.lambda#KMSNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1KMSNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1KMSNotFoundExceptionResponse(parsedOutput, context);
         case "RequestTooLargeException":
         case "com.amazonaws.lambda#RequestTooLargeException":
-            response = {
-                ...(await deserializeAws_restJson1RequestTooLargeExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1RequestTooLargeExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ResourceNotReadyException":
         case "com.amazonaws.lambda#ResourceNotReadyException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotReadyExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotReadyExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "SubnetIPAddressLimitReachedException":
         case "com.amazonaws.lambda#SubnetIPAddressLimitReachedException":
-            response = {
-                ...(await deserializeAws_restJson1SubnetIPAddressLimitReachedExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1SubnetIPAddressLimitReachedExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         case "UnsupportedMediaTypeException":
         case "com.amazonaws.lambda#UnsupportedMediaTypeException":
-            response = {
-                ...(await deserializeAws_restJson1UnsupportedMediaTypeExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1UnsupportedMediaTypeExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1InvokeAsyncCommand = async (output, context) => {
     if (output.statusCode !== 202 && output.statusCode >= 300) {
@@ -11890,59 +11406,28 @@ const deserializeAws_restJson1InvokeAsyncCommandError = async (output, context) 
     switch (errorCode) {
         case "InvalidRequestContentException":
         case "com.amazonaws.lambda#InvalidRequestContentException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidRequestContentExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidRequestContentExceptionResponse(parsedOutput, context);
         case "InvalidRuntimeException":
         case "com.amazonaws.lambda#InvalidRuntimeException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidRuntimeExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidRuntimeExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1ListAliasesCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -11974,51 +11459,25 @@ const deserializeAws_restJson1ListAliasesCommandError = async (output, context) 
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1ListCodeSigningConfigsCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -12050,35 +11509,19 @@ const deserializeAws_restJson1ListCodeSigningConfigsCommandError = async (output
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1ListEventSourceMappingsCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -12110,51 +11553,25 @@ const deserializeAws_restJson1ListEventSourceMappingsCommandError = async (outpu
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1ListFunctionEventInvokeConfigsCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -12186,51 +11603,25 @@ const deserializeAws_restJson1ListFunctionEventInvokeConfigsCommandError = async
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1ListFunctionsCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -12262,43 +11653,22 @@ const deserializeAws_restJson1ListFunctionsCommandError = async (output, context
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1ListFunctionsByCodeSigningConfigCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -12330,43 +11700,22 @@ const deserializeAws_restJson1ListFunctionsByCodeSigningConfigCommandError = asy
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1ListLayersCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -12398,43 +11747,22 @@ const deserializeAws_restJson1ListLayersCommandError = async (output, context) =
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1ListLayerVersionsCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -12466,51 +11794,25 @@ const deserializeAws_restJson1ListLayerVersionsCommandError = async (output, con
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1ListProvisionedConcurrencyConfigsCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -12542,51 +11844,25 @@ const deserializeAws_restJson1ListProvisionedConcurrencyConfigsCommandError = as
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1ListTagsCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -12614,51 +11890,25 @@ const deserializeAws_restJson1ListTagsCommandError = async (output, context) => 
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1ListVersionsByFunctionCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -12690,51 +11940,25 @@ const deserializeAws_restJson1ListVersionsByFunctionCommandError = async (output
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1PublishLayerVersionCommand = async (output, context) => {
     if (output.statusCode !== 201 && output.statusCode >= 300) {
@@ -12794,59 +12018,28 @@ const deserializeAws_restJson1PublishLayerVersionCommandError = async (output, c
     switch (errorCode) {
         case "CodeStorageExceededException":
         case "com.amazonaws.lambda#CodeStorageExceededException":
-            response = {
-                ...(await deserializeAws_restJson1CodeStorageExceededExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1CodeStorageExceededExceptionResponse(parsedOutput, context);
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1PublishVersionCommand = async (output, context) => {
     if (output.statusCode !== 201 && output.statusCode >= 300) {
@@ -12998,75 +12191,34 @@ const deserializeAws_restJson1PublishVersionCommandError = async (output, contex
     switch (errorCode) {
         case "CodeStorageExceededException":
         case "com.amazonaws.lambda#CodeStorageExceededException":
-            response = {
-                ...(await deserializeAws_restJson1CodeStorageExceededExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1CodeStorageExceededExceptionResponse(parsedOutput, context);
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "PreconditionFailedException":
         case "com.amazonaws.lambda#PreconditionFailedException":
-            response = {
-                ...(await deserializeAws_restJson1PreconditionFailedExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1PreconditionFailedExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1PutFunctionCodeSigningConfigCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -13098,67 +12250,31 @@ const deserializeAws_restJson1PutFunctionCodeSigningConfigCommandError = async (
     switch (errorCode) {
         case "CodeSigningConfigNotFoundException":
         case "com.amazonaws.lambda#CodeSigningConfigNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1CodeSigningConfigNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1CodeSigningConfigNotFoundExceptionResponse(parsedOutput, context);
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1PutFunctionConcurrencyCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -13186,59 +12302,28 @@ const deserializeAws_restJson1PutFunctionConcurrencyCommandError = async (output
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1PutFunctionEventInvokeConfigCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -13282,59 +12367,28 @@ const deserializeAws_restJson1PutFunctionEventInvokeConfigCommandError = async (
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1PutProvisionedConcurrencyConfigCommand = async (output, context) => {
     if (output.statusCode !== 202 && output.statusCode >= 300) {
@@ -13385,59 +12439,28 @@ const deserializeAws_restJson1PutProvisionedConcurrencyConfigCommandError = asyn
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1RemoveLayerVersionPermissionCommand = async (output, context) => {
     if (output.statusCode !== 204 && output.statusCode >= 300) {
@@ -13461,59 +12484,28 @@ const deserializeAws_restJson1RemoveLayerVersionPermissionCommandError = async (
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "PreconditionFailedException":
         case "com.amazonaws.lambda#PreconditionFailedException":
-            response = {
-                ...(await deserializeAws_restJson1PreconditionFailedExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1PreconditionFailedExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1RemovePermissionCommand = async (output, context) => {
     if (output.statusCode !== 204 && output.statusCode >= 300) {
@@ -13537,59 +12529,28 @@ const deserializeAws_restJson1RemovePermissionCommandError = async (output, cont
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "PreconditionFailedException":
         case "com.amazonaws.lambda#PreconditionFailedException":
-            response = {
-                ...(await deserializeAws_restJson1PreconditionFailedExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1PreconditionFailedExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1TagResourceCommand = async (output, context) => {
     if (output.statusCode !== 204 && output.statusCode >= 300) {
@@ -13613,59 +12574,28 @@ const deserializeAws_restJson1TagResourceCommandError = async (output, context) 
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1UntagResourceCommand = async (output, context) => {
     if (output.statusCode !== 204 && output.statusCode >= 300) {
@@ -13689,59 +12619,28 @@ const deserializeAws_restJson1UntagResourceCommandError = async (output, context
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1UpdateAliasCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -13789,67 +12688,31 @@ const deserializeAws_restJson1UpdateAliasCommandError = async (output, context) 
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "PreconditionFailedException":
         case "com.amazonaws.lambda#PreconditionFailedException":
-            response = {
-                ...(await deserializeAws_restJson1PreconditionFailedExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1PreconditionFailedExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1UpdateCodeSigningConfigCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -13877,43 +12740,22 @@ const deserializeAws_restJson1UpdateCodeSigningConfigCommandError = async (outpu
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1UpdateEventSourceMappingCommand = async (output, context) => {
     if (output.statusCode !== 202 && output.statusCode >= 300) {
@@ -14029,67 +12871,31 @@ const deserializeAws_restJson1UpdateEventSourceMappingCommandError = async (outp
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceInUseException":
         case "com.amazonaws.lambda#ResourceInUseException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceInUseExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceInUseExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1UpdateFunctionCodeCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -14241,99 +13047,43 @@ const deserializeAws_restJson1UpdateFunctionCodeCommandError = async (output, co
     switch (errorCode) {
         case "CodeSigningConfigNotFoundException":
         case "com.amazonaws.lambda#CodeSigningConfigNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1CodeSigningConfigNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1CodeSigningConfigNotFoundExceptionResponse(parsedOutput, context);
         case "CodeStorageExceededException":
         case "com.amazonaws.lambda#CodeStorageExceededException":
-            response = {
-                ...(await deserializeAws_restJson1CodeStorageExceededExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1CodeStorageExceededExceptionResponse(parsedOutput, context);
         case "CodeVerificationFailedException":
         case "com.amazonaws.lambda#CodeVerificationFailedException":
-            response = {
-                ...(await deserializeAws_restJson1CodeVerificationFailedExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1CodeVerificationFailedExceptionResponse(parsedOutput, context);
         case "InvalidCodeSignatureException":
         case "com.amazonaws.lambda#InvalidCodeSignatureException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidCodeSignatureExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidCodeSignatureExceptionResponse(parsedOutput, context);
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "PreconditionFailedException":
         case "com.amazonaws.lambda#PreconditionFailedException":
-            response = {
-                ...(await deserializeAws_restJson1PreconditionFailedExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1PreconditionFailedExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1UpdateFunctionConfigurationCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -14485,91 +13235,40 @@ const deserializeAws_restJson1UpdateFunctionConfigurationCommandError = async (o
     switch (errorCode) {
         case "CodeSigningConfigNotFoundException":
         case "com.amazonaws.lambda#CodeSigningConfigNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1CodeSigningConfigNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1CodeSigningConfigNotFoundExceptionResponse(parsedOutput, context);
         case "CodeVerificationFailedException":
         case "com.amazonaws.lambda#CodeVerificationFailedException":
-            response = {
-                ...(await deserializeAws_restJson1CodeVerificationFailedExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1CodeVerificationFailedExceptionResponse(parsedOutput, context);
         case "InvalidCodeSignatureException":
         case "com.amazonaws.lambda#InvalidCodeSignatureException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidCodeSignatureExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidCodeSignatureExceptionResponse(parsedOutput, context);
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "PreconditionFailedException":
         case "com.amazonaws.lambda#PreconditionFailedException":
-            response = {
-                ...(await deserializeAws_restJson1PreconditionFailedExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1PreconditionFailedExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1UpdateFunctionEventInvokeConfigCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -14613,68 +13312,31 @@ const deserializeAws_restJson1UpdateFunctionEventInvokeConfigCommandError = asyn
     switch (errorCode) {
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.lambda#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
-            response = {
-                ...(await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.lambda#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1CodeSigningConfigNotFoundExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "CodeSigningConfigNotFoundException",
-        $fault: "client",
-        $metadata: deserializeMetadata(parsedOutput),
-        Message: undefined,
-        Type: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Message !== undefined && data.Message !== null) {
         contents.Message = smithy_client_1.expectString(data.Message);
@@ -14682,16 +13344,14 @@ const deserializeAws_restJson1CodeSigningConfigNotFoundExceptionResponse = async
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
     }
-    return contents;
+    const exception = new models_0_1.CodeSigningConfigNotFoundException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1CodeStorageExceededExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "CodeStorageExceededException",
-        $fault: "client",
-        $metadata: deserializeMetadata(parsedOutput),
-        Type: undefined,
-        message: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
@@ -14699,16 +13359,14 @@ const deserializeAws_restJson1CodeStorageExceededExceptionResponse = async (pars
     if (data.message !== undefined && data.message !== null) {
         contents.message = smithy_client_1.expectString(data.message);
     }
-    return contents;
+    const exception = new models_0_1.CodeStorageExceededException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1CodeVerificationFailedExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "CodeVerificationFailedException",
-        $fault: "client",
-        $metadata: deserializeMetadata(parsedOutput),
-        Message: undefined,
-        Type: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Message !== undefined && data.Message !== null) {
         contents.Message = smithy_client_1.expectString(data.Message);
@@ -14716,16 +13374,14 @@ const deserializeAws_restJson1CodeVerificationFailedExceptionResponse = async (p
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
     }
-    return contents;
+    const exception = new models_0_1.CodeVerificationFailedException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1EC2AccessDeniedExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "EC2AccessDeniedException",
-        $fault: "server",
-        $metadata: deserializeMetadata(parsedOutput),
-        Message: undefined,
-        Type: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Message !== undefined && data.Message !== null) {
         contents.Message = smithy_client_1.expectString(data.Message);
@@ -14733,16 +13389,14 @@ const deserializeAws_restJson1EC2AccessDeniedExceptionResponse = async (parsedOu
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
     }
-    return contents;
+    const exception = new models_0_1.EC2AccessDeniedException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1EC2ThrottledExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "EC2ThrottledException",
-        $fault: "server",
-        $metadata: deserializeMetadata(parsedOutput),
-        Message: undefined,
-        Type: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Message !== undefined && data.Message !== null) {
         contents.Message = smithy_client_1.expectString(data.Message);
@@ -14750,17 +13404,14 @@ const deserializeAws_restJson1EC2ThrottledExceptionResponse = async (parsedOutpu
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
     }
-    return contents;
+    const exception = new models_0_1.EC2ThrottledException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1EC2UnexpectedExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "EC2UnexpectedException",
-        $fault: "server",
-        $metadata: deserializeMetadata(parsedOutput),
-        EC2ErrorCode: undefined,
-        Message: undefined,
-        Type: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.EC2ErrorCode !== undefined && data.EC2ErrorCode !== null) {
         contents.EC2ErrorCode = smithy_client_1.expectString(data.EC2ErrorCode);
@@ -14771,16 +13422,14 @@ const deserializeAws_restJson1EC2UnexpectedExceptionResponse = async (parsedOutp
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
     }
-    return contents;
+    const exception = new models_0_1.EC2UnexpectedException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1EFSIOExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "EFSIOException",
-        $fault: "client",
-        $metadata: deserializeMetadata(parsedOutput),
-        Message: undefined,
-        Type: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Message !== undefined && data.Message !== null) {
         contents.Message = smithy_client_1.expectString(data.Message);
@@ -14788,16 +13437,14 @@ const deserializeAws_restJson1EFSIOExceptionResponse = async (parsedOutput, cont
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
     }
-    return contents;
+    const exception = new models_0_1.EFSIOException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1EFSMountConnectivityExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "EFSMountConnectivityException",
-        $fault: "client",
-        $metadata: deserializeMetadata(parsedOutput),
-        Message: undefined,
-        Type: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Message !== undefined && data.Message !== null) {
         contents.Message = smithy_client_1.expectString(data.Message);
@@ -14805,16 +13452,14 @@ const deserializeAws_restJson1EFSMountConnectivityExceptionResponse = async (par
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
     }
-    return contents;
+    const exception = new models_0_1.EFSMountConnectivityException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1EFSMountFailureExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "EFSMountFailureException",
-        $fault: "client",
-        $metadata: deserializeMetadata(parsedOutput),
-        Message: undefined,
-        Type: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Message !== undefined && data.Message !== null) {
         contents.Message = smithy_client_1.expectString(data.Message);
@@ -14822,16 +13467,14 @@ const deserializeAws_restJson1EFSMountFailureExceptionResponse = async (parsedOu
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
     }
-    return contents;
+    const exception = new models_0_1.EFSMountFailureException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1EFSMountTimeoutExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "EFSMountTimeoutException",
-        $fault: "client",
-        $metadata: deserializeMetadata(parsedOutput),
-        Message: undefined,
-        Type: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Message !== undefined && data.Message !== null) {
         contents.Message = smithy_client_1.expectString(data.Message);
@@ -14839,16 +13482,14 @@ const deserializeAws_restJson1EFSMountTimeoutExceptionResponse = async (parsedOu
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
     }
-    return contents;
+    const exception = new models_0_1.EFSMountTimeoutException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1ENILimitReachedExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "ENILimitReachedException",
-        $fault: "server",
-        $metadata: deserializeMetadata(parsedOutput),
-        Message: undefined,
-        Type: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Message !== undefined && data.Message !== null) {
         contents.Message = smithy_client_1.expectString(data.Message);
@@ -14856,16 +13497,14 @@ const deserializeAws_restJson1ENILimitReachedExceptionResponse = async (parsedOu
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
     }
-    return contents;
+    const exception = new models_0_1.ENILimitReachedException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1InvalidCodeSignatureExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "InvalidCodeSignatureException",
-        $fault: "client",
-        $metadata: deserializeMetadata(parsedOutput),
-        Message: undefined,
-        Type: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Message !== undefined && data.Message !== null) {
         contents.Message = smithy_client_1.expectString(data.Message);
@@ -14873,16 +13512,14 @@ const deserializeAws_restJson1InvalidCodeSignatureExceptionResponse = async (par
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
     }
-    return contents;
+    const exception = new models_0_1.InvalidCodeSignatureException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1InvalidParameterValueExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "InvalidParameterValueException",
-        $fault: "client",
-        $metadata: deserializeMetadata(parsedOutput),
-        Type: undefined,
-        message: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
@@ -14890,16 +13527,14 @@ const deserializeAws_restJson1InvalidParameterValueExceptionResponse = async (pa
     if (data.message !== undefined && data.message !== null) {
         contents.message = smithy_client_1.expectString(data.message);
     }
-    return contents;
+    const exception = new models_0_1.InvalidParameterValueException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1InvalidRequestContentExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "InvalidRequestContentException",
-        $fault: "client",
-        $metadata: deserializeMetadata(parsedOutput),
-        Type: undefined,
-        message: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
@@ -14907,16 +13542,14 @@ const deserializeAws_restJson1InvalidRequestContentExceptionResponse = async (pa
     if (data.message !== undefined && data.message !== null) {
         contents.message = smithy_client_1.expectString(data.message);
     }
-    return contents;
+    const exception = new models_0_1.InvalidRequestContentException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1InvalidRuntimeExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "InvalidRuntimeException",
-        $fault: "server",
-        $metadata: deserializeMetadata(parsedOutput),
-        Message: undefined,
-        Type: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Message !== undefined && data.Message !== null) {
         contents.Message = smithy_client_1.expectString(data.Message);
@@ -14924,16 +13557,14 @@ const deserializeAws_restJson1InvalidRuntimeExceptionResponse = async (parsedOut
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
     }
-    return contents;
+    const exception = new models_0_1.InvalidRuntimeException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1InvalidSecurityGroupIDExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "InvalidSecurityGroupIDException",
-        $fault: "server",
-        $metadata: deserializeMetadata(parsedOutput),
-        Message: undefined,
-        Type: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Message !== undefined && data.Message !== null) {
         contents.Message = smithy_client_1.expectString(data.Message);
@@ -14941,16 +13572,14 @@ const deserializeAws_restJson1InvalidSecurityGroupIDExceptionResponse = async (p
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
     }
-    return contents;
+    const exception = new models_0_1.InvalidSecurityGroupIDException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1InvalidSubnetIDExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "InvalidSubnetIDException",
-        $fault: "server",
-        $metadata: deserializeMetadata(parsedOutput),
-        Message: undefined,
-        Type: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Message !== undefined && data.Message !== null) {
         contents.Message = smithy_client_1.expectString(data.Message);
@@ -14958,16 +13587,14 @@ const deserializeAws_restJson1InvalidSubnetIDExceptionResponse = async (parsedOu
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
     }
-    return contents;
+    const exception = new models_0_1.InvalidSubnetIDException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1InvalidZipFileExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "InvalidZipFileException",
-        $fault: "server",
-        $metadata: deserializeMetadata(parsedOutput),
-        Message: undefined,
-        Type: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Message !== undefined && data.Message !== null) {
         contents.Message = smithy_client_1.expectString(data.Message);
@@ -14975,16 +13602,14 @@ const deserializeAws_restJson1InvalidZipFileExceptionResponse = async (parsedOut
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
     }
-    return contents;
+    const exception = new models_0_1.InvalidZipFileException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1KMSAccessDeniedExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "KMSAccessDeniedException",
-        $fault: "server",
-        $metadata: deserializeMetadata(parsedOutput),
-        Message: undefined,
-        Type: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Message !== undefined && data.Message !== null) {
         contents.Message = smithy_client_1.expectString(data.Message);
@@ -14992,16 +13617,14 @@ const deserializeAws_restJson1KMSAccessDeniedExceptionResponse = async (parsedOu
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
     }
-    return contents;
+    const exception = new models_0_1.KMSAccessDeniedException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1KMSDisabledExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "KMSDisabledException",
-        $fault: "server",
-        $metadata: deserializeMetadata(parsedOutput),
-        Message: undefined,
-        Type: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Message !== undefined && data.Message !== null) {
         contents.Message = smithy_client_1.expectString(data.Message);
@@ -15009,16 +13632,14 @@ const deserializeAws_restJson1KMSDisabledExceptionResponse = async (parsedOutput
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
     }
-    return contents;
+    const exception = new models_0_1.KMSDisabledException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1KMSInvalidStateExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "KMSInvalidStateException",
-        $fault: "server",
-        $metadata: deserializeMetadata(parsedOutput),
-        Message: undefined,
-        Type: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Message !== undefined && data.Message !== null) {
         contents.Message = smithy_client_1.expectString(data.Message);
@@ -15026,16 +13647,14 @@ const deserializeAws_restJson1KMSInvalidStateExceptionResponse = async (parsedOu
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
     }
-    return contents;
+    const exception = new models_0_1.KMSInvalidStateException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1KMSNotFoundExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "KMSNotFoundException",
-        $fault: "server",
-        $metadata: deserializeMetadata(parsedOutput),
-        Message: undefined,
-        Type: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Message !== undefined && data.Message !== null) {
         contents.Message = smithy_client_1.expectString(data.Message);
@@ -15043,16 +13662,14 @@ const deserializeAws_restJson1KMSNotFoundExceptionResponse = async (parsedOutput
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
     }
-    return contents;
+    const exception = new models_0_1.KMSNotFoundException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1PolicyLengthExceededExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "PolicyLengthExceededException",
-        $fault: "client",
-        $metadata: deserializeMetadata(parsedOutput),
-        Type: undefined,
-        message: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
@@ -15060,16 +13677,14 @@ const deserializeAws_restJson1PolicyLengthExceededExceptionResponse = async (par
     if (data.message !== undefined && data.message !== null) {
         contents.message = smithy_client_1.expectString(data.message);
     }
-    return contents;
+    const exception = new models_0_1.PolicyLengthExceededException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1PreconditionFailedExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "PreconditionFailedException",
-        $fault: "client",
-        $metadata: deserializeMetadata(parsedOutput),
-        Type: undefined,
-        message: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
@@ -15077,16 +13692,14 @@ const deserializeAws_restJson1PreconditionFailedExceptionResponse = async (parse
     if (data.message !== undefined && data.message !== null) {
         contents.message = smithy_client_1.expectString(data.message);
     }
-    return contents;
+    const exception = new models_0_1.PreconditionFailedException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1ProvisionedConcurrencyConfigNotFoundExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "ProvisionedConcurrencyConfigNotFoundException",
-        $fault: "client",
-        $metadata: deserializeMetadata(parsedOutput),
-        Type: undefined,
-        message: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
@@ -15094,16 +13707,14 @@ const deserializeAws_restJson1ProvisionedConcurrencyConfigNotFoundExceptionRespo
     if (data.message !== undefined && data.message !== null) {
         contents.message = smithy_client_1.expectString(data.message);
     }
-    return contents;
+    const exception = new models_0_1.ProvisionedConcurrencyConfigNotFoundException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1RequestTooLargeExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "RequestTooLargeException",
-        $fault: "client",
-        $metadata: deserializeMetadata(parsedOutput),
-        Type: undefined,
-        message: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
@@ -15111,16 +13722,14 @@ const deserializeAws_restJson1RequestTooLargeExceptionResponse = async (parsedOu
     if (data.message !== undefined && data.message !== null) {
         contents.message = smithy_client_1.expectString(data.message);
     }
-    return contents;
+    const exception = new models_0_1.RequestTooLargeException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1ResourceConflictExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "ResourceConflictException",
-        $fault: "client",
-        $metadata: deserializeMetadata(parsedOutput),
-        Type: undefined,
-        message: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
@@ -15128,16 +13737,14 @@ const deserializeAws_restJson1ResourceConflictExceptionResponse = async (parsedO
     if (data.message !== undefined && data.message !== null) {
         contents.message = smithy_client_1.expectString(data.message);
     }
-    return contents;
+    const exception = new models_0_1.ResourceConflictException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1ResourceInUseExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "ResourceInUseException",
-        $fault: "client",
-        $metadata: deserializeMetadata(parsedOutput),
-        Message: undefined,
-        Type: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Message !== undefined && data.Message !== null) {
         contents.Message = smithy_client_1.expectString(data.Message);
@@ -15145,16 +13752,14 @@ const deserializeAws_restJson1ResourceInUseExceptionResponse = async (parsedOutp
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
     }
-    return contents;
+    const exception = new models_0_1.ResourceInUseException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1ResourceNotFoundExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "ResourceNotFoundException",
-        $fault: "client",
-        $metadata: deserializeMetadata(parsedOutput),
-        Message: undefined,
-        Type: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Message !== undefined && data.Message !== null) {
         contents.Message = smithy_client_1.expectString(data.Message);
@@ -15162,16 +13767,14 @@ const deserializeAws_restJson1ResourceNotFoundExceptionResponse = async (parsedO
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
     }
-    return contents;
+    const exception = new models_0_1.ResourceNotFoundException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1ResourceNotReadyExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "ResourceNotReadyException",
-        $fault: "server",
-        $metadata: deserializeMetadata(parsedOutput),
-        Type: undefined,
-        message: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
@@ -15179,16 +13782,14 @@ const deserializeAws_restJson1ResourceNotReadyExceptionResponse = async (parsedO
     if (data.message !== undefined && data.message !== null) {
         contents.message = smithy_client_1.expectString(data.message);
     }
-    return contents;
+    const exception = new models_0_1.ResourceNotReadyException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1ServiceExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "ServiceException",
-        $fault: "server",
-        $metadata: deserializeMetadata(parsedOutput),
-        Message: undefined,
-        Type: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Message !== undefined && data.Message !== null) {
         contents.Message = smithy_client_1.expectString(data.Message);
@@ -15196,16 +13797,14 @@ const deserializeAws_restJson1ServiceExceptionResponse = async (parsedOutput, co
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
     }
-    return contents;
+    const exception = new models_0_1.ServiceException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1SubnetIPAddressLimitReachedExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "SubnetIPAddressLimitReachedException",
-        $fault: "server",
-        $metadata: deserializeMetadata(parsedOutput),
-        Message: undefined,
-        Type: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Message !== undefined && data.Message !== null) {
         contents.Message = smithy_client_1.expectString(data.Message);
@@ -15213,18 +13812,14 @@ const deserializeAws_restJson1SubnetIPAddressLimitReachedExceptionResponse = asy
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
     }
-    return contents;
+    const exception = new models_0_1.SubnetIPAddressLimitReachedException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1TooManyRequestsExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "TooManyRequestsException",
-        $fault: "client",
-        $metadata: deserializeMetadata(parsedOutput),
-        Reason: undefined,
-        Type: undefined,
-        message: undefined,
-        retryAfterSeconds: undefined,
-    };
+    const contents = {};
     if (parsedOutput.headers["retry-after"] !== undefined) {
         contents.retryAfterSeconds = parsedOutput.headers["retry-after"];
     }
@@ -15238,16 +13833,14 @@ const deserializeAws_restJson1TooManyRequestsExceptionResponse = async (parsedOu
     if (data.message !== undefined && data.message !== null) {
         contents.message = smithy_client_1.expectString(data.message);
     }
-    return contents;
+    const exception = new models_0_1.TooManyRequestsException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1UnsupportedMediaTypeExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "UnsupportedMediaTypeException",
-        $fault: "client",
-        $metadata: deserializeMetadata(parsedOutput),
-        Type: undefined,
-        message: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.Type !== undefined && data.Type !== null) {
         contents.Type = smithy_client_1.expectString(data.Type);
@@ -15255,7 +13848,11 @@ const deserializeAws_restJson1UnsupportedMediaTypeExceptionResponse = async (par
     if (data.message !== undefined && data.message !== null) {
         contents.message = smithy_client_1.expectString(data.message);
     }
-    return contents;
+    const exception = new models_0_1.UnsupportedMediaTypeException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const serializeAws_restJson1AdditionalVersionWeights = (input, context) => {
     return Object.entries(input).reduce((acc, [key, value]) => {
@@ -15617,7 +14214,7 @@ const deserializeAws_restJson1AliasConfiguration = (output, context) => {
     };
 };
 const deserializeAws_restJson1AliasList = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -15625,6 +14222,7 @@ const deserializeAws_restJson1AliasList = (output, context) => {
         }
         return deserializeAws_restJson1AliasConfiguration(entry, context);
     });
+    return retVal;
 };
 const deserializeAws_restJson1AliasRoutingConfiguration = (output, context) => {
     return {
@@ -15641,7 +14239,7 @@ const deserializeAws_restJson1AllowedPublishers = (output, context) => {
     };
 };
 const deserializeAws_restJson1ArchitecturesList = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -15649,6 +14247,7 @@ const deserializeAws_restJson1ArchitecturesList = (output, context) => {
         }
         return smithy_client_1.expectString(entry);
     });
+    return retVal;
 };
 const deserializeAws_restJson1CodeSigningConfig = (output, context) => {
     return {
@@ -15665,7 +14264,7 @@ const deserializeAws_restJson1CodeSigningConfig = (output, context) => {
     };
 };
 const deserializeAws_restJson1CodeSigningConfigList = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -15673,6 +14272,7 @@ const deserializeAws_restJson1CodeSigningConfigList = (output, context) => {
         }
         return deserializeAws_restJson1CodeSigningConfig(entry, context);
     });
+    return retVal;
 };
 const deserializeAws_restJson1CodeSigningPolicies = (output, context) => {
     return {
@@ -15680,7 +14280,7 @@ const deserializeAws_restJson1CodeSigningPolicies = (output, context) => {
     };
 };
 const deserializeAws_restJson1CompatibleArchitectures = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -15688,9 +14288,10 @@ const deserializeAws_restJson1CompatibleArchitectures = (output, context) => {
         }
         return smithy_client_1.expectString(entry);
     });
+    return retVal;
 };
 const deserializeAws_restJson1CompatibleRuntimes = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -15698,6 +14299,7 @@ const deserializeAws_restJson1CompatibleRuntimes = (output, context) => {
         }
         return smithy_client_1.expectString(entry);
     });
+    return retVal;
 };
 const deserializeAws_restJson1Concurrency = (output, context) => {
     return {
@@ -15720,7 +14322,7 @@ const deserializeAws_restJson1DestinationConfig = (output, context) => {
     };
 };
 const deserializeAws_restJson1EndpointLists = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -15728,6 +14330,7 @@ const deserializeAws_restJson1EndpointLists = (output, context) => {
         }
         return smithy_client_1.expectString(entry);
     });
+    return retVal;
 };
 const deserializeAws_restJson1Endpoints = (output, context) => {
     return Object.entries(output).reduce((acc, [key, value]) => {
@@ -15813,7 +14416,7 @@ const deserializeAws_restJson1EventSourceMappingConfiguration = (output, context
     };
 };
 const deserializeAws_restJson1EventSourceMappingsList = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -15821,6 +14424,7 @@ const deserializeAws_restJson1EventSourceMappingsList = (output, context) => {
         }
         return deserializeAws_restJson1EventSourceMappingConfiguration(entry, context);
     });
+    return retVal;
 };
 const deserializeAws_restJson1FileSystemConfig = (output, context) => {
     return {
@@ -15829,7 +14433,7 @@ const deserializeAws_restJson1FileSystemConfig = (output, context) => {
     };
 };
 const deserializeAws_restJson1FileSystemConfigList = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -15837,6 +14441,7 @@ const deserializeAws_restJson1FileSystemConfigList = (output, context) => {
         }
         return deserializeAws_restJson1FileSystemConfig(entry, context);
     });
+    return retVal;
 };
 const deserializeAws_restJson1Filter = (output, context) => {
     return {
@@ -15851,7 +14456,7 @@ const deserializeAws_restJson1FilterCriteria = (output, context) => {
     };
 };
 const deserializeAws_restJson1FilterList = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -15859,9 +14464,10 @@ const deserializeAws_restJson1FilterList = (output, context) => {
         }
         return deserializeAws_restJson1Filter(entry, context);
     });
+    return retVal;
 };
 const deserializeAws_restJson1FunctionArnList = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -15869,6 +14475,7 @@ const deserializeAws_restJson1FunctionArnList = (output, context) => {
         }
         return smithy_client_1.expectString(entry);
     });
+    return retVal;
 };
 const deserializeAws_restJson1FunctionCodeLocation = (output, context) => {
     return {
@@ -15944,7 +14551,7 @@ const deserializeAws_restJson1FunctionEventInvokeConfig = (output, context) => {
     };
 };
 const deserializeAws_restJson1FunctionEventInvokeConfigList = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -15952,9 +14559,10 @@ const deserializeAws_restJson1FunctionEventInvokeConfigList = (output, context) 
         }
         return deserializeAws_restJson1FunctionEventInvokeConfig(entry, context);
     });
+    return retVal;
 };
 const deserializeAws_restJson1FunctionList = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -15962,9 +14570,10 @@ const deserializeAws_restJson1FunctionList = (output, context) => {
         }
         return deserializeAws_restJson1FunctionConfiguration(entry, context);
     });
+    return retVal;
 };
 const deserializeAws_restJson1FunctionResponseTypeList = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -15972,6 +14581,7 @@ const deserializeAws_restJson1FunctionResponseTypeList = (output, context) => {
         }
         return smithy_client_1.expectString(entry);
     });
+    return retVal;
 };
 const deserializeAws_restJson1ImageConfig = (output, context) => {
     return {
@@ -16009,7 +14619,7 @@ const deserializeAws_restJson1Layer = (output, context) => {
     };
 };
 const deserializeAws_restJson1LayersList = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -16017,6 +14627,7 @@ const deserializeAws_restJson1LayersList = (output, context) => {
         }
         return deserializeAws_restJson1LayersListItem(entry, context);
     });
+    return retVal;
 };
 const deserializeAws_restJson1LayersListItem = (output, context) => {
     return {
@@ -16028,7 +14639,7 @@ const deserializeAws_restJson1LayersListItem = (output, context) => {
     };
 };
 const deserializeAws_restJson1LayersReferenceList = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -16036,6 +14647,7 @@ const deserializeAws_restJson1LayersReferenceList = (output, context) => {
         }
         return deserializeAws_restJson1Layer(entry, context);
     });
+    return retVal;
 };
 const deserializeAws_restJson1LayerVersionContentOutput = (output, context) => {
     return {
@@ -16047,7 +14659,7 @@ const deserializeAws_restJson1LayerVersionContentOutput = (output, context) => {
     };
 };
 const deserializeAws_restJson1LayerVersionsList = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -16055,6 +14667,7 @@ const deserializeAws_restJson1LayerVersionsList = (output, context) => {
         }
         return deserializeAws_restJson1LayerVersionsListItem(entry, context);
     });
+    return retVal;
 };
 const deserializeAws_restJson1LayerVersionsListItem = (output, context) => {
     return {
@@ -16082,7 +14695,7 @@ const deserializeAws_restJson1OnSuccess = (output, context) => {
     };
 };
 const deserializeAws_restJson1ProvisionedConcurrencyConfigList = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -16090,6 +14703,7 @@ const deserializeAws_restJson1ProvisionedConcurrencyConfigList = (output, contex
         }
         return deserializeAws_restJson1ProvisionedConcurrencyConfigListItem(entry, context);
     });
+    return retVal;
 };
 const deserializeAws_restJson1ProvisionedConcurrencyConfigListItem = (output, context) => {
     return {
@@ -16103,7 +14717,7 @@ const deserializeAws_restJson1ProvisionedConcurrencyConfigListItem = (output, co
     };
 };
 const deserializeAws_restJson1Queues = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -16111,9 +14725,10 @@ const deserializeAws_restJson1Queues = (output, context) => {
         }
         return smithy_client_1.expectString(entry);
     });
+    return retVal;
 };
 const deserializeAws_restJson1SecurityGroupIds = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -16121,6 +14736,7 @@ const deserializeAws_restJson1SecurityGroupIds = (output, context) => {
         }
         return smithy_client_1.expectString(entry);
     });
+    return retVal;
 };
 const deserializeAws_restJson1SelfManagedEventSource = (output, context) => {
     return {
@@ -16130,7 +14746,7 @@ const deserializeAws_restJson1SelfManagedEventSource = (output, context) => {
     };
 };
 const deserializeAws_restJson1SigningProfileVersionArns = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -16138,6 +14754,7 @@ const deserializeAws_restJson1SigningProfileVersionArns = (output, context) => {
         }
         return smithy_client_1.expectString(entry);
     });
+    return retVal;
 };
 const deserializeAws_restJson1SourceAccessConfiguration = (output, context) => {
     return {
@@ -16146,7 +14763,7 @@ const deserializeAws_restJson1SourceAccessConfiguration = (output, context) => {
     };
 };
 const deserializeAws_restJson1SourceAccessConfigurations = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -16154,9 +14771,10 @@ const deserializeAws_restJson1SourceAccessConfigurations = (output, context) => 
         }
         return deserializeAws_restJson1SourceAccessConfiguration(entry, context);
     });
+    return retVal;
 };
 const deserializeAws_restJson1StringList = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -16164,9 +14782,10 @@ const deserializeAws_restJson1StringList = (output, context) => {
         }
         return smithy_client_1.expectString(entry);
     });
+    return retVal;
 };
 const deserializeAws_restJson1SubnetIds = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -16174,6 +14793,7 @@ const deserializeAws_restJson1SubnetIds = (output, context) => {
         }
         return smithy_client_1.expectString(entry);
     });
+    return retVal;
 };
 const deserializeAws_restJson1Tags = (output, context) => {
     return Object.entries(output).reduce((acc, [key, value]) => {
@@ -16187,7 +14807,7 @@ const deserializeAws_restJson1Tags = (output, context) => {
     }, {});
 };
 const deserializeAws_restJson1Topics = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -16195,6 +14815,7 @@ const deserializeAws_restJson1Topics = (output, context) => {
         }
         return smithy_client_1.expectString(entry);
     });
+    return retVal;
 };
 const deserializeAws_restJson1TracingConfigResponse = (output, context) => {
     return {
@@ -16289,14 +14910,17 @@ const util_user_agent_node_1 = __nccwpck_require__(8095);
 const util_utf8_node_1 = __nccwpck_require__(6278);
 const runtimeConfig_shared_1 = __nccwpck_require__(1438);
 const smithy_client_1 = __nccwpck_require__(4963);
+const util_defaults_mode_node_1 = __nccwpck_require__(4243);
 const getRuntimeConfig = (config) => {
     var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q;
-    smithy_client_1.emitWarningIfUnsupportedVersion(process.version);
+    const defaultsMode = util_defaults_mode_node_1.resolveDefaultsModeConfig(config);
+    const defaultConfigProvider = () => defaultsMode().then(smithy_client_1.loadConfigsForDefaultMode);
     const clientSharedValues = runtimeConfig_shared_1.getRuntimeConfig(config);
     return {
         ...clientSharedValues,
         ...config,
         runtime: "node",
+        defaultsMode,
         base64Decoder: (_a = config === null || config === void 0 ? void 0 : config.base64Decoder) !== null && _a !== void 0 ? _a : util_base64_node_1.fromBase64,
         base64Encoder: (_b = config === null || config === void 0 ? void 0 : config.base64Encoder) !== null && _b !== void 0 ? _b : util_base64_node_1.toBase64,
         bodyLengthChecker: (_c = config === null || config === void 0 ? void 0 : config.bodyLengthChecker) !== null && _c !== void 0 ? _c : util_body_length_node_1.calculateBodyLength,
@@ -16304,8 +14928,11 @@ const getRuntimeConfig = (config) => {
         defaultUserAgentProvider: (_e = config === null || config === void 0 ? void 0 : config.defaultUserAgentProvider) !== null && _e !== void 0 ? _e : util_user_agent_node_1.defaultUserAgent({ serviceId: clientSharedValues.serviceId, clientVersion: package_json_1.default.version }),
         maxAttempts: (_f = config === null || config === void 0 ? void 0 : config.maxAttempts) !== null && _f !== void 0 ? _f : node_config_provider_1.loadConfig(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
         region: (_g = config === null || config === void 0 ? void 0 : config.region) !== null && _g !== void 0 ? _g : node_config_provider_1.loadConfig(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
-        requestHandler: (_h = config === null || config === void 0 ? void 0 : config.requestHandler) !== null && _h !== void 0 ? _h : new node_http_handler_1.NodeHttpHandler(),
-        retryMode: (_j = config === null || config === void 0 ? void 0 : config.retryMode) !== null && _j !== void 0 ? _j : node_config_provider_1.loadConfig(middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS),
+        requestHandler: (_h = config === null || config === void 0 ? void 0 : config.requestHandler) !== null && _h !== void 0 ? _h : new node_http_handler_1.NodeHttpHandler(defaultConfigProvider),
+        retryMode: (_j = config === null || config === void 0 ? void 0 : config.retryMode) !== null && _j !== void 0 ? _j : node_config_provider_1.loadConfig({
+            ...middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS,
+            default: async () => (await defaultConfigProvider()).retryMode || middleware_retry_1.DEFAULT_RETRY_MODE,
+        }),
         sha256: (_k = config === null || config === void 0 ? void 0 : config.sha256) !== null && _k !== void 0 ? _k : hash_node_1.Hash.bind(null, "sha256"),
         streamCollector: (_l = config === null || config === void 0 ? void 0 : config.streamCollector) !== null && _l !== void 0 ? _l : node_http_handler_1.streamCollector,
         useDualstackEndpoint: (_m = config === null || config === void 0 ? void 0 : config.useDualstackEndpoint) !== null && _m !== void 0 ? _m : node_config_provider_1.loadConfig(config_resolver_1.NODE_USE_DUALSTACK_ENDPOINT_CONFIG_OPTIONS),
@@ -16352,8 +14979,10 @@ exports.getRuntimeConfig = getRuntimeConfig;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const tslib_1 = __nccwpck_require__(4351);
 tslib_1.__exportStar(__nccwpck_require__(2688), exports);
+tslib_1.__exportStar(__nccwpck_require__(3709), exports);
 tslib_1.__exportStar(__nccwpck_require__(7520), exports);
 tslib_1.__exportStar(__nccwpck_require__(1028), exports);
+tslib_1.__exportStar(__nccwpck_require__(1405), exports);
 
 
 /***/ }),
@@ -16416,6 +15045,68 @@ const waitUntilFunctionActive = async (params, input) => {
     return util_waiter_1.checkExceptions(result);
 };
 exports.waitUntilFunctionActive = waitUntilFunctionActive;
+
+
+/***/ }),
+
+/***/ 3709:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.waitUntilFunctionActiveV2 = exports.waitForFunctionActiveV2 = void 0;
+const util_waiter_1 = __nccwpck_require__(1627);
+const GetFunctionCommand_1 = __nccwpck_require__(1272);
+const checkState = async (client, input) => {
+    let reason;
+    try {
+        const result = await client.send(new GetFunctionCommand_1.GetFunctionCommand(input));
+        reason = result;
+        try {
+            const returnComparator = () => {
+                return result.Configuration.State;
+            };
+            if (returnComparator() === "Active") {
+                return { state: util_waiter_1.WaiterState.SUCCESS, reason };
+            }
+        }
+        catch (e) { }
+        try {
+            const returnComparator = () => {
+                return result.Configuration.State;
+            };
+            if (returnComparator() === "Failed") {
+                return { state: util_waiter_1.WaiterState.FAILURE, reason };
+            }
+        }
+        catch (e) { }
+        try {
+            const returnComparator = () => {
+                return result.Configuration.State;
+            };
+            if (returnComparator() === "Pending") {
+                return { state: util_waiter_1.WaiterState.RETRY, reason };
+            }
+        }
+        catch (e) { }
+    }
+    catch (exception) {
+        reason = exception;
+    }
+    return { state: util_waiter_1.WaiterState.RETRY, reason };
+};
+const waitForFunctionActiveV2 = async (params, input) => {
+    const serviceDefaults = { minDelay: 1, maxDelay: 120 };
+    return util_waiter_1.createWaiter({ ...serviceDefaults, ...params }, input, checkState);
+};
+exports.waitForFunctionActiveV2 = waitForFunctionActiveV2;
+const waitUntilFunctionActiveV2 = async (params, input) => {
+    const serviceDefaults = { minDelay: 1, maxDelay: 120 };
+    const result = await util_waiter_1.createWaiter({ ...serviceDefaults, ...params }, input, checkState);
+    return util_waiter_1.checkExceptions(result);
+};
+exports.waitUntilFunctionActiveV2 = waitUntilFunctionActiveV2;
 
 
 /***/ }),
@@ -16517,6 +15208,68 @@ const waitUntilFunctionUpdated = async (params, input) => {
     return util_waiter_1.checkExceptions(result);
 };
 exports.waitUntilFunctionUpdated = waitUntilFunctionUpdated;
+
+
+/***/ }),
+
+/***/ 1405:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.waitUntilFunctionUpdatedV2 = exports.waitForFunctionUpdatedV2 = void 0;
+const util_waiter_1 = __nccwpck_require__(1627);
+const GetFunctionCommand_1 = __nccwpck_require__(1272);
+const checkState = async (client, input) => {
+    let reason;
+    try {
+        const result = await client.send(new GetFunctionCommand_1.GetFunctionCommand(input));
+        reason = result;
+        try {
+            const returnComparator = () => {
+                return result.Configuration.LastUpdateStatus;
+            };
+            if (returnComparator() === "Successful") {
+                return { state: util_waiter_1.WaiterState.SUCCESS, reason };
+            }
+        }
+        catch (e) { }
+        try {
+            const returnComparator = () => {
+                return result.Configuration.LastUpdateStatus;
+            };
+            if (returnComparator() === "Failed") {
+                return { state: util_waiter_1.WaiterState.FAILURE, reason };
+            }
+        }
+        catch (e) { }
+        try {
+            const returnComparator = () => {
+                return result.Configuration.LastUpdateStatus;
+            };
+            if (returnComparator() === "InProgress") {
+                return { state: util_waiter_1.WaiterState.RETRY, reason };
+            }
+        }
+        catch (e) { }
+    }
+    catch (exception) {
+        reason = exception;
+    }
+    return { state: util_waiter_1.WaiterState.RETRY, reason };
+};
+const waitForFunctionUpdatedV2 = async (params, input) => {
+    const serviceDefaults = { minDelay: 1, maxDelay: 120 };
+    return util_waiter_1.createWaiter({ ...serviceDefaults, ...params }, input, checkState);
+};
+exports.waitForFunctionUpdatedV2 = waitForFunctionUpdatedV2;
+const waitUntilFunctionUpdatedV2 = async (params, input) => {
+    const serviceDefaults = { minDelay: 1, maxDelay: 120 };
+    const result = await util_waiter_1.createWaiter({ ...serviceDefaults, ...params }, input, checkState);
+    return util_waiter_1.checkExceptions(result);
+};
+exports.waitUntilFunctionUpdatedV2 = waitUntilFunctionUpdatedV2;
 
 
 /***/ }),
@@ -16962,6 +15715,15 @@ const regionHash = {
         ],
         signingRegion: "us-east-2",
     },
+    "us-gov-east-1": {
+        variants: [
+            {
+                hostname: "portal.sso.us-gov-east-1.amazonaws.com",
+                tags: [],
+            },
+        ],
+        signingRegion: "us-gov-east-1",
+    },
     "us-gov-west-1": {
         variants: [
             {
@@ -17117,12 +15879,34 @@ exports.defaultRegionInfoProvider = defaultRegionInfoProvider;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.SSOServiceException = void 0;
 const tslib_1 = __nccwpck_require__(4351);
 tslib_1.__exportStar(__nccwpck_require__(9838), exports);
 tslib_1.__exportStar(__nccwpck_require__(1057), exports);
 tslib_1.__exportStar(__nccwpck_require__(5706), exports);
 tslib_1.__exportStar(__nccwpck_require__(4952), exports);
 tslib_1.__exportStar(__nccwpck_require__(6773), exports);
+var SSOServiceException_1 = __nccwpck_require__(1517);
+Object.defineProperty(exports, "SSOServiceException", ({ enumerable: true, get: function () { return SSOServiceException_1.SSOServiceException; } }));
+
+
+/***/ }),
+
+/***/ 1517:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.SSOServiceException = void 0;
+const smithy_client_1 = __nccwpck_require__(4963);
+class SSOServiceException extends smithy_client_1.ServiceException {
+    constructor(options) {
+        super(options);
+        Object.setPrototypeOf(this, SSOServiceException.prototype);
+    }
+}
+exports.SSOServiceException = SSOServiceException;
 
 
 /***/ }),
@@ -17147,6 +15931,7 @@ tslib_1.__exportStar(__nccwpck_require__(6390), exports);
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.LogoutRequest = exports.ListAccountsResponse = exports.ListAccountsRequest = exports.ListAccountRolesResponse = exports.RoleInfo = exports.ListAccountRolesRequest = exports.UnauthorizedException = exports.TooManyRequestsException = exports.ResourceNotFoundException = exports.InvalidRequestException = exports.GetRoleCredentialsResponse = exports.RoleCredentials = exports.GetRoleCredentialsRequest = exports.AccountInfo = void 0;
 const smithy_client_1 = __nccwpck_require__(4963);
+const SSOServiceException_1 = __nccwpck_require__(1517);
 var AccountInfo;
 (function (AccountInfo) {
     AccountInfo.filterSensitiveLog = (obj) => ({
@@ -17175,30 +15960,58 @@ var GetRoleCredentialsResponse;
         ...(obj.roleCredentials && { roleCredentials: RoleCredentials.filterSensitiveLog(obj.roleCredentials) }),
     });
 })(GetRoleCredentialsResponse = exports.GetRoleCredentialsResponse || (exports.GetRoleCredentialsResponse = {}));
-var InvalidRequestException;
-(function (InvalidRequestException) {
-    InvalidRequestException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(InvalidRequestException = exports.InvalidRequestException || (exports.InvalidRequestException = {}));
-var ResourceNotFoundException;
-(function (ResourceNotFoundException) {
-    ResourceNotFoundException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ResourceNotFoundException = exports.ResourceNotFoundException || (exports.ResourceNotFoundException = {}));
-var TooManyRequestsException;
-(function (TooManyRequestsException) {
-    TooManyRequestsException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(TooManyRequestsException = exports.TooManyRequestsException || (exports.TooManyRequestsException = {}));
-var UnauthorizedException;
-(function (UnauthorizedException) {
-    UnauthorizedException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(UnauthorizedException = exports.UnauthorizedException || (exports.UnauthorizedException = {}));
+class InvalidRequestException extends SSOServiceException_1.SSOServiceException {
+    constructor(opts) {
+        super({
+            name: "InvalidRequestException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "InvalidRequestException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, InvalidRequestException.prototype);
+    }
+}
+exports.InvalidRequestException = InvalidRequestException;
+class ResourceNotFoundException extends SSOServiceException_1.SSOServiceException {
+    constructor(opts) {
+        super({
+            name: "ResourceNotFoundException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "ResourceNotFoundException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, ResourceNotFoundException.prototype);
+    }
+}
+exports.ResourceNotFoundException = ResourceNotFoundException;
+class TooManyRequestsException extends SSOServiceException_1.SSOServiceException {
+    constructor(opts) {
+        super({
+            name: "TooManyRequestsException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "TooManyRequestsException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, TooManyRequestsException.prototype);
+    }
+}
+exports.TooManyRequestsException = TooManyRequestsException;
+class UnauthorizedException extends SSOServiceException_1.SSOServiceException {
+    constructor(opts) {
+        super({
+            name: "UnauthorizedException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "UnauthorizedException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, UnauthorizedException.prototype);
+    }
+}
+exports.UnauthorizedException = UnauthorizedException;
 var ListAccountRolesRequest;
 (function (ListAccountRolesRequest) {
     ListAccountRolesRequest.filterSensitiveLog = (obj) => ({
@@ -17361,6 +16174,8 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.deserializeAws_restJson1LogoutCommand = exports.deserializeAws_restJson1ListAccountsCommand = exports.deserializeAws_restJson1ListAccountRolesCommand = exports.deserializeAws_restJson1GetRoleCredentialsCommand = exports.serializeAws_restJson1LogoutCommand = exports.serializeAws_restJson1ListAccountsCommand = exports.serializeAws_restJson1ListAccountRolesCommand = exports.serializeAws_restJson1GetRoleCredentialsCommand = void 0;
 const protocol_http_1 = __nccwpck_require__(223);
 const smithy_client_1 = __nccwpck_require__(4963);
+const models_0_1 = __nccwpck_require__(6390);
+const SSOServiceException_1 = __nccwpck_require__(1517);
 const serializeAws_restJson1GetRoleCredentialsCommand = async (input, context) => {
     const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
@@ -17475,51 +16290,25 @@ const deserializeAws_restJson1GetRoleCredentialsCommandError = async (output, co
     switch (errorCode) {
         case "InvalidRequestException":
         case "com.amazonaws.sso#InvalidRequestException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidRequestExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidRequestExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.sso#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.sso#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         case "UnauthorizedException":
         case "com.amazonaws.sso#UnauthorizedException":
-            response = {
-                ...(await deserializeAws_restJson1UnauthorizedExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1UnauthorizedExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new SSOServiceException_1.SSOServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1ListAccountRolesCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -17551,51 +16340,25 @@ const deserializeAws_restJson1ListAccountRolesCommandError = async (output, cont
     switch (errorCode) {
         case "InvalidRequestException":
         case "com.amazonaws.sso#InvalidRequestException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidRequestExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidRequestExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.sso#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.sso#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         case "UnauthorizedException":
         case "com.amazonaws.sso#UnauthorizedException":
-            response = {
-                ...(await deserializeAws_restJson1UnauthorizedExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1UnauthorizedExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new SSOServiceException_1.SSOServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1ListAccountsCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -17627,51 +16390,25 @@ const deserializeAws_restJson1ListAccountsCommandError = async (output, context)
     switch (errorCode) {
         case "InvalidRequestException":
         case "com.amazonaws.sso#InvalidRequestException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidRequestExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidRequestExceptionResponse(parsedOutput, context);
         case "ResourceNotFoundException":
         case "com.amazonaws.sso#ResourceNotFoundException":
-            response = {
-                ...(await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.sso#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         case "UnauthorizedException":
         case "com.amazonaws.sso#UnauthorizedException":
-            response = {
-                ...(await deserializeAws_restJson1UnauthorizedExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1UnauthorizedExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new SSOServiceException_1.SSOServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1LogoutCommand = async (output, context) => {
     if (output.statusCode !== 200 && output.statusCode >= 300) {
@@ -17695,95 +16432,70 @@ const deserializeAws_restJson1LogoutCommandError = async (output, context) => {
     switch (errorCode) {
         case "InvalidRequestException":
         case "com.amazonaws.sso#InvalidRequestException":
-            response = {
-                ...(await deserializeAws_restJson1InvalidRequestExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1InvalidRequestExceptionResponse(parsedOutput, context);
         case "TooManyRequestsException":
         case "com.amazonaws.sso#TooManyRequestsException":
-            response = {
-                ...(await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         case "UnauthorizedException":
         case "com.amazonaws.sso#UnauthorizedException":
-            response = {
-                ...(await deserializeAws_restJson1UnauthorizedExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_restJson1UnauthorizedExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.code || parsedBody.Code || errorCode;
-            response = {
-                ...parsedBody,
-                name: `${errorCode}`,
-                message: parsedBody.message || parsedBody.Message || errorCode,
+            response = new SSOServiceException_1.SSOServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_restJson1InvalidRequestExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "InvalidRequestException",
-        $fault: "client",
-        $metadata: deserializeMetadata(parsedOutput),
-        message: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.message !== undefined && data.message !== null) {
         contents.message = smithy_client_1.expectString(data.message);
     }
-    return contents;
+    const exception = new models_0_1.InvalidRequestException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1ResourceNotFoundExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "ResourceNotFoundException",
-        $fault: "client",
-        $metadata: deserializeMetadata(parsedOutput),
-        message: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.message !== undefined && data.message !== null) {
         contents.message = smithy_client_1.expectString(data.message);
     }
-    return contents;
+    const exception = new models_0_1.ResourceNotFoundException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1TooManyRequestsExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "TooManyRequestsException",
-        $fault: "client",
-        $metadata: deserializeMetadata(parsedOutput),
-        message: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.message !== undefined && data.message !== null) {
         contents.message = smithy_client_1.expectString(data.message);
     }
-    return contents;
+    const exception = new models_0_1.TooManyRequestsException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1UnauthorizedExceptionResponse = async (parsedOutput, context) => {
-    const contents = {
-        name: "UnauthorizedException",
-        $fault: "client",
-        $metadata: deserializeMetadata(parsedOutput),
-        message: undefined,
-    };
+    const contents = {};
     const data = parsedOutput.body;
     if (data.message !== undefined && data.message !== null) {
         contents.message = smithy_client_1.expectString(data.message);
     }
-    return contents;
+    const exception = new models_0_1.UnauthorizedException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return smithy_client_1.decorateServiceException(exception, parsedOutput.body);
 };
 const deserializeAws_restJson1AccountInfo = (output, context) => {
     return {
@@ -17793,7 +16505,7 @@ const deserializeAws_restJson1AccountInfo = (output, context) => {
     };
 };
 const deserializeAws_restJson1AccountListType = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -17801,6 +16513,7 @@ const deserializeAws_restJson1AccountListType = (output, context) => {
         }
         return deserializeAws_restJson1AccountInfo(entry, context);
     });
+    return retVal;
 };
 const deserializeAws_restJson1RoleCredentials = (output, context) => {
     return {
@@ -17817,7 +16530,7 @@ const deserializeAws_restJson1RoleInfo = (output, context) => {
     };
 };
 const deserializeAws_restJson1RoleListType = (output, context) => {
-    return (output || [])
+    const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
         if (entry === null) {
@@ -17825,6 +16538,7 @@ const deserializeAws_restJson1RoleListType = (output, context) => {
         }
         return deserializeAws_restJson1RoleInfo(entry, context);
     });
+    return retVal;
 };
 const deserializeMetadata = (output) => {
     var _a;
@@ -17901,22 +16615,28 @@ const util_user_agent_node_1 = __nccwpck_require__(8095);
 const util_utf8_node_1 = __nccwpck_require__(6278);
 const runtimeConfig_shared_1 = __nccwpck_require__(4355);
 const smithy_client_1 = __nccwpck_require__(4963);
+const util_defaults_mode_node_1 = __nccwpck_require__(4243);
 const getRuntimeConfig = (config) => {
     var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p;
-    smithy_client_1.emitWarningIfUnsupportedVersion(process.version);
+    const defaultsMode = util_defaults_mode_node_1.resolveDefaultsModeConfig(config);
+    const defaultConfigProvider = () => defaultsMode().then(smithy_client_1.loadConfigsForDefaultMode);
     const clientSharedValues = runtimeConfig_shared_1.getRuntimeConfig(config);
     return {
         ...clientSharedValues,
         ...config,
         runtime: "node",
+        defaultsMode,
         base64Decoder: (_a = config === null || config === void 0 ? void 0 : config.base64Decoder) !== null && _a !== void 0 ? _a : util_base64_node_1.fromBase64,
         base64Encoder: (_b = config === null || config === void 0 ? void 0 : config.base64Encoder) !== null && _b !== void 0 ? _b : util_base64_node_1.toBase64,
         bodyLengthChecker: (_c = config === null || config === void 0 ? void 0 : config.bodyLengthChecker) !== null && _c !== void 0 ? _c : util_body_length_node_1.calculateBodyLength,
         defaultUserAgentProvider: (_d = config === null || config === void 0 ? void 0 : config.defaultUserAgentProvider) !== null && _d !== void 0 ? _d : util_user_agent_node_1.defaultUserAgent({ serviceId: clientSharedValues.serviceId, clientVersion: package_json_1.default.version }),
         maxAttempts: (_e = config === null || config === void 0 ? void 0 : config.maxAttempts) !== null && _e !== void 0 ? _e : node_config_provider_1.loadConfig(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
         region: (_f = config === null || config === void 0 ? void 0 : config.region) !== null && _f !== void 0 ? _f : node_config_provider_1.loadConfig(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
-        requestHandler: (_g = config === null || config === void 0 ? void 0 : config.requestHandler) !== null && _g !== void 0 ? _g : new node_http_handler_1.NodeHttpHandler(),
-        retryMode: (_h = config === null || config === void 0 ? void 0 : config.retryMode) !== null && _h !== void 0 ? _h : node_config_provider_1.loadConfig(middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS),
+        requestHandler: (_g = config === null || config === void 0 ? void 0 : config.requestHandler) !== null && _g !== void 0 ? _g : new node_http_handler_1.NodeHttpHandler(defaultConfigProvider),
+        retryMode: (_h = config === null || config === void 0 ? void 0 : config.retryMode) !== null && _h !== void 0 ? _h : node_config_provider_1.loadConfig({
+            ...middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS,
+            default: async () => (await defaultConfigProvider()).retryMode || middleware_retry_1.DEFAULT_RETRY_MODE,
+        }),
         sha256: (_j = config === null || config === void 0 ? void 0 : config.sha256) !== null && _j !== void 0 ? _j : hash_node_1.Hash.bind(null, "sha256"),
         streamCollector: (_k = config === null || config === void 0 ? void 0 : config.streamCollector) !== null && _k !== void 0 ? _k : node_http_handler_1.streamCollector,
         useDualstackEndpoint: (_l = config === null || config === void 0 ? void 0 : config.useDualstackEndpoint) !== null && _l !== void 0 ? _l : node_config_provider_1.loadConfig(config_resolver_1.NODE_USE_DUALSTACK_ENDPOINT_CONFIG_OPTIONS),
@@ -18643,10 +17363,6 @@ const regionHash = {
     "us-east-1": {
         variants: [
             {
-                hostname: "sts.us-east-1.amazonaws.com",
-                tags: [],
-            },
-            {
                 hostname: "sts-fips.us-east-1.amazonaws.com",
                 tags: ["fips"],
             },
@@ -18654,10 +17370,6 @@ const regionHash = {
     },
     "us-east-2": {
         variants: [
-            {
-                hostname: "sts.us-east-2.amazonaws.com",
-                tags: [],
-            },
             {
                 hostname: "sts-fips.us-east-2.amazonaws.com",
                 tags: ["fips"],
@@ -18668,20 +17380,12 @@ const regionHash = {
         variants: [
             {
                 hostname: "sts.us-gov-east-1.amazonaws.com",
-                tags: [],
-            },
-            {
-                hostname: "sts.us-gov-east-1.amazonaws.com",
                 tags: ["fips"],
             },
         ],
     },
     "us-gov-west-1": {
         variants: [
-            {
-                hostname: "sts.us-gov-west-1.amazonaws.com",
-                tags: [],
-            },
             {
                 hostname: "sts.us-gov-west-1.amazonaws.com",
                 tags: ["fips"],
@@ -18691,10 +17395,6 @@ const regionHash = {
     "us-west-1": {
         variants: [
             {
-                hostname: "sts.us-west-1.amazonaws.com",
-                tags: [],
-            },
-            {
                 hostname: "sts-fips.us-west-1.amazonaws.com",
                 tags: ["fips"],
             },
@@ -18702,10 +17402,6 @@ const regionHash = {
     },
     "us-west-2": {
         variants: [
-            {
-                hostname: "sts.us-west-2.amazonaws.com",
-                tags: [],
-            },
             {
                 hostname: "sts-fips.us-west-2.amazonaws.com",
                 tags: ["fips"],
@@ -18854,12 +17550,34 @@ exports.defaultRegionInfoProvider = defaultRegionInfoProvider;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.STSServiceException = void 0;
 const tslib_1 = __nccwpck_require__(4351);
 tslib_1.__exportStar(__nccwpck_require__(2605), exports);
 tslib_1.__exportStar(__nccwpck_require__(4195), exports);
 tslib_1.__exportStar(__nccwpck_require__(5716), exports);
 tslib_1.__exportStar(__nccwpck_require__(8028), exports);
 tslib_1.__exportStar(__nccwpck_require__(106), exports);
+var STSServiceException_1 = __nccwpck_require__(6450);
+Object.defineProperty(exports, "STSServiceException", ({ enumerable: true, get: function () { return STSServiceException_1.STSServiceException; } }));
+
+
+/***/ }),
+
+/***/ 6450:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.STSServiceException = void 0;
+const smithy_client_1 = __nccwpck_require__(4963);
+class STSServiceException extends smithy_client_1.ServiceException {
+    constructor(options) {
+        super(options);
+        Object.setPrototypeOf(this, STSServiceException.prototype);
+    }
+}
+exports.STSServiceException = STSServiceException;
 
 
 /***/ }),
@@ -18877,12 +17595,13 @@ tslib_1.__exportStar(__nccwpck_require__(1780), exports);
 /***/ }),
 
 /***/ 1780:
-/***/ ((__unused_webpack_module, exports) => {
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.GetSessionTokenResponse = exports.GetSessionTokenRequest = exports.GetFederationTokenResponse = exports.FederatedUser = exports.GetFederationTokenRequest = exports.GetCallerIdentityResponse = exports.GetCallerIdentityRequest = exports.GetAccessKeyInfoResponse = exports.GetAccessKeyInfoRequest = exports.InvalidAuthorizationMessageException = exports.DecodeAuthorizationMessageResponse = exports.DecodeAuthorizationMessageRequest = exports.IDPCommunicationErrorException = exports.AssumeRoleWithWebIdentityResponse = exports.AssumeRoleWithWebIdentityRequest = exports.InvalidIdentityTokenException = exports.IDPRejectedClaimException = exports.AssumeRoleWithSAMLResponse = exports.AssumeRoleWithSAMLRequest = exports.RegionDisabledException = exports.PackedPolicyTooLargeException = exports.MalformedPolicyDocumentException = exports.ExpiredTokenException = exports.AssumeRoleResponse = exports.Credentials = exports.AssumeRoleRequest = exports.Tag = exports.PolicyDescriptorType = exports.AssumedRoleUser = void 0;
+const STSServiceException_1 = __nccwpck_require__(6450);
 var AssumedRoleUser;
 (function (AssumedRoleUser) {
     AssumedRoleUser.filterSensitiveLog = (obj) => ({
@@ -18919,30 +17638,58 @@ var AssumeRoleResponse;
         ...obj,
     });
 })(AssumeRoleResponse = exports.AssumeRoleResponse || (exports.AssumeRoleResponse = {}));
-var ExpiredTokenException;
-(function (ExpiredTokenException) {
-    ExpiredTokenException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ExpiredTokenException = exports.ExpiredTokenException || (exports.ExpiredTokenException = {}));
-var MalformedPolicyDocumentException;
-(function (MalformedPolicyDocumentException) {
-    MalformedPolicyDocumentException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(MalformedPolicyDocumentException = exports.MalformedPolicyDocumentException || (exports.MalformedPolicyDocumentException = {}));
-var PackedPolicyTooLargeException;
-(function (PackedPolicyTooLargeException) {
-    PackedPolicyTooLargeException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(PackedPolicyTooLargeException = exports.PackedPolicyTooLargeException || (exports.PackedPolicyTooLargeException = {}));
-var RegionDisabledException;
-(function (RegionDisabledException) {
-    RegionDisabledException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(RegionDisabledException = exports.RegionDisabledException || (exports.RegionDisabledException = {}));
+class ExpiredTokenException extends STSServiceException_1.STSServiceException {
+    constructor(opts) {
+        super({
+            name: "ExpiredTokenException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "ExpiredTokenException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, ExpiredTokenException.prototype);
+    }
+}
+exports.ExpiredTokenException = ExpiredTokenException;
+class MalformedPolicyDocumentException extends STSServiceException_1.STSServiceException {
+    constructor(opts) {
+        super({
+            name: "MalformedPolicyDocumentException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "MalformedPolicyDocumentException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, MalformedPolicyDocumentException.prototype);
+    }
+}
+exports.MalformedPolicyDocumentException = MalformedPolicyDocumentException;
+class PackedPolicyTooLargeException extends STSServiceException_1.STSServiceException {
+    constructor(opts) {
+        super({
+            name: "PackedPolicyTooLargeException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "PackedPolicyTooLargeException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, PackedPolicyTooLargeException.prototype);
+    }
+}
+exports.PackedPolicyTooLargeException = PackedPolicyTooLargeException;
+class RegionDisabledException extends STSServiceException_1.STSServiceException {
+    constructor(opts) {
+        super({
+            name: "RegionDisabledException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "RegionDisabledException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, RegionDisabledException.prototype);
+    }
+}
+exports.RegionDisabledException = RegionDisabledException;
 var AssumeRoleWithSAMLRequest;
 (function (AssumeRoleWithSAMLRequest) {
     AssumeRoleWithSAMLRequest.filterSensitiveLog = (obj) => ({
@@ -18955,18 +17702,32 @@ var AssumeRoleWithSAMLResponse;
         ...obj,
     });
 })(AssumeRoleWithSAMLResponse = exports.AssumeRoleWithSAMLResponse || (exports.AssumeRoleWithSAMLResponse = {}));
-var IDPRejectedClaimException;
-(function (IDPRejectedClaimException) {
-    IDPRejectedClaimException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(IDPRejectedClaimException = exports.IDPRejectedClaimException || (exports.IDPRejectedClaimException = {}));
-var InvalidIdentityTokenException;
-(function (InvalidIdentityTokenException) {
-    InvalidIdentityTokenException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(InvalidIdentityTokenException = exports.InvalidIdentityTokenException || (exports.InvalidIdentityTokenException = {}));
+class IDPRejectedClaimException extends STSServiceException_1.STSServiceException {
+    constructor(opts) {
+        super({
+            name: "IDPRejectedClaimException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "IDPRejectedClaimException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, IDPRejectedClaimException.prototype);
+    }
+}
+exports.IDPRejectedClaimException = IDPRejectedClaimException;
+class InvalidIdentityTokenException extends STSServiceException_1.STSServiceException {
+    constructor(opts) {
+        super({
+            name: "InvalidIdentityTokenException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "InvalidIdentityTokenException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, InvalidIdentityTokenException.prototype);
+    }
+}
+exports.InvalidIdentityTokenException = InvalidIdentityTokenException;
 var AssumeRoleWithWebIdentityRequest;
 (function (AssumeRoleWithWebIdentityRequest) {
     AssumeRoleWithWebIdentityRequest.filterSensitiveLog = (obj) => ({
@@ -18979,12 +17740,19 @@ var AssumeRoleWithWebIdentityResponse;
         ...obj,
     });
 })(AssumeRoleWithWebIdentityResponse = exports.AssumeRoleWithWebIdentityResponse || (exports.AssumeRoleWithWebIdentityResponse = {}));
-var IDPCommunicationErrorException;
-(function (IDPCommunicationErrorException) {
-    IDPCommunicationErrorException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(IDPCommunicationErrorException = exports.IDPCommunicationErrorException || (exports.IDPCommunicationErrorException = {}));
+class IDPCommunicationErrorException extends STSServiceException_1.STSServiceException {
+    constructor(opts) {
+        super({
+            name: "IDPCommunicationErrorException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "IDPCommunicationErrorException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, IDPCommunicationErrorException.prototype);
+    }
+}
+exports.IDPCommunicationErrorException = IDPCommunicationErrorException;
 var DecodeAuthorizationMessageRequest;
 (function (DecodeAuthorizationMessageRequest) {
     DecodeAuthorizationMessageRequest.filterSensitiveLog = (obj) => ({
@@ -18997,12 +17765,19 @@ var DecodeAuthorizationMessageResponse;
         ...obj,
     });
 })(DecodeAuthorizationMessageResponse = exports.DecodeAuthorizationMessageResponse || (exports.DecodeAuthorizationMessageResponse = {}));
-var InvalidAuthorizationMessageException;
-(function (InvalidAuthorizationMessageException) {
-    InvalidAuthorizationMessageException.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(InvalidAuthorizationMessageException = exports.InvalidAuthorizationMessageException || (exports.InvalidAuthorizationMessageException = {}));
+class InvalidAuthorizationMessageException extends STSServiceException_1.STSServiceException {
+    constructor(opts) {
+        super({
+            name: "InvalidAuthorizationMessageException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "InvalidAuthorizationMessageException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, InvalidAuthorizationMessageException.prototype);
+    }
+}
+exports.InvalidAuthorizationMessageException = InvalidAuthorizationMessageException;
 var GetAccessKeyInfoRequest;
 (function (GetAccessKeyInfoRequest) {
     GetAccessKeyInfoRequest.filterSensitiveLog = (obj) => ({
@@ -19072,6 +17847,8 @@ const protocol_http_1 = __nccwpck_require__(223);
 const smithy_client_1 = __nccwpck_require__(4963);
 const entities_1 = __nccwpck_require__(3000);
 const fast_xml_parser_1 = __nccwpck_require__(7448);
+const models_0_1 = __nccwpck_require__(1780);
+const STSServiceException_1 = __nccwpck_require__(6450);
 const serializeAws_queryAssumeRoleCommand = async (input, context) => {
     const headers = {
         "content-type": "application/x-www-form-urlencoded",
@@ -19201,51 +17978,25 @@ const deserializeAws_queryAssumeRoleCommandError = async (output, context) => {
     switch (errorCode) {
         case "ExpiredTokenException":
         case "com.amazonaws.sts#ExpiredTokenException":
-            response = {
-                ...(await deserializeAws_queryExpiredTokenExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_queryExpiredTokenExceptionResponse(parsedOutput, context);
         case "MalformedPolicyDocumentException":
         case "com.amazonaws.sts#MalformedPolicyDocumentException":
-            response = {
-                ...(await deserializeAws_queryMalformedPolicyDocumentExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_queryMalformedPolicyDocumentExceptionResponse(parsedOutput, context);
         case "PackedPolicyTooLargeException":
         case "com.amazonaws.sts#PackedPolicyTooLargeException":
-            response = {
-                ...(await deserializeAws_queryPackedPolicyTooLargeExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_queryPackedPolicyTooLargeExceptionResponse(parsedOutput, context);
         case "RegionDisabledException":
         case "com.amazonaws.sts#RegionDisabledException":
-            response = {
-                ...(await deserializeAws_queryRegionDisabledExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_queryRegionDisabledExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.Error.code || parsedBody.Error.Code || errorCode;
-            response = {
-                ...parsedBody.Error,
-                name: `${errorCode}`,
-                message: parsedBody.Error.message || parsedBody.Error.Message || errorCode,
+            response = new STSServiceException_1.STSServiceException({
+                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody.Error);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_queryAssumeRoleWithSAMLCommand = async (output, context) => {
     if (output.statusCode >= 300) {
@@ -19272,67 +18023,31 @@ const deserializeAws_queryAssumeRoleWithSAMLCommandError = async (output, contex
     switch (errorCode) {
         case "ExpiredTokenException":
         case "com.amazonaws.sts#ExpiredTokenException":
-            response = {
-                ...(await deserializeAws_queryExpiredTokenExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_queryExpiredTokenExceptionResponse(parsedOutput, context);
         case "IDPRejectedClaimException":
         case "com.amazonaws.sts#IDPRejectedClaimException":
-            response = {
-                ...(await deserializeAws_queryIDPRejectedClaimExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_queryIDPRejectedClaimExceptionResponse(parsedOutput, context);
         case "InvalidIdentityTokenException":
         case "com.amazonaws.sts#InvalidIdentityTokenException":
-            response = {
-                ...(await deserializeAws_queryInvalidIdentityTokenExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_queryInvalidIdentityTokenExceptionResponse(parsedOutput, context);
         case "MalformedPolicyDocumentException":
         case "com.amazonaws.sts#MalformedPolicyDocumentException":
-            response = {
-                ...(await deserializeAws_queryMalformedPolicyDocumentExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_queryMalformedPolicyDocumentExceptionResponse(parsedOutput, context);
         case "PackedPolicyTooLargeException":
         case "com.amazonaws.sts#PackedPolicyTooLargeException":
-            response = {
-                ...(await deserializeAws_queryPackedPolicyTooLargeExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_queryPackedPolicyTooLargeExceptionResponse(parsedOutput, context);
         case "RegionDisabledException":
         case "com.amazonaws.sts#RegionDisabledException":
-            response = {
-                ...(await deserializeAws_queryRegionDisabledExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_queryRegionDisabledExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.Error.code || parsedBody.Error.Code || errorCode;
-            response = {
-                ...parsedBody.Error,
-                name: `${errorCode}`,
-                message: parsedBody.Error.message || parsedBody.Error.Message || errorCode,
+            response = new STSServiceException_1.STSServiceException({
+                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody.Error);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_queryAssumeRoleWithWebIdentityCommand = async (output, context) => {
     if (output.statusCode >= 300) {
@@ -19359,75 +18074,34 @@ const deserializeAws_queryAssumeRoleWithWebIdentityCommandError = async (output,
     switch (errorCode) {
         case "ExpiredTokenException":
         case "com.amazonaws.sts#ExpiredTokenException":
-            response = {
-                ...(await deserializeAws_queryExpiredTokenExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_queryExpiredTokenExceptionResponse(parsedOutput, context);
         case "IDPCommunicationErrorException":
         case "com.amazonaws.sts#IDPCommunicationErrorException":
-            response = {
-                ...(await deserializeAws_queryIDPCommunicationErrorExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_queryIDPCommunicationErrorExceptionResponse(parsedOutput, context);
         case "IDPRejectedClaimException":
         case "com.amazonaws.sts#IDPRejectedClaimException":
-            response = {
-                ...(await deserializeAws_queryIDPRejectedClaimExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_queryIDPRejectedClaimExceptionResponse(parsedOutput, context);
         case "InvalidIdentityTokenException":
         case "com.amazonaws.sts#InvalidIdentityTokenException":
-            response = {
-                ...(await deserializeAws_queryInvalidIdentityTokenExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_queryInvalidIdentityTokenExceptionResponse(parsedOutput, context);
         case "MalformedPolicyDocumentException":
         case "com.amazonaws.sts#MalformedPolicyDocumentException":
-            response = {
-                ...(await deserializeAws_queryMalformedPolicyDocumentExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_queryMalformedPolicyDocumentExceptionResponse(parsedOutput, context);
         case "PackedPolicyTooLargeException":
         case "com.amazonaws.sts#PackedPolicyTooLargeException":
-            response = {
-                ...(await deserializeAws_queryPackedPolicyTooLargeExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_queryPackedPolicyTooLargeExceptionResponse(parsedOutput, context);
         case "RegionDisabledException":
         case "com.amazonaws.sts#RegionDisabledException":
-            response = {
-                ...(await deserializeAws_queryRegionDisabledExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_queryRegionDisabledExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.Error.code || parsedBody.Error.Code || errorCode;
-            response = {
-                ...parsedBody.Error,
-                name: `${errorCode}`,
-                message: parsedBody.Error.message || parsedBody.Error.Message || errorCode,
+            response = new STSServiceException_1.STSServiceException({
+                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody.Error);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_queryDecodeAuthorizationMessageCommand = async (output, context) => {
     if (output.statusCode >= 300) {
@@ -19454,27 +18128,16 @@ const deserializeAws_queryDecodeAuthorizationMessageCommandError = async (output
     switch (errorCode) {
         case "InvalidAuthorizationMessageException":
         case "com.amazonaws.sts#InvalidAuthorizationMessageException":
-            response = {
-                ...(await deserializeAws_queryInvalidAuthorizationMessageExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_queryInvalidAuthorizationMessageExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.Error.code || parsedBody.Error.Code || errorCode;
-            response = {
-                ...parsedBody.Error,
-                name: `${errorCode}`,
-                message: parsedBody.Error.message || parsedBody.Error.Message || errorCode,
+            response = new STSServiceException_1.STSServiceException({
+                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody.Error);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_queryGetAccessKeyInfoCommand = async (output, context) => {
     if (output.statusCode >= 300) {
@@ -19501,19 +18164,13 @@ const deserializeAws_queryGetAccessKeyInfoCommandError = async (output, context)
     switch (errorCode) {
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.Error.code || parsedBody.Error.Code || errorCode;
-            response = {
-                ...parsedBody.Error,
-                name: `${errorCode}`,
-                message: parsedBody.Error.message || parsedBody.Error.Message || errorCode,
+            response = new STSServiceException_1.STSServiceException({
+                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody.Error);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_queryGetCallerIdentityCommand = async (output, context) => {
     if (output.statusCode >= 300) {
@@ -19540,19 +18197,13 @@ const deserializeAws_queryGetCallerIdentityCommandError = async (output, context
     switch (errorCode) {
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.Error.code || parsedBody.Error.Code || errorCode;
-            response = {
-                ...parsedBody.Error,
-                name: `${errorCode}`,
-                message: parsedBody.Error.message || parsedBody.Error.Message || errorCode,
+            response = new STSServiceException_1.STSServiceException({
+                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody.Error);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_queryGetFederationTokenCommand = async (output, context) => {
     if (output.statusCode >= 300) {
@@ -19579,43 +18230,22 @@ const deserializeAws_queryGetFederationTokenCommandError = async (output, contex
     switch (errorCode) {
         case "MalformedPolicyDocumentException":
         case "com.amazonaws.sts#MalformedPolicyDocumentException":
-            response = {
-                ...(await deserializeAws_queryMalformedPolicyDocumentExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_queryMalformedPolicyDocumentExceptionResponse(parsedOutput, context);
         case "PackedPolicyTooLargeException":
         case "com.amazonaws.sts#PackedPolicyTooLargeException":
-            response = {
-                ...(await deserializeAws_queryPackedPolicyTooLargeExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_queryPackedPolicyTooLargeExceptionResponse(parsedOutput, context);
         case "RegionDisabledException":
         case "com.amazonaws.sts#RegionDisabledException":
-            response = {
-                ...(await deserializeAws_queryRegionDisabledExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_queryRegionDisabledExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.Error.code || parsedBody.Error.Code || errorCode;
-            response = {
-                ...parsedBody.Error,
-                name: `${errorCode}`,
-                message: parsedBody.Error.message || parsedBody.Error.Message || errorCode,
+            response = new STSServiceException_1.STSServiceException({
+                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody.Error);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_queryGetSessionTokenCommand = async (output, context) => {
     if (output.statusCode >= 300) {
@@ -19642,115 +18272,88 @@ const deserializeAws_queryGetSessionTokenCommandError = async (output, context) 
     switch (errorCode) {
         case "RegionDisabledException":
         case "com.amazonaws.sts#RegionDisabledException":
-            response = {
-                ...(await deserializeAws_queryRegionDisabledExceptionResponse(parsedOutput, context)),
-                name: errorCode,
-                $metadata: deserializeMetadata(output),
-            };
-            break;
+            throw await deserializeAws_queryRegionDisabledExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
-            errorCode = parsedBody.Error.code || parsedBody.Error.Code || errorCode;
-            response = {
-                ...parsedBody.Error,
-                name: `${errorCode}`,
-                message: parsedBody.Error.message || parsedBody.Error.Message || errorCode,
+            response = new STSServiceException_1.STSServiceException({
+                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode,
                 $fault: "client",
                 $metadata: deserializeMetadata(output),
-            };
+            });
+            throw smithy_client_1.decorateServiceException(response, parsedBody.Error);
     }
-    const message = response.message || response.Message || errorCode;
-    response.message = message;
-    delete response.Message;
-    return Promise.reject(Object.assign(new Error(message), response));
 };
 const deserializeAws_queryExpiredTokenExceptionResponse = async (parsedOutput, context) => {
     const body = parsedOutput.body;
     const deserialized = deserializeAws_queryExpiredTokenException(body.Error, context);
-    const contents = {
-        name: "ExpiredTokenException",
-        $fault: "client",
+    const exception = new models_0_1.ExpiredTokenException({
         $metadata: deserializeMetadata(parsedOutput),
         ...deserialized,
-    };
-    return contents;
+    });
+    return smithy_client_1.decorateServiceException(exception, body);
 };
 const deserializeAws_queryIDPCommunicationErrorExceptionResponse = async (parsedOutput, context) => {
     const body = parsedOutput.body;
     const deserialized = deserializeAws_queryIDPCommunicationErrorException(body.Error, context);
-    const contents = {
-        name: "IDPCommunicationErrorException",
-        $fault: "client",
+    const exception = new models_0_1.IDPCommunicationErrorException({
         $metadata: deserializeMetadata(parsedOutput),
         ...deserialized,
-    };
-    return contents;
+    });
+    return smithy_client_1.decorateServiceException(exception, body);
 };
 const deserializeAws_queryIDPRejectedClaimExceptionResponse = async (parsedOutput, context) => {
     const body = parsedOutput.body;
     const deserialized = deserializeAws_queryIDPRejectedClaimException(body.Error, context);
-    const contents = {
-        name: "IDPRejectedClaimException",
-        $fault: "client",
+    const exception = new models_0_1.IDPRejectedClaimException({
         $metadata: deserializeMetadata(parsedOutput),
         ...deserialized,
-    };
-    return contents;
+    });
+    return smithy_client_1.decorateServiceException(exception, body);
 };
 const deserializeAws_queryInvalidAuthorizationMessageExceptionResponse = async (parsedOutput, context) => {
     const body = parsedOutput.body;
     const deserialized = deserializeAws_queryInvalidAuthorizationMessageException(body.Error, context);
-    const contents = {
-        name: "InvalidAuthorizationMessageException",
-        $fault: "client",
+    const exception = new models_0_1.InvalidAuthorizationMessageException({
         $metadata: deserializeMetadata(parsedOutput),
         ...deserialized,
-    };
-    return contents;
+    });
+    return smithy_client_1.decorateServiceException(exception, body);
 };
 const deserializeAws_queryInvalidIdentityTokenExceptionResponse = async (parsedOutput, context) => {
     const body = parsedOutput.body;
     const deserialized = deserializeAws_queryInvalidIdentityTokenException(body.Error, context);
-    const contents = {
-        name: "InvalidIdentityTokenException",
-        $fault: "client",
+    const exception = new models_0_1.InvalidIdentityTokenException({
         $metadata: deserializeMetadata(parsedOutput),
         ...deserialized,
-    };
-    return contents;
+    });
+    return smithy_client_1.decorateServiceException(exception, body);
 };
 const deserializeAws_queryMalformedPolicyDocumentExceptionResponse = async (parsedOutput, context) => {
     const body = parsedOutput.body;
     const deserialized = deserializeAws_queryMalformedPolicyDocumentException(body.Error, context);
-    const contents = {
-        name: "MalformedPolicyDocumentException",
-        $fault: "client",
+    const exception = new models_0_1.MalformedPolicyDocumentException({
         $metadata: deserializeMetadata(parsedOutput),
         ...deserialized,
-    };
-    return contents;
+    });
+    return smithy_client_1.decorateServiceException(exception, body);
 };
 const deserializeAws_queryPackedPolicyTooLargeExceptionResponse = async (parsedOutput, context) => {
     const body = parsedOutput.body;
     const deserialized = deserializeAws_queryPackedPolicyTooLargeException(body.Error, context);
-    const contents = {
-        name: "PackedPolicyTooLargeException",
-        $fault: "client",
+    const exception = new models_0_1.PackedPolicyTooLargeException({
         $metadata: deserializeMetadata(parsedOutput),
         ...deserialized,
-    };
-    return contents;
+    });
+    return smithy_client_1.decorateServiceException(exception, body);
 };
 const deserializeAws_queryRegionDisabledExceptionResponse = async (parsedOutput, context) => {
     const body = parsedOutput.body;
     const deserialized = deserializeAws_queryRegionDisabledException(body.Error, context);
-    const contents = {
-        name: "RegionDisabledException",
-        $fault: "client",
+    const exception = new models_0_1.RegionDisabledException({
         $metadata: deserializeMetadata(parsedOutput),
         ...deserialized,
-    };
-    return contents;
+    });
+    return smithy_client_1.decorateServiceException(exception, body);
 };
 const serializeAws_queryAssumeRoleRequest = (input, context) => {
     const entries = {};
@@ -20340,14 +18943,17 @@ const util_user_agent_node_1 = __nccwpck_require__(8095);
 const util_utf8_node_1 = __nccwpck_require__(6278);
 const runtimeConfig_shared_1 = __nccwpck_require__(2642);
 const smithy_client_1 = __nccwpck_require__(4963);
+const util_defaults_mode_node_1 = __nccwpck_require__(4243);
 const getRuntimeConfig = (config) => {
     var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q;
-    smithy_client_1.emitWarningIfUnsupportedVersion(process.version);
+    const defaultsMode = util_defaults_mode_node_1.resolveDefaultsModeConfig(config);
+    const defaultConfigProvider = () => defaultsMode().then(smithy_client_1.loadConfigsForDefaultMode);
     const clientSharedValues = runtimeConfig_shared_1.getRuntimeConfig(config);
     return {
         ...clientSharedValues,
         ...config,
         runtime: "node",
+        defaultsMode,
         base64Decoder: (_a = config === null || config === void 0 ? void 0 : config.base64Decoder) !== null && _a !== void 0 ? _a : util_base64_node_1.fromBase64,
         base64Encoder: (_b = config === null || config === void 0 ? void 0 : config.base64Encoder) !== null && _b !== void 0 ? _b : util_base64_node_1.toBase64,
         bodyLengthChecker: (_c = config === null || config === void 0 ? void 0 : config.bodyLengthChecker) !== null && _c !== void 0 ? _c : util_body_length_node_1.calculateBodyLength,
@@ -20355,8 +18961,11 @@ const getRuntimeConfig = (config) => {
         defaultUserAgentProvider: (_e = config === null || config === void 0 ? void 0 : config.defaultUserAgentProvider) !== null && _e !== void 0 ? _e : util_user_agent_node_1.defaultUserAgent({ serviceId: clientSharedValues.serviceId, clientVersion: package_json_1.default.version }),
         maxAttempts: (_f = config === null || config === void 0 ? void 0 : config.maxAttempts) !== null && _f !== void 0 ? _f : node_config_provider_1.loadConfig(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
         region: (_g = config === null || config === void 0 ? void 0 : config.region) !== null && _g !== void 0 ? _g : node_config_provider_1.loadConfig(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
-        requestHandler: (_h = config === null || config === void 0 ? void 0 : config.requestHandler) !== null && _h !== void 0 ? _h : new node_http_handler_1.NodeHttpHandler(),
-        retryMode: (_j = config === null || config === void 0 ? void 0 : config.retryMode) !== null && _j !== void 0 ? _j : node_config_provider_1.loadConfig(middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS),
+        requestHandler: (_h = config === null || config === void 0 ? void 0 : config.requestHandler) !== null && _h !== void 0 ? _h : new node_http_handler_1.NodeHttpHandler(defaultConfigProvider),
+        retryMode: (_j = config === null || config === void 0 ? void 0 : config.retryMode) !== null && _j !== void 0 ? _j : node_config_provider_1.loadConfig({
+            ...middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS,
+            default: async () => (await defaultConfigProvider()).retryMode || middleware_retry_1.DEFAULT_RETRY_MODE,
+        }),
         sha256: (_k = config === null || config === void 0 ? void 0 : config.sha256) !== null && _k !== void 0 ? _k : hash_node_1.Hash.bind(null, "sha256"),
         streamCollector: (_l = config === null || config === void 0 ? void 0 : config.streamCollector) !== null && _l !== void 0 ? _l : node_http_handler_1.streamCollector,
         useDualstackEndpoint: (_m = config === null || config === void 0 ? void 0 : config.useDualstackEndpoint) !== null && _m !== void 0 ? _m : node_config_provider_1.loadConfig(config_resolver_1.NODE_USE_DUALSTACK_ENDPOINT_CONFIG_OPTIONS),
@@ -20837,7 +19446,7 @@ tslib_1.__exportStar(__nccwpck_require__(6167), exports);
 
 /***/ }),
 
-/***/ 5972:
+/***/ 255:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
@@ -20849,23 +19458,34 @@ exports.ENV_KEY = "AWS_ACCESS_KEY_ID";
 exports.ENV_SECRET = "AWS_SECRET_ACCESS_KEY";
 exports.ENV_SESSION = "AWS_SESSION_TOKEN";
 exports.ENV_EXPIRATION = "AWS_CREDENTIAL_EXPIRATION";
-function fromEnv() {
-    return () => {
-        const accessKeyId = process.env[exports.ENV_KEY];
-        const secretAccessKey = process.env[exports.ENV_SECRET];
-        const expiry = process.env[exports.ENV_EXPIRATION];
-        if (accessKeyId && secretAccessKey) {
-            return Promise.resolve({
-                accessKeyId,
-                secretAccessKey,
-                sessionToken: process.env[exports.ENV_SESSION],
-                expiration: expiry ? new Date(expiry) : undefined,
-            });
-        }
-        return Promise.reject(new property_provider_1.CredentialsProviderError("Unable to find environment variable credentials."));
-    };
-}
+const fromEnv = () => async () => {
+    const accessKeyId = process.env[exports.ENV_KEY];
+    const secretAccessKey = process.env[exports.ENV_SECRET];
+    const sessionToken = process.env[exports.ENV_SESSION];
+    const expiry = process.env[exports.ENV_EXPIRATION];
+    if (accessKeyId && secretAccessKey) {
+        return {
+            accessKeyId,
+            secretAccessKey,
+            ...(sessionToken && { sessionToken }),
+            ...(expiry && { expiration: new Date(expiry) }),
+        };
+    }
+    throw new property_provider_1.CredentialsProviderError("Unable to find environment variable credentials.");
+};
 exports.fromEnv = fromEnv;
+
+
+/***/ }),
+
+/***/ 5972:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(255), exports);
 
 
 /***/ }),
@@ -21124,10 +19744,15 @@ const getCredentialsFromProfile = async (profile, options) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getInstanceMetadataEndpoint = exports.httpRequest = void 0;
 const tslib_1 = __nccwpck_require__(4351);
 tslib_1.__exportStar(__nccwpck_require__(5232), exports);
 tslib_1.__exportStar(__nccwpck_require__(5813), exports);
 tslib_1.__exportStar(__nccwpck_require__(2314), exports);
+var httpRequest_1 = __nccwpck_require__(1303);
+Object.defineProperty(exports, "httpRequest", ({ enumerable: true, get: function () { return httpRequest_1.httpRequest; } }));
+var getInstanceMetadataEndpoint_1 = __nccwpck_require__(1206);
+Object.defineProperty(exports, "getInstanceMetadataEndpoint", ({ enumerable: true, get: function () { return getInstanceMetadataEndpoint_1.getInstanceMetadataEndpoint; } }));
 
 
 /***/ }),
@@ -21271,90 +19896,105 @@ const getFromEndpointModeConfig = async () => {
 
 /***/ }),
 
-/***/ 4203:
+/***/ 5442:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.fromIni = void 0;
-const credential_provider_env_1 = __nccwpck_require__(5972);
-const credential_provider_imds_1 = __nccwpck_require__(5898);
-const credential_provider_sso_1 = __nccwpck_require__(6414);
-const credential_provider_web_identity_1 = __nccwpck_require__(5646);
+const util_credentials_1 = __nccwpck_require__(8598);
+const resolveProfileData_1 = __nccwpck_require__(5653);
+const fromIni = (init = {}) => async () => {
+    const profiles = await util_credentials_1.parseKnownFiles(init);
+    return resolveProfileData_1.resolveProfileData(util_credentials_1.getMasterProfileName(init), profiles, init);
+};
+exports.fromIni = fromIni;
+
+
+/***/ }),
+
+/***/ 4203:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(5442), exports);
+
+
+/***/ }),
+
+/***/ 853:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.resolveAssumeRoleCredentials = exports.isAssumeRoleProfile = void 0;
 const property_provider_1 = __nccwpck_require__(4462);
 const util_credentials_1 = __nccwpck_require__(8598);
-const isStaticCredsProfile = (arg) => Boolean(arg) &&
-    typeof arg === "object" &&
-    typeof arg.aws_access_key_id === "string" &&
-    typeof arg.aws_secret_access_key === "string" &&
-    ["undefined", "string"].indexOf(typeof arg.aws_session_token) > -1;
-const isWebIdentityProfile = (arg) => Boolean(arg) &&
-    typeof arg === "object" &&
-    typeof arg.web_identity_token_file === "string" &&
-    typeof arg.role_arn === "string" &&
-    ["undefined", "string"].indexOf(typeof arg.role_session_name) > -1;
+const resolveCredentialSource_1 = __nccwpck_require__(2458);
+const resolveProfileData_1 = __nccwpck_require__(5653);
 const isAssumeRoleProfile = (arg) => Boolean(arg) &&
     typeof arg === "object" &&
     typeof arg.role_arn === "string" &&
     ["undefined", "string"].indexOf(typeof arg.role_session_name) > -1 &&
     ["undefined", "string"].indexOf(typeof arg.external_id) > -1 &&
-    ["undefined", "string"].indexOf(typeof arg.mfa_serial) > -1;
-const isAssumeRoleWithSourceProfile = (arg) => isAssumeRoleProfile(arg) && typeof arg.source_profile === "string" && typeof arg.credential_source === "undefined";
-const isAssumeRoleWithProviderProfile = (arg) => isAssumeRoleProfile(arg) && typeof arg.credential_source === "string" && typeof arg.source_profile === "undefined";
-const fromIni = (init = {}) => async () => {
-    const profiles = await util_credentials_1.parseKnownFiles(init);
-    return resolveProfileData(util_credentials_1.getMasterProfileName(init), profiles, init);
-};
-exports.fromIni = fromIni;
-const resolveProfileData = async (profileName, profiles, options, visitedProfiles = {}) => {
+    ["undefined", "string"].indexOf(typeof arg.mfa_serial) > -1 &&
+    (isAssumeRoleWithSourceProfile(arg) || isAssumeRoleWithProviderProfile(arg));
+exports.isAssumeRoleProfile = isAssumeRoleProfile;
+const isAssumeRoleWithSourceProfile = (arg) => typeof arg.source_profile === "string" && typeof arg.credential_source === "undefined";
+const isAssumeRoleWithProviderProfile = (arg) => typeof arg.credential_source === "string" && typeof arg.source_profile === "undefined";
+const resolveAssumeRoleCredentials = async (profileName, profiles, options, visitedProfiles = {}) => {
     const data = profiles[profileName];
-    if (Object.keys(visitedProfiles).length > 0 && isStaticCredsProfile(data)) {
-        return resolveStaticCredentials(data);
+    if (!options.roleAssumer) {
+        throw new property_provider_1.CredentialsProviderError(`Profile ${profileName} requires a role to be assumed, but no role assumption callback was provided.`, false);
     }
-    if (isAssumeRoleWithSourceProfile(data) || isAssumeRoleWithProviderProfile(data)) {
-        const { external_id: ExternalId, mfa_serial, role_arn: RoleArn, role_session_name: RoleSessionName = "aws-sdk-js-" + Date.now(), source_profile, credential_source, } = data;
-        if (!options.roleAssumer) {
-            throw new property_provider_1.CredentialsProviderError(`Profile ${profileName} requires a role to be assumed, but no` + ` role assumption callback was provided.`, false);
+    const { source_profile } = data;
+    if (source_profile && source_profile in visitedProfiles) {
+        throw new property_provider_1.CredentialsProviderError(`Detected a cycle attempting to resolve credentials for profile` +
+            ` ${util_credentials_1.getMasterProfileName(options)}. Profiles visited: ` +
+            Object.keys(visitedProfiles).join(", "), false);
+    }
+    const sourceCredsProvider = source_profile
+        ? resolveProfileData_1.resolveProfileData(source_profile, profiles, options, {
+            ...visitedProfiles,
+            [source_profile]: true,
+        })
+        : resolveCredentialSource_1.resolveCredentialSource(data.credential_source, profileName)();
+    const params = {
+        RoleArn: data.role_arn,
+        RoleSessionName: data.role_session_name || `aws-sdk-js-${Date.now()}`,
+        ExternalId: data.external_id,
+    };
+    const { mfa_serial } = data;
+    if (mfa_serial) {
+        if (!options.mfaCodeProvider) {
+            throw new property_provider_1.CredentialsProviderError(`Profile ${profileName} requires multi-factor authentication, but no MFA code callback was provided.`, false);
         }
-        if (source_profile && source_profile in visitedProfiles) {
-            throw new property_provider_1.CredentialsProviderError(`Detected a cycle attempting to resolve credentials for profile` +
-                ` ${util_credentials_1.getMasterProfileName(options)}. Profiles visited: ` +
-                Object.keys(visitedProfiles).join(", "), false);
-        }
-        const sourceCreds = source_profile
-            ? resolveProfileData(source_profile, profiles, options, {
-                ...visitedProfiles,
-                [source_profile]: true,
-            })
-            : resolveCredentialSource(credential_source, profileName)();
-        const params = { RoleArn, RoleSessionName, ExternalId };
-        if (mfa_serial) {
-            if (!options.mfaCodeProvider) {
-                throw new property_provider_1.CredentialsProviderError(`Profile ${profileName} requires multi-factor authentication,` + ` but no MFA code callback was provided.`, false);
-            }
-            params.SerialNumber = mfa_serial;
-            params.TokenCode = await options.mfaCodeProvider(mfa_serial);
-        }
-        return options.roleAssumer(await sourceCreds, params);
+        params.SerialNumber = mfa_serial;
+        params.TokenCode = await options.mfaCodeProvider(mfa_serial);
     }
-    if (isStaticCredsProfile(data)) {
-        return resolveStaticCredentials(data);
-    }
-    if (isWebIdentityProfile(data)) {
-        return resolveWebIdentityCredentials(data, options);
-    }
-    if (credential_provider_sso_1.isSsoProfile(data)) {
-        const { sso_start_url, sso_account_id, sso_region, sso_role_name } = credential_provider_sso_1.validateSsoProfile(data);
-        return credential_provider_sso_1.fromSSO({
-            ssoStartUrl: sso_start_url,
-            ssoAccountId: sso_account_id,
-            ssoRegion: sso_region,
-            ssoRoleName: sso_role_name,
-        })();
-    }
-    throw new property_provider_1.CredentialsProviderError(`Profile ${profileName} could not be found or parsed in shared` + ` credentials file.`);
+    const sourceCreds = await sourceCredsProvider;
+    return options.roleAssumer(sourceCreds, params);
 };
+exports.resolveAssumeRoleCredentials = resolveAssumeRoleCredentials;
+
+
+/***/ }),
+
+/***/ 2458:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.resolveCredentialSource = void 0;
+const credential_provider_env_1 = __nccwpck_require__(5972);
+const credential_provider_imds_1 = __nccwpck_require__(5898);
+const property_provider_1 = __nccwpck_require__(4462);
 const resolveCredentialSource = (credentialSource, profileName) => {
     const sourceProvidersMap = {
         EcsContainer: credential_provider_imds_1.fromContainerMetadata,
@@ -21369,17 +20009,147 @@ const resolveCredentialSource = (credentialSource, profileName) => {
             `expected EcsContainer or Ec2InstanceMetadata or Environment.`);
     }
 };
+exports.resolveCredentialSource = resolveCredentialSource;
+
+
+/***/ }),
+
+/***/ 5653:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.resolveProfileData = void 0;
+const property_provider_1 = __nccwpck_require__(4462);
+const resolveAssumeRoleCredentials_1 = __nccwpck_require__(853);
+const resolveSsoCredentials_1 = __nccwpck_require__(9867);
+const resolveStaticCredentials_1 = __nccwpck_require__(3071);
+const resolveWebIdentityCredentials_1 = __nccwpck_require__(8342);
+const resolveProfileData = async (profileName, profiles, options, visitedProfiles = {}) => {
+    const data = profiles[profileName];
+    if (Object.keys(visitedProfiles).length > 0 && resolveStaticCredentials_1.isStaticCredsProfile(data)) {
+        return resolveStaticCredentials_1.resolveStaticCredentials(data);
+    }
+    if (resolveAssumeRoleCredentials_1.isAssumeRoleProfile(data)) {
+        return resolveAssumeRoleCredentials_1.resolveAssumeRoleCredentials(profileName, profiles, options, visitedProfiles);
+    }
+    if (resolveStaticCredentials_1.isStaticCredsProfile(data)) {
+        return resolveStaticCredentials_1.resolveStaticCredentials(data);
+    }
+    if (resolveWebIdentityCredentials_1.isWebIdentityProfile(data)) {
+        return resolveWebIdentityCredentials_1.resolveWebIdentityCredentials(data, options);
+    }
+    if (resolveSsoCredentials_1.isSsoProfile(data)) {
+        return resolveSsoCredentials_1.resolveSsoCredentials(data);
+    }
+    throw new property_provider_1.CredentialsProviderError(`Profile ${profileName} could not be found or parsed in shared credentials file.`);
+};
+exports.resolveProfileData = resolveProfileData;
+
+
+/***/ }),
+
+/***/ 9867:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.resolveSsoCredentials = exports.isSsoProfile = void 0;
+const credential_provider_sso_1 = __nccwpck_require__(6414);
+var credential_provider_sso_2 = __nccwpck_require__(6414);
+Object.defineProperty(exports, "isSsoProfile", ({ enumerable: true, get: function () { return credential_provider_sso_2.isSsoProfile; } }));
+const resolveSsoCredentials = (data) => {
+    const { sso_start_url, sso_account_id, sso_region, sso_role_name } = credential_provider_sso_1.validateSsoProfile(data);
+    return credential_provider_sso_1.fromSSO({
+        ssoStartUrl: sso_start_url,
+        ssoAccountId: sso_account_id,
+        ssoRegion: sso_region,
+        ssoRoleName: sso_role_name,
+    })();
+};
+exports.resolveSsoCredentials = resolveSsoCredentials;
+
+
+/***/ }),
+
+/***/ 3071:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.resolveStaticCredentials = exports.isStaticCredsProfile = void 0;
+const isStaticCredsProfile = (arg) => Boolean(arg) &&
+    typeof arg === "object" &&
+    typeof arg.aws_access_key_id === "string" &&
+    typeof arg.aws_secret_access_key === "string" &&
+    ["undefined", "string"].indexOf(typeof arg.aws_session_token) > -1;
+exports.isStaticCredsProfile = isStaticCredsProfile;
 const resolveStaticCredentials = (profile) => Promise.resolve({
     accessKeyId: profile.aws_access_key_id,
     secretAccessKey: profile.aws_secret_access_key,
     sessionToken: profile.aws_session_token,
 });
+exports.resolveStaticCredentials = resolveStaticCredentials;
+
+
+/***/ }),
+
+/***/ 8342:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.resolveWebIdentityCredentials = exports.isWebIdentityProfile = void 0;
+const credential_provider_web_identity_1 = __nccwpck_require__(5646);
+const isWebIdentityProfile = (arg) => Boolean(arg) &&
+    typeof arg === "object" &&
+    typeof arg.web_identity_token_file === "string" &&
+    typeof arg.role_arn === "string" &&
+    ["undefined", "string"].indexOf(typeof arg.role_session_name) > -1;
+exports.isWebIdentityProfile = isWebIdentityProfile;
 const resolveWebIdentityCredentials = async (profile, options) => credential_provider_web_identity_1.fromTokenFile({
     webIdentityTokenFile: profile.web_identity_token_file,
     roleArn: profile.role_arn,
     roleSessionName: profile.role_session_name,
     roleAssumerWithWebIdentity: options.roleAssumerWithWebIdentity,
 })();
+exports.resolveWebIdentityCredentials = resolveWebIdentityCredentials;
+
+
+/***/ }),
+
+/***/ 5560:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.defaultProvider = void 0;
+const credential_provider_env_1 = __nccwpck_require__(5972);
+const credential_provider_ini_1 = __nccwpck_require__(4203);
+const credential_provider_process_1 = __nccwpck_require__(9969);
+const credential_provider_sso_1 = __nccwpck_require__(6414);
+const credential_provider_web_identity_1 = __nccwpck_require__(5646);
+const property_provider_1 = __nccwpck_require__(4462);
+const shared_ini_file_loader_1 = __nccwpck_require__(7387);
+const util_credentials_1 = __nccwpck_require__(8598);
+const remoteProvider_1 = __nccwpck_require__(626);
+const defaultProvider = (init = {}) => {
+    const options = {
+        profile: process.env[util_credentials_1.ENV_PROFILE],
+        ...init,
+        ...(!init.loadedConfig && { loadedConfig: shared_ini_file_loader_1.loadSharedConfigFiles(init) }),
+    };
+    const providerChain = property_provider_1.chain(...(options.profile ? [] : [credential_provider_env_1.fromEnv()]), credential_provider_sso_1.fromSSO(options), credential_provider_ini_1.fromIni(options), credential_provider_process_1.fromProcess(options), credential_provider_web_identity_1.fromTokenFile(options), remoteProvider_1.remoteProvider(options), async () => {
+        throw new property_provider_1.CredentialsProviderError("Could not load credentials from any providers", false);
+    });
+    return property_provider_1.memoize(providerChain, (credentials) => credentials.expiration !== undefined && credentials.expiration.getTime() - Date.now() < 300000, (credentials) => credentials.expiration !== undefined);
+};
+exports.defaultProvider = defaultProvider;
 
 
 /***/ }),
@@ -21390,46 +20160,85 @@ const resolveWebIdentityCredentials = async (profile, options) => credential_pro
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.defaultProvider = exports.ENV_IMDS_DISABLED = void 0;
-const credential_provider_env_1 = __nccwpck_require__(5972);
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(5560), exports);
+
+
+/***/ }),
+
+/***/ 626:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.remoteProvider = exports.ENV_IMDS_DISABLED = void 0;
 const credential_provider_imds_1 = __nccwpck_require__(5898);
-const credential_provider_ini_1 = __nccwpck_require__(4203);
-const credential_provider_process_1 = __nccwpck_require__(9969);
-const credential_provider_sso_1 = __nccwpck_require__(6414);
-const credential_provider_web_identity_1 = __nccwpck_require__(5646);
 const property_provider_1 = __nccwpck_require__(4462);
-const shared_ini_file_loader_1 = __nccwpck_require__(7387);
-const util_credentials_1 = __nccwpck_require__(8598);
 exports.ENV_IMDS_DISABLED = "AWS_EC2_METADATA_DISABLED";
-const defaultProvider = (init = {}) => {
-    const options = { profile: process.env[util_credentials_1.ENV_PROFILE], ...init };
-    if (!options.loadedConfig)
-        options.loadedConfig = shared_ini_file_loader_1.loadSharedConfigFiles(init);
-    const providers = [
-        credential_provider_sso_1.fromSSO(options),
-        credential_provider_ini_1.fromIni(options),
-        credential_provider_process_1.fromProcess(options),
-        credential_provider_web_identity_1.fromTokenFile(options),
-        remoteProvider(options),
-        async () => {
-            throw new property_provider_1.CredentialsProviderError("Could not load credentials from any providers", false);
-        },
-    ];
-    if (!options.profile)
-        providers.unshift(credential_provider_env_1.fromEnv());
-    const providerChain = property_provider_1.chain(...providers);
-    return property_provider_1.memoize(providerChain, (credentials) => credentials.expiration !== undefined && credentials.expiration.getTime() - Date.now() < 300000, (credentials) => credentials.expiration !== undefined);
-};
-exports.defaultProvider = defaultProvider;
 const remoteProvider = (init) => {
     if (process.env[credential_provider_imds_1.ENV_CMDS_RELATIVE_URI] || process.env[credential_provider_imds_1.ENV_CMDS_FULL_URI]) {
         return credential_provider_imds_1.fromContainerMetadata(init);
     }
     if (process.env[exports.ENV_IMDS_DISABLED]) {
-        return () => Promise.reject(new property_provider_1.CredentialsProviderError("EC2 Instance Metadata Service access disabled"));
+        return async () => {
+            throw new property_provider_1.CredentialsProviderError("EC2 Instance Metadata Service access disabled");
+        };
     }
     return credential_provider_imds_1.fromInstanceMetadata(init);
 };
+exports.remoteProvider = remoteProvider;
+
+
+/***/ }),
+
+/***/ 2650:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.fromProcess = void 0;
+const util_credentials_1 = __nccwpck_require__(8598);
+const resolveProcessCredentials_1 = __nccwpck_require__(4926);
+const fromProcess = (init = {}) => async () => {
+    const profiles = await util_credentials_1.parseKnownFiles(init);
+    return resolveProcessCredentials_1.resolveProcessCredentials(util_credentials_1.getMasterProfileName(init), profiles);
+};
+exports.fromProcess = fromProcess;
+
+
+/***/ }),
+
+/***/ 1104:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getValidatedProcessCredentials = void 0;
+const getValidatedProcessCredentials = (profileName, data) => {
+    if (data.Version !== 1) {
+        throw Error(`Profile ${profileName} credential_process did not return Version 1.`);
+    }
+    if (data.AccessKeyId === undefined || data.SecretAccessKey === undefined) {
+        throw Error(`Profile ${profileName} credential_process returned invalid credentials.`);
+    }
+    if (data.Expiration) {
+        const currentTime = new Date();
+        const expireTime = new Date(data.Expiration);
+        if (expireTime < currentTime) {
+            throw Error(`Profile ${profileName} credential_process returned expired credentials.`);
+        }
+    }
+    return {
+        accessKeyId: data.AccessKeyId,
+        secretAccessKey: data.SecretAccessKey,
+        ...(data.SessionToken && { sessionToken: data.SessionToken }),
+        ...(data.Expiration && { expiration: new Date(data.Expiration) }),
+    };
+};
+exports.getValidatedProcessCredentials = getValidatedProcessCredentials;
 
 
 /***/ }),
@@ -21440,56 +20249,43 @@ const remoteProvider = (init) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.fromProcess = exports.ENV_PROFILE = void 0;
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(2650), exports);
+
+
+/***/ }),
+
+/***/ 4926:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.resolveProcessCredentials = void 0;
 const property_provider_1 = __nccwpck_require__(4462);
-const util_credentials_1 = __nccwpck_require__(8598);
 const child_process_1 = __nccwpck_require__(2081);
-exports.ENV_PROFILE = "AWS_PROFILE";
-const fromProcess = (init = {}) => async () => {
-    const profiles = await util_credentials_1.parseKnownFiles(init);
-    return resolveProcessCredentials(util_credentials_1.getMasterProfileName(init), profiles);
-};
-exports.fromProcess = fromProcess;
+const util_1 = __nccwpck_require__(3837);
+const getValidatedProcessCredentials_1 = __nccwpck_require__(1104);
 const resolveProcessCredentials = async (profileName, profiles) => {
     const profile = profiles[profileName];
     if (profiles[profileName]) {
         const credentialProcess = profile["credential_process"];
         if (credentialProcess !== undefined) {
-            return await execPromise(credentialProcess)
-                .then((processResult) => {
+            const execPromise = util_1.promisify(child_process_1.exec);
+            try {
+                const { stdout } = await execPromise(credentialProcess);
                 let data;
                 try {
-                    data = JSON.parse(processResult);
+                    data = JSON.parse(stdout.trim());
                 }
                 catch (_a) {
                     throw Error(`Profile ${profileName} credential_process returned invalid JSON.`);
                 }
-                const { Version: version, AccessKeyId: accessKeyId, SecretAccessKey: secretAccessKey, SessionToken: sessionToken, Expiration: expiration, } = data;
-                if (version !== 1) {
-                    throw Error(`Profile ${profileName} credential_process did not return Version 1.`);
-                }
-                if (accessKeyId === undefined || secretAccessKey === undefined) {
-                    throw Error(`Profile ${profileName} credential_process returned invalid credentials.`);
-                }
-                let expirationUnix;
-                if (expiration) {
-                    const currentTime = new Date();
-                    const expireTime = new Date(expiration);
-                    if (expireTime < currentTime) {
-                        throw Error(`Profile ${profileName} credential_process returned expired credentials.`);
-                    }
-                    expirationUnix = Math.floor(new Date(expiration).valueOf() / 1000);
-                }
-                return {
-                    accessKeyId,
-                    secretAccessKey,
-                    sessionToken,
-                    expirationUnix,
-                };
-            })
-                .catch((error) => {
+                return getValidatedProcessCredentials_1.getValidatedProcessCredentials(profileName, data);
+            }
+            catch (error) {
                 throw new property_provider_1.CredentialsProviderError(error.message);
-            });
+            }
         }
         else {
             throw new property_provider_1.CredentialsProviderError(`Profile ${profileName} did not contain credential_process.`);
@@ -21499,46 +20295,34 @@ const resolveProcessCredentials = async (profileName, profiles) => {
         throw new property_provider_1.CredentialsProviderError(`Profile ${profileName} could not be found in shared credentials file.`);
     }
 };
-const execPromise = (command) => new Promise(function (resolve, reject) {
-    child_process_1.exec(command, (error, stdout) => {
-        if (error) {
-            reject(error);
-            return;
-        }
-        resolve(stdout.trim());
-    });
-});
+exports.resolveProcessCredentials = resolveProcessCredentials;
 
 
 /***/ }),
 
-/***/ 6414:
+/***/ 5184:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.isSsoProfile = exports.validateSsoProfile = exports.fromSSO = exports.EXPIRE_WINDOW_MS = void 0;
-const client_sso_1 = __nccwpck_require__(2666);
+exports.fromSSO = void 0;
 const property_provider_1 = __nccwpck_require__(4462);
-const shared_ini_file_loader_1 = __nccwpck_require__(7387);
 const util_credentials_1 = __nccwpck_require__(8598);
-const crypto_1 = __nccwpck_require__(6113);
-const fs_1 = __nccwpck_require__(7147);
-const path_1 = __nccwpck_require__(1017);
-exports.EXPIRE_WINDOW_MS = 15 * 60 * 1000;
-const SHOULD_FAIL_CREDENTIAL_CHAIN = false;
+const isSsoProfile_1 = __nccwpck_require__(2572);
+const resolveSSOCredentials_1 = __nccwpck_require__(4729);
+const validateSsoProfile_1 = __nccwpck_require__(8098);
 const fromSSO = (init = {}) => async () => {
     const { ssoStartUrl, ssoAccountId, ssoRegion, ssoRoleName, ssoClient } = init;
     if (!ssoStartUrl && !ssoAccountId && !ssoRegion && !ssoRoleName) {
         const profiles = await util_credentials_1.parseKnownFiles(init);
         const profileName = util_credentials_1.getMasterProfileName(init);
         const profile = profiles[profileName];
-        if (!exports.isSsoProfile(profile)) {
+        if (!isSsoProfile_1.isSsoProfile(profile)) {
             throw new property_provider_1.CredentialsProviderError(`Profile ${profileName} is not configured with SSO credentials.`);
         }
-        const { sso_start_url, sso_account_id, sso_region, sso_role_name } = exports.validateSsoProfile(profile);
-        return resolveSSOCredentials({
+        const { sso_start_url, sso_account_id, sso_region, sso_role_name } = validateSsoProfile_1.validateSsoProfile(profile);
+        return resolveSSOCredentials_1.resolveSSOCredentials({
             ssoStartUrl: sso_start_url,
             ssoAccountId: sso_account_id,
             ssoRegion: sso_region,
@@ -21551,24 +20335,76 @@ const fromSSO = (init = {}) => async () => {
             ' "ssoAccountId", "ssoRegion", "ssoRoleName"');
     }
     else {
-        return resolveSSOCredentials({ ssoStartUrl, ssoAccountId, ssoRegion, ssoRoleName, ssoClient });
+        return resolveSSOCredentials_1.resolveSSOCredentials({ ssoStartUrl, ssoAccountId, ssoRegion, ssoRoleName, ssoClient });
     }
 };
 exports.fromSSO = fromSSO;
+
+
+/***/ }),
+
+/***/ 6414:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(5184), exports);
+tslib_1.__exportStar(__nccwpck_require__(2572), exports);
+tslib_1.__exportStar(__nccwpck_require__(6623), exports);
+tslib_1.__exportStar(__nccwpck_require__(8098), exports);
+
+
+/***/ }),
+
+/***/ 2572:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.isSsoProfile = void 0;
+const isSsoProfile = (arg) => arg &&
+    (typeof arg.sso_start_url === "string" ||
+        typeof arg.sso_account_id === "string" ||
+        typeof arg.sso_region === "string" ||
+        typeof arg.sso_role_name === "string");
+exports.isSsoProfile = isSsoProfile;
+
+
+/***/ }),
+
+/***/ 4729:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.resolveSSOCredentials = void 0;
+const client_sso_1 = __nccwpck_require__(2666);
+const property_provider_1 = __nccwpck_require__(4462);
+const shared_ini_file_loader_1 = __nccwpck_require__(7387);
+const crypto_1 = __nccwpck_require__(6113);
+const fs_1 = __nccwpck_require__(7147);
+const path_1 = __nccwpck_require__(1017);
+const EXPIRE_WINDOW_MS = 15 * 60 * 1000;
+const SHOULD_FAIL_CREDENTIAL_CHAIN = false;
+const { readFile } = fs_1.promises;
 const resolveSSOCredentials = async ({ ssoStartUrl, ssoAccountId, ssoRegion, ssoRoleName, ssoClient, }) => {
     const hasher = crypto_1.createHash("sha1");
     const cacheName = hasher.update(ssoStartUrl).digest("hex");
     const tokenFile = path_1.join(shared_ini_file_loader_1.getHomeDir(), ".aws", "sso", "cache", `${cacheName}.json`);
     let token;
+    const refreshMessage = `To refresh this SSO session run aws sso login with the corresponding profile.`;
     try {
-        token = JSON.parse(fs_1.readFileSync(tokenFile, { encoding: "utf-8" }));
-        if (new Date(token.expiresAt).getTime() - Date.now() <= exports.EXPIRE_WINDOW_MS) {
-            throw new Error("SSO token is expired.");
-        }
+        token = JSON.parse(await readFile(tokenFile, "utf8"));
     }
     catch (e) {
-        throw new property_provider_1.CredentialsProviderError(`The SSO session associated with this profile has expired or is otherwise invalid. To refresh this SSO session ` +
-            `run aws sso login with the corresponding profile.`, SHOULD_FAIL_CREDENTIAL_CHAIN);
+        throw new property_provider_1.CredentialsProviderError(`The SSO session associated with this profile is invalid. ${refreshMessage}`, SHOULD_FAIL_CREDENTIAL_CHAIN);
+    }
+    if (new Date(token.expiresAt).getTime() - Date.now() <= EXPIRE_WINDOW_MS) {
+        throw new property_provider_1.CredentialsProviderError(`The SSO session associated with this profile has expired. ${refreshMessage}`, SHOULD_FAIL_CREDENTIAL_CHAIN);
     }
     const { accessToken } = token;
     const sso = ssoClient || new client_sso_1.SSOClient({ region: ssoRegion });
@@ -21589,21 +20425,38 @@ const resolveSSOCredentials = async ({ ssoStartUrl, ssoAccountId, ssoRegion, sso
     }
     return { accessKeyId, secretAccessKey, sessionToken, expiration: new Date(expiration) };
 };
+exports.resolveSSOCredentials = resolveSSOCredentials;
+
+
+/***/ }),
+
+/***/ 6623:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 8098:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.validateSsoProfile = void 0;
+const property_provider_1 = __nccwpck_require__(4462);
 const validateSsoProfile = (profile) => {
     const { sso_start_url, sso_account_id, sso_region, sso_role_name } = profile;
     if (!sso_start_url || !sso_account_id || !sso_region || !sso_role_name) {
         throw new property_provider_1.CredentialsProviderError(`Profile is configured with invalid SSO credentials. Required parameters "sso_account_id", "sso_region", ` +
-            `"sso_role_name", "sso_start_url". Got ${Object.keys(profile).join(", ")}\nReference: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html`, SHOULD_FAIL_CREDENTIAL_CHAIN);
+            `"sso_role_name", "sso_start_url". Got ${Object.keys(profile).join(", ")}\nReference: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html`, false);
     }
     return profile;
 };
 exports.validateSsoProfile = validateSsoProfile;
-const isSsoProfile = (arg) => arg &&
-    (typeof arg.sso_start_url === "string" ||
-        typeof arg.sso_account_id === "string" ||
-        typeof arg.sso_region === "string" ||
-        typeof arg.sso_role_name === "string");
-exports.isSsoProfile = isSsoProfile;
 
 
 /***/ }),
@@ -22439,11 +21292,16 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.deserializerMiddleware = void 0;
 const deserializerMiddleware = (options, deserializer) => (next, context) => async (args) => {
     const { response } = await next(args);
-    const parsed = await deserializer(response, options);
-    return {
-        response,
-        output: parsed,
-    };
+    try {
+        const parsed = await deserializer(response, options);
+        return {
+            response,
+            output: parsed,
+        };
+    }
+    catch (error) {
+        throw Object.assign(error, { $response: response });
+    }
 };
 exports.deserializerMiddleware = deserializerMiddleware;
 
@@ -22650,19 +21508,21 @@ const awsAuthMiddleware = (options) => (next, context) => async function (args) 
             signingService: context["signing_service"],
         }),
     }).catch((error) => {
-        if (error.ServerTime) {
-            options.systemClockOffset = getUpdatedSystemClockOffset_1.getUpdatedSystemClockOffset(error.ServerTime, options.systemClockOffset);
+        var _a;
+        const serverTime = (_a = error.ServerTime) !== null && _a !== void 0 ? _a : getDateHeader(error.$response);
+        if (serverTime) {
+            options.systemClockOffset = getUpdatedSystemClockOffset_1.getUpdatedSystemClockOffset(serverTime, options.systemClockOffset);
         }
         throw error;
     });
-    const { headers } = output.response;
-    const dateHeader = headers && (headers.date || headers.Date);
+    const dateHeader = getDateHeader(output.response);
     if (dateHeader) {
         options.systemClockOffset = getUpdatedSystemClockOffset_1.getUpdatedSystemClockOffset(dateHeader, options.systemClockOffset);
     }
     return output;
 };
 exports.awsAuthMiddleware = awsAuthMiddleware;
+const getDateHeader = (response) => { var _a, _b, _c; return protocol_http_1.HttpResponse.isInstance(response) ? (_b = (_a = response.headers) === null || _a === void 0 ? void 0 : _a.date) !== null && _b !== void 0 ? _b : (_c = response.headers) === null || _c === void 0 ? void 0 : _c.Date : undefined; };
 exports.awsAuthMiddlewareOptions = {
     name: "awsAuthMiddleware",
     tags: ["SIGNATURE", "AWSAUTH"],
@@ -23165,7 +22025,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.fromStatic = void 0;
 const property_provider_1 = __nccwpck_require__(4462);
 const isFunction = (func) => typeof func === "function";
-const fromStatic = (defaultValue) => isFunction(defaultValue) ? async () => defaultValue() : property_provider_1.fromStatic(defaultValue);
+const fromStatic = (defaultValue) => isFunction(defaultValue) ? async () => await defaultValue() : property_provider_1.fromStatic(defaultValue);
 exports.fromStatic = fromStatic;
 
 
@@ -23246,21 +22106,41 @@ const set_connection_timeout_1 = __nccwpck_require__(3598);
 const set_socket_timeout_1 = __nccwpck_require__(4751);
 const write_request_body_1 = __nccwpck_require__(5248);
 class NodeHttpHandler {
-    constructor({ connectionTimeout, socketTimeout, httpAgent, httpsAgent } = {}) {
+    constructor(options) {
         this.metadata = { handlerProtocol: "http/1.1" };
-        this.connectionTimeout = connectionTimeout;
-        this.socketTimeout = socketTimeout;
+        if (typeof options === "function") {
+            this.configProvider = async () => {
+                return this.resolveDefaultConfig(await options());
+            };
+        }
+        else {
+            this.config = this.resolveDefaultConfig(options);
+        }
+    }
+    resolveDefaultConfig(options) {
+        const { connectionTimeout, socketTimeout, httpAgent, httpsAgent } = options || {};
         const keepAlive = true;
         const maxSockets = 50;
-        this.httpAgent = httpAgent || new http_1.Agent({ keepAlive, maxSockets });
-        this.httpsAgent = httpsAgent || new https_1.Agent({ keepAlive, maxSockets });
+        return {
+            connectionTimeout,
+            socketTimeout,
+            httpAgent: httpAgent || new http_1.Agent({ keepAlive, maxSockets }),
+            httpsAgent: httpsAgent || new https_1.Agent({ keepAlive, maxSockets }),
+        };
     }
     destroy() {
-        this.httpAgent.destroy();
-        this.httpsAgent.destroy();
+        var _a, _b, _c, _d;
+        (_b = (_a = this.config) === null || _a === void 0 ? void 0 : _a.httpAgent) === null || _b === void 0 ? void 0 : _b.destroy();
+        (_d = (_c = this.config) === null || _c === void 0 ? void 0 : _c.httpsAgent) === null || _d === void 0 ? void 0 : _d.destroy();
     }
-    handle(request, { abortSignal } = {}) {
+    async handle(request, { abortSignal } = {}) {
+        if (!this.config && this.configProvider) {
+            this.config = await this.configProvider();
+        }
         return new Promise((resolve, reject) => {
+            if (!this.config) {
+                throw new Error("Node HTTP request handler config is not resolved");
+            }
             if (abortSignal === null || abortSignal === void 0 ? void 0 : abortSignal.aborted) {
                 const abortError = new Error("Request aborted");
                 abortError.name = "AbortError";
@@ -23275,7 +22155,7 @@ class NodeHttpHandler {
                 method: request.method,
                 path: queryString ? `${request.path}?${queryString}` : request.path,
                 port: request.port,
-                agent: isSSL ? this.httpsAgent : this.httpAgent,
+                agent: isSSL ? this.config.httpsAgent : this.config.httpAgent,
             };
             const requestFunc = isSSL ? https_1.request : http_1.request;
             const req = requestFunc(nodeHttpsOptions, (res) => {
@@ -23294,8 +22174,8 @@ class NodeHttpHandler {
                     reject(err);
                 }
             });
-            set_connection_timeout_1.setConnectionTimeout(req, reject, this.connectionTimeout);
-            set_socket_timeout_1.setSocketTimeout(req, reject, this.socketTimeout);
+            set_connection_timeout_1.setConnectionTimeout(req, reject, this.config.connectionTimeout);
+            set_socket_timeout_1.setSocketTimeout(req, reject, this.config.socketTimeout);
             if (abortSignal) {
                 abortSignal.onabort = () => {
                     req.abort();
@@ -23996,33 +22876,82 @@ exports.isTransientError = isTransientError;
 
 /***/ }),
 
+/***/ 7363:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getHomeDir = void 0;
+const os_1 = __nccwpck_require__(2037);
+const path_1 = __nccwpck_require__(1017);
+const getHomeDir = () => {
+    const { HOME, USERPROFILE, HOMEPATH, HOMEDRIVE = `C:${path_1.sep}` } = process.env;
+    if (HOME)
+        return HOME;
+    if (USERPROFILE)
+        return USERPROFILE;
+    if (HOMEPATH)
+        return `${HOMEDRIVE}${HOMEPATH}`;
+    return os_1.homedir();
+};
+exports.getHomeDir = getHomeDir;
+
+
+/***/ }),
+
 /***/ 7387:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.getHomeDir = exports.loadSharedConfigFiles = exports.ENV_CONFIG_PATH = exports.ENV_CREDENTIALS_PATH = void 0;
-const fs_1 = __nccwpck_require__(7147);
-const os_1 = __nccwpck_require__(2037);
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(7363), exports);
+tslib_1.__exportStar(__nccwpck_require__(7871), exports);
+tslib_1.__exportStar(__nccwpck_require__(4105), exports);
+
+
+/***/ }),
+
+/***/ 7871:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.loadSharedConfigFiles = exports.ENV_CONFIG_PATH = exports.ENV_CREDENTIALS_PATH = void 0;
 const path_1 = __nccwpck_require__(1017);
+const getHomeDir_1 = __nccwpck_require__(7363);
+const normalizeConfigFile_1 = __nccwpck_require__(9307);
+const parseIni_1 = __nccwpck_require__(2806);
+const slurpFile_1 = __nccwpck_require__(9242);
 exports.ENV_CREDENTIALS_PATH = "AWS_SHARED_CREDENTIALS_FILE";
 exports.ENV_CONFIG_PATH = "AWS_CONFIG_FILE";
 const swallowError = () => ({});
-const loadSharedConfigFiles = (init = {}) => {
-    const { filepath = process.env[exports.ENV_CREDENTIALS_PATH] || path_1.join(exports.getHomeDir(), ".aws", "credentials"), configFilepath = process.env[exports.ENV_CONFIG_PATH] || path_1.join(exports.getHomeDir(), ".aws", "config"), } = init;
-    return Promise.all([
-        slurpFile(configFilepath).then(parseIni).then(normalizeConfigFile).catch(swallowError),
-        slurpFile(filepath).then(parseIni).catch(swallowError),
-    ]).then((parsedFiles) => {
-        const [configFile, credentialsFile] = parsedFiles;
-        return {
-            configFile,
-            credentialsFile,
-        };
-    });
+const loadSharedConfigFiles = async (init = {}) => {
+    const { filepath = process.env[exports.ENV_CREDENTIALS_PATH] || path_1.join(getHomeDir_1.getHomeDir(), ".aws", "credentials"), configFilepath = process.env[exports.ENV_CONFIG_PATH] || path_1.join(getHomeDir_1.getHomeDir(), ".aws", "config"), } = init;
+    const parsedFiles = await Promise.all([
+        slurpFile_1.slurpFile(configFilepath).then(parseIni_1.parseIni).then(normalizeConfigFile_1.normalizeConfigFile).catch(swallowError),
+        slurpFile_1.slurpFile(filepath).then(parseIni_1.parseIni).catch(swallowError),
+    ]);
+    return {
+        configFile: parsedFiles[0],
+        credentialsFile: parsedFiles[1],
+    };
 };
 exports.loadSharedConfigFiles = loadSharedConfigFiles;
+
+
+/***/ }),
+
+/***/ 9307:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.normalizeConfigFile = void 0;
 const profileKeyRegex = /^profile\s(["'])?([^\1]+)\1$/;
 const normalizeConfigFile = (data) => {
     const map = {};
@@ -24040,6 +22969,18 @@ const normalizeConfigFile = (data) => {
     }
     return map;
 };
+exports.normalizeConfigFile = normalizeConfigFile;
+
+
+/***/ }),
+
+/***/ 2806:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.parseIni = void 0;
 const profileNameBlockList = ["__proto__", "profile __proto__"];
 const parseIni = (iniData) => {
     const map = {};
@@ -24063,27 +23004,62 @@ const parseIni = (iniData) => {
     }
     return map;
 };
+exports.parseIni = parseIni;
+
+
+/***/ }),
+
+/***/ 9242:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.slurpFile = void 0;
+const fs_1 = __nccwpck_require__(7147);
+const { readFile } = fs_1.promises;
+const fileStatusHash = {};
 const slurpFile = (path) => new Promise((resolve, reject) => {
-    fs_1.readFile(path, "utf8", (err, data) => {
-        if (err) {
-            reject(err);
-        }
-        else {
-            resolve(data);
-        }
-    });
+    if (!fileStatusHash[path]) {
+        fileStatusHash[path] = { isReading: true, contents: "", requestQueue: [] };
+        fileStatusHash[path].requestQueue.push({ resolve, reject });
+        readFile(path, "utf8")
+            .then((data) => {
+            fileStatusHash[path].isReading = false;
+            fileStatusHash[path].contents = data;
+            const { requestQueue } = fileStatusHash[path];
+            while (requestQueue.length) {
+                const { resolve } = requestQueue.pop();
+                resolve(data);
+            }
+        })
+            .catch((err) => {
+            fileStatusHash[path].isReading = false;
+            const { requestQueue } = fileStatusHash[path];
+            while (requestQueue.length) {
+                const { reject } = requestQueue.pop();
+                reject(err);
+            }
+        });
+    }
+    else if (fileStatusHash[path].isReading) {
+        fileStatusHash[path].requestQueue.push({ resolve, reject });
+    }
+    else {
+        resolve(fileStatusHash[path].contents);
+    }
 });
-const getHomeDir = () => {
-    const { HOME, USERPROFILE, HOMEPATH, HOMEDRIVE = `C:${path_1.sep}` } = process.env;
-    if (HOME)
-        return HOME;
-    if (USERPROFILE)
-        return USERPROFILE;
-    if (HOMEPATH)
-        return `${HOMEDRIVE}${HOMEPATH}`;
-    return os_1.homedir();
-};
-exports.getHomeDir = getHomeDir;
+exports.slurpFile = slurpFile;
+
+
+/***/ }),
+
+/***/ 4105:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
 
 
 /***/ }),
@@ -24878,6 +23854,44 @@ const stripLeadingZeroes = (value) => {
 
 /***/ }),
 
+/***/ 3088:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.loadConfigsForDefaultMode = void 0;
+const loadConfigsForDefaultMode = (mode) => {
+    switch (mode) {
+        case "standard":
+            return {
+                retryMode: "standard",
+                connectionTimeout: 3100,
+            };
+        case "in-region":
+            return {
+                retryMode: "standard",
+                connectionTimeout: 1100,
+            };
+        case "cross-region":
+            return {
+                retryMode: "standard",
+                connectionTimeout: 3100,
+            };
+        case "mobile":
+            return {
+                retryMode: "standard",
+                connectionTimeout: 30000,
+            };
+        default:
+            return {};
+    }
+};
+exports.loadConfigsForDefaultMode = loadConfigsForDefaultMode;
+
+
+/***/ }),
+
 /***/ 2363:
 /***/ ((__unused_webpack_module, exports) => {
 
@@ -24897,6 +23911,41 @@ const emitWarningIfUnsupportedVersion = (version) => {
     }
 };
 exports.emitWarningIfUnsupportedVersion = emitWarningIfUnsupportedVersion;
+
+
+/***/ }),
+
+/***/ 7778:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.decorateServiceException = exports.ServiceException = void 0;
+class ServiceException extends Error {
+    constructor(options) {
+        super(options.message);
+        Object.setPrototypeOf(this, ServiceException.prototype);
+        this.name = options.name;
+        this.$fault = options.$fault;
+        this.$metadata = options.$metadata;
+    }
+}
+exports.ServiceException = ServiceException;
+const decorateServiceException = (exception, additions = {}) => {
+    Object.entries(additions)
+        .filter(([, v]) => v !== undefined)
+        .forEach(([k, v]) => {
+        if (exception[k] == undefined || exception[k] === "") {
+            exception[k] = v;
+        }
+    });
+    const message = exception.message || exception.Message || "UnknownError";
+    exception.message = message;
+    delete exception.Message;
+    return exception;
+};
+exports.decorateServiceException = decorateServiceException;
 
 
 /***/ }),
@@ -24966,7 +24015,9 @@ tslib_1.__exportStar(__nccwpck_require__(6034), exports);
 tslib_1.__exportStar(__nccwpck_require__(4014), exports);
 tslib_1.__exportStar(__nccwpck_require__(8392), exports);
 tslib_1.__exportStar(__nccwpck_require__(4695), exports);
+tslib_1.__exportStar(__nccwpck_require__(3088), exports);
 tslib_1.__exportStar(__nccwpck_require__(2363), exports);
+tslib_1.__exportStar(__nccwpck_require__(7778), exports);
 tslib_1.__exportStar(__nccwpck_require__(1927), exports);
 tslib_1.__exportStar(__nccwpck_require__(6457), exports);
 tslib_1.__exportStar(__nccwpck_require__(5830), exports);
@@ -25452,16 +24503,42 @@ tslib_1.__exportStar(__nccwpck_require__(9509), exports);
 
 /***/ }),
 
+/***/ 9349:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getMasterProfileName = exports.DEFAULT_PROFILE = exports.ENV_PROFILE = void 0;
+exports.ENV_PROFILE = "AWS_PROFILE";
+exports.DEFAULT_PROFILE = "default";
+const getMasterProfileName = (init) => init.profile || process.env[exports.ENV_PROFILE] || exports.DEFAULT_PROFILE;
+exports.getMasterProfileName = getMasterProfileName;
+
+
+/***/ }),
+
 /***/ 8598:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.getMasterProfileName = exports.parseKnownFiles = exports.DEFAULT_PROFILE = exports.ENV_PROFILE = void 0;
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(9349), exports);
+tslib_1.__exportStar(__nccwpck_require__(6329), exports);
+
+
+/***/ }),
+
+/***/ 6329:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.parseKnownFiles = void 0;
 const shared_ini_file_loader_1 = __nccwpck_require__(7387);
-exports.ENV_PROFILE = "AWS_PROFILE";
-exports.DEFAULT_PROFILE = "default";
 const parseKnownFiles = async (init) => {
     const { loadedConfig = shared_ini_file_loader_1.loadSharedConfigFiles(init) } = init;
     const parsedFiles = await loadedConfig;
@@ -25471,8 +24548,122 @@ const parseKnownFiles = async (init) => {
     };
 };
 exports.parseKnownFiles = parseKnownFiles;
-const getMasterProfileName = (init) => init.profile || process.env[exports.ENV_PROFILE] || exports.DEFAULT_PROFILE;
-exports.getMasterProfileName = getMasterProfileName;
+
+
+/***/ }),
+
+/***/ 6488:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.IMDS_REGION_PATH = exports.DEFAULTS_MODE_OPTIONS = exports.ENV_IMDS_DISABLED = exports.AWS_DEFAULT_REGION_ENV = exports.AWS_REGION_ENV = exports.AWS_EXECUTION_ENV = void 0;
+exports.AWS_EXECUTION_ENV = "AWS_EXECUTION_ENV";
+exports.AWS_REGION_ENV = "AWS_REGION";
+exports.AWS_DEFAULT_REGION_ENV = "AWS_DEFAULT_REGION";
+exports.ENV_IMDS_DISABLED = "AWS_EC2_METADATA_DISABLED";
+exports.DEFAULTS_MODE_OPTIONS = ["in-region", "cross-region", "mobile", "standard", "legacy"];
+exports.IMDS_REGION_PATH = "/latest/meta-data/placement/region";
+
+
+/***/ }),
+
+/***/ 8450:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.NODE_DEFAULTS_MODE_CONFIG_OPTIONS = void 0;
+const AWS_DEFAULTS_MODE_ENV = "AWS_DEFAULTS_MODE";
+const AWS_DEFAULTS_MODE_CONFIG = "defaults_mode";
+exports.NODE_DEFAULTS_MODE_CONFIG_OPTIONS = {
+    environmentVariableSelector: (env) => {
+        return env[AWS_DEFAULTS_MODE_ENV];
+    },
+    configFileSelector: (profile) => {
+        return profile[AWS_DEFAULTS_MODE_CONFIG];
+    },
+    default: "legacy",
+};
+
+
+/***/ }),
+
+/***/ 4243:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(8238), exports);
+
+
+/***/ }),
+
+/***/ 8238:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.resolveDefaultsModeConfig = void 0;
+const config_resolver_1 = __nccwpck_require__(6153);
+const credential_provider_imds_1 = __nccwpck_require__(5898);
+const node_config_provider_1 = __nccwpck_require__(7684);
+const property_provider_1 = __nccwpck_require__(4462);
+const constants_1 = __nccwpck_require__(6488);
+const defaultsModeConfig_1 = __nccwpck_require__(8450);
+const resolveDefaultsModeConfig = ({ region = node_config_provider_1.loadConfig(config_resolver_1.NODE_REGION_CONFIG_OPTIONS), defaultsMode = node_config_provider_1.loadConfig(defaultsModeConfig_1.NODE_DEFAULTS_MODE_CONFIG_OPTIONS), } = {}) => property_provider_1.memoize(async () => {
+    const mode = typeof defaultsMode === "function" ? await defaultsMode() : defaultsMode;
+    switch (mode === null || mode === void 0 ? void 0 : mode.toLowerCase()) {
+        case "auto":
+            return resolveNodeDefaultsModeAuto(region);
+        case "in-region":
+        case "cross-region":
+        case "mobile":
+        case "standard":
+        case "legacy":
+            return Promise.resolve(mode === null || mode === void 0 ? void 0 : mode.toLocaleLowerCase());
+        case undefined:
+            return Promise.resolve("legacy");
+        default:
+            throw new Error(`Invalid parameter for "defaultsMode", expect ${constants_1.DEFAULTS_MODE_OPTIONS.join(", ")}, got ${mode}`);
+    }
+});
+exports.resolveDefaultsModeConfig = resolveDefaultsModeConfig;
+const resolveNodeDefaultsModeAuto = async (clientRegion) => {
+    if (clientRegion) {
+        const resolvedRegion = typeof clientRegion === "function" ? await clientRegion() : clientRegion;
+        const inferredRegion = await inferPhysicalRegion();
+        if (!inferredRegion) {
+            return "standard";
+        }
+        if (resolvedRegion === inferredRegion) {
+            return "in-region";
+        }
+        else {
+            return "cross-region";
+        }
+    }
+    return "standard";
+};
+const inferPhysicalRegion = async () => {
+    var _a;
+    if (process.env[constants_1.AWS_EXECUTION_ENV] && (process.env[constants_1.AWS_REGION_ENV] || process.env[constants_1.AWS_DEFAULT_REGION_ENV])) {
+        return (_a = process.env[constants_1.AWS_REGION_ENV]) !== null && _a !== void 0 ? _a : process.env[constants_1.AWS_DEFAULT_REGION_ENV];
+    }
+    if (!process.env[constants_1.ENV_IMDS_DISABLED]) {
+        try {
+            const endpoint = await credential_provider_imds_1.getInstanceMetadataEndpoint();
+            return (await credential_provider_imds_1.httpRequest({ ...endpoint, path: constants_1.IMDS_REGION_PATH })).toString();
+        }
+        catch (e) {
+        }
+    }
+};
 
 
 /***/ }),
@@ -29070,7 +28261,7 @@ module.exports = require("util");
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-lambda","description":"AWS SDK for JavaScript Lambda Client for Node.js, Browser and React Native","version":"3.45.0","scripts":{"build":"yarn build:cjs && yarn build:es && yarn build:types","build:cjs":"tsc -p tsconfig.json","build:docs":"yarn clean:docs && typedoc ./","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","clean":"yarn clean:dist && yarn clean:docs","clean:dist":"rimraf ./dist","clean:docs":"rimraf ./docs","downlevel-dts":"downlevel-dts dist-types dist-types/ts3.4","test":"exit 0"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/client-sts":"3.45.0","@aws-sdk/config-resolver":"3.45.0","@aws-sdk/credential-provider-node":"3.45.0","@aws-sdk/fetch-http-handler":"3.40.0","@aws-sdk/hash-node":"3.40.0","@aws-sdk/invalid-dependency":"3.40.0","@aws-sdk/middleware-content-length":"3.40.0","@aws-sdk/middleware-host-header":"3.40.0","@aws-sdk/middleware-logger":"3.40.0","@aws-sdk/middleware-retry":"3.40.0","@aws-sdk/middleware-serde":"3.40.0","@aws-sdk/middleware-signing":"3.45.0","@aws-sdk/middleware-stack":"3.40.0","@aws-sdk/middleware-user-agent":"3.40.0","@aws-sdk/node-config-provider":"3.40.0","@aws-sdk/node-http-handler":"3.40.0","@aws-sdk/protocol-http":"3.40.0","@aws-sdk/smithy-client":"3.41.0","@aws-sdk/types":"3.40.0","@aws-sdk/url-parser":"3.40.0","@aws-sdk/util-base64-browser":"3.37.0","@aws-sdk/util-base64-node":"3.37.0","@aws-sdk/util-body-length-browser":"3.37.0","@aws-sdk/util-body-length-node":"3.37.0","@aws-sdk/util-user-agent-browser":"3.40.0","@aws-sdk/util-user-agent-node":"3.40.0","@aws-sdk/util-utf8-browser":"3.37.0","@aws-sdk/util-utf8-node":"3.37.0","@aws-sdk/util-waiter":"3.40.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.38.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.5"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-lambda","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-lambda"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-lambda","description":"AWS SDK for JavaScript Lambda Client for Node.js, Browser and React Native","version":"3.53.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/client-sts":"3.53.0","@aws-sdk/config-resolver":"3.53.0","@aws-sdk/credential-provider-node":"3.53.0","@aws-sdk/fetch-http-handler":"3.53.0","@aws-sdk/hash-node":"3.53.0","@aws-sdk/invalid-dependency":"3.53.0","@aws-sdk/middleware-content-length":"3.53.0","@aws-sdk/middleware-host-header":"3.53.0","@aws-sdk/middleware-logger":"3.53.0","@aws-sdk/middleware-retry":"3.53.0","@aws-sdk/middleware-serde":"3.53.0","@aws-sdk/middleware-signing":"3.53.0","@aws-sdk/middleware-stack":"3.53.0","@aws-sdk/middleware-user-agent":"3.53.0","@aws-sdk/node-config-provider":"3.53.0","@aws-sdk/node-http-handler":"3.53.0","@aws-sdk/protocol-http":"3.53.0","@aws-sdk/smithy-client":"3.53.0","@aws-sdk/types":"3.53.0","@aws-sdk/url-parser":"3.53.0","@aws-sdk/util-base64-browser":"3.52.0","@aws-sdk/util-base64-node":"3.52.0","@aws-sdk/util-body-length-browser":"3.52.0","@aws-sdk/util-body-length-node":"3.52.0","@aws-sdk/util-defaults-mode-browser":"3.53.0","@aws-sdk/util-defaults-mode-node":"3.53.0","@aws-sdk/util-user-agent-browser":"3.53.0","@aws-sdk/util-user-agent-node":"3.53.0","@aws-sdk/util-utf8-browser":"3.52.0","@aws-sdk/util-utf8-node":"3.52.0","@aws-sdk/util-waiter":"3.53.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.52.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","concurrently":"7.0.0","downlevel-dts":"0.7.0","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.3.5"},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-lambda","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-lambda"}}');
 
 /***/ }),
 
@@ -29078,7 +28269,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-lambda","description":"AWS
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.45.0","scripts":{"build":"yarn build:cjs && yarn build:es && yarn build:types","build:cjs":"tsc -p tsconfig.json","build:docs":"yarn clean:docs && typedoc ./","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","clean":"yarn clean:dist && yarn clean:docs","clean:dist":"rimraf ./dist","clean:docs":"rimraf ./docs","downlevel-dts":"downlevel-dts dist-types dist-types/ts3.4","test":"exit 0"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/config-resolver":"3.45.0","@aws-sdk/fetch-http-handler":"3.40.0","@aws-sdk/hash-node":"3.40.0","@aws-sdk/invalid-dependency":"3.40.0","@aws-sdk/middleware-content-length":"3.40.0","@aws-sdk/middleware-host-header":"3.40.0","@aws-sdk/middleware-logger":"3.40.0","@aws-sdk/middleware-retry":"3.40.0","@aws-sdk/middleware-serde":"3.40.0","@aws-sdk/middleware-stack":"3.40.0","@aws-sdk/middleware-user-agent":"3.40.0","@aws-sdk/node-config-provider":"3.40.0","@aws-sdk/node-http-handler":"3.40.0","@aws-sdk/protocol-http":"3.40.0","@aws-sdk/smithy-client":"3.41.0","@aws-sdk/types":"3.40.0","@aws-sdk/url-parser":"3.40.0","@aws-sdk/util-base64-browser":"3.37.0","@aws-sdk/util-base64-node":"3.37.0","@aws-sdk/util-body-length-browser":"3.37.0","@aws-sdk/util-body-length-node":"3.37.0","@aws-sdk/util-user-agent-browser":"3.40.0","@aws-sdk/util-user-agent-node":"3.40.0","@aws-sdk/util-utf8-browser":"3.37.0","@aws-sdk/util-utf8-node":"3.37.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.38.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.5"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.53.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/config-resolver":"3.53.0","@aws-sdk/fetch-http-handler":"3.53.0","@aws-sdk/hash-node":"3.53.0","@aws-sdk/invalid-dependency":"3.53.0","@aws-sdk/middleware-content-length":"3.53.0","@aws-sdk/middleware-host-header":"3.53.0","@aws-sdk/middleware-logger":"3.53.0","@aws-sdk/middleware-retry":"3.53.0","@aws-sdk/middleware-serde":"3.53.0","@aws-sdk/middleware-stack":"3.53.0","@aws-sdk/middleware-user-agent":"3.53.0","@aws-sdk/node-config-provider":"3.53.0","@aws-sdk/node-http-handler":"3.53.0","@aws-sdk/protocol-http":"3.53.0","@aws-sdk/smithy-client":"3.53.0","@aws-sdk/types":"3.53.0","@aws-sdk/url-parser":"3.53.0","@aws-sdk/util-base64-browser":"3.52.0","@aws-sdk/util-base64-node":"3.52.0","@aws-sdk/util-body-length-browser":"3.52.0","@aws-sdk/util-body-length-node":"3.52.0","@aws-sdk/util-defaults-mode-browser":"3.53.0","@aws-sdk/util-defaults-mode-node":"3.53.0","@aws-sdk/util-user-agent-browser":"3.53.0","@aws-sdk/util-user-agent-node":"3.53.0","@aws-sdk/util-utf8-browser":"3.52.0","@aws-sdk/util-utf8-node":"3.52.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.52.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","concurrently":"7.0.0","downlevel-dts":"0.7.0","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.3.5"},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
 
 /***/ }),
 
@@ -29086,7 +28277,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SD
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.45.0","scripts":{"build":"yarn build:cjs && yarn build:es && yarn build:types","build:cjs":"tsc -p tsconfig.json","build:docs":"yarn clean:docs && typedoc ./","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","clean":"yarn clean:dist && yarn clean:docs","clean:dist":"rimraf ./dist","clean:docs":"rimraf ./docs","downlevel-dts":"downlevel-dts dist-types dist-types/ts3.4","test":"exit 0"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/config-resolver":"3.45.0","@aws-sdk/credential-provider-node":"3.45.0","@aws-sdk/fetch-http-handler":"3.40.0","@aws-sdk/hash-node":"3.40.0","@aws-sdk/invalid-dependency":"3.40.0","@aws-sdk/middleware-content-length":"3.40.0","@aws-sdk/middleware-host-header":"3.40.0","@aws-sdk/middleware-logger":"3.40.0","@aws-sdk/middleware-retry":"3.40.0","@aws-sdk/middleware-sdk-sts":"3.45.0","@aws-sdk/middleware-serde":"3.40.0","@aws-sdk/middleware-signing":"3.45.0","@aws-sdk/middleware-stack":"3.40.0","@aws-sdk/middleware-user-agent":"3.40.0","@aws-sdk/node-config-provider":"3.40.0","@aws-sdk/node-http-handler":"3.40.0","@aws-sdk/protocol-http":"3.40.0","@aws-sdk/smithy-client":"3.41.0","@aws-sdk/types":"3.40.0","@aws-sdk/url-parser":"3.40.0","@aws-sdk/util-base64-browser":"3.37.0","@aws-sdk/util-base64-node":"3.37.0","@aws-sdk/util-body-length-browser":"3.37.0","@aws-sdk/util-body-length-node":"3.37.0","@aws-sdk/util-user-agent-browser":"3.40.0","@aws-sdk/util-user-agent-node":"3.40.0","@aws-sdk/util-utf8-browser":"3.37.0","@aws-sdk/util-utf8-node":"3.37.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.38.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.5"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.53.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/config-resolver":"3.53.0","@aws-sdk/credential-provider-node":"3.53.0","@aws-sdk/fetch-http-handler":"3.53.0","@aws-sdk/hash-node":"3.53.0","@aws-sdk/invalid-dependency":"3.53.0","@aws-sdk/middleware-content-length":"3.53.0","@aws-sdk/middleware-host-header":"3.53.0","@aws-sdk/middleware-logger":"3.53.0","@aws-sdk/middleware-retry":"3.53.0","@aws-sdk/middleware-sdk-sts":"3.53.0","@aws-sdk/middleware-serde":"3.53.0","@aws-sdk/middleware-signing":"3.53.0","@aws-sdk/middleware-stack":"3.53.0","@aws-sdk/middleware-user-agent":"3.53.0","@aws-sdk/node-config-provider":"3.53.0","@aws-sdk/node-http-handler":"3.53.0","@aws-sdk/protocol-http":"3.53.0","@aws-sdk/smithy-client":"3.53.0","@aws-sdk/types":"3.53.0","@aws-sdk/url-parser":"3.53.0","@aws-sdk/util-base64-browser":"3.52.0","@aws-sdk/util-base64-node":"3.52.0","@aws-sdk/util-body-length-browser":"3.52.0","@aws-sdk/util-body-length-node":"3.52.0","@aws-sdk/util-defaults-mode-browser":"3.53.0","@aws-sdk/util-defaults-mode-node":"3.53.0","@aws-sdk/util-user-agent-browser":"3.53.0","@aws-sdk/util-user-agent-node":"3.53.0","@aws-sdk/util-utf8-browser":"3.52.0","@aws-sdk/util-utf8-node":"3.52.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.52.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","concurrently":"7.0.0","downlevel-dts":"0.7.0","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.3.5"},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
 
 /***/ }),
 
