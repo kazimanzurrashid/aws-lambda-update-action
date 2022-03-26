@@ -10,7 +10,7 @@ inputs:
     description: 'The zip file location'
   lambda-name:
     required: false
-    description: 'Optional, if not specified, it uses the file base as function name'
+    description: 'Optional, if not specified, it uses the file base name as function name'
   publish:
     description: 'Optional, default is false'
     required: false
