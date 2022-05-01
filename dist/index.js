@@ -446,6 +446,11 @@ function getIDToken(aud) {
     });
 }
 exports.getIDToken = getIDToken;
+/**
+ * Markdown summary exports
+ */
+var markdown_summary_1 = __nccwpck_require__(8042);
+Object.defineProperty(exports, "markdownSummary", ({ enumerable: true, get: function () { return markdown_summary_1.markdownSummary; } }));
 //# sourceMappingURL=core.js.map
 
 /***/ }),
@@ -496,6 +501,292 @@ function issueCommand(command, message) {
 }
 exports.issueCommand = issueCommand;
 //# sourceMappingURL=file-command.js.map
+
+/***/ }),
+
+/***/ 8042:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+"use strict";
+
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.markdownSummary = exports.SUMMARY_DOCS_URL = exports.SUMMARY_ENV_VAR = void 0;
+const os_1 = __nccwpck_require__(2037);
+const fs_1 = __nccwpck_require__(7147);
+const { access, appendFile, writeFile } = fs_1.promises;
+exports.SUMMARY_ENV_VAR = 'GITHUB_STEP_SUMMARY';
+exports.SUMMARY_DOCS_URL = 'https://docs.github.com/actions/using-workflows/workflow-commands-for-github-actions#adding-a-markdown-summary';
+class MarkdownSummary {
+    constructor() {
+        this._buffer = '';
+    }
+    /**
+     * Finds the summary file path from the environment, rejects if env var is not found or file does not exist
+     * Also checks r/w permissions.
+     *
+     * @returns step summary file path
+     */
+    filePath() {
+        return __awaiter(this, void 0, void 0, function* () {
+            if (this._filePath) {
+                return this._filePath;
+            }
+            const pathFromEnv = process.env[exports.SUMMARY_ENV_VAR];
+            if (!pathFromEnv) {
+                throw new Error(`Unable to find environment variable for $${exports.SUMMARY_ENV_VAR}. Check if your runtime environment supports markdown summaries.`);
+            }
+            try {
+                yield access(pathFromEnv, fs_1.constants.R_OK | fs_1.constants.W_OK);
+            }
+            catch (_a) {
+                throw new Error(`Unable to access summary file: '${pathFromEnv}'. Check if the file has correct read/write permissions.`);
+            }
+            this._filePath = pathFromEnv;
+            return this._filePath;
+        });
+    }
+    /**
+     * Wraps content in an HTML tag, adding any HTML attributes
+     *
+     * @param {string} tag HTML tag to wrap
+     * @param {string | null} content content within the tag
+     * @param {[attribute: string]: string} attrs key-value list of HTML attributes to add
+     *
+     * @returns {string} content wrapped in HTML element
+     */
+    wrap(tag, content, attrs = {}) {
+        const htmlAttrs = Object.entries(attrs)
+            .map(([key, value]) => ` ${key}="${value}"`)
+            .join('');
+        if (!content) {
+            return `<${tag}${htmlAttrs}>`;
+        }
+        return `<${tag}${htmlAttrs}>${content}</${tag}>`;
+    }
+    /**
+     * Writes text in the buffer to the summary buffer file and empties buffer. Will append by default.
+     *
+     * @param {SummaryWriteOptions} [options] (optional) options for write operation
+     *
+     * @returns {Promise<MarkdownSummary>} markdown summary instance
+     */
+    write(options) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const overwrite = !!(options === null || options === void 0 ? void 0 : options.overwrite);
+            const filePath = yield this.filePath();
+            const writeFunc = overwrite ? writeFile : appendFile;
+            yield writeFunc(filePath, this._buffer, { encoding: 'utf8' });
+            return this.emptyBuffer();
+        });
+    }
+    /**
+     * Clears the summary buffer and wipes the summary file
+     *
+     * @returns {MarkdownSummary} markdown summary instance
+     */
+    clear() {
+        return __awaiter(this, void 0, void 0, function* () {
+            return this.emptyBuffer().write({ overwrite: true });
+        });
+    }
+    /**
+     * Returns the current summary buffer as a string
+     *
+     * @returns {string} string of summary buffer
+     */
+    stringify() {
+        return this._buffer;
+    }
+    /**
+     * If the summary buffer is empty
+     *
+     * @returns {boolen} true if the buffer is empty
+     */
+    isEmptyBuffer() {
+        return this._buffer.length === 0;
+    }
+    /**
+     * Resets the summary buffer without writing to summary file
+     *
+     * @returns {MarkdownSummary} markdown summary instance
+     */
+    emptyBuffer() {
+        this._buffer = '';
+        return this;
+    }
+    /**
+     * Adds raw text to the summary buffer
+     *
+     * @param {string} text content to add
+     * @param {boolean} [addEOL=false] (optional) append an EOL to the raw text (default: false)
+     *
+     * @returns {MarkdownSummary} markdown summary instance
+     */
+    addRaw(text, addEOL = false) {
+        this._buffer += text;
+        return addEOL ? this.addEOL() : this;
+    }
+    /**
+     * Adds the operating system-specific end-of-line marker to the buffer
+     *
+     * @returns {MarkdownSummary} markdown summary instance
+     */
+    addEOL() {
+        return this.addRaw(os_1.EOL);
+    }
+    /**
+     * Adds an HTML codeblock to the summary buffer
+     *
+     * @param {string} code content to render within fenced code block
+     * @param {string} lang (optional) language to syntax highlight code
+     *
+     * @returns {MarkdownSummary} markdown summary instance
+     */
+    addCodeBlock(code, lang) {
+        const attrs = Object.assign({}, (lang && { lang }));
+        const element = this.wrap('pre', this.wrap('code', code), attrs);
+        return this.addRaw(element).addEOL();
+    }
+    /**
+     * Adds an HTML list to the summary buffer
+     *
+     * @param {string[]} items list of items to render
+     * @param {boolean} [ordered=false] (optional) if the rendered list should be ordered or not (default: false)
+     *
+     * @returns {MarkdownSummary} markdown summary instance
+     */
+    addList(items, ordered = false) {
+        const tag = ordered ? 'ol' : 'ul';
+        const listItems = items.map(item => this.wrap('li', item)).join('');
+        const element = this.wrap(tag, listItems);
+        return this.addRaw(element).addEOL();
+    }
+    /**
+     * Adds an HTML table to the summary buffer
+     *
+     * @param {SummaryTableCell[]} rows table rows
+     *
+     * @returns {MarkdownSummary} markdown summary instance
+     */
+    addTable(rows) {
+        const tableBody = rows
+            .map(row => {
+            const cells = row
+                .map(cell => {
+                if (typeof cell === 'string') {
+                    return this.wrap('td', cell);
+                }
+                const { header, data, colspan, rowspan } = cell;
+                const tag = header ? 'th' : 'td';
+                const attrs = Object.assign(Object.assign({}, (colspan && { colspan })), (rowspan && { rowspan }));
+                return this.wrap(tag, data, attrs);
+            })
+                .join('');
+            return this.wrap('tr', cells);
+        })
+            .join('');
+        const element = this.wrap('table', tableBody);
+        return this.addRaw(element).addEOL();
+    }
+    /**
+     * Adds a collapsable HTML details element to the summary buffer
+     *
+     * @param {string} label text for the closed state
+     * @param {string} content collapsable content
+     *
+     * @returns {MarkdownSummary} markdown summary instance
+     */
+    addDetails(label, content) {
+        const element = this.wrap('details', this.wrap('summary', label) + content);
+        return this.addRaw(element).addEOL();
+    }
+    /**
+     * Adds an HTML image tag to the summary buffer
+     *
+     * @param {string} src path to the image you to embed
+     * @param {string} alt text description of the image
+     * @param {SummaryImageOptions} options (optional) addition image attributes
+     *
+     * @returns {MarkdownSummary} markdown summary instance
+     */
+    addImage(src, alt, options) {
+        const { width, height } = options || {};
+        const attrs = Object.assign(Object.assign({}, (width && { width })), (height && { height }));
+        const element = this.wrap('img', null, Object.assign({ src, alt }, attrs));
+        return this.addRaw(element).addEOL();
+    }
+    /**
+     * Adds an HTML section heading element
+     *
+     * @param {string} text heading text
+     * @param {number | string} [level=1] (optional) the heading level, default: 1
+     *
+     * @returns {MarkdownSummary} markdown summary instance
+     */
+    addHeading(text, level) {
+        const tag = `h${level}`;
+        const allowedTag = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].includes(tag)
+            ? tag
+            : 'h1';
+        const element = this.wrap(allowedTag, text);
+        return this.addRaw(element).addEOL();
+    }
+    /**
+     * Adds an HTML thematic break (<hr>) to the summary buffer
+     *
+     * @returns {MarkdownSummary} markdown summary instance
+     */
+    addSeparator() {
+        const element = this.wrap('hr', null);
+        return this.addRaw(element).addEOL();
+    }
+    /**
+     * Adds an HTML line break (<br>) to the summary buffer
+     *
+     * @returns {MarkdownSummary} markdown summary instance
+     */
+    addBreak() {
+        const element = this.wrap('br', null);
+        return this.addRaw(element).addEOL();
+    }
+    /**
+     * Adds an HTML blockquote to the summary buffer
+     *
+     * @param {string} text quote text
+     * @param {string} cite (optional) citation url
+     *
+     * @returns {MarkdownSummary} markdown summary instance
+     */
+    addQuote(text, cite) {
+        const attrs = Object.assign({}, (cite && { cite }));
+        const element = this.wrap('blockquote', text, attrs);
+        return this.addRaw(element).addEOL();
+    }
+    /**
+     * Adds an HTML anchor tag to the summary buffer
+     *
+     * @param {string} text link text/content
+     * @param {string} href hyperlink
+     *
+     * @returns {MarkdownSummary} markdown summary instance
+     */
+    addLink(text, href) {
+        const element = this.wrap('a', text, { href });
+        return this.addRaw(element).addEOL();
+    }
+}
+// singleton export
+exports.markdownSummary = new MarkdownSummary();
+//# sourceMappingURL=markdown-summary.js.map
 
 /***/ }),
 
@@ -1319,6 +1610,7 @@ const CreateAliasCommand_1 = __nccwpck_require__(2313);
 const CreateCodeSigningConfigCommand_1 = __nccwpck_require__(2716);
 const CreateEventSourceMappingCommand_1 = __nccwpck_require__(6307);
 const CreateFunctionCommand_1 = __nccwpck_require__(4008);
+const CreateFunctionUrlConfigCommand_1 = __nccwpck_require__(3379);
 const DeleteAliasCommand_1 = __nccwpck_require__(9117);
 const DeleteCodeSigningConfigCommand_1 = __nccwpck_require__(7004);
 const DeleteEventSourceMappingCommand_1 = __nccwpck_require__(3753);
@@ -1326,6 +1618,7 @@ const DeleteFunctionCodeSigningConfigCommand_1 = __nccwpck_require__(4190);
 const DeleteFunctionCommand_1 = __nccwpck_require__(9235);
 const DeleteFunctionConcurrencyCommand_1 = __nccwpck_require__(1676);
 const DeleteFunctionEventInvokeConfigCommand_1 = __nccwpck_require__(7312);
+const DeleteFunctionUrlConfigCommand_1 = __nccwpck_require__(2301);
 const DeleteLayerVersionCommand_1 = __nccwpck_require__(3735);
 const DeleteProvisionedConcurrencyConfigCommand_1 = __nccwpck_require__(5307);
 const GetAccountSettingsCommand_1 = __nccwpck_require__(3781);
@@ -1337,6 +1630,7 @@ const GetFunctionCommand_1 = __nccwpck_require__(1272);
 const GetFunctionConcurrencyCommand_1 = __nccwpck_require__(7750);
 const GetFunctionConfigurationCommand_1 = __nccwpck_require__(7);
 const GetFunctionEventInvokeConfigCommand_1 = __nccwpck_require__(3129);
+const GetFunctionUrlConfigCommand_1 = __nccwpck_require__(7605);
 const GetLayerVersionByArnCommand_1 = __nccwpck_require__(7747);
 const GetLayerVersionCommand_1 = __nccwpck_require__(2495);
 const GetLayerVersionPolicyCommand_1 = __nccwpck_require__(8937);
@@ -1350,6 +1644,7 @@ const ListEventSourceMappingsCommand_1 = __nccwpck_require__(5811);
 const ListFunctionEventInvokeConfigsCommand_1 = __nccwpck_require__(5240);
 const ListFunctionsByCodeSigningConfigCommand_1 = __nccwpck_require__(228);
 const ListFunctionsCommand_1 = __nccwpck_require__(4759);
+const ListFunctionUrlConfigsCommand_1 = __nccwpck_require__(9547);
 const ListLayersCommand_1 = __nccwpck_require__(7251);
 const ListLayerVersionsCommand_1 = __nccwpck_require__(161);
 const ListProvisionedConcurrencyConfigsCommand_1 = __nccwpck_require__(6241);
@@ -1371,6 +1666,7 @@ const UpdateEventSourceMappingCommand_1 = __nccwpck_require__(895);
 const UpdateFunctionCodeCommand_1 = __nccwpck_require__(790);
 const UpdateFunctionConfigurationCommand_1 = __nccwpck_require__(2795);
 const UpdateFunctionEventInvokeConfigCommand_1 = __nccwpck_require__(5856);
+const UpdateFunctionUrlConfigCommand_1 = __nccwpck_require__(9897);
 const LambdaClient_1 = __nccwpck_require__(8373);
 class Lambda extends LambdaClient_1.LambdaClient {
     addLayerVersionPermission(args, optionsOrCb, cb) {
@@ -1445,6 +1741,20 @@ class Lambda extends LambdaClient_1.LambdaClient {
     }
     createFunction(args, optionsOrCb, cb) {
         const command = new CreateFunctionCommand_1.CreateFunctionCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    createFunctionUrlConfig(args, optionsOrCb, cb) {
+        const command = new CreateFunctionUrlConfigCommand_1.CreateFunctionUrlConfigCommand(args);
         if (typeof optionsOrCb === "function") {
             this.send(command, optionsOrCb);
         }
@@ -1543,6 +1853,20 @@ class Lambda extends LambdaClient_1.LambdaClient {
     }
     deleteFunctionEventInvokeConfig(args, optionsOrCb, cb) {
         const command = new DeleteFunctionEventInvokeConfigCommand_1.DeleteFunctionEventInvokeConfigCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    deleteFunctionUrlConfig(args, optionsOrCb, cb) {
+        const command = new DeleteFunctionUrlConfigCommand_1.DeleteFunctionUrlConfigCommand(args);
         if (typeof optionsOrCb === "function") {
             this.send(command, optionsOrCb);
         }
@@ -1697,6 +2021,20 @@ class Lambda extends LambdaClient_1.LambdaClient {
     }
     getFunctionEventInvokeConfig(args, optionsOrCb, cb) {
         const command = new GetFunctionEventInvokeConfigCommand_1.GetFunctionEventInvokeConfigCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    getFunctionUrlConfig(args, optionsOrCb, cb) {
+        const command = new GetFunctionUrlConfigCommand_1.GetFunctionUrlConfigCommand(args);
         if (typeof optionsOrCb === "function") {
             this.send(command, optionsOrCb);
         }
@@ -1879,6 +2217,20 @@ class Lambda extends LambdaClient_1.LambdaClient {
     }
     listFunctionsByCodeSigningConfig(args, optionsOrCb, cb) {
         const command = new ListFunctionsByCodeSigningConfigCommand_1.ListFunctionsByCodeSigningConfigCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    listFunctionUrlConfigs(args, optionsOrCb, cb) {
+        const command = new ListFunctionUrlConfigsCommand_1.ListFunctionUrlConfigsCommand(args);
         if (typeof optionsOrCb === "function") {
             this.send(command, optionsOrCb);
         }
@@ -2173,6 +2525,20 @@ class Lambda extends LambdaClient_1.LambdaClient {
     }
     updateFunctionEventInvokeConfig(args, optionsOrCb, cb) {
         const command = new UpdateFunctionEventInvokeConfigCommand_1.UpdateFunctionEventInvokeConfigCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    updateFunctionUrlConfig(args, optionsOrCb, cb) {
+        const command = new UpdateFunctionUrlConfigCommand_1.UpdateFunctionUrlConfigCommand(args);
         if (typeof optionsOrCb === "function") {
             this.send(command, optionsOrCb);
         }
@@ -2498,6 +2864,50 @@ exports.CreateFunctionCommand = CreateFunctionCommand;
 
 /***/ }),
 
+/***/ 3379:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.CreateFunctionUrlConfigCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(3631);
+const smithy_client_1 = __nccwpck_require__(4963);
+const models_0_1 = __nccwpck_require__(5436);
+const Aws_restJson1_1 = __nccwpck_require__(2734);
+class CreateFunctionUrlConfigCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "LambdaClient";
+        const commandName = "CreateFunctionUrlConfigCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.CreateFunctionUrlConfigRequest.filterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.CreateFunctionUrlConfigResponse.filterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_restJson1_1.serializeAws_restJson1CreateFunctionUrlConfigCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_restJson1_1.deserializeAws_restJson1CreateFunctionUrlConfigCommand)(output, context);
+    }
+}
+exports.CreateFunctionUrlConfigCommand = CreateFunctionUrlConfigCommand;
+
+
+/***/ }),
+
 /***/ 9117:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
@@ -2802,6 +3212,50 @@ class DeleteFunctionEventInvokeConfigCommand extends smithy_client_1.Command {
     }
 }
 exports.DeleteFunctionEventInvokeConfigCommand = DeleteFunctionEventInvokeConfigCommand;
+
+
+/***/ }),
+
+/***/ 2301:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.DeleteFunctionUrlConfigCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(3631);
+const smithy_client_1 = __nccwpck_require__(4963);
+const models_0_1 = __nccwpck_require__(5436);
+const Aws_restJson1_1 = __nccwpck_require__(2734);
+class DeleteFunctionUrlConfigCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "LambdaClient";
+        const commandName = "DeleteFunctionUrlConfigCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.DeleteFunctionUrlConfigRequest.filterSensitiveLog,
+            outputFilterSensitiveLog: (output) => output,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_restJson1_1.serializeAws_restJson1DeleteFunctionUrlConfigCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_restJson1_1.deserializeAws_restJson1DeleteFunctionUrlConfigCommand)(output, context);
+    }
+}
+exports.DeleteFunctionUrlConfigCommand = DeleteFunctionUrlConfigCommand;
 
 
 /***/ }),
@@ -3290,6 +3744,50 @@ exports.GetFunctionEventInvokeConfigCommand = GetFunctionEventInvokeConfigComman
 
 /***/ }),
 
+/***/ 7605:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.GetFunctionUrlConfigCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(3631);
+const smithy_client_1 = __nccwpck_require__(4963);
+const models_0_1 = __nccwpck_require__(5436);
+const Aws_restJson1_1 = __nccwpck_require__(2734);
+class GetFunctionUrlConfigCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "LambdaClient";
+        const commandName = "GetFunctionUrlConfigCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.GetFunctionUrlConfigRequest.filterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.GetFunctionUrlConfigResponse.filterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_restJson1_1.serializeAws_restJson1GetFunctionUrlConfigCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_restJson1_1.deserializeAws_restJson1GetFunctionUrlConfigCommand)(output, context);
+    }
+}
+exports.GetFunctionUrlConfigCommand = GetFunctionUrlConfigCommand;
+
+
+/***/ }),
+
 /***/ 7747:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
@@ -3770,6 +4268,50 @@ class ListFunctionEventInvokeConfigsCommand extends smithy_client_1.Command {
     }
 }
 exports.ListFunctionEventInvokeConfigsCommand = ListFunctionEventInvokeConfigsCommand;
+
+
+/***/ }),
+
+/***/ 9547:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ListFunctionUrlConfigsCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(3631);
+const smithy_client_1 = __nccwpck_require__(4963);
+const models_0_1 = __nccwpck_require__(5436);
+const Aws_restJson1_1 = __nccwpck_require__(2734);
+class ListFunctionUrlConfigsCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "LambdaClient";
+        const commandName = "ListFunctionUrlConfigsCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.ListFunctionUrlConfigsRequest.filterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.ListFunctionUrlConfigsResponse.filterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_restJson1_1.serializeAws_restJson1ListFunctionUrlConfigsCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_restJson1_1.deserializeAws_restJson1ListFunctionUrlConfigsCommand)(output, context);
+    }
+}
+exports.ListFunctionUrlConfigsCommand = ListFunctionUrlConfigsCommand;
 
 
 /***/ }),
@@ -4786,6 +5328,50 @@ exports.UpdateFunctionEventInvokeConfigCommand = UpdateFunctionEventInvokeConfig
 
 /***/ }),
 
+/***/ 9897:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.UpdateFunctionUrlConfigCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(3631);
+const smithy_client_1 = __nccwpck_require__(4963);
+const models_0_1 = __nccwpck_require__(5436);
+const Aws_restJson1_1 = __nccwpck_require__(2734);
+class UpdateFunctionUrlConfigCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "LambdaClient";
+        const commandName = "UpdateFunctionUrlConfigCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.UpdateFunctionUrlConfigRequest.filterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.UpdateFunctionUrlConfigResponse.filterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_restJson1_1.serializeAws_restJson1UpdateFunctionUrlConfigCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_restJson1_1.deserializeAws_restJson1UpdateFunctionUrlConfigCommand)(output, context);
+    }
+}
+exports.UpdateFunctionUrlConfigCommand = UpdateFunctionUrlConfigCommand;
+
+
+/***/ }),
+
 /***/ 3193:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
@@ -4799,6 +5385,7 @@ tslib_1.__exportStar(__nccwpck_require__(2313), exports);
 tslib_1.__exportStar(__nccwpck_require__(2716), exports);
 tslib_1.__exportStar(__nccwpck_require__(6307), exports);
 tslib_1.__exportStar(__nccwpck_require__(4008), exports);
+tslib_1.__exportStar(__nccwpck_require__(3379), exports);
 tslib_1.__exportStar(__nccwpck_require__(9117), exports);
 tslib_1.__exportStar(__nccwpck_require__(7004), exports);
 tslib_1.__exportStar(__nccwpck_require__(3753), exports);
@@ -4806,6 +5393,7 @@ tslib_1.__exportStar(__nccwpck_require__(4190), exports);
 tslib_1.__exportStar(__nccwpck_require__(9235), exports);
 tslib_1.__exportStar(__nccwpck_require__(1676), exports);
 tslib_1.__exportStar(__nccwpck_require__(7312), exports);
+tslib_1.__exportStar(__nccwpck_require__(2301), exports);
 tslib_1.__exportStar(__nccwpck_require__(3735), exports);
 tslib_1.__exportStar(__nccwpck_require__(5307), exports);
 tslib_1.__exportStar(__nccwpck_require__(3781), exports);
@@ -4817,6 +5405,7 @@ tslib_1.__exportStar(__nccwpck_require__(1272), exports);
 tslib_1.__exportStar(__nccwpck_require__(7750), exports);
 tslib_1.__exportStar(__nccwpck_require__(7), exports);
 tslib_1.__exportStar(__nccwpck_require__(3129), exports);
+tslib_1.__exportStar(__nccwpck_require__(7605), exports);
 tslib_1.__exportStar(__nccwpck_require__(7747), exports);
 tslib_1.__exportStar(__nccwpck_require__(2495), exports);
 tslib_1.__exportStar(__nccwpck_require__(8937), exports);
@@ -4828,6 +5417,7 @@ tslib_1.__exportStar(__nccwpck_require__(6371), exports);
 tslib_1.__exportStar(__nccwpck_require__(7273), exports);
 tslib_1.__exportStar(__nccwpck_require__(5811), exports);
 tslib_1.__exportStar(__nccwpck_require__(5240), exports);
+tslib_1.__exportStar(__nccwpck_require__(9547), exports);
 tslib_1.__exportStar(__nccwpck_require__(228), exports);
 tslib_1.__exportStar(__nccwpck_require__(4759), exports);
 tslib_1.__exportStar(__nccwpck_require__(161), exports);
@@ -4851,6 +5441,7 @@ tslib_1.__exportStar(__nccwpck_require__(895), exports);
 tslib_1.__exportStar(__nccwpck_require__(790), exports);
 tslib_1.__exportStar(__nccwpck_require__(2795), exports);
 tslib_1.__exportStar(__nccwpck_require__(5856), exports);
+tslib_1.__exportStar(__nccwpck_require__(9897), exports);
 
 
 /***/ }),
@@ -5280,10 +5871,10 @@ tslib_1.__exportStar(__nccwpck_require__(5436), exports);
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.TracingConfig = exports.TracingMode = exports.Runtime = exports.PackageType = exports.ImageConfig = exports.FileSystemConfig = exports.EphemeralStorage = exports.Environment = exports.DeadLetterConfig = exports.FunctionCode = exports.CodeVerificationFailedException = exports.CodeStorageExceededException = exports.CodeSigningConfigNotFoundException = exports.EventSourceMappingConfiguration = exports.CreateEventSourceMappingRequest = exports.EventSourcePosition = exports.SourceAccessConfiguration = exports.SourceAccessType = exports.SelfManagedEventSource = exports.EndPointType = exports.FunctionResponseType = exports.FilterCriteria = exports.Filter = exports.DestinationConfig = exports.OnSuccess = exports.OnFailure = exports.CreateCodeSigningConfigResponse = exports.CodeSigningConfig = exports.CreateCodeSigningConfigRequest = exports.CodeSigningPolicies = exports.CodeSigningPolicy = exports.CreateAliasRequest = exports.Architecture = exports.AllowedPublishers = exports.AliasConfiguration = exports.AliasRoutingConfiguration = exports.AddPermissionResponse = exports.AddPermissionRequest = exports.TooManyRequestsException = exports.ThrottleReason = exports.ServiceException = exports.ResourceNotFoundException = exports.ResourceConflictException = exports.PreconditionFailedException = exports.PolicyLengthExceededException = exports.InvalidParameterValueException = exports.AddLayerVersionPermissionResponse = exports.AddLayerVersionPermissionRequest = exports.AccountUsage = exports.AccountLimit = void 0;
-exports.GetPolicyRequest = exports.GetLayerVersionPolicyResponse = exports.GetLayerVersionPolicyRequest = exports.GetLayerVersionByArnRequest = exports.GetLayerVersionResponse = exports.LayerVersionContentOutput = exports.GetLayerVersionRequest = exports.GetFunctionEventInvokeConfigRequest = exports.FunctionEventInvokeConfig = exports.GetFunctionConfigurationRequest = exports.GetFunctionConcurrencyResponse = exports.GetFunctionConcurrencyRequest = exports.GetFunctionCodeSigningConfigResponse = exports.GetFunctionCodeSigningConfigRequest = exports.GetFunctionResponse = exports.Concurrency = exports.FunctionCodeLocation = exports.GetFunctionRequest = exports.GetEventSourceMappingRequest = exports.GetCodeSigningConfigResponse = exports.GetCodeSigningConfigRequest = exports.GetAliasRequest = exports.GetAccountSettingsResponse = exports.GetAccountSettingsRequest = exports.DeleteProvisionedConcurrencyConfigRequest = exports.DeleteLayerVersionRequest = exports.DeleteFunctionEventInvokeConfigRequest = exports.DeleteFunctionConcurrencyRequest = exports.DeleteFunctionCodeSigningConfigRequest = exports.DeleteFunctionRequest = exports.ResourceInUseException = exports.DeleteEventSourceMappingRequest = exports.DeleteCodeSigningConfigResponse = exports.DeleteCodeSigningConfigRequest = exports.DeleteAliasRequest = exports.InvalidCodeSignatureException = exports.FunctionConfiguration = exports.VpcConfigResponse = exports.TracingConfigResponse = exports.StateReasonCode = exports.State = exports.Layer = exports.LastUpdateStatusReasonCode = exports.LastUpdateStatus = exports.ImageConfigResponse = exports.ImageConfigError = exports.EnvironmentResponse = exports.EnvironmentError = exports.CreateFunctionRequest = exports.VpcConfig = void 0;
-exports.ListLayerVersionsRequest = exports.ListLayersResponse = exports.LayersListItem = exports.LayerVersionsListItem = exports.ListLayersRequest = exports.ListFunctionsByCodeSigningConfigResponse = exports.ListFunctionsByCodeSigningConfigRequest = exports.ListFunctionsResponse = exports.ListFunctionsRequest = exports.FunctionVersion = exports.ListFunctionEventInvokeConfigsResponse = exports.ListFunctionEventInvokeConfigsRequest = exports.ListEventSourceMappingsResponse = exports.ListEventSourceMappingsRequest = exports.ListCodeSigningConfigsResponse = exports.ListCodeSigningConfigsRequest = exports.ListAliasesResponse = exports.ListAliasesRequest = exports.InvokeAsyncResponse = exports.InvokeAsyncRequest = exports.UnsupportedMediaTypeException = exports.SubnetIPAddressLimitReachedException = exports.ResourceNotReadyException = exports.RequestTooLargeException = exports.KMSNotFoundException = exports.KMSInvalidStateException = exports.KMSDisabledException = exports.KMSAccessDeniedException = exports.InvocationResponse = exports.InvocationRequest = exports.LogType = exports.InvocationType = exports.InvalidZipFileException = exports.InvalidSubnetIDException = exports.InvalidSecurityGroupIDException = exports.InvalidRuntimeException = exports.InvalidRequestContentException = exports.ENILimitReachedException = exports.EFSMountTimeoutException = exports.EFSMountFailureException = exports.EFSMountConnectivityException = exports.EFSIOException = exports.EC2UnexpectedException = exports.EC2ThrottledException = exports.EC2AccessDeniedException = exports.ProvisionedConcurrencyConfigNotFoundException = exports.GetProvisionedConcurrencyConfigResponse = exports.ProvisionedConcurrencyStatusEnum = exports.GetProvisionedConcurrencyConfigRequest = exports.GetPolicyResponse = void 0;
-exports.UpdateFunctionEventInvokeConfigRequest = exports.UpdateFunctionConfigurationRequest = exports.UpdateFunctionCodeRequest = exports.UpdateEventSourceMappingRequest = exports.UpdateCodeSigningConfigResponse = exports.UpdateCodeSigningConfigRequest = exports.UpdateAliasRequest = exports.UntagResourceRequest = exports.TagResourceRequest = exports.RemovePermissionRequest = exports.RemoveLayerVersionPermissionRequest = exports.PutProvisionedConcurrencyConfigResponse = exports.PutProvisionedConcurrencyConfigRequest = exports.PutFunctionEventInvokeConfigRequest = exports.PutFunctionConcurrencyRequest = exports.PutFunctionCodeSigningConfigResponse = exports.PutFunctionCodeSigningConfigRequest = exports.PublishVersionRequest = exports.PublishLayerVersionResponse = exports.PublishLayerVersionRequest = exports.LayerVersionContentInput = exports.ListVersionsByFunctionResponse = exports.ListVersionsByFunctionRequest = exports.ListTagsResponse = exports.ListTagsRequest = exports.ListProvisionedConcurrencyConfigsResponse = exports.ProvisionedConcurrencyConfigListItem = exports.ListProvisionedConcurrencyConfigsRequest = exports.ListLayerVersionsResponse = void 0;
+exports.TracingMode = exports.Runtime = exports.PackageType = exports.ImageConfig = exports.FileSystemConfig = exports.EphemeralStorage = exports.Environment = exports.DeadLetterConfig = exports.FunctionCode = exports.CodeVerificationFailedException = exports.CodeStorageExceededException = exports.CodeSigningConfigNotFoundException = exports.EventSourceMappingConfiguration = exports.CreateEventSourceMappingRequest = exports.EventSourcePosition = exports.SourceAccessConfiguration = exports.SourceAccessType = exports.SelfManagedEventSource = exports.EndPointType = exports.FunctionResponseType = exports.FilterCriteria = exports.Filter = exports.DestinationConfig = exports.OnSuccess = exports.OnFailure = exports.CreateCodeSigningConfigResponse = exports.CodeSigningConfig = exports.CreateCodeSigningConfigRequest = exports.CodeSigningPolicies = exports.CodeSigningPolicy = exports.CreateAliasRequest = exports.Architecture = exports.AllowedPublishers = exports.AliasConfiguration = exports.AliasRoutingConfiguration = exports.AddPermissionResponse = exports.AddPermissionRequest = exports.FunctionUrlAuthType = exports.TooManyRequestsException = exports.ThrottleReason = exports.ServiceException = exports.ResourceNotFoundException = exports.ResourceConflictException = exports.PreconditionFailedException = exports.PolicyLengthExceededException = exports.InvalidParameterValueException = exports.AddLayerVersionPermissionResponse = exports.AddLayerVersionPermissionRequest = exports.AccountUsage = exports.AccountLimit = void 0;
+exports.GetFunctionUrlConfigResponse = exports.GetFunctionUrlConfigRequest = exports.GetFunctionEventInvokeConfigRequest = exports.FunctionEventInvokeConfig = exports.GetFunctionConfigurationRequest = exports.GetFunctionConcurrencyResponse = exports.GetFunctionConcurrencyRequest = exports.GetFunctionCodeSigningConfigResponse = exports.GetFunctionCodeSigningConfigRequest = exports.GetFunctionResponse = exports.Concurrency = exports.FunctionCodeLocation = exports.GetFunctionRequest = exports.GetEventSourceMappingRequest = exports.GetCodeSigningConfigResponse = exports.GetCodeSigningConfigRequest = exports.GetAliasRequest = exports.GetAccountSettingsResponse = exports.GetAccountSettingsRequest = exports.DeleteProvisionedConcurrencyConfigRequest = exports.DeleteLayerVersionRequest = exports.DeleteFunctionUrlConfigRequest = exports.DeleteFunctionEventInvokeConfigRequest = exports.DeleteFunctionConcurrencyRequest = exports.DeleteFunctionCodeSigningConfigRequest = exports.DeleteFunctionRequest = exports.ResourceInUseException = exports.DeleteEventSourceMappingRequest = exports.DeleteCodeSigningConfigResponse = exports.DeleteCodeSigningConfigRequest = exports.DeleteAliasRequest = exports.CreateFunctionUrlConfigResponse = exports.CreateFunctionUrlConfigRequest = exports.Cors = exports.InvalidCodeSignatureException = exports.FunctionConfiguration = exports.VpcConfigResponse = exports.TracingConfigResponse = exports.StateReasonCode = exports.State = exports.Layer = exports.LastUpdateStatusReasonCode = exports.LastUpdateStatus = exports.ImageConfigResponse = exports.ImageConfigError = exports.EnvironmentResponse = exports.EnvironmentError = exports.CreateFunctionRequest = exports.VpcConfig = exports.TracingConfig = void 0;
+exports.ListFunctionsResponse = exports.ListFunctionsRequest = exports.FunctionVersion = exports.ListFunctionEventInvokeConfigsResponse = exports.ListFunctionEventInvokeConfigsRequest = exports.ListEventSourceMappingsResponse = exports.ListEventSourceMappingsRequest = exports.ListCodeSigningConfigsResponse = exports.ListCodeSigningConfigsRequest = exports.ListAliasesResponse = exports.ListAliasesRequest = exports.InvokeAsyncResponse = exports.InvokeAsyncRequest = exports.UnsupportedMediaTypeException = exports.SubnetIPAddressLimitReachedException = exports.ResourceNotReadyException = exports.RequestTooLargeException = exports.KMSNotFoundException = exports.KMSInvalidStateException = exports.KMSDisabledException = exports.KMSAccessDeniedException = exports.InvocationResponse = exports.InvocationRequest = exports.LogType = exports.InvocationType = exports.InvalidZipFileException = exports.InvalidSubnetIDException = exports.InvalidSecurityGroupIDException = exports.InvalidRuntimeException = exports.InvalidRequestContentException = exports.ENILimitReachedException = exports.EFSMountTimeoutException = exports.EFSMountFailureException = exports.EFSMountConnectivityException = exports.EFSIOException = exports.EC2UnexpectedException = exports.EC2ThrottledException = exports.EC2AccessDeniedException = exports.ProvisionedConcurrencyConfigNotFoundException = exports.GetProvisionedConcurrencyConfigResponse = exports.ProvisionedConcurrencyStatusEnum = exports.GetProvisionedConcurrencyConfigRequest = exports.GetPolicyResponse = exports.GetPolicyRequest = exports.GetLayerVersionPolicyResponse = exports.GetLayerVersionPolicyRequest = exports.GetLayerVersionByArnRequest = exports.GetLayerVersionResponse = exports.LayerVersionContentOutput = exports.GetLayerVersionRequest = void 0;
+exports.UpdateFunctionUrlConfigResponse = exports.UpdateFunctionUrlConfigRequest = exports.UpdateFunctionEventInvokeConfigRequest = exports.UpdateFunctionConfigurationRequest = exports.UpdateFunctionCodeRequest = exports.UpdateEventSourceMappingRequest = exports.UpdateCodeSigningConfigResponse = exports.UpdateCodeSigningConfigRequest = exports.UpdateAliasRequest = exports.UntagResourceRequest = exports.TagResourceRequest = exports.RemovePermissionRequest = exports.RemoveLayerVersionPermissionRequest = exports.PutProvisionedConcurrencyConfigResponse = exports.PutProvisionedConcurrencyConfigRequest = exports.PutFunctionEventInvokeConfigRequest = exports.PutFunctionConcurrencyRequest = exports.PutFunctionCodeSigningConfigResponse = exports.PutFunctionCodeSigningConfigRequest = exports.PublishVersionRequest = exports.PublishLayerVersionResponse = exports.PublishLayerVersionRequest = exports.LayerVersionContentInput = exports.ListVersionsByFunctionResponse = exports.ListVersionsByFunctionRequest = exports.ListTagsResponse = exports.ListTagsRequest = exports.ListProvisionedConcurrencyConfigsResponse = exports.ProvisionedConcurrencyConfigListItem = exports.ListProvisionedConcurrencyConfigsRequest = exports.ListLayerVersionsResponse = exports.ListLayerVersionsRequest = exports.ListLayersResponse = exports.LayersListItem = exports.LayerVersionsListItem = exports.ListLayersRequest = exports.ListFunctionUrlConfigsResponse = exports.FunctionUrlConfig = exports.ListFunctionUrlConfigsRequest = exports.ListFunctionsByCodeSigningConfigResponse = exports.ListFunctionsByCodeSigningConfigRequest = void 0;
 const smithy_client_1 = __nccwpck_require__(4963);
 const LambdaServiceException_1 = __nccwpck_require__(2084);
 var AccountLimit;
@@ -5420,6 +6011,11 @@ class TooManyRequestsException extends LambdaServiceException_1.LambdaServiceExc
     }
 }
 exports.TooManyRequestsException = TooManyRequestsException;
+var FunctionUrlAuthType;
+(function (FunctionUrlAuthType) {
+    FunctionUrlAuthType["AWS_IAM"] = "AWS_IAM";
+    FunctionUrlAuthType["NONE"] = "NONE";
+})(FunctionUrlAuthType = exports.FunctionUrlAuthType || (exports.FunctionUrlAuthType = {}));
 var AddPermissionRequest;
 (function (AddPermissionRequest) {
     AddPermissionRequest.filterSensitiveLog = (obj) => ({
@@ -5824,6 +6420,24 @@ class InvalidCodeSignatureException extends LambdaServiceException_1.LambdaServi
     }
 }
 exports.InvalidCodeSignatureException = InvalidCodeSignatureException;
+var Cors;
+(function (Cors) {
+    Cors.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(Cors = exports.Cors || (exports.Cors = {}));
+var CreateFunctionUrlConfigRequest;
+(function (CreateFunctionUrlConfigRequest) {
+    CreateFunctionUrlConfigRequest.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(CreateFunctionUrlConfigRequest = exports.CreateFunctionUrlConfigRequest || (exports.CreateFunctionUrlConfigRequest = {}));
+var CreateFunctionUrlConfigResponse;
+(function (CreateFunctionUrlConfigResponse) {
+    CreateFunctionUrlConfigResponse.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(CreateFunctionUrlConfigResponse = exports.CreateFunctionUrlConfigResponse || (exports.CreateFunctionUrlConfigResponse = {}));
 var DeleteAliasRequest;
 (function (DeleteAliasRequest) {
     DeleteAliasRequest.filterSensitiveLog = (obj) => ({
@@ -5887,6 +6501,12 @@ var DeleteFunctionEventInvokeConfigRequest;
         ...obj,
     });
 })(DeleteFunctionEventInvokeConfigRequest = exports.DeleteFunctionEventInvokeConfigRequest || (exports.DeleteFunctionEventInvokeConfigRequest = {}));
+var DeleteFunctionUrlConfigRequest;
+(function (DeleteFunctionUrlConfigRequest) {
+    DeleteFunctionUrlConfigRequest.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(DeleteFunctionUrlConfigRequest = exports.DeleteFunctionUrlConfigRequest || (exports.DeleteFunctionUrlConfigRequest = {}));
 var DeleteLayerVersionRequest;
 (function (DeleteLayerVersionRequest) {
     DeleteLayerVersionRequest.filterSensitiveLog = (obj) => ({
@@ -6002,6 +6622,18 @@ var GetFunctionEventInvokeConfigRequest;
         ...obj,
     });
 })(GetFunctionEventInvokeConfigRequest = exports.GetFunctionEventInvokeConfigRequest || (exports.GetFunctionEventInvokeConfigRequest = {}));
+var GetFunctionUrlConfigRequest;
+(function (GetFunctionUrlConfigRequest) {
+    GetFunctionUrlConfigRequest.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(GetFunctionUrlConfigRequest = exports.GetFunctionUrlConfigRequest || (exports.GetFunctionUrlConfigRequest = {}));
+var GetFunctionUrlConfigResponse;
+(function (GetFunctionUrlConfigResponse) {
+    GetFunctionUrlConfigResponse.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(GetFunctionUrlConfigResponse = exports.GetFunctionUrlConfigResponse || (exports.GetFunctionUrlConfigResponse = {}));
 var GetLayerVersionRequest;
 (function (GetLayerVersionRequest) {
     GetLayerVersionRequest.filterSensitiveLog = (obj) => ({
@@ -6508,6 +7140,24 @@ var ListFunctionsByCodeSigningConfigResponse;
         ...obj,
     });
 })(ListFunctionsByCodeSigningConfigResponse = exports.ListFunctionsByCodeSigningConfigResponse || (exports.ListFunctionsByCodeSigningConfigResponse = {}));
+var ListFunctionUrlConfigsRequest;
+(function (ListFunctionUrlConfigsRequest) {
+    ListFunctionUrlConfigsRequest.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(ListFunctionUrlConfigsRequest = exports.ListFunctionUrlConfigsRequest || (exports.ListFunctionUrlConfigsRequest = {}));
+var FunctionUrlConfig;
+(function (FunctionUrlConfig) {
+    FunctionUrlConfig.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(FunctionUrlConfig = exports.FunctionUrlConfig || (exports.FunctionUrlConfig = {}));
+var ListFunctionUrlConfigsResponse;
+(function (ListFunctionUrlConfigsResponse) {
+    ListFunctionUrlConfigsResponse.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(ListFunctionUrlConfigsResponse = exports.ListFunctionUrlConfigsResponse || (exports.ListFunctionUrlConfigsResponse = {}));
 var ListLayersRequest;
 (function (ListLayersRequest) {
     ListLayersRequest.filterSensitiveLog = (obj) => ({
@@ -6717,6 +7367,18 @@ var UpdateFunctionEventInvokeConfigRequest;
         ...obj,
     });
 })(UpdateFunctionEventInvokeConfigRequest = exports.UpdateFunctionEventInvokeConfigRequest || (exports.UpdateFunctionEventInvokeConfigRequest = {}));
+var UpdateFunctionUrlConfigRequest;
+(function (UpdateFunctionUrlConfigRequest) {
+    UpdateFunctionUrlConfigRequest.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(UpdateFunctionUrlConfigRequest = exports.UpdateFunctionUrlConfigRequest || (exports.UpdateFunctionUrlConfigRequest = {}));
+var UpdateFunctionUrlConfigResponse;
+(function (UpdateFunctionUrlConfigResponse) {
+    UpdateFunctionUrlConfigResponse.filterSensitiveLog = (obj) => ({
+        ...obj,
+    });
+})(UpdateFunctionUrlConfigResponse = exports.UpdateFunctionUrlConfigResponse || (exports.UpdateFunctionUrlConfigResponse = {}));
 
 
 /***/ }),
@@ -6764,8 +7426,9 @@ async function* paginateListAliases(config, input, ...additionalArguments) {
             throw new Error("Invalid client, expected Lambda | LambdaClient");
         }
         yield page;
+        const prevToken = token;
         token = page.NextMarker;
-        hasNext = !!token;
+        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
     }
     return undefined;
 }
@@ -6807,8 +7470,9 @@ async function* paginateListCodeSigningConfigs(config, input, ...additionalArgum
             throw new Error("Invalid client, expected Lambda | LambdaClient");
         }
         yield page;
+        const prevToken = token;
         token = page.NextMarker;
-        hasNext = !!token;
+        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
     }
     return undefined;
 }
@@ -6850,8 +7514,9 @@ async function* paginateListEventSourceMappings(config, input, ...additionalArgu
             throw new Error("Invalid client, expected Lambda | LambdaClient");
         }
         yield page;
+        const prevToken = token;
         token = page.NextMarker;
-        hasNext = !!token;
+        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
     }
     return undefined;
 }
@@ -6893,12 +7558,57 @@ async function* paginateListFunctionEventInvokeConfigs(config, input, ...additio
             throw new Error("Invalid client, expected Lambda | LambdaClient");
         }
         yield page;
+        const prevToken = token;
         token = page.NextMarker;
-        hasNext = !!token;
+        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
     }
     return undefined;
 }
 exports.paginateListFunctionEventInvokeConfigs = paginateListFunctionEventInvokeConfigs;
+
+
+/***/ }),
+
+/***/ 1937:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.paginateListFunctionUrlConfigs = void 0;
+const ListFunctionUrlConfigsCommand_1 = __nccwpck_require__(9547);
+const Lambda_1 = __nccwpck_require__(3623);
+const LambdaClient_1 = __nccwpck_require__(8373);
+const makePagedClientRequest = async (client, input, ...args) => {
+    return await client.send(new ListFunctionUrlConfigsCommand_1.ListFunctionUrlConfigsCommand(input), ...args);
+};
+const makePagedRequest = async (client, input, ...args) => {
+    return await client.listFunctionUrlConfigs(input, ...args);
+};
+async function* paginateListFunctionUrlConfigs(config, input, ...additionalArguments) {
+    let token = config.startingToken || undefined;
+    let hasNext = true;
+    let page;
+    while (hasNext) {
+        input.Marker = token;
+        input["MaxItems"] = config.pageSize;
+        if (config.client instanceof Lambda_1.Lambda) {
+            page = await makePagedRequest(config.client, input, ...additionalArguments);
+        }
+        else if (config.client instanceof LambdaClient_1.LambdaClient) {
+            page = await makePagedClientRequest(config.client, input, ...additionalArguments);
+        }
+        else {
+            throw new Error("Invalid client, expected Lambda | LambdaClient");
+        }
+        yield page;
+        const prevToken = token;
+        token = page.NextMarker;
+        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
+    }
+    return undefined;
+}
+exports.paginateListFunctionUrlConfigs = paginateListFunctionUrlConfigs;
 
 
 /***/ }),
@@ -6936,8 +7646,9 @@ async function* paginateListFunctionsByCodeSigningConfig(config, input, ...addit
             throw new Error("Invalid client, expected Lambda | LambdaClient");
         }
         yield page;
+        const prevToken = token;
         token = page.NextMarker;
-        hasNext = !!token;
+        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
     }
     return undefined;
 }
@@ -6979,8 +7690,9 @@ async function* paginateListFunctions(config, input, ...additionalArguments) {
             throw new Error("Invalid client, expected Lambda | LambdaClient");
         }
         yield page;
+        const prevToken = token;
         token = page.NextMarker;
-        hasNext = !!token;
+        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
     }
     return undefined;
 }
@@ -7022,8 +7734,9 @@ async function* paginateListLayerVersions(config, input, ...additionalArguments)
             throw new Error("Invalid client, expected Lambda | LambdaClient");
         }
         yield page;
+        const prevToken = token;
         token = page.NextMarker;
-        hasNext = !!token;
+        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
     }
     return undefined;
 }
@@ -7065,8 +7778,9 @@ async function* paginateListLayers(config, input, ...additionalArguments) {
             throw new Error("Invalid client, expected Lambda | LambdaClient");
         }
         yield page;
+        const prevToken = token;
         token = page.NextMarker;
-        hasNext = !!token;
+        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
     }
     return undefined;
 }
@@ -7108,8 +7822,9 @@ async function* paginateListProvisionedConcurrencyConfigs(config, input, ...addi
             throw new Error("Invalid client, expected Lambda | LambdaClient");
         }
         yield page;
+        const prevToken = token;
         token = page.NextMarker;
-        hasNext = !!token;
+        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
     }
     return undefined;
 }
@@ -7151,8 +7866,9 @@ async function* paginateListVersionsByFunction(config, input, ...additionalArgum
             throw new Error("Invalid client, expected Lambda | LambdaClient");
         }
         yield page;
+        const prevToken = token;
         token = page.NextMarker;
-        hasNext = !!token;
+        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
     }
     return undefined;
 }
@@ -7173,6 +7889,7 @@ tslib_1.__exportStar(__nccwpck_require__(3063), exports);
 tslib_1.__exportStar(__nccwpck_require__(2126), exports);
 tslib_1.__exportStar(__nccwpck_require__(441), exports);
 tslib_1.__exportStar(__nccwpck_require__(7383), exports);
+tslib_1.__exportStar(__nccwpck_require__(1937), exports);
 tslib_1.__exportStar(__nccwpck_require__(8773), exports);
 tslib_1.__exportStar(__nccwpck_require__(2980), exports);
 tslib_1.__exportStar(__nccwpck_require__(6883), exports);
@@ -7189,9 +7906,9 @@ tslib_1.__exportStar(__nccwpck_require__(646), exports);
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.serializeAws_restJson1RemovePermissionCommand = exports.serializeAws_restJson1RemoveLayerVersionPermissionCommand = exports.serializeAws_restJson1PutProvisionedConcurrencyConfigCommand = exports.serializeAws_restJson1PutFunctionEventInvokeConfigCommand = exports.serializeAws_restJson1PutFunctionConcurrencyCommand = exports.serializeAws_restJson1PutFunctionCodeSigningConfigCommand = exports.serializeAws_restJson1PublishVersionCommand = exports.serializeAws_restJson1PublishLayerVersionCommand = exports.serializeAws_restJson1ListVersionsByFunctionCommand = exports.serializeAws_restJson1ListTagsCommand = exports.serializeAws_restJson1ListProvisionedConcurrencyConfigsCommand = exports.serializeAws_restJson1ListLayerVersionsCommand = exports.serializeAws_restJson1ListLayersCommand = exports.serializeAws_restJson1ListFunctionsByCodeSigningConfigCommand = exports.serializeAws_restJson1ListFunctionsCommand = exports.serializeAws_restJson1ListFunctionEventInvokeConfigsCommand = exports.serializeAws_restJson1ListEventSourceMappingsCommand = exports.serializeAws_restJson1ListCodeSigningConfigsCommand = exports.serializeAws_restJson1ListAliasesCommand = exports.serializeAws_restJson1InvokeAsyncCommand = exports.serializeAws_restJson1InvokeCommand = exports.serializeAws_restJson1GetProvisionedConcurrencyConfigCommand = exports.serializeAws_restJson1GetPolicyCommand = exports.serializeAws_restJson1GetLayerVersionPolicyCommand = exports.serializeAws_restJson1GetLayerVersionByArnCommand = exports.serializeAws_restJson1GetLayerVersionCommand = exports.serializeAws_restJson1GetFunctionEventInvokeConfigCommand = exports.serializeAws_restJson1GetFunctionConfigurationCommand = exports.serializeAws_restJson1GetFunctionConcurrencyCommand = exports.serializeAws_restJson1GetFunctionCodeSigningConfigCommand = exports.serializeAws_restJson1GetFunctionCommand = exports.serializeAws_restJson1GetEventSourceMappingCommand = exports.serializeAws_restJson1GetCodeSigningConfigCommand = exports.serializeAws_restJson1GetAliasCommand = exports.serializeAws_restJson1GetAccountSettingsCommand = exports.serializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand = exports.serializeAws_restJson1DeleteLayerVersionCommand = exports.serializeAws_restJson1DeleteFunctionEventInvokeConfigCommand = exports.serializeAws_restJson1DeleteFunctionConcurrencyCommand = exports.serializeAws_restJson1DeleteFunctionCodeSigningConfigCommand = exports.serializeAws_restJson1DeleteFunctionCommand = exports.serializeAws_restJson1DeleteEventSourceMappingCommand = exports.serializeAws_restJson1DeleteCodeSigningConfigCommand = exports.serializeAws_restJson1DeleteAliasCommand = exports.serializeAws_restJson1CreateFunctionCommand = exports.serializeAws_restJson1CreateEventSourceMappingCommand = exports.serializeAws_restJson1CreateCodeSigningConfigCommand = exports.serializeAws_restJson1CreateAliasCommand = exports.serializeAws_restJson1AddPermissionCommand = exports.serializeAws_restJson1AddLayerVersionPermissionCommand = void 0;
-exports.deserializeAws_restJson1ListVersionsByFunctionCommand = exports.deserializeAws_restJson1ListTagsCommand = exports.deserializeAws_restJson1ListProvisionedConcurrencyConfigsCommand = exports.deserializeAws_restJson1ListLayerVersionsCommand = exports.deserializeAws_restJson1ListLayersCommand = exports.deserializeAws_restJson1ListFunctionsByCodeSigningConfigCommand = exports.deserializeAws_restJson1ListFunctionsCommand = exports.deserializeAws_restJson1ListFunctionEventInvokeConfigsCommand = exports.deserializeAws_restJson1ListEventSourceMappingsCommand = exports.deserializeAws_restJson1ListCodeSigningConfigsCommand = exports.deserializeAws_restJson1ListAliasesCommand = exports.deserializeAws_restJson1InvokeAsyncCommand = exports.deserializeAws_restJson1InvokeCommand = exports.deserializeAws_restJson1GetProvisionedConcurrencyConfigCommand = exports.deserializeAws_restJson1GetPolicyCommand = exports.deserializeAws_restJson1GetLayerVersionPolicyCommand = exports.deserializeAws_restJson1GetLayerVersionByArnCommand = exports.deserializeAws_restJson1GetLayerVersionCommand = exports.deserializeAws_restJson1GetFunctionEventInvokeConfigCommand = exports.deserializeAws_restJson1GetFunctionConfigurationCommand = exports.deserializeAws_restJson1GetFunctionConcurrencyCommand = exports.deserializeAws_restJson1GetFunctionCodeSigningConfigCommand = exports.deserializeAws_restJson1GetFunctionCommand = exports.deserializeAws_restJson1GetEventSourceMappingCommand = exports.deserializeAws_restJson1GetCodeSigningConfigCommand = exports.deserializeAws_restJson1GetAliasCommand = exports.deserializeAws_restJson1GetAccountSettingsCommand = exports.deserializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand = exports.deserializeAws_restJson1DeleteLayerVersionCommand = exports.deserializeAws_restJson1DeleteFunctionEventInvokeConfigCommand = exports.deserializeAws_restJson1DeleteFunctionConcurrencyCommand = exports.deserializeAws_restJson1DeleteFunctionCodeSigningConfigCommand = exports.deserializeAws_restJson1DeleteFunctionCommand = exports.deserializeAws_restJson1DeleteEventSourceMappingCommand = exports.deserializeAws_restJson1DeleteCodeSigningConfigCommand = exports.deserializeAws_restJson1DeleteAliasCommand = exports.deserializeAws_restJson1CreateFunctionCommand = exports.deserializeAws_restJson1CreateEventSourceMappingCommand = exports.deserializeAws_restJson1CreateCodeSigningConfigCommand = exports.deserializeAws_restJson1CreateAliasCommand = exports.deserializeAws_restJson1AddPermissionCommand = exports.deserializeAws_restJson1AddLayerVersionPermissionCommand = exports.serializeAws_restJson1UpdateFunctionEventInvokeConfigCommand = exports.serializeAws_restJson1UpdateFunctionConfigurationCommand = exports.serializeAws_restJson1UpdateFunctionCodeCommand = exports.serializeAws_restJson1UpdateEventSourceMappingCommand = exports.serializeAws_restJson1UpdateCodeSigningConfigCommand = exports.serializeAws_restJson1UpdateAliasCommand = exports.serializeAws_restJson1UntagResourceCommand = exports.serializeAws_restJson1TagResourceCommand = void 0;
-exports.deserializeAws_restJson1UpdateFunctionEventInvokeConfigCommand = exports.deserializeAws_restJson1UpdateFunctionConfigurationCommand = exports.deserializeAws_restJson1UpdateFunctionCodeCommand = exports.deserializeAws_restJson1UpdateEventSourceMappingCommand = exports.deserializeAws_restJson1UpdateCodeSigningConfigCommand = exports.deserializeAws_restJson1UpdateAliasCommand = exports.deserializeAws_restJson1UntagResourceCommand = exports.deserializeAws_restJson1TagResourceCommand = exports.deserializeAws_restJson1RemovePermissionCommand = exports.deserializeAws_restJson1RemoveLayerVersionPermissionCommand = exports.deserializeAws_restJson1PutProvisionedConcurrencyConfigCommand = exports.deserializeAws_restJson1PutFunctionEventInvokeConfigCommand = exports.deserializeAws_restJson1PutFunctionConcurrencyCommand = exports.deserializeAws_restJson1PutFunctionCodeSigningConfigCommand = exports.deserializeAws_restJson1PublishVersionCommand = exports.deserializeAws_restJson1PublishLayerVersionCommand = void 0;
+exports.serializeAws_restJson1PutFunctionConcurrencyCommand = exports.serializeAws_restJson1PutFunctionCodeSigningConfigCommand = exports.serializeAws_restJson1PublishVersionCommand = exports.serializeAws_restJson1PublishLayerVersionCommand = exports.serializeAws_restJson1ListVersionsByFunctionCommand = exports.serializeAws_restJson1ListTagsCommand = exports.serializeAws_restJson1ListProvisionedConcurrencyConfigsCommand = exports.serializeAws_restJson1ListLayerVersionsCommand = exports.serializeAws_restJson1ListLayersCommand = exports.serializeAws_restJson1ListFunctionUrlConfigsCommand = exports.serializeAws_restJson1ListFunctionsByCodeSigningConfigCommand = exports.serializeAws_restJson1ListFunctionsCommand = exports.serializeAws_restJson1ListFunctionEventInvokeConfigsCommand = exports.serializeAws_restJson1ListEventSourceMappingsCommand = exports.serializeAws_restJson1ListCodeSigningConfigsCommand = exports.serializeAws_restJson1ListAliasesCommand = exports.serializeAws_restJson1InvokeAsyncCommand = exports.serializeAws_restJson1InvokeCommand = exports.serializeAws_restJson1GetProvisionedConcurrencyConfigCommand = exports.serializeAws_restJson1GetPolicyCommand = exports.serializeAws_restJson1GetLayerVersionPolicyCommand = exports.serializeAws_restJson1GetLayerVersionByArnCommand = exports.serializeAws_restJson1GetLayerVersionCommand = exports.serializeAws_restJson1GetFunctionUrlConfigCommand = exports.serializeAws_restJson1GetFunctionEventInvokeConfigCommand = exports.serializeAws_restJson1GetFunctionConfigurationCommand = exports.serializeAws_restJson1GetFunctionConcurrencyCommand = exports.serializeAws_restJson1GetFunctionCodeSigningConfigCommand = exports.serializeAws_restJson1GetFunctionCommand = exports.serializeAws_restJson1GetEventSourceMappingCommand = exports.serializeAws_restJson1GetCodeSigningConfigCommand = exports.serializeAws_restJson1GetAliasCommand = exports.serializeAws_restJson1GetAccountSettingsCommand = exports.serializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand = exports.serializeAws_restJson1DeleteLayerVersionCommand = exports.serializeAws_restJson1DeleteFunctionUrlConfigCommand = exports.serializeAws_restJson1DeleteFunctionEventInvokeConfigCommand = exports.serializeAws_restJson1DeleteFunctionConcurrencyCommand = exports.serializeAws_restJson1DeleteFunctionCodeSigningConfigCommand = exports.serializeAws_restJson1DeleteFunctionCommand = exports.serializeAws_restJson1DeleteEventSourceMappingCommand = exports.serializeAws_restJson1DeleteCodeSigningConfigCommand = exports.serializeAws_restJson1DeleteAliasCommand = exports.serializeAws_restJson1CreateFunctionUrlConfigCommand = exports.serializeAws_restJson1CreateFunctionCommand = exports.serializeAws_restJson1CreateEventSourceMappingCommand = exports.serializeAws_restJson1CreateCodeSigningConfigCommand = exports.serializeAws_restJson1CreateAliasCommand = exports.serializeAws_restJson1AddPermissionCommand = exports.serializeAws_restJson1AddLayerVersionPermissionCommand = void 0;
+exports.deserializeAws_restJson1ListEventSourceMappingsCommand = exports.deserializeAws_restJson1ListCodeSigningConfigsCommand = exports.deserializeAws_restJson1ListAliasesCommand = exports.deserializeAws_restJson1InvokeAsyncCommand = exports.deserializeAws_restJson1InvokeCommand = exports.deserializeAws_restJson1GetProvisionedConcurrencyConfigCommand = exports.deserializeAws_restJson1GetPolicyCommand = exports.deserializeAws_restJson1GetLayerVersionPolicyCommand = exports.deserializeAws_restJson1GetLayerVersionByArnCommand = exports.deserializeAws_restJson1GetLayerVersionCommand = exports.deserializeAws_restJson1GetFunctionUrlConfigCommand = exports.deserializeAws_restJson1GetFunctionEventInvokeConfigCommand = exports.deserializeAws_restJson1GetFunctionConfigurationCommand = exports.deserializeAws_restJson1GetFunctionConcurrencyCommand = exports.deserializeAws_restJson1GetFunctionCodeSigningConfigCommand = exports.deserializeAws_restJson1GetFunctionCommand = exports.deserializeAws_restJson1GetEventSourceMappingCommand = exports.deserializeAws_restJson1GetCodeSigningConfigCommand = exports.deserializeAws_restJson1GetAliasCommand = exports.deserializeAws_restJson1GetAccountSettingsCommand = exports.deserializeAws_restJson1DeleteProvisionedConcurrencyConfigCommand = exports.deserializeAws_restJson1DeleteLayerVersionCommand = exports.deserializeAws_restJson1DeleteFunctionUrlConfigCommand = exports.deserializeAws_restJson1DeleteFunctionEventInvokeConfigCommand = exports.deserializeAws_restJson1DeleteFunctionConcurrencyCommand = exports.deserializeAws_restJson1DeleteFunctionCodeSigningConfigCommand = exports.deserializeAws_restJson1DeleteFunctionCommand = exports.deserializeAws_restJson1DeleteEventSourceMappingCommand = exports.deserializeAws_restJson1DeleteCodeSigningConfigCommand = exports.deserializeAws_restJson1DeleteAliasCommand = exports.deserializeAws_restJson1CreateFunctionUrlConfigCommand = exports.deserializeAws_restJson1CreateFunctionCommand = exports.deserializeAws_restJson1CreateEventSourceMappingCommand = exports.deserializeAws_restJson1CreateCodeSigningConfigCommand = exports.deserializeAws_restJson1CreateAliasCommand = exports.deserializeAws_restJson1AddPermissionCommand = exports.deserializeAws_restJson1AddLayerVersionPermissionCommand = exports.serializeAws_restJson1UpdateFunctionUrlConfigCommand = exports.serializeAws_restJson1UpdateFunctionEventInvokeConfigCommand = exports.serializeAws_restJson1UpdateFunctionConfigurationCommand = exports.serializeAws_restJson1UpdateFunctionCodeCommand = exports.serializeAws_restJson1UpdateEventSourceMappingCommand = exports.serializeAws_restJson1UpdateCodeSigningConfigCommand = exports.serializeAws_restJson1UpdateAliasCommand = exports.serializeAws_restJson1UntagResourceCommand = exports.serializeAws_restJson1TagResourceCommand = exports.serializeAws_restJson1RemovePermissionCommand = exports.serializeAws_restJson1RemoveLayerVersionPermissionCommand = exports.serializeAws_restJson1PutProvisionedConcurrencyConfigCommand = exports.serializeAws_restJson1PutFunctionEventInvokeConfigCommand = void 0;
+exports.deserializeAws_restJson1UpdateFunctionUrlConfigCommand = exports.deserializeAws_restJson1UpdateFunctionEventInvokeConfigCommand = exports.deserializeAws_restJson1UpdateFunctionConfigurationCommand = exports.deserializeAws_restJson1UpdateFunctionCodeCommand = exports.deserializeAws_restJson1UpdateEventSourceMappingCommand = exports.deserializeAws_restJson1UpdateCodeSigningConfigCommand = exports.deserializeAws_restJson1UpdateAliasCommand = exports.deserializeAws_restJson1UntagResourceCommand = exports.deserializeAws_restJson1TagResourceCommand = exports.deserializeAws_restJson1RemovePermissionCommand = exports.deserializeAws_restJson1RemoveLayerVersionPermissionCommand = exports.deserializeAws_restJson1PutProvisionedConcurrencyConfigCommand = exports.deserializeAws_restJson1PutFunctionEventInvokeConfigCommand = exports.deserializeAws_restJson1PutFunctionConcurrencyCommand = exports.deserializeAws_restJson1PutFunctionCodeSigningConfigCommand = exports.deserializeAws_restJson1PublishVersionCommand = exports.deserializeAws_restJson1PublishLayerVersionCommand = exports.deserializeAws_restJson1ListVersionsByFunctionCommand = exports.deserializeAws_restJson1ListTagsCommand = exports.deserializeAws_restJson1ListProvisionedConcurrencyConfigsCommand = exports.deserializeAws_restJson1ListLayerVersionsCommand = exports.deserializeAws_restJson1ListLayersCommand = exports.deserializeAws_restJson1ListFunctionUrlConfigsCommand = exports.deserializeAws_restJson1ListFunctionsByCodeSigningConfigCommand = exports.deserializeAws_restJson1ListFunctionsCommand = exports.deserializeAws_restJson1ListFunctionEventInvokeConfigsCommand = void 0;
 const protocol_http_1 = __nccwpck_require__(223);
 const smithy_client_1 = __nccwpck_require__(4963);
 const LambdaServiceException_1 = __nccwpck_require__(2084);
@@ -7271,6 +7988,8 @@ const serializeAws_restJson1AddPermissionCommand = async (input, context) => {
         ...(input.Action !== undefined && input.Action !== null && { Action: input.Action }),
         ...(input.EventSourceToken !== undefined &&
             input.EventSourceToken !== null && { EventSourceToken: input.EventSourceToken }),
+        ...(input.FunctionUrlAuthType !== undefined &&
+            input.FunctionUrlAuthType !== null && { FunctionUrlAuthType: input.FunctionUrlAuthType }),
         ...(input.Principal !== undefined && input.Principal !== null && { Principal: input.Principal }),
         ...(input.PrincipalOrgID !== undefined &&
             input.PrincipalOrgID !== null && { PrincipalOrgID: input.PrincipalOrgID }),
@@ -7491,6 +8210,42 @@ const serializeAws_restJson1CreateFunctionCommand = async (input, context) => {
     });
 };
 exports.serializeAws_restJson1CreateFunctionCommand = serializeAws_restJson1CreateFunctionCommand;
+const serializeAws_restJson1CreateFunctionUrlConfigCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
+    const headers = {
+        "content-type": "application/json",
+    };
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/2021-10-31/functions/{FunctionName}/url";
+    if (input.FunctionName !== undefined) {
+        const labelValue = input.FunctionName;
+        if (labelValue.length <= 0) {
+            throw new Error("Empty value provided for input HTTP label: FunctionName.");
+        }
+        resolvedPath = resolvedPath.replace("{FunctionName}", (0, smithy_client_1.extendedEncodeURIComponent)(labelValue));
+    }
+    else {
+        throw new Error("No value provided for input HTTP label: FunctionName.");
+    }
+    const query = {
+        ...(input.Qualifier !== undefined && { Qualifier: input.Qualifier }),
+    };
+    let body;
+    body = JSON.stringify({
+        ...(input.AuthType !== undefined && input.AuthType !== null && { AuthType: input.AuthType }),
+        ...(input.Cors !== undefined && input.Cors !== null && { Cors: serializeAws_restJson1Cors(input.Cors, context) }),
+    });
+    return new protocol_http_1.HttpRequest({
+        protocol,
+        hostname,
+        port,
+        method: "POST",
+        headers,
+        path: resolvedPath,
+        query,
+        body,
+    });
+};
+exports.serializeAws_restJson1CreateFunctionUrlConfigCommand = serializeAws_restJson1CreateFunctionUrlConfigCommand;
 const serializeAws_restJson1DeleteAliasCommand = async (input, context) => {
     const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {};
@@ -7696,6 +8451,36 @@ const serializeAws_restJson1DeleteFunctionEventInvokeConfigCommand = async (inpu
     });
 };
 exports.serializeAws_restJson1DeleteFunctionEventInvokeConfigCommand = serializeAws_restJson1DeleteFunctionEventInvokeConfigCommand;
+const serializeAws_restJson1DeleteFunctionUrlConfigCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
+    const headers = {};
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/2021-10-31/functions/{FunctionName}/url";
+    if (input.FunctionName !== undefined) {
+        const labelValue = input.FunctionName;
+        if (labelValue.length <= 0) {
+            throw new Error("Empty value provided for input HTTP label: FunctionName.");
+        }
+        resolvedPath = resolvedPath.replace("{FunctionName}", (0, smithy_client_1.extendedEncodeURIComponent)(labelValue));
+    }
+    else {
+        throw new Error("No value provided for input HTTP label: FunctionName.");
+    }
+    const query = {
+        ...(input.Qualifier !== undefined && { Qualifier: input.Qualifier }),
+    };
+    let body;
+    return new protocol_http_1.HttpRequest({
+        protocol,
+        hostname,
+        port,
+        method: "DELETE",
+        headers,
+        path: resolvedPath,
+        query,
+        body,
+    });
+};
+exports.serializeAws_restJson1DeleteFunctionUrlConfigCommand = serializeAws_restJson1DeleteFunctionUrlConfigCommand;
 const serializeAws_restJson1DeleteLayerVersionCommand = async (input, context) => {
     const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {};
@@ -8019,6 +8804,36 @@ const serializeAws_restJson1GetFunctionEventInvokeConfigCommand = async (input, 
     });
 };
 exports.serializeAws_restJson1GetFunctionEventInvokeConfigCommand = serializeAws_restJson1GetFunctionEventInvokeConfigCommand;
+const serializeAws_restJson1GetFunctionUrlConfigCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
+    const headers = {};
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/2021-10-31/functions/{FunctionName}/url";
+    if (input.FunctionName !== undefined) {
+        const labelValue = input.FunctionName;
+        if (labelValue.length <= 0) {
+            throw new Error("Empty value provided for input HTTP label: FunctionName.");
+        }
+        resolvedPath = resolvedPath.replace("{FunctionName}", (0, smithy_client_1.extendedEncodeURIComponent)(labelValue));
+    }
+    else {
+        throw new Error("No value provided for input HTTP label: FunctionName.");
+    }
+    const query = {
+        ...(input.Qualifier !== undefined && { Qualifier: input.Qualifier }),
+    };
+    let body;
+    return new protocol_http_1.HttpRequest({
+        protocol,
+        hostname,
+        port,
+        method: "GET",
+        headers,
+        path: resolvedPath,
+        query,
+        body,
+    });
+};
+exports.serializeAws_restJson1GetFunctionUrlConfigCommand = serializeAws_restJson1GetFunctionUrlConfigCommand;
 const serializeAws_restJson1GetLayerVersionCommand = async (input, context) => {
     const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {};
@@ -8411,6 +9226,37 @@ const serializeAws_restJson1ListFunctionsByCodeSigningConfigCommand = async (inp
     });
 };
 exports.serializeAws_restJson1ListFunctionsByCodeSigningConfigCommand = serializeAws_restJson1ListFunctionsByCodeSigningConfigCommand;
+const serializeAws_restJson1ListFunctionUrlConfigsCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
+    const headers = {};
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/2021-10-31/functions/{FunctionName}/urls";
+    if (input.FunctionName !== undefined) {
+        const labelValue = input.FunctionName;
+        if (labelValue.length <= 0) {
+            throw new Error("Empty value provided for input HTTP label: FunctionName.");
+        }
+        resolvedPath = resolvedPath.replace("{FunctionName}", (0, smithy_client_1.extendedEncodeURIComponent)(labelValue));
+    }
+    else {
+        throw new Error("No value provided for input HTTP label: FunctionName.");
+    }
+    const query = {
+        ...(input.Marker !== undefined && { Marker: input.Marker }),
+        ...(input.MaxItems !== undefined && { MaxItems: input.MaxItems.toString() }),
+    };
+    let body;
+    return new protocol_http_1.HttpRequest({
+        protocol,
+        hostname,
+        port,
+        method: "GET",
+        headers,
+        path: resolvedPath,
+        query,
+        body,
+    });
+};
+exports.serializeAws_restJson1ListFunctionUrlConfigsCommand = serializeAws_restJson1ListFunctionUrlConfigsCommand;
 const serializeAws_restJson1ListLayersCommand = async (input, context) => {
     const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {};
@@ -9239,6 +10085,42 @@ const serializeAws_restJson1UpdateFunctionEventInvokeConfigCommand = async (inpu
     });
 };
 exports.serializeAws_restJson1UpdateFunctionEventInvokeConfigCommand = serializeAws_restJson1UpdateFunctionEventInvokeConfigCommand;
+const serializeAws_restJson1UpdateFunctionUrlConfigCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
+    const headers = {
+        "content-type": "application/json",
+    };
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/2021-10-31/functions/{FunctionName}/url";
+    if (input.FunctionName !== undefined) {
+        const labelValue = input.FunctionName;
+        if (labelValue.length <= 0) {
+            throw new Error("Empty value provided for input HTTP label: FunctionName.");
+        }
+        resolvedPath = resolvedPath.replace("{FunctionName}", (0, smithy_client_1.extendedEncodeURIComponent)(labelValue));
+    }
+    else {
+        throw new Error("No value provided for input HTTP label: FunctionName.");
+    }
+    const query = {
+        ...(input.Qualifier !== undefined && { Qualifier: input.Qualifier }),
+    };
+    let body;
+    body = JSON.stringify({
+        ...(input.AuthType !== undefined && input.AuthType !== null && { AuthType: input.AuthType }),
+        ...(input.Cors !== undefined && input.Cors !== null && { Cors: serializeAws_restJson1Cors(input.Cors, context) }),
+    });
+    return new protocol_http_1.HttpRequest({
+        protocol,
+        hostname,
+        port,
+        method: "PUT",
+        headers,
+        path: resolvedPath,
+        query,
+        body,
+    });
+};
+exports.serializeAws_restJson1UpdateFunctionUrlConfigCommand = serializeAws_restJson1UpdateFunctionUrlConfigCommand;
 const deserializeAws_restJson1AddLayerVersionPermissionCommand = async (output, context) => {
     if (output.statusCode !== 201 && output.statusCode >= 300) {
         return deserializeAws_restJson1AddLayerVersionPermissionCommandError(output, context);
@@ -9788,6 +10670,71 @@ const deserializeAws_restJson1CreateFunctionCommandError = async (output, contex
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
 };
+const deserializeAws_restJson1CreateFunctionUrlConfigCommand = async (output, context) => {
+    if (output.statusCode !== 201 && output.statusCode >= 300) {
+        return deserializeAws_restJson1CreateFunctionUrlConfigCommandError(output, context);
+    }
+    const contents = {
+        $metadata: deserializeMetadata(output),
+        AuthType: undefined,
+        Cors: undefined,
+        CreationTime: undefined,
+        FunctionArn: undefined,
+        FunctionUrl: undefined,
+    };
+    const data = (0, smithy_client_1.expectNonNull)((0, smithy_client_1.expectObject)(await parseBody(output.body, context)), "body");
+    if (data.AuthType !== undefined && data.AuthType !== null) {
+        contents.AuthType = (0, smithy_client_1.expectString)(data.AuthType);
+    }
+    if (data.Cors !== undefined && data.Cors !== null) {
+        contents.Cors = deserializeAws_restJson1Cors(data.Cors, context);
+    }
+    if (data.CreationTime !== undefined && data.CreationTime !== null) {
+        contents.CreationTime = (0, smithy_client_1.expectString)(data.CreationTime);
+    }
+    if (data.FunctionArn !== undefined && data.FunctionArn !== null) {
+        contents.FunctionArn = (0, smithy_client_1.expectString)(data.FunctionArn);
+    }
+    if (data.FunctionUrl !== undefined && data.FunctionUrl !== null) {
+        contents.FunctionUrl = (0, smithy_client_1.expectString)(data.FunctionUrl);
+    }
+    return Promise.resolve(contents);
+};
+exports.deserializeAws_restJson1CreateFunctionUrlConfigCommand = deserializeAws_restJson1CreateFunctionUrlConfigCommand;
+const deserializeAws_restJson1CreateFunctionUrlConfigCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseBody(output.body, context),
+    };
+    let response;
+    let errorCode = "UnknownError";
+    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InvalidParameterValueException":
+        case "com.amazonaws.lambda#InvalidParameterValueException":
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
+        case "ResourceConflictException":
+        case "com.amazonaws.lambda#ResourceConflictException":
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.lambda#ResourceNotFoundException":
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
+        case "ServiceException":
+        case "com.amazonaws.lambda#ServiceException":
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
+        case "TooManyRequestsException":
+        case "com.amazonaws.lambda#TooManyRequestsException":
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
+                $fault: "client",
+                $metadata: deserializeMetadata(output),
+            });
+            throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
+    }
+};
 const deserializeAws_restJson1DeleteAliasCommand = async (output, context) => {
     if (output.statusCode !== 204 && output.statusCode >= 300) {
         return deserializeAws_restJson1DeleteAliasCommandError(output, context);
@@ -10170,6 +11117,48 @@ const deserializeAws_restJson1DeleteFunctionEventInvokeConfigCommandError = asyn
         case "InvalidParameterValueException":
         case "com.amazonaws.lambda#InvalidParameterValueException":
             throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
+        case "ResourceConflictException":
+        case "com.amazonaws.lambda#ResourceConflictException":
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.lambda#ResourceNotFoundException":
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
+        case "ServiceException":
+        case "com.amazonaws.lambda#ServiceException":
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
+        case "TooManyRequestsException":
+        case "com.amazonaws.lambda#TooManyRequestsException":
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
+                $fault: "client",
+                $metadata: deserializeMetadata(output),
+            });
+            throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
+    }
+};
+const deserializeAws_restJson1DeleteFunctionUrlConfigCommand = async (output, context) => {
+    if (output.statusCode !== 204 && output.statusCode >= 300) {
+        return deserializeAws_restJson1DeleteFunctionUrlConfigCommandError(output, context);
+    }
+    const contents = {
+        $metadata: deserializeMetadata(output),
+    };
+    await collectBody(output.body, context);
+    return Promise.resolve(contents);
+};
+exports.deserializeAws_restJson1DeleteFunctionUrlConfigCommand = deserializeAws_restJson1DeleteFunctionUrlConfigCommand;
+const deserializeAws_restJson1DeleteFunctionUrlConfigCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseBody(output.body, context),
+    };
+    let response;
+    let errorCode = "UnknownError";
+    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
         case "ResourceConflictException":
         case "com.amazonaws.lambda#ResourceConflictException":
             throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
@@ -10920,6 +11909,72 @@ const deserializeAws_restJson1GetFunctionEventInvokeConfigCommand = async (outpu
 };
 exports.deserializeAws_restJson1GetFunctionEventInvokeConfigCommand = deserializeAws_restJson1GetFunctionEventInvokeConfigCommand;
 const deserializeAws_restJson1GetFunctionEventInvokeConfigCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseBody(output.body, context),
+    };
+    let response;
+    let errorCode = "UnknownError";
+    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InvalidParameterValueException":
+        case "com.amazonaws.lambda#InvalidParameterValueException":
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.lambda#ResourceNotFoundException":
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
+        case "ServiceException":
+        case "com.amazonaws.lambda#ServiceException":
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
+        case "TooManyRequestsException":
+        case "com.amazonaws.lambda#TooManyRequestsException":
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
+                $fault: "client",
+                $metadata: deserializeMetadata(output),
+            });
+            throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
+    }
+};
+const deserializeAws_restJson1GetFunctionUrlConfigCommand = async (output, context) => {
+    if (output.statusCode !== 200 && output.statusCode >= 300) {
+        return deserializeAws_restJson1GetFunctionUrlConfigCommandError(output, context);
+    }
+    const contents = {
+        $metadata: deserializeMetadata(output),
+        AuthType: undefined,
+        Cors: undefined,
+        CreationTime: undefined,
+        FunctionArn: undefined,
+        FunctionUrl: undefined,
+        LastModifiedTime: undefined,
+    };
+    const data = (0, smithy_client_1.expectNonNull)((0, smithy_client_1.expectObject)(await parseBody(output.body, context)), "body");
+    if (data.AuthType !== undefined && data.AuthType !== null) {
+        contents.AuthType = (0, smithy_client_1.expectString)(data.AuthType);
+    }
+    if (data.Cors !== undefined && data.Cors !== null) {
+        contents.Cors = deserializeAws_restJson1Cors(data.Cors, context);
+    }
+    if (data.CreationTime !== undefined && data.CreationTime !== null) {
+        contents.CreationTime = (0, smithy_client_1.expectString)(data.CreationTime);
+    }
+    if (data.FunctionArn !== undefined && data.FunctionArn !== null) {
+        contents.FunctionArn = (0, smithy_client_1.expectString)(data.FunctionArn);
+    }
+    if (data.FunctionUrl !== undefined && data.FunctionUrl !== null) {
+        contents.FunctionUrl = (0, smithy_client_1.expectString)(data.FunctionUrl);
+    }
+    if (data.LastModifiedTime !== undefined && data.LastModifiedTime !== null) {
+        contents.LastModifiedTime = (0, smithy_client_1.expectString)(data.LastModifiedTime);
+    }
+    return Promise.resolve(contents);
+};
+exports.deserializeAws_restJson1GetFunctionUrlConfigCommand = deserializeAws_restJson1GetFunctionUrlConfigCommand;
+const deserializeAws_restJson1GetFunctionUrlConfigCommandError = async (output, context) => {
     const parsedOutput = {
         ...output,
         body: await parseBody(output.body, context),
@@ -11731,6 +12786,56 @@ const deserializeAws_restJson1ListFunctionsByCodeSigningConfigCommandError = asy
         case "ServiceException":
         case "com.amazonaws.lambda#ServiceException":
             throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
+                $fault: "client",
+                $metadata: deserializeMetadata(output),
+            });
+            throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
+    }
+};
+const deserializeAws_restJson1ListFunctionUrlConfigsCommand = async (output, context) => {
+    if (output.statusCode !== 200 && output.statusCode >= 300) {
+        return deserializeAws_restJson1ListFunctionUrlConfigsCommandError(output, context);
+    }
+    const contents = {
+        $metadata: deserializeMetadata(output),
+        FunctionUrlConfigs: undefined,
+        NextMarker: undefined,
+    };
+    const data = (0, smithy_client_1.expectNonNull)((0, smithy_client_1.expectObject)(await parseBody(output.body, context)), "body");
+    if (data.FunctionUrlConfigs !== undefined && data.FunctionUrlConfigs !== null) {
+        contents.FunctionUrlConfigs = deserializeAws_restJson1FunctionUrlConfigList(data.FunctionUrlConfigs, context);
+    }
+    if (data.NextMarker !== undefined && data.NextMarker !== null) {
+        contents.NextMarker = (0, smithy_client_1.expectString)(data.NextMarker);
+    }
+    return Promise.resolve(contents);
+};
+exports.deserializeAws_restJson1ListFunctionUrlConfigsCommand = deserializeAws_restJson1ListFunctionUrlConfigsCommand;
+const deserializeAws_restJson1ListFunctionUrlConfigsCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseBody(output.body, context),
+    };
+    let response;
+    let errorCode = "UnknownError";
+    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InvalidParameterValueException":
+        case "com.amazonaws.lambda#InvalidParameterValueException":
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.lambda#ResourceNotFoundException":
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
+        case "ServiceException":
+        case "com.amazonaws.lambda#ServiceException":
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
+        case "TooManyRequestsException":
+        case "com.amazonaws.lambda#TooManyRequestsException":
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
             response = new LambdaServiceException_1.LambdaServiceException({
@@ -13371,6 +14476,75 @@ const deserializeAws_restJson1UpdateFunctionEventInvokeConfigCommandError = asyn
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
 };
+const deserializeAws_restJson1UpdateFunctionUrlConfigCommand = async (output, context) => {
+    if (output.statusCode !== 200 && output.statusCode >= 300) {
+        return deserializeAws_restJson1UpdateFunctionUrlConfigCommandError(output, context);
+    }
+    const contents = {
+        $metadata: deserializeMetadata(output),
+        AuthType: undefined,
+        Cors: undefined,
+        CreationTime: undefined,
+        FunctionArn: undefined,
+        FunctionUrl: undefined,
+        LastModifiedTime: undefined,
+    };
+    const data = (0, smithy_client_1.expectNonNull)((0, smithy_client_1.expectObject)(await parseBody(output.body, context)), "body");
+    if (data.AuthType !== undefined && data.AuthType !== null) {
+        contents.AuthType = (0, smithy_client_1.expectString)(data.AuthType);
+    }
+    if (data.Cors !== undefined && data.Cors !== null) {
+        contents.Cors = deserializeAws_restJson1Cors(data.Cors, context);
+    }
+    if (data.CreationTime !== undefined && data.CreationTime !== null) {
+        contents.CreationTime = (0, smithy_client_1.expectString)(data.CreationTime);
+    }
+    if (data.FunctionArn !== undefined && data.FunctionArn !== null) {
+        contents.FunctionArn = (0, smithy_client_1.expectString)(data.FunctionArn);
+    }
+    if (data.FunctionUrl !== undefined && data.FunctionUrl !== null) {
+        contents.FunctionUrl = (0, smithy_client_1.expectString)(data.FunctionUrl);
+    }
+    if (data.LastModifiedTime !== undefined && data.LastModifiedTime !== null) {
+        contents.LastModifiedTime = (0, smithy_client_1.expectString)(data.LastModifiedTime);
+    }
+    return Promise.resolve(contents);
+};
+exports.deserializeAws_restJson1UpdateFunctionUrlConfigCommand = deserializeAws_restJson1UpdateFunctionUrlConfigCommand;
+const deserializeAws_restJson1UpdateFunctionUrlConfigCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseBody(output.body, context),
+    };
+    let response;
+    let errorCode = "UnknownError";
+    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InvalidParameterValueException":
+        case "com.amazonaws.lambda#InvalidParameterValueException":
+            throw await deserializeAws_restJson1InvalidParameterValueExceptionResponse(parsedOutput, context);
+        case "ResourceConflictException":
+        case "com.amazonaws.lambda#ResourceConflictException":
+            throw await deserializeAws_restJson1ResourceConflictExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.lambda#ResourceNotFoundException":
+            throw await deserializeAws_restJson1ResourceNotFoundExceptionResponse(parsedOutput, context);
+        case "ServiceException":
+        case "com.amazonaws.lambda#ServiceException":
+            throw await deserializeAws_restJson1ServiceExceptionResponse(parsedOutput, context);
+        case "TooManyRequestsException":
+        case "com.amazonaws.lambda#TooManyRequestsException":
+            throw await deserializeAws_restJson1TooManyRequestsExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            response = new LambdaServiceException_1.LambdaServiceException({
+                name: parsedBody.code || parsedBody.Code || errorCode,
+                $fault: "client",
+                $metadata: deserializeMetadata(output),
+            });
+            throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
+    }
+};
 const deserializeAws_restJson1CodeSigningConfigNotFoundExceptionResponse = async (parsedOutput, context) => {
     const contents = {};
     const data = parsedOutput.body;
@@ -13917,6 +15091,26 @@ const serializeAws_restJson1AllowedPublishers = (input, context) => {
         }),
     };
 };
+const serializeAws_restJson1AllowMethodsList = (input, context) => {
+    return input
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return entry;
+    });
+};
+const serializeAws_restJson1AllowOriginsList = (input, context) => {
+    return input
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return entry;
+    });
+};
 const serializeAws_restJson1ArchitecturesList = (input, context) => {
     return input
         .filter((e) => e != null)
@@ -13954,6 +15148,27 @@ const serializeAws_restJson1CompatibleRuntimes = (input, context) => {
         }
         return entry;
     });
+};
+const serializeAws_restJson1Cors = (input, context) => {
+    return {
+        ...(input.AllowCredentials !== undefined &&
+            input.AllowCredentials !== null && { AllowCredentials: input.AllowCredentials }),
+        ...(input.AllowHeaders !== undefined &&
+            input.AllowHeaders !== null && { AllowHeaders: serializeAws_restJson1HeadersList(input.AllowHeaders, context) }),
+        ...(input.AllowMethods !== undefined &&
+            input.AllowMethods !== null && {
+            AllowMethods: serializeAws_restJson1AllowMethodsList(input.AllowMethods, context),
+        }),
+        ...(input.AllowOrigins !== undefined &&
+            input.AllowOrigins !== null && {
+            AllowOrigins: serializeAws_restJson1AllowOriginsList(input.AllowOrigins, context),
+        }),
+        ...(input.ExposeHeaders !== undefined &&
+            input.ExposeHeaders !== null && {
+            ExposeHeaders: serializeAws_restJson1HeadersList(input.ExposeHeaders, context),
+        }),
+        ...(input.MaxAge !== undefined && input.MaxAge !== null && { MaxAge: input.MaxAge }),
+    };
 };
 const serializeAws_restJson1DeadLetterConfig = (input, context) => {
     return {
@@ -14060,6 +15275,16 @@ const serializeAws_restJson1FunctionCode = (input, context) => {
     };
 };
 const serializeAws_restJson1FunctionResponseTypeList = (input, context) => {
+    return input
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return entry;
+    });
+};
+const serializeAws_restJson1HeadersList = (input, context) => {
     return input
         .filter((e) => e != null)
         .map((entry) => {
@@ -14279,6 +15504,28 @@ const deserializeAws_restJson1AllowedPublishers = (output, context) => {
             : undefined,
     };
 };
+const deserializeAws_restJson1AllowMethodsList = (output, context) => {
+    const retVal = (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return (0, smithy_client_1.expectString)(entry);
+    });
+    return retVal;
+};
+const deserializeAws_restJson1AllowOriginsList = (output, context) => {
+    const retVal = (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return (0, smithy_client_1.expectString)(entry);
+    });
+    return retVal;
+};
 const deserializeAws_restJson1ArchitecturesList = (output, context) => {
     const retVal = (output || [])
         .filter((e) => e != null)
@@ -14345,6 +15592,24 @@ const deserializeAws_restJson1CompatibleRuntimes = (output, context) => {
 const deserializeAws_restJson1Concurrency = (output, context) => {
     return {
         ReservedConcurrentExecutions: (0, smithy_client_1.expectInt32)(output.ReservedConcurrentExecutions),
+    };
+};
+const deserializeAws_restJson1Cors = (output, context) => {
+    return {
+        AllowCredentials: (0, smithy_client_1.expectBoolean)(output.AllowCredentials),
+        AllowHeaders: output.AllowHeaders !== undefined && output.AllowHeaders !== null
+            ? deserializeAws_restJson1HeadersList(output.AllowHeaders, context)
+            : undefined,
+        AllowMethods: output.AllowMethods !== undefined && output.AllowMethods !== null
+            ? deserializeAws_restJson1AllowMethodsList(output.AllowMethods, context)
+            : undefined,
+        AllowOrigins: output.AllowOrigins !== undefined && output.AllowOrigins !== null
+            ? deserializeAws_restJson1AllowOriginsList(output.AllowOrigins, context)
+            : undefined,
+        ExposeHeaders: output.ExposeHeaders !== undefined && output.ExposeHeaders !== null
+            ? deserializeAws_restJson1HeadersList(output.ExposeHeaders, context)
+            : undefined,
+        MaxAge: (0, smithy_client_1.expectInt32)(output.MaxAge),
     };
 };
 const deserializeAws_restJson1DeadLetterConfig = (output, context) => {
@@ -14622,6 +15887,40 @@ const deserializeAws_restJson1FunctionList = (output, context) => {
     return retVal;
 };
 const deserializeAws_restJson1FunctionResponseTypeList = (output, context) => {
+    const retVal = (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return (0, smithy_client_1.expectString)(entry);
+    });
+    return retVal;
+};
+const deserializeAws_restJson1FunctionUrlConfig = (output, context) => {
+    return {
+        AuthType: (0, smithy_client_1.expectString)(output.AuthType),
+        Cors: output.Cors !== undefined && output.Cors !== null
+            ? deserializeAws_restJson1Cors(output.Cors, context)
+            : undefined,
+        CreationTime: (0, smithy_client_1.expectString)(output.CreationTime),
+        FunctionArn: (0, smithy_client_1.expectString)(output.FunctionArn),
+        FunctionUrl: (0, smithy_client_1.expectString)(output.FunctionUrl),
+        LastModifiedTime: (0, smithy_client_1.expectString)(output.LastModifiedTime),
+    };
+};
+const deserializeAws_restJson1FunctionUrlConfigList = (output, context) => {
+    const retVal = (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return deserializeAws_restJson1FunctionUrlConfig(entry, context);
+    });
+    return retVal;
+};
+const deserializeAws_restJson1HeadersList = (output, context) => {
     const retVal = (output || [])
         .filter((e) => e != null)
         .map((entry) => {
@@ -16147,8 +17446,9 @@ async function* paginateListAccountRoles(config, input, ...additionalArguments) 
             throw new Error("Invalid client, expected SSO | SSOClient");
         }
         yield page;
+        const prevToken = token;
         token = page.nextToken;
-        hasNext = !!token;
+        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
     }
     return undefined;
 }
@@ -16190,8 +17490,9 @@ async function* paginateListAccounts(config, input, ...additionalArguments) {
             throw new Error("Invalid client, expected SSO | SSOClient");
         }
         yield page;
+        const prevToken = token;
         token = page.nextToken;
-        hasNext = !!token;
+        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
     }
     return undefined;
 }
@@ -19891,7 +21192,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getExtendedInstanceMetadataCredentials = void 0;
-const STATIC_STABILITY_REFRESH_INTERVAL_SECONDS = 15 * 60;
+const STATIC_STABILITY_REFRESH_INTERVAL_SECONDS = 5 * 60;
 const STATIC_STABILITY_REFRESH_INTERVAL_JITTER_WINDOW_SECONDS = 5 * 60;
 const STATIC_STABILITY_DOC_URL = "https://docs.aws.amazon.com/sdkref/latest/guide/feature-static-credentials.html";
 const getExtendedInstanceMetadataCredentials = (credentials, logger) => {
@@ -22170,14 +23471,18 @@ const write_request_body_1 = __nccwpck_require__(5248);
 class NodeHttpHandler {
     constructor(options) {
         this.metadata = { handlerProtocol: "http/1.1" };
-        if (typeof options === "function") {
-            this.configProvider = async () => {
-                return this.resolveDefaultConfig(await options());
-            };
-        }
-        else {
-            this.config = this.resolveDefaultConfig(options);
-        }
+        this.configProvider = new Promise((resolve, reject) => {
+            if (typeof options === "function") {
+                options()
+                    .then((_options) => {
+                    resolve(this.resolveDefaultConfig(_options));
+                })
+                    .catch(reject);
+            }
+            else {
+                resolve(this.resolveDefaultConfig(options));
+            }
+        });
     }
     resolveDefaultConfig(options) {
         const { connectionTimeout, socketTimeout, httpAgent, httpsAgent } = options || {};
@@ -22196,8 +23501,8 @@ class NodeHttpHandler {
         (_d = (_c = this.config) === null || _c === void 0 ? void 0 : _c.httpsAgent) === null || _d === void 0 ? void 0 : _d.destroy();
     }
     async handle(request, { abortSignal } = {}) {
-        if (!this.config && this.configProvider) {
-            this.config = await this.configProvider();
+        if (!this.config) {
+            this.config = await this.configProvider;
         }
         return new Promise((resolve, reject) => {
             if (!this.config) {
@@ -22307,6 +23612,7 @@ class NodeHttp2Handler {
                 [http2_1.constants.HTTP2_HEADER_PATH]: queryString ? `${path}?${queryString}` : path,
                 [http2_1.constants.HTTP2_HEADER_METHOD]: method,
             });
+            session.ref();
             req.on("response", (headers) => {
                 const httpResponse = new protocol_http_1.HttpResponse({
                     statusCode: headers[":status"] || -1,
@@ -22345,6 +23651,7 @@ class NodeHttp2Handler {
                 reject(new Error(`HTTP/2 stream is abnormally aborted in mid-communication with result code ${req.rstCode}.`));
             });
             req.on("close", () => {
+                session.unref();
                 if (this.disableConcurrentStreams) {
                     session.destroy();
                 }
@@ -22361,6 +23668,7 @@ class NodeHttp2Handler {
         if (existingSessions.length > 0 && !disableConcurrentStreams)
             return existingSessions[0];
         const newSession = (0, http2_1.connect)(authority);
+        newSession.unref();
         const destroySessionCb = () => {
             this.destroySession(newSession);
             this.deleteSessionFromCache(authority, newSession);
@@ -22940,6 +24248,38 @@ exports.isTransientError = isTransientError;
 
 /***/ }),
 
+/***/ 5216:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getConfigFilepath = exports.ENV_CONFIG_PATH = void 0;
+const path_1 = __nccwpck_require__(1017);
+const getHomeDir_1 = __nccwpck_require__(7363);
+exports.ENV_CONFIG_PATH = "AWS_CONFIG_FILE";
+const getConfigFilepath = () => process.env[exports.ENV_CONFIG_PATH] || (0, path_1.join)((0, getHomeDir_1.getHomeDir)(), ".aws", "config");
+exports.getConfigFilepath = getConfigFilepath;
+
+
+/***/ }),
+
+/***/ 1569:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getCredentialsFilepath = exports.ENV_CREDENTIALS_PATH = void 0;
+const path_1 = __nccwpck_require__(1017);
+const getHomeDir_1 = __nccwpck_require__(7363);
+exports.ENV_CREDENTIALS_PATH = "AWS_SHARED_CREDENTIALS_FILE";
+const getCredentialsFilepath = () => process.env[exports.ENV_CREDENTIALS_PATH] || (0, path_1.join)((0, getHomeDir_1.getHomeDir)(), ".aws", "credentials");
+exports.getCredentialsFilepath = getCredentialsFilepath;
+
+
+/***/ }),
+
 /***/ 7363:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
@@ -22960,6 +24300,24 @@ const getHomeDir = () => {
     return (0, os_1.homedir)();
 };
 exports.getHomeDir = getHomeDir;
+
+
+/***/ }),
+
+/***/ 7498:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getProfileData = void 0;
+const profileKeyRegex = /^profile\s(["'])?([^\1]+)\1$/;
+const getProfileData = (data) => Object.entries(data)
+    .filter(([key]) => profileKeyRegex.test(key))
+    .reduce((acc, [key, value]) => ({ ...acc, [profileKeyRegex.exec(key)[2]]: value }), {
+    ...(data.default && { default: data.default }),
+});
+exports.getProfileData = getProfileData;
 
 
 /***/ }),
@@ -23043,19 +24401,17 @@ tslib_1.__exportStar(__nccwpck_require__(4105), exports);
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.loadSharedConfigFiles = exports.ENV_CONFIG_PATH = exports.ENV_CREDENTIALS_PATH = void 0;
-const path_1 = __nccwpck_require__(1017);
-const getHomeDir_1 = __nccwpck_require__(7363);
-const normalizeConfigFile_1 = __nccwpck_require__(9307);
+exports.loadSharedConfigFiles = void 0;
+const getConfigFilepath_1 = __nccwpck_require__(5216);
+const getCredentialsFilepath_1 = __nccwpck_require__(1569);
+const getProfileData_1 = __nccwpck_require__(7498);
 const parseIni_1 = __nccwpck_require__(2806);
 const slurpFile_1 = __nccwpck_require__(9242);
-exports.ENV_CREDENTIALS_PATH = "AWS_SHARED_CREDENTIALS_FILE";
-exports.ENV_CONFIG_PATH = "AWS_CONFIG_FILE";
 const swallowError = () => ({});
 const loadSharedConfigFiles = async (init = {}) => {
-    const { filepath = process.env[exports.ENV_CREDENTIALS_PATH] || (0, path_1.join)((0, getHomeDir_1.getHomeDir)(), ".aws", "credentials"), configFilepath = process.env[exports.ENV_CONFIG_PATH] || (0, path_1.join)((0, getHomeDir_1.getHomeDir)(), ".aws", "config"), } = init;
+    const { filepath = (0, getCredentialsFilepath_1.getCredentialsFilepath)(), configFilepath = (0, getConfigFilepath_1.getConfigFilepath)() } = init;
     const parsedFiles = await Promise.all([
-        (0, slurpFile_1.slurpFile)(configFilepath).then(parseIni_1.parseIni).then(normalizeConfigFile_1.normalizeConfigFile).catch(swallowError),
+        (0, slurpFile_1.slurpFile)(configFilepath).then(parseIni_1.parseIni).then(getProfileData_1.getProfileData).catch(swallowError),
         (0, slurpFile_1.slurpFile)(filepath).then(parseIni_1.parseIni).catch(swallowError),
     ]);
     return {
@@ -23064,35 +24420,6 @@ const loadSharedConfigFiles = async (init = {}) => {
     };
 };
 exports.loadSharedConfigFiles = loadSharedConfigFiles;
-
-
-/***/ }),
-
-/***/ 9307:
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.normalizeConfigFile = void 0;
-const profileKeyRegex = /^profile\s(["'])?([^\1]+)\1$/;
-const normalizeConfigFile = (data) => {
-    const map = {};
-    for (const key of Object.keys(data)) {
-        let matches;
-        if (key === "default") {
-            map.default = data.default;
-        }
-        else if ((matches = profileKeyRegex.exec(key))) {
-            const [_1, _2, normalizedKey] = matches;
-            if (normalizedKey) {
-                map[normalizedKey] = data[key];
-            }
-        }
-    }
-    return map;
-};
-exports.normalizeConfigFile = normalizeConfigFile;
 
 
 /***/ }),
@@ -23161,37 +24488,13 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.slurpFile = void 0;
 const fs_1 = __nccwpck_require__(7147);
 const { readFile } = fs_1.promises;
-const fileStatusHash = {};
-const slurpFile = (path) => new Promise((resolve, reject) => {
-    if (!fileStatusHash[path]) {
-        fileStatusHash[path] = { isReading: true, contents: "", requestQueue: [] };
-        fileStatusHash[path].requestQueue.push({ resolve, reject });
-        readFile(path, "utf8")
-            .then((data) => {
-            fileStatusHash[path].isReading = false;
-            fileStatusHash[path].contents = data;
-            const { requestQueue } = fileStatusHash[path];
-            while (requestQueue.length) {
-                const { resolve } = requestQueue.pop();
-                resolve(data);
-            }
-        })
-            .catch((err) => {
-            fileStatusHash[path].isReading = false;
-            const { requestQueue } = fileStatusHash[path];
-            while (requestQueue.length) {
-                const { reject } = requestQueue.pop();
-                reject(err);
-            }
-        });
+const filePromisesHash = {};
+const slurpFile = (path) => {
+    if (!filePromisesHash[path]) {
+        filePromisesHash[path] = readFile(path, "utf8");
     }
-    else if (fileStatusHash[path].isReading) {
-        fileStatusHash[path].requestQueue.push({ resolve, reject });
-    }
-    else {
-        resolve(fileStatusHash[path].contents);
-    }
-});
+    return filePromisesHash[path];
+};
 exports.slurpFile = slurpFile;
 
 
@@ -26997,7 +28300,7 @@ exports.getTraversalObj = getTraversalObj;
 /***/ 4351:
 /***/ ((module) => {
 
-/*! *****************************************************************************
+/******************************************************************************
 Copyright (c) Microsoft Corporation.
 
 Permission to use, copy, modify, and/or distribute this software for any
@@ -27035,6 +28338,7 @@ var __importStar;
 var __importDefault;
 var __classPrivateFieldGet;
 var __classPrivateFieldSet;
+var __classPrivateFieldIn;
 var __createBinding;
 (function (factory) {
     var root = typeof global === "object" ? global : typeof self === "object" ? self : typeof this === "object" ? this : {};
@@ -27151,7 +28455,11 @@ var __createBinding;
 
     __createBinding = Object.create ? (function(o, m, k, k2) {
         if (k2 === undefined) k2 = k;
-        Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+        var desc = Object.getOwnPropertyDescriptor(m, k);
+        if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+            desc = { enumerable: true, get: function() { return m[k]; } };
+        }
+        Object.defineProperty(o, k2, desc);
     }) : (function(o, m, k, k2) {
         if (k2 === undefined) k2 = k;
         o[k2] = m[k];
@@ -27278,6 +28586,11 @@ var __createBinding;
         return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
     };
 
+    __classPrivateFieldIn = function (state, receiver) {
+        if (receiver === null || (typeof receiver !== "object" && typeof receiver !== "function")) throw new TypeError("Cannot use 'in' operator on non-object");
+        return typeof state === "function" ? receiver === state : state.has(receiver);
+    };
+
     exporter("__extends", __extends);
     exporter("__assign", __assign);
     exporter("__rest", __rest);
@@ -27302,6 +28615,7 @@ var __createBinding;
     exporter("__importDefault", __importDefault);
     exporter("__classPrivateFieldGet", __classPrivateFieldGet);
     exporter("__classPrivateFieldSet", __classPrivateFieldSet);
+    exporter("__classPrivateFieldIn", __classPrivateFieldIn);
 });
 
 
@@ -28381,7 +29695,7 @@ module.exports = require("util");
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-lambda","description":"AWS SDK for JavaScript Lambda Client for Node.js, Browser and React Native","version":"3.58.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/client-sts":"3.58.0","@aws-sdk/config-resolver":"3.58.0","@aws-sdk/credential-provider-node":"3.58.0","@aws-sdk/fetch-http-handler":"3.58.0","@aws-sdk/hash-node":"3.55.0","@aws-sdk/invalid-dependency":"3.55.0","@aws-sdk/middleware-content-length":"3.58.0","@aws-sdk/middleware-host-header":"3.58.0","@aws-sdk/middleware-logger":"3.55.0","@aws-sdk/middleware-retry":"3.58.0","@aws-sdk/middleware-serde":"3.55.0","@aws-sdk/middleware-signing":"3.58.0","@aws-sdk/middleware-stack":"3.55.0","@aws-sdk/middleware-user-agent":"3.58.0","@aws-sdk/node-config-provider":"3.58.0","@aws-sdk/node-http-handler":"3.58.0","@aws-sdk/protocol-http":"3.58.0","@aws-sdk/smithy-client":"3.55.0","@aws-sdk/types":"3.55.0","@aws-sdk/url-parser":"3.55.0","@aws-sdk/util-base64-browser":"3.58.0","@aws-sdk/util-base64-node":"3.55.0","@aws-sdk/util-body-length-browser":"3.55.0","@aws-sdk/util-body-length-node":"3.55.0","@aws-sdk/util-defaults-mode-browser":"3.55.0","@aws-sdk/util-defaults-mode-node":"3.58.0","@aws-sdk/util-user-agent-browser":"3.58.0","@aws-sdk/util-user-agent-node":"3.58.0","@aws-sdk/util-utf8-browser":"3.55.0","@aws-sdk/util-utf8-node":"3.55.0","@aws-sdk/util-waiter":"3.55.0","tslib":"^2.3.1"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.58.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","concurrently":"7.0.0","downlevel-dts":"0.7.0","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-lambda","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-lambda"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-lambda","description":"AWS SDK for JavaScript Lambda Client for Node.js, Browser and React Native","version":"3.81.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/client-sts":"3.81.0","@aws-sdk/config-resolver":"3.80.0","@aws-sdk/credential-provider-node":"3.81.0","@aws-sdk/fetch-http-handler":"3.78.0","@aws-sdk/hash-node":"3.78.0","@aws-sdk/invalid-dependency":"3.78.0","@aws-sdk/middleware-content-length":"3.78.0","@aws-sdk/middleware-host-header":"3.78.0","@aws-sdk/middleware-logger":"3.78.0","@aws-sdk/middleware-retry":"3.80.0","@aws-sdk/middleware-serde":"3.78.0","@aws-sdk/middleware-signing":"3.78.0","@aws-sdk/middleware-stack":"3.78.0","@aws-sdk/middleware-user-agent":"3.78.0","@aws-sdk/node-config-provider":"3.80.0","@aws-sdk/node-http-handler":"3.78.0","@aws-sdk/protocol-http":"3.78.0","@aws-sdk/smithy-client":"3.78.0","@aws-sdk/types":"3.78.0","@aws-sdk/url-parser":"3.78.0","@aws-sdk/util-base64-browser":"3.58.0","@aws-sdk/util-base64-node":"3.55.0","@aws-sdk/util-body-length-browser":"3.55.0","@aws-sdk/util-body-length-node":"3.55.0","@aws-sdk/util-defaults-mode-browser":"3.78.0","@aws-sdk/util-defaults-mode-node":"3.81.0","@aws-sdk/util-user-agent-browser":"3.78.0","@aws-sdk/util-user-agent-node":"3.80.0","@aws-sdk/util-utf8-browser":"3.55.0","@aws-sdk/util-utf8-node":"3.55.0","@aws-sdk/util-waiter":"3.78.0","tslib":"^2.3.1"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.58.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","concurrently":"7.0.0","downlevel-dts":"0.7.0","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-lambda","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-lambda"}}');
 
 /***/ }),
 
@@ -28389,7 +29703,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-lambda","description":"AWS
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.58.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/config-resolver":"3.58.0","@aws-sdk/fetch-http-handler":"3.58.0","@aws-sdk/hash-node":"3.55.0","@aws-sdk/invalid-dependency":"3.55.0","@aws-sdk/middleware-content-length":"3.58.0","@aws-sdk/middleware-host-header":"3.58.0","@aws-sdk/middleware-logger":"3.55.0","@aws-sdk/middleware-retry":"3.58.0","@aws-sdk/middleware-serde":"3.55.0","@aws-sdk/middleware-stack":"3.55.0","@aws-sdk/middleware-user-agent":"3.58.0","@aws-sdk/node-config-provider":"3.58.0","@aws-sdk/node-http-handler":"3.58.0","@aws-sdk/protocol-http":"3.58.0","@aws-sdk/smithy-client":"3.55.0","@aws-sdk/types":"3.55.0","@aws-sdk/url-parser":"3.55.0","@aws-sdk/util-base64-browser":"3.58.0","@aws-sdk/util-base64-node":"3.55.0","@aws-sdk/util-body-length-browser":"3.55.0","@aws-sdk/util-body-length-node":"3.55.0","@aws-sdk/util-defaults-mode-browser":"3.55.0","@aws-sdk/util-defaults-mode-node":"3.58.0","@aws-sdk/util-user-agent-browser":"3.58.0","@aws-sdk/util-user-agent-node":"3.58.0","@aws-sdk/util-utf8-browser":"3.55.0","@aws-sdk/util-utf8-node":"3.55.0","tslib":"^2.3.1"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.58.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","concurrently":"7.0.0","downlevel-dts":"0.7.0","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.81.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/config-resolver":"3.80.0","@aws-sdk/fetch-http-handler":"3.78.0","@aws-sdk/hash-node":"3.78.0","@aws-sdk/invalid-dependency":"3.78.0","@aws-sdk/middleware-content-length":"3.78.0","@aws-sdk/middleware-host-header":"3.78.0","@aws-sdk/middleware-logger":"3.78.0","@aws-sdk/middleware-retry":"3.80.0","@aws-sdk/middleware-serde":"3.78.0","@aws-sdk/middleware-stack":"3.78.0","@aws-sdk/middleware-user-agent":"3.78.0","@aws-sdk/node-config-provider":"3.80.0","@aws-sdk/node-http-handler":"3.78.0","@aws-sdk/protocol-http":"3.78.0","@aws-sdk/smithy-client":"3.78.0","@aws-sdk/types":"3.78.0","@aws-sdk/url-parser":"3.78.0","@aws-sdk/util-base64-browser":"3.58.0","@aws-sdk/util-base64-node":"3.55.0","@aws-sdk/util-body-length-browser":"3.55.0","@aws-sdk/util-body-length-node":"3.55.0","@aws-sdk/util-defaults-mode-browser":"3.78.0","@aws-sdk/util-defaults-mode-node":"3.81.0","@aws-sdk/util-user-agent-browser":"3.78.0","@aws-sdk/util-user-agent-node":"3.80.0","@aws-sdk/util-utf8-browser":"3.55.0","@aws-sdk/util-utf8-node":"3.55.0","tslib":"^2.3.1"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.58.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","concurrently":"7.0.0","downlevel-dts":"0.7.0","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
 
 /***/ }),
 
@@ -28397,7 +29711,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SD
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.58.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/config-resolver":"3.58.0","@aws-sdk/credential-provider-node":"3.58.0","@aws-sdk/fetch-http-handler":"3.58.0","@aws-sdk/hash-node":"3.55.0","@aws-sdk/invalid-dependency":"3.55.0","@aws-sdk/middleware-content-length":"3.58.0","@aws-sdk/middleware-host-header":"3.58.0","@aws-sdk/middleware-logger":"3.55.0","@aws-sdk/middleware-retry":"3.58.0","@aws-sdk/middleware-sdk-sts":"3.58.0","@aws-sdk/middleware-serde":"3.55.0","@aws-sdk/middleware-signing":"3.58.0","@aws-sdk/middleware-stack":"3.55.0","@aws-sdk/middleware-user-agent":"3.58.0","@aws-sdk/node-config-provider":"3.58.0","@aws-sdk/node-http-handler":"3.58.0","@aws-sdk/protocol-http":"3.58.0","@aws-sdk/smithy-client":"3.55.0","@aws-sdk/types":"3.55.0","@aws-sdk/url-parser":"3.55.0","@aws-sdk/util-base64-browser":"3.58.0","@aws-sdk/util-base64-node":"3.55.0","@aws-sdk/util-body-length-browser":"3.55.0","@aws-sdk/util-body-length-node":"3.55.0","@aws-sdk/util-defaults-mode-browser":"3.55.0","@aws-sdk/util-defaults-mode-node":"3.58.0","@aws-sdk/util-user-agent-browser":"3.58.0","@aws-sdk/util-user-agent-node":"3.58.0","@aws-sdk/util-utf8-browser":"3.55.0","@aws-sdk/util-utf8-node":"3.55.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.3.1"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.58.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","concurrently":"7.0.0","downlevel-dts":"0.7.0","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.81.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/config-resolver":"3.80.0","@aws-sdk/credential-provider-node":"3.81.0","@aws-sdk/fetch-http-handler":"3.78.0","@aws-sdk/hash-node":"3.78.0","@aws-sdk/invalid-dependency":"3.78.0","@aws-sdk/middleware-content-length":"3.78.0","@aws-sdk/middleware-host-header":"3.78.0","@aws-sdk/middleware-logger":"3.78.0","@aws-sdk/middleware-retry":"3.80.0","@aws-sdk/middleware-sdk-sts":"3.78.0","@aws-sdk/middleware-serde":"3.78.0","@aws-sdk/middleware-signing":"3.78.0","@aws-sdk/middleware-stack":"3.78.0","@aws-sdk/middleware-user-agent":"3.78.0","@aws-sdk/node-config-provider":"3.80.0","@aws-sdk/node-http-handler":"3.78.0","@aws-sdk/protocol-http":"3.78.0","@aws-sdk/smithy-client":"3.78.0","@aws-sdk/types":"3.78.0","@aws-sdk/url-parser":"3.78.0","@aws-sdk/util-base64-browser":"3.58.0","@aws-sdk/util-base64-node":"3.55.0","@aws-sdk/util-body-length-browser":"3.55.0","@aws-sdk/util-body-length-node":"3.55.0","@aws-sdk/util-defaults-mode-browser":"3.78.0","@aws-sdk/util-defaults-mode-node":"3.81.0","@aws-sdk/util-user-agent-browser":"3.78.0","@aws-sdk/util-user-agent-node":"3.80.0","@aws-sdk/util-utf8-browser":"3.55.0","@aws-sdk/util-utf8-node":"3.55.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.3.1"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.58.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","concurrently":"7.0.0","downlevel-dts":"0.7.0","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
 
 /***/ }),
 
