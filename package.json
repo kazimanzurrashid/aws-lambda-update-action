@@ -16,7 +16,7 @@
     "release": "npm run format && npm run lint && npm run build && npm run pack"
   },
   "dependencies": {
-    "@actions/core": "^1.7.0",
+    "@actions/core": "^1.8.2",
     "@aws-sdk/client-lambda": "^3.81.0"
   },
   "devDependencies": {
