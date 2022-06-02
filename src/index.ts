@@ -1,6 +1,5 @@
 import { basename } from 'path';
-import { readFile } from 'fs';
-import { promisify } from 'util';
+import { readFile } from 'fs/promises';
 
 import { LambdaClient } from '@aws-sdk/client-lambda';
 import { getInput, info, setFailed } from '@actions/core';
@@ -29,7 +28,7 @@ const lambda = new LambdaClient({
 (async () => {
   try {
     await new Action(
-      promisify(readFile),
+      readFile,
       async (args) => {
         await lambda.send(args);
       },
