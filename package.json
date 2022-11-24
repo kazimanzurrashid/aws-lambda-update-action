@@ -9,7 +9,7 @@
     "url": "https://github.com/kazimanzurrashid/lambda-update-action"
   },
   "scripts": {
-    "format": "prettier --write **/*.ts",
+    "format": "prettier --check --write ./**/*.{ts,js,json,md,yml,yaml}",
     "lint": "eslint src/**/*.ts",
     "build": "rimraf build && tsc",
     "pack": "ncc build --source-map --license licenses.txt",

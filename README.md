@@ -20,7 +20,7 @@ with:
 ### complete
 
 ```yaml
-uses: kazimanzurrashid/aws-lambda-update-action@v1
+uses: kazimanzurrashid/aws-lambda-update-action@v2
 with:
   zip-file: './dist/my_lambda.zip'
   lambda-name: 'your_lambda'
