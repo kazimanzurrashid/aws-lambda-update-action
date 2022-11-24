@@ -12,7 +12,7 @@ only pulls lambda client to update the lambda code.
 ### minimum
 
 ```yaml
-uses: kazimanzurrashid/aws-lambda-update-action@v1
+uses: kazimanzurrashid/aws-lambda-update-action@v2
 with:
   zip-file: './dist/my_lambda.zip'
 ```
@@ -24,7 +24,6 @@ uses: kazimanzurrashid/aws-lambda-update-action@v1
 with:
   zip-file: './dist/my_lambda.zip'
   lambda-name: 'your_lambda'
-  publish: true
   AWS_REGION: ${{ secrets.AWS_REGION }}
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -41,7 +40,7 @@ The AWS Account needs to have the `"lambda:UpdateFunctionCode"` permission.
     {
       "Effect": "Allow",
       "Action": ["lambda:UpdateFunctionCode"],
-      "Resource": "*"
+      "Resource": "*" // Don't use for production, change it to only your lambda name
     }
   ]
 }
@@ -56,10 +55,6 @@ The AWS Account needs to have the `"lambda:UpdateFunctionCode"` permission.
 ### `lambda-name`
 
 _Optional_. If not specified. it takes the zip file base name as lambda name. (e.g. if the zip file is `my_lambda.zip` it would update `my_lambda` lambda)
-
-### `publish`
-
-_Optional_ The default is `false`.
 
 ### `AWS_REGION`
 
@@ -92,12 +87,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Node.js setup
-        uses: actions/setup-node@v2.1.4
+        uses: actions/setup-node@v3
         with:
-          node-version: 12.x
+          node-version: 18
 
       - name: Build
         run: |
@@ -106,7 +101,7 @@ jobs:
           cd dist && zip -r -9 api.zip *
 
       - name: Update
-        uses: kazimanzurrashid/aws-lambda-update-action@v1
+        uses: kazimanzurrashid/aws-lambda-update-action@v2
         with:
           zip-file: dist/api.zip
         env:
@@ -128,12 +123,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Go setup
-        uses: actions/setup-go@v2
+        uses: actions/setup-go@v3
         with:
-          go-version: 1.15.x
+          go-version: 1.19
 
       - name: Build
         run: |
@@ -143,7 +138,7 @@ jobs:
           cd dist && zip -r -9 api.zip *
 
       - name: Update
-        uses: kazimanzurrashid/aws-lambda-update-action@v1
+        uses: kazimanzurrashid/aws-lambda-update-action@v2
         with:
           zip-file: dist/api.zip
         env:
@@ -165,12 +160,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: .NET setup
-        uses: actions/setup-dotnet@v1
+        uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: 3.1.x
+          dotnet-version: 6
 
       - name: Lambda.Tools install
         run: dotnet tool install -g Amazon.Lambda.Tools
@@ -181,7 +176,7 @@ jobs:
           dotnet lambda package -o api.zip
 
       - name: Update
-        uses: kazimanzurrashid/aws-lambda-update-action@v1
+        uses: kazimanzurrashid/aws-lambda-update-action@v2
         with:
           zip-file: src/Api/api.zip
         env:

@@ -3,7 +3,6 @@ import { UpdateFunctionCodeCommand } from '@aws-sdk/client-lambda';
 interface RunInput {
   zipFileLocation: string;
   lambdaName: string;
-  publish: boolean;
 }
 
 class Action {
@@ -22,7 +21,6 @@ class Action {
 
     const cmd = new UpdateFunctionCodeCommand({
       FunctionName: input.lambdaName,
-      Publish: input.publish,
       ZipFile: zipFile
     });
 
