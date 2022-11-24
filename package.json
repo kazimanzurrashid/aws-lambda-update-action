@@ -11,15 +11,17 @@
   "scripts": {
     "format": "prettier --check --write ./**/*.{ts,js,json,md,yml,yaml}",
     "lint": "eslint ./ --fix",
+    "compile": "tsc --noEmit",
     "build": "rimraf build && tsc",
     "pack": "ncc build --source-map --license licenses.txt",
-    "release": "npm run format && npm run lint && npm run build && npm run pack"
+    "release": "release-it"
   },
   "dependencies": {
     "@actions/core": "^1.10.0",
     "@aws-sdk/client-lambda": "^3.216.0"
   },
   "devDependencies": {
+    "@release-it/conventional-changelog": "^5.1.1",
     "@types/node": "^18.11.9",
     "@typescript-eslint/eslint-plugin": "^5.44.0",
     "@typescript-eslint/parser": "^5.44.0",
@@ -29,6 +31,7 @@
     "eslint-plugin-github": "^4.4.1",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.0",
+    "release-it": "^15.5.0",
     "rimraf": "^3.0.2",
     "typescript": "^4.9.3"
   }

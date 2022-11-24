@@ -1,4 +1,4 @@
-name: v1
+name: ci
 on:
   push:
     branches:
@@ -7,7 +7,7 @@ on:
     branches:
       - main
 jobs:
-  deploy:
+  ci:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -16,9 +16,12 @@ jobs:
       - name: Node.js setup
         uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 16
 
       - name: Build
         run: |
           npm ci
-          npm run release
+          npm run format
+          npm run lint
+          npm run build
+          npm run pack
