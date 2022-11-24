@@ -11,9 +11,6 @@ inputs:
   lambda-name:
     required: false
     description: 'Optional, if not specified, it uses the file base name as function name'
-  publish:
-    description: 'Optional, default is false'
-    required: false
   AWS_REGION:
     description: 'Optional if not specified fallbacks to environment variable'
     required: false

@@ -3,7 +3,6 @@ import { UpdateFunctionCodeCommand } from '@aws-sdk/client-lambda';
 interface RunInput {
   zipFileLocation: string;
   lambdaName: string;
-  publish: boolean;
 }
 
 class Action {
@@ -16,18 +15,19 @@ class Action {
   ) {}
 
   async run(input: RunInput): Promise<void> {
+    // eslint-disable-next-line i18n-text/no-en
     this.log(`Updating ${input.lambdaName}`);
 
     const zipFile = await this.readFile(input.zipFileLocation);
 
     const cmd = new UpdateFunctionCodeCommand({
       FunctionName: input.lambdaName,
-      Publish: input.publish,
       ZipFile: zipFile
     });
 
     await this.updateFunctionCode(cmd);
 
+    // eslint-disable-next-line i18n-text/no-en
     this.log(`Updated ${input.lambdaName}`);
   }
 }
