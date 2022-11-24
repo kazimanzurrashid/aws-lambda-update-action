@@ -1,5 +1,7 @@
 # Changelog
 
+### [2.0.1](https://github.com/kazimanzurrashid/lambda-update-action/compare/v2.0.0...v2.0.1) (2022-11-24)
+
 ## [2.0.0](https://github.com/kazimanzurrashid/lambda-update-action/compare/v1...v2.0.0) (2022-11-24)
 
 
