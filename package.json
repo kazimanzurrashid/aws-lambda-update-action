@@ -17,19 +17,19 @@
   },
   "dependencies": {
     "@actions/core": "^1.10.0",
-    "@aws-sdk/client-lambda": "^3.201.0"
+    "@aws-sdk/client-lambda": "^3.216.0"
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
-    "@typescript-eslint/eslint-plugin": "^5.42.0",
-    "@typescript-eslint/parser": "^5.42.0",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
     "@vercel/ncc": "^0.34.0",
-    "eslint": "^8.26.0",
+    "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-github": "^4.4.0",
+    "eslint-plugin-github": "^4.4.1",
     "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.7.1",
+    "prettier": "^2.8.0",
     "rimraf": "^3.0.2",
-    "typescript": "^4.8.4"
+    "typescript": "^4.9.3"
   }
 }
