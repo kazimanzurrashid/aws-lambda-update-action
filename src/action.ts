@@ -15,6 +15,7 @@ class Action {
   ) {}
 
   async run(input: RunInput): Promise<void> {
+    // eslint-disable-next-line i18n-text/no-en
     this.log(`Updating ${input.lambdaName}`);
 
     const zipFile = await this.readFile(input.zipFileLocation);
@@ -26,6 +27,7 @@ class Action {
 
     await this.updateFunctionCode(cmd);
 
+    // eslint-disable-next-line i18n-text/no-en
     this.log(`Updated ${input.lambdaName}`);
   }
 }

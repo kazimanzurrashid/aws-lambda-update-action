@@ -10,7 +10,7 @@
   },
   "scripts": {
     "format": "prettier --check --write ./**/*.{ts,js,json,md,yml,yaml}",
-    "lint": "eslint src/**/*.ts",
+    "lint": "eslint ./ --fix",
     "build": "rimraf build && tsc",
     "pack": "ncc build --source-map --license licenses.txt",
     "release": "npm run format && npm run lint && npm run build && npm run pack"
