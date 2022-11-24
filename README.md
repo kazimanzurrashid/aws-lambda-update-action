@@ -12,7 +12,7 @@ only pulls lambda client to update the lambda code.
 ### minimum
 
 ```yaml
-uses: kazimanzurrashid/aws-lambda-update-action@v2.0.0
+uses: kazimanzurrashid/aws-lambda-update-action@v2.0.1
 with:
   zip-file: './dist/my_lambda.zip'
 ```
@@ -20,7 +20,7 @@ with:
 ### complete
 
 ```yaml
-uses: kazimanzurrashid/aws-lambda-update-action@v2.0.0
+uses: kazimanzurrashid/aws-lambda-update-action@v2.0.1
 with:
   zip-file: './dist/my_lambda.zip'
   lambda-name: 'your_lambda'
@@ -101,7 +101,7 @@ jobs:
           cd dist && zip -r -9 api.zip *
 
       - name: Update
-        uses: kazimanzurrashid/aws-lambda-update-action@v2.0.0
+        uses: kazimanzurrashid/aws-lambda-update-action@v2.0.1
         with:
           zip-file: dist/api.zip
         env:
@@ -138,7 +138,7 @@ jobs:
           cd dist && zip -r -9 api.zip *
 
       - name: Update
-        uses: kazimanzurrashid/aws-lambda-update-action@v2.0.0
+        uses: kazimanzurrashid/aws-lambda-update-action@v2.0.1
         with:
           zip-file: dist/api.zip
         env:
@@ -176,7 +176,7 @@ jobs:
           dotnet lambda package -o api.zip
 
       - name: Update
-        uses: kazimanzurrashid/aws-lambda-update-action@v2.0.0
+        uses: kazimanzurrashid/aws-lambda-update-action@v2.0.1
         with:
           zip-file: src/Api/api.zip
         env:
