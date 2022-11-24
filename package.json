@@ -13,7 +13,7 @@
     "lint": "eslint src/**/*.ts",
     "build": "rimraf build && tsc",
     "pack": "ncc build --source-map --license licenses.txt",
-    "release": "npm run format && npm run lint && npm run build && npm run pack"
+    "release": "release-it"
   },
   "dependencies": {
     "@actions/core": "^1.10.0",
