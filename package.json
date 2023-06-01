@@ -30,7 +30,7 @@
     "eslint-plugin-github": "^4.7.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.8",
-    "release-it": "^15.10.2",
+    "release-it": "^15.10.3",
     "rimraf": "^5.0.1",
     "typescript": "^5.0.4"
   }
