@@ -15,12 +15,14 @@ const lambdaName = getInput('lambda-name') || basename(zipFileLocation, '.zip');
 const awsRegion = getValue('AWS_REGION');
 const awsAccessKeyId = getValue('AWS_ACCESS_KEY_ID');
 const awsSecretAccessKey = getValue('AWS_SECRET_ACCESS_KEY');
+const awsSessionToken = getValue('AWS_SESSION_TOKEN');
 
 const lambda = new LambdaClient({
   region: awsRegion,
   credentials: {
     accessKeyId: awsAccessKeyId,
-    secretAccessKey: awsSecretAccessKey
+    secretAccessKey: awsSecretAccessKey,
+    sessionToken: awsSessionToken,
   }
 });
 

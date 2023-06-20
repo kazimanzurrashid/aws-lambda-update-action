@@ -20,6 +20,9 @@ inputs:
   AWS_SECRET_ACCESS_KEY:
     description: 'Optional if not specified fallbacks to environment variable'
     required: false
+  AWS_SESSION_TOKEN:
+    description: 'Optional if not specified fallbacks to environment variable'
+    required: false
 runs:
   using: 'node16'
   main: 'dist/index.js'
