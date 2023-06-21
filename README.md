@@ -27,6 +27,7 @@ with:
   AWS_REGION: ${{ secrets.AWS_REGION }}
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  AWS_SESSION_TOKEN: ${{ secrets.AWS_SESSION_TOKEN }} 
 ```
 
 ## AWS Permission
@@ -65,6 +66,10 @@ _Optional_, if not specified fallbacks to environment variable.
 _Optional_, if not specified fallbacks to environment variable.
 
 ### `AWS_SECRET_ACCESS_KEY`
+
+_Optional_, if not specified fallbacks to environment variable.
+
+### `AWS_SESSION_TOKEN`
 
 _Optional_, if not specified fallbacks to environment variable.
 
