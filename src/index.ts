@@ -22,7 +22,7 @@ const lambda = new LambdaClient({
   credentials: {
     accessKeyId: awsAccessKeyId,
     secretAccessKey: awsSecretAccessKey,
-    sessionToken: awsSessionToken,
+    sessionToken: awsSessionToken
   }
 });
 
