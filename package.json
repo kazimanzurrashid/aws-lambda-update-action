@@ -23,7 +23,7 @@
     "@release-it/conventional-changelog": "^7.0.2",
     "@types/node": "^20.10.1",
     "@typescript-eslint/eslint-plugin": "^6.13.1",
-    "@typescript-eslint/parser": "^6.13.1",
+    "@typescript-eslint/parser": "^6.16.0",
     "@vercel/ncc": "^0.38.1",
     "eslint": "^8.54.0",
     "eslint-config-prettier": "^9.0.0",
