@@ -12,7 +12,7 @@ only pulls lambda client to update the lambda code.
 ### minimum
 
 ```yaml
-uses: kazimanzurrashid/aws-lambda-update-action@v2.0.2
+uses: kazimanzurrashid/aws-lambda-update-action@v2.0.3
 with:
   zip-file: './dist/my_lambda.zip'
 ```
@@ -20,7 +20,7 @@ with:
 ### complete
 
 ```yaml
-uses: kazimanzurrashid/aws-lambda-update-action@v2.0.2
+uses: kazimanzurrashid/aws-lambda-update-action@v2.0.3
 with:
   zip-file: './dist/my_lambda.zip'
   lambda-name: 'your_lambda'
@@ -92,12 +92,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Node.js setup
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Build
         run: |
@@ -106,7 +106,7 @@ jobs:
           cd dist && zip -r -9 api.zip *
 
       - name: Update
-        uses: kazimanzurrashid/aws-lambda-update-action@v2.0.2
+        uses: kazimanzurrashid/aws-lambda-update-action@v2.0.3
         with:
           zip-file: dist/api.zip
         env:
@@ -128,12 +128,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Go setup
-        uses: actions/setup-go@v3
+        uses: actions/setup-go@v5
         with:
-          go-version: 1.19
+          go-version: 1.20
 
       - name: Build
         run: |
@@ -143,7 +143,7 @@ jobs:
           cd dist && zip -r -9 api.zip *
 
       - name: Update
-        uses: kazimanzurrashid/aws-lambda-update-action@v2.0.2
+        uses: kazimanzurrashid/aws-lambda-update-action@v2.0.3
         with:
           zip-file: dist/api.zip
         env:
@@ -165,10 +165,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: .NET setup
-        uses: actions/setup-dotnet@v3
+        uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 6
 
@@ -181,7 +181,7 @@ jobs:
           dotnet lambda package -o api.zip
 
       - name: Update
-        uses: kazimanzurrashid/aws-lambda-update-action@v2.0.2
+        uses: kazimanzurrashid/aws-lambda-update-action@v2.0.3
         with:
           zip-file: src/Api/api.zip
         env:
