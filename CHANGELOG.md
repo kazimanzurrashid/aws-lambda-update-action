@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.0.3](https://github.com/kazimanzurrashid/lambda-update-action/compare/v2.0.2...v2.0.3) (2024-03-21)
+
+
+### Bug Fixes
+
+* upgrade @aws-sdk/client-lambda from 3.405.0 to 3.409.0 ([#272](https://github.com/kazimanzurrashid/lambda-update-action/issues/272)) ([0048bd7](https://github.com/kazimanzurrashid/lambda-update-action/commit/0048bd7d4ffa12053ce4e951c30b9a79d0b48f6d))
+* upgrade @aws-sdk/client-lambda from 3.421.0 to 3.423.0 ([#285](https://github.com/kazimanzurrashid/lambda-update-action/issues/285)) ([f80c58c](https://github.com/kazimanzurrashid/lambda-update-action/commit/f80c58c6baa5dc002cb83c20cda4b99b748ab27d))
+* upgrade @aws-sdk/client-lambda from 3.438.0 to 3.441.0 ([#294](https://github.com/kazimanzurrashid/lambda-update-action/issues/294)) ([c518ab2](https://github.com/kazimanzurrashid/lambda-update-action/commit/c518ab2146d055213ec9430bec55151072dc7c11))
+* upgrade @aws-sdk/client-lambda from 3.462.0 to 3.465.0 ([#303](https://github.com/kazimanzurrashid/lambda-update-action/issues/303)) ([e927f90](https://github.com/kazimanzurrashid/lambda-update-action/commit/e927f90aa608b03437a0da48ffd751d56a9c61c4))
+* upgrade @aws-sdk/client-lambda from 3.504.0 to 3.507.0 ([#324](https://github.com/kazimanzurrashid/lambda-update-action/issues/324)) ([f95fe3e](https://github.com/kazimanzurrashid/lambda-update-action/commit/f95fe3eb2693a5c93d5a808badd9550a1ff24882))
+* upgrade @aws-sdk/client-lambda from 3.507.0 to 3.511.0 ([#326](https://github.com/kazimanzurrashid/lambda-update-action/issues/326)) ([84d3d98](https://github.com/kazimanzurrashid/lambda-update-action/commit/84d3d98dc0dc5d46d205d08f528d33e5141f54e2))
+* upgrade @aws-sdk/client-lambda from 3.511.0 to 3.516.0 ([#327](https://github.com/kazimanzurrashid/lambda-update-action/issues/327)) ([5850384](https://github.com/kazimanzurrashid/lambda-update-action/commit/5850384e7e80416cf6357b44dc730c6fe427ccbf))
+
 ### [2.0.2](https://github.com/kazimanzurrashid/lambda-update-action/compare/v2.0.1...v2.0.2) (2023-06-22)
 
 
