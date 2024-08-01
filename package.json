@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "^8.0.1",
-    "@types/node": "^20.13.0",
+    "@types/node": "^22.0.2",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^6.21.0",
     "@vercel/ncc": "^0.38.1",
