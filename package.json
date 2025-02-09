@@ -20,6 +20,8 @@
     "@aws-sdk/client-lambda": "^3.744.0"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.20.0",
     "@release-it/conventional-changelog": "^10.0.0",
     "@types/node": "^22.13.1",
     "@typescript-eslint/eslint-plugin": "^8.23.0",
@@ -29,6 +31,7 @@
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-github": "^5.1.8",
     "eslint-plugin-prettier": "^5.2.3",
+    "globals": "^15.14.0",
     "prettier": "^3.4.2",
     "release-it": "^18.1.2",
     "rimraf": "^6.0.1",
