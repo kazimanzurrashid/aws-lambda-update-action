@@ -16,8 +16,8 @@
     "release": "release-it"
   },
   "dependencies": {
-    "@actions/core": "^1.11.1",
-    "@aws-sdk/client-lambda": "^3.744.0"
+    "@actions/core": "^2.0.0",
+    "@aws-sdk/client-lambda": "^3.894.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
